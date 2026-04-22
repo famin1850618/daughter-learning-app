@@ -203,8 +203,8 @@ class _SubjectListScreenState extends State<_SubjectListScreen> {
 class _TodayPlanSummary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final plans = context.watch<PlanService>().plansForDate;
-    final done = plans.where((p) => p.status.index == 2).length;
+    final items = context.watch<PlanService>().todayItems;
+    final done = items.where((i) => i.status.index == 1).length;
     final hour = DateTime.now().hour;
     final greeting = hour < 12 ? '早上好' : hour < 18 ? '下午好' : '晚上好';
     return Card(
@@ -217,7 +217,7 @@ class _TodayPlanSummary extends StatelessWidget {
           Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Text('$greeting，加油！',
                 style: const TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold)),
-            Text(plans.isEmpty ? '今天还没有计划' : '今日计划 $done/${plans.length} 已完成',
+            Text(items.isEmpty ? '今天还没有计划' : '今日计划 $done/${items.length} 已完成',
                 style: const TextStyle(color: Colors.white70, fontSize: 13)),
           ]),
         ]),

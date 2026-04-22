@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 2,
+      version: 3,
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
     );
@@ -28,8 +28,11 @@ class DatabaseHelper {
   }
 
   Future<void> _onUpgrade(Database db, int oldVersion, int newVersion) async {
-    if (oldVersion < 2) {
-      // 新增 curriculum 表
+    if (oldVersion < 3) {
+      // 迁移到 v3：用 plan_groups + plan_items 替换 study_plans
+      await db.execute('DROP TABLE IF EXISTS study_plans');
+
+      // 新增课程体系表（v2可能已存在）
       await db.execute('''
         CREATE TABLE IF NOT EXISTS curriculum (
           id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -39,15 +42,42 @@ class DatabaseHelper {
           order_index INTEGER NOT NULL DEFAULT 0
         )
       ''');
+
       await db.execute('''
-        CREATE INDEX IF NOT EXISTS idx_curriculum_subject_grade
-        ON curriculum (subject, grade)
+        CREATE TABLE IF NOT EXISTS plan_groups (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          type INTEGER NOT NULL,
+          parent_id INTEGER,
+          start_date TEXT NOT NULL,
+          end_date TEXT NOT NULL,
+          status INTEGER NOT NULL DEFAULT 0,
+          created_at TEXT NOT NULL,
+          FOREIGN KEY (parent_id) REFERENCES plan_groups(id) ON DELETE CASCADE
+        )
       ''');
 
-      // study_plans 新增 chapter_id 和 knowledge_point 字段
-      await db.execute('ALTER TABLE study_plans ADD COLUMN chapter_id INTEGER');
-      await db.execute('ALTER TABLE study_plans ADD COLUMN grade INTEGER NOT NULL DEFAULT 6');
-      await db.execute('ALTER TABLE study_plans ADD COLUMN knowledge_point TEXT');
+      await db.execute('''
+        CREATE TABLE IF NOT EXISTS plan_items (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          day_plan_id INTEGER NOT NULL,
+          chapter_id INTEGER NOT NULL,
+          chapter_name TEXT NOT NULL,
+          subject_name TEXT NOT NULL,
+          subject_emoji TEXT NOT NULL DEFAULT '📚',
+          grade INTEGER NOT NULL,
+          knowledge_point TEXT,
+          status INTEGER NOT NULL DEFAULT 0,
+          completed_at TEXT,
+          origin_month_plan_id INTEGER,
+          origin_week_plan_id INTEGER,
+          FOREIGN KEY (day_plan_id) REFERENCES plan_groups(id) ON DELETE CASCADE
+        )
+      ''');
+
+      await db.execute('CREATE INDEX IF NOT EXISTS idx_curriculum_subject_grade ON curriculum (subject, grade)');
+      await db.execute('CREATE INDEX IF NOT EXISTS idx_plan_groups_dates ON plan_groups (type, start_date, end_date)');
+      await db.execute('CREATE INDEX IF NOT EXISTS idx_plan_items_day ON plan_items (day_plan_id)');
+      await db.execute('CREATE INDEX IF NOT EXISTS idx_plan_items_chapter ON plan_items (chapter_id)');
     }
   }
 
@@ -63,20 +93,33 @@ class DatabaseHelper {
     ''');
 
     await db.execute('''
-      CREATE TABLE study_plans (
+      CREATE TABLE plan_groups (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        subject INTEGER NOT NULL,
-        grade INTEGER NOT NULL DEFAULT 6,
-        chapter_id INTEGER,
-        knowledge_point TEXT,
-        title TEXT NOT NULL,
-        description TEXT,
-        due_date TEXT NOT NULL,
         type INTEGER NOT NULL,
+        parent_id INTEGER,
+        start_date TEXT NOT NULL,
+        end_date TEXT NOT NULL,
         status INTEGER NOT NULL DEFAULT 0,
-        estimated_minutes INTEGER NOT NULL DEFAULT 30,
         created_at TEXT NOT NULL,
-        FOREIGN KEY (chapter_id) REFERENCES curriculum (id)
+        FOREIGN KEY (parent_id) REFERENCES plan_groups(id) ON DELETE CASCADE
+      )
+    ''');
+
+    await db.execute('''
+      CREATE TABLE plan_items (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        day_plan_id INTEGER NOT NULL,
+        chapter_id INTEGER NOT NULL,
+        chapter_name TEXT NOT NULL,
+        subject_name TEXT NOT NULL,
+        subject_emoji TEXT NOT NULL DEFAULT '📚',
+        grade INTEGER NOT NULL,
+        knowledge_point TEXT,
+        status INTEGER NOT NULL DEFAULT 0,
+        completed_at TEXT,
+        origin_month_plan_id INTEGER,
+        origin_week_plan_id INTEGER,
+        FOREIGN KEY (day_plan_id) REFERENCES plan_groups(id) ON DELETE CASCADE
       )
     ''');
 
@@ -116,8 +159,10 @@ class DatabaseHelper {
     ''');
 
     await db.execute('CREATE INDEX idx_curriculum_subject_grade ON curriculum (subject, grade)');
+    await db.execute('CREATE INDEX idx_plan_groups_dates ON plan_groups (type, start_date, end_date)');
+    await db.execute('CREATE INDEX idx_plan_items_day ON plan_items (day_plan_id)');
+    await db.execute('CREATE INDEX idx_plan_items_chapter ON plan_items (chapter_id)');
     await db.execute('CREATE INDEX idx_questions_subject_grade ON questions (subject, grade)');
-    await db.execute('CREATE INDEX idx_plans_due_date ON study_plans (due_date)');
     await db.execute('CREATE INDEX idx_records_question ON practice_records (question_id)');
   }
 }
