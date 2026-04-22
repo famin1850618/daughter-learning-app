@@ -48,9 +48,9 @@ class _PlanScreenState extends State<PlanScreen> {
             },
             calendarStyle: CalendarStyle(
               selectedDecoration: const BoxDecoration(
-                color: AppTheme.primary, shape: BoxShape.circle),
+                  color: AppTheme.primary, shape: BoxShape.circle),
               todayDecoration: BoxDecoration(
-                color: AppTheme.primary.withOpacity(0.3), shape: BoxShape.circle),
+                  color: AppTheme.primary.withOpacity(0.3), shape: BoxShape.circle),
             ),
           ),
           const Divider(),
@@ -61,13 +61,24 @@ class _PlanScreenState extends State<PlanScreen> {
               children: [
                 Text(DateFormat('M月d日').format(_selectedDay),
                     style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
-                Text('${plans.length} 个计划', style: const TextStyle(color: Colors.grey)),
+                Text('${plans.length} 个计划',
+                    style: const TextStyle(color: Colors.grey)),
               ],
             ),
           ),
           Expanded(
             child: plans.isEmpty
-                ? const Center(child: Text('这天还没有计划', style: TextStyle(color: Colors.grey)))
+                ? const Center(
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text('这天还没有计划', style: TextStyle(color: Colors.grey)),
+                        SizedBox(height: 8),
+                        Text('在首页选择科目和章节来添加计划',
+                            style: TextStyle(color: Colors.grey, fontSize: 12)),
+                      ],
+                    ),
+                  )
                 : ListView.builder(
                     padding: const EdgeInsets.symmetric(horizontal: 12),
                     itemCount: plans.length,
@@ -76,21 +87,6 @@ class _PlanScreenState extends State<PlanScreen> {
           ),
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: AppTheme.primary,
-        child: const Icon(Icons.add, color: Colors.white),
-        onPressed: () => _showAddPlanDialog(context),
-      ),
-    );
-  }
-
-  void _showAddPlanDialog(BuildContext context) {
-    showModalBottomSheet(
-      context: context,
-      isScrollControlled: true,
-      shape: const RoundedRectangleBorder(
-          borderRadius: BorderRadius.vertical(top: Radius.circular(16))),
-      builder: (_) => _AddPlanSheet(selectedDate: _selectedDay),
     );
   }
 }
@@ -105,87 +101,35 @@ class _PlanTile extends StatelessWidget {
     return Card(
       child: ListTile(
         leading: Text(plan.subject.emoji, style: const TextStyle(fontSize: 28)),
-        title: Text(plan.title,
-            style: TextStyle(decoration: done ? TextDecoration.lineThrough : null)),
-        subtitle: Text('预计 ${plan.estimatedMinutes} 分钟'),
+        title: Text(
+          plan.displayTitle,
+          style: TextStyle(decoration: done ? TextDecoration.lineThrough : null),
+        ),
+        subtitle: Text('${plan.gradeLabel} · 预计 ${plan.estimatedMinutes} 分钟'),
         trailing: Checkbox(
           value: done,
           activeColor: AppTheme.success,
           onChanged: done ? null : (_) => context.read<PlanService>().markComplete(plan),
         ),
+        onLongPress: () => _confirmDelete(context),
       ),
     );
   }
-}
 
-class _AddPlanSheet extends StatefulWidget {
-  final DateTime selectedDate;
-  const _AddPlanSheet({required this.selectedDate});
-
-  @override
-  State<_AddPlanSheet> createState() => _AddPlanSheetState();
-}
-
-class _AddPlanSheetState extends State<_AddPlanSheet> {
-  Subject _subject = Subject.math;
-  final _titleCtrl = TextEditingController();
-  int _minutes = 30;
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(
-          left: 16, right: 16, top: 16,
-          bottom: MediaQuery.of(context).viewInsets.bottom + 16),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          const Text('添加计划', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
-          const SizedBox(height: 12),
-          DropdownButtonFormField<Subject>(
-            value: _subject,
-            decoration: const InputDecoration(labelText: '科目', border: OutlineInputBorder()),
-            items: Subject.values
-                .where((s) => s.isAvailableForGrade(6))
-                .map((s) => DropdownMenuItem(value: s, child: Text('${s.emoji} ${s.displayName}')))
-                .toList(),
-            onChanged: (v) => setState(() => _subject = v!),
-          ),
-          const SizedBox(height: 8),
-          TextField(
-            controller: _titleCtrl,
-            decoration: const InputDecoration(labelText: '计划内容', border: OutlineInputBorder()),
-          ),
-          const SizedBox(height: 8),
-          Row(
-            children: [
-              const Text('预计时间：'),
-              Expanded(
-                child: Slider(
-                  value: _minutes.toDouble(),
-                  min: 10, max: 120, divisions: 11,
-                  label: '$_minutes 分钟',
-                  activeColor: AppTheme.primary,
-                  onChanged: (v) => setState(() => _minutes = v.round()),
-                ),
-              ),
-              Text('$_minutes 分钟'),
-            ],
-          ),
-          ElevatedButton(
+  void _confirmDelete(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (_) => AlertDialog(
+        title: const Text('删除计划'),
+        content: Text('确认删除「${plan.displayTitle}」？'),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(context), child: const Text('取消')),
+          TextButton(
             onPressed: () {
-              if (_titleCtrl.text.isEmpty) return;
-              context.read<PlanService>().addPlan(StudyPlan(
-                subject: _subject,
-                title: _titleCtrl.text,
-                dueDate: widget.selectedDate,
-                type: PlanType.daily,
-                estimatedMinutes: _minutes,
-                createdAt: DateTime.now(),
-              ));
+              context.read<PlanService>().deletePlan(plan);
               Navigator.pop(context);
             },
-            child: const Text('添加'),
+            child: const Text('删除', style: TextStyle(color: Colors.red)),
           ),
         ],
       ),

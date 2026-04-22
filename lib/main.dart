@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:intl/date_symbol_data_local.dart';
 
 import 'utils/app_theme.dart';
 import 'screens/home_screen.dart';
@@ -10,24 +11,33 @@ import 'screens/reward_screen.dart';
 import 'services/plan_service.dart';
 import 'services/practice_service.dart';
 import 'database/question_dao.dart';
+import 'database/curriculum_dao.dart';
 import 'database/seed_data.dart';
+import 'database/curriculum_seed.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await initializeDateFormatting('zh_CN');
   await _seedDatabase();
   runApp(const LearningApp());
 }
 
 Future<void> _seedDatabase() async {
-  final dao = QuestionDao();
-  // 仅首次运行时插入种子题目
-  final existing = await dao.getRandom(
+  // 课程体系种子数据
+  final curriculumDao = CurriculumDao();
+  if (await curriculumDao.isEmpty()) {
+    await curriculumDao.insertBatch(curriculumChapters);
+  }
+
+  // 题库种子数据
+  final questionDao = QuestionDao();
+  final existing = await questionDao.getRandom(
     subject: grade6SeedQuestions.first.subject,
     grade: 6,
     limit: 1,
   );
   if (existing.isEmpty) {
-    await dao.insertBatch(grade6SeedQuestions);
+    await questionDao.insertBatch(grade6SeedQuestions);
   }
 }
 
@@ -45,6 +55,7 @@ class LearningApp extends StatelessWidget {
         title: '学习小助手',
         theme: AppTheme.light,
         debugShowCheckedModeBanner: false,
+        locale: const Locale('zh', 'CN'),
         home: const MainNavigation(),
       ),
     );
@@ -72,10 +83,7 @@ class _MainNavigationState extends State<MainNavigation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: IndexedStack(
-        index: _selectedIndex,
-        children: _screens,
-      ),
+      body: IndexedStack(index: _selectedIndex, children: _screens),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         onTap: (i) => setState(() => _selectedIndex = i),

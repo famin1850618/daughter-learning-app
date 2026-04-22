@@ -17,23 +17,66 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 1,
+      version: 2,
       onCreate: _onCreate,
+      onUpgrade: _onUpgrade,
     );
   }
 
   Future<void> _onCreate(Database db, int version) async {
+    await _createAllTables(db);
+  }
+
+  Future<void> _onUpgrade(Database db, int oldVersion, int newVersion) async {
+    if (oldVersion < 2) {
+      // 新增 curriculum 表
+      await db.execute('''
+        CREATE TABLE IF NOT EXISTS curriculum (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          subject TEXT NOT NULL,
+          grade INTEGER NOT NULL,
+          chapter_name TEXT NOT NULL,
+          order_index INTEGER NOT NULL DEFAULT 0
+        )
+      ''');
+      await db.execute('''
+        CREATE INDEX IF NOT EXISTS idx_curriculum_subject_grade
+        ON curriculum (subject, grade)
+      ''');
+
+      // study_plans 新增 chapter_id 和 knowledge_point 字段
+      await db.execute('ALTER TABLE study_plans ADD COLUMN chapter_id INTEGER');
+      await db.execute('ALTER TABLE study_plans ADD COLUMN grade INTEGER NOT NULL DEFAULT 6');
+      await db.execute('ALTER TABLE study_plans ADD COLUMN knowledge_point TEXT');
+    }
+  }
+
+  Future<void> _createAllTables(Database db) async {
+    await db.execute('''
+      CREATE TABLE curriculum (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        subject TEXT NOT NULL,
+        grade INTEGER NOT NULL,
+        chapter_name TEXT NOT NULL,
+        order_index INTEGER NOT NULL DEFAULT 0
+      )
+    ''');
+
     await db.execute('''
       CREATE TABLE study_plans (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         subject INTEGER NOT NULL,
+        grade INTEGER NOT NULL DEFAULT 6,
+        chapter_id INTEGER,
+        knowledge_point TEXT,
         title TEXT NOT NULL,
         description TEXT,
         due_date TEXT NOT NULL,
         type INTEGER NOT NULL,
         status INTEGER NOT NULL DEFAULT 0,
         estimated_minutes INTEGER NOT NULL DEFAULT 30,
-        created_at TEXT NOT NULL
+        created_at TEXT NOT NULL,
+        FOREIGN KEY (chapter_id) REFERENCES curriculum (id)
       )
     ''');
 
@@ -72,14 +115,9 @@ class DatabaseHelper {
       )
     ''');
 
-    await db.execute('''
-      CREATE INDEX idx_questions_subject_grade ON questions (subject, grade)
-    ''');
-    await db.execute('''
-      CREATE INDEX idx_plans_due_date ON study_plans (due_date)
-    ''');
-    await db.execute('''
-      CREATE INDEX idx_records_question ON practice_records (question_id)
-    ''');
+    await db.execute('CREATE INDEX idx_curriculum_subject_grade ON curriculum (subject, grade)');
+    await db.execute('CREATE INDEX idx_questions_subject_grade ON questions (subject, grade)');
+    await db.execute('CREATE INDEX idx_plans_due_date ON study_plans (due_date)');
+    await db.execute('CREATE INDEX idx_records_question ON practice_records (question_id)');
   }
 }

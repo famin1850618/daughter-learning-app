@@ -40,4 +40,24 @@ extension SubjectExtension on Subject {
   }
 
   bool isAvailableForGrade(int grade) => grade >= startGrade;
+
+  /// 用于匹配 curriculum 表中的 subject 字段
+  String get name {
+    switch (this) {
+      case Subject.chinese:   return '语文';
+      case Subject.math:      return '数学';
+      case Subject.english:   return '英语';
+      case Subject.physics:   return '物理';
+      case Subject.chemistry: return '化学';
+      case Subject.ai:        return 'AI';
+    }
+  }
+
+  String get gradeRangeLabel {
+    switch (this) {
+      case Subject.physics:   return '初二 ～ 初三';
+      case Subject.chemistry: return '初三';
+      default:                return '六年级 ～ 初三';
+    }
+  }
 }

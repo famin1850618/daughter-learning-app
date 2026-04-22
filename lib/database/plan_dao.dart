@@ -62,4 +62,10 @@ class PlanDao {
       whereArgs: [id],
     );
   }
+
+  Future<List<StudyPlan>> getAll() async {
+    final db = await _db.database;
+    final maps = await db.query('study_plans', orderBy: 'due_date DESC');
+    return maps.map(StudyPlan.fromMap).toList();
+  }
 }
