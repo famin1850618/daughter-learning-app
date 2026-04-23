@@ -1,37 +1,26 @@
 import 'package:flutter/foundation.dart';
 import '../models/plan_group.dart';
+import '../models/plan_settings.dart';
 import '../database/plan_group_dao.dart';
 import '../database/plan_item_dao.dart';
 import '../utils/plan_date_utils.dart';
 
-// Snapshot of a single date's plan state across all three levels
-class DayPlanSnapshot {
+// ── Snapshot used by the plan adjustment screen ──────────────────────────────
+class AdjustmentSnapshot {
   final DateTime date;
-  final PlanGroup? standaloneDayPlan; // independent day plan (parentId IS NULL)
-  final PlanGroup? weekPlan;          // week plan covering date
-  final PlanGroup? weekDayPlan;       // day plan under weekPlan for date
-  final PlanGroup? monthPlan;         // month plan covering date
-  final PlanGroup? monthWeekPlan;     // week plan under monthPlan covering date
-  final PlanGroup? monthDayPlan;      // day plan under monthWeekPlan for date
+  final List<PlanItem> todayItems; // all items scheduled for this date
+  final PlanGroup? weekPlan;       // full week plan (all children loaded)
+  final PlanGroup? monthPlan;      // full month plan (all children loaded)
 
-  const DayPlanSnapshot({
+  const AdjustmentSnapshot({
     required this.date,
-    this.standaloneDayPlan,
+    required this.todayItems,
     this.weekPlan,
-    this.weekDayPlan,
     this.monthPlan,
-    this.monthWeekPlan,
-    this.monthDayPlan,
   });
 
-  bool get hasAnyPlan => standaloneDayPlan != null || weekPlan != null || monthPlan != null;
-  bool get hasDayPlan => standaloneDayPlan != null;
-  bool get hasWeekPlan => weekPlan != null;
-  bool get hasMonthPlan => monthPlan != null;
-
-  List<PlanItem> get dayItems => standaloneDayPlan?.items ?? [];
-  List<PlanItem> get weekItems => weekDayPlan?.items ?? [];
-  List<PlanItem> get monthItems => monthDayPlan?.items ?? [];
+  bool get hasAnyPlan =>
+      todayItems.isNotEmpty || weekPlan != null || monthPlan != null;
 }
 
 class PlanService extends ChangeNotifier {
@@ -48,10 +37,7 @@ class PlanService extends ChangeNotifier {
   List<PlanGroup> get weekPlans => _weekPlans;
   List<PlanGroup> get monthPlans => _monthPlans;
   Set<String> get markedDates => _markedDates;
-
-  List<PlanItem> get todayItems =>
-      _dayPlans.expand((g) => g.items).toList();
-
+  List<PlanItem> get todayItems => _dayPlans.expand((g) => g.items).toList();
   bool get selectedDateHasPlans =>
       _dayPlans.isNotEmpty || _weekPlans.isNotEmpty || _monthPlans.isNotEmpty;
 
@@ -63,6 +49,8 @@ class PlanService extends ChangeNotifier {
     _markedDates = await _groupDao.getDatesWithPlans();
     await loadDate(DateTime.now());
   }
+
+  // ── Main screen data loading ─────────────────
 
   Future<void> loadDate(DateTime date) async {
     _selectedDate = PlanDateUtils.dateOnly(date);
@@ -113,16 +101,72 @@ class PlanService extends ChangeNotifier {
     notifyListeners();
   }
 
-  // ── Creation ─────────────────────────────────
+  // ── Adjustment screen data loading ──────────
+
+  Future<AdjustmentSnapshot> getAdjustmentSnapshot(DateTime date) async {
+    final d = PlanDateUtils.dateOnly(date);
+    final todayStr = d.toIso8601String().substring(0, 10);
+    final todayItems = <PlanItem>[];
+
+    // Standalone day plan
+    final standalonePlan = await _groupDao.getStandaloneDayPlan(d);
+    if (standalonePlan != null) {
+      final items = await _itemDao.getByDayPlanId(standalonePlan.id!);
+      standalonePlan.items = items;
+      todayItems.addAll(items);
+    }
+
+    // Full week plan
+    PlanGroup? weekPlan;
+    final weekPlans = await _groupDao.getWeekPlansForDate(d);
+    if (weekPlans.isNotEmpty) {
+      weekPlan = weekPlans.first;
+      final children = await _groupDao.getChildren(weekPlan.id!);
+      for (final child in children) {
+        final items = await _itemDao.getByDayPlanId(child.id!);
+        child.items = items;
+        if (child.startDate.toIso8601String().substring(0, 10) == todayStr) {
+          todayItems.addAll(items);
+        }
+      }
+      weekPlan.children = children;
+    }
+
+    // Full month plan
+    PlanGroup? monthPlan;
+    final monthPlans = await _groupDao.getMonthPlansForDate(d);
+    if (monthPlans.isNotEmpty) {
+      monthPlan = monthPlans.first;
+      final weeks = await _groupDao.getChildren(monthPlan.id!);
+      for (final week in weeks) {
+        final days = await _groupDao.getChildren(week.id!);
+        for (final day in days) {
+          final items = await _itemDao.getByDayPlanId(day.id!);
+          day.items = items;
+          if (day.startDate.toIso8601String().substring(0, 10) == todayStr) {
+            todayItems.addAll(items);
+          }
+        }
+        week.children = days;
+      }
+      monthPlan.children = weeks;
+    }
+
+    return AdjustmentSnapshot(
+      date: d,
+      todayItems: todayItems,
+      weekPlan: weekPlan,
+      monthPlan: monthPlan,
+    );
+  }
+
+  // ── Creation ────────────────────────────────
 
   Future<void> createDayPlan(DateTime date, List<PlanItemDraft> drafts) async {
     final now = DateTime.now();
     final d = PlanDateUtils.dateOnly(date);
     final dayId = await _groupDao.insert(PlanGroup(
-      type: PlanGroupType.day,
-      startDate: d,
-      endDate: d,
-      createdAt: now,
+      type: PlanGroupType.day, startDate: d, endDate: d, createdAt: now,
     ));
     await _itemDao.insertBatch(
         drafts.map((dr) => _draftToItem(dr, dayPlanId: dayId)).toList());
@@ -130,90 +174,78 @@ class PlanService extends ChangeNotifier {
     await loadDate(_selectedDate);
   }
 
-  /// Week plan starts from startDate (not from Monday — only future days)
-  Future<void> createWeekPlan(DateTime startDate, List<PlanItemDraft> drafts) async {
+  Future<void> createWeekPlan(DateTime startDate, List<PlanItemDraft> drafts,
+      {PlanSettings settings = const PlanSettings()}) async {
     final now = DateTime.now();
     final ws = PlanDateUtils.dateOnly(startDate);
     final we = PlanDateUtils.weekEnd(startDate);
 
     final weekId = await _groupDao.insert(PlanGroup(
-      type: PlanGroupType.week,
-      startDate: ws,
-      endDate: we,
-      createdAt: now,
+      type: PlanGroupType.week, startDate: ws, endDate: we, createdAt: now,
     ));
 
-    final days = PlanDateUtils.daysInRange(ws, we);
-    final distributed = PlanDateUtils.autoDistribute(drafts, days.length);
+    final allDays = PlanDateUtils.daysInRange(ws, we);
+    final activeDays = settings.filterDays(allDays);
+    final ordered = settings.sortDrafts(drafts);
+    final distributed = _distributeWithMax(ordered, activeDays.length, settings.maxPerDay);
 
-    for (var i = 0; i < days.length; i++) {
+    for (var i = 0; i < activeDays.length; i++) {
       if (distributed[i].isEmpty) continue;
       final dayId = await _groupDao.insert(PlanGroup(
-        type: PlanGroupType.day,
-        parentId: weekId,
-        startDate: days[i],
-        endDate: days[i],
-        createdAt: now,
+        type: PlanGroupType.day, parentId: weekId,
+        startDate: activeDays[i], endDate: activeDays[i], createdAt: now,
       ));
       await _itemDao.insertBatch(distributed[i]
           .map((d) => _draftToItem(d, dayPlanId: dayId, weekId: weekId))
           .toList());
-      _markedDates.add(days[i].toIso8601String().substring(0, 10));
+      _markedDates.add(activeDays[i].toIso8601String().substring(0, 10));
     }
-
     await loadDate(_selectedDate);
   }
 
-  Future<void> createMonthPlan(DateTime startDate, List<PlanItemDraft> drafts) async {
+  Future<void> createMonthPlan(DateTime startDate, List<PlanItemDraft> drafts,
+      {PlanSettings settings = const PlanSettings()}) async {
     final now = DateTime.now();
     final ms = PlanDateUtils.dateOnly(startDate);
     final me = PlanDateUtils.monthPlanEnd(startDate);
 
     final monthId = await _groupDao.insert(PlanGroup(
-      type: PlanGroupType.month,
-      startDate: ms,
-      endDate: me,
-      createdAt: now,
+      type: PlanGroupType.month, startDate: ms, endDate: me, createdAt: now,
     ));
 
     final weeks = PlanDateUtils.splitIntoWeeks(ms, me);
-    final byWeek = PlanDateUtils.autoDistribute(drafts, weeks.length);
+    final ordered = settings.sortDrafts(drafts);
+    final byWeek = PlanDateUtils.autoDistribute(ordered, weeks.length);
 
     for (var wi = 0; wi < weeks.length; wi++) {
       if (byWeek[wi].isEmpty) continue;
       final (ws, we) = weeks[wi];
       final weekId = await _groupDao.insert(PlanGroup(
-        type: PlanGroupType.week,
-        parentId: monthId,
-        startDate: ws,
-        endDate: we,
-        createdAt: now,
+        type: PlanGroupType.week, parentId: monthId,
+        startDate: ws, endDate: we, createdAt: now,
       ));
 
-      final days = PlanDateUtils.daysInRange(ws, we);
-      final byDay = PlanDateUtils.autoDistribute(byWeek[wi], days.length);
+      final allDays = PlanDateUtils.daysInRange(ws, we);
+      final activeDays = settings.filterDays(allDays);
+      final weekOrdered = settings.sortDrafts(byWeek[wi]);
+      final byDay = _distributeWithMax(weekOrdered, activeDays.length, settings.maxPerDay);
 
-      for (var di = 0; di < days.length; di++) {
+      for (var di = 0; di < activeDays.length; di++) {
         if (byDay[di].isEmpty) continue;
         final dayId = await _groupDao.insert(PlanGroup(
-          type: PlanGroupType.day,
-          parentId: weekId,
-          startDate: days[di],
-          endDate: days[di],
-          createdAt: now,
+          type: PlanGroupType.day, parentId: weekId,
+          startDate: activeDays[di], endDate: activeDays[di], createdAt: now,
         ));
         await _itemDao.insertBatch(byDay[di]
-            .map((d) => _draftToItem(d,
-                dayPlanId: dayId, weekId: weekId, monthId: monthId))
+            .map((d) => _draftToItem(d, dayPlanId: dayId, weekId: weekId, monthId: monthId))
             .toList());
-        _markedDates.add(days[di].toIso8601String().substring(0, 10));
+        _markedDates.add(activeDays[di].toIso8601String().substring(0, 10));
       }
     }
-
     await loadDate(_selectedDate);
   }
 
-  // ── Completion ────────────────────────────────
+  // ── Completion ───────────────────────────────
 
   Future<void> markItemComplete(int itemId) async {
     await _itemDao.markComplete(itemId);
@@ -225,64 +257,26 @@ class PlanService extends ChangeNotifier {
     await loadDate(_selectedDate);
   }
 
-  // ── Adjustment ────────────────────────────────
+  // ── Item-level adjustment ────────────────────
 
-  /// Returns a full snapshot of a date's plan state (for the adjustment screen).
-  Future<DayPlanSnapshot> getSnapshot(DateTime date) async {
-    final d = PlanDateUtils.dateOnly(date);
-
-    PlanGroup? standaloneDayPlan = await _groupDao.getStandaloneDayPlan(d);
-    if (standaloneDayPlan != null) {
-      final m = await _itemDao.getByDayPlanIds([standaloneDayPlan.id!]);
-      standaloneDayPlan.items = m[standaloneDayPlan.id] ?? [];
-    }
-
-    final weekPlans = await _groupDao.getWeekPlansForDate(d);
-    PlanGroup? weekPlan = weekPlans.isNotEmpty ? weekPlans.first : null;
-    PlanGroup? weekDayPlan;
-    if (weekPlan != null) {
-      weekDayPlan = await _groupDao.getChildDayPlan(weekPlan.id!, d);
-      if (weekDayPlan != null) {
-        final m = await _itemDao.getByDayPlanIds([weekDayPlan.id!]);
-        weekDayPlan.items = m[weekDayPlan.id] ?? [];
-      }
-    }
-
-    final monthPlans = await _groupDao.getMonthPlansForDate(d);
-    PlanGroup? monthPlan = monthPlans.isNotEmpty ? monthPlans.first : null;
-    PlanGroup? monthWeekPlan;
-    PlanGroup? monthDayPlan;
-    if (monthPlan != null) {
-      monthWeekPlan = await _groupDao.getChildWeekForDate(monthPlan.id!, d);
-      if (monthWeekPlan != null) {
-        monthDayPlan = await _groupDao.getChildDayPlan(monthWeekPlan.id!, d);
-        if (monthDayPlan != null) {
-          final m = await _itemDao.getByDayPlanIds([monthDayPlan.id!]);
-          monthDayPlan.items = m[monthDayPlan.id] ?? [];
-        }
-      }
-    }
-
-    return DayPlanSnapshot(
-      date: d,
-      standaloneDayPlan: standaloneDayPlan,
-      weekPlan: weekPlan,
-      weekDayPlan: weekDayPlan,
-      monthPlan: monthPlan,
-      monthWeekPlan: monthWeekPlan,
-      monthDayPlan: monthDayPlan,
-    );
-  }
-
-  /// Delete a single item (not mark complete).
   Future<void> deleteItem(int itemId) async {
     await _itemDao.delete(itemId);
     await loadDate(_selectedDate);
   }
 
-  /// Add drafts to a given level on a given date.
+  /// Add drafts to the best-fit container for the given date.
+  /// Month container takes priority, then week, then standalone day.
+  Future<String?> addToDay(DateTime date, List<PlanItemDraft> drafts) async {
+    final d = PlanDateUtils.dateOnly(date);
+    final monthPlans = await _groupDao.getMonthPlansForDate(d);
+    if (monthPlans.isNotEmpty) return addToLevel(date, PlanGroupType.month, drafts);
+    final weekPlans = await _groupDao.getWeekPlansForDate(d);
+    if (weekPlans.isNotEmpty) return addToLevel(date, PlanGroupType.week, drafts);
+    return addToLevel(date, PlanGroupType.day, drafts);
+  }
+
+  /// Add drafts to a specific plan level on a given date.
   /// Creates the plan hierarchy if needed.
-  /// Returns an error string on conflict, or null on success.
   Future<String?> addToLevel(
       DateTime date, PlanGroupType level, List<PlanItemDraft> drafts) async {
     if (drafts.isEmpty) return null;
@@ -297,10 +291,7 @@ class PlanService extends ChangeNotifier {
           dayId = dayPlan.id!;
         } else {
           dayId = await _groupDao.insert(PlanGroup(
-            type: PlanGroupType.day,
-            startDate: d,
-            endDate: d,
-            createdAt: now,
+            type: PlanGroupType.day, startDate: d, endDate: d, createdAt: now,
           ));
           _markedDates.add(d.toIso8601String().substring(0, 10));
         }
@@ -319,29 +310,22 @@ class PlanService extends ChangeNotifier {
             return '周计划重叠：该日期已在其他周计划范围内';
           }
           weekId = await _groupDao.insert(PlanGroup(
-            type: PlanGroupType.week,
-            startDate: ws,
-            endDate: we,
-            createdAt: now,
+            type: PlanGroupType.week, startDate: ws, endDate: we, createdAt: now,
           ));
         }
-        PlanGroup? weekDayPlan = await _groupDao.getChildDayPlan(weekId, d);
+        PlanGroup? weekDay = await _groupDao.getChildDayPlan(weekId, d);
         int dayId;
-        if (weekDayPlan != null) {
-          dayId = weekDayPlan.id!;
+        if (weekDay != null) {
+          dayId = weekDay.id!;
         } else {
           dayId = await _groupDao.insert(PlanGroup(
-            type: PlanGroupType.day,
-            parentId: weekId,
-            startDate: d,
-            endDate: d,
-            createdAt: now,
+            type: PlanGroupType.day, parentId: weekId,
+            startDate: d, endDate: d, createdAt: now,
           ));
           _markedDates.add(d.toIso8601String().substring(0, 10));
         }
-        await _itemDao.insertBatch(drafts
-            .map((dr) => _draftToItem(dr, dayPlanId: dayId, weekId: weekId))
-            .toList());
+        await _itemDao.insertBatch(
+            drafts.map((dr) => _draftToItem(dr, dayPlanId: dayId, weekId: weekId)).toList());
 
       case PlanGroupType.month:
         final monthPlans = await _groupDao.getMonthPlansForDate(d);
@@ -355,59 +339,46 @@ class PlanService extends ChangeNotifier {
             return '月份重叠：该日期范围已有月计划存在';
           }
           monthId = await _groupDao.insert(PlanGroup(
-            type: PlanGroupType.month,
-            startDate: ms,
-            endDate: me,
-            createdAt: now,
+            type: PlanGroupType.month, startDate: ms, endDate: me, createdAt: now,
           ));
         }
-        PlanGroup? monthWeekPlan =
-            await _groupDao.getChildWeekForDate(monthId, d);
+        PlanGroup? mWeek = await _groupDao.getChildWeekForDate(monthId, d);
         int weekId;
-        if (monthWeekPlan != null) {
-          weekId = monthWeekPlan.id!;
+        if (mWeek != null) {
+          weekId = mWeek.id!;
         } else {
-          final ws = PlanDateUtils.weekStart(d);
-          final we = PlanDateUtils.weekEnd(d);
           weekId = await _groupDao.insert(PlanGroup(
-            type: PlanGroupType.week,
-            parentId: monthId,
-            startDate: ws,
-            endDate: we,
+            type: PlanGroupType.week, parentId: monthId,
+            startDate: PlanDateUtils.weekStart(d),
+            endDate: PlanDateUtils.weekEnd(d),
             createdAt: now,
           ));
         }
-        PlanGroup? monthDayPlan = await _groupDao.getChildDayPlan(weekId, d);
+        PlanGroup? mDay = await _groupDao.getChildDayPlan(weekId, d);
         int dayId;
-        if (monthDayPlan != null) {
-          dayId = monthDayPlan.id!;
+        if (mDay != null) {
+          dayId = mDay.id!;
         } else {
           dayId = await _groupDao.insert(PlanGroup(
-            type: PlanGroupType.day,
-            parentId: weekId,
-            startDate: d,
-            endDate: d,
-            createdAt: now,
+            type: PlanGroupType.day, parentId: weekId,
+            startDate: d, endDate: d, createdAt: now,
           ));
           _markedDates.add(d.toIso8601String().substring(0, 10));
         }
-        await _itemDao.insertBatch(drafts
-            .map((dr) =>
-                _draftToItem(dr, dayPlanId: dayId, weekId: weekId, monthId: monthId))
-            .toList());
+        await _itemDao.insertBatch(
+            drafts.map((dr) => _draftToItem(dr, dayPlanId: dayId, weekId: weekId, monthId: monthId)).toList());
     }
 
     await loadDate(_selectedDate);
     return null;
   }
 
-  /// Move items to another date's day plan within the same plan context.
+  /// Move items to another date's day plan within the same container context.
   Future<void> moveItems(List<PlanItem> items, DateTime targetDate) async {
     if (items.isEmpty) return;
     final d = PlanDateUtils.dateOnly(targetDate);
     final now = DateTime.now();
     final first = items.first;
-
     int targetDayPlanId;
 
     if (first.originMonthPlanId != null) {
@@ -418,74 +389,148 @@ class PlanService extends ChangeNotifier {
         weekId = wg.id!;
       } else {
         weekId = await _groupDao.insert(PlanGroup(
-          type: PlanGroupType.week,
-          parentId: monthId,
-          startDate: PlanDateUtils.weekStart(d),
-          endDate: PlanDateUtils.weekEnd(d),
+          type: PlanGroupType.week, parentId: monthId,
+          startDate: PlanDateUtils.weekStart(d), endDate: PlanDateUtils.weekEnd(d),
           createdAt: now,
         ));
       }
       PlanGroup? dg = await _groupDao.getChildDayPlan(weekId, d);
-      if (dg != null) {
-        targetDayPlanId = dg.id!;
-      } else {
-        targetDayPlanId = await _groupDao.insert(PlanGroup(
-          type: PlanGroupType.day,
-          parentId: weekId,
-          startDate: d,
-          endDate: d,
-          createdAt: now,
-        ));
-        _markedDates.add(d.toIso8601String().substring(0, 10));
-      }
+      targetDayPlanId = dg?.id ?? await _groupDao.insert(PlanGroup(
+        type: PlanGroupType.day, parentId: weekId,
+        startDate: d, endDate: d, createdAt: now,
+      ));
     } else if (first.originWeekPlanId != null) {
       final weekId = first.originWeekPlanId!;
       PlanGroup? dg = await _groupDao.getChildDayPlan(weekId, d);
-      if (dg != null) {
-        targetDayPlanId = dg.id!;
-      } else {
-        targetDayPlanId = await _groupDao.insert(PlanGroup(
-          type: PlanGroupType.day,
-          parentId: weekId,
-          startDate: d,
-          endDate: d,
-          createdAt: now,
-        ));
-        _markedDates.add(d.toIso8601String().substring(0, 10));
-      }
+      targetDayPlanId = dg?.id ?? await _groupDao.insert(PlanGroup(
+        type: PlanGroupType.day, parentId: weekId,
+        startDate: d, endDate: d, createdAt: now,
+      ));
     } else {
       PlanGroup? dg = await _groupDao.getStandaloneDayPlan(d);
-      if (dg != null) {
-        targetDayPlanId = dg.id!;
-      } else {
-        targetDayPlanId = await _groupDao.insert(PlanGroup(
-          type: PlanGroupType.day,
-          startDate: d,
-          endDate: d,
-          createdAt: now,
-        ));
-        _markedDates.add(d.toIso8601String().substring(0, 10));
-      }
+      targetDayPlanId = dg?.id ?? await _groupDao.insert(PlanGroup(
+        type: PlanGroupType.day, startDate: d, endDate: d, createdAt: now,
+      ));
     }
 
-    await _itemDao.moveToDayPlan(
-        items.map((i) => i.id!).toList(), targetDayPlanId);
+    _markedDates.add(d.toIso8601String().substring(0, 10));
+    await _itemDao.moveToDayPlan(items.map((i) => i.id!).toList(), targetDayPlanId);
     await loadDate(_selectedDate);
   }
 
+  // ── Week-level adjustment ────────────────────
+
+  /// Move all items from sourceWeek into targetWeek, redistributing across days.
+  Future<void> moveWeekItems(int sourceWeekId, int targetWeekId,
+      {PlanSettings settings = const PlanSettings()}) async {
+    final now = DateTime.now();
+
+    // Collect source items as drafts
+    final sourceDays = await _groupDao.getChildren(sourceWeekId);
+    final sourceDrafts = <PlanItemDraft>[];
+    for (final day in sourceDays) {
+      final items = await _itemDao.getByDayPlanId(day.id!);
+      sourceDrafts.addAll(items.map(_itemToDraft));
+    }
+
+    // Collect target items as drafts
+    final targetDays = await _groupDao.getChildren(targetWeekId);
+    final targetDrafts = <PlanItemDraft>[];
+    for (final day in targetDays) {
+      final items = await _itemDao.getByDayPlanId(day.id!);
+      targetDrafts.addAll(items.map(_itemToDraft));
+    }
+
+    final allDrafts = [...sourceDrafts, ...targetDrafts];
+
+    // Delete source week group (cascade deletes its day plans + items)
+    await _groupDao.delete(sourceWeekId);
+
+    // Delete target week's existing day plans (will rebuild)
+    for (final day in targetDays) {
+      await _groupDao.delete(day.id!);
+    }
+
+    if (allDrafts.isEmpty) {
+      await loadDate(_selectedDate);
+      return;
+    }
+
+    // Get target week's date range
+    final targetWeek = await _groupDao.getById(targetWeekId);
+    if (targetWeek == null) {
+      await loadDate(_selectedDate);
+      return;
+    }
+    final monthId = targetWeek.parentId;
+
+    // Redistribute
+    final allDays = PlanDateUtils.daysInRange(targetWeek.startDate, targetWeek.endDate);
+    final activeDays = settings.filterDays(allDays);
+    final ordered = settings.sortDrafts(allDrafts);
+    final distributed = _distributeWithMax(ordered, activeDays.length, settings.maxPerDay);
+
+    for (var i = 0; i < activeDays.length; i++) {
+      if (distributed[i].isEmpty) continue;
+      final dayId = await _groupDao.insert(PlanGroup(
+        type: PlanGroupType.day, parentId: targetWeekId,
+        startDate: activeDays[i], endDate: activeDays[i], createdAt: now,
+      ));
+      await _itemDao.insertBatch(distributed[i]
+          .map((d) => _draftToItem(d, dayPlanId: dayId, weekId: targetWeekId, monthId: monthId))
+          .toList());
+      _markedDates.add(activeDays[i].toIso8601String().substring(0, 10));
+    }
+
+    await loadDate(_selectedDate);
+  }
+
+  /// Delete an entire week group and all its items.
+  Future<void> deleteWeekGroup(int weekId) async {
+    await _groupDao.delete(weekId);
+    await loadDate(_selectedDate);
+  }
+
+  // ── Overlap checks ───────────────────────────
+
   Future<bool> checkWeekOverlap(DateTime startDate) async {
-    final ws = PlanDateUtils.dateOnly(startDate);
-    final we = PlanDateUtils.weekEnd(startDate);
-    return _groupDao.hasOverlappingWeekPlan(ws, we);
+    return _groupDao.hasOverlappingWeekPlan(
+        PlanDateUtils.dateOnly(startDate), PlanDateUtils.weekEnd(startDate));
   }
 
   Future<bool> checkMonthOverlap(DateTime startDate) async {
-    final ms = PlanDateUtils.dateOnly(startDate);
-    final me = PlanDateUtils.monthPlanEnd(startDate);
-    return _groupDao.hasOverlappingMonthPlan(ms, me);
+    return _groupDao.hasOverlappingMonthPlan(
+        PlanDateUtils.dateOnly(startDate), PlanDateUtils.monthPlanEnd(startDate));
   }
 
-  // ── Internal ──────────────────────────────────
+  // ── Internal helpers ─────────────────────────
+
+  List<List<T>> _distributeWithMax<T>(List<T> items, int slots, int maxPerDay) {
+    if (slots == 0 || items.isEmpty) return List.generate(slots, (_) => []);
+    final result = List.generate(slots, (_) => <T>[]);
+    final effective = maxPerDay > 0 ? maxPerDay : items.length;
+    var idx = 0;
+    for (final item in items) {
+      // Find next slot with capacity
+      var tries = 0;
+      while (result[idx].length >= effective && tries < slots) {
+        idx = (idx + 1) % slots;
+        tries++;
+      }
+      result[idx].add(item);
+      idx = (idx + 1) % slots;
+    }
+    return result;
+  }
+
+  PlanItemDraft _itemToDraft(PlanItem item) => PlanItemDraft(
+        chapterId: item.chapterId,
+        chapterName: item.chapterName,
+        subjectName: item.subjectName,
+        subjectEmoji: item.subjectEmoji,
+        grade: item.grade,
+        knowledgePoint: item.knowledgePoint,
+      );
 
   PlanItem _draftToItem(PlanItemDraft d,
       {required int dayPlanId, int? weekId, int? monthId}) {

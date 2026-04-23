@@ -61,6 +61,12 @@ class PlanGroupDao {
     return rows.map(PlanGroup.fromMap).toList();
   }
 
+  Future<PlanGroup?> getById(int id) async {
+    final db = await _db.database;
+    final rows = await db.query('plan_groups', where: 'id = ?', whereArgs: [id]);
+    return rows.isEmpty ? null : PlanGroup.fromMap(rows.first);
+  }
+
   /// 某 parent_id 下的所有子计划
   Future<List<PlanGroup>> getChildren(int parentId) async {
     final db = await _db.database;

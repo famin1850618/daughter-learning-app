@@ -9,6 +9,8 @@ import 'screens/practice_screen.dart';
 import 'screens/review_screen.dart';
 import 'screens/reward_screen.dart';
 import 'services/plan_service.dart';
+import 'services/plan_settings_service.dart';
+import 'services/navigation_service.dart';
 import 'services/practice_service.dart';
 import 'database/question_dao.dart';
 import 'database/curriculum_dao.dart';
@@ -23,13 +25,10 @@ void main() async {
 }
 
 Future<void> _seedDatabase() async {
-  // 课程体系种子数据
   final curriculumDao = CurriculumDao();
   if (await curriculumDao.isEmpty()) {
     await curriculumDao.insertBatch(curriculumChapters);
   }
-
-  // 题库种子数据
   final questionDao = QuestionDao();
   final existing = await questionDao.getRandom(
     subject: grade6SeedQuestions.first.subject,
@@ -48,6 +47,8 @@ class LearningApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
+        ChangeNotifierProvider(create: (_) => NavigationService()),
+        ChangeNotifierProvider(create: (_) => PlanSettingsService()),
         ChangeNotifierProvider(create: (_) => PlanService()),
         ChangeNotifierProvider(create: (_) => PracticeService()),
       ],
@@ -62,15 +63,8 @@ class LearningApp extends StatelessWidget {
   }
 }
 
-class MainNavigation extends StatefulWidget {
+class MainNavigation extends StatelessWidget {
   const MainNavigation({super.key});
-
-  @override
-  State<MainNavigation> createState() => _MainNavigationState();
-}
-
-class _MainNavigationState extends State<MainNavigation> {
-  int _selectedIndex = 0;
 
   static const List<Widget> _screens = [
     HomeScreen(),
@@ -82,11 +76,12 @@ class _MainNavigationState extends State<MainNavigation> {
 
   @override
   Widget build(BuildContext context) {
+    final nav = context.watch<NavigationService>();
     return Scaffold(
-      body: IndexedStack(index: _selectedIndex, children: _screens),
+      body: IndexedStack(index: nav.index, children: _screens),
       bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _selectedIndex,
-        onTap: (i) => setState(() => _selectedIndex = i),
+        currentIndex: nav.index,
+        onTap: (i) => context.read<NavigationService>().goTo(i),
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: '首页'),
           BottomNavigationBarItem(icon: Icon(Icons.calendar_month), label: '计划'),
