@@ -261,6 +261,7 @@ class PlanService extends ChangeNotifier {
 
   Future<void> deleteItem(int itemId) async {
     await _itemDao.delete(itemId);
+    _markedDates = await _groupDao.getDatesWithPlans();
     await loadDate(_selectedDate);
   }
 
@@ -452,6 +453,7 @@ class PlanService extends ChangeNotifier {
     }
 
     if (allDrafts.isEmpty) {
+      _markedDates = await _groupDao.getDatesWithPlans();
       await loadDate(_selectedDate);
       return;
     }
@@ -459,6 +461,7 @@ class PlanService extends ChangeNotifier {
     // Get target week's date range
     final targetWeek = await _groupDao.getById(targetWeekId);
     if (targetWeek == null) {
+      _markedDates = await _groupDao.getDatesWithPlans();
       await loadDate(_selectedDate);
       return;
     }
@@ -479,15 +482,23 @@ class PlanService extends ChangeNotifier {
       await _itemDao.insertBatch(distributed[i]
           .map((d) => _draftToItem(d, dayPlanId: dayId, weekId: targetWeekId, monthId: monthId))
           .toList());
-      _markedDates.add(activeDays[i].toIso8601String().substring(0, 10));
     }
 
+    _markedDates = await _groupDao.getDatesWithPlans();
     await loadDate(_selectedDate);
   }
 
   /// Delete an entire week group and all its items.
   Future<void> deleteWeekGroup(int weekId) async {
     await _groupDao.delete(weekId);
+    _markedDates = await _groupDao.getDatesWithPlans();
+    await loadDate(_selectedDate);
+  }
+
+  /// Delete an entire month group and all its children (weeks + days + items).
+  Future<void> deleteMonthGroup(int monthId) async {
+    await _groupDao.delete(monthId);
+    _markedDates = await _groupDao.getDatesWithPlans();
     await loadDate(_selectedDate);
   }
 

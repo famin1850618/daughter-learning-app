@@ -17,7 +17,8 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 3,
+      version: 4,
+      onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
     );
@@ -78,6 +79,15 @@ class DatabaseHelper {
       await db.execute('CREATE INDEX IF NOT EXISTS idx_plan_groups_dates ON plan_groups (type, start_date, end_date)');
       await db.execute('CREATE INDEX IF NOT EXISTS idx_plan_items_day ON plan_items (day_plan_id)');
       await db.execute('CREATE INDEX IF NOT EXISTS idx_plan_items_chapter ON plan_items (chapter_id)');
+    }
+    if (oldVersion < 4) {
+      // v4: 清理之前因外键未启用导致的孤立记录
+      await db.execute(
+        'DELETE FROM plan_items WHERE day_plan_id NOT IN (SELECT id FROM plan_groups)',
+      );
+      await db.execute(
+        'DELETE FROM plan_groups WHERE parent_id IS NOT NULL AND parent_id NOT IN (SELECT id FROM plan_groups)',
+      );
     }
   }
 

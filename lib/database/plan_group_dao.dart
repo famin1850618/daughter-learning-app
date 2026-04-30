@@ -80,10 +80,11 @@ class PlanGroupDao {
   /// 获取所有有计划的日期（用于日历标记）
   Future<Set<String>> getDatesWithPlans() async {
     final db = await _db.database;
-    final rows = await db.query('plan_groups',
-        columns: ['start_date'],
-        where: 'type = ?',
-        whereArgs: [PlanGroupType.day.index]);
+    final rows = await db.rawQuery(
+      'SELECT DISTINCT pg.start_date FROM plan_groups pg '
+      'INNER JOIN plan_items pi ON pi.day_plan_id = pg.id '
+      'WHERE pg.type = ?',
+      [PlanGroupType.day.index]);
     return rows.map((r) => r['start_date'] as String).toSet();
   }
 
