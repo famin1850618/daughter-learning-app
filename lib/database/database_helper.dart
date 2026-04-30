@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 4,
+      version: 5,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
@@ -88,6 +88,10 @@ class DatabaseHelper {
       await db.execute(
         'DELETE FROM plan_groups WHERE parent_id IS NOT NULL AND parent_id NOT IN (SELECT id FROM plan_groups)',
       );
+    }
+    if (oldVersion < 5) {
+      // v5: 清空课程表，由 _seedDatabase 重新填充（对齐各教材实际章节）
+      await db.execute('DELETE FROM curriculum');
     }
   }
 
