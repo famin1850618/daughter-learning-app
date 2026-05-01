@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import '../utils/app_theme.dart';
 import '../models/plan_settings.dart';
 import '../services/plan_settings_service.dart';
+import 'curriculum_management_screen.dart';
 
 class PlanSettingsScreen extends StatefulWidget {
   const PlanSettingsScreen({super.key});
@@ -31,7 +32,7 @@ class _PlanSettingsScreenState extends State<PlanSettingsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('计划分配设置'),
+        title: const Text('设置'),
         actions: [
           TextButton(
             onPressed: _save,
@@ -42,6 +43,22 @@ class _PlanSettingsScreenState extends State<PlanSettingsScreen> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
+
+          // ── 课程知识库 ────────────────────────
+          Card(
+            child: ListTile(
+              leading: const Icon(Icons.menu_book, color: AppTheme.primary),
+              title: const Text('课程知识库'),
+              subtitle: const Text('管理各科目章节，支持增删和排序'),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (_) => const CurriculumManagementScreen()),
+              ),
+            ),
+          ),
+          const SizedBox(height: 16),
 
           // ── 分配到哪几天 ──────────────────────
           _SectionHeader(

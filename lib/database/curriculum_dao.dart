@@ -1,5 +1,6 @@
 import 'package:sqflite/sqflite.dart';
 import '../models/curriculum.dart';
+import 'curriculum_seed.dart';
 import 'database_helper.dart';
 
 class CurriculumDao {
@@ -67,5 +68,49 @@ class CurriculumDao {
     final db = await _db.database;
     final rows = await db.query('curriculum', where: 'id = ?', whereArgs: [id]);
     return rows.isEmpty ? null : Chapter.fromMap(rows.first);
+  }
+
+  Future<int> insertChapter(String subject, int grade, String chapterName) async {
+    final db = await _db.database;
+    final result = await db.rawQuery(
+      'SELECT MAX(order_index) AS m FROM curriculum WHERE subject = ? AND grade = ?',
+      [subject, grade],
+    );
+    final maxIdx = Sqflite.firstIntValue(result) ?? 0;
+    return db.insert('curriculum', {
+      'subject': subject,
+      'grade': grade,
+      'chapter_name': chapterName,
+      'order_index': maxIdx + 1,
+    });
+  }
+
+  Future<void> deleteChapter(int id) async {
+    final db = await _db.database;
+    await db.delete('curriculum', where: 'id = ?', whereArgs: [id]);
+  }
+
+  Future<void> updateOrder(List<Chapter> chapters) async {
+    final db = await _db.database;
+    final batch = db.batch();
+    for (int i = 0; i < chapters.length; i++) {
+      batch.update('curriculum', {'order_index': i + 1},
+          where: 'id = ?', whereArgs: [chapters[i].id]);
+    }
+    await batch.commit(noResult: true);
+  }
+
+  Future<void> resetToDefault(String subject, int grade) async {
+    final db = await _db.database;
+    await db.delete('curriculum',
+        where: 'subject = ? AND grade = ?', whereArgs: [subject, grade]);
+    final defaults = curriculumChapters
+        .where((c) => c.subject == subject && c.grade == grade)
+        .toList();
+    final batch = db.batch();
+    for (final c in defaults) {
+      batch.insert('curriculum', c.toMap());
+    }
+    await batch.commit(noResult: true);
   }
 }
