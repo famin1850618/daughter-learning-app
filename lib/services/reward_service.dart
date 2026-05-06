@@ -29,7 +29,7 @@ String _sourceFor(SessionKind k) {
   }
 }
 
-/// 一次 session 结算后返回的奖励明细（用于 UI 显示）
+/// 一次 session 结算后返回的奖励明细（用于 UI 显示 + 持久化恢复）
 class SessionRewardSummary {
   final double perQuestionStars; // score * 0.5
   final double bonusStars; // 通过/满分加成
@@ -46,6 +46,23 @@ class SessionRewardSummary {
   });
 
   double get total => perQuestionStars + bonusStars;
+
+  Map<String, dynamic> toJson() => {
+        'perQ': perQuestionStars,
+        'bonus': bonusStars,
+        'passed': passed,
+        'perfect': perfect,
+        'kind': kind.index,
+      };
+
+  factory SessionRewardSummary.fromJson(Map<String, dynamic> j) =>
+      SessionRewardSummary(
+        perQuestionStars: (j['perQ'] as num).toDouble(),
+        bonusStars: (j['bonus'] as num).toDouble(),
+        passed: j['passed'] as bool,
+        perfect: j['perfect'] as bool,
+        kind: SessionKind.values[j['kind'] as int],
+      );
 }
 
 class RewardService extends ChangeNotifier {

@@ -66,10 +66,18 @@ class LearningApp extends StatefulWidget {
 
 class _LearningAppState extends State<LearningApp> {
   final _updateService = QuestionUpdateService();
+  late final RewardService _rewardService;
+  late final PracticeService _practiceService;
+  late final AssessmentService _assessmentService;
 
   @override
   void initState() {
     super.initState();
+    _rewardService = RewardService()..refresh();
+    // 立即创建 PracticeService，触发 session 恢复
+    _practiceService = PracticeService(_rewardService);
+    _assessmentService = AssessmentService()..refresh();
+
     // 启动后异步触发一次更新检查（不阻塞 UI；离线静默失败）
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       if (_updateService.autoCheck) {
@@ -85,12 +93,9 @@ class _LearningAppState extends State<LearningApp> {
         ChangeNotifierProvider(create: (_) => NavigationService()),
         ChangeNotifierProvider(create: (_) => PlanSettingsService()),
         ChangeNotifierProvider(create: (_) => PlanService()),
-        ChangeNotifierProvider(create: (_) => RewardService()..refresh()),
-        ChangeNotifierProxyProvider<RewardService, PracticeService>(
-          create: (ctx) => PracticeService(ctx.read<RewardService>()),
-          update: (_, reward, prev) => prev ?? PracticeService(reward),
-        ),
-        ChangeNotifierProvider(create: (_) => AssessmentService()..refresh()),
+        ChangeNotifierProvider.value(value: _rewardService),
+        ChangeNotifierProvider.value(value: _practiceService),
+        ChangeNotifierProvider.value(value: _assessmentService),
         ChangeNotifierProvider.value(value: _updateService),
       ],
       child: MaterialApp(

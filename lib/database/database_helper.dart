@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 8,
+      version: 9,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
@@ -163,6 +163,24 @@ class DatabaseHelper {
       await db.execute(
           'CREATE INDEX IF NOT EXISTS idx_assessments_period ON assessments (type, period_key)');
     }
+    if (oldVersion < 9) {
+      // v9: 练习中断恢复（V3.7.1）
+      await db.execute('''
+        CREATE TABLE IF NOT EXISTS practice_sessions (
+          id INTEGER PRIMARY KEY,
+          questions_json TEXT,
+          current_index INTEGER,
+          score INTEGER,
+          kind INTEGER,
+          session_active INTEGER,
+          session_id TEXT,
+          hint_shown INTEGER,
+          reward_claimed INTEGER,
+          last_reward_json TEXT,
+          saved_at TEXT
+        )
+      ''');
+    }
   }
 
   Future<void> _createAllTables(Database db) async {
@@ -283,6 +301,22 @@ class DatabaseHelper {
         total INTEGER NOT NULL DEFAULT 0,
         taken_at TEXT,
         user_id TEXT DEFAULT 'local'
+      )
+    ''');
+
+    await db.execute('''
+      CREATE TABLE practice_sessions (
+        id INTEGER PRIMARY KEY,
+        questions_json TEXT,
+        current_index INTEGER,
+        score INTEGER,
+        kind INTEGER,
+        session_active INTEGER,
+        session_id TEXT,
+        hint_shown INTEGER,
+        reward_claimed INTEGER,
+        last_reward_json TEXT,
+        saved_at TEXT
       )
     ''');
 

@@ -26,6 +26,8 @@ class ReviewScreen extends StatefulWidget {
 class _ReviewScreenState extends State<ReviewScreen> {
   final _dao = QuestionDao();
   late Future<List<ReviewKpSummary>> _future;
+  PracticeService? _practiceListenerRef;
+  bool _wasSessionActive = false;
 
   @override
   void initState() {
@@ -34,6 +36,37 @@ class _ReviewScreenState extends State<ReviewScreen> {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       context.read<AssessmentService>().refresh();
     });
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // 监听 PracticeService：session 从 active 变 inactive 时自动刷新错题集
+    final p = context.read<PracticeService>();
+    if (_practiceListenerRef != p) {
+      _practiceListenerRef?.removeListener(_onPracticeChanged);
+      _practiceListenerRef = p;
+      p.addListener(_onPracticeChanged);
+      _wasSessionActive = p.sessionActive;
+    }
+  }
+
+  void _onPracticeChanged() {
+    final p = _practiceListenerRef;
+    if (p == null || !mounted) return;
+    final nowActive = p.sessionActive;
+    if (_wasSessionActive && !nowActive) {
+      // session 刚完成，刷新错题集 + 测评
+      setState(() => _future = _dao.getReviewKnowledgePoints());
+      context.read<AssessmentService>().refresh();
+    }
+    _wasSessionActive = nowActive;
+  }
+
+  @override
+  void dispose() {
+    _practiceListenerRef?.removeListener(_onPracticeChanged);
+    super.dispose();
   }
 
   void _refresh() {
