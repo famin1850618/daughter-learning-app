@@ -40,6 +40,14 @@ class AnswerMatcher {
         RegExp(r'([a-zA-Z])\*\1\*\1'), (m) => '${m[1]}^3');
     x = x.replaceAllMapped(
         RegExp(r'([a-zA-Z])\*\1'), (m) => '${m[1]}^2');
+
+    // 隐式乘法等价：* 周围至少一侧是字母或括号时去掉（保留纯数字间 *，避免 2*5 → 25）
+    // 用 lookbehind/lookaround，单遍可处理所有非重叠 *
+    // 字母/) + * + 字母/数字/(  → 去 *（含 r^2*h、(1/3)*pi、a*b、3x*y 等）
+    x = x.replaceAll(RegExp(r'(?<=[a-zA-Z\)])\*(?=[a-zA-Z0-9\(])'), '');
+    // 数字 + * + 字母/(  → 去 *（含 3*r、2*(...）
+    x = x.replaceAll(RegExp(r'(?<=\d)\*(?=[a-zA-Z\(])'), '');
+
     return x.toLowerCase();
   }
 
