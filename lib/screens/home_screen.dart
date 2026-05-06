@@ -6,6 +6,7 @@ import '../database/curriculum_dao.dart';
 import '../database/question_dao.dart';
 import '../services/plan_service.dart';
 import '../services/navigation_service.dart';
+import '../services/practice_service.dart';
 import 'chapter_detail_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -55,7 +56,7 @@ class _SubjectTab extends StatelessWidget {
   }
 }
 
-/// 首页摘要：薄弱知识点 Top3，点击跳到错题集
+/// 首页摘要：薄弱知识点 Top3，单条点击直接开练，"查看全部"跳错题集
 class _WeakKpSummary extends StatefulWidget {
   const _WeakKpSummary();
   @override
@@ -71,6 +72,19 @@ class _WeakKpSummaryState extends State<_WeakKpSummary> {
     _future = QuestionDao().getTopWeakKnowledgePoints(3);
   }
 
+  Future<void> _practiceKp(BuildContext context, String fullPath) async {
+    await context.read<PracticeService>().startKpReviewSession(fullPath);
+    if (!context.mounted) return;
+    final qs = context.read<PracticeService>().currentQuestions;
+    if (qs.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('该知识点的题练完了，等新题包')),
+      );
+      return;
+    }
+    context.read<NavigationService>().goTo(2);
+  }
+
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<List<ReviewKpSummary>>(
@@ -79,34 +93,37 @@ class _WeakKpSummaryState extends State<_WeakKpSummary> {
         final list = snapshot.data ?? [];
         if (list.isEmpty) return const SizedBox.shrink();
         return Card(
-          child: InkWell(
-            onTap: () => context.read<NavigationService>().goTo(3),
-            borderRadius: BorderRadius.circular(12),
-            child: Padding(
-              padding: const EdgeInsets.all(14),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      const Text('🎯', style: TextStyle(fontSize: 18)),
-                      const SizedBox(width: 6),
-                      const Text('薄弱知识点',
-                          style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
-                      const Spacer(),
-                      Text('查看全部 →',
+          child: Padding(
+            padding: const EdgeInsets.all(14),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    const Text('🎯', style: TextStyle(fontSize: 18)),
+                    const SizedBox(width: 6),
+                    const Text('薄弱知识点',
+                        style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
+                    const Spacer(),
+                    InkWell(
+                      onTap: () => context.read<NavigationService>().goTo(3),
+                      child: Text('查看全部 →',
                           style: TextStyle(fontSize: 12, color: AppTheme.primary)),
-                    ],
-                  ),
-                  const SizedBox(height: 8),
-                  ...list.map((s) {
-                    final emoji = s.totalErrors >= 6
-                        ? '🔴'
-                        : s.totalErrors >= 3
-                            ? '🟠'
-                            : '🟡';
-                    return Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 2),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 8),
+                ...list.map((s) {
+                  final emoji = s.totalErrors >= 6
+                      ? '🔴'
+                      : s.totalErrors >= 3
+                          ? '🟠'
+                          : '🟡';
+                  return InkWell(
+                    onTap: () => _practiceKp(context, s.fullPath),
+                    borderRadius: BorderRadius.circular(6),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 4),
                       child: Row(
                         children: [
                           Text(emoji, style: const TextStyle(fontSize: 14)),
@@ -120,12 +137,15 @@ class _WeakKpSummaryState extends State<_WeakKpSummary> {
                           ),
                           Text('${s.totalErrors} 次',
                               style: TextStyle(fontSize: 12, color: Colors.grey[600])),
+                          const SizedBox(width: 4),
+                          Icon(Icons.play_circle_outline,
+                              size: 18, color: AppTheme.primary),
                         ],
                       ),
-                    );
-                  }),
-                ],
-              ),
+                    ),
+                  );
+                }),
+              ],
             ),
           ),
         );

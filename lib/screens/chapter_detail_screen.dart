@@ -7,6 +7,7 @@ import '../database/curriculum_dao.dart';
 import '../database/plan_item_dao.dart';
 import '../models/plan_group.dart';
 import '../services/practice_service.dart';
+import '../services/navigation_service.dart';
 
 class ChapterDetailScreen extends StatefulWidget {
   final Subject subject;
@@ -144,13 +145,22 @@ class _ChapterTileState extends State<_ChapterTile> {
     );
   }
 
-  void _startPractice(BuildContext context) {
-    context.read<PracticeService>().startSession(
+  Future<void> _startPractice(BuildContext context) async {
+    await context.read<PracticeService>().startSession(
       subject: widget.subject,
       grade: widget.chapter.grade,
       chapter: widget.chapter.chapterName,
       count: 10,
     );
+    if (!context.mounted) return;
+    final qs = context.read<PracticeService>().currentQuestions;
+    if (qs.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('该章节暂无题，等新题包')),
+      );
+      return;
+    }
+    context.read<NavigationService>().goTo(2);
     Navigator.of(context).popUntil((r) => r.isFirst);
   }
 }

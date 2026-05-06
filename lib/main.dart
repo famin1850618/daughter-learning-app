@@ -14,6 +14,8 @@ import 'services/plan_settings_service.dart';
 import 'services/navigation_service.dart';
 import 'services/practice_service.dart';
 import 'services/question_update_service.dart';
+import 'services/reward_service.dart';
+import 'services/assessment_service.dart';
 import 'database/curriculum_dao.dart';
 import 'database/curriculum_seed.dart';
 import 'database/knowledge_point_dao.dart';
@@ -83,7 +85,12 @@ class _LearningAppState extends State<LearningApp> {
         ChangeNotifierProvider(create: (_) => NavigationService()),
         ChangeNotifierProvider(create: (_) => PlanSettingsService()),
         ChangeNotifierProvider(create: (_) => PlanService()),
-        ChangeNotifierProvider(create: (_) => PracticeService()),
+        ChangeNotifierProvider(create: (_) => RewardService()..refresh()),
+        ChangeNotifierProxyProvider<RewardService, PracticeService>(
+          create: (ctx) => PracticeService(ctx.read<RewardService>()),
+          update: (_, reward, prev) => prev ?? PracticeService(reward),
+        ),
+        ChangeNotifierProvider(create: (_) => AssessmentService()..refresh()),
         ChangeNotifierProvider.value(value: _updateService),
       ],
       child: MaterialApp(

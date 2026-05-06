@@ -2,9 +2,13 @@ import 'package:flutter/foundation.dart';
 import '../models/question.dart';
 import '../models/subject.dart';
 import '../database/question_dao.dart';
+import 'reward_service.dart';
 
 class PracticeService extends ChangeNotifier {
   final QuestionDao _dao = QuestionDao();
+  final RewardService _rewardService;
+
+  PracticeService(this._rewardService);
 
   List<Question> _currentQuestions = [];
   int _currentIndex = 0;
@@ -13,11 +17,18 @@ class PracticeService extends ChangeNotifier {
   bool _hintShown = false;
   DateTime? _questionStartTime;
 
+  SessionKind _kind = SessionKind.normal;
+  String? _sessionId;
+  bool _rewardClaimed = false;
+  SessionRewardSummary? _lastReward;
+
   List<Question> get currentQuestions => _currentQuestions;
   int get currentIndex => _currentIndex;
   int get score => _score;
   bool get sessionActive => _sessionActive;
   bool get hintShown => _hintShown;
+  SessionKind get kind => _kind;
+  SessionRewardSummary? get lastReward => _lastReward;
   Question? get currentQuestion =>
       _currentIndex < _currentQuestions.length ? _currentQuestions[_currentIndex] : null;
 
@@ -40,17 +51,21 @@ class PracticeService extends ChangeNotifier {
       difficulty: difficulty,
       limit: count,
     );
+    _kind = SessionKind.normal;
+    _sessionId = null;
     _resetSessionState();
   }
 
   /// 单 KP 举一反三：抽该 KP 同难度未做过的题；难度按"该 KP 最近一次错过的题"
-  Future<void> startKpReviewSession(String kpPath, {int count = 5}) async {
+  Future<void> startKpReviewSession(String kpPath, {int count = 10}) async {
     final difficulty = await _dao.getMostRecentErrorDifficulty(kpPath) ?? Difficulty.medium;
     _currentQuestions = await _dao.getQuestionsForKnowledgePoint(
       kpPath: kpPath,
       difficulty: difficulty,
       limit: count,
     );
+    _kind = SessionKind.normal;
+    _sessionId = null;
     _resetSessionState();
   }
 
@@ -70,6 +85,20 @@ class PracticeService extends ChangeNotifier {
       result.addAll(qs);
     }
     _currentQuestions = result.take(totalLimit).toList();
+    _kind = SessionKind.normal;
+    _sessionId = null;
+    _resetSessionState();
+  }
+
+  /// 周/月测评 session：题目由 AssessmentService 准备好后注入
+  void startAssessmentSession({
+    required List<Question> questions,
+    required SessionKind kind,
+    required String periodKey,
+  }) {
+    _currentQuestions = questions;
+    _kind = kind;
+    _sessionId = '${kind.name}:$periodKey';
     _resetSessionState();
   }
 
@@ -79,6 +108,8 @@ class PracticeService extends ChangeNotifier {
     _sessionActive = _currentQuestions.isNotEmpty;
     _hintShown = false;
     _questionStartTime = DateTime.now();
+    _rewardClaimed = false;
+    _lastReward = null;
     notifyListeners();
   }
 
@@ -115,8 +146,33 @@ class PracticeService extends ChangeNotifier {
       notifyListeners();
     } else {
       _sessionActive = false;
+      _claimRewardIfNeeded();
       notifyListeners();
     }
+  }
+
+  Future<void> _claimRewardIfNeeded() async {
+    if (_rewardClaimed) return;
+    if (_currentQuestions.isEmpty) return;
+    // 测评类型由 _ResultScreen 调用 AssessmentService.submitResult 统一发奖（避免重复）
+    if (_kind != SessionKind.normal) {
+      _rewardClaimed = true;
+      return;
+    }
+    _rewardClaimed = true;
+    _lastReward = await _rewardService.recordSession(
+      kind: _kind,
+      score: _score,
+      total: _currentQuestions.length,
+      sessionId: _sessionId,
+    );
+    notifyListeners();
+  }
+
+  /// 测评结果由外部（_ResultScreen 调 AssessmentService）回填
+  void setLastReward(SessionRewardSummary summary) {
+    _lastReward = summary;
+    notifyListeners();
   }
 
   void endSession() {
@@ -124,6 +180,10 @@ class PracticeService extends ChangeNotifier {
     _currentQuestions = [];
     _currentIndex = 0;
     _score = 0;
+    _kind = SessionKind.normal;
+    _sessionId = null;
+    _rewardClaimed = false;
+    _lastReward = null;
     notifyListeners();
   }
 }

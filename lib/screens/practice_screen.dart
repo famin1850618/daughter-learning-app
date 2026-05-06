@@ -8,6 +8,9 @@ import '../models/curriculum.dart';
 import '../database/curriculum_dao.dart';
 import '../database/question_dao.dart';
 import '../services/practice_service.dart';
+import '../services/reward_service.dart';
+import '../services/assessment_service.dart';
+import '../models/assessment.dart';
 
 // ── 入口：根据会话状态路由 ─────────────────────────────
 class PracticeScreen extends StatelessWidget {
@@ -23,6 +26,8 @@ class PracticeScreen extends StatelessWidget {
               score: service.score,
               total: service.currentQuestions.length,
               questions: service.currentQuestions,
+              reward: service.lastReward,
+              kind: service.kind,
             );
     }
     if (service.currentQuestion == null) {
@@ -30,6 +35,8 @@ class PracticeScreen extends StatelessWidget {
         score: service.score,
         total: service.currentQuestions.length,
         questions: service.currentQuestions,
+        reward: service.lastReward,
+        kind: service.kind,
       );
     }
     return _QuestionScreen(question: service.currentQuestion!);
@@ -538,11 +545,78 @@ class _QuestionScreenState extends State<_QuestionScreen> {
 }
 
 // ── 结果界面 ──────────────────────────────────────────
-class _ResultScreen extends StatelessWidget {
+class _ResultScreen extends StatefulWidget {
   final int score;
   final int total;
   final List<Question> questions;
-  const _ResultScreen({required this.score, required this.total, required this.questions});
+  final SessionRewardSummary? reward;
+  final SessionKind kind;
+  const _ResultScreen({
+    required this.score,
+    required this.total,
+    required this.questions,
+    required this.reward,
+    required this.kind,
+  });
+
+  @override
+  State<_ResultScreen> createState() => _ResultScreenState();
+}
+
+class _ResultScreenState extends State<_ResultScreen> {
+  bool _submitting = false;
+
+  @override
+  void initState() {
+    super.initState();
+    // 测评类型：在结果界面提交结果（写 assessments 表 + 发奖）
+    if (widget.kind != SessionKind.normal && widget.reward == null) {
+      _submitAssessment();
+    }
+  }
+
+  Future<void> _submitAssessment() async {
+    if (_submitting) return;
+    setState(() => _submitting = true);
+    final type = widget.kind == SessionKind.weeklyTest
+        ? AssessmentType.weekly
+        : AssessmentType.monthly;
+    final svc = context.read<AssessmentService>();
+    final reward = context.read<RewardService>();
+    final practice = context.read<PracticeService>();
+    final snap = type == AssessmentType.weekly ? svc.weekly : svc.monthly;
+    if (snap == null) {
+      setState(() => _submitting = false);
+      return;
+    }
+    final summary = await svc.submitResult(
+      type: type,
+      periodKey: snap.periodKey,
+      score: widget.score,
+      total: widget.total,
+      rewardService: reward,
+    );
+    if (summary != null) {
+      practice.setLastReward(summary);
+    }
+    if (mounted) setState(() => _submitting = false);
+  }
+
+  String _kindLabel() {
+    switch (widget.kind) {
+      case SessionKind.weeklyTest:
+        return '周测';
+      case SessionKind.monthlyTest:
+        return '月测';
+      case SessionKind.normal:
+        return '练习';
+    }
+  }
+
+  int get score => widget.score;
+  int get total => widget.total;
+  SessionRewardSummary? get reward =>
+      context.watch<PracticeService>().lastReward ?? widget.reward;
 
   @override
   Widget build(BuildContext context) {
@@ -550,7 +624,7 @@ class _ResultScreen extends StatelessWidget {
     final emoji = pct >= 90 ? '🏆' : pct >= 70 ? '🎉' : pct >= 50 ? '😊' : '💪';
 
     return Scaffold(
-      appBar: AppBar(title: const Text('练习完成')),
+      appBar: AppBar(title: Text('${_kindLabel()}完成')),
       body: ListView(
         padding: const EdgeInsets.all(20),
         children: [
@@ -564,7 +638,15 @@ class _ResultScreen extends StatelessWidget {
                   style: const TextStyle(fontSize: 18, color: Colors.grey)),
             ]),
           ),
-          const SizedBox(height: 24),
+          const SizedBox(height: 20),
+          if (reward != null)
+            _RewardSummaryCard(reward: reward!)
+          else if (_submitting)
+            const Padding(
+              padding: EdgeInsets.symmetric(vertical: 12),
+              child: Center(child: CircularProgressIndicator()),
+            ),
+          const SizedBox(height: 16),
           Row(children: [
             Expanded(
               child: ElevatedButton.icon(
@@ -589,6 +671,77 @@ class _ResultScreen extends StatelessWidget {
                 },
               ),
             ),
+          ]),
+        ],
+      ),
+    );
+  }
+}
+
+class _RewardSummaryCard extends StatelessWidget {
+  final SessionRewardSummary reward;
+  const _RewardSummaryCard({required this.reward});
+
+  String _fmt(double s) =>
+      s == s.toInt() ? s.toInt().toString() : s.toStringAsFixed(1);
+
+  @override
+  Widget build(BuildContext context) {
+    final headline = reward.perfect
+        ? '满分通关！'
+        : reward.passed
+            ? '通过 🎯'
+            : '继续加油，未达 85%';
+    final color = reward.perfect
+        ? Colors.amber.shade700
+        : reward.passed
+            ? AppTheme.success
+            : Colors.grey.shade600;
+
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: color.withOpacity(0.08),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: color.withOpacity(0.4)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(children: [
+            Icon(reward.perfect ? Icons.workspace_premium : Icons.star,
+                color: color, size: 22),
+            const SizedBox(width: 6),
+            Text(headline,
+                style: TextStyle(
+                    color: color, fontSize: 16, fontWeight: FontWeight.bold)),
+          ]),
+          const SizedBox(height: 10),
+          Row(children: [
+            const Text('答题获星',
+                style: TextStyle(color: Colors.grey, fontSize: 13)),
+            const Spacer(),
+            Text('${_fmt(reward.perQuestionStars)} ⭐',
+                style: const TextStyle(fontSize: 14)),
+          ]),
+          if (reward.bonusStars > 0) ...[
+            const SizedBox(height: 4),
+            Row(children: [
+              Text(reward.perfect ? '满分加成' : '通过加成',
+                  style: const TextStyle(color: Colors.grey, fontSize: 13)),
+              const Spacer(),
+              Text('+${_fmt(reward.bonusStars)} ⭐',
+                  style: TextStyle(fontSize: 14, color: color, fontWeight: FontWeight.w600)),
+            ]),
+          ],
+          const Divider(),
+          Row(children: [
+            const Text('本次合计',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
+            const Spacer(),
+            Text('${_fmt(reward.total)} ⭐',
+                style: TextStyle(
+                    fontSize: 18, fontWeight: FontWeight.bold, color: color)),
           ]),
         ],
       ),

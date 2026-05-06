@@ -62,6 +62,26 @@ class PlanItemDao {
     return rows.map(PlanItem.fromMap).toList();
   }
 
+  Future<List<PlanItem>> getByOriginWeekPlan(int weekPlanId) async {
+    final db = await _db.database;
+    final rows = await db.query('plan_items',
+        where: 'origin_week_plan_id = ?', whereArgs: [weekPlanId]);
+    return rows.map(PlanItem.fromMap).toList();
+  }
+
+  /// 日期范围内所有 plan_items（fallback：当 origin 字段未挂时用日期）
+  Future<List<PlanItem>> getInDateRange(DateTime start, DateTime end) async {
+    final db = await _db.database;
+    final s = start.toIso8601String().substring(0, 10);
+    final e = end.toIso8601String().substring(0, 10);
+    final rows = await db.rawQuery('''
+      SELECT pi.* FROM plan_items pi
+      JOIN plan_groups pg ON pg.id = pi.day_plan_id
+      WHERE pg.type = 0 AND pg.start_date >= ? AND pg.start_date <= ?
+    ''', [s, e]);
+    return rows.map(PlanItem.fromMap).toList();
+  }
+
   Future<void> delete(int id) async {
     final db = await _db.database;
     await db.delete('plan_items', where: 'id = ?', whereArgs: [id]);

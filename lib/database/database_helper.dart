@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 7,
+      version: 8,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
@@ -130,6 +130,39 @@ class DatabaseHelper {
         }
       }
     }
+    if (oldVersion < 8) {
+      // v8: V3.7 奖励系统 + 周月测评（仅 ADD/CREATE）
+      await db.execute('''
+        CREATE TABLE IF NOT EXISTS rewards (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          source TEXT NOT NULL,
+          stars REAL NOT NULL,
+          earned_at TEXT NOT NULL,
+          session_id TEXT,
+          note TEXT,
+          user_id TEXT DEFAULT 'local'
+        )
+      ''');
+      await db.execute(
+          'CREATE INDEX IF NOT EXISTS idx_rewards_earned_at ON rewards (earned_at)');
+      await db.execute(
+          'CREATE INDEX IF NOT EXISTS idx_rewards_source ON rewards (source)');
+
+      await db.execute('''
+        CREATE TABLE IF NOT EXISTS assessments (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          type INTEGER NOT NULL,
+          period_key TEXT NOT NULL,
+          status INTEGER NOT NULL DEFAULT 0,
+          score INTEGER NOT NULL DEFAULT 0,
+          total INTEGER NOT NULL DEFAULT 0,
+          taken_at TEXT,
+          user_id TEXT DEFAULT 'local'
+        )
+      ''');
+      await db.execute(
+          'CREATE INDEX IF NOT EXISTS idx_assessments_period ON assessments (type, period_key)');
+    }
   }
 
   Future<void> _createAllTables(Database db) async {
@@ -228,6 +261,34 @@ class DatabaseHelper {
       )
     ''');
 
+    await db.execute('''
+      CREATE TABLE rewards (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        source TEXT NOT NULL,
+        stars REAL NOT NULL,
+        earned_at TEXT NOT NULL,
+        session_id TEXT,
+        note TEXT,
+        user_id TEXT DEFAULT 'local'
+      )
+    ''');
+
+    await db.execute('''
+      CREATE TABLE assessments (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        type INTEGER NOT NULL,
+        period_key TEXT NOT NULL,
+        status INTEGER NOT NULL DEFAULT 0,
+        score INTEGER NOT NULL DEFAULT 0,
+        total INTEGER NOT NULL DEFAULT 0,
+        taken_at TEXT,
+        user_id TEXT DEFAULT 'local'
+      )
+    ''');
+
+    await db.execute('CREATE INDEX idx_rewards_earned_at ON rewards (earned_at)');
+    await db.execute('CREATE INDEX idx_rewards_source ON rewards (source)');
+    await db.execute('CREATE INDEX idx_assessments_period ON assessments (type, period_key)');
     await db.execute('CREATE INDEX idx_curriculum_subject_grade ON curriculum (subject, grade)');
     await db.execute('CREATE INDEX idx_plan_groups_dates ON plan_groups (type, start_date, end_date)');
     await db.execute('CREATE INDEX idx_plan_items_day ON plan_items (day_plan_id)');

@@ -19,9 +19,11 @@ class DataBackupService {
     'plan_groups',
     'plan_items',
     'curriculum',
+    'rewards',
+    'assessments',
   ];
 
-  static const _backupVersion = 1;
+  static const _backupVersion = 2;
 
   Future<String> buildBackupJson() async {
     final db = await DatabaseHelper().database;
@@ -32,7 +34,7 @@ class DataBackupService {
     }
     final payload = {
       'backup_version': _backupVersion,
-      'app_version': 'V3.6',
+      'app_version': 'V3.7',
       'created_at': DateTime.now().toIso8601String(),
       'tables': tables,
     };

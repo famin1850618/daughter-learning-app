@@ -226,6 +226,157 @@ class QuestionDao {
     ];
   }
 
+  /// 测评抽题：按 unit (chapter ± KP) + difficulty 抽题，可排除指定 id 列表（"原错题"）
+  /// 不足时降级：先放宽难度，再放宽 KP（保留 chapter）
+  Future<List<Question>> getQuestionsForAssessmentUnit({
+    required String subjectName,
+    required int grade,
+    required String chapterName,
+    String? knowledgePoint,
+    Difficulty? difficulty,
+    required List<int> excludeIds,
+    required int limit,
+  }) async {
+    if (limit <= 0) return [];
+    final db = await _db.database;
+    final excludeClause = excludeIds.isEmpty
+        ? ''
+        : ' AND id NOT IN (${List.filled(excludeIds.length, '?').join(',')})';
+
+    // subject 是 INTEGER，需要转 index：通过 subject_name 查询时回退用 chapter 唯一性
+    // 这里直接按 chapter + grade 查（chapter 名在某 grade 下唯一性已假定）
+    Future<List<Question>> q1(String where, List<dynamic> args, int n) async {
+      final maps = await db.query(
+        'questions',
+        where: where + excludeClause,
+        whereArgs: [...args, ...excludeIds],
+        orderBy: 'RANDOM()',
+        limit: n,
+      );
+      return maps.map(Question.fromMap).toList();
+    }
+
+    final got = <Question>[];
+    final seen = <int>{...excludeIds};
+
+    // Tier 1: chapter + grade + KP + difficulty
+    if (knowledgePoint != null) {
+      String where = 'chapter = ? AND grade = ? AND knowledge_point = ?';
+      List<dynamic> a = [chapterName, grade, knowledgePoint];
+      if (difficulty != null) {
+        where += ' AND difficulty = ?';
+        a.add(difficulty.index);
+      }
+      final qs = await q1(where, a, limit - got.length);
+      for (final q in qs) {
+        if (q.id != null && !seen.contains(q.id)) {
+          got.add(q);
+          seen.add(q.id!);
+        }
+      }
+    }
+
+    // Tier 2: chapter + grade（放宽 KP，只要 chapter）+ difficulty
+    if (got.length < limit) {
+      String where = 'chapter = ? AND grade = ?';
+      List<dynamic> a = [chapterName, grade];
+      if (difficulty != null) {
+        where += ' AND difficulty = ?';
+        a.add(difficulty.index);
+      }
+      final excludeNow = seen.toList();
+      final excludeClauseNow = excludeNow.isEmpty
+          ? ''
+          : ' AND id NOT IN (${List.filled(excludeNow.length, '?').join(',')})';
+      final maps = await db.query('questions',
+          where: where + excludeClauseNow,
+          whereArgs: [...a, ...excludeNow],
+          orderBy: 'RANDOM()',
+          limit: limit - got.length);
+      for (final m in maps) {
+        final q = Question.fromMap(m);
+        if (q.id != null && !seen.contains(q.id)) {
+          got.add(q);
+          seen.add(q.id!);
+        }
+      }
+    }
+
+    // Tier 3: chapter + grade（放弃难度限制）
+    if (got.length < limit) {
+      String where = 'chapter = ? AND grade = ?';
+      List<dynamic> a = [chapterName, grade];
+      final excludeNow = seen.toList();
+      final excludeClauseNow = excludeNow.isEmpty
+          ? ''
+          : ' AND id NOT IN (${List.filled(excludeNow.length, '?').join(',')})';
+      final maps = await db.query('questions',
+          where: where + excludeClauseNow,
+          whereArgs: [...a, ...excludeNow],
+          orderBy: 'RANDOM()',
+          limit: limit - got.length);
+      for (final m in maps) {
+        final q = Question.fromMap(m);
+        if (q.id != null && !seen.contains(q.id)) {
+          got.add(q);
+          seen.add(q.id!);
+        }
+      }
+    }
+
+    return got;
+  }
+
+  /// 一段时间内对某 chapter（可选 KP）做错的 question_id 集合
+  Future<List<int>> getWrongQuestionIdsInRange({
+    required DateTime start,
+    required DateTime end,
+    required String chapterName,
+    String? knowledgePoint,
+  }) async {
+    final db = await _db.database;
+    final s = start.toIso8601String();
+    final e = end.toIso8601String();
+    String where = 'r.is_correct = 0 AND q.chapter = ? AND r.practiced_at >= ? AND r.practiced_at <= ?';
+    final args = <dynamic>[chapterName, s, e];
+    if (knowledgePoint != null) {
+      where += ' AND q.knowledge_point = ?';
+      args.add(knowledgePoint);
+    }
+    final rows = await db.rawQuery('''
+      SELECT DISTINCT q.id AS qid
+      FROM practice_records r
+      JOIN questions q ON q.id = r.question_id
+      WHERE $where
+    ''', args);
+    return rows.map((r) => r['qid'] as int).toList();
+  }
+
+  /// 一段时间内 unit 维度的累计错次（用于错题加权）
+  Future<int> countWrongInRange({
+    required DateTime start,
+    required DateTime end,
+    required String chapterName,
+    String? knowledgePoint,
+  }) async {
+    final db = await _db.database;
+    final s = start.toIso8601String();
+    final e = end.toIso8601String();
+    String where = 'r.is_correct = 0 AND q.chapter = ? AND r.practiced_at >= ? AND r.practiced_at <= ?';
+    final args = <dynamic>[chapterName, s, e];
+    if (knowledgePoint != null) {
+      where += ' AND q.knowledge_point = ?';
+      args.add(knowledgePoint);
+    }
+    final rows = await db.rawQuery('''
+      SELECT COUNT(*) AS c
+      FROM practice_records r
+      JOIN questions q ON q.id = r.question_id
+      WHERE $where
+    ''', args);
+    return (rows.first['c'] as int?) ?? 0;
+  }
+
   /// 找出某 KP 最近一次错过题的难度（举一反三抽题时用作"同难度"基准）
   Future<Difficulty?> getMostRecentErrorDifficulty(String kpPath) async {
     final db = await _db.database;

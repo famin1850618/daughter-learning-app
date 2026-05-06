@@ -4,9 +4,12 @@ import 'package:intl/intl.dart';
 
 import '../utils/app_theme.dart';
 import '../models/question.dart';
+import '../models/assessment.dart';
 import '../database/question_dao.dart';
 import '../services/practice_service.dart';
 import '../services/navigation_service.dart';
+import '../services/assessment_service.dart';
+import '../services/reward_service.dart';
 
 /// 错题集（按 KP 聚类）
 ///
@@ -28,17 +31,22 @@ class _ReviewScreenState extends State<ReviewScreen> {
   void initState() {
     super.initState();
     _future = _dao.getReviewKnowledgePoints();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      context.read<AssessmentService>().refresh();
+    });
   }
 
   void _refresh() {
     setState(() => _future = _dao.getReviewKnowledgePoints());
+    context.read<AssessmentService>().refresh();
   }
 
   @override
   Widget build(BuildContext context) {
+    final assessment = context.watch<AssessmentService>();
     return Scaffold(
       appBar: AppBar(
-        title: const Text('错题集'),
+        title: const Text('成效'),
         actions: [
           IconButton(
             icon: const Icon(Icons.refresh),
@@ -54,22 +62,6 @@ class _ReviewScreenState extends State<ReviewScreen> {
             return const Center(child: CircularProgressIndicator());
           }
           final list = snapshot.data ?? [];
-          if (list.isEmpty) {
-            return const Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text('🎉', style: TextStyle(fontSize: 56)),
-                  SizedBox(height: 12),
-                  Text('暂无待掌握知识点',
-                      style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                  SizedBox(height: 4),
-                  Text('继续保持！',
-                      style: TextStyle(color: Colors.grey, fontSize: 13)),
-                ],
-              ),
-            );
-          }
 
           // 按 category 分组
           final grouped = <String, List<ReviewKpSummary>>{};
@@ -80,6 +72,33 @@ class _ReviewScreenState extends State<ReviewScreen> {
           return ListView(
             padding: const EdgeInsets.all(12),
             children: [
+              if (assessment.weekly != null)
+                _AssessmentCard(snapshot: assessment.weekly!),
+              if (assessment.monthly != null)
+                _AssessmentCard(snapshot: assessment.monthly!),
+              if (assessment.weekly != null || assessment.monthly != null)
+                const Padding(
+                  padding: EdgeInsets.fromLTRB(4, 16, 4, 6),
+                  child: Text('错题集',
+                      style: TextStyle(
+                          fontSize: 13,
+                          color: Colors.grey,
+                          fontWeight: FontWeight.w600)),
+                ),
+              if (list.isEmpty)
+                const Padding(
+                  padding: EdgeInsets.all(20),
+                  child: Center(
+                    child: Column(
+                      children: [
+                        Text('🎉', style: TextStyle(fontSize: 48)),
+                        SizedBox(height: 8),
+                        Text('暂无待掌握知识点',
+                            style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
+                      ],
+                    ),
+                  ),
+                ),
               for (final entry in grouped.entries) ...[
                 Padding(
                   padding: const EdgeInsets.fromLTRB(4, 12, 4, 6),
@@ -97,6 +116,143 @@ class _ReviewScreenState extends State<ReviewScreen> {
             ],
           );
         },
+      ),
+    );
+  }
+}
+
+/// 周/月测评卡片
+class _AssessmentCard extends StatelessWidget {
+  final AssessmentSnapshot snapshot;
+  const _AssessmentCard({required this.snapshot});
+
+  String get _typeLabel =>
+      snapshot.type == AssessmentType.weekly ? '周测' : '月测';
+
+  IconData get _typeIcon => snapshot.type == AssessmentType.weekly
+      ? Icons.calendar_view_week
+      : Icons.calendar_month;
+
+  ({Color color, String label, IconData icon}) get _statusStyle {
+    switch (snapshot.status) {
+      case AssessmentStatus.locked:
+        return (
+          color: Colors.grey.shade500,
+          label: '计划完成后解锁',
+          icon: Icons.lock_outline,
+        );
+      case AssessmentStatus.available:
+        return (
+          color: AppTheme.primary,
+          label: '可挑战',
+          icon: Icons.play_circle_outline,
+        );
+      case AssessmentStatus.passed:
+        return (
+          color: AppTheme.success,
+          label: '已通过',
+          icon: Icons.verified,
+        );
+      case AssessmentStatus.failed:
+        return (
+          color: Colors.orange,
+          label: '需补练，可重试',
+          icon: Icons.refresh,
+        );
+    }
+  }
+
+  Future<void> _start(BuildContext context) async {
+    final svc = context.read<AssessmentService>();
+    final result = await svc.buildAssessmentQuestions(snapshot.type);
+    if (!context.mounted) return;
+    if (result.questions.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+            content: Text(
+                result.warnings.isEmpty ? '题库不足' : result.warnings.join('；'))),
+      );
+      return;
+    }
+    if (result.warnings.isNotEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(result.warnings.first)),
+      );
+    }
+    final kind = snapshot.type == AssessmentType.weekly
+        ? SessionKind.weeklyTest
+        : SessionKind.monthlyTest;
+    context.read<PracticeService>().startAssessmentSession(
+          questions: result.questions,
+          kind: kind,
+          periodKey: snapshot.periodKey,
+        );
+    context.read<NavigationService>().goTo(2);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final st = _statusStyle;
+    final canStart = snapshot.status == AssessmentStatus.available ||
+        snapshot.status == AssessmentStatus.failed;
+    final latest = snapshot.latest;
+    return Card(
+      margin: const EdgeInsets.only(bottom: 8),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12),
+        side: BorderSide(color: st.color.withOpacity(0.4), width: 1),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(14),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(children: [
+              Icon(_typeIcon, color: st.color, size: 22),
+              const SizedBox(width: 8),
+              Text('$_typeLabel · ${snapshot.periodKey}',
+                  style: const TextStyle(
+                      fontSize: 15, fontWeight: FontWeight.bold)),
+              const Spacer(),
+              Icon(st.icon, color: st.color, size: 18),
+              const SizedBox(width: 4),
+              Text(st.label,
+                  style: TextStyle(
+                      color: st.color,
+                      fontSize: 13,
+                      fontWeight: FontWeight.w600)),
+            ]),
+            const SizedBox(height: 8),
+            Text(
+              snapshot.unitCount == 0
+                  ? '当期无可测评单元'
+                  : '${snapshot.unitCount} 个知识单元 · 共 ${snapshot.targetTotal} 题',
+              style: TextStyle(color: Colors.grey[700], fontSize: 13),
+            ),
+            if (latest != null) ...[
+              const SizedBox(height: 4),
+              Text(
+                '上次：${latest.score} / ${latest.total}（${(latest.percent * 100).round()}%）',
+                style: TextStyle(color: Colors.grey[600], fontSize: 12),
+              ),
+            ],
+            if (canStart) ...[
+              const SizedBox(height: 10),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton.icon(
+                  icon: Icon(snapshot.status == AssessmentStatus.failed
+                      ? Icons.refresh
+                      : Icons.play_arrow),
+                  label: Text(snapshot.status == AssessmentStatus.failed
+                      ? '再试一次'
+                      : '开始 $_typeLabel'),
+                  onPressed: () => _start(context),
+                ),
+              ),
+            ],
+          ],
+        ),
       ),
     );
   }
