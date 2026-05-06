@@ -67,6 +67,10 @@ class Question {
     this.source = 'pregenerated',
   });
 
+  /// 用户可见的"正确答案"（answer 字段可用 ||| 分隔多种等价写法供判定，
+  /// 这里仅取第一种用于 UI 显示）
+  String get displayAnswer => answer.split('|||').first;
+
   Map<String, dynamic> toMap() {
     return {
       if (id != null) 'id': id,

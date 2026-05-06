@@ -271,7 +271,7 @@ class AssessmentService extends ChangeNotifier {
   }) async {
     if (total == 0) return null;
     final pct = score / total;
-    final passed = pct >= 0.85;
+    final passed = pct >= 0.80;
 
     final status = passed
         ? AssessmentStatus.passed

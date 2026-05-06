@@ -94,7 +94,7 @@ class RewardService extends ChangeNotifier {
   }) async {
     final perQ = score * 0.5;
     final pct = total > 0 ? score / total : 0.0;
-    final passed = pct >= 0.85;
+    final passed = pct >= 0.80;
     final perfect = total > 0 && score == total;
 
     final bonus = _bonusTable[kind]!;

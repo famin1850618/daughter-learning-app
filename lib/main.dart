@@ -127,7 +127,11 @@ class MainNavigation extends StatelessWidget {
       body: IndexedStack(index: nav.index, children: _screens),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: nav.index,
-        onTap: (i) => context.read<NavigationService>().goTo(i),
+        onTap: (i) {
+          // 切到「成效」tab 时刷新测评解锁状态（计划完成后即时反映）
+          if (i == 3) context.read<AssessmentService>().refresh();
+          context.read<NavigationService>().goTo(i);
+        },
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: '首页'),
           BottomNavigationBarItem(icon: Icon(Icons.calendar_month), label: '计划'),

@@ -57,7 +57,7 @@
     {"chapter": "圆柱与圆锥", "knowledge_point": "圆柱与圆锥/圆锥的认识", "content": "把一个直角三角形绕一条直角边旋转一周，得到的几何体是______。", "type": "fill", "difficulty": "medium", "answer": "圆锥", "explanation": "直角边作为旋转轴时形成圆锥。"},
 
     {"chapter": "圆柱与圆锥", "knowledge_point": "圆柱与圆锥/圆锥的体积", "content": "等底等高的圆柱和圆锥，体积关系是？", "type": "choice", "difficulty": "easy", "options": ["A. 相等", "B. 圆锥是圆柱的 1/2", "C. 圆锥是圆柱的 1/3", "D. 圆锥是圆柱的 2/3"], "answer": "C", "explanation": "等底等高时，圆锥体积是圆柱的 1/3。"},
-    {"chapter": "圆柱与圆锥", "knowledge_point": "圆柱与圆锥/圆锥的体积", "content": "圆锥体积的公式是 V = ______。", "type": "fill", "difficulty": "easy", "answer": "1/3πr²h", "explanation": "V = 1/3 × 底面积 × 高 = 1/3 πr²h。"},
+    {"chapter": "圆柱与圆锥", "knowledge_point": "圆柱与圆锥/圆锥的体积", "content": "圆锥体积的公式是 V = ______。", "type": "fill", "difficulty": "easy", "answer": "1/3πr²h|||1/3*pi*r*r*h|||1/3*pi*r^2*h|||pi*r*r*h/3|||pi*r^2*h/3|||(1/3)*pi*r*r*h|||(1/3)*pi*r^2*h|||πr²h/3|||πr^2h/3", "explanation": "V = 1/3 × 底面积 × 高 = 1/3 πr²h。"},
     {"chapter": "圆柱与圆锥", "knowledge_point": "圆柱与圆锥/圆锥的体积", "content": "求底面半径 3cm、高 4cm 的圆锥体积。（π取3.14）", "type": "calculation", "difficulty": "medium", "answer": "37.68", "explanation": "V = 1/3 × 3.14 × 3² × 4 = 1/3 × 113.04 = 37.68 cm³。"},
     {"chapter": "圆柱与圆锥", "knowledge_point": "圆柱与圆锥/圆锥的体积", "content": "一个圆锥的底面积是 24cm²、高是 6cm，它的体积是______cm³。", "type": "fill", "difficulty": "easy", "answer": "48", "explanation": "V = 1/3 × 24 × 6 = 48 cm³。"},
     {"chapter": "圆柱与圆锥", "knowledge_point": "圆柱与圆锥/圆锥的体积", "content": "一个圆锥和一个圆柱底面相等，高也相等，圆柱体积是 18cm³，圆锥体积是______cm³。", "type": "fill", "difficulty": "medium", "answer": "6", "explanation": "圆锥体积 = 1/3 × 18 = 6 cm³。"},
@@ -192,7 +192,7 @@
     {"chapter": "总复习", "knowledge_point": "总复习/图形与几何综合", "content": "棱长为 3cm 的正方体的体积是______cm³。", "type": "fill", "difficulty": "easy", "answer": "27", "explanation": "V = 3³ = 27 cm³。"},
     {"chapter": "总复习", "knowledge_point": "总复习/图形与几何综合", "content": "求底 6cm、高 4cm 的三角形面积。", "type": "calculation", "difficulty": "easy", "answer": "12", "explanation": "S=底×高÷2=6×4÷2=12 cm²。"},
     {"chapter": "总复习", "knowledge_point": "总复习/图形与几何综合", "content": "等腰三角形的两个底角相等。如果一个等腰三角形顶角是 80°，每个底角是______度。", "type": "fill", "difficulty": "medium", "answer": "50", "explanation": "(180-80)÷2=50°。"},
-    {"chapter": "总复习", "knowledge_point": "总复习/图形与几何综合", "content": "圆的周长和直径的比值是______。", "type": "fill", "difficulty": "easy", "answer": "π", "explanation": "C/d = π，约等于 3.14。"},
+    {"chapter": "总复习", "knowledge_point": "总复习/图形与几何综合", "content": "圆的周长和直径的比值是______。", "type": "fill", "difficulty": "easy", "answer": "π|||pi", "explanation": "C/d = π，约等于 3.14。"},
     {"chapter": "总复习", "knowledge_point": "总复习/图形与几何综合", "content": "求半径 3cm 的圆的面积。（π取3.14）", "type": "calculation", "difficulty": "medium", "answer": "28.26", "explanation": "S=πr²=3.14×9=28.26 cm²。"},
 
     {"chapter": "总复习", "knowledge_point": "总复习/统计与可能性", "content": "投掷一枚均匀骰子，掷出 6 的概率是______。", "type": "fill", "difficulty": "easy", "answer": "1/6", "explanation": "6 个面中 1 个是 6，概率 1/6。"},
@@ -232,13 +232,13 @@
     {"chapter": "图形的运动", "knowledge_point": "图形的运动/轴对称", "content": "下列字母不是轴对称图形的是？", "type": "choice", "difficulty": "medium", "options": ["A. M", "B. H", "C. R", "D. T"], "answer": "C", "explanation": "M、H、T 都有对称轴，R 没有。"},
     {"chapter": "图形的运动", "knowledge_point": "图形的运动/轴对称", "content": "长方形有______条对称轴。", "type": "fill", "difficulty": "medium", "answer": "2", "explanation": "长方形 2 条中线是对称轴，对角线不是。"},
     {"chapter": "图形的运动", "knowledge_point": "图形的运动/轴对称", "content": "下面哪个图形对称轴最多？", "type": "choice", "difficulty": "medium", "options": ["A. 等边三角形", "B. 正方形", "C. 圆", "D. 长方形"], "answer": "C", "explanation": "圆有无数条对称轴。"},
-    {"chapter": "图形的运动", "knowledge_point": "图形的运动/图形放大缩小", "content": "把图形按 1:n 缩小（n>1），面积变为原来的______。", "type": "fill", "difficulty": "hard", "answer": "1/n²", "explanation": "边缩小到 1/n，面积是边长平方关系，缩小到 1/n²。"},
+    {"chapter": "图形的运动", "knowledge_point": "图形的运动/图形放大缩小", "content": "把图形按 1:n 缩小（n>1），面积变为原来的______。", "type": "fill", "difficulty": "hard", "answer": "1/n²|||1/n^2|||1/(n*n)|||1/(n^2)", "explanation": "边缩小到 1/n，面积是边长平方关系，缩小到 1/n²。"},
     {"chapter": "图形的运动", "knowledge_point": "图形的运动/图形放大缩小", "content": "把一个三角形按 3:1 放大，面积扩大几倍？", "type": "choice", "difficulty": "hard", "options": ["A. 3 倍", "B. 6 倍", "C. 9 倍", "D. 12 倍"], "answer": "C", "explanation": "边扩大 3 倍，面积扩大 3²=9 倍。"},
     {"chapter": "图形的运动", "knowledge_point": "图形的运动/图形放大缩小", "content": "求边长 6cm 的正方形按 1:2 缩小后的周长。", "type": "calculation", "difficulty": "medium", "answer": "12", "explanation": "新边长 3cm，周长=4×3=12cm。"},
     {"chapter": "图形的运动", "knowledge_point": "图形的运动/平移", "content": "图形平移后下列哪个量发生变化？", "type": "choice", "difficulty": "medium", "options": ["A. 大小", "B. 形状", "C. 位置", "D. 角度"], "answer": "C", "explanation": "平移仅改变位置。"},
     {"chapter": "图形的运动", "knowledge_point": "图形的运动/旋转", "content": "钟表分针 1 小时旋转______度。", "type": "fill", "difficulty": "easy", "answer": "360", "explanation": "分针 60 分钟转一圈 = 360°。"},
 
-    {"chapter": "正比例和反比例", "knowledge_point": "正反比例/正比例的意义", "content": "圆的周长 C 和直径 d 成正比例，C/d = ______。", "type": "fill", "difficulty": "easy", "answer": "π", "explanation": "C=πd，所以 C/d=π（约 3.14）一定。"},
+    {"chapter": "正比例和反比例", "knowledge_point": "正反比例/正比例的意义", "content": "圆的周长 C 和直径 d 成正比例，C/d = ______。", "type": "fill", "difficulty": "easy", "answer": "π|||pi", "explanation": "C=πd，所以 C/d=π（约 3.14）一定。"},
     {"chapter": "正比例和反比例", "knowledge_point": "正反比例/反比例的意义", "content": "长方形面积一定时，长和宽成？", "type": "choice", "difficulty": "easy", "options": ["A. 正比例", "B. 反比例", "C. 不成比例"], "answer": "B", "explanation": "长×宽=面积（一定），积一定即反比例。"},
     {"chapter": "正比例和反比例", "knowledge_point": "正反比例/正反比例的判断", "content": "汽车行驶 100km，速度和时间成？", "type": "choice", "difficulty": "easy", "options": ["A. 正比例", "B. 反比例", "C. 不成比例"], "answer": "B", "explanation": "速度×时间=100（一定），积一定即反比例。"},
     {"chapter": "正比例和反比例", "knowledge_point": "正反比例/正反比例的判断", "content": "正方形周长和边长成？", "type": "choice", "difficulty": "medium", "options": ["A. 正比例", "B. 反比例", "C. 不成比例"], "answer": "A", "explanation": "周长=4×边长，比值 4 一定，正比例。"},

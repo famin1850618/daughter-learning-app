@@ -522,7 +522,7 @@ class _QuestionScreenState extends State<_QuestionScreen> {
               style: TextStyle(fontWeight: FontWeight.bold, color: color, fontSize: 15)),
           if (!correct) ...[
             const SizedBox(height: 6),
-            Text('正确答案：${q.answer}',
+            Text('正确答案：${q.displayAnswer}',
                 style: const TextStyle(fontWeight: FontWeight.w600)),
           ],
           if (q.explanation != null) ...[
