@@ -3,7 +3,9 @@ import 'package:provider/provider.dart';
 import '../utils/app_theme.dart';
 import '../models/subject.dart';
 import '../database/curriculum_dao.dart';
+import '../database/question_dao.dart';
 import '../services/plan_service.dart';
+import '../services/navigation_service.dart';
 import 'chapter_detail_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -42,11 +44,92 @@ class _SubjectTab extends StatelessWidget {
       padding: const EdgeInsets.all(16),
       children: [
         _TodayPlanSummary(),
+        const SizedBox(height: 12),
+        const _WeakKpSummary(),
         const SizedBox(height: 16),
         const Text('选择科目', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
         const SizedBox(height: 8),
         ...Subject.values.map((s) => _SubjectCard(subject: s)),
       ],
+    );
+  }
+}
+
+/// 首页摘要：薄弱知识点 Top3，点击跳到错题集
+class _WeakKpSummary extends StatefulWidget {
+  const _WeakKpSummary();
+  @override
+  State<_WeakKpSummary> createState() => _WeakKpSummaryState();
+}
+
+class _WeakKpSummaryState extends State<_WeakKpSummary> {
+  late Future<List<ReviewKpSummary>> _future;
+
+  @override
+  void initState() {
+    super.initState();
+    _future = QuestionDao().getTopWeakKnowledgePoints(3);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return FutureBuilder<List<ReviewKpSummary>>(
+      future: _future,
+      builder: (context, snapshot) {
+        final list = snapshot.data ?? [];
+        if (list.isEmpty) return const SizedBox.shrink();
+        return Card(
+          child: InkWell(
+            onTap: () => context.read<NavigationService>().goTo(3),
+            borderRadius: BorderRadius.circular(12),
+            child: Padding(
+              padding: const EdgeInsets.all(14),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      const Text('🎯', style: TextStyle(fontSize: 18)),
+                      const SizedBox(width: 6),
+                      const Text('薄弱知识点',
+                          style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
+                      const Spacer(),
+                      Text('查看全部 →',
+                          style: TextStyle(fontSize: 12, color: AppTheme.primary)),
+                    ],
+                  ),
+                  const SizedBox(height: 8),
+                  ...list.map((s) {
+                    final emoji = s.totalErrors >= 6
+                        ? '🔴'
+                        : s.totalErrors >= 3
+                            ? '🟠'
+                            : '🟡';
+                    return Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 2),
+                      child: Row(
+                        children: [
+                          Text(emoji, style: const TextStyle(fontSize: 14)),
+                          const SizedBox(width: 6),
+                          Expanded(
+                            child: Text(
+                              '${s.category} / ${s.name}',
+                              style: const TextStyle(fontSize: 13),
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ),
+                          Text('${s.totalErrors} 次',
+                              style: TextStyle(fontSize: 12, color: Colors.grey[600])),
+                        ],
+                      ),
+                    );
+                  }),
+                ],
+              ),
+            ),
+          ),
+        );
+      },
     );
   }
 }
@@ -121,7 +204,7 @@ class _GradeListScreenState extends State<_GradeListScreen> {
   @override
   void initState() {
     super.initState();
-    _dao.getGradesForSubject(widget.subject.name)
+    _dao.getGradesForSubject(widget.subject.displayName)
         .then((g) => setState(() => _grades = g));
   }
 
@@ -169,7 +252,7 @@ class _SubjectListScreenState extends State<_SubjectListScreen> {
   }
 
   Subject? _toSubject(String name) {
-    try { return Subject.values.firstWhere((s) => s.name == name); } catch (_) { return null; }
+    try { return Subject.values.firstWhere((s) => s.displayName == name); } catch (_) { return null; }
   }
 
   @override

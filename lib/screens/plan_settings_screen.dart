@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:intl/intl.dart';
 import '../utils/app_theme.dart';
 import '../models/plan_settings.dart';
 import '../services/plan_settings_service.dart';
+import '../services/question_update_service.dart';
+import '../services/learning_export_service.dart';
+import '../services/data_backup_service.dart';
 import 'curriculum_management_screen.dart';
 
 class PlanSettingsScreen extends StatefulWidget {
@@ -56,6 +60,66 @@ class _PlanSettingsScreenState extends State<PlanSettingsScreen> {
                 MaterialPageRoute(
                     builder: (_) => const CurriculumManagementScreen()),
               ),
+            ),
+          ),
+          const SizedBox(height: 16),
+
+          // ── 题库更新 ──────────────────────────
+          _SectionHeader(
+            title: '题库更新',
+            subtitle: '从云端拉取新题包，按知识点增量同步。',
+          ),
+          const _UpdateSection(),
+          const SizedBox(height: 16),
+
+          // ── 数据导出与备份 ────────────────────
+          _SectionHeader(
+            title: '数据导出与备份',
+            subtitle: '导出学情供后续题目生成参考；备份后即使重装也不丢数据。',
+          ),
+          Card(
+            child: Column(
+              children: [
+                ListTile(
+                  leading: const Icon(Icons.assessment, color: AppTheme.primary),
+                  title: const Text('导出学情数据'),
+                  subtitle: const Text('生成 JSON：弱知识点 + 最近错题'),
+                  trailing: const Icon(Icons.share, size: 18),
+                  onTap: () async {
+                    try {
+                      await LearningExportService().exportAndShare();
+                    } catch (e) {
+                      if (!context.mounted) return;
+                      ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(content: Text('导出失败：$e')));
+                    }
+                  },
+                ),
+                const Divider(height: 1, indent: 16),
+                ListTile(
+                  leading: const Icon(Icons.backup, color: AppTheme.primary),
+                  title: const Text('备份所有数据'),
+                  subtitle: const Text('题目/练习/错题/奖励/计划全部打包'),
+                  trailing: const Icon(Icons.share, size: 18),
+                  onTap: () async {
+                    try {
+                      await DataBackupService().exportAndShare();
+                    } catch (e) {
+                      if (!context.mounted) return;
+                      ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(content: Text('备份失败：$e')));
+                    }
+                  },
+                ),
+                const Divider(height: 1, indent: 16),
+                ListTile(
+                  leading: const Icon(Icons.restore, color: Colors.orange),
+                  title: const Text('从备份恢复'),
+                  subtitle: const Text('选 JSON 文件覆盖本地（不可撤销）'),
+                  trailing: const Icon(Icons.upload_file, size: 18),
+                  onTap: () => _confirmRestore(context),
+                ),
+              ],
             ),
           ),
           const SizedBox(height: 16),
@@ -189,6 +253,85 @@ class _PlanSettingsScreenState extends State<PlanSettingsScreen> {
                 ],
               ),
             ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+Future<void> _confirmRestore(BuildContext context) async {
+  final confirmed = await showDialog<bool>(
+    context: context,
+    builder: (_) => AlertDialog(
+      title: const Text('从备份恢复？'),
+      content: const Text('将用备份文件覆盖现有数据。\n\n现有的题目、练习记录、错题、奖励、计划将被替换。\n\n确定继续吗？'),
+      actions: [
+        TextButton(onPressed: () => Navigator.pop(context, false), child: const Text('取消')),
+        TextButton(
+          style: TextButton.styleFrom(foregroundColor: Colors.red),
+          onPressed: () => Navigator.pop(context, true),
+          child: const Text('确认覆盖'),
+        ),
+      ],
+    ),
+  );
+  if (confirmed != true || !context.mounted) return;
+
+  final (ok, msg) = await DataBackupService().pickAndRestore();
+  if (!context.mounted) return;
+  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(msg)));
+  if (ok) {
+    // 数据已变化，强制重启 app 让 provider 重读
+    await showDialog(
+      context: context,
+      builder: (_) => AlertDialog(
+        title: const Text('恢复完成'),
+        content: const Text('请重启 app 让所有页面看到最新数据。'),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(context), child: const Text('好')),
+        ],
+      ),
+    );
+  }
+}
+
+class _UpdateSection extends StatelessWidget {
+  const _UpdateSection();
+
+  @override
+  Widget build(BuildContext context) {
+    final svc = context.watch<QuestionUpdateService>();
+    final lastSyncStr = svc.lastSync == null
+        ? '从未同步'
+        : DateFormat('M月d日 HH:mm').format(svc.lastSync!);
+    return Card(
+      child: Column(
+        children: [
+          ListTile(
+            leading: const Icon(Icons.cloud_download, color: AppTheme.primary),
+            title: const Text('立即检查更新'),
+            subtitle: Text(svc.syncing ? svc.status : '上次：$lastSyncStr · ${svc.status}'),
+            trailing: svc.syncing
+                ? const SizedBox(
+                    width: 16, height: 16,
+                    child: CircularProgressIndicator(strokeWidth: 2))
+                : const Icon(Icons.refresh, size: 18),
+            onTap: svc.syncing ? null : () async {
+              final result = await svc.checkAndImport();
+              if (!context.mounted) return;
+              ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text(result)));
+            },
+          ),
+          const Divider(height: 1, indent: 16),
+          SwitchListTile(
+            secondary: const Icon(Icons.autorenew, color: AppTheme.primary),
+            title: const Text('启动时自动检查'),
+            subtitle: const Text('打开 app 时静默拉取新题包'),
+            value: svc.autoCheck,
+            activeColor: AppTheme.primary,
+            onChanged: (v) => svc.setAutoCheck(v),
           ),
         ],
       ),

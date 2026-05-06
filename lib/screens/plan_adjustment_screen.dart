@@ -14,7 +14,7 @@ import 'chapter_picker_screen.dart';
 void _startPractice(BuildContext context, PlanItem item) {
   Subject? subject;
   try {
-    subject = Subject.values.firstWhere((s) => s.name == item.subjectName);
+    subject = Subject.values.firstWhere((s) => s.displayName == item.subjectName);
   } catch (_) {}
   if (subject == null) return;
   context.read<PracticeService>().startSession(

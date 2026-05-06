@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 5,
+      version: 7,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
@@ -90,8 +90,45 @@ class DatabaseHelper {
       );
     }
     if (oldVersion < 5) {
-      // v5: 清空课程表，由 _seedDatabase 重新填充（对齐各教材实际章节）
       await db.execute('DELETE FROM curriculum');
+    }
+    if (oldVersion < 6) {
+      await db.execute('ALTER TABLE questions ADD COLUMN knowledge_point TEXT');
+      await db.execute("ALTER TABLE questions ADD COLUMN source TEXT DEFAULT 'pregenerated'");
+      await db.execute('ALTER TABLE practice_records ADD COLUMN time_spent INTEGER DEFAULT 0');
+      await db.execute('ALTER TABLE practice_records ADD COLUMN used_hint INTEGER DEFAULT 0');
+    }
+    if (oldVersion < 7) {
+      // v7: 引入两层 KP 体系 + 各业务表加 user_id 预留（为 V3.7 账号系统铺路）
+      // 纪律：仅 ADD/CREATE，绝不 DELETE 业务数据（自此版起 app 进入正式使用）
+      await db.execute('''
+        CREATE TABLE IF NOT EXISTS knowledge_points (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          subject TEXT NOT NULL,
+          category TEXT NOT NULL,
+          name TEXT NOT NULL,
+          full_path TEXT NOT NULL,
+          introduced_grade INTEGER,
+          UNIQUE(subject, full_path)
+        )
+      ''');
+      await db.execute(
+          'CREATE INDEX IF NOT EXISTS idx_kp_subject ON knowledge_points (subject)');
+
+      // user_id 预留：现有数据全打 'local' 标，V3.7 登录时迁移到真实 user_id
+      for (final t in const [
+        'questions',
+        'practice_records',
+        'points',
+        'plan_groups',
+        'plan_items',
+      ]) {
+        try {
+          await db.execute("ALTER TABLE $t ADD COLUMN user_id TEXT DEFAULT 'local'");
+        } catch (_) {
+          // 列已存在的容错（避免重复迁移）
+        }
+      }
     }
   }
 
@@ -143,12 +180,15 @@ class DatabaseHelper {
         subject INTEGER NOT NULL,
         grade INTEGER NOT NULL,
         chapter TEXT NOT NULL,
+        knowledge_point TEXT,
         content TEXT NOT NULL,
         type INTEGER NOT NULL,
         difficulty INTEGER NOT NULL,
         options TEXT,
         answer TEXT NOT NULL,
-        explanation TEXT
+        explanation TEXT,
+        source TEXT DEFAULT 'pregenerated',
+        user_id TEXT DEFAULT 'local'
       )
     ''');
 
@@ -159,6 +199,9 @@ class DatabaseHelper {
         user_answer TEXT NOT NULL,
         is_correct INTEGER NOT NULL,
         practiced_at TEXT NOT NULL,
+        time_spent INTEGER DEFAULT 0,
+        used_hint INTEGER DEFAULT 0,
+        user_id TEXT DEFAULT 'local',
         FOREIGN KEY (question_id) REFERENCES questions (id)
       )
     ''');
@@ -168,7 +211,20 @@ class DatabaseHelper {
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         amount INTEGER NOT NULL,
         reason TEXT NOT NULL,
-        earned_at TEXT NOT NULL
+        earned_at TEXT NOT NULL,
+        user_id TEXT DEFAULT 'local'
+      )
+    ''');
+
+    await db.execute('''
+      CREATE TABLE knowledge_points (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        subject TEXT NOT NULL,
+        category TEXT NOT NULL,
+        name TEXT NOT NULL,
+        full_path TEXT NOT NULL,
+        introduced_grade INTEGER,
+        UNIQUE(subject, full_path)
       )
     ''');
 
@@ -178,5 +234,6 @@ class DatabaseHelper {
     await db.execute('CREATE INDEX idx_plan_items_chapter ON plan_items (chapter_id)');
     await db.execute('CREATE INDEX idx_questions_subject_grade ON questions (subject, grade)');
     await db.execute('CREATE INDEX idx_records_question ON practice_records (question_id)');
+    await db.execute('CREATE INDEX idx_kp_subject ON knowledge_points (subject)');
   }
 }

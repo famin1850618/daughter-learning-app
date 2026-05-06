@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:provider/provider.dart';
 import 'package:intl/date_symbol_data_local.dart';
 
@@ -12,10 +13,18 @@ import 'services/plan_service.dart';
 import 'services/plan_settings_service.dart';
 import 'services/navigation_service.dart';
 import 'services/practice_service.dart';
-import 'database/question_dao.dart';
+import 'services/question_update_service.dart';
 import 'database/curriculum_dao.dart';
-import 'database/seed_data.dart';
 import 'database/curriculum_seed.dart';
+import 'database/knowledge_point_dao.dart';
+import 'database/knowledge_points_seed.dart';
+
+/// V3.6 起内置题包路径（assets 首装兜底）
+const _bundledBatchAssets = [
+  'assets/data/batches/batch_2026_05_06_g6_math.json',
+  'assets/data/batches/batch_2026_05_06_g6_chinese.json',
+  'assets/data/batches/batch_2026_05_06_g6_english.json',
+];
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -25,23 +34,47 @@ void main() async {
 }
 
 Future<void> _seedDatabase() async {
+  // 1. 课程章节（保持原逻辑）
   final curriculumDao = CurriculumDao();
   if (await curriculumDao.isEmpty()) {
     await curriculumDao.insertBatch(curriculumChapters);
   }
-  final questionDao = QuestionDao();
-  final existing = await questionDao.getRandom(
-    subject: grade6SeedQuestions.first.subject,
-    grade: 6,
-    limit: 1,
-  );
-  if (existing.isEmpty) {
-    await questionDao.insertBatch(grade6SeedQuestions);
+
+  // 2. KP 清单（六下三科种子；幂等）
+  await KnowledgePointDao().insertIfMissing(knowledgePointsSeed);
+
+  // 3. 题包（assets 首装兜底；按 source 幂等，已装则跳过）
+  final updateService = QuestionUpdateService();
+  for (final asset in _bundledBatchAssets) {
+    try {
+      final json = await rootBundle.loadString(asset);
+      await updateService.importBatchJsonString(json);
+    } catch (e) {
+      debugPrint('Failed to load $asset: $e');
+    }
   }
 }
 
-class LearningApp extends StatelessWidget {
+class LearningApp extends StatefulWidget {
   const LearningApp({super.key});
+
+  @override
+  State<LearningApp> createState() => _LearningAppState();
+}
+
+class _LearningAppState extends State<LearningApp> {
+  final _updateService = QuestionUpdateService();
+
+  @override
+  void initState() {
+    super.initState();
+    // 启动后异步触发一次更新检查（不阻塞 UI；离线静默失败）
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      if (_updateService.autoCheck) {
+        await _updateService.checkAndImport(silent: true);
+      }
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -51,6 +84,7 @@ class LearningApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => PlanSettingsService()),
         ChangeNotifierProvider(create: (_) => PlanService()),
         ChangeNotifierProvider(create: (_) => PracticeService()),
+        ChangeNotifierProvider.value(value: _updateService),
       ],
       child: MaterialApp(
         title: '学习小助手',
