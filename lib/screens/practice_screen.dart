@@ -334,6 +334,31 @@ class _QuestionScreenState extends State<_QuestionScreen> {
       appBar: AppBar(
         title: Text('第 ${index + 1} / $total 题'),
         actions: [
+          IconButton(
+            icon: const Icon(Icons.stop_circle_outlined),
+            tooltip: '中止练习',
+            onPressed: () async {
+              final confirmed = await showDialog<bool>(
+                context: context,
+                builder: (ctx) => AlertDialog(
+                  title: const Text('中止练习？'),
+                  content: const Text('已答的题目对错会保留（错的会进错题集），未答的题不计分，本次不发奖。'),
+                  actions: [
+                    TextButton(
+                        onPressed: () => Navigator.pop(ctx, false),
+                        child: const Text('继续')),
+                    TextButton(
+                        style: TextButton.styleFrom(foregroundColor: Colors.red),
+                        onPressed: () => Navigator.pop(ctx, true),
+                        child: const Text('中止')),
+                  ],
+                ),
+              );
+              if (confirmed == true && context.mounted) {
+                context.read<PracticeService>().endSession();
+              }
+            },
+          ),
           Padding(
             padding: const EdgeInsets.only(right: 16),
             child: Center(
@@ -691,7 +716,7 @@ class _RewardSummaryCard extends StatelessWidget {
         ? '满分通关！'
         : reward.passed
             ? '通过 🎯'
-            : '继续加油，未达 85%';
+            : '继续加油，未达 80%';
     final color = reward.perfect
         ? Colors.amber.shade700
         : reward.passed

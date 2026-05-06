@@ -188,23 +188,29 @@ class _GradeTab extends StatelessWidget {
     ];
     return ListView(
       padding: const EdgeInsets.all(16),
-      children: grades.map((g) => Card(
-        margin: const EdgeInsets.only(bottom: 8),
-        child: ListTile(
-          leading: CircleAvatar(
-            backgroundColor: AppTheme.primary,
-            child: Text(
-              g.$2.length > 2 ? g.$2.substring(0, 1) : g.$2,
-              style: const TextStyle(color: Colors.white, fontSize: 14),
+      children: [
+        const _WeakKpSummary(),
+        const SizedBox(height: 12),
+        const Text('选择年级', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+        const SizedBox(height: 8),
+        ...grades.map((g) => Card(
+          margin: const EdgeInsets.only(bottom: 8),
+          child: ListTile(
+            leading: CircleAvatar(
+              backgroundColor: AppTheme.primary,
+              child: Text(
+                g.$2.length > 2 ? g.$2.substring(0, 1) : g.$2,
+                style: const TextStyle(color: Colors.white, fontSize: 14),
+              ),
             ),
+            title: Text(g.$2, style: const TextStyle(fontWeight: FontWeight.w600)),
+            subtitle: Text(g.$3),
+            trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+            onTap: () => Navigator.push(context,
+              MaterialPageRoute(builder: (_) => _SubjectListScreen(grade: g.$1, gradeLabel: g.$2))),
           ),
-          title: Text(g.$2, style: const TextStyle(fontWeight: FontWeight.w600)),
-          subtitle: Text(g.$3),
-          trailing: const Icon(Icons.arrow_forward_ios, size: 16),
-          onTap: () => Navigator.push(context,
-            MaterialPageRoute(builder: (_) => _SubjectListScreen(grade: g.$1, gradeLabel: g.$2))),
-        ),
-      )).toList(),
+        )),
+      ],
     );
   }
 }

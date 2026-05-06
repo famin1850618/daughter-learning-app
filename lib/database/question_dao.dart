@@ -377,6 +377,59 @@ class QuestionDao {
     return (rows.first['c'] as int?) ?? 0;
   }
 
+  /// 薄弱点练习抽题：排除曾做错过的"原题"，仅取未做过 + 答对过最久未练的题
+  /// 用于 startAggregatedReviewSession，避免重复出现用户做错过的同一道题
+  Future<List<Question>> getQuestionsForKpExcludingWrong({
+    required String kpPath,
+    required Difficulty difficulty,
+    required int limit,
+  }) async {
+    if (limit <= 0) return [];
+    final db = await _db.database;
+
+    // Tier 1: 同 KP + 同难度 + 完全未做过
+    final fresh = await db.rawQuery('''
+      SELECT * FROM questions
+      WHERE knowledge_point = ?
+        AND difficulty = ?
+        AND id NOT IN (SELECT DISTINCT question_id FROM practice_records)
+      ORDER BY RANDOM()
+      LIMIT ?
+    ''', [kpPath, difficulty.index, limit]);
+    if (fresh.length >= limit) {
+      return fresh.map(Question.fromMap).toList();
+    }
+
+    // Tier 2: 同 KP + 同难度 + 做过但**从未答错过** + 最久未练
+    final remaining = limit - fresh.length;
+    final pickedIds = fresh.map((m) => m['id']).toList();
+    final placeholders = pickedIds.isEmpty
+        ? '0'
+        : List.filled(pickedIds.length, '?').join(',');
+    final stale = await db.rawQuery('''
+      SELECT q.*
+      FROM questions q
+      LEFT JOIN (
+        SELECT question_id, MAX(practiced_at) AS last_practiced
+        FROM practice_records
+        GROUP BY question_id
+      ) lr ON lr.question_id = q.id
+      WHERE q.knowledge_point = ?
+        AND q.difficulty = ?
+        AND q.id NOT IN ($placeholders)
+        AND q.id NOT IN (
+          SELECT DISTINCT question_id FROM practice_records WHERE is_correct = 0
+        )
+      ORDER BY lr.last_practiced ASC
+      LIMIT ?
+    ''', [kpPath, difficulty.index, ...pickedIds, remaining]);
+
+    return [
+      ...fresh.map(Question.fromMap),
+      ...stale.map(Question.fromMap),
+    ];
+  }
+
   /// 找出某 KP 最近一次错过题的难度（举一反三抽题时用作"同难度"基准）
   Future<Difficulty?> getMostRecentErrorDifficulty(String kpPath) async {
     final db = await _db.database;

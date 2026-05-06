@@ -85,7 +85,7 @@ class RewardService extends ChangeNotifier {
   }
 
   /// session 结束结算：写每题 0.5 ⭐ + 通过/满分加成
-  /// 通过线 85%；满分（100%）仅给 perfect 加成（不再叠加 pass）
+  /// 通过线 80%；满分（100%）仅给 perfect 加成（不再叠加 pass）
   Future<SessionRewardSummary> recordSession({
     required SessionKind kind,
     required int score,

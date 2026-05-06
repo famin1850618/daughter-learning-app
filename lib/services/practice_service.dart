@@ -142,6 +142,7 @@ class PracticeService extends ChangeNotifier {
   }
 
   /// 聚合：从所有待掌握 KP 各抽 [perKp] 题，按累计错次降序优先
+  /// 严格排除"原题"：不抽用户曾做错过的题（避免重复看到同一道错过的题）
   Future<void> startAggregatedReviewSession({int perKp = 2, int totalLimit = 20}) async {
     final summaries = await _dao.getReviewKnowledgePoints();
     final result = <Question>[];
@@ -149,7 +150,7 @@ class PracticeService extends ChangeNotifier {
       if (result.length >= totalLimit) break;
       final difficulty =
           await _dao.getMostRecentErrorDifficulty(s.fullPath) ?? Difficulty.medium;
-      final qs = await _dao.getQuestionsForKnowledgePoint(
+      final qs = await _dao.getQuestionsForKpExcludingWrong(
         kpPath: s.fullPath,
         difficulty: difficulty,
         limit: perKp,
