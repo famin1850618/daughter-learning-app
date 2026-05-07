@@ -68,11 +68,42 @@ class _WeakKpSummary extends StatefulWidget {
 
 class _WeakKpSummaryState extends State<_WeakKpSummary> {
   late Future<List<ReviewKpSummary>> _future;
+  PracticeService? _practiceRef;
+  bool _wasSessionActive = false;
 
   @override
   void initState() {
     super.initState();
     _future = QuestionDao().getTopWeakKnowledgePoints(3);
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // 监听 PracticeService：session 完成时刷新薄弱 KP 列表
+    final p = context.read<PracticeService>();
+    if (_practiceRef != p) {
+      _practiceRef?.removeListener(_onPracticeChanged);
+      _practiceRef = p;
+      p.addListener(_onPracticeChanged);
+      _wasSessionActive = p.sessionActive;
+    }
+  }
+
+  void _onPracticeChanged() {
+    final p = _practiceRef;
+    if (p == null || !mounted) return;
+    final nowActive = p.sessionActive;
+    if (_wasSessionActive && !nowActive) {
+      setState(() => _future = QuestionDao().getTopWeakKnowledgePoints(3));
+    }
+    _wasSessionActive = nowActive;
+  }
+
+  @override
+  void dispose() {
+    _practiceRef?.removeListener(_onPracticeChanged);
+    super.dispose();
   }
 
   Future<void> _practiceKp(BuildContext context, String fullPath) async {
@@ -193,8 +224,10 @@ class _GradeTab extends StatelessWidget {
     return ListView(
       padding: const EdgeInsets.all(16),
       children: [
-        const _WeakKpSummary(),
+        _TodayPlanSummary(),
         const SizedBox(height: 12),
+        const _WeakKpSummary(),
+        const SizedBox(height: 16),
         const Text('选择年级', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
         const SizedBox(height: 8),
         ...grades.map((g) => Card(

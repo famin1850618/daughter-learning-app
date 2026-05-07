@@ -32,7 +32,10 @@ class _RewardScreenState extends State<RewardScreen> {
     final bySource = svc.bySource;
     final recent = svc.recent;
     return Scaffold(
-      appBar: AppBar(title: const Text('奖励中心')),
+      appBar: AppBar(
+        title: const Text('奖励中心'),
+        actions: [settingsAction(context)],
+      ),
       body: RefreshIndicator(
         onRefresh: () => svc.refresh(),
         child: ListView(

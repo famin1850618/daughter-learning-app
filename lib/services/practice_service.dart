@@ -18,6 +18,60 @@ class PracticeService extends ChangeNotifier {
     _restoreOnStart();
   }
 
+  /// V3.8.1：选择题选项随机重排，避免孩子靠位置记答案。
+  /// 同时把 answer 字段重新映射到新位置的字母。explanation 不动（一般以内容描述）。
+  Question _shuffleOptions(Question q) {
+    if (q.type != QuestionType.multipleChoice) return q;
+    final orig = q.options;
+    if (orig == null || orig.length < 2) return q;
+
+    // 提取每项内容（去掉 "A. " 前缀）
+    final letterRe = RegExp(r'^[A-Z][.\s]+');
+    final contents = orig.map((o) {
+      final m = letterRe.firstMatch(o);
+      return m == null ? o : o.substring(m.end);
+    }).toList();
+
+    // 找原答案对应的内容
+    final origAnswer = q.answer.split('|||').first.trim();
+    if (origAnswer.isEmpty) return q;
+    final origIdx = origAnswer.codeUnitAt(0) - 'A'.codeUnitAt(0);
+    if (origIdx < 0 || origIdx >= contents.length) return q;
+    final correctContent = contents[origIdx];
+
+    // 洗牌索引
+    final indices = List<int>.generate(contents.length, (i) => i)..shuffle();
+    final newOptions = <String>[];
+    String newAnswer = origAnswer;
+    for (int i = 0; i < indices.length; i++) {
+      final newLetter = String.fromCharCode('A'.codeUnitAt(0) + i);
+      newOptions.add('$newLetter. ${contents[indices[i]]}');
+      if (contents[indices[i]] == correctContent) {
+        newAnswer = newLetter;
+      }
+    }
+
+    return Question(
+      id: q.id,
+      subject: q.subject,
+      grade: q.grade,
+      chapter: q.chapter,
+      knowledgePoint: q.knowledgePoint,
+      content: q.content,
+      type: q.type,
+      difficulty: q.difficulty,
+      options: newOptions,
+      answer: newAnswer,
+      explanation: q.explanation,
+      imageData: q.imageData,
+      audioText: q.audioText,
+      round: q.round,
+      source: q.source,
+    );
+  }
+
+  List<Question> _shuffleAll(List<Question> qs) => qs.map(_shuffleOptions).toList();
+
   /// V3.8：把 profile 翻成 (rounds, weights) 给 QuestionDao
   ({List<int>? rounds, List<int>? weights}) _profileToFilter(DifficultyProfile p) {
     if (p.type == DifficultyType.precise) {
@@ -155,6 +209,7 @@ class PracticeService extends ChangeNotifier {
         limit: count,
       );
     }
+    _currentQuestions = _shuffleAll(_currentQuestions);
     _kind = SessionKind.normal;
     _sessionId = null;
     _resetSessionState();
@@ -192,6 +247,7 @@ class PracticeService extends ChangeNotifier {
         limit: count,
       );
     }
+    _currentQuestions = _shuffleAll(_currentQuestions);
     _kind = SessionKind.normal;
     _sessionId = null;
     _resetSessionState();
@@ -232,6 +288,7 @@ class PracticeService extends ChangeNotifier {
       result.addAll(qs);
     }
     _currentQuestions = result.take(totalLimit).toList();
+    _currentQuestions = _shuffleAll(_currentQuestions);
     _kind = SessionKind.normal;
     _sessionId = null;
     _resetSessionState();
@@ -244,7 +301,7 @@ class PracticeService extends ChangeNotifier {
     required SessionKind kind,
     required String periodKey,
   }) {
-    _currentQuestions = questions;
+    _currentQuestions = _shuffleAll(questions);
     _kind = kind;
     _sessionId = '${kind.name}:$periodKey';
     _resetSessionState();

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_tts/flutter_tts.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../utils/app_theme.dart';
 import '../utils/math_text.dart';
 import '../utils/settings_action.dart';
@@ -60,26 +61,58 @@ class _SelectionScreenState extends State<_SelectionScreen> {
   final _currDao = CurriculumDao();
   final _questionDao = QuestionDao();
 
-  int _grade = 7;
+  // V3.8.1: 默认 grade=6（当前题库主要是六下；cron 跑后会扩到 7-9）
+  // 真实运行时会从 SharedPreferences 复原上次选择
+  int _grade = 6;
   Subject? _subject;
   String? _chapter;
   QuestionType? _type;
-  Difficulty? _difficulty;
   int _count = 10;
   int _totalAvailable = 0;
 
   List<Chapter> _chapters = [];
 
   static const _gradeLabels = {6: '六年级', 7: '初一', 8: '初二', 9: '初三'};
+  static const _kPrefsGrade = 'practice_last_grade';
+  static const _kPrefsSubject = 'practice_last_subject';
 
   @override
   void initState() {
     super.initState();
+    _restoreLastSelection();
+  }
+
+  Future<void> _restoreLastSelection() async {
+    final prefs = await SharedPreferences.getInstance();
+    final g = prefs.getInt(_kPrefsGrade);
+    final sIdx = prefs.getInt(_kPrefsSubject);
+    if (mounted) {
+      setState(() {
+        if (g != null && g >= 6 && g <= 9) _grade = g;
+        if (sIdx != null && sIdx >= 0 && sIdx < Subject.values.length) {
+          final s = Subject.values[sIdx];
+          if (s.isAvailableForGrade(_grade)) _subject = s;
+        }
+      });
+    }
+    if (_subject != null) {
+      final chapters = await _currDao.getChapters(_subject!.displayName, _grade);
+      if (mounted) setState(() => _chapters = chapters);
+    }
     _refreshCount();
+  }
+
+  Future<void> _saveSelection() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setInt(_kPrefsGrade, _grade);
+    if (_subject != null) {
+      await prefs.setInt(_kPrefsSubject, _subject!.index);
+    }
   }
 
   Future<void> _onGradeChanged(int g) async {
     setState(() { _grade = g; _subject = null; _chapter = null; _chapters = []; });
+    _saveSelection();
     _refreshCount();
   }
 
@@ -89,20 +122,40 @@ class _SelectionScreenState extends State<_SelectionScreen> {
       final chapters = await _currDao.getChapters(s.displayName, _grade);
       setState(() => _chapters = chapters);
     }
+    _saveSelection();
     _refreshCount();
   }
 
   Future<void> _refreshCount() async {
     if (_subject == null) { setState(() => _totalAvailable = 0); return; }
-    final qs = await _questionDao.getRandom(
+    // V3.8.1: 应用全局 round 筛选，让 UI 显示真正能抽到的题数
+    final settings = context.read<DifficultySettingsService>();
+    final profile = settings.profileFor(_subject!.displayName);
+    List<int>? rounds;
+    List<int>? weights;
+    if (profile.type == DifficultyType.precise) {
+      rounds = profile.preciseRound == null ? null : [profile.preciseRound!];
+    } else {
+      rounds = [];
+      weights = [];
+      for (int i = 0; i < 4; i++) {
+        if (profile.fuzzyWeights[i] > 0) {
+          rounds.add(i + 1);
+          weights.add(profile.fuzzyWeights[i]);
+        }
+      }
+    }
+    final qs = await _questionDao.getRandomByRound(
       subject: _subject!,
       grade: _grade,
       chapter: _chapter,
-      type: _type,
-      difficulty: _difficulty,
+      rounds: rounds,
+      weights: weights,
       limit: 999,
     );
-    setState(() => _totalAvailable = qs.length);
+    // type 筛选在前端 dart 侧过滤，避免 DB 复合 query 复杂度
+    final filtered = _type == null ? qs : qs.where((q) => q.type == _type).toList();
+    setState(() => _totalAvailable = filtered.length);
   }
 
   Future<void> _start() async {
@@ -112,7 +165,6 @@ class _SelectionScreenState extends State<_SelectionScreen> {
       grade: _grade,
       chapter: _chapter,
       type: _type,
-      difficulty: _difficulty,
       count: _count,
     );
   }
@@ -228,13 +280,8 @@ class _SelectionScreenState extends State<_SelectionScreen> {
             onSelect: (t) => setState(() => _type = t),
           ),
 
-          // 难度
-          _chips<Difficulty>(
-            label: '难度',
-            options: [(null, '全部'), ...Difficulty.values.map((d) => (d, d.label))],
-            selected: _difficulty,
-            onSelect: (d) => setState(() => _difficulty = d),
-          ),
+          // V3.8.1：难度档由全局设置统一管理（设置页 → 练习难度），不在此重复
+          // 用户期望：单一难度入口，避免与 4 档 round 系统冲突
 
           // 题数
           _chips<int>(
@@ -344,6 +391,7 @@ class _QuestionScreenState extends State<_QuestionScreen> {
       appBar: AppBar(
         title: Text('第 ${index + 1} / $total 题'),
         actions: [
+          settingsAction(context),
           IconButton(
             icon: const Icon(Icons.stop_circle_outlined),
             tooltip: '中止练习',
@@ -670,7 +718,10 @@ class _ResultScreenState extends State<_ResultScreen> {
     final emoji = pct >= 90 ? '🏆' : pct >= 70 ? '🎉' : pct >= 50 ? '😊' : '💪';
 
     return Scaffold(
-      appBar: AppBar(title: Text('${_kindLabel()}完成')),
+      appBar: AppBar(
+        title: Text('${_kindLabel()}完成'),
+        actions: [settingsAction(context)],
+      ),
       body: ListView(
         padding: const EdgeInsets.all(20),
         children: [
