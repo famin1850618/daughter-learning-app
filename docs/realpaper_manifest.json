@@ -84,6 +84,48 @@
       "round_distribution": {"R1": 8, "R2": 8},
       "answer_match_pre": "19/20",
       "processed_at": "2026-05-08"
+    },
+    {
+      "batch_source": "realpaper_g6_math_beishida_d1_genzong_001",
+      "subject": "math", "grade": 6, "chapter": "圆柱与圆锥",
+      "questions_emitted": 22, "questions_skipped": 5,
+      "skipped_reasons": ["一.7 直角三角形旋转(图)", "一.8 圆锥路障(图)", "三.2 圆柱切面(图)", "三.5 圆锥圆柱比较(图)", "五.4 葡萄酒瓶(图)"],
+      "by_agent": true, "processed_at": "2026-05-08"
+    },
+    {
+      "batch_source": "realpaper_g6_math_beishida_d2_genzong_001",
+      "subject": "math", "grade": 6, "chapter": "比例",
+      "questions_emitted": 29, "questions_skipped": 4,
+      "skipped_reasons": ["三.3 4图比较", "五.1/五.2 画图", "六.2 测图"],
+      "by_agent": true, "processed_at": "2026-05-08"
+    },
+    {
+      "batch_source": "realpaper_g6_math_beishida_d4_guoguan_001",
+      "subject": "math", "grade": 6, "chapter": "正比例和反比例",
+      "questions_emitted": 21, "questions_skipped": 11,
+      "skipped_reasons": ["一.1 公式填空(LaTeX)", "一.5 字母6空(乱)", "一.10/三.4/三.5 表/图", "三.2 图象选择", "四.1-6 解比例(分式乱)", "五.1-4 表/画图", "六.4(1) 表"],
+      "by_agent": true, "processed_at": "2026-05-08"
+    },
+    {
+      "batch_source": "realpaper_g6_math_beishida_zhouce_peiyou_007",
+      "subject": "math", "grade": 6, "chapter": "正比例和反比例",
+      "questions_emitted": 13, "questions_skipped": 5,
+      "skipped_reasons": ["四.1-3 图象读数", "五.1-2 表格补全+开放简答"],
+      "by_agent": true, "processed_at": "2026-05-08"
+    },
+    {
+      "batch_source": "realpaper_g6_math_beishida_zhouce_peiyou_005",
+      "subject": "math", "grade": 6, "chapter": "图形的运动",
+      "questions_emitted": 4, "questions_skipped": 12,
+      "skipped_reasons": ["卷主题图形运动，~75% 题需图(网格/几何)"],
+      "by_agent": true, "processed_at": "2026-05-08"
+    },
+    {
+      "batch_source": "realpaper_g6_math_beishida_qizhong_001",
+      "subject": "math", "grade": 6, "chapter": "跨章节(圆柱+比例+正反比例+图形+总复习)",
+      "questions_emitted": 30, "questions_skipped": 5,
+      "skipped_reasons": ["一.5 数对网格图", "三.1 圆柱展开图", "五.1/五.2/五.3 表/画图/网格"],
+      "by_agent": true, "processed_at": "2026-05-08"
     }
   ],
   "skipped_files": []

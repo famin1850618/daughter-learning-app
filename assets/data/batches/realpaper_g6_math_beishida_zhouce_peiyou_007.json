@@ -1,0 +1,141 @@
+{
+  "source": "realpaper_g6_math_beishida_zhouce_peiyou_007",
+  "subject": "math",
+  "grade": 6,
+  "knowledge_points_added": [],
+  "questions": [
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/反比例的意义",
+      "content": "聪聪带了 100 元，为班级「中国梦」诗画比赛买奖品，买奖品的单价和数量成(    )比例。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "反",
+      "explanation": "总钱数 100 元一定，单价 × 数量 = 100，积一定，成反比例。",
+      "round": 1
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/反比例的意义",
+      "content": "铺地的面积一定，每块砖的面积和用砖块数这两个量中，每块砖的面积变化，用砖块数也跟着变化，每块砖的面积与用砖块数的(    )一定，这两个量成(    )关系。请按顺序填两个答案，逗号分隔。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "积,反比例",
+      "explanation": "每块砖面积 × 块数 = 铺地总面积（一定），积一定，成反比例。",
+      "round": 2
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正比例的意义",
+      "content": "长方体的高一定，(    )和(    )成正比例。请按顺序填两个答案，逗号分隔。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "体积,底面积",
+      "explanation": "长方体体积 = 底面积 × 高，高一定时体积 ÷ 底面积 = 高（一定），成正比例。",
+      "round": 2
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/反比例的意义",
+      "content": "体操比赛的总人数一定，每排人数与排数成(    )比例关系。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "反",
+      "explanation": "每排人数 × 排数 = 总人数（一定），积一定，成反比例。",
+      "round": 1
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正比例的意义",
+      "content": "一种产品的合格率是 96.5%，那么合格产品的数量和产品总数量(    )正比例（填「成」或「不成」）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "成",
+      "explanation": "合格数 ÷ 总数 = 96.5%（一定），比值一定，成正比例。",
+      "round": 1
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正比例的意义",
+      "content": "大白鲨 2 时游 140 km，照这样的速度，大白鲨 12 时游(    )km，一昼夜能游(    )km。请按顺序填两个答案，逗号分隔。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "840,1680",
+      "explanation": "速度 = 140÷2 = 70 km/时。12 时游 70×12 = 840 km；24 时游 70×24 = 1680 km。",
+      "round": 2
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正反比例的判断",
+      "content": "相关联的两个量不是成正比例关系就是成反比例关系。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "错",
+      "explanation": "相关联的两个量也可能不成比例（例如和一定、平方关系等）。",
+      "round": 2
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正反比例的判断",
+      "content": "圆的半径与面积成正比例。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "错",
+      "explanation": "S = πr²，面积与半径的平方成正比，不是与半径本身成正比例。",
+      "round": 2
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/反比例的意义",
+      "content": "x∶6＝9∶y，则 x 和 y 成正比例。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "错",
+      "explanation": "由比例性质 xy = 6×9 = 54（积一定），所以 x 与 y 成反比例，不是正比例。",
+      "round": 3
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正比例的意义",
+      "content": "下列关系式中，表示 x 和 y 成正比例关系的是(    )。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": ["A. x－y＝4", "B. xy＝100", "C. x＋y＝24", "D. y＝100x"],
+      "answer": "D",
+      "explanation": "y = 100x 即 y÷x = 100（一定），成正比例。A 差一定、B 积一定（反比例）、C 和一定都不是正比例。",
+      "round": 2
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正比例的意义",
+      "content": "下列选项中，相关联的两个量成正比例关系的是(    )。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": ["A. 等边三角形的周长和任意一边的长度", "B. 圆锥的体积一定，底面积和高", "C. 利息和利率"],
+      "answer": "A",
+      "explanation": "A 周长 = 3 × 边长，比值 3 一定，成正比例。B 积一定是反比例。C 利息还与本金、时间有关，不一定成正比例。",
+      "round": 2
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正反比例的判断",
+      "content": "下列选项中两个量不成比例的是(    )。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": ["A. 从合肥到安庆，列车行驶的平均速度与所需时间", "B. 一箱桃子，吃掉的个数与剩下的个数", "C. 在太阳光下，同一时刻、同一地点物体的高度与影子的长度"],
+      "answer": "B",
+      "explanation": "A 路程一定，速度 × 时间 = 路程，反比例。B 吃掉 + 剩下 = 总数（和一定），不成比例。C 同时同地物高与影长比一定，正比例。",
+      "round": 2
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正反比例的判断",
+      "content": "装订练习本时，每本页数、装订本数和纸张总数三个量中：A.每本页数一定，装订本数和纸张总数；B.装订本数一定，每本页数和纸张总数；C.纸张总数一定，每本页数和装订本数。成正比例关系的两组是(    )，成反比例关系的一组是(    )。请按顺序填两个答案，逗号分隔（多个字母用顿号「、」连接）。",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "A、B,C",
+      "explanation": "A 每本页数定，本数 × 页数 = 总数 → 本数与总数比一定（正比例）。B 本数定，每本页数与总数比一定（正比例）。C 总数定，每本页数 × 本数 = 总数（反比例）。",
+      "round": 3
+    }
+  ]
+}
