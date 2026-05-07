@@ -1,0 +1,2494 @@
+{
+  "source": "batch_2026_05_07_g6_math_r3",
+  "subject": "math",
+  "grade": 6,
+  "knowledge_points_added": [],
+  "questions": [
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+      "content": "等底等高的圆柱和圆锥，圆柱体积比圆锥体积多 $24cm^3$，则圆锥的体积是多少 $cm^3$？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "B",
+      "explanation": "等底等高时圆柱体积是圆锥的 3 倍，差 2 倍 = 24，圆锥 = 12。",
+      "options": [
+        "A. $8$",
+        "B. $12$",
+        "C. $16$",
+        "D. $24$"
+      ]
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+      "content": "把一个圆柱削成最大的圆锥，削去部分的体积是圆锥体积的几倍？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "B",
+      "explanation": "圆柱体积 = 3V锥，削去 = 圆柱 − 圆锥 = 2V锥。",
+      "options": [
+        "A. $1$ 倍",
+        "B. $2$ 倍",
+        "C. $3$ 倍",
+        "D. $\\frac{1}{3}$ 倍"
+      ]
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "content": "一个圆柱底面半径扩大到原来的 2 倍，高不变，体积扩大到原来的几倍？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "C",
+      "explanation": "$V=\\pi r^2 h$，半径平方放 4 倍，所以体积变 4 倍。",
+      "options": [
+        "A. $2$ 倍",
+        "B. $3$ 倍",
+        "C. $4$ 倍",
+        "D. $6$ 倍"
+      ]
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "content": "一个圆柱形容器装满水后倒入与它等底等高的圆锥形容器，最少需要倒几次？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "C",
+      "explanation": "圆柱体积是圆锥的 3 倍，需倒 3 次才能装满 3 个圆锥。",
+      "options": [
+        "A. $1$ 次",
+        "B. $2$ 次",
+        "C. $3$ 次",
+        "D. $4$ 次"
+      ],
+      "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>"
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的表面积",
+      "content": "把一个圆柱沿底面直径切成两个半圆柱，表面积比原来增加了什么？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "B",
+      "explanation": "切一刀产生 2 个矩形截面，每个长=直径、宽=高。",
+      "options": [
+        "A. 一个长方形（长=底面直径，宽=高）",
+        "B. 两个长方形（长=直径，宽=高）",
+        "C. 一个圆",
+        "D. 两个圆"
+      ]
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "content": "一个圆柱底面周长 $12.56cm$，高 $10cm$，体积是多少 $cm^3$？（$\\pi$ 取 $3.14$）",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "C",
+      "explanation": "半径 $=12.56\\div 6.28=2$，$V=3.14\\times 4\\times 10=125.6$。",
+      "options": [
+        "A. $40$",
+        "B. $62.8$",
+        "C. $125.6$",
+        "D. $251.2$"
+      ],
+      "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>"
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆锥的体积",
+      "content": "一个圆锥的底面半径是 $3cm$，高是 $4cm$，体积是多少 $cm^3$？（$\\pi$ 取 $3.14$）",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "B",
+      "explanation": "$V=\\frac{1}{3}\\pi r^2 h=\\frac{1}{3}\\times 3.14\\times 9\\times 4=37.68$。",
+      "options": [
+        "A. $12.56$",
+        "B. $37.68$",
+        "C. $75.36$",
+        "D. $113.04$"
+      ],
+      "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='120' x2='100' y2='20' stroke='black'/><line x1='145' y1='120' x2='100' y2='20' stroke='black'/><line x1='100' y1='20' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text></svg>"
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的表面积",
+      "content": "把一个高 $4cm$ 的圆柱沿轴剖开得到一个边长 $4cm$ 的正方形，原圆柱的表面积是多少 $cm^2$？（$\\pi$ 取 $3.14$）",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "A",
+      "explanation": "轴截面是正方形，所以高=底面直径=4，半径=2。$S=2\\pi r^2+2\\pi rh=2\\times 3.14\\times 4+2\\times 3.14\\times 2\\times 4=25.12+25.12=50.24$。",
+      "options": [
+        "A. $50.24$",
+        "B. $56.52$",
+        "C. $62.8$",
+        "D. $75.36$"
+      ],
+      "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>"
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+      "content": "等底等高的一个圆柱和一个圆锥，体积一共 $96cm^3$，圆柱比圆锥多多少 $cm^3$？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "B",
+      "explanation": "设圆锥 = $V$，圆柱 = $3V$，$4V=96$，$V=24$；差 = $2V=48$。",
+      "options": [
+        "A. $24$",
+        "B. $48$",
+        "C. $64$",
+        "D. $72$"
+      ]
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "content": "一个圆柱形水桶装有水，底面半径 $5cm$，水深 $20cm$。将一个完全浸没的铁球取出后水面下降 $2cm$，铁球的体积是多少 $cm^3$？（$\\pi$ 取 $3.14$）",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "C",
+      "explanation": "排开水量 = 底面积 × 下降高度 $=3.14\\times 25\\times 2=157cm^3$。",
+      "options": [
+        "A. $50$",
+        "B. $78.5$",
+        "C. $157$",
+        "D. $314$"
+      ]
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆锥的体积",
+      "content": "一堆圆锥形沙子，底面周长 $12.56m$，高 $1.5m$。每立方米沙子重 $1.5$ 吨，这堆沙子重多少吨？（$\\pi$ 取 $3.14$）",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "B",
+      "explanation": "半径 $=12.56\\div 6.28=2m$；$V=\\frac{1}{3}\\times 3.14\\times 4\\times 1.5=6.28m^3$；重 $=6.28\\times 1.5=9.42$ 吨。",
+      "options": [
+        "A. $6.28$",
+        "B. $9.42$",
+        "C. $12.56$",
+        "D. $18.84$"
+      ]
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的表面积",
+      "content": "用一张长 $12.56cm$、宽 $9.42cm$ 的长方形纸卷成一个圆柱（不留接缝），下面哪种卷法所得圆柱体积更大？",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "B",
+      "explanation": "底面周长越大，半径越大，体积 $V=\\pi r^2 h$ 中半径平方影响最大。短边作高使周长变大、体积更大。",
+      "options": [
+        "A. 沿长 $12.56cm$ 边为圆周",
+        "B. 沿宽 $9.42cm$ 边为圆周",
+        "C. 两种体积相等",
+        "D. 无法比较"
+      ]
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+      "content": "一个底面半径相等的圆柱和圆锥，圆柱的高是 $6cm$，圆锥的高是 $9cm$，则它们体积之比是多少？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "A",
+      "explanation": "$V_{柱}:V_{锥}=\\pi r^2\\cdot 6:\\frac{1}{3}\\pi r^2\\cdot 9=6:3=2:1$。",
+      "options": [
+        "A. $2:1$",
+        "B. $2:3$",
+        "C. $1:1$",
+        "D. $3:2$"
+      ]
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的认识",
+      "content": "把一根长 $1.5m$ 的圆柱形钢材沿底面平均截成 $5$ 段后，所有钢材的表面积总和比原来增加 $______$ 个底面的面积。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "8",
+      "explanation": "截 5 段需切 4 刀，每刀产生 2 个底面，共 8 个底面。"
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "content": "一个圆柱底面积 $25cm^2$，高 $8cm$，则它的体积是 $______cm^3$。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "200",
+      "explanation": "$V=Sh=25\\times 8=200$。"
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆锥的体积",
+      "content": "一个圆锥的体积是 $30cm^3$，与它等底等高的圆柱体积是 $______cm^3$。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "90",
+      "explanation": "圆柱体积是圆锥的 3 倍，$30\\times 3=90$。"
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+      "content": "等底等高的圆柱和圆锥体积之比为 $______$。（写最简整数比）",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "3:1",
+      "explanation": "圆柱是圆锥的 3 倍。"
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "content": "一个圆柱的底面半径不变，高扩大到原来的 $3$ 倍，体积扩大到原来的 $______$ 倍。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "3",
+      "explanation": "$V=\\pi r^2 h$ 中 $h$ 变 3 倍，体积变 3 倍。"
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+      "content": "一个圆柱与一个圆锥底面积相等，圆柱高 $4cm$、圆锥高 $9cm$，它们的体积之比是 $______$。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "4:3",
+      "explanation": "$V_{柱}:V_{锥}=4:\\frac{1}{3}\\times 9=4:3$。"
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆锥的体积",
+      "content": "一个圆锥底面积 $24cm^2$，高 $10cm$，体积是 $______cm^3$。",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "80",
+      "explanation": "$V=\\frac{1}{3}\\times 24\\times 10=80$。"
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "content": "一个圆柱形水桶底面直径 $20cm$，水面高 $15cm$，桶内有水 $______$ 升。（$\\pi$ 取 $3.14$）",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "4.71",
+      "explanation": "$V=3.14\\times 100\\times 15=4710cm^3=4.71L$。"
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "content": "一个圆柱形水箱底面积 $0.6m^2$，装满水后再倒入一个等底等高的圆锥形容器，最多能装满 $______$ 个圆锥形容器。",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "3",
+      "explanation": "圆柱 = 3 圆锥。"
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+      "content": "一个圆柱和一个圆锥的体积相等，底面积也相等，圆柱高 $4cm$，则圆锥高 $______cm$。",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "12",
+      "explanation": "$Sh=\\frac{1}{3}Sh'$ → $h'=3h=12$。"
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "content": "一个圆柱形水池底面半径 $2m$，深 $1.5m$，水池最多能蓄水 $______m^3$。（$\\pi$ 取 $3.14$，结果保留两位小数）",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "18.84",
+      "explanation": "$V=3.14\\times 4\\times 1.5=18.84$。"
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆锥的体积",
+      "content": "一个圆锥的体积是 $9.42cm^3$，底面积 $4.71cm^2$，它的高是 $______cm$。",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "6",
+      "explanation": "$h=\\frac{3V}{S}=\\frac{3\\times 9.42}{4.71}=6$。"
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+      "content": "一个圆柱削成最大的圆锥，削去部分体积是 $24cm^3$，则原圆柱体积是 $______cm^3$。",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "36",
+      "explanation": "削去 = 2 圆锥 = 24，圆锥 = 12，圆柱 = 36。"
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的表面积",
+      "content": "一个圆柱形通风管，底面半径 $5cm$，长 $1m$，制作 $20$ 节这样的通风管至少需要多少 $m^2$ 铁皮？（$\\pi$ 取 $3.14$，结果保留两位小数）",
+      "type": "calculation",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "6.28",
+      "explanation": "单节侧面积 $=2\\pi rh=2\\times 3.14\\times 0.05\\times 1=0.314m^2$，$20$ 节 $=6.28m^2$。",
+      "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>"
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "content": "一个圆柱形玻璃杯内底面半径 $4cm$，倒入 $200mL$ 水后，水面距杯口还有 $5cm$，则这个杯子最多能装水多少 $mL$？（$\\pi$ 取 $3.14$）",
+      "type": "calculation",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "451.2",
+      "explanation": "再装 $5cm$ 水：$3.14\\times 16\\times 5=251.2mL$，总容量 $=200+251.2=451.2mL$。",
+      "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>"
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+      "content": "把一个底面半径 $3cm$、高 $9cm$ 的圆柱形橡皮泥重新捏成一个底面半径 $3cm$ 的圆锥，圆锥的高是 $______cm$。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "27",
+      "explanation": "体积守恒：$\\pi\\times 9\\times 9=\\frac{1}{3}\\pi\\times 9\\times h$，$h=27$。"
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "content": "一个底面直径 $40cm$ 的圆柱形水桶，里面水深 $30cm$。把一个底面半径 $10cm$、高 $9cm$ 的圆锥铁块完全浸没在水中后，水面上升多少 $cm$？（$\\pi$ 取 $3.14$）",
+      "type": "calculation",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "0.75",
+      "explanation": "圆锥体积 $V=\\frac{1}{3}\\pi\\times 100\\times 9=300\\pi$；上升 $h=\\frac{V}{\\pi\\times 400}=\\frac{300}{400}=0.75cm$。"
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的表面积",
+      "content": "一个圆柱形罐头侧面贴一张商标纸（不重叠、无空隙）。罐头底面直径 $10cm$、高 $15cm$。这张商标纸的面积是多少 $cm^2$？（$\\pi$ 取 $3.14$）",
+      "type": "calculation",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "471",
+      "explanation": "$S_{侧}=\\pi dh=3.14\\times 10\\times 15=471cm^2$。"
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+      "content": "一个底面半径 $6cm$ 的圆锥形容器装满水，把水全部倒入一个底面半径 $4cm$ 的圆柱形容器中，水面高 $9cm$。圆锥的高是多少 $cm$？",
+      "type": "calculation",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "12",
+      "explanation": "$\\frac{1}{3}\\pi\\times 36\\times h=\\pi\\times 16\\times 9$，$12h=144$，$h=12$。"
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "content": "一根圆柱形钢材底面积 $50cm^2$，长 $2m$。如果每立方厘米钢材重 $7.8g$，这根钢材重多少 kg？",
+      "type": "calculation",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "78",
+      "explanation": "$V=50\\times 200=10000cm^3$，重 $10000\\times 7.8=78000g=78kg$。"
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆锥的体积",
+      "content": "一个底面半径 $3m$ 的圆锥形麦堆，高 $1.2m$。每立方米小麦约重 $700kg$，这堆小麦约重多少 kg？（$\\pi$ 取 $3.14$）",
+      "type": "calculation",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "7912.8",
+      "explanation": "$V=\\frac{1}{3}\\times 3.14\\times 9\\times 1.2=11.304m^3$；$11.304\\times 700=7912.8kg$。"
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/化简比",
+      "content": "化简比 $\\frac{2}{3}:\\frac{4}{9}$ 的最简整数比是多少？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "B",
+      "explanation": "$\\frac{2}{3}:\\frac{4}{9}=\\frac{6}{9}:\\frac{4}{9}=6:4=3:2$。",
+      "options": [
+        "A. $2:3$",
+        "B. $3:2$",
+        "C. $4:9$",
+        "D. $9:4$"
+      ]
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/求比值",
+      "content": "甲数与乙数的比是 $5:3$，乙数比甲数少多少？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "B",
+      "explanation": "少 $\\frac{5-3}{5}=\\frac{2}{5}$。",
+      "options": [
+        "A. $\\frac{2}{3}$",
+        "B. $\\frac{2}{5}$",
+        "C. $\\frac{3}{5}$",
+        "D. $\\frac{3}{8}$"
+      ]
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比例的基本性质",
+      "content": "已知 $5x=3y$（$y\\neq 0$），$x:y=$？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "B",
+      "explanation": "$\\frac{x}{y}=\\frac{3}{5}$。",
+      "options": [
+        "A. $5:3$",
+        "B. $3:5$",
+        "C. $3:8$",
+        "D. $5:8$"
+      ]
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/解比例",
+      "content": "解比例 $\\frac{x}{4}=\\frac{6}{8}$，$x=$？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "B",
+      "explanation": "$8x=24$，$x=3$。",
+      "options": [
+        "A. $2$",
+        "B. $3$",
+        "C. $4$",
+        "D. $6$"
+      ]
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/化简比",
+      "content": "把 $0.25:\\frac{1}{8}$ 化成最简整数比是多少？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "B",
+      "explanation": "$0.25=\\frac{1}{4}$，$\\frac{1}{4}:\\frac{1}{8}=2:1$。",
+      "options": [
+        "A. $1:2$",
+        "B. $2:1$",
+        "C. $1:4$",
+        "D. $4:1$"
+      ]
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "一杯糖水中糖与水的比是 $1:25$，糖占糖水的几分之几？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "C",
+      "explanation": "$\\frac{1}{1+25}=\\frac{1}{26}$。",
+      "options": [
+        "A. $\\frac{1}{24}$",
+        "B. $\\frac{1}{25}$",
+        "C. $\\frac{1}{26}$",
+        "D. $\\frac{25}{26}$"
+      ]
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "一个长方形周长 $48cm$，长与宽的比是 $5:3$，长是多少 $cm$？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "B",
+      "explanation": "周长一半 $=24$，长 $=24\\times \\frac{5}{8}=15$。",
+      "options": [
+        "A. $9$",
+        "B. $15$",
+        "C. $20$",
+        "D. $30$"
+      ]
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比例的意义",
+      "content": "下面四组中，能组成比例的是哪一组？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "B",
+      "explanation": "$1.2:0.4=3:1$，$0.6:0.2=3:1$，比值相同。",
+      "options": [
+        "A. $2:3$ 和 $4:9$",
+        "B. $1.2:0.4$ 和 $0.6:0.2$",
+        "C. $\\frac{1}{3}:\\frac{1}{6}$ 和 $1:3$",
+        "D. $5:7$ 和 $7:5$"
+      ]
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/解比例",
+      "content": "$\\frac{6}{x}=\\frac{4}{10}$，$x=$？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "C",
+      "explanation": "$4x=60$，$x=15$。",
+      "options": [
+        "A. $10$",
+        "B. $12$",
+        "C. $15$",
+        "D. $24$"
+      ]
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "甲、乙两数比是 $4:5$，丙、乙两数比是 $3:5$，则甲、丙两数比是？",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "A",
+      "explanation": "同除以乙：甲 $=\\frac{4}{5}$ 乙，丙 $=\\frac{3}{5}$ 乙；甲:丙 $=4:3$。",
+      "options": [
+        "A. $4:3$",
+        "B. $3:4$",
+        "C. $4:5$",
+        "D. $3:5$"
+      ]
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "一项工程，甲单独做 $10$ 天完成，乙单独做 $15$ 天完成，他们的工作效率比是多少？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "C",
+      "explanation": "效率与时间成反比，$\\frac{1}{10}:\\frac{1}{15}=3:2$。",
+      "options": [
+        "A. $10:15$",
+        "B. $2:3$",
+        "C. $3:2$",
+        "D. $15:10$"
+      ]
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比例的基本性质",
+      "content": "如果 $a:b=3:4$，$b:c=2:5$，那么 $a:c=$？",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "C",
+      "explanation": "$b$ 的份数同：$a:b=3:4=\\frac{3}{2}:2$，$b:c=2:5$，所以 $a:b:c=\\frac{3}{2}:2:5=3:4:10$，$a:c=3:10$。",
+      "options": [
+        "A. $3:5$",
+        "B. $5:3$",
+        "C. $3:10$",
+        "D. $6:20$"
+      ]
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/化简比",
+      "content": "把 $\\frac{3}{4}$ 米 : $25$ 厘米 化成最简整数比是多少？",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "A",
+      "explanation": "化为同单位：$75cm:25cm=3:1$。",
+      "options": [
+        "A. $3:1$",
+        "B. $3:25$",
+        "C. $75:25$",
+        "D. $1:3$"
+      ]
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/化简比",
+      "content": "化简 $\\frac{1}{4}:\\frac{1}{6}$ 的最简整数比是 $______$。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "3:2",
+      "explanation": "$\\frac{1}{4}:\\frac{1}{6}=\\frac{3}{12}:\\frac{2}{12}=3:2$。"
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/求比值",
+      "content": "$2.5:\\frac{1}{2}$ 的比值是 $______$。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "5",
+      "explanation": "$2.5\\div 0.5=5$。"
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/解比例",
+      "content": "解比例：$3:8=15:x$，$x=______$。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "40",
+      "explanation": "$3x=120$，$x=40$。"
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比例的基本性质",
+      "content": "如果 $4a=5b$，$a$ 与 $b$ 的最简整数比是 $______$。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "5:4",
+      "explanation": "$\\frac{a}{b}=\\frac{5}{4}$。"
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "一袋大米 $50kg$，吃了 $\\frac{2}{5}$，吃了的与剩下的比是 $______$。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "2:3",
+      "explanation": "吃 $\\frac{2}{5}$，剩 $\\frac{3}{5}$，比 $2:3$。"
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "六（1）班男女生人数比是 $7:8$，全班 $45$ 人，男生 $______$ 人。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "21",
+      "explanation": "$45\\times \\frac{7}{15}=21$。"
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/解比例",
+      "content": "解比例：$\\frac{1}{4}:x=2:3$，$x=______$。",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "3/8",
+      "explanation": "$2x=\\frac{3}{4}$，$x=\\frac{3}{8}$。"
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/化简比",
+      "content": "$0.6$ 时 : $45$ 分 化成最简整数比是 $______$。",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "4:5",
+      "explanation": "$0.6$ 时 $=36$ 分，$36:45=4:5$。"
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "把 $30g$ 盐溶解在 $270g$ 水中，盐占盐水的几分之几（最简分数）？$______$",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "1/10",
+      "explanation": "盐水 $=300g$，$\\frac{30}{300}=\\frac{1}{10}$。"
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "一根铁丝围成长 $8cm$、宽 $4cm$ 的长方形。如果用同长铁丝围成正方形，则长方形与正方形面积比是 $______$。",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "8:9",
+      "explanation": "周长 $=24cm$，正方形边长 $=6$；面积比 $32:36=8:9$。"
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "一辆汽车 $4$ 小时行 $240km$，所用时间与行驶路程的比的比值是 $______$。",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "1/60",
+      "explanation": "$\\frac{4}{240}=\\frac{1}{60}$。"
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/解比例",
+      "content": "甲、乙两数比是 $3:5$，乙数比甲数多 $40$，乙数是 $______$。",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "100",
+      "explanation": "差 $2$ 份对应 $40$，$1$ 份 $=20$；乙 $=5\\times 20=100$。"
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/化简比",
+      "content": "把 $\\frac{2}{5}$ 千米 : $400$ 米 化成最简整数比是 $______$。",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "1:1",
+      "explanation": "$\\frac{2}{5}$ 千米 $=400$ 米，比为 $1:1$。"
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/解比例",
+      "content": "解比例：$\\frac{x}{2.4}=\\frac{1.5}{4}$，$x=______$。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "0.9",
+      "explanation": "$4x=2.4\\times 1.5=3.6$，$x=0.9$。"
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "一个长方形操场长与宽的比是 $7:5$，周长 $480m$，面积是多少 $m^2$？",
+      "type": "calculation",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "14000",
+      "explanation": "周长一半 $=240$，长 $=140$，宽 $=100$，面积 $=14000$。"
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "把 $144$ 块巧克力按 $2:3:4$ 分给三人，每人各得多少块？",
+      "type": "calculation",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "32|||48|||64",
+      "explanation": "$1$ 份 $=144\\div 9=16$；分别为 $32, 48, 64$ 块。"
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/解比例",
+      "content": "解比例：$3:(x+2)=4:8$。",
+      "type": "calculation",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "4",
+      "explanation": "$4(x+2)=24$，$x+2=6$，$x=4$。"
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "甲、乙两人共 $480$ 元。甲钱数的 $\\frac{1}{3}$ 等于乙钱数的 $\\frac{1}{5}$，求甲、乙各有多少元。",
+      "type": "calculation",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "180|||300",
+      "explanation": "$\\frac{1}{3}$ 甲 $=\\frac{1}{5}$ 乙，所以甲:乙 $=3:5$。$1$ 份 $=480\\div 8=60$，甲 $=180$，乙 $=300$。"
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "一种合金铜与锌的比是 $11:9$，合金共重 $400g$，铜比锌多多少 $g$？",
+      "type": "calculation",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "40",
+      "explanation": "$1$ 份 $=400\\div 20=20g$，差 $=2$ 份 $=40g$。"
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/解比例",
+      "content": "解比例：$\\frac{6}{0.5}=\\frac{x+1}{2}$。",
+      "type": "calculation",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "23",
+      "explanation": "$0.5(x+1)=12$，$x+1=24$，$x=23$。"
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "甲、乙两班共有 $96$ 人。如果从甲班调 $4$ 人到乙班，两班人数相等。原来甲、乙两班人数比是多少？",
+      "type": "calculation",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "13:11",
+      "explanation": "原来甲 $=52$，乙 $=44$；最简比 $52:44=13:11$。"
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/平移",
+      "content": "一个三角形向右平移 $5$ 格，再向上平移 $3$ 格后，原图形与新图形相比，下列说法正确的是？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "C",
+      "explanation": "平移不改变图形形状和大小。",
+      "options": [
+        "A. 形状改变，大小不变",
+        "B. 形状不变，大小改变",
+        "C. 形状和大小都不变",
+        "D. 形状和大小都改变"
+      ]
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/旋转",
+      "content": "时钟从 $3$ 时整到 $3$ 时 $20$ 分，分针顺时针旋转了多少度？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "C",
+      "explanation": "$20$ 分钟 = $\\frac{20}{60}\\times 360°=120°$。",
+      "options": [
+        "A. $60°$",
+        "B. $90°$",
+        "C. $120°$",
+        "D. $180°$"
+      ]
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/轴对称",
+      "content": "下面图形中，对称轴最多的是哪一个？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "D",
+      "explanation": "圆有无数条对称轴。",
+      "options": [
+        "A. 等腰三角形",
+        "B. 长方形",
+        "C. 正方形",
+        "D. 圆"
+      ]
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/图形放大缩小",
+      "content": "把一个长方形按 $3:1$ 放大，若原长方形长 $4cm$、宽 $3cm$，放大后周长是多少？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "C",
+      "explanation": "放大后长 $12$、宽 $9$，周长 $=42$。",
+      "options": [
+        "A. $14cm$",
+        "B. $21cm$",
+        "C. $42cm$",
+        "D. $126cm$"
+      ]
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/图形放大缩小",
+      "content": "把一个三角形按 $2:1$ 放大，原三角形面积 $9cm^2$，放大后的面积是多少？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "C",
+      "explanation": "面积比 $=$ 边长比的平方 $=4$；$9\\times 4=36$。",
+      "options": [
+        "A. $18cm^2$",
+        "B. $27cm^2$",
+        "C. $36cm^2$",
+        "D. $81cm^2$"
+      ]
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/旋转",
+      "content": "把一个直角三角形以一条直角边为轴旋转一周，得到的立体图形是？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "B",
+      "explanation": "直角三角形绕一直角边旋转一周成圆锥。",
+      "options": [
+        "A. 圆柱",
+        "B. 圆锥",
+        "C. 球",
+        "D. 圆台"
+      ]
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/旋转",
+      "content": "一个长方形绕着它的一条边旋转一周，所形成的立体图形是？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "B",
+      "explanation": "长方形绕一边旋转一周得圆柱。",
+      "options": [
+        "A. 长方体",
+        "B. 圆柱",
+        "C. 圆锥",
+        "D. 球"
+      ]
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/轴对称",
+      "content": "下面字母中，既是轴对称又有 $2$ 条对称轴的是？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "B",
+      "explanation": "H 有水平和竖直 $2$ 条对称轴。",
+      "options": [
+        "A. A",
+        "B. H",
+        "C. E",
+        "D. P"
+      ]
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/平移",
+      "content": "一个图形先向右平移 $3$ 格，再向左平移 $5$ 格，相当于向 $\\square$ 平移 $\\square$ 格。",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "B",
+      "explanation": "$+3-5=-2$，向左 $2$ 格。",
+      "options": [
+        "A. 右 $2$ 格",
+        "B. 左 $2$ 格",
+        "C. 右 $8$ 格",
+        "D. 左 $8$ 格"
+      ]
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/旋转",
+      "content": "钟面上时针从 $9$ 时走到 $12$ 时，旋转了多少度？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "C",
+      "explanation": "时针每小时走 $30°$，$3$ 小时走 $90°$。",
+      "options": [
+        "A. $30°$",
+        "B. $60°$",
+        "C. $90°$",
+        "D. $120°$"
+      ]
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/图形放大缩小",
+      "content": "一张正方形相片按 $1:4$ 缩小后边长是 $2cm$，原相片面积是多少 $cm^2$？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "B",
+      "explanation": "原边长 $=2\\times 4=8$，面积 $=64$。",
+      "options": [
+        "A. $32$",
+        "B. $64$",
+        "C. $16$",
+        "D. $128$"
+      ]
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/旋转",
+      "content": "把一个三角形绕顶点 A 顺时针旋转 $90°$ 后再绕 A 逆时针旋转 $30°$，相当于绕 A 旋转了多少度？",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "A",
+      "explanation": "$90°-30°=60°$（顺时针）。",
+      "options": [
+        "A. 顺时针 $60°$",
+        "B. 顺时针 $120°$",
+        "C. 逆时针 $60°$",
+        "D. 逆时针 $120°$"
+      ]
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/轴对称",
+      "content": "一个等腰梯形有几条对称轴？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "B",
+      "explanation": "等腰梯形仅有 $1$ 条（连两底中点的直线）。",
+      "options": [
+        "A. $0$ 条",
+        "B. $1$ 条",
+        "C. $2$ 条",
+        "D. $4$ 条"
+      ]
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/平移",
+      "content": "一辆汽车从 A 地直线开到 B 地，再从 B 地直线返回 A 地，整个运动属于 $______$。（填\"平移\"或\"旋转\"）",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "平移",
+      "explanation": "直线运动是平移。"
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/旋转",
+      "content": "时针走一个小时，旋转的角度是 $______$ 度。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "30",
+      "explanation": "$\\frac{360°}{12}=30°$。"
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/旋转",
+      "content": "分针走 $15$ 分钟，旋转的角度是 $______$ 度。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "90",
+      "explanation": "$\\frac{15}{60}\\times 360=90°$。"
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/轴对称",
+      "content": "长方形有 $______$ 条对称轴。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "2",
+      "explanation": "水平、垂直各 $1$ 条。"
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/图形放大缩小",
+      "content": "把一个图形按 $2:1$ 放大，对应边长扩大到原来的 $______$ 倍。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "2",
+      "explanation": "放大比例就是边长比。"
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/图形放大缩小",
+      "content": "一个长方形按 $3:1$ 放大后，面积扩大到原来的 $______$ 倍。",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "9",
+      "explanation": "面积比 = 边长比的平方 = $9$。"
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/旋转",
+      "content": "一架风车有 $4$ 个叶片均匀分布，相邻两叶片之间的夹角是 $______$ 度。",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "90",
+      "explanation": "$\\frac{360°}{4}=90°$。"
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/轴对称",
+      "content": "正六边形有 $______$ 条对称轴。",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "6",
+      "explanation": "正六边形有 $6$ 条。"
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/平移",
+      "content": "一个长方形长 $5cm$、宽 $3cm$，向右平移 $4cm$ 后形成一个新的图形。原长方形与新长方形重叠部分是一个 $______$ 形。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "长方",
+      "explanation": "重叠部分宽 $3cm$、长 $1cm$，是长方形（取首字）。"
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/旋转",
+      "content": "时钟在 $3$ 时整时，时针与分针的夹角是 $______$ 度。",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "90",
+      "explanation": "$3\\times 30°=90°$。"
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/旋转",
+      "content": "时钟在 $5$ 时整时，时针与分针的夹角（小于 $180°$）是 $______$ 度。",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "150",
+      "explanation": "$5\\times 30°=150°$。"
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/图形放大缩小",
+      "content": "把一个三角形按 $1:3$ 缩小后，面积缩小到原来的 $______$。（填最简分数）",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "1/9",
+      "explanation": "边长缩小 $3$ 倍，面积缩 $9$ 倍。"
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/旋转",
+      "content": "一个图形绕一点顺时针旋转 $120°$，再继续绕同一点顺时针旋转 $240°$，与原图位置相比共旋转了 $______$ 度（即回到原位置）。",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "360",
+      "explanation": "$120+240=360°$，回到原位置。"
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/图形放大缩小",
+      "content": "把一个长 $8cm$、宽 $5cm$ 的长方形按 $3:2$ 放大，求放大后长方形的长、宽和面积。",
+      "type": "calculation",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "12|||7.5|||90",
+      "explanation": "长 $=8\\times \\frac{3}{2}=12$，宽 $=5\\times \\frac{3}{2}=7.5$，面积 $=90cm^2$。"
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/图形放大缩小",
+      "content": "一个三角形底 $6cm$、高 $4cm$，按 $2:1$ 放大后，面积比原来增加多少 $cm^2$？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "B",
+      "explanation": "原面积 $=12$，放大后 $=12\\times 4=48$，增加 $36$。",
+      "options": [
+        "A. $24$",
+        "B. $36$",
+        "C. $48$",
+        "D. $12$"
+      ]
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/旋转",
+      "content": "时钟从 $7$ 时 $30$ 分到 $9$ 时整，分针和时针分别旋转了多少度？",
+      "type": "calculation",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "540|||45",
+      "explanation": "分针：$1.5$ 小时 $=540°$；时针：$1.5\\times 30°=45°$。"
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/平移",
+      "content": "一个长方形长 $6cm$、宽 $4cm$，向右平移 $3cm$，求原长方形与新长方形重叠部分的面积。",
+      "type": "calculation",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "12",
+      "explanation": "重叠为长方形，长 $=6-3=3$，宽 $=4$，面积 $=12cm^2$。"
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/图形放大缩小",
+      "content": "一个圆按 $1:2$ 缩小后半径是 $4cm$，原来圆的面积是多少 $cm^2$？（$\\pi$ 取 $3.14$）",
+      "type": "calculation",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "200.96",
+      "explanation": "原半径 $=8$，面积 $=3.14\\times 64=200.96$。"
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/图形放大缩小",
+      "content": "把一个底面半径 $4cm$、高 $9cm$ 的圆柱按 $2:1$ 放大，放大后圆柱的体积是原来的多少倍？",
+      "type": "calculation",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "8",
+      "explanation": "所有维度变 $2$ 倍，体积变 $8$ 倍。"
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/旋转",
+      "content": "把一个长 $4cm$、宽 $3cm$ 的长方形绕宽所在的直线旋转一周，得到的立体图形的体积是多少 $cm^3$？（$\\pi$ 取 $3.14$）",
+      "type": "calculation",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "150.72",
+      "explanation": "得到圆柱：底面半径 $=4$，高 $=3$；$V=3.14\\times 16\\times 3=150.72cm^3$。"
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正反比例的判断",
+      "content": "下面哪一组中两个量成正比例？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "C",
+      "explanation": "$C=2\\pi r$，比值 $=2\\pi$ 一定，正比例。",
+      "options": [
+        "A. 一个人的年龄与体重",
+        "B. 长方形的长一定，宽与面积",
+        "C. 圆的周长与半径",
+        "D. 圆的面积与半径"
+      ]
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正反比例的判断",
+      "content": "下面哪一组中两个量成反比例？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "D",
+      "explanation": "$Sh=V$ 一定，所以底面积与高成反比例。",
+      "options": [
+        "A. 一个人的年龄与身高",
+        "B. 行驶速度一定，时间与路程",
+        "C. 正方形周长与边长",
+        "D. 圆柱体积一定，底面积与高"
+      ]
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "一幅地图比例尺是 $1:200000$，图上 $5cm$ 表示实际多少 $km$？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "C",
+      "explanation": "$5\\times 200000=1000000cm=10km$。",
+      "options": [
+        "A. $1$",
+        "B. $5$",
+        "C. $10$",
+        "D. $100$"
+      ]
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正比例的意义",
+      "content": "一辆汽车的速度一定，行驶的路程和时间成什么比例？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "A",
+      "explanation": "$\\frac{s}{t}=v$ 一定，正比例。",
+      "options": [
+        "A. 正比例",
+        "B. 反比例",
+        "C. 不成比例",
+        "D. 无法判断"
+      ]
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/反比例的意义",
+      "content": "一项工程，工作总量一定，工作效率与工作时间成什么比例？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "B",
+      "explanation": "$工效\\times 时间 = 总量$ 一定，反比例。",
+      "options": [
+        "A. 正比例",
+        "B. 反比例",
+        "C. 不成比例",
+        "D. 无法判断"
+      ]
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "在比例尺为 $1:5000000$ 的地图上，量得 A、B 两地的距离是 $4cm$，实际距离是多少 km？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "B",
+      "explanation": "$4\\times 5000000=20000000cm=200km$。",
+      "options": [
+        "A. $20$",
+        "B. $200$",
+        "C. $2000$",
+        "D. $20000$"
+      ]
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正比例的意义",
+      "content": "$y=3x$（$x,y$ 不为 $0$），$x$ 与 $y$ 成什么关系？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "A",
+      "explanation": "$\\frac{y}{x}=3$ 一定，正比例。",
+      "options": [
+        "A. 正比例",
+        "B. 反比例",
+        "C. 不成比例",
+        "D. 无法判断"
+      ]
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/反比例的意义",
+      "content": "$xy=12$（$x,y$ 不为 $0$），$x$ 与 $y$ 成什么关系？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "B",
+      "explanation": "$xy=12$ 一定，反比例。",
+      "options": [
+        "A. 正比例",
+        "B. 反比例",
+        "C. 不成比例",
+        "D. 无法判断"
+      ]
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正反比例图象",
+      "content": "正比例关系 $y=kx$（$k>0$）的图象是？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "A",
+      "explanation": "正比例图象是经过原点的直线。",
+      "options": [
+        "A. 经过原点的直线",
+        "B. 双曲线",
+        "C. 不经过原点的直线",
+        "D. 抛物线"
+      ]
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "一个长方形操场长 $80m$、宽 $60m$，按 $1:2000$ 画在图纸上，图上长方形的面积是多少 $cm^2$？",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "D",
+      "explanation": "实际 $80m=8000cm$，图上 $=8000\\div 2000=4cm$；宽 $=6000\\div 2000=3cm$；面积 $=12cm^2$。",
+      "options": [
+        "A. $4$",
+        "B. $6$",
+        "C. $8$",
+        "D. $12$"
+      ]
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正反比例的判断",
+      "content": "圆的面积与半径的平方成什么比例？",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "A",
+      "explanation": "$\\frac{S}{r^2}=\\pi$ 一定，正比例（注意：与半径不成正比例，但与半径平方成正比例）。",
+      "options": [
+        "A. 正比例",
+        "B. 反比例",
+        "C. 不成比例",
+        "D. 无法判断"
+      ]
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/反比例的意义",
+      "content": "一辆汽车从甲地到乙地，速度与时间成什么关系？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "B",
+      "explanation": "路程一定，速度与时间反比例。",
+      "options": [
+        "A. 正比例",
+        "B. 反比例",
+        "C. 不成比例",
+        "D. 无法判断"
+      ]
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "比例尺 $1:50$ 表示图上 $1cm$ 代表实际 $\\square$ ？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "A",
+      "explanation": "$1:50$ 表示图上 $1$ 代表实际 $50$ 同单位。",
+      "options": [
+        "A. $50cm$",
+        "B. $50m$",
+        "C. $50km$",
+        "D. $5m$"
+      ]
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "比例尺 $1:200$ 中，图上距离 $4cm$ 对应实际 $______cm$。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "800",
+      "explanation": "$4\\times 200=800$。"
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "实际距离 $40m$，比例尺 $1:1000$，图上距离是 $______cm$。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "4",
+      "explanation": "$40m=4000cm$，$4000\\div 1000=4$。"
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正比例的意义",
+      "content": "已知 $y$ 和 $x$ 成正比例关系，当 $x=4$ 时 $y=20$，则当 $x=7$ 时，$y=______$。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "35",
+      "explanation": "$\\frac{y}{x}=5$，$y=5\\times 7=35$。"
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/反比例的意义",
+      "content": "已知 $y$ 与 $x$ 成反比例，当 $x=3$ 时 $y=8$，则当 $x=4$ 时 $y=______$。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "6",
+      "explanation": "$xy=24$，$y=24\\div 4=6$。"
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正反比例的判断",
+      "content": "圆的周长与直径成 $______$ 比例。（填\"正\"或\"反\"）",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "正",
+      "explanation": "$\\frac{C}{d}=\\pi$ 一定。"
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正反比例的判断",
+      "content": "长方形面积一定，长与宽成 $______$ 比例。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "反",
+      "explanation": "$ab=S$ 一定。"
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "在 $1:300000$ 的地图上量得两地距离 $3.5cm$，实际相距 $______km$。",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "10.5",
+      "explanation": "$3.5\\times 300000=1050000cm=10.5km$。"
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/反比例的意义",
+      "content": "汽车从甲地开往乙地，每小时 $80km$ 用 $5$ 小时；如果每小时 $100km$，需要 $______$ 小时。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "4",
+      "explanation": "$80\\times 5=100\\times t$，$t=4$。"
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/反比例的意义",
+      "content": "用同样多的钱，每瓶 $5$ 元能买 $24$ 瓶；如果每瓶 $6$ 元能买 $______$ 瓶。",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "20",
+      "explanation": "$5\\times 24=6\\times n$，$n=20$。"
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正比例的意义",
+      "content": "工人加工零件数与时间成正比例，$3$ 小时加工 $24$ 个，$5$ 小时加工 $______$ 个。",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "40",
+      "explanation": "$\\frac{24}{3}=8$ 个/小时，$5\\times 8=40$。"
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "一段公路长 $24km$，画在 $1:400000$ 的地图上长 $______cm$。",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "6",
+      "explanation": "$24km=2400000cm$，$\\div 400000=6$。"
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/反比例的意义",
+      "content": "一袋米 $50kg$，每天吃 $x$ kg，可以吃 $y$ 天。$x$ 与 $y$ 满足 $xy=______$。",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "50",
+      "explanation": "$xy$ 等于总量。"
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "实际面积 $1$ 平方米，按 $1:100$ 缩小后图上面积 $______$ 平方厘米。",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "1",
+      "explanation": "$1m^2=10000cm^2$，缩 $100^2=10000$ 倍，$=1$。"
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "一段公路实际长 $36km$，画在比例尺为 $1:600000$ 的地图上长是多少 $cm$？",
+      "type": "calculation",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "6",
+      "explanation": "$36km=3600000cm$，$\\div 600000=6cm$。"
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "甲、乙两地实际距离 $480km$，地图上是 $8cm$，求这幅地图的比例尺。",
+      "type": "calculation",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "1:6000000",
+      "explanation": "$\\frac{8cm}{480km}=\\frac{8}{48000000}=\\frac{1}{6000000}$。"
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正比例的意义",
+      "content": "已知工人加工零件数与时间成正比例，工人 $4$ 小时加工 $60$ 个零件，要加工 $135$ 个零件需要多少小时？",
+      "type": "calculation",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "9",
+      "explanation": "$\\frac{60}{4}=15$ 个/小时，$135\\div 15=9$。"
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/反比例的意义",
+      "content": "用一台抽水机，每小时抽 $40t$ 水，需要 $9$ 小时抽完一池水。如果每小时抽 $60t$ 水，多少小时能抽完？",
+      "type": "calculation",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "6",
+      "explanation": "$40\\times 9=60\\times t$，$t=6$。"
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "一个长方形操场实际长 $90m$、宽 $60m$。按比例尺 $1:1500$ 画在图上，图上长方形的周长是多少 $cm$？",
+      "type": "calculation",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "20",
+      "explanation": "实际周长 $=300m=30000cm$，$\\div 1500=20cm$。"
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/反比例的意义",
+      "content": "一项工程，$12$ 人完成需要 $20$ 天。现在增加 $3$ 人，需要多少天完成？",
+      "type": "calculation",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "16",
+      "explanation": "$12\\times 20=15\\times t$，$t=16$。"
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "在比例尺为 $1:25000$ 的地图上量得一长方形菜地长 $4cm$、宽 $3cm$，求菜地实际面积（公顷）。",
+      "type": "calculation",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "75",
+      "explanation": "实际长 $=4\\times 25000=100000cm=1000m$；宽 $=750m$；面积 $=750000m^2=75$ 公顷。"
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "$1$ 件原价 $200$ 元的衣服打八折后再降 $20$ 元，最后售价是多少元？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "A",
+      "explanation": "$200\\times 0.8-20=160-20=140$。",
+      "options": [
+        "A. $140$",
+        "B. $160$",
+        "C. $180$",
+        "D. $144$"
+      ]
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "一种商品先涨价 $20\\%$，再降价 $20\\%$，现价与原价相比？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "C",
+      "explanation": "$1.2\\times 0.8=0.96$，比原价低 $4\\%$。",
+      "options": [
+        "A. 不变",
+        "B. 高 $4\\%$",
+        "C. 低 $4\\%$",
+        "D. 高 $20\\%$"
+      ]
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "存款 $5000$ 元，年利率 $3\\%$，$2$ 年后可获得利息多少元？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "B",
+      "explanation": "$5000\\times 0.03\\times 2=300$。",
+      "options": [
+        "A. $150$",
+        "B. $300$",
+        "C. $450$",
+        "D. $600$"
+      ]
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "甲、乙两地相距 $300km$。一辆车从甲到乙速度 $60km/h$，从乙返甲速度 $50km/h$，全程平均速度是多少 $km/h$？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "C",
+      "explanation": "总时间 $=5+6=11$ 小时；总路程 $=600$；平均 $=\\frac{600}{11}$。",
+      "options": [
+        "A. $54.5$",
+        "B. $55$",
+        "C. $\\frac{600}{11}$",
+        "D. $\\frac{300}{11}$"
+      ]
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/神奇的几何变换",
+      "content": "把一张正方形纸片对折两次后剪去一刀（一个角），展开后得到的图形一定具有什么对称性？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "B",
+      "explanation": "折两次的对折线一定都是展开图的对称轴，所以至少 $2$ 条。",
+      "options": [
+        "A. 只有 $1$ 条对称轴",
+        "B. 至少 $2$ 条对称轴",
+        "C. 没有对称轴",
+        "D. 只能旋转对称"
+      ]
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "一种饮料原价每瓶 $5$ 元，超市促销\"买 $4$ 送 $1$\"，相当于打几折？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "A",
+      "explanation": "买 $4$ 瓶钱得 $5$ 瓶，单价 $\\frac{20}{25}=0.8=$ 八折。",
+      "options": [
+        "A. 八折",
+        "B. 八五折",
+        "C. 七折",
+        "D. 九折"
+      ]
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "某商场\"满 $300$ 减 $80$\"。买原价 $480$ 元的商品，相当于打几折？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "B",
+      "explanation": "$\\frac{480-80}{480}=\\frac{400}{480}\\approx 0.833$。",
+      "options": [
+        "A. 七五折",
+        "B. 八三折",
+        "C. 七折",
+        "D. 八折"
+      ]
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "一种商品标价 $360$ 元，进价 $240$ 元。如果按八折出售，仍可获利多少元？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "B",
+      "explanation": "售价 $=288$；利润 $=288-240=48$。",
+      "options": [
+        "A. $24$",
+        "B. $48$",
+        "C. $72$",
+        "D. $96$"
+      ]
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "六（1）班今天到校 $40$ 人，缺勤 $2$ 人，则该班缺勤率是多少？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "B",
+      "explanation": "$\\frac{2}{40}=5\\%$。",
+      "options": [
+        "A. $4\\%$",
+        "B. $5\\%$",
+        "C. $6\\%$",
+        "D. $8\\%$"
+      ]
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/神奇的几何变换",
+      "content": "一个正方形剪去一个角后还剩几个角？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "D",
+      "explanation": "不同剪法得到 $3$（沿对角线）、$4$（剪过两边）、$5$（剪一边到一边）个角。",
+      "options": [
+        "A. $3$ 个",
+        "B. $4$ 个",
+        "C. $5$ 个",
+        "D. $3, 4$ 或 $5$ 个"
+      ]
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "一辆出租车收费：起步价 $10$ 元（含 $3km$），$3km$ 以上每 $km$ $2$ 元。乘 $7km$ 应付多少元？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "C",
+      "explanation": "$10+(7-3)\\times 2=10+8=18$。",
+      "options": [
+        "A. $14$",
+        "B. $16$",
+        "C. $18$",
+        "D. $20$"
+      ]
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "甲乙两人合做一项工程，单独做甲 $15$ 天完成，乙 $10$ 天完成。两人合做几天完成？",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "B",
+      "explanation": "$\\frac{1}{\\frac{1}{15}+\\frac{1}{10}}=\\frac{1}{\\frac{5}{30}}=6$。",
+      "options": [
+        "A. $5$",
+        "B. $6$",
+        "C. $8$",
+        "D. $25$"
+      ]
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "某书店打折促销，全场图书一律 $7$ 折，一本书原价 $50$ 元，王老师买了 $4$ 本，应付多少元？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "A",
+      "explanation": "$50\\times 0.7\\times 4=140$。",
+      "options": [
+        "A. $140$",
+        "B. $200$",
+        "C. $280$",
+        "D. $350$"
+      ]
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "一种商品打八五折出售，原价 $400$ 元，现价 $______$ 元。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "340",
+      "explanation": "$400\\times 0.85=340$。"
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "一项工程甲单独 $20$ 天完成，乙单独 $30$ 天完成，两人合做需要 $______$ 天完成。",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "12",
+      "explanation": "$\\frac{1}{\\frac{1}{20}+\\frac{1}{30}}=\\frac{1}{\\frac{5}{60}}=12$。"
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "一件商品标价 $200$ 元，按八折销售，仍可获利 $40$ 元，则进价是 $______$ 元。",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "120",
+      "explanation": "售价 $=160$，进价 $=160-40=120$。"
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "存款 $8000$ 元，年利率 $2.5\\%$，$3$ 年后利息共 $______$ 元。",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "600",
+      "explanation": "$8000\\times 0.025\\times 3=600$。"
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "学校六年级 $200$ 人，参加书法兴趣小组的占 $30\\%$，则参加书法兴趣小组的有 $______$ 人。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "60",
+      "explanation": "$200\\times 0.3=60$。"
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "一辆汽车 $5$ 小时行 $360km$，照这样的速度，行 $720km$ 需要 $______$ 小时。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "10",
+      "explanation": "速度不变，路程倍则时间倍。"
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "甲、乙两人步行从 A 地同时出发同向去 B 地，甲每小时 $4km$，乙每小时 $5km$，$3$ 小时后两人相距 $______km$。",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "3",
+      "explanation": "$3\\times (5-4)=3$。"
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "一种商品先涨价 $\\frac{1}{5}$，又降价 $\\frac{1}{5}$，现价是原价的 $______$（写最简分数）。",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "24/25",
+      "explanation": "$\\frac{6}{5}\\times \\frac{4}{5}=\\frac{24}{25}$。"
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "一辆车从 A 到 B 用了 $4$ 小时，回程用了 $5$ 小时。来回的平均速度比是 $______$。",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "5:4",
+      "explanation": "路程同，速度与时间反比 $5:4$。"
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "某商品原价 $300$ 元，连续两次打 $9$ 折后，售价是 $______$ 元。",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "243",
+      "explanation": "$300\\times 0.9\\times 0.9=243$。"
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/神奇的几何变换",
+      "content": "把一张正方形纸对折两次后剪去一个直角角，展开后纸上的洞是 $______$ 个。",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "1",
+      "explanation": "对折两次再剪一刀，展开仅一个对称洞（在中心）。"
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "一项工程甲、乙合做 $4$ 天完成，乙单独做 $12$ 天完成，则甲单独做 $______$ 天完成。",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "6",
+      "explanation": "$\\frac{1}{x}+\\frac{1}{12}=\\frac{1}{4}$，$\\frac{1}{x}=\\frac{1}{6}$，$x=6$。"
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "鸡兔同笼共 $20$ 只，足共 $54$ 只，鸡有 $______$ 只。",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "13",
+      "explanation": "假设全鸡 $40$ 足，多 $14$，每兔多 $2$ 足，兔 $=7$，鸡 $=13$。"
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "甲乙两站相距 $480km$，两车同时从两站相向开出，$4$ 小时相遇。已知甲车每小时 $65km$，乙车每小时多少 $km$？",
+      "type": "calculation",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "55",
+      "explanation": "$\\frac{480}{4}-65=120-65=55$。"
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "一项工程甲做 $10$ 天完成，乙做 $15$ 天完成。两人合做 $4$ 天后，余下由乙单独做，还需要多少天完成？",
+      "type": "calculation",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "5",
+      "explanation": "合 $4$ 天完成 $4\\times (\\frac{1}{10}+\\frac{1}{15})=4\\times \\frac{1}{6}=\\frac{2}{3}$；剩 $\\frac{1}{3}$，乙做需 $\\frac{1}{3}\\div \\frac{1}{15}=5$ 天。"
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "甲商场\"满 $200$ 减 $50$\"，乙商场全场打 $8$ 折。买一件标价 $400$ 元的衣服，去哪家更便宜？便宜多少元？",
+      "type": "calculation",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "甲|||20",
+      "explanation": "甲：$400-100=300$（满 $200$ 减 $50$，$400$ 满 $2$ 个 $200$ 减 $100$）；乙：$400\\times 0.8=320$；甲便宜 $20$ 元。"
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "鸡兔同笼共有头 $35$ 个，足 $94$ 只，兔有多少只？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "B",
+      "explanation": "假设全鸡 $70$ 足，差 $24$，每兔多 $2$ 足，兔 $=12$。",
+      "options": [
+        "A. $10$",
+        "B. $12$",
+        "C. $13$",
+        "D. $23$"
+      ]
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "李叔叔存款 $20000$ 元，定期 $3$ 年，年利率 $3.85\\%$。到期共可取回多少元？",
+      "type": "calculation",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "22310",
+      "explanation": "利息 $=20000\\times 0.0385\\times 3=2310$；本利和 $=22310$。"
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "甲、乙两人从相距 $1800m$ 的 A、B 两地同时出发相向而行。甲速 $50m/min$，乙速 $40m/min$。两人 $______$ 分钟后相遇。",
+      "type": "calculation",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "20",
+      "explanation": "$\\frac{1800}{50+40}=\\frac{1800}{90}=20$。"
+    },
+    {
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "一辆客车和一辆货车同时从甲、乙两地相向而行，$6$ 小时相遇。客车每小时 $80km$，货车每小时 $70km$。甲、乙两地相距多少 $km$？",
+      "type": "calculation",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "900",
+      "explanation": "$(80+70)\\times 6=900$。"
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "$\\frac{3}{8}$、$0.5$、$37.5\\%$、$\\frac{2}{5}$ 中最大的数是？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "B",
+      "explanation": "$\\frac{3}{8}=0.375$，$37.5\\%=0.375$，$\\frac{2}{5}=0.4$，$0.5$ 最大。",
+      "options": [
+        "A. $\\frac{3}{8}$",
+        "B. $0.5$",
+        "C. $37.5\\%$",
+        "D. $\\frac{2}{5}$"
+      ]
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "下列各数中，$0.5$ 既等于 $\\frac{1}{2}$，又等于 $50\\%$。这三种形式的关系是？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "A",
+      "explanation": "只是表达方式不同，大小相等。",
+      "options": [
+        "A. 大小相等",
+        "B. 单位不同",
+        "C. 不能比较",
+        "D. 形式相同"
+      ]
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "$1.6$ 时 $=$ ?",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "B",
+      "explanation": "$0.6\\times 60=36$ 分。",
+      "options": [
+        "A. $1$ 时 $6$ 分",
+        "B. $1$ 时 $36$ 分",
+        "C. $1$ 时 $60$ 分",
+        "D. $1$ 时 $16$ 分"
+      ]
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "$\\frac{2}{3}\\times \\frac{6}{7}\\div \\frac{4}{7}=$ ?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "A",
+      "explanation": "$\\frac{2}{3}\\times \\frac{6}{7}\\times \\frac{7}{4}=\\frac{2\\times 6\\times 7}{3\\times 7\\times 4}=\\frac{84}{84}=1$。",
+      "options": [
+        "A. $1$",
+        "B. $\\frac{1}{2}$",
+        "C. $\\frac{4}{7}$",
+        "D. $\\frac{6}{7}$"
+      ]
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "一个圆的半径增加 $2cm$，则面积增加 $\\square$ 。",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "D",
+      "explanation": "$\\pi(r+2)^2-\\pi r^2=\\pi(4r+4)=4\\pi(r+1)$。",
+      "options": [
+        "A. $4\\pi cm^2$",
+        "B. $(\\pi r^2 +4\\pi)cm^2$",
+        "C. $4\\pi r cm^2$",
+        "D. $4\\pi(r+1)cm^2$"
+      ]
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "一个等腰直角三角形的斜边长 $10cm$，它的面积是多少 $cm^2$？",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "A",
+      "explanation": "腰 $a$，则 $a^2+a^2=100$，$a^2=50$；面积 $=\\frac{a^2}{2}=25$。",
+      "options": [
+        "A. $25$",
+        "B. $50$",
+        "C. $\\frac{25}{2}$",
+        "D. $\\frac{50}{2}$"
+      ]
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "一袋中红、白、蓝球各 $3$ 个，任摸一个，下列说法正确的是？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "D",
+      "explanation": "数量相等。",
+      "options": [
+        "A. 摸到红球的可能性大",
+        "B. 摸到白球的可能性大",
+        "C. 摸到蓝球的可能性大",
+        "D. 三种球可能性相等"
+      ]
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "某次比赛 $5$ 名同学的成绩是 $90, 92, 95, 98, 100$。这组数据的中位数是？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "B",
+      "explanation": "中位数取中间一项 $95$。",
+      "options": [
+        "A. $90$",
+        "B. $95$",
+        "C. $96$",
+        "D. $98$"
+      ]
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "甲数比乙数多 $\\frac{1}{4}$，乙数比甲数少几分之几？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "B",
+      "explanation": "设乙 $=4$，甲 $=5$；乙比甲少 $\\frac{1}{5}$。",
+      "options": [
+        "A. $\\frac{1}{4}$",
+        "B. $\\frac{1}{5}$",
+        "C. $\\frac{1}{3}$",
+        "D. $\\frac{1}{6}$"
+      ]
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "把一个长 $9cm$、宽 $6cm$、高 $3cm$ 的长方体切成棱长 $3cm$ 的小正方体，能切多少个？",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "B",
+      "explanation": "$\\frac{9}{3}\\times \\frac{6}{3}\\times \\frac{3}{3}=3\\times 2\\times 1=6$。",
+      "options": [
+        "A. $4$",
+        "B. $6$",
+        "C. $9$",
+        "D. $12$"
+      ]
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "一根绳子第一次用去全长的 $\\frac{1}{3}$，第二次用去剩下的 $\\frac{1}{4}$，还剩全长的几分之几？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "A",
+      "explanation": "$(1-\\frac{1}{3})\\times (1-\\frac{1}{4})=\\frac{2}{3}\\times \\frac{3}{4}=\\frac{1}{2}$。",
+      "options": [
+        "A. $\\frac{1}{2}$",
+        "B. $\\frac{2}{3}$",
+        "C. $\\frac{1}{3}$",
+        "D. $\\frac{5}{12}$"
+      ]
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "下面各数中，能被 $2$、$3$、$5$ 同时整除的最小三位数是？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "B",
+      "explanation": "必须为 $30$ 的倍数，最小三位数 $=120$。",
+      "options": [
+        "A. $100$",
+        "B. $120$",
+        "C. $150$",
+        "D. $180$"
+      ]
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "一个圆和与它等周长的正方形，下列哪个对？",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "A",
+      "explanation": "同周长比较，圆面积最大。",
+      "options": [
+        "A. 圆面积大",
+        "B. 正方形面积大",
+        "C. 一样",
+        "D. 不能确定"
+      ]
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "$0.875$ 化成最简分数是 $______$。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "7/8",
+      "explanation": "$\\frac{875}{1000}=\\frac{7}{8}$。"
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "$3\\frac{1}{2}$ 时 $=$ $______$ 分。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "210",
+      "explanation": "$3.5\\times 60=210$。"
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "$2400m^2$ $=$ $______$ 公顷。（用最简分数）",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "6/25",
+      "explanation": "$\\frac{2400}{10000}=\\frac{6}{25}$。"
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "一组数据 $5, 8, 6, 9, 7$ 的平均数是 $______$。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "7",
+      "explanation": "$\\frac{5+8+6+9+7}{5}=7$。"
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "数据 $4, 6, 6, 8, 10$ 的众数是 $______$。",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "6",
+      "explanation": "$6$ 出现两次最多。"
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "一桶油用去 $\\frac{2}{5}$ 后还剩 $24kg$，原有 $______kg$ 油。",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "40",
+      "explanation": "$24\\div (1-\\frac{2}{5})=40$。"
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "一个数的 $\\frac{2}{3}$ 是 $30$，这个数的 $40\\%$ 是 $______$。",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "18",
+      "explanation": "数 $=45$，$45\\times 0.4=18$。"
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "学校体育组中男生与女生人数比是 $5:3$，男生比女生多 $12$ 人，体育组共 $______$ 人。",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "48",
+      "explanation": "差 $2$ 份 $=12$，$1$ 份 $=6$；总 $8$ 份 $=48$。"
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "一个正方体棱长之和 $36cm$，它的体积是 $______cm^3$。",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "27",
+      "explanation": "棱长 $=3$，体积 $=27$。"
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "一个圆的半径是 $6cm$，它的周长是 $______cm$。（$\\pi$ 取 $3.14$）",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "37.68",
+      "explanation": "$2\\times 3.14\\times 6=37.68$。"
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "甲、乙、丙三人共做零件 $360$ 个，甲做了总数的 $\\frac{1}{3}$，乙、丙人数比 $5:3$，丙做 $______$ 个。",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "90",
+      "explanation": "甲 $=120$；乙丙共 $240$；丙 $=240\\times \\frac{3}{8}=90$。"
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "一个数缩小为原来的 $\\frac{1}{100}$ 是 $0.025$，原来这个数是 $______$。",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "2.5",
+      "explanation": "$0.025\\times 100=2.5$。"
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "一个袋中有红球 $5$ 个、白球 $3$ 个、黄球 $2$ 个，从中任取一个，是红球的可能性是 $______$。（最简分数）",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "1/2",
+      "explanation": "$\\frac{5}{10}=\\frac{1}{2}$。"
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "用简便方法计算：$\\frac{7}{9}\\times 25+\\frac{2}{9}\\times 25$。",
+      "type": "calculation",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "25",
+      "explanation": "$(\\frac{7}{9}+\\frac{2}{9})\\times 25=1\\times 25=25$。"
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "用简便方法计算：$2.5\\times 4.4$。",
+      "type": "calculation",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "11",
+      "explanation": "$2.5\\times 4\\times 1.1=10\\times 1.1=11$。"
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "学校图书馆有故事书 $480$ 本，比科技书多 $\\frac{1}{5}$。科技书有多少本？",
+      "type": "calculation",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "400",
+      "explanation": "$480\\div (1+\\frac{1}{5})=480\\div \\frac{6}{5}=400$。"
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "一项工程，甲队单独做 $20$ 天完成，乙队单独做 $30$ 天完成。两队合做 $6$ 天后剩下的由甲队单独完成，还需要几天？",
+      "type": "calculation",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "10",
+      "explanation": "合 $6$ 天 $=6\\times (\\frac{1}{20}+\\frac{1}{30})=6\\times \\frac{1}{12}=\\frac{1}{2}$；剩 $\\frac{1}{2}$，甲做 $\\frac{1}{2}\\div \\frac{1}{20}=10$ 天。"
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "一个圆柱形蓄水池底面直径 $4m$，深 $1.5m$。在它的底面和侧面抹一层水泥，抹水泥的面积是多少 $m^2$？（$\\pi$ 取 $3.14$）",
+      "type": "calculation",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "31.4",
+      "explanation": "底面 $=3.14\\times 4=12.56$；侧面 $=3.14\\times 4\\times 1.5=18.84$；共 $=31.4m^2$。"
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "甲、乙两数的和是 $84$，甲数的 $\\frac{1}{3}$ 等于乙数的 $\\frac{1}{4}$。求甲、乙两数。",
+      "type": "calculation",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "36|||48",
+      "explanation": "甲:乙 $=3:4$；$1$ 份 $=12$；甲 $=36$，乙 $=48$。"
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "解方程：$\\frac{2}{3}x+5=11$。",
+      "type": "calculation",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "9",
+      "explanation": "$\\frac{2}{3}x=6$，$x=9$。"
+    }
+  ]
+}

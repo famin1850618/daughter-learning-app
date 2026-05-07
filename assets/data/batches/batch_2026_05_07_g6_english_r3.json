@@ -1,0 +1,2769 @@
+{
+  "source": "batch_2026_05_07_g6_english_r3",
+  "subject": "english",
+  "grade": 6,
+  "knowledge_points_added": [],
+  "questions": [
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/学习用品",
+      "content": "辨析：Tom uses a ______ to find the meaning of new English words.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. ruler",
+        "B. dictionary",
+        "C. eraser",
+        "D. crayon"
+      ],
+      "answer": "B",
+      "explanation": "查单词意思要用 dictionary（字典）。",
+      "round": 3
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/学习用品",
+      "content": "Which is NOT a kind of stationery? 答案 (一个词)：______",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "football",
+      "explanation": "football 是体育用品，不是文具。",
+      "round": 3
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/学习用品",
+      "content": "派生词：The verb of erasing wrong words is to ______.",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "erase",
+      "explanation": "动词原形 erase（擦除），eraser 是名词。",
+      "round": 3
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/学习用品",
+      "content": "「文具盒」对应的英文是______ (一个词)。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "pencilcase|||pencil-case",
+      "explanation": "pencil-case 或 pencilcase = 文具盒。",
+      "round": 3
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/学习用品",
+      "content": "听音判断（朗读：I look up new words in my dictionary.）：\n「字典」对应的英文是______。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "dictionary",
+      "explanation": "dictionary = 字典。",
+      "round": 3,
+      "audio_text": "I look up new words in my dictionary."
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/家庭与人物",
+      "content": "派生词：A person who teaches is a ______.",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "teacher",
+      "explanation": "动词 teach 加 -er 表人，名词 teacher（老师）。",
+      "round": 3
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/家庭与人物",
+      "content": "同义辨析：My mum's brother is my ______.",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "uncle",
+      "explanation": "妈妈的兄弟是 uncle（舅舅/叔叔）。",
+      "round": 3
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/家庭与人物",
+      "content": "听音判断（朗读：A doctor helps sick people.）：\n「医生」对应的英文是______。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "doctor",
+      "explanation": "doctor = 医生。",
+      "round": 3,
+      "audio_text": "A doctor helps sick people."
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/家庭与人物",
+      "content": "听音判断（朗读：A farmer works on the farm every day.）：\n派生词：A person who works in a farm is a ______.",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "farmer",
+      "explanation": "farm + er = farmer（农民）。",
+      "round": 3,
+      "audio_text": "A farmer works on the farm every day."
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/家庭与人物",
+      "content": "听音选义：\n『My grandfather was a famous engineer many years ago. He worked very hard.』 grandfather 与发言者是什么关系？",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. 爷爷",
+        "B. 外公",
+        "C. 爷爷或外公",
+        "D. 父亲"
+      ],
+      "answer": "C",
+      "explanation": "grandfather 在英语中既可指爷爷也可指外公。",
+      "audio_text": "My grandfather was a famous engineer many years ago. He worked very hard.",
+      "round": 3
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/日常生活",
+      "content": "辨析：The opposite word of 'busy' is ______.",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "free",
+      "explanation": "busy 反义为 free（空闲）。",
+      "round": 3
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/日常生活",
+      "content": "听音判断（朗读：I have breakfast at seven every morning.）：\n「早餐」对应的英文单词是______。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "breakfast",
+      "explanation": "breakfast = 早餐。",
+      "round": 3,
+      "audio_text": "I have breakfast at seven every morning."
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/日常生活",
+      "content": "派生词：If a person sleeps well, he feels ______ in the morning.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. sleepy",
+        "B. tired",
+        "C. energetic",
+        "D. hungry"
+      ],
+      "answer": "C",
+      "explanation": "sleep + 充足 → 早上精力充沛 energetic。",
+      "round": 3
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/日常生活",
+      "content": "听音判断（朗读：The weather is sunny today.）：\n「天气」对应的英文是______。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "weather",
+      "explanation": "weather = 天气。",
+      "round": 3,
+      "audio_text": "The weather is sunny today."
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/日常生活",
+      "content": "辨析：Which adjective best describes a noisy classroom?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. quiet",
+        "B. loud",
+        "C. silent",
+        "D. lonely"
+      ],
+      "answer": "B",
+      "explanation": "noisy 与 loud 同义。",
+      "round": 3
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/食物饮料",
+      "content": "辨析：Which is a kind of drink, NOT food?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. bread",
+        "B. juice",
+        "C. egg",
+        "D. cake"
+      ],
+      "answer": "B",
+      "explanation": "juice（果汁）是饮料。",
+      "round": 3
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/食物饮料",
+      "content": "「饮料」对应的英文（一个词）是______。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "drink",
+      "explanation": "drink 既可作动词喝，也可作名词饮料。",
+      "round": 3
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/食物饮料",
+      "content": "辨析：Which fruit is yellow and long?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. apple",
+        "B. banana",
+        "C. orange",
+        "D. grape"
+      ],
+      "answer": "B",
+      "explanation": "黄色长形的是香蕉 banana。",
+      "round": 3
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/食物饮料",
+      "content": "听音判断：\n『For breakfast I usually have some bread, an egg and a glass of milk. I never drink coffee in the morning.』 早餐喝什么？",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. tea",
+        "B. milk",
+        "C. coffee",
+        "D. juice"
+      ],
+      "answer": "B",
+      "explanation": "原文 a glass of milk。",
+      "audio_text": "For breakfast I usually have some bread, an egg and a glass of milk. I never drink coffee in the morning.",
+      "round": 3
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/食物饮料",
+      "content": "听音判断（朗读：We cook food in the kitchen.）：\n派生词：A place where people cook food is a ______ (kitchen).",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "kitchen",
+      "explanation": "kitchen = 厨房，做饭的地方。",
+      "round": 3,
+      "audio_text": "We cook food in the kitchen."
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/动物植物",
+      "content": "辨析：Which animal lives in water?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. tiger",
+        "B. fish",
+        "C. lion",
+        "D. horse"
+      ],
+      "answer": "B",
+      "explanation": "fish 在水中生活。",
+      "round": 3
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/动物植物",
+      "content": "听音判断（朗读：A tiger is a strong animal.）：\n「老虎」对应的英文是______。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "tiger",
+      "explanation": "tiger = 老虎。",
+      "round": 3,
+      "audio_text": "A tiger is a strong animal."
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/动物植物",
+      "content": "扩展词义：The word 'plant' can mean both 'a green living thing' and ______.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. to read a book",
+        "B. to put seeds in soil",
+        "C. to cook a meal",
+        "D. to write a letter"
+      ],
+      "answer": "B",
+      "explanation": "plant 作动词意为种植（put seeds in soil）。",
+      "round": 3
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/动物植物",
+      "content": "听音判断（朗读：A rabbit has long ears.）：\n「兔子」对应的英文（一个词）是______。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "rabbit",
+      "explanation": "rabbit = 兔子。",
+      "round": 3,
+      "audio_text": "A rabbit has long ears."
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/动物植物",
+      "content": "听音选择：\n『Pandas eat bamboo. They live in China. They are black and white.』 What do pandas eat?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. fish",
+        "B. meat",
+        "C. bamboo",
+        "D. grass"
+      ],
+      "answer": "C",
+      "explanation": "Pandas eat bamboo（竹子）。",
+      "audio_text": "Pandas eat bamboo. They live in China. They are black and white.",
+      "round": 3
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/交通与场所",
+      "content": "辨析：Where do people borrow books?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. cinema",
+        "B. library",
+        "C. supermarket",
+        "D. hospital"
+      ],
+      "answer": "B",
+      "explanation": "library 是图书馆。",
+      "round": 3
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/交通与场所",
+      "content": "「医院」对应的英文是______。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "hospital",
+      "explanation": "hospital = 医院。",
+      "round": 3
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/交通与场所",
+      "content": "扩展辨析：Which is the fastest means of transport in cities?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. bike",
+        "B. bus",
+        "C. subway",
+        "D. boat"
+      ],
+      "answer": "C",
+      "explanation": "城市内地铁 subway 通常最快。",
+      "round": 3
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/交通与场所",
+      "content": "「机场」对应的英文是______。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "airport",
+      "explanation": "airport = 机场。",
+      "round": 3
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/数字日期星期",
+      "content": "辨析：What day comes after Wednesday?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. Tuesday",
+        "B. Thursday",
+        "C. Friday",
+        "D. Saturday"
+      ],
+      "answer": "B",
+      "explanation": "Wednesday 之后是 Thursday。",
+      "round": 3
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/数字日期星期",
+      "content": "派生词：The ordinal number for 'one' is ______.",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "first",
+      "explanation": "基数 one 对应序数 first。",
+      "round": 3
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/数字日期星期",
+      "content": "辨析：The 12th month of the year is ______.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. October",
+        "B. November",
+        "C. December",
+        "D. September"
+      ],
+      "answer": "C",
+      "explanation": "12 月是 December。",
+      "round": 3
+    },
+    {
+      "chapter": "词汇积累（小学核心1500词）",
+      "knowledge_point": "词汇/颜色与形状",
+      "content": "扩展词义：Which color is a mix of red and white?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. orange",
+        "B. pink",
+        "C. purple",
+        "D. brown"
+      ],
+      "answer": "B",
+      "explanation": "红 + 白 = 粉红 pink。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/一般现在时-be动词",
+      "content": "辨析：______ Lily and her friends in the same class?",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "Are",
+      "explanation": "主语为复数 Lily and her friends，用 Are。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/一般现在时-be动词",
+      "content": "There ______ a book and two pens on the desk.",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "is",
+      "explanation": "There be 句型就近原则，离 be 最近的是 a book，单数用 is。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/一般现在时-be动词",
+      "content": "be 动词形式：The news ______ very interesting today.",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "is",
+      "explanation": "news 是不可数名词，谓语用单数 is。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/一般现在时-be动词",
+      "content": "填空：My family ______ from China.",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "is|||are",
+      "explanation": "family 作整体看作单数用 is，作成员看作复数用 are，两者皆可。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/一般现在时-实义动词",
+      "content": "He always ______ his homework after dinner.",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "does",
+      "explanation": "主语 he 第三人称单数，always 表示一般现在时。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/一般现在时-实义动词",
+      "content": "三单形式：fly → ______",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "flies",
+      "explanation": "辅音 + y 结尾，变 y 为 i 加 es。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/一般现在时-实义动词",
+      "content": "三单形式：teach → ______",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "teaches",
+      "explanation": "ch 结尾加 es。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/一般现在时-实义动词",
+      "content": "Neither Tom nor his brothers ______ to play computer games.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. like",
+        "B. likes",
+        "C. liking",
+        "D. is liking"
+      ],
+      "answer": "A",
+      "explanation": "neither...nor... 就近原则，his brothers 复数用 like。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/一般现在时-实义动词",
+      "content": "听音选择：\n『My sister gets up at six every morning. She washes her face and then has breakfast.』 What does she do first in the morning?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. has breakfast",
+        "B. gets up",
+        "C. washes face",
+        "D. goes to school"
+      ],
+      "answer": "B",
+      "explanation": "gets up at six 是最早动作。",
+      "audio_text": "My sister gets up at six every morning. She washes her face and then has breakfast.",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/现在进行时",
+      "content": "Look! The students ______ in the playground.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. play",
+        "B. plays",
+        "C. are playing",
+        "D. is playing"
+      ],
+      "answer": "C",
+      "explanation": "Look! 标志现在进行时，主语复数用 are + Ving。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/现在进行时",
+      "content": "现在分词：write → ______",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "writing",
+      "explanation": "以不发音 e 结尾，去 e 加 ing。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/现在进行时",
+      "content": "现在分词：swim → ______",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "swimming",
+      "explanation": "短元音 + 单辅音结尾，双写辅音字母 + ing。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/现在进行时",
+      "content": "时态对比：Tom usually ______ TV after dinner, but now he ______ his homework.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. watches; is doing",
+        "B. is watching; does",
+        "C. watches; does",
+        "D. watching; is doing"
+      ],
+      "answer": "A",
+      "explanation": "usually 一般现在时 watches；now 现在进行时 is doing。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/现在进行时",
+      "content": "判断时态：Listen! Someone ______ the door.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. knock",
+        "B. knocks",
+        "C. is knocking",
+        "D. knocking"
+      ],
+      "answer": "C",
+      "explanation": "Listen! 现在进行时。someone 单数用 is + Ving。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/现在进行时",
+      "content": "听音填动作：\n『I am looking out of the window now. The leaves are falling and the children are flying kites in the park.』 现在孩子们在做什么？(回答动词原形 + ing)",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "flying",
+      "explanation": "the children are flying kites。",
+      "audio_text": "I am looking out of the window now. The leaves are falling and the children are flying kites in the park.",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/现在进行时",
+      "content": "时态选择：Every day I ______ to school by bike, but today I ______ on foot because my bike is broken.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. go; am going",
+        "B. am going; go",
+        "C. go; go",
+        "D. going; am going"
+      ],
+      "answer": "A",
+      "explanation": "every day 一般现在时；today + because broken 此刻 → 进行时。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/现在进行时",
+      "content": "现在分词：lie → ______",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "lying",
+      "explanation": "ie 结尾去 ie 变 y 加 ing → lying。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/一般现在时-实义动词",
+      "content": "时态判断：The earth ______ around the sun.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. moves",
+        "B. is moving",
+        "C. moved",
+        "D. move"
+      ],
+      "answer": "A",
+      "explanation": "客观真理用一般现在时，主语 the earth 单数用 moves。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/一般现在时-实义动词",
+      "content": "三单形式：have → ______",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "has",
+      "explanation": "have 特殊变化为 has。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/现在进行时",
+      "content": "Where ______ your father going now?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. is",
+        "B. are",
+        "C. does",
+        "D. do"
+      ],
+      "answer": "A",
+      "explanation": "now + going 现在进行时，主语 your father 单数用 is。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/现在进行时",
+      "content": "现在分词：sit → ______",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "sitting",
+      "explanation": "短元音 + 单辅音 t 结尾，双写 t 加 ing。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/一般现在时-实义动词",
+      "content": "听短文回答：\n『Lucy lives in Beijing. She likes reading and often goes to the library on weekends. She doesn't like sports.』 Lucy 周末常去哪里？",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. school",
+        "B. library",
+        "C. cinema",
+        "D. park"
+      ],
+      "answer": "B",
+      "explanation": "goes to the library on weekends。",
+      "audio_text": "Lucy lives in Beijing. She likes reading and often goes to the library on weekends. She doesn't like sports.",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/一般现在时-be动词",
+      "content": "辨析：Either you or your brother ______ wrong about the answer.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. is",
+        "B. are",
+        "C. am",
+        "D. be"
+      ],
+      "answer": "A",
+      "explanation": "either...or... 就近原则，your brother 单数用 is。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/一般现在时-be动词",
+      "content": "be 动词形式：These shoes ______ too small for me.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. is",
+        "B. am",
+        "C. are",
+        "D. be"
+      ],
+      "answer": "C",
+      "explanation": "These shoes 复数主语用 are。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/一般现在时-be动词",
+      "content": "I ______ a Chinese student.",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "am",
+      "explanation": "I 用 am。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/一般现在时-be动词",
+      "content": "My friends ______ in the same school.",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "are",
+      "explanation": "复数主语 friends 用 are。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/一般现在时-实义动词",
+      "content": "三单形式：go → ______",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "goes",
+      "explanation": "go 以 o 结尾，加 es。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/一般现在时-实义动词",
+      "content": "三单形式：wash → ______",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "washes",
+      "explanation": "sh 结尾加 es。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/一般现在时-实义动词",
+      "content": "Tom usually ______ to bed at 9 pm.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. go",
+        "B. goes",
+        "C. going",
+        "D. went"
+      ],
+      "answer": "B",
+      "explanation": "Tom 三单 + usually 一般现在时 → goes。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/现在进行时",
+      "content": "现在分词：run → ______",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "running",
+      "explanation": "短元音 + 单辅音 n 结尾，双写 n + ing。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/现在进行时",
+      "content": "现在分词：read → ______",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "reading",
+      "explanation": "直接加 ing。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/现在进行时",
+      "content": "时态选择：It ______ heavily right now. We can't go out.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. rains",
+        "B. is raining",
+        "C. rained",
+        "D. rain"
+      ],
+      "answer": "B",
+      "explanation": "right now 现在进行时 is raining。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/现在进行时",
+      "content": "时态对比：I usually ______ to school by bus, but today my dad ______ me.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. go; drives",
+        "B. go; is driving",
+        "C. am going; drives",
+        "D. went; drove"
+      ],
+      "answer": "B",
+      "explanation": "usually 一般现在 go；today 进行时 is driving。",
+      "round": 3
+    },
+    {
+      "chapter": "一般现在时与现在进行时",
+      "knowledge_point": "语法时态/现在进行时",
+      "content": "听音选答：\n『Look! The cat is sleeping on the sofa. It is so cute.』 cat 此刻正在做什么？(填动词 + ing)",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "sleeping",
+      "explanation": "is sleeping。",
+      "audio_text": "Look! The cat is sleeping on the sofa. It is so cute.",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-be动词",
+      "content": "yesterday 标志：I ______ at home yesterday evening.",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "was",
+      "explanation": "I + was，yesterday 表过去。",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-be动词",
+      "content": "There ______ many people in the park last Sunday.",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "were",
+      "explanation": "many people 复数 + last Sunday 过去 → were。",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-be动词",
+      "content": "be 过去式：Tom and I ______ classmates two years ago.",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "were",
+      "explanation": "Tom and I 复数主语，过去式 were。",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-be动词",
+      "content": "be 过去式：The weather ______ very cold last winter.",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "was",
+      "explanation": "weather 单数 + last winter 过去 → was。",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-be动词",
+      "content": "时态对比：______ they happy at school yesterday?",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "Were",
+      "explanation": "they 复数 + yesterday 过去 → Were。",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-实义动词",
+      "content": "动词过去式：He ______ to the museum last weekend.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. go",
+        "B. goes",
+        "C. went",
+        "D. going"
+      ],
+      "answer": "C",
+      "explanation": "go 过去式 went。",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-实义动词",
+      "content": "过去式：see → ______",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "saw",
+      "explanation": "see 不规则变化为 saw。",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-实义动词",
+      "content": "过去式：buy → ______",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "bought",
+      "explanation": "buy 不规则过去式 bought。",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-实义动词",
+      "content": "过去式：read → ______（拼写不变，发音变）",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "read",
+      "explanation": "read 过去式拼写不变，发音 /red/。",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-实义动词",
+      "content": "过去式：study → ______",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "studied",
+      "explanation": "辅音 + y 结尾，变 y 为 i 加 ed。",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-实义动词",
+      "content": "过去式：stop → ______",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "stopped",
+      "explanation": "短元音 + 单辅音 p 结尾，双写 p 加 ed。",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-实义动词",
+      "content": "时态判断：He ______ his homework an hour ago.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. finishes",
+        "B. finished",
+        "C. is finishing",
+        "D. finish"
+      ],
+      "answer": "B",
+      "explanation": "an hour ago 表过去 → finished。",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-实义动词",
+      "content": "否定句：He ______ to the cinema last night.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. doesn't go",
+        "B. don't go",
+        "C. didn't go",
+        "D. didn't went"
+      ],
+      "answer": "C",
+      "explanation": "过去时否定 didn't + 动词原形。",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-实义动词",
+      "content": "疑问句：______ Lily watch TV last night?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. Does",
+        "B. Did",
+        "C. Was",
+        "D. Were"
+      ],
+      "answer": "B",
+      "explanation": "last night 过去时间，用 Did + 主语 + 动原。",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-实义动词",
+      "content": "听音回答：\n『Last weekend my family went to the beach. We swam in the sea and built sandcastles. We had a wonderful time.』 What did they do?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. went hiking",
+        "B. went to the beach",
+        "C. went to school",
+        "D. went shopping"
+      ],
+      "answer": "B",
+      "explanation": "went to the beach。",
+      "audio_text": "Last weekend my family went to the beach. We swam in the sea and built sandcastles. We had a wonderful time.",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-实义动词",
+      "content": "听音回答：上面对话，他们在海里做了什么？(填动词过去式)",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "swam",
+      "explanation": "We swam in the sea。swim 过去式 swam。",
+      "audio_text": "Last weekend my family went to the beach. We swam in the sea and built sandcastles. We had a wonderful time.",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-实义动词",
+      "content": "时态对比：Tom ______ in Beijing now, but he ______ in Shanghai last year.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. lives; lived",
+        "B. lived; lives",
+        "C. is living; lives",
+        "D. lives; lives"
+      ],
+      "answer": "A",
+      "explanation": "now → 一般现在时 lives；last year → 过去时 lived。",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-实义动词",
+      "content": "时态判断：When I ______ home yesterday, my mother ______ dinner.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. got; cooked",
+        "B. got; was cooking",
+        "C. get; cooks",
+        "D. got; is cooking"
+      ],
+      "answer": "B",
+      "explanation": "got 过去某时，cooking 当时正在做。本题对应过去进行时铺垫。",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-实义动词",
+      "content": "过去式：drink → ______",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "drank",
+      "explanation": "drink 过去式 drank。",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-实义动词",
+      "content": "过去式：begin → ______",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "began",
+      "explanation": "begin 过去式 began。",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-实义动词",
+      "content": "听音填空：\n『Yesterday I bought a new book. It was very interesting. I read it for two hours.』 他买了什么？(填一个词)",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "book",
+      "explanation": "bought a new book。",
+      "audio_text": "Yesterday I bought a new book. It was very interesting. I read it for two hours.",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-实义动词",
+      "content": "听音判断（朗读：Hainan with his family.）：\n时态判断：Last summer Tom ______ to Hainan with his family.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. flies",
+        "B. flew",
+        "C. is flying",
+        "D. flying"
+      ],
+      "answer": "B",
+      "explanation": "Last summer 过去 → fly 过去式 flew。",
+      "round": 3,
+      "audio_text": "Hainan with his family."
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-实义动词",
+      "content": "过去式：think → ______",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "thought",
+      "explanation": "think 过去式 thought。",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-be动词",
+      "content": "时态判断：Where ______ you born? — In Beijing.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. are",
+        "B. were",
+        "C. was",
+        "D. is"
+      ],
+      "answer": "B",
+      "explanation": "be born 出生用过去式，主语 you → were。",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-实义动词",
+      "content": "听音判断（朗读：TV last night because he had too much homework.）：\n时态完成句子：He didn't ______ TV last night because he had too much homework.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. watched",
+        "B. watch",
+        "C. watching",
+        "D. watches"
+      ],
+      "answer": "B",
+      "explanation": "didn't 后接动词原形 watch。",
+      "round": 3,
+      "audio_text": "TV last night because he had too much homework."
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-实义动词",
+      "content": "过去式：win → ______",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "won",
+      "explanation": "win 过去式 won。",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-实义动词",
+      "content": "听音回答：\n『My grandfather grew up in a small village. He worked in the fields when he was young.』 他在哪里长大？(填一个词)",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "village",
+      "explanation": "grew up in a small village。",
+      "audio_text": "My grandfather grew up in a small village. He worked in the fields when he was young.",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-实义动词",
+      "content": "听音判断（朗读：I came in last night.）：\n时态判断：They ______ the music when I came in last night.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. listen to",
+        "B. listened to",
+        "C. were listening to",
+        "D. are listening to"
+      ],
+      "answer": "C",
+      "explanation": "came in 过去某时，正在听 → 过去进行时（六下铺垫）。",
+      "round": 3,
+      "audio_text": "I came in last night."
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-实义动词",
+      "content": "时态选择：Last month, our school ______ a sports meeting.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. holds",
+        "B. held",
+        "C. hold",
+        "D. holding"
+      ],
+      "answer": "B",
+      "explanation": "Last month 过去时，hold 过去式 held。",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-be动词",
+      "content": "be 过去式：______ there any milk in the bottle this morning?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Was",
+        "B. Were",
+        "C. Is",
+        "D. Are"
+      ],
+      "answer": "A",
+      "explanation": "milk 不可数 + this morning 已过去 → Was。",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-实义动词",
+      "content": "时态混合判断：My mother often ______ me to school by car, but yesterday she ______ me on foot.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. took; takes",
+        "B. takes; took",
+        "C. took; took",
+        "D. takes; takes"
+      ],
+      "answer": "B",
+      "explanation": "often 一般现在时 takes；yesterday 过去时 took。",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-实义动词",
+      "content": "时态判断：He ______ tired because he ______ all night.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. is; works",
+        "B. was; worked",
+        "C. is; worked",
+        "D. was; works"
+      ],
+      "answer": "B",
+      "explanation": "整句过去时态前后一致，was/worked。",
+      "round": 3
+    },
+    {
+      "chapter": "一般过去时",
+      "knowledge_point": "语法时态/一般过去时-实义动词",
+      "content": "过去式：catch → ______",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "caught",
+      "explanation": "catch 过去式 caught。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/陈述句",
+      "content": "辨析：Which is a correct affirmative statement?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. He don't like music.",
+        "B. She likes music.",
+        "C. They likes music.",
+        "D. I likes music."
+      ],
+      "answer": "B",
+      "explanation": "She + likes 第三人称单数动词正确。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/陈述句",
+      "content": "听音判断（朗读：There are some flowers on the table.）：\n句型识别：'There are some flowers on the table.' 是哪种陈述句？",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. 肯定陈述句",
+        "B. 否定陈述句",
+        "C. 一般疑问句",
+        "D. 特殊疑问句"
+      ],
+      "answer": "A",
+      "explanation": "are 表肯定，是肯定陈述句。",
+      "round": 3,
+      "audio_text": "There are some flowers on the table."
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/一般疑问句",
+      "content": "听音判断（朗读：He often plays football.）：\n改一般疑问句：He often plays football. → ______ he often play football?",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "Does",
+      "explanation": "三单谓语，疑问句用 Does + 主语 + 动原。",
+      "round": 3,
+      "audio_text": "He often plays football."
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/一般疑问句",
+      "content": "听音判断（朗读：They are reading books.）：\n改一般疑问句：They are reading books. → ______ they reading books?",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "Are",
+      "explanation": "be 动词提前，构成一般疑问句。",
+      "round": 3,
+      "audio_text": "They are reading books."
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/一般疑问句",
+      "content": "改一般疑问句：Lucy went to the zoo. 该句变一般疑问句正确的是？",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Did Lucy go to the zoo?",
+        "B. Did Lucy went to the zoo?",
+        "C. Does Lucy went to the zoo?",
+        "D. Was Lucy go to the zoo?"
+      ],
+      "answer": "A",
+      "explanation": "过去时疑问 Did + 主语 + 动原。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/特殊疑问句",
+      "content": "提问 yesterday：He went to the park yesterday. (对划线部分提问 yesterday)",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. When did he go to the park?",
+        "B. Where did he go yesterday?",
+        "C. What did he do yesterday?",
+        "D. How did he go to the park?"
+      ],
+      "answer": "A",
+      "explanation": "对时间提问用 When。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/特殊疑问句",
+      "content": "提问主语：Tom is reading a book. (对 Tom 提问)",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. What is Tom reading?",
+        "B. Who is reading a book?",
+        "C. Where is Tom reading?",
+        "D. How is Tom reading?"
+      ],
+      "answer": "B",
+      "explanation": "对人提问用 Who，整句保留。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/特殊疑问句",
+      "content": "选择疑问词：______ is the weather like in Beijing? — It's hot.",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "What",
+      "explanation": "What is the weather like = How is the weather 固定句型。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/特殊疑问句",
+      "content": "选择疑问词：______ does it take to get to school by bus? — About 20 minutes.",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "How long",
+      "explanation": "对花费时间提问用 How long。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/否定句转换",
+      "content": "改否定句：He has lunch at school. → He ______ ______ lunch at school.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. doesn't have",
+        "B. don't has",
+        "C. doesn't has",
+        "D. isn't have"
+      ],
+      "answer": "A",
+      "explanation": "三单否定 doesn't + have（动原）。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/否定句转换",
+      "content": "改否定句：They went to school yesterday. 否定句中横线处填？",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. They didn't go to school yesterday.",
+        "B. They didn't went to school yesterday.",
+        "C. They don't go to school yesterday.",
+        "D. They aren't go to school yesterday."
+      ],
+      "answer": "A",
+      "explanation": "过去否定 didn't + 动原 go。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/否定句转换",
+      "content": "辨析否定：She can swim. → 否定句 She ______ swim.",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "cannot",
+      "explanation": "情态动词 can 否定 cannot。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/there be 句型",
+      "content": "辨析：There ______ a pen and two pencils on the desk.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. is",
+        "B. are",
+        "C. has",
+        "D. have"
+      ],
+      "answer": "A",
+      "explanation": "There be 就近原则，离 be 最近 a pen 单数 → is。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/there be 句型",
+      "content": "There ______ some milk in the bottle.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. is",
+        "B. are",
+        "C. have",
+        "D. has"
+      ],
+      "answer": "A",
+      "explanation": "milk 不可数 → is。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/there be 句型",
+      "content": "改否定：There are some books in the bag. → 否定 There ______ ______ books in the bag.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. aren't any",
+        "B. isn't any",
+        "C. don't have",
+        "D. are no any"
+      ],
+      "answer": "A",
+      "explanation": "There be 否定 aren't + any。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/there be 句型",
+      "content": "辨析：复合句基础：______ are many students who like music in our class.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. There",
+        "B. They",
+        "C. It",
+        "D. Here"
+      ],
+      "answer": "A",
+      "explanation": "There + be + 主语 + who 引导定语从句修饰 students。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/陈述句",
+      "content": "复合句：The girl ______ is wearing a red dress is my sister.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. who",
+        "B. which",
+        "C. what",
+        "D. where"
+      ],
+      "answer": "A",
+      "explanation": "先行词 the girl 指人，定语从句关系代词用 who。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/陈述句",
+      "content": "复合句：This is the book ______ I bought yesterday.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. who",
+        "B. which",
+        "C. when",
+        "D. where"
+      ],
+      "answer": "B",
+      "explanation": "先行词 the book 指物，定语从句关系代词用 which。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/陈述句",
+      "content": "复合句：I know the man ______ is reading over there.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. who",
+        "B. which",
+        "C. whose",
+        "D. what"
+      ],
+      "answer": "A",
+      "explanation": "先行词 the man 指人作主语，定语从句用 who。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/陈述句",
+      "content": "复合句：I have a friend ______ name is Mary.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. who",
+        "B. which",
+        "C. whose",
+        "D. what"
+      ],
+      "answer": "C",
+      "explanation": "表所属关系，定语从句用 whose。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/陈述句",
+      "content": "复合句改写：I like the city. The city is clean. → I like the city ______ is clean.",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "which|||that",
+      "explanation": "the city 指物，关系代词 which 或 that。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/特殊疑问句",
+      "content": "提问数量：There are 30 students in our class. (对 30 提问)",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. How much students are there in your class?",
+        "B. How many students are there in your class?",
+        "C. How old students are there in your class?",
+        "D. How long students are there in your class?"
+      ],
+      "answer": "B",
+      "explanation": "可数复数提问 How many。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/特殊疑问句",
+      "content": "提问价格：This bag is 50 yuan. (对 50 yuan 提问)",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. How many is this bag?",
+        "B. How much is this bag?",
+        "C. How long is this bag?",
+        "D. How old is this bag?"
+      ],
+      "answer": "B",
+      "explanation": "对价格提问用 How much。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/一般疑问句",
+      "content": "肯定回答：Are you a student? — ______",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. Yes, I am.",
+        "B. Yes, I do.",
+        "C. Yes, you are.",
+        "D. No, I am."
+      ],
+      "answer": "A",
+      "explanation": "be 动词疑问句肯定回答 Yes, 主语 + be。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/一般疑问句",
+      "content": "否定回答：Does she like apples? — ______",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. No, she doesn't.",
+        "B. No, she don't.",
+        "C. No, she isn't.",
+        "D. No, she didn't."
+      ],
+      "answer": "A",
+      "explanation": "三单一般疑问句否定回答 No, she doesn't。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/否定句转换",
+      "content": "改否定：I have some friends in Shanghai. → I ______ ______ ______ in Shanghai.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. have not any friends",
+        "B. don't have any friends",
+        "C. doesn't have any friends",
+        "D. don't have some friends"
+      ],
+      "answer": "B",
+      "explanation": "否定句中 some 改为 any，have 否定 don't have。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/特殊疑问句",
+      "content": "提问方式：He goes to school by bike. (对 by bike 提问)",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. What does he go to school?",
+        "B. How does he go to school?",
+        "C. Where does he go to school?",
+        "D. When does he go to school?"
+      ],
+      "answer": "B",
+      "explanation": "对方式提问用 How。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/特殊疑问句",
+      "content": "选择疑问词：______ is your sister? — She is twelve.",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "How old",
+      "explanation": "对年龄提问 How old。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/陈述句",
+      "content": "复合句：The boy ______ stands by the door is my brother.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. who",
+        "B. which",
+        "C. when",
+        "D. where"
+      ],
+      "answer": "A",
+      "explanation": "the boy 指人作主语，关系代词 who。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/陈述句",
+      "content": "复合句改写：I visited the school. My uncle teaches in the school. → I visited the school ______ my uncle teaches in.",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "which|||that",
+      "explanation": "先行词 school 指物，关系代词 which 或 that。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/特殊疑问句",
+      "content": "选择疑问词：______ is the weather today?",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "How",
+      "explanation": "How is the weather？固定问法。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/一般疑问句",
+      "content": "构造一般疑问句：The boys were playing basketball. → ______ the boys playing basketball?",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "Were",
+      "explanation": "be 动词 were 提前。",
+      "round": 3
+    },
+    {
+      "chapter": "简单句与句型转换",
+      "knowledge_point": "句型/特殊疑问句",
+      "content": "听音回答：\n『My name is Ben. I'm twelve years old. I live in Beijing with my parents and I go to Sunshine Primary School.』 提问：What's the boy's name? (一个词)",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "Ben",
+      "explanation": "My name is Ben。",
+      "audio_text": "My name is Ben. I'm twelve years old. I live in Beijing with my parents and I go to Sunshine Primary School.",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/问候与告别",
+      "content": "情景：在上午见到朋友的妈妈，应说：",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. Good night, Mrs. Black.",
+        "B. Good morning, Mrs. Black.",
+        "C. See you, Mrs. Black.",
+        "D. Goodbye, Mrs. Black."
+      ],
+      "answer": "B",
+      "explanation": "上午问候用 Good morning。",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/问候与告别",
+      "content": "情景：晚上 9 点准备睡觉对父母说： 答案 (一个词)：______",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "Good night",
+      "explanation": "睡前道晚安 Good night。",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/问候与告别",
+      "content": "情景对话：A: Have a good trip! B: ______",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Thank you. The same to you.",
+        "B. You're welcome.",
+        "C. I'm fine.",
+        "D. Don't say so."
+      ],
+      "answer": "A",
+      "explanation": "祝旅途愉快回礼 Thank you. The same to you.（也祝你）。",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/介绍与询问",
+      "content": "听音判断：\n『Hello, my name is Linda. I am from Canada. I am eleven years old and I love reading books.』 Linda 来自哪里？(一个词)",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "Canada",
+      "explanation": "I am from Canada。",
+      "audio_text": "Hello, my name is Linda. I am from Canada. I am eleven years old and I love reading books.",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/介绍与询问",
+      "content": "情景：第一次见面，介绍自己：",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. How do you do?",
+        "B. How are you?",
+        "C. How old are you?",
+        "D. Goodbye!"
+      ],
+      "answer": "A",
+      "explanation": "初次见面用 How do you do? 表示初次问候。",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/介绍与询问",
+      "content": "情景对话：A: ______ B: I'm fine, thank you. And you?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. How are you?",
+        "B. How do you do?",
+        "C. How old are you?",
+        "D. What's your name?"
+      ],
+      "answer": "A",
+      "explanation": "I'm fine, thank you 是 How are you 的标准回答。",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/介绍与询问",
+      "content": "情景对话：—— Where are you from? —— ______",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. I'm from China.",
+        "B. I'm twelve.",
+        "C. I'm fine.",
+        "D. I like China."
+      ],
+      "answer": "A",
+      "explanation": "Where are you from 询问出处，回答 I'm from China。",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/请求与帮助",
+      "content": "情景：在饭店礼貌请求服务员加水，最合适的是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Give me water!",
+        "B. I want water now.",
+        "C. Could I have some more water, please?",
+        "D. Water!"
+      ],
+      "answer": "C",
+      "explanation": "礼貌请求 Could I... please 最得体。",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/请求与帮助",
+      "content": "情景：陌生人帮你捡起东西，应说：",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. Sorry.",
+        "B. Excuse me.",
+        "C. Thank you.",
+        "D. Don't say so."
+      ],
+      "answer": "C",
+      "explanation": "感谢用 Thank you。",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/请求与帮助",
+      "content": "听音判断（朗读：Thanks for your help.）：\n回应感谢：A: Thanks for your help. B: ______",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. You are welcome.",
+        "B. Excuse me.",
+        "C. The same to you.",
+        "D. I am fine."
+      ],
+      "answer": "A",
+      "explanation": "回应 Thank you 用 You are welcome。",
+      "round": 3,
+      "audio_text": "Thanks for your help."
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/请求与帮助",
+      "content": "情景：你想问路，先用什么开场最礼貌？",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. Hello!",
+        "B. Excuse me.",
+        "C. Thank you.",
+        "D. Sorry!"
+      ],
+      "answer": "B",
+      "explanation": "Excuse me 用于打断或开始问询。",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/请求与帮助",
+      "content": "听音对话选答：\n『A: Could you help me carry this box, please? B: Sure, no problem.』 A 在做什么？",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. 道歉",
+        "B. 请求帮忙",
+        "C. 拒绝",
+        "D. 表达喜好"
+      ],
+      "answer": "B",
+      "explanation": "Could you help me 是请求帮助。",
+      "audio_text": "A: Could you help me carry this box, please? B: Sure, no problem.",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/表达喜好",
+      "content": "情景：表达非常喜欢踢足球：",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. I hate football.",
+        "B. I love playing football.",
+        "C. I don't mind football.",
+        "D. I'm afraid of football."
+      ],
+      "answer": "B",
+      "explanation": "I love playing football 表达非常喜欢。",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/表达喜好",
+      "content": "情景对话：A: Do you like math? B: Not really. I prefer ______.",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "English",
+      "explanation": "prefer 后接名词或 doing。English 是科目名词。",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/表达喜好",
+      "content": "情景：朋友说很喜欢一本书，你想表达同感：",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Me too.",
+        "B. Me to.",
+        "C. I think so not.",
+        "D. Not me."
+      ],
+      "answer": "A",
+      "explanation": "表示同感 Me too。",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/介绍与询问",
+      "content": "情景：询问时间，应说：",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. What time is it?",
+        "B. What date is it?",
+        "C. What day is it?",
+        "D. What about it?"
+      ],
+      "answer": "A",
+      "explanation": "询问几点用 What time is it。",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/介绍与询问",
+      "content": "情景：今天星期几用：",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. What time is it?",
+        "B. What day is it today?",
+        "C. What's the date?",
+        "D. How old is it?"
+      ],
+      "answer": "B",
+      "explanation": "What day 询问星期。",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/介绍与询问",
+      "content": "情景：询问日期：______",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "date",
+      "explanation": "What's the date today？询问日期。",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/请求与帮助",
+      "content": "听音填词：\n『Excuse me, could you tell me the way to the post office, please?』 该问句最佳回应是？",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. You're welcome.",
+        "B. Sure. Go straight and turn left.",
+        "C. I'm fine.",
+        "D. Thank you."
+      ],
+      "answer": "B",
+      "explanation": "问路应回答指路指令。",
+      "audio_text": "Excuse me, could you tell me the way to the post office, please?",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/请求与帮助",
+      "content": "情景对话：A: Would you like some tea? B: ______",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. No, thanks.",
+        "B. No, I am.",
+        "C. No, you are not.",
+        "D. Don't say so."
+      ],
+      "answer": "A",
+      "explanation": "委婉拒绝用 No, thanks。",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/表达喜好",
+      "content": "情景对话：A: What's your favourite ______? B: I love bananas best.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. fruit",
+        "B. food",
+        "C. drink",
+        "D. animal"
+      ],
+      "answer": "A",
+      "explanation": "答 bananas 是水果，应问 favourite fruit。",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/介绍与询问",
+      "content": "情景对话：A: Nice to meet you. B: ______",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. Nice to meet you, too.",
+        "B. You are welcome.",
+        "C. Thank you very much.",
+        "D. The same to you."
+      ],
+      "answer": "A",
+      "explanation": "礼貌回应初次见面 Nice to meet you, too。",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/请求与帮助",
+      "content": "情景：道歉时说：",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. Excuse me.",
+        "B. I'm sorry.",
+        "C. Thank you.",
+        "D. You're welcome."
+      ],
+      "answer": "B",
+      "explanation": "道歉用 I'm sorry。",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/请求与帮助",
+      "content": "听音回答：\n『A: I am really sorry I broke your cup. B: It does not matter.』 B 接受道歉用什么短语？",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. It does not matter.",
+        "B. I am sorry too.",
+        "C. Thank you.",
+        "D. Excuse me."
+      ],
+      "answer": "A",
+      "explanation": "It doesn't matter 接受道歉。",
+      "audio_text": "A: I am really sorry I broke your cup. B: It does not matter.",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/表达喜好",
+      "content": "听音回答：\n『A: Do you like swimming? B: Yes, very much. I go swimming every Sunday with my friends.』 B 多久去一次游泳？(填表频次的词)",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "Sunday",
+      "explanation": "every Sunday 表示每周日。",
+      "audio_text": "A: Do you like swimming? B: Yes, very much. I go swimming every Sunday with my friends.",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/请求与帮助",
+      "content": "情景：你想借同学的笔，最礼貌说法：",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Give me your pen!",
+        "B. May I borrow your pen, please?",
+        "C. I want your pen.",
+        "D. Take your pen!"
+      ],
+      "answer": "B",
+      "explanation": "May I borrow ... please 最礼貌。",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/介绍与询问",
+      "content": "听音对话回答：\n『A: How do you go to school every day? B: Usually I take a bus, but today my dad is driving me.』 B 平时怎么上学？(填两个词)",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "by bus",
+      "explanation": "take a bus 等于 by bus。",
+      "audio_text": "A: How do you go to school every day? B: Usually I take a bus, but today my dad is driving me.",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/介绍与询问",
+      "content": "听音回答：上面对话，B 今天怎么上学？",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. by bus",
+        "B. by bike",
+        "C. by car",
+        "D. on foot"
+      ],
+      "answer": "C",
+      "explanation": "today my dad is driving me → by car。",
+      "audio_text": "A: How do you go to school every day? B: Usually I take a bus, but today my dad is driving me.",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/介绍与询问",
+      "content": "情景：电话开场，应说：",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Who are you?",
+        "B. Hello, this is Tom. May I speak to Lily?",
+        "C. What are you doing?",
+        "D. How old are you?"
+      ],
+      "answer": "B",
+      "explanation": "电话用 This is + 自己；May I speak to + 对方。",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/请求与帮助",
+      "content": "情景：餐厅点餐，服务员问 Would you like to order? 你想点鱼，应说：",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. I'd like some fish, please.",
+        "B. I want fish.",
+        "C. Give me fish.",
+        "D. Fish, please give."
+      ],
+      "answer": "A",
+      "explanation": "I'd like ... please 礼貌点餐。",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/表达喜好",
+      "content": "情景：A: How was the movie last night? B: ______ It was really exciting!",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. I loved it.",
+        "B. I hate it.",
+        "C. I don't know.",
+        "D. So-so."
+      ],
+      "answer": "A",
+      "explanation": "really exciting 表示喜欢，前面应是 I loved it。",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/介绍与询问",
+      "content": "情景：询问职业：______ does your father do?",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "What",
+      "explanation": "What does your father do? 询问职业。",
+      "round": 3
+    },
+    {
+      "chapter": "日常交际用语",
+      "knowledge_point": "日常交际/请求与帮助",
+      "content": "情景：在图书馆有人大声讲话，提醒安静：",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Please be quiet.",
+        "B. Please go away.",
+        "C. Don't say so.",
+        "D. Excuse me, you."
+      ],
+      "answer": "A",
+      "explanation": "Please be quiet 礼貌提醒安静。",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "阅读短文，回答下列问题。\n\nMy name is Sarah. I am eleven years old. I live in a small town with my parents and my younger brother, Peter. My father is a doctor and my mother is an English teacher. Peter is only seven years old. He likes drawing and playing with toy cars.\n\nEvery weekend my family does different things together. On Saturday morning, we usually go shopping at the supermarket. In the afternoon, my father plays football with Peter and me in the park. My mother reads books at home. On Sunday, we often visit my grandparents who live in the countryside. They have a beautiful garden with many flowers and vegetables.\n\nLast Sunday was very special. It was my grandfather's seventieth birthday. We bought him a big cake and a new hat. We took photos and sang songs. Everyone was very happy.\n\n问题：How old is Sarah? 答案 (一个词)：______",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "Eleven",
+      "explanation": "I am eleven years old。",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "上面短文：What does Sarah's mother do?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. A doctor",
+        "B. An English teacher",
+        "C. A nurse",
+        "D. A farmer"
+      ],
+      "answer": "B",
+      "explanation": "my mother is an English teacher。",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "上面短文：Who plays football with Sarah on Saturday afternoon?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. her mother",
+        "B. her father and Peter",
+        "C. her grandparents",
+        "D. her classmates"
+      ],
+      "answer": "B",
+      "explanation": "my father plays football with Peter and me。",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "上面短文：Where do Sarah's grandparents live?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. in the city",
+        "B. in the small town",
+        "C. in the countryside",
+        "D. in another country"
+      ],
+      "answer": "C",
+      "explanation": "grandparents who live in the countryside。",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "上面短文：Why was last Sunday special?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Sarah went shopping.",
+        "B. It was Peter's birthday.",
+        "C. It was grandfather's 70th birthday.",
+        "D. They visited a museum."
+      ],
+      "answer": "C",
+      "explanation": "It was my grandfather's seventieth birthday。",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "上面短文：Which is TRUE about the family?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. They live in a big city.",
+        "B. Peter is older than Sarah.",
+        "C. The family does activities together on weekends.",
+        "D. They never visit grandparents."
+      ],
+      "answer": "C",
+      "explanation": "Every weekend my family does different things together。",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "阅读短文，回答下列问题。\n\nLi Ming is a Chinese boy. He lives in Beijing with his family. He goes to a primary school near his home. He has many friends at school and his best friend is Tom, an English boy. Tom came to China two years ago because his father works in a Chinese hospital.\n\nLi Ming and Tom are in the same class. They both like sports very much. On weekdays, they play football after school. On weekends, they often go to the park to ride bikes. Tom is teaching Li Ming how to play tennis. Li Ming is teaching Tom how to play table tennis. They are good helpers to each other.\n\nLast Sunday, they joined a sports club in their school. The club has many activities such as basketball, tennis and swimming. The two boys are happy because they can do many sports together with their classmates.\n\n问题：Where does Tom come from?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. China",
+        "B. England",
+        "C. America",
+        "D. We don't know exactly which country"
+      ],
+      "answer": "D",
+      "explanation": "短文只说 an English boy（讲英语的男孩），未明确是英国，最严谨答案 D。也可解读 B (English 多指英国)；接受 D 更合适。",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "上面短文：Why did Tom come to China?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. To learn Chinese.",
+        "B. His father works in a Chinese hospital.",
+        "C. He likes sports.",
+        "D. He has friends here."
+      ],
+      "answer": "B",
+      "explanation": "his father works in a Chinese hospital。",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "上面短文：What do they do on weekdays after school?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. swim",
+        "B. play football",
+        "C. ride bikes",
+        "D. play table tennis"
+      ],
+      "answer": "B",
+      "explanation": "On weekdays, they play football after school。",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "上面短文：What does Li Ming teach Tom?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. football",
+        "B. tennis",
+        "C. table tennis",
+        "D. swimming"
+      ],
+      "answer": "C",
+      "explanation": "Li Ming is teaching Tom how to play table tennis。",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "上面短文：Which sentence best describes their friendship?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. They never argue.",
+        "B. They help each other and share interests.",
+        "C. They are in different classes.",
+        "D. Tom doesn't like Chinese culture."
+      ],
+      "answer": "B",
+      "explanation": "They are good helpers to each other。",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "上面短文：When did they join the sports club?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. last Sunday",
+        "B. last Saturday",
+        "C. yesterday",
+        "D. two years ago"
+      ],
+      "answer": "A",
+      "explanation": "Last Sunday, they joined a sports club。",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "完形：It was a sunny morning. Lily ______ (go) to the park with her father.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. goes",
+        "B. went",
+        "C. going",
+        "D. is going"
+      ],
+      "answer": "B",
+      "explanation": "It was 过去时背景 → went。",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "完形：They saw many ______ in the park.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. flower",
+        "B. flowers",
+        "C. flowery",
+        "D. flowering"
+      ],
+      "answer": "B",
+      "explanation": "many + 复数名词 flowers。",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "听短文回答：\n『My name is Jack. I am from London. I am a student in Sunshine Primary School. I have many friends at school. I love English and music best.』 Jack 来自哪里？(一个词)",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "London",
+      "explanation": "I am from London。",
+      "audio_text": "My name is Jack. I am from London. I am a student in Sunshine Primary School. I have many friends at school. I love English and music best.",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "听短文回答：上面短文，Jack 最喜欢哪两个科目？",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Math and PE",
+        "B. English and music",
+        "C. Chinese and art",
+        "D. Science and music"
+      ],
+      "answer": "B",
+      "explanation": "I love English and music best。",
+      "audio_text": "My name is Jack. I am from London. I am a student in Sunshine Primary School. I have many friends at school. I love English and music best.",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "听对话回答：\n『A: Good morning, doctor. B: Good morning. What's wrong with you? A: I have a bad cold and a high fever. B: Let me check. Open your mouth, please. ... Yes, you do have a fever. Take this medicine three times a day and drink lots of water.』 病人怎么了？",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. cough and headache",
+        "B. cold and fever",
+        "C. stomachache",
+        "D. toothache"
+      ],
+      "answer": "B",
+      "explanation": "I have a bad cold and a high fever。",
+      "audio_text": "A: Good morning, doctor. B: Good morning. What's wrong with you? A: I have a bad cold and a high fever. B: Let me check. Open your mouth, please. Yes, you do have a fever. Take this medicine three times a day and drink lots of water.",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "听上面对话：医生让他一天吃几次药？(填数字)",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "3",
+      "explanation": "Take this medicine three times a day。",
+      "audio_text": "A: Good morning, doctor. B: Good morning. What's wrong with you? A: I have a bad cold and a high fever. B: Let me check. Open your mouth, please. Yes, you do have a fever. Take this medicine three times a day and drink lots of water.",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "阅读短文回答下列问题。\n\nThe Internet is very useful for our daily life. Many years ago people had to go to the library to find information. They had to read many books to find what they needed. It often took them a long time. Now things are different. We can use the Internet to find information quickly. We can also use it to chat with friends, watch films, do shopping and learn new things.\n\nHowever, the Internet is not always safe. Some bad people use the Internet to make trouble. We must be careful when we go online. We should not give our real names or addresses to strangers. We should also tell our parents if we feel unsafe.\n\nThe Internet brings us many good things, but we must use it wisely. With good habits, the Internet will be our great helper.\n\n问题：What did people use to find information many years ago?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. computers",
+        "B. books in the library",
+        "C. smartphones",
+        "D. TV"
+      ],
+      "answer": "B",
+      "explanation": "go to the library to find information ... read many books。",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "上面短文：Which is NOT mentioned as a use of the Internet?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. chat with friends",
+        "B. watch films",
+        "C. cook food",
+        "D. do shopping"
+      ],
+      "answer": "C",
+      "explanation": "原文未提 cook food。",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "上面短文：What is the main idea of the passage?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. The Internet is very dangerous.",
+        "B. The Internet is useful but we must use it wisely.",
+        "C. We should not use the Internet.",
+        "D. Books are better than the Internet."
+      ],
+      "answer": "B",
+      "explanation": "The Internet brings us many good things, but we must use it wisely。",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "上面短文：The word 'wisely' in the last paragraph means ______.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. quickly",
+        "B. in a smart and careful way",
+        "C. slowly",
+        "D. only at school"
+      ],
+      "answer": "B",
+      "explanation": "wisely 意为聪明地、谨慎地。",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "听音判断：\n『I usually have lunch at school at twelve o'clock. After school, I go home and do my homework. Then I help my mother with housework.』 What does the speaker do after school first?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. go home",
+        "B. have lunch",
+        "C. play games",
+        "D. watch TV"
+      ],
+      "answer": "A",
+      "explanation": "After school, I go home。",
+      "audio_text": "I usually have lunch at school at twelve o'clock. After school, I go home and do my homework. Then I help my mother with housework.",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "听音填一个词：\n『Yesterday I went to the zoo with my classmates. We saw many animals. Pandas were the most lovely.』 What did the speaker think were the most lovely?",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "pandas",
+      "explanation": "Pandas were the most lovely。",
+      "audio_text": "Yesterday I went to the zoo with my classmates. We saw many animals. Pandas were the most lovely.",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "完形：The boy ran ______ fast that he won the race easily.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. very",
+        "B. so",
+        "C. too",
+        "D. enough"
+      ],
+      "answer": "B",
+      "explanation": "so + adv + that 结构，如此...以致于。",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "完形：My grandfather is too old ______ work in the field now.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. to",
+        "B. for",
+        "C. so",
+        "D. of"
+      ],
+      "answer": "A",
+      "explanation": "too...to do 太...而不能做...。",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "完形：He didn't go to school ______ he was ill.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. and",
+        "B. but",
+        "C. because",
+        "D. so"
+      ],
+      "answer": "C",
+      "explanation": "because 引出原因。",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "完形：______ the rain, we still had a good picnic.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Because of",
+        "B. Thanks to",
+        "C. In spite of",
+        "D. Instead of"
+      ],
+      "answer": "C",
+      "explanation": "in spite of = 尽管，与转折 still 配合。",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "听短文回答：上面短文：They ate ______ every day. (填一个词)",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "seafood",
+      "explanation": "We ate fresh seafood every day。",
+      "audio_text": "Last summer, I traveled to Hainan with my parents. The beach was beautiful and the sea was very warm. We ate fresh seafood every day. I will never forget that trip.",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "完形：The film was very ______. Everyone laughed a lot.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. boring",
+        "B. funny",
+        "C. sad",
+        "D. tired"
+      ],
+      "answer": "B",
+      "explanation": "laughed a lot 大笑 → funny。",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "完形：Everyone laughed ______ the funny joke.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. on",
+        "B. at",
+        "C. in",
+        "D. for"
+      ],
+      "answer": "B",
+      "explanation": "laugh at = 嘲笑/对...大笑，固定搭配。",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "完形：She is interested ______ collecting stamps.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. on",
+        "B. in",
+        "C. at",
+        "D. for"
+      ],
+      "answer": "B",
+      "explanation": "be interested in = 对...感兴趣。",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "完形：______ a good weather it is today!",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. What",
+        "B. How",
+        "C. What a",
+        "D. How a"
+      ],
+      "answer": "A",
+      "explanation": "weather 不可数，感叹句 What + adj + n。",
+      "round": 3
+    },
+    {
+      "chapter": "基础阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "完形：He ______ to play computer games.",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "loves|||likes",
+      "explanation": "He + 三单动词，loves 或 likes 都可以。",
+      "round": 3
+    }
+  ]
+}

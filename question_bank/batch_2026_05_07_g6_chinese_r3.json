@@ -1,0 +1,2728 @@
+{
+  "source": "batch_2026_05_07_g6_chinese_r3",
+  "subject": "chinese",
+  "grade": 6,
+  "knowledge_points_added": [],
+  "questions": [
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "字词/成语运用",
+      "content": "下列句子中加点成语使用恰当的一项是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 春节临近，北京街头万象更新，到处张灯结彩，人们走街串巷，热闹非凡。",
+        "B. 这位艺术家技艺高超，他的剪纸作品栩栩如生，简直是间不容发。",
+        "C. 听到这个消息，他如释重负，整个人都垂头丧气起来。",
+        "D. 这道数学题让全班都束手就擒，没人能解出。"
+      ],
+      "answer": "A",
+      "explanation": "A「万象更新」「张灯结彩」均符合春节语境。B「间不容发」形容情势危急，与剪纸不符。C「垂头丧气」与「如释重负」感情色彩矛盾。D「束手就擒」指被擒，应为「束手无策」。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "字词/字音",
+      "content": "下列加点字读音全部正确的一组是：「哄堂大笑（hōng）、间断（jiàn）、正月（zhēng）、腊八粥（zhōu）、嘟囔（nāng）」",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 全部正确",
+        "B. 哄字错",
+        "C. 间字错",
+        "D. 嘟囔的囔字错"
+      ],
+      "answer": "A",
+      "explanation": "「哄堂大笑」hōng；「间断」jiàn；「正月」zhēng；「腊八粥」zhōu；「嘟囔」dū nang（囔轻声 nang，但部分字典也注 nāng）。课本注音上述均属可接受范围。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "字词/字形",
+      "content": "下列词语中没有错别字的一组是：",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "options": [
+        "A. 万不得己 截然不同 张灯结彩 万象更新",
+        "B. 万不得已 截然不同 张灯结彩 万象更新",
+        "C. 万不得已 接然不同 张灯结彩 万像更新",
+        "D. 万不得已 截然不同 张灯结采 万象更新"
+      ],
+      "answer": "B",
+      "explanation": "A「己」应为「已」；C「接然」应为「截然」、「万像」应为「万象」；D「结采」应为「结彩」。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "《寒食》韩翃名句「春城无处不飞花」的下一句是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "寒食东风御柳斜",
+      "explanation": "《寒食》：春城无处不飞花，寒食东风御柳斜。日暮汉宫传蜡烛，轻烟散入五侯家。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "古诗文/古诗词意境理解",
+      "content": "《十五夜望月》（王建）「中庭地白树栖鸦」中「地白」的妙处分析最准确的是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 直写月色之白，含蓄空灵，给人积水空明、清幽如水之感",
+        "B. 写出地面铺霜，强调寒冷",
+        "C. 形容地面是白色，写实",
+        "D. 衬托人物悲伤"
+      ],
+      "answer": "A",
+      "explanation": "「地白」不直说月，而以月光铺地之白来含蓄表现，意境清冷空明，与苏轼「积水空明」异曲同工。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "古诗文/古诗词意境理解",
+      "content": "《迢迢牵牛星》中「盈盈一水间，脉脉不得语」表现的情感是：",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "options": [
+        "A. 近在咫尺却不能相会的相思之苦",
+        "B. 久别重逢的喜悦",
+        "C. 对友人的劝勉",
+        "D. 对自然景色的赞美"
+      ],
+      "answer": "A",
+      "explanation": "「盈盈一水」距离极近，「脉脉不得语」深情却无法言传，写尽相思无奈。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "《长歌行》「百川东到海」的下一句是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "何时复西归",
+      "explanation": "百川东到海，何时复西归？少壮不努力，老大徒伤悲。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "文学常识/中国古代作家作品",
+      "content": "《寒食》的作者韩翃是：",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "options": [
+        "A. 唐代「大历十才子」之一",
+        "B. 宋代豪放派词人",
+        "C. 唐代「初唐四杰」之一",
+        "D. 明代散文家"
+      ],
+      "answer": "A",
+      "explanation": "韩翃为唐代诗人，「大历十才子」之一，《寒食》是其代表作。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "文学常识/中国现代作家作品",
+      "content": "《北京的春节》一文的作者及其代表作搭配正确的是：",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "options": [
+        "A. 老舍——《骆驼祥子》《茶馆》《四世同堂》",
+        "B. 老舍——《呐喊》《彷徨》《祝福》",
+        "C. 鲁迅——《骆驼祥子》《茶馆》",
+        "D. 朱自清——《北京的春节》《茶馆》"
+      ],
+      "answer": "A",
+      "explanation": "老舍代表作：长篇《骆驼祥子》《四世同堂》、戏剧《茶馆》《龙须沟》。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "文学常识/文化常识",
+      "content": "下列对中国传统节日表述不正确的一项是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 春节是农历正月初一，又称元日",
+        "B. 寒食节在清明前一二日，传说为纪念介子推",
+        "C. 七夕节又称乞巧节，源于牛郎织女传说",
+        "D. 中秋节是农历八月初八，源于「嫦娥奔日」传说"
+      ],
+      "answer": "D",
+      "explanation": "中秋节是农历八月十五，源于「嫦娥奔月」传说，不是奔日，也不是初八。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《北京的春节》中老舍按怎样的顺序展开叙述？",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "时间顺序",
+      "explanation": "老舍按时间顺序，从腊月初旬腊八写到正月十九春节结束，详略得当。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《北京的春节》详写的部分主要是：",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "options": [
+        "A. 腊八、除夕、正月初一、元宵节",
+        "B. 腊月初旬、二十三、初一",
+        "C. 春节后的整个二月",
+        "D. 仅元宵节一天"
+      ],
+      "answer": "A",
+      "explanation": "老舍详写腊八（粥与蒜）、除夕（守岁团圆）、初一（拜年逛庙会）、元宵（灯会）四个高潮，其余略写。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《腊八粥》的作者是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "沈从文",
+      "explanation": "沈从文，现代作家，代表作《边城》《湘行散记》，《腊八粥》节选自其作品。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《腊八粥》一文以「八儿」对腊八粥的等待为主线，详写了哪些内容？",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "等粥",
+      "explanation": "全文围绕「等粥」浓墨重彩展开（盼粥、想粥、猜粥、看粥），喝粥仅作收束，详略安排突出儿童心理。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《藏戏》一文采用的主要说明顺序是：",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "options": [
+        "A. 总—分—总，先以三个反问引出，再分述特点，最后总结传承",
+        "B. 时间顺序",
+        "C. 空间顺序",
+        "D. 因果顺序"
+      ],
+      "answer": "A",
+      "explanation": "开篇用「世界上还有几个剧种是戴着面具演出的呢」等三个反问引发关注，再分述面具、舞台、表演时长等特点，最后归于传承。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "修辞/排比",
+      "content": "《藏戏》开头「世界上还有几个剧种是戴着面具演出的呢？还有几个剧种是没有舞台的呢？还有几个剧种一部戏可以演出三五天还没有结束的呢？」运用的修辞综合是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 排比 + 反问",
+        "B. 设问 + 比喻",
+        "C. 夸张 + 拟人",
+        "D. 对偶 + 排比"
+      ],
+      "answer": "A",
+      "explanation": "三个结构相似的反问句构成排比，且每句皆是反问，故为排比 + 反问。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "修辞/比喻",
+      "content": "下列句子运用了暗喻（不出现「像」「似」）的一项是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 锅中的腊八粥已经叹气似的沸腾着",
+        "B. 那密集的小水点子，是天空哭出的泪",
+        "C. 灯笼像一个个红彤彤的太阳",
+        "D. 红枣像玛瑙一样晶莹剔透"
+      ],
+      "answer": "B",
+      "explanation": "B 用「是」连接本体与喻体，是典型暗喻；A 用「似的」是明喻+拟人；C、D 含「像」「一样」是明喻。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "修辞/拟人",
+      "content": "「锅中的腊八粥已经叹气似的沸腾着」一句赋予粥以人的什么动作？",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "叹气",
+      "explanation": "粥本无生命，作者赋予「叹气」这一人的动作，是拟人，写出沸腾时声音之低沉绵长。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "句式与标点/病句修改",
+      "content": "下列句子没有语病的一项是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 通过《北京的春节》的学习，使我们了解了老北京的风俗。",
+        "B. 这次春节晚会的成功举办，离不开全体演职人员的辛勤努力。",
+        "C. 能否做好这件事，关键在于我们要努力。",
+        "D. 我估计他今天大概不会来了。"
+      ],
+      "answer": "B",
+      "explanation": "A 滥用介词，「通过……使……」造成主语缺失；C 一面对两面失衡（能否——要努力）；D「估计」「大概」语义重复。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "句式与标点/句式转换",
+      "content": "把「春节是中国最隆重的传统节日」改为反问句，下列正确的是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 春节难道不是中国最隆重的传统节日吗？",
+        "B. 春节是中国最隆重的传统节日吗？",
+        "C. 春节难道是中国最隆重的传统节日吗？",
+        "D. 春节怎么是中国最隆重的传统节日呢？"
+      ],
+      "answer": "A",
+      "explanation": "陈述句改反问句要加否定词「不」，并加反问语气词「难道……吗」，末用问号。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "句式与标点/标点符号",
+      "content": "下列句子中标点使用正确的一项是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 元宵节的灯有：宫灯、纱灯、走马灯、孔明灯、花灯。",
+        "B. 元宵节的灯有：宫灯、纱灯、走马灯、孔明灯、花灯……",
+        "C. 元宵节的灯有宫灯、纱灯、走马灯、孔明灯、花灯等。",
+        "D. 元宵节的灯有「宫灯、纱灯、走马灯、孔明灯、花灯」。"
+      ],
+      "answer": "C",
+      "explanation": "C 句无冒号引出，自然列举完用「等」结尾恰当。A 列举完应不用句号或加省略号；B 用了省略号又用句号搭配重复；D 错用引号。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "句式与标点/关联词运用",
+      "content": "选合适的关联词填入：「____北京的春节这样隆重，____各地的过年风俗也各具特色，丰富多彩。」",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 不仅……而且……",
+        "B. 因为……所以……",
+        "C. 虽然……但是……",
+        "D. 如果……就……"
+      ],
+      "answer": "A",
+      "explanation": "前后两分句是递进关系，用「不仅……而且……」最贴切。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "字词/词语理解",
+      "content": "「万象更新」中「万象」的意思是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 宇宙间一切事物或景象",
+        "B. 一万种动物的形象",
+        "C. 万件事的征兆",
+        "D. 大象等大型动物"
+      ],
+      "answer": "A",
+      "explanation": "「万象」泛指宇宙间一切事物或景象；「更新」指除旧布新，整词形容春节后景象焕然一新。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "字词/字义",
+      "content": "「日暮汉宫传蜡烛」中「传」的意思是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "赐",
+      "explanation": "唐时寒食禁火，但皇帝特赐近臣蜡烛，故「传」即「赐」之意，体现帝王恩宠。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "古诗文/文言实词",
+      "content": "「轻烟散入五侯家」的「五侯」泛指：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "权贵",
+      "explanation": "「五侯」原指汉代外戚显贵，此处泛指权贵之家，暗讽寒食禁火令对百姓严而对权贵宽。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "阅读短文【腊八粥（节选·沈从文）】：「初学喊爸爸的小孩子，会出门叫洋车了的大孩子，嘴巴上长了许多白胡子的老孩子，提到腊八粥，谁不是嘴里就立时生出一种甜甜的腻腻的感觉呢。把小米、饭豆、枣、栗、白糖、花生仁合拢来煮成的一锅粥，让它在锅中叹气似的沸腾着，单看它那叹气样儿，闻闻那种香味，就够咽三口以上的唾沫了，何况是大碗大碗地装着，大匙大匙朝口里塞灌呢！」问：本段开头「初学喊爸爸的小孩子……长了许多白胡子的老孩子」运用的修辞是？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 排比兼对比，从年龄两端突出腊八粥老少咸宜",
+        "B. 比喻",
+        "C. 夸张",
+        "D. 设问"
+      ],
+      "answer": "A",
+      "explanation": "用三个结构相同的短语排比，并将「小孩——大孩——老孩」对比并列，突出腊八粥受所有人喜爱。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "续《腊八粥》节选：「让它在锅中叹气似的沸腾着」一句中「叹气」的修辞是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "拟人",
+      "explanation": "粥不会叹气，作者赋予粥人的动作，是拟人，绘声绘色。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "续《腊八粥》节选：「就够咽三口以上的唾沫了」运用何种修辞？作用是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "夸张",
+      "explanation": "「咽三口以上唾沫」明显夸张，强化腊八粥对食欲的刺激。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "续《腊八粥》节选：本段从哪几个角度突出腊八粥的美味？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 视觉（看叹气样儿）+ 嗅觉（闻香味）+ 味觉（咽唾沫）",
+        "B. 仅听觉",
+        "C. 仅味觉",
+        "D. 仅视觉"
+      ],
+      "answer": "A",
+      "explanation": "「单看它那叹气样儿」（视觉）「闻闻那种香味」（嗅觉）「就够咽三口以上的唾沫」（联想味觉），多感官齐发。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "续《腊八粥》节选：本段的中心句最贴切的概括是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "腊八粥老少皆爱",
+      "explanation": "首句「初学喊爸爸的小孩子……提到腊八粥，谁不是……」，提示老少咸宜是中心意旨。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "写作/表达手法",
+      "content": "《北京的春节》在写作上最突出的特色是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "详略得当",
+      "explanation": "老舍此文最被称道的就是详略安排，主次分明。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《长歌行》「少壮不努力」的下一句是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "老大徒伤悲",
+      "explanation": "百川东到海，何时复西归？少壮不努力，老大徒伤悲。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "古诗文/古诗词作者风格",
+      "content": "《迢迢牵牛星》出自《古诗十九首》，这部作品集的特点是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 东汉文人五言诗代表，风格质朴含蓄、抒情真挚",
+        "B. 唐代乐府民歌，叙事详尽",
+        "C. 宋词豪放派代表",
+        "D. 明清章回小说"
+      ],
+      "answer": "A",
+      "explanation": "《古诗十九首》是东汉无名氏文人的五言抒情诗，多写离别相思，风格质朴含蓄，标志五言诗成熟。"
+    },
+    {
+      "chapter": "第一单元：民风民俗",
+      "knowledge_point": "古诗文/古诗词意境理解",
+      "content": "《十五夜望月》末句「不知秋思落谁家」中「落」字之妙在于：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 化无形为有形，使秋思如月光般具体可触，意蕴含蓄深远",
+        "B. 写实——秋天树叶落到地上",
+        "C. 表示秋思失败了",
+        "D. 说明月亮落下"
+      ],
+      "answer": "A",
+      "explanation": "「秋思」本无形，用「落」字使其如月华般洒落人间，化抽象为具象，含蓄空灵，是诗眼。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "课文与名著/名著情节人物",
+      "content": "《鲁滨逊漂流记》中鲁滨逊在荒岛上为缓解孤独，用「列表对照」的方式记下「好处」与「坏处」，这一做法说明他的性格特点是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 理性、乐观、不向命运低头",
+        "B. 悲观沮丧",
+        "C. 迷信",
+        "D. 怠惰懒散"
+      ],
+      "answer": "A",
+      "explanation": "通过对比利弊获得心理慰藉，体现理性思维和积极的生活态度，是鲁滨逊精神核心。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "课文与名著/名著情节人物",
+      "content": "《鲁滨逊漂流记》的作者是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "笛福",
+      "explanation": "丹尼尔·笛福（英国），被誉为英国小说之父。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "课文与名著/名著情节人物",
+      "content": "鲁滨逊在岛上救下的当地土著并起名为：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "星期五",
+      "explanation": "因为他在星期五救下这位土著，便给他取名「星期五」（Friday）。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "课文与名著/名著情节人物",
+      "content": "鲁滨逊在荒岛上独自生活了大约多少年？",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "二十八",
+      "explanation": "原著中鲁滨逊在荒岛上一共生活了二十八年两个月零十九天。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "课文与名著/名著情节人物",
+      "content": "《骑鹅旅行记》中尼尔斯被精灵变成小人后，最初的态度是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "惊慌失措",
+      "explanation": "尼尔斯起初恐惧抗拒，在与雄鹅莫顿和大雁旅行中渐渐勇敢、善良，最终变回常人。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "课文与名著/名著情节人物",
+      "content": "《骑鹅旅行记》的作者是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "拉格洛夫",
+      "explanation": "塞尔玛·拉格洛夫，瑞典女作家，1909 年获诺贝尔文学奖，《骑鹅旅行记》是为儿童写的地理读物。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "课文与名著/名著情节人物",
+      "content": "尼尔斯变回原形的关键条件是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 他要爱护他的雄鹅莫顿，不让莫顿被宰杀",
+        "B. 找到精灵向他道歉",
+        "C. 学会一种新魔法",
+        "D. 变身后必须不吃饭三天"
+      ],
+      "answer": "A",
+      "explanation": "故事高潮处，尼尔斯为保护莫顿放弃自己变回常人的机会，最终因善良真心实现还原。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "课文与名著/名著情节人物",
+      "content": "《汤姆·索亚历险记》中汤姆与同伴在荒岛玩「海盗」时离家多日，他们偷偷回家发现什么？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 全镇人以为他们死了，正在为他们举行葬礼",
+        "B. 家被搬空了",
+        "C. 大人们已习以为常，没人注意",
+        "D. 警察正在四处搜寻"
+      ],
+      "answer": "A",
+      "explanation": "经典桥段：三个孩子潜回小镇时，正赶上自己的葬礼，最后惊喜亮相。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "课文与名著/名著情节人物",
+      "content": "《汤姆·索亚历险记》的作者是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "马克吐温",
+      "explanation": "马克·吐温，美国幽默讽刺作家，本名塞缪尔·克莱门斯。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "文学常识/外国作家作品",
+      "content": "下列作家——国籍——代表作搭配错误的一项是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 笛福——英国——《鲁滨逊漂流记》",
+        "B. 拉格洛夫——瑞典——《骑鹅旅行记》",
+        "C. 马克·吐温——美国——《汤姆·索亚历险记》",
+        "D. 安徒生——英国——《安徒生童话》"
+      ],
+      "answer": "D",
+      "explanation": "安徒生是丹麦作家，不是英国。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "文学常识/外国作家作品",
+      "content": "下列国籍——作家——奖项搭配正确的是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 瑞典——拉格洛夫——首位获诺贝尔文学奖的女性",
+        "B. 美国——海明威——首位获诺奖的美国人",
+        "C. 法国——雨果——诺奖得主",
+        "D. 英国——莎士比亚——诺奖得主"
+      ],
+      "answer": "A",
+      "explanation": "拉格洛夫 1909 年获诺贝尔文学奖，是首位获此奖的女性作家。雨果、莎士比亚均早于诺奖时代。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "课文与名著/名著情节人物",
+      "content": "汤姆与贝琪在山洞中迷路时，汤姆表现出怎样的品质？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 镇定勇敢、机智乐观，安慰贝琪并最终找到出路",
+        "B. 慌乱大哭",
+        "C. 弃贝琪不顾",
+        "D. 立即放弃"
+      ],
+      "answer": "A",
+      "explanation": "山洞段是汤姆形象升华的关键，体现勇敢、机智、责任感。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "课文与名著/名著情节人物",
+      "content": "汤姆和哈克最终在山洞中发现了什么？",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "宝藏",
+      "explanation": "二人在山洞中找到印第安乔藏匿的宝藏，从此衣食无忧。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "字词/成语运用",
+      "content": "下列成语用于形容鲁滨逊在荒岛的处境最恰当的是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 孤立无援、自力更生",
+        "B. 锦衣玉食",
+        "C. 安居乐业",
+        "D. 群英荟萃"
+      ],
+      "answer": "A",
+      "explanation": "鲁滨逊孤身一人在荒岛上，无外援；之后种麦养羊全靠自己，正是「孤立无援、自力更生」。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "阅读短文【鲁滨逊漂流记（节选）】：「我在岛上的处境，比起世界上别人的境遇来，可以说有时候是好的，有时候是坏的。但是不管怎样，总能够找到一些东西可以宽慰自己，使自己不致绝望。我把我目前的好处和坏处一一列出，公正地比较了一下，结果使我得出这样一个结论：世界上的事，再没有比眼前这个境遇更糟糕的了；可是同样地，比起更悲惨的境遇来，我的境况也未尝没有令我感激上苍的地方。」问：本段中鲁滨逊面对困境的心态是？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 理性比较利弊，从中找慰藉，乐观面对",
+        "B. 悲观厌世",
+        "C. 痛苦呻吟",
+        "D. 完全无所谓"
+      ],
+      "answer": "A",
+      "explanation": "通过列利弊清单，从绝境中找出可以感激的方面，体现理性与乐观。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "续《鲁滨逊漂流记》节选：「使自己不致绝望」中「不致」的意思是？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 不至于、不会到达（某种程度）",
+        "B. 不送达",
+        "C. 不专心",
+        "D. 不细致"
+      ],
+      "answer": "A",
+      "explanation": "「不致」即不至于，表示不会陷入绝望。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "续《鲁滨逊漂流记》节选：本段使用的主要论证方法是？",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "对比论证",
+      "explanation": "通过列出「好处」与「坏处」并加以比较，是典型的对比论证。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "续《鲁滨逊漂流记》节选：从这段心理活动可以看出鲁滨逊是一个怎样的人？",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "乐观坚强",
+      "explanation": "面对绝境仍能客观分析、找到希望，是乐观坚强的人。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "续《鲁滨逊漂流记》节选：「比起更悲惨的境遇来，我的境况也未尝没有令我感激上苍的地方」一句的言外之意是？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 与更糟糕的人比，自己已是幸运的，应当感恩",
+        "B. 上苍是不存在的",
+        "C. 自己运气最差",
+        "D. 别人都比自己幸运"
+      ],
+      "answer": "A",
+      "explanation": "用比较法发现自己仍有可以感恩之处，是乐观自我开导。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "句式与标点/句式转换",
+      "content": "把「鲁滨逊不向命运低头」改为反问句：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 鲁滨逊难道会向命运低头吗？",
+        "B. 鲁滨逊向命运低头吗？",
+        "C. 鲁滨逊难道不向命运低头吗？",
+        "D. 鲁滨逊会向命运低头。"
+      ],
+      "answer": "A",
+      "explanation": "原句是肯定意——「不低头」，反问需要去掉「不」加「难道……吗」表反诘，故 A 正确。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "句式与标点/病句修改",
+      "content": "下列句子修改正确的一项是「鲁滨逊用了二十八年的时间，他终于回到了英国。」",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 鲁滨逊用了二十八年的时间，终于回到了英国。",
+        "B. 鲁滨逊用了二十八年时间他终于回到了英国",
+        "C. 鲁滨逊使用了二十八年的时间终于他回到了英国。",
+        "D. 原句正确无须修改"
+      ],
+      "answer": "A",
+      "explanation": "原句两个独立分句中后句「他」与前句「鲁滨逊」重复，应删去第二个主语，并以逗号连接。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "字词/词语理解",
+      "content": "「不毛之地」中「毛」的本义是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "草木",
+      "explanation": "「不毛之地」指连草木都不生长的贫瘠之地，「毛」指草木。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "字词/字形",
+      "content": "「焉知非福」对应的成语典故出自：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "塞翁失马",
+      "explanation": "「塞翁失马，焉知非福」出自《淮南子》，比喻坏事可能转化为好事。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "写作/表达手法",
+      "content": "《汤姆·索亚历险记》采用第几人称叙述？",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "三",
+      "explanation": "全书用第三人称全知视角叙述。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "写作/人物描写",
+      "content": "「汤姆把刷墙的活儿装作很有趣的样子，骗其他孩子为他刷墙，还得了一堆「报酬」」这一情节最能体现汤姆的：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 机智、调皮、善于动脑",
+        "B. 懒惰",
+        "C. 残忍",
+        "D. 胆怯"
+      ],
+      "answer": "A",
+      "explanation": "把强迫的劳动伪装成人人想做的乐事，体现孩子式的机智和狡黠。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "课文与名著/名著情节人物",
+      "content": "下列对三部外国名著主题的概括，最准确的是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 《鲁滨逊》——孤岛求生与抗争；《骑鹅》——人与自然和善良；《汤姆》——童心与冒险",
+        "B. 三部都讲战争",
+        "C. 三部都讲爱情",
+        "D. 三部都讲学校生活"
+      ],
+      "answer": "A",
+      "explanation": "三部主题各有侧重，A 概括最切合：求生意志、人与自然、童年自由与冒险。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "课文与名著/名著情节人物",
+      "content": "鲁滨逊在荒岛种植的两种主要作物是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "麦子和稻子",
+      "explanation": "鲁滨逊从船上抢救出谷种，种出麦子和稻子，逐步建立粮食保障。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "「咬定青山不放松」的下一句是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "立根原在破岩中",
+      "explanation": "郑燮《竹石》：咬定青山不放松，立根原在破岩中。千磨万击还坚劲，任尔东西南北风。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "字词/词语搭配",
+      "content": "下列搭配最贴合鲁滨逊形象的是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 智慧的星期五——勇敢的鲁滨逊",
+        "B. 坚毅的鲁滨逊——忠诚的星期五",
+        "C. 懒惰的鲁滨逊——勤劳的星期五",
+        "D. 恐惧的鲁滨逊——孱弱的星期五"
+      ],
+      "answer": "B",
+      "explanation": "鲁滨逊以坚毅著称；星期五获救后忠心追随鲁滨逊，是其忠仆和朋友。"
+    },
+    {
+      "chapter": "第二单元：外国名著",
+      "knowledge_point": "字词/近义词反义词",
+      "content": "「乐观」的反义词是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "悲观",
+      "explanation": "「乐观」与「悲观」在情绪态度上构成反义。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《匆匆》一文的作者朱自清通过对时间流逝的感慨，主要表达的情感是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 对时光易逝的无奈以及对珍惜时间、奋发有为的渴望",
+        "B. 对自然美景的赞美",
+        "C. 对故乡的思念",
+        "D. 对友人的怀念"
+      ],
+      "answer": "A",
+      "explanation": "全文紧紧围绕「时间一去不复返」的惋惜与「不能虚度此生」的追问展开。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "文学常识/中国现代作家作品",
+      "content": "朱自清的代表散文（不含《匆匆》）是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 《背影》《荷塘月色》《春》",
+        "B. 《呐喊》《彷徨》",
+        "C. 《骆驼祥子》《茶馆》",
+        "D. 《边城》《湘行散记》"
+      ],
+      "answer": "A",
+      "explanation": "朱自清以散文著称，《背影》《荷塘月色》《春》《绿》皆是名篇。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《那个星期天》的作者是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "史铁生",
+      "explanation": "史铁生，当代作家，代表作《我与地坛》《务虚笔记》《那个星期天》。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《那个星期天》以「我」的什么变化为主线？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 从期盼、兴奋——焦急、忐忑——失望、委屈、沮丧——伤心绝望",
+        "B. 从平淡到平淡",
+        "C. 从快乐到更快乐",
+        "D. 从生气到原谅"
+      ],
+      "answer": "A",
+      "explanation": "全文以「我」一天之内情绪逐渐变化为主线，把心理活动写得真实细腻。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "写作/表达手法",
+      "content": "《那个星期天》在情感表达上最突出的特色是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 在叙述中融入抒情和心理描写，把情感隐含在事件中",
+        "B. 大量议论说理",
+        "C. 以景衬情但无心理描写",
+        "D. 通篇对话"
+      ],
+      "answer": "A",
+      "explanation": "史铁生善于把强烈情感融入对生活细节的描写中，含蓄而深沉。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "写作/表达手法",
+      "content": "《匆匆》和《那个星期天》在抒情方式上的共同点是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 都将真情融入具体事物或场景中，含蓄表达",
+        "B. 都采用直接议论",
+        "C. 都通过对话推动情节",
+        "D. 都是议论文"
+      ],
+      "answer": "A",
+      "explanation": "两文都属于「真情流露」单元，重在含蓄抒情，把感情藏入景物（《匆匆》）或事件（《那个星期天》）中。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "修辞/排比",
+      "content": "下列句子运用排比的一项是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 燕子去了，有再来的时候；杨柳枯了，有再青的时候；桃花谢了，有再开的时候。",
+        "B. 太阳像火球。",
+        "C. 我什么都没做。",
+        "D. 你来了吗？"
+      ],
+      "answer": "A",
+      "explanation": "三个结构相同、语气相似的分句构成排比。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "修辞/比喻",
+      "content": "《匆匆》中「过去的日子如轻烟，被微风吹散了，如薄雾，被初阳蒸融了」一句的修辞是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 比喻 + 排比",
+        "B. 拟人 + 夸张",
+        "C. 反复 + 设问",
+        "D. 借代 + 对偶"
+      ],
+      "answer": "A",
+      "explanation": "「日子如轻烟」「日子如薄雾」是两个比喻；句式平行又构成排比。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "修辞/拟人",
+      "content": "「太阳他有脚啊，轻轻悄悄地挪移了；我也茫茫然跟着旋转。」这句话的主要修辞是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "拟人",
+      "explanation": "把太阳比作有脚的人，会「挪移」，是典型拟人。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "句式与标点/标点符号",
+      "content": "「但是，聪明的，你告诉我，我们的日子为什么一去不复返呢？」句中三个逗号的作用最贴切的是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 通过短促停顿层层蓄势，加强语气，突出追问之切",
+        "B. 没有作用",
+        "C. 表示语气轻松",
+        "D. 表示话题转换"
+      ],
+      "answer": "A",
+      "explanation": "连用逗号制造急切、动情的语气节奏，是朱自清抒情散文的标志。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "句式与标点/句子衔接",
+      "content": "下列句子最适合放在《匆匆》「过去的日子如轻烟」之前的衔接句是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 我留着些什么痕迹呢？",
+        "B. 春天来了。",
+        "C. 我去吃饭了。",
+        "D. 鸟儿在唱歌。"
+      ],
+      "answer": "A",
+      "explanation": "原文上下衔接的就是反思自己留下了什么痕迹，引出「过去的日子如轻烟」之喻。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "句式与标点/病句修改",
+      "content": "下列句子没有语病的一项是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 通过阅读《匆匆》，使我深刻体会到时间的宝贵。",
+        "B. 阅读《匆匆》使我深刻体会到时间的宝贵。",
+        "C. 通过阅读《匆匆》，让我深刻体会到时间的宝贵。",
+        "D. 由于阅读《匆匆》，使我深刻体会到时间的宝贵。"
+      ],
+      "answer": "B",
+      "explanation": "A、C、D 均为「介词 + 使／让」造成主语缺失的病句；B 主语「阅读《匆匆》」明确。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "句式与标点/句式转换",
+      "content": "把「我们的日子一去不复返」改为反问句：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 我们的日子难道不是一去不复返吗？",
+        "B. 我们的日子是一去不复返吗？",
+        "C. 我们的日子怎么不一去不复返呢？",
+        "D. 我们的日子能一去不复返吗？"
+      ],
+      "answer": "A",
+      "explanation": "陈述肯定句改反问需加否定 + 反问语气词。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "字词/字形",
+      "content": "下面词语字形完全正确的一组是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 头涔涔 泪潸潸 徘徊 蒸融",
+        "B. 头岑岑 泪潸潸 徘徘 蒸熔",
+        "C. 头涔涔 泪潜潜 排徊 蒸融",
+        "D. 头涔涔 泪潸潸 徘徊 蒸荣"
+      ],
+      "answer": "A",
+      "explanation": "「岑」错；「潜潜」错；「排徊」错；「蒸荣」错。「头涔涔，泪潸潸」出自《匆匆》。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "字词/字音",
+      "content": "下列加点字读音正确的一项是：「涔（cén）涔、潸（shān）潸、徘徊（pái huái）、伶（líng）俐」",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 全部正确",
+        "B. 涔字错",
+        "C. 潸字错",
+        "D. 徘徊错"
+      ],
+      "answer": "A",
+      "explanation": "「涔」cén；「潸」shān；「徘徊」pái huái；「伶俐」líng lì。均与课本一致。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "字词/词语理解",
+      "content": "「头涔涔」中「涔涔」的意思是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 形容汗水或泪水不断流下的样子",
+        "B. 头疼",
+        "C. 头眩",
+        "D. 头晕"
+      ],
+      "answer": "A",
+      "explanation": "「涔涔」形容流不止；「头涔涔」即满头大汗或惶急冒汗。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "字词/词语感情色彩",
+      "content": "「徘徊」一词在《匆匆》中的感情色彩是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 含犹豫、惆怅、迷茫之感",
+        "B. 喜悦欢快",
+        "C. 愤怒激烈",
+        "D. 中性无情感"
+      ],
+      "answer": "A",
+      "explanation": "「徘徊」本指来回走动，引申为内心彷徨；在该文表现作者对时间流逝的迷茫。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "阅读短文【匆匆（节选·朱自清）】：「燕子去了，有再来的时候；杨柳枯了，有再青的时候；桃花谢了，有再开的时候。但是，聪明的，你告诉我，我们的日子为什么一去不复返呢？——是有人偷了他们罢：那是谁？又藏在何处呢？是他们自己逃走了罢：现在又到了哪里呢？我不知道他们给了我多少日子；但我的手确乎是渐渐空虚了。在默默里算着，八千多日子已经从我手中溜去；像针尖上一滴水滴在大海里，我的日子滴在时间的流里，没有声音，也没有影子。我不禁头涔涔而泪潸潸了。」问：开头三个分句使用何种修辞？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 排比 + 拟人，借自然现象的可逆反衬日子之不可回",
+        "B. 比喻 + 反问",
+        "C. 设问 + 借代",
+        "D. 夸张 + 对偶"
+      ],
+      "answer": "A",
+      "explanation": "三个相同结构的分句构成排比，「燕子去」「桃花谢」赋予自然以人化动作，反衬时间不可逆。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "续《匆匆》节选：「像针尖上一滴水滴在大海里」一句运用何种修辞？",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "比喻",
+      "explanation": "「我的日子」是本体，「针尖上一滴水滴在大海里」是喻体，是比喻。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "续《匆匆》节选：「我的手确乎是渐渐空虚了」一句的言外之意是？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 时间从手中悄然流逝，未能把握",
+        "B. 手没了力气",
+        "C. 手中没有东西",
+        "D. 手凉了"
+      ],
+      "answer": "A",
+      "explanation": "「手」象征对时间的把握，「空虚」即把握不住，含哀叹自责。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "续《匆匆》节选：「我不禁头涔涔而泪潸潸了」表达了作者怎样的情感？",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "焦急惶恐",
+      "explanation": "意识到时间已悄然流去八千日，作者既焦急又惶恐，故汗下泪流。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "续《匆匆》节选：本段的中心思想最贴切的概括是？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 抒写对时间一去不复返的惋惜与对生命价值的追问",
+        "B. 描写春天景色",
+        "C. 抒写思乡之情",
+        "D. 议论生命起源"
+      ],
+      "answer": "A",
+      "explanation": "全段紧扣「日子为什么一去不复返」的追问展开，抒写对时光与生命的思考。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "续《匆匆》节选：「八千多日子已经从我手中溜去」中「溜」字的妙处？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 化抽象为形象，写出时间流逝的悄然、迅疾、不可挽留",
+        "B. 仅表示物体滑动",
+        "C. 表现时间慢",
+        "D. 与原文情感无关"
+      ],
+      "answer": "A",
+      "explanation": "「溜」字使无形的时间具有「悄悄滑过」的具体动作，含强烈不舍意味。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "「少壮不努力」的下一句是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "老大徒伤悲",
+      "explanation": "《长歌行》。同样表达珍惜时间。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "字词/成语运用",
+      "content": "下列与「珍惜时间」无关的成语是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "守株待兔",
+      "explanation": "「守株待兔」比喻不主动努力、寄希望于侥幸，与珍惜时间无关。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "写作/表达手法",
+      "content": "《匆匆》一文的体裁是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "抒情散文",
+      "explanation": "《匆匆》是朱自清的抒情散文，借景抒情。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "修辞/反问",
+      "content": "下列句子使用反问的一项是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 难道我们能虚度此生吗？",
+        "B. 这是什么？这是希望。",
+        "C. 时间过得真快啊！",
+        "D. 你来了。"
+      ],
+      "answer": "A",
+      "explanation": "反问句以问句形式表达确定意思——肯定不能虚度。B 是设问。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "修辞/设问",
+      "content": "「我留下了什么痕迹呢？我何曾留着像游丝样的痕迹呢？」运用的修辞是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "设问",
+      "explanation": "自问自答的句式，是设问；同时含反问味。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "字词/字音",
+      "content": "「头涔涔」中「涔」的读音是：",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "options": [
+        "A. cén",
+        "B. zǎn",
+        "C. cén ér",
+        "D. shēn"
+      ],
+      "answer": "A",
+      "explanation": "「涔」读 cén，形容流不止。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《那个星期天》中「我」一天的等待，最终结果是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 母亲一直忙未带我出去，我极度失望",
+        "B. 母亲带我出去玩了一整天",
+        "C. 我自己出去玩了",
+        "D. 父亲带我出去了"
+      ],
+      "answer": "A",
+      "explanation": "母亲整天忙家务，承诺多次都未兑现，「我」从早晨等到傍晚最终绝望大哭。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《那个星期天》末尾「我感到母亲在哭，她正抚摸着我，我感到母亲惊惶」中母亲哭泣的原因是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 因疏忽和食言而内疚自责",
+        "B. 被「我」气哭",
+        "C. 因家务繁忙而委屈",
+        "D. 因身体不适"
+      ],
+      "answer": "A",
+      "explanation": "母亲意识到自己一天的忙碌让孩子彻底失望，自责落泪——这是含蓄而深刻的母爱表达。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "写作/人物描写",
+      "content": "《那个星期天》中「我」「依偎在母亲的怀里」却仍「感到惊惶」，这种心理描写的作用是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 表现「我」对母亲深深的依赖与对自身失望情绪的复杂",
+        "B. 仅是身体疲倦",
+        "C. 与文章情感无关",
+        "D. 表现「我」的快乐"
+      ],
+      "answer": "A",
+      "explanation": "依偎是依赖，惊惶是孩子对失望情绪的内在反应，两者并存才显感情真实。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《那个星期天》最后一段写「光线渐渐暗下去」起到什么作用？",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "借景抒情",
+      "explanation": "暗下去的光线对应「我」由期待到绝望的心境变化，是借景抒情。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "字词/词语搭配",
+      "content": "下列搭配恰当的一项是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 燕子（成群）地飞来——洗着衣服",
+        "B. 时间（飞快）地流逝",
+        "C. 桃花（默默）地凋谢",
+        "D. 太阳（轻轻悄悄）地挪移"
+      ],
+      "answer": "D",
+      "explanation": "出自《匆匆》原句「太阳他有脚啊，轻轻悄悄地挪移了」，是教材原句搭配。"
+    },
+    {
+      "chapter": "第三单元：真情流露",
+      "knowledge_point": "字词/字形",
+      "content": "「徘徊」中「徊」的偏旁是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "彳",
+      "explanation": "「徊」「徘」均为「彳」（双立人）旁，与行走有关。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "《马诗》「大漠沙如雪」的下一句是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "燕山月似钩",
+      "explanation": "李贺《马诗》：大漠沙如雪，燕山月似钩。何当金络脑，快走踏清秋。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "《石灰吟》「千锤万凿出深山」的下一句是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "烈火焚烧若等闲",
+      "explanation": "于谦《石灰吟》：千锤万凿出深山，烈火焚烧若等闲。粉骨碎身浑不怕，要留清白在人间。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "「千磨万击还坚劲」的下一句是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "任尔东西南北风",
+      "explanation": "郑燮《竹石》："
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "古诗文/古诗词意境理解",
+      "content": "《马诗》「何当金络脑，快走踏清秋」表达诗人怎样的心情？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 渴望被赏识、报效国家、建功立业的迫切心情",
+        "B. 想悠闲度日",
+        "C. 厌战归隐",
+        "D. 思念亲人"
+      ],
+      "answer": "A",
+      "explanation": "「金络脑」象征受重用，「踏清秋」象征驰骋报国，李贺以马自喻，渴望被赏识。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "古诗文/古诗词意境理解",
+      "content": "《石灰吟》采用的写作手法是：",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 3,
+      "answer": "托物言志",
+      "explanation": "全诗咏石灰之苦炼与清白，实为诗人于谦人格写照——这是「托物言志」典型范例。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "古诗文/古诗词作者风格",
+      "content": "《竹石》作者郑燮，号：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "板桥",
+      "explanation": "郑燮，号板桥，「扬州八怪」之一，擅画兰竹石。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "古诗文/古诗词作者风格",
+      "content": "《马诗》《石灰吟》《竹石》三首咏物诗的共同点是：",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 皆为托物言志，借物抒情，寄托高洁理想或报国之志",
+        "B. 皆为田园诗",
+        "C. 皆为山水诗",
+        "D. 皆为送别诗"
+      ],
+      "answer": "A",
+      "explanation": "三首皆借物抒怀：马（李贺—志向）、石灰（于谦—清白）、竹石（郑燮—坚韧）。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《十六年前的回忆》中「父亲」指的是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "李大钊",
+      "explanation": "本文作者李星华，是李大钊之女。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《十六年前的回忆》采用的叙述顺序是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "倒叙",
+      "explanation": "由 1927 年的回忆引入，倒着展开父亲被捕、受审、牺牲的过程。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "写作/人物描写",
+      "content": "《十六年前的回忆》主要通过哪几种描写表现李大钊的革命者形象？",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 外貌描写、神态描写、语言描写、动作描写多角度刻画",
+        "B. 仅心理描写",
+        "C. 仅环境描写",
+        "D. 仅议论"
+      ],
+      "answer": "A",
+      "explanation": "如「不慌不忙」（神态、动作）、「父亲是个慈祥的人」（议论叙述）、与法官的对话（语言）多种描写综合呈现。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《为人民服务》是毛泽东在哪位同志追悼会上的演讲？",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "张思德",
+      "explanation": "1944 年 9 月 8 日，毛泽东在张思德追悼会上发表《为人民服务》。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《为人民服务》一文体裁是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "议论文",
+      "explanation": "毛泽东以演讲方式提出并论证「为人民服务」的观点，是议论文（演讲稿）。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《为人民服务》中引用「人固有一死，或重于泰山，或轻于鸿毛」出自：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "司马迁",
+      "explanation": "出自司马迁《报任安书》。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《为人民服务》引用司马迁名言的论证方法是：",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "引用论证",
+      "explanation": "引用名言阐释观点，是道理论证（引用论证）。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《金色的鱼钩》中「老班长」最令人感动的品质是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 舍己为人、对革命极端负责",
+        "B. 善于打鱼",
+        "C. 乐观幽默",
+        "D. 沉默寡言"
+      ],
+      "answer": "A",
+      "explanation": "老班长把鱼让给三个病号、自己嚼鱼骨充饥，最后牺牲，是舍己为人。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《金色的鱼钩》题目「金色」象征：",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 老班长舍己为人的崇高精神永放光芒",
+        "B. 鱼钩本身是金子做的",
+        "C. 阳光下鱼钩反射光",
+        "D. 鱼钩很值钱"
+      ],
+      "answer": "A",
+      "explanation": "鱼钩本是普通铁丝弯成，「金色」是借光辉象征精神的崇高与永恒。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "字词/字形",
+      "content": "下列词语字形完全正确的一组是：",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 斩钉截铁 视死如归 大义凛然 不屈不挠",
+        "B. 斩钉截铁 视死如归 大义陵然 不屈不挠",
+        "C. 斩丁截铁 视死如归 大义凛然 不曲不挠",
+        "D. 斩钉切铁 视死如规 大义凛然 不屈不挠"
+      ],
+      "answer": "A",
+      "explanation": "B「陵」应为「凛」；C「丁」「曲」应为「钉」「屈」；D「切」「规」错。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "字词/词语理解",
+      "content": "「视死如归」中「归」的意思是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "回家",
+      "explanation": "「视死如归」即把死亡看作回家一样，体现革命者从容赴死。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "字词/成语运用",
+      "content": "下列成语用于描写革命先烈最贴切的一组是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 鞠躬尽瘁、死而后已、舍生取义、视死如归",
+        "B. 锦衣玉食、高枕无忧、安居乐业",
+        "C. 闭门造车、画蛇添足、刻舟求剑",
+        "D. 朝三暮四、得过且过、自暴自弃"
+      ],
+      "answer": "A",
+      "explanation": "A 组成语皆为褒义，赞颂奉献精神，与革命先烈匹配。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "句式与标点/病句修改",
+      "content": "下列句子没有语病的一项是：",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 通过学习《为人民服务》，我们懂得了奉献的意义。",
+        "B. 在《金色的鱼钩》一课中，使我深受感动。",
+        "C. 老班长那种舍己为人精神感动了我们大家。",
+        "D. 他无时无刻都在关心着同志们。"
+      ],
+      "answer": "A",
+      "explanation": "B 主语缺；C「精神」「感动」搭配不顺，应为「老班长舍己为人的精神」；D「无时无刻」后应接「不」表否定。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "句式与标点/关联词运用",
+      "content": "选合适关联词：「____李大钊已经看到危险，____坚守岗位不肯撤离。」",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 虽然……但是……",
+        "B. 因为……所以……",
+        "C. 不仅……而且……",
+        "D. 只有……才……"
+      ],
+      "answer": "A",
+      "explanation": "前后是转折关系，用「虽然……但是……」恰当。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "句式与标点/句式转换",
+      "content": "把「老班长舍己为人的精神令人钦佩」改为感叹句：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 老班长舍己为人的精神多么令人钦佩啊！",
+        "B. 老班长舍己为人的精神令人钦佩吗？",
+        "C. 老班长舍己为人的精神难道不令人钦佩吗？",
+        "D. 老班长舍己为人的精神是令人钦佩的。"
+      ],
+      "answer": "A",
+      "explanation": "感叹句加「多么」「啊」加强语气，末用感叹号。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "修辞/比喻",
+      "content": "「人固有一死，或重于泰山，或轻于鸿毛」中「重于泰山」「轻于鸿毛」运用的修辞是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 比喻 + 对比",
+        "B. 拟人 + 排比",
+        "C. 夸张 + 反问",
+        "D. 设问 + 借代"
+      ],
+      "answer": "A",
+      "explanation": "「死的价值」比作泰山或鸿毛之重轻，是比喻；二者价值悬殊，是对比。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "阅读短文【十六年前的回忆（节选·李星华）】：「父亲不慌不忙地向外走去。我紧跟在他身后，走出院子，暂时被关在一间空屋子里。父亲保持着他那惯有的严峻态度，没有向他们讲任何道理。因为他明白，对他们说任何道理都是没有用的。在押解路上，他依旧穿着他那件灰布旧棉袍，可是没戴眼镜。乱蓬蓬的长头发下面，露出他那平静而慈祥的脸。」问：「不慌不忙」属于何种描写？反映人物什么性格？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 神态/动作描写——表现李大钊从容镇定、临危不乱",
+        "B. 心理描写——表现紧张",
+        "C. 外貌描写——表现年老",
+        "D. 语言描写——表现寡言"
+      ],
+      "answer": "A",
+      "explanation": "「不慌不忙」是动作神态描写，表现革命者面对敌人的镇定与坚毅。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "续《十六年前的回忆》节选：作者为什么说父亲「明白，对他们说任何道理都是没有用的」？",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 父亲深知反动派的本质，已坚定信念不与之争辩",
+        "B. 父亲不会讲道理",
+        "C. 父亲懒得说话",
+        "D. 父亲嗓子坏了"
+      ],
+      "answer": "A",
+      "explanation": "李大钊作为革命家深谙阶级敌人本质，沉默是最强烈的态度。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "续《十六年前的回忆》节选：「乱蓬蓬的长头发下面，露出他那平静而慈祥的脸」运用何种描写，作用是？",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 外貌描写——以「乱蓬蓬」体现牢狱之苦，「平静而慈祥」反衬革命者意志坚定",
+        "B. 心理描写",
+        "C. 环境描写",
+        "D. 议论"
+      ],
+      "answer": "A",
+      "explanation": "外貌描写通过对比，凸显李大钊的精神面貌没有被敌人摧垮。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "续《十六年前的回忆》节选：本段最能概括李大钊形象的一组词是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "镇定坚毅",
+      "explanation": "「不慌不忙」「平静而慈祥」「严峻」综合体现革命者镇定坚毅的形象。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "续《十六年前的回忆》节选：本段在全文中的位置和作用是？",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 处于「被捕——受审」过渡段，承上启下，进一步刻画父亲革命者形象",
+        "B. 是结尾段，总结全文",
+        "C. 是开头段，总起全文",
+        "D. 与全文无关"
+      ],
+      "answer": "A",
+      "explanation": "本段连接被捕与受审两部分，进一步深化父亲形象，承上启下。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "字词/字音",
+      "content": "「咬定青山不放松」中「咬」的读音是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "yao",
+      "explanation": "「咬」拼音 yǎo，去掉声调以纯字母形式作 fill 答案。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "古诗文/文言句子翻译",
+      "content": "「粉骨碎身浑不怕，要留清白在人间」一句的现代汉语翻译最准确的是：",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 即使粉身碎骨也毫不畏惧，只要把清白留在人世间",
+        "B. 怕粉身碎骨，要留人在世",
+        "C. 我不怕粉身碎骨，但要留清白",
+        "D. 粉身碎骨之后留下清白"
+      ],
+      "answer": "A",
+      "explanation": "「浑不怕」即「全然不怕」，「要留」即「只要把……留下」，表达诗人为坚守气节而不惧死亡的决心。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "古诗文/文言实词",
+      "content": "「烈火焚烧若等闲」中「等闲」的意思是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "平常",
+      "explanation": "「等闲」即「平常」，全句意为「烈火焚烧也当作平常的事」。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "文学常识/中国古代作家作品",
+      "content": "《石灰吟》作者于谦是哪个朝代的政治家、军事家？",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "明",
+      "explanation": "于谦（1398-1457），明代政治家、军事家、诗人，著名的「土木堡之变」后保卫北京。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "写作/表达手法",
+      "content": "《十六年前的回忆》在结尾再次提到「四月二十八日」，这种结构方式是：",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "首尾呼应",
+      "explanation": "「四月二十八日」是父亲牺牲日，开头与结尾呼应，体现作者刻骨铭心的纪念。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "写作/表达手法",
+      "content": "《为人民服务》全文围绕一个核心论点展开，这种结构是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "总分结构",
+      "explanation": "全文先提「为人民服务」，再分别论证「死的意义」「批评接受」「团结互助」「悼念战友」，是总分总结构。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《为人民服务》提出共产党人面对批评的正确态度是：",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 「不管是什么人，谁向我们指出都行。只要你说得对，我们就改正。」",
+        "B. 决不接受批评",
+        "C. 仅接受领导批评",
+        "D. 谁的批评都不听"
+      ],
+      "answer": "A",
+      "explanation": "原文如此表述，体现共产党人闻过则改、虚怀若谷的态度。"
+    },
+    {
+      "chapter": "第四单元：革命精神",
+      "knowledge_point": "字词/词语感情色彩",
+      "content": "下列词语全为褒义的一组是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 鞠躬尽瘁 视死如归 大义凛然 舍生取义",
+        "B. 阴险狡诈 自暴自弃 鞠躬尽瘁",
+        "C. 惨绝人寰 临危不惧 卑鄙无耻",
+        "D. 怒发冲冠 卑躬屈膝 视死如归"
+      ],
+      "answer": "A",
+      "explanation": "B、C、D 都混入贬义词；A 全为褒义。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《真理诞生于一百个问号之后》一文的中心论点是：",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 只要善于观察、不断发问、不断解决疑问，锲而不舍地追根求源，就能在现实生活中发现真理",
+        "B. 真理无处不在",
+        "C. 科学家都成功",
+        "D. 问号没有用"
+      ],
+      "answer": "A",
+      "explanation": "课文论点紧扣「问号——真理」这一核心，强调追问与坚持。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《真理诞生于一百个问号之后》举的事例不包括：",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 牛顿被苹果砸到发现万有引力",
+        "B. 谢皮罗教授从洗澡水漩涡发现地球自转影响",
+        "C. 波义耳从盐酸溅到紫罗兰发现石蕊试剂",
+        "D. 阿瑟林斯基从儿子睡觉时眼珠转动发现快速眼动睡眠"
+      ],
+      "answer": "A",
+      "explanation": "课文三个事例为：B、C、D；牛顿与苹果不是该课文中的例子。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《真理诞生于一百个问号之后》主要论证方法是：",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "举例论证",
+      "explanation": "通过谢皮罗、波义耳、阿瑟林斯基三个事例支撑论点，是举例论证。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《表里的生物》一文以儿童视角观察成人世界的事物——表，体现的中心是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 儿童的好奇心和求知欲是科学探索的起点",
+        "B. 表是有生命的",
+        "C. 儿童不该好奇",
+        "D. 怀表很贵"
+      ],
+      "answer": "A",
+      "explanation": "「我」对父亲怀表中「会响的」「活物」的好奇，正是科学精神的萌芽。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《表里的生物》作者是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "冯至",
+      "explanation": "冯至，现代诗人、学者、翻译家。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《他们那时候多有趣啊》是一篇科幻小说，作者是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "阿西莫夫",
+      "explanation": "艾萨克·阿西莫夫，美国科幻巨匠，「机器人三大定律」提出者。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《他们那时候多有趣啊》通过「未来电子学校」与「过去人工学校」对比，最终主人公的态度是：",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 向往过去那种师生互动、有同伴的真实学习",
+        "B. 喜欢未来电子学校",
+        "C. 不在乎",
+        "D. 反对所有学校"
+      ],
+      "answer": "A",
+      "explanation": "玛琪羡慕过去的学校有真人老师与同学一起学习，结尾「他们那时候多有趣啊」点题。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "字词/字形",
+      "content": "下列词语字形完全正确的一组是：",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 司空见惯 锲而不舍 见微知著 追根求源",
+        "B. 司空见贯 锲而不舍 见微知著 追根求源",
+        "C. 司空见惯 切而不舍 见微知箸 追根求源",
+        "D. 司空见惯 锲而不舍 见微知著 追根究源"
+      ],
+      "answer": "A",
+      "explanation": "B「贯」错；C「切」「箸」错；D「究」与「求」皆可，但课文用「求」。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "字词/字音",
+      "content": "「锲而不舍」中「锲」的读音是：",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 3,
+      "options": [
+        "A. qiè",
+        "B. qì",
+        "C. xiè",
+        "D. jiē"
+      ],
+      "answer": "A",
+      "explanation": "「锲」读 qiè，意为雕刻；「锲而不舍」即雕刻不止，比喻坚持不懈。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "字词/词语理解",
+      "content": "「见微知著」中「微」「著」分别指：",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 细微的迹象——明显的事物或本质",
+        "B. 小动物——著作",
+        "C. 微生物——显著",
+        "D. 微小——记录"
+      ],
+      "answer": "A",
+      "explanation": "「微」是细小迹象，「著」是显明、明显，整体即由细小迹象推知整体或本质。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "字词/成语运用",
+      "content": "下列成语用于描写科学家最贴切的一组是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 锲而不舍 一丝不苟 不懈追求 见微知著",
+        "B. 半途而废 浮光掠影 草率从事",
+        "C. 闭门造车 自欺欺人 浅尝辄止",
+        "D. 杞人忧天 守株待兔 缘木求鱼"
+      ],
+      "answer": "A",
+      "explanation": "A 全为褒义且符合科学家精神；B、C、D 均为贬义。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "句式与标点/病句修改",
+      "content": "下列句子没有语病的一项是：",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 谢皮罗发现：洗澡水的漩涡总是朝逆时针方向旋转，他敏锐地抓住了这个现象。",
+        "B. 通过这个实验，使我们认识到细心观察的重要。",
+        "C. 一个人能否成为科学家，关键在于他要有锲而不舍的精神。",
+        "D. 我大约估计这道题花了五分钟。"
+      ],
+      "answer": "A",
+      "explanation": "B 主语缺失；C 一面对两面失衡；D「大约」「估计」语义重复。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "句式与标点/句式转换",
+      "content": "把「波义耳的发现震惊了化学界」改为被动句：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 化学界被波义耳的发现震惊了。",
+        "B. 化学界震惊了波义耳。",
+        "C. 波义耳震惊了化学界吗？",
+        "D. 化学界为波义耳震惊了。"
+      ],
+      "answer": "A",
+      "explanation": "陈述主动改被动用「被」字句：受事 + 被 + 施事 + 动词。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "修辞/反问",
+      "content": "「难道科学的真谛不就是这样吗？」属于：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "反问",
+      "explanation": "用反问形式肯定地表达「科学的真谛就是这样」。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "修辞/排比",
+      "content": "「善于观察，不断发问，不断解决疑问，锲而不舍地追根求源」运用什么修辞？作用是？",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 3,
+      "answer": "排比",
+      "explanation": "四个动词性短语连用形成排比，节奏铿锵，强化论述力度。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "句式与标点/标点符号",
+      "content": "「真理诞生于一百个问号之后」中「问号」加引号的作用是：",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 表示特殊含义——指由疑问引发的探究",
+        "B. 表示直接引用",
+        "C. 表示讽刺",
+        "D. 表示着重强调（普通强调）"
+      ],
+      "answer": "A",
+      "explanation": "此处「问号」非标点符号本义，而是借代「疑问、好奇」，故加引号表示特殊含义。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "字词/词语理解",
+      "content": "「司空见惯」原指唐代司空官员见多了不以为奇，今多用来形容：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "看惯",
+      "explanation": "「司空」是古代官名；「司空见惯」泛指经常见到不以为奇，含中性偏贬义。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "阅读短文【真理诞生于一百个问号之后（节选）】：「最早发现这种现象的是 17 世纪英国著名化学家波义耳。一次，他无意间把盐酸溅到了紫罗兰花瓣上，过了一会儿，他发现紫罗兰的花瓣变红了。他敏感地意识到：这一现象会不会有什么科学价值？经过反复的实验证明，他制成了我们今天经常使用的酸碱试纸——石蕊试纸。」问：本段叙事顺序是？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 时间顺序：偶然发现——疑问——反复实验——制成试纸",
+        "B. 倒叙",
+        "C. 空间顺序",
+        "D. 议论顺序"
+      ],
+      "answer": "A",
+      "explanation": "事件按发现到验证到成果的时间顺序展开。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "续节选：「敏感地意识到」中「敏感」体现了波义耳怎样的科学品质？",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 善于观察、勤于思考，能从小现象捕捉科学线索",
+        "B. 神经敏感",
+        "C. 容易激动",
+        "D. 与科学无关"
+      ],
+      "answer": "A",
+      "explanation": "「敏感」此处指对现象的敏锐反应，是科学家应有的素质。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "续节选：「经过反复的实验证明」中「反复」反映科学家的什么精神？",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "锲而不舍",
+      "explanation": "「反复」实验体现锲而不舍的科学精神。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "续节选：本段最适合作为论据的论点是？",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 善于发问、不断求证，可以从小现象中发现真理",
+        "B. 化学很有趣",
+        "C. 紫罗兰会变色",
+        "D. 盐酸有毒"
+      ],
+      "answer": "A",
+      "explanation": "本段是为支撑课文「真理诞生于一百个问号之后」论点服务的论据。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "续节选：本段对「我们今天经常使用的酸碱试纸——石蕊试纸」中破折号的作用是？",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 表示解释说明",
+        "B. 表示话题转换",
+        "C. 表示声音延长",
+        "D. 表示语意未尽"
+      ],
+      "answer": "A",
+      "explanation": "破折号在此引出对「酸碱试纸」的具体名称解释。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "「读书须用意」的下一句（出自《增广贤文》）是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "一字值千金",
+      "explanation": "「读书须用意，一字值千金」——强调读书应专注。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "文学常识/外国作家作品",
+      "content": "下列科幻作家——国籍——作品搭配正确的是：",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 阿西莫夫——美国——《基地》《我，机器人》",
+        "B. 凡尔纳——美国——《海底两万里》",
+        "C. 阿西莫夫——英国——《基地》",
+        "D. 凡尔纳——英国——《时间机器》"
+      ],
+      "answer": "A",
+      "explanation": "阿西莫夫——美国；凡尔纳——法国；威尔斯——英国（《时间机器》《隐身人》）。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "写作/表达手法",
+      "content": "《真理诞生于一百个问号之后》在写法上的特色是：",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 开篇提出论点 → 用三个事实论据论证 → 结尾收束并升华——议论文典范结构",
+        "B. 全篇抒情",
+        "C. 全篇说明",
+        "D. 全篇记叙"
+      ],
+      "answer": "A",
+      "explanation": "结构清晰：总——分（三例）——总，是议论文典型架构。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "写作/表达手法",
+      "content": "比较《表里的生物》和《他们那时候多有趣啊》在写法上的不同，最准确的是：",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 前者以儿童回忆叙事，借真实经历表达；后者以科幻想象设置未来情境",
+        "B. 二者都是真实记叙",
+        "C. 二者都是科幻",
+        "D. 二者都是议论"
+      ],
+      "answer": "A",
+      "explanation": "前者是基于真实童年的散文式回忆；后者是科幻小说，假想未来情境。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "句式与标点/句子衔接",
+      "content": "下列衔接句最适合放在「波义耳发现紫罗兰变红」之后的是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 这一现象会不会有什么科学价值？",
+        "B. 紫罗兰真好看。",
+        "C. 化学很难学。",
+        "D. 我也想试试。"
+      ],
+      "answer": "A",
+      "explanation": "课文原文衔接，由此引出后续实验。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "字词/近义词反义词",
+      "content": "「锲而不舍」的近义词是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "持之以恒",
+      "explanation": "「持之以恒」「坚持不懈」「百折不挠」均与「锲而不舍」近义。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "字词/近义词反义词",
+      "content": "「锲而不舍」的反义词是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "半途而废",
+      "explanation": "「半途而废」「浅尝辄止」「一曝十寒」均与之相反。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《真理诞生于一百个问号之后》一文末段强调了科学研究中哪两个关键？",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 见微知著的能力 + 锲而不舍的精神",
+        "B. 优秀设备 + 大量资金",
+        "C. 高学历 + 国籍",
+        "D. 名气 + 运气"
+      ],
+      "answer": "A",
+      "explanation": "末段总结：科学发现「需要见微知著」「锲而不舍」，回扣论点。"
+    },
+    {
+      "chapter": "第五单元：科学精神",
+      "knowledge_point": "句式与标点/关联词运用",
+      "content": "选合适关联词：「____没有锲而不舍的精神，____不可能在科学上有所建树。」",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 如果……就……",
+        "B. 因为……所以……",
+        "C. 不仅……而且……",
+        "D. 虽然……但是……"
+      ],
+      "answer": "A",
+      "explanation": "前后是假设关系，用「如果……就……」。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "「莫笑农家腊酒浑」的下一句是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "丰年留客足鸡豚",
+      "explanation": "陆游《游山西村》：莫笑农家腊酒浑，丰年留客足鸡豚。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "「山重水复疑无路」的下一句是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "柳暗花明又一村",
+      "explanation": "亦出自陆游《游山西村》，常用比喻陷入困境时突然出现新转机。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "「不要人夸好颜色」的下一句是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "只留清气满乾坤",
+      "explanation": "王冕《墨梅》：吾家洗砚池头树，个个花开淡墨痕。不要人夸好颜色，只留清气满乾坤。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "「劝君更尽一杯酒」的下一句是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "西出阳关无故人",
+      "explanation": "王维《送元二使安西》，被誉为送别诗第一名作。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "古诗文/古诗词意境理解",
+      "content": "「劝君更尽一杯酒，西出阳关无故人」表达的情感是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 与友人离别时的依依惜别与深切关怀",
+        "B. 劝人多饮酒",
+        "C. 劝人少饮酒",
+        "D. 描写边塞风景"
+      ],
+      "answer": "A",
+      "explanation": "唐人送别赠饮，劝饮一杯既含珍重又含离愁，是送别诗经典抒情。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "古诗文/古诗词意境理解",
+      "content": "《墨梅》「只留清气满乾坤」中「清气」象征：",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 梅花高洁的品格，也是诗人高洁人格的象征",
+        "B. 空气新鲜",
+        "C. 清水之气味",
+        "D. 寒冷的空气"
+      ],
+      "answer": "A",
+      "explanation": "王冕咏梅自喻，「清气」是高洁不阿的品格——典型托物言志。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "字词/字形",
+      "content": "下列词语字形完全正确的一组是：",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 依依不舍 谆谆教诲 春风化雨 桃李芬芳",
+        "B. 衣衣不舍 谆谆教诲 春风化雨 桃李纷芳",
+        "C. 依依不舍 谆谆教悔 春风化雨 桃李芬芳",
+        "D. 依依不舍 淳淳教诲 春风化雨 桃李芬方"
+      ],
+      "answer": "A",
+      "explanation": "B「衣」「纷」错；C「悔」错；D「淳」「方」错。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "句式与标点/句子衔接",
+      "content": "下列句子衔接最自然的一组是：「同学们，____。____。____。____。」（关于离别）",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. ①六年的相处转瞬即逝 ②今天，我们就要分别 ③但同窗之谊永远不会忘 ④愿大家在新的天地里继续努力",
+        "B. ①今天，我们就要分别 ②六年的相处转瞬即逝 ③愿大家在新的天地里继续努力 ④但同窗之谊永远不会忘",
+        "C. ①愿大家在新的天地里继续努力 ②但同窗之谊永远不会忘 ③六年的相处转瞬即逝 ④今天，我们就要分别",
+        "D. ①但同窗之谊永远不会忘 ②今天，我们就要分别 ③愿大家在新的天地里继续努力 ④六年的相处转瞬即逝"
+      ],
+      "answer": "A",
+      "explanation": "「回顾——告别——表态——展望」是赠言常用顺序，A 项符合。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "修辞/比喻",
+      "content": "「老师是辛勤的园丁，我们是茁壮成长的小树苗」运用的修辞是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "比喻",
+      "explanation": "把老师比作园丁，学生比作小树苗，两个比喻并行。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "修辞/排比",
+      "content": "「忘不了课堂上老师循循善诱的眼神，忘不了操场上同学共同奔跑的身影，忘不了图书馆里安静读书的午后」修辞分析最准确的是：",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 排比，三个「忘不了……」结构相同，强化怀念之情",
+        "B. 比喻",
+        "C. 反问",
+        "D. 设问"
+      ],
+      "answer": "A",
+      "explanation": "三个相似结构的分句构成排比，节奏铿锵，情感递进。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "写作/审题立意",
+      "content": "以「难忘的小学生活」为题作文，立意上最贴切的一项是：",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 通过具体人事反映成长收获，抒发对师友的感激与不舍",
+        "B. 罗列一年到六年发生的所有事情",
+        "C. 抱怨小学生活的辛苦",
+        "D. 抒发对未来的恐惧"
+      ],
+      "answer": "A",
+      "explanation": "好的立意应从具体到普遍——通过一两件感人的事，传达成长与感恩。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "文学常识/中国古代作家作品",
+      "content": "「诗中有画，画中有诗」是苏轼对哪位诗人的评价？",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "王维",
+      "explanation": "苏轼《书摩诘蓝田烟雨图》评王维曰：味摩诘之诗，诗中有画；观摩诘之画，画中有诗。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "古诗文/古诗词意境理解",
+      "content": "「山重水复疑无路，柳暗花明又一村」常用来比喻：",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 困境中突然出现新转机或希望",
+        "B. 山水相连",
+        "C. 春景美丽",
+        "D. 出门不要走错路"
+      ],
+      "answer": "A",
+      "explanation": "原写自然景观，后被引申为人生哲理：在看似走投无路时，往往柳暗花明。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "「路漫漫其修远兮」的下一句是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "吾将上下而求索",
+      "explanation": "屈原《离骚》名句，常用以激励人不断探求。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "「读书破万卷」的下一句是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "下笔如有神",
+      "explanation": "杜甫《奉赠韦左丞丈二十二韵》。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "「书山有路勤为径」的下一句是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "学海无涯苦作舟",
+      "explanation": "颜真卿《劝学》，激励勤奋。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "字词/字音",
+      "content": "「丰年留客足鸡豚」中「豚」的读音是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. tún",
+        "B. dùn",
+        "C. zhū",
+        "D. tūn"
+      ],
+      "answer": "A",
+      "explanation": "「豚」读 tún，意为小猪，引申为猪。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "字词/字义",
+      "content": "「莫笑农家腊酒浑」中「浑」的意思是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 浑浊（指酒色不澄清，是农家自酿的特征）",
+        "B. 全部",
+        "C. 糊涂",
+        "D. 浑身"
+      ],
+      "answer": "A",
+      "explanation": "「腊酒浑」指农家腊月所酿之酒未滤清，故色浊，但情谊真。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "古诗文/文言句子翻译",
+      "content": "「莫笑农家腊酒浑，丰年留客足鸡豚」翻译最贴切的是：",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 不要笑话农家腊月酒浑浊，丰收年留客的鸡和猪肉很丰盛",
+        "B. 别笑话腊酒不好喝，富裕年应该多养鸡猪",
+        "C. 笑话农家酒浊，是丰年请客所致",
+        "D. 别笑话腊酒，因为有鸡有豚"
+      ],
+      "answer": "A",
+      "explanation": "「莫笑」即不要笑；「足鸡豚」指鸡猪丰盛。整联表现农家热情好客与丰年喜悦。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "字词/词语理解",
+      "content": "「桃李满天下」中「桃李」指的是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 学生",
+        "B. 水果",
+        "C. 老师",
+        "D. 朋友"
+      ],
+      "answer": "A",
+      "explanation": "「桃李」喻指弟子学生，「桃李满天下」指培养的学生遍布各地。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "字词/词语理解",
+      "content": "「春风化雨」用来形容：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 良好的教育和教化",
+        "B. 春天的雨水",
+        "C. 春风很大",
+        "D. 化学反应"
+      ],
+      "answer": "A",
+      "explanation": "「春风化雨」比喻潜移默化的良好教育，常形容师恩。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "字词/近义词反义词",
+      "content": "「依依不舍」的近义词是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "恋恋不舍",
+      "explanation": "「恋恋不舍」「难舍难分」均表惜别之情。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "字词/字音",
+      "content": "「谆谆教诲」中「谆谆」的读音是：",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. zhūn zhūn",
+        "B. dūn dūn",
+        "C. chún chún",
+        "D. zhèng zhèng"
+      ],
+      "answer": "A",
+      "explanation": "「谆谆」读 zhūn zhūn，形容恳切。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "阅读短文【难忘的恩师（学生习作）】：「张老师教我们语文整整六年。她的眼睛不大，却总能看进每个孩子的心里。一次默写，我把「锲而不舍」错写成「契而不舍」。她没有当众批评我，而是把我叫到办公室，从书架取下一本字典，翻到「锲」字让我看：「金字旁，因为锲是用刀雕刻；雕一道还有一道，所以叫锲而不舍。」我点点头。她又微笑：「学习就像这两个字，一刀一刀地刻，心一急，就走样了。」从那以后，每次我想偷懒，就想起张老师手指字典时认真的样子。」问：本文主要运用何种描写来刻画张老师？",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 神态、语言、动作描写综合",
+        "B. 仅外貌描写",
+        "C. 仅心理描写",
+        "D. 仅环境描写"
+      ],
+      "answer": "A",
+      "explanation": "「眼睛」「微笑」（神态）、「叫到办公室」「取下字典」（动作）、引文（语言）三种描写并用。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "续短文：张老师教育「我」的方式有何特点？",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 不当众批评，借字典讲字源，循循善诱、含蓄而深刻",
+        "B. 当众羞辱",
+        "C. 体罚",
+        "D. 听之任之"
+      ],
+      "answer": "A",
+      "explanation": "保护学生自尊、借字源寓教于喻，是「春风化雨」式教育。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "续短文：「学习就像这两个字，一刀一刀地刻，心一急，就走样了」运用何种修辞？",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 比喻——把学习比作雕刻",
+        "B. 拟人",
+        "C. 排比",
+        "D. 反问"
+      ],
+      "answer": "A",
+      "explanation": "「学习就像这两个字……刻」是典型明喻。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "续短文：本文体现的张老师品质用一个成语概括：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "循循善诱",
+      "explanation": "「循循善诱」最切合张老师不批评不体罚、慢慢引导的教育方式。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "续短文：「从那以后，每次我想偷懒，就想起张老师手指字典时认真的样子」一句的作用是？",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 既照应前文，又表现张老师对「我」长远的影响，深化主题",
+        "B. 写实生活细节，与主题无关",
+        "C. 仅是过渡句",
+        "D. 与上文重复"
+      ],
+      "answer": "A",
+      "explanation": "结尾以行为印证师恩深远，画龙点睛，呼应「难忘」主题。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "续短文：「我把「锲而不舍」错写成「契而不舍」」中错处的偏旁差异关键是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "金字旁",
+      "explanation": "「锲」金字旁（雕刻意），「契」无金字旁。错就错在偏旁。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "字词/字形",
+      "content": "「锲而不舍」与「契而不舍」中正确的写法是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "锲",
+      "explanation": "「锲」金字旁，意为用刀雕刻。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "句式与标点/关联词运用",
+      "content": "选合适的关联词：「____六年来老师严厉，____背后藏着一颗深爱学生的心。」",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 虽然……但是……",
+        "B. 因为……所以……",
+        "C. 不但……而且……",
+        "D. 只要……就……"
+      ],
+      "answer": "A",
+      "explanation": "前后是转折关系，用「虽然……但是……」。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "修辞/拟人",
+      "content": "「校园里的大樟树静静地看着我们一届届的离去」运用的修辞是：",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 3,
+      "answer": "拟人",
+      "explanation": "「静静地看着」赋予大樟树人的动作，是拟人。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "字词/词语感情色彩",
+      "content": "下列词语全为褒义的一组是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 3,
+      "options": [
+        "A. 谆谆教诲 春风化雨 桃李芬芳 良师益友",
+        "B. 浮光掠影 半途而废 谆谆教诲",
+        "C. 自暴自弃 春风化雨 桃李芬芳",
+        "D. 桃李芬芳 见利忘义 谆谆教诲"
+      ],
+      "answer": "A",
+      "explanation": "B、C、D 含贬义词；A 全为褒义师生情谊词。"
+    },
+    {
+      "chapter": "第六单元：难忘小学生活",
+      "knowledge_point": "古诗文/古诗词意境理解",
+      "content": "「不要人夸好颜色，只留清气满乾坤」表达诗人怎样的人格追求？",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 3,
+      "options": [
+        "A. 不慕虚名、清高自守、品格高洁",
+        "B. 渴望被夸奖",
+        "C. 喜欢颜色多",
+        "D. 描写花开"
+      ],
+      "answer": "A",
+      "explanation": "王冕借墨梅自喻，表达不求世俗夸赞、只求自身品格高洁的志向。"
+    }
+  ]
+}
