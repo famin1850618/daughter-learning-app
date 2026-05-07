@@ -154,40 +154,59 @@ class AssessmentService extends ChangeNotifier {
     return seen.values.toList();
   }
 
-  /// 错题加权题数分配：基础 2 + 倾斜池（共 N 题，权重 1+errCount）按 round
-  Map<_Unit, int> _allocate(List<_Unit> units, Map<String, int> errCount) {
-    final alloc = <_Unit, int>{for (final u in units) u: 2};
-    if (units.isEmpty) return alloc;
+  /// 错题加权题数分配（V3.8.2 改）
+  /// - 周测：target = max(KP×3, 10)
+  /// - 月测：target = 50（固定）
+  /// - 基础池 ~2/3 均分到 KP；倾斜池 ~1/3 按 1+errCount 加权
+  Map<_Unit, int> _allocate(
+      List<_Unit> units, Map<String, int> errCount, AssessmentType type) {
+    final n = units.length;
+    if (n == 0) return {};
 
-    final pool = units.length; // 倾斜池总题数
-    final weights = <_Unit, double>{};
-    double sumW = 0;
-    for (final u in units) {
-      final w = 1.0 + (errCount[u.key] ?? 0).toDouble();
-      weights[u] = w;
-      sumW += w;
+    final target = type == AssessmentType.weekly
+        ? (3 * n > 10 ? 3 * n : 10)
+        : 50;
+
+    final basePool = (target * 2 / 3).round();
+    final tiltPool = target - basePool;
+
+    // 基础池均分
+    final baseEach = n > 0 ? (basePool ~/ n) : 0;
+    final baseRemainder = basePool - baseEach * n;
+    final alloc = <_Unit, int>{for (final u in units) u: baseEach};
+    for (int i = 0; i < baseRemainder && i < n; i++) {
+      alloc[units[i]] = alloc[units[i]]! + 1;
     }
-    // 按 round 分配，处理舍入误差：先取整数部分，再把剩余按小数部分排序补齐
-    final raw = <_Unit, double>{};
-    for (final u in units) {
-      raw[u] = pool * weights[u]! / sumW;
-    }
-    final base = <_Unit, int>{for (final u in units) u: raw[u]!.floor()};
-    int assigned = base.values.fold(0, (a, b) => a + b);
-    final remainders = units.toList()
-      ..sort((a, b) {
-        final fa = raw[a]! - base[a]!;
-        final fb = raw[b]! - base[b]!;
-        return fb.compareTo(fa);
-      });
-    int i = 0;
-    while (assigned < pool && i < remainders.length) {
-      base[remainders[i]] = base[remainders[i]]! + 1;
-      assigned++;
-      i++;
-    }
-    for (final u in units) {
-      alloc[u] = alloc[u]! + (base[u] ?? 0);
+
+    // 倾斜池按错次加权
+    if (tiltPool > 0) {
+      double sumW = 0;
+      final weights = <_Unit, double>{};
+      for (final u in units) {
+        final w = 1.0 + (errCount[u.key] ?? 0).toDouble();
+        weights[u] = w;
+        sumW += w;
+      }
+      final raw = <_Unit, double>{
+        for (final u in units) u: tiltPool * weights[u]! / sumW,
+      };
+      final tilt = <_Unit, int>{for (final u in units) u: raw[u]!.floor()};
+      int assigned = tilt.values.fold(0, (a, b) => a + b);
+      final remainders = units.toList()
+        ..sort((a, b) {
+          final fa = raw[a]! - tilt[a]!;
+          final fb = raw[b]! - tilt[b]!;
+          return fb.compareTo(fa);
+        });
+      int i = 0;
+      while (assigned < tiltPool && i < remainders.length) {
+        tilt[remainders[i]] = tilt[remainders[i]]! + 1;
+        assigned++;
+        i++;
+      }
+      for (final u in units) {
+        alloc[u] = alloc[u]! + (tilt[u] ?? 0);
+      }
     }
     return alloc;
   }
@@ -224,7 +243,7 @@ class AssessmentService extends ChangeNotifier {
       );
     }
 
-    final alloc = _allocate(units, errCount);
+    final alloc = _allocate(units, errCount, type);
     final result = <Question>[];
     final warnings = <String>[];
 
@@ -245,9 +264,10 @@ class AssessmentService extends ChangeNotifier {
         grade: u.grade,
         chapterName: u.chapterName,
         knowledgePoint: u.knowledgePoint,
-        difficulty: null, // 测评不强求难度，由题库实际分布决定
+        difficulty: null,
         excludeIds: excluded,
         limit: wantN,
+        minRound: 2, // V3.8.2: 周/月测仅从 R2+ 抽（基础题不出现在测评）
       );
       if (qs.length < wantN) {
         warnings.add('${u.label}: 需 $wantN 题，实抽 ${qs.length} 题（题库待扩）');

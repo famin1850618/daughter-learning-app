@@ -36,19 +36,42 @@ class LearningExportService {
     return const JsonEncoder.withIndent('  ').convert(payload);
   }
 
-  /// 全部 KP 的 attempts/errors/error_rate（不过滤），用于第二阶段加权
+  /// 全部 KP 的 attempts/errors/error_rate + mastered_count（V3.8.2）
+  /// mastered_count = 该 KP 下累计答对 ≥3 次的题数（被"掌握"题数）
   Future<List<Map<String, dynamic>>> _getAllKpStats() async {
     final db = await DatabaseHelper().database;
     return db.rawQuery('''
-      SELECT q.subject, q.grade, q.knowledge_point,
-             COUNT(*) as attempts,
-             SUM(CASE WHEN r.is_correct = 0 THEN 1 ELSE 0 END) as errors,
-             ROUND(1.0 * SUM(CASE WHEN r.is_correct = 0 THEN 1 ELSE 0 END) / COUNT(*), 3) as error_rate
-      FROM practice_records r
-      JOIN questions q ON r.question_id = q.id
-      WHERE q.knowledge_point IS NOT NULL
-      GROUP BY q.subject, q.grade, q.knowledge_point
-      ORDER BY error_rate DESC, attempts DESC
+      WITH kp_stats AS (
+        SELECT q.subject, q.grade, q.knowledge_point,
+               COUNT(*) as attempts,
+               SUM(CASE WHEN r.is_correct = 0 THEN 1 ELSE 0 END) as errors,
+               ROUND(1.0 * SUM(CASE WHEN r.is_correct = 0 THEN 1 ELSE 0 END) / COUNT(*), 3) as error_rate
+        FROM practice_records r
+        JOIN questions q ON r.question_id = q.id
+        WHERE q.knowledge_point IS NOT NULL
+        GROUP BY q.subject, q.grade, q.knowledge_point
+      ),
+      mastered AS (
+        SELECT q.subject, q.grade, q.knowledge_point,
+               COUNT(DISTINCT q.id) as mastered_count
+        FROM questions q
+        WHERE q.id IN (
+          SELECT question_id FROM practice_records
+          WHERE is_correct = 1
+          GROUP BY question_id
+          HAVING COUNT(*) >= 3
+        )
+        AND q.knowledge_point IS NOT NULL
+        GROUP BY q.subject, q.grade, q.knowledge_point
+      )
+      SELECT s.subject, s.grade, s.knowledge_point,
+             s.attempts, s.errors, s.error_rate,
+             COALESCE(m.mastered_count, 0) as mastered_count
+      FROM kp_stats s
+      LEFT JOIN mastered m
+        ON m.subject = s.subject AND m.grade = s.grade
+        AND m.knowledge_point = s.knowledge_point
+      ORDER BY s.error_rate DESC, s.attempts DESC
     ''');
   }
 

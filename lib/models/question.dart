@@ -57,6 +57,9 @@ class Question {
   /// 难度档（V3.8）：1=基础 / 2=中等 / 3=较难 / 4=竞赛
   /// null 表示历史题包未标 round（V3.6/V3.7.6 之前），后续 Agent 回填。
   final int? round;
+  /// 系列题分组 ID（V3.8.2）：同 groupId 的题一起抽 + 按 groupOrder 排序展示
+  final String? groupId;
+  final int? groupOrder;
   final String source;
 
   const Question({
@@ -74,6 +77,8 @@ class Question {
     this.imageData,
     this.audioText,
     this.round,
+    this.groupId,
+    this.groupOrder,
     this.source = 'pregenerated',
   });
 
@@ -97,6 +102,8 @@ class Question {
       'image_data': imageData,
       'audio_text': audioText,
       'round': round,
+      'group_id': groupId,
+      'group_order': groupOrder,
       'source': source,
     };
   }
@@ -118,6 +125,8 @@ class Question {
       imageData: map['image_data'] as String?,
       audioText: map['audio_text'] as String?,
       round: map['round'] as int?,
+      groupId: map['group_id'] as String?,
+      groupOrder: map['group_order'] as int?,
       source: (map['source'] as String?) ?? 'pregenerated',
     );
   }

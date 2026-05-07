@@ -160,6 +160,8 @@ class QuestionUpdateService extends ChangeNotifier {
           imageData: m['image'] as String?,
           audioText: m['audio_text'] as String?,
           round: m['round'] as int?,
+          groupId: m['group_id'] as String?,
+          groupOrder: m['group_order'] as int?,
           source: source,
         )).toList();
 

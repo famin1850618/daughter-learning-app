@@ -95,6 +95,8 @@ class QuestionDao {
   ///
   /// [rounds]：null = 不限（含 round=NULL 的历史题），[N] = 限定单档，
   ///   [a,b,c,d]+[weights] 配合 = 模糊按比例混合（weights 不传则等权重）
+  ///
+  /// V3.8.2：自动排除"已答对 ≥3 次"的题；含 group_id 的题抽到时自动展开同 group
   Future<List<Question>> getRandomByRound({
     required Subject subject,
     required int grade,
@@ -107,55 +109,99 @@ class QuestionDao {
     String baseWhere = 'subject = ? AND grade = ?';
     List<dynamic> baseArgs = [subject.index, grade];
     if (chapter != null) { baseWhere += ' AND chapter = ?'; baseArgs.add(chapter); }
+    // V3.8.2: 排除累计答对 ≥3 次的题
+    baseWhere += ' AND id NOT IN ($_masteredSubquery)';
+
+    List<Question> picks;
 
     // 不限 round：直接返回（含 NULL）
     if (rounds == null || rounds.isEmpty) {
       final maps = await db.query('questions',
           where: baseWhere, whereArgs: baseArgs, orderBy: 'RANDOM()', limit: limit);
-      return maps.map(Question.fromMap).toList();
-    }
-
-    // 单档 precise：直接限定
-    if (rounds.length == 1) {
+      picks = maps.map(Question.fromMap).toList();
+    } else if (rounds.length == 1) {
+      // 单档 precise：直接限定
       final maps = await db.query('questions',
           where: '$baseWhere AND round = ?',
           whereArgs: [...baseArgs, rounds.first],
           orderBy: 'RANDOM()',
           limit: limit);
-      return maps.map(Question.fromMap).toList();
+      picks = maps.map(Question.fromMap).toList();
+    } else {
+      // 多档 fuzzy：按 weights 分配 limit
+      final w = weights ?? List.filled(rounds.length, 1);
+      final wSum = w.fold(0, (a, b) => a + b);
+      picks = <Question>[];
+      int remaining = limit;
+      for (int i = 0; i < rounds.length; i++) {
+        final share = i == rounds.length - 1
+            ? remaining
+            : (limit * w[i] / wSum).round();
+        if (share <= 0) continue;
+        final maps = await db.query('questions',
+            where: '$baseWhere AND round = ?',
+            whereArgs: [...baseArgs, rounds[i]],
+            orderBy: 'RANDOM()',
+            limit: share);
+        picks.addAll(maps.map(Question.fromMap));
+        remaining -= maps.length;
+      }
+      // 不足补：从不限 round 池抽剩下的
+      if (picks.length < limit) {
+        final got = picks.map((q) => q.id).whereType<int>().toList();
+        final placeholders = got.isEmpty ? '0' : List.filled(got.length, '?').join(',');
+        final fill = await db.query('questions',
+            where: '$baseWhere AND id NOT IN ($placeholders)',
+            whereArgs: [...baseArgs, ...got],
+            orderBy: 'RANDOM()',
+            limit: limit - picks.length);
+        picks.addAll(fill.map(Question.fromMap));
+      }
+      picks.shuffle();
     }
 
-    // 多档 fuzzy：按 weights 分配 limit
-    final w = weights ?? List.filled(rounds.length, 1);
-    final wSum = w.fold(0, (a, b) => a + b);
-    final picks = <Question>[];
-    int remaining = limit;
-    for (int i = 0; i < rounds.length; i++) {
-      final share = i == rounds.length - 1
-          ? remaining
-          : (limit * w[i] / wSum).round();
-      if (share <= 0) continue;
-      final maps = await db.query('questions',
-          where: '$baseWhere AND round = ?',
-          whereArgs: [...baseArgs, rounds[i]],
-          orderBy: 'RANDOM()',
-          limit: share);
-      picks.addAll(maps.map(Question.fromMap));
-      remaining -= maps.length;
+    return await _expandGroups(picks);
+  }
+
+  /// V3.8.2 子句：累计答对 ≥3 次的题 id（NOT IN 排除用）
+  static const _masteredSubquery =
+      'SELECT question_id FROM practice_records WHERE is_correct = 1 GROUP BY question_id HAVING COUNT(*) >= 3';
+
+  /// V3.8.2: 展开 group 系列题
+  /// 抽中含 group_id 的题 → 把同 group_id 全部题拉出来 + 按 group_order 排序 + 替换原位置
+  Future<List<Question>> _expandGroups(List<Question> seed) async {
+    final groupIds = seed
+        .where((q) => q.groupId != null && q.groupId!.isNotEmpty)
+        .map((q) => q.groupId!)
+        .toSet();
+    if (groupIds.isEmpty) return seed;
+
+    final db = await _db.database;
+    final placeholders = List.filled(groupIds.length, '?').join(',');
+    final rows = await db.rawQuery(
+      'SELECT * FROM questions WHERE group_id IN ($placeholders) ORDER BY group_id, group_order',
+      groupIds.toList(),
+    );
+    final byGroup = <String, List<Question>>{};
+    for (final m in rows) {
+      final q = Question.fromMap(m);
+      byGroup.putIfAbsent(q.groupId!, () => []).add(q);
     }
-    // 不足补：从不限 round 池抽剩下的
-    if (picks.length < limit) {
-      final got = picks.map((q) => q.id).whereType<int>().toList();
-      final placeholders = got.isEmpty ? '0' : List.filled(got.length, '?').join(',');
-      final fill = await db.query('questions',
-          where: '$baseWhere AND id NOT IN ($placeholders)',
-          whereArgs: [...baseArgs, ...got],
-          orderBy: 'RANDOM()',
-          limit: limit - picks.length);
-      picks.addAll(fill.map(Question.fromMap));
+
+    // 按 seed 的顺序重组：第一次遇到某 group 时插入完整 group，后续遇到同 group 跳过
+    final result = <Question>[];
+    final addedGroups = <String>{};
+    for (final q in seed) {
+      if (q.groupId != null && q.groupId!.isNotEmpty) {
+        if (!addedGroups.contains(q.groupId!)) {
+          result.addAll(byGroup[q.groupId!] ?? [q]);
+          addedGroups.add(q.groupId!);
+        }
+      } else {
+        result.add(q);
+      }
     }
-    picks.shuffle();
-    return picks;
+    return result;
   }
 
   // ── 答题记录 ────────────────────────────────────────
@@ -308,19 +354,21 @@ class QuestionDao {
     Difficulty? difficulty,
     required List<int> excludeIds,
     required int limit,
+    int? minRound, // V3.8.2: 周/月测仅从 round ≥ minRound 抽
   }) async {
     if (limit <= 0) return [];
     final db = await _db.database;
     final excludeClause = excludeIds.isEmpty
         ? ''
         : ' AND id NOT IN (${List.filled(excludeIds.length, '?').join(',')})';
+    // V3.8.2: 排除已掌握题（≥3 次答对）
+    final masteredClause = ' AND id NOT IN ($_masteredSubquery)';
+    final roundClause = minRound == null ? '' : ' AND (round IS NULL OR round >= $minRound)';
 
-    // subject 是 INTEGER，需要转 index：通过 subject_name 查询时回退用 chapter 唯一性
-    // 这里直接按 chapter + grade 查（chapter 名在某 grade 下唯一性已假定）
     Future<List<Question>> q1(String where, List<dynamic> args, int n) async {
       final maps = await db.query(
         'questions',
-        where: where + excludeClause,
+        where: where + excludeClause + masteredClause + roundClause,
         whereArgs: [...args, ...excludeIds],
         orderBy: 'RANDOM()',
         limit: n,
@@ -361,7 +409,7 @@ class QuestionDao {
           ? ''
           : ' AND id NOT IN (${List.filled(excludeNow.length, '?').join(',')})';
       final maps = await db.query('questions',
-          where: where + excludeClauseNow,
+          where: where + excludeClauseNow + masteredClause + roundClause,
           whereArgs: [...a, ...excludeNow],
           orderBy: 'RANDOM()',
           limit: limit - got.length);
@@ -383,7 +431,7 @@ class QuestionDao {
           ? ''
           : ' AND id NOT IN (${List.filled(excludeNow.length, '?').join(',')})';
       final maps = await db.query('questions',
-          where: where + excludeClauseNow,
+          where: where + excludeClauseNow + masteredClause + roundClause,
           whereArgs: [...a, ...excludeNow],
           orderBy: 'RANDOM()',
           limit: limit - got.length);
@@ -470,19 +518,20 @@ class QuestionDao {
       roundArgs = [...rounds];
     }
 
-    // Tier 1: 同 KP + round 匹配 + 未做过 + 未做错过
+    // Tier 1: 同 KP + round 匹配 + 未做过 + 未掌握 (V3.8.2)
     final fresh = await db.rawQuery('''
       SELECT * FROM questions
       WHERE knowledge_point = ?$roundFilter
         AND id NOT IN (SELECT DISTINCT question_id FROM practice_records)
+        AND id NOT IN ($_masteredSubquery)
       ORDER BY RANDOM()
       LIMIT ?
     ''', [kpPath, ...roundArgs, limit]);
     if (fresh.length >= limit) {
-      return fresh.map(Question.fromMap).toList();
+      return await _expandGroups(fresh.map(Question.fromMap).toList());
     }
 
-    // Tier 2: 做过但从未答错过 + 最久未练
+    // Tier 2: 做过但从未答错过 + 最久未练 + 未掌握
     final remaining = limit - fresh.length;
     final pickedIds = fresh.map((m) => m['id']).toList();
     final ph2 = pickedIds.isEmpty ? '0' : List.filled(pickedIds.length, '?').join(',');
@@ -499,14 +548,16 @@ class QuestionDao {
         AND q.id NOT IN (
           SELECT DISTINCT question_id FROM practice_records WHERE is_correct = 0
         )
+        AND q.id NOT IN ($_masteredSubquery)
       ORDER BY lr.last_practiced ASC
       LIMIT ?
     ''', [kpPath, ...roundArgs, ...pickedIds, remaining]);
 
-    return [
+    final combined = [
       ...fresh.map(Question.fromMap),
       ...stale.map(Question.fromMap),
     ];
+    return await _expandGroups(combined);
   }
 
   /// 薄弱点练习抽题：排除曾做错过的"原题"，仅取未做过 + 答对过最久未练的题

@@ -438,12 +438,14 @@ class _QuestionScreenState extends State<_QuestionScreen> {
             ),
             const SizedBox(height: 12),
 
-            // 元信息
+            // 元信息（V3.8.2: difficulty 改为 round 档显示）
             Row(children: [
               _Tag(q.type.label, AppTheme.primary.withOpacity(0.15), AppTheme.primary),
-              const SizedBox(width: 6),
-              _Tag(q.difficulty.label,
-                  _diffColor(q.difficulty).withOpacity(0.15), _diffColor(q.difficulty)),
+              if (q.round != null) ...[
+                const SizedBox(width: 6),
+                _Tag(_roundLabel(q.round!),
+                    _roundColor(q.round!).withOpacity(0.15), _roundColor(q.round!)),
+              ],
               if (q.knowledgePoint != null) ...[
                 const SizedBox(width: 6),
                 _Tag(q.knowledgePoint!, Colors.grey[100]!, Colors.grey[600]!),
@@ -510,8 +512,12 @@ class _QuestionScreenState extends State<_QuestionScreen> {
               ),
             ],
 
-            // 结果反馈
+            // 结果反馈（V3.8.2：选择题答完保留选项可见，标正解 + 用户错选）
             if (_result != null) ...[
+              if (q.type == QuestionType.multipleChoice && q.options != null) ...[
+                _buildAnsweredOptions(q),
+                const SizedBox(height: 12),
+              ],
               _buildResult(q, _result!),
               const SizedBox(height: 16),
               SizedBox(
@@ -566,7 +572,7 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                         )),
                   ),
                   const SizedBox(width: 10),
-                  Expanded(child: Text(opt.length > 2 ? opt.substring(2) : opt,
+                  Expanded(child: MathText(opt.length > 2 ? opt.substring(2) : opt,
                       style: const TextStyle(fontSize: 15))),
                 ]),
               ),
@@ -598,6 +604,57 @@ class _QuestionScreenState extends State<_QuestionScreen> {
           ),
         );
     }
+  }
+
+  /// V3.8.2: 答完后展示选项（disabled），标正解 + 用户选择
+  Widget _buildAnsweredOptions(Question q) {
+    final correctLetter = q.displayAnswer.trim().toUpperCase();
+    final userLetter = (_selectedOption ?? '').toUpperCase();
+    return Column(
+      children: q.options!.map((opt) {
+        final letter = opt.isNotEmpty ? opt[0].toUpperCase() : '';
+        final isCorrect = letter == correctLetter;
+        final isUserChoice = letter == userLetter;
+        Color? bg;
+        Color border = Colors.grey.shade300;
+        IconData? icon;
+        Color iconColor = Colors.grey;
+        if (isCorrect) {
+          bg = Colors.green.shade50; border = Colors.green; icon = Icons.check_circle; iconColor = Colors.green;
+        } else if (isUserChoice) {
+          bg = Colors.red.shade50; border = Colors.red; icon = Icons.cancel; iconColor = Colors.red;
+        }
+        return Container(
+          margin: const EdgeInsets.only(bottom: 6),
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+          decoration: BoxDecoration(
+            color: bg ?? Colors.white,
+            border: Border.all(color: border, width: isCorrect || isUserChoice ? 2 : 1),
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: Row(children: [
+            CircleAvatar(
+              radius: 12,
+              backgroundColor: isCorrect
+                  ? Colors.green
+                  : (isUserChoice ? Colors.red : Colors.grey[200]),
+              child: Text(letter,
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: (isCorrect || isUserChoice) ? Colors.white : Colors.grey[600],
+                    fontWeight: FontWeight.bold,
+                  )),
+            ),
+            const SizedBox(width: 10),
+            Expanded(
+              child: MathText(opt.length > 2 ? opt.substring(2) : opt,
+                  style: const TextStyle(fontSize: 15)),
+            ),
+            if (icon != null) Icon(icon, color: iconColor, size: 20),
+          ]),
+        );
+      }).toList(),
+    );
   }
 
   Widget _buildResult(Question q, bool correct) {
@@ -634,6 +691,26 @@ class _QuestionScreenState extends State<_QuestionScreen> {
       case Difficulty.easy:   return Colors.green;
       case Difficulty.medium: return Colors.orange;
       case Difficulty.hard:   return Colors.red;
+    }
+  }
+
+  String _roundLabel(int r) {
+    switch (r) {
+      case 1: return '基础';
+      case 2: return '中等';
+      case 3: return '较难';
+      case 4: return '竞赛';
+      default: return 'R$r';
+    }
+  }
+
+  Color _roundColor(int r) {
+    switch (r) {
+      case 1: return Colors.green;
+      case 2: return Colors.blue;
+      case 3: return Colors.orange;
+      case 4: return Colors.red;
+      default: return Colors.grey;
     }
   }
 }

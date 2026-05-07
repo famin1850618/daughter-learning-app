@@ -15,7 +15,8 @@ class _Bonus {
 const Map<SessionKind, _Bonus> _bonusTable = {
   SessionKind.normal: _Bonus(1.0, 2.0),
   SessionKind.weeklyTest: _Bonus(2.0, 4.0),
-  SessionKind.monthlyTest: _Bonus(3.0, 6.0),
+  // V3.8.2: 月测奖励通过 +5 / 满分 +10（之前 +3 / +6）
+  SessionKind.monthlyTest: _Bonus(5.0, 10.0),
 };
 
 String _sourceFor(SessionKind k) {

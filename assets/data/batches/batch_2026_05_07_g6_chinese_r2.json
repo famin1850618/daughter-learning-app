@@ -7,22 +7,6 @@
     {
       "chapter": "字词专题",
       "knowledge_point": "字词/字音",
-      "content": "下列加点字读音完全正确的一组是：「燕（yān）山、鸿鹄（hú）、勾当（dàng）、间（jiàn）断」",
-      "type": "choice",
-      "difficulty": "medium",
-      "options": [
-        "A. 全部正确",
-        "B. 燕错",
-        "C. 鸿鹄错",
-        "D. 勾当错"
-      ],
-      "answer": "A",
-      "explanation": "燕山读 yān；鸿鹄读 hóng hú；勾当读 gòu dàng——题目本想考勾当读 gòu，但课本注音允许 dàng；标准答案以课本为准，此处全部按部编版六下注音均正确。",
-      "round": 2
-    },
-    {
-      "chapter": "字词专题",
-      "knowledge_point": "字词/字音",
       "content": "「他正（  ）月里到山西，工作非常正（  ）规」括号内读音依次是：",
       "type": "choice",
       "difficulty": "medium",
@@ -55,16 +39,6 @@
     {
       "chapter": "字词专题",
       "knowledge_point": "字词/字音",
-      "content": "「夹袄」中「夹」的读音是：",
-      "type": "fill",
-      "difficulty": "medium",
-      "answer": "夹",
-      "explanation": "考查多音字「夹」字本身的写法识记；「夹袄」读 jiá ǎo，但拼音不作 fill 答案，故此题以书写「夹」字字形为准。",
-      "round": 2
-    },
-    {
-      "chapter": "字词专题",
-      "knowledge_point": "字词/字音",
       "content": "下列词中「曾」与「曾经」的「曾」读音相同的是：",
       "type": "choice",
       "difficulty": "medium",
@@ -76,48 +50,6 @@
       ],
       "answer": "B",
       "explanation": "「曾经」读 céng；「不曾」也读 céng；A、C、D 均读 zēng。",
-      "round": 2
-    },
-    {
-      "chapter": "字词专题",
-      "knowledge_point": "字词/字形",
-      "content": "下列词语字形完全正确的一组是：",
-      "type": "choice",
-      "difficulty": "medium",
-      "options": [
-        "A. 万象更新 截然不同 张灯结彩",
-        "B. 通霄达旦 焉知非福 一无所获",
-        "C. 司空见贯 不可思议 锲而不舍",
-        "D. 见微知著 司空见惯 锲而不舍"
-      ],
-      "answer": "D",
-      "explanation": "B「通霄」应为「通宵」；C「司空见贯」应为「司空见惯」；A 三词正确但与 D 同样正确——题目中 D 项含明显课本重点。",
-      "round": 2
-    },
-    {
-      "chapter": "字词专题",
-      "knowledge_point": "字词/字形",
-      "content": "「锲而不舍」的「锲」字写作：",
-      "type": "fill",
-      "difficulty": "medium",
-      "answer": "锲",
-      "explanation": "「锲」金字旁，意为雕刻；不要写成「契」。",
-      "round": 2
-    },
-    {
-      "chapter": "字词专题",
-      "knowledge_point": "字词/字形",
-      "content": "下面句子中没有错别字的一项是：",
-      "type": "choice",
-      "difficulty": "hard",
-      "options": [
-        "A. 父亲坚毅的脸庞至今历历在木",
-        "B. 革命先烈视死如归的精神令人敬佩",
-        "C. 蝉用尽全身力气也无法挣脱蛛网的拘束",
-        "D. 他做事一惯认真负责"
-      ],
-      "answer": "B",
-      "explanation": "A「历历在木」应为「历历在目」；C「拘束」用错语境，本句应为「束缚」（虽不算错别字但用词不当）；D「一惯」应为「一贯」。",
       "round": 2
     },
     {
@@ -198,10 +130,10 @@
         "A. 络绎不绝",
         "B. 滔滔不绝",
         "C. 绝处逢生",
-        "D. 接连不断"
+        "D. 绵绵不绝"
       ],
       "answer": "C",
-      "explanation": "A、B 中「绝」意为「断绝、停止」；C 中「绝」意为「绝望、走投无路」；D 是干扰项中的近义短语。",
+      "explanation": "A、B、D 中「绝」均意为「断绝、停止」；C 中「绝」意为「绝望、走投无路」，与其他三项不同。",
       "round": 2
     },
     {
@@ -596,15 +528,21 @@
       "chapter": "字词专题",
       "knowledge_point": "字词/词语感情色彩",
       "content": "「奋不顾身」的感情色彩是：",
-      "type": "fill",
+      "type": "choice",
       "difficulty": "medium",
-      "answer": "褒义",
+      "answer": "A",
       "explanation": "「奋不顾身」形容奋勇向前，含强烈褒义。",
-      "round": 2
+      "round": 2,
+      "options": [
+        "A. 褒义",
+        "B. 贬义",
+        "C. 中性",
+        "D. 既褒又贬"
+      ]
     },
     {
       "chapter": "修辞专题",
-      "knowledge_point": "修辞/比喻",
+      "knowledge_point": "修辞/排比",
       "content": "「燕子去了，有再来的时候；杨柳枯了，有再青的时候。」这两句运用的修辞手法主要是：",
       "type": "choice",
       "difficulty": "medium",
@@ -615,18 +553,24 @@
         "D. 反问"
       ],
       "answer": "A",
-      "explanation": "句式整齐，由两个相同结构的分句构成，是排比。考查辨析——本身不是比喻。",
+      "explanation": "句式整齐，由两个相同结构的分句构成排比；不是比喻（无本体喻体），不是拟人（无人格化动作）。",
       "round": 2
     },
     {
       "chapter": "修辞专题",
       "knowledge_point": "修辞/比喻",
       "content": "「太阳像个大火球，挂在天空。」这是什么修辞？",
-      "type": "fill",
+      "type": "choice",
       "difficulty": "easy",
-      "answer": "比喻",
+      "answer": "A",
       "explanation": "本体「太阳」、喻词「像」、喻体「大火球」，是典型明喻。",
-      "round": 2
+      "round": 2,
+      "options": [
+        "A. 比喻",
+        "B. 拟人",
+        "C. 夸张",
+        "D. 排比"
+      ]
     },
     {
       "chapter": "修辞专题",
@@ -728,11 +672,17 @@
       "chapter": "修辞专题",
       "knowledge_point": "修辞/拟人",
       "content": "「太阳公公露出了笑脸」属于哪种修辞？",
-      "type": "fill",
+      "type": "choice",
       "difficulty": "easy",
-      "answer": "拟人",
+      "answer": "A",
       "explanation": "「公公」「笑脸」赋予太阳以人的形象，是拟人。",
-      "round": 2
+      "round": 2,
+      "options": [
+        "A. 拟人",
+        "B. 比喻",
+        "C. 夸张",
+        "D. 设问"
+      ]
     },
     {
       "chapter": "修辞专题",
@@ -828,11 +778,17 @@
       "chapter": "修辞专题",
       "knowledge_point": "修辞/夸张",
       "content": "「飞流直下三千尺」是哪种修辞？",
-      "type": "fill",
+      "type": "choice",
       "difficulty": "medium",
-      "answer": "夸张",
+      "answer": "A",
       "explanation": "「三千尺」是数字夸张，言其极高。",
-      "round": 2
+      "round": 2,
+      "options": [
+        "A. 夸张",
+        "B. 比喻",
+        "C. 拟人",
+        "D. 排比"
+      ]
     },
     {
       "chapter": "修辞专题",
@@ -950,11 +906,17 @@
       "chapter": "修辞专题",
       "knowledge_point": "修辞/反问",
       "content": "「这能怪谁呢？」属于：",
-      "type": "fill",
+      "type": "choice",
       "difficulty": "medium",
-      "answer": "反问",
+      "answer": "A",
       "explanation": "意为「这不能怪谁」，反问句。",
-      "round": 2
+      "round": 2,
+      "options": [
+        "A. 反问",
+        "B. 设问",
+        "C. 普通疑问",
+        "D. 感叹"
+      ]
     },
     {
       "chapter": "修辞专题",
@@ -1008,11 +970,17 @@
       "chapter": "修辞专题",
       "knowledge_point": "修辞/设问",
       "content": "「什么是真理？真理就是经过实践检验的正确认识。」这是：",
-      "type": "fill",
+      "type": "choice",
       "difficulty": "medium",
-      "answer": "设问",
+      "answer": "A",
       "explanation": "自问自答构成设问。",
-      "round": 2
+      "round": 2,
+      "options": [
+        "A. 设问",
+        "B. 反问",
+        "C. 感叹",
+        "D. 陈述"
+      ]
     },
     {
       "chapter": "修辞专题",
@@ -1512,11 +1480,17 @@
       "chapter": "阅读理解专题",
       "knowledge_point": "阅读理解/阅读理解",
       "content": "续《十六年前的回忆》节选：本课作者是？",
-      "type": "fill",
+      "type": "choice",
       "difficulty": "medium",
-      "answer": "李星华",
+      "answer": "A",
       "explanation": "《十六年前的回忆》作者李星华，回忆其父李大钊。",
-      "round": 2
+      "round": 2,
+      "options": [
+        "A. 李星华",
+        "B. 李大钊",
+        "C. 朱自清",
+        "D. 老舍"
+      ]
     },
     {
       "chapter": "阅读理解专题",
@@ -1538,11 +1512,17 @@
       "chapter": "阅读理解专题",
       "knowledge_point": "阅读理解/阅读理解",
       "content": "续《十六年前的回忆》：「父亲」指的是？",
-      "type": "fill",
+      "type": "choice",
       "difficulty": "medium",
-      "answer": "李大钊",
+      "answer": "A",
       "explanation": "李大钊是中国共产党早期领导人，1927 年牺牲。",
-      "round": 2
+      "round": 2,
+      "options": [
+        "A. 李大钊",
+        "B. 鲁迅",
+        "C. 朱自华",
+        "D. 张思德"
+      ]
     },
     {
       "chapter": "阅读理解专题",
@@ -1670,21 +1650,33 @@
       "chapter": "文学常识专题",
       "knowledge_point": "文学常识/中国古代作家作品",
       "content": "《学弈》选自哪部典籍？",
-      "type": "fill",
+      "type": "choice",
       "difficulty": "medium",
-      "answer": "《孟子》",
+      "answer": "A",
       "explanation": "《学弈》出自《孟子·告子上》。",
-      "round": 2
+      "round": 2,
+      "options": [
+        "A. 《孟子》",
+        "B. 《论语》",
+        "C. 《列子》",
+        "D. 《庄子》"
+      ]
     },
     {
       "chapter": "文学常识专题",
       "knowledge_point": "文学常识/中国古代作家作品",
       "content": "「春风又绿江南岸」的作者是：",
-      "type": "fill",
+      "type": "choice",
       "difficulty": "medium",
-      "answer": "王安石",
+      "answer": "A",
       "explanation": "王安石《泊船瓜洲》中的名句。",
-      "round": 2
+      "round": 2,
+      "options": [
+        "A. 王安石",
+        "B. 苏轼",
+        "C. 陆游",
+        "D. 王维"
+      ]
     },
     {
       "chapter": "文学常识专题",
@@ -1716,21 +1708,33 @@
       "chapter": "文学常识专题",
       "knowledge_point": "文学常识/中国现代作家作品",
       "content": "《骆驼祥子》的作者是：",
-      "type": "fill",
-      "difficulty": "hard",
-      "answer": "老舍",
+      "type": "choice",
+      "difficulty": "medium",
+      "answer": "A",
       "explanation": "老舍长篇小说《骆驼祥子》写人力车夫祥子的悲剧。",
-      "round": 2
+      "round": 2,
+      "options": [
+        "A. 老舍",
+        "B. 鲁迅",
+        "C. 巴金",
+        "D. 朱自清"
+      ]
     },
     {
       "chapter": "文学常识专题",
       "knowledge_point": "文学常识/中国现代作家作品",
       "content": "《匆匆》的作者是：",
-      "type": "fill",
-      "difficulty": "hard",
-      "answer": "朱自清",
+      "type": "choice",
+      "difficulty": "medium",
+      "answer": "A",
       "explanation": "朱自清散文名篇《匆匆》《背影》《荷塘月色》。",
-      "round": 2
+      "round": 2,
+      "options": [
+        "A. 朱自清",
+        "B. 老舍",
+        "C. 冰心",
+        "D. 巴金"
+      ]
     },
     {
       "chapter": "文学常识专题",
@@ -1784,11 +1788,17 @@
       "chapter": "文学常识专题",
       "knowledge_point": "文学常识/外国作家作品",
       "content": "《鲁滨逊漂流记》的作者是：",
-      "type": "fill",
+      "type": "choice",
       "difficulty": "medium",
-      "answer": "笛福",
+      "answer": "A",
       "explanation": "英国作家丹尼尔·笛福。",
-      "round": 2
+      "round": 2,
+      "options": [
+        "A. 笛福（英国）",
+        "B. 凡尔纳（法国）",
+        "C. 马克·吐温（美国）",
+        "D. 拉格洛夫（瑞典）"
+      ]
     },
     {
       "chapter": "文学常识专题",
@@ -1810,11 +1820,17 @@
       "chapter": "文学常识专题",
       "knowledge_point": "文学常识/外国作家作品",
       "content": "《汤姆·索亚历险记》的作者是：",
-      "type": "fill",
+      "type": "choice",
       "difficulty": "medium",
-      "answer": "马克·吐温",
+      "answer": "A",
       "explanation": "美国作家马克·吐温（原名塞缪尔·克莱门斯）。",
-      "round": 2
+      "round": 2,
+      "options": [
+        "A. 马克·吐温（美国）",
+        "B. 笛福（英国）",
+        "C. 凡尔纳（法国）",
+        "D. 安徒生（丹麦）"
+      ]
     },
     {
       "chapter": "文学常识专题",
@@ -1852,11 +1868,17 @@
       "chapter": "文学常识专题",
       "knowledge_point": "文学常识/文体常识",
       "content": "《为人民服务》的文体是：",
-      "type": "fill",
+      "type": "choice",
       "difficulty": "medium",
-      "answer": "演讲稿",
+      "answer": "A",
       "explanation": "毛泽东 1944 年在张思德同志追悼会上的演讲。",
-      "round": 2
+      "round": 2,
+      "options": [
+        "A. 演讲稿",
+        "B. 小说",
+        "C. 散文",
+        "D. 议论文"
+      ]
     },
     {
       "chapter": "文学常识专题",
@@ -1878,11 +1900,17 @@
       "chapter": "文学常识专题",
       "knowledge_point": "文学常识/文体常识",
       "content": "《匆匆》的文体是：",
-      "type": "fill",
+      "type": "choice",
       "difficulty": "medium",
-      "answer": "散文",
+      "answer": "A",
       "explanation": "朱自清《匆匆》是抒情散文。",
-      "round": 2
+      "round": 2,
+      "options": [
+        "A. 散文",
+        "B. 小说",
+        "C. 诗歌",
+        "D. 演讲稿"
+      ]
     },
     {
       "chapter": "文学常识专题",
@@ -2028,12 +2056,12 @@
       "difficulty": "medium",
       "options": [
         "A. 千磨万击还坚劲，任尔东西南北风",
-        "B. 咬定青山不放松",
-        "C. 立根原在破岩中",
-        "D. 以上都是"
+        "B. 接天莲叶无穷碧",
+        "C. 落红不是无情物",
+        "D. 春风又绿江南岸"
       ],
-      "answer": "D",
-      "explanation": "《竹石》全诗都体现竹子坚劲不屈的品格。",
+      "answer": "A",
+      "explanation": "《竹石》「千磨万击还坚劲，任尔东西南北风」直接表现竹子在磨难中依然坚劲不屈的品格。",
       "round": 2
     },
     {
@@ -2152,11 +2180,17 @@
       "chapter": "古诗文专题",
       "knowledge_point": "古诗文/古诗词作者风格",
       "content": "杜甫被称为「诗圣」，其诗风为：",
-      "type": "fill",
+      "type": "choice",
       "difficulty": "medium",
-      "answer": "沉郁顿挫",
+      "answer": "A",
       "explanation": "杜甫诗风沉郁顿挫，反映社会现实。",
-      "round": 2
+      "round": 2,
+      "options": [
+        "A. 沉郁顿挫",
+        "B. 豪放飘逸",
+        "C. 清新淡远",
+        "D. 婉约缠绵"
+      ]
     },
     {
       "chapter": "古诗文专题",
@@ -2574,22 +2608,6 @@
     },
     {
       "chapter": "写作专题",
-      "knowledge_point": "写作/表达手法",
-      "content": "「象征」手法中，竹子常象征：",
-      "type": "choice",
-      "difficulty": "medium",
-      "options": [
-        "A. 高洁正直、坚强不屈",
-        "B. 富贵荣华",
-        "C. 离别忧伤",
-        "D. 短暂易逝"
-      ],
-      "answer": "A",
-      "explanation": "竹常象征高洁、坚韧。",
-      "round": 2
-    },
-    {
-      "chapter": "写作专题",
       "knowledge_point": "写作/人物描写",
       "content": "人物描写常见的方法不包括：",
       "type": "choice",
@@ -2624,11 +2642,17 @@
       "chapter": "写作专题",
       "knowledge_point": "写作/人物描写",
       "content": "「他乌黑的头发整齐地梳到脑后」属于哪种描写？",
-      "type": "fill",
-      "difficulty": "hard",
-      "answer": "外貌",
+      "type": "choice",
+      "difficulty": "easy",
+      "answer": "A",
       "explanation": "描写头发是外貌描写。",
-      "round": 2
+      "round": 2,
+      "options": [
+        "A. 外貌描写",
+        "B. 神态描写",
+        "C. 动作描写",
+        "D. 心理描写"
+      ]
     },
     {
       "chapter": "写作专题",
@@ -2787,22 +2811,6 @@
     {
       "chapter": "写作专题",
       "knowledge_point": "写作/修改作文",
-      "content": "修改作文时应重点关注内容、结构、语言以及：",
-      "type": "choice",
-      "difficulty": "medium",
-      "options": [
-        "A. 标点符号和错别字",
-        "B. 字迹是否漂亮",
-        "C. 颜色搭配",
-        "D. 字数多少"
-      ],
-      "answer": "A",
-      "explanation": "修改也要注意标点和错别字。",
-      "round": 2
-    },
-    {
-      "chapter": "写作专题",
-      "knowledge_point": "写作/修改作文",
       "content": "「我的爸爸长得非常美丽」中应将「美丽」修改为：",
       "type": "fill",
       "difficulty": "hard",
@@ -2830,11 +2838,17 @@
       "chapter": "课文与名著专题",
       "knowledge_point": "课文与名著/课文内容理解",
       "content": "《为人民服务》是毛泽东在悼念哪位同志时的演讲？",
-      "type": "fill",
+      "type": "choice",
       "difficulty": "medium",
-      "answer": "张思德",
+      "answer": "A",
       "explanation": "1944 年悼念张思德同志的追悼会上发表。",
-      "round": 2
+      "round": 2,
+      "options": [
+        "A. 张思德",
+        "B. 李大钊",
+        "C. 方志敏",
+        "D. 雷锋"
+      ]
     },
     {
       "chapter": "课文与名著专题",

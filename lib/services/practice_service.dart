@@ -19,7 +19,8 @@ class PracticeService extends ChangeNotifier {
   }
 
   /// V3.8.1：选择题选项随机重排，避免孩子靠位置记答案。
-  /// 同时把 answer 字段重新映射到新位置的字母。explanation 不动（一般以内容描述）。
+  /// V3.8.2：同步重写 explanation 中的 letter ref（如"选 A"→"选 C"）。
+  /// 检测有歧义时跳过 shuffle 该题，保证「题目顺序对应解析」始终成立。
   Question _shuffleOptions(Question q) {
     if (q.type != QuestionType.multipleChoice) return q;
     final orig = q.options;
@@ -39,16 +40,42 @@ class PracticeService extends ChangeNotifier {
     if (origIdx < 0 || origIdx >= contents.length) return q;
     final correctContent = contents[origIdx];
 
+    // V3.8.2: 检测 explanation 是否含歧义 letter ref，含则跳过 shuffle
+    // pattern A: 我们能识别且替换的 ("选 A" "答案 B" "选项 C")
+    // pattern B: 歧义/孤立的字母（"A 项" "A 选项是" "其中 A"）—— 跳过
+    final ambiguous = RegExp(r'(?<![选项答案])\b[A-D]\b(?!\s*[.．。])');
+    if (q.explanation != null && ambiguous.hasMatch(q.explanation!)) {
+      return q; // 含歧义字母引用，跳过 shuffle 保险
+    }
+
     // 洗牌索引
     final indices = List<int>.generate(contents.length, (i) => i)..shuffle();
     final newOptions = <String>[];
     String newAnswer = origAnswer;
+    // (旧字母 → 新字母) 映射，用于同步替换 explanation
+    final letterMap = <String, String>{};
     for (int i = 0; i < indices.length; i++) {
       final newLetter = String.fromCharCode('A'.codeUnitAt(0) + i);
+      final oldLetter = String.fromCharCode('A'.codeUnitAt(0) + indices[i]);
+      letterMap[oldLetter] = newLetter;
       newOptions.add('$newLetter. ${contents[indices[i]]}');
       if (contents[indices[i]] == correctContent) {
         newAnswer = newLetter;
       }
+    }
+
+    // V3.8.2: 同步替换 explanation 中可识别的 letter ref
+    String? newExplanation = q.explanation;
+    if (newExplanation != null) {
+      newExplanation = newExplanation.replaceAllMapped(
+        RegExp(r'(选项?\s*|答案[是为]?\s*)([A-D])'),
+        (m) {
+          final prefix = m[1]!;
+          final old = m[2]!;
+          final newL = letterMap[old] ?? old;
+          return '$prefix$newL';
+        },
+      );
     }
 
     return Question(
@@ -62,10 +89,12 @@ class PracticeService extends ChangeNotifier {
       difficulty: q.difficulty,
       options: newOptions,
       answer: newAnswer,
-      explanation: q.explanation,
+      explanation: newExplanation,
       imageData: q.imageData,
       audioText: q.audioText,
       round: q.round,
+      groupId: q.groupId,
+      groupOrder: q.groupOrder,
       source: q.source,
     );
   }

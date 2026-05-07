@@ -628,10 +628,12 @@ class _WrongRecordCard extends StatelessWidget {
             Row(
               children: [
                 _Tag(q.type.label, AppTheme.primary.withOpacity(0.12), AppTheme.primary),
-                const SizedBox(width: 6),
-                _Tag(q.difficulty.label,
-                    _diffColor(q.difficulty).withOpacity(0.12),
-                    _diffColor(q.difficulty)),
+                if (q.round != null) ...[
+                  const SizedBox(width: 6),
+                  _Tag(_roundLabel(q.round!),
+                      _roundColor(q.round!).withOpacity(0.12),
+                      _roundColor(q.round!)),
+                ],
                 const Spacer(),
                 Text(dateStr, style: TextStyle(fontSize: 11, color: Colors.grey[500])),
               ],
@@ -639,9 +641,14 @@ class _WrongRecordCard extends StatelessWidget {
             const SizedBox(height: 8),
             MathText(q.content,
                 style: const TextStyle(fontSize: 14, height: 1.5)),
+            // V3.8.2: 选择题展示完整选项（标正解 + 用户错选）
+            if (q.type == QuestionType.multipleChoice && q.options != null) ...[
+              const SizedBox(height: 8),
+              ..._buildOptionRows(q, record.userAnswer),
+            ],
             const SizedBox(height: 10),
             _kvRow('当时填的：', record.userAnswer, Colors.red.shade700),
-            _kvRow('正确答案：', q.answer, Colors.green.shade700),
+            _kvRow('正确答案：', q.displayAnswer, Colors.green.shade700),
             if (q.explanation != null) ...[
               const SizedBox(height: 8),
               Container(
@@ -658,6 +665,49 @@ class _WrongRecordCard extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  /// V3.8.2: 错题集详情页选择题选项展示，标出正解 + 用户错选
+  List<Widget> _buildOptionRows(Question q, String userAnswer) {
+    final correctLetter = q.displayAnswer.trim().toUpperCase();
+    final userLetter = userAnswer.trim().toUpperCase();
+    return q.options!.map((opt) {
+      final letter = opt.isNotEmpty ? opt[0].toUpperCase() : '';
+      final isCorrect = letter == correctLetter;
+      final isUserChoice = letter == userLetter;
+      Color? bg;
+      Color border = Colors.grey.shade300;
+      IconData? icon;
+      Color iconColor = Colors.grey;
+      if (isCorrect) {
+        bg = Colors.green.shade50; border = Colors.green; icon = Icons.check_circle; iconColor = Colors.green;
+      } else if (isUserChoice) {
+        bg = Colors.red.shade50; border = Colors.red; icon = Icons.cancel; iconColor = Colors.red;
+      }
+      return Container(
+        margin: const EdgeInsets.only(bottom: 4),
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+        decoration: BoxDecoration(
+          color: bg, border: Border.all(color: border),
+          borderRadius: BorderRadius.circular(6),
+        ),
+        child: Row(children: [
+          if (icon != null) ...[
+            Icon(icon, color: iconColor, size: 16),
+            const SizedBox(width: 6),
+          ],
+          Expanded(child: MathText(opt, style: const TextStyle(fontSize: 12.5))),
+        ]),
+      );
+    }).toList();
+  }
+
+  String _roundLabel(int r) {
+    switch (r) { case 1: return '基础'; case 2: return '中等'; case 3: return '较难'; case 4: return '竞赛'; default: return 'R$r'; }
+  }
+
+  Color _roundColor(int r) {
+    switch (r) { case 1: return Colors.green; case 2: return Colors.blue; case 3: return Colors.orange; case 4: return Colors.red; default: return Colors.grey; }
   }
 
   Widget _kvRow(String label, String value, Color valueColor) {

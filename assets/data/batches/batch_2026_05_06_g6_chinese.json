@@ -504,10 +504,16 @@
     {
       "chapter": "第一单元：民风民俗",
       "knowledge_point": "课文与名著/课文内容理解",
-      "content": "《北京的春节》中按______顺序记叙了北京春节的风俗。",
-      "type": "fill",
+      "content": "《北京的春节》是按什么顺序记叙北京春节风俗的？",
+      "type": "choice",
       "difficulty": "medium",
-      "answer": "时间",
+      "options": [
+        "A. 时间顺序",
+        "B. 空间顺序",
+        "C. 总分顺序",
+        "D. 倒叙"
+      ],
+      "answer": "A",
       "explanation": "文章按腊八→除夕→正月初一→元宵的时间顺序展开。",
       "round": 1
     },
@@ -663,9 +669,15 @@
       "chapter": "第二单元：外国名著",
       "knowledge_point": "课文与名著/名著情节人物",
       "content": "《骑鹅旅行记》中的主人公叫什么？",
-      "type": "fill",
+      "type": "choice",
       "difficulty": "medium",
-      "answer": "尼尔斯",
+      "options": [
+        "A. 尼尔斯",
+        "B. 汤姆",
+        "C. 鲁滨逊",
+        "D. 哈克"
+      ],
+      "answer": "A",
       "explanation": "调皮的尼尔斯被变成小人后骑大白鹅旅行。",
       "round": 1
     },
@@ -1076,10 +1088,16 @@
     {
       "chapter": "第三单元：真情流露",
       "knowledge_point": "课文与名著/课文内容理解",
-      "content": "《那个星期天》的作者是______。",
-      "type": "fill",
+      "content": "《那个星期天》的作者是：",
+      "type": "choice",
       "difficulty": "easy",
-      "answer": "史铁生",
+      "options": [
+        "A. 史铁生",
+        "B. 朱自清",
+        "C. 老舍",
+        "D. 鲁迅"
+      ],
+      "answer": "A",
       "explanation": "史铁生著名散文家。",
       "round": 1
     },
@@ -2120,11 +2138,17 @@
     {
       "chapter": "第五单元：科学精神",
       "knowledge_point": "字词/词语理解",
-      "content": "「锲而不舍」与「半途而废」是______关系。",
-      "type": "fill",
+      "content": "「锲而不舍」与「半途而废」是什么关系？",
+      "type": "choice",
       "difficulty": "easy",
-      "answer": "反义",
-      "explanation": "意思相反。",
+      "options": [
+        "A. 近义词",
+        "B. 反义词",
+        "C. 同义词",
+        "D. 无关"
+      ],
+      "answer": "B",
+      "explanation": "「锲而不舍」表示坚持，「半途而废」表示中途放弃，意思相反。",
       "round": 1
     },
     {
@@ -2162,11 +2186,17 @@
     {
       "chapter": "第五单元：科学精神",
       "knowledge_point": "字词/词语感情色彩",
-      "content": "「锲而不舍」是______（褒义/贬义/中性）词。",
-      "type": "fill",
+      "content": "「锲而不舍」属于哪一类感情色彩的词语？",
+      "type": "choice",
       "difficulty": "easy",
-      "answer": "褒义",
-      "explanation": "形容坚持的褒义成语。",
+      "options": [
+        "A. 褒义词",
+        "B. 贬义词",
+        "C. 中性词",
+        "D. 反语"
+      ],
+      "answer": "A",
+      "explanation": "「锲而不舍」形容做事坚持不懈，是褒义成语。",
       "round": 1
     },
     {
@@ -2426,11 +2456,17 @@
     {
       "chapter": "第六单元：难忘小学生活",
       "knowledge_point": "句式与标点/标点符号",
-      "content": "「……」表示______。",
-      "type": "fill",
+      "content": "标点符号「……」主要表示什么？",
+      "type": "choice",
       "difficulty": "easy",
-      "answer": "省略",
-      "explanation": "省略号表示语意未完或省略。",
+      "options": [
+        "A. 省略或语意未尽",
+        "B. 强烈感叹",
+        "C. 疑问语气",
+        "D. 直接引用"
+      ],
+      "answer": "A",
+      "explanation": "省略号表示语意未完或省略某些内容。",
       "round": 1
     },
     {
@@ -2564,11 +2600,17 @@
     {
       "chapter": "第六单元：难忘小学生活",
       "knowledge_point": "字词/词语感情色彩",
-      "content": "「鞠躬尽瘁」是______词。",
-      "type": "fill",
+      "content": "「鞠躬尽瘁」属于哪一类感情色彩的词语？",
+      "type": "choice",
       "difficulty": "easy",
-      "answer": "褒义",
-      "explanation": "形容竭尽全力，是褒义。",
+      "options": [
+        "A. 褒义词",
+        "B. 贬义词",
+        "C. 中性词",
+        "D. 反语"
+      ],
+      "answer": "A",
+      "explanation": "「鞠躬尽瘁」形容竭尽全力为国为民，是褒义。",
       "round": 1
     },
     {
@@ -2672,13 +2714,19 @@
       "round": 1
     },
     {
-      "chapter": "第三单元：真情流露",
+      "chapter": "第六单元：难忘小学生活",
       "knowledge_point": "古诗文/文言实词",
-      "content": "「弈秋，通国之善弈者也」中「善」的意思是______。",
-      "type": "fill",
-      "difficulty": "hard",
-      "answer": "擅长",
-      "explanation": "古汉语「善」常作擅长解。",
+      "content": "「弈秋，通国之善弈者也」中「善」的意思是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. 擅长",
+        "B. 善良",
+        "C. 喜好",
+        "D. 容易"
+      ],
+      "answer": "A",
+      "explanation": "「善弈者」即擅长下棋的人。古汉语「善」常作擅长解。",
       "round": 1
     },
     {
@@ -2710,11 +2758,17 @@
     {
       "chapter": "第四单元：革命精神",
       "knowledge_point": "古诗文/文言实词",
-      "content": "「为是其智弗若与」中「弗」的意思是______。",
-      "type": "fill",
-      "difficulty": "hard",
-      "answer": "不",
-      "explanation": "弗=不，文言常用否定副词。",
+      "content": "「为是其智弗若与」中「弗」的意思是：",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. 不",
+        "B. 弗能",
+        "C. 没有",
+        "D. 别"
+      ],
+      "answer": "A",
+      "explanation": "「弗」=「不」，文言常用否定副词。",
       "round": 1
     },
     {
@@ -2730,11 +2784,17 @@
     {
       "chapter": "第四单元：革命精神",
       "knowledge_point": "字词/词语理解",
-      "content": "「死得其所」与「死有余辜」感情色彩相反。前者是______词。",
-      "type": "fill",
+      "content": "「死得其所」与「死有余辜」感情色彩相反。「死得其所」属于：",
+      "type": "choice",
       "difficulty": "easy",
-      "answer": "褒义",
-      "explanation": "死得其所是肯定的，死有余辜是否定的。",
+      "options": [
+        "A. 褒义词",
+        "B. 贬义词",
+        "C. 中性词",
+        "D. 反语"
+      ],
+      "answer": "A",
+      "explanation": "「死得其所」是肯定的，意为死得有意义；「死有余辜」是否定的。",
       "round": 1
     },
     {
@@ -2844,16 +2904,6 @@
       "round": 1
     },
     {
-      "chapter": "写作",
-      "knowledge_point": "写作/景物描写",
-      "content": "描写景物时调动多种感官（视、听、嗅、味、触）的写法，目的是让景物更______。",
-      "type": "fill",
-      "difficulty": "easy",
-      "answer": "立体",
-      "explanation": "调动多种感官可以让景物描写更立体、更真实。",
-      "round": 1
-    },
-    {
       "chapter": "古诗文",
       "knowledge_point": "古诗文/古诗词背诵默写",
       "content": "「春风又绿江南岸，______」（王安石《泊船瓜洲》）下句是？",
@@ -2915,16 +2965,6 @@
       ],
       "answer": "A",
       "explanation": "B 中「贯」应为「惯」；C 中「舌」应为「舍」；D 中「注」应为「著」。",
-      "round": 1
-    },
-    {
-      "chapter": "字词",
-      "knowledge_point": "字词/字形",
-      "content": "改正错别字：「不可思仪」中的错字应改为______。",
-      "type": "fill",
-      "difficulty": "medium",
-      "answer": "议",
-      "explanation": "「不可思议」是固定成语，「议」字不能写成「仪」。",
       "round": 1
     },
     {

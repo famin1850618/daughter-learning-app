@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 11,
+      version: 12,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
@@ -192,13 +192,50 @@ class DatabaseHelper {
     }
     if (oldVersion < 11) {
       // v11: 难度档（V3.8）—— 1=基础 / 2=中等 / 3=较难 / 4=竞赛
-      // NULL 允许：V3.6/V3.7.6 历史题包后续 Agent 回填，未回填的题不出现在按档抽题里
       try {
         await db.execute('ALTER TABLE questions ADD COLUMN round INTEGER');
       } catch (_) {/* 已存在 */}
       try {
         await db.execute('CREATE INDEX IF NOT EXISTS idx_questions_round ON questions (round)');
       } catch (_) {}
+    }
+    if (oldVersion < 12) {
+      // v12: 系列题分组（V3.8.2）
+      try {
+        await db.execute('ALTER TABLE questions ADD COLUMN group_id TEXT');
+      } catch (_) {/* 已存在 */}
+      try {
+        await db.execute('ALTER TABLE questions ADD COLUMN group_order INTEGER');
+      } catch (_) {}
+      try {
+        await db.execute('CREATE INDEX IF NOT EXISTS idx_questions_group ON questions (group_id)');
+      } catch (_) {}
+
+      // V3.8.2: 这些 source 的题被重生成或全审，清掉旧版让新 assets 重新导入。
+      // 同时清相关 practice_records（先关 FK 约束，删后开回）。
+      const reseedSources = [
+        'batch_2026_05_07_g6_math_r3',     // R3 数学整体重生成
+        'batch_2026_05_07_g6_chinese_r3',  // R3 语文整体重生成
+        'batch_2026_05_07_g6_english_r3',  // R3 英语整体重生成
+        'batch_2026_05_06_g6_chinese',     // R1 语文 Agent 全审改写
+        'batch_2026_05_07_g6_chinese_r2',  // R2 语文 Agent 全审改写
+      ];
+      try {
+        await db.execute('PRAGMA foreign_keys = OFF');
+        for (final src in reseedSources) {
+          final ids = await db.rawQuery(
+              'SELECT id FROM questions WHERE source = ?', [src]);
+          if (ids.isNotEmpty) {
+            final idList = ids.map((m) => m['id']).toList();
+            final ph = List.filled(idList.length, '?').join(',');
+            await db.delete('practice_records',
+                where: 'question_id IN ($ph)', whereArgs: idList);
+            await db.delete('questions',
+                where: 'source = ?', whereArgs: [src]);
+          }
+        }
+        await db.execute('PRAGMA foreign_keys = ON');
+      } catch (_) {/* 忽略，迁移失败不影响 v12 schema 变更 */}
     }
   }
 
@@ -260,6 +297,8 @@ class DatabaseHelper {
         image_data TEXT,
         audio_text TEXT,
         round INTEGER,
+        group_id TEXT,
+        group_order INTEGER,
         source TEXT DEFAULT 'pregenerated',
         user_id TEXT DEFAULT 'local'
       )
@@ -351,6 +390,7 @@ class DatabaseHelper {
     await db.execute('CREATE INDEX idx_plan_items_chapter ON plan_items (chapter_id)');
     await db.execute('CREATE INDEX idx_questions_subject_grade ON questions (subject, grade)');
     await db.execute('CREATE INDEX idx_questions_round ON questions (round)');
+    await db.execute('CREATE INDEX idx_questions_group ON questions (group_id)');
     await db.execute('CREATE INDEX idx_records_question ON practice_records (question_id)');
     await db.execute('CREATE INDEX idx_kp_subject ON knowledge_points (subject)');
   }
