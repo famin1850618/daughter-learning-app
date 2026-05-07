@@ -11,7 +11,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "2",
-      "explanation": "底面周长 = 12.56cm，半径 = 12.56÷(2×3.14) = 2cm。",
+      "explanation": "底面周长 = 12.56cm，半径$= 12.56 \\div (2 \\times 3.14$) = 2cm。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>"
     },
     {
@@ -21,7 +21,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "1.5",
-      "explanation": "侧面展开为正方形 → 底面周长=高=9.42cm；半径=9.42÷6.28=1.5cm。",
+      "explanation": "侧面展开为正方形 → 底面周长=高=9.42cm；半径$=9.42 \\div 6.28=1.5cm$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>"
     },
     {
@@ -47,7 +47,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "2",
-      "explanation": "锯 3 段多 4 个底面，4πr²=50.24，r²=4，r=2cm。",
+      "explanation": "锯 3 段多 4 个底面，$4\\pi r^{2}=50.24$，$r^{2}=4$，r=2cm。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>"
     },
     {
@@ -57,7 +57,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "12",
-      "explanation": "半径=18.84÷6.28=3cm，高=3×4=12cm。",
+      "explanation": "半径$=18.84 \\div 6.28=3cm$，高$=3 \\times 4=12cm$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>"
     },
     {
@@ -77,17 +77,17 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "12.56",
-      "explanation": "侧面积减少=底面周长×2=25.12，底面周长=12.56cm。",
+      "explanation": "侧面积减少=底面周长$\\times 2=25.12$，底面周长=12.56cm。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>"
     },
     {
       "chapter": "圆柱与圆锥",
       "knowledge_point": "圆柱与圆锥/圆柱的表面积",
-      "content": "一个圆柱形铁皮油桶，底面半径 4dm、高 6dm，做这个油桶至少需要多少 dm² 铁皮？（不计接缝，π取3.14）",
+      "content": "一个圆柱形铁皮油桶，底面半径 4dm、高 6dm，做这个油桶至少需要多少$dm^{2}$铁皮？（不计接缝，π取3.14）",
       "type": "calculation",
       "difficulty": "hard",
       "answer": "251.2",
-      "explanation": "S=2πr²+2πrh=2×3.14×16+2×3.14×4×6=100.48+150.72=251.2dm²。",
+      "explanation": "$S=2\\pi r^{2}+2\\pi rh=2 \\times 3.14 \\times 16+2 \\times 3.14 \\times 4 \\times 6=100.48+150.72=251.2dm^{2}$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>"
     },
     {
@@ -97,7 +97,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "75.36",
-      "explanation": "无盖只算 1 底+侧面：3.14×4+2×3.14×2×5=12.56+62.8=75.36dm²。",
+      "explanation": "无盖只算 1 底+侧面：$3.14 \\times 4+2 \\times 3.14 \\times 2 \\times 5=12.56+62.8=75.36dm^{2}$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black' stroke-dasharray='4 2'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><text x='105' y='80' font-size='12'>h</text><text x='30' y='25' font-size='10'>无盖</text></svg>"
     },
     {
@@ -107,7 +107,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "113.04",
-      "explanation": "最大圆柱底面直径=6，半径=3，高=6；侧面积=2×3.14×3×6=113.04cm²。",
+      "explanation": "最大圆柱底面直径=6，半径=3，高=6；侧面积$=2 \\times 3.14 \\times 3 \\times 6=113.04cm^{2}$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>"
     },
     {
@@ -117,17 +117,17 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "125.6",
-      "explanation": "半径=12.56÷6.28=2；S=2×3.14×4+12.56×8=25.12+100.48=125.6cm²。",
+      "explanation": "半径$=12.56 \\div 6.28=2$；$S=2 \\times 3.14 \\times 4+12.56 \\times 8=25.12+100.48=125.6cm^{2}$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>"
     },
     {
       "chapter": "圆柱与圆锥",
       "knowledge_point": "圆柱与圆锥/圆柱的表面积",
-      "content": "做一个圆柱形通风管，底面直径 0.4m、长 2m，需要多少 m² 铁皮？（通风管两端开口，π取3.14）",
+      "content": "做一个圆柱形通风管，底面直径 0.4m、长 2m，需要多少$m^{2}$铁皮？（通风管两端开口，π取3.14）",
       "type": "calculation",
       "difficulty": "hard",
       "answer": "2.512",
-      "explanation": "通风管只有侧面：3.14×0.4×2=2.512m²。",
+      "explanation": "通风管只有侧面：$3.14 \\times 0.4 \\times 2=2.512m^{2}$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>"
     },
     {
@@ -137,17 +137,17 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "1142.96",
-      "explanation": "底面周长=31.4，半径=5cm；S侧=31.4×31.4=985.96；2底=2×3.14×25=157；总=1142.96cm²。",
+      "explanation": "底面周长=31.4，半径=5cm；S侧$=31.4 \\times 31.4=985.96$；2底$=2 \\times 3.14 \\times 25=157$；总=1142.96cm²。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>"
     },
     {
       "chapter": "圆柱与圆锥",
       "knowledge_point": "圆柱与圆锥/圆柱的表面积",
-      "content": "圆柱形烟囱长 3m，底面半径 0.2m。做 5 节这样的烟囱至少需要多少 m² 铁皮？（π取3.14）",
+      "content": "圆柱形烟囱长 3m，底面半径 0.2m。做 5 节这样的烟囱至少需要多少$m^{2}$铁皮？（π取3.14）",
       "type": "calculation",
       "difficulty": "hard",
       "answer": "18.84",
-      "explanation": "每节侧面=2×3.14×0.2×3=3.768m²；5 节=18.84m²。",
+      "explanation": "每节侧面$=2 \\times 3.14 \\times 0.2 \\times 3=3.768m^{2}$；5 节=18.84m²。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>"
     },
     {
@@ -173,7 +173,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "18.84",
-      "explanation": "V=3.14×2²×1.5=18.84m³。",
+      "explanation": "$V=3.14 \\times 2^{2} \\times 1.5=18.84m^{3}$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='10' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='10' fill='none' stroke='black'/><path d='M 55 80 Q 100 92 145 80 L 145 120 Q 100 132 55 120 Z' fill='lightblue' stroke='blue'/><text x='150' y='100' font-size='10'>水</text></svg>"
     },
     {
@@ -183,7 +183,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "785",
-      "explanation": "水面高=12-2=10cm；V=3.14×25×10=785cm³=785mL。",
+      "explanation": "水面高$=12-2=10cm$；$V=3.14 \\times 25 \\times 10=785cm^{3}=785mL$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>"
     },
     {
@@ -193,7 +193,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "62.8",
-      "explanation": "V=底面积×高=12.56×5=62.8cm³。",
+      "explanation": "V=底面积×高$=12.56 \\times 5=62.8cm^{3}$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>"
     },
     {
@@ -203,7 +203,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "942",
-      "explanation": "V=3.14×100×3=942cm³。",
+      "explanation": "$V=3.14 \\times 100 \\times 3=942cm^{3}$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>"
     },
     {
@@ -213,7 +213,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "4",
-      "explanation": "h=V÷πr²=50.24÷(3.14×4)=4cm。",
+      "explanation": "$h=V \\div \\pi r^{2}=50.24 \\div$($3.14 \\times 4$)=4cm。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>"
     },
     {
@@ -223,7 +223,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "75.36",
-      "explanation": "半径=25.12÷6.28=4dm；V=3.14×16×1.5=75.36dm³。",
+      "explanation": "半径$=25.12 \\div 6.28=4dm$；$V=3.14 \\times 16 \\times 1.5=75.36dm^{3}$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>"
     },
     {
@@ -233,7 +233,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "36",
-      "explanation": "体积不变：3.14×36×9=3.14×9×h，h=36cm。",
+      "explanation": "体积不变：$3.14 \\times 36 \\times 9=3.14 \\times 9 \\times h$，h=36cm。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>"
     },
     {
@@ -243,7 +243,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "10",
-      "explanation": "h=V÷πr²=502.4÷(3.14×16)=10cm。"
+      "explanation": "$h=V \\div \\pi r^{2}=502.4 \\div$($3.14 \\times 16$)=10cm。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -298,7 +298,7 @@
       "type": "choice",
       "difficulty": "medium",
       "answer": "A",
-      "explanation": "r=18.84÷6.28=3cm。",
+      "explanation": "$r=18.84 \\div 6.28=3cm$。",
       "options": [
         "A. 3",
         "B. 6.0",
@@ -313,7 +313,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "28.26",
-      "explanation": "绕 4cm 边旋转，底面半径=3cm；底面积=3.14×9=28.26cm²。"
+      "explanation": "绕 4cm 边旋转，底面半径=3cm；底面积$=3.14 \\times 9=28.26cm^{2}$。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -333,11 +333,11 @@
     {
       "chapter": "圆柱与圆锥",
       "knowledge_point": "圆柱与圆锥/圆锥的认识",
-      "content": "一个圆锥的底面直径是 10dm，高是 6dm，画一个简易示意图标出 r=______dm。",
+      "content": "一个圆锥的底面直径是 10dm，高是 6dm，画一个简易示意图标出$r=______dm$。",
       "type": "fill",
       "difficulty": "hard",
       "answer": "5",
-      "explanation": "底面半径=直径÷2=5dm。",
+      "explanation": "底面半径=直径$\\div 2=5dm$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='120' rx='50' ry='12' fill='none' stroke='black'/><line x1='50' y1='120' x2='100' y2='20' stroke='black'/><line x1='150' y1='120' x2='100' y2='20' stroke='black'/><line x1='100' y1='20' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='75' font-size='12'>h</text><text x='80' y='135' font-size='12'>r</text></svg>"
     },
     {
@@ -353,7 +353,7 @@
         "D. 2πrh"
       ],
       "answer": "C",
-      "explanation": "圆锥体积=1/3×底面积×高=(1/3)πr²h。"
+      "explanation": "圆锥体积$=\\frac{1}{3} \\times$底面积×高$=(\\frac{1}{3})\\pi r^{2}h$。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -362,7 +362,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "72",
-      "explanation": "V=(1/3)×24×9=72cm³。"
+      "explanation": "$V=(\\frac{1}{3}) \\times 24 \\times 9=72cm^{3}$。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -371,7 +371,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "4710",
-      "explanation": "V=(1/3)×3.14×4×1.5=6.28m³；6.28×750=4710kg。",
+      "explanation": "$V=(\\frac{1}{3}) \\times 3.14 \\times 4 \\times 1.5=6.28m^{3}$；$6.28 \\times 750=4710kg$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='120' rx='50' ry='12' fill='none' stroke='black'/><line x1='50' y1='120' x2='100' y2='20' stroke='black'/><line x1='150' y1='120' x2='100' y2='20' stroke='black'/><line x1='100' y1='20' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='75' font-size='12'>h</text><text x='80' y='135' font-size='12'>r</text></svg>"
     },
     {
@@ -381,12 +381,12 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "2",
-      "explanation": "h=3V÷πr²=3×18.84÷(3.14×9)=2cm。"
+      "explanation": "$h=3V \\div \\pi r^{2}=3 \\times 18.84 \\div$($3.14 \\times 9$)=2cm。"
     },
     {
       "chapter": "圆柱与圆锥",
       "knowledge_point": "圆柱与圆锥/圆锥的体积",
-      "content": "一个圆锥与一个圆柱的底面相等，圆锥的体积是圆柱体积的 1/4，圆锥的高与圆柱的高的比是？",
+      "content": "一个圆锥与一个圆柱的底面相等，圆锥的体积是圆柱体积的$\\frac{1}{4}$，圆锥的高与圆柱的高的比是？",
       "type": "choice",
       "difficulty": "hard",
       "options": [
@@ -396,7 +396,7 @@
         "D. 4:3"
       ],
       "answer": "C",
-      "explanation": "等底，体积比=高比×1/3。圆锥V=1/3 S h₁；圆柱V=S h₂；1/3 h₁ = (1/4) h₂，h₁:h₂=3:4。"
+      "explanation": "等底，体积比=高比$\\times \\frac{1}{3}$。圆锥V=1/3 S h₁；圆柱V=S h₂；1/3 h₁ $= (\\frac{1}{4}$) h₂，h₁:h₂=3:4。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -405,7 +405,7 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "4",
-      "explanation": "等底体积相等：(1/3)S×12=S×h，h=4cm。"
+      "explanation": "等底体积相等：$(\\frac{1}{3})S \\times 12=S \\times h$，h=4cm。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -420,7 +420,7 @@
         "D. 27 倍"
       ],
       "answer": "C",
-      "explanation": "V=(1/3)πr²h，r 扩大 3 倍则 r² 扩大 9 倍。"
+      "explanation": "$V=(\\frac{1}{3})\\pi r^{2}h$，r 扩大 3 倍则$r^{2}$扩大 9 倍。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -429,7 +429,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "5.024",
-      "explanation": "r=12.56÷6.28=2；V=(1/3)×3.14×4×1.2=5.024m³。"
+      "explanation": "$r=12.56 \\div 6.28=2$；$V=(\\frac{1}{3}) \\times 3.14 \\times 4 \\times 1.2=5.024m^{3}$。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -438,7 +438,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "20",
-      "explanation": "V锥=1/3 V柱=20cm³。"
+      "explanation": "V锥$=\\frac{1}{3} V$柱=20cm³。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -447,7 +447,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "24",
-      "explanation": "高相等且体积相等：S柱×h=(1/3)S锥×h；S锥=3 S柱=24cm²。"
+      "explanation": "高相等且体积相等：S柱$\\times h=(\\frac{1}{3}$)S锥×h；S锥=3 S柱=24cm²。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -456,7 +456,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "15",
-      "explanation": "S×5=(1/3)×S×h，h=15cm。",
+      "explanation": "$S \\times 5=(\\frac{1}{3}$)$\\times S \\times h$，h=15cm。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='60' cy='30' rx='30' ry='8' fill='none' stroke='black'/><ellipse cx='60' cy='120' rx='30' ry='8' fill='none' stroke='black'/><line x1='30' y1='30' x2='30' y2='120' stroke='black'/><line x1='90' y1='30' x2='90' y2='120' stroke='black'/><ellipse cx='150' cy='120' rx='30' ry='8' fill='none' stroke='black'/><line x1='120' y1='120' x2='150' y2='30' stroke='black'/><line x1='180' y1='120' x2='150' y2='30' stroke='black'/><text x='50' y='75' font-size='10'>圆柱</text><text x='140' y='100' font-size='10'>圆锥</text></svg>"
     },
     {
@@ -466,7 +466,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "301.44",
-      "explanation": "V柱=3.14×16×9=452.16；V锥=1/3 V柱=150.72；削去=452.16-150.72=301.44cm³。",
+      "explanation": "V柱$=3.14 \\times 16 \\times 9=452.16$；V锥$=\\frac{1}{3} V$柱=150.72；削去$=452.16-150.72=301.44cm^{3}$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='60' cy='30' rx='30' ry='8' fill='none' stroke='black'/><ellipse cx='60' cy='120' rx='30' ry='8' fill='none' stroke='black'/><line x1='30' y1='30' x2='30' y2='120' stroke='black'/><line x1='90' y1='30' x2='90' y2='120' stroke='black'/><ellipse cx='150' cy='120' rx='30' ry='8' fill='none' stroke='black'/><line x1='120' y1='120' x2='150' y2='30' stroke='black'/><line x1='180' y1='120' x2='150' y2='30' stroke='black'/><text x='50' y='75' font-size='10'>圆柱</text><text x='140' y='100' font-size='10'>圆锥</text></svg>"
     },
     {
@@ -476,7 +476,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "120",
-      "explanation": "V柱=3.14×36×10=1130.4；V锥=(1/3)×3.14×9×h=1130.4；h=120cm。"
+      "explanation": "V柱$=3.14 \\times 36 \\times 10=1130.4$；V锥$=(\\frac{1}{3}) \\times 3.14 \\times 9 \\times h=1130.4$；h=120cm。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -485,7 +485,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "36",
-      "explanation": "圆锥=1/3 圆柱，差是 2/3 圆柱=24，圆柱=36cm³。"
+      "explanation": "圆锥$=\\frac{1}{3}$圆柱，差是$\\frac{2}{3}$圆柱=24，圆柱=36cm³。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -494,7 +494,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "3",
-      "explanation": "V锥=3.14×25×0.36=28.26；(1/3)×3.14×9×h=28.26；h=3cm。"
+      "explanation": "V锥$=3.14 \\times 25 \\times 0.36=28.26$；$(\\frac{1}{3}) \\times 3.14 \\times 9 \\times h=28.26$；h=3cm。"
     },
     {
       "chapter": "比和比例",
@@ -509,7 +509,7 @@
         "D. 1/8"
       ],
       "answer": "B",
-      "explanation": "糖占 1/(1+9)=1/10。"
+      "explanation": "糖占$1/(1+9)=\\frac{1}{10}$。"
     },
     {
       "chapter": "比和比例",
@@ -518,7 +518,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "40",
-      "explanation": "甲:乙=3:5；24÷3×5=40。"
+      "explanation": "甲:乙=3:5；$24 \\div 3 \\times 5=40$。"
     },
     {
       "chapter": "比和比例",
@@ -527,7 +527,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "8:5",
-      "explanation": "80:50=8:5。"
+      "explanation": "$80:50=8:5$。"
     },
     {
       "chapter": "比和比例",
@@ -536,7 +536,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "4:9",
-      "explanation": "全班=45，男生:全班=20:45=4:9。"
+      "explanation": "全班=45，男生:全班$=20:45=4:9$。"
     },
     {
       "chapter": "比和比例",
@@ -551,7 +551,7 @@
         "D. 4:4.5"
       ],
       "answer": "D",
-      "explanation": "1:1.5=2/3≈0.667；3:4=0.75；6:7≈0.857；4:4.5≈0.889。"
+      "explanation": "1:1.5=2/3≈0.667；$3:4=0.75$；6:7≈0.857；4:4.5≈0.889。"
     },
     {
       "chapter": "比和比例",
@@ -560,7 +560,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "140",
-      "explanation": "苹果占 7/10，200×7/10=140 棵。"
+      "explanation": "苹果占$\\frac{7}{10}$，$200 \\times \\frac{7}{10}=140$棵。"
     },
     {
       "chapter": "比和比例",
@@ -580,7 +580,7 @@
     {
       "chapter": "比和比例",
       "knowledge_point": "比和比例/求比值",
-      "content": "求比值：4.8 : 0.6 = ?",
+      "content": "求比值：$4.8 : 0.6 =$?",
       "type": "choice",
       "difficulty": "medium",
       "options": [
@@ -590,16 +590,16 @@
         "D. 80"
       ],
       "answer": "B",
-      "explanation": "4.8÷0.6=8。"
+      "explanation": "$4.8 \\div 0.6=8$。"
     },
     {
       "chapter": "比和比例",
       "knowledge_point": "比和比例/求比值",
-      "content": "求比值：(1/2) : (1/4) = ______。",
+      "content": "求比值：$(\\frac{1}{2}) : (\\frac{1}{4}) = ______$。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "2",
-      "explanation": "(1/2)÷(1/4)=2。"
+      "explanation": "$(\\frac{1}{2}) \\div (\\frac{1}{4}$)=2。"
     },
     {
       "chapter": "比和比例",
@@ -608,16 +608,16 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "1/4",
-      "explanation": "化为同单位：30:120=1/4。"
+      "explanation": "化为同单位：$30:120=\\frac{1}{4}$。"
     },
     {
       "chapter": "比和比例",
       "knowledge_point": "比和比例/求比值",
-      "content": "求比值：0.75 : (3/4) = ______。",
+      "content": "求比值：$0.75 : (\\frac{3}{4}) = ______$。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "1",
-      "explanation": "0.75=3/4，比值=1。"
+      "explanation": "$0.75=\\frac{3}{4}$，比值=1。"
     },
     {
       "chapter": "比和比例",
@@ -626,7 +626,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "20",
-      "explanation": "25÷1.25=20。"
+      "explanation": "$25 \\div 1.25=20$。"
     },
     {
       "chapter": "比和比例",
@@ -641,30 +641,30 @@
         "D. 8:5"
       ],
       "answer": "C",
-      "explanation": "9÷6=1.5。"
+      "explanation": "$9 \\div 6=1.5$。"
     },
     {
       "chapter": "比和比例",
       "knowledge_point": "比和比例/求比值",
-      "content": "求比值：3/8 : 0.625 = ______。",
+      "content": "求比值：$\\frac{3}{8} : 0.625 = ______$。",
       "type": "fill",
       "difficulty": "hard",
       "answer": "3/5",
-      "explanation": "0.625=5/8；(3/8)÷(5/8)=3/5。"
+      "explanation": "$0.625=\\frac{5}{8}$；$(\\frac{3}{8}) \\div (\\frac{5}{8}$$)=\\frac{3}{5}$。"
     },
     {
       "chapter": "比和比例",
       "knowledge_point": "比和比例/化简比",
-      "content": "化简比：1.2 : 0.4 = ______。",
+      "content": "化简比：$1.2 : 0.4 = ______$。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "3:1",
-      "explanation": "同乘 10：12:4=3:1。"
+      "explanation": "同乘 10：$12:4=3:1$。"
     },
     {
       "chapter": "比和比例",
       "knowledge_point": "比和比例/化简比",
-      "content": "化简比：(2/3) : (3/4) = ______。",
+      "content": "化简比：$(\\frac{2}{3}) : (\\frac{3}{4}) = ______$。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "8:9",
@@ -688,25 +688,25 @@
     {
       "chapter": "比和比例",
       "knowledge_point": "比和比例/化简比",
-      "content": "化简比：50 cm : 1 m = ______。",
+      "content": "化简比：$50 cm : 1 m = ______$。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "1:2",
-      "explanation": "1m=100cm；50:100=1:2。"
+      "explanation": "$1m=100cm$；$50:100=1:2$。"
     },
     {
       "chapter": "比和比例",
       "knowledge_point": "比和比例/化简比",
-      "content": "化简比：0.5 : 1.25 = ______。",
+      "content": "化简比：$0.5 : 1.25 = ______$。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "2:5",
-      "explanation": "同乘 100：50:125=2:5。"
+      "explanation": "同乘 100：$50:125=2:5$。"
     },
     {
       "chapter": "比和比例",
       "knowledge_point": "比和比例/化简比",
-      "content": "化简比：(3/8) : (1/4) = ______。",
+      "content": "化简比：$(\\frac{3}{8}) : (\\frac{1}{4}) = ______$。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "3:2",
@@ -725,7 +725,7 @@
         "D. 9:8"
       ],
       "answer": "C",
-      "explanation": "0.8:0.6=8:6=4:3。"
+      "explanation": "$0.8:0.6=8:6=4:3$。"
     },
     {
       "chapter": "比和比例",
@@ -740,7 +740,7 @@
         "D. 2:7 与 3:8"
       ],
       "answer": "B",
-      "explanation": "比值都是 2/3。"
+      "explanation": "比值都是$\\frac{2}{3}$。"
     },
     {
       "chapter": "比和比例",
@@ -755,21 +755,21 @@
         "D. 无法判断"
       ],
       "answer": "A",
-      "explanation": "比值都是 5/8。"
+      "explanation": "比值都是$\\frac{5}{8}$。"
     },
     {
       "chapter": "比和比例",
       "knowledge_point": "比和比例/比例的意义",
-      "content": "在比例 a:6 = 8:24 中，a = ______。",
+      "content": "在比例$a:6 = 8:24$中，$a = ______$。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "2",
-      "explanation": "外项积=内项积：24a=48，a=2。"
+      "explanation": "外项积=内项积：$24a=48$，a=2。"
     },
     {
       "chapter": "比和比例",
       "knowledge_point": "比和比例/比例的意义",
-      "content": "如果 4×6 = 3×8，下列哪个比例成立？",
+      "content": "如果$4 \\times 6 = 3 \\times 8$，下列哪个比例成立？",
       "type": "choice",
       "difficulty": "medium",
       "options": [
@@ -779,7 +779,7 @@
         "D. 6:3=4:8"
       ],
       "answer": "B",
-      "explanation": "4:3=8:6 满足等积。"
+      "explanation": "$4:3=8:6$满足等积。"
     },
     {
       "chapter": "比和比例",
@@ -794,30 +794,30 @@
         "D. 2:1=3:6"
       ],
       "answer": "C",
-      "explanation": "1×6=2×3=6。"
+      "explanation": "$1 \\times 6=2 \\times 3=6$。"
     },
     {
       "chapter": "比和比例",
       "knowledge_point": "比和比例/比例的意义",
-      "content": "若 3a=5b（a、b≠0），那么 a:b = ______。",
+      "content": "若 3a=5b（a、b≠0），那么$a:b = ______$。",
       "type": "fill",
       "difficulty": "hard",
       "answer": "5:3",
-      "explanation": "3a=5b → a/b=5/3 → a:b=5:3。"
+      "explanation": "3a=5b → a/b=5/3 → $a:b=5:3$。"
     },
     {
       "chapter": "比和比例",
       "knowledge_point": "比和比例/比例的意义",
-      "content": "比例 8:5 = 16:x 中 x = ______。",
+      "content": "比例$8:5 = 16:x$中$x = ______$。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "10",
-      "explanation": "8x=80，x=10。"
+      "explanation": "$8x=80$，x=10。"
     },
     {
       "chapter": "比和比例",
       "knowledge_point": "比和比例/比例的基本性质",
-      "content": "在比例 4:7 = 12:21 中，外项是？",
+      "content": "在比例$4:7 = 12:21$中，外项是？",
       "type": "choice",
       "difficulty": "medium",
       "options": [
@@ -832,7 +832,7 @@
     {
       "chapter": "比和比例",
       "knowledge_point": "比和比例/比例的基本性质",
-      "content": "已知比例式 a:b = c:d，下列变形正确的是？",
+      "content": "已知比例式$a:b = c:d$，下列变形正确的是？",
       "type": "choice",
       "difficulty": "medium",
       "options": [
@@ -842,21 +842,21 @@
         "D. a+d = b+c"
       ],
       "answer": "A",
-      "explanation": "外项积=内项积：ad=bc。"
+      "explanation": "外项积=内项积：$ad=bc$。"
     },
     {
       "chapter": "比和比例",
       "knowledge_point": "比和比例/比例的基本性质",
-      "content": "在比例 0.6 : 1.5 = x : 30 中，x = ______。",
+      "content": "在比例$0.6 : 1.5 = x : 30$中，$x = ______$。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "12",
-      "explanation": "1.5x=18，x=12。"
+      "explanation": "$1.5x=18$，x=12。"
     },
     {
       "chapter": "比和比例",
       "knowledge_point": "比和比例/比例的基本性质",
-      "content": "若 3:8 = 9:24，下列说法不正确的是？",
+      "content": "若$3:8 = 9:24$，下列说法不正确的是？",
       "type": "choice",
       "difficulty": "medium",
       "options": [
@@ -866,16 +866,16 @@
         "D. 比值都是 3/8"
       ],
       "answer": "C",
-      "explanation": "外项积=3×24=72；内项积=8×9=72，所以两者相等。"
+      "explanation": "外项积$=3 \\times 24=72$；内项积$=8 \\times 9=72$，所以两者相等。"
     },
     {
       "chapter": "比和比例",
       "knowledge_point": "比和比例/比例的基本性质",
-      "content": "已知 a×4 = b×7（a、b 不为 0），那么 a:b = ______。",
+      "content": "已知 a×4 = b×7（a、b 不为 0），那么$a:b = ______$。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "7:4",
-      "explanation": "a/b=7/4。"
+      "explanation": "$a/b=\\frac{7}{4}$。"
     },
     {
       "chapter": "比和比例",
@@ -884,88 +884,88 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "15",
-      "explanation": "外项积=60；另一内项=60÷4=15。"
+      "explanation": "外项积=60；另一内项$=60 \\div 4=15$。"
     },
     {
       "chapter": "比和比例",
       "knowledge_point": "比和比例/比例的基本性质",
-      "content": "如果 m:n = 3:7，那么 (m+n):n = ______。",
+      "content": "如果$m:n = 3:7$，那么$(m+n):n = ______$。",
       "type": "fill",
       "difficulty": "hard",
       "answer": "10:7",
-      "explanation": "m+n=10份，n=7份。"
+      "explanation": "$m+n=10$份，n=7份。"
     },
     {
       "chapter": "比和比例",
       "knowledge_point": "比和比例/解比例",
-      "content": "解比例：x:6 = 5:15。x = ______。",
+      "content": "解比例：$x:6 = 5:15$。$x = ______$。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "2",
-      "explanation": "15x=30，x=2。"
+      "explanation": "$15x=30$，x=2。"
     },
     {
       "chapter": "比和比例",
       "knowledge_point": "比和比例/解比例",
-      "content": "解比例：(2/3):x = 4:9。x = ______。",
+      "content": "解比例：$(\\frac{2}{3}):x = 4:9$。$x = ______$。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "3/2",
-      "explanation": "4x=6，x=3/2。"
+      "explanation": "$4x=6$，$x=\\frac{3}{2}$。"
     },
     {
       "chapter": "比和比例",
       "knowledge_point": "比和比例/解比例",
-      "content": "解比例：1.5:0.6 = x:8。x = ______。",
+      "content": "解比例：$1.5:0.6 = x:8$。$x = ______$。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "20",
-      "explanation": "0.6x=12，x=20。"
+      "explanation": "$0.6x=12$，x=20。"
     },
     {
       "chapter": "比和比例",
       "knowledge_point": "比和比例/解比例",
-      "content": "已知比例式 7:x = 21:36，求 x。",
+      "content": "已知比例式$7:x = 21:36$，求 x。",
       "type": "calculation",
       "difficulty": "hard",
       "answer": "12",
-      "explanation": "21x=252，x=12。"
+      "explanation": "$21x=252$，x=12。"
     },
     {
       "chapter": "比和比例",
       "knowledge_point": "比和比例/解比例",
-      "content": "解比例：x:(2/5) = (3/4):(1/2)。x = ______。",
+      "content": "解比例：$x:(\\frac{2}{5}) =$$(\\frac{3}{4}$)$:(\\frac{1}{2}$)。$x = ______$。",
       "type": "fill",
       "difficulty": "hard",
       "answer": "3/5",
-      "explanation": "(1/2)x=(2/5)×(3/4)=3/10；x=3/5。"
+      "explanation": "$(\\frac{1}{2})x=(\\frac{2}{5}$)$\\times (\\frac{3}{4})=\\frac{3}{10}$；$x=\\frac{3}{5}$。"
     },
     {
       "chapter": "比和比例",
       "knowledge_point": "比和比例/解比例",
-      "content": "解比例：4:9 = 12:x。x = ______。",
+      "content": "解比例：$4:9 = 12:x$。$x = ______$。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "27",
-      "explanation": "4x=108，x=27。"
+      "explanation": "$4x=108$，x=27。"
     },
     {
       "chapter": "比和比例",
       "knowledge_point": "比和比例/解比例",
-      "content": "汽车 3 小时行驶 240km，按这个速度，5 小时行驶 x km。x = ______。",
+      "content": "汽车 3 小时行驶 240km，按这个速度，5 小时行驶 x km。$x = ______$。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "400",
-      "explanation": "3:240=5:x；3x=1200；x=400。"
+      "explanation": "$3:240=5:x$；$3x=1200$；x=400。"
     },
     {
       "chapter": "比和比例",
       "knowledge_point": "比和比例/解比例",
-      "content": "学校栽树，按 4:5 分配给六（1）班和六（2）班，六（1）班栽 32 棵，六（2）班栽 x 棵。x = ______。",
+      "content": "学校栽树，按 4:5 分配给六（1）班和六（2）班，六（1）班栽 32 棵，六（2）班栽 x 棵。$x = ______$。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "40",
-      "explanation": "4:5=32:x；4x=160；x=40。"
+      "explanation": "$4:5=32:x$；$4x=160$；x=40。"
     },
     {
       "chapter": "图形的运动",
@@ -1259,7 +1259,7 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "12",
-      "explanation": "4×3=12cm。",
+      "explanation": "$4 \\times 3=12cm$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><rect x='20' y='80' width='30' height='20' fill='none' stroke='black'/><rect x='90' y='40' width='90' height='60' fill='none' stroke='blue'/><text x='25' y='115' font-size='10'>原图</text><text x='110' y='115' font-size='10'>放大3倍</text></svg>"
     },
     {
@@ -1284,7 +1284,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "1/4",
-      "explanation": "缩小比 1:4 → 边长×1/4。"
+      "explanation": "缩小比 1:4 → 边长$\\times \\frac{1}{4}$。"
     },
     {
       "chapter": "图形的运动",
@@ -1326,7 +1326,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "12",
-      "explanation": "60×1/5=12cm；宽=8cm（题目只填长）。"
+      "explanation": "$60 \\times \\frac{1}{5}=12cm$；宽=8cm（题目只填长）。"
     },
     {
       "chapter": "图形的运动",
@@ -1341,7 +1341,7 @@
         "D. 周长是原来的 k² 倍"
       ],
       "answer": "B",
-      "explanation": "形状不变；周长是 k 倍；面积是 k² 倍。"
+      "explanation": "形状不变；周长是 k 倍；面积是$k^{2}$倍。"
     },
     {
       "chapter": "正反比例",
@@ -1376,7 +1376,7 @@
     {
       "chapter": "正反比例",
       "knowledge_point": "正反比例/正比例的意义",
-      "content": "正方形的周长 C 和边长 a 之间，因为 C/a = 4 是定值，所以 C 与 a 成______比例。",
+      "content": "正方形的周长 C 和边长 a 之间，因为$C/a = 4$是定值，所以 C 与 a 成______比例。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "正",
@@ -1435,7 +1435,7 @@
         "D. 无法确定"
       ],
       "answer": "A",
-      "explanation": "y/x=7/3 是定值。"
+      "explanation": "$y/x=\\frac{7}{3}$是定值。"
     },
     {
       "chapter": "正反比例",
@@ -1507,7 +1507,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "6",
-      "explanation": "总量=300t；300÷50=6 天。"
+      "explanation": "总量=300t；$300 \\div 50=6$天。"
     },
     {
       "chapter": "正反比例",
@@ -1546,7 +1546,7 @@
         "D. 无法判断"
       ],
       "answer": "A",
-      "explanation": "C/r=2π 是定值。"
+      "explanation": "$C/r=2\\pi$是定值。"
     },
     {
       "chapter": "正反比例",
@@ -1649,26 +1649,26 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "曲线",
-      "explanation": "xy=k，是双曲线（曲线）。",
+      "explanation": "$xy=k$，是双曲线（曲线）。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><line x1='30' y1='130' x2='180' y2='130' stroke='black'/><line x1='30' y1='130' x2='30' y2='10' stroke='black'/><path d='M 50 20 Q 80 70 170 120' fill='none' stroke='blue'/><text x='180' y='140' font-size='10'>x</text><text x='15' y='15' font-size='10'>y</text></svg>"
     },
     {
       "chapter": "正反比例",
       "knowledge_point": "正反比例/正反比例图象",
-      "content": "正比例图象上，当 x=2 时 y=6，当 x=5 时 y=______。",
+      "content": "正比例图象上，当$x=2$时$y=6$，当$x=5$时$y=______$。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "15",
-      "explanation": "k=y/x=3；x=5 时 y=15。"
+      "explanation": "$k=y/x=3$；x=5 时$y=15$。"
     },
     {
       "chapter": "正反比例",
       "knowledge_point": "正反比例/正反比例图象",
-      "content": "反比例图象上，当 x=4 时 y=6，当 x=8 时 y=______。",
+      "content": "反比例图象上，当$x=4$时$y=6$，当$x=8$时$y=______$。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "3",
-      "explanation": "xy=24；y=24/8=3。"
+      "explanation": "$xy=24$；$y=\\frac{24}{8}=3$。"
     },
     {
       "chapter": "正反比例",
@@ -1688,7 +1688,7 @@
     {
       "chapter": "正反比例",
       "knowledge_point": "正反比例/正反比例图象",
-      "content": "在正比例 y=kx 的图象中，k 越大，直线越______。（陡/缓）",
+      "content": "在正比例$y=kx$的图象中，k 越大，直线越______。（陡/缓）",
       "type": "fill",
       "difficulty": "hard",
       "answer": "陡",
@@ -1719,7 +1719,7 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "12",
-      "explanation": "实际=6×200000=1200000cm=12km。",
+      "explanation": "实际$=6 \\times 200000=1200000cm=12km$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><rect x='20' y='30' width='160' height='80' fill='none' stroke='black'/><text x='25' y='50' font-size='10'>A 城</text><text x='150' y='100' font-size='10'>B 城</text><line x1='40' y1='55' x2='160' y2='95' stroke='blue'/><text x='80' y='80' font-size='10'>地图距离</text><text x='30' y='130' font-size='10'>比例尺 1:5000000</text></svg>"
     },
     {
@@ -1735,7 +1735,7 @@
         "D. 1:2"
       ],
       "answer": "C",
-      "explanation": "图:实=80mm:4mm=20:1。"
+      "explanation": "图:实$=80mm:4mm=20:1$。"
     },
     {
       "chapter": "正反比例",
@@ -1744,7 +1744,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "4",
-      "explanation": "240km=24000000cm；图=24000000÷6000000=4cm。"
+      "explanation": "$240km=24000000cm$；图$=24000000 \\div 6000000=4cm$。"
     },
     {
       "chapter": "正反比例",
@@ -1753,7 +1753,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "500",
-      "explanation": "50000cm=500m。"
+      "explanation": "$50000cm=500m$。"
     },
     {
       "chapter": "正反比例",
@@ -1762,7 +1762,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "6",
-      "explanation": "60m=6000cm；6000÷1000=6cm。"
+      "explanation": "$60m=6000cm$；$6000 \\div 1000=6cm$。"
     },
     {
       "chapter": "正反比例",
@@ -1786,7 +1786,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "5",
-      "explanation": "实际=8×5000000=40000000cm=400km；时间=400÷80=5h。",
+      "explanation": "实际$=8 \\times 5000000=40000000cm=400km$；时间$=400 \\div 80=5h$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><rect x='20' y='30' width='160' height='80' fill='none' stroke='black'/><text x='25' y='50' font-size='10'>A 城</text><text x='150' y='100' font-size='10'>B 城</text><line x1='40' y1='55' x2='160' y2='95' stroke='blue'/><text x='80' y='80' font-size='10'>地图距离</text><text x='30' y='130' font-size='10'>比例尺 1:5000000</text></svg>"
     },
     {
@@ -1796,7 +1796,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "300",
-      "explanation": "原价×0.8=240，原价=300 元。"
+      "explanation": "原价$\\times 0.8=240$，原价=300 元。"
     },
     {
       "chapter": "数学综合",
@@ -1805,7 +1805,7 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "48",
-      "explanation": "调和平均：2×60×40÷(60+40)=4800/100=48km/h。"
+      "explanation": "调和平均：$2 \\times 60 \\times 40 \\div$($60+40)=\\frac{4800}{100}=48km/h$。"
     },
     {
       "chapter": "数学综合",
@@ -1832,7 +1832,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "225",
-      "explanation": "利息=本金×利率×年=5000×0.0225×2=225 元。"
+      "explanation": "利息=本金×利率×年$=5000 \\times 0.0225 \\times 2=225$元。"
     },
     {
       "chapter": "数学综合",
@@ -1856,7 +1856,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "2200",
-      "explanation": "3000×0.8=2400；2400-200=2200 元。"
+      "explanation": "$3000 \\times 0.8=2400$；$2400-200=2200$元。"
     },
     {
       "chapter": "数学综合",
@@ -1865,7 +1865,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "30",
-      "explanation": "1/12-1/20=8/240=1/30；乙=30 天。"
+      "explanation": "$\\frac{1}{12}-\\frac{1}{20}=\\frac{8}{240}=\\frac{1}{30}$；乙=30 天。"
     },
     {
       "chapter": "数学综合",
@@ -1951,7 +1951,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "6",
-      "explanation": "2×3×1=6 倍。"
+      "explanation": "$2 \\times 3 \\times 1=6$倍。"
     },
     {
       "chapter": "数学综合",
@@ -1984,25 +1984,25 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "18/5",
-      "explanation": "3.6=36/10=18/5。"
+      "explanation": "$3.6=\\frac{36}{10}=\\frac{18}{5}$。"
     },
     {
       "chapter": "总复习",
       "knowledge_point": "总复习/数与代数综合",
-      "content": "计算 1/2+1/4+1/8+1/16 = ______。",
+      "content": "计算$\\frac{1}{2}+\\frac{1}{4}+\\frac{1}{8}+\\frac{1}{16} = ______$。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "15/16",
-      "explanation": "通分相加：8+4+2+1=15，即 15/16。"
+      "explanation": "通分相加：$8+4+2+1=15$，即$\\frac{15}{16}$。"
     },
     {
       "chapter": "总复习",
       "knowledge_point": "总复习/数与代数综合",
-      "content": "已知 x:5 = 4:10，则 x = ______。",
+      "content": "已知$x:5 = 4:10$，则$x = ______$。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "2",
-      "explanation": "10x=20，x=2。"
+      "explanation": "$10x=20$，x=2。"
     },
     {
       "chapter": "总复习",
@@ -2011,7 +2011,7 @@
       "type": "calculation",
       "difficulty": "easy",
       "answer": "200",
-      "explanation": "60÷0.3=200。"
+      "explanation": "$60 \\div 0.3=200$。"
     },
     {
       "chapter": "总复习",
@@ -2026,25 +2026,25 @@
         "D. 4/5"
       ],
       "answer": "B",
-      "explanation": "0.808 > 0.8 = 80% = 4/5。"
+      "explanation": "0.808 > 0.8 = 80% $= \\frac{4}{5}$。"
     },
     {
       "chapter": "总复习",
       "knowledge_point": "总复习/数与代数综合",
-      "content": "用简便方法计算 25×4.4 = ?",
+      "content": "用简便方法计算$25 \\times 4.4 =$?",
       "type": "calculation",
       "difficulty": "medium",
       "answer": "110",
-      "explanation": "25×4.4=25×4+25×0.4=100+10=110。"
+      "explanation": "$25 \\times 4.4=25 \\times 4+25 \\times 0.4=100+10=110$。"
     },
     {
       "chapter": "总复习",
       "knowledge_point": "总复习/数与代数综合",
-      "content": "甲数是乙数的 3/4，乙数是 60，甲数比乙数少多少？",
+      "content": "甲数是乙数的$\\frac{3}{4}$，乙数是 60，甲数比乙数少多少？",
       "type": "calculation",
       "difficulty": "medium",
       "answer": "15",
-      "explanation": "甲=60×3/4=45；乙-甲=60-45=15。"
+      "explanation": "甲$=60 \\times \\frac{3}{4}=45$；乙-甲$=60-45=15$。"
     },
     {
       "chapter": "总复习",
@@ -2053,7 +2053,7 @@
       "type": "calculation",
       "difficulty": "easy",
       "answer": "78.5",
-      "explanation": "S=πr²=3.14×25=78.5cm²。"
+      "explanation": "$S=\\pi r^{2}=3.14 \\times 25=78.5cm^{2}$。"
     },
     {
       "chapter": "总复习",
@@ -2062,7 +2062,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "236",
-      "explanation": "S=2(8×6+8×5+6×5)=2(48+40+30)=236cm²。"
+      "explanation": "$S=2(8 \\times 6+8 \\times 5+6 \\times 5$)$=2(48+40+30)=236cm^{2}$。"
     },
     {
       "chapter": "总复习",
@@ -2071,7 +2071,7 @@
       "type": "calculation",
       "difficulty": "easy",
       "answer": "64",
-      "explanation": "V=4³=64dm³。"
+      "explanation": "$V=4^{3}=64dm^{3}$。"
     },
     {
       "chapter": "总复习",
@@ -2080,7 +2080,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "45",
-      "explanation": "圆柱-圆锥=2/3 圆柱=30；圆柱=45cm³。",
+      "explanation": "圆柱-圆锥$=\\frac{2}{3}$圆柱=30；圆柱=45cm³。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='60' cy='30' rx='30' ry='8' fill='none' stroke='black'/><ellipse cx='60' cy='120' rx='30' ry='8' fill='none' stroke='black'/><line x1='30' y1='30' x2='30' y2='120' stroke='black'/><line x1='90' y1='30' x2='90' y2='120' stroke='black'/><ellipse cx='150' cy='120' rx='30' ry='8' fill='none' stroke='black'/><line x1='120' y1='120' x2='150' y2='30' stroke='black'/><line x1='180' y1='120' x2='150' y2='30' stroke='black'/><text x='50' y='75' font-size='10'>圆柱</text><text x='140' y='100' font-size='10'>圆锥</text></svg>"
     },
     {
@@ -2123,7 +2123,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "60",
-      "explanation": "V=50×40×30=60000cm³=60dm³。"
+      "explanation": "$V=50 \\times 40 \\times 30=60000cm^{3}=60dm^{3}$。"
     },
     {
       "chapter": "总复习",
@@ -2132,7 +2132,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "150",
-      "explanation": "(145+150+148+152+155)÷5=750÷5=150cm。"
+      "explanation": "$(145+150+148+152+155) \\div 5=750 \\div 5=150cm$。"
     },
     {
       "chapter": "总复习",
@@ -2147,7 +2147,7 @@
         "D. 4/5"
       ],
       "answer": "C",
-      "explanation": "6/10=3/5。"
+      "explanation": "$\\frac{6}{10}=\\frac{3}{5}$。"
     },
     {
       "chapter": "总复习",
@@ -2185,11 +2185,11 @@
     {
       "chapter": "总复习",
       "knowledge_point": "总复习/统计与可能性",
-      "content": "如果一组数据 8、10、x、12、14 的平均数是 11，那么 x = ______。",
+      "content": "如果一组数据 8、10、x、12、14 的平均数是 11，那么$x = ______$。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "11",
-      "explanation": "总和=55；x=55-44=11。"
+      "explanation": "总和=55；$x=55-44=11$。"
     },
     {
       "chapter": "总复习",
@@ -2198,7 +2198,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "40",
-      "explanation": "12+18+8+2=40。"
+      "explanation": "$12+18+8+2=40$。"
     },
     {
       "chapter": "总复习",
@@ -2207,7 +2207,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "50",
-      "explanation": "和差问题：(80+20)÷2=50。"
+      "explanation": "和差问题：$(80+20) \\div 2=50$。"
     },
     {
       "chapter": "总复习",
@@ -2225,7 +2225,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "6",
-      "explanation": "1÷(1/15+1/10)=1÷(1/6)=6 天。"
+      "explanation": "$1 \\div (\\frac{1}{15}+\\frac{1}{10})=1 \\div$($\\frac{1}{6})=6$天。"
     },
     {
       "chapter": "总复习",
@@ -2234,7 +2234,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "3",
-      "explanation": "速度=72km/h；剩 216km；216÷72=3 小时。"
+      "explanation": "速度=72km/h；剩 216km；$216 \\div 72=3$小时。"
     },
     {
       "chapter": "总复习",
@@ -2243,7 +2243,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "46",
-      "explanation": "一班=110+100-156=54；三班=100-54=46。"
+      "explanation": "一班$=110+100-156=54$；三班$=100-54=46$。"
     },
     {
       "chapter": "总复习",
@@ -2252,7 +2252,7 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "72",
-      "explanation": "0.25x+18=0.5x；0.25x=18；x=72。"
+      "explanation": "$0.25x+18=0.5x$；$0.25x=18$；x=72。"
     },
     {
       "chapter": "总复习",

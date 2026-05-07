@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:intl/intl.dart';
 import '../utils/app_theme.dart';
+import '../utils/settings_action.dart';
 import '../models/reward.dart';
 import '../services/reward_service.dart';
 

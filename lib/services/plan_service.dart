@@ -5,6 +5,21 @@ import '../database/plan_group_dao.dart';
 import '../database/plan_item_dao.dart';
 import '../utils/plan_date_utils.dart';
 
+/// V3.7.9：练习触发的计划自动完成时，传入的"涵盖知识点"元组
+class PracticeKpTuple {
+  final String subjectName;  // 中文名（与 PlanItem.subjectName 一致）
+  final int grade;
+  final String chapter;
+  final String? knowledgePoint;
+
+  const PracticeKpTuple({
+    required this.subjectName,
+    required this.grade,
+    required this.chapter,
+    this.knowledgePoint,
+  });
+}
+
 // ── Snapshot used by the plan adjustment screen ──────────────────────────────
 class AdjustmentSnapshot {
   final DateTime date;
@@ -250,6 +265,52 @@ class PlanService extends ChangeNotifier {
   Future<void> markItemComplete(int itemId) async {
     await _itemDao.markComplete(itemId);
     await loadDate(_selectedDate);
+  }
+
+  /// V3.7.9：练习自动判定计划完成
+  ///
+  /// 当一组练习正确率 ≥ 80% 时，扫描今日所有 pending PlanItem：
+  /// - 有 knowledgePoint 的 PlanItem：要求 (subjectName, grade, chapter, kp) 全匹配
+  /// - 无 knowledgePoint 的 PlanItem：仅 (subjectName, grade, chapter) 匹配即可
+  ///
+  /// 返回标记完成的 item 数。
+  Future<int> autoCompleteFromPractice({
+    required int score,
+    required int total,
+    required List<PracticeKpTuple> coveredTuples,
+  }) async {
+    if (total == 0) return 0;
+    if (score / total < 0.8) return 0;
+    if (coveredTuples.isEmpty) return 0;
+
+    final today = PlanDateUtils.dateOnly(DateTime.now());
+    final dayGroups = await _groupDao.getDayPlansForDate(today);
+    if (dayGroups.isEmpty) return 0;
+    final ids = dayGroups.map((g) => g.id!).toList();
+    final itemMap = await _itemDao.getByDayPlanIds(ids);
+    final allItems = itemMap.values.expand((x) => x).toList();
+
+    int marked = 0;
+    for (final item in allItems) {
+      if (item.status == PlanItemStatus.completed) continue;
+      final hasKp = item.knowledgePoint != null && item.knowledgePoint!.isNotEmpty;
+      final matched = coveredTuples.any((t) {
+        if (t.subjectName != item.subjectName) return false;
+        if (t.grade != item.grade) return false;
+        if (t.chapter != item.chapterName) return false;
+        if (hasKp) return t.knowledgePoint == item.knowledgePoint;
+        return true; // PlanItem 无 KP 时章节匹配即可
+      });
+      if (matched) {
+        await _itemDao.markComplete(item.id!);
+        marked++;
+      }
+    }
+
+    if (marked > 0) {
+      await loadDate(_selectedDate);
+    }
+    return marked;
   }
 
   Future<void> markItemPending(int itemId) async {

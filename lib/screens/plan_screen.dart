@@ -13,7 +13,7 @@ import '../services/practice_service.dart';
 import '../models/plan_settings.dart';
 import 'chapter_picker_screen.dart';
 import 'plan_adjustment_screen.dart';
-import 'plan_settings_screen.dart';
+import '../utils/settings_action.dart';
 
 // Helper: navigate to practice tab for a given plan item
 void _startPractice(BuildContext context, PlanItem item) {
@@ -58,14 +58,7 @@ class _PlanScreenState extends State<PlanScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('学习计划'),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.tune),
-            tooltip: '分配设置',
-            onPressed: () => Navigator.push(context,
-                MaterialPageRoute(builder: (_) => const PlanSettingsScreen())),
-          ),
-        ],
+        actions: [settingsAction(context)],
       ),
       body: Column(
         children: [

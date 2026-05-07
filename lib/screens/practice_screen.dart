@@ -5,6 +5,8 @@ import 'package:provider/provider.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import '../utils/app_theme.dart';
+import '../utils/math_text.dart';
+import '../utils/settings_action.dart';
 import '../models/subject.dart';
 import '../models/question.dart';
 import '../models/curriculum.dart';
@@ -150,7 +152,10 @@ class _SelectionScreenState extends State<_SelectionScreen> {
   Widget build(BuildContext context) {
     final availableSubjects = Subject.values.where((s) => s.isAvailableForGrade(_grade)).toList();
     return Scaffold(
-      appBar: AppBar(title: const Text('模拟练习')),
+      appBar: AppBar(
+        title: const Text('模拟练习'),
+        actions: [settingsAction(context)],
+      ),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
@@ -416,7 +421,7 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                 borderRadius: BorderRadius.circular(10),
                 border: Border.all(color: Colors.grey[200]!),
               ),
-              child: Text(q.content,
+              child: MathText(q.content,
                   style: const TextStyle(fontSize: 17, height: 1.6, fontWeight: FontWeight.w500)),
             ),
             const SizedBox(height: 16),
@@ -441,7 +446,7 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                     borderRadius: BorderRadius.circular(8),
                     border: Border.all(color: Colors.amber[200]!),
                   ),
-                  child: Text('💡 ${q.explanation}',
+                  child: MathText('💡 ${q.explanation}',
                       style: const TextStyle(color: Colors.black87, fontSize: 13)),
                 ),
               const SizedBox(height: 16),
@@ -566,7 +571,7 @@ class _QuestionScreenState extends State<_QuestionScreen> {
           ],
           if (q.explanation != null) ...[
             const SizedBox(height: 8),
-            Text('解析：${q.explanation}',
+            MathText('解析：${q.explanation}',
                 style: TextStyle(color: Colors.grey[700], fontSize: 14, height: 1.5)),
           ],
         ],

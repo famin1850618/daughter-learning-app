@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../utils/app_theme.dart';
+import '../utils/settings_action.dart';
 import '../models/subject.dart';
 import '../database/curriculum_dao.dart';
 import '../database/question_dao.dart';
@@ -20,6 +21,7 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: AppTheme.background,
         appBar: AppBar(
           title: const Text('学习小助手'),
+          actions: [settingsAction(context)],
           bottom: const TabBar(
             tabs: [Tab(text: '按科目'), Tab(text: '按年级')],
             indicatorColor: Colors.white,

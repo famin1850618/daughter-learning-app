@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:intl/intl.dart';
 
 import '../utils/app_theme.dart';
+import '../utils/math_text.dart';
+import '../utils/settings_action.dart';
 import '../models/question.dart';
 import '../models/subject.dart';
 import '../models/assessment.dart';
@@ -75,20 +77,20 @@ class _ReviewScreenState extends State<ReviewScreen> {
     context.read<AssessmentService>().refresh();
   }
 
-  // 一级分类：5 个学科（AI 暂不显示，无错题数据）
-  static const _tabSubjects = [
+  // 错题集子 tab：6 个学科（AI 在题库设计前显示空态）
+  static const _subjectTabs = [
     Subject.chinese,
     Subject.math,
     Subject.english,
     Subject.physics,
     Subject.chemistry,
+    Subject.ai,
   ];
 
   @override
   Widget build(BuildContext context) {
-    final assessment = context.watch<AssessmentService>();
     return DefaultTabController(
-      length: _tabSubjects.length,
+      length: 2,
       child: Scaffold(
         appBar: AppBar(
           title: const Text('成效'),
@@ -98,55 +100,129 @@ class _ReviewScreenState extends State<ReviewScreen> {
               onPressed: _refresh,
               tooltip: '刷新',
             ),
+            settingsAction(context),
           ],
-          bottom: TabBar(
-            isScrollable: true,
+          bottom: const TabBar(
             indicatorColor: Colors.white,
             labelColor: Colors.white,
             unselectedLabelColor: Colors.white70,
-            tabs: _tabSubjects
-                .map((s) => Tab(text: '${s.emoji} ${s.displayName}'))
-                .toList(),
+            tabs: [
+              Tab(icon: Icon(Icons.report_outlined), text: '错题集'),
+              Tab(icon: Icon(Icons.assignment_outlined), text: '测试'),
+            ],
           ),
         ),
-        body: FutureBuilder<List<ReviewKpSummary>>(
-          future: _future,
-          builder: (context, snapshot) {
-            if (snapshot.connectionState != ConnectionState.done) {
-              return const Center(child: CircularProgressIndicator());
-            }
-            final all = snapshot.data ?? [];
-            return Column(
-              children: [
-                // 测评卡片跨科共享，置顶展示
-                if (assessment.weekly != null || assessment.monthly != null)
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(12, 12, 12, 0),
-                    child: Column(
-                      children: [
-                        if (assessment.weekly != null)
-                          _AssessmentCard(snapshot: assessment.weekly!),
-                        if (assessment.monthly != null)
-                          _AssessmentCard(snapshot: assessment.monthly!),
-                      ],
-                    ),
-                  ),
-                // 各科目错题集
-                Expanded(
-                  child: TabBarView(
-                    children: _tabSubjects.map((subj) {
-                      final filtered =
-                          all.where((s) => s.subject == subj).toList();
-                      return _SubjectReviewList(
-                        items: filtered,
-                        onChanged: _refresh,
-                      );
-                    }).toList(),
-                  ),
+        body: TabBarView(
+          children: [
+            _wrongQuestionsTab(),
+            _testTab(context),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _wrongQuestionsTab() {
+    return FutureBuilder<List<ReviewKpSummary>>(
+      future: _future,
+      builder: (context, snapshot) {
+        if (snapshot.connectionState != ConnectionState.done) {
+          return const Center(child: CircularProgressIndicator());
+        }
+        final all = snapshot.data ?? [];
+        return DefaultTabController(
+          length: _subjectTabs.length,
+          child: Column(
+            children: [
+              Material(
+                color: Theme.of(context).colorScheme.surface,
+                elevation: 1,
+                child: TabBar(
+                  isScrollable: true,
+                  indicatorColor: AppTheme.primary,
+                  labelColor: AppTheme.primary,
+                  unselectedLabelColor: Colors.grey,
+                  tabs: _subjectTabs
+                      .map((s) => Tab(text: '${s.emoji} ${s.displayName}'))
+                      .toList(),
                 ),
-              ],
-            );
-          },
+              ),
+              Expanded(
+                child: TabBarView(
+                  children: _subjectTabs.map((subj) {
+                    if (subj == Subject.ai) {
+                      return const _AiPlaceholder();
+                    }
+                    final filtered =
+                        all.where((s) => s.subject == subj).toList();
+                    return _SubjectReviewList(
+                      items: filtered,
+                      onChanged: _refresh,
+                    );
+                  }).toList(),
+                ),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _testTab(BuildContext context) {
+    final assessment = context.watch<AssessmentService>();
+    final hasAny = assessment.weekly != null || assessment.monthly != null;
+    if (!hasAny) {
+      return const Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('📋', style: TextStyle(fontSize: 56)),
+            SizedBox(height: 12),
+            Text('当前没有可挑战的测试',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+            SizedBox(height: 4),
+            Text('完成本周/本月计划后自动解锁',
+                style: TextStyle(color: Colors.grey, fontSize: 13)),
+          ],
+        ),
+      );
+    }
+    return ListView(
+      padding: const EdgeInsets.all(12),
+      children: [
+        if (assessment.weekly != null)
+          _AssessmentCard(snapshot: assessment.weekly!),
+        if (assessment.monthly != null)
+          _AssessmentCard(snapshot: assessment.monthly!),
+        const SizedBox(height: 24),
+      ],
+    );
+  }
+}
+
+class _AiPlaceholder extends StatelessWidget {
+  const _AiPlaceholder();
+
+  @override
+  Widget build(BuildContext context) {
+    return const Center(
+      child: Padding(
+        padding: EdgeInsets.all(24),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('🤖', style: TextStyle(fontSize: 56)),
+            SizedBox(height: 12),
+            Text('AI 题库待独立设计',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+            SizedBox(height: 6),
+            Text(
+              'AI 不走选择/填空模板，需要按编程引导/项目实战形态独立设计。\n暂无题目可练。',
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.grey, fontSize: 13, height: 1.5),
+            ),
+          ],
         ),
       ),
     );
@@ -558,7 +634,7 @@ class _WrongRecordCard extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 8),
-            Text(q.content,
+            MathText(q.content,
                 style: const TextStyle(fontSize: 14, height: 1.5)),
             const SizedBox(height: 10),
             _kvRow('当时填的：', record.userAnswer, Colors.red.shade700),
@@ -571,7 +647,7 @@ class _WrongRecordCard extends StatelessWidget {
                   color: Colors.amber[50],
                   borderRadius: BorderRadius.circular(6),
                 ),
-                child: Text('💡 ${q.explanation}',
+                child: MathText('💡 ${q.explanation}',
                     style: const TextStyle(fontSize: 12.5, height: 1.5)),
               ),
             ],

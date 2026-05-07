@@ -15,3 +15,4 @@ local.properties
 android/key.properties
 android/app/google-services.json
 ios/GoogleService-Info.plist
+*.json.bak

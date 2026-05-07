@@ -17,6 +17,8 @@ import 'services/question_update_service.dart';
 import 'services/reward_service.dart';
 import 'services/assessment_service.dart';
 import 'services/learning_sync_service.dart';
+import 'models/question.dart';
+import 'models/subject.dart';
 import 'database/curriculum_dao.dart';
 import 'database/curriculum_seed.dart';
 import 'database/knowledge_point_dao.dart';
@@ -73,9 +75,13 @@ class _LearningAppState extends State<LearningApp> {
   late final RewardService _rewardService;
   late final PracticeService _practiceService;
   late final AssessmentService _assessmentService;
+  final _planService = PlanService();
   final _syncService = LearningSyncService();
 
   bool _wasPracticeActive = false;
+  int _lastSessionScore = 0;
+  int _lastSessionTotal = 0;
+  List<Question> _lastSessionQuestions = const [];
 
   @override
   void initState() {
@@ -85,7 +91,7 @@ class _LearningAppState extends State<LearningApp> {
     _practiceService = PracticeService(_rewardService);
     _assessmentService = AssessmentService()..refresh();
 
-    // session 完成时自动同步学情（answer→endSession→ active 由 true 转 false）
+    // session 状态变化监听：snapshot 当前数据 + 完成时触发自动完成 + 学情同步
     _practiceService.addListener(_onPracticeChanged);
 
     // 启动后异步触发一次更新检查 + 学情同步（不阻塞 UI；离线静默失败）
@@ -98,9 +104,40 @@ class _LearningAppState extends State<LearningApp> {
   }
 
   void _onPracticeChanged() {
+    // 持续 snapshot 当前 session 状态：当 active=false 时这些值是"刚结束的会话"
+    if (_practiceService.sessionActive) {
+      _lastSessionScore = _practiceService.score;
+      _lastSessionTotal = _practiceService.currentQuestions.length;
+      _lastSessionQuestions = List.of(_practiceService.currentQuestions);
+    }
     final nowActive = _practiceService.sessionActive;
     if (_wasPracticeActive && !nowActive) {
-      // session 刚结束，触发一次学情同步（带冷却）
+      // 用快照里的最终值（endSession 后这些被清空）
+      final score = _lastSessionScore;
+      final total = _lastSessionTotal;
+      final questions = _lastSessionQuestions;
+      // 1. 计划自动完成（≥80% 通过）
+      if (total > 0 && score / total >= 0.8 && questions.isNotEmpty) {
+        final tuples = questions
+            .map((q) => PracticeKpTuple(
+                  subjectName: q.subject.displayName,
+                  grade: q.grade,
+                  chapter: q.chapter,
+                  knowledgePoint: q.knowledgePoint,
+                ))
+            .toList();
+        _planService.autoCompleteFromPractice(
+          score: score,
+          total: total,
+          coveredTuples: tuples,
+        ).then((marked) {
+          if (marked > 0) {
+            // 计划状态变更后立即重算测评解锁
+            _assessmentService.refresh();
+          }
+        });
+      }
+      // 2. 学情同步
       _syncService.syncIfDue();
     }
     _wasPracticeActive = nowActive;
@@ -118,7 +155,7 @@ class _LearningAppState extends State<LearningApp> {
       providers: [
         ChangeNotifierProvider(create: (_) => NavigationService()),
         ChangeNotifierProvider(create: (_) => PlanSettingsService()),
-        ChangeNotifierProvider(create: (_) => PlanService()),
+        ChangeNotifierProvider.value(value: _planService),
         ChangeNotifierProvider.value(value: _rewardService),
         ChangeNotifierProvider.value(value: _practiceService),
         ChangeNotifierProvider.value(value: _assessmentService),

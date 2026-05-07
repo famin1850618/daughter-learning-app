@@ -183,7 +183,7 @@
         "D. 2πr²"
       ],
       "answer": "B",
-      "explanation": "侧面积 = 底面周长 × 高 = 2πr × h。"
+      "explanation": "侧面积 = 底面周长 × 高$= 2\\pi r \\times h$。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -192,7 +192,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "62.8",
-      "explanation": "侧面积 = 2 × 3.14 × 2 × 5 = 62.8 cm²。"
+      "explanation": "侧面积$= 2 \\times 3.14 \\times 2 \\times 5 = 62.8 cm^{2}$。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -201,7 +201,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "150.72",
-      "explanation": "底面半径 2cm。侧面积=2×3.14×2×10=125.6；2 个底面=2×3.14×4=25.12；总表面积=125.6+25.12=150.72 cm²。"
+      "explanation": "底面半径 2cm。侧面积$=2 \\times 3.14 \\times 2 \\times 10=125.6$；2 个底面$=2 \\times 3.14 \\times 4=25.12$；总表面积$=125.6+25.12=150.72 cm^{2}$。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -210,7 +210,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "103.62",
-      "explanation": "无盖只算 1 个底+侧面：3.14×3²+2×3.14×3×4=28.26+75.36=103.62 dm²。"
+      "explanation": "无盖只算 1 个底+侧面：$3.14 \\times 3^{2}+2 \\times 3.14 \\times 3 \\times 4=28.26+75.36=103.62 dm^{2}$。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -219,7 +219,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "5",
-      "explanation": "高 = 侧面积 ÷ 底面周长 = 31.4 ÷ 6.28 = 5cm。"
+      "explanation": "高 = 侧面积 ÷ 底面周长$= 31.4 \\div 6.28 = 5cm$。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -234,7 +234,7 @@
         "D. πr³"
       ],
       "answer": "A",
-      "explanation": "圆柱体积 = 底面积 × 高 = πr² × h。"
+      "explanation": "圆柱体积 = 底面积 × 高$= \\pi r^{2} \\times h$。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -243,7 +243,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "60",
-      "explanation": "V = 底面积 × 高 = 12 × 5 = 60 cm³。"
+      "explanation": "$V =$底面积 × 高$= 12 \\times 5 = 60 cm^{3}$。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -252,7 +252,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "226.08",
-      "explanation": "V = πr²h = 3.14 × 3² × 8 = 226.08 cm³。"
+      "explanation": "$V = \\pi r^{2}h = 3.14 \\times 3^{2} \\times 8 = 226.08 cm^{3}$。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -261,16 +261,16 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "301.44",
-      "explanation": "半径 4cm。V = 3.14 × 4² × 6 = 301.44 cm³。"
+      "explanation": "半径 4cm。$V = 3.14 \\times 4^{2} \\times 6 = 301.44 cm^{3}$。"
     },
     {
       "chapter": "圆柱与圆锥",
       "knowledge_point": "圆柱与圆锥/圆柱的体积",
-      "content": "把一个体积是 942cm³ 的圆柱铁块熔铸成长 5cm、宽 6cm 的长方体铁块，长方体的高是多少 cm？",
+      "content": "把一个体积是$942cm^{3}$的圆柱铁块熔铸成长 5cm、宽 6cm 的长方体铁块，长方体的高是多少 cm？",
       "type": "fill",
       "difficulty": "hard",
       "answer": "31.4",
-      "explanation": "体积不变。长方体高 = 942 ÷ (5×6) = 942 ÷ 30 = 31.4cm。"
+      "explanation": "体积不变。长方体高$= 942 \\div$$(5 \\times 6$)$= 942 \\div 30 = 31.4cm$。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -285,7 +285,7 @@
         "D. 8 倍"
       ],
       "answer": "A",
-      "explanation": "V=πr²h，r 不变，h 扩大 2 倍，V 也扩大 2 倍。"
+      "explanation": "$V=\\pi r^{2}h$，r 不变，h 扩大 2 倍，V 也扩大 2 倍。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -339,16 +339,16 @@
         "D. 圆锥是圆柱的 2/3"
       ],
       "answer": "C",
-      "explanation": "等底等高时，圆锥体积是圆柱的 1/3。"
+      "explanation": "等底等高时，圆锥体积是圆柱的$\\frac{1}{3}$。"
     },
     {
       "chapter": "圆柱与圆锥",
       "knowledge_point": "圆柱与圆锥/圆锥的体积",
-      "content": "圆锥体积的公式是 V = ？",
+      "content": "圆锥体积的公式是$V =$？",
       "type": "choice",
       "difficulty": "easy",
       "answer": "A",
-      "explanation": "圆锥体积 = 1/3 × 底面积 × 高 = 1/3 πr²h。",
+      "explanation": "圆锥体积$= \\frac{1}{3} \\times$底面积 × 高$= \\frac{1}{3} \\pi r^{2}h$。",
       "options": [
         "A. V = 1/3 πr²h",
         "B. V = πr²h",
@@ -363,7 +363,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "37.68",
-      "explanation": "V = 1/3 × 3.14 × 3² × 4 = 1/3 × 113.04 = 37.68 cm³。"
+      "explanation": "$V = \\frac{1}{3} \\times 3.14 \\times 3^{2} \\times 4 = \\frac{1}{3} \\times 113.04 = 37.68 cm^{3}$。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -372,7 +372,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "48",
-      "explanation": "V = 1/3 × 24 × 6 = 48 cm³。"
+      "explanation": "$V = \\frac{1}{3} \\times 24 \\times 6 = 48 cm^{3}$。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -381,7 +381,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "6",
-      "explanation": "圆锥体积 = 1/3 × 18 = 6 cm³。"
+      "explanation": "圆锥体积$= \\frac{1}{3} \\times 18 = 6 cm^{3}$。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -390,7 +390,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "6.28",
-      "explanation": "底面半径 = 12.56÷(2×3.14) = 2m。V = 1/3 × 3.14 × 2² × 1.5 = 6.28 m³。"
+      "explanation": "底面半径$= 12.56 \\div (2 \\times 3.14$) = 2m。$V = \\frac{1}{3} \\times 3.14 \\times 2^{2} \\times 1.5 = 6.28 m^{3}$。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -414,7 +414,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "2/3",
-      "explanation": "圆锥体积是圆柱的 1/3，削去的就是 1 - 1/3 = 2/3。"
+      "explanation": "圆锥体积是圆柱的$\\frac{1}{3}$，削去的就是$1 - \\frac{1}{3} = \\frac{2}{3}$。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -423,7 +423,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "3",
-      "explanation": "圆锥体积是等底等高圆柱的 1/3，圆柱满桶可倒满 3 个圆锥。"
+      "explanation": "圆锥体积是等底等高圆柱的$\\frac{1}{3}$，圆柱满桶可倒满 3 个圆锥。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -432,7 +432,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "37.68",
-      "explanation": "圆柱 V₁=3.14×4×5=62.8；圆锥 V₂=1/3×3.14×4×6=25.12；差=62.8-25.12=37.68 cm³。"
+      "explanation": "圆柱 V₁=3.14×4×5=62.8；圆锥 V₂=1/3×3.14×4×6=25.12；差$=62.8-25.12=37.68 cm^{3}$。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -456,7 +456,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "169.56",
-      "explanation": "圆柱底面直径 6cm，半径 3cm，高 6cm。V=3.14×3²×6=169.56 cm³。"
+      "explanation": "圆柱底面直径 6cm，半径 3cm，高 6cm。$V=3.14 \\times 3^{2} \\times 6=169.56 cm^{3}$。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -465,7 +465,7 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "40",
-      "explanation": "上升的水的体积就是铁球体积 = 20 × 2 = 40 cm³。"
+      "explanation": "上升的水的体积就是铁球体积$= 20 \\times 2 = 40 cm^{3}$。"
     },
     {
       "chapter": "比例",
@@ -516,12 +516,12 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "3",
-      "explanation": "比值 = 前项 ÷ 后项 = 12 ÷ 4 = 3。"
+      "explanation": "比值 = 前项 ÷ 后项$= 12 \\div 4 = 3$。"
     },
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/求比值",
-      "content": "比 1/2 : 1/4 的比值是？",
+      "content": "比$\\frac{1}{2} : \\frac{1}{4}$的比值是？",
       "type": "choice",
       "difficulty": "medium",
       "options": [
@@ -531,7 +531,7 @@
         "D. 4"
       ],
       "answer": "C",
-      "explanation": "1/2 ÷ 1/4 = 1/2 × 4 = 2。"
+      "explanation": "$\\frac{1}{2} \\div \\frac{1}{4} = \\frac{1}{2} \\times 4 = 2$。"
     },
     {
       "chapter": "比例",
@@ -540,7 +540,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "0.5",
-      "explanation": "0.3 ÷ 0.6 = 0.5。"
+      "explanation": "$0.3 \\div 0.6 = 0.5$。"
     },
     {
       "chapter": "比例",
@@ -549,7 +549,7 @@
       "type": "calculation",
       "difficulty": "easy",
       "answer": "3",
-      "explanation": "2.4 ÷ 0.8 = 3。"
+      "explanation": "$2.4 \\div 0.8 = 3$。"
     },
     {
       "chapter": "比例",
@@ -558,7 +558,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "2:3",
-      "explanation": "12 和 18 的最大公约数是 6，12÷6=2，18÷6=3。"
+      "explanation": "12 和 18 的最大公约数是 6，$12 \\div 6=2$，$18 \\div 6=3$。"
     },
     {
       "chapter": "比例",
@@ -573,16 +573,16 @@
         "D. 1:0.5"
       ],
       "answer": "A",
-      "explanation": "0.5÷0.25=2，所以最简比是 2:1。"
+      "explanation": "$0.5 \\div 0.25=2$，所以最简比是 2:1。"
     },
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/化简比",
-      "content": "化简 3/4 : 1/2 = ______。",
+      "content": "化简$\\frac{3}{4} : \\frac{1}{2} = ______$。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "3:2",
-      "explanation": "3/4 ÷ 1/2 = 3/4 × 2 = 3/2，化为整数比 3:2。"
+      "explanation": "$\\frac{3}{4} \\div \\frac{1}{2} = \\frac{3}{4} \\times 2 = \\frac{3}{2}$，化为整数比 3:2。"
     },
     {
       "chapter": "比例",
@@ -591,16 +591,16 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "16:1",
-      "explanation": "先统一单位：8千克=8000克。8000:500 = 16:1。"
+      "explanation": "先统一单位：8千克=8000克。$8000:500 = 16:1$。"
     },
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/化简比",
-      "content": "化简比 1.2:0.3 = ______。",
+      "content": "化简比$1.2:0.3 = ______$。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "4:1",
-      "explanation": "1.2:0.3 同时乘以 10 = 12:3 = 4:1。"
+      "explanation": "1.2:0.3 同时乘以$10 = 12:3 = 4:1$。"
     },
     {
       "chapter": "比例",
@@ -615,7 +615,7 @@
         "D. 2,3,4,8"
       ],
       "answer": "B",
-      "explanation": "1×6=6，2×3=6，所以 1,2,3,6 能组成比例 1:2=3:6。"
+      "explanation": "$1 \\times 6=6$，$2 \\times 3=6$，所以 1,2,3,6 能组成比例$1:2=3:6$。"
     },
     {
       "chapter": "比例",
@@ -624,12 +624,12 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "相等",
-      "explanation": "两个相等的比组成比例，如 2:3 = 4:6。"
+      "explanation": "两个相等的比组成比例，如$2:3 = 4:6$。"
     },
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/比例的意义",
-      "content": "判断：6:8 = 3:4 是比例。这种说法对吗？",
+      "content": "判断：$6:8 = 3:4$是比例。这种说法对吗？",
       "type": "choice",
       "difficulty": "easy",
       "options": [
@@ -642,11 +642,11 @@
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/比例的基本性质",
-      "content": "在比例 4:5 = 8:10 中，两个外项的乘积是______。",
+      "content": "在比例$4:5 = 8:10$中，两个外项的乘积是______。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "40",
-      "explanation": "外项是 4 和 10，乘积 = 4×10 = 40。"
+      "explanation": "外项是 4 和 10，乘积$= 4 \\times 10 = 40$。"
     },
     {
       "chapter": "比例",
@@ -655,12 +655,12 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "两个内项",
-      "explanation": "如 a:b=c:d 中，ad=bc。"
+      "explanation": "如$a:b=c:d$中，$ad=bc$。"
     },
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/比例的基本性质",
-      "content": "若 3:5 = 12:x，则 x = ?",
+      "content": "若$3:5 = 12:x$，则$x =$?",
       "type": "choice",
       "difficulty": "easy",
       "options": [
@@ -670,7 +670,7 @@
         "D. 60"
       ],
       "answer": "C",
-      "explanation": "3x = 5×12 = 60，x = 20。"
+      "explanation": "$3x = 5 \\times 12 = 60$，$x = 20$。"
     },
     {
       "chapter": "比例",
@@ -679,30 +679,30 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "2:4=6:12",
-      "explanation": "2×12=24，4×6=24，所以 2:4=6:12 成立。"
+      "explanation": "$2 \\times 12=24$，$4 \\times 6=24$，所以$2:4=6:12$成立。"
     },
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/解比例",
-      "content": "解比例 2:x = 6:9，x = ______。",
+      "content": "解比例$2:x = 6:9$，$x = ______$。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "3",
-      "explanation": "6x = 2×9 = 18，x = 3。"
+      "explanation": "$6x = 2 \\times 9 = 18$，$x = 3$。"
     },
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/解比例",
-      "content": "解比例 x:8 = 3:4。",
+      "content": "解比例$x:8 = 3:4$。",
       "type": "calculation",
       "difficulty": "easy",
       "answer": "6",
-      "explanation": "4x = 8×3 = 24，x = 6。"
+      "explanation": "$4x = 8 \\times 3 = 24$，$x = 6$。"
     },
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/解比例",
-      "content": "解比例 1.2:x = 3:5，x = ?",
+      "content": "解比例$1.2:x = 3:5$，$x =$?",
       "type": "choice",
       "difficulty": "medium",
       "options": [
@@ -712,25 +712,25 @@
         "D. 4"
       ],
       "answer": "B",
-      "explanation": "3x = 1.2×5 = 6，x = 2。"
+      "explanation": "$3x = 1.2 \\times 5 = 6$，$x = 2$。"
     },
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/解比例",
-      "content": "如果 5:2 = 25:x，那么 x = ______。",
+      "content": "如果$5:2 = 25:x$，那么$x = ______$。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "10",
-      "explanation": "5x = 2×25 = 50，x = 10。"
+      "explanation": "$5x = 2 \\times 25 = 50$，$x = 10$。"
     },
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/解比例",
-      "content": "解比例 x : 1/3 = 1/2 : 1/6。",
+      "content": "解比例$x : \\frac{1}{3} = \\frac{1}{2} : \\frac{1}{6}$。",
       "type": "calculation",
       "difficulty": "hard",
       "answer": "1",
-      "explanation": "(1/6)x = (1/3)(1/2)= 1/6，x = 1。"
+      "explanation": "$(\\frac{1}{6})x =$$(\\frac{1}{3})(\\frac{1}{2})= \\frac{1}{6}$，$x = 1$。"
     },
     {
       "chapter": "图形的运动",
@@ -941,7 +941,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "1/3",
-      "explanation": "1:3 缩小即新边 = 原边 × 1/3。"
+      "explanation": "1:3 缩小即新边 = 原边$\\times \\frac{1}{3}$。"
     },
     {
       "chapter": "图形的运动",
@@ -950,7 +950,7 @@
       "type": "choice",
       "difficulty": "medium",
       "answer": "A",
-      "explanation": "新边长 5×3=15 cm，面积 15²=225 cm²（边长放大 3 倍，面积放大 9 倍）。",
+      "explanation": "新边长$5 \\times 3=15 cm$，面积 15²=225 cm²（边长放大 3 倍，面积放大 9 倍）。",
       "options": [
         "A. 边长 15 cm，面积 225 cm²",
         "B. 边长 15 cm，面积 75 cm²",
@@ -980,7 +980,7 @@
       "type": "choice",
       "difficulty": "medium",
       "answer": "A",
-      "explanation": "1:2 缩小即除以 2：长 6÷2=3 cm，宽 4÷2=2 cm。",
+      "explanation": "1:2 缩小即除以 2：长$6 \\div 2=3 cm$，宽$4 \\div 2=2 cm$。",
       "options": [
         "A. 长 3 cm，宽 2 cm",
         "B. 长 12 cm，宽 8 cm",
@@ -995,7 +995,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "96",
-      "explanation": "新直角边 12cm 和 16cm。面积 = 12×16÷2 = 96 cm²。"
+      "explanation": "新直角边 12cm 和 16cm。面积$= 12 \\times 16 \\div 2 = 96 cm^{2}$。"
     },
     {
       "chapter": "图形的运动",
@@ -1032,7 +1032,7 @@
         "D. 圆的面积和它的半径"
       ],
       "answer": "A",
-      "explanation": "C=2πr，比值 2π 一定，是正比例。"
+      "explanation": "$C=2\\pi r$，比值$2\\pi$一定，是正比例。"
     },
     {
       "chapter": "正比例和反比例",
@@ -1109,12 +1109,12 @@
         "B. 错误"
       ],
       "answer": "B",
-      "explanation": "S=πr²，半径变面积也变，但 S÷r² 才一定，不是 S÷r 也不是 S×r。"
+      "explanation": "$S=\\pi r^{2}$，半径变面积也变，但$S \\div r^{2}$才一定，不是$S \\div r$也不是$S \\times r$。"
     },
     {
       "chapter": "正比例和反比例",
       "knowledge_point": "正反比例/正反比例的判断",
-      "content": "判断 3x = y 中 x 和 y 成？",
+      "content": "判断$3x = y$中 x 和 y 成？",
       "type": "choice",
       "difficulty": "easy",
       "options": [
@@ -1128,7 +1128,7 @@
     {
       "chapter": "正比例和反比例",
       "knowledge_point": "正反比例/正反比例的判断",
-      "content": "若 a×b = 8，则 a 和 b 成______比例。",
+      "content": "若$a \\times b = 8$，则 a 和 b 成______比例。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "反",
@@ -1195,7 +1195,7 @@
         "D. 抛物线"
       ],
       "answer": "C",
-      "explanation": "xy=k(k≠0)的图象是双曲线。"
+      "explanation": "$xy=k$(k≠0)的图象是双曲线。"
     },
     {
       "chapter": "正比例和反比例",
@@ -1204,7 +1204,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "k",
-      "explanation": "正比例 y=kx，所以 y/x=k。"
+      "explanation": "正比例$y=kx$，所以$y/x=k$。"
     },
     {
       "chapter": "正比例和反比例",
@@ -1219,7 +1219,7 @@
         "D. (3,1)"
       ],
       "answer": "B",
-      "explanation": "y=kx 中 x=0 时 y=0，所以图象经过原点(0,0)。"
+      "explanation": "y=kx 中$x=0$时$y=0$，所以图象经过原点(0,0)。"
     },
     {
       "chapter": "正比例和反比例",
@@ -1237,7 +1237,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "2000",
-      "explanation": "实际=图上×比例尺=4×50000=200000cm=2000m。"
+      "explanation": "实际=图上×比例尺$=4 \\times 50000=200000cm=2000m$。"
     },
     {
       "chapter": "正比例和反比例",
@@ -1246,7 +1246,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "1:10000",
-      "explanation": "600m=60000cm。比例尺=6:60000=1:10000。"
+      "explanation": "$600m=60000cm$。比例尺$=6:60000=1:10000$。"
     },
     {
       "chapter": "正比例和反比例",
@@ -1270,7 +1270,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "40",
-      "explanation": "8×500=4000cm=40m。"
+      "explanation": "$8 \\times 500=4000cm=40m$。"
     },
     {
       "chapter": "数学好玩",
@@ -1279,7 +1279,7 @@
       "type": "calculation",
       "difficulty": "easy",
       "answer": "20",
-      "explanation": "2.5×8=20 元。"
+      "explanation": "$2.5 \\times 8=20$元。"
     },
     {
       "chapter": "数学好玩",
@@ -1288,7 +1288,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "240",
-      "explanation": "路程=速度×时间=60×4=240km。"
+      "explanation": "路程=速度×时间$=60 \\times 4=240km$。"
     },
     {
       "chapter": "数学好玩",
@@ -1321,7 +1321,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "300",
-      "explanation": "利息=本金×利率×时间=5000×0.03×2=300 元。"
+      "explanation": "利息=本金×利率×时间$=5000 \\times 0.03 \\times 2=300$元。"
     },
     {
       "chapter": "数学好玩",
@@ -1330,7 +1330,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "20",
-      "explanation": "起步 10 元 + (8-3)×2=10 元，共 20 元。"
+      "explanation": "起步 10 元$+ (8-3) \\times 2=10$元，共 20 元。"
     },
     {
       "chapter": "数学好玩",
@@ -1339,7 +1339,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "30",
-      "explanation": "V=5×4×1.5=30 m³。"
+      "explanation": "$V=5 \\times 4 \\times 1.5=30 m^{3}$。"
     },
     {
       "chapter": "数学好玩",
@@ -1348,7 +1348,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "30",
-      "explanation": "男生占 3/(3+2)=3/5。50×3/5=30 人。"
+      "explanation": "男生占$3/(3+2)=\\frac{3}{5}$。$50 \\times \\frac{3}{5}=30$人。"
     },
     {
       "chapter": "数学好玩",
@@ -1420,7 +1420,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "3:5",
-      "explanation": "0.75:1.25 同时乘以 100=75:125。最大公约数 25。3:5。"
+      "explanation": "0.75:1.25 同时乘以$100=75:125$。最大公约数 25。3:5。"
     },
     {
       "chapter": "数学好玩",
@@ -1438,7 +1438,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "301.44",
-      "explanation": "圆柱体积=3.14×16×6=301.44 cm³。板厚 1cm，面积=体积÷高=301.44 cm²。"
+      "explanation": "圆柱体积$=3.14 \\times 16 \\times 6=301.44 cm^{3}$。板厚 1cm，面积=体积÷高=301.44 cm²。"
     },
     {
       "chapter": "数学好玩",
@@ -1447,7 +1447,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "100",
-      "explanation": "5×2000000=10000000cm=100km。"
+      "explanation": "$5 \\times 2000000=10000000cm=100km$。"
     },
     {
       "chapter": "数学好玩",
@@ -1456,7 +1456,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "4.5",
-      "explanation": "苹果总价 6×2=12 元；橙子总价 30-12=18 元；每个 18÷4=4.5 元。"
+      "explanation": "苹果总价$6 \\times 2=12$元；橙子总价$30-12=18$元；每个$18 \\div 4=4.5$元。"
     },
     {
       "chapter": "总复习",
@@ -1480,7 +1480,7 @@
         "D. 4/5"
       ],
       "answer": "D",
-      "explanation": "通分或化小数：4/5=0.8，最大。"
+      "explanation": "通分或化小数：$\\frac{4}{5}=0.8$，最大。"
     },
     {
       "chapter": "总复习",
@@ -1489,12 +1489,12 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "3/4",
-      "explanation": "75/100 化简为 3/4。"
+      "explanation": "$\\frac{75}{100}$化简为$\\frac{3}{4}$。"
     },
     {
       "chapter": "总复习",
       "knowledge_point": "总复习/数与代数综合",
-      "content": "0.25 + 1/4 = ?",
+      "content": "$0.25 + \\frac{1}{4} =$?",
       "type": "choice",
       "difficulty": "easy",
       "options": [
@@ -1504,16 +1504,16 @@
         "D. 0.75"
       ],
       "answer": "A",
-      "explanation": "0.25 + 0.25 = 0.5。"
+      "explanation": "$0.25 + 0.25 = 0.5$。"
     },
     {
       "chapter": "总复习",
       "knowledge_point": "总复习/数与代数综合",
-      "content": "求 7/8 - 3/4 的差。",
+      "content": "求$\\frac{7}{8} - \\frac{3}{4}$的差。",
       "type": "calculation",
       "difficulty": "easy",
       "answer": "1/8",
-      "explanation": "通分：7/8 - 6/8 = 1/8。"
+      "explanation": "通分：$\\frac{7}{8} - \\frac{6}{8} = \\frac{1}{8}$。"
     },
     {
       "chapter": "总复习",
@@ -1522,25 +1522,25 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "0.35",
-      "explanation": "0.5×0.3=0.15，加 0.2=0.35。"
+      "explanation": "$0.5 \\times 0.3=0.15$，加$0.2=0.35$。"
     },
     {
       "chapter": "总复习",
       "knowledge_point": "总复习/数与代数综合",
-      "content": "解方程 3x + 6 = 18，x = ______。",
+      "content": "解方程$3x + 6 = 18$，$x = ______$。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "4",
-      "explanation": "3x=12，x=4。"
+      "explanation": "$3x=12$，x=4。"
     },
     {
       "chapter": "总复习",
       "knowledge_point": "总复习/数与代数综合",
-      "content": "解方程 5(x-2) = 30。",
+      "content": "解方程$5(x-2) = 30$。",
       "type": "calculation",
       "difficulty": "medium",
       "answer": "8",
-      "explanation": "x-2=6，x=8。"
+      "explanation": "$x-2=6$，x=8。"
     },
     {
       "chapter": "总复习",
@@ -1558,7 +1558,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "26",
-      "explanation": "周长=(长+宽)×2=(8+5)×2=26 cm。"
+      "explanation": "周长=(长+宽$) \\times 2=(8+5$)$\\times 2=26 cm$。"
     },
     {
       "chapter": "总复习",
@@ -1573,7 +1573,7 @@
         "D. 高 4 底 4 的平行四边形"
       ],
       "answer": "B",
-      "explanation": "正方形 16；圆 3.14×16=50.24；三角形 8；平行四边形 16。圆最大。"
+      "explanation": "正方形 16；圆$3.14 \\times 16=50.24$；三角形 8；平行四边形 16。圆最大。"
     },
     {
       "chapter": "总复习",
@@ -1582,7 +1582,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "27",
-      "explanation": "V = 3³ = 27 cm³。"
+      "explanation": "$V = 3^{3} = 27 cm^{3}$。"
     },
     {
       "chapter": "总复习",
@@ -1591,7 +1591,7 @@
       "type": "calculation",
       "difficulty": "easy",
       "answer": "12",
-      "explanation": "S=底×高÷2=6×4÷2=12 cm²。"
+      "explanation": "S=底×高$\\div 2=6 \\times 4 \\div 2=12 cm^{2}$。"
     },
     {
       "chapter": "总复习",
@@ -1609,7 +1609,7 @@
       "type": "choice",
       "difficulty": "easy",
       "answer": "A",
-      "explanation": "C/d = π，约等于 3.14。",
+      "explanation": "$C/d = \\pi$，约等于 3.14。",
       "options": [
         "A. π",
         "B. 2π",
@@ -1624,7 +1624,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "28.26",
-      "explanation": "S=πr²=3.14×9=28.26 cm²。"
+      "explanation": "$S=\\pi r^{2}=3.14 \\times 9=28.26 cm^{2}$。"
     },
     {
       "chapter": "总复习",
@@ -1633,7 +1633,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "1/6",
-      "explanation": "6 个面中 1 个是 6，概率 1/6。"
+      "explanation": "6 个面中 1 个是 6，概率$\\frac{1}{6}$。"
     },
     {
       "chapter": "总复习",
@@ -1648,7 +1648,7 @@
         "D. 5/3"
       ],
       "answer": "A",
-      "explanation": "5/(5+3)=5/8。"
+      "explanation": "$5/(5+3)=\\frac{5}{8}$。"
     },
     {
       "chapter": "总复习",
@@ -1677,7 +1677,7 @@
         "C. 小于 40"
       ],
       "answer": "B",
-      "explanation": "平均数=(30+50)/2=40。"
+      "explanation": "平均数$=(30+50)/2=40$。"
     },
     {
       "chapter": "总复习",
@@ -1686,7 +1686,7 @@
       "type": "calculation",
       "difficulty": "easy",
       "answer": "8",
-      "explanation": "(8+6+9+7+10)/5=40/5=8。"
+      "explanation": "$(8+6+9+7+10)/5=\\frac{40}{5}=8$。"
     },
     {
       "chapter": "总复习",
@@ -1728,7 +1728,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "18",
-      "explanation": "(40-4)÷2=18 人。"
+      "explanation": "$(40-4) \\div 2=18$人。"
     },
     {
       "chapter": "总复习",
@@ -1737,7 +1737,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "2.4",
-      "explanation": "甲效率 1/6，乙 1/4，合 1/6+1/4=5/12。完成时间 1÷(5/12)=12/5=2.4 天。"
+      "explanation": "甲效率$\\frac{1}{6}$，乙$\\frac{1}{4}$，合$\\frac{1}{6}+\\frac{1}{4}=\\frac{5}{12}$。完成时间$1 \\div (\\frac{5}{12}$)$=\\frac{12}{5}=2.4$天。"
     },
     {
       "chapter": "总复习",
@@ -1746,7 +1746,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "22",
-      "explanation": "(x+8)/5=6，x+8=30，x=22。"
+      "explanation": "$(x+8)/5=6$，$x+8=30$，x=22。"
     },
     {
       "chapter": "总复习",
@@ -1755,25 +1755,25 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "1.2",
-      "explanation": "两式相减：3 个橡皮=3 元，每个 1 元。铅笔：(12-3)/5=1.8...等等，重算：5铅+3橡=12; 5铅+6橡=15; 3橡=3; 橡皮=1元; 铅笔=(12-3)/5=1.8。答案应为 1.8。"
+      "explanation": "两式相减：3 个橡皮=3 元，每个 1 元。铅笔：$(12-3)/5=1.8...$等等，重算：5铅+3橡=12; 5铅+6橡=15; 3橡=3; 橡皮=1元; 铅笔$=(12-3)/5=1.8$。答案应为 1.8。"
     },
     {
       "chapter": "总复习",
       "knowledge_point": "比和比例/解比例",
-      "content": "若 x:6=4:3，则 x =______。",
+      "content": "若$x:6=4:3$，则$x =______$。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "8",
-      "explanation": "3x=24，x=8。"
+      "explanation": "$3x=24$，x=8。"
     },
     {
       "chapter": "总复习",
       "knowledge_point": "比和比例/化简比",
-      "content": "化简比 18:24=______。",
+      "content": "化简比$18:24=______$。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "3:4",
-      "explanation": "最大公约数 6，18÷6:24÷6=3:4。"
+      "explanation": "最大公约数 6，$18 \\div 6:24 \\div 6=3:4$。"
     },
     {
       "chapter": "总复习",
@@ -1787,7 +1787,7 @@
         "C. 不成比例"
       ],
       "answer": "C",
-      "explanation": "S=πr²，S/r=πr 不固定，S×r 也不固定，不成比例。"
+      "explanation": "$S=\\pi r^{2}$，$S/r=\\pi r$不固定，S×r 也不固定，不成比例。"
     },
     {
       "chapter": "总复习",
@@ -1796,7 +1796,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "20",
-      "explanation": "10×200000=2000000cm=20km。"
+      "explanation": "$10 \\times 200000=2000000cm=20km$。"
     },
     {
       "chapter": "总复习",
@@ -1805,7 +1805,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "282.6",
-      "explanation": "半径 3cm。V=3.14×9×10=282.6 cm³。"
+      "explanation": "半径 3cm。$V=3.14 \\times 9 \\times 10=282.6 cm^{3}$。"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -1844,7 +1844,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "12",
-      "explanation": "第二份占 3/(2+3)=3/5。20×3/5=12 kg。"
+      "explanation": "第二份占$3/(2+3)=\\frac{3}{5}$。$20 \\times \\frac{3}{5}=12 kg$。"
     },
     {
       "chapter": "比例",
@@ -1859,21 +1859,21 @@
         "D. 25"
       ],
       "answer": "B",
-      "explanation": "统一单位：1m=100cm，4:100=4/100=1/25。"
+      "explanation": "统一单位：$1m=100cm$，$4:100=\\frac{4}{100}=\\frac{1}{25}$。"
     },
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/化简比",
-      "content": "化简比 4/5 : 2/3 = ______。",
+      "content": "化简比$\\frac{4}{5} : \\frac{2}{3} = ______$。",
       "type": "fill",
       "difficulty": "hard",
       "answer": "6:5",
-      "explanation": "(4/5)÷(2/3)=4/5 × 3/2 = 12/10 = 6/5，比 6:5。"
+      "explanation": "$(\\frac{4}{5}) \\div (\\frac{2}{3}$)$=\\frac{4}{5} \\times \\frac{3}{2} = \\frac{12}{10} = \\frac{6}{5}$，比 6:5。"
     },
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/比例的基本性质",
-      "content": "在比例 a:b = c:d 中，下列等式成立的是？",
+      "content": "在比例$a:b = c:d$中，下列等式成立的是？",
       "type": "choice",
       "difficulty": "medium",
       "options": [
@@ -1883,21 +1883,21 @@
         "D. a-d=b-c"
       ],
       "answer": "A",
-      "explanation": "比例的基本性质：内项之积=外项之积，即 ad=bc。"
+      "explanation": "比例的基本性质：内项之积=外项之积，即$ad=bc$。"
     },
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/解比例",
-      "content": "解比例 9:x = x:4。",
+      "content": "解比例$9:x = x:4$。",
       "type": "calculation",
       "difficulty": "hard",
       "answer": "6",
-      "explanation": "x²=9×4=36，x=6（取正）。"
+      "explanation": "$x^{2}=9 \\times 4=36$，x=6（取正）。"
     },
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/化简比",
-      "content": "化简比 0.36:0.45 = ______。",
+      "content": "化简比$0.36:0.45 = ______$。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "4:5",
@@ -1906,7 +1906,7 @@
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/求比值",
-      "content": "比 7/9 : 14/27 的比值是？",
+      "content": "比$\\frac{7}{9} : \\frac{14}{27}$的比值是？",
       "type": "choice",
       "difficulty": "hard",
       "options": [
@@ -1916,7 +1916,7 @@
         "D. 1/2"
       ],
       "answer": "C",
-      "explanation": "(7/9)÷(14/27) = 7/9 × 27/14 = 189/126 = 3/2。"
+      "explanation": "$(\\frac{7}{9}) \\div (\\frac{14}{27}$)$= \\frac{7}{9} \\times \\frac{27}{14} = \\frac{189}{126} = \\frac{3}{2}$。"
     },
     {
       "chapter": "图形的运动",
@@ -2024,7 +2024,7 @@
         "D. 12 倍"
       ],
       "answer": "C",
-      "explanation": "边扩大 3 倍，面积扩大 3²=9 倍。"
+      "explanation": "边扩大 3 倍，面积扩大$3^{2}=9$倍。"
     },
     {
       "chapter": "图形的运动",
@@ -2033,7 +2033,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "12",
-      "explanation": "新边长 3cm，周长=4×3=12cm。"
+      "explanation": "新边长 3cm，周长$=4 \\times 3=12cm$。"
     },
     {
       "chapter": "图形的运动",
@@ -2062,11 +2062,11 @@
     {
       "chapter": "正比例和反比例",
       "knowledge_point": "正反比例/正比例的意义",
-      "content": "圆的周长 C 和直径 d 成正比例，C/d = ？",
+      "content": "圆的周长 C 和直径 d 成正比例，$C/d =$？",
       "type": "choice",
       "difficulty": "easy",
       "answer": "A",
-      "explanation": "C = πd，所以 C/d = π（约 3.14）一定。",
+      "explanation": "$C = \\pi d$，所以 C/d = π（约 3.14）一定。",
       "options": [
         "A. π",
         "B. 2π",
@@ -2133,11 +2133,11 @@
     {
       "chapter": "正比例和反比例",
       "knowledge_point": "正反比例/正比例的意义",
-      "content": "若 y = 4x，则 y 和 x 成什么比例？比值是多少？",
+      "content": "若$y = 4x$，则 y 和 x 成什么比例？比值是多少？",
       "type": "choice",
       "difficulty": "medium",
       "answer": "A",
-      "explanation": "y/x = 4 一定（不为 0），所以是正比例，比值为 4。",
+      "explanation": "$y/x = 4$一定（不为 0），所以是正比例，比值为 4。",
       "options": [
         "A. 正比例，比值 4",
         "B. 反比例，比值 4",
@@ -2152,7 +2152,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "2",
-      "explanation": "1m=100cm，100÷50=2cm。"
+      "explanation": "$1m=100cm$，$100 \\div 50=2cm$。"
     },
     {
       "chapter": "正比例和反比例",
@@ -2161,7 +2161,7 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "1:5000",
-      "explanation": "250m=25000cm，5:25000=1:5000。"
+      "explanation": "$250m=25000cm$，$5:25000=1:5000$。"
     },
     {
       "chapter": "正比例和反比例",
@@ -2181,20 +2181,20 @@
     {
       "chapter": "正比例和反比例",
       "knowledge_point": "正反比例/正反比例图象",
-      "content": "正比例 y=2x 上点 (3,?) 中 ? = ______。",
+      "content": "正比例$y=2x$上点 (3,?) 中 ? = ______。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "6",
-      "explanation": "y=2×3=6。"
+      "explanation": "$y=2 \\times 3=6$。"
     },
     {
       "chapter": "正比例和反比例",
       "knowledge_point": "正反比例/正反比例图象",
-      "content": "反比例 y=12/x 上点 (4,?) 中 ? = ______。",
+      "content": "反比例$y=12/x$上点 (4,?) 中 ? = ______。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "3",
-      "explanation": "y=12÷4=3。"
+      "explanation": "$y=12 \\div 4=3$。"
     },
     {
       "chapter": "数学好玩",
@@ -2203,7 +2203,7 @@
       "type": "calculation",
       "difficulty": "easy",
       "answer": "60",
-      "explanation": "80×0.75=60 元。"
+      "explanation": "$80 \\times 0.75=60$元。"
     },
     {
       "chapter": "数学好玩",
@@ -2221,7 +2221,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "5",
-      "explanation": "成正比例：1.5:2.4=树高:8，树高=1.5×8÷2.4=5m。"
+      "explanation": "成正比例：1.5:2.4=树高:8，树高$=1.5 \\times 8 \\div 2.4=5m$。"
     },
     {
       "chapter": "数学好玩",
@@ -2230,7 +2230,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "60",
-      "explanation": "单价 25÷5=5 元。12×5=60 元。"
+      "explanation": "单价$25 \\div 5=5$元。$12 \\times 5=60$元。"
     },
     {
       "chapter": "数学好玩",
@@ -2244,11 +2244,11 @@
     {
       "chapter": "数学好玩",
       "knowledge_point": "数学综合/生活中的数学",
-      "content": "某商场上半年销售 60 万元，比下半年少 1/4，下半年销售______万元。",
+      "content": "某商场上半年销售 60 万元，比下半年少$\\frac{1}{4}$，下半年销售______万元。",
       "type": "fill",
       "difficulty": "hard",
       "answer": "80",
-      "explanation": "上半年=下半年×(1-1/4)=下半年×3/4，下半年=60÷3/4=80 万。"
+      "explanation": "上半年=下半年$\\times (1-\\frac{1}{4}$)=下半年$\\times \\frac{3}{4}$，下半年$=60 \\div \\frac{3}{4}=80$万。"
     },
     {
       "chapter": "数学好玩",
@@ -2257,7 +2257,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "720",
-      "explanation": "600×(1+20%)=600×1.2=720 件。"
+      "explanation": "600×(1+20%)$=600 \\times 1.2=720$件。"
     },
     {
       "chapter": "数学好玩",
@@ -2281,7 +2281,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "1/4",
-      "explanation": "总面积平均分成 4 份，每份 1/4。"
+      "explanation": "总面积平均分成 4 份，每份$\\frac{1}{4}$。"
     },
     {
       "chapter": "数学好玩",
@@ -2295,7 +2295,7 @@
     {
       "chapter": "数学好玩",
       "knowledge_point": "比和比例/解比例",
-      "content": "若 4:5 = 12:x，那么 x = ?",
+      "content": "若$4:5 = 12:x$，那么$x =$?",
       "type": "choice",
       "difficulty": "easy",
       "options": [
@@ -2305,7 +2305,7 @@
         "D. 20"
       ],
       "answer": "C",
-      "explanation": "4x=5×12=60，x=15。"
+      "explanation": "$4x=5 \\times 12=60$，x=15。"
     },
     {
       "chapter": "数学好玩",
@@ -2314,7 +2314,7 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "360",
-      "explanation": "新长 24cm，新宽 15cm。面积=24×15=360 cm²。"
+      "explanation": "新长 24cm，新宽 15cm。面积$=24 \\times 15=360 cm^{2}$。"
     },
     {
       "chapter": "数学好玩",
@@ -2350,16 +2350,16 @@
     {
       "chapter": "数学好玩",
       "knowledge_point": "数学综合/生活中的数学",
-      "content": "梨园丰收，今年比去年多 1/5。如果去年产 5 吨，今年产______吨。",
+      "content": "梨园丰收，今年比去年多$\\frac{1}{5}$。如果去年产 5 吨，今年产______吨。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "6",
-      "explanation": "5×(1+1/5)=5×6/5=6 吨。"
+      "explanation": "$5 \\times (1+\\frac{1}{5})=5 \\times \\frac{6}{5}=6$吨。"
     },
     {
       "chapter": "总复习",
       "knowledge_point": "总复习/数与代数综合",
-      "content": "把 5/8 化成百分数。",
+      "content": "把$\\frac{5}{8}$化成百分数。",
       "type": "calculation",
       "difficulty": "easy",
       "answer": "62.5",
