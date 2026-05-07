@@ -37,6 +37,9 @@ const _bundledBatchAssets = [
   'assets/data/batches/batch_2026_05_07_g6_english_pet_r1.json',
   // V3.10 真题入库后陆续追加
   'assets/data/batches/realpaper_g6_math_beishida_d1_guoguan_001.json',
+  'assets/data/batches/realpaper_g6_math_beishida_d2_guoguan_001.json',
+  'assets/data/batches/realpaper_g6_math_beishida_d4_genzong_001.json',
+  'assets/data/batches/realpaper_g6_math_beishida_zhouce_peiyou_006.json',
 ];
 
 void main() async {

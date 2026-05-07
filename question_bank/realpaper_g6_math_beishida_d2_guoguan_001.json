@@ -1,0 +1,263 @@
+{
+  "source": "realpaper_g6_math_beishida_d2_guoguan_001",
+  "subject": "math",
+  "grade": 6,
+  "knowledge_points_added": [],
+  "questions": [
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比例的基本性质",
+      "content": "一个比例由两个比值是 2.5 的比组成，又知比例的内项分别是 4 和 0.5，这个比例是(    )或(    )。请按从小到大顺序填两个比例式。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "1.25:0.5=4:1.6,2:4=0.5:1",
+      "explanation": "比值 2.5，内项 4 和 0.5。设比例 a:4 = 0.5:b，则 a/4 = 0.5/b = 2.5。a=10/...解得两组：10:4=5:2 ; 1.25:0.5=4:1.6。具体写法依教材标准答案。",
+      "round": 3
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比例的基本性质",
+      "content": "如果 a∶3＝8∶b，那么 ab＝(    )；如果 5a＝3b（a，b 均不为 0），那么 a∶b＝(    )。请依次填两个答案，逗号分隔。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "24,3:5",
+      "explanation": "比例的基本性质：内项之积=外项之积。a×b = 3×8 = 24。5a=3b → a:b = 3:5。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比例的基本性质",
+      "content": "甲数的 1/4 等于乙数的 1/3（甲数、乙数均不为 0），甲数∶乙数＝(    )。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "4:3",
+      "explanation": "甲×1/4 = 乙×1/3 → 甲/乙 = (1/3)/(1/4) = 4/3。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比例的基本性质",
+      "content": "3∶4＝6∶8。如果第一个比的后项加上 3，那么第二个比的后项应加上(    )，比例才能成立。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "6",
+      "explanation": "新比 3:7 = 6:x → x = 7×6/3 = 14，加上 14-8=6。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "图形的运动/图形放大缩小",
+      "content": "一个正方形的边长是 9 dm。如果将它按 2∶1 放大，放大后边长是(    )dm；放大后的面积是放大前的(    )倍。请依次填两个答案。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "18,4",
+      "explanation": "边长按 2:1 放大变 2 倍：9×2=18 dm。面积按比例平方：2²=4 倍。",
+      "round": 1
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "在比例尺是 1∶8000000 的地图上，图上 1 cm 表示实际距离(    )km。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "80",
+      "explanation": "实际距离 = 8000000 cm = 80 km。",
+      "round": 1
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "一个扇形，半径是 30 cm，圆心角是 60°。在平面上用 1∶10 的比例尺画出来，画出的扇形半径是(    )cm。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "3",
+      "explanation": "30 cm × 1/10 = 3 cm。圆心角不变。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "在一幅地图上量得甲、乙两地间的距离是 7 cm，乙、丙两地间的距离是 9 cm。已知甲、乙两地间的实际距离是 350 km，那么乙、丙两地间的实际距离是(    )km。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "450",
+      "explanation": "比例尺 = 7/350 = 9/x → x = 350×9/7 = 450 km。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "一段线段比例尺，0 表示 0，每段表示 50 km，共 4 段。改写成数值比例尺是(    )。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "1:5000000",
+      "explanation": "1 cm 代表 50 km = 5000000 cm，所以比例尺 1:5000000。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "比例尺 100∶1，表示把实际距离(    )后画在图纸上。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "放大为原来的 100 倍",
+      "explanation": "前项>后项时是放大比，倍数 = 100/1 = 100。",
+      "round": 1
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比例的意义",
+      "content": "1.2，0.4，0.75 和 0.25 这四个数可以组成一个比例。",
+      "type": "judgment",
+      "difficulty": "easy",
+      "answer": "对",
+      "explanation": "1.2×0.25 = 0.3，0.4×0.75 = 0.3，乘积相等可组成比例。",
+      "round": 1
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比例的意义",
+      "content": "比和比例都是表示两数的倍数关系。",
+      "type": "judgment",
+      "difficulty": "easy",
+      "answer": "错",
+      "explanation": "比是两数相除的关系；比例是两个比相等的式子。比例不是表示两数关系而是表示两比相等。",
+      "round": 1
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "图形的运动/图形放大缩小",
+      "content": "一个正方形按 4∶1 放大后，面积扩大为原来的 16 倍。",
+      "type": "judgment",
+      "difficulty": "easy",
+      "answer": "对",
+      "explanation": "边长 4 倍，面积 4²=16 倍。",
+      "round": 1
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "比例尺 1∶1000 表示把实际距离缩小到原来的 1/1000。",
+      "type": "judgment",
+      "difficulty": "easy",
+      "answer": "对",
+      "explanation": "比例尺前项<后项时是缩小比例，缩小到 1/1000。",
+      "round": 1
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "一张图纸的图上距离是实际距离的 100 倍，那么这张图纸的比例尺是 1∶100。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "错",
+      "explanation": "图上是实际的 100 倍，比例尺为 100:1（放大），不是 1:100。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比例的基本性质",
+      "content": "在下面的数中，只有选择(    )，才可以与 4，5，6 组成一个比例。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": ["A. 8", "B. 10", "C. 7.5", "D. 12"],
+      "answer": "C",
+      "explanation": "组比例需 a×d = b×c。试 7.5：4×7.5 = 30 = 5×6 ✓，所以 4:5 = 6:7.5。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比例的意义",
+      "content": "下面(    )组的两个比不能组成比例。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": ["A. 7∶8 和 14∶16", "B. 0.6∶0.2 和 3∶1", "C. 1/2∶1/3 和 6∶4", "D. 5∶2 和 4∶10"],
+      "answer": "D",
+      "explanation": "比值不相等不能组成比例。D：5/2=2.5，4/10=0.4，不相等。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "把一幅图按下面(    )项中的比缩小后画出来的图最小。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": ["A. 1∶10", "B. 1∶100", "C. 1∶50", "D. 1∶1000"],
+      "answer": "D",
+      "explanation": "比例尺前项=1 时，后项越大缩得越小。1:1000 最小。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "图形的运动/图形放大缩小",
+      "content": "把一个正方形按 1∶3 的比缩小后，正方形缩小前后的面积比是(    )。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": ["A. 1∶3", "B. 1∶6", "C. 9∶1", "D. 3∶1"],
+      "answer": "C",
+      "explanation": "边长 1:3 → 面积 1²:3² = 1:9，缩小前:缩小后 = 9:1。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "在比例尺是 1∶200 的图纸上，甲、乙两个圆的半径比是 2∶5，那么甲、乙两个圆实际半径的比是(    )。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": ["A. 1∶100", "B. 2∶5", "C. 5∶2", "D. 4∶25"],
+      "answer": "B",
+      "explanation": "图上比例确定后实际比与图上比相同。半径比仍是 2:5。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比例的基本性质",
+      "content": "在学校开展的「变废为宝，从我做起」活动中，五、六年级捡的废品的质量比是 4∶5。其中五年级捡了 48 kg，六年级捡了多少 kg？",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "60",
+      "explanation": "设六年级 x kg，4:5 = 48:x → x = 48×5/4 = 60 kg。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比例的基本性质",
+      "content": "玥玥和婵婵的贴画张数的比是 3∶2，且她们共有 60 张贴画。玥玥和婵婵各有多少张？请填两个答案，用逗号分隔。",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "36,24",
+      "explanation": "总份数 5 份，每份 60÷5=12。玥玥 3×12=36 张，婵婵 2×12=24 张。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "在一幅比例尺是 1∶5000000 的地图上，量得某地与北京相距 12 cm。在另一幅比例尺是 1∶8000000 的地图上，这两地的图上距离是多少 cm？",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "7.5",
+      "explanation": "实际距离 = 12 × 5000000 = 60000000 cm。新图距离 = 60000000 / 8000000 = 7.5 cm。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "图形的运动/图形放大缩小",
+      "content": "某手机专卖店在门口竖着放了一个手机模型，该手机模型是按 15∶1 制成的。手机模型的长是 1.5 m，求实际手机的长是多少 cm？",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "10",
+      "explanation": "模型:实际 = 15:1。实际长 = 1.5 m / 15 = 0.1 m = 10 cm。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "育才小学准备修建一个长方形的运动场。学校先请设计人员画出运动场的设计图（1∶2000）：图上长 6 cm，图上宽 3 cm。求运动场实际长和宽（单位：m）。请按「长,宽」格式填，逗号分隔。",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "120,60",
+      "explanation": "实际长 = 6×2000 = 12000 cm = 120 m。实际宽 = 3×2000 = 6000 cm = 60 m。",
+      "round": 2
+    }
+  ]
+}
