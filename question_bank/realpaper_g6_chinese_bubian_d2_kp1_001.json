@@ -1,0 +1,515 @@
+{
+  "source": "realpaper_g6_chinese_bubian_d2_kp1_001",
+  "subject": "chinese",
+  "grade": 6,
+  "knowledge_points_added": [],
+  "questions": [
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "鲁滨逊把捕到的活山羊崽畜（    ）养起来。加点字「畜」的正确读音是？",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. xù", "B. chù"],
+      "answer": "A",
+      "explanation": "「畜养」中「畜」作动词，读 xù，意为饲养；作名词指家畜时读 chù。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "他真担心有的牛会挣（    ）断缰绳。加点字「挣」的正确读音是？",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. zhēng", "B. zhèng"],
+      "answer": "B",
+      "explanation": "「挣断」表示用力摆脱、扯断，读 zhèng；读 zhēng 用于「挣扎」。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "别犯傻！你们一定会受冻挨（    ）饿的。加点字「挨」的正确读音是？",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. āi", "B. ái"],
+      "answer": "B",
+      "explanation": "表示「遭受、忍受」时读 ái，如「挨饿」「挨打」；读 āi 表「靠近、依次」，如「挨着」。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "他爬到了长满荆棘和黑莓藤蔓（    ）擦缰的厚石头围墙上。加点字「蔓」的正确读音是？",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. màn", "B. wàn"],
+      "answer": "B",
+      "explanation": "「藤蔓」中「蔓」读 wàn，指植物的细长茎；读 màn 多用于「蔓延」「蔓草」。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：qi liang（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "凄凉",
+      "explanation": "「凄凉」形容寂寞冷落、悲凉。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：yuan jiu（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "援救",
+      "explanation": "「援救」指帮助救助危难中的人。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：kong ju（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "恐惧",
+      "explanation": "「恐惧」指害怕、畏惧。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：yan hui（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "宴会",
+      "explanation": "「宴会」指设宴款待宾客的聚会。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：zha lan（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "栅栏",
+      "explanation": "「栅栏」指用木条、铁条等做成的围栏。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：xi ji（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "袭击",
+      "explanation": "「袭击」指出其不意地打击。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：liao tian（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "聊天",
+      "explanation": "「聊天」指闲谈、随意交谈。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：que fa（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "缺乏",
+      "explanation": "「缺乏」指不够、没有足够的。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "改正词语中的错别字：「乌（  ）之众」中应填的正确的字是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "合",
+      "explanation": "「乌合之众」比喻无组织无纪律的人群，原卷错写为「乌和之众」，应改「和」为「合」。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "改正词语中的错别字：「头昏目（  ）」中应填的正确的字是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "眩",
+      "explanation": "「头昏目眩」指头晕眼花，原卷错写为「头昏目炫」，「炫」（炫耀）应改为「眩」（眼花）。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "改正词语中的错别字：「无（  ）于事」中应填的正确的字是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "济",
+      "explanation": "「无济于事」表示对事情没有帮助，原卷错写为「无寄于事」，「寄」应改为「济」。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "改正词语中的错别字：「（  ）无人烟」中应填的正确的字是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "漫",
+      "explanation": "「漫无人烟」形容荒凉无人，原卷错写为「慢无人烟」，「慢」应改为「漫」。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "改正词语中的错别字：「天（  ）海角」中应填的正确的字是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "涯",
+      "explanation": "「天涯海角」形容极远的地方，原卷错写为「天崖海角」，「崖」应改为「涯」。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "改正词语中的错别字：「不可思（  ）」中应填的正确的字是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "议",
+      "explanation": "「不可思议」表示难以想象、无法理解，原卷错写为「不可思意」，「意」应改为「议」。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "改正词语中的错别字：「（  ）知非福」中应填的正确的字是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "焉",
+      "explanation": "「焉知非福」出自「塞翁失马，焉知非福」，原卷错写为「嫉知非福」，「嫉」应改为「焉」。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/词语搭配",
+      "content": "用「续」字组成不同的词语填空：鲁滨逊找到很多可以用、可以吃的东西，把它们（    ）搬到岸上。横线处应填的词语是？",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "陆续",
+      "explanation": "「陆续」表示前前后后、断断续续地分批进行，符合多次搬运的语境。",
+      "round": 2
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/词语搭配",
+      "content": "用「续」字组成不同的词语填空：他又（    ）干了五天才搭好帐篷。横线处应填的词语是？",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "连续",
+      "explanation": "「连续」表示一个接一个、不间断，符合「五天没间断」的语境。",
+      "round": 2
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/词语搭配",
+      "content": "用「续」字组成不同的词语填空：大雨来了，竟然（    ）下了半个月才停。横线处应填的词语是？",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "持续",
+      "explanation": "「持续」表示长时间保持同一状态，符合「下了半个月不停」的语境。",
+      "round": 2
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/词语搭配",
+      "content": "用「续」字组成不同的词语填空：雨停后，帐篷已东倒西歪，鲁滨逊只好（    ）加固帐篷。横线处应填的词语是？",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "继续",
+      "explanation": "「继续」表示接着做下去，承前再干，符合修复帐篷的语境。",
+      "round": 2
+    },
+    {
+      "chapter": "写作",
+      "knowledge_point": "写作/人物描写",
+      "content": "判断下面句子运用的描写方法：「他那淡黄的头发、鼻子上的雀斑、皮裤和袜子上的补丁都和过去一模一样，只不过变得很小很小罢了。」属于哪种描写？",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. 外貌描写", "B. 语言描写", "C. 心理描写", "D. 动作描写"],
+      "answer": "A",
+      "explanation": "句子刻画头发、雀斑、补丁等外在形象，属于外貌描写。",
+      "round": 1
+    },
+    {
+      "chapter": "写作",
+      "knowledge_point": "写作/人物描写",
+      "content": "判断下面句子运用的描写方法：「怎么回事，孩子！哎，快着！谁去拿杯水来！」属于哪种描写？",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. 外貌描写", "B. 语言描写", "C. 心理描写", "D. 动作描写"],
+      "answer": "B",
+      "explanation": "句子是人物说出的话，属于语言（对话）描写。",
+      "round": 1
+    },
+    {
+      "chapter": "写作",
+      "knowledge_point": "写作/人物描写",
+      "content": "判断下面句子运用的描写方法：「「这大概是一场梦，一种幻觉吧！」他想。」属于哪种描写？",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. 外貌描写", "B. 语言描写", "C. 心理描写", "D. 动作描写"],
+      "answer": "C",
+      "explanation": "「他想」引出的是人物内心活动，属于心理描写。",
+      "round": 1
+    },
+    {
+      "chapter": "写作",
+      "knowledge_point": "写作/人物描写",
+      "content": "判断下面句子运用的描写方法：「于是他就丢下绳子，摸索着向那个小点走过去。」属于哪种描写？",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. 外貌描写", "B. 语言描写", "C. 心理描写", "D. 动作描写"],
+      "answer": "D",
+      "explanation": "「丢下」「摸索」「走过去」均为动词，是对人物动作的描写。",
+      "round": 1
+    },
+    {
+      "chapter": "文学常识",
+      "knowledge_point": "文学常识/外国作家作品",
+      "content": "《鲁滨逊漂流记》的作者是（    ）。",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. 丹尼尔·笛福", "B. 刘易斯·卡罗尔", "C. 塞尔玛·拉格洛芙", "D. 马克·吐温"],
+      "answer": "A",
+      "explanation": "《鲁滨逊漂流记》是英国作家丹尼尔·笛福的代表作。",
+      "round": 1
+    },
+    {
+      "chapter": "文学常识",
+      "knowledge_point": "文学常识/外国作家作品",
+      "content": "《爱丽丝漫游奇境》的作者是（    ）。",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. 丹尼尔·笛福", "B. 刘易斯·卡罗尔", "C. 塞尔玛·拉格洛芙", "D. 马克·吐温"],
+      "answer": "B",
+      "explanation": "《爱丽丝漫游奇境》是英国作家刘易斯·卡罗尔的童话代表作。",
+      "round": 1
+    },
+    {
+      "chapter": "文学常识",
+      "knowledge_point": "文学常识/外国作家作品",
+      "content": "《骑鹅旅行记》的作者是（    ）。",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. 丹尼尔·笛福", "B. 刘易斯·卡罗尔", "C. 塞尔玛·拉格洛芙", "D. 马克·吐温"],
+      "answer": "C",
+      "explanation": "《骑鹅旅行记》是瑞典作家塞尔玛·拉格洛芙创作的童话小说。",
+      "round": 1
+    },
+    {
+      "chapter": "文学常识",
+      "knowledge_point": "文学常识/文化常识",
+      "content": "古代年龄称谓「豆蔻年华」指的是（    ）岁。",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. 13", "B. 50", "C. 60", "D. 70"],
+      "answer": "A",
+      "explanation": "「豆蔻年华」出自杜牧诗，专指十三四岁少女。",
+      "round": 1
+    },
+    {
+      "chapter": "文学常识",
+      "knowledge_point": "文学常识/文化常识",
+      "content": "古代年龄称谓「花甲之年」指的是（    ）岁。",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. 13", "B. 50", "C. 60", "D. 70"],
+      "answer": "C",
+      "explanation": "天干地支搭配六十年一循环，故称六十岁为「花甲」。",
+      "round": 1
+    },
+    {
+      "chapter": "文学常识",
+      "knowledge_point": "文学常识/文化常识",
+      "content": "古代年龄称谓「知天命之年」指的是（    ）岁。",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. 13", "B. 50", "C. 60", "D. 70"],
+      "answer": "B",
+      "explanation": "出自《论语·为政》「五十而知天命」，故「知天命」专指五十岁。",
+      "round": 1
+    },
+    {
+      "chapter": "课文与名著",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《鲁滨逊漂流记》一文紧扣「险」字，塑造了一个怎样的主人公形象？",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": ["A. 不畏艰险、乐观坚强", "B. 胆小怕事、懦弱退缩", "C. 贪图享乐、好逸恶劳", "D. 斤斤计较、自私自利"],
+      "answer": "A",
+      "explanation": "鲁滨逊在荒岛 28 年靠自身努力生存，体现不畏艰险、乐观坚强的品格。",
+      "round": 2
+    },
+    {
+      "chapter": "文学常识",
+      "knowledge_point": "文学常识/外国作家作品",
+      "content": "《汤姆·索亚历险记》是（    ）国作家的代表作品。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "美",
+      "explanation": "《汤姆·索亚历险记》是美国作家马克·吐温的代表作。",
+      "round": 1
+    },
+    {
+      "chapter": "文学常识",
+      "knowledge_point": "文学常识/外国作家作品",
+      "content": "《汤姆·索亚历险记》的作者是（    ）（请填作家中文名）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "马克·吐温",
+      "explanation": "美国作家马克·吐温（Mark Twain）创作了《汤姆·索亚历险记》。",
+      "round": 1
+    },
+    {
+      "chapter": "课文与名著",
+      "knowledge_point": "课文与名著/名著情节人物",
+      "content": "《骑鹅旅行记》中的主人公尼尔斯是个怎样的孩子？",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. 淘气、顽皮", "B. 勤劳、善良", "C. 胆小、懦弱", "D. 文静、内向"],
+      "answer": "A",
+      "explanation": "尼尔斯起初是一个淘气、顽皮、爱欺负小动物的孩子，后在旅行中成长。",
+      "round": 1
+    },
+    {
+      "chapter": "课文与名著",
+      "knowledge_point": "课文与名著/名著情节人物",
+      "content": "《骑鹅旅行记》中尼尔斯因得罪了小狐仙被变成了（    ）（填 3 字答案）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "小狐仙",
+      "explanation": "尼尔斯捉弄小狐仙后被施法变成了和小狐仙一样的小人形象（参考答案）。",
+      "round": 1
+    },
+    {
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "「反复品读精彩的语段，想象书中所描述的情景，感受人物形象。」这样的阅读小贴士最适合用来阅读下列哪本书？",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": ["A. 《草房子》", "B. 《科学家故事 100 个》", "C. 《十万个为什么》", "D. 《新华字典》"],
+      "answer": "A",
+      "explanation": "《草房子》是长篇小说，重在塑造人物，需要品读语段、想象情景以感受人物，与该贴士最契合。",
+      "round": 2
+    },
+    {
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "「标注作者写作的事例，再阅读评论的语言，思考人物形象。」这样的阅读小贴士最适合用来阅读下列哪本书？",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": ["A. 《草房子》", "B. 《科学家故事 100 个》", "C. 《狼王梦》", "D. 《爱丽丝漫游奇境》"],
+      "answer": "B",
+      "explanation": "《科学家故事 100 个》属于人物故事集，每篇都附带事例与评论，需关注事例和评论语言以理解人物形象。",
+      "round": 2
+    },
+    {
+      "chapter": "课文与名著",
+      "knowledge_point": "课文与名著/名著情节人物",
+      "content": "读后感标题：「科学梦·中国梦——读《    》有感」，最合适填补的书名是？",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. 《科学家故事 100 个》", "B. 《汤姆·索亚历险记》", "C. 《狼王梦》", "D. 《鲁滨逊漂流记》"],
+      "answer": "A",
+      "explanation": "「科学梦·中国梦」与科学家相关，对应《科学家故事 100 个》。",
+      "round": 1
+    },
+    {
+      "chapter": "课文与名著",
+      "knowledge_point": "课文与名著/名著情节人物",
+      "content": "读后感标题：「走进动物情感世界——读《    》有感」，最合适填补的书名是？",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. 《科学家故事 100 个》", "B. 《汤姆·索亚历险记》", "C. 《狼王梦》", "D. 《鲁滨逊漂流记》"],
+      "answer": "C",
+      "explanation": "《狼王梦》以母狼的情感与抗争为核心，是动物情感小说。",
+      "round": 1
+    },
+    {
+      "chapter": "课文与名著",
+      "knowledge_point": "课文与名著/名著情节人物",
+      "content": "读后感标题：「一个男孩的成长历险——读《    》有感」，最合适填补的书名是？",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. 《科学家故事 100 个》", "B. 《汤姆·索亚历险记》", "C. 《狼王梦》", "D. 《鲁滨逊漂流记》"],
+      "answer": "B",
+      "explanation": "《汤姆·索亚历险记》以男孩汤姆的冒险与成长为主线。",
+      "round": 1
+    },
+    {
+      "chapter": "句式与标点",
+      "knowledge_point": "句式与标点/句式转换",
+      "content": "判断「请走出心灵的监狱。」是不是陈述句。",
+      "type": "judgment",
+      "difficulty": "easy",
+      "answer": "错",
+      "explanation": "「请走出……」表请求或祈使，是祈使句，不是陈述句。",
+      "round": 1
+    },
+    {
+      "chapter": "句式与标点",
+      "knowledge_point": "句式与标点/句式转换",
+      "content": "判断「曼德拉因为反对白人种族隔离的政策而入狱。」是不是陈述句。",
+      "type": "judgment",
+      "difficulty": "easy",
+      "answer": "对",
+      "explanation": "句子陈述客观事实并以句号结尾，是陈述句。",
+      "round": 1
+    },
+    {
+      "chapter": "句式与标点",
+      "knowledge_point": "句式与标点/句式转换",
+      "content": "判断「他是怎样学会正确处理自己遭遇的痛苦的？」是不是陈述句。",
+      "type": "judgment",
+      "difficulty": "easy",
+      "answer": "错",
+      "explanation": "句末用问号，且含「怎样」表示疑问，是疑问句而非陈述句。",
+      "round": 1
+    },
+    {
+      "chapter": "句式与标点",
+      "knowledge_point": "句式与标点/句式转换",
+      "content": "判断「他邀请他们起身，并把他们介绍给大家。」是不是陈述句。",
+      "type": "judgment",
+      "difficulty": "easy",
+      "answer": "对",
+      "explanation": "句子陈述动作事实并以句号结尾，是陈述句。",
+      "round": 1
+    },
+    {
+      "chapter": "现代文阅读",
+      "knowledge_point": "现代文阅读/主旨概括",
+      "content": "《走出心灵的监狱》一文最能说明作者写作目的的一项是（    ）。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. 谴责白人统治者对年事已高的曼德拉进行残酷的虐待。",
+        "B. 赞扬曼德拉在就职典礼上对看守他的 3 名狱警的致敬。",
+        "C. 告诉我们要学会冷静地处理自己遭遇的痛苦，并用极强的毅力来训练。",
+        "D. 希望我们舍弃悲痛与怨恨，像曼德拉那样，让感恩与宽容永驻人间。"
+      ],
+      "answer": "D",
+      "explanation": "全文借曼德拉走出心灵监狱、释怀仇恨的故事，呼唤人们用感恩与宽容代替悲痛与怨恨，故选 D。",
+      "round": 2
+    }
+  ]
+}

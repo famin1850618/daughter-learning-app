@@ -1,0 +1,233 @@
+{
+  "source": "realpaper_g6_math_beishida_mokuai_yicuo_001",
+  "subject": "math",
+  "grade": 6,
+  "knowledge_points_added": [],
+  "questions": [
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "把「十一亿六千三百万」用数字写出来是(    )；用「四舍五入」法省略亿位后面的尾数约是(    )亿。请依次填 2 个答案，用逗号分隔。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "1163000000,12",
+      "explanation": "十一亿六千三百万=1163000000；亿位后面是 6300 万≥5000 万，向亿位进 1，约为 12 亿。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "把一根 3 米长的木棒锯成等长的小段，每次锯下一段，4 次锯完。每段长(    )米，每段占全长的(    )（用分数表示）。请依次填 2 个答案，用逗号分隔。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "3/5,1/5",
+      "explanation": "易错点：4 次锯完会得到 5 段（最后一刀锯开后剩两段），所以每段长=3÷5=3/5 米，占全长的 1/5。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "右图中圆与正方形的边长都是 8 cm（圆与正方形等宽，正方形外接圆的直径等于正方形边长）。已知圆的直径是 8 cm，正方形的面积是(    ) cm²，阴影部分（正方形内、圆外的部分）的面积是(    ) cm²。请依次填 2 个答案，用逗号分隔。（π取3.14）",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "64,13.76",
+      "explanation": "正方形边长=圆直径=8 cm，面积=8×8=64 cm²；圆面积=π×4²=50.24 cm²；阴影=64-50.24=13.76 cm²。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "一个三位小数「四舍五入」取近似数是 2.00，这个三位小数最大是(    )，最小是(    )。请依次填 2 个答案，用逗号分隔。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "2.004,1.995",
+      "explanation": "保留两位小数得 2.00，意味着原数在 [1.995, 2.005) 区间。三位小数最大=2.004（再大就进位到 2.01），最小=1.995。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "随意找 13 个小朋友，他们中至少有(    )个人的属相相同（用数字填）。这是「鸽巢问题」，题中(    )相当于「鸽子」（填「小朋友」或「属相」）。请依次填 2 个答案，用逗号分隔。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "2,小朋友",
+      "explanation": "属相共 12 种是鸽巢，13 个小朋友是鸽子。13÷12=1…1，至少有 2 人属相相同。",
+      "round": 3
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的表面积",
+      "content": "把一个底面直径是 4 厘米、高 8 厘米的圆柱沿底面直径竖直切割成两个半圆柱，表面积一共增加了(    )平方厘米。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "64",
+      "explanation": "切割后多出 2 个矩形截面，每个长=高=8 cm，宽=直径=4 cm，每个面积=4×8=32，共增加 2×32=64 平方厘米。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "把小芳向东走 3 米记作＋3 米。她又走－5 米表示(    )（用一句话描述方向和距离），这时她距离出发点(    )米。请依次填 2 个答案，用逗号分隔。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "又向西走了5米,2",
+      "explanation": "正负号表示相反方向，－5 米表示向西走 5 米。出发点位置=3-5=-2，距离出发点 2 米。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "聪聪设计了一个计算机程序：输入一个数 → 除以 0.4 → 加上 m → 输出结果。(1)明明输入 a，输出的式子是(    )（用含 a 和 m 的代数式表示，写法如「a÷0.4+m」）。(2)当萍萍输入 20 时输出 100，那么输入 100 时输出(    )。请依次填 2 个答案，用逗号分隔。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "a÷0.4+m,300",
+      "explanation": "(1)按程序：输入 a → a÷0.4 → 再加 m，得 a÷0.4+m。(2)由 20÷0.4+m=100 得 m=50；输入 100 时输出=100÷0.4+50=300。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "在一批产品中，合格产品是 101 件，有一件不合格，合格率是 100%。",
+      "type": "judgment",
+      "difficulty": "easy",
+      "answer": "错",
+      "explanation": "总数=101+1=102 件，合格率=101÷102≈99%，不是 100%。",
+      "round": 2
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正反比例的判断",
+      "content": "圆柱的侧面积一定，则它的高和底面半径成反比例关系。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "对",
+      "explanation": "圆柱侧面积=2πrh，2π 一定。当侧面积一定时，r×h=常数，乘积一定，所以高和底面半径成反比例。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "是 4 的倍数的年份一定是闰年。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "错",
+      "explanation": "公历年份判断闰年的规则是：非整百年要被 4 整除；整百年要被 400 整除。例如 1900 年是 4 的倍数但不是闰年。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "最小偶数、最小质数、最小合数的和是 8。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "错",
+      "explanation": "最小偶数是 0（不是 2），最小质数是 2，最小合数是 4，和=0+2+4=6，不是 8。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "明明的座位在第 2 列第 3 行，简记为(2,3)，如果将他往后调 3 排，他的位置就是(2,6)。",
+      "type": "judgment",
+      "difficulty": "easy",
+      "answer": "对",
+      "explanation": "数对(列,行)，往后调 3 排即行数增加 3：3+3=6，列不变，位置变为(2,6)。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "一个长方体的长是 a cm、宽是 b cm、高是 h cm。如果高 h 减少 3 cm，长和宽不变，形成的新长方体的体积比原来减少了(    ) cm³。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": ["A. 33", "B. abh-33", "C. ab(h-3)", "D. 3ab"],
+      "answer": "D",
+      "explanation": "减少的体积=底面积×减少的高=ab×3=3ab。注意 C 选项 ab(h-3)是新长方体的体积而不是减少量。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "a 是一个大于 0 的自然数，在下面各算式中，(    )的得数最小。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": ["A. a÷(3/4)", "B. a×(3/4)", "C. a×(2/3)", "D. a÷(2/3)"],
+      "answer": "C",
+      "explanation": "a÷(3/4)=4a/3，a×(3/4)=3a/4，a×(2/3)=2a/3，a÷(2/3)=3a/2。比较这 4 个值：3a/2 > 4a/3 > 3a/4 > 2a/3，最小为 a×(2/3)。",
+      "round": 3
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "如果 x∶y=1∶8，那么(x×9)∶(y×9)=(    )。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": ["A. 9/8", "B. 1/8", "C. 9", "D. 81"],
+      "answer": "B",
+      "explanation": "比的基本性质：比的前项和后项同时乘相同的数（0 除外），比值不变。x∶y=1∶8，所以(x×9)∶(y×9)=x∶y=1∶8=1/8。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "已知 a=b×(5/6) (a≠0)，下面的三句话中，(    )是错误的。",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": ["A. a 比 b 少 1/6", "B. b 比 a 多 1/5", "C. b 比 a 多 1/6"],
+      "answer": "C",
+      "explanation": "a/b=5/6，a 比 b 少 1/6（以 b 为单位 1）→ A 对。b/a=6/5，b 比 a 多 1/5（以 a 为单位 1）→ B 对。C 应是 1/5 不是 1/6 → 错。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "下面的三句话中，(    )是正确的。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": ["A. 今年的水稻比去年增产一成，表示今年的水稻比去年增产 10%", "B. 一种商品打六折出售，就是按原价的 6% 出售", "C. 在 100 克水中加入 2 克盐，这种盐水的含盐率是 2%"],
+      "answer": "A",
+      "explanation": "A 对：一成=10%。B 错：六折=60% 不是 6%。C 错：盐水总质量=100+2=102 克，含盐率=2÷102≈1.96%。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "李老师今年 7 月份取得稿费 2500 元，稿费收入扣除 1600 元后按 14% 的税率缴个人所得税。李老师实际得到稿费多少元？",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "2374",
+      "explanation": "应缴个税=(2500-1600)×14%=900×14%=126 元；实际得到=2500-126=2374 元。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "一堆煤，第一天运走的质量与总质量的比是 1∶4，第二天运走 4.5 吨后，两天正好运走了总质量的 1/3。还剩多少吨煤？",
+      "type": "calculation",
+      "difficulty": "hard",
+      "answer": "36",
+      "explanation": "第二天运走的占总质量比例=1/3-1/4=1/12，对应 4.5 吨 → 总质量=4.5÷(1/12)=54 吨；剩=54×(1-1/3)=54×2/3=36 吨。",
+      "round": 4
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "在环保日活动中，六(1)班同学共收集废旧电池 280 节，比六(2)班同学收集的 1.2 倍少 8 节。六(2)班同学收集废旧电池多少节？",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "240",
+      "explanation": "设六(2)班收集 x 节，则 1.2x-8=280，1.2x=288，x=240 节。",
+      "round": 3
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆锥的体积",
+      "content": "一个圆锥形土堆，底面直径是 6 m，高是 2.5 m。用一辆载重 6 t 的汽车去运，每立方米土约重 1.5 t，几次可以全部运完？（π取3.14，结果向上取整）",
+      "type": "calculation",
+      "difficulty": "hard",
+      "answer": "6",
+      "explanation": "底面半径=6÷2=3 m，体积=(1/3)×π×3²×2.5=(1/3)×3.14×9×2.5=23.55 m³；总质量=23.55×1.5=35.325 t；35.325÷6≈5.9，向上取整=6 次。",
+      "round": 4
+    }
+  ]
+}

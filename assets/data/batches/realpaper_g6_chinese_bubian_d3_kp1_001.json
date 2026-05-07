@@ -1,0 +1,311 @@
+{
+  "source": "realpaper_g6_chinese_bubian_d3_kp1_001",
+  "subject": "chinese",
+  "grade": 6,
+  "knowledge_points_added": [],
+  "questions": [
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "「薄」字加点的字（薄雾）正确读音是（    ）。",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. bó", "B. báo"],
+      "answer": "A",
+      "explanation": "「薄雾」中「薄」读 bó，意为稀薄、轻微；读 báo 时多用于厚度小的具体物。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "「晃」字加点的字（晃动）正确读音是（    ）。",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. huǎng", "B. huàng"],
+      "answer": "B",
+      "explanation": "「晃动」中「晃」读 huàng，表示摇动；读 huǎng 时表「闪过、明亮」，如「明晃晃」。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "「咔嚓」中加点的「嚓」正确读音是（    ）。",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. chā", "B. chà"],
+      "answer": "A",
+      "explanation": "拟声词「咔嚓」中「嚓」读 chā，模拟物体折断或快门声响。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "「缥缈」中加点的「缈」正确读音是（    ）。",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. miǎo", "B. miǎn"],
+      "answer": "A",
+      "explanation": "「缥缈」读 piāo miǎo，形容隐隐约约、若有若无。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "感叹词「哦」加点字正确读音是（    ）。",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. ǒ", "B. áo"],
+      "answer": "A",
+      "explanation": "表示领悟、惊讶的感叹词「哦」读 ǒ；读 áo 时为「吟哦」（吟咏）的意思。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "下列词语书写完全正确的一组是（    ）。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. 耽搁  慌草  凝然  阳光明媚",
+        "B. 停顿  绽开  亲吻  泪姗姗",
+        "C. 荒凉  绊倒  拨开  翻箱倒柜",
+        "D. 痕迹  念叨  依偎  永无修止"
+      ],
+      "answer": "C",
+      "explanation": "A「慌草」应为「荒草」；B「泪姗姗」应为「泪潸潸」；D「永无修止」应为「永无休止」。",
+      "round": 2
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：过去的日子如薄雾，被初阳 zhēng róng 了。横线处应填的词语是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "蒸融",
+      "explanation": "出自朱自清《匆匆》，「蒸融」指蒸发融化。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：光阴无可挽回地 xiāo shì 。横线处应填的词语是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "消逝",
+      "explanation": "「消逝」指消失、过去，常与「光阴」「岁月」搭配。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：我内心感到 chóu chàng 。横线处应填的词语是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "惆怅",
+      "explanation": "「惆怅」形容因失意或失落而伤感。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：感到 jīng huáng 。横线处应填的词语是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "惊惶",
+      "explanation": "「惊惶」指惊慌害怕，与「惊慌」近义。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：我只能掩面 tàn xī 。横线处应填的词语是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "叹息",
+      "explanation": "「叹息」即叹气，表示无奈或惋惜。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：只能 pái huái 等待。横线处应填的词语是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "徘徊",
+      "explanation": "「徘徊」指来回走动，引申为犹豫不决。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/词语搭配",
+      "content": "用「望」组成不同的词语填空：我（    ）妈妈这个星期天能带我出去玩。横线处应填的词语是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "渴望",
+      "explanation": "「渴望」表迫切希望，符合「我希望妈妈能带我出去玩」的强烈期待语境。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/词语搭配",
+      "content": "用「望」组成不同的词语填空：于是，我热切地（    ）星期天快点到来。横线处应填的词语是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "盼望",
+      "explanation": "「盼望」与「热切地」搭配，表达急切期待。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/词语搭配",
+      "content": "用「望」组成不同的词语填空：妈妈却不停地忙着做家务，让我的（    ）落空了。横线处应填的词语是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "希望",
+      "explanation": "「希望落空」是固定搭配，指愿望未能实现。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/词语搭配",
+      "content": "用「望」组成不同的词语填空：我感到很（    ）。横线处应填的词语是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "失望",
+      "explanation": "「失望」指希望落空后的情绪，与上句「希望落空了」逻辑衔接。",
+      "round": 1
+    },
+    {
+      "chapter": "文学常识",
+      "knowledge_point": "文学常识/文化常识",
+      "content": "与「塞翁失马，焉知非福」意思相近的句子是（    ）。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. 祸兮福之所倚，福兮祸之所伏。",
+        "B. 车到山前必有路，船到桥头自然直。",
+        "C. 路遥知马力，日久见人心。"
+      ],
+      "answer": "A",
+      "explanation": "「塞翁失马」强调祸福相依、可以转化，与老子「祸兮福之所倚，福兮祸之所伏」哲理一致。",
+      "round": 2
+    },
+    {
+      "chapter": "课文与名著",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《匆匆》填空：在逃去如飞的日子里，在（    ）的世界里的我能做什么呢？横线处应填的词语是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "千门万户",
+      "explanation": "出自朱自清《匆匆》原文：「在千门万户的世界里」。",
+      "round": 1
+    },
+    {
+      "chapter": "课文与名著",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《匆匆》填空：只有（    ）罢了，只有匆匆罢了。横线处应填的词语是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "徘徊",
+      "explanation": "出自朱自清《匆匆》原句：「只有徘徊罢了，只有匆匆罢了」。",
+      "round": 1
+    },
+    {
+      "chapter": "课文与名著",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《匆匆》填空：只有徘徊罢了，只有（    ）罢了。横线处应填的词语是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "匆匆",
+      "explanation": "出自朱自清《匆匆》原句，与文章题目呼应。",
+      "round": 1
+    },
+    {
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "默写：时光如此匆匆，我要用「________，老大徒伤悲」来警示自己珍惜时间。横线处应填的诗句是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "少壮不努力",
+      "explanation": "出自汉乐府《长歌行》：「少壮不努力，老大徒伤悲」，告诫珍惜时光。",
+      "round": 1
+    },
+    {
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "默写：「少壮不努力，________」（出自汉乐府《长歌行》）。横线处应填的诗句是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "老大徒伤悲",
+      "explanation": "汉乐府《长歌行》警示珍惜年少时光的名句。",
+      "round": 1
+    },
+    {
+      "chapter": "课文与名著",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《那个星期天》一文，作者按照（    ）顺序记叙了他难忘的第一次盼望。横线处应填的词语是？",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "时间",
+      "explanation": "《那个星期天》以时间推进（早晨—上午—下午—黄昏）记叙「我」一天的情感变化。",
+      "round": 1
+    },
+    {
+      "chapter": "课文与名著",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《那个星期天》中作者在这一天的心情变化（早晨）是（    ）。横线处应填的四字词语是？",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "焦急兴奋",
+      "explanation": "课文开头写「我」既因终于等到星期天而兴奋，又因母亲未立即出发而焦急。",
+      "round": 2
+    },
+    {
+      "chapter": "课文与名著",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《那个星期天》中作者在这一天的心情变化（中段）是（    ）。横线处应填的四字词语是？",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "焦急无奈",
+      "explanation": "母亲不断推迟出门，「我」由焦急兴奋转为焦急无奈。",
+      "round": 2
+    },
+    {
+      "chapter": "课文与名著",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《那个星期天》中作者在这一天的心情变化（结尾）是（    ）。横线处应填的四字词语是？",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "失望委屈",
+      "explanation": "天黑后「我」彻底等不到出门，由失望演变为委屈大哭，是全文情感的高潮。",
+      "round": 2
+    },
+    {
+      "chapter": "现代文阅读",
+      "knowledge_point": "现代文阅读/说明文阅读",
+      "content": "（保温杯说明书阅读）早晨放在保温杯中的汤有些凉了，奶奶打算把保温杯放入微波炉中加热，你觉得奶奶的做法是（    ）的。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": ["A. 正确", "B. 错误"],
+      "answer": "B",
+      "explanation": "说明书第④条明确：「请勿将保温杯置于明火上或微波炉中加热」，故奶奶的做法是错误的。",
+      "round": 2
+    },
+    {
+      "chapter": "句式与标点",
+      "knowledge_point": "句式与标点/标点符号",
+      "content": "（《失去的一天》阅读）第八段用了一个破折号，作用是（    ）。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. 表示解释说明",
+        "B. 表示话题转换",
+        "C. 表示语意递进",
+        "D. 表示声音延长"
+      ],
+      "answer": "A",
+      "explanation": "第八段破折号后是对前文内容的进一步解释说明，故选 A。",
+      "round": 2
+    }
+  ]
+}
