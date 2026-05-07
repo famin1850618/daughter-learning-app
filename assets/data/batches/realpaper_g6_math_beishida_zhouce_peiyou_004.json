@@ -1,0 +1,200 @@
+{
+  "source": "realpaper_g6_math_beishida_zhouce_peiyou_004",
+  "subject": "math",
+  "grade": 6,
+  "knowledge_points_added": [],
+  "questions": [
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/图形放大缩小",
+      "content": "一个正方形的边长是 25 cm，如果把它按 1∶5 缩小，缩小后的边长是(    )cm，面积是(    )cm²。请按顺序填两个答案，逗号分隔。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "5,25",
+      "explanation": "边长按比例缩小：25÷5=5 cm；面积 = 5×5 = 25 cm²。",
+      "round": 2
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "图上距离 5 cm 表示实际距离 10 km，这幅图的比例尺是(    )。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "1:200000",
+      "explanation": "10 km = 1000000 cm，比例尺 = 5∶1000000 = 1∶200000。",
+      "round": 2
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "把数值比例尺 1∶3000000 改写成线段比例尺：图上 1 cm 代表实际(    )km。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "30",
+      "explanation": "1∶3000000 表示图上 1 cm 代表实际 3000000 cm = 30 km。",
+      "round": 1
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "设计师把一种精密零件的尺寸放大到原来的 100 倍后绘制在图纸上，这幅图纸的比例尺是(    )。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "100:1",
+      "explanation": "图上∶实际 = 100∶1（放大图，前项大于后项）。",
+      "round": 1
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "在比例尺是 1∶1000000 的地图上，图上距离 5 cm 表示实际距离(    )km。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "50",
+      "explanation": "5×1000000 = 5000000 cm = 50 km。",
+      "round": 1
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/图形放大缩小",
+      "content": "大小两个圆的直径比是 3∶2，它们的半径之比是(    )，周长之比是(    )，面积之比是(    )。请依次填三个答案，逗号分隔（用「a:b」格式）。",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "3:2,3:2,9:4",
+      "explanation": "半径=直径÷2，半径比与直径比相同；周长=π×直径，周长比=直径比；面积=πr²，面积比=半径比的平方。",
+      "round": 3
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/图形放大缩小",
+      "content": "一个正方形的边长是 36 cm，如果把它按 1∶4 缩小，缩小后正方形的面积是(    )cm²。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "81",
+      "explanation": "缩小后边长 = 36÷4 = 9 cm；面积 = 9×9 = 81 cm²。",
+      "round": 2
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "在比例尺为 1∶2000 的地图上，6 cm 的线段代表实际距离(    )米；实际距离 300 米在地图上要画(    )cm。请按顺序填两个答案，逗号分隔。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "120,15",
+      "explanation": "6×2000 = 12000 cm = 120 m；300 m = 30000 cm，30000÷2000 = 15 cm。",
+      "round": 2
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/图形放大缩小",
+      "content": "一个长方形按 2∶1 放大后，它的周长和面积都是原来的 2 倍。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "错",
+      "explanation": "周长是原来的 2 倍，但面积是 2² = 4 倍。",
+      "round": 2
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "将一个长 2 毫米的零件画在图纸上长 5 厘米，这幅图纸的比例尺是 1∶25。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "错",
+      "explanation": "5 cm = 50 mm，比例尺 = 50∶2 = 25∶1（放大图），不是 1∶25。",
+      "round": 2
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "图上距离一定比实际距离小。",
+      "type": "judgment",
+      "difficulty": "easy",
+      "answer": "错",
+      "explanation": "放大图（如零件图）的图上距离比实际大。",
+      "round": 1
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "一种长 4 mm 的精密零件在图纸上长 8 cm，这张图纸的比例尺是(    )。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": ["A. 1∶2", "B. 1∶20", "C. 20∶1"],
+      "answer": "C",
+      "explanation": "8 cm = 80 mm，比例尺 = 80∶4 = 20∶1（放大图）。",
+      "round": 2
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "比例尺一定，实际距离扩大到原来的 5 倍，则图上距离(    )。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": ["A. 缩小到原来的 1/5", "B. 扩大到原来的 5 倍", "C. 不变"],
+      "answer": "B",
+      "explanation": "比例尺 = 图上∶实际（一定），图上距离与实际距离成正比例，实际扩大几倍图上也扩大几倍。",
+      "round": 2
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "一个长方形游泳池长 50 米，宽 30 米。在 A.1∶1000  B.1∶1500  C.1∶500 三个比例尺中，画出的平面图最大的是(    )，最小的是(    )。请按顺序填两个字母，逗号分隔。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "C,B",
+      "explanation": "比例尺前项是 1 时，后项越小图越大。500<1000<1500，故 C 最大、B 最小。",
+      "round": 2
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "在一幅比例尺是 30∶1 的标本图上，量得一只蚂蚁的长度是 9 cm。求这只蚂蚁的实际长度是多少毫米？",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "3",
+      "explanation": "实际长度 = 图上长度÷比例尺 = 9÷30 = 0.3 cm = 3 mm。",
+      "round": 2
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "在比例尺是 1∶3000000 的地图上，量得甲、乙两地的距离为 3.6 cm。如果汽车以每时 60 km 的速度从甲地行驶到乙地，需要多少小时可以到达？",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "1.8",
+      "explanation": "实际距离 = 3.6×3000000 = 10800000 cm = 108 km；时间 = 108÷60 = 1.8 时。",
+      "round": 3
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/图形放大缩小",
+      "content": "一个圆的半径是 2 cm，按 3∶1 放大后，得到的图形的面积是多少 cm²？（π 取 3.14）",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "113.04",
+      "explanation": "放大后半径 = 2×3 = 6 cm；面积 = 3.14×6² = 3.14×36 = 113.04 cm²。",
+      "round": 3
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "在一幅比例尺是 1∶2000 的平面图上，量得一块平行四边形菜地的底是 8 cm，高是 5.5 cm。这块菜地的实际面积是多少平方米？",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "17600",
+      "explanation": "实际底 = 8×2000 = 16000 cm = 160 m；实际高 = 5.5×2000 = 11000 cm = 110 m；面积 = 160×110 = 17600 m²。",
+      "round": 3
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/反比例的意义",
+      "content": "一辆汽车从甲地开往乙地，平均每时行驶 80 km，4 时到达。返回时，平均每时比原来快 1/4，返回时用了多少时？（用比例知识解）",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "3.2",
+      "explanation": "总路程一定，速度与时间成反比例。返回速度 = 80×(1+1/4) = 100 km/h；80×4 = 100×x，解得 x = 3.2 时。",
+      "round": 3
+    }
+  ]
+}
