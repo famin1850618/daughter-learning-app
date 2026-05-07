@@ -1,6 +1,6 @@
 {
-  "version": 5,
-  "updated_at": "2026-05-07",
+  "version": 6,
+  "updated_at": "2026-05-08",
   "batches": [
     {
       "source": "batch_2026_05_06_g6_math",
@@ -92,6 +92,14 @@
       "subject": "english",
       "grade": 6,
       "count": 200
+    },
+    {
+      "source": "realpaper_g6_math_beishida_d1_guoguan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_d1_guoguan_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 32,
+      "kind": "realpaper"
     }
   ]
 }

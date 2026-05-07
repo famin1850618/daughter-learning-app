@@ -3,6 +3,40 @@
   "schema": "v1",
   "created_at": "2026-05-08",
   "description": "真题处理进度 manifest。每处理一卷追加 processed[] 一项。详见 .realpaper-spec.md §10",
-  "processed": [],
+  "processed": [
+    {
+      "sha1": "c950f656acb2c43461cc04000b9ba978b5255a89",
+      "source_file": "~/AI_Workspace/真题/六下/数学/6年级下册数学北师大版/单元试卷/六年级下册数学北师大版第1单元过关检测卷（含答案）.pdf",
+      "batch_source": "realpaper_g6_math_beishida_d1_guoguan_001",
+      "subject": "math",
+      "grade": 6,
+      "chapter": "圆柱与圆锥",
+      "raw_segments": 29,
+      "questions_emitted": 32,
+      "questions_skipped": 1,
+      "skipped_reasons": [
+        "Q18 (三.3): 5 个圆柱/圆锥比较图，复杂图，spec §9.4 跳过"
+      ],
+      "figures_handled": [
+        {"q": "一.2 长方形旋转", "method": "text-rewrite (5×4 dimensions inline)"},
+        {"q": "一.3 直角三角形旋转", "method": "text-rewrite (legs 6,8 inline)"},
+        {"q": "四.1 圆柱SA+V + 圆锥V", "method": "split-into-2 + text-rewrite (dimensions inline)"},
+        {"q": "四.3 空心圆柱", "method": "text-rewrite (内外径inline)"},
+        {"q": "四.4 圆柱挖圆锥", "method": "text-rewrite (尺寸inline)"}
+      ],
+      "kp_distribution": {
+        "圆柱与圆锥/圆柱的认识": 2,
+        "圆柱与圆锥/圆柱的表面积": 9,
+        "圆柱与圆锥/圆柱的体积": 11,
+        "圆柱与圆锥/圆锥的认识": 1,
+        "圆柱与圆锥/圆锥的体积": 4,
+        "圆柱与圆锥/圆柱圆锥综合应用": 5
+      },
+      "type_distribution": {"fill": 13, "judgment": 5, "choice": 4, "calculation": 10},
+      "round_distribution": {"R1": 9, "R2": 21, "R3": 2, "R4": 0},
+      "answer_match_pre": "15/29 自动配对",
+      "processed_at": "2026-05-08"
+    }
+  ],
   "skipped_files": []
 }

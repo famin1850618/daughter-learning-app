@@ -36,6 +36,7 @@ const _bundledBatchAssets = [
   // V3.9 Cambridge English (PET / FCE / CAE Foundation)
   'assets/data/batches/batch_2026_05_07_g6_english_pet_r1.json',
   // V3.10 真题入库后陆续追加
+  'assets/data/batches/realpaper_g6_math_beishida_d1_guoguan_001.json',
 ];
 
 void main() async {
