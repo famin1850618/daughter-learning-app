@@ -16,6 +16,7 @@ import 'services/practice_service.dart';
 import 'services/question_update_service.dart';
 import 'services/reward_service.dart';
 import 'services/assessment_service.dart';
+import 'services/learning_sync_service.dart';
 import 'database/curriculum_dao.dart';
 import 'database/curriculum_seed.dart';
 import 'database/knowledge_point_dao.dart';
@@ -72,6 +73,9 @@ class _LearningAppState extends State<LearningApp> {
   late final RewardService _rewardService;
   late final PracticeService _practiceService;
   late final AssessmentService _assessmentService;
+  final _syncService = LearningSyncService();
+
+  bool _wasPracticeActive = false;
 
   @override
   void initState() {
@@ -81,12 +85,31 @@ class _LearningAppState extends State<LearningApp> {
     _practiceService = PracticeService(_rewardService);
     _assessmentService = AssessmentService()..refresh();
 
-    // 启动后异步触发一次更新检查（不阻塞 UI；离线静默失败）
+    // session 完成时自动同步学情（answer→endSession→ active 由 true 转 false）
+    _practiceService.addListener(_onPracticeChanged);
+
+    // 启动后异步触发一次更新检查 + 学情同步（不阻塞 UI；离线静默失败）
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       if (_updateService.autoCheck) {
         await _updateService.checkAndImport(silent: true);
       }
+      await _syncService.syncIfDue();
     });
+  }
+
+  void _onPracticeChanged() {
+    final nowActive = _practiceService.sessionActive;
+    if (_wasPracticeActive && !nowActive) {
+      // session 刚结束，触发一次学情同步（带冷却）
+      _syncService.syncIfDue();
+    }
+    _wasPracticeActive = nowActive;
+  }
+
+  @override
+  void dispose() {
+    _practiceService.removeListener(_onPracticeChanged);
+    super.dispose();
   }
 
   @override
@@ -100,6 +123,7 @@ class _LearningAppState extends State<LearningApp> {
         ChangeNotifierProvider.value(value: _practiceService),
         ChangeNotifierProvider.value(value: _assessmentService),
         ChangeNotifierProvider.value(value: _updateService),
+        ChangeNotifierProvider.value(value: _syncService),
       ],
       child: MaterialApp(
         title: '学习小助手',

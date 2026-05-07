@@ -6,6 +6,7 @@ import '../models/plan_settings.dart';
 import '../services/plan_settings_service.dart';
 import '../services/question_update_service.dart';
 import '../services/learning_export_service.dart';
+import '../services/learning_sync_service.dart';
 import '../services/data_backup_service.dart';
 import 'curriculum_management_screen.dart';
 
@@ -70,6 +71,14 @@ class _PlanSettingsScreenState extends State<PlanSettingsScreen> {
             subtitle: '从云端拉取新题包，按知识点增量同步。',
           ),
           const _UpdateSection(),
+          const SizedBox(height: 16),
+
+          // ── 学情自动同步（V3.7.7）────────────
+          _SectionHeader(
+            title: '学情自动同步',
+            subtitle: '完成练习后自动把错题/弱 KP 推送到私有 GitHub repo，第二阶段错题反馈出题用。',
+          ),
+          const _SyncSection(),
           const SizedBox(height: 16),
 
           // ── 数据导出与备份 ────────────────────
@@ -334,6 +343,148 @@ class _UpdateSection extends StatelessWidget {
             onChanged: (v) => svc.setAutoCheck(v),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _SyncSection extends StatefulWidget {
+  const _SyncSection();
+  @override
+  State<_SyncSection> createState() => _SyncSectionState();
+}
+
+class _SyncSectionState extends State<_SyncSection> {
+  late TextEditingController _patCtrl;
+  late TextEditingController _ownerCtrl;
+  late TextEditingController _repoCtrl;
+  late TextEditingController _deviceCtrl;
+  bool _patVisible = false;
+
+  @override
+  void initState() {
+    super.initState();
+    final svc = context.read<LearningSyncService>();
+    _patCtrl = TextEditingController(text: svc.pat);
+    _ownerCtrl = TextEditingController(text: svc.repoOwner);
+    _repoCtrl = TextEditingController(text: svc.repoName);
+    _deviceCtrl = TextEditingController(text: svc.deviceName);
+  }
+
+  @override
+  void dispose() {
+    _patCtrl.dispose();
+    _ownerCtrl.dispose();
+    _repoCtrl.dispose();
+    _deviceCtrl.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final svc = context.watch<LearningSyncService>();
+    final lastSyncStr = svc.lastAt == null
+        ? '从未'
+        : DateFormat('M月d日 HH:mm').format(svc.lastAt!);
+
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(16, 8, 16, 12),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            SwitchListTile(
+              contentPadding: EdgeInsets.zero,
+              title: const Text('启用学情同步'),
+              subtitle: Text('上次：$lastSyncStr · ${svc.status}'),
+              value: svc.enabled,
+              activeColor: AppTheme.primary,
+              onChanged: (v) => svc.setEnabled(v),
+            ),
+            if (svc.enabled) ...[
+              const SizedBox(height: 4),
+              TextField(
+                controller: _patCtrl,
+                obscureText: !_patVisible,
+                decoration: InputDecoration(
+                  labelText: 'GitHub PAT (fine-grained)',
+                  hintText: 'github_pat_xxxxxx',
+                  helperText: 'fine-grained PAT；仅 Contents: read & write',
+                  helperMaxLines: 2,
+                  suffixIcon: IconButton(
+                    icon: Icon(_patVisible
+                        ? Icons.visibility_off
+                        : Icons.visibility),
+                    onPressed: () => setState(() => _patVisible = !_patVisible),
+                  ),
+                ),
+                onSubmitted: (v) => svc.setPat(v),
+                onEditingComplete: () => svc.setPat(_patCtrl.text),
+              ),
+              const SizedBox(height: 8),
+              Row(
+                children: [
+                  Expanded(
+                    child: TextField(
+                      controller: _ownerCtrl,
+                      decoration: const InputDecoration(labelText: 'Owner'),
+                      onEditingComplete: () => svc.setRepoOwner(_ownerCtrl.text),
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  const Text('/'),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: TextField(
+                      controller: _repoCtrl,
+                      decoration: const InputDecoration(labelText: 'Repo'),
+                      onEditingComplete: () => svc.setRepoName(_repoCtrl.text),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 8),
+              TextField(
+                controller: _deviceCtrl,
+                decoration: const InputDecoration(
+                  labelText: '设备昵称',
+                  helperText: '用于云端按设备分目录（如 daughter-phone）',
+                ),
+                onEditingComplete: () => svc.setDeviceName(_deviceCtrl.text),
+              ),
+              const SizedBox(height: 12),
+              Row(
+                children: [
+                  Expanded(
+                    child: ElevatedButton.icon(
+                      icon: svc.syncing
+                          ? const SizedBox(
+                              width: 14,
+                              height: 14,
+                              child: CircularProgressIndicator(
+                                  strokeWidth: 2, color: Colors.white))
+                          : const Icon(Icons.cloud_upload, size: 18),
+                      label: Text(svc.syncing ? '同步中' : '立即同步'),
+                      onPressed: svc.syncing
+                          ? null
+                          : () async {
+                              // 提交所有输入
+                              await svc.setPat(_patCtrl.text);
+                              await svc.setRepoOwner(_ownerCtrl.text);
+                              await svc.setRepoName(_repoCtrl.text);
+                              await svc.setDeviceName(_deviceCtrl.text);
+                              final result = await svc.syncNow();
+                              if (!context.mounted) return;
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                  SnackBar(content: Text(result)));
+                            },
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ],
+        ),
       ),
     );
   }
