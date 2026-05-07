@@ -1,6 +1,6 @@
 {
-  "version": 3,
-  "updated_at": "2026-05-07",
+  "version": 4,
+  "updated_at": "2026-05-08",
   "batches": [
     {
       "source": "batch_2026_05_06_g6_math",
@@ -63,6 +63,27 @@
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/batch_2026_05_07_g6_english_r3.json",
       "subject": "english",
       "grade": 6,
+      "count": 200
+    },
+    {
+      "source": "batch_2026_05_08_g7_math_r1",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/batch_2026_05_08_g7_math_r1.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 200
+    },
+    {
+      "source": "batch_2026_05_08_g7_chinese_r1",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/batch_2026_05_08_g7_chinese_r1.json",
+      "subject": "chinese",
+      "grade": 7,
+      "count": 200
+    },
+    {
+      "source": "batch_2026_05_08_g7_english_r1",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/batch_2026_05_08_g7_english_r1.json",
+      "subject": "english",
+      "grade": 7,
       "count": 200
     }
   ]

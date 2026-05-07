@@ -36,6 +36,9 @@ const _bundledBatchAssets = [
   'assets/data/batches/batch_2026_05_07_g6_math_r3.json',
   'assets/data/batches/batch_2026_05_07_g6_chinese_r3.json',
   'assets/data/batches/batch_2026_05_07_g6_english_r3.json',
+  'assets/data/batches/batch_2026_05_08_g7_math_r1.json',
+  'assets/data/batches/batch_2026_05_08_g7_chinese_r1.json',
+  'assets/data/batches/batch_2026_05_08_g7_english_r1.json',
 ];
 
 void main() async {

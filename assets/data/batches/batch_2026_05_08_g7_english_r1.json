@@ -1,0 +1,2767 @@
+{
+  "source": "batch_2026_05_08_g7_english_r1",
+  "subject": "english",
+  "grade": 7,
+  "knowledge_points_added": [
+    "词汇/学校生活",
+    "词汇/兴趣爱好",
+    "词汇/季节天气",
+    "词汇/城市国家",
+    "词汇/节日庆典",
+    "语法时态/名词单复数",
+    "语法时态/可数不可数名词",
+    "语法时态/人称代词",
+    "语法时态/物主代词",
+    "语法时态/指示代词",
+    "语法时态/冠词用法",
+    "语法时态/基数词序数词",
+    "语法时态/介词常用搭配",
+    "句型/How many/much",
+    "句型/祈使句",
+    "句型/can表能力",
+    "日常交际/问路指路",
+    "日常交际/购物对话",
+    "日常交际/电话交流",
+    "日常交际/邀请与回应",
+    "写作/自我介绍",
+    "写作/描写朋友",
+    "写作/日常活动",
+    "听力/听单词拼写",
+    "听力/听对话答问题",
+    "听力/听句子辨意",
+    "听力/听短文判断正误",
+    "听力/听数字与时间",
+    "阅读理解/细节理解题",
+    "阅读理解/主旨大意题"
+  ],
+  "questions": [
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/学校生活",
+      "content": "Which word means '图书馆' in English? Fill in the blank.",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 1,
+      "answer": "library",
+      "explanation": "library = 图书馆。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/学校生活",
+      "content": "The English word for '教室' is ___.",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 1,
+      "answer": "classroom",
+      "explanation": "classroom = 教室。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/学校生活",
+      "content": "Which word means '黑板'?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. blackboard",
+        "B. notebook",
+        "C. textbook",
+        "D. bookshelf"
+      ],
+      "answer": "A",
+      "explanation": "blackboard = 黑板。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/学校生活",
+      "content": "'Teacher' means ___ in Chinese.",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. 学生",
+        "B. 老师",
+        "C. 校长",
+        "D. 同学"
+      ],
+      "answer": "B",
+      "explanation": "teacher = 老师。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/学校生活",
+      "content": "Which word means '作业'?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. homework",
+        "B. holiday",
+        "C. hobby",
+        "D. honor"
+      ],
+      "answer": "A",
+      "explanation": "homework = 作业。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/学校生活",
+      "content": "The English word for '铅笔' is ___.",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 1,
+      "answer": "pencil",
+      "explanation": "pencil = 铅笔。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/学校生活",
+      "content": "Which word means '操场'?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. playground",
+        "B. bedroom",
+        "C. bathroom",
+        "D. living room"
+      ],
+      "answer": "A",
+      "explanation": "playground = 操场。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/学校生活",
+      "content": "'Exam' means ___ in Chinese.",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. 假期",
+        "B. 考试",
+        "C. 课程",
+        "D. 成绩"
+      ],
+      "answer": "B",
+      "explanation": "exam = 考试。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/兴趣爱好",
+      "content": "Which word means '绘画' in English? Fill in the blank.",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 1,
+      "answer": "painting",
+      "explanation": "painting = 绘画。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/兴趣爱好",
+      "content": "The word for '游泳' in English is ___.",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 1,
+      "answer": "swimming",
+      "explanation": "swimming = 游泳。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/兴趣爱好",
+      "content": "'Music' means ___ in Chinese.",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. 音乐",
+        "B. 体育",
+        "C. 美术",
+        "D. 舞蹈"
+      ],
+      "answer": "A",
+      "explanation": "music = 音乐。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/兴趣爱好",
+      "content": "Which word means '足球'?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. football",
+        "B. basketball",
+        "C. volleyball",
+        "D. baseball"
+      ],
+      "answer": "A",
+      "explanation": "football = 足球。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/兴趣爱好",
+      "content": "'Cooking' as a hobby means you like to ___.",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. make food",
+        "B. eat food",
+        "C. buy food",
+        "D. grow food"
+      ],
+      "answer": "A",
+      "explanation": "cooking = 烹饪，即做食物。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/兴趣爱好",
+      "content": "The word for '集邮' in English is stamp ___.",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 1,
+      "answer": "collecting",
+      "explanation": "stamp collecting = 集邮。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/兴趣爱好",
+      "content": "'Chess' is a type of ___.",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 1,
+      "options": [
+        "A. board game",
+        "B. ball game",
+        "C. card game",
+        "D. video game"
+      ],
+      "answer": "A",
+      "explanation": "chess（国际象棋/象棋）属于 board game（棋盘游戏）。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/季节天气",
+      "content": "Which word means '春天' in English? Fill in the blank.",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 1,
+      "answer": "spring",
+      "explanation": "spring = 春天。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/季节天气",
+      "content": "The English word for '下雪' is 'It is ___ing.'",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 1,
+      "answer": "snow",
+      "explanation": "It is snowing. = 正在下雪，动词是 snow。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/季节天气",
+      "content": "'Sunny' means ___ in Chinese.",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. 晴天的",
+        "B. 多云的",
+        "C. 下雨的",
+        "D. 刮风的"
+      ],
+      "answer": "A",
+      "explanation": "sunny = 晴天的。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/季节天气",
+      "content": "Which season comes after summer?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. spring",
+        "B. autumn",
+        "C. winter",
+        "D. summer"
+      ],
+      "answer": "B",
+      "explanation": "夏天（summer）之后是秋天（autumn）。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/季节天气",
+      "content": "'Windy' means there is a lot of ___.",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 1,
+      "answer": "wind",
+      "explanation": "windy = 多风的，wind = 风。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/季节天气",
+      "content": "Which word means '温度'?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. temperature",
+        "B. weather",
+        "C. climate",
+        "D. forecast"
+      ],
+      "answer": "A",
+      "explanation": "temperature = 温度。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/季节天气",
+      "content": "'Cold' is the opposite of ___.",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 1,
+      "answer": "hot",
+      "explanation": "cold（冷）的反义词是 hot（热）。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/城市国家",
+      "content": "The capital of China is ___.",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 1,
+      "answer": "Beijing",
+      "explanation": "中国首都是北京（Beijing）。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/城市国家",
+      "content": "Which word means '法国'?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. France",
+        "B. Spain",
+        "C. Japan",
+        "D. Germany"
+      ],
+      "answer": "A",
+      "explanation": "France = 法国。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/城市国家",
+      "content": "'American' refers to people from ___.",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 1,
+      "options": [
+        "A. America",
+        "B. Australia",
+        "C. Austria",
+        "D. Argentina"
+      ],
+      "answer": "A",
+      "explanation": "American = 美国人。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/城市国家",
+      "content": "The English word for '英国' is ___.",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 1,
+      "answer": "England",
+      "explanation": "England = 英国（英格兰）。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/城市国家",
+      "content": "Which word means '日本'?",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 1,
+      "options": [
+        "A. Japan",
+        "B. Jordan",
+        "C. Jamaica",
+        "D. Java"
+      ],
+      "answer": "A",
+      "explanation": "Japan = 日本。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/城市国家",
+      "content": "'London' is the capital of ___.",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. England",
+        "B. France",
+        "C. Germany",
+        "D. Italy"
+      ],
+      "answer": "A",
+      "explanation": "London（伦敦）是英国首都。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/城市国家",
+      "content": "People from Australia are called ___.",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 1,
+      "options": [
+        "A. Australians",
+        "B. Austrians",
+        "C. Americans",
+        "D. Africans"
+      ],
+      "answer": "A",
+      "explanation": "来自澳大利亚（Australia）的人叫 Australians。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/节日庆典",
+      "content": "Which word means '圣诞节' in English? Fill in the blank.",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 1,
+      "answer": "Christmas",
+      "explanation": "Christmas = 圣诞节。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/节日庆典",
+      "content": "'Spring Festival' is the Chinese ___ Year.",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 1,
+      "answer": "New",
+      "explanation": "Spring Festival = 中国新年（New Year）。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/节日庆典",
+      "content": "Which festival is on October 31st?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. Halloween",
+        "B. Christmas",
+        "C. Easter",
+        "D. Thanksgiving"
+      ],
+      "answer": "A",
+      "explanation": "万圣节（Halloween）在10月31日。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "词汇/节日庆典",
+      "content": "Which word means '庆祝'?",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 1,
+      "options": [
+        "A. celebrate",
+        "B. decorate",
+        "C. participate",
+        "D. investigate"
+      ],
+      "answer": "A",
+      "explanation": "celebrate = 庆祝。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/名词单复数",
+      "content": "The plural of 'child' is ___.",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 1,
+      "answer": "children",
+      "explanation": "child 不规则复数为 children。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/名词单复数",
+      "content": "Which is the correct plural of 'tooth'?",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 1,
+      "options": [
+        "A. teeth",
+        "B. tooths",
+        "C. toothes",
+        "D. teeths"
+      ],
+      "answer": "A",
+      "explanation": "tooth 不规则复数为 teeth。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/名词单复数",
+      "content": "The plural of 'box' is ___.",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 1,
+      "answer": "boxes",
+      "explanation": "以 x 结尾的名词加 -es 构成复数：box → boxes。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/名词单复数",
+      "content": "Which is the correct plural of 'leaf'?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. leaves",
+        "B. leafs",
+        "C. leafes",
+        "D. leave"
+      ],
+      "answer": "A",
+      "explanation": "以 f 结尾的名词变 f 为 v 再加 -es：leaf → leaves。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/名词单复数",
+      "content": "The plural of 'photo' is ___.",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 1,
+      "answer": "photos",
+      "explanation": "photo 的复数是 photos（直接加 s）。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/名词单复数",
+      "content": "Which sentence is correct?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. There are two mouses on the desk.",
+        "B. There are two mice on the desk.",
+        "C. There are two mouse on the desk.",
+        "D. There are two mooses on the desk."
+      ],
+      "answer": "B",
+      "explanation": "mouse 的不规则复数是 mice。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/名词单复数",
+      "content": "The plural of 'man' is ___.",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 1,
+      "answer": "men",
+      "explanation": "man 不规则复数为 men。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/可数不可数名词",
+      "content": "Which of the following is an uncountable noun?",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 1,
+      "options": [
+        "A. water",
+        "B. book",
+        "C. apple",
+        "D. chair"
+      ],
+      "answer": "A",
+      "explanation": "water（水）是不可数名词。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/可数不可数名词",
+      "content": "'Rice' is an ___ noun.",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 1,
+      "answer": "uncountable",
+      "explanation": "rice（米饭）是不可数名词。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/可数不可数名词",
+      "content": "Which sentence is correct?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. I drink two waters every day.",
+        "B. I drink two glasses of water every day.",
+        "C. I drink two cup of water every day.",
+        "D. I drink two water every day."
+      ],
+      "answer": "B",
+      "explanation": "water 是不可数名词，需用 two glasses of water 表达。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/可数不可数名词",
+      "content": "Which is a countable noun?",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 1,
+      "options": [
+        "A. desk",
+        "B. milk",
+        "C. air",
+        "D. music"
+      ],
+      "answer": "A",
+      "explanation": "desk（桌子）可以数，是可数名词。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/可数不可数名词",
+      "content": "We say 'a piece of ___' for paper.",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 1,
+      "answer": "paper",
+      "explanation": "paper 是不可数名词，一张纸用 a piece of paper。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/可数不可数名词",
+      "content": "Which word CANNOT be pluralised?",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 1,
+      "options": [
+        "A. information",
+        "B. student",
+        "C. teacher",
+        "D. city"
+      ],
+      "answer": "A",
+      "explanation": "information 是不可数名词，没有复数形式。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/人称代词",
+      "content": "___ is my best friend. (He / Him)",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 1,
+      "options": [
+        "A. He",
+        "B. Him",
+        "C. His",
+        "D. Himself"
+      ],
+      "answer": "A",
+      "explanation": "主语位置用主格人称代词 He。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/人称代词",
+      "content": "I gave the book to ___ . (she)",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 1,
+      "answer": "her",
+      "explanation": "give to 后接宾格，she 的宾格是 her。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/人称代词",
+      "content": "Choose the correct pronoun: 'Tom and ___ are classmates.'",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 1,
+      "options": [
+        "A. I",
+        "B. me",
+        "C. my",
+        "D. mine"
+      ],
+      "answer": "A",
+      "explanation": "主语位置用主格，选 I。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/人称代词",
+      "content": "The teacher asked ___ a question. (we)",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 1,
+      "answer": "us",
+      "explanation": "asked 后接宾格，we 的宾格是 us。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/人称代词",
+      "content": "Which sentence is correct?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. Him and me are brothers.",
+        "B. He and I are brothers.",
+        "C. He and me are brothers.",
+        "D. Him and I are brothers."
+      ],
+      "answer": "B",
+      "explanation": "主语位置均需主格：He and I。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/人称代词",
+      "content": "She called ___ yesterday. (I)",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 1,
+      "answer": "me",
+      "explanation": "动词 called 后接宾格，I 的宾格是 me。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/人称代词",
+      "content": "Which is the correct object pronoun for 'they'?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. them",
+        "B. their",
+        "C. theirs",
+        "D. themselves"
+      ],
+      "answer": "A",
+      "explanation": "they 的宾格是 them。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/物主代词",
+      "content": "This is ___ book. (I)",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 1,
+      "answer": "my",
+      "explanation": "I 的形容词性物主代词是 my。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/物主代词",
+      "content": "The bag is ___. (she)",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 1,
+      "options": [
+        "A. her",
+        "B. hers",
+        "C. she",
+        "D. herself"
+      ],
+      "answer": "B",
+      "explanation": "be 动词后接名词性物主代词，she → hers。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/物主代词",
+      "content": "Is this ___ pen? (you)",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 1,
+      "answer": "your",
+      "explanation": "修饰名词用形容词性物主代词，you → your。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/物主代词",
+      "content": "The dog wags ___ tail.",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 1,
+      "options": [
+        "A. its",
+        "B. it",
+        "C. it's",
+        "D. their"
+      ],
+      "answer": "A",
+      "explanation": "物主代词 its 修饰名词 tail。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/物主代词",
+      "content": "These books are ___. (we)",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 1,
+      "answer": "ours",
+      "explanation": "be 动词后用名词性物主代词，we → ours。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/物主代词",
+      "content": "That is not my coat; it is ___. (they)",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. theirs",
+        "B. their",
+        "C. them",
+        "D. they"
+      ],
+      "answer": "A",
+      "explanation": "be 动词后用名词性物主代词，they → theirs。"
+    },
+    {
+      "chapter": "比较级与最高级",
+      "knowledge_point": "语法时态/冠词用法",
+      "content": "She is ___ honest girl.",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. a",
+        "B. an",
+        "C. the",
+        "D. /"
+      ],
+      "answer": "B",
+      "explanation": "honest 发元音音素 /ɒ/，用 an。"
+    },
+    {
+      "chapter": "比较级与最高级",
+      "knowledge_point": "语法时态/冠词用法",
+      "content": "He plays ___ piano every day.",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. a",
+        "B. an",
+        "C. the",
+        "D. /"
+      ],
+      "answer": "C",
+      "explanation": "演奏乐器前加定冠词 the。"
+    },
+    {
+      "chapter": "比较级与最高级",
+      "knowledge_point": "语法时态/冠词用法",
+      "content": "I have ___ dog. ___ dog is very cute.",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. a; The",
+        "B. the; A",
+        "C. a; A",
+        "D. the; The"
+      ],
+      "answer": "A",
+      "explanation": "首次提及用 a，再次提及用 the。"
+    },
+    {
+      "chapter": "比较级与最高级",
+      "knowledge_point": "语法时态/冠词用法",
+      "content": "___ sun rises in the east.",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 1,
+      "answer": "The",
+      "explanation": "独一无二的事物前用定冠词 The。"
+    },
+    {
+      "chapter": "比较级与最高级",
+      "knowledge_point": "语法时态/冠词用法",
+      "content": "She is ___ engineer.",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 1,
+      "options": [
+        "A. a",
+        "B. an",
+        "C. the",
+        "D. /"
+      ],
+      "answer": "B",
+      "explanation": "engineer 发元音音素 /e/，用 an。"
+    },
+    {
+      "chapter": "比较级与最高级",
+      "knowledge_point": "语法时态/冠词用法",
+      "content": "He wants to be ___ doctor when he grows up.",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 1,
+      "options": [
+        "A. a",
+        "B. an",
+        "C. the",
+        "D. /"
+      ],
+      "answer": "A",
+      "explanation": "doctor 首字母 d 发辅音，用不定冠词 a。"
+    },
+    {
+      "chapter": "比较级与最高级",
+      "knowledge_point": "语法时态/冠词用法",
+      "content": "___ Great Wall is in China.",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 1,
+      "answer": "The",
+      "explanation": "专有名词（长城）前用定冠词 The。"
+    },
+    {
+      "chapter": "比较级与最高级",
+      "knowledge_point": "语法时态/冠词用法",
+      "content": "Which sentence uses an article incorrectly?",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 1,
+      "options": [
+        "A. She is an useful tool.",
+        "B. She is a useful tool.",
+        "C. He is an honest man.",
+        "D. He is an engineer."
+      ],
+      "answer": "A",
+      "explanation": "useful 发辅音音素 /j/，应用 a，not an。"
+    },
+    {
+      "chapter": "比较级与最高级",
+      "knowledge_point": "语法时态/基数词序数词",
+      "content": "The ordinal form of 'three' is ___.",
+      "type": "fill",
+      "difficulty": "hard",
+      "round": 1,
+      "answer": "third",
+      "explanation": "three 的序数词是 third（第三）。"
+    },
+    {
+      "chapter": "比较级与最高级",
+      "knowledge_point": "语法时态/基数词序数词",
+      "content": "Which is the correct ordinal of 'one'?",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. first",
+        "B. oneth",
+        "C. onet",
+        "D. frist"
+      ],
+      "answer": "A",
+      "explanation": "one 的序数词是 first（第一）。"
+    },
+    {
+      "chapter": "比较级与最高级",
+      "knowledge_point": "语法时态/基数词序数词",
+      "content": "My birthday is on the ___ of May. (12)",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 1,
+      "answer": "twelfth",
+      "explanation": "12 的序数词是 twelfth。"
+    },
+    {
+      "chapter": "比较级与最高级",
+      "knowledge_point": "语法时态/基数词序数词",
+      "content": "Which is the ordinal number for 'two'?",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. second",
+        "B. twoth",
+        "C. twoest",
+        "D. secound"
+      ],
+      "answer": "A",
+      "explanation": "two 的序数词是 second（第二）。"
+    },
+    {
+      "chapter": "比较级与最高级",
+      "knowledge_point": "语法时态/基数词序数词",
+      "content": "'Twenty-first' is the ordinal of ___.",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 1,
+      "answer": "21",
+      "explanation": "21 的序数词是 twenty-first。"
+    },
+    {
+      "chapter": "比较级与最高级",
+      "knowledge_point": "语法时态/基数词序数词",
+      "content": "Which number comes after 'nineteenth'?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. twentieth",
+        "B. twentyth",
+        "C. twentiest",
+        "D. twenty-oneth"
+      ],
+      "answer": "A",
+      "explanation": "nineteenth（19th）之后是 twentieth（20th）。"
+    },
+    {
+      "chapter": "比较级与最高级",
+      "knowledge_point": "语法时态/基数词序数词",
+      "content": "The ordinal of 'five' is ___.",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "fifth",
+      "explanation": "five 的序数词是 fifth，去 e 加 th。"
+    },
+    {
+      "chapter": "比较级与最高级",
+      "knowledge_point": "句型/How many/much",
+      "content": "___ apples do you have?",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "How many",
+      "explanation": "apples 是可数名词复数，用 How many。"
+    },
+    {
+      "chapter": "比较级与最高级",
+      "knowledge_point": "句型/How many/much",
+      "content": "___ water is in the bottle?",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. How much",
+        "B. How many",
+        "C. How long",
+        "D. How often"
+      ],
+      "answer": "A",
+      "explanation": "water 不可数，用 How much。"
+    },
+    {
+      "chapter": "比较级与最高级",
+      "knowledge_point": "句型/How many/much",
+      "content": "How ___ students are in your class?",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "many",
+      "explanation": "students 是可数名词，用 how many。"
+    },
+    {
+      "chapter": "比较级与最高级",
+      "knowledge_point": "句型/How many/much",
+      "content": "'How much does it cost?' asks about ___.",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. price",
+        "B. weight",
+        "C. number",
+        "D. color"
+      ],
+      "answer": "A",
+      "explanation": "How much does it cost? 询问价格。"
+    },
+    {
+      "chapter": "比较级与最高级",
+      "knowledge_point": "句型/How many/much",
+      "content": "How ___ milk do you need?",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "much",
+      "explanation": "milk 不可数，用 how much。"
+    },
+    {
+      "chapter": "比较级与最高级",
+      "knowledge_point": "句型/How many/much",
+      "content": "Which question is correct?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. How many sugar do you need?",
+        "B. How much chairs are there?",
+        "C. How many chairs are there?",
+        "D. How much chair is there?"
+      ],
+      "answer": "C",
+      "explanation": "chairs 是可数名词复数，用 How many。"
+    },
+    {
+      "chapter": "比较级与最高级",
+      "knowledge_point": "句型/How many/much",
+      "content": "How ___ money do you have?",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 1,
+      "answer": "much",
+      "explanation": "money 是不可数名词，用 how much。"
+    },
+    {
+      "chapter": "比较级与最高级",
+      "knowledge_point": "句型/How many/much",
+      "content": "'How many' is used with ___ nouns.",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 1,
+      "options": [
+        "A. countable plural",
+        "B. uncountable",
+        "C. singular",
+        "D. abstract"
+      ],
+      "answer": "A",
+      "explanation": "How many 后接可数名词复数。"
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "语法时态/介词常用搭配",
+      "content": "He is good ___ English.",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "at",
+      "explanation": "be good at = 擅长，固定搭配。"
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "语法时态/介词常用搭配",
+      "content": "She is interested ___ music.",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. in",
+        "B. on",
+        "C. at",
+        "D. for"
+      ],
+      "answer": "A",
+      "explanation": "be interested in = 对……感兴趣，固定搭配。"
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "语法时态/介词常用搭配",
+      "content": "We go to school ___ foot.",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "on",
+      "explanation": "on foot = 步行，固定搭配。"
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "语法时态/介词常用搭配",
+      "content": "The book is ___ the desk. (on top, touching surface)",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. on",
+        "B. in",
+        "C. under",
+        "D. beside"
+      ],
+      "answer": "A",
+      "explanation": "on 表示在……上面（接触表面）。"
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "语法时态/介词常用搭配",
+      "content": "I am afraid ___ dogs.",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 1,
+      "answer": "of",
+      "explanation": "be afraid of = 害怕……，固定搭配。"
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "语法时态/介词常用搭配",
+      "content": "She is kind ___ everyone.",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. to",
+        "B. at",
+        "C. in",
+        "D. for"
+      ],
+      "answer": "A",
+      "explanation": "be kind to = 对……友善，固定搭配。"
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "语法时态/介词常用搭配",
+      "content": "He listens ___ music every evening.",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "to",
+      "explanation": "listen to = 听……，固定搭配。"
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "语法时态/介词常用搭配",
+      "content": "There ___ a book on the desk.",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "is",
+      "explanation": "book 是单数，there be 句型中 be 动词用 is。"
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "语法时态/介词常用搭配",
+      "content": "There ___ five students in the classroom.",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. are",
+        "B. is",
+        "C. be",
+        "D. am"
+      ],
+      "answer": "A",
+      "explanation": "five students 是复数，there be 句型用 are。"
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "日常交际/问路指路",
+      "content": "Excuse me, ___ is the nearest bus stop?",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "where",
+      "explanation": "问地点用 where。"
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "日常交际/问路指路",
+      "content": "'Turn left at the traffic lights.' means ___.",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. 在红绿灯处左转",
+        "B. 在红绿灯处右转",
+        "C. 直走到红绿灯",
+        "D. 停在红绿灯处"
+      ],
+      "answer": "A",
+      "explanation": "turn left = 左转，at the traffic lights = 在红绿灯处。"
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "日常交际/问路指路",
+      "content": "Go ___ and then turn right.",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "straight",
+      "explanation": "go straight = 直走。"
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "日常交际/问路指路",
+      "content": "A: How do I get to the post office? B: ___ the second street on your left.",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. Take",
+        "B. Go",
+        "C. Walk",
+        "D. Turn"
+      ],
+      "answer": "A",
+      "explanation": "Take the second street on your left 是指路常用表达。"
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "日常交际/问路指路",
+      "content": "The hospital is ___ the school and the park.",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 1,
+      "answer": "between",
+      "explanation": "between A and B = 在A和B之间。"
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "日常交际/问路指路",
+      "content": "'Is the library far from here?' — 'No, it's ___ walking distance.'",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. within",
+        "B. without",
+        "C. beyond",
+        "D. beside"
+      ],
+      "answer": "A",
+      "explanation": "within walking distance = 步行可达的范围内。"
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "日常交际/问路指路",
+      "content": "Excuse me, can you tell me ___ to the train station?",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 1,
+      "answer": "how",
+      "explanation": "tell me how to get to... = 告诉我怎么去……"
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "日常交际/购物对话",
+      "content": "How ___ is this shirt? — It's 50 yuan.",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "much",
+      "explanation": "询问价格用 How much。"
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "日常交际/购物对话",
+      "content": "'Can I help you?' is said by ___.",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. a shop assistant",
+        "B. a customer",
+        "C. a teacher",
+        "D. a doctor"
+      ],
+      "answer": "A",
+      "explanation": "Can I help you? 是店员询问顾客的常用语。"
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "日常交际/购物对话",
+      "content": "I'd like to ___ a pair of shoes.",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "buy",
+      "explanation": "I'd like to buy = 我想买，购物常用句型。"
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "日常交际/购物对话",
+      "content": "A: Do you have this in a larger size? B: ___.",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. Let me check for you.",
+        "B. I don't know you.",
+        "C. Yes, it's raining.",
+        "D. No, I'm a student."
+      ],
+      "answer": "A",
+      "explanation": "Let me check for you. 是询问尺码的得体回应。"
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "日常交际/购物对话",
+      "content": "'I'll take it.' means the customer will ___ the item.",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 1,
+      "answer": "buy",
+      "explanation": "I'll take it. = 我要买这个。"
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "日常交际/购物对话",
+      "content": "Which is a polite way to ask for a cheaper price?",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 1,
+      "options": [
+        "A. Can you give me a better price?",
+        "B. Give me discount now!",
+        "C. Why so expensive?",
+        "D. I don't want to pay."
+      ],
+      "answer": "A",
+      "explanation": "Can you give me a better price? 是礼貌询问折扣的方式。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/细节理解题",
+      "content": "Read and answer:\n\nMy name is Lucy. I am 13 years old. I go to No.1 Middle School. My favourite subject is English. I have a sister called Kate. She is 10 years old and loves drawing pictures.\n\nHow old is Lucy?",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. 10",
+        "B. 11",
+        "C. 13",
+        "D. 12"
+      ],
+      "answer": "C",
+      "explanation": "文中说 I am 13 years old，所以 Lucy 13岁。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/细节理解题",
+      "content": "Read and answer:\n\nMy name is Lucy. I am 13 years old. I go to No.1 Middle School. My favourite subject is English. I have a sister called Kate. She is 10 years old and loves drawing pictures.\n\nWhat is Lucy's favourite subject?",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. Math",
+        "B. English",
+        "C. Science",
+        "D. PE"
+      ],
+      "answer": "B",
+      "explanation": "文中说 My favourite subject is English。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/细节理解题",
+      "content": "Read and answer:\n\nMy name is Lucy. I am 13 years old. I go to No.1 Middle School. My favourite subject is English. I have a sister called Kate. She is 10 years old and loves drawing pictures.\n\nWhat does Kate love to do?",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. singing",
+        "B. swimming",
+        "C. drawing pictures",
+        "D. playing chess"
+      ],
+      "answer": "C",
+      "explanation": "文中说 she loves drawing pictures。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/主旨大意题",
+      "content": "Read and answer:\n\nMy name is Lucy. I am 13 years old. I go to No.1 Middle School. My favourite subject is English. I have a sister called Kate. She is 10 years old and loves drawing pictures.\n\nWhat is the passage mainly about?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. Lucy and her sister",
+        "B. Lucy's school",
+        "C. Kate's hobbies",
+        "D. English learning"
+      ],
+      "answer": "A",
+      "explanation": "短文主要介绍了 Lucy 和她妹妹 Kate 的情况。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/细节理解题",
+      "content": "Read and answer:\n\nMy name is Lucy. I am 13 years old. I go to No.1 Middle School. My favourite subject is English. I have a sister called Kate. She is 10 years old and loves drawing pictures.\n\nHow old is Kate?",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "10",
+      "explanation": "文中说 She is 10 years old。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/细节理解题",
+      "content": "Read and answer:\n\nTom is 13 years old. He goes to Green Middle School. His favourite subject is science. He has two best friends, Jack and Mary. They like playing basketball after school.\n\nWhat is Tom's favourite subject?",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. Math",
+        "B. English",
+        "C. Science",
+        "D. History"
+      ],
+      "answer": "C",
+      "explanation": "文中说 His favourite subject is science。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/细节理解题",
+      "content": "Read and answer:\n\nTom is 13 years old. He goes to Green Middle School. His favourite subject is science. He has two best friends, Jack and Mary. They like playing basketball after school.\n\nHow many best friends does Tom have?",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. one",
+        "B. two",
+        "C. three",
+        "D. four"
+      ],
+      "answer": "B",
+      "explanation": "文中说 He has two best friends。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/细节理解题",
+      "content": "Read and answer:\n\nTom is 13 years old. He goes to Green Middle School. His favourite subject is science. He has two best friends, Jack and Mary. They like playing basketball after school.\n\nWhat do Tom and his friends like doing after school?",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. playing football",
+        "B. playing basketball",
+        "C. swimming",
+        "D. reading"
+      ],
+      "answer": "B",
+      "explanation": "文中说 They like playing basketball after school。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/细节理解题",
+      "content": "Read and answer:\n\nTom is 13 years old. He goes to Green Middle School. His favourite subject is science. He has two best friends, Jack and Mary. They like playing basketball after school.\n\nWhich school does Tom go to?",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. No.1 Middle School",
+        "B. Green Middle School",
+        "C. Blue Middle School",
+        "D. Star Middle School"
+      ],
+      "answer": "B",
+      "explanation": "文中说 He goes to Green Middle School。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/主旨大意题",
+      "content": "Read and answer:\n\nTom is 13 years old. He goes to Green Middle School. His favourite subject is science. He has two best friends, Jack and Mary. They like playing basketball after school.\n\nWhat is this passage mainly about?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. Tom and his school life",
+        "B. Science lessons",
+        "C. Basketball games",
+        "D. Tom's family"
+      ],
+      "answer": "A",
+      "explanation": "短文主要介绍了 Tom 的学校生活和朋友。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/细节理解题",
+      "content": "Read and answer:\n\nTom is 13 years old. He goes to Green Middle School. His favourite subject is science. He has two best friends, Jack and Mary. They like playing basketball after school.\n\nName one of Tom's best friends.",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "Jack",
+      "explanation": "Tom 的好朋友是 Jack 和 Mary，填其中一个 Jack 即可。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/细节理解题",
+      "content": "Read and answer:\n\nLi Ming lives in Beijing. He gets up at 6:30 every morning. He has breakfast at home and goes to school by bike. His school starts at 8:00. He has six classes a day. After school he helps his mother with housework.\n\nWhat time does Li Ming get up?",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. 6:00",
+        "B. 6:30",
+        "C. 7:00",
+        "D. 7:30"
+      ],
+      "answer": "B",
+      "explanation": "文中说 He gets up at 6:30 every morning。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/细节理解题",
+      "content": "Read and answer:\n\nLi Ming lives in Beijing. He gets up at 6:30 every morning. He has breakfast at home and goes to school by bike. His school starts at 8:00. He has six classes a day. After school he helps his mother with housework.\n\nHow does Li Ming go to school?",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. by bus",
+        "B. on foot",
+        "C. by bike",
+        "D. by car"
+      ],
+      "answer": "C",
+      "explanation": "文中说 goes to school by bike。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/细节理解题",
+      "content": "Read and answer:\n\nLi Ming lives in Beijing. He gets up at 6:30 every morning. He has breakfast at home and goes to school by bike. His school starts at 8:00. He has six classes a day. After school he helps his mother with housework.\n\nHow many classes does Li Ming have a day?",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "6",
+      "explanation": "文中说 He has six classes a day。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/细节理解题",
+      "content": "Read and answer:\n\nLi Ming lives in Beijing. He gets up at 6:30 every morning. He has breakfast at home and goes to school by bike. His school starts at 8:00. He has six classes a day. After school he helps his mother with housework.\n\nWhat does Li Ming do after school?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. watches TV",
+        "B. helps his mother with housework",
+        "C. plays basketball",
+        "D. does his homework"
+      ],
+      "answer": "B",
+      "explanation": "文中说 After school he helps his mother with housework。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/主旨大意题",
+      "content": "Read and answer:\n\nLi Ming lives in Beijing. He gets up at 6:30 every morning. He has breakfast at home and goes to school by bike. His school starts at 8:00. He has six classes a day. After school he helps his mother with housework.\n\nThis passage is mainly about Li Ming's ___.",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. daily routine",
+        "B. family",
+        "C. hobbies",
+        "D. school subjects"
+      ],
+      "answer": "A",
+      "explanation": "短文主要描述了 Li Ming 每天的日常活动。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/细节理解题",
+      "content": "Read and answer:\n\nLi Ming lives in Beijing. He gets up at 6:30 every morning. He has breakfast at home and goes to school by bike. His school starts at 8:00. He has six classes a day. After school he helps his mother with housework.\n\nWhat time does Li Ming's school start?",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "8:00",
+      "explanation": "文中说 His school starts at 8:00。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/细节理解题",
+      "content": "Read and answer:\n\nAnna is from Canada. She is 12 years old. She can speak English and a little French. She loves winter because she can ski. Her favourite food is pizza. She has a pet cat named Snowball.\n\nWhere is Anna from?",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. USA",
+        "B. UK",
+        "C. Canada",
+        "D. France"
+      ],
+      "answer": "C",
+      "explanation": "文中说 Anna is from Canada。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/细节理解题",
+      "content": "Read and answer:\n\nAnna is from Canada. She is 12 years old. She can speak English and a little French. She loves winter because she can ski. Her favourite food is pizza. She has a pet cat named Snowball.\n\nWhy does Anna love winter?",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. She likes the snow.",
+        "B. She can ski.",
+        "C. She has holidays.",
+        "D. She eats pizza."
+      ],
+      "answer": "B",
+      "explanation": "文中说 she loves winter because she can ski。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/细节理解题",
+      "content": "Read and answer:\n\nAnna is from Canada. She is 12 years old. She can speak English and a little French. She loves winter because she can ski. Her favourite food is pizza. She has a pet cat named Snowball.\n\nWhat is the name of Anna's pet cat?",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "Snowball",
+      "explanation": "文中说 She has a pet cat named Snowball。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/细节理解题",
+      "content": "Read and answer:\n\nAnna is from Canada. She is 12 years old. She can speak English and a little French. She loves winter because she can ski. Her favourite food is pizza. She has a pet cat named Snowball.\n\nWhat languages can Anna speak?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. English and German",
+        "B. English and French",
+        "C. French and Spanish",
+        "D. English and Chinese"
+      ],
+      "answer": "B",
+      "explanation": "文中说 She can speak English and a little French。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/主旨大意题",
+      "content": "Read and answer:\n\nAnna is from Canada. She is 12 years old. She can speak English and a little French. She loves winter because she can ski. Her favourite food is pizza. She has a pet cat named Snowball.\n\nThis passage mainly introduces ___.",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "Anna",
+      "explanation": "短文是对 Anna 个人情况的自我介绍。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/细节理解题",
+      "content": "Read and answer:\n\nLast Sunday, our class went to the City Park. We took the bus there. We played games and had a picnic. The weather was sunny and warm. We all had a great time. We got home at five o'clock.\n\nWhen did the class visit the park?",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. last Saturday",
+        "B. last Sunday",
+        "C. this Monday",
+        "D. next Sunday"
+      ],
+      "answer": "B",
+      "explanation": "文中说 Last Sunday, our class went to the City Park。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/细节理解题",
+      "content": "Read and answer:\n\nLast Sunday, our class went to the City Park. We took the bus there. We played games and had a picnic. The weather was sunny and warm. We all had a great time. We got home at five o'clock.\n\nHow did the class get to the park?",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. by bike",
+        "B. on foot",
+        "C. by bus",
+        "D. by car"
+      ],
+      "answer": "C",
+      "explanation": "文中说 We took the bus there。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/细节理解题",
+      "content": "Read and answer:\n\nLast Sunday, our class went to the City Park. We took the bus there. We played games and had a picnic. The weather was sunny and warm. We all had a great time. We got home at five o'clock.\n\nWhat was the weather like?",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. cloudy and cold",
+        "B. rainy",
+        "C. sunny and warm",
+        "D. windy"
+      ],
+      "answer": "C",
+      "explanation": "文中说 The weather was sunny and warm。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/细节理解题",
+      "content": "Read and answer:\n\nLast Sunday, our class went to the City Park. We took the bus there. We played games and had a picnic. The weather was sunny and warm. We all had a great time. We got home at five o'clock.\n\nWhat time did they get home?",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "5:00",
+      "explanation": "文中说 We got home at five o'clock，即5:00。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/主旨大意题",
+      "content": "Read and answer:\n\nLast Sunday, our class went to the City Park. We took the bus there. We played games and had a picnic. The weather was sunny and warm. We all had a great time. We got home at five o'clock.\n\nThis passage is mainly about a class ___.",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. trip to the park",
+        "B. science lesson",
+        "C. sports day",
+        "D. birthday party"
+      ],
+      "answer": "A",
+      "explanation": "短文主要讲的是全班同学去公园游玩的经历。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/细节理解题",
+      "content": "Read and answer:\n\nDan is a 13-year-old boy. He lives with his parents and grandparents. Every morning he walks to school with his friend Sam. He likes maths and reads maths books in his free time. On weekends he helps his grandfather in the garden.\n\nHow does Dan get to school?",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. by bus",
+        "B. by bike",
+        "C. on foot",
+        "D. by car"
+      ],
+      "answer": "C",
+      "explanation": "文中说 he walks to school，即步行。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/细节理解题",
+      "content": "Read and answer:\n\nDan is a 13-year-old boy. He lives with his parents and grandparents. Every morning he walks to school with his friend Sam. He likes maths and reads maths books in his free time. On weekends he helps his grandfather in the garden.\n\nWhat subject does Dan like?",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "maths",
+      "explanation": "文中说 He likes maths。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/细节理解题",
+      "content": "Read and answer:\n\nDan is a 13-year-old boy. He lives with his parents and grandparents. Every morning he walks to school with his friend Sam. He likes maths and reads maths books in his free time. On weekends he helps his grandfather in the garden.\n\nWhat does Dan do on weekends?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. plays football",
+        "B. helps his grandfather in the garden",
+        "C. goes to the library",
+        "D. watches TV"
+      ],
+      "answer": "B",
+      "explanation": "文中说 On weekends he helps his grandfather in the garden。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/细节理解题",
+      "content": "Read and answer:\n\nDan is a 13-year-old boy. He lives with his parents and grandparents. Every morning he walks to school with his friend Sam. He likes maths and reads maths books in his free time. On weekends he helps his grandfather in the garden.\n\nWho does Dan walk to school with?",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. his sister",
+        "B. his brother",
+        "C. his friend Sam",
+        "D. his mother"
+      ],
+      "answer": "C",
+      "explanation": "文中说 he walks to school with his friend Sam。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/主旨大意题",
+      "content": "Read and answer:\n\nDan is a 13-year-old boy. He lives with his parents and grandparents. Every morning he walks to school with his friend Sam. He likes maths and reads maths books in his free time. On weekends he helps his grandfather in the garden.\n\nThis passage mainly introduces Dan's ___.",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. daily life and interests",
+        "B. favourite food",
+        "C. school timetable",
+        "D. holiday plans"
+      ],
+      "answer": "A",
+      "explanation": "短文主要介绍了 Dan 的日常生活和兴趣爱好。"
+    },
+    {
+      "chapter": "阅读理解：记叙文",
+      "knowledge_point": "阅读理解/细节理解题",
+      "content": "Read and answer:\n\nDan is a 13-year-old boy. He lives with his parents and grandparents. Every morning he walks to school with his friend Sam. He likes maths and reads maths books in his free time. On weekends he helps his grandfather in the garden.\n\nWho does Dan live with?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. parents and grandparents",
+        "B. parents only",
+        "C. grandparents only",
+        "D. parents and sister"
+      ],
+      "answer": "A",
+      "explanation": "文中说 He lives with his parents and grandparents。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/自我介绍",
+      "content": "In a self-introduction, which sentence is correct?",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. My name are Tom.",
+        "B. My name is Tom.",
+        "C. My name be Tom.",
+        "D. My name am Tom."
+      ],
+      "answer": "B",
+      "explanation": "主语 My name 是第三人称单数，be 动词用 is。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/自我介绍",
+      "content": "'I ___ 13 years old.' (be)",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "am",
+      "explanation": "主语 I 后用 am。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/自我介绍",
+      "content": "Which is the correct way to introduce your hobby?",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. I like play football.",
+        "B. I like playing football.",
+        "C. I likes playing football.",
+        "D. I liked play football."
+      ],
+      "answer": "B",
+      "explanation": "like 后接动名词（-ing 形式）：like playing。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/自我介绍",
+      "content": "Complete: 'I come ___ China.'",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "from",
+      "explanation": "come from = 来自，固定搭配。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/自我介绍",
+      "content": "Which sentence correctly says what school you go to?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. I go to No.1 Middle School.",
+        "B. I go at No.1 Middle School.",
+        "C. I go on No.1 Middle School.",
+        "D. I go No.1 Middle School."
+      ],
+      "answer": "A",
+      "explanation": "go to school 固定搭配，用介词 to。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/自我介绍",
+      "content": "'My favourite colour ___ blue.'",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "is",
+      "explanation": "My favourite colour 是第三人称单数，用 is。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/自我介绍",
+      "content": "Which sentence correctly introduces a sibling?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. I have a brother. His name is Jack.",
+        "B. I have a brother. His name are Jack.",
+        "C. I have a brother. He name is Jack.",
+        "D. I have a brother. His names is Jack."
+      ],
+      "answer": "A",
+      "explanation": "His name is Jack. 主谓一致正确。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/自我介绍",
+      "content": "'Nice to ___ you.' (meet)",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "meet",
+      "explanation": "Nice to meet you. = 很高兴认识你。固定表达。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/自我介绍",
+      "content": "Which sentence correctly states your age?",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. I am have 13 years.",
+        "B. I am 13 years old.",
+        "C. I have 13 years old.",
+        "D. My age are 13."
+      ],
+      "answer": "B",
+      "explanation": "年龄表达：I am + 数字 + years old。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/自我介绍",
+      "content": "Choose the correct greeting for a self-introduction: '___, my name is Wang Fang.'",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. Hello",
+        "B. Goodbye",
+        "C. Sorry",
+        "D. Excuse me"
+      ],
+      "answer": "A",
+      "explanation": "自我介绍时用 Hello 打招呼。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/描写朋友",
+      "content": "'My friend ___ long hair.' (have)",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "has",
+      "explanation": "第三人称单数用 has。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/描写朋友",
+      "content": "Which sentence correctly describes a friend's hobby?",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. She like reading books.",
+        "B. She likes reading books.",
+        "C. She is like reading books.",
+        "D. She likes read books."
+      ],
+      "answer": "B",
+      "explanation": "第三人称单数谓语加 -s：likes；like 后接动名词：reading。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/描写朋友",
+      "content": "'He is ___ than me.' (tall)",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "taller",
+      "explanation": "双音节以下形容词加 -er 构成比较级：tall → taller。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/描写朋友",
+      "content": "Which correctly describes personality?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. My friend is very kind and helpful.",
+        "B. My friend are very kind and helpful.",
+        "C. My friend be very kind and helpful.",
+        "D. My friend am very kind and helpful."
+      ],
+      "answer": "A",
+      "explanation": "My friend 是第三人称单数，be 动词用 is。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/描写朋友",
+      "content": "'We have been friends ___ three years.'",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 1,
+      "answer": "for",
+      "explanation": "for + 时间段，表示持续时间。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/描写朋友",
+      "content": "Which sentence uses 'both' correctly?",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 1,
+      "options": [
+        "A. Both of us likes music.",
+        "B. Both of us like music.",
+        "C. Both of us is like music.",
+        "D. Both of us are likes music."
+      ],
+      "answer": "B",
+      "explanation": "Both of us 作主语时谓语用复数形式 like。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/描写朋友",
+      "content": "My friend is very ___. She always helps others. (kind / unkind)",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "kind",
+      "explanation": "根据语境，总是帮助别人说明她很 kind（友善的）。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/描写朋友",
+      "content": "Which sentence correctly compares two friends?",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 1,
+      "options": [
+        "A. Jack is more tall than Tom.",
+        "B. Jack is taller than Tom.",
+        "C. Jack is tallest than Tom.",
+        "D. Jack is tall more than Tom."
+      ],
+      "answer": "B",
+      "explanation": "单音节形容词比较级加 -er：taller than。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/日常活动",
+      "content": "'I ___ my teeth every morning.' (brush)",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "brush",
+      "explanation": "主语 I 接动词原形 brush。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/日常活动",
+      "content": "Which sentence describes a daily activity correctly?",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. She go to bed at nine o'clock.",
+        "B. She goes to bed at nine o'clock.",
+        "C. She going to bed at nine o'clock.",
+        "D. She is goes to bed at nine o'clock."
+      ],
+      "answer": "B",
+      "explanation": "第三人称单数一般现在时：goes。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/日常活动",
+      "content": "'He ___ (have) lunch at school every day.'",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "has",
+      "explanation": "第三人称单数 have → has。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/日常活动",
+      "content": "Which sentence is correct?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. I usually walks to school.",
+        "B. I usually walk to school.",
+        "C. I usually walking to school.",
+        "D. I usually walked to school."
+      ],
+      "answer": "B",
+      "explanation": "主语 I 用动词原形 walk，一般现在时。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/日常活动",
+      "content": "'After dinner, we ___ (watch) TV together.'",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "watch",
+      "explanation": "主语 we 一般现在时用动词原形 watch。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/日常活动",
+      "content": "Which word correctly completes: 'I ___ up at seven every morning.'",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. get",
+        "B. gets",
+        "C. got",
+        "D. getting"
+      ],
+      "answer": "A",
+      "explanation": "主语 I 一般现在时用动词原形 get。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/日常活动",
+      "content": "'We always ___ our classroom after school.' (clean)",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "clean",
+      "explanation": "主语 we 一般现在时用动词原形 clean。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/日常活动",
+      "content": "Which sentence correctly uses a time expression?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. I do homework on every day.",
+        "B. I do homework every day.",
+        "C. I do homework in every day.",
+        "D. I do homework at every day."
+      ],
+      "answer": "B",
+      "explanation": "every day 是时间状语，前面不加介词。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/日常活动",
+      "content": "'She ___ (not/like) getting up early.'",
+      "type": "fill",
+      "difficulty": "medium",
+      "round": 1,
+      "answer": "doesn't",
+      "explanation": "第三人称单数否定：does not = doesn't。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/日常活动",
+      "content": "Which sentence shows habitual action in the present?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. She reads a book every night.",
+        "B. She will reads a book every night.",
+        "C. She reading a book every night.",
+        "D. She read a book every night."
+      ],
+      "answer": "A",
+      "explanation": "习惯性动作用一般现在时，第三人称单数加 -s：reads。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/日常活动",
+      "content": "'They ___ (play) football on Saturdays.'",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "play",
+      "explanation": "主语 they 一般现在时用动词原形 play。"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "听力/听单词拼写",
+      "content": "听录音，选出听到的单词。",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. book",
+        "B. cook",
+        "C. look",
+        "D. hook"
+      ],
+      "answer": "A",
+      "explanation": "录音播放 book（书）。",
+      "audio_text": "book"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "听力/听单词拼写",
+      "content": "听录音，选出听到的单词。",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. pen",
+        "B. pan",
+        "C. pin",
+        "D. pun"
+      ],
+      "answer": "A",
+      "explanation": "录音播放 pen（钢笔）。",
+      "audio_text": "pen"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "听力/听数字与时间",
+      "content": "听录音，选出听到的时间。",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. 7:15",
+        "B. 7:50",
+        "C. 7:05",
+        "D. 7:45"
+      ],
+      "answer": "A",
+      "explanation": "录音播放 seven fifteen（七点十五分）。",
+      "audio_text": "seven fifteen"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "听力/听数字与时间",
+      "content": "听录音，选出听到的数字。",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. 13",
+        "B. 30",
+        "C. 14",
+        "D. 40"
+      ],
+      "answer": "A",
+      "explanation": "录音播放 thirteen（13）。",
+      "audio_text": "thirteen"
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "听力/听对话答问题",
+      "content": "听录音，回答问题：Where is the girl going?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. to the library",
+        "B. to the gym",
+        "C. to the classroom",
+        "D. to the canteen"
+      ],
+      "answer": "A",
+      "explanation": "对话中女孩说她要去图书馆还书。",
+      "audio_text": "Boy: Where are you going? Girl: I'm going to the library to return some books."
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "听力/听对话答问题",
+      "content": "听录音，回答问题：What sport does the boy like?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. swimming",
+        "B. football",
+        "C. basketball",
+        "D. tennis"
+      ],
+      "answer": "C",
+      "explanation": "对话中男孩说他最喜欢篮球。",
+      "audio_text": "Girl: What's your favourite sport? Boy: I love basketball. I play it every weekend."
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "听力/听句子辨意",
+      "content": "听录音，选出与所听句子意思相同的选项。",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. Tom has a new bike.",
+        "B. Tom wants a new bike.",
+        "C. Tom lost his bike.",
+        "D. Tom's bike is old."
+      ],
+      "answer": "A",
+      "explanation": "录音：Tom got a new bicycle for his birthday. 意思是他有了一辆新自行车。",
+      "audio_text": "Tom got a new bicycle for his birthday."
+    },
+    {
+      "chapter": "词汇扩展（初中核心词2000词）",
+      "knowledge_point": "听力/听短文判断正误",
+      "content": "听录音，判断：Mike likes playing football. (True / False)",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. True",
+        "B. False",
+        "C. Not mentioned",
+        "D. Partly true"
+      ],
+      "answer": "A",
+      "explanation": "短文中提到 Mike loves playing football after school。",
+      "audio_text": "Mike is a 13-year-old boy. He loves playing football after school with his classmates."
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/指示代词",
+      "content": "___ is my teacher. (pointing to one person near you)",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. This",
+        "B. That",
+        "C. These",
+        "D. Those"
+      ],
+      "answer": "A",
+      "explanation": "指近处的一个人用 This。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/指示代词",
+      "content": "___ are my friends. (pointing to several people far away)",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "Those",
+      "explanation": "指远处多人用 Those。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/指示代词",
+      "content": "'___ books on the shelf are mine.' (near, plural)",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. These",
+        "B. Those",
+        "C. This",
+        "D. That"
+      ],
+      "answer": "A",
+      "explanation": "近处复数用 These。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "语法时态/指示代词",
+      "content": "Which sentence uses a demonstrative pronoun correctly?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. These is my pen.",
+        "B. Those is my books.",
+        "C. This is my pen.",
+        "D. That are my books."
+      ],
+      "answer": "C",
+      "explanation": "单数近指用 This，谓语动词用 is：This is my pen."
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "句型/祈使句",
+      "content": "'Please ___ quiet in the library.' (be)",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "be",
+      "explanation": "祈使句用动词原形，be 动词祈使句用 be。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "句型/祈使句",
+      "content": "Which is a correct imperative sentence?",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. Opens the window, please.",
+        "B. Open the window, please.",
+        "C. Opening the window, please.",
+        "D. To open the window, please."
+      ],
+      "answer": "B",
+      "explanation": "祈使句用动词原形：Open the window."
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "句型/祈使句",
+      "content": "'Don't ___ in class.' (talk)",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "talk",
+      "explanation": "否定祈使句：Don't + 动词原形。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "句型/祈使句",
+      "content": "'Let's go to the park.' means ___.",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. We should go to the park.",
+        "B. Let us go to the park together.",
+        "C. You go to the park.",
+        "D. Do you want to go?"
+      ],
+      "answer": "B",
+      "explanation": "Let's = Let us，表示邀请大家一起做某事。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "句型/can表能力",
+      "content": "___ you swim? — Yes, I can.",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "Can",
+      "explanation": "用情态动词 Can 提问能力。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "句型/can表能力",
+      "content": "She ___ play the guitar very well.",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. can",
+        "B. cans",
+        "C. is can",
+        "D. does can"
+      ],
+      "answer": "A",
+      "explanation": "情态动词 can 不随主语变化，且后接动词原形。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "句型/can表能力",
+      "content": "I ___ speak French. (negative)",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "cannot",
+      "explanation": "can 的否定形式是 cannot（can't）。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "句型/can表能力",
+      "content": "Which sentence is correct?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. He can sings.",
+        "B. He can sing.",
+        "C. He cans sing.",
+        "D. He can to sing."
+      ],
+      "answer": "B",
+      "explanation": "情态动词 can 后接动词原形，不加 s 或 to。"
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "句型/can表能力",
+      "content": "Can birds fly? — ___, they can.",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "Yes",
+      "explanation": "can 问句的肯定回答是 Yes, ... can."
+    },
+    {
+      "chapter": "一般将来时与情态动词",
+      "knowledge_point": "句型/can表能力",
+      "content": "Which question is grammatically correct?",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 1,
+      "options": [
+        "A. Can she dances?",
+        "B. Can she dance?",
+        "C. She can dances?",
+        "D. Does she can dance?"
+      ],
+      "answer": "B",
+      "explanation": "can 问句结构：Can + 主语 + 动词原形？"
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "日常交际/电话交流",
+      "content": "Hello, ___ Tom speaking.",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "this is",
+      "explanation": "电话中自报姓名用 This is ... speaking."
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "日常交际/电话交流",
+      "content": "'Hold on, please.' means ___.",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. 请稍等",
+        "B. 请挂断",
+        "C. 请回拨",
+        "D. 请大声说"
+      ],
+      "answer": "A",
+      "explanation": "Hold on = 请稍等（电话用语）。"
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "日常交际/电话交流",
+      "content": "May I ___ to Mr. Li?",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "speak",
+      "explanation": "May I speak to...? = 请问……在吗？（电话用语）"
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "日常交际/电话交流",
+      "content": "Which is correct when answering the phone?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. Hello, this is Mary speaking.",
+        "B. Hello, I am Mary speaking.",
+        "C. Hello, that is Mary speaking.",
+        "D. Hello, she is Mary speaking."
+      ],
+      "answer": "A",
+      "explanation": "接听电话自报姓名用 This is ... speaking."
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "日常交际/邀请与回应",
+      "content": "Would you like to come to my party? — ___, I'd love to.",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "Yes",
+      "explanation": "接受邀请可说 Yes, I'd love to."
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "日常交际/邀请与回应",
+      "content": "Which is a polite way to decline an invitation?",
+      "type": "choice",
+      "difficulty": "medium",
+      "round": 1,
+      "options": [
+        "A. I'm afraid I can't. I have other plans.",
+        "B. No way! I don't want to.",
+        "C. Maybe you shouldn't invite me.",
+        "D. I hate parties."
+      ],
+      "answer": "A",
+      "explanation": "礼貌拒绝邀请用 I'm afraid I can't. I have other plans."
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "日常交际/邀请与回应",
+      "content": "A: Would you like some tea? B: ___.",
+      "type": "choice",
+      "difficulty": "easy",
+      "round": 1,
+      "options": [
+        "A. Yes, please.",
+        "B. Yes, I would like.",
+        "C. Yes, I would some.",
+        "D. Yes, please some."
+      ],
+      "answer": "A",
+      "explanation": "接受提议的标准答语是 Yes, please."
+    },
+    {
+      "chapter": "there be 句型与介词",
+      "knowledge_point": "日常交际/邀请与回应",
+      "content": "'Let's go swimming!' — '___, let's!'",
+      "type": "fill",
+      "difficulty": "easy",
+      "round": 1,
+      "answer": "Yes",
+      "explanation": "同意建议用 Yes, let's!"
+    },
+    {
+      "chapter": "比较级与最高级",
+      "knowledge_point": "语法时态/冠词用法",
+      "content": "Which sentence contains an article error?",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 1,
+      "options": [
+        "A. He is an honest boy.",
+        "B. She plays a piano.",
+        "C. The sun is a star.",
+        "D. It is an umbrella."
+      ],
+      "answer": "B",
+      "explanation": "演奏乐器前应用定冠词 the，应为 plays the piano。"
+    },
+    {
+      "chapter": "比较级与最高级",
+      "knowledge_point": "句型/How many/much",
+      "content": "'___ homework do you have tonight?' — 'A lot.'",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 1,
+      "options": [
+        "A. How much",
+        "B. How many",
+        "C. How long",
+        "D. How often"
+      ],
+      "answer": "A",
+      "explanation": "homework 是不可数名词，用 How much。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/描写朋友",
+      "content": "Which sentence correctly uses a superlative?",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 1,
+      "options": [
+        "A. She is the most tallest girl in class.",
+        "B. She is the tallest girl in class.",
+        "C. She is tallest girl in class.",
+        "D. She is more tallest girl in class."
+      ],
+      "answer": "B",
+      "explanation": "单音节形容词最高级用 the + -est：the tallest；不与 most 连用。"
+    },
+    {
+      "chapter": "写作：简单段落",
+      "knowledge_point": "写作/日常活动",
+      "content": "Which sentence is in the simple present tense and is correct?",
+      "type": "choice",
+      "difficulty": "hard",
+      "round": 1,
+      "options": [
+        "A. He don't eat breakfast.",
+        "B. He doesn't eats breakfast.",
+        "C. He doesn't eat breakfast.",
+        "D. He not eat breakfast."
+      ],
+      "answer": "C",
+      "explanation": "第三人称单数否定：does not (doesn't) + 动词原形：doesn't eat。"
+    }
+  ]
+}
