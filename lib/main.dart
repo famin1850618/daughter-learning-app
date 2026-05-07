@@ -26,6 +26,7 @@ import 'database/curriculum_dao.dart';
 import 'database/curriculum_seed.dart';
 import 'database/knowledge_point_dao.dart';
 import 'database/knowledge_points_seed.dart';
+import 'database/cambridge_english_kp_seed.dart';
 
 /// 内置题包路径（assets 首装兜底）—— 历版累积，cron 扩题后追加
 const _bundledBatchAssets = [
@@ -57,8 +58,9 @@ Future<void> _seedDatabase() async {
     await curriculumDao.insertBatch(curriculumChapters);
   }
 
-  // 2. KP 清单（六下三科种子；幂等）
+  // 2. KP 清单（六下三科种子 + V3.9 Cambridge 英语；幂等）
   await KnowledgePointDao().insertIfMissing(knowledgePointsSeed);
+  await KnowledgePointDao().insertIfMissing(cambridgeEnglishKpSeed);
 
   // 3. 题包（assets 首装兜底；按 source 幂等，已装则跳过）
   final updateService = QuestionUpdateService();
