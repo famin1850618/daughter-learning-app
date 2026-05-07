@@ -21,11 +21,11 @@ from typing import Optional, Dict
 
 
 RE_ANSWER_BOUNDARY = re.compile(
-    r'(参考答案|答案与解析|【参考答案】|答案[:：]|Answer Key|【答案】)',
-    re.IGNORECASE,
+    r'(参考答案|答案与解析|【参考答案】|答案[:：]|Answer Key|【答案】|(?:^|\n)\s*答案\s*(?:\n|$))',
+    re.IGNORECASE | re.MULTILINE,
 )
-RE_ANSWER_NUM = re.compile(r'(?:^|\n)\s*(\d+)\s*[.、:：]?\s*([^\n]+)')
-RE_CHOICE_ANSWER = re.compile(r'^[A-D]$')
+RE_ANS_BIG_SECTION = re.compile(r'(?:^|\n)\s*([一二三四五六七八九十]+)\s*[、.．]')
+RE_ANS_NUM = re.compile(r'(\d+)\s*(?:\.(?!\d)|[、．])\s*([^\d\n][^\n]*?)(?=(?:\s+\d+\s*(?:\.(?!\d)|[、．]))|\n|$)')
 
 
 def find_answer_section(raw: str) -> str:
@@ -36,47 +36,51 @@ def find_answer_section(raw: str) -> str:
     return raw[m.end():]
 
 
-def parse_answers(answer_text: str) -> Dict[int, str]:
-    """从答案段抽 题号 → 答案 映射"""
+def parse_answers_by_section(answer_text: str) -> Dict[tuple, str]:
+    """按大题切答案段，返回 {(big_section, local_idx): answer_str}"""
     answers = {}
-    for m in RE_ANSWER_NUM.finditer(answer_text):
-        try:
-            qno = int(m.group(1))
-        except ValueError:
-            continue
-        ans = m.group(2).strip()
-        # 单字母 ABCD（选择题答案）
-        if len(ans) == 1 and ans.upper() in 'ABCD':
-            answers[qno] = ans.upper()
-        # 多字母 ABCD（多选）
-        elif re.match(r'^[A-D]{1,4}$', ans):
-            answers[qno] = ans.upper()
-        else:
-            # 填空/计算答案：取该行第一句（150 字以内）
-            answers[qno] = ans[:200]
+    sections = list(RE_ANS_BIG_SECTION.finditer(answer_text))
+    if not sections:
+        # 兜底：整段当一个无名 section
+        for m in RE_ANS_NUM.finditer(answer_text):
+            answers[('', int(m.group(1)))] = m.group(2).strip()[:200]
+        return answers
+    for i, m in enumerate(sections):
+        big = m.group(1)
+        start = m.end()
+        end = sections[i + 1].start() if i + 1 < len(sections) else len(answer_text)
+        body = answer_text[start:end]
+        for am in RE_ANS_NUM.finditer(body):
+            try:
+                local = int(am.group(1))
+            except ValueError:
+                continue
+            ans = am.group(2).strip()
+            answers[(big, local)] = ans[:200]
     return answers
 
 
-def match_segments_with_answers(segments: list, raw: str) -> list:
-    """给 segments 配答案"""
+def match_segments_with_answers(segments: list, raw: str) -> tuple:
+    """给 segments 配答案。返回 (matched_segments, answer_section_text)"""
     answer_text = find_answer_section(raw)
     if not answer_text:
-        # 标记所有题为 needs_claude_solve
         for q in segments:
             q['answer'] = None
             q['answer_source'] = 'needs_claude_solve'
-        return segments
+        return segments, ''
 
-    ans_map = parse_answers(answer_text)
+    ans_map = parse_answers_by_section(answer_text)
     for q in segments:
-        a = ans_map.get(q['stem_idx'])
+        big = q.get('big_section', '')
+        local = q.get('local_idx') or q.get('stem_idx')
+        a = ans_map.get((big, local)) or ans_map.get(('', local))
         if a:
             q['answer'] = a
             q['answer_source'] = 'paper_section'
         else:
             q['answer'] = None
             q['answer_source'] = 'needs_claude_solve'
-    return segments
+    return segments, answer_text
 
 
 def find_companion_answer_file(paper_path: Path) -> Optional[Path]:
@@ -111,16 +115,19 @@ def main():
                 continue
             segs = json.loads(seg_path.read_text(encoding='utf-8'))
             raw = raw_path.read_text(encoding='utf-8', errors='replace')
-            matched = match_segments_with_answers(segs, raw)
+            matched, ans_text = match_segments_with_answers(segs, raw)
             out_path = seg_path.parent / 'matched.json'
             out_path.write_text(json.dumps(matched, ensure_ascii=False, indent=2))
+            (seg_path.parent / 'answer_section.txt').write_text(ans_text, encoding='utf-8')
             with_ans = sum(1 for q in matched if q.get('answer'))
             print(f'[{with_ans}/{len(matched)}] {Path(entry["source_file"]).name}')
     else:
         segs = json.loads(Path(args.input).read_text(encoding='utf-8'))
         raw_path = args.raw or (Path(args.input).parent / 'raw.txt')
         raw = Path(raw_path).read_text(encoding='utf-8', errors='replace')
-        matched = match_segments_with_answers(segs, raw)
+        matched, ans_text = match_segments_with_answers(segs, raw)
+        ans_out = Path(raw_path).parent / 'answer_section.txt'
+        ans_out.write_text(ans_text, encoding='utf-8')
         print(json.dumps(matched, ensure_ascii=False, indent=2))
 
 

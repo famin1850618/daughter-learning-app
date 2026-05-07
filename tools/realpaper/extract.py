@@ -42,8 +42,25 @@ def cache_path_for(sha1: str) -> Path:
     return d / 'raw.txt'
 
 
+def pdftotext_convert(src: Path, out_path: Path) -> bool:
+    """PDF → txt via poppler pdftotext -layout"""
+    cmd = ['pdftotext', '-layout', '-enc', 'UTF-8', str(src), str(out_path)]
+    try:
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
+        if result.returncode != 0:
+            print(f'WARN: pdftotext exit {result.returncode}: {result.stderr[:200]}', file=sys.stderr)
+            return False
+        return out_path.exists() and out_path.stat().st_size > 0
+    except FileNotFoundError:
+        print('ERR: pdftotext not installed. sudo apt install poppler-utils', file=sys.stderr)
+        return False
+    except subprocess.TimeoutExpired:
+        print(f'ERR: pdftotext timeout on {src}', file=sys.stderr)
+        return False
+
+
 def libreoffice_convert(src: Path, out_dir: Path) -> bool:
-    """调用 libreoffice headless 把 src 转 .txt 到 out_dir"""
+    """.doc/.docx → txt via libreoffice headless"""
     if not src.exists():
         print(f'ERR: file not found {src}', file=sys.stderr)
         return False
@@ -89,23 +106,23 @@ def extract(file_path: str, force: bool = False) -> dict:
             'text_len': len(text), 'source_file': str(src), 'cached': True,
         }
 
-    # libreoffice 转换
+    # PDF 走 pdftotext，其他走 libreoffice
     out_dir = out_path.parent
-    if not libreoffice_convert(src, out_dir):
-        return {'ok': False, 'error': 'convert_failed', 'sha1': sha1, 'source_file': str(src)}
-
-    # libreoffice 输出文件名 = 原文件名换 .txt 后缀
-    converted = out_dir / (src.stem + '.txt')
-    if not converted.exists():
-        # 可能扩展名带空格之类，试找 *.txt
-        candidates = list(out_dir.glob('*.txt'))
-        if not candidates:
-            return {'ok': False, 'error': 'output_not_found', 'sha1': sha1, 'source_file': str(src)}
-        converted = candidates[0]
-
-    # 重命名为 raw.txt
-    if converted != out_path:
-        converted.rename(out_path)
+    if src.suffix.lower() == '.pdf':
+        if not pdftotext_convert(src, out_path):
+            return {'ok': False, 'error': 'convert_failed', 'sha1': sha1, 'source_file': str(src)}
+    else:
+        if not libreoffice_convert(src, out_dir):
+            return {'ok': False, 'error': 'convert_failed', 'sha1': sha1, 'source_file': str(src)}
+        # libreoffice 输出文件名 = 原文件名换 .txt 后缀
+        converted = out_dir / (src.stem + '.txt')
+        if not converted.exists():
+            candidates = list(out_dir.glob('*.txt'))
+            if not candidates:
+                return {'ok': False, 'error': 'output_not_found', 'sha1': sha1, 'source_file': str(src)}
+            converted = candidates[0]
+        if converted != out_path:
+            converted.rename(out_path)
 
     text = out_path.read_text(encoding='utf-8', errors='replace')
     return {

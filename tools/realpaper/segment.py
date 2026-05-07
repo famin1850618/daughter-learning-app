@@ -22,15 +22,21 @@ from pathlib import Path
 from typing import List, Dict, Optional
 
 
-# 切题正则
-RE_BIG_HEADER = re.compile(r'(?:^|\n)\s*([一二三四五六七八九十]+)[、.](?P<title>[^\n]*)')
-RE_NUM_HEADER = re.compile(r'(?:^|\n)\s*(\d+)\s*[.、](?!\d)')  # 1. / 1、（避免误切小数）
+# 切题正则（含全角句号 ．U+FF0E）
+RE_BIG_HEADER = re.compile(r'(?:^|\n)\s*([一二三四五六七八九十]+)\s*[、.．](?P<title>[^\n]*)')
+RE_NUM_HEADER = re.compile(r'(?:^|\n)\s*(\d+)\s*(?:\.(?!\d)|[、．])')  # 1. / 1． / 1、（半角点避免小数；全角／顿号无歧义）
 RE_SUB_HEADER = re.compile(r'(?:^|\n)\s*[（(](\d+)[)）]')
 
 # 答案段开始标记（用于切除答案部分）
+# 含：'参考答案'/'答案与解析'/'【参考答案】'/'答案：'/'Answer Key'/'【答案】'/独行'答案'
 RE_ANSWER_BOUNDARY = re.compile(
-    r'(参考答案|答案与解析|【参考答案】|答案[:：]|Answer Key|【答案】)',
-    re.IGNORECASE,
+    r'(参考答案|答案与解析|【参考答案】|答案[:：]|Answer Key|【答案】|(?:^|\n)\s*答案\s*(?:\n|$))',
+    re.IGNORECASE | re.MULTILINE,
+)
+
+# 页脚/水印噪声（按行删）
+RE_NOISE_LINE = re.compile(
+    r'(关注微信公众号|获取更多学习资料|第\s*\d+\s*页|^\s*-?\s*\d+\s*-?\s*$)',
 )
 
 
@@ -82,32 +88,63 @@ def detect_type(stem_text: str) -> str:
     return 'fill'
 
 
-def segment_paper(raw: str) -> List[Dict]:
-    """把题目段切成单题数组"""
-    paper, _ = split_paper_and_answers(raw)
-    # 用小题号切（最常见）
-    chunks = re.split(RE_NUM_HEADER, paper)
-    # chunks[0] = 题号 1 之前的导语；之后 (idx, content) 交替
-    questions = []
-    if len(chunks) < 3:
-        return questions
-    # iterate: [preamble, '1', content1, '2', content2, ...]
-    for i in range(1, len(chunks) - 1, 2):
-        try:
-            qno = int(chunks[i])
-        except ValueError:
+def strip_noise(raw: str) -> str:
+    """去除页脚水印行"""
+    lines = []
+    for line in raw.split('\n'):
+        if RE_NOISE_LINE.search(line):
             continue
-        content = chunks[i + 1].strip()
-        if not content or len(content) < 5:
-            continue
-        # 截到下一个大题或答案段开始
-        # （此处简单实现：直接用 content；可后续改进）
-        questions.append({
-            'stem_idx': qno,
-            'raw_text': content[:2000],  # 截 2000 字防爆炸
-            'detected_type': detect_type(content),
-            'options': extract_options(content),
+        lines.append(line)
+    return '\n'.join(lines)
+
+
+def split_big_sections(paper: str) -> List[Dict]:
+    """按大题（一、二、三...）切。返回 [{title, body}]"""
+    matches = list(RE_BIG_HEADER.finditer(paper))
+    if not matches:
+        return [{'title': '', 'body': paper}]
+    sections = []
+    for i, m in enumerate(matches):
+        start = m.end()
+        end = matches[i + 1].start() if i + 1 < len(matches) else len(paper)
+        sections.append({
+            'title': m.group('title').strip(),
+            'big_idx': i + 1,
+            'big_label': m.group(1),
+            'body': paper[start:end],
         })
+    return sections
+
+
+def segment_paper(raw: str) -> List[Dict]:
+    """把题目段切成单题数组（跨大题，全局连续编号）"""
+    raw = strip_noise(raw)
+    paper, _ = split_paper_and_answers(raw)
+    sections = split_big_sections(paper)
+    questions = []
+    global_idx = 0
+    for sec in sections:
+        chunks = re.split(RE_NUM_HEADER, sec['body'])
+        if len(chunks) < 3:
+            continue
+        for i in range(1, len(chunks) - 1, 2):
+            try:
+                local_qno = int(chunks[i])
+            except ValueError:
+                continue
+            content = chunks[i + 1].strip()
+            if not content or len(content) < 5:
+                continue
+            global_idx += 1
+            questions.append({
+                'stem_idx': global_idx,
+                'big_section': sec.get('big_label', ''),
+                'big_section_title': sec.get('title', ''),
+                'local_idx': local_qno,
+                'raw_text': content[:2000],
+                'detected_type': detect_type(content),
+                'options': extract_options(content),
+            })
     return questions
 
 
