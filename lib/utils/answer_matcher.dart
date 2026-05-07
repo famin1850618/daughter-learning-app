@@ -81,6 +81,18 @@ class AnswerMatcher {
       return accepts.any((a) => a.trim().toUpperCase() == u);
     }
 
+    if (type == QuestionType.judgment) {
+      // V3.10 判断题：归一化 对/正确/√/T → "对"；错/错误/×/F → "错"
+      String norm(String s) {
+        final t = s.trim().toLowerCase();
+        if (['对', '正确', '√', 't', 'true', 'yes', 'y', '√'].contains(t)) return '对';
+        if (['错', '错误', '×', 'f', 'false', 'no', 'n', 'x', '✗', '✘'].contains(t)) return '错';
+        return t;
+      }
+      final u = norm(userAns);
+      return accepts.any((a) => norm(a) == u);
+    }
+
     final candidate = type == QuestionType.calculation
         ? extractFinal(userAns)
         : userAns;

@@ -2,7 +2,8 @@ import 'subject.dart';
 
 /// V3.8.3：新增 subjective（主观题）—— 答完不立即判定，自动入家长审核队列由家长打分。
 /// 用于作文、阅读理解开放问答、Cambridge Writing 等无标准答案的题型。
-enum QuestionType { multipleChoice, fillBlank, calculation, subjective }
+/// V3.10：新增 judgment（判断题）—— 二选一 对/错 按钮 UI，answer = "对" 或 "错"。
+enum QuestionType { multipleChoice, fillBlank, calculation, subjective, judgment }
 enum Difficulty { easy, medium, hard }
 
 extension QuestionTypeExt on QuestionType {
@@ -12,6 +13,7 @@ extension QuestionTypeExt on QuestionType {
       case QuestionType.fillBlank:      return '填空题';
       case QuestionType.calculation:    return '计算题';
       case QuestionType.subjective:     return '主观题';
+      case QuestionType.judgment:       return '判断题';
     }
   }
   String get key {
@@ -20,6 +22,7 @@ extension QuestionTypeExt on QuestionType {
       case QuestionType.fillBlank:      return 'fill';
       case QuestionType.calculation:    return 'calculation';
       case QuestionType.subjective:     return 'subjective';
+      case QuestionType.judgment:       return 'judgment';
     }
   }
   static QuestionType fromKey(String key) {
@@ -28,6 +31,7 @@ extension QuestionTypeExt on QuestionType {
       case 'fill':        return QuestionType.fillBlank;
       case 'calculation': return QuestionType.calculation;
       case 'subjective':  return QuestionType.subjective;
+      case 'judgment':    return QuestionType.judgment;
       default:            return QuestionType.fillBlank;
     }
   }

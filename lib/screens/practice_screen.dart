@@ -403,7 +403,8 @@ class _QuestionScreenState extends State<_QuestionScreen> {
 
   Future<void> _submit() async {
     final q = widget.question;
-    final answer = q.type == QuestionType.multipleChoice
+    final answer = (q.type == QuestionType.multipleChoice ||
+            q.type == QuestionType.judgment)
         ? (_selectedOption ?? '')
         : _answerCtrl.text.trim();
     if (answer.isEmpty) return;
@@ -583,7 +584,10 @@ class _QuestionScreenState extends State<_QuestionScreen> {
   }
 
   bool _canSubmit(Question q) {
-    if (q.type == QuestionType.multipleChoice) return _selectedOption != null;
+    if (q.type == QuestionType.multipleChoice ||
+        q.type == QuestionType.judgment) {
+      return _selectedOption != null;
+    }
     return _answerCtrl.text.trim().isNotEmpty;
   }
 
@@ -665,6 +669,44 @@ class _QuestionScreenState extends State<_QuestionScreen> {
             border: OutlineInputBorder(),
             helperText: '提交后由家长批改打分',
           ),
+        );
+
+      case QuestionType.judgment:
+        // V3.10: 判断题用 对/错 两个大按钮
+        return Row(
+          children: [
+            for (final v in const ['对', '错']) ...[
+              Expanded(
+                child: GestureDetector(
+                  onTap: () => setState(() => _selectedOption = v),
+                  child: Container(
+                    height: 64,
+                    margin: EdgeInsets.only(right: v == '对' ? 8 : 0, left: v == '错' ? 8 : 0),
+                    decoration: BoxDecoration(
+                      color: _selectedOption == v
+                          ? AppTheme.primary.withOpacity(0.08)
+                          : Colors.white,
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(
+                        color: _selectedOption == v ? AppTheme.primary : Colors.grey[300]!,
+                        width: _selectedOption == v ? 2 : 1,
+                      ),
+                    ),
+                    child: Center(
+                      child: Text(
+                        v == '对' ? '✓ 对' : '✗ 错',
+                        style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                          color: _selectedOption == v ? AppTheme.primary : Colors.grey[700],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ],
         );
     }
   }

@@ -16,3 +16,7 @@ android/key.properties
 android/app/google-services.json
 ios/GoogleService-Info.plist
 *.json.bak
+
+# V3.10 真题工作流
+.cache/
+tools/realpaper/.venv/

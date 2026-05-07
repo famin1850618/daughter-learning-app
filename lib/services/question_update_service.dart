@@ -211,6 +211,8 @@ class QuestionUpdateService extends ChangeNotifier {
       case 'choice': return QuestionType.multipleChoice;
       case 'fill': return QuestionType.fillBlank;
       case 'calculation': return QuestionType.calculation;
+      case 'subjective': return QuestionType.subjective;
+      case 'judgment': return QuestionType.judgment;
       default: return QuestionType.fillBlank;
     }
   }
