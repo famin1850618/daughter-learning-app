@@ -1,0 +1,746 @@
+{
+  "source": "realpaper_g6_chinese_bubian_zhuanxiang_zixingyin_001",
+  "subject": "chinese",
+  "grade": 6,
+  "knowledge_points_added": [],
+  "questions": [
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "下列加点字读音错误的是？　蜜饯(jiàn)　黑莓(méi)　铭记(mín)",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. 蜜饯(jiàn)", "B. 黑莓(méi)", "C. 铭记(mín)", "D. 全部正确"],
+      "answer": "C",
+      "explanation": "「铭」应读 míng，「铭记」表示深刻记住，常用于书面语。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "下列加点字读音错误的是？　正月(zhèng)　潺潺(chán)　搀扶(chān)",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. 正月(zhèng)", "B. 潺潺(chán)", "C. 搀扶(chān)", "D. 全部正确"],
+      "answer": "A",
+      "explanation": "「正月」中「正」读 zhēng，是多音字特例；表正确、正式时读 zhèng。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "下列加点字读音错误的是？　娴熟(xián)　潸潸(sān)　瞻仰(zhān)",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. 娴熟(xián)", "B. 潸潸(sān)", "C. 瞻仰(zhān)", "D. 全部正确"],
+      "answer": "B",
+      "explanation": "「潸潸」应读 shān shān，形容流泪不止的样子，不读 sān。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "下列加点字读音错误的是？　嘟囔(náng)　急躁(zào)　钵子(bō)",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. 嘟囔(náng)", "B. 急躁(zào)", "C. 钵子(bō)", "D. 全部正确"],
+      "answer": "A",
+      "explanation": "「嘟囔」中「囔」应读 nǎng（自言自语，含不满），不读 náng。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "「机杼」中「杼」的正确读音是？",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. zhū", "B. zhù", "C. shū", "D. yǔ"],
+      "answer": "B",
+      "explanation": "「杼」读 zhù，指织布机上的梭子；「机杼」也比喻诗文的构思布局。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "「严峻」中「峻」的正确读音是？",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. jǔn", "B. jùn", "C. zùn", "D. xùn"],
+      "answer": "B",
+      "explanation": "「峻」读 jùn，本义高大，引申为严厉；「严峻」形容严厉、严重。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：suan cu（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "酸醋",
+      "explanation": "「酸醋」即食醋，调味用的酸味液体。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：jiao ban（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "搅拌",
+      "explanation": "「搅拌」指用棍子或机械等转动着拌和。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：qin qi（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "亲戚",
+      "explanation": "「亲戚」指有血亲或姻亲关系的人。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：jing huang（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "惊惶",
+      "explanation": "「惊惶」指惊慌、惊恐。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：luo tuo（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "骆驼",
+      "explanation": "「骆驼」是一种沙漠中常用作役畜的哺乳动物。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：shui hu（不带声调，四大名著之一）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "水浒",
+      "explanation": "「水浒」即《水浒传》，中国四大古典名著之一。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：dan wu（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "耽误",
+      "explanation": "「耽误」指因延迟或错过时机而误事。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：tang chi（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "汤匙",
+      "explanation": "「汤匙」即喝汤用的匙子，俗称勺子。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：jiao shou（不带声调，大学职称）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "教授",
+      "explanation": "「教授」是高等学校的教师职称之一。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：pu su（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "朴素",
+      "explanation": "「朴素」指质朴、不浮华，多形容生活、衣着等。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：qi xi（不带声调，鸟类停留休息）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "栖息",
+      "explanation": "「栖息」指鸟类停下来休息，也泛指停留居住。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：shu ji（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "书籍",
+      "explanation": "「书籍」是装订成册的图书和文字资料的总称。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：zha lan（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "栅栏",
+      "explanation": "「栅栏」是用木条、竹片或金属条做成的阻拦物。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：kong zhi（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "控制",
+      "explanation": "「控制」指掌握、操纵，使不超出范围。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：tiao ti（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "挑剔",
+      "explanation": "「挑剔」指过分严格地从细节中找毛病。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：fu gai（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "覆盖",
+      "explanation": "「覆盖」指遮盖、掩蔽。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：xi ji（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "袭击",
+      "explanation": "「袭击」指出其不意地攻打。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：nuo yi（不带声调，朱自清《匆匆》中的词）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "挪移",
+      "explanation": "「挪移」指移动；朱自清《匆匆》中「日子从水盆里过去……便从凝然的双眼前过去」描绘时间的挪移。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：pai huai（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "徘徊",
+      "explanation": "「徘徊」指在一个地方来回地走，比喻犹疑不决。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：ming mei（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "明媚",
+      "explanation": "「明媚」形容景物鲜明可爱，多用于阳光、风景。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：yuan zhu（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "援助",
+      "explanation": "「援助」指支援、帮助。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：che di（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "彻底",
+      "explanation": "「彻底」指深透、完全、贯通到底。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：xi sheng（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "牺牲",
+      "explanation": "「牺牲」指为正义事业舍弃生命，也指放弃利益。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：chou ti（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "抽屉",
+      "explanation": "「抽屉」指桌子、柜子等家具中可以拉出推进、用以盛放东西的部分。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：jun fa（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "军阀",
+      "explanation": "「军阀」指拥有武装部队、割据一方、自成派系的军人或军人集团。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：chou chang（不带声调，伤感失意）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "惆怅",
+      "explanation": "「惆怅」形容伤感、失意。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：cuo shou（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "搓手",
+      "explanation": "「搓手」指两手互相摩擦，多表示焦急或寒冷。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：qin wen（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "亲吻",
+      "explanation": "「亲吻」指用嘴唇接触表示喜爱。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：kai zao（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "开凿",
+      "explanation": "「开凿」指挖掘、凿通（如开凿运河）。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：fen shao（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "焚烧",
+      "explanation": "「焚烧」指烧、用火烧毁。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：qi liang（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "凄凉",
+      "explanation": "「凄凉」形容寂寞冷落、悲伤。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：jiao xing（不带声调，一种死刑）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "绞刑",
+      "explanation": "「绞刑」是用绳子勒死犯人的死刑方式。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：mo gui（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "魔鬼",
+      "explanation": "「魔鬼」指传说中的鬼怪，比喻邪恶势力。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：kong bu（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "恐怖",
+      "explanation": "「恐怖」指由于生命受到威胁而引起的恐惧。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：ji xie（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "机械",
+      "explanation": "「机械」指利用力学原理组成的装置；也比喻拘泥死板。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "看拼音写词语：ling yu（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "领域",
+      "explanation": "「领域」指一国主权所及的区域，也指学术思想或社会活动的范围。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "短文中拼音写字词：xi shuai（不带声调，一种昆虫）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "蟋蟀",
+      "explanation": "「蟋蟀」是一种善鸣善斗的昆虫，俗称蛐蛐儿。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "短文中拼音写字词：lan zhu（不带声调，挡住）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "拦住",
+      "explanation": "「拦住」指阻挡使停下来。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "短文中拼音写字词：ma yi（不带声调，一种昆虫）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "蚂蚁",
+      "explanation": "「蚂蚁」是营群居生活的小型昆虫。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "短文中拼音写字词：duo duo cang cang（不带声调，叠词）。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "躲躲藏藏",
+      "explanation": "「躲躲藏藏」形容隐藏不让人看见，AABB 式叠词。",
+      "round": 2
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "短文中拼音写字词：rou le rou（不带声调，揉了一下）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "揉了揉",
+      "explanation": "「揉了揉」指用手反复轻轻搓动。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "短文中拼音写字词：bi nan（不带声调，躲避灾难）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "避难",
+      "explanation": "「避难」指躲避灾祸或迫害。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "短文中拼音写字词：ao（不带声调，一种烹饪方法，文中「妈妈___好了粥」）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "熬",
+      "explanation": "「熬」指把粮食等放在水里，煮成糊状。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "短文中拼音写字词：zhou（不带声调，米熬成的食物）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "粥",
+      "explanation": "「粥」指用米或杂粮等煮成的稀饭。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "短文中拼音写字词：kuai zi（不带声调，餐具）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "筷子",
+      "explanation": "「筷子」是夹取食物的细长棍状餐具。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "短文中拼音写字词：ban li（不带声调，一种坚果）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "板栗",
+      "explanation": "「板栗」即栗子，果实可食用。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/成语运用",
+      "content": "短文中拼音补成语：lang tun hu yan（不带声调，形容吃东西又猛又急）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "狼吞虎咽",
+      "explanation": "「狼吞虎咽」形容吃东西又猛又急，像饿狼猛虎一般。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "短文中拼音写字词：shao wei（不带声调，略微）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "稍微",
+      "explanation": "「稍微」表示数量少或程度浅，副词。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "短文中拼音写字词：wu liao（不带声调，没有兴趣）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "无聊",
+      "explanation": "「无聊」指由于清闲而烦闷，或言谈、行动等没有意义而使人讨厌。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "短文中拼音写字词：ji mo（不带声调，孤单冷清）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "寂寞",
+      "explanation": "「寂寞」形容孤单冷清。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "短文中拼音写字词：bian lun（不带声调，争辩讨论）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "辩论",
+      "explanation": "「辩论」指彼此用一定的理由来说明自己对事物或问题的见解。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "短文中拼音写字词：biao zhun（不带声调，规范、准则）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "标准",
+      "explanation": "「标准」指衡量事物的准则。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "《买馒头》阅读：括号里写词语 man tou tan（不带声调）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "馒头摊",
+      "explanation": "「馒头摊」指卖馒头的小摊位。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "《买馒头》阅读：括号里写词语 zi wei（不带声调，味道）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "滋味",
+      "explanation": "「滋味」指味道，也比喻某种感受。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "《买馒头》阅读：括号里写词语 xiao fan（不带声调，做小买卖的人）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "小贩",
+      "explanation": "「小贩」指做小生意的人。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "《买馒头》阅读：括号里写词语 dan sheng（不带声调，出生、产生）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "诞生",
+      "explanation": "「诞生」指（人）出生，泛指产生。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "《买馒头》阅读：括号里写词语 xi ni（不带声调，细密）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "细腻",
+      "explanation": "「细腻」指精细光滑、细致入微。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "《买馒头》阅读：括号里写词语 hun dun（不带声调，模糊不清）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "混沌",
+      "explanation": "「混沌」形容糊涂、不分明，也指传说中天地未开辟之前的状态。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "《买馒头》文中「掀(xiān)开」的「掀」读音是？",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. xiān", "B. xián", "C. xuān", "D. qiān"],
+      "answer": "A",
+      "explanation": "「掀」读 xiān，意为揭起、翻动，如「掀开锅盖」。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "《买馒头》文中「俺(ǎn)」是什么意思？读音正确的是？",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. ān，第一人称", "B. ǎn，方言中「我」", "C. yǎn，方言中「你」", "D. àn，叹词"],
+      "answer": "B",
+      "explanation": "「俺」读 ǎn，是北方方言中「我」的意思。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "《买馒头》文中「沧(cāng)桑」的「沧」读音是？",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": ["A. cǎng", "B. cāng", "C. chāng", "D. zāng"],
+      "answer": "B",
+      "explanation": "「沧」读 cāng，「沧桑」指沧海桑田，比喻世事变化巨大。",
+      "round": 1
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "《买馒头》文中「笼(lóng)笼」的「笼」读音是？",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": ["A. lǒng，包罗", "B. lóng，量词或竹器", "C. nóng，浓密", "D. lěng，冷"],
+      "answer": "B",
+      "explanation": "「笼」读 lóng 时指竹篾编的盛器或量词（一笼蒸笼）；读 lǒng 时表笼罩、概括。文中「开笼笼」指打开蒸笼，读 lóng。",
+      "round": 2
+    },
+    {
+      "chapter": "字词",
+      "knowledge_point": "字词/词语理解",
+      "content": "《买馒头》文中「忙到顶点了」的「忙到顶点」是什么意思？",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. 忙到了山顶",
+        "B. 忙得没有一点空闲时间",
+        "C. 忙得头都抬不起来",
+        "D. 忙完了所有顶点的事"
+      ],
+      "answer": "B",
+      "explanation": "「忙到顶点」是夸张说法，指忙到了极限，没有一点空闲时间，形容生意非常好。",
+      "round": 2
+    },
+    {
+      "chapter": "课文与名著",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "《买馒头》文中「赚那么多钱干什么？钱只要够用就好」一句，从中可以看出山东老乡的生活态度是？",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. 贪图享乐、追求名利",
+        "B. 豁达开朗、乐观知足",
+        "C. 自卑封闭、消极避世",
+        "D. 斤斤计较、爱慕虚荣"
+      ],
+      "answer": "B",
+      "explanation": "「钱只要够用就好」体现了山东老乡不贪心、对生活心满意足的态度，属于豁达开朗、乐观知足。",
+      "round": 2
+    },
+    {
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "《买馒头》中，将文末「但不论如何，生活的本身是值得庆喜的吧！」插入原文，最恰当的位置是？",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. ⑩⑪段之间",
+        "B. ⑪⑫段之间",
+        "C. ⑫⑬段之间",
+        "D. ⑬⑭段之间"
+      ],
+      "answer": "C",
+      "explanation": "⑫段写「人的生活又是多么相似」感慨生命的相似处，⑬段以「驻馒头摊」作者反思生活的意义，将「生活本身值得庆喜」插于⑫⑬之间承上启下最为顺畅。",
+      "round": 2
+    }
+  ]
+}

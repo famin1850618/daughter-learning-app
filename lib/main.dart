@@ -64,6 +64,12 @@ const _bundledBatchAssets = [
   'assets/data/batches/realpaper_g6_chinese_bubian_d4_kp1_001.json',
   'assets/data/batches/realpaper_g6_chinese_bubian_d5_kp1_001.json',
   'assets/data/batches/realpaper_g6_chinese_bubian_d6_kp1_001.json',
+  'assets/data/batches/realpaper_g6_math_beishida_mokuai_daishu_001.json',
+  'assets/data/batches/realpaper_g6_math_beishida_xshchu_xian_001.json',
+  'assets/data/batches/realpaper_g6_math_beishida_xshchu_shenyang_001.json',
+  'assets/data/batches/realpaper_g6_chinese_bubian_qimo_quanzhen_001.json',
+  'assets/data/batches/realpaper_g6_chinese_bubian_qizhong_002.json',
+  'assets/data/batches/realpaper_g6_chinese_bubian_zhuanxiang_zixingyin_001.json',
 ];
 
 void main() async {

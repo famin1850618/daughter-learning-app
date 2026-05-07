@@ -1,5 +1,5 @@
 {
-  "version": 11,
+  "version": 12,
   "updated_at": "2026-05-08",
   "batches": [
     {
@@ -315,6 +315,54 @@
       "subject": "chinese",
       "grade": 6,
       "count": 41,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_mokuai_daishu_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_mokuai_daishu_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 36,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_xshchu_xian_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_xshchu_xian_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 39,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_xshchu_shenyang_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_xshchu_shenyang_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 33,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qimo_quanzhen_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qimo_quanzhen_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 35,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qizhong_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qizhong_002.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 37,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_zhuanxiang_zixingyin_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_zhuanxiang_zixingyin_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 71,
       "kind": "realpaper"
     }
   ]

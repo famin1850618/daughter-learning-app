@@ -1,0 +1,403 @@
+{
+  "source": "realpaper_g6_math_beishida_xshchu_xian_001",
+  "subject": "math",
+  "grade": 6,
+  "knowledge_points_added": [],
+  "questions": [
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "一个六位数，最高位是最小的质数，万位是最小的合数，千位是最大的一位数，其余各位上都是 0。这个数写作(    )，把这个数改写成用「万」作单位的数是(    )万。请依次填 2 个数，用逗号分隔。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "249000,24.9",
+      "explanation": "最小的质数是 2（十万位），最小的合数是 4（万位），最大的一位数是 9（千位），其余位填 0，得 249000。改写成万作单位为 24.9 万。",
+      "round": 2
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "一个两位偶数，十位上的数字与个位上的数字的积是 18，并且互质，这个两位数是(    )。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "92",
+      "explanation": "积为 18 的两个数字组合：2 与 9（互质）、3 与 6（不互质）。要求是偶数，则个位为偶，十位为 9 个位为 2，得 92。",
+      "round": 3
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "把 4 m 长的绳子平均截成 8 段，第 4 段占全长的(    )，长(    ) m。请依次填 2 个分数，用逗号分隔（如「1/8,1/2」）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "1/8,1/2",
+      "explanation": "平均分 8 段，每段都占全长的 1/8。每段长度=4÷8=1/2 m。",
+      "round": 2
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "0.625 = 5 :(    )=(    )% = (    )/80。请依次填 3 个数，用逗号分隔。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "8,62.5,50",
+      "explanation": "0.625=5/8，所以 5:8。化为百分数 0.625=62.5%。化为分母 80 的分数：0.625=50/80。",
+      "round": 2
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "一批树苗的成活率是 75%～80%，如果要确保成活 800 棵，那么至少要栽种(    )棵树苗。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "1067",
+      "explanation": "为「确保」成活，按最低成活率 75% 计算：800÷75%≈1066.67，向上取整得至少 1067 棵。",
+      "round": 3
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "某城市 2018 年七月中阴天比晴天少 1/3，雨天比晴天少 3/5，这个月的晴天有(    )天。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "15",
+      "explanation": "设晴天 x 天。阴天=x-x/3=2x/3，雨天=x-3x/5=2x/5。三者之和等于 31 天：x+2x/3+2x/5=31。通分得 (15x+10x+6x)/15=31，31x/15=31，x=15。",
+      "round": 3
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "圆柱与圆锥/圆锥的体积",
+      "content": "把一个棱长 9 cm 的正方体削成一个最大的圆锥，圆锥的体积是(    ) cm³。（π 取 3.14）",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "190.755",
+      "explanation": "最大圆锥的底面直径=正方体棱长=9 cm，半径=4.5 cm，高=9 cm。体积=1/3·π·r²·h=1/3×3.14×4.5²×9=190.755 cm³。",
+      "round": 3
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+      "content": "一个蛋糕盒（圆柱形），盒上扎了一条漂亮的丝带，丝带从盒底十字交叉绕到盒顶，共绕过 8 条直径与 8 条高，再加上接头处用去的部分。已知蛋糕盒底面周长是 94.2 cm，高是 11 cm，接头处用去 20 cm，这条丝带长(    ) cm。",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "348",
+      "explanation": "底面直径=94.2÷3.14=30 cm。丝带长=8 条直径+8 条高+接头=8×30+8×11+20=240+88+20=348 cm。",
+      "round": 4
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "content": "自来水管的内直径是 2 厘米，水管内水的流速是每秒 8 厘米。一位同学去水池洗手，走时忘记关掉水龙头，5 分浪费(    )升水。（π 取 3.14）",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "7.536",
+      "explanation": "内半径=1 cm，5 分=300 秒，水柱长度=8×300=2400 cm。体积=π·r²·长=3.14×1²×2400=7536 cm³=7.536 升。",
+      "round": 3
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "正反比例/正比例的意义",
+      "content": "一辆汽车在公路上行驶，2 时行驶 200 km，3 时行驶 300 km，4 时行驶 400 km。这辆汽车行驶的时间与路程成(    )比例。照这样计算，该汽车 5.5 时行驶(    ) km。请依次填「正」或「反」、数，用逗号分隔。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "正,550",
+      "explanation": "路程÷时间=100（一定），所以时间与路程成正比例。该车每小时行 100 km，5.5 时行 5.5×100=550 km。",
+      "round": 2
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "如果两个分数的值相等，那么它们的分数单位也相等。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "错",
+      "explanation": "分数单位由分母决定。如 1/2=2/4，分数值相等但分数单位 1/2 与 1/4 不同。",
+      "round": 2
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "大于 0 的相邻的两个自然数的积一定是 2 的倍数。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "对",
+      "explanation": "相邻的两个自然数中必有一个偶数，偶数与任何整数的积都是 2 的倍数。",
+      "round": 2
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "长、宽、高分别是 6 cm、5 cm、2 cm 的长方体木块，一定能装入容积是 500 cm³ 的长方体盒中。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "错",
+      "explanation": "木块体积=6×5×2=60 cm³ 虽小于 500 cm³，但能否装入还要看盒子长宽高是否分别都不小于木块对应边长。容积满足不代表形状一定能容纳。",
+      "round": 3
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "甲、乙两个人每人抛一次硬币，硬币落地后正面向上的可能性是相同的。",
+      "type": "judgment",
+      "difficulty": "easy",
+      "answer": "对",
+      "explanation": "两人抛硬币是独立事件，每次正面向上的可能性都是 1/2，相同。",
+      "round": 2
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "钟面 15:30 时，时针和分针所形成的角是直角。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "错",
+      "explanation": "15:30 时分针指向 6，时针在 3 与 4 之间偏向 4 一半的位置，时针与分针夹角=75°，不是直角。",
+      "round": 3
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "3 个连续自然数的和一定是 3 的倍数。",
+      "type": "judgment",
+      "difficulty": "easy",
+      "answer": "对",
+      "explanation": "设三个连续自然数为 n、n+1、n+2，和=3n+3=3(n+1)，是 3 的倍数。",
+      "round": 2
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "用火柴棒搭房子，搭 1 间用 5 根，搭 2 间用 9 根（每多 1 间增加 4 根），搭 3 间用了 13 根。照这样搭 502 间房子要用(    )根火柴棒。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": ["A. 2007", "B. 2008", "C. 2009"],
+      "answer": "C",
+      "explanation": "首间 5 根，每多 1 间加 4 根。502 间共需 5+(502-1)×4=5+2004=2009 根。",
+      "round": 3
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "在一幅地图上，图上距离 4 cm 表示实际距离 16 km，这幅地图的比例尺是(    )。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": ["A. 1:4", "B. 1:40", "C. 1:400", "D. 1:400000"],
+      "answer": "D",
+      "explanation": "统一单位：16 km=1600000 cm。比例尺=图上:实际=4:1600000=1:400000。",
+      "round": 2
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "14 本书借给 4 位小朋友，总有一位小朋友至少可以借到(    )本书。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": ["A. 14", "B. 4", "C. 2", "D. 1"],
+      "answer": "B",
+      "explanation": "鸽巢原理：14÷4=3 余 2，至少有一位小朋友借到 3+1=4 本。",
+      "round": 2
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "一张长 10 cm、宽 8 cm 的纸，如果在它的四个角上各剪去一个边长为 2 cm 的正方形，那么剩下纸片的周长与原来长方形的周长相比，(    )。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": ["A. 减少", "B. 增加", "C. 不变", "D. 不确定"],
+      "answer": "C",
+      "explanation": "剪去角上正方形后，每个角上凹进去的两条边正好等于原长方形被剪掉的两条边，周长不变。",
+      "round": 3
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "足球赛门票 15 元一张，降价后观众增加了一半，收入增加了五分之一，则每张门票降价(    )元。",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": ["A. 7", "B. 5", "C. 3", "D. 2"],
+      "answer": "C",
+      "explanation": "设原观众 a，原收入=15a。新观众=1.5a，新收入=15a×(1+1/5)=18a。新票价=18a÷1.5a=12 元。降价 15-12=3 元。",
+      "round": 3
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "直接写出得数：1/5+8.8 =(    )。（填小数）",
+      "type": "calculation",
+      "difficulty": "easy",
+      "answer": "9",
+      "explanation": "1/5=0.2，0.2+8.8=9。",
+      "round": 1
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "直接写出得数：78-49 =(    )。",
+      "type": "calculation",
+      "difficulty": "easy",
+      "answer": "29",
+      "explanation": "78-49=29。",
+      "round": 1
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "直接写出得数：1/5 + 1/6 =(    )。（填分数，如「11/30」）",
+      "type": "calculation",
+      "difficulty": "easy",
+      "answer": "11/30",
+      "explanation": "通分：1/5+1/6=6/30+5/30=11/30。",
+      "round": 1
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "直接写出得数：1÷2/3 - 2/3×1 =(    )。（填分数，如「5/6」）",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "5/6",
+      "explanation": "1÷2/3=3/2；2/3×1=2/3。3/2-2/3=9/6-4/6=5/6。",
+      "round": 2
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "直接写出得数：0.375 × 2/5 =(    )。（填分数，如「3/20」）",
+      "type": "calculation",
+      "difficulty": "easy",
+      "answer": "3/20",
+      "explanation": "0.375=3/8。3/8×2/5=6/40=3/20。",
+      "round": 1
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "直接写出得数：0.3² =(    )。（填小数）",
+      "type": "calculation",
+      "difficulty": "easy",
+      "answer": "0.09",
+      "explanation": "0.3²=0.3×0.3=0.09。",
+      "round": 1
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "直接写出得数：3/2 ÷ 3/5 =(    )。（填分数，如「5/2」）",
+      "type": "calculation",
+      "difficulty": "easy",
+      "answer": "5/2",
+      "explanation": "除以一个数等于乘其倒数：3/2×5/3=15/6=5/2。",
+      "round": 1
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "直接写出得数：8.32 ÷ 0.25 ÷ 4 =(    )。",
+      "type": "calculation",
+      "difficulty": "easy",
+      "answer": "8.32",
+      "explanation": "÷0.25÷4 = ÷(0.25×4) = ÷1，所以原式=8.32。",
+      "round": 2
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "用简便方法计算：12.5×25×3.2 =(    )。",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "1000",
+      "explanation": "拆分 3.2=0.8×4：12.5×25×3.2=(12.5×0.8)×(25×4)=10×100=1000。",
+      "round": 2
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "用简便方法计算：(2/29 + 5/23) × 29 × 23 =(    )。",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "191",
+      "explanation": "用分配律展开：2/29×29×23+5/23×29×23=2×23+5×29=46+145=191。",
+      "round": 3
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "用简便方法计算：(3.7+17×0.4) ÷ 3.5 =(    )。",
+      "type": "calculation",
+      "difficulty": "easy",
+      "answer": "3",
+      "explanation": "先算括号：17×0.4=6.8，3.7+6.8=10.5；10.5÷3.5=3。",
+      "round": 2
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "比和比例/解比例",
+      "content": "求未知数 x：(1/3)x + (2/5)x = 33。（填整数）",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "45",
+      "explanation": "合并同类项：(1/3+2/5)x=33，即 (5/15+6/15)x=11x/15=33，x=33×15/11=45。",
+      "round": 2
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "比和比例/解比例",
+      "content": "解比例：3/x = 12/2.4，求 x。（填小数）",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "0.6",
+      "explanation": "比例的基本性质：12x=3×2.4=7.2，x=0.6。",
+      "round": 2
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "某次会议安排代表住宿，每个房间住 3 人，则 36 人没床位；每个房间住 4 人，则还有 13 人没床位。如果每个房间住 5 人，那么有(    )个房间空着。",
+      "type": "calculation",
+      "difficulty": "hard",
+      "answer": "2",
+      "explanation": "设共 x 个房间，3x+36=4x+13，x=23。代表总数=3×23+36=105 人。住 5 人需 105÷5=21 个房间，空 23-21=2 个。",
+      "round": 3
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "客车和货车同时从甲、乙两地的中点处向相反方向行驶，3 时后，客车到达甲地，货车离乙地还有 42 千米。已知货车和客车的速度比是 5:7。甲、乙两地相距(    )千米。",
+      "type": "calculation",
+      "difficulty": "hard",
+      "answer": "294",
+      "explanation": "时间相同时路程比=速度比 5:7。设货车 3 时行 5k 千米，客车行 7k 千米。客车走完一半全程=7k；货车走 5k=7k-42，即 2k=42，k=21。全程=2×7k=2×147=294 千米。",
+      "round": 4
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "A、B 两个仓库存化肥的质量比是 12:11，后来 B 仓库又运进 24 吨，这时 A 仓库存化肥比 B 仓库少 1/9。B 仓库原来存化肥(    )吨。",
+      "type": "calculation",
+      "difficulty": "hard",
+      "answer": "105.6",
+      "explanation": "原 A:B=12:11，设原 A=12k、原 B=11k。运进 24 吨后 B 变 11k+24，A 比新 B 少 1/9，即 12k=(11k+24)×8/9。解得 108k=88k+192，20k=192，k=9.6。原 B=11×9.6=105.6 吨。",
+      "round": 4
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+      "content": "一个圆锥形稻谷堆的底面周长是 6.28 m，高是 1.8 m，现在把这些稻谷全部装入一个底面积是 6.28 m² 的圆柱形粮囤里，可以堆(    ) m 高。（π 取 3.14）",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "0.3",
+      "explanation": "圆锥半径=6.28÷3.14÷2=1 m，体积=1/3×3.14×1²×1.8=1.884 m³。圆柱高=体积÷底面积=1.884÷6.28=0.3 m。",
+      "round": 3
+    },
+    {
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "张大伯利用一面墙壁，用竹篱笆围成了一个半圆形鸡舍（直径靠墙，竹篱笆只围弧形部分）。已知鸡舍的面积是 25.12 m²，鸡舍的竹篱笆长(    ) m。（π 取 3.14）",
+      "type": "calculation",
+      "difficulty": "hard",
+      "answer": "12.56",
+      "explanation": "半圆面积=πr²/2=25.12，r²=25.12×2÷3.14=16，r=4 m。竹篱笆即半圆弧长=2πr÷2=πr=3.14×4=12.56 m。",
+      "round": 3
+    }
+  ]
+}
