@@ -14,6 +14,8 @@ import '../services/navigation_service.dart';
 import '../services/assessment_service.dart';
 import '../services/reward_service.dart';
 import '../services/difficulty_settings_service.dart';
+import '../services/review_request_service.dart';
+import '../models/review_request.dart';
 
 /// 错题集（按 KP 聚类）
 ///
@@ -560,8 +562,9 @@ class _KpDetailScreenState extends State<_KpDetailScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                // V3.8.3: 详情页隐藏 KP 名称（避免做"练相似题"时暴露考点）
                 Text(
-                  '${widget.summary.category} / ${widget.summary.name}',
+                  '错题复盘',
                   style: TextStyle(fontSize: 12, color: Colors.grey[600]),
                 ),
                 const SizedBox(height: 6),
@@ -617,6 +620,11 @@ class _WrongRecordCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final q = record.question;
     final dateStr = DateFormat('M月d日 HH:mm').format(record.practicedAt);
+    // V3.8.3: 申诉机制 - 监听 ReviewRequestService
+    final reviewService = context.watch<ReviewRequestService>();
+    final existing = reviewService.requestForRecord(record.practiceRecordId);
+    final age = DateTime.now().difference(record.practicedAt);
+    final inWindow = age < ReviewRequestService.appealWindow;
 
     return Card(
       margin: const EdgeInsets.only(bottom: 10),
@@ -660,6 +668,11 @@ class _WrongRecordCard extends StatelessWidget {
                 child: MathText('💡 ${q.explanation}',
                     style: const TextStyle(fontSize: 12.5, height: 1.5)),
               ),
+            ],
+            // V3.8.3: 申诉行（窗口内 / 已申诉 都显示）
+            if (existing != null || inWindow) ...[
+              const SizedBox(height: 10),
+              _AppealRow(record: record, existing: existing, inWindow: inWindow),
             ],
           ],
         ),
@@ -737,6 +750,161 @@ class _WrongRecordCard extends StatelessWidget {
       case Difficulty.easy: return Colors.green;
       case Difficulty.medium: return Colors.orange;
       case Difficulty.hard: return Colors.red;
+    }
+  }
+}
+
+/// V3.8.3：错题集 / 答题完成页通用申诉行
+class _AppealRow extends StatelessWidget {
+  final WrongQuestionRecord record;
+  final ReviewRequest? existing;
+  final bool inWindow;
+  const _AppealRow({
+    required this.record,
+    required this.existing,
+    required this.inWindow,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final ex = existing;
+    if (ex != null) {
+      return _statusChip(context, ex);
+    }
+    if (!inWindow) return const SizedBox.shrink();
+    return _appealButton(context);
+  }
+
+  Widget _statusChip(BuildContext context, ReviewRequest ex) {
+    Color bg, fg;
+    String text;
+    IconData icon;
+    switch (ex.status) {
+      case ReviewRequestStatus.pending:
+        bg = Colors.grey.shade200;
+        fg = Colors.grey.shade800;
+        text = '已提交申诉，等家长审核';
+        icon = Icons.hourglass_top;
+        break;
+      case ReviewRequestStatus.approved:
+        bg = Colors.green.shade50;
+        fg = Colors.green.shade800;
+        text = ex.requestType == ReviewRequestType.appeal
+            ? '已平反 +0.5⭐'
+            : '主观题评分：${ex.parentScore?.label ?? "-"}';
+        icon = Icons.verified;
+        break;
+      case ReviewRequestStatus.rejected:
+        bg = Colors.red.shade50;
+        fg = Colors.red.shade700;
+        text = '申诉被驳回';
+        icon = Icons.cancel_outlined;
+        break;
+    }
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+      decoration: BoxDecoration(
+        color: bg,
+        borderRadius: BorderRadius.circular(6),
+      ),
+      child: Row(
+        children: [
+          Icon(icon, size: 14, color: fg),
+          const SizedBox(width: 6),
+          Expanded(
+            child: Text(text, style: TextStyle(fontSize: 12, color: fg)),
+          ),
+          if (ex.parentNote != null && ex.parentNote!.isNotEmpty)
+            IconButton(
+              icon: const Icon(Icons.message_outlined, size: 16),
+              padding: EdgeInsets.zero,
+              constraints: const BoxConstraints(),
+              tooltip: ex.parentNote,
+              onPressed: () {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text('家长备注：${ex.parentNote}')),
+                );
+              },
+            ),
+        ],
+      ),
+    );
+  }
+
+  Widget _appealButton(BuildContext context) {
+    final remaining = ReviewRequestService.appealWindow -
+        DateTime.now().difference(record.practicedAt);
+    final remainText = remaining.inMinutes > 60
+        ? '剩 ${remaining.inHours}h${remaining.inMinutes.remainder(60)}m'
+        : '剩 ${remaining.inMinutes}m';
+    return Row(
+      children: [
+        Icon(Icons.flag_outlined, size: 14, color: Colors.orange.shade700),
+        const SizedBox(width: 6),
+        Text('觉得这题判错了？', style: TextStyle(fontSize: 12, color: Colors.grey.shade700)),
+        const Spacer(),
+        Text(remainText, style: TextStyle(fontSize: 11, color: Colors.grey.shade500)),
+        const SizedBox(width: 8),
+        TextButton(
+          style: TextButton.styleFrom(
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+            minimumSize: Size.zero,
+            tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+          ),
+          onPressed: () => _onTap(context),
+          child: const Text('申诉', style: TextStyle(fontSize: 13)),
+        ),
+      ],
+    );
+  }
+
+  Future<void> _onTap(BuildContext context) async {
+    final ctrl = TextEditingController();
+    final ok = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('申诉判错'),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              '提交后由家长审核。审核通过后这道题会改成对的，并补⭐。',
+              style: TextStyle(fontSize: 13, color: Colors.black87),
+            ),
+            const SizedBox(height: 12),
+            TextField(
+              controller: ctrl,
+              maxLines: 3,
+              decoration: const InputDecoration(
+                hintText: '想对家长说点什么？（可空）',
+                border: OutlineInputBorder(),
+              ),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+              onPressed: () => Navigator.pop(ctx, false), child: const Text('取消')),
+          TextButton(
+              onPressed: () => Navigator.pop(ctx, true), child: const Text('提交')),
+        ],
+      ),
+    );
+    if (ok != true || !context.mounted) return;
+    final note = ctrl.text.trim().isEmpty ? null : ctrl.text.trim();
+    final id = await context
+        .read<ReviewRequestService>()
+        .submitAppeal(practiceRecordId: record.practiceRecordId, childNote: note);
+    if (!context.mounted) return;
+    if (id == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('无法提交（已申诉过 / 超出 2 小时窗口 / 题目状态不符）')),
+      );
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('已提交，等家长审核')),
+      );
     }
   }
 }

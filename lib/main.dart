@@ -18,6 +18,8 @@ import 'services/reward_service.dart';
 import 'services/assessment_service.dart';
 import 'services/learning_sync_service.dart';
 import 'services/difficulty_settings_service.dart';
+import 'services/review_request_service.dart';
+import 'database/question_dao.dart';
 import 'models/question.dart';
 import 'models/subject.dart';
 import 'database/curriculum_dao.dart';
@@ -80,11 +82,13 @@ class LearningApp extends StatefulWidget {
 class _LearningAppState extends State<LearningApp> {
   final _updateService = QuestionUpdateService();
   late final RewardService _rewardService;
+  late final ReviewRequestService _reviewService;
   late final PracticeService _practiceService;
   late final AssessmentService _assessmentService;
   final _planService = PlanService();
   final _syncService = LearningSyncService();
   final _difficultySettings = DifficultySettingsService();
+  final _questionDao = QuestionDao();
 
   bool _wasPracticeActive = false;
   int _lastSessionScore = 0;
@@ -95,8 +99,11 @@ class _LearningAppState extends State<LearningApp> {
   void initState() {
     super.initState();
     _rewardService = RewardService()..refresh();
-    // 立即创建 PracticeService，触发 session 恢复（V3.8 注入 DifficultySettings）
-    _practiceService = PracticeService(_rewardService, _difficultySettings);
+    _reviewService = ReviewRequestService(_rewardService)..refresh();
+    // V3.8.3: 审核通过后副作用编排（重判 session 通过 + 重打钩计划 + 测评刷新）
+    _reviewService.onApproved = _handleReviewApproved;
+    // 立即创建 PracticeService，触发 session 恢复（V3.8 注入 DifficultySettings、V3.8.3 注入 ReviewService）
+    _practiceService = PracticeService(_rewardService, _difficultySettings, _reviewService);
     _assessmentService = AssessmentService()..refresh();
 
     // session 状态变化监听：snapshot 当前数据 + 完成时触发自动完成 + 学情同步
@@ -109,6 +116,63 @@ class _LearningAppState extends State<LearningApp> {
       }
       await _syncService.syncIfDue();
     });
+  }
+
+  /// V3.8.3: 审核通过后副作用编排
+  /// - 重判 session 通过状态 → 补发通过/满分加成
+  /// - 重新触发计划自动完成
+  /// - 测评刷新 + 学情同步
+  Future<void> _handleReviewApproved(ApproveContext ctx) async {
+    final sessionId = ctx.sessionId;
+    if (sessionId != null) {
+      // 1) session 加成补发（如果之前没发过）
+      final hasBonus = await _rewardService.hasBonusForSession(sessionId);
+      if (!hasBonus) {
+        final ss = await _questionDao.getSessionScore(sessionId);
+        if (ss.total > 0) {
+          SessionKind kind;
+          if (sessionId.startsWith('weeklyTest:')) {
+            kind = SessionKind.weeklyTest;
+          } else if (sessionId.startsWith('monthlyTest:')) {
+            kind = SessionKind.monthlyTest;
+          } else {
+            kind = SessionKind.normal;
+          }
+          await _rewardService.recordBonusOnly(
+            kind: kind,
+            score: ss.score,
+            total: ss.total,
+            sessionId: sessionId,
+          );
+        }
+      }
+
+      // 2) 计划自动完成 / 测评刷新
+      final tuples = await _questionDao.getSessionKpTuples(sessionId);
+      if (tuples.isNotEmpty) {
+        final ss = await _questionDao.getSessionScore(sessionId);
+        final coveredTuples = tuples.map((row) {
+          final subjIdx = row['subject'] as int;
+          return PracticeKpTuple(
+            subjectName: Subject.values[subjIdx].displayName,
+            grade: row['grade'] as int,
+            chapter: row['chapter'] as String,
+            knowledgePoint: row['knowledge_point'] as String?,
+          );
+        }).toList();
+        final marked = await _planService.autoCompleteFromPractice(
+          score: ss.score,
+          total: ss.total,
+          coveredTuples: coveredTuples,
+        );
+        if (marked > 0) {
+          await _assessmentService.refresh();
+        }
+      }
+    }
+
+    // 3) 学情同步
+    await _syncService.syncIfDue();
   }
 
   void _onPracticeChanged() {
@@ -170,6 +234,7 @@ class _LearningAppState extends State<LearningApp> {
         ChangeNotifierProvider.value(value: _updateService),
         ChangeNotifierProvider.value(value: _syncService),
         ChangeNotifierProvider.value(value: _difficultySettings),
+        ChangeNotifierProvider.value(value: _reviewService),
       ],
       child: MaterialApp(
         title: '学习小助手',

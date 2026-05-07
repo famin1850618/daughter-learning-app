@@ -17,7 +17,9 @@ import '../database/question_dao.dart';
 import '../services/practice_service.dart';
 import '../services/reward_service.dart';
 import '../services/assessment_service.dart';
+import '../services/review_request_service.dart';
 import '../models/assessment.dart';
+import '../models/review_request.dart';
 
 // ── 入口：根据会话状态路由 ─────────────────────────────
 class PracticeScreen extends StatelessWidget {
@@ -336,13 +338,21 @@ class _QuestionScreenState extends State<_QuestionScreen> {
   final _answerCtrl = TextEditingController();
   Timer? _timer;
   int _seconds = 0;
+  /// V3.8.3: 计时暂停（小孩走神/被打断时按）。仅 UI 层实现，重启后默认 resume
+  bool _paused = false;
+  /// V3.8.3: 该题在小孩历史中累计做过的次数（替代选项随机的"做过 N 次"标签）
+  int _attemptCount = 0;
+  int? _attemptCountForQid;
 
   @override
   void initState() {
     super.initState();
     _timer = Timer.periodic(const Duration(seconds: 1), (_) {
-      if (mounted) setState(() => _seconds++);
+      if (!mounted) return;
+      if (_paused) return; // V3.8.3: 暂停时不累加
+      setState(() => _seconds++);
     });
+    _maybeLoadAttemptCount();
   }
 
   @override
@@ -353,6 +363,8 @@ class _QuestionScreenState extends State<_QuestionScreen> {
       _result = null;
       _answerCtrl.clear();
       _seconds = 0;
+      _paused = false;
+      _maybeLoadAttemptCount();
     }
   }
 
@@ -363,10 +375,30 @@ class _QuestionScreenState extends State<_QuestionScreen> {
     super.dispose();
   }
 
+  void _maybeLoadAttemptCount() {
+    final qid = widget.question.id;
+    if (qid == null) return;
+    if (_attemptCountForQid == qid) return;
+    _attemptCountForQid = qid;
+    _attemptCount = 0;
+    QuestionDao().getAttemptCountForQuestion(qid).then((c) {
+      if (!mounted) return;
+      if (_attemptCountForQid != qid) return;
+      // 加 1 表示"算上这次是第 N 次"
+      setState(() => _attemptCount = c + 1);
+    });
+  }
+
   String get _timerLabel {
     final m = _seconds ~/ 60;
     final s = _seconds % 60;
-    return m > 0 ? '${m}m ${s}s' : '${s}s';
+    final base = m > 0 ? '${m}m ${s}s' : '${s}s';
+    return _paused ? '$base · 已暂停' : base;
+  }
+
+  void _togglePause() {
+    if (_result != null) return; // 已答完不可暂停
+    setState(() => _paused = !_paused);
   }
 
   Future<void> _submit() async {
@@ -392,6 +424,13 @@ class _QuestionScreenState extends State<_QuestionScreen> {
         title: Text('第 ${index + 1} / $total 题'),
         actions: [
           settingsAction(context),
+          // V3.8.3: 暂停按钮（仅未答完时可点）
+          if (_result == null)
+            IconButton(
+              icon: Icon(_paused ? Icons.play_circle_outline : Icons.pause_circle_outline),
+              tooltip: _paused ? '恢复' : '暂停',
+              onPressed: _togglePause,
+            ),
           IconButton(
             icon: const Icon(Icons.stop_circle_outlined),
             tooltip: '中止练习',
@@ -426,7 +465,8 @@ class _QuestionScreenState extends State<_QuestionScreen> {
           ),
         ],
       ),
-      body: SingleChildScrollView(
+      body: Stack(children: [
+        SingleChildScrollView(
         padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -438,7 +478,7 @@ class _QuestionScreenState extends State<_QuestionScreen> {
             ),
             const SizedBox(height: 12),
 
-            // 元信息（V3.8.2: difficulty 改为 round 档显示）
+            // 元信息（V3.8.3: 不显示 KP 标签——KP 是答题后复盘维度，做题中暴露相当于给提示）
             Row(children: [
               _Tag(q.type.label, AppTheme.primary.withOpacity(0.15), AppTheme.primary),
               if (q.round != null) ...[
@@ -446,9 +486,10 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                 _Tag(_roundLabel(q.round!),
                     _roundColor(q.round!).withOpacity(0.15), _roundColor(q.round!)),
               ],
-              if (q.knowledgePoint != null) ...[
+              if (_attemptCount >= 2) ...[
                 const SizedBox(width: 6),
-                _Tag(q.knowledgePoint!, Colors.grey[100]!, Colors.grey[600]!),
+                _Tag('📚 第 $_attemptCount 次',
+                    Colors.deepPurple.withOpacity(0.10), Colors.deepPurple),
               ],
             ]),
             const SizedBox(height: 12),
@@ -478,29 +519,9 @@ class _QuestionScreenState extends State<_QuestionScreen> {
             ),
             const SizedBox(height: 16),
 
-            // 答题区域
+            // 答题区域（V3.8.3：废弃"查看提示"——explanation 是答题推导，相当于给答案）
             if (_result == null) ...[
               _buildInputArea(q),
-              const SizedBox(height: 12),
-
-              // 提示按钮
-              if (q.explanation != null && !service.hintShown)
-                TextButton.icon(
-                  icon: const Icon(Icons.lightbulb_outline, size: 18),
-                  label: const Text('查看提示'),
-                  onPressed: () => context.read<PracticeService>().showHint(),
-                ),
-              if (service.hintShown && q.explanation != null)
-                Container(
-                  padding: const EdgeInsets.all(10),
-                  decoration: BoxDecoration(
-                    color: Colors.amber[50],
-                    borderRadius: BorderRadius.circular(8),
-                    border: Border.all(color: Colors.amber[200]!),
-                  ),
-                  child: MathText('💡 ${q.explanation}',
-                      style: const TextStyle(color: Colors.black87, fontSize: 13)),
-                ),
               const SizedBox(height: 16),
               SizedBox(
                 width: double.infinity,
@@ -532,6 +553,32 @@ class _QuestionScreenState extends State<_QuestionScreen> {
           ],
         ),
       ),
+        // V3.8.3 暂停遮罩
+        if (_paused)
+          Positioned.fill(
+            child: GestureDetector(
+              onTap: _togglePause,
+              child: Container(
+                color: Colors.black54,
+                alignment: Alignment.center,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: const [
+                    Icon(Icons.pause_circle_filled,
+                        size: 80, color: Colors.white),
+                    SizedBox(height: 12),
+                    Text('已暂停',
+                        style: TextStyle(
+                            color: Colors.white, fontSize: 22, fontWeight: FontWeight.w600)),
+                    SizedBox(height: 4),
+                    Text('点击屏幕任意位置恢复',
+                        style: TextStyle(color: Colors.white70, fontSize: 13)),
+                  ],
+                ),
+              ),
+            ),
+          ),
+      ]),
     );
   }
 
@@ -603,6 +650,22 @@ class _QuestionScreenState extends State<_QuestionScreen> {
             border: OutlineInputBorder(),
           ),
         );
+
+      case QuestionType.subjective:
+        // V3.8.3: 主观题用大文本框；提交后自动入家长审核队列
+        return TextField(
+          controller: _answerCtrl,
+          onChanged: (_) => setState(() {}),
+          minLines: 5,
+          maxLines: 12,
+          keyboardType: TextInputType.multiline,
+          decoration: const InputDecoration(
+            labelText: '写出你的答案 / 作文 / 解答过程',
+            alignLabelWithHint: true,
+            border: OutlineInputBorder(),
+            helperText: '提交后由家长批改打分',
+          ),
+        );
     }
   }
 
@@ -658,7 +721,47 @@ class _QuestionScreenState extends State<_QuestionScreen> {
   }
 
   Widget _buildResult(Question q, bool correct) {
+    // V3.8.3: 主观题答完显示"等家长批改"，不判对错
+    if (q.type == QuestionType.subjective) {
+      return Container(
+        padding: const EdgeInsets.all(14),
+        decoration: BoxDecoration(
+          color: Colors.purple.withOpacity(0.06),
+          borderRadius: BorderRadius.circular(10),
+          border: Border.all(color: Colors.purple.withOpacity(0.4)),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text('📝 已提交，等家长批改',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold, color: Colors.purple, fontSize: 15)),
+            const SizedBox(height: 8),
+            Text('我的答案：',
+                style: TextStyle(fontSize: 12, color: Colors.grey.shade700)),
+            const SizedBox(height: 4),
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(6),
+                border: Border.all(color: Colors.grey.shade200),
+              ),
+              child: Text(
+                _answerCtrl.text.trim().isEmpty ? '（空）' : _answerCtrl.text.trim(),
+                style: const TextStyle(fontSize: 14),
+              ),
+            ),
+          ],
+        ),
+      );
+    }
+
     final color = correct ? AppTheme.success : AppTheme.secondary;
+    final userAnswer = q.type == QuestionType.multipleChoice
+        ? (_selectedOption ?? '')
+        : _answerCtrl.text.trim();
     return Container(
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
@@ -672,14 +775,23 @@ class _QuestionScreenState extends State<_QuestionScreen> {
           Text(correct ? '✅ 回答正确！' : '❌ 回答错误',
               style: TextStyle(fontWeight: FontWeight.bold, color: color, fontSize: 15)),
           if (!correct) ...[
-            const SizedBox(height: 6),
+            // V3.8.3: 显式展示我填的 vs 正解，方便小孩判断是否申诉
+            const SizedBox(height: 8),
+            Text('我填的：$userAnswer',
+                style: TextStyle(color: Colors.red.shade700, fontWeight: FontWeight.w600)),
+            const SizedBox(height: 4),
             Text('正确答案：${q.displayAnswer}',
-                style: const TextStyle(fontWeight: FontWeight.w600)),
+                style: TextStyle(color: Colors.green.shade700, fontWeight: FontWeight.w600)),
           ],
           if (q.explanation != null) ...[
             const SizedBox(height: 8),
             MathText('解析：${q.explanation}',
                 style: TextStyle(color: Colors.grey[700], fontSize: 14, height: 1.5)),
+          ],
+          // V3.8.3: 申诉快捷入口（错题 + 非主观题）
+          if (!correct) ...[
+            const SizedBox(height: 10),
+            _InlineAppealButton(),
           ],
         ],
       ),
@@ -712,6 +824,101 @@ class _QuestionScreenState extends State<_QuestionScreen> {
       case 4: return Colors.red;
       default: return Colors.grey;
     }
+  }
+}
+
+/// V3.8.3：答题完成页错题旁的"申诉"快捷按钮（练习中实时申诉）
+class _InlineAppealButton extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final practice = context.watch<PracticeService>();
+    final review = context.watch<ReviewRequestService>();
+    final recordId = practice.lastSubmittedRecordId;
+    if (recordId == null) return const SizedBox.shrink();
+    final existing = review.requestForRecord(recordId);
+
+    if (existing != null) {
+      // 已申诉过 → 显示状态徽章
+      return Container(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+        decoration: BoxDecoration(
+          color: existing.status == ReviewRequestStatus.approved
+              ? Colors.green.shade50
+              : Colors.grey.shade200,
+          borderRadius: BorderRadius.circular(6),
+        ),
+        child: Row(children: [
+          Icon(
+            existing.status == ReviewRequestStatus.approved
+                ? Icons.verified
+                : Icons.hourglass_top,
+            size: 14,
+          ),
+          const SizedBox(width: 6),
+          Text(
+            existing.status == ReviewRequestStatus.approved
+                ? '已平反 +0.5⭐'
+                : '已提交申诉，等家长审核',
+            style: const TextStyle(fontSize: 12),
+          ),
+        ]),
+      );
+    }
+    return Align(
+      alignment: Alignment.centerLeft,
+      child: TextButton.icon(
+        icon: const Icon(Icons.flag_outlined, size: 16),
+        label: const Text('觉得判错了？申诉'),
+        style: TextButton.styleFrom(
+          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+          minimumSize: Size.zero,
+          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+        ),
+        onPressed: () => _onTap(context, recordId),
+      ),
+    );
+  }
+
+  Future<void> _onTap(BuildContext context, int recordId) async {
+    final ctrl = TextEditingController();
+    final ok = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('申诉判错'),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text('提交后由家长审核。审核通过后这道题改成对的，并补⭐。',
+                style: TextStyle(fontSize: 13)),
+            const SizedBox(height: 12),
+            TextField(
+              controller: ctrl,
+              maxLines: 3,
+              decoration: const InputDecoration(
+                hintText: '想对家长说点什么？（可空）',
+                border: OutlineInputBorder(),
+              ),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+              onPressed: () => Navigator.pop(ctx, false), child: const Text('取消')),
+          TextButton(
+              onPressed: () => Navigator.pop(ctx, true), child: const Text('提交')),
+        ],
+      ),
+    );
+    if (ok != true || !context.mounted) return;
+    final note = ctrl.text.trim().isEmpty ? null : ctrl.text.trim();
+    final id = await context
+        .read<ReviewRequestService>()
+        .submitAppeal(practiceRecordId: recordId, childNote: note);
+    if (!context.mounted) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text(id == null ? '无法提交' : '已提交，等家长审核')),
+    );
   }
 }
 

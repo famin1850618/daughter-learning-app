@@ -25,14 +25,20 @@ class ReviewKpSummary {
 
 /// 错题历史记录（详情页用）
 class WrongQuestionRecord {
+  /// V3.8.3：申诉副作用要 UPDATE 这条 record 的 is_correct
+  final int practiceRecordId;
   final Question question;
   final String userAnswer;
   final DateTime practicedAt;
+  /// V3.8.3：来源 session id（错题集详情页显示"来自哪天的练习"）
+  final String? sessionId;
 
   const WrongQuestionRecord({
+    required this.practiceRecordId,
     required this.question,
     required this.userAnswer,
     required this.practicedAt,
+    this.sessionId,
   });
 }
 
@@ -279,7 +285,10 @@ class QuestionDao {
   Future<List<WrongQuestionRecord>> getWrongHistoryForKnowledgePoint(String kpPath) async {
     final db = await _db.database;
     final rows = await db.rawQuery('''
-      SELECT q.*, r.user_answer AS r_user_answer, r.practiced_at AS r_practiced_at
+      SELECT q.*, r.id AS r_id,
+             r.user_answer AS r_user_answer,
+             r.practiced_at AS r_practiced_at,
+             r.session_id AS r_session_id
       FROM practice_records r
       JOIN questions q ON q.id = r.question_id
       WHERE r.is_correct = 0 AND q.knowledge_point = ?
@@ -289,9 +298,11 @@ class QuestionDao {
     return rows.map((row) {
       final q = Question.fromMap(row);
       return WrongQuestionRecord(
+        practiceRecordId: row['r_id'] as int,
         question: q,
         userAnswer: row['r_user_answer'] as String,
         practicedAt: DateTime.parse(row['r_practiced_at'] as String),
+        sessionId: row['r_session_id'] as String?,
       );
     }).toList();
   }
@@ -704,5 +715,80 @@ class QuestionDao {
       'total': (r.first['total'] as int?) ?? 0,
       'correct': (r.first['correct'] as int?) ?? 0,
     };
+  }
+
+  // ── V3.8.3: 申诉/主观题评分相关 ───────────────────────
+
+  Future<Question?> findById(int questionId) async {
+    final db = await _db.database;
+    final rows = await db.query(
+      'questions',
+      where: 'id = ?',
+      whereArgs: [questionId],
+      limit: 1,
+    );
+    if (rows.isEmpty) return null;
+    return Question.fromMap(rows.first);
+  }
+
+  Future<PracticeRecord?> findPracticeRecord(int recordId) async {
+    final db = await _db.database;
+    final rows = await db.query(
+      'practice_records',
+      where: 'id = ?',
+      whereArgs: [recordId],
+      limit: 1,
+    );
+    if (rows.isEmpty) return null;
+    return PracticeRecord.fromMap(rows.first);
+  }
+
+  Future<void> updatePracticeRecordIsCorrect(int recordId, bool isCorrect) async {
+    final db = await _db.database;
+    await db.update(
+      'practice_records',
+      {'is_correct': isCorrect ? 1 : 0},
+      where: 'id = ?',
+      whereArgs: [recordId],
+    );
+  }
+
+  /// 算 session 当前 (score, total)，用于审核通过后重判 session 是否新进入"通过"区间
+  Future<({int score, int total})> getSessionScore(String sessionId) async {
+    final db = await _db.database;
+    final r = await db.rawQuery('''
+      SELECT COUNT(*) as total,
+             SUM(CASE WHEN is_correct = 1 THEN 1 ELSE 0 END) as correct
+      FROM practice_records
+      WHERE session_id = ?
+    ''', [sessionId]);
+    final row = r.first;
+    return (
+      score: (row['correct'] as int?) ?? 0,
+      total: (row['total'] as int?) ?? 0,
+    );
+  }
+
+  /// 找出 session 内所有题目的 (subject, grade, chapter, kp)，用于审核通过后
+  /// 重新触发 PlanService.autoCompleteFromPractice
+  Future<List<Map<String, Object?>>> getSessionKpTuples(String sessionId) async {
+    final db = await _db.database;
+    final rows = await db.rawQuery('''
+      SELECT DISTINCT q.subject, q.grade, q.chapter, q.knowledge_point
+      FROM practice_records r
+      JOIN questions q ON q.id = r.question_id
+      WHERE r.session_id = ?
+    ''', [sessionId]);
+    return rows;
+  }
+
+  /// 判断一道题在小孩做过的所有记录中累计出现了多少次（替代选项随机：用次数标提醒"做过 N 次"）
+  Future<int> getAttemptCountForQuestion(int questionId) async {
+    final db = await _db.database;
+    final r = await db.rawQuery(
+      'SELECT COUNT(*) as c FROM practice_records WHERE question_id = ?',
+      [questionId],
+    );
+    return (r.first['c'] as int?) ?? 0;
   }
 }

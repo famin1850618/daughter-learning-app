@@ -138,4 +138,64 @@ class RewardService extends ChangeNotifier {
       kind: kind,
     );
   }
+
+  // ── V3.8.3 申诉 / 主观题评分补发 ────────────────────────
+
+  /// 单条 ad-hoc 奖励（申诉通过补发单题⭐ / 主观题评分对应⭐）
+  Future<void> recordAdHoc({
+    required String source,
+    required double stars,
+    String? sessionId,
+    String? note,
+  }) async {
+    if (stars <= 0) return;
+    await _dao.insert(Reward(
+      source: source,
+      stars: stars,
+      earnedAt: DateTime.now(),
+      sessionId: sessionId,
+      note: note,
+    ));
+    await refresh();
+  }
+
+  /// 检查 session 是否已发过通过/满分加成（note 含"加成"判断）
+  Future<bool> hasBonusForSession(String sessionId) async {
+    final rewards = await _dao.getBySessionId(sessionId);
+    return rewards.any((r) => (r.note ?? '').contains('加成'));
+  }
+
+  /// 仅补发通过/满分加成（不再发 per-question，避免与申诉单题⭐重复）。
+  /// 调用方负责确保 hasBonusForSession 为 false 才调用。
+  Future<double> recordBonusOnly({
+    required SessionKind kind,
+    required int score,
+    required int total,
+    required String sessionId,
+  }) async {
+    if (total == 0) return 0;
+    final pct = score / total;
+    final passed = pct >= 0.80;
+    final perfect = score == total;
+    final bonus = _bonusTable[kind]!;
+    double bonusStars = 0;
+    if (perfect) {
+      bonusStars = bonus.perfect;
+    } else if (passed) {
+      bonusStars = bonus.pass;
+    }
+    if (bonusStars <= 0) return 0;
+    final source = _sourceFor(kind);
+    await _dao.insert(Reward(
+      source: perfect ? 'bonus' : source,
+      stars: bonusStars,
+      earnedAt: DateTime.now(),
+      sessionId: sessionId,
+      note: perfect
+          ? '满分加成（${rewardSourceLabel(source)}）· 申诉补发'
+          : '通过加成（${rewardSourceLabel(source)}）· 申诉补发',
+    ));
+    await refresh();
+    return bonusStars;
+  }
 }

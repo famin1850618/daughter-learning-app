@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 12,
+      version: 13,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
@@ -237,6 +237,76 @@ class DatabaseHelper {
         await db.execute('PRAGMA foreign_keys = ON');
       } catch (_) {/* 忽略，迁移失败不影响 v12 schema 变更 */}
     }
+    if (oldVersion < 13) {
+      // v13: V3.8.3
+      // 1) 申诉与主观题评分共用表
+      await db.execute('''
+        CREATE TABLE IF NOT EXISTS review_requests (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          request_type TEXT NOT NULL,
+          question_id INTEGER NOT NULL,
+          practice_record_id INTEGER NOT NULL,
+          session_id TEXT,
+          user_answer TEXT NOT NULL,
+          standard_answer TEXT,
+          status TEXT NOT NULL DEFAULT 'pending',
+          child_note TEXT,
+          parent_note TEXT,
+          parent_score TEXT,
+          created_at TEXT NOT NULL,
+          reviewed_at TEXT,
+          user_id TEXT DEFAULT 'local'
+        )
+      ''');
+      try {
+        await db.execute(
+            'CREATE INDEX IF NOT EXISTS idx_review_requests_status ON review_requests (status)');
+      } catch (_) {}
+      try {
+        await db.execute(
+            'CREATE INDEX IF NOT EXISTS idx_review_requests_question ON review_requests (question_id)');
+      } catch (_) {}
+      try {
+        await db.execute(
+            'CREATE INDEX IF NOT EXISTS idx_review_requests_record ON review_requests (practice_record_id)');
+      } catch (_) {}
+
+      // 2) practice_records 加 session_id（申诉副作用要重判 session 通过状态用）
+      try {
+        await db.execute('ALTER TABLE practice_records ADD COLUMN session_id TEXT');
+      } catch (_) {}
+      try {
+        await db.execute(
+            'CREATE INDEX IF NOT EXISTS idx_records_session ON practice_records (session_id)');
+      } catch (_) {}
+
+      // 3) practice_sessions 加暂停字段（计时暂停）
+      try {
+        await db.execute(
+            'ALTER TABLE practice_sessions ADD COLUMN paused_total_ms INTEGER DEFAULT 0');
+      } catch (_) {}
+      try {
+        await db.execute('ALTER TABLE practice_sessions ADD COLUMN paused_at TEXT');
+      } catch (_) {}
+
+      // 4) 老外研社英语题包标记 deprecated（V3.9 转 Cambridge 体系，老题不抽但保留）
+      const deprecatedEnglishSources = [
+        'batch_2026_05_06_g6_english',
+        'batch_2026_05_07_g6_english_r2',
+        'batch_2026_05_07_g6_english_r3',
+        'batch_2026_05_08_g7_english_r1',
+      ];
+      for (final src in deprecatedEnglishSources) {
+        try {
+          await db.update(
+            'questions',
+            {'source': '${src}_deprecated'},
+            where: 'source = ?',
+            whereArgs: [src],
+          );
+        } catch (_) {/* 忽略 */}
+      }
+    }
   }
 
   Future<void> _createAllTables(Database db) async {
@@ -313,6 +383,7 @@ class DatabaseHelper {
         practiced_at TEXT NOT NULL,
         time_spent INTEGER DEFAULT 0,
         used_hint INTEGER DEFAULT 0,
+        session_id TEXT,
         user_id TEXT DEFAULT 'local',
         FOREIGN KEY (question_id) REFERENCES questions (id)
       )
@@ -377,7 +448,28 @@ class DatabaseHelper {
         hint_shown INTEGER,
         reward_claimed INTEGER,
         last_reward_json TEXT,
+        paused_total_ms INTEGER DEFAULT 0,
+        paused_at TEXT,
         saved_at TEXT
+      )
+    ''');
+
+    await db.execute('''
+      CREATE TABLE review_requests (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        request_type TEXT NOT NULL,
+        question_id INTEGER NOT NULL,
+        practice_record_id INTEGER NOT NULL,
+        session_id TEXT,
+        user_answer TEXT NOT NULL,
+        standard_answer TEXT,
+        status TEXT NOT NULL DEFAULT 'pending',
+        child_note TEXT,
+        parent_note TEXT,
+        parent_score TEXT,
+        created_at TEXT NOT NULL,
+        reviewed_at TEXT,
+        user_id TEXT DEFAULT 'local'
       )
     ''');
 
@@ -392,6 +484,10 @@ class DatabaseHelper {
     await db.execute('CREATE INDEX idx_questions_round ON questions (round)');
     await db.execute('CREATE INDEX idx_questions_group ON questions (group_id)');
     await db.execute('CREATE INDEX idx_records_question ON practice_records (question_id)');
+    await db.execute('CREATE INDEX idx_records_session ON practice_records (session_id)');
     await db.execute('CREATE INDEX idx_kp_subject ON knowledge_points (subject)');
+    await db.execute('CREATE INDEX idx_review_requests_status ON review_requests (status)');
+    await db.execute('CREATE INDEX idx_review_requests_question ON review_requests (question_id)');
+    await db.execute('CREATE INDEX idx_review_requests_record ON review_requests (practice_record_id)');
   }
 }

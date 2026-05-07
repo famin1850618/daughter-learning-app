@@ -7,20 +7,32 @@ import '../database/practice_session_dao.dart';
 import '../utils/answer_matcher.dart';
 import 'reward_service.dart';
 import 'difficulty_settings_service.dart';
+import 'review_request_service.dart';
 
 class PracticeService extends ChangeNotifier {
   final QuestionDao _dao = QuestionDao();
   final PracticeSessionDao _sessionDao = PracticeSessionDao();
   final RewardService _rewardService;
   final DifficultySettingsService _difficultySettings;
+  final ReviewRequestService _reviewService;
 
-  PracticeService(this._rewardService, this._difficultySettings) {
+  PracticeService(
+    this._rewardService,
+    this._difficultySettings,
+    this._reviewService,
+  ) {
     _restoreOnStart();
   }
 
+  /// V3.8.3：每个 session 生成唯一 ID，写入 practice_records.session_id 用于审核副作用重判
+  String _newSessionId(String prefix) =>
+      '$prefix:${DateTime.now().millisecondsSinceEpoch}';
+
   /// V3.8.1：选择题选项随机重排，避免孩子靠位置记答案。
   /// V3.8.2：同步重写 explanation 中的 letter ref（如"选 A"→"选 C"）。
-  /// 检测有歧义时跳过 shuffle 该题，保证「题目顺序对应解析」始终成立。
+  /// V3.8.3：放弃选项随机（错题集回看时序错位无法兜住），改"做过 N 次"标签 +
+  /// 已掌握 ≥3 排除 替代防记忆策略。方法体保留作回滚备查。
+  // ignore: unused_element
   Question _shuffleOptions(Question q) {
     if (q.type != QuestionType.multipleChoice) return q;
     final orig = q.options;
@@ -99,6 +111,7 @@ class PracticeService extends ChangeNotifier {
     );
   }
 
+  // ignore: unused_element
   List<Question> _shuffleAll(List<Question> qs) => qs.map(_shuffleOptions).toList();
 
   /// V3.8：把 profile 翻成 (rounds, weights) 给 QuestionDao
@@ -124,6 +137,9 @@ class PracticeService extends ChangeNotifier {
   bool _sessionActive = false;
   bool _hintShown = false;
   DateTime? _questionStartTime;
+  /// V3.8.3：最近一次 submitAnswer 写入的 practice_records.id（申诉/主观题快捷入口用）
+  int? _lastSubmittedRecordId;
+  String? _lastSubmittedAnswer;
 
   SessionKind _kind = SessionKind.normal;
   String? _sessionId;
@@ -137,6 +153,8 @@ class PracticeService extends ChangeNotifier {
   int get score => _score;
   bool get sessionActive => _sessionActive;
   bool get hintShown => _hintShown;
+  int? get lastSubmittedRecordId => _lastSubmittedRecordId;
+  String? get lastSubmittedAnswer => _lastSubmittedAnswer;
   SessionKind get kind => _kind;
   SessionRewardSummary? get lastReward => _lastReward;
   bool get isRestoring => _restoring;
@@ -238,9 +256,9 @@ class PracticeService extends ChangeNotifier {
         limit: count,
       );
     }
-    _currentQuestions = _shuffleAll(_currentQuestions);
+    // V3.8.3: 放弃选项随机；用「做过 N 次」标签 + 已掌握≥3 排除 替代
     _kind = SessionKind.normal;
-    _sessionId = null;
+    _sessionId = _newSessionId('practice');
     _resetSessionState();
     await _persist();
   }
@@ -276,9 +294,9 @@ class PracticeService extends ChangeNotifier {
         limit: count,
       );
     }
-    _currentQuestions = _shuffleAll(_currentQuestions);
+    // V3.8.3: 放弃选项随机；用「做过 N 次」标签 + 已掌握≥3 排除 替代
     _kind = SessionKind.normal;
-    _sessionId = null;
+    _sessionId = _newSessionId('kp');
     _resetSessionState();
     await _persist();
   }
@@ -317,9 +335,9 @@ class PracticeService extends ChangeNotifier {
       result.addAll(qs);
     }
     _currentQuestions = result.take(totalLimit).toList();
-    _currentQuestions = _shuffleAll(_currentQuestions);
+    // V3.8.3: 放弃选项随机；用「做过 N 次」标签 + 已掌握≥3 排除 替代
     _kind = SessionKind.normal;
-    _sessionId = null;
+    _sessionId = _newSessionId('agg');
     _resetSessionState();
     await _persist();
   }
@@ -330,7 +348,8 @@ class PracticeService extends ChangeNotifier {
     required SessionKind kind,
     required String periodKey,
   }) {
-    _currentQuestions = _shuffleAll(questions);
+    // V3.8.3: 放弃选项随机
+    _currentQuestions = questions;
     _kind = kind;
     _sessionId = '${kind.name}:$periodKey';
     _resetSessionState();
@@ -360,20 +379,37 @@ class PracticeService extends ChangeNotifier {
     final spent = _questionStartTime == null
         ? 0
         : DateTime.now().difference(_questionStartTime!).inSeconds;
-    final correct = AnswerMatcher.isCorrect(
-      userAns: answer,
-      correctAnswerField: q.answer,
-      type: q.type,
-    );
-    if (correct) _score++;
-    await _dao.insertRecord(PracticeRecord(
+
+    // V3.8.3: 主观题答完不立即判定，is_correct=false（待批），自动入家长审核队列
+    final bool correct;
+    if (q.type == QuestionType.subjective) {
+      correct = false; // 待家长评分（fail/pass/good/perfect）
+    } else {
+      correct = AnswerMatcher.isCorrect(
+        userAns: answer,
+        correctAnswerField: q.answer,
+        type: q.type,
+      );
+      if (correct) _score++;
+    }
+
+    final recordId = await _dao.insertRecord(PracticeRecord(
       questionId: q.id!,
       userAnswer: answer,
       isCorrect: correct,
       practicedAt: DateTime.now(),
       timeSpent: spent,
-      usedHint: _hintShown,
+      usedHint: false, // V3.8.3: hint 已废弃，恒 false
+      sessionId: _sessionId,
     ));
+    _lastSubmittedRecordId = recordId;
+    _lastSubmittedAnswer = answer;
+
+    // V3.8.3: 主观题自动入家长审核
+    if (q.type == QuestionType.subjective) {
+      await _reviewService.submitSubjectiveGrading(practiceRecordId: recordId);
+    }
+
     notifyListeners();
     await _persist();
     return correct;

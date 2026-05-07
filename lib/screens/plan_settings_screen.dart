@@ -9,7 +9,9 @@ import '../services/learning_export_service.dart';
 import '../services/learning_sync_service.dart';
 import '../services/data_backup_service.dart';
 import '../services/difficulty_settings_service.dart';
+import '../services/review_request_service.dart';
 import 'curriculum_management_screen.dart';
+import 'parent_review_screen.dart';
 
 class PlanSettingsScreen extends StatefulWidget {
   const PlanSettingsScreen({super.key});
@@ -49,6 +51,10 @@ class _PlanSettingsScreenState extends State<PlanSettingsScreen> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
+
+          // ── 家长审核（V3.8.3）──────────────────
+          const _ParentReviewEntry(),
+          const SizedBox(height: 16),
 
           // ── 课程知识库 ────────────────────────
           Card(
@@ -723,6 +729,47 @@ class _ChoiceChip extends StatelessWidget {
         fontSize: 12,
       ),
       visualDensity: VisualDensity.compact,
+    );
+  }
+}
+
+/// V3.8.3 设置页家长审核入口（pending 数 badge）
+class _ParentReviewEntry extends StatelessWidget {
+  const _ParentReviewEntry();
+
+  @override
+  Widget build(BuildContext context) {
+    final review = context.watch<ReviewRequestService>();
+    final pending = review.pendingCount;
+    return Card(
+      child: ListTile(
+        leading: const Icon(Icons.fact_check, color: Colors.deepPurple),
+        title: const Text('家长审核'),
+        subtitle: Text(pending > 0
+            ? '$pending 条待审核（小孩申诉判错 / 主观题待批改）'
+            : '小孩申诉判错 / 主观题待批改 都在这里处理'),
+        trailing: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            if (pending > 0)
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                decoration: BoxDecoration(
+                  color: Colors.red,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Text('$pending',
+                    style: const TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold)),
+              ),
+            const SizedBox(width: 4),
+            const Icon(Icons.chevron_right),
+          ],
+        ),
+        onTap: () => Navigator.push(
+          context,
+          MaterialPageRoute(builder: (_) => const ParentReviewScreen()),
+        ),
+      ),
     );
   }
 }

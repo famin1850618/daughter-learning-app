@@ -5,17 +5,21 @@ import 'package:share_plus/share_plus.dart';
 
 import '../database/database_helper.dart';
 import '../database/question_dao.dart';
+import '../database/review_request_dao.dart';
+import '../models/review_request.dart';
 
 /// 学情数据导出：弱 KP + 最近错题 + KP 全量统计 + 整体准确率。
 /// 第二阶段 cron 用 by_kp 段的 error_rate 做权重分配错题反馈题。
 class LearningExportService {
   final _dao = QuestionDao();
+  final _reviewDao = ReviewRequestDao();
 
   Future<String> buildJson() async {
     final weak = await _dao.getWeakKnowledgePoints();
     final recent = await _dao.getRecentWrongQuestions(limit: 50);
     final stats = await _dao.getOverallStats();
     final byKp = await _getAllKpStats();
+    final reviewFeedback = await _buildReviewFeedback();
 
     final total = stats['total'] ?? 0;
     final correct = stats['correct'] ?? 0;
@@ -31,9 +35,41 @@ class LearningExportService {
       'weak_points': weak,
       'recent_wrong': recent,
       'by_kp': byKp,
+      // V3.8.3: 家长审核反馈段
+      // cron 端用：同模式 ≥3 次 approved → AnswerMatcher 归一化规则待调；
+      // 单题 approved → 题包侧 alt_answers 补 / 转选择题 / 删；
+      // rejected 不动作（说明判定本身是对的）
+      'review_feedback': reviewFeedback,
     };
 
     return const JsonEncoder.withIndent('  ').convert(payload);
+  }
+
+  /// 把已审核的申诉/主观题评分整理成 cron 可读的列表
+  Future<List<Map<String, dynamic>>> _buildReviewFeedback() async {
+    final reviewed = await _reviewDao.listReviewedForExport();
+    if (reviewed.isEmpty) return [];
+    final out = <Map<String, dynamic>>[];
+    for (final r in reviewed) {
+      final q = await _dao.findById(r.questionId);
+      if (q == null) continue;
+      out.add({
+        'request_type': r.requestType.key,
+        'status': r.status.key,
+        'question_id': r.questionId,
+        'subject': q.subject.index,
+        'grade': q.grade,
+        'knowledge_point': q.knowledgePoint,
+        'content': q.content,
+        'user_answer': r.userAnswer,
+        'standard_answer': r.standardAnswer,
+        'child_note': r.childNote,
+        'parent_note': r.parentNote,
+        'parent_score': r.parentScore?.key,
+        'reviewed_at': r.reviewedAt?.toIso8601String(),
+      });
+    }
+    return out;
   }
 
   /// 全部 KP 的 attempts/errors/error_rate + mastered_count（V3.8.2）

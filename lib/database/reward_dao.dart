@@ -43,4 +43,16 @@ class RewardDao {
     final db = await DatabaseHelper().database;
     await db.delete('rewards');
   }
+
+  /// V3.8.3: 查 session 已发的所有奖励行（用于审核通过后判断是否需补发通过加成）
+  Future<List<Reward>> getBySessionId(String sessionId) async {
+    final db = await DatabaseHelper().database;
+    final rows = await db.query(
+      'rewards',
+      where: 'session_id = ?',
+      whereArgs: [sessionId],
+      orderBy: 'earned_at ASC',
+    );
+    return rows.map(Reward.fromMap).toList();
+  }
 }

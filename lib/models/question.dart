@@ -1,6 +1,8 @@
 import 'subject.dart';
 
-enum QuestionType { multipleChoice, fillBlank, calculation }
+/// V3.8.3：新增 subjective（主观题）—— 答完不立即判定，自动入家长审核队列由家长打分。
+/// 用于作文、阅读理解开放问答、Cambridge Writing 等无标准答案的题型。
+enum QuestionType { multipleChoice, fillBlank, calculation, subjective }
 enum Difficulty { easy, medium, hard }
 
 extension QuestionTypeExt on QuestionType {
@@ -9,6 +11,7 @@ extension QuestionTypeExt on QuestionType {
       case QuestionType.multipleChoice: return '选择题';
       case QuestionType.fillBlank:      return '填空题';
       case QuestionType.calculation:    return '计算题';
+      case QuestionType.subjective:     return '主观题';
     }
   }
   String get key {
@@ -16,6 +19,7 @@ extension QuestionTypeExt on QuestionType {
       case QuestionType.multipleChoice: return 'choice';
       case QuestionType.fillBlank:      return 'fill';
       case QuestionType.calculation:    return 'calculation';
+      case QuestionType.subjective:     return 'subjective';
     }
   }
   static QuestionType fromKey(String key) {
@@ -23,6 +27,7 @@ extension QuestionTypeExt on QuestionType {
       case 'choice':      return QuestionType.multipleChoice;
       case 'fill':        return QuestionType.fillBlank;
       case 'calculation': return QuestionType.calculation;
+      case 'subjective':  return QuestionType.subjective;
       default:            return QuestionType.fillBlank;
     }
   }
@@ -140,6 +145,9 @@ class PracticeRecord {
   final DateTime practicedAt;
   final int timeSpent;
   final bool usedHint;
+  /// V3.8.3：写入时绑定的 session id；普通练习/章节练习/KP review/测评都生成 ID。
+  /// 申诉/主观题评分批改后用于反查 session 重判通过状态。
+  final String? sessionId;
 
   const PracticeRecord({
     this.id,
@@ -149,6 +157,7 @@ class PracticeRecord {
     required this.practicedAt,
     this.timeSpent = 0,
     this.usedHint = false,
+    this.sessionId,
   });
 
   Map<String, dynamic> toMap() => {
@@ -159,6 +168,7 @@ class PracticeRecord {
     'practiced_at': practicedAt.toIso8601String(),
     'time_spent': timeSpent,
     'used_hint': usedHint ? 1 : 0,
+    'session_id': sessionId,
   };
 
   factory PracticeRecord.fromMap(Map<String, dynamic> map) => PracticeRecord(
@@ -169,5 +179,6 @@ class PracticeRecord {
     practicedAt: DateTime.parse(map['practiced_at'] as String),
     timeSpent: (map['time_spent'] as int?) ?? 0,
     usedHint: ((map['used_hint'] as int?) ?? 0) == 1,
+    sessionId: map['session_id'] as String?,
   );
 }
