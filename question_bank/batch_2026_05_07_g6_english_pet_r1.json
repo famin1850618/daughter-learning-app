@@ -1,0 +1,3258 @@
+{
+  "source": "batch_2026_05_07_g6_english_pet_r1",
+  "subject": "english",
+  "grade": 6,
+  "knowledge_points_added": [],
+  "questions": [
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Family & Relationships",
+      "content": "She is my mother's sister, so she is my ____.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. uncle",
+        "B. aunt",
+        "C. cousin",
+        "D. niece"
+      ],
+      "answer": "B",
+      "explanation": "Mother's sister = aunt. Uncle is male, niece is the daughter of a sibling, cousin is a child of an aunt or uncle.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Family & Relationships",
+      "content": "My father's father is my ____.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. grandfather",
+        "B. grandmother",
+        "C. brother",
+        "D. son"
+      ],
+      "answer": "A",
+      "explanation": "Father's father = grandfather. Grandmother is female, brother and son are clearly wrong.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Family & Relationships",
+      "content": "My uncle's son is my ____.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. nephew",
+        "B. brother",
+        "C. cousin",
+        "D. son"
+      ],
+      "answer": "C",
+      "explanation": "An uncle's child is your cousin. Nephew is your sibling's son, not your uncle's son.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Family & Relationships",
+      "content": "My parents have two children: me and my younger ____.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. parent",
+        "B. brother",
+        "C. teacher",
+        "D. friend"
+      ],
+      "answer": "B",
+      "explanation": "A younger child of the same parents is a brother (or sister). Parent and teacher do not fit a family relationship here.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Family & Relationships",
+      "content": "A woman who is married to a man is his ____.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. wife",
+        "B. mother",
+        "C. daughter",
+        "D. sister"
+      ],
+      "answer": "A",
+      "explanation": "A married woman is the man's wife. The other options describe blood relatives, not a spouse.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Family & Relationships",
+      "content": "My mother and father are my ____.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. parents",
+        "B. teachers",
+        "C. friends",
+        "D. cousins"
+      ],
+      "answer": "A",
+      "explanation": "Mother and father together are called parents. The other options are clearly not family roles for mother and father.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Family & Relationships",
+      "content": "My sister's daughter is my ____.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. niece",
+        "B. aunt",
+        "C. mother",
+        "D. daughter"
+      ],
+      "answer": "A",
+      "explanation": "A sister's daughter is your niece. Aunt and mother are older relatives; daughter is your own child.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Family & Relationships",
+      "content": "My grandmother's husband is my ____.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. father",
+        "B. uncle",
+        "C. grandfather",
+        "D. brother"
+      ],
+      "answer": "C",
+      "explanation": "Grandmother's husband = grandfather. Father is one generation closer; uncle and brother are not spouses of a grandmother.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Family & Relationships",
+      "content": "Tom and Jerry are best ____. They play together every day.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. parents",
+        "B. friends",
+        "C. teachers",
+        "D. doctors"
+      ],
+      "answer": "B",
+      "explanation": "People who play together and are close are friends. Parents, teachers, and doctors do not match the context.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Family & Relationships",
+      "content": "My brother's wife is my ____.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. sister-in-law",
+        "B. mother",
+        "C. cousin",
+        "D. daughter"
+      ],
+      "answer": "A",
+      "explanation": "A brother's wife is your sister-in-law. Mother, cousin, and daughter describe different family roles.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Travel & Holidays",
+      "content": "We need to buy ____ before we travel to another country.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. a passport",
+        "B. a chair",
+        "C. a window",
+        "D. a pencil"
+      ],
+      "answer": "A",
+      "explanation": "A passport is needed to travel to another country. The other items have nothing to do with travel.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Travel & Holidays",
+      "content": "We arrived at the ____ to catch our flight to Paris.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. station",
+        "B. airport",
+        "C. hospital",
+        "D. school"
+      ],
+      "answer": "B",
+      "explanation": "Flights leave from an airport. A station is for trains; hospital and school are unrelated.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Travel & Holidays",
+      "content": "I packed my clothes in a ____ for the trip.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. suitcase",
+        "B. cup",
+        "C. clock",
+        "D. pen"
+      ],
+      "answer": "A",
+      "explanation": "Clothes for travel are packed in a suitcase. The other objects are not used to pack clothes.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Travel & Holidays",
+      "content": "We stayed in a ____ near the beach last summer.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. hotel",
+        "B. school",
+        "C. bank",
+        "D. office"
+      ],
+      "answer": "A",
+      "explanation": "Travelers usually stay in a hotel. School, bank, and office are not places to sleep on holiday.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Travel & Holidays",
+      "content": "Before the flight, we showed our tickets and ____.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. passports",
+        "B. shoes",
+        "C. lunch",
+        "D. pets"
+      ],
+      "answer": "A",
+      "explanation": "At the airport you show your ticket and passport. Shoes, lunch, and pets are not standard travel documents.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Travel & Holidays",
+      "content": "We took a lot of ____ during our holiday in Italy.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. photos",
+        "B. tables",
+        "C. doors",
+        "D. walls"
+      ],
+      "answer": "A",
+      "explanation": "On holiday people take photos. Tables, doors, and walls cannot be 'taken' in this sense.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Travel & Holidays",
+      "content": "Our train leaves from platform 5 at the ____.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. station",
+        "B. kitchen",
+        "C. garden",
+        "D. classroom"
+      ],
+      "answer": "A",
+      "explanation": "Trains leave from a station. Kitchen, garden, and classroom are not transportation hubs.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Travel & Holidays",
+      "content": "We used a ____ to find the way to the museum.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. map",
+        "B. spoon",
+        "C. shirt",
+        "D. cake"
+      ],
+      "answer": "A",
+      "explanation": "A map shows the way. Spoon, shirt, and cake cannot help you find a place.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Travel & Holidays",
+      "content": "I love going to the ____ to swim in the sea.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. beach",
+        "B. library",
+        "C. bank",
+        "D. factory"
+      ],
+      "answer": "A",
+      "explanation": "People swim in the sea at the beach. Library, bank, and factory have no sea.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Travel & Holidays",
+      "content": "A person who travels for fun is called a ____.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. tourist",
+        "B. doctor",
+        "C. driver",
+        "D. teacher"
+      ],
+      "answer": "A",
+      "explanation": "A person who travels for fun is a tourist. Doctor, driver, and teacher are different jobs.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/School & Study",
+      "content": "We use a ____ to write on the paper.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. pen",
+        "B. plate",
+        "C. shoe",
+        "D. door"
+      ],
+      "answer": "A",
+      "explanation": "A pen is used to write. Plate, shoe, and door are not writing tools.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/School & Study",
+      "content": "The ____ teaches us English every Monday.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. teacher",
+        "B. cook",
+        "C. driver",
+        "D. farmer"
+      ],
+      "answer": "A",
+      "explanation": "A teacher teaches lessons. Cook, driver, and farmer have other jobs.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/School & Study",
+      "content": "I keep my pens and books in my ____.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. schoolbag",
+        "B. fridge",
+        "C. car",
+        "D. shoe"
+      ],
+      "answer": "A",
+      "explanation": "Pens and books for school go in a schoolbag. Fridge, car, and shoe are not for school items.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/School & Study",
+      "content": "Students sit at ____ during the lesson.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. desks",
+        "B. beds",
+        "C. trees",
+        "D. clouds"
+      ],
+      "answer": "A",
+      "explanation": "In class students sit at desks. Beds, trees, and clouds do not belong in a classroom.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/School & Study",
+      "content": "We read many books in the school ____.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. library",
+        "B. kitchen",
+        "C. swimming pool",
+        "D. garage"
+      ],
+      "answer": "A",
+      "explanation": "A library is full of books. Kitchen, swimming pool, and garage are not for reading.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/School & Study",
+      "content": "After school I do my ____ before dinner.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. homework",
+        "B. shopping",
+        "C. cooking",
+        "D. driving"
+      ],
+      "answer": "A",
+      "explanation": "Homework is the work students do at home after school. Shopping, cooking, and driving are not school tasks.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/School & Study",
+      "content": "Our maths teacher writes numbers on the ____.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. blackboard",
+        "B. plate",
+        "C. window",
+        "D. floor"
+      ],
+      "answer": "A",
+      "explanation": "Teachers usually write on a blackboard or whiteboard in class. The other options are not for writing lessons.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/School & Study",
+      "content": "I had to study hard for the English ____ yesterday.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. exam",
+        "B. dinner",
+        "C. dance",
+        "D. sofa"
+      ],
+      "answer": "A",
+      "explanation": "Students study for an exam. Dinner, dance, and sofa do not match 'study hard'.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/School & Study",
+      "content": "We use a ____ to draw a straight line.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. ruler",
+        "B. cup",
+        "C. fork",
+        "D. coat"
+      ],
+      "answer": "A",
+      "explanation": "A ruler is used to draw straight lines. Cup, fork, and coat are not drawing tools.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/School & Study",
+      "content": "Our school has twenty ____ from grade one to grade six.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. classes",
+        "B. cars",
+        "C. flowers",
+        "D. rivers"
+      ],
+      "answer": "A",
+      "explanation": "A school has classes (groups of students). Cars, flowers, and rivers do not fit a school context here.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Food & Daily Life",
+      "content": "I eat ____ and milk for breakfast every morning.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. bread",
+        "B. socks",
+        "C. pencils",
+        "D. paper"
+      ],
+      "answer": "A",
+      "explanation": "Bread is food often eaten at breakfast. Socks, pencils, and paper are not food.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Food & Daily Life",
+      "content": "I am thirsty. Can I have a glass of ____?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. water",
+        "B. paper",
+        "C. shoes",
+        "D. chairs"
+      ],
+      "answer": "A",
+      "explanation": "When thirsty, people drink water. Paper, shoes, and chairs cannot be drunk.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Food & Daily Life",
+      "content": "I cook food in the ____.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. kitchen",
+        "B. bathroom",
+        "C. garden",
+        "D. bus"
+      ],
+      "answer": "A",
+      "explanation": "Food is cooked in the kitchen. Bathroom, garden, and bus are not for cooking.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Food & Daily Life",
+      "content": "I cut the apple with a ____.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. knife",
+        "B. pillow",
+        "C. lamp",
+        "D. ball"
+      ],
+      "answer": "A",
+      "explanation": "A knife cuts food. Pillow, lamp, and ball are not used for cutting.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Food & Daily Life",
+      "content": "We eat soup with a ____.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. spoon",
+        "B. car",
+        "C. brick",
+        "D. tree"
+      ],
+      "answer": "A",
+      "explanation": "Soup is eaten with a spoon. Car, brick, and tree are not utensils.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Food & Daily Life",
+      "content": "Bananas and apples are kinds of ____.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. fruit",
+        "B. cars",
+        "C. metals",
+        "D. clothes"
+      ],
+      "answer": "A",
+      "explanation": "Bananas and apples are fruit. Cars, metals, and clothes are clearly different categories.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Food & Daily Life",
+      "content": "I brush my teeth in the ____ every morning.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. bathroom",
+        "B. cinema",
+        "C. forest",
+        "D. office"
+      ],
+      "answer": "A",
+      "explanation": "People brush their teeth in the bathroom. Cinema, forest, and office are not for daily hygiene.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Food & Daily Life",
+      "content": "Carrots and potatoes are ____.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. vegetables",
+        "B. drinks",
+        "C. tools",
+        "D. animals"
+      ],
+      "answer": "A",
+      "explanation": "Carrots and potatoes are vegetables. Drinks, tools, and animals are different categories.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Food & Daily Life",
+      "content": "I sleep in my ____ at night.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. bed",
+        "B. shoe",
+        "C. cup",
+        "D. book"
+      ],
+      "answer": "A",
+      "explanation": "People sleep in a bed. Shoe, cup, and book are not for sleeping.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Food & Daily Life",
+      "content": "I drink hot ____ in the morning to wake up.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. coffee",
+        "B. paper",
+        "C. soap",
+        "D. snow"
+      ],
+      "answer": "A",
+      "explanation": "Hot coffee is a common morning drink. Paper, soap, and snow are not drinks.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Hobbies & Leisure",
+      "content": "My hobby is ____. I read every day before bed.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. reading",
+        "B. eating",
+        "C. sleeping",
+        "D. crying"
+      ],
+      "answer": "A",
+      "explanation": "If you read every day, your hobby is reading. The other options are not hobbies tied to books.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Hobbies & Leisure",
+      "content": "I love ____ football with my friends after school.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. playing",
+        "B. cooking",
+        "C. washing",
+        "D. drinking"
+      ],
+      "answer": "A",
+      "explanation": "We say 'play football'. The other verbs do not collocate with football.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Hobbies & Leisure",
+      "content": "On weekends I like to ____ films with my family.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. watch",
+        "B. drink",
+        "C. cook",
+        "D. wash"
+      ],
+      "answer": "A",
+      "explanation": "We say 'watch films' or 'watch movies'. Drink, cook, and wash do not fit films.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Hobbies & Leisure",
+      "content": "She plays the ____ very well. It has black and white keys.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. piano",
+        "B. apple",
+        "C. road",
+        "D. lamp"
+      ],
+      "answer": "A",
+      "explanation": "A piano has black and white keys. Apple, road, and lamp are not instruments.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Hobbies & Leisure",
+      "content": "He goes ____ in the river every Saturday.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. swimming",
+        "B. cooking",
+        "C. driving",
+        "D. cleaning"
+      ],
+      "answer": "A",
+      "explanation": "People swim in a river. Cooking, driving, and cleaning are not done in a river.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Hobbies & Leisure",
+      "content": "I enjoy ____ to music when I am tired.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. listening",
+        "B. eating",
+        "C. running",
+        "D. sleeping"
+      ],
+      "answer": "A",
+      "explanation": "We say 'listen to music'. Eating, running, and sleeping do not collocate with 'to music' here.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Hobbies & Leisure",
+      "content": "My brother likes ____ pictures of birds.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. drawing",
+        "B. boiling",
+        "C. sweeping",
+        "D. tasting"
+      ],
+      "answer": "A",
+      "explanation": "We draw pictures. Boiling, sweeping, and tasting are not actions with pictures.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Hobbies & Leisure",
+      "content": "We go ____ in the mountains every summer.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. hiking",
+        "B. typing",
+        "C. shouting",
+        "D. eating"
+      ],
+      "answer": "A",
+      "explanation": "Hiking is a typical mountain hobby. Typing, shouting, and eating are not 'mountain' activities.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Hobbies & Leisure",
+      "content": "We use a ____ to take photos when we travel.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. camera",
+        "B. spoon",
+        "C. book",
+        "D. shoe"
+      ],
+      "answer": "A",
+      "explanation": "A camera takes photos. Spoon, book, and shoe are not for taking pictures.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Hobbies & Leisure",
+      "content": "Children often ____ games in the park on Sundays.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. play",
+        "B. cook",
+        "C. drive",
+        "D. wash"
+      ],
+      "answer": "A",
+      "explanation": "We say 'play games'. Cook, drive, and wash do not collocate with games.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Shopping & Money",
+      "content": "I bought a new T-shirt at the ____ yesterday.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. shop",
+        "B. forest",
+        "C. river",
+        "D. cave"
+      ],
+      "answer": "A",
+      "explanation": "Clothes are bought in a shop. Forest, river, and cave are not places to shop.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Shopping & Money",
+      "content": "How ____ is this book? It looks expensive.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. much",
+        "B. old",
+        "C. tall",
+        "D. far"
+      ],
+      "answer": "A",
+      "explanation": "We ask 'how much' for the price. Old, tall, and far ask about other things.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Shopping & Money",
+      "content": "I paid for the cake with ten ____.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. dollars",
+        "B. trees",
+        "C. windows",
+        "D. clouds"
+      ],
+      "answer": "A",
+      "explanation": "Dollars are money used to pay. Trees, windows, and clouds are not money.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Shopping & Money",
+      "content": "After I pay, the shop gives me a ____ as proof.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. receipt",
+        "B. shoe",
+        "C. plate",
+        "D. cloud"
+      ],
+      "answer": "A",
+      "explanation": "A receipt is the paper proof of payment. Shoe, plate, and cloud are not proof of buying.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Shopping & Money",
+      "content": "This shirt is too ____. I do not have enough money.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. expensive",
+        "B. soft",
+        "C. green",
+        "D. wet"
+      ],
+      "answer": "A",
+      "explanation": "When you cannot afford something it is expensive. Soft, green, and wet are not about price.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Shopping & Money",
+      "content": "We keep our money in a ____.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. wallet",
+        "B. fridge",
+        "C. clock",
+        "D. window"
+      ],
+      "answer": "A",
+      "explanation": "A wallet holds money. Fridge, clock, and window are not for money.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Shopping & Money",
+      "content": "There is a big ____ at the shop. Everything is half price!",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. sale",
+        "B. forest",
+        "C. test",
+        "D. road"
+      ],
+      "answer": "A",
+      "explanation": "A sale is when prices are reduced. Forest, test, and road do not relate to lower prices.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Shopping & Money",
+      "content": "We buy fresh fruit and vegetables at the ____.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. market",
+        "B. station",
+        "C. airport",
+        "D. library"
+      ],
+      "answer": "A",
+      "explanation": "A market sells fresh produce. Station, airport, and library are not food markets.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Shopping & Money",
+      "content": "I want to ____ this shirt for a bigger size.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. exchange",
+        "B. eat",
+        "C. drink",
+        "D. read"
+      ],
+      "answer": "A",
+      "explanation": "When you want a different size, you exchange. Eat, drink, and read do not work with shirts.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Vocabulary/Shopping & Money",
+      "content": "The shoes ____ 30 dollars at that shop.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. cost",
+        "B. eat",
+        "C. swim",
+        "D. sleep"
+      ],
+      "answer": "A",
+      "explanation": "We say something costs an amount of money. Eat, swim, and sleep do not work with prices.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Simple",
+      "content": "She ____ to school every day.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. go",
+        "B. goes",
+        "C. going",
+        "D. went"
+      ],
+      "answer": "B",
+      "explanation": "Third-person singular subject takes -es in Present Simple. 'Go' lacks -s; 'going' is -ing form; 'went' is past.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Simple",
+      "content": "I ____ coffee every morning.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. drinks",
+        "B. drinking",
+        "C. drink",
+        "D. drank"
+      ],
+      "answer": "C",
+      "explanation": "First-person 'I' takes the base form in Present Simple. 'Drinks' is for he/she/it; 'drinking' is -ing; 'drank' is past.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Simple",
+      "content": "My brother ____ football on weekends.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. play",
+        "B. plays",
+        "C. played",
+        "D. playing"
+      ],
+      "answer": "B",
+      "explanation": "Third-person singular 'my brother' takes -s. 'Play' lacks -s; 'played' is past; 'playing' is -ing form.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Simple",
+      "content": "We ____ English at school every Tuesday.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. studies",
+        "B. studying",
+        "C. studied",
+        "D. study"
+      ],
+      "answer": "D",
+      "explanation": "Plural subject 'we' takes the base form. 'Studies' is for he/she/it; 'studying' is -ing; 'studied' is past.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Simple",
+      "content": "The sun ____ in the east.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. rise",
+        "B. rises",
+        "C. rising",
+        "D. rose"
+      ],
+      "answer": "B",
+      "explanation": "General truths use Present Simple; 'sun' is third-person singular, so 'rises'. 'Rise' lacks -s; 'rising' is -ing; 'rose' is past.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Simple",
+      "content": "My parents ____ in a big city.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. lives",
+        "B. living",
+        "C. live",
+        "D. lived"
+      ],
+      "answer": "C",
+      "explanation": "Plural subject 'parents' takes the base form. 'Lives' is for he/she/it; 'living' is -ing; 'lived' is past.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Simple",
+      "content": "Tom usually ____ his homework after dinner.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. do",
+        "B. doing",
+        "C. did",
+        "D. does"
+      ],
+      "answer": "D",
+      "explanation": "Third-person singular 'Tom' with 'usually' signals Present Simple, so 'does'. 'Do' lacks -es; 'doing' is -ing; 'did' is past.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Simple",
+      "content": "Cats ____ fish very much.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. likes",
+        "B. like",
+        "C. liking",
+        "D. liked"
+      ],
+      "answer": "B",
+      "explanation": "Plural subject 'cats' takes the base form. 'Likes' is for he/she/it; 'liking' is -ing; 'liked' is past.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Simple",
+      "content": "My sister ____ her teeth twice a day.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. brush",
+        "B. brushing",
+        "C. brushes",
+        "D. brushed"
+      ],
+      "answer": "C",
+      "explanation": "Third-person singular 'my sister' takes -es after -sh, so 'brushes'. 'Brush' lacks -es; 'brushing' is -ing; 'brushed' is past.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Simple",
+      "content": "The shop ____ at nine o'clock every morning.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. open",
+        "B. opens",
+        "C. opening",
+        "D. opened"
+      ],
+      "answer": "B",
+      "explanation": "Third-person singular 'shop' with 'every morning' takes -s. 'Open' lacks -s; 'opening' is -ing; 'opened' is past.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Continuous",
+      "content": "Look! The baby ____ now.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. sleeps",
+        "B. is sleeping",
+        "C. slept",
+        "D. sleep"
+      ],
+      "answer": "B",
+      "explanation": "'Now' signals Present Continuous: be + -ing. 'Sleeps' is Present Simple; 'slept' is past; 'sleep' is base form.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Continuous",
+      "content": "I ____ a book at the moment.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. read",
+        "B. reads",
+        "C. am reading",
+        "D. was reading"
+      ],
+      "answer": "C",
+      "explanation": "'At the moment' signals Present Continuous; 'I' takes 'am'. 'Read' is base; 'reads' is Present Simple; 'was reading' is past.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Continuous",
+      "content": "The children ____ in the garden right now.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. play",
+        "B. plays",
+        "C. are playing",
+        "D. played"
+      ],
+      "answer": "C",
+      "explanation": "'Right now' signals Present Continuous; plural subject takes 'are' + -ing. The other options are simple tenses.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Continuous",
+      "content": "Listen! Someone ____ the door.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. knocks",
+        "B. is knocking",
+        "C. knocked",
+        "D. knock"
+      ],
+      "answer": "B",
+      "explanation": "'Listen!' signals an action happening now; Present Continuous needs is + -ing. 'Knocks' is Simple; 'knocked' is past; 'knock' is base.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Continuous",
+      "content": "We ____ dinner at the moment.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. have",
+        "B. has",
+        "C. had",
+        "D. are having"
+      ],
+      "answer": "D",
+      "explanation": "'At the moment' signals Present Continuous; 'we' takes 'are' + -ing. 'Have' is Simple; 'has' is for he/she/it; 'had' is past.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Continuous",
+      "content": "My mother ____ a cake in the kitchen now.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. bakes",
+        "B. baked",
+        "C. is baking",
+        "D. bake"
+      ],
+      "answer": "C",
+      "explanation": "'Now' signals Present Continuous; singular subject takes 'is' + -ing. The others are simple tenses or base form.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Continuous",
+      "content": "The students ____ a test this morning.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. take",
+        "B. takes",
+        "C. took",
+        "D. are taking"
+      ],
+      "answer": "D",
+      "explanation": "'This morning' (still in progress) signals Present Continuous; plural subject takes 'are' + -ing. The others are simple tenses.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Continuous",
+      "content": "Be quiet! The teacher ____ to the class.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. is talking",
+        "B. talks",
+        "C. talked",
+        "D. talk"
+      ],
+      "answer": "A",
+      "explanation": "'Be quiet!' signals an ongoing action; Present Continuous needs is + -ing. The others do not show an action in progress.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Continuous",
+      "content": "I ____ a letter to my friend now.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. write",
+        "B. writes",
+        "C. am writing",
+        "D. wrote"
+      ],
+      "answer": "C",
+      "explanation": "'Now' signals Present Continuous; 'I' takes 'am' + -ing. 'Write' is base; 'writes' is for he/she/it; 'wrote' is past.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Continuous",
+      "content": "Look at the sky! It ____ heavily.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. rains",
+        "B. rained",
+        "C. rain",
+        "D. is raining"
+      ],
+      "answer": "D",
+      "explanation": "'Look!' signals an action happening now; Present Continuous needs is + -ing. The others are simple or base forms.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Past Simple",
+      "content": "I ____ my grandmother yesterday.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. visit",
+        "B. visits",
+        "C. visiting",
+        "D. visited"
+      ],
+      "answer": "D",
+      "explanation": "'Yesterday' signals Past Simple; regular verb takes -ed. 'Visit' is base; 'visits' is Simple Present; 'visiting' is -ing.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Past Simple",
+      "content": "She ____ to the cinema last night.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. goes",
+        "B. went",
+        "C. going",
+        "D. go"
+      ],
+      "answer": "B",
+      "explanation": "'Last night' signals Past Simple; 'go' is irregular: went. The others are present or non-finite forms.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Past Simple",
+      "content": "We ____ a great film last weekend.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. watch",
+        "B. watches",
+        "C. watched",
+        "D. watching"
+      ],
+      "answer": "C",
+      "explanation": "'Last weekend' signals Past Simple; regular verb takes -ed. The other forms are present or -ing.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Past Simple",
+      "content": "He ____ a sandwich for lunch yesterday.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. eats",
+        "B. ate",
+        "C. eating",
+        "D. eat"
+      ],
+      "answer": "B",
+      "explanation": "'Yesterday' signals Past Simple; 'eat' is irregular: ate. 'Eats' is Present; 'eating' is -ing; 'eat' is base.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Past Simple",
+      "content": "They ____ in Paris two years ago.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. live",
+        "B. lives",
+        "C. living",
+        "D. lived"
+      ],
+      "answer": "D",
+      "explanation": "'Two years ago' signals Past Simple; regular verb takes -ed. The others are present or non-finite forms.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Past Simple",
+      "content": "My father ____ a new car last month.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. buys",
+        "B. buying",
+        "C. bought",
+        "D. buy"
+      ],
+      "answer": "C",
+      "explanation": "'Last month' signals Past Simple; 'buy' is irregular: bought. 'Buys' is Present; 'buying' is -ing; 'buy' is base.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Past Simple",
+      "content": "The kids ____ very happy at the party last Friday.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. are",
+        "B. were",
+        "C. was",
+        "D. is"
+      ],
+      "answer": "B",
+      "explanation": "'Last Friday' signals Past Simple; plural subject takes 'were'. 'Are' and 'is' are Present; 'was' is singular past.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Past Simple",
+      "content": "I ____ my keys at the office yesterday.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. leave",
+        "B. leaves",
+        "C. left",
+        "D. leaving"
+      ],
+      "answer": "C",
+      "explanation": "'Yesterday' signals Past Simple; 'leave' is irregular: left. The others are present or -ing forms.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Past Simple",
+      "content": "She ____ a beautiful song at the concert last night.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. sings",
+        "B. sang",
+        "C. singing",
+        "D. sing"
+      ],
+      "answer": "B",
+      "explanation": "'Last night' signals Past Simple; 'sing' is irregular: sang. The others are present or non-finite forms.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Past Simple",
+      "content": "We ____ tennis in the park last Sunday.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. play",
+        "B. plays",
+        "C. played",
+        "D. playing"
+      ],
+      "answer": "C",
+      "explanation": "'Last Sunday' signals Past Simple; regular verb takes -ed. The others are present or -ing forms.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Past Continuous",
+      "content": "I ____ TV at eight o'clock last night.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. watch",
+        "B. watched",
+        "C. was watching",
+        "D. am watching"
+      ],
+      "answer": "C",
+      "explanation": "Action ongoing at a past time uses Past Continuous: was/were + -ing. 'Watch' is base; 'watched' is Past Simple; 'am watching' is Present Continuous.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Past Continuous",
+      "content": "She ____ a book when I called her.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. read",
+        "B. reads",
+        "C. is reading",
+        "D. was reading"
+      ],
+      "answer": "D",
+      "explanation": "Background action at the moment of another past action uses Past Continuous: was + -ing. The others do not fit a past background context.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Past Continuous",
+      "content": "The boys ____ football at four yesterday afternoon.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. play",
+        "B. played",
+        "C. were playing",
+        "D. are playing"
+      ],
+      "answer": "C",
+      "explanation": "Action ongoing at a specific past time uses Past Continuous; plural subject takes 'were' + -ing. The others are simple or present forms.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Past Continuous",
+      "content": "While I ____ , the phone rang.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. cook",
+        "B. cooked",
+        "C. was cooking",
+        "D. cooking"
+      ],
+      "answer": "C",
+      "explanation": "'While' + a longer past action uses Past Continuous: was + -ing. 'Cook' is base; 'cooked' is Simple; 'cooking' is bare -ing.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Past Continuous",
+      "content": "It ____ heavily when we left the house.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. rains",
+        "B. rained",
+        "C. is raining",
+        "D. was raining"
+      ],
+      "answer": "D",
+      "explanation": "Background weather at a past moment uses Past Continuous: was + -ing. The others do not describe a past ongoing scene.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Past Continuous",
+      "content": "My parents ____ dinner when I arrived home.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. have",
+        "B. had",
+        "C. were having",
+        "D. are having"
+      ],
+      "answer": "C",
+      "explanation": "Past Continuous (were + -ing) describes the activity in progress when another past event occurred. The others are present or simple past.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Past Continuous",
+      "content": "The students ____ a test at ten o'clock yesterday.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. take",
+        "B. took",
+        "C. were taking",
+        "D. are taking"
+      ],
+      "answer": "C",
+      "explanation": "Action at a specific past time uses Past Continuous; plural subject takes 'were' + -ing. The others are simple or present forms.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Past Continuous",
+      "content": "He ____ his bike when he saw the accident.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. rides",
+        "B. rode",
+        "C. is riding",
+        "D. was riding"
+      ],
+      "answer": "D",
+      "explanation": "Past Continuous shows the activity in progress when a sudden event occurred. 'Rides' is Present; 'rode' is Simple Past; 'is riding' is Present Continuous.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Past Continuous",
+      "content": "We ____ in the park at noon yesterday.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. walk",
+        "B. walked",
+        "C. were walking",
+        "D. are walking"
+      ],
+      "answer": "C",
+      "explanation": "'At noon yesterday' marks a specific past moment; Past Continuous (were + -ing) describes the action in progress then.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Past Continuous",
+      "content": "Mary ____ to music while she did her homework.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. listens",
+        "B. listened",
+        "C. is listening",
+        "D. was listening"
+      ],
+      "answer": "D",
+      "explanation": "Past Continuous shows a parallel ongoing past activity. The other options do not fit a past background context.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Perfect (basic)",
+      "content": "I ____ already finished my homework.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. has",
+        "B. have",
+        "C. had",
+        "D. having"
+      ],
+      "answer": "B",
+      "explanation": "'Already' is a Present Perfect marker; 'I' takes 'have' + past participle. 'Has' is for he/she/it; 'had' is Past Perfect; 'having' is -ing.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Perfect (basic)",
+      "content": "She has ____ to Japan three times.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. go",
+        "B. goes",
+        "C. went",
+        "D. been"
+      ],
+      "answer": "D",
+      "explanation": "Present Perfect uses past participle; 'go' becomes 'been' to mean visited and returned. 'Go' is base; 'goes' is Simple; 'went' is past.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Perfect (basic)",
+      "content": "We ____ just eaten lunch.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. has",
+        "B. having",
+        "C. have",
+        "D. had"
+      ],
+      "answer": "C",
+      "explanation": "'Just' signals Present Perfect; plural subject takes 'have' + past participle. 'Has' is for he/she/it; 'having' is -ing; 'had' is Past Perfect.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Perfect (basic)",
+      "content": "He has ____ his keys again.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. lose",
+        "B. loses",
+        "C. lost",
+        "D. losing"
+      ],
+      "answer": "C",
+      "explanation": "Present Perfect needs past participle; 'lose' is irregular: lost. 'Lose' is base; 'loses' is Simple; 'losing' is -ing.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Perfect (basic)",
+      "content": "I have ____ in this city since 2020.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. live",
+        "B. lives",
+        "C. lived",
+        "D. living"
+      ],
+      "answer": "C",
+      "explanation": "'Since' signals Present Perfect (have + past participle). Regular verb 'live' becomes 'lived'. The others are not past participles.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Perfect (basic)",
+      "content": "They ____ never seen this film.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. has",
+        "B. have",
+        "C. had",
+        "D. are"
+      ],
+      "answer": "B",
+      "explanation": "'Never' signals Present Perfect; plural subject takes 'have' + past participle. 'Has' is singular; 'had' is Past Perfect; 'are' is wrong tense.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Perfect (basic)",
+      "content": "My sister has ____ her homework already.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. do",
+        "B. does",
+        "C. did",
+        "D. done"
+      ],
+      "answer": "D",
+      "explanation": "Present Perfect needs past participle; 'do' is irregular: done. 'Do' is base; 'does' is Simple; 'did' is Simple Past.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Perfect (basic)",
+      "content": "I have ____ for two hours today.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. study",
+        "B. studies",
+        "C. studied",
+        "D. studying"
+      ],
+      "answer": "C",
+      "explanation": "'For two hours' with 'today' signals Present Perfect; regular verb takes -ed past participle. The others are not past participles.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Perfect (basic)",
+      "content": "We have ____ this book before.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. read",
+        "B. reads",
+        "C. reading",
+        "D. reader"
+      ],
+      "answer": "A",
+      "explanation": "Present Perfect uses past participle; 'read' has the same form (different pronunciation). 'Reads' is Simple; 'reading' is -ing; 'reader' is a noun.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Present Perfect (basic)",
+      "content": "She has ____ her grandparents many times.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. visit",
+        "B. visits",
+        "C. visiting",
+        "D. visited"
+      ],
+      "answer": "D",
+      "explanation": "Present Perfect needs past participle; regular verb 'visit' becomes 'visited'. 'Visit' is base; 'visits' is Simple; 'visiting' is -ing.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Future Tenses (will / going to / Present Continuous)",
+      "content": "I think it ____ rain tomorrow.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. will",
+        "B. is",
+        "C. was",
+        "D. has"
+      ],
+      "answer": "A",
+      "explanation": "Predictions about the future use 'will' + base verb. 'Is', 'was', 'has' do not form a future prediction with 'rain'.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Future Tenses (will / going to / Present Continuous)",
+      "content": "Look at those clouds! It ____ rain soon.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. will",
+        "B. is going to",
+        "C. is",
+        "D. was"
+      ],
+      "answer": "B",
+      "explanation": "Visible evidence (clouds) signals 'going to' for predictions. 'Will' is for general predictions; 'is' and 'was' do not fit.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Future Tenses (will / going to / Present Continuous)",
+      "content": "I ____ Sarah at the cafe at six tomorrow.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. meet",
+        "B. met",
+        "C. am meeting",
+        "D. will meeting"
+      ],
+      "answer": "C",
+      "explanation": "Fixed future arrangements use Present Continuous: am + -ing. 'Meet' is base; 'met' is past; 'will meeting' is ungrammatical.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Future Tenses (will / going to / Present Continuous)",
+      "content": "She ____ buy a new phone next week.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. is going to",
+        "B. went",
+        "C. has",
+        "D. did"
+      ],
+      "answer": "A",
+      "explanation": "Plans/intentions use 'going to' + base verb. 'Went', 'has', 'did' do not form a future intention with 'buy'.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Future Tenses (will / going to / Present Continuous)",
+      "content": "Don't worry, I ____ help you tomorrow.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. will",
+        "B. am",
+        "C. was",
+        "D. did"
+      ],
+      "answer": "A",
+      "explanation": "Spontaneous offers/promises use 'will' + base verb. 'Am', 'was', 'did' do not express a future offer.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Future Tenses (will / going to / Present Continuous)",
+      "content": "We ____ a party this Saturday at our home.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. are having",
+        "B. have had",
+        "C. had",
+        "D. has"
+      ],
+      "answer": "A",
+      "explanation": "Planned future arrangements use Present Continuous: are + -ing. 'Have had' is Perfect; 'had' is past; 'has' is for he/she/it.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Future Tenses (will / going to / Present Continuous)",
+      "content": "Tom ____ start a new job next Monday.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. going to",
+        "B. is going to",
+        "C. will going to",
+        "D. was"
+      ],
+      "answer": "B",
+      "explanation": "'Going to' future needs be + going to + base verb; 'Tom' takes 'is going to'. The other forms are missing 'be' or doubled.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Future Tenses (will / going to / Present Continuous)",
+      "content": "Maybe we ____ go to the beach this weekend.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. will",
+        "B. are",
+        "C. were",
+        "D. did"
+      ],
+      "answer": "A",
+      "explanation": "'Maybe' + uncertain future uses 'will' + base verb. 'Are', 'were', 'did' do not express future possibility.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Future Tenses (will / going to / Present Continuous)",
+      "content": "My family ____ to travel to Spain next summer.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. is going",
+        "B. goes",
+        "C. went",
+        "D. going"
+      ],
+      "answer": "A",
+      "explanation": "Future plan uses 'be going to' + base; 'family' takes 'is going'. The others are simple tenses or bare -ing.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Future Tenses (will / going to / Present Continuous)",
+      "content": "The train ____ at platform two in ten minutes.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. arrived",
+        "B. is arriving",
+        "C. arrives now",
+        "D. has arrived"
+      ],
+      "answer": "B",
+      "explanation": "Scheduled near-future events often use Present Continuous: is + -ing. 'Arrived' is past; 'arrives now' is contradictory; 'has arrived' is Perfect.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Modals (can/could/should/might/must)",
+      "content": "Birds ____ fly, but penguins cannot.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. can",
+        "B. must",
+        "C. should",
+        "D. might"
+      ],
+      "answer": "A",
+      "explanation": "'Can' expresses ability. 'Must' = obligation; 'should' = advice; 'might' = possibility — none fits the ability contrast here.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Modals (can/could/should/might/must)",
+      "content": "You look tired. You ____ go to bed early.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. must not",
+        "B. can",
+        "C. should",
+        "D. might"
+      ],
+      "answer": "C",
+      "explanation": "'Should' gives advice. 'Must not' = prohibition; 'can' = ability/permission; 'might' = possibility — none gives advice.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Modals (can/could/should/might/must)",
+      "content": "When I was five, I ____ already swim.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. can",
+        "B. could",
+        "C. must",
+        "D. should"
+      ],
+      "answer": "B",
+      "explanation": "'Could' is the past form of 'can' for past ability. 'Can' is present; 'must' = obligation; 'should' = advice.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Modals (can/could/should/might/must)",
+      "content": "Students ____ wear a school uniform every day.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. might",
+        "B. could",
+        "C. can",
+        "D. must"
+      ],
+      "answer": "D",
+      "explanation": "'Must' expresses strong obligation/rule. 'Might' = possibility; 'could' = past ability; 'can' = ability/permission.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Modals (can/could/should/might/must)",
+      "content": "Take an umbrella. It ____ rain later.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. might",
+        "B. must",
+        "C. should",
+        "D. can"
+      ],
+      "answer": "A",
+      "explanation": "'Might' expresses possibility. 'Must' = certainty/obligation; 'should' = advice; 'can' = ability — none fits weak prediction.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Modals (can/could/should/might/must)",
+      "content": "____ I borrow your pen, please?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. Must",
+        "B. Should",
+        "C. Can",
+        "D. Might"
+      ],
+      "answer": "C",
+      "explanation": "'Can' is used to ask for permission (informal). 'Must' = obligation; 'should' = advice; 'might' is unusual in this request form.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Modals (can/could/should/might/must)",
+      "content": "You ____ not smoke in the hospital.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. could",
+        "B. might",
+        "C. should",
+        "D. must"
+      ],
+      "answer": "D",
+      "explanation": "'Must not' expresses prohibition (a rule). 'Could not' = past inability; 'might not' = possibility; 'should not' = mild advice.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Modals (can/could/should/might/must)",
+      "content": "Children ____ eat too many sweets.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. shouldn't",
+        "B. couldn't",
+        "C. can",
+        "D. might"
+      ],
+      "answer": "A",
+      "explanation": "'Shouldn't' gives advice not to do something. 'Couldn't' = past inability; 'can' = ability; 'might' = possibility.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Modals (can/could/should/might/must)",
+      "content": "He ____ speak three languages very well.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. must",
+        "B. should",
+        "C. might",
+        "D. can"
+      ],
+      "answer": "D",
+      "explanation": "'Can' expresses ability. 'Must' = obligation; 'should' = advice; 'might' = possibility — only 'can' fits an ability statement.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Modals (can/could/should/might/must)",
+      "content": "I'm not sure, but she ____ be at home now.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. must",
+        "B. might",
+        "C. should",
+        "D. can"
+      ],
+      "answer": "B",
+      "explanation": "'Might' shows uncertain possibility. 'Must' = strong certainty; 'should' = expectation; 'can' = ability — only 'might' fits 'not sure'.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Comparatives & Superlatives",
+      "content": "My brother is ____ than me.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. tall",
+        "B. taller",
+        "C. tallest",
+        "D. more tall"
+      ],
+      "answer": "B",
+      "explanation": "Short adjectives form comparatives with -er. 'Tall' is base; 'tallest' is superlative; 'more tall' is incorrect for short adjectives.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Comparatives & Superlatives",
+      "content": "This is ____ book in the library.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. interesting",
+        "B. more interesting",
+        "C. the most interesting",
+        "D. most interesting"
+      ],
+      "answer": "C",
+      "explanation": "Long adjectives form superlatives with 'the most'. 'Interesting' is base; 'more interesting' is comparative; 'most interesting' lacks 'the'.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Comparatives & Superlatives",
+      "content": "An elephant is ____ than a dog.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. big",
+        "B. biggest",
+        "C. bigger",
+        "D. more big"
+      ],
+      "answer": "C",
+      "explanation": "Short adjectives ending CVC double the consonant: bigger. 'Big' is base; 'biggest' is superlative; 'more big' is incorrect.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Comparatives & Superlatives",
+      "content": "Mount Everest is ____ mountain in the world.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. higher",
+        "B. high",
+        "C. the highest",
+        "D. more high"
+      ],
+      "answer": "C",
+      "explanation": "Short adjectives form superlatives with the + -est. 'Higher' is comparative; 'high' is base; 'more high' is incorrect.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Comparatives & Superlatives",
+      "content": "Maths is ____ than English for me.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. difficult",
+        "B. more difficult",
+        "C. most difficult",
+        "D. difficulter"
+      ],
+      "answer": "B",
+      "explanation": "Long adjectives form comparatives with 'more'. 'Difficult' is base; 'most difficult' is superlative; 'difficulter' is not a word.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Comparatives & Superlatives",
+      "content": "Today is ____ day of the year.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. hotter",
+        "B. hot",
+        "C. the hottest",
+        "D. more hot"
+      ],
+      "answer": "C",
+      "explanation": "Superlatives use 'the' + -est; CVC doubling gives 'hottest'. 'Hotter' is comparative; 'hot' is base; 'more hot' is incorrect.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Comparatives & Superlatives",
+      "content": "My new bike is ____ than my old one.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. good",
+        "B. better",
+        "C. best",
+        "D. more good"
+      ],
+      "answer": "B",
+      "explanation": "'Good' is irregular: better (comparative). 'Good' is base; 'best' is superlative; 'more good' is incorrect.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Comparatives & Superlatives",
+      "content": "She is ____ student in our class.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. clever",
+        "B. cleverer",
+        "C. the cleverest",
+        "D. more clever"
+      ],
+      "answer": "C",
+      "explanation": "Two-syllable adjectives ending in -er can take -est with 'the'. 'Clever' is base; 'cleverer' is comparative; 'more clever' is less standard here.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Comparatives & Superlatives",
+      "content": "Football is ____ popular than basketball here.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. popular",
+        "B. more",
+        "C. most",
+        "D. popularer"
+      ],
+      "answer": "B",
+      "explanation": "Long adjectives form comparatives with 'more' + adjective. 'Popular' alone lacks comparison; 'most' is superlative; 'popularer' is not a word.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Comparatives & Superlatives",
+      "content": "This box is ____ than that one.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. heavy",
+        "B. heaviest",
+        "C. heavier",
+        "D. more heavy"
+      ],
+      "answer": "C",
+      "explanation": "Adjectives ending in consonant + y change y to i and add -er: heavier. 'Heavy' is base; 'heaviest' is superlative; 'more heavy' is incorrect.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Conditionals 0 & 1",
+      "content": "If you heat water, it ____ .",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. boil",
+        "B. boils",
+        "C. will boil",
+        "D. boiled"
+      ],
+      "answer": "B",
+      "explanation": "Zero conditional (general truth): if + Present Simple, Present Simple. The other options break the zero-conditional pattern.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Conditionals 0 & 1",
+      "content": "If it rains tomorrow, we ____ at home.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. stay",
+        "B. stayed",
+        "C. will stay",
+        "D. would stay"
+      ],
+      "answer": "C",
+      "explanation": "First conditional (real future): if + Present Simple, will + base. 'Stayed' is past; 'would stay' is second conditional; 'stay' lacks 'will'.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Conditionals 0 & 1",
+      "content": "Plants die if they ____ enough water.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. don't get",
+        "B. didn't get",
+        "C. won't get",
+        "D. wouldn't get"
+      ],
+      "answer": "A",
+      "explanation": "Zero conditional (general truth): both clauses use Present Simple. The other options use past or modal forms not allowed in zero conditional.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Conditionals 0 & 1",
+      "content": "If you ____ hard, you will pass the exam.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. study",
+        "B. will study",
+        "C. studied",
+        "D. would study"
+      ],
+      "answer": "A",
+      "explanation": "First conditional: 'if' clause uses Present Simple. 'Will study' is wrong in 'if' clause; 'studied' is past; 'would study' is second conditional.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Conditionals 0 & 1",
+      "content": "Water freezes if the temperature ____ below zero.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. fall",
+        "B. falls",
+        "C. will fall",
+        "D. fell"
+      ],
+      "answer": "B",
+      "explanation": "Zero conditional uses Present Simple in both clauses; third-person singular 'temperature' takes -s. The other forms break the pattern.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Conditionals 0 & 1",
+      "content": "If she ____ early, she will catch the train.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. leaves",
+        "B. will leave",
+        "C. left",
+        "D. would leave"
+      ],
+      "answer": "A",
+      "explanation": "First conditional: 'if' clause uses Present Simple. 'Will leave' is wrong here; 'left' is past; 'would leave' is second conditional.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Conditionals 0 & 1",
+      "content": "If I see Tom, I ____ him your message.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. give",
+        "B. gave",
+        "C. will give",
+        "D. would give"
+      ],
+      "answer": "C",
+      "explanation": "First conditional main clause: will + base verb. 'Give' lacks 'will'; 'gave' is past; 'would give' is second conditional.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Conditionals 0 & 1",
+      "content": "Ice melts if you ____ it in the sun.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. put",
+        "B. will put",
+        "C. would put",
+        "D. putting"
+      ],
+      "answer": "A",
+      "explanation": "Zero conditional uses Present Simple; 'put' (you) is the base form. The other options break the zero-conditional pattern.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Conditionals 0 & 1",
+      "content": "If we ____ now, we will be late.",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. don't leave",
+        "B. didn't leave",
+        "C. won't leave",
+        "D. wouldn't leave"
+      ],
+      "answer": "A",
+      "explanation": "First conditional 'if' clause uses Present Simple; 'don't leave' fits real future. The others use past or 'will/would', not allowed in 'if' clause.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Grammar/Conditionals 0 & 1",
+      "content": "If you press this button, the door ____ .",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. open",
+        "B. opens",
+        "C. opened",
+        "D. will opening"
+      ],
+      "answer": "B",
+      "explanation": "Zero conditional describes general results; both clauses use Present Simple, third-person singular 'door' takes -s. The others break the rule.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "My summer holiday in Beijing\n\nLast summer, I went to Beijing with my mother and father. We took a fast train from Shanghai on the first of July. The trip was about five hours long. We stayed at a small hotel near the city centre for ten days.\n\nOn our first day, we visited the Forbidden City. It was very big and very hot, so we drank a lot of water. The next morning, we walked on the Great Wall. My father took more than one hundred photos of me.\n\nMy favourite day was Friday. We went to a quiet park and watched old people doing tai chi. Then we ate Beijing duck for dinner. The price was 198 yuan, but my mother said it was very tasty.\n\nWe came home on the eleventh of July. I want to go back to Beijing next year because the food and the people are wonderful.\n\nQuestion 1: When did the writer go to Beijing?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. Last winter",
+        "B. Last spring",
+        "C. Last summer",
+        "D. Last autumn"
+      ],
+      "answer": "C",
+      "explanation": "The first sentence says 'Last summer, I went to Beijing with my mother and father.'",
+      "group_id": "pet_r1_reading_cluster_001",
+      "group_order": 1,
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Question 2: How long was the train trip from Shanghai to Beijing?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. About two hours",
+        "B. About five hours",
+        "C. About ten hours",
+        "D. About one day"
+      ],
+      "answer": "B",
+      "explanation": "The text says 'The trip was about five hours long.'",
+      "group_id": "pet_r1_reading_cluster_001",
+      "group_order": 2,
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Question 3: How many days did the family stay at the hotel?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. Five days",
+        "B. Seven days",
+        "C. Ten days",
+        "D. Eleven days"
+      ],
+      "answer": "C",
+      "explanation": "The text says 'We stayed at a small hotel near the city centre for ten days.'",
+      "group_id": "pet_r1_reading_cluster_001",
+      "group_order": 3,
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Question 4: Who took photos on the Great Wall?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. The writer",
+        "B. The writer's mother",
+        "C. The writer's father",
+        "D. A friend"
+      ],
+      "answer": "C",
+      "explanation": "The text says 'My father took more than one hundred photos of me.'",
+      "group_id": "pet_r1_reading_cluster_001",
+      "group_order": 4,
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Question 5: How much did the Beijing duck cost?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. 100 yuan",
+        "B. 180 yuan",
+        "C. 198 yuan",
+        "D. 298 yuan"
+      ],
+      "answer": "C",
+      "explanation": "The text says 'The price was 198 yuan, but my mother said it was very tasty.'",
+      "group_id": "pet_r1_reading_cluster_001",
+      "group_order": 5,
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "A new bookshop in town\n\nA new bookshop opened in our town last Saturday. It is called Green Pages and it is on King Street, next to the old cinema. The shop is bigger than any other bookshop in our town and it has three floors.\n\nThe ground floor is for children. There are picture books, easy stories and a small play area with soft chairs. The first floor sells books for teenagers and adults. You can find novels, history books and travel guides there. The second floor is the quietest. It has a small cafe with coffee, tea and cakes, and many tables where people can sit and read for free.\n\nGreen Pages is open every day from nine in the morning until nine at night. The owner, Mrs Wang, says she wants the shop to be a happy place where families come together. Next month, she will start a free story time for young children every Sunday morning.\n\nQuestion 1: What is this text mainly about?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. A library that is closing down",
+        "B. A new bookshop in town and what it offers",
+        "C. The history of King Street",
+        "D. How to write children's books"
+      ],
+      "answer": "B",
+      "explanation": "The whole passage describes the new bookshop Green Pages, its floors, opening hours and plans, so the main idea is the new bookshop and what it offers.",
+      "group_id": "pet_r1_reading_cluster_002",
+      "group_order": 1,
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Question 2: What is the best title for paragraph 2?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. The history of the cinema",
+        "B. What is on each floor of the shop",
+        "C. The price of books in town",
+        "D. How to be a writer"
+      ],
+      "answer": "B",
+      "explanation": "Paragraph 2 describes the ground floor, first floor and second floor in turn, so its main idea is what is on each floor.",
+      "group_id": "pet_r1_reading_cluster_002",
+      "group_order": 2,
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Question 3: Which sentence best describes the second floor?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. It is a noisy place full of children.",
+        "B. It is a quiet place where people can read and have a drink.",
+        "C. It only sells school textbooks.",
+        "D. It is closed in the evenings."
+      ],
+      "answer": "B",
+      "explanation": "The text says the second floor is the quietest, has a small cafe, and many tables where people can sit and read.",
+      "group_id": "pet_r1_reading_cluster_002",
+      "group_order": 3,
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Question 4: What does the owner want the bookshop to be?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. The biggest shop in the country",
+        "B. A happy place for families",
+        "C. A school for writers",
+        "D. A shop only for adults"
+      ],
+      "answer": "B",
+      "explanation": "The text directly states 'she wants the shop to be a happy place where families come together.'",
+      "group_id": "pet_r1_reading_cluster_002",
+      "group_order": 4,
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Question 5: What is the main message of the last paragraph?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. The shop is open at certain times and has plans for children.",
+        "B. The shop will close next month.",
+        "C. Mrs Wang is going to write a new book.",
+        "D. The shop is too small for families."
+      ],
+      "answer": "A",
+      "explanation": "The last paragraph gives the opening hours and announces a free story time for young children every Sunday, so it is about the times and the new plan for children.",
+      "group_id": "pet_r1_reading_cluster_002",
+      "group_order": 5,
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "My grandfather's garden\n\nMy grandfather has a small garden behind his house. Every Saturday, I go there to help him. He is seventy years old, but he is still very active and he loves working with plants.\n\nLast week, he bought some new tools. One of them is called a trowel. A trowel is small, with a short handle and a flat metal part. We use it to dig little holes for new flowers. My grandfather says it is the most useful tool in the garden.\n\nIn the corner of the garden, there is a tall tree with red fruit. My grandfather calls them 'cherries', but in my language they have a different name. They taste sweet and a little sour.\n\nMy grandfather always smiles when he sees the garden. He says it makes him feel young again. I think the garden is his favourite place in the world.\n\nQuestion 1: From the text, what is a 'trowel'?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. A type of flower",
+        "B. A small tool for digging little holes",
+        "C. A red fruit",
+        "D. A kind of tree"
+      ],
+      "answer": "B",
+      "explanation": "The text describes the trowel as small with a short handle and a flat metal part, used to dig little holes for new flowers, so it is a small digging tool.",
+      "group_id": "pet_r1_reading_cluster_003",
+      "group_order": 1,
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "Question 2: In the text, the word 'active' most likely means:",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. tired and slow",
+        "B. moving and doing things",
+        "C. afraid of work",
+        "D. always sleeping"
+      ],
+      "answer": "B",
+      "explanation": "The text says he is seventy years old but still active and loves working with plants, so 'active' means moving and doing things.",
+      "group_id": "pet_r1_reading_cluster_003",
+      "group_order": 2,
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "Question 3: The 'cherries' in the text are most likely:",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. small red fruits that taste sweet and a little sour",
+        "B. yellow flowers",
+        "C. big green leaves",
+        "D. heavy stones"
+      ],
+      "answer": "A",
+      "explanation": "The text says they are red fruit on a tree and taste sweet and a little sour, so cherries are small red fruits with that taste.",
+      "group_id": "pet_r1_reading_cluster_003",
+      "group_order": 3,
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "Question 4: How does the writer feel about the grandfather?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. The writer is angry with him.",
+        "B. The writer is bored by him.",
+        "C. The writer loves and admires him.",
+        "D. The writer is afraid of him."
+      ],
+      "answer": "C",
+      "explanation": "The writer goes to help every Saturday and describes the grandfather positively, suggesting love and admiration.",
+      "group_id": "pet_r1_reading_cluster_003",
+      "group_order": 4,
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "Question 5: Why does the grandfather say the garden makes him 'feel young again'?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. Because the garden is new and modern.",
+        "B. Because working in the garden makes him happy and full of energy.",
+        "C. Because the garden gives him a lot of money.",
+        "D. Because the garden is bigger than his house."
+      ],
+      "answer": "B",
+      "explanation": "He smiles when he sees the garden and is still very active there, so the garden gives him happiness and energy, making him feel young.",
+      "group_id": "pet_r1_reading_cluster_003",
+      "group_order": 5,
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "It was raining very hard outside, so Tom took his ______ before he left the house.\n\nWhat is the best word for the blank?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. umbrella",
+        "B. dictionary",
+        "C. football",
+        "D. sandwich"
+      ],
+      "answer": "A",
+      "explanation": "Heavy rain is the context clue. People take an umbrella when it rains hard, so 'umbrella' fits best.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "I was very ______ after running for one hour, so I sat down and drank some water.\n\nWhat is the best word for the blank?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. tired",
+        "B. happy",
+        "C. clean",
+        "D. early"
+      ],
+      "answer": "A",
+      "explanation": "Running for one hour and needing to sit and drink water are clues that the speaker feels tired.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "The library is very ______. You must not talk loudly inside it.\n\nWhat is the best word for the blank?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. quiet",
+        "B. dirty",
+        "C. cheap",
+        "D. fast"
+      ],
+      "answer": "A",
+      "explanation": "The clue 'must not talk loudly' shows that the library is a quiet place.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "Mary lost her keys this morning, so she could not ______ the door of her flat.\n\nWhat is the best word for the blank?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. paint",
+        "B. open",
+        "C. clean",
+        "D. count"
+      ],
+      "answer": "B",
+      "explanation": "Without keys, you cannot open the door, so 'open' fits the context best.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "The cake tasted very ______ because my sister put a lot of sugar in it.\n\nWhat is the best word for the blank?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. sweet",
+        "B. salty",
+        "C. cold",
+        "D. hard"
+      ],
+      "answer": "A",
+      "explanation": "A lot of sugar is the context clue, so the cake tasted sweet.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "I waited at the bus stop for forty minutes this morning, but the number 12 bus did not come. In the end, I took a taxi to school. The taxi driver was very kind and we arrived at school at 8:25, just five minutes before my first lesson.\n\nQuestion: How long did the writer wait at the bus stop?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. Fourteen minutes",
+        "B. Forty minutes",
+        "C. Four minutes",
+        "D. Twenty-five minutes"
+      ],
+      "answer": "B",
+      "explanation": "The text states 'I waited at the bus stop for forty minutes this morning.'",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "The school sports day will be on Saturday, the 15th of June. All students must be at the playground at 8:00 in the morning. Parents are welcome and there will be free water and fruit for everyone.\n\nQuestion: What time must students arrive at the playground?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. 6:00 a.m.",
+        "B. 7:00 a.m.",
+        "C. 8:00 a.m.",
+        "D. 9:00 a.m."
+      ],
+      "answer": "C",
+      "explanation": "The notice says 'All students must be at the playground at 8:00 in the morning.'",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Anna has three pets at home: one black cat called Coco, two small white rabbits called Snow and Sugar, and a big yellow dog called Sunny. She likes Sunny the most because he plays with her every afternoon.\n\nQuestion: How many rabbits does Anna have?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. One",
+        "B. Two",
+        "C. Three",
+        "D. Four"
+      ],
+      "answer": "B",
+      "explanation": "The text says 'two small white rabbits called Snow and Sugar.'",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Mr Brown's coffee shop is open from Monday to Friday, from 7 a.m. to 6 p.m. On Saturdays it opens later, at 9 a.m., and closes at 4 p.m. The shop is closed on Sundays.\n\nQuestion: When is Mr Brown's coffee shop closed all day?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. On Mondays",
+        "B. On Saturdays",
+        "C. On Sundays",
+        "D. On Fridays"
+      ],
+      "answer": "C",
+      "explanation": "The text says 'The shop is closed on Sundays.'",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "The new museum is on Park Road, opposite the old hospital and next to the city library. It is a ten-minute walk from the train station.\n\nQuestion: Where is the new museum?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. On King Street",
+        "B. On Park Road",
+        "C. Inside the train station",
+        "D. Inside the old hospital"
+      ],
+      "answer": "B",
+      "explanation": "The first sentence states 'The new museum is on Park Road.'",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Many people in our city now ride bicycles to work. They say cycling is cheaper than driving a car and better for their health. The city has built new bike paths in many streets, and more people are using them every month.\n\nQuestion: What is this text mainly about?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. The price of new cars",
+        "B. The growing number of people cycling to work in the city",
+        "C. How to repair a bicycle at home",
+        "D. A famous bicycle race"
+      ],
+      "answer": "B",
+      "explanation": "The whole text is about people cycling to work, the reasons, and the new bike paths, so the main topic is the growing number of cyclists in the city.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "If you want to learn a new language, you should practise a little every day. Watching short videos, listening to simple songs, and talking with friends in the new language can all help. The most important thing is not to be afraid of making mistakes.\n\nQuestion: What is the main idea of this text?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. Learning a new language is impossible.",
+        "B. You should practise a new language every day and not be afraid of mistakes.",
+        "C. Songs are bad for language learning.",
+        "D. Only children can learn new languages."
+      ],
+      "answer": "B",
+      "explanation": "The text gives advice about daily practice and says the most important thing is not to be afraid of mistakes.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Last weekend, our class visited a small farm in the countryside. We saw cows, sheep and chickens, and we learned how cheese is made. The farmer was very friendly and gave us fresh milk to drink. Everyone had a great time.\n\nQuestion: What is the best title for this text?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. How to Become a Farmer",
+        "B. The Best Restaurants in the City",
+        "C. Our Class Visit to a Small Farm",
+        "D. A History of Cheese"
+      ],
+      "answer": "C",
+      "explanation": "The whole text describes the class trip to a small farm, what they saw, and how they felt, so the best title is about the class visit to the farm.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Sam loves football. He plays every Saturday with his friends in the park. He is not the fastest player, but he always tries his best and never gets angry when his team loses. His friends say he is a kind and fair player.\n\nQuestion: What is this text mostly about?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. The rules of football",
+        "B. Sam's character as a football player",
+        "C. The history of the park",
+        "D. How to win every football match"
+      ],
+      "answer": "B",
+      "explanation": "The text focuses on what kind of person Sam is when he plays: not the fastest, always tries his best, never angry, kind and fair. So it is mainly about his character.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "On rainy days, my little brother is very happy. He puts on his red boots, takes a small toy boat, and runs outside to find the biggest puddles. He says rainy days are the most fun days of the year.\n\nQuestion: What is the main idea of this text?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. The little brother is afraid of rain.",
+        "B. The little brother loves rainy days and enjoys playing in the rain.",
+        "C. The little brother does not have any toys.",
+        "D. The little brother only plays inside the house."
+      ],
+      "answer": "B",
+      "explanation": "The text shows the brother is happy on rainy days, plays with his boat in puddles, and thinks rainy days are the most fun, so he loves rainy days.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Listening/Listening for gist",
+      "content": "Listen and choose the correct answer.\n\nWhat is the conversation mainly about?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. Their weekend plans",
+        "B. A new movie",
+        "C. A school exam",
+        "D. A birthday gift"
+      ],
+      "answer": "A",
+      "explanation": "The speakers discuss going to the beach on Saturday and a picnic on Sunday, so the topic is weekend plans. The other options are not mentioned.",
+      "audio_text": "A: So, what are you doing this weekend? B: I think I will go to the beach on Saturday with my sister. The weather is going to be sunny and warm. A: That sounds nice. On Sunday, my family is having a small picnic in the park. Would you like to come? B: Yes, I would love to. I will bring some sandwiches and orange juice. A: Great, see you on Sunday at noon.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Listening/Listening for gist",
+      "content": "Listen and choose the correct answer.\n\nWhat is the speaker mainly talking about?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. Her favourite food",
+        "B. Her new hobby",
+        "C. Her school timetable",
+        "D. Her best friend"
+      ],
+      "answer": "B",
+      "explanation": "The speaker talks about starting to paint and how much she enjoys it, so the main topic is her new hobby. Food and friends are not mentioned.",
+      "audio_text": "Hello everyone. I want to tell you about something I started doing last month. I began to paint pictures at home. My mum bought me some colours and brushes for my birthday. Now, every evening after dinner, I sit by the window and paint flowers, animals, or the sky. It makes me feel calm and happy. I think painting is the best new thing in my life this year. I want to keep doing it for a long time.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Listening/Listening for gist",
+      "content": "Listen and choose the correct answer.\n\nWhat is the boy's attitude toward his new school?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. He is happy with it",
+        "B. He is bored",
+        "C. He is angry",
+        "D. He is afraid"
+      ],
+      "answer": "A",
+      "explanation": "The boy says the teachers are kind and he likes his classmates, showing he is happy. He never says he is bored, angry, or afraid.",
+      "audio_text": "A: How is your new school, Tom? B: Oh, it is really good. The teachers are very kind and the classrooms are big and bright. A: And the other students? B: My classmates are friendly. I have already made two new friends. We eat lunch together every day. A: That is wonderful news. B: Yes, I am very pleased that we moved to this town. I think I will enjoy my time here a lot.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Listening/Listening for gist",
+      "content": "Listen and choose the correct answer.\n\nWhat is the announcement mainly about?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. A library closing time",
+        "B. A school sports day",
+        "C. A music concert",
+        "D. A book sale"
+      ],
+      "answer": "C",
+      "explanation": "The speaker invites students to a music concert on Friday evening. The library, sports, and book sale are not mentioned.",
+      "audio_text": "Good morning students. This is your principal speaking. I have an exciting announcement for you all. This Friday evening, our school music club will hold a special concert in the main hall. The concert will start at seven o'clock and finish at nine o'clock. Students from grade six and grade seven will sing and play the piano. Tickets are free, but please collect one from the office before Thursday. We hope to see many of you there.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Listening/Listening for gist",
+      "content": "Listen and choose the correct answer.\n\nWhat is the woman's opinion about the restaurant?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. She likes it very much",
+        "B. She thinks it is too expensive",
+        "C. She thinks it is too noisy",
+        "D. She does not want to go again"
+      ],
+      "answer": "A",
+      "explanation": "The woman says the food is delicious and the service is great, showing she likes it. She does not complain about price or noise.",
+      "audio_text": "A: Did you enjoy your dinner at the new Italian restaurant? B: Yes, I really did. The food was delicious. I had pasta with cheese and tomato sauce, and it was the best I have ever eaten. A: How about the service? B: The waiters were very kind and friendly. They brought our food quickly and smiled all the time. A: Will you go back again? B: Of course. I want to try the pizza next time. I would say it is now my favourite restaurant.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Listening/Listening for gist",
+      "content": "Listen and choose the correct answer.\n\nWhat is the main topic of the talk?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. How to plant a tree",
+        "B. How to cook a cake",
+        "C. How to ride a bike",
+        "D. How to write a letter"
+      ],
+      "answer": "A",
+      "explanation": "The speaker explains digging a hole, putting in a young tree, and watering it, which is about planting a tree. The other topics are not discussed.",
+      "audio_text": "Hi class, today I will show you something easy and fun. First, find a soft place in your garden. Then, take a small spade and dig a hole about thirty centimetres deep. Next, take your young tree out of the pot very carefully. Put it gently into the hole and cover the roots with soil. After that, give it some water, about one big bottle. Finally, put the tree near sunlight. In a few months, it will grow taller. It is a great activity for the weekend.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Listening/Listening for gist",
+      "content": "Listen and choose the correct answer.\n\nHow does the girl feel about her holiday?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. Excited and happy",
+        "B. Tired and sad",
+        "C. Bored and angry",
+        "D. Worried and afraid"
+      ],
+      "answer": "A",
+      "explanation": "The girl says it was the best holiday ever and she cannot wait to go again, showing excitement and happiness.",
+      "audio_text": "A: How was your holiday in Spain, Lisa? B: Oh, it was amazing. We stayed in a small hotel near the sea. Every morning, we swam in the warm water and built sandcastles. A: Did you eat anything special? B: Yes, we tried fresh fish and ice cream every day. A: It sounds great. B: It was the best holiday ever. I cannot wait to go back next summer with my parents and brother.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Listening/Listening for gist",
+      "content": "Listen and choose the correct answer.\n\nWhat is the speaker mainly describing?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. Her morning routine",
+        "B. Her school subjects",
+        "C. Her family members",
+        "D. Her favourite shop"
+      ],
+      "answer": "A",
+      "explanation": "The speaker lists the things she does every morning: wake up, brush teeth, eat breakfast, walk to school. So she is describing her morning routine.",
+      "audio_text": "Every weekday morning, I wake up at half past six. The first thing I do is brush my teeth and wash my face. Then, I go down to the kitchen and have breakfast with my parents. I usually eat bread, eggs, and a glass of milk. After breakfast, I put my books in my bag and walk to school. The walk takes about fifteen minutes. I always arrive before the bell rings. My morning is busy but I like it.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Listening/Listening for gist",
+      "content": "Listen and choose the correct answer.\n\nWhat is the boy's main reason for the call?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. To invite his friend to a party",
+        "B. To ask about homework",
+        "C. To order a pizza",
+        "D. To book a cinema ticket"
+      ],
+      "answer": "A",
+      "explanation": "The boy invites his friend to come to his birthday party on Saturday. Homework, pizza, and cinema are not the reason for the call.",
+      "audio_text": "A: Hello, is that Daniel? B: Yes, speaking. A: Hi Daniel, it is Mark. I am calling to invite you to my birthday party this Saturday. B: Oh, how nice. What time does it start? A: It begins at three in the afternoon. We will have cake, games, and music in the garden. B: Sounds wonderful. I will be there for sure. A: Great, see you on Saturday. Do not forget to bring your camera.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Listening/Listening for gist",
+      "content": "Listen and choose the correct answer.\n\nWhat is the woman's attitude toward the weather today?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. She does not like it",
+        "B. She loves it",
+        "C. She does not care",
+        "D. She is afraid of it"
+      ],
+      "answer": "A",
+      "explanation": "The woman complains about the rain and says she hates it, showing she does not like the weather. The other options do not match her words.",
+      "audio_text": "A: What a horrible day. B: I know, it has been raining since this morning. A: I really do not like rainy days. My shoes are wet and my hair is a mess. B: Did you bring an umbrella? A: Yes, but the wind is so strong that the umbrella is almost broken. B: That is bad luck. A: I just hate this kind of weather. I hope tomorrow will be sunny so we can go outside again.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Listening/Listening for detail",
+      "content": "Listen and choose the correct answer.\n\nWhere will the girl go on Saturday?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. To the museum",
+        "B. To the zoo",
+        "C. To the swimming pool",
+        "D. To the library"
+      ],
+      "answer": "B",
+      "explanation": "The girl explicitly says she will go to the zoo with her cousin on Saturday. The museum, pool, and library are mentioned but not for Saturday.",
+      "audio_text": "A: Hi Anna, do you have any plans for the weekend? B: Yes, on Saturday I am going to the zoo with my cousin. We want to see the new baby panda. A: How nice. I went to the museum last Saturday and the library on Sunday. B: That sounds fun. On Sunday, I will probably stay home or go to the swimming pool with my mum. A: Have a great weekend. B: Thanks, you too.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Listening/Listening for detail",
+      "content": "Listen and choose the correct answer.\n\nWhat time does the meeting start?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. At 9 a.m.",
+        "B. At 10 a.m.",
+        "C. At 2 p.m.",
+        "D. At 3 p.m."
+      ],
+      "answer": "B",
+      "explanation": "The speaker clearly says the meeting will begin at ten o'clock in the morning. The other times are not mentioned for the meeting.",
+      "audio_text": "Good morning team. I want to remind everyone about our weekly meeting. It will take place tomorrow in the big meeting room on the second floor. The meeting will begin at ten o'clock in the morning, not at nine like last week. Please bring your notebook and your monthly report. The meeting will last about one hour, so we should finish before lunch. If you have questions, please send me an email today. Thank you and see you tomorrow.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Listening/Listening for detail",
+      "content": "Listen and choose the correct answer.\n\nHow many sisters does the boy have?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. One",
+        "B. Two",
+        "C. Three",
+        "D. Four"
+      ],
+      "answer": "C",
+      "explanation": "The boy says he has three sisters: Lily, Emma, and Sophie. The other numbers do not match.",
+      "audio_text": "A: Tell me about your family, Peter. B: Well, I live with my parents and my sisters. A: How many sisters do you have? B: I have three sisters. The oldest is Lily. She is fifteen. The middle one is Emma, she is twelve, and the youngest is Sophie. She is only six. A: Wow, that is a big family. Do you have brothers? B: No, I am the only boy. Sometimes it is noisy at home, but I love my sisters very much.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Listening/Listening for detail",
+      "content": "Listen and choose the correct answer.\n\nHow much does the T-shirt cost?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. 10 pounds",
+        "B. 12 pounds",
+        "C. 15 pounds",
+        "D. 20 pounds"
+      ],
+      "answer": "C",
+      "explanation": "The shop assistant tells the customer the T-shirt is fifteen pounds. The other prices are mentioned for different items.",
+      "audio_text": "A: Excuse me, how much is this blue T-shirt? B: Let me check. The blue T-shirt is fifteen pounds. A: And this red cap? B: The cap is ten pounds, and the white socks are twelve pounds for two pairs. A: Okay, I will take the T-shirt. Here is twenty pounds. B: Thank you. Here is your change, five pounds, and your receipt. A: Thanks a lot. B: You are welcome. Have a nice day.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Listening/Listening for detail",
+      "content": "Listen and choose the correct answer.\n\nWhat colour is the woman's new bag?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. Black",
+        "B. Brown",
+        "C. Red",
+        "D. Green"
+      ],
+      "answer": "B",
+      "explanation": "The woman says her new bag is brown. Black, red, and green are mentioned but for other items.",
+      "audio_text": "A: I love your new bag, Sarah. Where did you get it? B: Thank you. My husband gave it to me last week. It is brown leather. A: It looks lovely with your green coat. B: Yes, I think so too. My old bag was black, but I wanted a different colour this time. A: Did you also see the red one in that shop? B: Yes, but the brown one was nicer. A: Good choice. B: Thanks, it is my favourite bag now.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Listening/Listening for detail",
+      "content": "Listen and choose the correct answer.\n\nWhich day is the school trip?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. Monday",
+        "B. Wednesday",
+        "C. Friday",
+        "D. Sunday"
+      ],
+      "answer": "C",
+      "explanation": "The teacher clearly says the school trip is on Friday. Monday, Wednesday, and Sunday are mentioned for other reasons.",
+      "audio_text": "Good afternoon class. I have important news about our school trip. The trip will be on Friday this week, not on Wednesday as we said before. We will leave the school at eight in the morning and come back around five in the evening. Please remember to bring your lunch, water, and a warm jacket. The bus will not wait for late students. On Monday, I will give you a list of things to pack. On Sunday before, please go to bed early. Have a great trip.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Listening/Listening for detail",
+      "content": "Listen and choose the correct answer.\n\nWhere is the bank?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. Next to the post office",
+        "B. Opposite the school",
+        "C. Behind the supermarket",
+        "D. Near the train station"
+      ],
+      "answer": "D",
+      "explanation": "The man tells the tourist the bank is near the train station. The post office, school, and supermarket are mentioned but not as the bank's location.",
+      "audio_text": "A: Excuse me, can you help me? I am looking for the bank. B: Of course. The bank is near the train station. A: Is it far from here? B: No, it takes about five minutes to walk. Go straight down this road, then turn right at the post office. The supermarket will be on your left, and the school is opposite the supermarket. Keep walking and you will see the train station, with the bank right next to it. A: Thank you very much. B: You are welcome.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Listening/Listening for detail",
+      "content": "Listen and choose the correct answer.\n\nWhat will the boy buy at the shop?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. Milk and bread",
+        "B. Eggs and cheese",
+        "C. Apples and bananas",
+        "D. Sugar and tea"
+      ],
+      "answer": "A",
+      "explanation": "The mother asks the boy to buy milk and bread, and he agrees. The other items are not on his shopping list.",
+      "audio_text": "A: Tom, can you go to the shop for me, please? B: Sure mum, what do you need? A: I need some milk and a loaf of bread. We have run out. B: Anything else? Eggs or cheese? A: No, we still have eggs and cheese in the fridge. Just milk and bread. B: Okay, do you want me to buy any fruit, like apples or bananas? A: No thank you, only milk and bread today. B: Got it, I will be back in ten minutes.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Listening/Listening for detail",
+      "content": "Listen and choose the correct answer.\n\nWhat is the name of the girl's pet?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. Bella",
+        "B. Coco",
+        "C. Max",
+        "D. Luna"
+      ],
+      "answer": "B",
+      "explanation": "The girl says her cat's name is Coco. Bella, Max, and Luna are her friends' pets.",
+      "audio_text": "A: Do you have a pet, Mia? B: Yes, I have a small white cat. Her name is Coco. A: That is a sweet name. How old is she? B: She is two years old. My friend Anna also has a cat called Bella, and my cousin has a dog named Max. A: And Luna? B: Oh, Luna is my neighbour's rabbit. But my own pet is just Coco. A: She must be lovely. B: Yes, Coco is the best cat in the world.",
+      "round": 1
+    },
+    {
+      "chapter": "PET",
+      "knowledge_point": "Listening/Listening for detail",
+      "content": "Listen and choose the correct answer.\n\nHow long is the film?",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. 90 minutes",
+        "B. 100 minutes",
+        "C. 120 minutes",
+        "D. 150 minutes"
+      ],
+      "answer": "C",
+      "explanation": "The cinema worker says the film is one hundred and twenty minutes long. The other lengths are not the film's actual duration.",
+      "audio_text": "A: Hi, two tickets for the new adventure film, please. B: Sure. The next show starts at seven o'clock. A: And the running time? B: It runs for one hundred and twenty minutes, so it will end at nine o'clock. A: Oh, that is longer than I thought. The last film I saw here was only ninety minutes. B: Yes, this one is bigger. There are also some short clips before, about ten minutes. A: Great, we will take the seven o'clock show. B: That is twenty pounds, please.",
+      "round": 1
+    }
+  ]
+}

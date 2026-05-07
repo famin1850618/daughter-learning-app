@@ -42,6 +42,8 @@ const _bundledBatchAssets = [
   'assets/data/batches/batch_2026_05_08_g7_math_r1.json',
   'assets/data/batches/batch_2026_05_08_g7_chinese_r1.json',
   'assets/data/batches/batch_2026_05_08_g7_english_r1.json',
+  // V3.9 Cambridge English (PET / FCE / CAE Foundation)
+  'assets/data/batches/batch_2026_05_07_g6_english_pet_r1.json',
 ];
 
 void main() async {
