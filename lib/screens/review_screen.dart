@@ -13,6 +13,7 @@ import '../services/practice_service.dart';
 import '../services/navigation_service.dart';
 import '../services/assessment_service.dart';
 import '../services/reward_service.dart';
+import '../services/difficulty_settings_service.dart';
 
 /// 错题集（按 KP 聚类）
 ///
@@ -443,7 +444,8 @@ class _KpCard extends StatelessWidget {
   }
 
   Future<void> _practiceSimilar(BuildContext context) async {
-    await context.read<PracticeService>().startKpReviewSession(summary.fullPath);
+    final applyDiff = context.read<DifficultySettingsService>().applyToReviewSimilar;
+    await context.read<PracticeService>().startKpReviewSession(summary.fullPath, applyDifficulty: applyDiff);
     if (!context.mounted) return;
     final qs = context.read<PracticeService>().currentQuestions;
     if (qs.isEmpty) {
@@ -531,7 +533,8 @@ class _KpDetailScreenState extends State<_KpDetailScreen> {
   }
 
   Future<void> _practiceSimilar() async {
-    await context.read<PracticeService>().startKpReviewSession(widget.summary.fullPath);
+    final applyDiff = context.read<DifficultySettingsService>().applyToReviewSimilar;
+    await context.read<PracticeService>().startKpReviewSession(widget.summary.fullPath, applyDifficulty: applyDiff);
     if (!mounted) return;
     final qs = context.read<PracticeService>().currentQuestions;
     if (qs.isEmpty) {

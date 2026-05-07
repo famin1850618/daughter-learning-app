@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 10,
+      version: 11,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
@@ -190,6 +190,16 @@ class DatabaseHelper {
         await db.execute('ALTER TABLE questions ADD COLUMN audio_text TEXT');
       } catch (_) {/* 已存在 */}
     }
+    if (oldVersion < 11) {
+      // v11: 难度档（V3.8）—— 1=基础 / 2=中等 / 3=较难 / 4=竞赛
+      // NULL 允许：V3.6/V3.7.6 历史题包后续 Agent 回填，未回填的题不出现在按档抽题里
+      try {
+        await db.execute('ALTER TABLE questions ADD COLUMN round INTEGER');
+      } catch (_) {/* 已存在 */}
+      try {
+        await db.execute('CREATE INDEX IF NOT EXISTS idx_questions_round ON questions (round)');
+      } catch (_) {}
+    }
   }
 
   Future<void> _createAllTables(Database db) async {
@@ -249,6 +259,7 @@ class DatabaseHelper {
         explanation TEXT,
         image_data TEXT,
         audio_text TEXT,
+        round INTEGER,
         source TEXT DEFAULT 'pregenerated',
         user_id TEXT DEFAULT 'local'
       )
@@ -339,6 +350,7 @@ class DatabaseHelper {
     await db.execute('CREATE INDEX idx_plan_items_day ON plan_items (day_plan_id)');
     await db.execute('CREATE INDEX idx_plan_items_chapter ON plan_items (chapter_id)');
     await db.execute('CREATE INDEX idx_questions_subject_grade ON questions (subject, grade)');
+    await db.execute('CREATE INDEX idx_questions_round ON questions (round)');
     await db.execute('CREATE INDEX idx_records_question ON practice_records (question_id)');
     await db.execute('CREATE INDEX idx_kp_subject ON knowledge_points (subject)');
   }

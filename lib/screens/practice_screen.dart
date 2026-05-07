@@ -7,6 +7,7 @@ import 'package:flutter_tts/flutter_tts.dart';
 import '../utils/app_theme.dart';
 import '../utils/math_text.dart';
 import '../utils/settings_action.dart';
+import '../services/difficulty_settings_service.dart';
 import '../models/subject.dart';
 import '../models/question.dart';
 import '../models/curriculum.dart';
@@ -164,7 +165,8 @@ class _SelectionScreenState extends State<_SelectionScreen> {
             icon: const Icon(Icons.refresh, size: 18),
             label: const Text('针对薄弱点练习'),
             onPressed: () async {
-              await context.read<PracticeService>().startAggregatedReviewSession();
+              final applyDiff = context.read<DifficultySettingsService>().applyToReviewSimilar;
+              await context.read<PracticeService>().startAggregatedReviewSession(applyDifficulty: applyDiff);
               if (!context.mounted) return;
               if (context.read<PracticeService>().currentQuestions.isEmpty) {
                 ScaffoldMessenger.of(context).showSnackBar(
@@ -705,7 +707,8 @@ class _ResultScreenState extends State<_ResultScreen> {
                 icon: const Icon(Icons.refresh),
                 label: const Text('针对薄弱点练习'),
                 onPressed: () async {
-                  await context.read<PracticeService>().startAggregatedReviewSession();
+                  final applyDiff = context.read<DifficultySettingsService>().applyToReviewSimilar;
+              await context.read<PracticeService>().startAggregatedReviewSession(applyDifficulty: applyDiff);
                   if (!context.mounted) return;
                   if (context.read<PracticeService>().currentQuestions.isEmpty) {
                     ScaffoldMessenger.of(context).showSnackBar(

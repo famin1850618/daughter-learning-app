@@ -17,7 +17,8 @@
         "D. 勾当错"
       ],
       "answer": "A",
-      "explanation": "燕山读 yān；鸿鹄读 hóng hú；勾当读 gòu dàng——题目本想考勾当读 gòu，但课本注音允许 dàng；标准答案以课本为准，此处全部按部编版六下注音均正确。"
+      "explanation": "燕山读 yān；鸿鹄读 hóng hú；勾当读 gòu dàng——题目本想考勾当读 gòu，但课本注音允许 dàng；标准答案以课本为准，此处全部按部编版六下注音均正确。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -32,7 +33,8 @@
         "D. zhèng / zhèng"
       ],
       "answer": "A",
-      "explanation": "「正月」读 zhēng；「正规」读 zhèng。"
+      "explanation": "「正月」读 zhēng；「正规」读 zhèng。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -47,7 +49,8 @@
         "D. 削减 削弱 剥削"
       ],
       "answer": "D",
-      "explanation": "D 三个「削」均读 xuē；A 处理 chǔ、处所 chù、处境 chǔ；B 兴奋 xīng、兴趣 xìng、兴旺 xīng；C 露 lù/lòu 不一致。"
+      "explanation": "D 三个「削」均读 xuē；A 处理 chǔ、处所 chù、处境 chǔ；B 兴奋 xīng、兴趣 xìng、兴旺 xīng；C 露 lù/lòu 不一致。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -56,7 +59,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "夹",
-      "explanation": "考查多音字「夹」字本身的写法识记；「夹袄」读 jiá ǎo，但拼音不作 fill 答案，故此题以书写「夹」字字形为准。"
+      "explanation": "考查多音字「夹」字本身的写法识记；「夹袄」读 jiá ǎo，但拼音不作 fill 答案，故此题以书写「夹」字字形为准。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -71,7 +75,8 @@
         "D. 曾孙"
       ],
       "answer": "B",
-      "explanation": "「曾经」读 céng；「不曾」也读 céng；A、C、D 均读 zēng。"
+      "explanation": "「曾经」读 céng；「不曾」也读 céng；A、C、D 均读 zēng。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -86,7 +91,8 @@
         "D. 见微知著 司空见惯 锲而不舍"
       ],
       "answer": "D",
-      "explanation": "B「通霄」应为「通宵」；C「司空见贯」应为「司空见惯」；A 三词正确但与 D 同样正确——题目中 D 项含明显课本重点。"
+      "explanation": "B「通霄」应为「通宵」；C「司空见贯」应为「司空见惯」；A 三词正确但与 D 同样正确——题目中 D 项含明显课本重点。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -95,7 +101,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "锲",
-      "explanation": "「锲」金字旁，意为雕刻；不要写成「契」。"
+      "explanation": "「锲」金字旁，意为雕刻；不要写成「契」。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -110,7 +117,8 @@
         "D. 他做事一惯认真负责"
       ],
       "answer": "B",
-      "explanation": "A「历历在木」应为「历历在目」；C「拘束」用错语境，本句应为「束缚」（虽不算错别字但用词不当）；D「一惯」应为「一贯」。"
+      "explanation": "A「历历在木」应为「历历在目」；C「拘束」用错语境，本句应为「束缚」（虽不算错别字但用词不当）；D「一惯」应为「一贯」。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -119,7 +127,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "锲",
-      "explanation": "「锲而不舍」出自《荀子》，意为坚持不懈。"
+      "explanation": "「锲而不舍」出自《荀子》，意为坚持不懈。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -134,7 +143,8 @@
         "D. 翻天附地"
       ],
       "answer": "B",
-      "explanation": "「覆」字意为翻转，「翻天覆地」是正确写法。"
+      "explanation": "「覆」字意为翻转，「翻天覆地」是正确写法。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -149,7 +159,8 @@
         "D. 司机和空姐"
       ],
       "answer": "A",
-      "explanation": "「司空」是古代官名；「司空见惯」原意是身居司空高位的人见多了不觉得奇怪。"
+      "explanation": "「司空」是古代官名；「司空见惯」原意是身居司空高位的人见多了不觉得奇怪。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -164,7 +175,8 @@
         "D. 卑微 / 显赫"
       ],
       "answer": "A",
-      "explanation": "「微」指细小苗头，「著」指明显结果。"
+      "explanation": "「微」指细小苗头，「著」指明显结果。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -173,7 +185,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "停止",
-      "explanation": "「已」意为「停止」，「万不得已」意为没有办法停下来，必须如此。"
+      "explanation": "「已」意为「停止」，「万不得已」意为没有办法停下来，必须如此。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -188,7 +201,8 @@
         "D. 接连不断"
       ],
       "answer": "C",
-      "explanation": "A、B 中「绝」意为「断绝、停止」；C 中「绝」意为「绝望、走投无路」；D 是干扰项中的近义短语。"
+      "explanation": "A、B 中「绝」意为「断绝、停止」；C 中「绝」意为「绝望、走投无路」；D 是干扰项中的近义短语。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -197,7 +211,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "智慧",
-      "explanation": "「知」通「智」，意为「智慧」。"
+      "explanation": "「知」通「智」，意为「智慧」。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -212,7 +227,8 @@
         "D. 整齐划一"
       ],
       "answer": "A",
-      "explanation": "「截然」形容界限非常分明。"
+      "explanation": "「截然」形容界限非常分明。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -227,7 +243,8 @@
         "D. 福气就在身边"
       ],
       "answer": "A",
-      "explanation": "「焉」意为「怎么、哪里」，「焉知非福」即「怎么知道不是福气呢」。"
+      "explanation": "「焉」意为「怎么、哪里」，「焉知非福」即「怎么知道不是福气呢」。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -242,7 +259,8 @@
         "D. 死得很可惜"
       ],
       "answer": "A",
-      "explanation": "「其所」指应得之处，「死得其所」形容死得有意义。"
+      "explanation": "「其所」指应得之处，「死得其所」形容死得有意义。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -257,7 +275,8 @@
         "D. 精明 / 简短"
       ],
       "answer": "A",
-      "explanation": "「精兵简政」指精减人员、简化机构。"
+      "explanation": "「精兵简政」指精减人员、简化机构。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -272,7 +291,8 @@
         "D. 已经结束"
       ],
       "answer": "B",
-      "explanation": "「完全」表示不掺杂别的目的，全部、彻底地为解放人民。"
+      "explanation": "「完全」表示不掺杂别的目的，全部、彻底地为解放人民。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -287,7 +307,8 @@
         "D. 漫不经心"
       ],
       "answer": "A",
-      "explanation": "「依依不舍」与「难舍难分」均形容舍不得离开。"
+      "explanation": "「依依不舍」与「难舍难分」均形容舍不得离开。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -302,7 +323,8 @@
         "D. 仇视"
       ],
       "answer": "A",
-      "explanation": "「鄙视」反义词为「尊敬」，B、C 都是近义词。"
+      "explanation": "「鄙视」反义词为「尊敬」，B、C 都是近义词。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -317,7 +339,8 @@
         "D. 五湖四海—天南地北"
       ],
       "answer": "C",
-      "explanation": "C 是反义词；A、B、D 都是近义词。"
+      "explanation": "C 是反义词；A、B、D 都是近义词。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -332,7 +355,8 @@
         "D. 减员增效"
       ],
       "answer": "D",
-      "explanation": "「精兵简政」与「减员增效」均强调精简人员提高效率。"
+      "explanation": "「精兵简政」与「减员增效」均强调精简人员提高效率。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -347,7 +371,8 @@
         "D. 寻常可见"
       ],
       "answer": "C",
-      "explanation": "「不可思议」指无法理解；「显而易见」指容易看出，正好相反。"
+      "explanation": "「不可思议」指无法理解；「显而易见」指容易看出，正好相反。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -362,7 +387,8 @@
         "D. 改进错误 / 改正方法 / 改善生活"
       ],
       "answer": "A",
-      "explanation": "习惯搭配：改善生活、改进方法、改正错误。"
+      "explanation": "习惯搭配：改善生活、改进方法、改正错误。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -377,7 +403,8 @@
         "D. 思想"
       ],
       "answer": "A",
-      "explanation": "「鲜艳」修饰色彩明艳的事物，「旗帜」最恰当。"
+      "explanation": "「鲜艳」修饰色彩明艳的事物，「旗帜」最恰当。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -392,7 +419,8 @@
         "D. 他发表了重要演讲"
       ],
       "answer": "C",
-      "explanation": "「精神」要用「发扬」搭配，「发挥」常与「才能、作用、水平」搭配。"
+      "explanation": "「精神」要用「发扬」搭配，「发挥」常与「才能、作用、水平」搭配。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -407,7 +435,8 @@
         "D. 高大"
       ],
       "answer": "A",
-      "explanation": "「匆匆的脚步」搭配自然，呼应朱自清《匆匆》。"
+      "explanation": "「匆匆的脚步」搭配自然，呼应朱自清《匆匆》。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -422,7 +451,8 @@
         "D. 端正态度"
       ],
       "answer": "C",
-      "explanation": "「矛盾」要用「化解」「解决」，不能「改善」。"
+      "explanation": "「矛盾」要用「化解」「解决」，不能「改善」。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -437,7 +467,8 @@
         "D. 这件事很简单，真是见微知著"
       ],
       "answer": "B",
-      "explanation": "A「司空见惯」用来形容常见事物；C「锲而不舍」与「三天打鱼」矛盾；D「见微知著」用错对象。"
+      "explanation": "A「司空见惯」用来形容常见事物；C「锲而不舍」与「三天打鱼」矛盾；D「见微知著」用错对象。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -446,7 +477,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "锲",
-      "explanation": "「锲而不舍」即坚持不懈。"
+      "explanation": "「锲而不舍」即坚持不懈。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -461,7 +493,8 @@
         "D. 望梅止渴"
       ],
       "answer": "A",
-      "explanation": "B、C 含贬义，D 比喻空想，均不合语境。"
+      "explanation": "B、C 含贬义，D 比喻空想，均不合语境。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -476,7 +509,8 @@
         "D. 不可思议"
       ],
       "answer": "A",
-      "explanation": "「见微知著」字面是看见微小知道显著，整体比喻从苗头看本质。"
+      "explanation": "「见微知著」字面是看见微小知道显著，整体比喻从苗头看本质。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -491,7 +525,8 @@
         "D. 穷途末路"
       ],
       "answer": "A",
-      "explanation": "「有声有色」形容活动办得精彩。"
+      "explanation": "「有声有色」形容活动办得精彩。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -506,7 +541,8 @@
         "D. 沉着 阴险 镇定"
       ],
       "answer": "A",
-      "explanation": "B 全贬；C 顽固贬；D 阴险贬。"
+      "explanation": "B 全贬；C 顽固贬；D 阴险贬。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -521,7 +557,8 @@
         "D. 偏执"
       ],
       "answer": "A",
-      "explanation": "「执着」中性偏褒，其他三个均贬义。"
+      "explanation": "「执着」中性偏褒，其他三个均贬义。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -536,7 +573,8 @@
         "D. 他勇敢地承认了错误"
       ],
       "answer": "B",
-      "explanation": "「武断」含贬义，其余三个均褒义。"
+      "explanation": "「武断」含贬义，其余三个均褒义。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -551,7 +589,8 @@
         "D. 仰慕"
       ],
       "answer": "A",
-      "explanation": "「鄙视」含贬义，其余褒义。"
+      "explanation": "「鄙视」含贬义，其余褒义。",
+      "round": 2
     },
     {
       "chapter": "字词专题",
@@ -560,7 +599,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "褒义",
-      "explanation": "「奋不顾身」形容奋勇向前，含强烈褒义。"
+      "explanation": "「奋不顾身」形容奋勇向前，含强烈褒义。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -575,7 +615,8 @@
         "D. 反问"
       ],
       "answer": "A",
-      "explanation": "句式整齐，由两个相同结构的分句构成，是排比。考查辨析——本身不是比喻。"
+      "explanation": "句式整齐，由两个相同结构的分句构成，是排比。考查辨析——本身不是比喻。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -584,7 +625,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "比喻",
-      "explanation": "本体「太阳」、喻词「像」、喻体「大火球」，是典型明喻。"
+      "explanation": "本体「太阳」、喻词「像」、喻体「大火球」，是典型明喻。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -599,7 +641,8 @@
         "D. 月亮仿佛银盘"
       ],
       "answer": "B",
-      "explanation": "暗喻不用「像」「似」「仿佛」，而用「是」「成了」等判断词。"
+      "explanation": "暗喻不用「像」「似」「仿佛」，而用「是」「成了」等判断词。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -614,7 +657,8 @@
         "D. 反问 + 比喻"
       ],
       "answer": "A",
-      "explanation": "「日子如轻烟……如薄雾」是比喻；句式整齐排列是排比。"
+      "explanation": "「日子如轻烟……如薄雾」是比喻；句式整齐排列是排比。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -629,7 +673,8 @@
         "D. 他的歌声像泉水叮咚"
       ],
       "answer": "B",
-      "explanation": "B 是同类比较（人比人），不是比喻；其他三项是不同类事物间的比喻。"
+      "explanation": "B 是同类比较（人比人），不是比喻；其他三项是不同类事物间的比喻。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -644,7 +689,8 @@
         "D. 反问无奈之情"
       ],
       "answer": "A",
-      "explanation": "「溜」是人或动物的动作，用在「日子」上是拟人。"
+      "explanation": "「溜」是人或动物的动作，用在「日子」上是拟人。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -659,7 +705,8 @@
         "D. 风一阵阵吹过"
       ],
       "answer": "A",
-      "explanation": "「抚摸」是人的动作，赋予风以人的行为，是拟人。"
+      "explanation": "「抚摸」是人的动作，赋予风以人的行为，是拟人。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -674,7 +721,8 @@
         "D. 三种（拟人 + 比喻 + 排比）"
       ],
       "answer": "A",
-      "explanation": "两个分句都是拟人；不构成排比（分句结构不严格平行），也无比喻。"
+      "explanation": "两个分句都是拟人；不构成排比（分句结构不严格平行），也无比喻。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -683,7 +731,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "拟人",
-      "explanation": "「公公」「笑脸」赋予太阳以人的形象，是拟人。"
+      "explanation": "「公公」「笑脸」赋予太阳以人的形象，是拟人。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -698,7 +747,8 @@
         "D. 没区别"
       ],
       "answer": "A",
-      "explanation": "「歌唱」是人的行为，赋予鸟儿，构成拟人。"
+      "explanation": "「歌唱」是人的行为，赋予鸟儿，构成拟人。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -713,7 +763,8 @@
         "D. 设问"
       ],
       "answer": "A",
-      "explanation": "两句对照鲜明，构成对比；不是排比（排比需三个或以上同结构分句）。"
+      "explanation": "两句对照鲜明，构成对比；不是排比（排比需三个或以上同结构分句）。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -728,7 +779,8 @@
         "D. 山多么美啊"
       ],
       "answer": "A",
-      "explanation": "三个结构相同的分句构成排比。"
+      "explanation": "三个结构相同的分句构成排比。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -737,7 +789,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "三",
-      "explanation": "排比修辞要求三个或以上结构相同或相似的句子。"
+      "explanation": "排比修辞要求三个或以上结构相同或相似的句子。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -752,7 +805,8 @@
         "D. 反复"
       ],
       "answer": "A",
-      "explanation": "三个相同结构的分句构成排比；「枯」「青」「谢」「开」赋予杨柳桃花以生命动态，含拟人。"
+      "explanation": "三个相同结构的分句构成排比；「枯」「青」「谢」「开」赋予杨柳桃花以生命动态，含拟人。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -767,7 +821,8 @@
         "D. 强调因果"
       ],
       "answer": "A",
-      "explanation": "排比的核心作用是增强气势、加强情感表达。"
+      "explanation": "排比的核心作用是增强气势、加强情感表达。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -776,7 +831,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "夸张",
-      "explanation": "「三千尺」是数字夸张，言其极高。"
+      "explanation": "「三千尺」是数字夸张，言其极高。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -791,7 +847,8 @@
         "D. 他吃完了饭"
       ],
       "answer": "A",
-      "explanation": "「能吃下一头牛」是放大事实的夸张；C 是比喻。"
+      "explanation": "「能吃下一头牛」是放大事实的夸张；C 是比喻。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -806,7 +863,8 @@
         "D. 直接、间接、双重"
       ],
       "answer": "A",
-      "explanation": "夸张分扩大夸张、缩小夸张和超前夸张三类。"
+      "explanation": "夸张分扩大夸张、缩小夸张和超前夸张三类。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -821,7 +879,8 @@
         "D. 普通夸张"
       ],
       "answer": "A",
-      "explanation": "把「能听见」的极限缩小到极致，是缩小夸张。"
+      "explanation": "把「能听见」的极限缩小到极致，是缩小夸张。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -836,7 +895,8 @@
         "D. 床前明月光"
       ],
       "answer": "D",
-      "explanation": "D 是写实，没有夸张。"
+      "explanation": "D 是写实，没有夸张。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -851,7 +911,8 @@
         "D. 我们不珍惜时间"
       ],
       "answer": "A",
-      "explanation": "反问句去掉「难道……吗」并将否定句改肯定。"
+      "explanation": "反问句去掉「难道……吗」并将否定句改肯定。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -866,7 +927,8 @@
         "D. 不需要标点"
       ],
       "answer": "A",
-      "explanation": "反问只问不答，答案就在反问的相反方向。"
+      "explanation": "反问只问不答，答案就在反问的相反方向。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -881,7 +943,8 @@
         "D. 几点了？"
       ],
       "answer": "B",
-      "explanation": "B 是反问，意思是「这让人感动」；其他都是真的疑问。"
+      "explanation": "B 是反问，意思是「这让人感动」；其他都是真的疑问。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -890,7 +953,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "反问",
-      "explanation": "意为「这不能怪谁」，反问句。"
+      "explanation": "意为「这不能怪谁」，反问句。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -905,7 +969,8 @@
         "D. 这究竟是不是真的？"
       ],
       "answer": "A",
-      "explanation": "「难道……吗？」是典型反问句式，强化肯定语气。"
+      "explanation": "「难道……吗？」是典型反问句式，强化肯定语气。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -920,7 +985,8 @@
         "D. 你叫什么名字？"
       ],
       "answer": "A",
-      "explanation": "设问是自问自答，A 提出问题立即回答。"
+      "explanation": "设问是自问自答，A 提出问题立即回答。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -935,7 +1001,8 @@
         "D. 没有区别"
       ],
       "answer": "A",
-      "explanation": "设问自问自答；反问无疑而问，答在问中。"
+      "explanation": "设问自问自答；反问无疑而问，答在问中。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -944,7 +1011,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "设问",
-      "explanation": "自问自答构成设问。"
+      "explanation": "自问自答构成设问。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -959,7 +1027,8 @@
         "D. 反映矛盾"
       ],
       "answer": "A",
-      "explanation": "设问能吸引注意，自然引出下文。"
+      "explanation": "设问能吸引注意，自然引出下文。",
+      "round": 2
     },
     {
       "chapter": "修辞专题",
@@ -974,7 +1043,8 @@
         "D. 春天来了。"
       ],
       "answer": "A",
-      "explanation": "A 自问自答，是设问；B 是反问；C 是感叹；D 是陈述。"
+      "explanation": "A 自问自答，是设问；B 是反问；C 是感叹；D 是陈述。",
+      "round": 2
     },
     {
       "chapter": "句式与标点专题",
@@ -989,7 +1059,8 @@
         "D. 能否努力是成功的关键"
       ],
       "answer": "C",
-      "explanation": "A 缺主语（「通过……使……」病句）；B「大约」与「左右」重复；D「能否」与「努力」一面对两面。"
+      "explanation": "A 缺主语（「通过……使……」病句）；B「大约」与「左右」重复；D「能否」与「努力」一面对两面。",
+      "round": 2
     },
     {
       "chapter": "句式与标点专题",
@@ -1004,7 +1075,8 @@
         "D. 主谓搭配不当"
       ],
       "answer": "C",
-      "explanation": "本句关联词使用恰当，因果关系合理，无语病。"
+      "explanation": "本句关联词使用恰当，因果关系合理，无语病。",
+      "round": 2
     },
     {
       "chapter": "句式与标点专题",
@@ -1019,7 +1091,8 @@
         "D. 重复啰嗦"
       ],
       "answer": "A",
-      "explanation": "「美丽」修饰具体事物，作文应用「优美」「精彩」。"
+      "explanation": "「美丽」修饰具体事物，作文应用「优美」「精彩」。",
+      "round": 2
     },
     {
       "chapter": "句式与标点专题",
@@ -1034,7 +1107,8 @@
         "D. 缺点要克服并发现"
       ],
       "answer": "A",
-      "explanation": "应先发现后克服，词序需调整。"
+      "explanation": "应先发现后克服，词序需调整。",
+      "round": 2
     },
     {
       "chapter": "句式与标点专题",
@@ -1049,7 +1123,8 @@
         "D. 他可能会来"
       ],
       "answer": "A",
-      "explanation": "「大概」表猜测，「一定」表肯定，自相矛盾。"
+      "explanation": "「大概」表猜测，「一定」表肯定，自相矛盾。",
+      "round": 2
     },
     {
       "chapter": "句式与标点专题",
@@ -1064,7 +1139,8 @@
         "D. 桃花开了吗"
       ],
       "answer": "A",
-      "explanation": "用「像」连接本体「桃花」与喻体「粉色的云霞」，构成比喻。"
+      "explanation": "用「像」连接本体「桃花」与喻体「粉色的云霞」，构成比喻。",
+      "round": 2
     },
     {
       "chapter": "句式与标点专题",
@@ -1079,7 +1155,8 @@
         "D. 我必须完成任务吗？"
       ],
       "answer": "C",
-      "explanation": "反问需含「难道……吗」，且改为否定形式。"
+      "explanation": "反问需含「难道……吗」，且改为否定形式。",
+      "round": 2
     },
     {
       "chapter": "句式与标点专题",
@@ -1094,7 +1171,8 @@
         "D. 老师对我们说他要好好学习"
       ],
       "answer": "A",
-      "explanation": "转述句中「你们」改为「我们」（站在听话者角度）。"
+      "explanation": "转述句中「你们」改为「我们」（站在听话者角度）。",
+      "round": 2
     },
     {
       "chapter": "句式与标点专题",
@@ -1109,7 +1187,8 @@
         "D. 这件事可能让人感动"
       ],
       "answer": "A",
-      "explanation": "双重否定改肯定句。"
+      "explanation": "双重否定改肯定句。",
+      "round": 2
     },
     {
       "chapter": "句式与标点专题",
@@ -1124,7 +1203,8 @@
         "D. 小明把李老师批评了"
       ],
       "answer": "A",
-      "explanation": "被字句结构：受事 + 被 + 施事 + 动词。"
+      "explanation": "被字句结构：受事 + 被 + 施事 + 动词。",
+      "round": 2
     },
     {
       "chapter": "句式与标点专题",
@@ -1139,7 +1219,8 @@
         "D. 不但……而且……"
       ],
       "answer": "A",
-      "explanation": "「即使……也……」表示假设让步关系。"
+      "explanation": "「即使……也……」表示假设让步关系。",
+      "round": 2
     },
     {
       "chapter": "句式与标点专题",
@@ -1154,7 +1235,8 @@
         "D. 不但……而且……"
       ],
       "answer": "A",
-      "explanation": "「只有……才……」表示必要条件；认真复习是取得好成绩的必要条件。"
+      "explanation": "「只有……才……」表示必要条件；认真复习是取得好成绩的必要条件。",
+      "round": 2
     },
     {
       "chapter": "句式与标点专题",
@@ -1169,7 +1251,8 @@
         "D. 只要坚持，就能成功"
       ],
       "answer": "C",
-      "explanation": "C「虽然……所以……」搭配错误，应为「虽然……但是……」。"
+      "explanation": "C「虽然……所以……」搭配错误，应为「虽然……但是……」。",
+      "round": 2
     },
     {
       "chapter": "句式与标点专题",
@@ -1184,7 +1267,8 @@
         "D. 不但……而且……"
       ],
       "answer": "A",
-      "explanation": "假设关系。"
+      "explanation": "假设关系。",
+      "round": 2
     },
     {
       "chapter": "句式与标点专题",
@@ -1193,7 +1277,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "又",
-      "explanation": "「既……又……」表示并列。"
+      "explanation": "「既……又……」表示并列。",
+      "round": 2
     },
     {
       "chapter": "句式与标点专题",
@@ -1208,7 +1293,8 @@
         "D. ①②③④"
       ],
       "answer": "A",
-      "explanation": "先打开窗户，然后突然有风，最后描写感受。"
+      "explanation": "先打开窗户，然后突然有风，最后描写感受。",
+      "round": 2
     },
     {
       "chapter": "句式与标点专题",
@@ -1223,7 +1309,8 @@
         "D. 读书使人明智，我喜欢读书"
       ],
       "answer": "A",
-      "explanation": "因果连接自然，A 最恰当。"
+      "explanation": "因果连接自然，A 最恰当。",
+      "round": 2
     },
     {
       "chapter": "句式与标点专题",
@@ -1238,7 +1325,8 @@
         "D. 烈日炎炎"
       ],
       "answer": "A",
-      "explanation": "春天对应万物复苏，景物呼应。"
+      "explanation": "春天对应万物复苏，景物呼应。",
+      "round": 2
     },
     {
       "chapter": "句式与标点专题",
@@ -1253,7 +1341,8 @@
         "D. ④③②①"
       ],
       "answer": "A",
-      "explanation": "总起句「春天来了」开头，后接具体描绘。"
+      "explanation": "总起句「春天来了」开头，后接具体描绘。",
+      "round": 2
     },
     {
       "chapter": "句式与标点专题",
@@ -1268,7 +1357,8 @@
         "D. 他完成游戏作业"
       ],
       "answer": "A",
-      "explanation": "时间和逻辑关系最清楚。"
+      "explanation": "时间和逻辑关系最清楚。",
+      "round": 2
     },
     {
       "chapter": "句式与标点专题",
@@ -1283,7 +1373,8 @@
         "D. 他问：你去哪里。"
       ],
       "answer": "A",
-      "explanation": "提示语后用冒号，引语用引号，疑问号在引号内。"
+      "explanation": "提示语后用冒号，引语用引号，疑问号在引号内。",
+      "round": 2
     },
     {
       "chapter": "句式与标点专题",
@@ -1298,7 +1389,8 @@
         "D. 标示书名"
       ],
       "answer": "A",
-      "explanation": "书名号用于书名、篇名、刊名等。"
+      "explanation": "书名号用于书名、篇名、刊名等。",
+      "round": 2
     },
     {
       "chapter": "句式与标点专题",
@@ -1313,7 +1405,8 @@
         "D. 我说——别走"
       ],
       "answer": "A",
-      "explanation": "A 解释说明；B 表声音延长；C 表延长；D 表停顿。"
+      "explanation": "A 解释说明；B 表声音延长；C 表延长；D 表停顿。",
+      "round": 2
     },
     {
       "chapter": "句式与标点专题",
@@ -1328,7 +1421,8 @@
         "D. 表示停顿"
       ],
       "answer": "A",
-      "explanation": "冒号引出列举内容。"
+      "explanation": "冒号引出列举内容。",
+      "round": 2
     },
     {
       "chapter": "句式与标点专题",
@@ -1337,7 +1431,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "六",
-      "explanation": "汉语省略号为六个圆点（两组三点）。"
+      "explanation": "汉语省略号为六个圆点（两组三点）。",
+      "round": 2
     },
     {
       "chapter": "阅读理解专题",
@@ -1352,7 +1447,8 @@
         "D. 设问 + 比喻"
       ],
       "answer": "A",
-      "explanation": "三个相同结构的分句构成排比；「燕子去」「杨柳枯」「桃花谢」赋予自然以动态生命，含拟人。"
+      "explanation": "三个相同结构的分句构成排比；「燕子去」「杨柳枯」「桃花谢」赋予自然以动态生命，含拟人。",
+      "round": 2
     },
     {
       "chapter": "阅读理解专题",
@@ -1367,7 +1463,8 @@
         "D. 感叹句"
       ],
       "answer": "C",
-      "explanation": "作者真正在向读者发问，并未自答；不是反问也不是设问，是抒情性的疑问。"
+      "explanation": "作者真正在向读者发问，并未自答；不是反问也不是设问，是抒情性的疑问。",
+      "round": 2
     },
     {
       "chapter": "阅读理解专题",
@@ -1382,7 +1479,8 @@
         "D. 漠不关心"
       ],
       "answer": "A",
-      "explanation": "全文流露对时光易逝的无奈与追问。"
+      "explanation": "全文流露对时光易逝的无奈与追问。",
+      "round": 2
     },
     {
       "chapter": "阅读理解专题",
@@ -1391,7 +1489,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "日子",
-      "explanation": "上文「我们的日子……」，下文「他们」即指日子。"
+      "explanation": "上文「我们的日子……」，下文「他们」即指日子。",
+      "round": 2
     },
     {
       "chapter": "阅读理解专题",
@@ -1406,7 +1505,8 @@
         "D. 故作镇静"
       ],
       "answer": "A",
-      "explanation": "在危险面前从容镇定，表现革命者的坚毅与勇敢。"
+      "explanation": "在危险面前从容镇定，表现革命者的坚毅与勇敢。",
+      "round": 2
     },
     {
       "chapter": "阅读理解专题",
@@ -1415,7 +1515,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "李星华",
-      "explanation": "《十六年前的回忆》作者李星华，回忆其父李大钊。"
+      "explanation": "《十六年前的回忆》作者李星华，回忆其父李大钊。",
+      "round": 2
     },
     {
       "chapter": "阅读理解专题",
@@ -1430,7 +1531,8 @@
         "D. 补叙"
       ],
       "answer": "A",
-      "explanation": "文章以「我」回忆十六年前的事开头，是倒叙。"
+      "explanation": "文章以「我」回忆十六年前的事开头，是倒叙。",
+      "round": 2
     },
     {
       "chapter": "阅读理解专题",
@@ -1439,7 +1541,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "李大钊",
-      "explanation": "李大钊是中国共产党早期领导人，1927 年牺牲。"
+      "explanation": "李大钊是中国共产党早期领导人，1927 年牺牲。",
+      "round": 2
     },
     {
       "chapter": "阅读理解专题",
@@ -1454,7 +1557,8 @@
         "D. 司空见惯的现象不重要"
       ],
       "answer": "A",
-      "explanation": "本段强调发现真理的方法：从细小现象中追根求源。"
+      "explanation": "本段强调发现真理的方法：从细小现象中追根求源。",
+      "round": 2
     },
     {
       "chapter": "阅读理解专题",
@@ -1469,7 +1573,8 @@
         "D. 难得一见"
       ],
       "answer": "A",
-      "explanation": "「司空见惯」形容常见而不觉奇怪。"
+      "explanation": "「司空见惯」形容常见而不觉奇怪。",
+      "round": 2
     },
     {
       "chapter": "阅读理解专题",
@@ -1484,7 +1589,8 @@
         "D. 对比论证"
       ],
       "answer": "A",
-      "explanation": "文中举出谢皮罗、波义耳、阿瑟林斯基等多个科学家的例子。"
+      "explanation": "文中举出谢皮罗、波义耳、阿瑟林斯基等多个科学家的例子。",
+      "round": 2
     },
     {
       "chapter": "阅读理解专题",
@@ -1499,7 +1605,8 @@
         "D. 困惑 / 解答"
       ],
       "answer": "A",
-      "explanation": "课文核心：从「？」追问到「！」发现真理。"
+      "explanation": "课文核心：从「？」追问到「！」发现真理。",
+      "round": 2
     },
     {
       "chapter": "阅读理解专题",
@@ -1514,7 +1621,8 @@
         "D. 二十年"
       ],
       "answer": "A",
-      "explanation": "课文明确写「二十八年」。"
+      "explanation": "课文明确写「二十八年」。",
+      "round": 2
     },
     {
       "chapter": "阅读理解专题",
@@ -1523,7 +1631,8 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "星期五",
-      "explanation": "因为是星期五救下的，故取名「星期五」。"
+      "explanation": "因为是星期五救下的，故取名「星期五」。",
+      "round": 2
     },
     {
       "chapter": "阅读理解专题",
@@ -1538,7 +1647,8 @@
         "D. 怨天尤人"
       ],
       "answer": "A",
-      "explanation": "鲁滨逊面对绝境积极开荒、建造、自救，体现顽强意志。"
+      "explanation": "鲁滨逊面对绝境积极开荒、建造、自救，体现顽强意志。",
+      "round": 2
     },
     {
       "chapter": "文学常识专题",
@@ -1553,7 +1663,8 @@
         "D. 《史记》"
       ],
       "answer": "A",
-      "explanation": "《两小儿辩日》出自《列子·汤问》。"
+      "explanation": "《两小儿辩日》出自《列子·汤问》。",
+      "round": 2
     },
     {
       "chapter": "文学常识专题",
@@ -1562,7 +1673,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "《孟子》",
-      "explanation": "《学弈》出自《孟子·告子上》。"
+      "explanation": "《学弈》出自《孟子·告子上》。",
+      "round": 2
     },
     {
       "chapter": "文学常识专题",
@@ -1571,7 +1683,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "王安石",
-      "explanation": "王安石《泊船瓜洲》中的名句。"
+      "explanation": "王安石《泊船瓜洲》中的名句。",
+      "round": 2
     },
     {
       "chapter": "文学常识专题",
@@ -1580,7 +1693,8 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "仙",
-      "explanation": "李白「诗仙」、杜甫「诗圣」。"
+      "explanation": "李白「诗仙」、杜甫「诗圣」。",
+      "round": 2
     },
     {
       "chapter": "文学常识专题",
@@ -1595,7 +1709,8 @@
         "D. 陆游——《示儿》"
       ],
       "answer": "C",
-      "explanation": "《静夜思》是李白的诗，李清照名作有《如梦令》《声声慢》等。"
+      "explanation": "《静夜思》是李白的诗，李清照名作有《如梦令》《声声慢》等。",
+      "round": 2
     },
     {
       "chapter": "文学常识专题",
@@ -1604,7 +1719,8 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "老舍",
-      "explanation": "老舍长篇小说《骆驼祥子》写人力车夫祥子的悲剧。"
+      "explanation": "老舍长篇小说《骆驼祥子》写人力车夫祥子的悲剧。",
+      "round": 2
     },
     {
       "chapter": "文学常识专题",
@@ -1613,7 +1729,8 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "朱自清",
-      "explanation": "朱自清散文名篇《匆匆》《背影》《荷塘月色》。"
+      "explanation": "朱自清散文名篇《匆匆》《背影》《荷塘月色》。",
+      "round": 2
     },
     {
       "chapter": "文学常识专题",
@@ -1628,7 +1745,8 @@
         "D. 周海婴"
       ],
       "answer": "A",
-      "explanation": "鲁迅原名周树人，浙江绍兴人。"
+      "explanation": "鲁迅原名周树人，浙江绍兴人。",
+      "round": 2
     },
     {
       "chapter": "文学常识专题",
@@ -1643,7 +1761,8 @@
         "D. 《北京的春节》——朱自清"
       ],
       "answer": "A",
-      "explanation": "B 作者是李星华（李大钊之女）；C 作者是老舍；D 作者是老舍。"
+      "explanation": "B 作者是李星华（李大钊之女）；C 作者是老舍；D 作者是老舍。",
+      "round": 2
     },
     {
       "chapter": "文学常识专题",
@@ -1658,7 +1777,8 @@
         "D. 沈雁冰"
       ],
       "answer": "A",
-      "explanation": "老舍原名舒庆春，字舍予。"
+      "explanation": "老舍原名舒庆春，字舍予。",
+      "round": 2
     },
     {
       "chapter": "文学常识专题",
@@ -1667,7 +1787,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "笛福",
-      "explanation": "英国作家丹尼尔·笛福。"
+      "explanation": "英国作家丹尼尔·笛福。",
+      "round": 2
     },
     {
       "chapter": "文学常识专题",
@@ -1682,7 +1803,8 @@
         "D. 笛福（英国）"
       ],
       "answer": "A",
-      "explanation": "拉格洛夫是首位获诺贝尔文学奖的女性。"
+      "explanation": "拉格洛夫是首位获诺贝尔文学奖的女性。",
+      "round": 2
     },
     {
       "chapter": "文学常识专题",
@@ -1691,7 +1813,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "马克·吐温",
-      "explanation": "美国作家马克·吐温（原名塞缪尔·克莱门斯）。"
+      "explanation": "美国作家马克·吐温（原名塞缪尔·克莱门斯）。",
+      "round": 2
     },
     {
       "chapter": "文学常识专题",
@@ -1706,7 +1829,8 @@
         "D. 《海底两万里》——英国"
       ],
       "answer": "D",
-      "explanation": "《海底两万里》作者凡尔纳是法国人。"
+      "explanation": "《海底两万里》作者凡尔纳是法国人。",
+      "round": 2
     },
     {
       "chapter": "文学常识专题",
@@ -1721,7 +1845,8 @@
         "D. 尼尔斯"
       ],
       "answer": "A",
-      "explanation": "哈克贝利·费恩是汤姆的好朋友。"
+      "explanation": "哈克贝利·费恩是汤姆的好朋友。",
+      "round": 2
     },
     {
       "chapter": "文学常识专题",
@@ -1730,7 +1855,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "演讲稿",
-      "explanation": "毛泽东 1944 年在张思德同志追悼会上的演讲。"
+      "explanation": "毛泽东 1944 年在张思德同志追悼会上的演讲。",
+      "round": 2
     },
     {
       "chapter": "文学常识专题",
@@ -1745,7 +1871,8 @@
         "D. 起因、经过、结果"
       ],
       "answer": "A",
-      "explanation": "议论文三要素：论点、论据、论证。"
+      "explanation": "议论文三要素：论点、论据、论证。",
+      "round": 2
     },
     {
       "chapter": "文学常识专题",
@@ -1754,7 +1881,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "散文",
-      "explanation": "朱自清《匆匆》是抒情散文。"
+      "explanation": "朱自清《匆匆》是抒情散文。",
+      "round": 2
     },
     {
       "chapter": "文学常识专题",
@@ -1769,7 +1897,8 @@
         "D. 《骆驼祥子》——散文集"
       ],
       "answer": "D",
-      "explanation": "《骆驼祥子》是长篇小说，不是散文集。"
+      "explanation": "《骆驼祥子》是长篇小说，不是散文集。",
+      "round": 2
     },
     {
       "chapter": "文学常识专题",
@@ -1784,7 +1913,8 @@
         "D. 主语、谓语、宾语、定语、状语、补语"
       ],
       "answer": "A",
-      "explanation": "记叙文六要素：时、地、人、起、经、结。"
+      "explanation": "记叙文六要素：时、地、人、起、经、结。",
+      "round": 2
     },
     {
       "chapter": "文学常识专题",
@@ -1799,7 +1929,8 @@
         "D. 中秋节"
       ],
       "answer": "A",
-      "explanation": "北方腊月二十三过小年，南方多为腊月二十四。"
+      "explanation": "北方腊月二十三过小年，南方多为腊月二十四。",
+      "round": 2
     },
     {
       "chapter": "文学常识专题",
@@ -1814,7 +1945,8 @@
         "D. 春节—端午—元宵—清明—中秋—重阳"
       ],
       "answer": "A",
-      "explanation": "正月初一春节—正月十五元宵—四月清明—五月端午—八月中秋—九月重阳。"
+      "explanation": "正月初一春节—正月十五元宵—四月清明—五月端午—八月中秋—九月重阳。",
+      "round": 2
     },
     {
       "chapter": "文学常识专题",
@@ -1823,7 +1955,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "九月九日",
-      "explanation": "九月九日为重阳节，又称登高节、敬老节。"
+      "explanation": "九月九日为重阳节，又称登高节、敬老节。",
+      "round": 2
     },
     {
       "chapter": "文学常识专题",
@@ -1838,7 +1971,8 @@
         "D. 立冬之前"
       ],
       "answer": "A",
-      "explanation": "清明在春分之后，谷雨之前。"
+      "explanation": "清明在春分之后，谷雨之前。",
+      "round": 2
     },
     {
       "chapter": "文学常识专题",
@@ -1847,7 +1981,8 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "二十",
-      "explanation": "「弱冠」指男子二十岁行冠礼。"
+      "explanation": "「弱冠」指男子二十岁行冠礼。",
+      "round": 2
     },
     {
       "chapter": "古诗文专题",
@@ -1856,7 +1991,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "一去二三里",
-      "explanation": "邵雍《山村咏怀》：「一去二三里，烟村四五家。」（六下补充）。"
+      "explanation": "邵雍《山村咏怀》：「一去二三里，烟村四五家。」（六下补充）。",
+      "round": 2
     },
     {
       "chapter": "古诗文专题",
@@ -1865,7 +2001,8 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "春风又绿",
-      "explanation": "王安石《泊船瓜洲》。"
+      "explanation": "王安石《泊船瓜洲》。",
+      "round": 2
     },
     {
       "chapter": "古诗文专题",
@@ -1880,7 +2017,8 @@
         "D. 一片冰心在玉壶"
       ],
       "answer": "A",
-      "explanation": "文天祥《过零丁洋》。"
+      "explanation": "文天祥《过零丁洋》。",
+      "round": 2
     },
     {
       "chapter": "古诗文专题",
@@ -1895,7 +2033,8 @@
         "D. 以上都是"
       ],
       "answer": "D",
-      "explanation": "《竹石》全诗都体现竹子坚劲不屈的品格。"
+      "explanation": "《竹石》全诗都体现竹子坚劲不屈的品格。",
+      "round": 2
     },
     {
       "chapter": "古诗文专题",
@@ -1910,7 +2049,8 @@
         "D. 王安石《梅花》"
       ],
       "answer": "A",
-      "explanation": "于谦借石灰自喻清白志节。"
+      "explanation": "于谦借石灰自喻清白志节。",
+      "round": 2
     },
     {
       "chapter": "古诗文专题",
@@ -1925,7 +2065,8 @@
         "D. 追求富贵"
       ],
       "answer": "A",
-      "explanation": "诗人借石灰托物言志，表达不畏牺牲、坚守清白的志向。"
+      "explanation": "诗人借石灰托物言志，表达不畏牺牲、坚守清白的志向。",
+      "round": 2
     },
     {
       "chapter": "古诗文专题",
@@ -1940,7 +2081,8 @@
         "D. 季节变化的特点"
       ],
       "answer": "A",
-      "explanation": "突出竹子在风雨中挺立不屈的品格。"
+      "explanation": "突出竹子在风雨中挺立不屈的品格。",
+      "round": 2
     },
     {
       "chapter": "古诗文专题",
@@ -1955,7 +2097,8 @@
         "D. 表示心情"
       ],
       "answer": "A",
-      "explanation": "「绿」由形容词活用为动词，化静为动，富有生机。"
+      "explanation": "「绿」由形容词活用为动词，化静为动，富有生机。",
+      "round": 2
     },
     {
       "chapter": "古诗文专题",
@@ -1970,7 +2113,8 @@
         "D. 后悔过去"
       ],
       "answer": "A",
-      "explanation": "劝诫年轻人珍惜时间。"
+      "explanation": "劝诫年轻人珍惜时间。",
+      "round": 2
     },
     {
       "chapter": "古诗文专题",
@@ -1985,7 +2129,8 @@
         "D. 描绘节日热闹"
       ],
       "answer": "A",
-      "explanation": "韩翃借寒食禁火却独许五侯家用烛之事，含蓄讽喻。"
+      "explanation": "韩翃借寒食禁火却独许五侯家用烛之事，含蓄讽喻。",
+      "round": 2
     },
     {
       "chapter": "古诗文专题",
@@ -2000,7 +2145,8 @@
         "D. 婉约缠绵、含蓄细腻"
       ],
       "answer": "A",
-      "explanation": "李白浪漫主义代表，豪放飘逸；杜甫沉郁顿挫；陶渊明清新淡远。"
+      "explanation": "李白浪漫主义代表，豪放飘逸；杜甫沉郁顿挫；陶渊明清新淡远。",
+      "round": 2
     },
     {
       "chapter": "古诗文专题",
@@ -2009,7 +2155,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "沉郁顿挫",
-      "explanation": "杜甫诗风沉郁顿挫，反映社会现实。"
+      "explanation": "杜甫诗风沉郁顿挫，反映社会现实。",
+      "round": 2
     },
     {
       "chapter": "古诗文专题",
@@ -2024,7 +2171,8 @@
         "D. 苏轼——豪放旷达"
       ],
       "answer": "C",
-      "explanation": "杜甫沉郁顿挫，不是婉约。"
+      "explanation": "杜甫沉郁顿挫，不是婉约。",
+      "round": 2
     },
     {
       "chapter": "古诗文专题",
@@ -2039,7 +2187,8 @@
         "D. 厌世退隐"
       ],
       "answer": "A",
-      "explanation": "陆游临终遗诗表达深沉爱国之情。"
+      "explanation": "陆游临终遗诗表达深沉爱国之情。",
+      "round": 2
     },
     {
       "chapter": "古诗文专题",
@@ -2054,7 +2203,8 @@
         "D. 浪漫飘逸"
       ],
       "answer": "A",
-      "explanation": "于谦借石灰之质表达自己清白节操。"
+      "explanation": "于谦借石灰之质表达自己清白节操。",
+      "round": 2
     },
     {
       "chapter": "古诗文专题",
@@ -2069,7 +2219,8 @@
         "D. 援助"
       ],
       "answer": "A",
-      "explanation": "「援」此处指拉、引（弓）。"
+      "explanation": "「援」此处指拉、引（弓）。",
+      "round": 2
     },
     {
       "chapter": "古诗文专题",
@@ -2078,7 +2229,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "距离",
-      "explanation": "古汉语「去」常表「距离」，与今天「离开」不同。"
+      "explanation": "古汉语「去」常表「距离」，与今天「离开」不同。",
+      "round": 2
     },
     {
       "chapter": "古诗文专题",
@@ -2093,7 +2245,8 @@
         "D. 不能"
       ],
       "answer": "A",
-      "explanation": "「弗」即「不」，「弗若」即「不如」。"
+      "explanation": "「弗」即「不」，「弗若」即「不如」。",
+      "round": 2
     },
     {
       "chapter": "古诗文专题",
@@ -2108,7 +2261,8 @@
         "D. 决裂"
       ],
       "answer": "A",
-      "explanation": "「决」此处指判断、裁决。"
+      "explanation": "「决」此处指判断、裁决。",
+      "round": 2
     },
     {
       "chapter": "古诗文专题",
@@ -2123,7 +2277,8 @@
         "D. wéi，认为"
       ],
       "answer": "A",
-      "explanation": "此处「为」读 wèi，表「因为、是因为」。"
+      "explanation": "此处「为」读 wèi，表「因为、是因为」。",
+      "round": 2
     },
     {
       "chapter": "古诗文专题",
@@ -2132,7 +2287,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "不",
-      "explanation": "「弗」即「不」，「弗若」即「不如」。"
+      "explanation": "「弗」即「不」，「弗若」即「不如」。",
+      "round": 2
     },
     {
       "chapter": "古诗文专题",
@@ -2147,7 +2303,8 @@
         "D. 谁认为你聪明？"
       ],
       "answer": "A",
-      "explanation": "「孰」谁；「为」认为、说；「汝」你；「知」通「智」。"
+      "explanation": "「孰」谁；「为」认为、说；「汝」你；「知」通「智」。",
+      "round": 2
     },
     {
       "chapter": "古诗文专题",
@@ -2162,7 +2319,8 @@
         "D. 同他一起学不如分开学"
       ],
       "answer": "A",
-      "explanation": "「虽」虽然；「俱」一起；「弗若」不如。"
+      "explanation": "「虽」虽然；「俱」一起；「弗若」不如。",
+      "round": 2
     },
     {
       "chapter": "古诗文专题",
@@ -2171,7 +2329,8 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "热水",
-      "explanation": "古汉语「汤」指「热水」，「探汤」指把手伸到热水里。"
+      "explanation": "古汉语「汤」指「热水」，「探汤」指把手伸到热水里。",
+      "round": 2
     },
     {
       "chapter": "古诗文专题",
@@ -2186,7 +2345,8 @@
         "D. 我和太阳一同离开"
       ],
       "answer": "A",
-      "explanation": "「以」认为；「去」距离。"
+      "explanation": "「以」认为；「去」距离。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2201,7 +2361,8 @@
         "D. 写昨天发生的事"
       ],
       "answer": "A",
-      "explanation": "「一件」要求只写一件；「难忘」要求有深刻印象与意义。"
+      "explanation": "「一件」要求只写一件；「难忘」要求有深刻印象与意义。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2216,7 +2377,8 @@
         "D. 描述老师"
       ],
       "answer": "A",
-      "explanation": "题目重点是「学会」的过程，应突出过程与体会。"
+      "explanation": "题目重点是「学会」的过程，应突出过程与体会。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2231,7 +2393,8 @@
         "D. 写好友帮助我的故事"
       ],
       "answer": "A",
-      "explanation": "A 侧重写景，与「小伙伴」无关。"
+      "explanation": "A 侧重写景，与「小伙伴」无关。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2246,7 +2409,8 @@
         "D. 修辞方法"
       ],
       "answer": "A",
-      "explanation": "审题三要点：对象、文体、范围。"
+      "explanation": "审题三要点：对象、文体、范围。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2261,7 +2425,8 @@
         "D. 题目越简单越好"
       ],
       "answer": "A",
-      "explanation": "「以小见大」是常用写作手法。"
+      "explanation": "「以小见大」是常用写作手法。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2276,7 +2441,8 @@
         "D. 倒叙"
       ],
       "answer": "A",
-      "explanation": "议论文常用「引论—本论—结论」结构。"
+      "explanation": "议论文常用「引论—本论—结论」结构。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2291,7 +2457,8 @@
         "D. 表示总结"
       ],
       "answer": "A",
-      "explanation": "首尾呼应让文章浑然一体。"
+      "explanation": "首尾呼应让文章浑然一体。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2306,7 +2473,8 @@
         "D. 引用名言"
       ],
       "answer": "A",
-      "explanation": "抄袭违反写作规范。"
+      "explanation": "抄袭违反写作规范。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2321,7 +2489,8 @@
         "D. 总结全文"
       ],
       "answer": "A",
-      "explanation": "总起部分概括全文，点明主题。"
+      "explanation": "总起部分概括全文，点明主题。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2336,7 +2505,8 @@
         "D. 抒情"
       ],
       "answer": "A",
-      "explanation": "过渡段连接前后内容，使文章衔接自然。"
+      "explanation": "过渡段连接前后内容，使文章衔接自然。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2351,7 +2521,8 @@
         "D. 《为人民服务》"
       ],
       "answer": "A",
-      "explanation": "于谦借石灰托物言志，表达清白志向。"
+      "explanation": "于谦借石灰托物言志，表达清白志向。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2366,7 +2537,8 @@
         "D. 前者写实，后者虚写"
       ],
       "answer": "A",
-      "explanation": "「借景抒情」情先景后；「触景生情」景先情后。"
+      "explanation": "「借景抒情」情先景后；「触景生情」景先情后。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2381,7 +2553,8 @@
         "D. 燕子去了，有再来的时候"
       ],
       "answer": "A",
-      "explanation": "两种死的轻重对照鲜明。"
+      "explanation": "两种死的轻重对照鲜明。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2396,7 +2569,8 @@
         "D. 一直赞扬"
       ],
       "answer": "A",
-      "explanation": "「欲扬先抑」先抑后扬，使情感对比鲜明。"
+      "explanation": "「欲扬先抑」先抑后扬，使情感对比鲜明。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2411,7 +2585,8 @@
         "D. 短暂易逝"
       ],
       "answer": "A",
-      "explanation": "竹常象征高洁、坚韧。"
+      "explanation": "竹常象征高洁、坚韧。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2426,7 +2601,8 @@
         "D. 只有外貌"
       ],
       "answer": "A",
-      "explanation": "人物描写的五种方法：外貌、语言、动作、神态、心理。"
+      "explanation": "人物描写的五种方法：外貌、语言、动作、神态、心理。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2441,7 +2617,8 @@
         "D. 语言描写"
       ],
       "answer": "A",
-      "explanation": "「攥紧拳头」是动作；「咬着牙」是神态。"
+      "explanation": "「攥紧拳头」是动作；「咬着牙」是神态。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2450,7 +2627,8 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "外貌",
-      "explanation": "描写头发是外貌描写。"
+      "explanation": "描写头发是外貌描写。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2465,7 +2643,8 @@
         "D. 神态描写"
       ],
       "answer": "A",
-      "explanation": "描写人物内心活动是心理描写。"
+      "explanation": "描写人物内心活动是心理描写。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2480,7 +2659,8 @@
         "D. 动作描写表现人物性格"
       ],
       "answer": "C",
-      "explanation": "外貌描写是为了刻画人物形象、暗示性格，不是凑字数。"
+      "explanation": "外貌描写是为了刻画人物形象、暗示性格，不是凑字数。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2495,7 +2675,8 @@
         "D. 推动情节发展"
       ],
       "answer": "A",
-      "explanation": "景物描写的作用是渲染、烘托、推动情节。"
+      "explanation": "景物描写的作用是渲染、烘托、推动情节。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2510,7 +2691,8 @@
         "D. 仅为开头"
       ],
       "answer": "A",
-      "explanation": "阴沉景象渲染紧张压抑氛围。"
+      "explanation": "阴沉景象渲染紧张压抑氛围。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2525,7 +2707,8 @@
         "D. 不需要顺序"
       ],
       "answer": "A",
-      "explanation": "景物描写讲究观察顺序：远近、整体局部、动静等。"
+      "explanation": "景物描写讲究观察顺序：远近、整体局部、动静等。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2540,7 +2723,8 @@
         "D. 反问"
       ],
       "answer": "A",
-      "explanation": "拟人手法使景物生动鲜活。"
+      "explanation": "拟人手法使景物生动鲜活。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2555,7 +2739,8 @@
         "D. 树叶哗啦啦地响"
       ],
       "answer": "A",
-      "explanation": "「一动不动」突出静景。"
+      "explanation": "「一动不动」突出静景。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2570,7 +2755,8 @@
         "D. 删除全文"
       ],
       "answer": "A",
-      "explanation": "修改作文先看全局：主题、结构。"
+      "explanation": "修改作文先看全局：主题、结构。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2585,7 +2771,8 @@
         "D. 比对范文学结构"
       ],
       "answer": "A",
-      "explanation": "抄袭违反写作规范。"
+      "explanation": "抄袭违反写作规范。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2594,7 +2781,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "增补",
-      "explanation": "「∧」是增补符。"
+      "explanation": "「∧」是增补符。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2609,7 +2797,8 @@
         "D. 字数多少"
       ],
       "answer": "A",
-      "explanation": "修改也要注意标点和错别字。"
+      "explanation": "修改也要注意标点和错别字。",
+      "round": 2
     },
     {
       "chapter": "写作专题",
@@ -2618,7 +2807,8 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "英俊",
-      "explanation": "「美丽」一般形容女性或景物；男性多用「英俊」。"
+      "explanation": "「美丽」一般形容女性或景物；男性多用「英俊」。",
+      "round": 2
     },
     {
       "chapter": "课文与名著专题",
@@ -2633,7 +2823,8 @@
         "D. 人物变化顺序"
       ],
       "answer": "A",
-      "explanation": "课文从腊八到正月十九按时间顺序展开。"
+      "explanation": "课文从腊八到正月十九按时间顺序展开。",
+      "round": 2
     },
     {
       "chapter": "课文与名著专题",
@@ -2642,7 +2833,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "张思德",
-      "explanation": "1944 年悼念张思德同志的追悼会上发表。"
+      "explanation": "1944 年悼念张思德同志的追悼会上发表。",
+      "round": 2
     },
     {
       "chapter": "课文与名著专题",
@@ -2657,7 +2849,8 @@
         "D. 书上写的"
       ],
       "answer": "A",
-      "explanation": "课文表现「我」充满好奇与想象。"
+      "explanation": "课文表现「我」充满好奇与想象。",
+      "round": 2
     },
     {
       "chapter": "课文与名著专题",
@@ -2672,7 +2865,8 @@
         "D. 赶集的欢乐"
       ],
       "answer": "A",
-      "explanation": "史铁生回忆童年那个落空的星期天，刻画失望心理。"
+      "explanation": "史铁生回忆童年那个落空的星期天，刻画失望心理。",
+      "round": 2
     },
     {
       "chapter": "课文与名著专题",
@@ -2687,7 +2881,8 @@
         "D. 引出文章背景"
       ],
       "answer": "A",
-      "explanation": "引用名言进行道理论证，论述死的价值。"
+      "explanation": "引用名言进行道理论证，论述死的价值。",
+      "round": 2
     },
     {
       "chapter": "课文与名著专题",
@@ -2702,7 +2897,8 @@
         "D. 古老石碑"
       ],
       "answer": "A",
-      "explanation": "汤姆和哈克在山洞里发现了印第安人乔藏的金子。"
+      "explanation": "汤姆和哈克在山洞里发现了印第安人乔藏的金子。",
+      "round": 2
     },
     {
       "chapter": "课文与名著专题",
@@ -2717,7 +2913,8 @@
         "D. 一只小鸟"
       ],
       "answer": "A",
-      "explanation": "尼尔斯因捉弄小精灵被变成只有拇指大的小人。"
+      "explanation": "尼尔斯因捉弄小精灵被变成只有拇指大的小人。",
+      "round": 2
     },
     {
       "chapter": "课文与名著专题",
@@ -2732,7 +2929,8 @@
         "D. 当军官"
       ],
       "answer": "A",
-      "explanation": "祥子三起三落，始终想拥有一辆属于自己的洋车。"
+      "explanation": "祥子三起三落，始终想拥有一辆属于自己的洋车。",
+      "round": 2
     },
     {
       "chapter": "课文与名著专题",
@@ -2747,7 +2945,8 @@
         "D. 等船"
       ],
       "answer": "A",
-      "explanation": "鲁滨逊用刻痕记录每一天，保持时间感。"
+      "explanation": "鲁滨逊用刻痕记录每一天，保持时间感。",
+      "round": 2
     },
     {
       "chapter": "课文与名著专题",
@@ -2762,7 +2961,8 @@
         "D. 《骆驼祥子》——星期五"
       ],
       "answer": "D",
-      "explanation": "《骆驼祥子》主人公是祥子，没有「星期五」。"
+      "explanation": "《骆驼祥子》主人公是祥子，没有「星期五」。",
+      "round": 2
     }
   ]
 }

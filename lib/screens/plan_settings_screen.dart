@@ -8,6 +8,7 @@ import '../services/question_update_service.dart';
 import '../services/learning_export_service.dart';
 import '../services/learning_sync_service.dart';
 import '../services/data_backup_service.dart';
+import '../services/difficulty_settings_service.dart';
 import 'curriculum_management_screen.dart';
 
 class PlanSettingsScreen extends StatefulWidget {
@@ -71,6 +72,14 @@ class _PlanSettingsScreenState extends State<PlanSettingsScreen> {
             subtitle: '从云端拉取新题包，按知识点增量同步。',
           ),
           const _UpdateSection(),
+          const SizedBox(height: 16),
+
+          // ── 难度设置（V3.8）──────────────────
+          _SectionHeader(
+            title: '练习难度',
+            subtitle: '设置抽题的难度档（基础/中等/较难/竞赛）。普通练习强制应用；薄弱点练习可选。',
+          ),
+          const _DifficultySection(),
           const SizedBox(height: 16),
 
           // ── 学情自动同步（V3.7.7）────────────
@@ -486,6 +495,234 @@ class _SyncSectionState extends State<_SyncSection> {
           ],
         ),
       ),
+    );
+  }
+}
+
+/// 难度设置区块（V3.8）
+class _DifficultySection extends StatelessWidget {
+  const _DifficultySection();
+
+  static const _subjects = ['数学', '语文', '英语', '物理', '化学', 'AI'];
+
+  @override
+  Widget build(BuildContext context) {
+    final svc = context.watch<DifficultySettingsService>();
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(8, 4, 8, 8),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // 全局 / 分科
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8),
+              child: Row(
+                children: [
+                  const Text('应用范围：'),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: SegmentedButton<DifficultyMode>(
+                      segments: const [
+                        ButtonSegment(
+                            value: DifficultyMode.global,
+                            label: Text('全局', style: TextStyle(fontSize: 13))),
+                        ButtonSegment(
+                            value: DifficultyMode.perSubject,
+                            label: Text('分科', style: TextStyle(fontSize: 13))),
+                      ],
+                      selected: {svc.mode},
+                      showSelectedIcon: false,
+                      onSelectionChanged: (s) => svc.setMode(s.first),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const Divider(height: 16),
+
+            if (svc.mode == DifficultyMode.global)
+              _ProfileEditor(profileKey: 'global', label: '所有科目')
+            else
+              ..._subjects.map((s) => ExpansionTile(
+                    tilePadding: const EdgeInsets.symmetric(horizontal: 8),
+                    childrenPadding: const EdgeInsets.fromLTRB(8, 0, 8, 8),
+                    title: Text(s, style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w600)),
+                    subtitle: Text(_summarize(svc.profileFor(s)),
+                        style: const TextStyle(fontSize: 11, color: Colors.grey)),
+                    children: [_ProfileEditor(profileKey: s, label: s)],
+                  )),
+
+            const Divider(height: 16),
+            // 应用范围开关
+            SwitchListTile(
+              dense: true,
+              contentPadding: const EdgeInsets.symmetric(horizontal: 8),
+              title: const Text('首页薄弱知识点应用难度', style: TextStyle(fontSize: 13)),
+              subtitle: const Text('关掉则按"最近错过的难度"匹配（旧逻辑）',
+                  style: TextStyle(fontSize: 11, color: Colors.grey)),
+              value: svc.applyToWeakKp,
+              activeColor: AppTheme.primary,
+              onChanged: (v) => svc.setApplyToWeakKp(v),
+            ),
+            SwitchListTile(
+              dense: true,
+              contentPadding: const EdgeInsets.symmetric(horizontal: 8),
+              title: const Text('错题集"练相似题"应用难度', style: TextStyle(fontSize: 13)),
+              subtitle: const Text('关掉则按错题原题难度匹配',
+                  style: TextStyle(fontSize: 11, color: Colors.grey)),
+              value: svc.applyToReviewSimilar,
+              activeColor: AppTheme.primary,
+              onChanged: (v) => svc.setApplyToReviewSimilar(v),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  static String _summarize(DifficultyProfile p) {
+    if (p.type == DifficultyType.precise) {
+      if (p.preciseRound == null) return '不限难度';
+      const names = {1: '基础', 2: '中等', 3: '较难', 4: '竞赛'};
+      return '精确：${names[p.preciseRound]}';
+    }
+    return '模糊：${p.fuzzyWeights.join('/')}';
+  }
+}
+
+class _ProfileEditor extends StatelessWidget {
+  final String profileKey;
+  final String label;
+  const _ProfileEditor({required this.profileKey, required this.label});
+
+  @override
+  Widget build(BuildContext context) {
+    final svc = context.watch<DifficultySettingsService>();
+    final profile = svc.profileFor(profileKey == 'global' ? '' : profileKey);
+    final p = profileKey == 'global' ? svc.globalProfile : profile;
+
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 8),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // 类型切换
+          Row(
+            children: [
+              const Text('类型：', style: TextStyle(fontSize: 13)),
+              const SizedBox(width: 6),
+              Expanded(
+                child: SegmentedButton<DifficultyType>(
+                  segments: const [
+                    ButtonSegment(
+                        value: DifficultyType.precise,
+                        label: Text('精确（单档）', style: TextStyle(fontSize: 12))),
+                    ButtonSegment(
+                        value: DifficultyType.fuzzy,
+                        label: Text('模糊（混合）', style: TextStyle(fontSize: 12))),
+                  ],
+                  selected: {p.type},
+                  showSelectedIcon: false,
+                  onSelectionChanged: (s) {
+                    final newType = s.first;
+                    if (newType == DifficultyType.precise) {
+                      svc.setPrecise(profileKey, p.preciseRound);
+                    } else {
+                      svc.setProfile(profileKey,
+                          p.copyWith(type: DifficultyType.fuzzy));
+                    }
+                  },
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 8),
+
+          if (p.type == DifficultyType.precise) ...[
+            const Text('选择档位：', style: TextStyle(fontSize: 12, color: Colors.grey)),
+            const SizedBox(height: 4),
+            Wrap(
+              spacing: 6,
+              children: [
+                _ChoiceChip(
+                  label: '不限',
+                  selected: p.preciseRound == null,
+                  onTap: () => svc.setPrecise(profileKey, null),
+                ),
+                _ChoiceChip(
+                  label: '基础',
+                  selected: p.preciseRound == 1,
+                  onTap: () => svc.setPrecise(profileKey, 1),
+                ),
+                _ChoiceChip(
+                  label: '中等',
+                  selected: p.preciseRound == 2,
+                  onTap: () => svc.setPrecise(profileKey, 2),
+                ),
+                _ChoiceChip(
+                  label: '较难',
+                  selected: p.preciseRound == 3,
+                  onTap: () => svc.setPrecise(profileKey, 3),
+                ),
+                _ChoiceChip(
+                  label: '竞赛',
+                  selected: p.preciseRound == 4,
+                  onTap: () => svc.setPrecise(profileKey, 4),
+                ),
+              ],
+            ),
+          ] else ...[
+            const Text('选择预设：', style: TextStyle(fontSize: 12, color: Colors.grey)),
+            const SizedBox(height: 4),
+            Wrap(
+              spacing: 6,
+              runSpacing: 4,
+              children: DifficultyPreset.values.map((preset) {
+                final isCurrent = _listEquals(p.fuzzyWeights, preset.weights);
+                return _ChoiceChip(
+                  label: '${preset.label} (${preset.weights.join('/')})',
+                  selected: isCurrent,
+                  onTap: () => svc.applyPreset(profileKey, preset),
+                );
+              }).toList(),
+            ),
+            const SizedBox(height: 4),
+            Text('当前：基础${p.fuzzyWeights[0]} / 中等${p.fuzzyWeights[1]} / 较难${p.fuzzyWeights[2]} / 竞赛${p.fuzzyWeights[3]}',
+                style: const TextStyle(fontSize: 11, color: Colors.grey)),
+          ],
+        ],
+      ),
+    );
+  }
+
+  static bool _listEquals(List<int> a, List<int> b) {
+    if (a.length != b.length) return false;
+    for (int i = 0; i < a.length; i++) {
+      if (a[i] != b[i]) return false;
+    }
+    return true;
+  }
+}
+
+class _ChoiceChip extends StatelessWidget {
+  final String label;
+  final bool selected;
+  final VoidCallback onTap;
+  const _ChoiceChip({required this.label, required this.selected, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return ChoiceChip(
+      label: Text(label, style: const TextStyle(fontSize: 12)),
+      selected: selected,
+      onSelected: (_) => onTap(),
+      selectedColor: AppTheme.primary,
+      labelStyle: TextStyle(
+        color: selected ? Colors.white : Colors.black87,
+        fontSize: 12,
+      ),
+      visualDensity: VisualDensity.compact,
     );
   }
 }

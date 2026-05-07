@@ -8,6 +8,7 @@ import '../database/question_dao.dart';
 import '../services/plan_service.dart';
 import '../services/navigation_service.dart';
 import '../services/practice_service.dart';
+import '../services/difficulty_settings_service.dart';
 import 'chapter_detail_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -75,7 +76,8 @@ class _WeakKpSummaryState extends State<_WeakKpSummary> {
   }
 
   Future<void> _practiceKp(BuildContext context, String fullPath) async {
-    await context.read<PracticeService>().startKpReviewSession(fullPath);
+    final applyDiff = context.read<DifficultySettingsService>().applyToWeakKp;
+    await context.read<PracticeService>().startKpReviewSession(fullPath, applyDifficulty: applyDiff);
     if (!context.mounted) return;
     final qs = context.read<PracticeService>().currentQuestions;
     if (qs.isEmpty) {

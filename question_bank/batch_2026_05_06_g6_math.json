@@ -126,7 +126,8 @@
         "D. 4 个"
       ],
       "answer": "B",
-      "explanation": "圆柱有 2 个底面，且都是相等的圆。"
+      "explanation": "圆柱有 2 个底面，且都是相等的圆。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -135,7 +136,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "高",
-      "explanation": "圆柱有无数条高，所有的高都相等。"
+      "explanation": "圆柱有无数条高，所有的高都相等。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -150,7 +152,8 @@
         "D. 圆柱是平面图形"
       ],
       "answer": "C",
-      "explanation": "沿着圆柱侧面的高剪开，侧面展开就是一个长方形。"
+      "explanation": "沿着圆柱侧面的高剪开，侧面展开就是一个长方形。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -159,7 +162,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "8",
-      "explanation": "把宽边作为侧面，高就是长边 8cm；反之高是 5cm。问最长的高，所以是 8cm。"
+      "explanation": "把宽边作为侧面，高就是长边 8cm；反之高是 5cm。问最长的高，所以是 8cm。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -168,7 +172,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "6",
-      "explanation": "侧面展开是正方形，说明底面周长等于圆柱的高，都是 6cm。"
+      "explanation": "侧面展开是正方形，说明底面周长等于圆柱的高，都是 6cm。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -183,7 +188,8 @@
         "D. 2πr²"
       ],
       "answer": "B",
-      "explanation": "侧面积 = 底面周长 × 高$= 2\\pi r \\times h$。"
+      "explanation": "侧面积 = 底面周长 × 高$= 2\\pi r \\times h$。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -192,7 +198,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "62.8",
-      "explanation": "侧面积$= 2 \\times 3.14 \\times 2 \\times 5 = 62.8 cm^{2}$。"
+      "explanation": "侧面积$= 2 \\times 3.14 \\times 2 \\times 5 = 62.8 cm^{2}$。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -201,7 +208,8 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "150.72",
-      "explanation": "底面半径 2cm。侧面积$=2 \\times 3.14 \\times 2 \\times 10=125.6$；2 个底面$=2 \\times 3.14 \\times 4=25.12$；总表面积$=125.6+25.12=150.72 cm^{2}$。"
+      "explanation": "底面半径 2cm。侧面积$=2 \\times 3.14 \\times 2 \\times 10=125.6$；2 个底面$=2 \\times 3.14 \\times 4=25.12$；总表面积$=125.6+25.12=150.72 cm^{2}$。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -210,7 +218,8 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "103.62",
-      "explanation": "无盖只算 1 个底+侧面：$3.14 \\times 3^{2}+2 \\times 3.14 \\times 3 \\times 4=28.26+75.36=103.62 dm^{2}$。"
+      "explanation": "无盖只算 1 个底+侧面：$3.14 \\times 3^{2}+2 \\times 3.14 \\times 3 \\times 4=28.26+75.36=103.62 dm^{2}$。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -219,7 +228,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "5",
-      "explanation": "高 = 侧面积 ÷ 底面周长$= 31.4 \\div 6.28 = 5cm$。"
+      "explanation": "高 = 侧面积 ÷ 底面周长$= 31.4 \\div 6.28 = 5cm$。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -234,7 +244,8 @@
         "D. πr³"
       ],
       "answer": "A",
-      "explanation": "圆柱体积 = 底面积 × 高$= \\pi r^{2} \\times h$。"
+      "explanation": "圆柱体积 = 底面积 × 高$= \\pi r^{2} \\times h$。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -243,7 +254,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "60",
-      "explanation": "$V =$底面积 × 高$= 12 \\times 5 = 60 cm^{3}$。"
+      "explanation": "$V =$底面积 × 高$= 12 \\times 5 = 60 cm^{3}$。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -252,7 +264,8 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "226.08",
-      "explanation": "$V = \\pi r^{2}h = 3.14 \\times 3^{2} \\times 8 = 226.08 cm^{3}$。"
+      "explanation": "$V = \\pi r^{2}h = 3.14 \\times 3^{2} \\times 8 = 226.08 cm^{3}$。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -261,7 +274,8 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "301.44",
-      "explanation": "半径 4cm。$V = 3.14 \\times 4^{2} \\times 6 = 301.44 cm^{3}$。"
+      "explanation": "半径 4cm。$V = 3.14 \\times 4^{2} \\times 6 = 301.44 cm^{3}$。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -270,7 +284,8 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "31.4",
-      "explanation": "体积不变。长方体高$= 942 \\div$$(5 \\times 6$)$= 942 \\div 30 = 31.4cm$。"
+      "explanation": "体积不变。长方体高$= 942 \\div$$(5 \\times 6$)$= 942 \\div 30 = 31.4cm$。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -285,7 +300,8 @@
         "D. 8 倍"
       ],
       "answer": "A",
-      "explanation": "$V=\\pi r^{2}h$，r 不变，h 扩大 2 倍，V 也扩大 2 倍。"
+      "explanation": "$V=\\pi r^{2}h$，r 不变，h 扩大 2 倍，V 也扩大 2 倍。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -300,7 +316,8 @@
         "D. 4 个"
       ],
       "answer": "B",
-      "explanation": "圆锥有 1 个底面（圆）和 1 个侧面，共 2 个面。"
+      "explanation": "圆锥有 1 个底面（圆）和 1 个侧面，共 2 个面。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -315,7 +332,8 @@
         "D. 3 条"
       ],
       "answer": "A",
-      "explanation": "圆锥只有从顶点到底面圆心的 1 条高。"
+      "explanation": "圆锥只有从顶点到底面圆心的 1 条高。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -324,7 +342,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "圆锥",
-      "explanation": "直角边作为旋转轴时形成圆锥。"
+      "explanation": "直角边作为旋转轴时形成圆锥。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -339,7 +358,8 @@
         "D. 圆锥是圆柱的 2/3"
       ],
       "answer": "C",
-      "explanation": "等底等高时，圆锥体积是圆柱的$\\frac{1}{3}$。"
+      "explanation": "等底等高时，圆锥体积是圆柱的$\\frac{1}{3}$。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -354,7 +374,8 @@
         "B. V = πr²h",
         "C. V = 1/2 πr²h",
         "D. V = 1/3 πrh"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -363,7 +384,8 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "37.68",
-      "explanation": "$V = \\frac{1}{3} \\times 3.14 \\times 3^{2} \\times 4 = \\frac{1}{3} \\times 113.04 = 37.68 cm^{3}$。"
+      "explanation": "$V = \\frac{1}{3} \\times 3.14 \\times 3^{2} \\times 4 = \\frac{1}{3} \\times 113.04 = 37.68 cm^{3}$。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -372,7 +394,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "48",
-      "explanation": "$V = \\frac{1}{3} \\times 24 \\times 6 = 48 cm^{3}$。"
+      "explanation": "$V = \\frac{1}{3} \\times 24 \\times 6 = 48 cm^{3}$。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -381,7 +404,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "6",
-      "explanation": "圆锥体积$= \\frac{1}{3} \\times 18 = 6 cm^{3}$。"
+      "explanation": "圆锥体积$= \\frac{1}{3} \\times 18 = 6 cm^{3}$。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -390,7 +414,8 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "6.28",
-      "explanation": "底面半径$= 12.56 \\div (2 \\times 3.14$) = 2m。$V = \\frac{1}{3} \\times 3.14 \\times 2^{2} \\times 1.5 = 6.28 m^{3}$。"
+      "explanation": "底面半径$= 12.56 \\div (2 \\times 3.14$) = 2m。$V = \\frac{1}{3} \\times 3.14 \\times 2^{2} \\times 1.5 = 6.28 m^{3}$。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -405,7 +430,8 @@
         "D. 1/3 倍"
       ],
       "answer": "C",
-      "explanation": "等底等体积时，圆锥的高 = 圆柱的高 × 3。"
+      "explanation": "等底等体积时，圆锥的高 = 圆柱的高 × 3。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -414,7 +440,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "2/3",
-      "explanation": "圆锥体积是圆柱的$\\frac{1}{3}$，削去的就是$1 - \\frac{1}{3} = \\frac{2}{3}$。"
+      "explanation": "圆锥体积是圆柱的$\\frac{1}{3}$，削去的就是$1 - \\frac{1}{3} = \\frac{2}{3}$。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -423,7 +450,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "3",
-      "explanation": "圆锥体积是等底等高圆柱的$\\frac{1}{3}$，圆柱满桶可倒满 3 个圆锥。"
+      "explanation": "圆锥体积是等底等高圆柱的$\\frac{1}{3}$，圆柱满桶可倒满 3 个圆锥。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -432,7 +460,8 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "37.68",
-      "explanation": "圆柱 V₁=3.14×4×5=62.8；圆锥 V₂=1/3×3.14×4×6=25.12；差$=62.8-25.12=37.68 cm^{3}$。"
+      "explanation": "圆柱 V₁=3.14×4×5=62.8；圆锥 V₂=1/3×3.14×4×6=25.12；差$=62.8-25.12=37.68 cm^{3}$。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -447,7 +476,8 @@
         "D. 圆柱侧面展开可能是正方形"
       ],
       "answer": "C",
-      "explanation": "圆锥侧面展开是扇形，不是三角形。"
+      "explanation": "圆锥侧面展开是扇形，不是三角形。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -456,7 +486,8 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "169.56",
-      "explanation": "圆柱底面直径 6cm，半径 3cm，高 6cm。$V=3.14 \\times 3^{2} \\times 6=169.56 cm^{3}$。"
+      "explanation": "圆柱底面直径 6cm，半径 3cm，高 6cm。$V=3.14 \\times 3^{2} \\times 6=169.56 cm^{3}$。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -465,7 +496,8 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "40",
-      "explanation": "上升的水的体积就是铁球体积$= 20 \\times 2 = 40 cm^{3}$。"
+      "explanation": "上升的水的体积就是铁球体积$= 20 \\times 2 = 40 cm^{3}$。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -474,7 +506,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "6:9",
-      "explanation": "比的格式是「前项:后项」。"
+      "explanation": "比的格式是「前项:后项」。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -489,7 +522,8 @@
         "D. 5×3"
       ],
       "answer": "C",
-      "explanation": "比用「X:Y」的形式表示两个数的关系。"
+      "explanation": "比用「X:Y」的形式表示两个数的关系。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -498,7 +532,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "0",
-      "explanation": "比的后项相当于除数，除数不能为 0。"
+      "explanation": "比的后项相当于除数，除数不能为 0。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -507,7 +542,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "3:1",
-      "explanation": "甲是乙的 3 倍，即甲:乙 = 3:1。"
+      "explanation": "甲是乙的 3 倍，即甲:乙 = 3:1。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -516,7 +552,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "3",
-      "explanation": "比值 = 前项 ÷ 后项$= 12 \\div 4 = 3$。"
+      "explanation": "比值 = 前项 ÷ 后项$= 12 \\div 4 = 3$。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -531,7 +568,8 @@
         "D. 4"
       ],
       "answer": "C",
-      "explanation": "$\\frac{1}{2} \\div \\frac{1}{4} = \\frac{1}{2} \\times 4 = 2$。"
+      "explanation": "$\\frac{1}{2} \\div \\frac{1}{4} = \\frac{1}{2} \\times 4 = 2$。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -540,7 +578,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "0.5",
-      "explanation": "$0.3 \\div 0.6 = 0.5$。"
+      "explanation": "$0.3 \\div 0.6 = 0.5$。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -549,7 +588,8 @@
       "type": "calculation",
       "difficulty": "easy",
       "answer": "3",
-      "explanation": "$2.4 \\div 0.8 = 3$。"
+      "explanation": "$2.4 \\div 0.8 = 3$。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -558,7 +598,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "2:3",
-      "explanation": "12 和 18 的最大公约数是 6，$12 \\div 6=2$，$18 \\div 6=3$。"
+      "explanation": "12 和 18 的最大公约数是 6，$12 \\div 6=2$，$18 \\div 6=3$。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -573,7 +614,8 @@
         "D. 1:0.5"
       ],
       "answer": "A",
-      "explanation": "$0.5 \\div 0.25=2$，所以最简比是 2:1。"
+      "explanation": "$0.5 \\div 0.25=2$，所以最简比是 2:1。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -582,7 +624,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "3:2",
-      "explanation": "$\\frac{3}{4} \\div \\frac{1}{2} = \\frac{3}{4} \\times 2 = \\frac{3}{2}$，化为整数比 3:2。"
+      "explanation": "$\\frac{3}{4} \\div \\frac{1}{2} = \\frac{3}{4} \\times 2 = \\frac{3}{2}$，化为整数比 3:2。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -591,7 +634,8 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "16:1",
-      "explanation": "先统一单位：8千克=8000克。$8000:500 = 16:1$。"
+      "explanation": "先统一单位：8千克=8000克。$8000:500 = 16:1$。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -600,7 +644,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "4:1",
-      "explanation": "1.2:0.3 同时乘以$10 = 12:3 = 4:1$。"
+      "explanation": "1.2:0.3 同时乘以$10 = 12:3 = 4:1$。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -615,7 +660,8 @@
         "D. 2,3,4,8"
       ],
       "answer": "B",
-      "explanation": "$1 \\times 6=6$，$2 \\times 3=6$，所以 1,2,3,6 能组成比例$1:2=3:6$。"
+      "explanation": "$1 \\times 6=6$，$2 \\times 3=6$，所以 1,2,3,6 能组成比例$1:2=3:6$。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -624,7 +670,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "相等",
-      "explanation": "两个相等的比组成比例，如$2:3 = 4:6$。"
+      "explanation": "两个相等的比组成比例，如$2:3 = 4:6$。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -637,7 +684,8 @@
         "B. 错误"
       ],
       "answer": "A",
-      "explanation": "6:8 化简为 3:4，两边相等，能组成比例。"
+      "explanation": "6:8 化简为 3:4，两边相等，能组成比例。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -646,7 +694,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "40",
-      "explanation": "外项是 4 和 10，乘积$= 4 \\times 10 = 40$。"
+      "explanation": "外项是 4 和 10，乘积$= 4 \\times 10 = 40$。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -655,7 +704,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "两个内项",
-      "explanation": "如$a:b=c:d$中，$ad=bc$。"
+      "explanation": "如$a:b=c:d$中，$ad=bc$。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -670,7 +720,8 @@
         "D. 60"
       ],
       "answer": "C",
-      "explanation": "$3x = 5 \\times 12 = 60$，$x = 20$。"
+      "explanation": "$3x = 5 \\times 12 = 60$，$x = 20$。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -679,7 +730,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "2:4=6:12",
-      "explanation": "$2 \\times 12=24$，$4 \\times 6=24$，所以$2:4=6:12$成立。"
+      "explanation": "$2 \\times 12=24$，$4 \\times 6=24$，所以$2:4=6:12$成立。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -688,7 +740,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "3",
-      "explanation": "$6x = 2 \\times 9 = 18$，$x = 3$。"
+      "explanation": "$6x = 2 \\times 9 = 18$，$x = 3$。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -697,7 +750,8 @@
       "type": "calculation",
       "difficulty": "easy",
       "answer": "6",
-      "explanation": "$4x = 8 \\times 3 = 24$，$x = 6$。"
+      "explanation": "$4x = 8 \\times 3 = 24$，$x = 6$。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -712,7 +766,8 @@
         "D. 4"
       ],
       "answer": "B",
-      "explanation": "$3x = 1.2 \\times 5 = 6$，$x = 2$。"
+      "explanation": "$3x = 1.2 \\times 5 = 6$，$x = 2$。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -721,7 +776,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "10",
-      "explanation": "$5x = 2 \\times 25 = 50$，$x = 10$。"
+      "explanation": "$5x = 2 \\times 25 = 50$，$x = 10$。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -730,7 +786,8 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "1",
-      "explanation": "$(\\frac{1}{6})x =$$(\\frac{1}{3})(\\frac{1}{2})= \\frac{1}{6}$，$x = 1$。"
+      "explanation": "$(\\frac{1}{6})x =$$(\\frac{1}{3})(\\frac{1}{2})= \\frac{1}{6}$，$x = 1$。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -745,7 +802,8 @@
         "D. 飞机螺旋桨"
       ],
       "answer": "B",
-      "explanation": "平移指物体沿直线方向移动，电梯就是平移。"
+      "explanation": "平移指物体沿直线方向移动，电梯就是平移。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -754,7 +812,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "不变",
-      "explanation": "平移只改变位置，不改变形状和大小。"
+      "explanation": "平移只改变位置，不改变形状和大小。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -769,7 +828,8 @@
         "B. 向右 3 格、向上 5 格",
         "C. 向右 8 格",
         "D. 向上 8 格"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -782,7 +842,8 @@
         "B. 错误"
       ],
       "answer": "A",
-      "explanation": "平移仅改变位置，形状大小不变，因此完全相同。"
+      "explanation": "平移仅改变位置，形状大小不变，因此完全相同。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -797,7 +858,8 @@
         "D. 平移会改变面积"
       ],
       "answer": "B",
-      "explanation": "平移由方向和距离两个要素确定。"
+      "explanation": "平移由方向和距离两个要素确定。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -812,7 +874,8 @@
         "D. 滑梯滑下"
       ],
       "answer": "B",
-      "explanation": "钟表指针绕中心点转动，是旋转。"
+      "explanation": "钟表指针绕中心点转动，是旋转。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -821,7 +884,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "旋转角度",
-      "explanation": "确定旋转需要中心、方向（顺/逆）和角度。"
+      "explanation": "确定旋转需要中心、方向（顺/逆）和角度。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -830,7 +894,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "90",
-      "explanation": "钟面 12 等分，每格 30°。3 格 × 30° = 90°。"
+      "explanation": "钟面 12 等分，每格 30°。3 格 × 30° = 90°。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -845,7 +910,8 @@
         "D. 图形位置不变"
       ],
       "answer": "C",
-      "explanation": "旋转不改变形状和大小，只变位置和方向。"
+      "explanation": "旋转不改变形状和大小，只变位置和方向。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -854,7 +920,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "相同",
-      "explanation": "两次相反方向同角度旋转，位置回到原处。"
+      "explanation": "两次相反方向同角度旋转，位置回到原处。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -869,7 +936,8 @@
         "D. R"
       ],
       "answer": "C",
-      "explanation": "字母 A 沿竖直中线对折两边重合。"
+      "explanation": "字母 A 沿竖直中线对折两边重合。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -878,7 +946,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "4",
-      "explanation": "2 条对角线 + 2 条中线 = 4 条对称轴。"
+      "explanation": "2 条对角线 + 2 条中线 = 4 条对称轴。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -893,7 +962,8 @@
         "D. 无数条"
       ],
       "answer": "D",
-      "explanation": "圆的任意一条直径都是对称轴，所以有无数条。"
+      "explanation": "圆的任意一条直径都是对称轴，所以有无数条。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -902,7 +972,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "3",
-      "explanation": "等边三角形 3 条边的中线都是对称轴。"
+      "explanation": "等边三角形 3 条边的中线都是对称轴。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -917,7 +988,8 @@
         "D. 圆"
       ],
       "answer": "B",
-      "explanation": "一般平行四边形不是轴对称图形（菱形和矩形除外）。"
+      "explanation": "一般平行四边形不是轴对称图形（菱形和矩形除外）。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -932,7 +1004,8 @@
         "D. 不变"
       ],
       "answer": "A",
-      "explanation": "按 2:1 放大表示长和宽都扩大 2 倍。"
+      "explanation": "按 2:1 放大表示长和宽都扩大 2 倍。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -941,7 +1014,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "1/3",
-      "explanation": "1:3 缩小即新边 = 原边$\\times \\frac{1}{3}$。"
+      "explanation": "1:3 缩小即新边 = 原边$\\times \\frac{1}{3}$。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -956,7 +1030,8 @@
         "B. 边长 15 cm，面积 75 cm²",
         "C. 边长 8 cm，面积 64 cm²",
         "D. 边长 15 cm，面积 45 cm²"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -971,7 +1046,8 @@
         "D. 周长"
       ],
       "answer": "C",
-      "explanation": "放大缩小只改变大小，形状不变。"
+      "explanation": "放大缩小只改变大小，形状不变。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -986,7 +1062,8 @@
         "B. 长 12 cm，宽 8 cm",
         "C. 长 2 cm，宽 3 cm",
         "D. 长 4 cm，宽 2 cm"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -995,7 +1072,8 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "96",
-      "explanation": "新直角边 12cm 和 16cm。面积$= 12 \\times 16 \\div 2 = 96 cm^{2}$。"
+      "explanation": "新直角边 12cm 和 16cm。面积$= 12 \\times 16 \\div 2 = 96 cm^{2}$。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -1004,7 +1082,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "相等",
-      "explanation": "所有对应边按相同比例变化，比相等才是相似变换。"
+      "explanation": "所有对应边按相同比例变化，比相等才是相似变换。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -1017,7 +1096,8 @@
         "B. 错误"
       ],
       "answer": "B",
-      "explanation": "边扩大 2 倍，面积扩大 4 倍（2² 倍）。"
+      "explanation": "边扩大 2 倍，面积扩大 4 倍（2² 倍）。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -1032,7 +1112,8 @@
         "D. 圆的面积和它的半径"
       ],
       "answer": "A",
-      "explanation": "$C=2\\pi r$，比值$2\\pi$一定，是正比例。"
+      "explanation": "$C=2\\pi r$，比值$2\\pi$一定，是正比例。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -1041,7 +1122,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "正",
-      "explanation": "比值一定（商一定）即正比例关系。"
+      "explanation": "比值一定（商一定）即正比例关系。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -1050,7 +1132,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "正",
-      "explanation": "路程÷时间=速度（一定），路程和时间成正比例。"
+      "explanation": "路程÷时间=速度（一定），路程和时间成正比例。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -1063,7 +1146,8 @@
         "B. 错误"
       ],
       "answer": "A",
-      "explanation": "总重量÷袋数=500（一定），成正比例。"
+      "explanation": "总重量÷袋数=500（一定），成正比例。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -1072,7 +1156,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "反",
-      "explanation": "单价×数量=总价（一定），积一定即反比例。"
+      "explanation": "单价×数量=总价（一定），积一定即反比例。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -1081,7 +1166,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "反",
-      "explanation": "乘积一定即反比例关系。"
+      "explanation": "乘积一定即反比例关系。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -1096,7 +1182,8 @@
         "D. 不能确定"
       ],
       "answer": "B",
-      "explanation": "效率×时间=总量（一定），积一定即反比例。"
+      "explanation": "效率×时间=总量（一定），积一定即反比例。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -1109,7 +1196,8 @@
         "B. 错误"
       ],
       "answer": "B",
-      "explanation": "$S=\\pi r^{2}$，半径变面积也变，但$S \\div r^{2}$才一定，不是$S \\div r$也不是$S \\times r$。"
+      "explanation": "$S=\\pi r^{2}$，半径变面积也变，但$S \\div r^{2}$才一定，不是$S \\div r$也不是$S \\times r$。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -1123,7 +1211,8 @@
         "C. 不成比例"
       ],
       "answer": "A",
-      "explanation": "y/x=3（一定），成正比例。"
+      "explanation": "y/x=3（一定），成正比例。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -1132,7 +1221,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "反",
-      "explanation": "积一定即反比例。"
+      "explanation": "积一定即反比例。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -1147,7 +1237,8 @@
         "D. B 和 C 都是"
       ],
       "answer": "D",
-      "explanation": "周长÷直径=π一定；面积÷长=宽（一定），都是正比例。"
+      "explanation": "周长÷直径=π一定；面积÷长=宽（一定），都是正比例。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -1156,7 +1247,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "反",
-      "explanation": "每天运的×天数=100（一定），反比例。"
+      "explanation": "每天运的×天数=100（一定），反比例。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -1171,7 +1263,8 @@
         "D. 总价和数量（单价一定）"
       ],
       "answer": "B",
-      "explanation": "年龄和体重没有固定的比值或乘积关系。"
+      "explanation": "年龄和体重没有固定的比值或乘积关系。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -1180,7 +1273,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "直线",
-      "explanation": "y=kx 的图象是过原点的直线。"
+      "explanation": "y=kx 的图象是过原点的直线。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -1195,7 +1289,8 @@
         "D. 抛物线"
       ],
       "answer": "C",
-      "explanation": "$xy=k$(k≠0)的图象是双曲线。"
+      "explanation": "$xy=k$(k≠0)的图象是双曲线。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -1204,7 +1299,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "k",
-      "explanation": "正比例$y=kx$，所以$y/x=k$。"
+      "explanation": "正比例$y=kx$，所以$y/x=k$。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -1219,7 +1315,8 @@
         "D. (3,1)"
       ],
       "answer": "B",
-      "explanation": "y=kx 中$x=0$时$y=0$，所以图象经过原点(0,0)。"
+      "explanation": "y=kx 中$x=0$时$y=0$，所以图象经过原点(0,0)。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -1228,7 +1325,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "1000",
-      "explanation": "比例尺=图上距离:实际距离。"
+      "explanation": "比例尺=图上距离:实际距离。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -1237,7 +1335,8 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "2000",
-      "explanation": "实际=图上×比例尺$=4 \\times 50000=200000cm=2000m$。"
+      "explanation": "实际=图上×比例尺$=4 \\times 50000=200000cm=2000m$。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -1246,7 +1345,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "1:10000",
-      "explanation": "$600m=60000cm$。比例尺$=6:60000=1:10000$。"
+      "explanation": "$600m=60000cm$。比例尺$=6:60000=1:10000$。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -1261,7 +1361,8 @@
         "D. 1:100000"
       ],
       "answer": "A",
-      "explanation": "比例尺中后项越小比例尺越大，1:100 最大。"
+      "explanation": "比例尺中后项越小比例尺越大，1:100 最大。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -1270,7 +1371,8 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "40",
-      "explanation": "$8 \\times 500=4000cm=40m$。"
+      "explanation": "$8 \\times 500=4000cm=40m$。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -1279,7 +1381,8 @@
       "type": "calculation",
       "difficulty": "easy",
       "answer": "20",
-      "explanation": "$2.5 \\times 8=20$元。"
+      "explanation": "$2.5 \\times 8=20$元。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -1288,7 +1391,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "240",
-      "explanation": "路程=速度×时间$=60 \\times 4=240km$。"
+      "explanation": "路程=速度×时间$=60 \\times 4=240km$。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -1297,7 +1401,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "160",
-      "explanation": "8 折就是原价×80%=200×0.8=160元。"
+      "explanation": "8 折就是原价×80%=200×0.8=160元。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -1312,7 +1417,8 @@
         "D. 与原价相同"
       ],
       "answer": "C",
-      "explanation": "设原价 100。涨后 120，再降 20% 是 96，比原价低。"
+      "explanation": "设原价 100。涨后 120，再降 20% 是 96，比原价低。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -1321,7 +1427,8 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "300",
-      "explanation": "利息=本金×利率×时间$=5000 \\times 0.03 \\times 2=300$元。"
+      "explanation": "利息=本金×利率×时间$=5000 \\times 0.03 \\times 2=300$元。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -1330,7 +1437,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "20",
-      "explanation": "起步 10 元$+ (8-3) \\times 2=10$元，共 20 元。"
+      "explanation": "起步 10 元$+ (8-3) \\times 2=10$元，共 20 元。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -1339,7 +1447,8 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "30",
-      "explanation": "$V=5 \\times 4 \\times 1.5=30 m^{3}$。"
+      "explanation": "$V=5 \\times 4 \\times 1.5=30 m^{3}$。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -1348,7 +1457,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "30",
-      "explanation": "男生占$3/(3+2)=\\frac{3}{5}$。$50 \\times \\frac{3}{5}=30$人。"
+      "explanation": "男生占$3/(3+2)=\\frac{3}{5}$。$50 \\times \\frac{3}{5}=30$人。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -1363,7 +1473,8 @@
         "D. 8"
       ],
       "answer": "C",
-      "explanation": "横竖各对折一次得 4 个相同的小正方形。"
+      "explanation": "横竖各对折一次得 4 个相同的小正方形。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -1372,7 +1483,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "单面",
-      "explanation": "莫比乌斯带只有一个面，沿它走一圈不需翻面就能回到起点。"
+      "explanation": "莫比乌斯带只有一个面，沿它走一圈不需翻面就能回到起点。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -1387,7 +1499,8 @@
         "D. 圆"
       ],
       "answer": "C",
-      "explanation": "对角线对折两次形成 4 个等腰三角形。"
+      "explanation": "对角线对折两次形成 4 个等腰三角形。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -1402,7 +1515,8 @@
         "D. 必定 4 个"
       ],
       "answer": "C",
-      "explanation": "看剪法，剪到对折线则得 2 个独立图形，否则可能仍是 1 个。"
+      "explanation": "看剪法，剪到对折线则得 2 个独立图形，否则可能仍是 1 个。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -1411,7 +1525,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "90",
-      "explanation": "圆周 360° 对折两次 = 360÷4 = 90°。"
+      "explanation": "圆周 360° 对折两次 = 360÷4 = 90°。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -1420,7 +1535,8 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "3:5",
-      "explanation": "0.75:1.25 同时乘以$100=75:125$。最大公约数 25。3:5。"
+      "explanation": "0.75:1.25 同时乘以$100=75:125$。最大公约数 25。3:5。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -1429,7 +1545,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "相同",
-      "explanation": "先放大 5 倍再缩小 5 倍，恢复原大小。"
+      "explanation": "先放大 5 倍再缩小 5 倍，恢复原大小。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -1438,7 +1555,8 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "301.44",
-      "explanation": "圆柱体积$=3.14 \\times 16 \\times 6=301.44 cm^{3}$。板厚 1cm，面积=体积÷高=301.44 cm²。"
+      "explanation": "圆柱体积$=3.14 \\times 16 \\times 6=301.44 cm^{3}$。板厚 1cm，面积=体积÷高=301.44 cm²。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -1447,7 +1565,8 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "100",
-      "explanation": "$5 \\times 2000000=10000000cm=100km$。"
+      "explanation": "$5 \\times 2000000=10000000cm=100km$。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -1456,7 +1575,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "4.5",
-      "explanation": "苹果总价$6 \\times 2=12$元；橙子总价$30-12=18$元；每个$18 \\div 4=4.5$元。"
+      "explanation": "苹果总价$6 \\times 2=12$元；橙子总价$30-12=18$元；每个$18 \\div 4=4.5$元。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1465,7 +1585,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "60",
-      "explanation": "0.6 = 60%。"
+      "explanation": "0.6 = 60%。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1480,7 +1601,8 @@
         "D. 4/5"
       ],
       "answer": "D",
-      "explanation": "通分或化小数：$\\frac{4}{5}=0.8$，最大。"
+      "explanation": "通分或化小数：$\\frac{4}{5}=0.8$，最大。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1489,7 +1611,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "3/4",
-      "explanation": "$\\frac{75}{100}$化简为$\\frac{3}{4}$。"
+      "explanation": "$\\frac{75}{100}$化简为$\\frac{3}{4}$。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1504,7 +1627,8 @@
         "D. 0.75"
       ],
       "answer": "A",
-      "explanation": "$0.25 + 0.25 = 0.5$。"
+      "explanation": "$0.25 + 0.25 = 0.5$。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1513,7 +1637,8 @@
       "type": "calculation",
       "difficulty": "easy",
       "answer": "1/8",
-      "explanation": "通分：$\\frac{7}{8} - \\frac{6}{8} = \\frac{1}{8}$。"
+      "explanation": "通分：$\\frac{7}{8} - \\frac{6}{8} = \\frac{1}{8}$。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1522,7 +1647,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "0.35",
-      "explanation": "$0.5 \\times 0.3=0.15$，加$0.2=0.35$。"
+      "explanation": "$0.5 \\times 0.3=0.15$，加$0.2=0.35$。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1531,7 +1657,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "4",
-      "explanation": "$3x=12$，x=4。"
+      "explanation": "$3x=12$，x=4。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1540,7 +1667,8 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "8",
-      "explanation": "$x-2=6$，x=8。"
+      "explanation": "$x-2=6$，x=8。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1549,7 +1677,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "180",
-      "explanation": "三角形三内角和恒为 180°。"
+      "explanation": "三角形三内角和恒为 180°。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1558,7 +1687,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "26",
-      "explanation": "周长=(长+宽$) \\times 2=(8+5$)$\\times 2=26 cm$。"
+      "explanation": "周长=(长+宽$) \\times 2=(8+5$)$\\times 2=26 cm$。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1573,7 +1703,8 @@
         "D. 高 4 底 4 的平行四边形"
       ],
       "answer": "B",
-      "explanation": "正方形 16；圆$3.14 \\times 16=50.24$；三角形 8；平行四边形 16。圆最大。"
+      "explanation": "正方形 16；圆$3.14 \\times 16=50.24$；三角形 8；平行四边形 16。圆最大。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1582,7 +1713,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "27",
-      "explanation": "$V = 3^{3} = 27 cm^{3}$。"
+      "explanation": "$V = 3^{3} = 27 cm^{3}$。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1591,7 +1723,8 @@
       "type": "calculation",
       "difficulty": "easy",
       "answer": "12",
-      "explanation": "S=底×高$\\div 2=6 \\times 4 \\div 2=12 cm^{2}$。"
+      "explanation": "S=底×高$\\div 2=6 \\times 4 \\div 2=12 cm^{2}$。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1600,7 +1733,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "50",
-      "explanation": "(180-80)÷2=50°。"
+      "explanation": "(180-80)÷2=50°。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1615,7 +1749,8 @@
         "B. 2π",
         "C. π/2",
         "D. 1"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1624,7 +1759,8 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "28.26",
-      "explanation": "$S=\\pi r^{2}=3.14 \\times 9=28.26 cm^{2}$。"
+      "explanation": "$S=\\pi r^{2}=3.14 \\times 9=28.26 cm^{2}$。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1633,7 +1769,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "1/6",
-      "explanation": "6 个面中 1 个是 6，概率$\\frac{1}{6}$。"
+      "explanation": "6 个面中 1 个是 6，概率$\\frac{1}{6}$。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1648,7 +1785,8 @@
         "D. 5/3"
       ],
       "answer": "A",
-      "explanation": "$5/(5+3)=\\frac{5}{8}$。"
+      "explanation": "$5/(5+3)=\\frac{5}{8}$。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1663,7 +1801,8 @@
         "D. 树状图"
       ],
       "answer": "B",
-      "explanation": "折线图适合表示数据随时间的变化趋势。"
+      "explanation": "折线图适合表示数据随时间的变化趋势。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1677,7 +1816,8 @@
         "C. 小于 40"
       ],
       "answer": "B",
-      "explanation": "平均数$=(30+50)/2=40$。"
+      "explanation": "平均数$=(30+50)/2=40$。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1686,7 +1826,8 @@
       "type": "calculation",
       "difficulty": "easy",
       "answer": "8",
-      "explanation": "$(8+6+9+7+10)/5=\\frac{40}{5}=8$。"
+      "explanation": "$(8+6+9+7+10)/5=\\frac{40}{5}=8$。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1701,7 +1842,8 @@
         "D. 大小比较"
       ],
       "answer": "B",
-      "explanation": "扇形图最适合表示各部分占总数的百分比。"
+      "explanation": "扇形图最适合表示各部分占总数的百分比。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1710,7 +1852,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "20",
-      "explanation": "甲+乙=80，甲=3乙，4乙=80，乙=20。"
+      "explanation": "甲+乙=80，甲=3乙，4乙=80，乙=20。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1719,7 +1862,8 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "6",
-      "explanation": "假设全鸡 20 脚，少 8 脚，每兔多 2 脚，兔=4只，鸡=6只。"
+      "explanation": "假设全鸡 20 脚，少 8 脚，每兔多 2 脚，兔=4只，鸡=6只。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1728,7 +1872,8 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "18",
-      "explanation": "$(40-4) \\div 2=18$人。"
+      "explanation": "$(40-4) \\div 2=18$人。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1737,7 +1882,8 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "2.4",
-      "explanation": "甲效率$\\frac{1}{6}$，乙$\\frac{1}{4}$，合$\\frac{1}{6}+\\frac{1}{4}=\\frac{5}{12}$。完成时间$1 \\div (\\frac{5}{12}$)$=\\frac{12}{5}=2.4$天。"
+      "explanation": "甲效率$\\frac{1}{6}$，乙$\\frac{1}{4}$，合$\\frac{1}{6}+\\frac{1}{4}=\\frac{5}{12}$。完成时间$1 \\div (\\frac{5}{12}$)$=\\frac{12}{5}=2.4$天。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1746,7 +1892,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "22",
-      "explanation": "$(x+8)/5=6$，$x+8=30$，x=22。"
+      "explanation": "$(x+8)/5=6$，$x+8=30$，x=22。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1755,7 +1902,8 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "1.2",
-      "explanation": "两式相减：3 个橡皮=3 元，每个 1 元。铅笔：$(12-3)/5=1.8...$等等，重算：5铅+3橡=12; 5铅+6橡=15; 3橡=3; 橡皮=1元; 铅笔$=(12-3)/5=1.8$。答案应为 1.8。"
+      "explanation": "两式相减：3 个橡皮=3 元，每个 1 元。铅笔：$(12-3)/5=1.8...$等等，重算：5铅+3橡=12; 5铅+6橡=15; 3橡=3; 橡皮=1元; 铅笔$=(12-3)/5=1.8$。答案应为 1.8。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1764,7 +1912,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "8",
-      "explanation": "$3x=24$，x=8。"
+      "explanation": "$3x=24$，x=8。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1773,7 +1922,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "3:4",
-      "explanation": "最大公约数 6，$18 \\div 6:24 \\div 6=3:4$。"
+      "explanation": "最大公约数 6，$18 \\div 6:24 \\div 6=3:4$。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1787,7 +1937,8 @@
         "C. 不成比例"
       ],
       "answer": "C",
-      "explanation": "$S=\\pi r^{2}$，$S/r=\\pi r$不固定，S×r 也不固定，不成比例。"
+      "explanation": "$S=\\pi r^{2}$，$S/r=\\pi r$不固定，S×r 也不固定，不成比例。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1796,7 +1947,8 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "20",
-      "explanation": "$10 \\times 200000=2000000cm=20km$。"
+      "explanation": "$10 \\times 200000=2000000cm=20km$。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -1805,7 +1957,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "282.6",
-      "explanation": "半径 3cm。$V=3.14 \\times 9 \\times 10=282.6 cm^{3}$。"
+      "explanation": "半径 3cm。$V=3.14 \\times 9 \\times 10=282.6 cm^{3}$。",
+      "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
@@ -1820,7 +1973,8 @@
         "D. 无法判断"
       ],
       "answer": "A",
-      "explanation": "铁块体积全占据原水位以上=同底面积×4cm 高度。原水高 8，加 4，总 12cm > 容器 10cm，溢出。"
+      "explanation": "铁块体积全占据原水位以上=同底面积×4cm 高度。原水高 8，加 4，总 12cm > 容器 10cm，溢出。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -1835,7 +1989,8 @@
         "D. 8:5"
       ],
       "answer": "B",
-      "explanation": "时间相同，路程比等于速度比 3:5。"
+      "explanation": "时间相同，路程比等于速度比 3:5。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -1844,7 +1999,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "12",
-      "explanation": "第二份占$3/(2+3)=\\frac{3}{5}$。$20 \\times \\frac{3}{5}=12 kg$。"
+      "explanation": "第二份占$3/(2+3)=\\frac{3}{5}$。$20 \\times \\frac{3}{5}=12 kg$。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -1859,7 +2015,8 @@
         "D. 25"
       ],
       "answer": "B",
-      "explanation": "统一单位：$1m=100cm$，$4:100=\\frac{4}{100}=\\frac{1}{25}$。"
+      "explanation": "统一单位：$1m=100cm$，$4:100=\\frac{4}{100}=\\frac{1}{25}$。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -1868,7 +2025,8 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "6:5",
-      "explanation": "$(\\frac{4}{5}) \\div (\\frac{2}{3}$)$=\\frac{4}{5} \\times \\frac{3}{2} = \\frac{12}{10} = \\frac{6}{5}$，比 6:5。"
+      "explanation": "$(\\frac{4}{5}) \\div (\\frac{2}{3}$)$=\\frac{4}{5} \\times \\frac{3}{2} = \\frac{12}{10} = \\frac{6}{5}$，比 6:5。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -1883,7 +2041,8 @@
         "D. a-d=b-c"
       ],
       "answer": "A",
-      "explanation": "比例的基本性质：内项之积=外项之积，即$ad=bc$。"
+      "explanation": "比例的基本性质：内项之积=外项之积，即$ad=bc$。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -1892,7 +2051,8 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "6",
-      "explanation": "$x^{2}=9 \\times 4=36$，x=6（取正）。"
+      "explanation": "$x^{2}=9 \\times 4=36$，x=6（取正）。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -1901,7 +2061,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "4:5",
-      "explanation": "同乘 100：36:45。最大公约数 9：4:5。"
+      "explanation": "同乘 100：36:45。最大公约数 9：4:5。",
+      "round": 1
     },
     {
       "chapter": "比例",
@@ -1916,7 +2077,8 @@
         "D. 1/2"
       ],
       "answer": "C",
-      "explanation": "$(\\frac{7}{9}) \\div (\\frac{14}{27}$)$= \\frac{7}{9} \\times \\frac{27}{14} = \\frac{189}{126} = \\frac{3}{2}$。"
+      "explanation": "$(\\frac{7}{9}) \\div (\\frac{14}{27}$)$= \\frac{7}{9} \\times \\frac{27}{14} = \\frac{189}{126} = \\frac{3}{2}$。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -1931,7 +2093,8 @@
         "B. 向右 4 格、向下 6 格",
         "C. 向右 10 格",
         "D. 向下 10 格"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -1946,7 +2109,8 @@
         "D. 旋转后面积变大"
       ],
       "answer": "C",
-      "explanation": "旋转 360° 等于回到原位。"
+      "explanation": "旋转 360° 等于回到原位。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -1955,7 +2119,8 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "270",
-      "explanation": "顺时针 12→9 是 9 格 × 30° = 270°。"
+      "explanation": "顺时针 12→9 是 9 格 × 30° = 270°。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -1970,7 +2135,8 @@
         "D. T"
       ],
       "answer": "C",
-      "explanation": "M、H、T 都有对称轴，R 没有。"
+      "explanation": "M、H、T 都有对称轴，R 没有。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -1979,7 +2145,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "2",
-      "explanation": "长方形 2 条中线是对称轴，对角线不是。"
+      "explanation": "长方形 2 条中线是对称轴，对角线不是。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -1994,7 +2161,8 @@
         "D. 长方形"
       ],
       "answer": "C",
-      "explanation": "圆有无数条对称轴。"
+      "explanation": "圆有无数条对称轴。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -2009,7 +2177,8 @@
         "B. 1/n",
         "C. 1/(2n)",
         "D. 2/n"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -2024,7 +2193,8 @@
         "D. 12 倍"
       ],
       "answer": "C",
-      "explanation": "边扩大 3 倍，面积扩大$3^{2}=9$倍。"
+      "explanation": "边扩大 3 倍，面积扩大$3^{2}=9$倍。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -2033,7 +2203,8 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "12",
-      "explanation": "新边长 3cm，周长$=4 \\times 3=12cm$。"
+      "explanation": "新边长 3cm，周长$=4 \\times 3=12cm$。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -2048,7 +2219,8 @@
         "D. 角度"
       ],
       "answer": "C",
-      "explanation": "平移仅改变位置。"
+      "explanation": "平移仅改变位置。",
+      "round": 1
     },
     {
       "chapter": "图形的运动",
@@ -2057,7 +2229,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "360",
-      "explanation": "分针 60 分钟转一圈 = 360°。"
+      "explanation": "分针 60 分钟转一圈 = 360°。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -2072,7 +2245,8 @@
         "B. 2π",
         "C. d",
         "D. 1"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -2086,7 +2260,8 @@
         "C. 不成比例"
       ],
       "answer": "B",
-      "explanation": "长×宽=面积（一定），积一定即反比例。"
+      "explanation": "长×宽=面积（一定），积一定即反比例。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -2100,7 +2275,8 @@
         "C. 不成比例"
       ],
       "answer": "B",
-      "explanation": "速度×时间=100（一定），积一定即反比例。"
+      "explanation": "速度×时间=100（一定），积一定即反比例。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -2114,7 +2290,8 @@
         "C. 不成比例"
       ],
       "answer": "A",
-      "explanation": "周长=4×边长，比值 4 一定，正比例。"
+      "explanation": "周长=4×边长，比值 4 一定，正比例。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -2128,7 +2305,8 @@
         "C. 不成比例"
       ],
       "answer": "C",
-      "explanation": "S=边²，S/边=边（变化），不固定，不成比例。"
+      "explanation": "S=边²，S/边=边（变化），不固定，不成比例。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -2143,7 +2321,8 @@
         "B. 反比例，比值 4",
         "C. 正比例，比值 1/4",
         "D. 反比例，比值 1/4"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -2152,7 +2331,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "2",
-      "explanation": "$1m=100cm$，$100 \\div 50=2cm$。"
+      "explanation": "$1m=100cm$，$100 \\div 50=2cm$。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -2161,7 +2341,8 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "1:5000",
-      "explanation": "$250m=25000cm$，$5:25000=1:5000$。"
+      "explanation": "$250m=25000cm$，$5:25000=1:5000$。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -2176,7 +2357,8 @@
         "D. 100:1"
       ],
       "answer": "B",
-      "explanation": "缩小 1000 倍即比例尺 1:1000。"
+      "explanation": "缩小 1000 倍即比例尺 1:1000。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -2185,7 +2367,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "6",
-      "explanation": "$y=2 \\times 3=6$。"
+      "explanation": "$y=2 \\times 3=6$。",
+      "round": 1
     },
     {
       "chapter": "正比例和反比例",
@@ -2194,7 +2377,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "3",
-      "explanation": "$y=12 \\div 4=3$。"
+      "explanation": "$y=12 \\div 4=3$。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -2203,7 +2387,8 @@
       "type": "calculation",
       "difficulty": "easy",
       "answer": "60",
-      "explanation": "$80 \\times 0.75=60$元。"
+      "explanation": "$80 \\times 0.75=60$元。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -2212,7 +2397,8 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "250",
-      "explanation": "200×(1+25%)=250 元。"
+      "explanation": "200×(1+25%)=250 元。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -2221,7 +2407,8 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "5",
-      "explanation": "成正比例：1.5:2.4=树高:8，树高$=1.5 \\times 8 \\div 2.4=5m$。"
+      "explanation": "成正比例：1.5:2.4=树高:8，树高$=1.5 \\times 8 \\div 2.4=5m$。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -2230,7 +2417,8 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "60",
-      "explanation": "单价$25 \\div 5=5$元。$12 \\times 5=60$元。"
+      "explanation": "单价$25 \\div 5=5$元。$12 \\times 5=60$元。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -2239,7 +2427,8 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "92",
-      "explanation": "184÷200=0.92=92%。答案以百分数表示，填 92。"
+      "explanation": "184÷200=0.92=92%。答案以百分数表示，填 92。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -2248,7 +2437,8 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "80",
-      "explanation": "上半年=下半年$\\times (1-\\frac{1}{4}$)=下半年$\\times \\frac{3}{4}$，下半年$=60 \\div \\frac{3}{4}=80$万。"
+      "explanation": "上半年=下半年$\\times (1-\\frac{1}{4}$)=下半年$\\times \\frac{3}{4}$，下半年$=60 \\div \\frac{3}{4}=80$万。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -2257,7 +2447,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "720",
-      "explanation": "600×(1+20%)$=600 \\times 1.2=720$件。"
+      "explanation": "600×(1+20%)$=600 \\times 1.2=720$件。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -2272,7 +2463,8 @@
         "D. 6"
       ],
       "answer": "C",
-      "explanation": "对折两次产生 4 个等分小长方形。"
+      "explanation": "对折两次产生 4 个等分小长方形。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -2281,7 +2473,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "1/4",
-      "explanation": "总面积平均分成 4 份，每份$\\frac{1}{4}$。"
+      "explanation": "总面积平均分成 4 份，每份$\\frac{1}{4}$。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -2290,7 +2483,8 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "6",
-      "explanation": "圆柱 V=S₁h₁；圆锥 V=1/3 S₂h₂，S₁=2S₂，V 相等，2S₂h₁=1/3 S₂h₂，h₂=6h₁。"
+      "explanation": "圆柱 V=S₁h₁；圆锥 V=1/3 S₂h₂，S₁=2S₂，V 相等，2S₂h₁=1/3 S₂h₂，h₂=6h₁。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -2305,7 +2499,8 @@
         "D. 20"
       ],
       "answer": "C",
-      "explanation": "$4x=5 \\times 12=60$，x=15。"
+      "explanation": "$4x=5 \\times 12=60$，x=15。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -2314,7 +2509,8 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "360",
-      "explanation": "新长 24cm，新宽 15cm。面积$=24 \\times 15=360 cm^{2}$。"
+      "explanation": "新长 24cm，新宽 15cm。面积$=24 \\times 15=360 cm^{2}$。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -2327,7 +2523,8 @@
         "B. 错误"
       ],
       "answer": "B",
-      "explanation": "长×宽=面积（一定），积一定是反比例。"
+      "explanation": "长×宽=面积（一定），积一定是反比例。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -2336,7 +2533,8 @@
       "type": "calculation",
       "difficulty": "easy",
       "answer": "95",
-      "explanation": "950÷1000=95%。"
+      "explanation": "950÷1000=95%。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -2345,7 +2543,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "125",
-      "explanation": "甲=乙+25%乙=125%乙。"
+      "explanation": "甲=乙+25%乙=125%乙。",
+      "round": 1
     },
     {
       "chapter": "数学好玩",
@@ -2354,7 +2553,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "6",
-      "explanation": "$5 \\times (1+\\frac{1}{5})=5 \\times \\frac{6}{5}=6$吨。"
+      "explanation": "$5 \\times (1+\\frac{1}{5})=5 \\times \\frac{6}{5}=6$吨。",
+      "round": 1
     },
     {
       "chapter": "总复习",
@@ -2363,7 +2563,8 @@
       "type": "calculation",
       "difficulty": "easy",
       "answer": "62.5",
-      "explanation": "5÷8=0.625=62.5%。"
+      "explanation": "5÷8=0.625=62.5%。",
+      "round": 1
     }
   ]
 }

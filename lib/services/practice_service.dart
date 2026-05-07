@@ -6,14 +6,33 @@ import '../database/question_dao.dart';
 import '../database/practice_session_dao.dart';
 import '../utils/answer_matcher.dart';
 import 'reward_service.dart';
+import 'difficulty_settings_service.dart';
 
 class PracticeService extends ChangeNotifier {
   final QuestionDao _dao = QuestionDao();
   final PracticeSessionDao _sessionDao = PracticeSessionDao();
   final RewardService _rewardService;
+  final DifficultySettingsService _difficultySettings;
 
-  PracticeService(this._rewardService) {
+  PracticeService(this._rewardService, this._difficultySettings) {
     _restoreOnStart();
+  }
+
+  /// V3.8：把 profile 翻成 (rounds, weights) 给 QuestionDao
+  ({List<int>? rounds, List<int>? weights}) _profileToFilter(DifficultyProfile p) {
+    if (p.type == DifficultyType.precise) {
+      return (rounds: p.preciseRound == null ? null : [p.preciseRound!], weights: null);
+    }
+    // fuzzy: 4 档 + weights（去除 0 权重档）
+    final allRounds = [1, 2, 3, 4];
+    final keepIdx = <int>[];
+    for (int i = 0; i < 4; i++) {
+      if (p.fuzzyWeights[i] > 0) keepIdx.add(i);
+    }
+    return (
+      rounds: keepIdx.map((i) => allRounds[i]).toList(),
+      weights: keepIdx.map((i) => p.fuzzyWeights[i]).toList(),
+    );
   }
 
   List<Question> _currentQuestions = [];
@@ -113,28 +132,66 @@ class PracticeService extends ChangeNotifier {
     Difficulty? difficulty,
     int count = 10,
   }) async {
-    _currentQuestions = await _dao.getRandom(
-      subject: subject,
-      grade: grade,
-      chapter: chapter,
-      type: type,
-      difficulty: difficulty,
-      limit: count,
-    );
+    // V3.8: 应用难度档设置（普通练习/章节/计划项 强制应用）
+    final profile = _difficultySettings.profileFor(subject.displayName);
+    final f = _profileToFilter(profile);
+    if (type != null || difficulty != null) {
+      // 用户在 UI 选了 type/difficulty 时走老路径（精细筛选优先于 round）
+      _currentQuestions = await _dao.getRandom(
+        subject: subject,
+        grade: grade,
+        chapter: chapter,
+        type: type,
+        difficulty: difficulty,
+        limit: count,
+      );
+    } else {
+      _currentQuestions = await _dao.getRandomByRound(
+        subject: subject,
+        grade: grade,
+        chapter: chapter,
+        rounds: f.rounds,
+        weights: f.weights,
+        limit: count,
+      );
+    }
     _kind = SessionKind.normal;
     _sessionId = null;
     _resetSessionState();
     await _persist();
   }
 
-  /// 单 KP 举一反三：抽该 KP 同难度未做过的题；难度按"该 KP 最近一次错过的题"
-  Future<void> startKpReviewSession(String kpPath, {int count = 10}) async {
-    final difficulty = await _dao.getMostRecentErrorDifficulty(kpPath) ?? Difficulty.medium;
-    _currentQuestions = await _dao.getQuestionsForKnowledgePoint(
-      kpPath: kpPath,
-      difficulty: difficulty,
-      limit: count,
-    );
+  /// 单 KP 举一反三
+  ///
+  /// [applyDifficulty]：是否应用 V3.8 难度档设置（false 时按原有"匹配最近错难度"逻辑）。
+  /// 调用方根据触发场景传：
+  ///   - 首页薄弱 KP 卡 → settings.applyToWeakKp
+  ///   - 错题集"练相似题" → settings.applyToReviewSimilar
+  Future<void> startKpReviewSession(
+    String kpPath, {
+    int count = 10,
+    bool applyDifficulty = true,
+  }) async {
+    if (applyDifficulty) {
+      // 取该 KP 所属科目的 profile（从已知该 KP 任意题反查 subject）
+      final subject = await _dao.getSubjectForKp(kpPath);
+      final profile = _difficultySettings.profileFor(subject ?? '');
+      final f = _profileToFilter(profile);
+      _currentQuestions = await _dao.getQuestionsForKpByRound(
+        kpPath: kpPath,
+        rounds: f.rounds,
+        weights: f.weights,
+        limit: count,
+      );
+    } else {
+      // 关闭难度档时回退原有"匹配最近错难度"逻辑
+      final difficulty = await _dao.getMostRecentErrorDifficulty(kpPath) ?? Difficulty.medium;
+      _currentQuestions = await _dao.getQuestionsForKnowledgePoint(
+        kpPath: kpPath,
+        difficulty: difficulty,
+        limit: count,
+      );
+    }
     _kind = SessionKind.normal;
     _sessionId = null;
     _resetSessionState();
@@ -142,19 +199,36 @@ class PracticeService extends ChangeNotifier {
   }
 
   /// 聚合：从所有待掌握 KP 各抽 [perKp] 题，按累计错次降序优先
-  /// 严格排除"原题"：不抽用户曾做错过的题（避免重复看到同一道错过的题）
-  Future<void> startAggregatedReviewSession({int perKp = 2, int totalLimit = 20}) async {
+  /// 严格排除"原题"：不抽用户曾做错过的题
+  Future<void> startAggregatedReviewSession({
+    int perKp = 2,
+    int totalLimit = 20,
+    bool applyDifficulty = true,
+  }) async {
     final summaries = await _dao.getReviewKnowledgePoints();
     final result = <Question>[];
     for (final s in summaries) {
       if (result.length >= totalLimit) break;
-      final difficulty =
-          await _dao.getMostRecentErrorDifficulty(s.fullPath) ?? Difficulty.medium;
-      final qs = await _dao.getQuestionsForKpExcludingWrong(
-        kpPath: s.fullPath,
-        difficulty: difficulty,
-        limit: perKp,
-      );
+      List<Question> qs;
+      if (applyDifficulty) {
+        final subject = await _dao.getSubjectForKp(s.fullPath);
+        final profile = _difficultySettings.profileFor(subject ?? '');
+        final f = _profileToFilter(profile);
+        qs = await _dao.getQuestionsForKpByRound(
+          kpPath: s.fullPath,
+          rounds: f.rounds,
+          weights: f.weights,
+          limit: perKp,
+        );
+      } else {
+        final difficulty =
+            await _dao.getMostRecentErrorDifficulty(s.fullPath) ?? Difficulty.medium;
+        qs = await _dao.getQuestionsForKpExcludingWrong(
+          kpPath: s.fullPath,
+          difficulty: difficulty,
+          limit: perKp,
+        );
+      }
       result.addAll(qs);
     }
     _currentQuestions = result.take(totalLimit).toList();

@@ -54,6 +54,9 @@ class Question {
   final String? imageData;
   /// 听力题朗读原文（设备 TTS 朗读，仅英语题用）。null 表示无听力。
   final String? audioText;
+  /// 难度档（V3.8）：1=基础 / 2=中等 / 3=较难 / 4=竞赛
+  /// null 表示历史题包未标 round（V3.6/V3.7.6 之前），后续 Agent 回填。
+  final int? round;
   final String source;
 
   const Question({
@@ -70,6 +73,7 @@ class Question {
     this.explanation,
     this.imageData,
     this.audioText,
+    this.round,
     this.source = 'pregenerated',
   });
 
@@ -92,6 +96,7 @@ class Question {
       'explanation': explanation,
       'image_data': imageData,
       'audio_text': audioText,
+      'round': round,
       'source': source,
     };
   }
@@ -112,6 +117,7 @@ class Question {
       explanation: map['explanation'] as String?,
       imageData: map['image_data'] as String?,
       audioText: map['audio_text'] as String?,
+      round: map['round'] as int?,
       source: (map['source'] as String?) ?? 'pregenerated',
     );
   }

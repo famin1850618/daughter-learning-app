@@ -91,6 +91,73 @@ class QuestionDao {
     return maps.map(Question.fromMap).toList();
   }
 
+  /// V3.8 新增：按 round 限制抽题（精确单档 / 多档混合）
+  ///
+  /// [rounds]：null = 不限（含 round=NULL 的历史题），[N] = 限定单档，
+  ///   [a,b,c,d]+[weights] 配合 = 模糊按比例混合（weights 不传则等权重）
+  Future<List<Question>> getRandomByRound({
+    required Subject subject,
+    required int grade,
+    String? chapter,
+    List<int>? rounds,
+    List<int>? weights,
+    int limit = 10,
+  }) async {
+    final db = await _db.database;
+    String baseWhere = 'subject = ? AND grade = ?';
+    List<dynamic> baseArgs = [subject.index, grade];
+    if (chapter != null) { baseWhere += ' AND chapter = ?'; baseArgs.add(chapter); }
+
+    // 不限 round：直接返回（含 NULL）
+    if (rounds == null || rounds.isEmpty) {
+      final maps = await db.query('questions',
+          where: baseWhere, whereArgs: baseArgs, orderBy: 'RANDOM()', limit: limit);
+      return maps.map(Question.fromMap).toList();
+    }
+
+    // 单档 precise：直接限定
+    if (rounds.length == 1) {
+      final maps = await db.query('questions',
+          where: '$baseWhere AND round = ?',
+          whereArgs: [...baseArgs, rounds.first],
+          orderBy: 'RANDOM()',
+          limit: limit);
+      return maps.map(Question.fromMap).toList();
+    }
+
+    // 多档 fuzzy：按 weights 分配 limit
+    final w = weights ?? List.filled(rounds.length, 1);
+    final wSum = w.fold(0, (a, b) => a + b);
+    final picks = <Question>[];
+    int remaining = limit;
+    for (int i = 0; i < rounds.length; i++) {
+      final share = i == rounds.length - 1
+          ? remaining
+          : (limit * w[i] / wSum).round();
+      if (share <= 0) continue;
+      final maps = await db.query('questions',
+          where: '$baseWhere AND round = ?',
+          whereArgs: [...baseArgs, rounds[i]],
+          orderBy: 'RANDOM()',
+          limit: share);
+      picks.addAll(maps.map(Question.fromMap));
+      remaining -= maps.length;
+    }
+    // 不足补：从不限 round 池抽剩下的
+    if (picks.length < limit) {
+      final got = picks.map((q) => q.id).whereType<int>().toList();
+      final placeholders = got.isEmpty ? '0' : List.filled(got.length, '?').join(',');
+      final fill = await db.query('questions',
+          where: '$baseWhere AND id NOT IN ($placeholders)',
+          whereArgs: [...baseArgs, ...got],
+          orderBy: 'RANDOM()',
+          limit: limit - picks.length);
+      picks.addAll(fill.map(Question.fromMap));
+    }
+    picks.shuffle();
+    return picks;
+  }
+
   // ── 答题记录 ────────────────────────────────────────
 
   Future<int> insertRecord(PracticeRecord record) async {
@@ -382,6 +449,66 @@ class QuestionDao {
     return (rows.first['c'] as int?) ?? 0;
   }
 
+  /// V3.8：按 round 限制的 KP 抽题（替代 getQuestionsForKpExcludingWrong 在难度设置开启时使用）
+  /// 排除原错题；先取未做过的，再按权重补
+  Future<List<Question>> getQuestionsForKpByRound({
+    required String kpPath,
+    List<int>? rounds,
+    List<int>? weights,
+    required int limit,
+  }) async {
+    if (limit <= 0) return [];
+    final db = await _db.database;
+    String roundFilter = '';
+    List<dynamic> roundArgs = [];
+    if (rounds != null && rounds.length == 1) {
+      roundFilter = ' AND round = ?';
+      roundArgs = [rounds.first];
+    } else if (rounds != null && rounds.length > 1) {
+      final ph = List.filled(rounds.length, '?').join(',');
+      roundFilter = ' AND round IN ($ph)';
+      roundArgs = [...rounds];
+    }
+
+    // Tier 1: 同 KP + round 匹配 + 未做过 + 未做错过
+    final fresh = await db.rawQuery('''
+      SELECT * FROM questions
+      WHERE knowledge_point = ?$roundFilter
+        AND id NOT IN (SELECT DISTINCT question_id FROM practice_records)
+      ORDER BY RANDOM()
+      LIMIT ?
+    ''', [kpPath, ...roundArgs, limit]);
+    if (fresh.length >= limit) {
+      return fresh.map(Question.fromMap).toList();
+    }
+
+    // Tier 2: 做过但从未答错过 + 最久未练
+    final remaining = limit - fresh.length;
+    final pickedIds = fresh.map((m) => m['id']).toList();
+    final ph2 = pickedIds.isEmpty ? '0' : List.filled(pickedIds.length, '?').join(',');
+    final stale = await db.rawQuery('''
+      SELECT q.*
+      FROM questions q
+      LEFT JOIN (
+        SELECT question_id, MAX(practiced_at) AS last_practiced
+        FROM practice_records
+        GROUP BY question_id
+      ) lr ON lr.question_id = q.id
+      WHERE q.knowledge_point = ?$roundFilter
+        AND q.id NOT IN ($ph2)
+        AND q.id NOT IN (
+          SELECT DISTINCT question_id FROM practice_records WHERE is_correct = 0
+        )
+      ORDER BY lr.last_practiced ASC
+      LIMIT ?
+    ''', [kpPath, ...roundArgs, ...pickedIds, remaining]);
+
+    return [
+      ...fresh.map(Question.fromMap),
+      ...stale.map(Question.fromMap),
+    ];
+  }
+
   /// 薄弱点练习抽题：排除曾做错过的"原题"，仅取未做过 + 答对过最久未练的题
   /// 用于 startAggregatedReviewSession，避免重复出现用户做错过的同一道题
   Future<List<Question>> getQuestionsForKpExcludingWrong({
@@ -433,6 +560,18 @@ class QuestionDao {
       ...fresh.map(Question.fromMap),
       ...stale.map(Question.fromMap),
     ];
+  }
+
+  /// V3.8：根据 KP path 反查所属科目（中文名，与 displayName 一致）
+  /// 用法：薄弱点练习时取该 KP 的科目，进而读取该科目的难度 profile
+  Future<String?> getSubjectForKp(String kpPath) async {
+    final db = await _db.database;
+    final r = await db.rawQuery(
+        'SELECT subject FROM questions WHERE knowledge_point = ? LIMIT 1', [kpPath]);
+    if (r.isEmpty) return null;
+    final idx = r.first['subject'] as int?;
+    if (idx == null) return null;
+    return Subject.values[idx].displayName;
   }
 
   /// 找出某 KP 最近一次错过题的难度（举一反三抽题时用作"同难度"基准）

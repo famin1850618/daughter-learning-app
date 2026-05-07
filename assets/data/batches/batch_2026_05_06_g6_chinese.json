@@ -170,7 +170,8 @@
         "D. 全部正确"
       ],
       "answer": "D",
-      "explanation": "翡 fěi，掺 chān，稠 chóu，三个均正确。"
+      "explanation": "翡 fěi，掺 chān，稠 chóu，三个均正确。",
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -185,7 +186,8 @@
         "D. 元宵 张冠李代"
       ],
       "answer": "A",
-      "explanation": "B 通霄→通宵，C 接彩→结彩，D 李代→李戴。"
+      "explanation": "B 通霄→通宵，C 接彩→结彩，D 李代→李戴。",
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -200,7 +202,8 @@
         "D. 中止"
       ],
       "answer": "C",
-      "explanation": "「截然」表示界限分明，整整齐齐的样子。"
+      "explanation": "「截然」表示界限分明，整整齐齐的样子。",
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -215,7 +218,8 @@
         "D. 索然无味"
       ],
       "answer": "A",
-      "explanation": "「人山人海」形容人多热闹。"
+      "explanation": "「人山人海」形容人多热闹。",
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -230,7 +234,8 @@
         "B. zhèng",
         "C. zhěng",
         "D. zhèn"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -239,7 +244,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "张灯结彩",
-      "explanation": "「结彩」的「结」是结扎的意思，不是「接」。"
+      "explanation": "「结彩」的「结」是结扎的意思，不是「接」。",
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -254,7 +260,8 @@
         "D. 沈从文"
       ],
       "answer": "A",
-      "explanation": "《北京的春节》是老舍先生的散文。"
+      "explanation": "《北京的春节》是老舍先生的散文。",
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -269,7 +276,8 @@
         "D. 巴金"
       ],
       "answer": "B",
-      "explanation": "《腊八粥》出自沈从文。"
+      "explanation": "《腊八粥》出自沈从文。",
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -284,7 +292,8 @@
         "B. 冷雾无声湿桂花",
         "C. 寒露无声润桂花",
         "D. 冷露悄声湿桂枝"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -293,7 +302,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "大漠孤烟直",
-      "explanation": "出自王维《使至塞上》。"
+      "explanation": "出自王维《使至塞上》。",
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -308,7 +318,8 @@
         "D. 端午节"
       ],
       "answer": "C",
-      "explanation": "圣诞节是西方节日。"
+      "explanation": "圣诞节是西方节日。",
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -317,7 +328,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "腊（十二）",
-      "explanation": "农历十二月即腊月。"
+      "explanation": "农历十二月即腊月。",
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -326,7 +338,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "比喻",
-      "explanation": "把爆竹声比作雷鸣，是比喻。"
+      "explanation": "把爆竹声比作雷鸣，是比喻。",
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -341,7 +354,8 @@
         "D. A 和 B 都是"
       ],
       "answer": "D",
-      "explanation": "比喻需要本体、喻体和喻词，A、B 都符合。"
+      "explanation": "比喻需要本体、喻体和喻词，A、B 都符合。",
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -350,7 +364,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "拟人",
-      "explanation": "把粥拟作会唱歌的人，是拟人。"
+      "explanation": "把粥拟作会唱歌的人，是拟人。",
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -365,7 +380,8 @@
         "D. 嘈杂"
       ],
       "answer": "B",
-      "explanation": "冷清与热闹意思相反。"
+      "explanation": "冷清与热闹意思相反。",
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -380,7 +396,8 @@
         "D. 改善环境"
       ],
       "answer": "C",
-      "explanation": "决心是用「下定」「坚定」搭配，不能用「改善」。"
+      "explanation": "决心是用「下定」「坚定」搭配，不能用「改善」。",
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -395,7 +412,8 @@
         "D. 通过这次活动，使我懂得了团圆的意义。"
       ],
       "answer": "D",
-      "explanation": "「通过……使……」缺主语，去掉「通过」或「使」。"
+      "explanation": "「通过……使……」缺主语，去掉「通过」或「使」。",
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -410,7 +428,8 @@
         "B. 我们应该热爱传统文化吗？",
         "C. 难道我们热爱传统文化？",
         "D. 我们怎能热爱传统文化呢？"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -425,7 +444,8 @@
         "D. \"春节快乐\"，他对我说。"
       ],
       "answer": "C",
-      "explanation": "中文使用「」作为引号，且感叹句以！结尾。"
+      "explanation": "中文使用「」作为引号，且感叹句以！结尾。",
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -440,7 +460,8 @@
         "D. 团圆饭的菜品"
       ],
       "answer": "B",
-      "explanation": "段落集中描写除夕夜灯火、团聚、零点鞭炮等场景。"
+      "explanation": "段落集中描写除夕夜灯火、团聚、零点鞭炮等场景。",
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -455,7 +476,8 @@
         "D. 环境描写"
       ],
       "answer": "B",
-      "explanation": "全段以宏观视角描写除夕夜的整体场面，属场面描写。"
+      "explanation": "全段以宏观视角描写除夕夜的整体场面，属场面描写。",
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -470,7 +492,8 @@
         "D. 油嘴滑舌"
       ],
       "answer": "A",
-      "explanation": "「张灯结彩」形容喜庆热闹，是褒义词。"
+      "explanation": "「张灯结彩」形容喜庆热闹，是褒义词。",
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -485,7 +508,8 @@
         "D. 想象"
       ],
       "answer": "C",
-      "explanation": "「万象」指世间万物的景象。"
+      "explanation": "「万象」指世间万物的景象。",
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -494,7 +518,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "时间",
-      "explanation": "文章按腊八→除夕→正月初一→元宵的时间顺序展开。"
+      "explanation": "文章按腊八→除夕→正月初一→元宵的时间顺序展开。",
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -509,7 +534,8 @@
         "D. 重阳节"
       ],
       "answer": "C",
-      "explanation": "出自王安石《元日》，写春节。"
+      "explanation": "出自王安石《元日》，写春节。",
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -524,7 +550,8 @@
         "D. 如果...就"
       ],
       "answer": "B",
-      "explanation": "前后是转折关系，用「虽然……但是」。"
+      "explanation": "前后是转折关系，用「虽然……但是」。",
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -539,7 +566,8 @@
         "D. 同学们对答如流地走出考场。"
       ],
       "answer": "A",
-      "explanation": "B「娓娓动听」形容说话不形容做饭；C 错用；D 用错对象。"
+      "explanation": "B「娓娓动听」形容说话不形容做饭；C 错用；D 用错对象。",
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -554,7 +582,8 @@
         "D. 烧开"
       ],
       "answer": "C",
-      "explanation": "「沸腾」形容情绪或液体翻滚状态，「翻滚」最贴近。"
+      "explanation": "「沸腾」形容情绪或液体翻滚状态，「翻滚」最贴近。",
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -569,7 +598,8 @@
         "B. 又把新桃换旧符",
         "C. 共把新桃换旧符",
         "D. 总将新桃换旧符"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -578,7 +608,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "排比",
-      "explanation": "三句结构相似且语气一致，构成排比。"
+      "explanation": "三句结构相似且语气一致，构成排比。",
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -593,7 +624,8 @@
         "D. 托尔斯泰"
       ],
       "answer": "A",
-      "explanation": "丹尼尔·笛福，英国作家。"
+      "explanation": "丹尼尔·笛福，英国作家。",
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -608,7 +640,8 @@
         "D. 美国"
       ],
       "answer": "B",
-      "explanation": "拉格洛夫是瑞典作家，首位获诺贝尔文学奖的女作家。"
+      "explanation": "拉格洛夫是瑞典作家，首位获诺贝尔文学奖的女作家。",
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -617,7 +650,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "马克·吐温",
-      "explanation": "马克·吐温是美国著名作家。"
+      "explanation": "马克·吐温是美国著名作家。",
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -632,7 +666,8 @@
         "D. 尼尔斯"
       ],
       "answer": "A",
-      "explanation": "鲁滨逊救下野人后取名「星期五」。"
+      "explanation": "鲁滨逊救下野人后取名「星期五」。",
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -641,7 +676,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "尼尔斯",
-      "explanation": "调皮的尼尔斯被变成小人后骑大白鹅旅行。"
+      "explanation": "调皮的尼尔斯被变成小人后骑大白鹅旅行。",
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -656,7 +692,8 @@
         "D. 哈克和乔"
       ],
       "answer": "D",
-      "explanation": "汤姆和哈克、乔三人逃到杰克逊岛上「失踪」，回来听到自己葬礼。"
+      "explanation": "汤姆和哈克、乔三人逃到杰克逊岛上「失踪」，回来听到自己葬礼。",
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -671,7 +708,8 @@
         "B. wěi",
         "C. wéi",
         "D. wēi"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -686,7 +724,8 @@
         "D. 救援"
       ],
       "answer": "A",
-      "explanation": "援即援助、帮助。"
+      "explanation": "援即援助、帮助。",
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -701,7 +740,8 @@
         "D. 缘故 茫芒"
       ],
       "answer": "A",
-      "explanation": "B 摸视→漠视，C 激扬→激昂，D 茫芒→茫茫。"
+      "explanation": "B 摸视→漠视，C 激扬→激昂，D 茫芒→茫茫。",
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -710,7 +750,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "比喻",
-      "explanation": "本体「人生」喻体「船」。"
+      "explanation": "本体「人生」喻体「船」。",
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -725,7 +766,8 @@
         "D. 《简·爱》—夏洛蒂·勃朗特"
       ],
       "answer": "C",
-      "explanation": "《骑鹅旅行记》是拉格洛夫的，安徒生写的是童话。"
+      "explanation": "《骑鹅旅行记》是拉格洛夫的，安徒生写的是童话。",
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -740,7 +782,8 @@
         "D. 38 年"
       ],
       "answer": "B",
-      "explanation": "鲁滨逊在岛上独自生活了 28 年才被救。"
+      "explanation": "鲁滨逊在岛上独自生活了 28 年才被救。",
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -755,7 +798,8 @@
         "D. 友情可贵"
       ],
       "answer": "B",
-      "explanation": "全书突出鲁滨逊面对困境的坚毅、勤劳与求生本能。"
+      "explanation": "全书突出鲁滨逊面对困境的坚毅、勤劳与求生本能。",
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -770,7 +814,8 @@
         "D. 胆怯"
       ],
       "answer": "B",
-      "explanation": "勇敢与畏惧对立。"
+      "explanation": "勇敢与畏惧对立。",
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -785,7 +830,8 @@
         "B. 我们不应该向鲁滨逊学习。",
         "C. 难道我们应该向鲁滨逊学习。",
         "D. 我们要不要向鲁滨逊学习。"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -800,7 +846,8 @@
         "D. 这本书的封面是红颜色的颜色。"
       ],
       "answer": "A",
-      "explanation": "B 缺主语；C 搭配不当；D 重复啰嗦。"
+      "explanation": "B 缺主语；C 搭配不当；D 重复啰嗦。",
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -815,7 +862,8 @@
         "D. 等待救援"
       ],
       "answer": "C",
-      "explanation": "他没有放弃，主动改造环境。"
+      "explanation": "他没有放弃，主动改造环境。",
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -830,7 +878,8 @@
         "D. 反复"
       ],
       "answer": "B",
-      "explanation": "「一根根……一根根……」结构相似，是排比。"
+      "explanation": "「一根根……一根根……」结构相似，是排比。",
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -845,7 +894,8 @@
         "D. 严峻的衣服"
       ],
       "answer": "A",
-      "explanation": "「严峻」常与「考验」「形势」搭配。"
+      "explanation": "「严峻」常与「考验」「形势」搭配。",
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -860,7 +910,8 @@
         "D. 风景描写"
       ],
       "answer": "D",
-      "explanation": "风景描写属于环境描写，不是人物描写。"
+      "explanation": "风景描写属于环境描写，不是人物描写。",
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -875,7 +926,8 @@
         "D. 镇长家庭"
       ],
       "answer": "B",
-      "explanation": "哈克是个流浪汉的儿子，自由自在。"
+      "explanation": "哈克是个流浪汉的儿子，自由自在。",
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -890,7 +942,8 @@
         "B. 身在异乡为异客",
         "C. 独在他乡为异客",
         "D. 独居异乡作远客"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -905,7 +958,8 @@
         "D. 望尘莫及"
       ],
       "answer": "C",
-      "explanation": "「迎难而上」表示勇敢面对困难。"
+      "explanation": "「迎难而上」表示勇敢面对困难。",
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -920,7 +974,8 @@
         "D. 如果...就"
       ],
       "answer": "B",
-      "explanation": "条件无关联系，用「不论……都」。"
+      "explanation": "条件无关联系，用「不论……都」。",
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -935,7 +990,8 @@
         "B. sù",
         "C. shū",
         "D. shǔ"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -950,7 +1006,8 @@
         "D. 寻找伙伴"
       ],
       "answer": "B",
-      "explanation": "饿肚子和无处躲避是首要矛盾，他先解决食物和住处。"
+      "explanation": "饿肚子和无处躲避是首要矛盾，他先解决食物和住处。",
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -959,7 +1016,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "夸张",
-      "explanation": "极度夸大饥饿程度，是夸张。"
+      "explanation": "极度夸大饥饿程度，是夸张。",
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -974,7 +1032,8 @@
         "D. 第三人称限知"
       ],
       "answer": "A",
-      "explanation": "「我（鲁滨逊）」是叙述者，是第一人称。"
+      "explanation": "「我（鲁滨逊）」是叙述者，是第一人称。",
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -989,7 +1048,8 @@
         "D. 与世隔绝"
       ],
       "answer": "B",
-      "explanation": "孤立指失去外援、单独无助。"
+      "explanation": "孤立指失去外援、单独无助。",
+      "round": 1
     },
     {
       "chapter": "第二单元：外国名著",
@@ -1004,7 +1064,8 @@
         "D. 安静懂事"
       ],
       "answer": "B",
-      "explanation": "尼尔斯一开始很顽皮，捉弄小动物，后被小精灵变小。"
+      "explanation": "尼尔斯一开始很顽皮，捉弄小动物，后被小精灵变小。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1019,7 +1080,8 @@
         "D. 巴金"
       ],
       "answer": "A",
-      "explanation": "朱自清的散文。"
+      "explanation": "朱自清的散文。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1028,7 +1090,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "史铁生",
-      "explanation": "史铁生著名散文家。"
+      "explanation": "史铁生著名散文家。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1043,7 +1106,8 @@
         "D. fēi huái"
       ],
       "answer": "A",
-      "explanation": "徘 pái，徊 huái。"
+      "explanation": "徘 pái，徊 huái。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1058,7 +1122,8 @@
         "D. 全部正确"
       ],
       "answer": "D",
-      "explanation": "三组都正确。"
+      "explanation": "三组都正确。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1073,7 +1138,8 @@
         "D. 非常困倦"
       ],
       "answer": "B",
-      "explanation": "「涔涔」形容汗或泪不断流出。"
+      "explanation": "「涔涔」形容汗或泪不断流出。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1088,7 +1154,8 @@
         "D. 排比和拟人"
       ],
       "answer": "D",
-      "explanation": "三个分句结构相似为排比，把植物拟人化。"
+      "explanation": "三个分句结构相似为排比，把植物拟人化。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1103,7 +1170,8 @@
         "D. 他高兴极了。"
       ],
       "answer": "B",
-      "explanation": "四个「爱」结构相同，构成排比。"
+      "explanation": "四个「爱」结构相同，构成排比。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1112,7 +1180,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "拟人",
-      "explanation": "太阳被赋予了「脚」「挪移」的人类动作。"
+      "explanation": "太阳被赋予了「脚」「挪移」的人类动作。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1127,7 +1196,8 @@
         "D. 怀念童年"
       ],
       "answer": "B",
-      "explanation": "全文围绕时间流逝、珍惜光阴展开。"
+      "explanation": "全文围绕时间流逝、珍惜光阴展开。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1136,7 +1206,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "日月如梭",
-      "explanation": "形容时间流逝迅速的成语对联。"
+      "explanation": "形容时间流逝迅速的成语对联。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1145,7 +1216,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "老大徒伤悲",
-      "explanation": "出自《长歌行》。"
+      "explanation": "出自《长歌行》。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1154,7 +1226,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "不舍昼夜",
-      "explanation": "出自《论语·子罕》，孔子感叹时光流逝。"
+      "explanation": "出自《论语·子罕》，孔子感叹时光流逝。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1169,7 +1242,8 @@
         "D. 念诗"
       ],
       "answer": "B",
-      "explanation": "「念念有词」是反复念叨的意思。"
+      "explanation": "「念念有词」是反复念叨的意思。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1184,7 +1258,8 @@
         "D. 等待"
       ],
       "answer": "C",
-      "explanation": "徘徊有犹豫不决、来回走的意思。"
+      "explanation": "徘徊有犹豫不决、来回走的意思。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1199,7 +1274,8 @@
         "D. 没有人不否认时间的宝贵。"
       ],
       "answer": "A",
-      "explanation": "B 「尽量」与「必须」矛盾；C 「数一数二之一」重复；D 双重否定错。"
+      "explanation": "B 「尽量」与「必须」矛盾；C 「数一数二之一」重复；D 双重否定错。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1214,7 +1290,8 @@
         "B. 时间过得真快。",
         "C. 时间过得快啊。",
         "D. 时间过得多么快。"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1229,7 +1306,8 @@
         "D. A 和 C 都正确"
       ],
       "answer": "D",
-      "explanation": "A 强调引用，C 是篇名引用，都对。"
+      "explanation": "A 强调引用，C 是篇名引用，都对。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1244,7 +1322,8 @@
         "D. 开心"
       ],
       "answer": "B",
-      "explanation": "孩子盼望出去玩但妈妈一再拖延，期待变失望。"
+      "explanation": "孩子盼望出去玩但妈妈一再拖延，期待变失望。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1259,7 +1338,8 @@
         "D. 风景描写"
       ],
       "answer": "B",
-      "explanation": "「搁下饭碗」「搬来板凳」「扯着衣角」都是动作；对话是语言描写。"
+      "explanation": "「搁下饭碗」「搬来板凳」「扯着衣角」都是动作；对话是语言描写。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1274,7 +1354,8 @@
         "D. 选择典型细节"
       ],
       "answer": "B",
-      "explanation": "情感描写要「显示」而非「告诉」，避免空洞地直接说情绪词。"
+      "explanation": "情感描写要「显示」而非「告诉」，避免空洞地直接说情绪词。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1289,7 +1370,8 @@
         "D. 引用很多名言"
       ],
       "answer": "B",
-      "explanation": "真情来自真实经历和真实感受。"
+      "explanation": "真情来自真实经历和真实感受。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1304,7 +1386,8 @@
         "D. 心理描写"
       ],
       "answer": "C",
-      "explanation": "「抹泪」「点头」是动作，「强忍抽泣」是神态。"
+      "explanation": "「抹泪」「点头」是动作，「强忍抽泣」是神态。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1319,7 +1402,8 @@
         "D. 真诚"
       ],
       "answer": "B",
-      "explanation": "怯懦是贬义。"
+      "explanation": "怯懦是贬义。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1334,7 +1418,8 @@
         "D. 既然下雨，所以打伞。"
       ],
       "answer": "B",
-      "explanation": "B「不管……都」是无条件关系，正确。其他搭配错误。"
+      "explanation": "B「不管……都」是无条件关系，正确。其他搭配错误。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1349,7 +1434,8 @@
         "D. 愤怒"
       ],
       "answer": "B",
-      "explanation": "凄凉而又惊慌不安。"
+      "explanation": "凄凉而又惊慌不安。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1364,7 +1450,8 @@
         "D. 平静安详"
       ],
       "answer": "B",
-      "explanation": "全文写「我」期待出去玩却一直被推迟到天黑，表达失望。"
+      "explanation": "全文写「我」期待出去玩却一直被推迟到天黑，表达失望。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1379,7 +1466,8 @@
         "B. dìng",
         "C. zhèn",
         "D. dìnɡ"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1394,7 +1482,8 @@
         "D. A 和 B 都对"
       ],
       "answer": "D",
-      "explanation": "对比人生短暂和自然永恒。"
+      "explanation": "对比人生短暂和自然永恒。",
+      "round": 1
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1409,7 +1498,8 @@
         "D. 雷锋"
       ],
       "answer": "A",
-      "explanation": "李大钊烈士，由其女李星华所写。"
+      "explanation": "李大钊烈士，由其女李星华所写。",
+      "round": 1
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1424,7 +1514,8 @@
         "D. 邓小平"
       ],
       "answer": "A",
-      "explanation": "毛泽东在张思德追悼会上的演讲。"
+      "explanation": "毛泽东在张思德追悼会上的演讲。",
+      "round": 1
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1439,7 +1530,8 @@
         "B. 或轻于泰山，或重于鸿毛",
         "C. 重于泰山者，轻于鸿毛者",
         "D. 或贵于泰山，或贱于鸿毛"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1454,7 +1546,8 @@
         "B. 梅花胜雪三分白",
         "C. 梅须让雪三分白",
         "D. 梅本不及雪三分"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1469,7 +1562,8 @@
         "B. hòng",
         "C. gōng",
         "D. hǒng"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1484,7 +1578,8 @@
         "D. 全部正确"
       ],
       "answer": "D",
-      "explanation": "三组都正确。"
+      "explanation": "三组都正确。",
+      "round": 1
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1499,7 +1594,8 @@
         "D. 几个"
       ],
       "answer": "B",
-      "explanation": "「死得其所」指死得有意义、有价值。"
+      "explanation": "「死得其所」指死得有意义、有价值。",
+      "round": 1
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1514,7 +1610,8 @@
         "D. 心猿意马"
       ],
       "answer": "A",
-      "explanation": "「视死如归」形容大无畏精神。"
+      "explanation": "「视死如归」形容大无畏精神。",
+      "round": 1
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1529,7 +1626,8 @@
         "D. 不屑一顾"
       ],
       "answer": "B",
-      "explanation": "重于泰山与轻于鸿毛对应。"
+      "explanation": "重于泰山与轻于鸿毛对应。",
+      "round": 1
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1544,7 +1642,8 @@
         "D. 张思德"
       ],
       "answer": "B",
-      "explanation": "毛泽东题赠刘胡兰：「生的伟大，死的光荣」。"
+      "explanation": "毛泽东题赠刘胡兰：「生的伟大，死的光荣」。",
+      "round": 1
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1559,7 +1658,8 @@
         "B. 我们要为人民服务吗？",
         "C. 难道我们要为人民服务。",
         "D. 我们怎么不为人民服务？"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1574,7 +1674,8 @@
         "D. 我估计他大概来了。"
       ],
       "answer": "A",
-      "explanation": "B「无时无刻都」=「无时不」，应「无时无刻不」；C 缺主语；D 重复。"
+      "explanation": "B「无时无刻都」=「无时不」，应「无时无刻不」；C 缺主语；D 重复。",
+      "round": 1
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1589,7 +1690,8 @@
         "D. 我喜欢苹果，香蕉、橘子。"
       ],
       "answer": "B",
-      "explanation": "并列词语之间用顿号，「和」前不再用顿号。"
+      "explanation": "并列词语之间用顿号，「和」前不再用顿号。",
+      "round": 1
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1604,7 +1706,8 @@
         "D. 高兴"
       ],
       "answer": "B",
-      "explanation": "「不慌不忙」「不回头不说话」表现镇定。"
+      "explanation": "「不慌不忙」「不回头不说话」表现镇定。",
+      "round": 1
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1619,7 +1722,8 @@
         "D. 排比"
       ],
       "answer": "B",
-      "explanation": "「舔」是人的动作，赋予火，是拟人。"
+      "explanation": "「舔」是人的动作，赋予火，是拟人。",
+      "round": 1
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1634,7 +1738,8 @@
         "D. 写他的外貌"
       ],
       "answer": "B",
-      "explanation": "「让事实说话」是塑造人物的有效方法。"
+      "explanation": "「让事实说话」是塑造人物的有效方法。",
+      "round": 1
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1649,7 +1754,8 @@
         "D. 词藻华丽"
       ],
       "answer": "B",
-      "explanation": "重在传承英雄精神并联系现实。"
+      "explanation": "重在传承英雄精神并联系现实。",
+      "round": 1
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1664,7 +1770,8 @@
         "D. 废弃"
       ],
       "answer": "B",
-      "explanation": "兴废继绝：振兴衰落的事业，延续断绝的传统。"
+      "explanation": "兴废继绝：振兴衰落的事业，延续断绝的传统。",
+      "round": 1
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1679,7 +1786,8 @@
         "D. 闲适"
       ],
       "answer": "C",
-      "explanation": "于谦以石灰自比，表达坚守气节。"
+      "explanation": "于谦以石灰自比，表达坚守气节。",
+      "round": 1
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1694,7 +1802,8 @@
         "D. 苏轼"
       ],
       "answer": "A",
-      "explanation": "出自郑板桥《竹石》。"
+      "explanation": "出自郑板桥《竹石》。",
+      "round": 1
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1709,7 +1818,8 @@
         "D. 既然...就"
       ],
       "answer": "C",
-      "explanation": "假设让步关系用「即使……也」。"
+      "explanation": "假设让步关系用「即使……也」。",
+      "round": 1
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1724,7 +1834,8 @@
         "D. 阴险、贪婪、懦弱"
       ],
       "answer": "A",
-      "explanation": "A 全为正面词。"
+      "explanation": "A 全为正面词。",
+      "round": 1
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1733,7 +1844,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "反问",
-      "explanation": "通过反问加强肯定语气。"
+      "explanation": "通过反问加强肯定语气。",
+      "round": 1
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1742,7 +1854,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "排比",
-      "explanation": "三个「为了……」结构相同，是排比。"
+      "explanation": "三个「为了……」结构相同，是排比。",
+      "round": 1
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1757,7 +1870,8 @@
         "D. 死记硬背"
       ],
       "answer": "A",
-      "explanation": "课文鼓励科学探究、追根问底。"
+      "explanation": "课文鼓励科学探究、追根问底。",
+      "round": 1
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1772,7 +1886,8 @@
         "D. 牛顿"
       ],
       "answer": "D",
-      "explanation": "课文举例了 A、B、C 三位发现日常细节并探究的科学家。"
+      "explanation": "课文举例了 A、B、C 三位发现日常细节并探究的科学家。",
+      "round": 1
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1787,7 +1902,8 @@
         "B. shú",
         "C. zhū",
         "D. shǔ"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1796,7 +1912,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "议",
-      "explanation": "「思议」的「议」是议论。"
+      "explanation": "「思议」的「议」是议论。",
+      "round": 1
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1811,7 +1928,8 @@
         "D. 略微"
       ],
       "answer": "B",
-      "explanation": "见微知著：从细小现象推知大本质。"
+      "explanation": "见微知著：从细小现象推知大本质。",
+      "round": 1
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1826,7 +1944,8 @@
         "D. 守株待兔"
       ],
       "answer": "A",
-      "explanation": "锲而不舍形容坚持不懈，符合科研精神。"
+      "explanation": "锲而不舍形容坚持不懈，符合科研精神。",
+      "round": 1
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1841,7 +1960,8 @@
         "D. 别开生面"
       ],
       "answer": "A",
-      "explanation": "屡见不鲜=司空见惯。"
+      "explanation": "屡见不鲜=司空见惯。",
+      "round": 1
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1856,7 +1976,8 @@
         "B. 书上得来终觉浅",
         "C. 纸上学来终觉浅",
         "D. 纸上得来终觉少"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1871,7 +1992,8 @@
         "D. ②①④③"
       ],
       "answer": "A",
-      "explanation": "科研流程：发现现象→假设→实验→真理。"
+      "explanation": "科研流程：发现现象→假设→实验→真理。",
+      "round": 1
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1886,7 +2008,8 @@
         "D. 是否取得成功，关键看是否努力。"
       ],
       "answer": "A",
-      "explanation": "B 搭配不当（崇尚精神，发扬态度）；C 重复；D 一面对两面。"
+      "explanation": "B 搭配不当（崇尚精神，发扬态度）；C 重复；D 一面对两面。",
+      "round": 1
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1901,7 +2024,8 @@
         "D. 如果...就"
       ],
       "answer": "B",
-      "explanation": "前后转折，用「虽然……但是」。"
+      "explanation": "前后转折，用「虽然……但是」。",
+      "round": 1
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1910,7 +2034,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "拟人",
-      "explanation": "「舞动」是人的动作，赋予问号。"
+      "explanation": "「舞动」是人的动作，赋予问号。",
+      "round": 1
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1919,7 +2044,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "比喻",
-      "explanation": "把真理比作冰山。"
+      "explanation": "把真理比作冰山。",
+      "round": 1
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1934,7 +2060,8 @@
         "D. 水会形成漩涡"
       ],
       "answer": "B",
-      "explanation": "本段强调善观察+坚持的科研精神。"
+      "explanation": "本段强调善观察+坚持的科研精神。",
+      "round": 1
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1949,7 +2076,8 @@
         "D. 庐山很美"
       ],
       "answer": "B",
-      "explanation": "苏轼表达「身处其中难以看清整体」。"
+      "explanation": "苏轼表达「身处其中难以看清整体」。",
+      "round": 1
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1964,7 +2092,8 @@
         "D. 王安石"
       ],
       "answer": "A",
-      "explanation": "出自朱熹《观书有感》。"
+      "explanation": "出自朱熹《观书有感》。",
+      "round": 1
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1979,7 +2108,8 @@
         "D. 罗列年表"
       ],
       "answer": "B",
-      "explanation": "事例胜于评论。"
+      "explanation": "事例胜于评论。",
+      "round": 1
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1994,7 +2124,8 @@
         "D. 总分总"
       ],
       "answer": "C",
-      "explanation": "议论文围绕论点展开论证。"
+      "explanation": "议论文围绕论点展开论证。",
+      "round": 1
     },
     {
       "chapter": "第五单元：科学精神",
@@ -2003,7 +2134,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "反义",
-      "explanation": "意思相反。"
+      "explanation": "意思相反。",
+      "round": 1
     },
     {
       "chapter": "第五单元：科学精神",
@@ -2018,7 +2150,8 @@
         "D. 探索灯光"
       ],
       "answer": "A",
-      "explanation": "「探索」常与「奥秘」「真理」「未知」搭配。"
+      "explanation": "「探索」常与「奥秘」「真理」「未知」搭配。",
+      "round": 1
     },
     {
       "chapter": "第五单元：科学精神",
@@ -2033,7 +2166,8 @@
         "B. 真理是通过实践才能获得的吗？",
         "C. 难道真理是通过实践才能获得的？",
         "D. 真理怎么通过实践就能获得？"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "第五单元：科学精神",
@@ -2042,7 +2176,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "褒义",
-      "explanation": "形容坚持的褒义成语。"
+      "explanation": "形容坚持的褒义成语。",
+      "round": 1
     },
     {
       "chapter": "第五单元：科学精神",
@@ -2057,7 +2192,8 @@
         "B. qì",
         "C. qiē",
         "D. xiè"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "第五单元：科学精神",
@@ -2072,7 +2208,8 @@
         "D. A 和 C 都正确"
       ],
       "answer": "D",
-      "explanation": "A 是强调，C 是篇报名引用，都对；B 缺标点。"
+      "explanation": "A 是强调，C 是篇报名引用，都对；B 缺标点。",
+      "round": 1
     },
     {
       "chapter": "第五单元：科学精神",
@@ -2087,7 +2224,8 @@
         "D. 那个谜题千真万确没人解开。"
       ],
       "answer": "B",
-      "explanation": "B 矛盾：司空见惯=平常，与「引人深思」语义冲突。"
+      "explanation": "B 矛盾：司空见惯=平常，与「引人深思」语义冲突。",
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2102,7 +2240,8 @@
         "D. 抒发空泛感想"
       ],
       "answer": "A",
-      "explanation": "选择典型片段写真情实感。"
+      "explanation": "选择典型片段写真情实感。",
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2117,7 +2256,8 @@
         "D. A、B、C 都可以"
       ],
       "answer": "D",
-      "explanation": "回忆文结构灵活，时间、倒叙、总分总都可以。"
+      "explanation": "回忆文结构灵活，时间、倒叙、总分总都可以。",
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2132,7 +2272,8 @@
         "D. 老师上很多课"
       ],
       "answer": "B",
-      "explanation": "细节细致才能打动人。"
+      "explanation": "细节细致才能打动人。",
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2147,7 +2288,8 @@
         "D. 大量堆砌华丽辞藻"
       ],
       "answer": "D",
-      "explanation": "修改作文要去多余、改错误，而不是堆词。"
+      "explanation": "修改作文要去多余、改错误，而不是堆词。",
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2162,7 +2304,8 @@
         "B. shè",
         "C. shē",
         "D. sě"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2177,7 +2320,8 @@
         "D. 欢呼雀跃"
       ],
       "answer": "A",
-      "explanation": "依依不舍表达离别之情。"
+      "explanation": "依依不舍表达离别之情。",
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2192,7 +2336,8 @@
         "D. 忽视"
       ],
       "answer": "B",
-      "explanation": "铭记、铭刻在心，与难忘相近。"
+      "explanation": "铭记、铭刻在心，与难忘相近。",
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2207,7 +2352,8 @@
         "D. 旋律如时光"
       ],
       "answer": "B",
-      "explanation": "比喻日子像歌一样美好令人怀念。"
+      "explanation": "比喻日子像歌一样美好令人怀念。",
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2216,7 +2362,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "比喻",
-      "explanation": "把时光比作沙漏。"
+      "explanation": "把时光比作沙漏。",
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2225,7 +2372,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "排比",
-      "explanation": "三个「想念……」结构相同。"
+      "explanation": "三个「想念……」结构相同。",
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2234,7 +2382,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "天涯若比邻",
-      "explanation": "出自王勃《送杜少府之任蜀州》。"
+      "explanation": "出自王勃《送杜少府之任蜀州》。",
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2249,7 +2398,8 @@
         "B. 难比汪伦送我情",
         "C. 不及汪伦赠我情",
         "D. 莫及汪伦送我情"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2264,7 +2414,8 @@
         "D. 我估计他大概来了。"
       ],
       "answer": "A",
-      "explanation": "C 缺主语，D 重复，B 「队伍获得好评」搭配不当。"
+      "explanation": "C 缺主语，D 重复，B 「队伍获得好评」搭配不当。",
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2279,7 +2430,8 @@
         "B. 时间过得很快吗？",
         "C. 时间过得难道不快？",
         "D. 时间过得真不快啊！"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2288,7 +2440,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "省略",
-      "explanation": "省略号表示语意未完或省略。"
+      "explanation": "省略号表示语意未完或省略。",
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2303,7 +2456,8 @@
         "D. 害怕"
       ],
       "answer": "B",
-      "explanation": "对比入学和毕业，体现成长感慨和依依不舍。"
+      "explanation": "对比入学和毕业，体现成长感慨和依依不舍。",
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2318,7 +2472,8 @@
         "D. 语言描写"
       ],
       "answer": "C",
-      "explanation": "通过具体景象暗示情感的细节描写。"
+      "explanation": "通过具体景象暗示情感的细节描写。",
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2333,7 +2488,8 @@
         "D. 如果...就"
       ],
       "answer": "B",
-      "explanation": "因果关系。"
+      "explanation": "因果关系。",
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2348,7 +2504,8 @@
         "D. 度过书本"
       ],
       "answer": "A",
-      "explanation": "「度过」与「岁月」「时光」「假期」等抽象时段搭配。"
+      "explanation": "「度过」与「岁月」「时光」「假期」等抽象时段搭配。",
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2363,7 +2520,8 @@
         "D. 王维"
       ],
       "answer": "A",
-      "explanation": "出自苏轼《水调歌头·明月几时有》。"
+      "explanation": "出自苏轼《水调歌头·明月几时有》。",
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2378,7 +2536,8 @@
         "D. 全部正确"
       ],
       "answer": "D",
-      "explanation": "三组都正确。"
+      "explanation": "三组都正确。",
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2393,7 +2552,8 @@
         "D. 大声"
       ],
       "answer": "B",
-      "explanation": "谆谆：耐心反复教诲。"
+      "explanation": "谆谆：耐心反复教诲。",
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2408,7 +2568,8 @@
         "D. A、B、C 都可以"
       ],
       "answer": "D",
-      "explanation": "结尾抒情手法多样。"
+      "explanation": "结尾抒情手法多样。",
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2417,7 +2578,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "褒义",
-      "explanation": "形容竭尽全力，是褒义。"
+      "explanation": "形容竭尽全力，是褒义。",
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2432,7 +2594,8 @@
         "D. 写景"
       ],
       "answer": "B",
-      "explanation": "王维送别诗，深情款款。"
+      "explanation": "王维送别诗，深情款款。",
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2447,7 +2610,8 @@
         "D. 越长越深奥"
       ],
       "answer": "B",
-      "explanation": "毕业留言贵在真诚和适度。"
+      "explanation": "毕业留言贵在真诚和适度。",
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2462,7 +2626,8 @@
         "D. 选择"
       ],
       "answer": "B",
-      "explanation": "迪：开导、引导。"
+      "explanation": "迪：开导、引导。",
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2477,7 +2642,8 @@
         "B. yí",
         "C. yǐ",
         "D. yì"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2486,7 +2652,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "夸张",
-      "explanation": "明显夸大跑步速度。"
+      "explanation": "明显夸大跑步速度。",
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2495,7 +2662,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "设问",
-      "explanation": "自问自答即设问。"
+      "explanation": "自问自答即设问。",
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2510,7 +2678,8 @@
         "D. 时光"
       ],
       "answer": "B",
-      "explanation": "古汉语「时」为时常、按时之意。"
+      "explanation": "古汉语「时」为时常、按时之意。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -2519,7 +2688,8 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "擅长",
-      "explanation": "古汉语「善」常作擅长解。"
+      "explanation": "古汉语「善」常作擅长解。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -2528,7 +2698,8 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "野径云俱黑",
-      "explanation": "杜甫名句，写春夜雨景。"
+      "explanation": "杜甫名句，写春夜雨景。",
+      "round": 1
     },
     {
       "chapter": "第三单元：真情流露",
@@ -2543,7 +2714,8 @@
         "B. bīng",
         "C. bìng",
         "D. píng"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "第四单元：革命精神",
@@ -2552,7 +2724,8 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "不",
-      "explanation": "弗=不，文言常用否定副词。"
+      "explanation": "弗=不，文言常用否定副词。",
+      "round": 1
     },
     {
       "chapter": "第四单元：革命精神",
@@ -2561,7 +2734,8 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "曹植",
-      "explanation": "出自曹植《白马篇》。"
+      "explanation": "出自曹植《白马篇》。",
+      "round": 1
     },
     {
       "chapter": "第四单元：革命精神",
@@ -2570,7 +2744,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "褒义",
-      "explanation": "死得其所是肯定的，死有余辜是否定的。"
+      "explanation": "死得其所是肯定的，死有余辜是否定的。",
+      "round": 1
     },
     {
       "chapter": "第五单元：科学精神",
@@ -2585,7 +2760,8 @@
         "B. 分辨",
         "C. 辩解",
         "D. 巧言"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "第五单元：科学精神",
@@ -2600,7 +2776,8 @@
         "B. xián",
         "C. xuàn",
         "D. xuǎn"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2615,7 +2792,8 @@
         "B. zhì chǐ",
         "C. chǐ chǐ",
         "D. zhǐ zhǐ"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "第一单元 民俗",
@@ -2630,7 +2808,8 @@
         "D. 我们都很高兴。"
       ],
       "answer": "B",
-      "explanation": "比喻必须有本体、喻体和喻词，且二者本质不同。B 项把月光比作水，是典型比喻。"
+      "explanation": "比喻必须有本体、喻体和喻词，且二者本质不同。B 项把月光比作水，是典型比喻。",
+      "round": 1
     },
     {
       "chapter": "第四单元 革命",
@@ -2639,7 +2818,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "明灯",
-      "explanation": "被比作的事物是喻体。这里把「为人民服务的精神」比作「明灯」，喻体即明灯。"
+      "explanation": "被比作的事物是喻体。这里把「为人民服务的精神」比作「明灯」，喻体即明灯。",
+      "round": 1
     },
     {
       "chapter": "第三单元 真情",
@@ -2654,7 +2834,8 @@
         "D. 心理描写"
       ],
       "answer": "B",
-      "explanation": "「紧握拳头」是动作描写，「眉头紧锁」是神态描写，因此属于动作和神态描写。"
+      "explanation": "「紧握拳头」是动作描写，「眉头紧锁」是神态描写，因此属于动作和神态描写。",
+      "round": 1
     },
     {
       "chapter": "写作",
@@ -2669,7 +2850,8 @@
         "D. 总分"
       ],
       "answer": "B",
-      "explanation": "由远到近、由上到下都属于空间顺序。"
+      "explanation": "由远到近、由上到下都属于空间顺序。",
+      "round": 1
     },
     {
       "chapter": "写作",
@@ -2678,7 +2860,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "立体",
-      "explanation": "调动多种感官可以让景物描写更立体、更真实。"
+      "explanation": "调动多种感官可以让景物描写更立体、更真实。",
+      "round": 1
     },
     {
       "chapter": "古诗文",
@@ -2693,7 +2876,8 @@
         "B. 明月何日照我还",
         "C. 明月几时照我归",
         "D. 明月今宵照我还"
-      ]
+      ],
+      "round": 1
     },
     {
       "chapter": "古诗文",
@@ -2708,7 +2892,8 @@
         "D. 学说"
       ],
       "answer": "C",
-      "explanation": "「说」通「悦」，意思是愉快、高兴，属于通假字。"
+      "explanation": "「说」通「悦」，意思是愉快、高兴，属于通假字。",
+      "round": 1
     },
     {
       "chapter": "古诗文",
@@ -2723,7 +2908,8 @@
         "D. 哪里"
       ],
       "answer": "A",
-      "explanation": "「孰」在文言中常作疑问代词，意为「谁」。"
+      "explanation": "「孰」在文言中常作疑问代词，意为「谁」。",
+      "round": 1
     },
     {
       "chapter": "字词",
@@ -2738,7 +2924,8 @@
         "D. 司空见惯 锲而不舍 见微知注"
       ],
       "answer": "A",
-      "explanation": "B 中「贯」应为「惯」；C 中「舌」应为「舍」；D 中「注」应为「著」。"
+      "explanation": "B 中「贯」应为「惯」；C 中「舌」应为「舍」；D 中「注」应为「著」。",
+      "round": 1
     },
     {
       "chapter": "字词",
@@ -2747,7 +2934,8 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "议",
-      "explanation": "「不可思议」是固定成语，「议」字不能写成「仪」。"
+      "explanation": "「不可思议」是固定成语，「议」字不能写成「仪」。",
+      "round": 1
     },
     {
       "chapter": "第四单元 革命",
@@ -2762,7 +2950,8 @@
         "D. 平叙"
       ],
       "answer": "B",
-      "explanation": "文章开头先写「我」回忆十六年前父亲被害的日子，是典型的倒叙写法。"
+      "explanation": "文章开头先写「我」回忆十六年前父亲被害的日子，是典型的倒叙写法。",
+      "round": 1
     },
     {
       "chapter": "第四单元 革命",
@@ -2777,7 +2966,8 @@
         "D. 黄继光"
       ],
       "answer": "A",
-      "explanation": "《为人民服务》是 1944 年毛泽东在张思德同志追悼会上的演讲。"
+      "explanation": "《为人民服务》是 1944 年毛泽东在张思德同志追悼会上的演讲。",
+      "round": 1
     },
     {
       "chapter": "第五单元 科学",
@@ -2792,7 +2982,8 @@
         "D. 省略号"
       ],
       "answer": "B",
-      "explanation": "课文最后说「把『?』拉直变成『!』」，象征通过追问、探究最终发现真理。"
+      "explanation": "课文最后说「把『?』拉直变成『!』」，象征通过追问、探究最终发现真理。",
+      "round": 1
     },
     {
       "chapter": "阅读理解",
@@ -2807,7 +2998,8 @@
         "D. 安静下来"
       ],
       "answer": "C",
-      "explanation": "「沉浸」在此处是比喻用法，指完全处于欢乐的节日氛围之中。"
+      "explanation": "「沉浸」在此处是比喻用法，指完全处于欢乐的节日氛围之中。",
+      "round": 1
     },
     {
       "chapter": "阅读理解",
@@ -2822,7 +3014,8 @@
         "D. 喜欢冒险"
       ],
       "answer": "B",
-      "explanation": "由「造房屋、种庄稼、养山羊」「写下每天的劳作」「过得有条有理」可见他勤劳、坚毅、积极乐观。"
+      "explanation": "由「造房屋、种庄稼、养山羊」「写下每天的劳作」「过得有条有理」可见他勤劳、坚毅、积极乐观。",
+      "round": 1
     },
     {
       "chapter": "阅读理解",
@@ -2837,7 +3030,8 @@
         "D. 平静无所谓"
       ],
       "answer": "B",
-      "explanation": "「缠」表示反复纠缠不放，体现孩子急切盼望出去玩、不愿等待的心情。"
+      "explanation": "「缠」表示反复纠缠不放，体现孩子急切盼望出去玩、不愿等待的心情。",
+      "round": 1
     },
     {
       "chapter": "阅读理解",
@@ -2852,7 +3046,8 @@
         "D. 无所事事"
       ],
       "answer": "B",
-      "explanation": "咬嘴唇、不敢出声是紧张害怕的体现，「紧紧」「不敢」说明在强忍着不让自己发出声音。"
+      "explanation": "咬嘴唇、不敢出声是紧张害怕的体现，「紧紧」「不敢」说明在强忍着不让自己发出声音。",
+      "round": 1
     },
     {
       "chapter": "阅读理解",
@@ -2867,7 +3062,8 @@
         "D. 追求名利"
       ],
       "answer": "B",
-      "explanation": "「穷追不舍地追问」直接体现善于质疑、坚持不懈的科学探索精神。"
+      "explanation": "「穷追不舍地追问」直接体现善于质疑、坚持不懈的科学探索精神。",
+      "round": 1
     },
     {
       "chapter": "文学常识",
@@ -2882,7 +3078,8 @@
         "D. 陆游"
       ],
       "answer": "A",
-      "explanation": "《石灰吟》是明代诗人于谦的作品，借石灰表达自己清白坚贞的志向。"
+      "explanation": "《石灰吟》是明代诗人于谦的作品，借石灰表达自己清白坚贞的志向。",
+      "round": 1
     },
     {
       "chapter": "文学常识",
@@ -2891,7 +3088,8 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "李白",
-      "explanation": "出自李白《望庐山瀑布》。"
+      "explanation": "出自李白《望庐山瀑布》。",
+      "round": 1
     },
     {
       "chapter": "文学常识",
@@ -2906,7 +3104,8 @@
         "D. 沈从文"
       ],
       "answer": "B",
-      "explanation": "这三篇都是现代散文家朱自清的代表作。"
+      "explanation": "这三篇都是现代散文家朱自清的代表作。",
+      "round": 1
     },
     {
       "chapter": "文学常识",
@@ -2921,7 +3120,8 @@
         "D. 散文"
       ],
       "answer": "B",
-      "explanation": "《为人民服务》是毛泽东的演讲，属于议论文中的演讲稿。"
+      "explanation": "《为人民服务》是毛泽东的演讲，属于议论文中的演讲稿。",
+      "round": 1
     }
   ]
 }

@@ -17,6 +17,7 @@ import 'services/question_update_service.dart';
 import 'services/reward_service.dart';
 import 'services/assessment_service.dart';
 import 'services/learning_sync_service.dart';
+import 'services/difficulty_settings_service.dart';
 import 'models/question.dart';
 import 'models/subject.dart';
 import 'database/curriculum_dao.dart';
@@ -77,6 +78,7 @@ class _LearningAppState extends State<LearningApp> {
   late final AssessmentService _assessmentService;
   final _planService = PlanService();
   final _syncService = LearningSyncService();
+  final _difficultySettings = DifficultySettingsService();
 
   bool _wasPracticeActive = false;
   int _lastSessionScore = 0;
@@ -87,8 +89,8 @@ class _LearningAppState extends State<LearningApp> {
   void initState() {
     super.initState();
     _rewardService = RewardService()..refresh();
-    // 立即创建 PracticeService，触发 session 恢复
-    _practiceService = PracticeService(_rewardService);
+    // 立即创建 PracticeService，触发 session 恢复（V3.8 注入 DifficultySettings）
+    _practiceService = PracticeService(_rewardService, _difficultySettings);
     _assessmentService = AssessmentService()..refresh();
 
     // session 状态变化监听：snapshot 当前数据 + 完成时触发自动完成 + 学情同步
@@ -161,6 +163,7 @@ class _LearningAppState extends State<LearningApp> {
         ChangeNotifierProvider.value(value: _assessmentService),
         ChangeNotifierProvider.value(value: _updateService),
         ChangeNotifierProvider.value(value: _syncService),
+        ChangeNotifierProvider.value(value: _difficultySettings),
       ],
       child: MaterialApp(
         title: '学习小助手',
