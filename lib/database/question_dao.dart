@@ -9,6 +9,7 @@ class ReviewKpSummary {
   final String name;
   final int totalErrors;       // 历史累计错次（颜色梯度用）
   final DateTime lastWrongAt;  // 最近一次错的时间
+  final int subjectIndex;      // Subject 枚举 index（V3.7.8：成效页按科目一级分类）
 
   const ReviewKpSummary({
     required this.fullPath,
@@ -16,7 +17,10 @@ class ReviewKpSummary {
     required this.name,
     required this.totalErrors,
     required this.lastWrongAt,
+    required this.subjectIndex,
   });
+
+  Subject get subject => Subject.values[subjectIndex];
 }
 
 /// 错题历史记录（详情页用）
@@ -102,32 +106,32 @@ class QuestionDao {
     final db = await _db.database;
     final rows = await db.rawQuery('''
       WITH last_wrong AS (
-        SELECT q.knowledge_point AS kp, MAX(r.practiced_at) AS t
+        SELECT q.knowledge_point AS kp, q.subject AS subject, MAX(r.practiced_at) AS t
         FROM practice_records r
         JOIN questions q ON q.id = r.question_id
         WHERE r.is_correct = 0 AND q.knowledge_point IS NOT NULL
-        GROUP BY q.knowledge_point
+        GROUP BY q.knowledge_point, q.subject
       ),
       progress AS (
-        SELECT lw.kp,
+        SELECT lw.kp, lw.subject,
                lw.t AS last_wrong_at,
                COUNT(DISTINCT CASE WHEN r2.is_correct = 1 AND r2.practiced_at > lw.t
                                    THEN r2.question_id END) AS correct_after_last
         FROM last_wrong lw
-        JOIN questions q2 ON q2.knowledge_point = lw.kp
+        JOIN questions q2 ON q2.knowledge_point = lw.kp AND q2.subject = lw.subject
         LEFT JOIN practice_records r2 ON r2.question_id = q2.id
-        GROUP BY lw.kp, lw.t
+        GROUP BY lw.kp, lw.subject, lw.t
       ),
       total_err AS (
-        SELECT q.knowledge_point AS kp, COUNT(*) AS total_errors
+        SELECT q.knowledge_point AS kp, q.subject AS subject, COUNT(*) AS total_errors
         FROM practice_records r
         JOIN questions q ON q.id = r.question_id
         WHERE r.is_correct = 0 AND q.knowledge_point IS NOT NULL
-        GROUP BY q.knowledge_point
+        GROUP BY q.knowledge_point, q.subject
       )
-      SELECT p.kp, p.last_wrong_at, te.total_errors
+      SELECT p.kp, p.subject, p.last_wrong_at, te.total_errors
       FROM progress p
-      JOIN total_err te ON te.kp = p.kp
+      JOIN total_err te ON te.kp = p.kp AND te.subject = p.subject
       WHERE p.correct_after_last < 2
       ORDER BY te.total_errors DESC, p.last_wrong_at DESC
     ''');
@@ -141,6 +145,7 @@ class QuestionDao {
         name: parts.length > 1 ? parts.sublist(1).join('/') : kp,
         totalErrors: (row['total_errors'] as int?) ?? 0,
         lastWrongAt: DateTime.parse(row['last_wrong_at'] as String),
+        subjectIndex: (row['subject'] as int?) ?? 0,
       );
     }).toList();
   }

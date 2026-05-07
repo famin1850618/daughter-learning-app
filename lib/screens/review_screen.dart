@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 
 import '../utils/app_theme.dart';
 import '../models/question.dart';
+import '../models/subject.dart';
 import '../models/assessment.dart';
 import '../database/question_dao.dart';
 import '../services/practice_service.dart';
@@ -74,82 +75,130 @@ class _ReviewScreenState extends State<ReviewScreen> {
     context.read<AssessmentService>().refresh();
   }
 
+  // 一级分类：5 个学科（AI 暂不显示，无错题数据）
+  static const _tabSubjects = [
+    Subject.chinese,
+    Subject.math,
+    Subject.english,
+    Subject.physics,
+    Subject.chemistry,
+  ];
+
   @override
   Widget build(BuildContext context) {
     final assessment = context.watch<AssessmentService>();
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('成效'),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.refresh),
-            onPressed: _refresh,
-            tooltip: '刷新',
+    return DefaultTabController(
+      length: _tabSubjects.length,
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text('成效'),
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.refresh),
+              onPressed: _refresh,
+              tooltip: '刷新',
+            ),
+          ],
+          bottom: TabBar(
+            isScrollable: true,
+            indicatorColor: Colors.white,
+            labelColor: Colors.white,
+            unselectedLabelColor: Colors.white70,
+            tabs: _tabSubjects
+                .map((s) => Tab(text: '${s.emoji} ${s.displayName}'))
+                .toList(),
           ),
-        ],
-      ),
-      body: FutureBuilder<List<ReviewKpSummary>>(
-        future: _future,
-        builder: (context, snapshot) {
-          if (snapshot.connectionState != ConnectionState.done) {
-            return const Center(child: CircularProgressIndicator());
-          }
-          final list = snapshot.data ?? [];
-
-          // 按 category 分组
-          final grouped = <String, List<ReviewKpSummary>>{};
-          for (final s in list) {
-            grouped.putIfAbsent(s.category, () => []).add(s);
-          }
-
-          return ListView(
-            padding: const EdgeInsets.all(12),
-            children: [
-              if (assessment.weekly != null)
-                _AssessmentCard(snapshot: assessment.weekly!),
-              if (assessment.monthly != null)
-                _AssessmentCard(snapshot: assessment.monthly!),
-              if (assessment.weekly != null || assessment.monthly != null)
-                const Padding(
-                  padding: EdgeInsets.fromLTRB(4, 16, 4, 6),
-                  child: Text('错题集',
-                      style: TextStyle(
-                          fontSize: 13,
-                          color: Colors.grey,
-                          fontWeight: FontWeight.w600)),
-                ),
-              if (list.isEmpty)
-                const Padding(
-                  padding: EdgeInsets.all(20),
-                  child: Center(
+        ),
+        body: FutureBuilder<List<ReviewKpSummary>>(
+          future: _future,
+          builder: (context, snapshot) {
+            if (snapshot.connectionState != ConnectionState.done) {
+              return const Center(child: CircularProgressIndicator());
+            }
+            final all = snapshot.data ?? [];
+            return Column(
+              children: [
+                // 测评卡片跨科共享，置顶展示
+                if (assessment.weekly != null || assessment.monthly != null)
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(12, 12, 12, 0),
                     child: Column(
                       children: [
-                        Text('🎉', style: TextStyle(fontSize: 48)),
-                        SizedBox(height: 8),
-                        Text('暂无待掌握知识点',
-                            style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
+                        if (assessment.weekly != null)
+                          _AssessmentCard(snapshot: assessment.weekly!),
+                        if (assessment.monthly != null)
+                          _AssessmentCard(snapshot: assessment.monthly!),
                       ],
                     ),
                   ),
-                ),
-              for (final entry in grouped.entries) ...[
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(4, 12, 4, 6),
-                  child: Text(
-                    entry.key,
-                    style: const TextStyle(
-                        fontSize: 13,
-                        color: Colors.grey,
-                        fontWeight: FontWeight.w600),
+                // 各科目错题集
+                Expanded(
+                  child: TabBarView(
+                    children: _tabSubjects.map((subj) {
+                      final filtered =
+                          all.where((s) => s.subject == subj).toList();
+                      return _SubjectReviewList(
+                        items: filtered,
+                        onChanged: _refresh,
+                      );
+                    }).toList(),
                   ),
                 ),
-                ...entry.value.map((s) => _KpCard(summary: s, onChanged: _refresh)),
               ],
-              const SizedBox(height: 24),
-            ],
-          );
-        },
+            );
+          },
+        ),
       ),
+    );
+  }
+}
+
+/// 单科目错题集列表（按一级 category 二级分组）
+class _SubjectReviewList extends StatelessWidget {
+  final List<ReviewKpSummary> items;
+  final VoidCallback onChanged;
+  const _SubjectReviewList({required this.items, required this.onChanged});
+
+  @override
+  Widget build(BuildContext context) {
+    if (items.isEmpty) {
+      return const Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('🎉', style: TextStyle(fontSize: 56)),
+            SizedBox(height: 12),
+            Text('暂无待掌握知识点',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+            SizedBox(height: 4),
+            Text('继续保持！',
+                style: TextStyle(color: Colors.grey, fontSize: 13)),
+          ],
+        ),
+      );
+    }
+    final grouped = <String, List<ReviewKpSummary>>{};
+    for (final s in items) {
+      grouped.putIfAbsent(s.category, () => []).add(s);
+    }
+    return ListView(
+      padding: const EdgeInsets.all(12),
+      children: [
+        for (final entry in grouped.entries) ...[
+          Padding(
+            padding: const EdgeInsets.fromLTRB(4, 12, 4, 6),
+            child: Text(
+              entry.key,
+              style: const TextStyle(
+                  fontSize: 13,
+                  color: Colors.grey,
+                  fontWeight: FontWeight.w600),
+            ),
+          ),
+          ...entry.value.map((s) => _KpCard(summary: s, onChanged: onChanged)),
+        ],
+        const SizedBox(height: 24),
+      ],
     );
   }
 }
