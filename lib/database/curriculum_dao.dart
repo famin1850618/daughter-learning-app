@@ -23,6 +23,21 @@ class CurriculumDao {
     return (count ?? 0) == 0;
   }
 
+  /// V3.10：增量插入缺失 chapter（老用户升级时把新加的 22 个 V3.10 chapter 补上）
+  /// 按 (subject, grade, chapterName) 去重，已存在的跳过。
+  Future<void> insertIfMissing(List<Chapter> chapters) async {
+    final db = await _db.database;
+    for (final c in chapters) {
+      final existing = await db.rawQuery(
+        'SELECT id FROM curriculum WHERE subject=? AND grade=? AND chapter_name=? LIMIT 1',
+        [c.subject, c.grade, c.chapterName],
+      );
+      if (existing.isEmpty) {
+        await db.insert('curriculum', c.toMap());
+      }
+    }
+  }
+
   /// 返回有内容的所有科目列表
   Future<List<String>> getSubjects() async {
     final db = await _db.database;

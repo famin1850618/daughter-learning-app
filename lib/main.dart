@@ -28,22 +28,14 @@ import 'database/knowledge_point_dao.dart';
 import 'database/knowledge_points_seed.dart';
 import 'database/cambridge_english_kp_seed.dart';
 
-/// 内置题包路径（assets 首装兜底）—— 历版累积，cron 扩题后追加
+/// 内置题包路径（assets 首装兜底）
+/// V3.10：删除 12 个 cron AI 出的老 batch（语数英 R1-R3 + 初一 R1）—— 全部 deprecated。
+/// 新装 app 不再 import 这些题；老用户升级时 DB v14 迁移把已入库的 source 改 _deprecated。
+/// JSON 文件本身保留在 question_bank/ 仓库做历史 / CDN 回滚用。
 const _bundledBatchAssets = [
-  'assets/data/batches/batch_2026_05_06_g6_math.json',
-  'assets/data/batches/batch_2026_05_06_g6_chinese.json',
-  'assets/data/batches/batch_2026_05_06_g6_english.json',
-  'assets/data/batches/batch_2026_05_07_g6_math_r2.json',
-  'assets/data/batches/batch_2026_05_07_g6_chinese_r2.json',
-  'assets/data/batches/batch_2026_05_07_g6_english_r2.json',
-  'assets/data/batches/batch_2026_05_07_g6_math_r3.json',
-  'assets/data/batches/batch_2026_05_07_g6_chinese_r3.json',
-  'assets/data/batches/batch_2026_05_07_g6_english_r3.json',
-  'assets/data/batches/batch_2026_05_08_g7_math_r1.json',
-  'assets/data/batches/batch_2026_05_08_g7_chinese_r1.json',
-  'assets/data/batches/batch_2026_05_08_g7_english_r1.json',
   // V3.9 Cambridge English (PET / FCE / CAE Foundation)
   'assets/data/batches/batch_2026_05_07_g6_english_pet_r1.json',
+  // V3.10 真题入库后陆续追加
 ];
 
 void main() async {
@@ -54,10 +46,12 @@ void main() async {
 }
 
 Future<void> _seedDatabase() async {
-  // 1. 课程章节（保持原逻辑）
+  // 1. 课程章节（V3.10：fresh install 走 batch insert；老用户走增量 insertIfMissing 补 22 chapter）
   final curriculumDao = CurriculumDao();
   if (await curriculumDao.isEmpty()) {
     await curriculumDao.insertBatch(curriculumChapters);
+  } else {
+    await curriculumDao.insertIfMissing(curriculumChapters);
   }
 
   // 2. KP 清单（六下三科种子 + V3.9 Cambridge 英语；幂等）

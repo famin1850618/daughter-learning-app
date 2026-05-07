@@ -198,4 +198,37 @@ List<Chapter> get curriculumChapters => [
   Chapter(subject: 'AI', grade: 9, orderIndex: 3,  chapterName: '计算机视觉基础'),
   Chapter(subject: 'AI', grade: 9, orderIndex: 4,  chapterName: 'AI项目实战：制作智能小程序'),
   Chapter(subject: 'AI', grade: 9, orderIndex: 5,  chapterName: 'AI与未来社会'),
+
+  // ══════════════════════════════════════════
+  // V3.10 新增：真题综合 chapter（小升初/中考）
+  // 数理化语：教材章节体系下补"综合卷"chapter，收纳跨多 chapter 的小升初/中考真题
+  // ══════════════════════════════════════════
+  Chapter(subject: '数学', grade: 6, orderIndex: 99, chapterName: '小升初综合'),
+  Chapter(subject: '数学', grade: 9, orderIndex: 99, chapterName: '中考综合'),
+  Chapter(subject: '语文', grade: 6, orderIndex: 99, chapterName: '小升初综合'),
+  Chapter(subject: '语文', grade: 9, orderIndex: 99, chapterName: '中考综合'),
+  Chapter(subject: '物理', grade: 9, orderIndex: 99, chapterName: '中考综合'),
+  Chapter(subject: '化学', grade: 9, orderIndex: 99, chapterName: '中考综合'),
+
+  // ══════════════════════════════════════════
+  // V3.10 新增：英语 Cambridge 体系 chapter（按 KP 一级 category 4 类）
+  // V3.8.4 之前用 "PET" / "FCE Part 1" 等考试 part 编号 chapter，改为"学习模块"风格。
+  // 4 类 × 4 grade = 16 chapter。orderIndex 200+ 区别原外研社英语 chapter。
+  // ══════════════════════════════════════════
+  Chapter(subject: '英语', grade: 6, orderIndex: 200, chapterName: 'Vocabulary'),
+  Chapter(subject: '英语', grade: 6, orderIndex: 201, chapterName: 'Grammar'),
+  Chapter(subject: '英语', grade: 6, orderIndex: 202, chapterName: 'Reading'),
+  Chapter(subject: '英语', grade: 6, orderIndex: 203, chapterName: 'Listening'),
+  Chapter(subject: '英语', grade: 7, orderIndex: 200, chapterName: 'Vocabulary'),
+  Chapter(subject: '英语', grade: 7, orderIndex: 201, chapterName: 'Grammar'),
+  Chapter(subject: '英语', grade: 7, orderIndex: 202, chapterName: 'Reading'),
+  Chapter(subject: '英语', grade: 7, orderIndex: 203, chapterName: 'Listening'),
+  Chapter(subject: '英语', grade: 8, orderIndex: 200, chapterName: 'Vocabulary'),
+  Chapter(subject: '英语', grade: 8, orderIndex: 201, chapterName: 'Grammar'),
+  Chapter(subject: '英语', grade: 8, orderIndex: 202, chapterName: 'Reading'),
+  Chapter(subject: '英语', grade: 8, orderIndex: 203, chapterName: 'Listening'),
+  Chapter(subject: '英语', grade: 9, orderIndex: 200, chapterName: 'Vocabulary'),
+  Chapter(subject: '英语', grade: 9, orderIndex: 201, chapterName: 'Grammar'),
+  Chapter(subject: '英语', grade: 9, orderIndex: 202, chapterName: 'Reading'),
+  Chapter(subject: '英语', grade: 9, orderIndex: 203, chapterName: 'Listening'),
 ];

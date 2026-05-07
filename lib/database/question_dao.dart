@@ -92,6 +92,7 @@ class QuestionDao {
     if (chapter != null) { where += ' AND chapter = ?'; args.add(chapter); }
     if (type != null) { where += ' AND type = ?'; args.add(type.index); }
     if (difficulty != null) { where += ' AND difficulty = ?'; args.add(difficulty.index); }
+    where += ' AND $_activeSourceFilter'; // V3.10: 排除 deprecated/subj_held/translated_en
     final maps = await db.query('questions',
         where: where, whereArgs: args, orderBy: 'RANDOM()', limit: limit);
     return maps.map(Question.fromMap).toList();
@@ -117,6 +118,8 @@ class QuestionDao {
     if (chapter != null) { baseWhere += ' AND chapter = ?'; baseArgs.add(chapter); }
     // V3.8.2: 排除累计答对 ≥3 次的题
     baseWhere += ' AND id NOT IN ($_masteredSubquery)';
+    // V3.10: 排除 deprecated/subj_held/translated_en
+    baseWhere += ' AND $_activeSourceFilter';
 
     List<Question> picks;
 
@@ -172,6 +175,15 @@ class QuestionDao {
   /// V3.8.2 子句：累计答对 ≥3 次的题 id（NOT IN 排除用）
   static const _masteredSubquery =
       'SELECT question_id FROM practice_records WHERE is_correct = 1 GROUP BY question_id HAVING COUNT(*) >= 3';
+
+  /// V3.10：抽题白名单过滤（排除三类不应被抽到的 source）
+  /// - `_deprecated`：V3.8.3 老外研社英语 + V3.10 老 cron AI 出的语数英
+  /// - `_subj_held`：V3.10 主观题保留区（等 AI 评分 API 后启用）
+  /// - `_translated_en`：V3.10 已翻译为英文的中文题（避免重复练）
+  static const _activeSourceFilter =
+      "(source NOT LIKE '%_deprecated' "
+      "AND source NOT LIKE '%_subj_held' "
+      "AND source NOT LIKE '%_translated_en')";
 
   /// V3.8.2: 展开 group 系列题
   /// 抽中含 group_id 的题 → 把同 group_id 全部题拉出来 + 按 group_order 排序 + 替换原位置
@@ -321,6 +333,7 @@ class QuestionDao {
       WHERE knowledge_point = ?
         AND difficulty = ?
         AND id NOT IN (SELECT DISTINCT question_id FROM practice_records)
+        AND $_activeSourceFilter
       ORDER BY RANDOM()
       LIMIT ?
     ''', [kpPath, difficulty.index, limit]);
@@ -345,6 +358,7 @@ class QuestionDao {
       WHERE q.knowledge_point = ?
         AND q.difficulty = ?
         AND q.id NOT IN ($placeholders)
+        AND ${_activeSourceFilter.replaceAll("source", "q.source")}
       ORDER BY lr.last_practiced ASC
       LIMIT ?
     ''', [kpPath, difficulty.index, ...pickedIds, remaining]);
@@ -375,11 +389,13 @@ class QuestionDao {
     // V3.8.2: 排除已掌握题（≥3 次答对）
     final masteredClause = ' AND id NOT IN ($_masteredSubquery)';
     final roundClause = minRound == null ? '' : ' AND (round IS NULL OR round >= $minRound)';
+    // V3.10: 排除 deprecated/subj_held/translated_en
+    final activeSourceClause = ' AND $_activeSourceFilter';
 
     Future<List<Question>> q1(String where, List<dynamic> args, int n) async {
       final maps = await db.query(
         'questions',
-        where: where + excludeClause + masteredClause + roundClause,
+        where: where + excludeClause + masteredClause + roundClause + activeSourceClause,
         whereArgs: [...args, ...excludeIds],
         orderBy: 'RANDOM()',
         limit: n,
@@ -529,12 +545,13 @@ class QuestionDao {
       roundArgs = [...rounds];
     }
 
-    // Tier 1: 同 KP + round 匹配 + 未做过 + 未掌握 (V3.8.2)
+    // Tier 1: 同 KP + round 匹配 + 未做过 + 未掌握 (V3.8.2) + V3.10 source 过滤
     final fresh = await db.rawQuery('''
       SELECT * FROM questions
       WHERE knowledge_point = ?$roundFilter
         AND id NOT IN (SELECT DISTINCT question_id FROM practice_records)
         AND id NOT IN ($_masteredSubquery)
+        AND $_activeSourceFilter
       ORDER BY RANDOM()
       LIMIT ?
     ''', [kpPath, ...roundArgs, limit]);
@@ -560,6 +577,7 @@ class QuestionDao {
           SELECT DISTINCT question_id FROM practice_records WHERE is_correct = 0
         )
         AND q.id NOT IN ($_masteredSubquery)
+        AND ${_activeSourceFilter.replaceAll("source", "q.source")}
       ORDER BY lr.last_practiced ASC
       LIMIT ?
     ''', [kpPath, ...roundArgs, ...pickedIds, remaining]);
@@ -581,12 +599,13 @@ class QuestionDao {
     if (limit <= 0) return [];
     final db = await _db.database;
 
-    // Tier 1: 同 KP + 同难度 + 完全未做过
+    // Tier 1: 同 KP + 同难度 + 完全未做过 + V3.10 source 过滤
     final fresh = await db.rawQuery('''
       SELECT * FROM questions
       WHERE knowledge_point = ?
         AND difficulty = ?
         AND id NOT IN (SELECT DISTINCT question_id FROM practice_records)
+        AND $_activeSourceFilter
       ORDER BY RANDOM()
       LIMIT ?
     ''', [kpPath, difficulty.index, limit]);
@@ -614,6 +633,7 @@ class QuestionDao {
         AND q.id NOT IN (
           SELECT DISTINCT question_id FROM practice_records WHERE is_correct = 0
         )
+        AND ${_activeSourceFilter.replaceAll("source", "q.source")}
       ORDER BY lr.last_practiced ASC
       LIMIT ?
     ''', [kpPath, difficulty.index, ...pickedIds, remaining]);

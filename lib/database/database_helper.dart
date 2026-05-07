@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 13,
+      version: 14,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
@@ -297,6 +297,32 @@ class DatabaseHelper {
         'batch_2026_05_08_g7_english_r1',
       ];
       for (final src in deprecatedEnglishSources) {
+        try {
+          await db.update(
+            'questions',
+            {'source': '${src}_deprecated'},
+            where: 'source = ?',
+            whereArgs: [src],
+          );
+        } catch (_) {/* 忽略 */}
+      }
+    }
+    if (oldVersion < 14) {
+      // v14: V3.10 全面转向 —— cron AI 出的语数题包全部 deprecated
+      // 8 个 batch（语数六下 R1+R2+R3 + 初一 R1）
+      // 老题字段（chapter / type / KP）不动，仅改 source 加 _deprecated 后缀。
+      // 抽题 SQL 已加 source NOT LIKE '%_deprecated' 过滤，故老题不再被抽到。
+      const deprecatedCronSources = [
+        'batch_2026_05_06_g6_math',
+        'batch_2026_05_06_g6_chinese',
+        'batch_2026_05_07_g6_math_r2',
+        'batch_2026_05_07_g6_chinese_r2',
+        'batch_2026_05_07_g6_math_r3',
+        'batch_2026_05_07_g6_chinese_r3',
+        'batch_2026_05_08_g7_math_r1',
+        'batch_2026_05_08_g7_chinese_r1',
+      ];
+      for (final src in deprecatedCronSources) {
         try {
           await db.update(
             'questions',
