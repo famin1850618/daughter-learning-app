@@ -14,11 +14,14 @@
 | T25 DB v14 迁移：12 batch + 新 chapter | pending | - | database_helper.dart 升 v14；UPDATE 12 个 cron AI batch source 加 _deprecated；不动 chapter/type/KP |
 | T26 curriculum_seed.dart 加 22 chapter | pending | - | 英语 16 (V/G/R/L × 4 grade) + 数学/语文 各 2 (小升初/中考综合) + 物理/化学 各 1 (中考综合) |
 | T27 PET R1 200 题 chapter 重映射 | pending | - | 脚本：每题 chapter 从 "PET" 改为 KP fullPath 第一段。双写 batch JSON |
-| T28 写 .realpaper-spec.md | pending | - | 8 步 pipeline + 命名规则 + 题型/难度/KP/主观题/图片纪律 + 失败回滚 |
-| T29 写 tools/realpaper/*.py | pending | - | extract.py + segment.py + match_ans.py + validate.py + process.sh |
-| T30 初始化 docs 文件骨架 | pending | - | manifest.json + kp_pending.json + 6 份 observations.md |
-| T31 Stage 1 扫六下真题 | pending | - | ~/AI_Workspace/真题/六下/ 数学/语文 卷 |
+| T28 写 .realpaper-spec.md | ✅ completed | 2026-05-08 | 13 节完整规范，含图片纪律 |
+| T29 写 tools/realpaper/*.py | ✅ completed | 2026-05-08 | extract / segment / match_ans / validate / process.sh；validate.py 已测解析 555 KP + 180 chapter |
+| T30 初始化 docs 文件骨架 | ✅ completed | 2026-05-08 | manifest + kp_pending + 6 份 observations |
+| T31 Stage 1 扫六下真题 | ⏳ blocked（等 libreoffice 装） | - | ~/AI_Workspace/真题/六下/ 数学/语文 卷 |
 | T32 build APK + push | pending | - | flutter build apk --debug → planning_v3_9_x.apk → push |
+
+## V3.9.1 commit `b16c39d` 已 push
+- DB v14 + question_dao 过滤 + curriculum_seed 22 chapter + PET R1 重映射 + spec/scripts/observations
 
 ## 关键决策点（plan 已批准 2026-05-08）
 
