@@ -157,6 +157,8 @@ class QuestionUpdateService extends ChangeNotifier {
           options: (m['options'] as List?)?.cast<String>(),
           answer: m['answer'] as String,
           explanation: m['explanation'] as String?,
+          imageData: m['image'] as String?,
+          audioText: m['audio_text'] as String?,
           source: source,
         )).toList();
 

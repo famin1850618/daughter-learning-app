@@ -1,6 +1,9 @@
 import 'dart:async';
+import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 import '../utils/app_theme.dart';
 import '../models/subject.dart';
 import '../models/question.dart';
@@ -393,6 +396,17 @@ class _QuestionScreenState extends State<_QuestionScreen> {
             ]),
             const SizedBox(height: 12),
 
+            // 听力题播放按钮
+            if (q.audioText != null && q.audioText!.isNotEmpty)
+              _ListenButton(text: q.audioText!),
+
+            // 题目附图
+            if (q.imageData != null && q.imageData!.isNotEmpty) ...[
+              const SizedBox(height: 8),
+              _QuestionImage(data: q.imageData!),
+              const SizedBox(height: 8),
+            ],
+
             // 题目内容
             Container(
               width: double.infinity,
@@ -769,6 +783,103 @@ class _RewardSummaryCard extends StatelessWidget {
                     fontSize: 18, fontWeight: FontWeight.bold, color: color)),
           ]),
         ],
+      ),
+    );
+  }
+}
+
+// ── 题目附图（SVG 或 base64 image）───────────────
+class _QuestionImage extends StatelessWidget {
+  final String data;
+  const _QuestionImage({required this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    Widget child;
+    if (data.trimLeft().startsWith('<svg')) {
+      child = SvgPicture.string(
+        data,
+        height: 180,
+        fit: BoxFit.contain,
+        placeholderBuilder: (_) => const SizedBox(
+            height: 180,
+            child: Center(child: CircularProgressIndicator(strokeWidth: 2))),
+      );
+    } else if (data.startsWith('data:image/')) {
+      try {
+        final base64Str = data.split(',').last;
+        child = Image.memory(base64Decode(base64Str), height: 180, fit: BoxFit.contain);
+      } catch (_) {
+        child = const Text('图片加载失败', style: TextStyle(color: Colors.grey));
+      }
+    } else {
+      child = const Text('（无法识别的图片格式）', style: TextStyle(color: Colors.grey));
+    }
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(8),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(8),
+        border: Border.all(color: Colors.grey.shade200),
+      ),
+      child: child,
+    );
+  }
+}
+
+// ── 听力按钮（TTS 朗读 audioText）─────────────────
+class _ListenButton extends StatefulWidget {
+  final String text;
+  const _ListenButton({required this.text});
+
+  @override
+  State<_ListenButton> createState() => _ListenButtonState();
+}
+
+class _ListenButtonState extends State<_ListenButton> {
+  final _tts = FlutterTts();
+  bool _speaking = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _tts.setLanguage('en-US');
+    _tts.setSpeechRate(0.45);
+    _tts.setCompletionHandler(() {
+      if (mounted) setState(() => _speaking = false);
+    });
+  }
+
+  @override
+  void dispose() {
+    _tts.stop();
+    super.dispose();
+  }
+
+  Future<void> _toggle() async {
+    if (_speaking) {
+      await _tts.stop();
+      if (mounted) setState(() => _speaking = false);
+    } else {
+      setState(() => _speaking = true);
+      await _tts.speak(widget.text);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Align(
+      alignment: Alignment.centerLeft,
+      child: ElevatedButton.icon(
+        icon: Icon(_speaking ? Icons.stop : Icons.volume_up, size: 18),
+        label: Text(_speaking ? '停止' : '🔊 播放听力'),
+        style: ElevatedButton.styleFrom(
+          backgroundColor: AppTheme.primary.withOpacity(0.1),
+          foregroundColor: AppTheme.primary,
+          elevation: 0,
+        ),
+        onPressed: _toggle,
       ),
     );
   }

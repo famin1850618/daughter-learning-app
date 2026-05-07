@@ -21,11 +21,14 @@ import 'database/curriculum_seed.dart';
 import 'database/knowledge_point_dao.dart';
 import 'database/knowledge_points_seed.dart';
 
-/// V3.6 起内置题包路径（assets 首装兜底）
+/// 内置题包路径（assets 首装兜底）—— 历版累积，cron 扩题后追加
 const _bundledBatchAssets = [
   'assets/data/batches/batch_2026_05_06_g6_math.json',
   'assets/data/batches/batch_2026_05_06_g6_chinese.json',
   'assets/data/batches/batch_2026_05_06_g6_english.json',
+  'assets/data/batches/batch_2026_05_07_g6_math_r2.json',
+  'assets/data/batches/batch_2026_05_07_g6_chinese_r2.json',
+  'assets/data/batches/batch_2026_05_07_g6_english_r2.json',
 ];
 
 void main() async {

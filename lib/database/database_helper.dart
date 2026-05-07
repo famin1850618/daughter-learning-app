@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 9,
+      version: 10,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
@@ -181,6 +181,15 @@ class DatabaseHelper {
         )
       ''');
     }
+    if (oldVersion < 10) {
+      // v10: 题目支持图形（SVG/base64 image）和听力朗读文本，V3.7.6
+      try {
+        await db.execute('ALTER TABLE questions ADD COLUMN image_data TEXT');
+      } catch (_) {/* 已存在 */}
+      try {
+        await db.execute('ALTER TABLE questions ADD COLUMN audio_text TEXT');
+      } catch (_) {/* 已存在 */}
+    }
   }
 
   Future<void> _createAllTables(Database db) async {
@@ -238,6 +247,8 @@ class DatabaseHelper {
         options TEXT,
         answer TEXT NOT NULL,
         explanation TEXT,
+        image_data TEXT,
+        audio_text TEXT,
         source TEXT DEFAULT 'pregenerated',
         user_id TEXT DEFAULT 'local'
       )

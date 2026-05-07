@@ -50,6 +50,10 @@ class Question {
   final List<String>? options;
   final String answer;
   final String? explanation;
+  /// 题目附图：SVG 字符串（以 `<svg` 开头）或 data URL（如 `data:image/png;base64,...`）。null 表示无图。
+  final String? imageData;
+  /// 听力题朗读原文（设备 TTS 朗读，仅英语题用）。null 表示无听力。
+  final String? audioText;
   final String source;
 
   const Question({
@@ -64,6 +68,8 @@ class Question {
     this.options,
     required this.answer,
     this.explanation,
+    this.imageData,
+    this.audioText,
     this.source = 'pregenerated',
   });
 
@@ -84,6 +90,8 @@ class Question {
       'options': options?.join('||'),
       'answer': answer,
       'explanation': explanation,
+      'image_data': imageData,
+      'audio_text': audioText,
       'source': source,
     };
   }
@@ -102,6 +110,8 @@ class Question {
       options: optionsRaw?.split('||'),
       answer: map['answer'] as String,
       explanation: map['explanation'] as String?,
+      imageData: map['image_data'] as String?,
+      audioText: map['audio_text'] as String?,
       source: (map['source'] as String?) ?? 'pregenerated',
     );
   }
