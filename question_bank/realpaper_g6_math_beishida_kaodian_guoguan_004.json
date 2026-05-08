@@ -40,12 +40,12 @@
     {
       "chapter": "总复习",
       "knowledge_point": "总复习/图形与几何综合",
-      "content": "用一根长 10.28 m 的绳子围成一个半圆（半径 2 m），这个半圆的面积是(    )m²。",
+      "content": "用一根长 10.28 m 的绳子围成一个半圆，这个半圆的半径是(    )m，面积是(    )m²。请依次填 2 个答案，用逗号分隔（$\\pi$取3.14）。",
       "type": "fill",
       "difficulty": "medium",
-      "answer": "6.28",
-      "alt_answers": "6.28m²|||6.28平方米|||6.28m2",
-      "explanation": "半圆面积 = $\\pi r^{2}\\div$2 = 3.14$\\times$4$\\div$2 = 6.28 m²。",
+      "answer": "2,6.28",
+      "alt_answers": "2m,6.28m²|||2,6.28m²|||2m,6.28",
+      "explanation": "半圆周长 = $\\pi r$ + 2r = (3.14+2)$\\times$r = 5.14r = 10.28，r = 2 m。半圆面积 = $\\pi r^{2}\\div$2 = 3.14$\\times$4$\\div$2 = 6.28 m²。",
       "round": 2
     },
     {

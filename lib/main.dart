@@ -37,6 +37,9 @@ import 'database/cambridge_english_kp_seed.dart';
 const _bundledBatchAssets = [
   // V3.9 Cambridge English (PET / FCE / CAE Foundation)
   'assets/data/batches/batch_2026_05_07_g6_english_pet_r1.json',
+  'assets/data/batches/batch_2026_05_08_g6_english_pet_r2.json',
+  'assets/data/batches/batch_2026_05_08_g6_english_pet_r3.json',
+  'assets/data/batches/batch_2026_05_08_g6_english_pet_r4.json',
   // V3.10 真题入库后陆续追加
   'assets/data/batches/realpaper_g6_math_beishida_d1_guoguan_001.json',
   'assets/data/batches/realpaper_g6_math_beishida_d2_guoguan_001.json',

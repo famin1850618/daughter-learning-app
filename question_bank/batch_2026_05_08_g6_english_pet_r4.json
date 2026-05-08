@@ -1,0 +1,3627 @@
+{
+  "source": "batch_2026_05_08_g6_english_pet_r4",
+  "subject": "english",
+  "grade": 6,
+  "knowledge_points_added": [],
+  "questions": [
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Family & Relationships",
+      "content": "After her parents' divorce, Maria continues to maintain a close ____ with both sides of the family, even on awkward holidays.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. rapport",
+        "B. rapport-building",
+        "C. rappers",
+        "D. raptor"
+      ],
+      "answer": "A",
+      "explanation": "rapport = 关系，融洽（B2 词）；指与某人良好的关系。其余三项不是真实词或拼写错误。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Family & Relationships",
+      "content": "Although Lily and her cousin live on different continents, they share a strong family ____ and call each other every weekend.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. bond",
+        "B. band",
+        "C. bound",
+        "D. bind"
+      ],
+      "answer": "A",
+      "explanation": "bond = 纽带、深厚的情感联系（B2）。band 是乐队/带子，bound 是边界/必定，bind 是动词，均不合搭配。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Family & Relationships",
+      "content": "Their relationship became ____ after the inheritance dispute; they have not spoken for two years.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. estranged",
+        "B. stranger",
+        "C. strange",
+        "D. strangled"
+      ],
+      "answer": "A",
+      "explanation": "estranged = 疏远的，专门描述家人/伴侣关系破裂（B2）。stranger 是名词陌生人；strange 形容奇怪；strangled 是被勒住，全错。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Travel & Holidays",
+      "content": "The travel agent advised us to book ____ to avoid the peak-season prices.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. well in advance",
+        "B. good in advance",
+        "C. early on time",
+        "D. very on time"
+      ],
+      "answer": "A",
+      "explanation": "well in advance = 提前许久（固定搭配）。good in advance / early on time / very on time 均不是英语习惯说法，typical PET-FCE bridge collocation 题。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Travel & Holidays",
+      "content": "The flight was ____ for three hours due to bad weather, so passengers had to wait at the gate.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. delayed",
+        "B. late",
+        "C. lasted",
+        "D. waited"
+      ],
+      "answer": "A",
+      "explanation": "delayed (passive) = 被推迟（B1+ 高频）。late 是形容词不能+for 时长；lasted 是动词不及物用法不对；waited 主语应该是人。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Travel & Holidays",
+      "content": "Make sure your ____ is valid for at least six months before you apply for an international visa.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. passport",
+        "B. passing",
+        "C. passenger",
+        "D. password"
+      ],
+      "answer": "A",
+      "explanation": "passport = 护照（旅行词）。passing 是经过；passenger 是乘客；password 是密码，全是 form-similar 干扰。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/School & Study",
+      "content": "Her ____ analysis of the historical document impressed the professor and earned her a top grade.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. thorough",
+        "B. through",
+        "C. though",
+        "D. thought"
+      ],
+      "answer": "A",
+      "explanation": "thorough /ˈθʌrə/ = 彻底的，形容分析深入（B2）。through 介词穿过；though 副词/连词；thought 是想/思想。同形干扰。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/School & Study",
+      "content": "The teacher emphasised the importance of ____ when writing academic essays — every claim must be supported by evidence.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. rigour",
+        "B. rigid",
+        "C. rigorous",
+        "D. rig"
+      ],
+      "answer": "A",
+      "explanation": "rigour (n.) = 严谨（B2 抽象名词）。rigid 是形容词僵硬；rigorous 是形容词严格的；rig 是装备/操控。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/School & Study",
+      "content": "After failing the exam twice, he decided to ____ to a tutor to help him prepare for the retake.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. turn",
+        "B. turn over",
+        "C. turn off",
+        "D. turn into"
+      ],
+      "answer": "A",
+      "explanation": "turn to (sb) = 求助于某人（PET-FCE 高频 phrasal verb）。turn over = 翻转；turn off = 关闭；turn into = 变成。意思都不对。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Food & Daily Life",
+      "content": "The restaurant is famous for its ____ menu — every dish is made with locally grown organic ingredients.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. seasonal",
+        "B. seasoning",
+        "C. season",
+        "D. seasoned"
+      ],
+      "answer": "A",
+      "explanation": "seasonal = 应季的（描述菜单）。seasoning 是调料名词；season 是名词季节；seasoned (adj) 是有经验的或腌制过的，但搭配 menu 不自然。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Food & Daily Life",
+      "content": "These supplements are rich in ____ that help maintain healthy skin and a strong immune system.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. nutrients",
+        "B. nutrition",
+        "C. nutritional",
+        "D. nutritious"
+      ],
+      "answer": "A",
+      "explanation": "nutrients (n., 复数) = 营养素（具体物质）。nutrition (n.) 是抽象的营养概念；nutritional / nutritious 是形容词，不能作 of 后宾语。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Hobbies & Leisure",
+      "content": "Photography became more than a hobby for him — it gradually ____ into a full-time career.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. evolved",
+        "B. envied",
+        "C. envisaged",
+        "D. envoyed"
+      ],
+      "answer": "A",
+      "explanation": "evolve into = 演变为（B2）。envy 是嫉妒（不及物形不接 into）；envisage 是设想；envoyed 不是动词。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Hobbies & Leisure",
+      "content": "Whenever she has free time, she ____ herself in painting and forgets about everything else.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. immerses",
+        "B. imitates",
+        "C. impacts",
+        "D. impresses"
+      ],
+      "answer": "A",
+      "explanation": "immerse oneself in = 沉浸于（B2 reflexive）。imitate 是模仿；impact 是影响；impress 是给…留下印象。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Shopping & Money",
+      "content": "The shop offers a full ____ within 30 days if the product turns out to be defective.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. refund",
+        "B. refer",
+        "C. refuse",
+        "D. refurbish"
+      ],
+      "answer": "A",
+      "explanation": "refund = 退款（B1+ 商务词）。refer 是参考；refuse 是拒绝；refurbish 是翻新。同前缀 form-similar 干扰。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Shopping & Money",
+      "content": "I cannot ____ to buy that designer bag this month; my rent has already taken most of my salary.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. afford",
+        "B. effort",
+        "C. afford to",
+        "D. afford in"
+      ],
+      "answer": "A",
+      "explanation": "can afford to do = 买得起（虽然题目里 'afford' 直接接 to-V 是常见考点；选项 A 'afford' 在 'cannot afford to buy' 中代表 'afford' 后接 'to buy'，A 正确）。C 重复 to 与原句 to 冲突；D afford in 不存在。'effort' 是名词不接 to 不定式动作。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Word Choice (Cloze)",
+      "content": "The committee took the criticism into ____ before finalising its proposal.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. account",
+        "B. accord",
+        "C. accuracy",
+        "D. acceptance"
+      ],
+      "answer": "A",
+      "explanation": "take sth into account = 考虑（FCE 高频 collocation）。accord 是协议；accuracy 是准确度；acceptance 是接受 — 都不能与 take into 搭配成此意。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Word Choice (Cloze)",
+      "content": "Her résumé does not really ____ to the requirements of this senior position.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. measure up",
+        "B. match up",
+        "C. size up",
+        "D. weigh up"
+      ],
+      "answer": "A",
+      "explanation": "measure up to = 达到（标准、要求）。match up 通常匹配某物；size up 是评估某人/形势；weigh up 是权衡。同义 phrasal verb 辨析。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Word Choice (Cloze)",
+      "content": "The new evidence sheds ____ on the mysterious disappearance of the documents.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. light",
+        "B. shine",
+        "C. sun",
+        "D. fire"
+      ],
+      "answer": "A",
+      "explanation": "shed light on = 阐明、揭示（FCE 固定搭配）。其余名词与动词 shed 不构成习语。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Word Choice (Cloze)",
+      "content": "It would be ____ to assume that the project will finish on time without any delay.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. naïve",
+        "B. negative",
+        "C. neat",
+        "D. needy"
+      ],
+      "answer": "A",
+      "explanation": "naïve = 天真的（FCE 抽象 adj，与 to assume 搭配）。negative 是负面的；neat 是整洁；needy 是贫困的。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Word Choice (Cloze)",
+      "content": "After hours of debate, the board members finally reached a ____ decision.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. unanimous",
+        "B. uniform",
+        "C. unique",
+        "D. unilateral"
+      ],
+      "answer": "A",
+      "explanation": "unanimous = 全票通过的（B2 collocation 'unanimous decision/vote'）。uniform 是统一的（形式）；unique 是独特的；unilateral 是单方面的，正反相反。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Work & Career",
+      "content": "Despite long hours, she remained ____ to delivering high-quality work for her team.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. committed",
+        "B. commenced",
+        "C. commented",
+        "D. commissioned"
+      ],
+      "answer": "A",
+      "explanation": "be committed to (doing) = 致力于（FCE 高频）。commence 是开始；comment 是评论；commission 是委托。同前缀 form-similar 干扰。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Work & Career",
+      "content": "The company's recent decision to ____ its overseas branch surprised many employees.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. downsize",
+        "B. downturn",
+        "C. download",
+        "D. downgrade"
+      ],
+      "answer": "A",
+      "explanation": "downsize = 裁员/缩小规模（FCE 商务词）。downturn 是经济下滑名词；download 是下载；downgrade 是降级。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Technology & Digital",
+      "content": "Modern smartphones are ____ with advanced facial-recognition systems for added security.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. equipped",
+        "B. equated",
+        "C. equivalent",
+        "D. equivocal"
+      ],
+      "answer": "A",
+      "explanation": "be equipped with = 配备（FCE 高频）。equate 是等同；equivalent 是相等的；equivocal 是模棱两可的。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Technology & Digital",
+      "content": "The new app allows users to ____ their daily steps and monitor their fitness goals.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. track",
+        "B. trace",
+        "C. trail",
+        "D. trick"
+      ],
+      "answer": "A",
+      "explanation": "track = 追踪（持续、可视）— 与 fitness 搭配最自然。trace 是查询源头；trail 是追踪线索；trick 是欺骗。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Health & Fitness",
+      "content": "After three weeks of intensive training, she experienced a noticeable ____ in her stamina.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. boost",
+        "B. boast",
+        "C. burst",
+        "D. blast"
+      ],
+      "answer": "A",
+      "explanation": "boost = 提升（与 stamina/energy 搭配）。boast 是吹嘘；burst 是爆发；blast 是猛烈攻击/响声。form-similar 一字之差。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Health & Fitness",
+      "content": "The doctor advised him to ____ on processed food and eat more fresh vegetables.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. cut down",
+        "B. cut out",
+        "C. cut off",
+        "D. cut up"
+      ],
+      "answer": "A",
+      "explanation": "cut down on = 减少摄入（FCE phrasal verb）。cut out = 完全戒除（更强但 'cut out on' 不对，而是 'cut out X'）；cut off = 切断；cut up = 切碎。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Environment & Nature",
+      "content": "Many endangered species are on the ____ of extinction unless conservation efforts succeed.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. brink",
+        "B. break",
+        "C. branch",
+        "D. brand"
+      ],
+      "answer": "A",
+      "explanation": "on the brink of = 处于…的边缘（FCE 习语，常与 extinction/disaster 搭配）。break/branch/brand 全错。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Environment & Nature",
+      "content": "Plastic waste is having a ____ impact on marine life around the world.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. devastating",
+        "B. delicate",
+        "C. delightful",
+        "D. delicious"
+      ],
+      "answer": "A",
+      "explanation": "devastating = 毁灭性的（与 impact 搭配，B2）。delicate 是精致的；delightful 是令人愉快的；delicious 是美味的。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Media & Entertainment",
+      "content": "The documentary ____ a thought-provoking debate about social media addiction.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. sparked",
+        "B. sparkled",
+        "C. spread",
+        "D. spelled"
+      ],
+      "answer": "A",
+      "explanation": "sparked a debate = 引发辩论（FCE 高频 collocation）。sparkle 是闪烁；spread 是扩散（不接 debate as 自动词）；spelled 是拼写。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/City & Community",
+      "content": "The new park is intended to ____ a sense of community among local residents.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. foster",
+        "B. form",
+        "C. force",
+        "D. forge"
+      ],
+      "answer": "A",
+      "explanation": "foster a sense of = 培养某种感觉（B2 抽象搭配）。form 是形成（具体）；force 是强迫；forge 是锻造（forge bonds 也行但与 a sense of 不自然）。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Abstract Concepts",
+      "content": "The novel raises profound questions about the ____ of human existence in a digital age.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. essence",
+        "B. absence",
+        "C. audience",
+        "D. evidence"
+      ],
+      "answer": "A",
+      "explanation": "essence = 本质（C1 抽象名词）。absence 是缺席；audience 是观众；evidence 是证据。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Abstract Concepts",
+      "content": "The philosopher argued that true ____ cannot be achieved without freedom of thought.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. enlightenment",
+        "B. entitlement",
+        "C. entanglement",
+        "D. enrolment"
+      ],
+      "answer": "A",
+      "explanation": "enlightenment = 启蒙、开悟（C1 抽象）。entitlement 是权利；entanglement 是纠缠；enrolment 是注册。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Social Issues",
+      "content": "The government has been criticised for failing to address the widening ____ between rich and poor.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. disparity",
+        "B. departure",
+        "C. dispute",
+        "D. display"
+      ],
+      "answer": "A",
+      "explanation": "disparity = 不平等差距（C1 social-issues 词）。departure 是离开；dispute 是争论；display 是展示。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Social Issues",
+      "content": "Many cities have introduced new policies to combat ____ and provide shelter for those in need.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. homelessness",
+        "B. homeland",
+        "C. homeward",
+        "D. homely"
+      ],
+      "answer": "A",
+      "explanation": "homelessness = 无家可归现象（C1 抽象社会词）。homeland 是祖国；homeward 是向家方向 adv；homely 是朴实的。",
+      "round": 4
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Tech Deepening (AI / Privacy / Automation)",
+      "content": "AI systems can ____ vast amounts of data far more quickly than any human researcher could.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. process",
+        "B. progress",
+        "C. proceed",
+        "D. produce"
+      ],
+      "answer": "A",
+      "explanation": "process data = 处理数据（CAE tech 高频搭配）。progress 是进步（不及物，不接 data）；proceed 是继续；produce 是生产。pro- 前缀 form-similar 陷阱。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Conditionals 0 & 1",
+      "content": "____ you finish the report by Friday, the manager will not be pleased.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Unless",
+        "B. If",
+        "C. Whether",
+        "D. Provided"
+      ],
+      "answer": "A",
+      "explanation": "unless = if not（条件句 type 1 的否定形式）。'If you finish' 表示 if 完成 — 与后半句逻辑相反；whether 表示是否；provided that 表条件但缺 that，而且语义为 '只要…就' 与原句相反。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Conditionals 0 & 1",
+      "content": "If the system ____ a critical error, it automatically sends an alert to the technical team.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. detects",
+        "B. will detect",
+        "C. detected",
+        "D. is detecting"
+      ],
+      "answer": "A",
+      "explanation": "Zero conditional 一般规律：If + Present Simple, Present Simple. detects 与主语 system 主谓一致。其余形式破坏 zero conditional 结构。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Modals (can/could/should/might/must)",
+      "content": "She is not at her desk and the lights are off — she ____ have already left for the day.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. must",
+        "B. can",
+        "C. should",
+        "D. would"
+      ],
+      "answer": "A",
+      "explanation": "must have done 表示对过去事实的较强推测。'can have done' 通常用于否定/疑问；'should have done' 表示本应该（含责备）；'would have' 是虚拟语气。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Modals (can/could/should/might/must)",
+      "content": "You ____ have told me earlier — I made plans for tonight without knowing about the meeting.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. could",
+        "B. must",
+        "C. may",
+        "D. can"
+      ],
+      "answer": "A",
+      "explanation": "could have told 表示遗憾/责备：'你本来可以告诉我'。must have told 是表强烈推测；may have 表轻微可能；can have 通常仅疑问/否定。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Comparatives & Superlatives",
+      "content": "The more you practise, ____ you will become at solving these problems.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. the better",
+        "B. better",
+        "C. the best",
+        "D. best"
+      ],
+      "answer": "A",
+      "explanation": "'the more..., the more/better...' 双比较结构（the + 比较级…the + 比较级…）。其余形式破坏结构。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Comparatives & Superlatives",
+      "content": "Of all the candidates I have interviewed today, she is by ____ the most qualified.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. far",
+        "B. much",
+        "C. more",
+        "D. very"
+      ],
+      "answer": "A",
+      "explanation": "by far + 最高级 = 表强调（远远是…）。'much' 修饰比较级 (much better) 但不直接修饰最高级 'most'；'more' 是比较级形式；'very' 不与 by 连用。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Past Continuous",
+      "content": "While I ____ a shower, the postman delivered a parcel that I had been expecting for weeks.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. was having",
+        "B. had",
+        "C. have had",
+        "D. have been having"
+      ],
+      "answer": "A",
+      "explanation": "Past Continuous (was having) 表示过去某动作进行中被另一短动作 (delivered) 打断 — 经典 'while X-ing, Y happened'。had 是 simple past；其余两项是 perfect。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Present Perfect (basic)",
+      "content": "I cannot believe how much this neighbourhood ____ since I moved away ten years ago.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. has changed",
+        "B. changed",
+        "C. is changing",
+        "D. had changed"
+      ],
+      "answer": "A",
+      "explanation": "Present Perfect 'has changed' 强调从过去到现在的变化结果，与 'since + 过去时间' 搭配。simple past 不能与 since + ago 一起；present continuous 不表完成；past perfect 需更早参考点。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Present Perfect (basic)",
+      "content": "____ you ever ____ to the new restaurant downtown? I heard the desserts are amazing.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Have / been",
+        "B. Did / go",
+        "C. Are / going",
+        "D. Have / gone"
+      ],
+      "answer": "A",
+      "explanation": "Have you ever been to + 地方 = 生活经验（你去过…吗？）。'Have you ever gone to' 通常表示已经走了未回来；其余两个时态错。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Present Perfect Continuous",
+      "content": "She ____ for the same company for fifteen years before she finally decided to start her own business.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. had been working",
+        "B. was working",
+        "C. has been working",
+        "D. worked"
+      ],
+      "answer": "A",
+      "explanation": "Past Perfect Continuous (had been working) 表示在另一过去动作 (decided) 之前持续了一段时间。Present Perfect Continuous 'has been' 主参考点是现在，与 'before she decided'（过去）冲突。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Present Perfect Continuous",
+      "content": "My eyes are tired because I ____ at the screen all morning without a break.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. have been staring",
+        "B. stared",
+        "C. am staring",
+        "D. had stared"
+      ],
+      "answer": "A",
+      "explanation": "Present Perfect Continuous 强调持续到现在的动作产生了现在的结果（眼睛累）。simple past 切断与现在的联系；continuous 仅描述当前；past perfect 缺过去参考点。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Present Perfect Continuous",
+      "content": "How long ____ that book? I noticed you started it last month.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. have you been reading",
+        "B. did you read",
+        "C. are you reading",
+        "D. have you read"
+      ],
+      "answer": "A",
+      "explanation": "持续动作 'How long have you been V-ing' (是否还在进行)。'have you read' 询问完成度而非过程；其余时态错。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Past Perfect",
+      "content": "By the time the rescue team arrived, the climbers ____ for over six hours in freezing temperatures.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. had been waiting",
+        "B. were waiting",
+        "C. have been waiting",
+        "D. waited"
+      ],
+      "answer": "A",
+      "explanation": "Past Perfect Continuous (had been V-ing) 表示在另一过去动作（arrived）之前持续了一段时间。Past Continuous 仅描述同时；present perfect 不与过去时间一起；simple past 不强调持续。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Past Perfect",
+      "content": "She realised she ____ her keys in the office, so she had to take a taxi back to retrieve them.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. had left",
+        "B. left",
+        "C. has left",
+        "D. was leaving"
+      ],
+      "answer": "A",
+      "explanation": "Past Perfect (had left) 表示在 'realised' 之前已发生的动作。simple past 难以表先后；present perfect 与过去时间不符；past continuous 表进行。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Past Perfect",
+      "content": "Until that morning, I ____ such a stunning sunrise over the mountains.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. had never seen",
+        "B. have never seen",
+        "C. never saw",
+        "D. was never seeing"
+      ],
+      "answer": "A",
+      "explanation": "Past Perfect (had never seen) 表示在 'that morning' 之前的所有时间未曾见过。'have never seen' 现在完成不能与 'until that morning' 配；simple past 错时序；continuous 罕见。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Past Perfect Continuous",
+      "content": "The garden was a mess because nobody ____ care of it for several months.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. had been taking",
+        "B. took",
+        "C. was taking",
+        "D. has been taking"
+      ],
+      "answer": "A",
+      "explanation": "Past Perfect Continuous (had been taking care) 表示在过去时间点之前持续多月没人照看 — 与结果 'was a mess' 搭配。simple past 不强调持续；past continuous 描述当时；present perfect 与过去时态不符。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Past Perfect Continuous",
+      "content": "When the police finally caught him, he ____ from the law for over two years.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. had been hiding",
+        "B. was hiding",
+        "C. hid",
+        "D. has been hiding"
+      ],
+      "answer": "A",
+      "explanation": "Past Perfect Continuous 强调过去某时点之前持续多年的动作。'had been hiding' 与 'for over two years' 搭配最佳。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Conditionals 2 / 3 / Mixed",
+      "content": "If I ____ harder for the entrance exam, I would be studying at a top university now.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. had studied",
+        "B. studied",
+        "C. would study",
+        "D. was studying"
+      ],
+      "answer": "A",
+      "explanation": "Mixed conditional：过去未做（had + p.p.）→ 影响现在（would be）。'studied' 是 type 2（同时假设），但因主句 'now' 现在结果且条件是过去，必须用 type 3 在 if 子句。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Conditionals 2 / 3 / Mixed",
+      "content": "If she ____ the meeting, she would have known about the new policy changes.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. had attended",
+        "B. attended",
+        "C. would attend",
+        "D. had been attending"
+      ],
+      "answer": "A",
+      "explanation": "Type 3 conditional：If + had + p.p., would have + p.p.（与过去事实相反）。simple past 是 type 2；其余形式错。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Conditionals 2 / 3 / Mixed",
+      "content": "If I were you, I ____ that suspicious-looking email before opening any attachments.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. would delete",
+        "B. will delete",
+        "C. would have deleted",
+        "D. delete"
+      ],
+      "answer": "A",
+      "explanation": "Type 2 conditional：If + were/Verb-ed, would + V（与现在事实相反）。'will' 是 type 1；'would have deleted' 是 type 3。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Conditionals 2 / 3 / Mixed",
+      "content": "Had she known about the traffic, she ____ an earlier train.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. would have caught",
+        "B. would catch",
+        "C. had caught",
+        "D. will catch"
+      ],
+      "answer": "A",
+      "explanation": "Inverted type 3 conditional：'Had + S + p.p.' = 'If she had known'。主句 would have + p.p.。其余时态破坏 type 3 结构。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Modals Perfect (could have / should have / must have)",
+      "content": "The lights are on but no one is answering the door — they ____ home and forgotten about our visit.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. must have gone",
+        "B. should have gone",
+        "C. could go",
+        "D. may go"
+      ],
+      "answer": "A",
+      "explanation": "must have + p.p. = 强烈推测过去（一定已经…）。'should have gone' 表本应该；'could go' 是现在能力；'may go' 是当下推测。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Modals Perfect (could have / should have / must have)",
+      "content": "You ____ told me about the meeting earlier — I had already accepted another invitation.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. should have",
+        "B. must have",
+        "C. would have",
+        "D. may have"
+      ],
+      "answer": "A",
+      "explanation": "should have + p.p. = 本应该（带责备）。must 表强烈推测；would have 表虚拟；may have 表轻微推测。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Modals Perfect (could have / should have / must have)",
+      "content": "She ____ won the competition if she had practised more, but she did not put in enough effort.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. could have",
+        "B. must have",
+        "C. may have",
+        "D. would have to"
+      ],
+      "answer": "A",
+      "explanation": "could have + p.p. 在 type-3 主句中表示 '本来可以但没有做到'。'must have' 表必然；'may have' 表轻微可能；'would have to' 是不得不。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Passive (all tenses)",
+      "content": "The new bridge ____ before next summer, according to the construction company.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. will have been completed",
+        "B. will complete",
+        "C. has completed",
+        "D. completes"
+      ],
+      "answer": "A",
+      "explanation": "Future Perfect Passive: will have been + p.p. — '在 next summer 之前会被建好'。其余形式或主动或时态错。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Passive (all tenses)",
+      "content": "While the documents ____ , the meeting cannot proceed.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. are being prepared",
+        "B. prepare",
+        "C. are preparing",
+        "D. have prepared"
+      ],
+      "answer": "A",
+      "explanation": "Present Continuous Passive: are being + p.p.（文件正在被准备）。'prepare' 是主动动词；'are preparing' 是主动进行；'have prepared' 主动完成。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Passive (all tenses)",
+      "content": "By the time we arrived at the cinema, the film ____ for almost twenty minutes.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. had been showing",
+        "B. had been shown",
+        "C. was showing",
+        "D. was shown"
+      ],
+      "answer": "A",
+      "explanation": "电影 '在放映' (主动持续) 用 had been showing — 注意 'show' 在表示 '上映' 时常用主动 (the film was showing); for + 时长 + past perfect cont。'had been shown' 是被动完成（强调被放映过几次），不符语境持续。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Passive (all tenses)",
+      "content": "Several scientific papers ____ on this topic over the past decade.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. have been published",
+        "B. published",
+        "C. have published",
+        "D. are publishing"
+      ],
+      "answer": "A",
+      "explanation": "Present Perfect Passive: have been + p.p.（论文被发表）— 'over the past decade' 与现在完成搭配。其余主动或时态错。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Reported Speech (all tenses & verbs)",
+      "content": "He said, 'I will call you tomorrow.' → He said he ____ me ____.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. would call / the next day",
+        "B. will call / tomorrow",
+        "C. called / the next day",
+        "D. would have called / tomorrow"
+      ],
+      "answer": "A",
+      "explanation": "Reported speech 时态后移：will → would；时间状语 tomorrow → the next day / the following day。其余形式至少一处错。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Reported Speech (all tenses & verbs)",
+      "content": "She asked, 'Are you coming to the party?' → She asked ____.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. if I was coming to the party",
+        "B. if was I coming to the party",
+        "C. if am I coming to the party",
+        "D. that I was coming to the party"
+      ],
+      "answer": "A",
+      "explanation": "间接一般疑问句结构：ask + if + S + V（陈述语序，时态后移）。其余结构破坏陈述语序或缺 if。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Reported Speech (all tenses & verbs)",
+      "content": "'Don't open the box,' he warned her. → He warned her ____ the box.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. not to open",
+        "B. to not open",
+        "C. do not open",
+        "D. she not opens"
+      ],
+      "answer": "A",
+      "explanation": "warn / tell sb (not) to do — 否定不定式：not to + V，否定 not 在 to 前。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Reported Speech (all tenses & verbs)",
+      "content": "He admitted, 'I have made a mistake.' → He admitted ____ a mistake.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. having made",
+        "B. to make",
+        "C. that he had made it",
+        "D. make"
+      ],
+      "answer": "A",
+      "explanation": "admit + V-ing 或 admit + that + 句。'admitted having made' 是 admit + perfect gerund 表过去动作。'to make' 错；'that he had made it' 多了 it；'make' 缺时态。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Relative Clauses (defining / non-defining)",
+      "content": "The novel, ____ won the Booker Prize last year, has been translated into 30 languages.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. which",
+        "B. that",
+        "C. what",
+        "D. where"
+      ],
+      "answer": "A",
+      "explanation": "非限定性定语从句修饰 specific 名词，必须用 which (不能用 that)。what 不引导定语从句；where 修饰地点。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Relative Clauses (defining / non-defining)",
+      "content": "Do you remember the woman ____ husband works at the hospital?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. whose",
+        "B. who",
+        "C. which",
+        "D. whom"
+      ],
+      "answer": "A",
+      "explanation": "whose 表示所属（这位女士的丈夫…）。who/whom 是主格/宾格；which 不修饰人。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Relative Clauses (defining / non-defining)",
+      "content": "This is the café ____ we first met five years ago.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. where",
+        "B. which",
+        "C. that",
+        "D. when"
+      ],
+      "answer": "A",
+      "explanation": "where 引导限定地点定语从句（先行词 café 是地点）。which/that 后需在子句中作主/宾语 — 此句 met 已不缺成分；when 引导时间。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Linking Words (although / despite / however / whereas)",
+      "content": "____ working extra hours every week, he still failed to meet the deadline.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Despite",
+        "B. Although",
+        "C. However",
+        "D. Whereas"
+      ],
+      "answer": "A",
+      "explanation": "Despite + V-ing / N (介词)。Although + 句；However 是副词；Whereas 引导对比句。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Linking Words (although / despite / however / whereas)",
+      "content": "The first applicant has more experience; ____ , the second seems more enthusiastic.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. however",
+        "B. despite",
+        "C. although",
+        "D. whereas"
+      ],
+      "answer": "A",
+      "explanation": "however 在两句之间用，作副词，置于句首并以逗号隔开。despite 是介词；although 是连词不能独立断句；whereas 通常做状语从句连词。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Linking Words (although / despite / however / whereas)",
+      "content": "He prefers tea, ____ his sister cannot start her morning without coffee.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. whereas",
+        "B. despite",
+        "C. although",
+        "D. however"
+      ],
+      "answer": "A",
+      "explanation": "whereas = 然而、相比之下（对比）。despite 是介词；although 表让步而非纯对比；however 在此位置语法不顺（need 句号或分号）。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Phrasal Verbs (high-frequency)",
+      "content": "We need to ____ the meeting because the manager has fallen ill.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. call off",
+        "B. call up",
+        "C. call out",
+        "D. call on"
+      ],
+      "answer": "A",
+      "explanation": "call off = 取消（FCE 高频）。call up 是打电话；call out 是大声叫；call on 是拜访 / 号召。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Phrasal Verbs (high-frequency)",
+      "content": "Could you ____ the new intern when she arrives tomorrow?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. show around",
+        "B. show off",
+        "C. show up",
+        "D. show in"
+      ],
+      "answer": "A",
+      "explanation": "show sb around = 带某人参观介绍。show off 是炫耀；show up 是露面；show in 是引导某人入内（较老）。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Phrasal Verbs (high-frequency)",
+      "content": "The salary is low, but the benefits more than ____ for it.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. make up",
+        "B. take up",
+        "C. set up",
+        "D. give up"
+      ],
+      "answer": "A",
+      "explanation": "make up for = 弥补（FCE 高频 phrasal verb）。take up 是占用；set up 是建立；give up 是放弃。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Future Perfect & Future Continuous",
+      "content": "By this time next year, I ____ in this city for over a decade.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. will have lived",
+        "B. will live",
+        "C. am living",
+        "D. have lived"
+      ],
+      "answer": "A",
+      "explanation": "Future Perfect: will have + p.p. — 'by this time next year' 与未来完成搭配。其余时态错或主语-时间不符。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Future Perfect & Future Continuous",
+      "content": "Don't call me at 8 pm tomorrow — I ____ a presentation to senior management.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. will be giving",
+        "B. will give",
+        "C. give",
+        "D. am giving"
+      ],
+      "answer": "A",
+      "explanation": "Future Continuous: will be + V-ing — 表示明天某具体时刻正在做某事。simple future 没强调进行性；present simple/cont 不指未来明日具体时刻。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Inversion (never / rarely / only when / hardly)",
+      "content": "____ have I encountered such a thoughtful and well-researched proposal.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Rarely",
+        "B. Rare",
+        "C. Hardly",
+        "D. Hard"
+      ],
+      "answer": "A",
+      "explanation": "Rarely 置于句首 → 主谓倒装 (have I encountered)。'Hardly' 也可句首倒装但通常 'Hardly had S done... when... '；'Rare/Hard' 是形容词不引导倒装。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Inversion (never / rarely / only when / hardly)",
+      "content": "____ did I realise the importance of saving until I lost my job.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Only then",
+        "B. Then only",
+        "C. Only that",
+        "D. Then I"
+      ],
+      "answer": "A",
+      "explanation": "Only + 时间状语置于句首 → 倒装：'Only then did I realise'。其余结构非标准倒装。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Subjunctive & Hypothetical Past",
+      "content": "The committee insisted that every applicant ____ a personal interview before the final decision.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. attend",
+        "B. attends",
+        "C. attended",
+        "D. will attend"
+      ],
+      "answer": "A",
+      "explanation": "Mandative subjunctive: insist that + S + (should) + V（动词原形）。'attends' 是 third-person -s；'attended' 是过去式；'will attend' 加 will 不符虚拟语气。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Cleft Sentences (It is X that... / What X is...)",
+      "content": "____ encouragement that helped her finish her dissertation, not pressure.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. It was her supervisor's",
+        "B. It was that her supervisor's",
+        "C. What was her supervisor's",
+        "D. Was her supervisor's"
+      ],
+      "answer": "A",
+      "explanation": "强调句结构：It was + 强调成分 + that + 句。其余三项破坏 cleft 结构。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Gerund vs Infinitive (verbs of preference)",
+      "content": "I really regret ____ to her without thinking; I should have stayed calm.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. speaking",
+        "B. to speak",
+        "C. having spoken",
+        "D. to have spoken"
+      ],
+      "answer": "A",
+      "explanation": "regret + V-ing = 后悔做过的事（speaking 表过去动作）。'regret to speak' = 遗憾地告诉（书面体）；'having spoken' 也表过去但 regret 习惯用 V-ing；'to have spoken' 不用于 regret。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Participle Clauses & Absolute Structures",
+      "content": "____ the contract carefully, she finally agreed to sign.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Having reviewed",
+        "B. Reviewing",
+        "C. Reviewed",
+        "D. To review"
+      ],
+      "answer": "A",
+      "explanation": "Perfect participle (Having + p.p.) 表示先后顺序：先审完，再签字。Reviewing 表示同时；Reviewed 是被动；To review 是不定式表目的。",
+      "round": 4
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Complex Conditionals (mixed tenses)",
+      "content": "If she ____ what was about to happen, she ____ the alarm bell immediately.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. had known / would have rung",
+        "B. knew / would ring",
+        "C. had known / would ring",
+        "D. would know / had rung"
+      ],
+      "answer": "A",
+      "explanation": "完整 type 3 mixed: If + had + p.p., would have + p.p.（过去与过去事实相反）。其他选项混杂 type 2 / type 3 不一致。",
+      "round": 4
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "The Hidden Cost of Convenience\n\nOnline shopping has transformed the way people buy almost everything, from groceries to furniture. According to a recent industry report, more than 70 percent of consumers in major cities now order at least one parcel a week, and many would struggle to imagine life without same-day delivery. On the surface, this seems like progress: shoppers save time, retailers reach a wider audience, and small businesses can sell internationally without ever opening a physical store.\n\nYet the convenience has a darker side. Each parcel takes a journey that begins long before the customer clicks 'pay'. Massive warehouses, often built on the edges of cities, run twenty-four hours a day. Workers there walk dozens of kilometres each shift, picking and packing items at a pace dictated by software rather than human judgment. Whistle-blowers have described how short toilet breaks, ranked productivity targets and short-term contracts combine to produce stress levels not previously associated with retail work.\n\nEnvironmental consequences are also harder to ignore. Although companies advertise 'eco-friendly' packaging, the carbon footprint of constant fast deliveries — frequently in half-empty vans — is significant. A study by an independent research group found that doorstep delivery of a single book can produce up to four times the emissions of a customer walking to a local bookshop. When customers return items they did not really want — a quarter of clothing purchases on average — those products are sometimes destroyed rather than restocked, simply because the cost of inspection is higher than the value of the item.\n\nThere are signs that consumers are beginning to think twice. Some now choose 'no-rush' delivery options, even when faster shipping is free. Others have started 'one-in-one-out' rules at home: a new purchase only enters the household if an old item leaves it. A small but vocal minority have committed to buying nothing new for a whole year, repairing or borrowing instead.\n\nCritics call such efforts symbolic at best. They argue that systemic change requires regulation, not individual willpower. Governments could, for example, introduce a small surcharge on every fast delivery to subsidise greener alternatives, or require clear labelling that shows the true environmental cost of each option. Without such measures, they warn, consumer guilt will simply become the next thing the industry markets to us — sustainability sold as another form of luxury.\n\nWhat seems certain is that the era of guilt-free clicking is ending. Whether the next stage of e-commerce is shaped by regulation, by individual choices, or — most likely — by some combination of the two, will determine whether convenience can be reconciled with the wider costs we are now beginning to count.\n\nQuestion 1: Which of the following best summarises the writer's main point?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Convenient online shopping carries hidden costs that consumers and regulators are starting to address.",
+        "B. Online shopping is more environmentally friendly than visiting local stores.",
+        "C. Most warehouse workers are satisfied with their working conditions despite the pace.",
+        "D. Government regulation has already eliminated the worst problems of e-commerce."
+      ],
+      "answer": "A",
+      "explanation": "全文围绕便利购物的隐藏代价（劳工、环境、退货）以及消费者与监管初步反应展开。B/C/D 与文中信息相反或被否定。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_001",
+      "group_order": 1
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Question 2: According to the article, what proportion of clothing items are returned by customers?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. About one in four",
+        "B. About half",
+        "C. More than 70 percent",
+        "D. Fewer than 10 percent"
+      ],
+      "answer": "A",
+      "explanation": "原文 'a quarter of clothing purchases on average' = 25% = one in four。70% 是订单频率，half/10% 都未提及。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_001",
+      "group_order": 2
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "Question 3: What does 'whistle-blowers' most likely refer to in paragraph 2?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Insiders who reveal misconduct",
+        "B. Police officers using whistles",
+        "C. Sports referees",
+        "D. Music performers"
+      ],
+      "answer": "A",
+      "explanation": "上下文（描述 'short toilet breaks, productivity targets'）说明这些人是从内部揭露问题的人。其余字面解释与语境不符。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_001",
+      "group_order": 3
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring author's stance",
+      "content": "Question 4: Which sentence best describes the writer's attitude in the final paragraph?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Cautiously optimistic that change is approaching, but unsure who will drive it.",
+        "B. Fully convinced that consumer choice alone will solve the problem.",
+        "C. Pessimistic that nothing significant will change in the foreseeable future.",
+        "D. Indifferent because the issue is too small to matter."
+      ],
+      "answer": "A",
+      "explanation": "末段 'What seems certain is that the era of guilt-free clicking is ending' 显示作者认为变化正在发生，但又用 'most likely some combination' 表示未确定推动者。整体谨慎乐观，符合 A。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_001",
+      "group_order": 4
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Identifying logical relationships",
+      "content": "Question 5: What logical role does paragraph 4 ('There are signs...') play in the article?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Introducing examples of consumer responses to the problems described earlier.",
+        "B. Providing the historical background of online shopping.",
+        "C. Refuting the criticisms made in paragraph 3.",
+        "D. Concluding the article with a final recommendation."
+      ],
+      "answer": "A",
+      "explanation": "段 4 列举消费者具体反应（'no-rush' / 'one-in-one-out' / 一年不买新品），承接段 2-3 的问题作为回应。B/C/D 不符段落功能。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_001",
+      "group_order": 5
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Identifying implied meaning",
+      "content": "The Quiet Revolution in Sleep Science\n\nFor decades, sleep was treated as a kind of biological down time — a passive state in which the brain simply switched off until the morning. Recent neuroscience has overturned that view almost completely. Far from being inactive, the sleeping brain is now understood to be one of the most metabolically demanding organs in the body, performing tasks that wakeful consciousness simply cannot.\n\nThe most striking discovery has come from work on the so-called glymphatic system, a kind of nightly cleaning service for the brain. During deep sleep, the spaces between brain cells widen, allowing cerebrospinal fluid to flow more freely and wash away toxic by-products that accumulate during the day. Among these by-products are proteins associated with Alzheimer's disease. Although the long-term link between sleep loss and dementia is still being mapped, several major studies have shown that even one night of poor sleep raises measurable levels of these proteins in the bloodstream.\n\nMemory consolidation, too, depends heavily on sleep. Researchers using brain imaging have shown that the patterns of neural firing during certain sleep stages closely mirror those produced earlier in the day during a learning task — as if the brain were rehearsing what it had just learned. Volunteers deprived of sleep after studying perform significantly worse on tests than those allowed to rest. The effect is so reliable that some educational researchers have called for school start times to be moved back, especially for adolescents whose internal clocks naturally run later.\n\nNot everyone is enthusiastic about every claim, however. Some sleep scientists worry that public messaging has become alarmist. Headlines suggesting that any deviation from a perfect eight hours leads to disaster, they argue, can themselves cause stress-related insomnia. The truth is more nuanced: total sleep need varies, with most adults thriving on between seven and nine hours, while a small minority genuinely function well on less. Quality, regularity and timing seem to matter at least as much as raw duration.\n\nWhat has united the field, though, is a sense that sleep deserves the same kind of public attention as diet or exercise. Workplaces are starting to experiment with later starts for shift workers, hospitals with quieter wards, and city councils with light-pollution rules in residential zones. Whether these changes will survive economic pressures remains to be seen. But the era when sleep could be skipped without consequence — celebrated, even, as a sign of dedication — is rapidly ending.\n\nQuestion 1: What does the writer imply about earlier views of sleep?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. They underestimated the brain's activity during the night.",
+        "B. They focused too much on memory consolidation.",
+        "C. They were largely correct except for one detail.",
+        "D. They were based on extensive imaging studies."
+      ],
+      "answer": "A",
+      "explanation": "段 1 'sleep was treated as ... passive ... switched off' 与现在 'one of the most metabolically demanding' 形成对比，暗示之前低估了大脑活跃度。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_002",
+      "group_order": 1
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Question 2: According to paragraph 2, what does the glymphatic system mainly do?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Removes harmful by-products from the brain during deep sleep.",
+        "B. Generates dreams that aid emotional processing.",
+        "C. Slows down all brain activity to reduce energy use.",
+        "D. Strengthens connections between unrelated memories."
+      ],
+      "answer": "A",
+      "explanation": "原文 'cleaning service ... wash away toxic by-products that accumulate during the day'。其余功能不属于 glymphatic 系统描述。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_002",
+      "group_order": 2
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Distinguishing similar options",
+      "content": "Question 3: Which statement about sleep duration best matches the article?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. There is no single ideal duration that suits everyone equally.",
+        "B. Eight hours is the only healthy amount for adults.",
+        "C. Sleeping less than seven hours is always dangerous.",
+        "D. Sleeping more than nine hours is universally beneficial."
+      ],
+      "answer": "A",
+      "explanation": "段 4 'total sleep need varies, with most adults thriving on between seven and nine hours, while a small minority genuinely function well on less' — 没有单一理想时长。其余三项与 'varies' 不符（绝对化）。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_002",
+      "group_order": 3
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring author's stance",
+      "content": "Question 4: How does the writer view alarmist headlines about sleep?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. They may worsen the very problem they describe.",
+        "B. They are an effective way to motivate readers.",
+        "C. They reflect the consensus of all sleep scientists.",
+        "D. They have eliminated insomnia in most populations."
+      ],
+      "answer": "A",
+      "explanation": "段 4 'public messaging has become alarmist ... can themselves cause stress-related insomnia' — 警告反而引发问题。其余三项与文意相反。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_002",
+      "group_order": 4
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Paragraph main idea",
+      "content": "Question 5: What is the main idea of the final paragraph?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Sleep is increasingly being treated as a serious public-health issue.",
+        "B. Hospitals are the only institutions making real progress.",
+        "C. Light pollution is no longer a problem in cities.",
+        "D. Economic pressures have already reversed all reforms."
+      ],
+      "answer": "A",
+      "explanation": "末段开头 'sleep deserves the same kind of public attention as diet or exercise' 是 topic sentence；其余只是支持性具体例子或被否定。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_002",
+      "group_order": 5
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Identifying implied meaning",
+      "content": "The Last Bookshop on Maple Street\n\nWhen Mrs Patel finally turned the key in the lock for the last time, she did so with a small, dry smile that the regulars knew well. It was the same smile she gave when a customer asked for a book she did not stock, or when one of the part-time students dropped a stack of paperbacks. To anyone observing from the pavement, it might have looked like satisfaction. To those who had spent enough Saturdays inside the shop, it looked like something else entirely — a way of refusing to make a fuss.\n\nThe shop had survived two recessions, three changes in the rent agreement, and the arrival of an enormous chain bookstore three streets away. What had finally tipped it over the edge was, of all things, a freshly painted bicycle lane. The lane removed the loading bay outside the shop. New parcel deliveries now had to be made on foot, several blocks from the nearest stopping point, and the elderly delivery driver had quietly explained that he could not keep doing this for much longer. From there, the dominoes had fallen.\n\nSome of the regulars had tried to organise a campaign. Posters appeared in the windows of nearby cafés, and a petition collected almost a thousand signatures. The local council had been polite. They had also been firm: the cycling network was a strategic priority. Mrs Patel had been gracious throughout, and had even baked biscuits for the volunteers. Privately, she suspected that the bookshop's fate had been sealed long before the bicycle lane appeared. The lane was simply the last sentence in a much longer story.\n\nIt would be easy, perhaps too easy, to read this story as one about town planning, or about the cruelty of large chains, or about the apparent decline of reading itself. None of those readings is exactly wrong. But Mrs Patel, who had given over three decades of her life to choosing books for other people, would have rejected each as too neat. She had always insisted that bookshops were places, first of all, where strangers became briefly familiar. The shelves were the excuse; the conversations were the point.\n\nThat, more than the closure itself, is what those who knew the shop will struggle to replace. There are still chain bookstores, and there is, of course, the internet, with its almost limitless catalogue. What is in shorter supply is the unhurried attention of a knowledgeable adult who has read most of what she sells, and who is willing to be wrong with you about a novel for ten minutes on a wet afternoon.\n\nQuestion 1: What does Mrs Patel's 'small, dry smile' most likely indicate?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. She does not want to draw attention to her sadness.",
+        "B. She is genuinely satisfied with the closing of the shop.",
+        "C. She is embarrassed by the regulars watching her.",
+        "D. She feels triumphant about defeating the council."
+      ],
+      "answer": "A",
+      "explanation": "段 1 直接说明 'a way of refusing to make a fuss' — 不让人察觉难过。其余选项与下文情感（耐心、风度）矛盾。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_003",
+      "group_order": 1
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Question 2: According to paragraph 2, what was the immediate trigger for the shop's closure?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. The removal of the loading bay because of a new bicycle lane.",
+        "B. The arrival of a chain bookstore three streets away.",
+        "C. A sudden rise in rent during the third agreement change.",
+        "D. Mrs Patel's decision to retire after a long career."
+      ],
+      "answer": "A",
+      "explanation": "段 2 'What had finally tipped it over the edge was ... a freshly painted bicycle lane.' chain bookstore / rent 是早先压力，未直接触发；retirement 不是文中触发因素。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_003",
+      "group_order": 2
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Recognizing irony & sarcasm",
+      "content": "Question 3: Which statement best captures the irony in paragraph 2?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. A measure designed to make the city better quietly destroys a beloved local institution.",
+        "B. Recessions were less harmful than chain stores.",
+        "C. The delivery driver was secretly working for a competitor.",
+        "D. Mrs Patel had personally requested the bicycle lane."
+      ],
+      "answer": "A",
+      "explanation": "讽刺在于：自行车道（公益改善）反而毁了书店。其余 B/C/D 与原文不符。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_003",
+      "group_order": 3
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Distinguishing similar options",
+      "content": "Question 4: How does Mrs Patel privately interpret the role of the bicycle lane?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. As the last factor in a much longer process of decline.",
+        "B. As the single decisive cause of everything.",
+        "C. As an entirely unfair political decision.",
+        "D. As an opportunity to start a new business."
+      ],
+      "answer": "A",
+      "explanation": "段 3 'the last sentence in a much longer story' = 不是唯一原因，只是最后一击。B 与 'long before' 矛盾；C/D 文中无据。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_003",
+      "group_order": 4
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring author's stance",
+      "content": "Question 5: What does the writer suggest is most difficult to replace once the shop closes?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. The unhurried personal attention of a knowledgeable bookseller.",
+        "B. The wide catalogue of titles available there.",
+        "C. The biscuits that Mrs Patel baked for volunteers.",
+        "D. The strategic location near the bicycle lane."
+      ],
+      "answer": "A",
+      "explanation": "末段直陈 'unhurried attention of a knowledgeable adult' 才是难以替代的。其余被明文或隐含否定（catalogue 网络可有；biscuits 偶发；location 已成废）。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_003",
+      "group_order": 5
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Multiple Matching",
+      "content": "Four Career Changers Tell Their Stories\n\nA. Mei (former lawyer, now ceramics teacher)\nFor a long time I told myself that the discomfort I felt at work was just part of being an adult. Eventually I admitted it was not. The shift to teaching ceramics was, on paper, a financial disaster. In practice, it was the first thing in years I did not have to brace myself for on Sunday evening. I do still miss the structure of the firm, and I am genuinely surprised by how often I think of my old colleagues. But I have stopped looking for a single perfect job; I have arranged my week so that no day is unbearable, and that turns out to be enough.\n\nB. Sven (former software engineer, now bakery co-owner)\nThe decision was less brave than people assume. I had been baking bread on weekends for five years before I left my job, and the queues at the local market kept getting longer. My partner and I spent eighteen months building a financial cushion before we signed the lease, and we still had to borrow from his parents in the second winter. What surprises me most is not the workload, which I had expected, but how much of running a small business is paperwork. I tell people who ask: do not romanticise it.\n\nC. Adaeze (former marketing manager, now NHS nurse)\nI was forty-two when I started my nursing degree, and I will be the first to say I had no idea what I was getting into. The first six months on a real ward broke me down in ways I am still putting back together. But there is a kind of immediate usefulness in nursing that no marketing campaign ever gave me, and I am protective of that feeling now. Money is much tighter than it was. Friends who knew me 'before' sometimes look at me with what I think is concern; I have stopped trying to convince them.\n\nD. Toby (former school teacher, now freelance translator)\nI loved teaching, but my health did not. After a long period of insomnia and migraines, my doctor suggested in the gentlest possible terms that the classroom and I might no longer be a good match. Translation was not a passion; it was a skill I had developed slowly, alongside teaching, and that I knew I could rely on. People sometimes assume the change must have been emotionally devastating. The truth is more boring: I felt enormous relief, and a small but persistent guilt that I had not made the move sooner.\n\nQuestion 1: Which person describes feeling that the change was less dramatic than others assume?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Sven",
+        "B. Mei",
+        "C. Adaeze",
+        "D. Toby"
+      ],
+      "answer": "A",
+      "explanation": "B 段 Sven 'less brave than people assume' 明文。其余三人未表达此意。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_004",
+      "group_order": 1
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Multiple Matching",
+      "content": "Question 2: Which person mentions that they have stopped trying to defend their choice to old friends?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Adaeze",
+        "B. Mei",
+        "C. Sven",
+        "D. Toby"
+      ],
+      "answer": "A",
+      "explanation": "C 段 Adaeze 'I have stopped trying to convince them' 明文。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_004",
+      "group_order": 2
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Multiple Matching",
+      "content": "Question 3: Which person was driven primarily by health considerations?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Toby",
+        "B. Adaeze",
+        "C. Sven",
+        "D. Mei"
+      ],
+      "answer": "A",
+      "explanation": "D 段 Toby 'After a long period of insomnia and migraines' 明文 health-driven。其他人健康未强调。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_004",
+      "group_order": 3
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Multiple Matching",
+      "content": "Question 4: Which person admits the change was financially much worse, at least at first?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Mei",
+        "B. Sven",
+        "C. Adaeze",
+        "D. Toby"
+      ],
+      "answer": "A",
+      "explanation": "A 段 Mei 'on paper, a financial disaster' 明文。Sven 谈到借钱但描述更中性；Adaeze 'tighter' 较温和；Toby 未谈钱细节。最直接是 Mei。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_004",
+      "group_order": 4
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Multiple Matching",
+      "content": "Question 5: Which person mainly relied on a long-developed practical skill rather than a passion?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Toby",
+        "B. Adaeze",
+        "C. Mei",
+        "D. Sven"
+      ],
+      "answer": "A",
+      "explanation": "D 段 Toby 'Translation was not a passion; it was a skill I had developed slowly' 明文。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_004",
+      "group_order": 5
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Cross-text Matching",
+      "content": "Two Reviews of the Novel 'Northern Light'\n\nReview A — Critic Helena Cross\n'Northern Light' is the kind of novel that, on first reading, feels entirely effortless. Within fifty pages, an entire community has been built up so quietly that you have to remind yourself the place is invented. Vasquez's prose is unfashionably calm: long sentences, generous descriptions of weather, very little plot of the kind a film studio would want. Yet by the final chapter you realise how carefully it has been arranged. The tension is structural rather than scene-by-scene.\n\nWhere I disagree with the early reviews is on the ending. Several critics have called it abrupt, almost rude. To me, it is exactly right. A more conventional resolution would have flattered the reader at the cost of the characters. Vasquez has the courage — rare in a debut — to let her people remain unfinished. There are passages in the middle that I wished had been tightened, and the third sister never quite came alive for me. But these are small criticisms in a book of unusual confidence and grace.\n\nReview B — Critic Daniel Ofor\nThere is, I will concede, a great deal of intelligence in 'Northern Light'. Vasquez clearly knows her village, her sisters, her decade. The descriptions of the moor in winter are genuinely fine. What I cannot accept is the suggestion, made by some otherwise sensible reviewers, that the novel's slowness is a virtue. There is an enormous difference between patience and self-indulgence, and after a while it became hard to tell which I was reading.\n\nThe ending, often praised for its restraint, struck me less as courageous than evasive. Three hundred careful pages set up a moral question that is then waved away in two paragraphs. The third sister, in particular, deserved better; she is the most interesting character in the book and remains a sketch. I do not doubt that Vasquez will write a stronger novel; I am simply not persuaded that she has yet.\n\nQuestion 1: On which point do the two critics most clearly agree?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Vasquez has produced fine descriptive writing.",
+        "B. The ending of the novel is exactly right.",
+        "C. The third sister is fully realised as a character.",
+        "D. The novel deserves no further attention."
+      ],
+      "answer": "A",
+      "explanation": "Helena 'unfashionably calm ... generous descriptions of weather'，Daniel 'descriptions of the moor in winter are genuinely fine' — 两人都肯定描写。其余三项两人观点相反或都未承认。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_005",
+      "group_order": 1
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Cross-text Matching",
+      "content": "Question 2: How do the two reviewers differ in their view of the novel's ending?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Helena praises its honesty; Daniel sees it as evasive.",
+        "B. Both regard it as too conventional.",
+        "C. Helena thinks it is rushed; Daniel thinks it is overlong.",
+        "D. Both reject the ending entirely."
+      ],
+      "answer": "A",
+      "explanation": "Helena 'exactly right ... courage'；Daniel 'evasive' / 'waved away'。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_005",
+      "group_order": 2
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Cross-text Matching",
+      "content": "Question 3: How do the two critics view the third sister?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Both find this character underdeveloped.",
+        "B. Helena thinks the sister is the most fully realised; Daniel disagrees.",
+        "C. Both consider her the strongest character in the book.",
+        "D. Neither critic mentions her."
+      ],
+      "answer": "A",
+      "explanation": "Helena 'never quite came alive for me'；Daniel 'remains a sketch ... deserved better'。两位都觉得未发挥。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_005",
+      "group_order": 3
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Distinguishing similar options",
+      "content": "Question 4: Which statement best captures Daniel's central reservation about the novel?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. That careful slowness has crossed into self-indulgence.",
+        "B. That the writing is technically incompetent.",
+        "C. That the village is poorly imagined.",
+        "D. That the moral question is too predictable."
+      ],
+      "answer": "A",
+      "explanation": "原文 'enormous difference between patience and self-indulgence ... hard to tell which I was reading' 是 Daniel 主要保留意见。B/C/D 与他对 description / village 的赞许矛盾。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_005",
+      "group_order": 4
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring author's stance",
+      "content": "Question 5: Which sentence best reflects Helena's overall judgement of the book?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. It is a confident debut despite a few weaknesses.",
+        "B. It is a flawless masterpiece without limitations.",
+        "C. It is a complete failure that should be ignored.",
+        "D. It is a competent but soulless commercial novel."
+      ],
+      "answer": "A",
+      "explanation": "Helena 末句 'small criticisms in a book of unusual confidence and grace' 与 A 一致。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_005",
+      "group_order": 5
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "The Forgotten Pioneer\n\nLong before the language of computing had even been invented, Ada Lovelace was writing what most modern historians now recognise as the world's first algorithm. The setting was unlikely: a small upstairs study in nineteenth-century London, in a household more interested in horse-racing than in mathematics. Lovelace, the only legitimate child of the poet Lord Byron, had been steered firmly away from poetry by her formidable mother — partly out of conviction, partly out of fear that she would inherit her father's instability.\n\nWhat Lovelace ended up writing instead was a long set of notes appended to her translation of an Italian engineer's paper on Charles Babbage's proposed Analytical Engine. The notes, signed only with her initials, ran to nearly three times the length of the paper itself. Buried within them was a worked example showing how the imagined machine could be used to compute the Bernoulli numbers — a sequence familiar to mathematicians but not, until then, in the hands of any device. It is this passage that twentieth-century scholars would later treat as the first true computer program.\n\nLovelace's reputation has had a strange afterlife. For most of the hundred years after her early death, she was filed under 'mathematical curiosity', remembered, if at all, as a footnote in Babbage's biography. Then, towards the end of the twentieth century, came a kind of revival. Programming languages were named after her. School textbooks rediscovered her. Companies eager to celebrate women in technology held annual events in her honour.\n\nYet some historians have begun to push back gently against this neat narrative of recovery. The risk, they argue, is that a complicated and sometimes unhappy figure has been turned into a mascot. Lovelace herself struggled with illness, with the social expectations of an aristocrat, and with the limits of what her collaborator Babbage was willing to share. To turn her into a smiling, uncomplicated icon is to make her, in a different way, invisible again.\n\nThe fairest reading, then, may be neither dismissive nor hagiographic. Lovelace did not single-handedly invent computing — Babbage had spent decades developing the machine she was writing about, and an entire intellectual tradition lay behind both. But within the limits of what was possible in her time, she did something genuinely new: she imagined that a calculating machine might one day handle not only numbers, but symbols, music, even thought. The fact that this imagination took place in the corner of a study, between bouts of illness, in a society that did not expect it, is part of why she still matters.\n\nQuestion 1: Which best summarises the writer's overall view of Ada Lovelace?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. She made a genuinely original contribution while remaining a complex, partly difficult figure.",
+        "B. She invented computing on her own and deserves no further reassessment.",
+        "C. Her work was largely a footnote in Babbage's much greater achievement.",
+        "D. She has been correctly remembered without any distortion."
+      ],
+      "answer": "A",
+      "explanation": "末段总结：non-dismissive non-hagiographic — 既非贬低也非神化。其余 B/C/D 与作者立场冲突。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_006",
+      "group_order": 1
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Identifying logical relationships",
+      "content": "Question 2: Why does the writer mention the 'horse-racing' household in paragraph 1?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. To highlight the unlikeliness of Lovelace's intellectual achievements arising in such a setting.",
+        "B. To suggest that her family's interests were the cause of her work.",
+        "C. To show that nineteenth-century London was rural.",
+        "D. To imply that Lovelace was a poor scholar."
+      ],
+      "answer": "A",
+      "explanation": "段 1 'unlikely setting'；horse-racing 与 mathematics 形成对比，强调成就的反差。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_006",
+      "group_order": 2
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Identifying implied meaning",
+      "content": "Question 3: What does the writer imply by the phrase 'mascot' in paragraph 4?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. That Lovelace risks being reduced to a simplified symbol.",
+        "B. That she was officially appointed as a representative.",
+        "C. That she designed corporate logos.",
+        "D. That she was popular with children."
+      ],
+      "answer": "A",
+      "explanation": "上下文 'turned into ... a smiling, uncomplicated icon ... invisible again' 说明 mascot 表示 over-simplified symbol。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_006",
+      "group_order": 3
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Distinguishing similar options",
+      "content": "Question 4: Which statement most accurately reflects the relationship between Lovelace and Babbage?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. They collaborated, but Babbage limited what he shared with her.",
+        "B. They worked entirely independently with no contact.",
+        "C. Babbage merely copied Lovelace's ideas.",
+        "D. Lovelace simply wrote down what Babbage dictated."
+      ],
+      "answer": "A",
+      "explanation": "段 4 'limits of what her collaborator Babbage was willing to share' — 合作但受限。其余三项与文中合作描述矛盾。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_006",
+      "group_order": 4
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring author's stance",
+      "content": "Question 5: According to the article, what makes Lovelace's contribution remarkable?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. That she imagined possibilities for the machine that went beyond numbers.",
+        "B. That she designed and built a working computer in her study.",
+        "C. That she received widespread recognition during her lifetime.",
+        "D. That she replaced Babbage as the chief engineer of the project."
+      ],
+      "answer": "A",
+      "explanation": "末段 'imagined that a calculating machine might one day handle not only numbers, but symbols, music, even thought' — 想象超出当时局限。其余三项与文相反。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_006",
+      "group_order": 5
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Paragraph main idea",
+      "content": "Should Cities Limit Tourism?\n\nWhen Venice introduced an entrance fee for day-trippers, reactions were sharply divided. Local residents who had spent years complaining about overcrowded alleys and disturbed sleep tended to welcome the move, while travel companies and a handful of business owners called it an attack on the open city. International commentators, from a comfortable distance, lined up on both sides. Several other historic cities, watching nervously, began consultations of their own.\n\nThe debate often gets stuck on a false choice between 'open' and 'closed' cities. In reality, almost every well-functioning city already manages access in some way. Permits regulate film crews, pedestrianised streets exclude cars, museums limit visitor numbers in fragile rooms. The question raised by the Venetian fee is not whether cities should manage flows of people, but what kinds of management are fair and what their wider effects are.\n\nA common argument in favour of fees is that they internalise costs. Tourism brings revenue, but it also creates rubbish, wear-and-tear, and pressure on services. If a small entry fee diverts some of the rubbish budget back from local taxpayers to visitors, the logic is similar to that of a parking charge. Critics, however, point out that fees have an uneven effect: a fee that is trivial to a wealthy traveller may be prohibitive to a school group from a poorer country. The question of who is being kept out matters at least as much as how many.\n\nOther measures attempt to influence behaviour rather than mere numbers. Time-slot booking spreads visits across the day; guided routes steer crowds away from the most fragile lanes; signage in multiple languages reminds visitors of local customs. Where these have been combined sensitively with longer-term housing and transport policies, the result has sometimes been quieter streets and a partial return of younger residents. Where they have been applied as a marketing exercise without structural change, the effect has been mainly cosmetic.\n\nTourism is too profitable, and travel too widely valued, for any blanket ban to be politically realistic. But the era in which a popular city was simply expected to absorb whatever number of visitors arrived may be drawing to a close. The most important questions facing city authorities are no longer whether to manage tourism, but in whose interest, on what evidence, and at what social cost.\n\nQuestion 1: What is the main idea of paragraph 2?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Cities already manage access in many ways; the real issue is what kind of management is fair.",
+        "B. Most modern cities are completely open with no restrictions.",
+        "C. Pedestrianised streets are the only fair tool of management.",
+        "D. Venice's fee was the first attempt to restrict visitors."
+      ],
+      "answer": "A",
+      "explanation": "段 2 用 permits / pedestrianised / museums 例子证明 'almost every well-functioning city already manages access' — A 完全契合。其余 B/C/D 与文中矛盾。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_007",
+      "group_order": 1
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring author's stance",
+      "content": "Question 2: Where does the writer's sympathies appear to lie?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. With nuanced, evidence-based management rather than blanket policies.",
+        "B. With travel companies who oppose any change.",
+        "C. With residents who demand a complete tourism ban.",
+        "D. With those who think tourism should expand without limits."
+      ],
+      "answer": "A",
+      "explanation": "末段 'in whose interest, on what evidence, and at what social cost' — 偏向 nuanced + evidence-based。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_007",
+      "group_order": 2
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Identifying logical relationships",
+      "content": "Question 3: What is the role of the example of school groups from poorer countries in paragraph 3?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. To introduce a counter-argument about fairness in entry fees.",
+        "B. To prove that fees should be raised even higher.",
+        "C. To suggest that all schools should be banned from cities.",
+        "D. To show that wealthy travellers cannot afford fees."
+      ],
+      "answer": "A",
+      "explanation": "句序：fee logic → 'Critics, however, point out ... uneven effect ... school group' = 反方论据。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_007",
+      "group_order": 3
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Distinguishing similar options",
+      "content": "Question 4: Which statement best matches the writer's view of behaviour-based measures?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Their effect depends on whether they are combined with structural reforms.",
+        "B. They always work better than fees in every situation.",
+        "C. They have failed in every documented case.",
+        "D. They are an unnecessary distraction from charging visitors."
+      ],
+      "answer": "A",
+      "explanation": "段 4 'Where ... combined sensitively ... result has sometimes been quieter streets' / 'Where ... without structural change ... effect mainly cosmetic.' — 效果 depends on 结构改革。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_007",
+      "group_order": 4
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Identifying implied meaning",
+      "content": "Question 5: What does the writer imply about the future of tourism management?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Cities are unlikely to passively absorb unlimited visitors as before.",
+        "B. Cities will return to a fully open model within a decade.",
+        "C. Most cities have already imposed entrance fees.",
+        "D. Tourism will become unprofitable in most regions."
+      ],
+      "answer": "A",
+      "explanation": "末段 'the era in which a popular city was simply expected to absorb whatever number of visitors arrived may be drawing to a close' — 即 A。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_007",
+      "group_order": 5
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Why We Misjudge Risk\n\nIf you ask a group of strangers what the most dangerous activity in their week is, you tend to get a fairly predictable list: flying somewhere on holiday, perhaps; eating in an unfamiliar restaurant; walking home late at night. The actual answer, statistically, is far more boring. Across most of the developed world, the activity most likely to harm an ordinary adult is not flying or food poisoning but driving themselves to work in their own car. The numbers are not even close.\n\nWhy does our intuition mislead us so reliably? One reason is the simple bias known to psychologists as 'availability'. Risks that come easily to mind feel bigger than risks that do not, regardless of how often they actually occur. Air crashes are dramatic and widely reported, but they are extremely rare. Routine car journeys are uneventful, but they make up the vast majority of what we actually do. The brain, doing the kind of quick estimation it has evolved to do, prefers vivid stories to dry tables of numbers.\n\nAnother factor is control. People generally feel safer in situations they appear to control, even when the appearance is misleading. Driving feels controllable; flying does not. The fact that the drivers around you are tired, distracted, or undertrained is not visible to you in the way that turbulence on a flight suddenly is. The illusion of control is a powerful, and often expensive, comfort.\n\nA third — and perhaps the most subtle — distortion is what behavioural scientists sometimes call 'voluntariness'. We tolerate risks we choose far more readily than risks imposed on us. The same level of harm, presented as a personal decision, looks acceptable; presented as a corporate or government policy, it looks outrageous. Some of this asymmetry is justified — there is real moral weight in choosing for oneself — but a large part is simply emotional.\n\nWhat can be done about all this? Education helps a little, but only a little. People who can quote the relevant statistics still feel the same instinctive fears. Better-designed defaults seem to do more: clearly labelled risks at the point of decision, simple comparisons rather than long tables, and design choices in transport and medicine that make the safer option also the easier one. The interesting lesson is that we may not be able to think our way out of these biases entirely, but we can sometimes design environments in which they matter less.\n\nQuestion 1: Which sentence best summarises the article?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Our risk perception is often biased, but environmental design can mitigate the effects.",
+        "B. Our risk perception is generally accurate and matches statistical evidence.",
+        "C. Driving is the safest activity once one understands the data.",
+        "D. Air crashes are far more common than road accidents."
+      ],
+      "answer": "A",
+      "explanation": "段 1-4 论证 misjudgement，段 5 提出 design 解决。综合即 A。其余三项与文意冲突。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_008",
+      "group_order": 1
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "Question 2: What does 'availability' refer to in paragraph 2?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. The ease with which examples come to mind.",
+        "B. The actual frequency of an event in society.",
+        "C. The price of insurance products.",
+        "D. The number of news outlets covering an issue."
+      ],
+      "answer": "A",
+      "explanation": "段 2 'Risks that come easily to mind feel bigger ... regardless of how often they actually occur' — availability = ease of recall。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_008",
+      "group_order": 2
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Identifying logical relationships",
+      "content": "Question 3: What is the role of paragraph 3 in the article's argument?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Introducing a second psychological factor that distorts our risk perception.",
+        "B. Refuting the bias described in paragraph 2.",
+        "C. Providing the historical origin of car insurance.",
+        "D. Concluding the writer's main argument."
+      ],
+      "answer": "A",
+      "explanation": "段 3 开头 'Another factor is control.' 是承接 paragraph 2 的 'One reason' — 第二个因素。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_008",
+      "group_order": 3
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Distinguishing similar options",
+      "content": "Question 4: According to the article, why does driving feel safer than flying?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Because the driver feels in control, even though many other drivers may not be.",
+        "B. Because most drivers are professionally trained.",
+        "C. Because cars never experience mechanical problems.",
+        "D. Because turbulence is more dangerous than collisions."
+      ],
+      "answer": "A",
+      "explanation": "段 3 'Driving feels controllable ... drivers around you are tired, distracted, or undertrained is not visible' — A 准确。其余三项明显错。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_008",
+      "group_order": 4
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Identifying implied meaning",
+      "content": "Question 5: What does the writer suggest at the end of the article?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Designing environments thoughtfully matters more than relying on willpower alone.",
+        "B. People can completely overcome biases through education.",
+        "C. Statistics never influence anyone's behaviour.",
+        "D. Policymakers cannot change risky behaviour."
+      ],
+      "answer": "A",
+      "explanation": "末段 'we may not be able to think our way out of these biases entirely, but we can sometimes design environments in which they matter less' — A 与之契合。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_008",
+      "group_order": 5
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Paragraph main idea",
+      "content": "The Slow Comeback of the Public Library\n\nFor most of the early 2000s, the public library was an institution that policy-makers found easy to overlook. Reports announced its imminent obsolescence with enough confidence to make the prediction look like fact. Footfall in many branches did indeed fall as digital alternatives expanded; book-borrowing — the traditional measure of success — declined year on year. Several local authorities responded by closing branches outright; others kept them open mainly as community centres with limited hours and shrinking stocks.\n\nThe story since has been quieter and more interesting than the obituaries suggested. Visitor numbers have stabilised in many areas, and in some places have begun to climb again. The reason is not, as some optimists claim, that books have made a triumphant return. The reason is that libraries have changed what they are for.\n\nModern branches host coding clubs for teenagers, English-language sessions for new arrivals, drop-in support for older users navigating online welfare systems, and quiet study spaces for people whose homes are too noisy or too crowded for sustained concentration. Some have launched 'tool libraries', lending out everything from drills to sewing machines. The most innovative branches now define themselves not by their stock of books but by the range of activities they enable.\n\nThis shift has not been uncontroversial. Some traditionalists fear that, in becoming everything to everyone, libraries will become nothing in particular. They worry that a public space defined mainly by reading is being slowly replaced by a generic community hub. Others, including many library staff, reply that the older role was always less stable than its defenders remember; libraries have continually reinvented themselves, from elite collections to mass-circulation institutions to today's mixed-use centres.\n\nWhat seems clear is that, in straitened economic times, the libraries most likely to survive are those that can demonstrate value across multiple dimensions. A branch that supports adult literacy, helps job-seekers prepare applications, gives shelter on a cold afternoon, and still lends books, is harder to defund than one that does only the last of these. The lesson, perhaps, is not that the library has been saved by reinvention, but that it had to reinvent itself in order to be saveable at all.\n\nQuestion 1: What is the main idea of paragraph 2?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Library survival is due to a change in their function, not a return of book-borrowing.",
+        "B. Books have become more popular than ever in libraries.",
+        "C. Libraries have closed almost everywhere.",
+        "D. Visitor numbers continue to fall sharply."
+      ],
+      "answer": "A",
+      "explanation": "段 2 直接对比 'not ... books triumphant return' vs 'libraries have changed what they are for' — A 与之一致。其余三项与文相反。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_009",
+      "group_order": 1
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Question 2: According to paragraph 3, which of these is NOT mentioned as a service offered by modern libraries?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Bicycle repair workshops.",
+        "B. Coding clubs for teenagers.",
+        "C. Tool libraries.",
+        "D. Quiet study spaces."
+      ],
+      "answer": "A",
+      "explanation": "段 3 列举 coding clubs / English sessions / online welfare support / study spaces / tool libraries — 没提自行车维修。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_009",
+      "group_order": 2
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Identifying logical relationships",
+      "content": "Question 3: What is the function of paragraph 4 within the article?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Acknowledging and balancing the criticism of the new model.",
+        "B. Introducing the original purpose of public libraries.",
+        "C. Concluding the writer's main argument.",
+        "D. Refuting the existence of any criticism."
+      ],
+      "answer": "A",
+      "explanation": "段 4 引入传统派批评，并通过 'Others ... reply' 给出 staff 的反驳，呈现两面观点。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_009",
+      "group_order": 3
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring author's stance",
+      "content": "Question 4: What does the writer suggest about the library's reinvention?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. It was a necessary condition for survival, not just an optional improvement.",
+        "B. It is a temporary fashion that will quickly fade.",
+        "C. It has destroyed every traditional library function.",
+        "D. It was unnecessary and could have been avoided."
+      ],
+      "answer": "A",
+      "explanation": "末段 'had to reinvent itself in order to be saveable at all' — 必要条件。其余 B/C/D 与文意相反。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_009",
+      "group_order": 4
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Distinguishing similar options",
+      "content": "Question 5: Which kind of library is described as least vulnerable to defunding?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. One that demonstrates value across multiple dimensions.",
+        "B. One that focuses exclusively on lending books.",
+        "C. One that is open only on weekends.",
+        "D. One that has the largest book collection in the region."
+      ],
+      "answer": "A",
+      "explanation": "末段 'libraries most likely to survive ... value across multiple dimensions ... harder to defund' — A。其余 B/C/D 文中不支持或被否定。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_009",
+      "group_order": 5
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Cities at Night: A New Kind of Pollution\n\nFor most of human history, the dark side of a city was just as important as the bright side. Streets were lit, where they were lit at all, by widely spaced gas lamps; whole districts disappeared after sundown, the night sky overhead a familiar map of stars. Today, the experience is utterly different. From any modestly sized city, the Milky Way is invisible. Astronomers, ecologists and an increasing number of urban planners now describe this as light pollution — and the phrase, once unfamiliar, is beginning to enter mainstream policy debate.\n\nThe consequences are not merely poetic. Migratory birds, navigating partly by the stars, become disoriented in cities; some species fly into illuminated buildings and die in surprising numbers each year. Insects swarm around bright lamps and exhaust themselves before reaching the dark areas where they would normally pollinate. Hospital studies have begun to link chronic exposure to bright artificial light with disrupted sleep cycles, particularly in children sharing rooms close to floodlit streets or industrial sites.\n\nIt is sometimes assumed that brighter is automatically safer. The evidence here is more complicated than the assumption. While well-targeted lighting at junctions and footpaths does seem to reduce certain kinds of accident, blanket flooding of entire neighbourhoods has yielded surprisingly little improvement in crime statistics. Glare from poorly mounted lamps can in fact mask shadows and create temporarily blind areas — exactly the conditions a careful intruder might prefer. Some pilot schemes that simply replaced upward-spilling lamps with carefully shielded fixtures reported lower energy bills and unchanged or even improved safety perceptions among residents.\n\nResistance to reform tends to come from two directions. Lighting manufacturers, understandably, prefer larger and longer-running installations to smaller, more nuanced ones. Residents themselves, however, also vary. Some cherish the rare view of constellations regained when an unused car-park light is removed; others, accustomed to a permanently lit horizon, find a fully restored night sky strangely threatening at first.\n\nThe discussion is not purely about astronomy or aesthetics. As cities continue to expand and energy prices fluctuate, the question of how brightly to light public space is becoming a practical one. The most thoughtful proposals do not aim for a return to gas-lamp dimness; they aim instead for what one writer has called 'directed darkness' — light precisely where it is needed, for the time it is needed, and not a watt more.\n\nQuestion 1: What is the writer's central claim?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Light pollution has wide effects, and 'directed darkness' is the sensible response.",
+        "B. Cities should immediately switch off all street lighting.",
+        "C. Brighter cities are always safer cities.",
+        "D. Light pollution mainly concerns astronomers and no one else."
+      ],
+      "answer": "A",
+      "explanation": "末段 'directed darkness' 是核心提案。B 极端；C 文中被否；D 段 1 已扩展到生态/儿童健康。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_010",
+      "group_order": 1
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Identifying logical relationships",
+      "content": "Question 2: What is the function of paragraph 3?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Challenging the common assumption that brighter is always safer.",
+        "B. Listing causes of urban migration.",
+        "C. Describing the history of gas lamps.",
+        "D. Explaining how to install lamps properly."
+      ],
+      "answer": "A",
+      "explanation": "段 3 开头 'It is sometimes assumed that brighter is automatically safer. The evidence here is more complicated' — 直接挑战该假设。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_010",
+      "group_order": 2
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Distinguishing similar options",
+      "content": "Question 3: According to paragraph 3, what was the result of replacing upward-spilling lamps with shielded fixtures?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Lower energy use without compromising safety perception.",
+        "B. Significantly higher accident rates.",
+        "C. Strong opposition from environmental groups.",
+        "D. A complete loss of street lighting."
+      ],
+      "answer": "A",
+      "explanation": "原文 'lower energy bills and unchanged or even improved safety perceptions'。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_010",
+      "group_order": 3
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Identifying implied meaning",
+      "content": "Question 4: What does the writer imply about resident attitudes?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. They are not uniform; some welcome darker skies while others find them unsettling.",
+        "B. All residents oppose any reduction in lighting.",
+        "C. Most residents are indifferent to lighting changes.",
+        "D. Residents universally support manufacturers."
+      ],
+      "answer": "A",
+      "explanation": "段 4 'Some cherish ... others ... find a fully restored night sky strangely threatening' — 不一致。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_010",
+      "group_order": 4
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring author's stance",
+      "content": "Question 5: Which statement best captures the writer's tone in the final paragraph?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Pragmatic — preferring a precise, measured policy over either extreme.",
+        "B. Nostalgic — calling for a complete return to nineteenth-century darkness.",
+        "C. Indifferent — refusing to take any position.",
+        "D. Alarmist — predicting catastrophe in every city within ten years."
+      ],
+      "answer": "A",
+      "explanation": "末段 'do not aim for a return to gas-lamp dimness; they aim instead for ... directed darkness' — 拒绝两极，务实折中。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_010",
+      "group_order": 5
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Multiple Matching",
+      "content": "Five Teachers on Phones in Schools\n\nA. Ms Chen (secondary school, English)\nI came to the topic of a phone ban with a lot of skepticism. The pro-ban arguments seemed too neat: lock the phones away, problems solved. After a term of trying it, I am, reluctantly, partly convinced. Lessons are quieter, but more importantly, the breaks are louder — students actually talk to each other in the corridor again. What I would not do is pretend this fixes the deeper issue, which is the way our entire culture treats attention as something that can be infinitely interrupted.\n\nB. Mr Olusanya (primary school, head teacher)\nWe never allowed phones at our school anyway, so I find some of the recent discussion strange. The interesting question for primary heads is not whether children should bring phones to school. It is whether parents should send them with phones at all at this age. We should be careful not to use school policies as a substitute for that conversation. Schools cannot solve, on their own, what is essentially a question of family habit.\n\nC. Mr Romero (secondary school, mathematics)\nHonestly, I supported a ban because the small minority of students who could not put their phones away during lessons were ruining things for everyone. The blanket policy is unfair to the well-behaved majority, but it is more practical than constant individual battles. If you are looking for a principled defense, I am not your man — this was simple triage. I would happily revisit the policy if a more graduated alternative could actually be enforced.\n\nD. Mrs Patel (sixth-form college, sociology)\nAt the older end of secondary education, I think a strict ban is misguided. Sixth formers will be using phones intensively in further education and at work; we should be teaching them how to manage that, not just removing the device. My current policy: phones face down on the desk, used briefly when relevant. It is not perfect, but it is closer to the world they are about to enter.\n\nE. Mr Singh (secondary school, IT)\nI agree with banning phones during lessons but I am wary of moral panic around technology more generally. Phones are not the only way to lose focus, and they will not be the last. We are building a curriculum that, ironically, often demands the very devices we are restricting. The honest answer is to think harder about which tools we use, when, and why — not to wage a war on rectangles.\n\nQuestion 1: Which teacher mainly justifies the ban as a pragmatic compromise rather than a principled position?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Mr Romero",
+        "B. Ms Chen",
+        "C. Mrs Patel",
+        "D. Mr Singh"
+      ],
+      "answer": "A",
+      "explanation": "C 段 'simple triage' / 'If you are looking for a principled defense, I am not your man'。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_011",
+      "group_order": 1
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Multiple Matching",
+      "content": "Question 2: Which teacher argues that the deeper question lies with parents, not schools?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Mr Olusanya",
+        "B. Ms Chen",
+        "C. Mr Romero",
+        "D. Mr Singh"
+      ],
+      "answer": "A",
+      "explanation": "B 段 'whether parents should send them with phones at all ... essentially a question of family habit'。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_011",
+      "group_order": 2
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Multiple Matching",
+      "content": "Question 3: Which teacher rejects strict bans for older students?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Mrs Patel",
+        "B. Mr Olusanya",
+        "C. Mr Singh",
+        "D. Ms Chen"
+      ],
+      "answer": "A",
+      "explanation": "D 段 'At the older end ... a strict ban is misguided'。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_011",
+      "group_order": 3
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Multiple Matching",
+      "content": "Question 4: Which teacher warns against a broader moral panic about technology in general?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Mr Singh",
+        "B. Mr Olusanya",
+        "C. Mr Romero",
+        "D. Ms Chen"
+      ],
+      "answer": "A",
+      "explanation": "E 段 'wary of moral panic around technology more generally'。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_011",
+      "group_order": 4
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Multiple Matching",
+      "content": "Question 5: Which teacher mentions an unexpected benefit observed during break times?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Ms Chen",
+        "B. Mrs Patel",
+        "C. Mr Singh",
+        "D. Mr Romero"
+      ],
+      "answer": "A",
+      "explanation": "A 段 'breaks are louder — students actually talk to each other in the corridor again'。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_011",
+      "group_order": 5
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "The Plant Behaviourists\n\nFor most of modern biology, the idea that plants might have something resembling behaviour was treated with embarrassment. Plants did not move from place to place; they did not appear to learn; they certainly did not seem to choose. To talk of decision-making in a sunflower was, until quite recently, the kind of thing that ended a young researcher's career before it began.\n\nIn the past two decades, however, a small but persistent group of scientists has begun to take such talk seriously. Their argument is not that plants are conscious in the way that humans are. It is, more carefully, that some long-standing definitions of behaviour — adaptive responses to a changing environment, integration of multiple signals, the appearance of preference — apply to plants when one is willing to look closely enough.\n\nConsider, for example, what happens when a young pea plant is placed in a maze with light coming from one direction. The plant reliably grows towards the light, but more strikingly, when given a choice between two arms with different qualities of soil moisture and light, it adjusts its growth in ways that fit the combination of cues rather than any one of them in isolation. Similar studies have shown that some species apparently 'remember' the timing of stress events and adjust their behaviour during the next exposure. None of this requires a brain. It requires only mechanisms, distributed throughout the plant, capable of integrating information.\n\nThe pushback has come from two directions. Critics in classical botany worry that loose talk of 'memory' or 'choice' will mislead the public, who already overestimate how much plants resemble animals. Cognitive scientists, meanwhile, are sometimes cautious for the opposite reason: stretching the term 'behaviour' too widely, they say, makes it less useful in animal studies, where it has to do harder work.\n\nDefenders of plant-behaviour research reply that this caution, while reasonable, has often hardened into an unscientific prejudice. The history of biology, they point out, is partly the history of expanding what counts as 'really' alive, intelligent, or social — first to bacteria, then to fungi, then to social insects, and so on. Plants, the largest fraction of the planet's living biomass, may simply be the next category of stubbornly underestimated organisms. Whether that view eventually becomes mainstream depends, perhaps fittingly for plants, less on a single dramatic breakthrough than on slow, accumulating, well-documented growth.\n\nQuestion 1: Which best summarises the writer's overall view?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Plant-behaviour research is a credible field that deserves serious consideration despite caution.",
+        "B. Plants are conscious in the same way humans are.",
+        "C. All claims about plant behaviour are dismissed as pseudoscience.",
+        "D. Botany has nothing left to discover."
+      ],
+      "answer": "A",
+      "explanation": "全文承认两面观点，最终偏向认真对待，但保留谨慎语气。其余 B/C/D 走极端。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_012",
+      "group_order": 1
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Identifying logical relationships",
+      "content": "Question 2: What does the maze experiment in paragraph 3 illustrate?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Plants integrate multiple environmental cues rather than respond to one in isolation.",
+        "B. Plants can solve complex maze puzzles like rats.",
+        "C. Pea plants prefer dark to light.",
+        "D. Soil moisture has no effect on plant growth."
+      ],
+      "answer": "A",
+      "explanation": "段 3 'fit the combination of cues rather than any one of them in isolation' — A 准确。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_012",
+      "group_order": 2
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Distinguishing similar options",
+      "content": "Question 3: How do classical botanists object to the new framing?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. They fear that the public will misunderstand and overstate plant–animal similarity.",
+        "B. They claim that plants do not exist.",
+        "C. They want to ban all maze experiments.",
+        "D. They argue that plants are smarter than animals."
+      ],
+      "answer": "A",
+      "explanation": "段 4 'loose talk of memory or choice will mislead the public, who already overestimate how much plants resemble animals' — A。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_012",
+      "group_order": 3
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring author's stance",
+      "content": "Question 4: What attitude does the writer take towards the cautious cognitive scientists?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Treats their concern as reasonable, even while preferring further investigation.",
+        "B. Mocks them as anti-scientific.",
+        "C. Fully agrees that the term 'behaviour' should be restricted.",
+        "D. Ignores their position entirely."
+      ],
+      "answer": "A",
+      "explanation": "段 4 描述 cognitive scientists 'sometimes cautious'；段 5 'this caution, while reasonable, has often hardened into ... prejudice' — 承认合理但偏向继续研究。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_012",
+      "group_order": 4
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Identifying implied meaning",
+      "content": "Question 5: What does the final paragraph imply about how the field will progress?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Through gradual, well-documented accumulation of evidence rather than a single breakthrough.",
+        "B. Through one decisive experiment that will overturn everything.",
+        "C. Through the discovery that plants have brains.",
+        "D. Through abandoning the term 'behaviour' altogether."
+      ],
+      "answer": "A",
+      "explanation": "末段 'less on a single dramatic breakthrough than on slow, accumulating, well-documented growth'。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_012",
+      "group_order": 5
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "The Mathematics of Trust\n\nMost accounts of human cooperation focus on the warmer side of the question: kindness, fellow-feeling, the bonds of family or community. Recent research, while not denying these, has shifted attention to something colder. A great deal of what looks like trust between people may, on close examination, be the result of repeated calculation in environments shaped to make cooperation pay.\n\nThe starting point of this research is a simple game played in laboratories around the world. Two strangers are paired and given small sums of money. Each can choose, repeatedly, either to share or to keep. Sharing benefits the partner more than it costs you, but only if the partner also shares in return. Long ago, the game was thought to expose human selfishness; with each round, players were predicted to defect. Real human players, however, cooperate far more often than this prediction suggests, especially when they expect to interact again.\n\nThat last condition — repeated interaction — turns out to be doing much of the work. Once players know they will face each other again, simple strategies that punish past defection and reward past cooperation outperform almost everything else over time. These strategies, no more complex than 'do unto others as they last did unto you', emerge naturally in groups that play often. They look, on the surface, very much like trust.\n\nThe same mathematics applies, in messier form, to whole institutions. Banks that expect to lend to customers many times over their lifetimes behave differently from banks that maximise quarterly fees on one-off transactions. Online marketplaces have learned, sometimes painfully, that visible reputation systems shift behaviour by changing how often a single bad action will be remembered in future ones. Where reputation can be reset cheaply, behaviour drifts towards exploitation; where it cannot, cooperation is more stable.\n\nWhat does this mean for ordinary citizens? On the optimistic side, it suggests that we may have more leverage than we realise: the rules under which trust grows or collapses are not fixed by human nature, but tunable by design. On the more sobering side, the same insight implies that trust is a fragile achievement, dependent on environments most of us never directly choose. The next time someone tells you that 'people just are not as trustworthy as they used to be', the more interesting question may not be whether the claim is true, but what changed in the rules of the games we now play with each other.\n\nQuestion 1: What is the article's main idea?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Trust depends on the structure of repeated interactions and can be shaped by design.",
+        "B. Trust is purely emotional and cannot be analysed rationally.",
+        "C. All cooperation is selfishness in disguise.",
+        "D. Trust between humans is impossible to measure."
+      ],
+      "answer": "A",
+      "explanation": "全文围绕 'repeated interaction' 与 'reputation systems / rules ... tunable by design'。其余 B/C/D 走极端。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_013",
+      "group_order": 1
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "Question 2: What does 'defect' most likely mean in paragraph 2?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. To choose to keep rather than share.",
+        "B. To leave the experiment early.",
+        "C. To insult the partner.",
+        "D. To request a refund."
+      ],
+      "answer": "A",
+      "explanation": "上下文 'either to share or to keep ... predicted to defect' — defect 与 share 反义 = 不合作 / 留下。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_013",
+      "group_order": 2
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Identifying logical relationships",
+      "content": "Question 3: What is the relationship between paragraphs 3 and 4?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Paragraph 4 extends the logic of paragraph 3 to institutions.",
+        "B. Paragraph 4 refutes the findings of paragraph 3.",
+        "C. Paragraph 4 introduces an unrelated economic theory.",
+        "D. Paragraph 4 is a personal anecdote."
+      ],
+      "answer": "A",
+      "explanation": "段 4 第一句 'The same mathematics applies, in messier form, to whole institutions' — 直接延伸。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_013",
+      "group_order": 3
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Distinguishing similar options",
+      "content": "Question 4: According to the article, what kind of online marketplace is most likely to encourage cooperation?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. One in which a user's reputation cannot easily be reset.",
+        "B. One in which all transactions are anonymous.",
+        "C. One in which reviews are deleted weekly.",
+        "D. One in which good and bad behaviour are equally rewarded."
+      ],
+      "answer": "A",
+      "explanation": "段 4 'where it cannot [be reset cheaply], cooperation is more stable'。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_013",
+      "group_order": 4
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring author's stance",
+      "content": "Question 5: What does the writer suggest about claims that people are 'less trustworthy than they used to be'?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. The more useful question is what has changed in the rules of social interaction.",
+        "B. Such claims should be accepted without further inquiry.",
+        "C. Such claims are mathematically impossible.",
+        "D. Such claims prove that trust never existed."
+      ],
+      "answer": "A",
+      "explanation": "末段 'the more interesting question may not be whether the claim is true, but what changed in the rules' — A。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_013",
+      "group_order": 5
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Recognizing irony & sarcasm",
+      "content": "The Self-Help Paradox\n\nWalk into any large bookshop and you will see, somewhere near the entrance, a long shelf of books promising to make you happier, more focused, more productive, or — more cautiously — at least less anxious. The titles tend to be short, the subtitles long, and the covers are designed in colours selected by people who know exactly which shade of blue is associated, in shoppers' minds, with calm. The books sell, year after year, in extraordinary numbers.\n\nIt is fashionable to dismiss the genre as harmless nonsense, but harmlessness is not quite the right word. A book that genuinely helped its readers would, by definition, reduce demand for further books on the same problem. A book that does not help, but feels for a few weeks as if it might, is in a strange way better suited to the market. The customer remains, gently, a customer.\n\nThis is not necessarily a conspiracy. Most of the well-meaning authors I have spoken to are sincerely persuaded that they have something useful to share. The genre's structure, however, rewards a particular kind of incomplete success. Advice that is both true and obvious — eat reasonably, sleep enough, move every day, treat people decently — does not, on its own, sustain a 240-page narrative. So the books drape these unglamorous truths in the latest scientific costume, until the reader feels they have learned something genuinely new.\n\nCynicism here is easy and not very productive. There are excellent books in the broader category — careful, modest, properly footnoted. They are not always the bestsellers. The bestseller, in self-help as elsewhere, tends to combine a memorable single idea with the promise of more or less immediate transformation. Modest books are often what readers return to. Memorable books are often what they buy first.\n\nThe result is a kind of soft trap. Readers, understandably, want change to feel possible. Publishers, understandably, want books to sell. Authors, understandably, want their work read. Nobody is acting badly, and yet the system as a whole rewards the brilliantly packaged surface idea over the slower, less photogenic work. Perhaps the best advice for any reader entering that shelf for the first time is not to avoid it, but to remember that the books you keep returning to over the years are often very different from the ones you carry to the till.\n\nQuestion 1: What is ironic about the writer's description of self-help books in paragraph 2?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. A book that truly helped readers would actually reduce demand for more such books.",
+        "B. Self-help books are written by people who do not read.",
+        "C. The books are too short to be useful.",
+        "D. Bookshops never sell self-help books."
+      ],
+      "answer": "A",
+      "explanation": "段 2 'A book that genuinely helped ... would, by definition, reduce demand' — 内在矛盾即讽刺。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_014",
+      "group_order": 1
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring author's stance",
+      "content": "Question 2: How does the writer view most authors of self-help books?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. As sincere people working within a market that rewards incomplete success.",
+        "B. As cynical schemers deliberately deceiving readers.",
+        "C. As scientifically rigorous experts.",
+        "D. As novelists who cannot find another genre."
+      ],
+      "answer": "A",
+      "explanation": "段 3 'sincerely persuaded that they have something useful' + 段 5 'Nobody is acting badly' — 作者认为他们诚意。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_014",
+      "group_order": 2
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Distinguishing similar options",
+      "content": "Question 3: Which feature, according to the writer, tends to make self-help books bestsellers?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. A memorable single idea combined with the promise of rapid transformation.",
+        "B. A long bibliography and careful footnotes.",
+        "C. Modesty about what the book can achieve.",
+        "D. Detailed academic disclaimers."
+      ],
+      "answer": "A",
+      "explanation": "段 4 'bestseller ... tends to combine a memorable single idea with the promise of more or less immediate transformation'。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_014",
+      "group_order": 3
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Identifying implied meaning",
+      "content": "Question 4: What does the writer imply by calling the situation a 'soft trap'?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. No single party is to blame, yet the overall outcome is poor.",
+        "B. Readers are deliberately deceived by every party.",
+        "C. Authors hate their readers.",
+        "D. Publishers refuse to publish good books."
+      ],
+      "answer": "A",
+      "explanation": "段 5 'Nobody is acting badly, and yet the system as a whole rewards' — 无 villain 但结果不佳，即 soft trap。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_014",
+      "group_order": 4
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring author's stance",
+      "content": "Question 5: What does the writer suggest readers should do about the self-help shelf?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Use it carefully, distinguishing memorable buys from books worth returning to.",
+        "B. Avoid the shelf entirely.",
+        "C. Buy the most colourful book available.",
+        "D. Trust whatever the bestseller list recommends."
+      ],
+      "answer": "A",
+      "explanation": "末段 'best advice ... is not to avoid it, but to remember ... books you keep returning to over the years are often very different from the ones you carry to the till'。",
+      "round": 4,
+      "group_id": "pet_r4_reading_cluster_014",
+      "group_order": 5
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for gist",
+      "content": "Listen and choose the correct answer.\n\nWhat is the main purpose of the woman's call?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. To complain about a delayed parcel and request action.",
+        "B. To order a new product from the company.",
+        "C. To compliment the customer service team.",
+        "D. To ask for a job application form."
+      ],
+      "answer": "A",
+      "explanation": "对话主题：女士抱怨包裹迟到，要求处理。其余三项与对话内容相反。",
+      "round": 4,
+      "audio_text": "A: Good morning, thank you for calling Brightline Customer Care. How may I help you?\nB: Yes, hello. I placed an order three weeks ago — order number 8842 — and the parcel still has not arrived. I have already emailed twice and only received automated replies.\nA: I am sorry to hear about the delay, madam. May I check your full name and the postcode on the order?\nB: It is Eleanor Hughes, postcode WD17 4LJ. To be honest, I am quite frustrated. I needed those items for a family event last weekend, which is now over.\nA: I understand completely, Mrs Hughes. Let me look into this and arrange either a full refund or an express resend, depending on what you prefer.\nB: A full refund, please. After three weeks, I no longer trust the resend will arrive in time.",
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "male",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for gist",
+      "content": "Listen and choose the correct answer.\n\nWhat is the main topic of the announcement?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Changes to the library's opening hours and renewal policies.",
+        "B. The cancellation of all reading clubs.",
+        "C. An upcoming book sale of damaged stock.",
+        "D. A new dress code for library visitors."
+      ],
+      "answer": "A",
+      "explanation": "广播主要讲两件事：缩短开放时间 + 自动续借规则改变。其余选项与原文不符。",
+      "round": 4,
+      "audio_text": "Good afternoon to all members of Westbrook Public Library. Please listen carefully to the following announcements concerning two recent changes. From the first of next month, our weekday opening hours will be shortened by one hour: the library will close at half past six rather than seven thirty. Saturday and Sunday hours remain unchanged. Secondly, our automatic renewal policy will end. From now on, members must renew borrowed items either online through their account or in person at the front desk before the due date. Items not renewed will accumulate the standard daily charge. We apologise for any inconvenience and thank you for your understanding.",
+      "speakers": {
+        "_": {
+          "gender": "female",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for gist",
+      "content": "Listen and choose the correct answer.\n\nWhat is the conversation mainly about?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Choosing between two summer training programmes.",
+        "B. Booking a flight to a sports tournament.",
+        "C. Buying new running shoes for the gym.",
+        "D. Finding a part-time job during the holidays."
+      ],
+      "answer": "A",
+      "explanation": "两人讨论暑期参加哪个训练营。其余话题未提及。",
+      "round": 4,
+      "audio_text": "A: So have you decided which summer programme you are going to do? The deadline is next Tuesday.\nB: Honestly, I keep going back and forth. The university swimming camp looks more serious — daily early sessions and proper coaching — but the city sports academy is shorter and includes a couple of weekends free.\nA: Well, what matters more to you this year? Pushing your performance, or having time for family stuff?\nB: That is exactly the question I keep avoiding. Last summer I burnt out a bit doing too much. I think I need progress, but not at the cost of being miserable by August.\nA: Then maybe the academy. You can always do an additional intensive week in the gap if you want.\nB: Yes, I think you are right. I will sign up for the academy tonight before I change my mind again.",
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "teen"
+        },
+        "B": {
+          "gender": "male",
+          "age": "teen"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for gist",
+      "content": "Listen and choose the correct answer.\n\nWhat is the speaker's main message?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Volunteer experience can be valuable for university applications when chosen carefully.",
+        "B. Universities accept students based purely on volunteer hours.",
+        "C. All students must volunteer at hospitals.",
+        "D. Volunteering wastes time better spent on academic study."
+      ],
+      "answer": "A",
+      "explanation": "讲座主旨：志愿活动有价值但要谨慎选择。其余选项过度或相反。",
+      "round": 4,
+      "audio_text": "Welcome, everyone. I am here today to talk about the role of volunteer experience in your university applications. There is a common misconception that admissions officers count volunteer hours like points on a scoreboard. They do not. What they look for is evidence of genuine, sustained engagement with a cause that says something about who you are. A single deep year supporting one local charity, with clear examples of what you contributed, is almost always stronger than thirty disconnected one-off events. Choose carefully, document carefully, reflect carefully — and remember that the experience you are buying is, ultimately, your own growth, not just a line on the application form.",
+      "speakers": {
+        "_": {
+          "gender": "male",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for detail",
+      "content": "Listen and choose the correct answer.\n\nWhat time will the speakers meet at the cinema?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. At a quarter to seven.",
+        "B. At seven sharp.",
+        "C. At half past six.",
+        "D. At a quarter past six."
+      ],
+      "answer": "A",
+      "explanation": "B 提议 6:30，A 觉得太赶；B 改为 7:00 整；A 担心买票；最后他们妥协于 6:45 = quarter to seven。",
+      "round": 4,
+      "audio_text": "A: So when do you want to meet for the film? It starts at seven thirty, doesn't it?\nB: Yes. I was thinking half past six, so we have time for snacks.\nA: Honestly, that's a bit tight for me — I'm coming straight from the gym, and the bus is unreliable.\nB: How about seven sharp, then? We just go straight in.\nA: That doesn't give us a chance to actually buy tickets if the queue is long. Could we say a quarter to seven? Fifteen minutes is enough for tickets and we still have a moment to sit down.\nB: Fine, a quarter to seven, outside the main entrance. Don't be late.",
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "teen"
+        },
+        "B": {
+          "gender": "male",
+          "age": "teen"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for detail",
+      "content": "Listen and choose the correct answer.\n\nHow much will the customer pay in total?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Twenty-eight pounds and fifty pence.",
+        "B. Twenty-five pounds.",
+        "C. Thirty pounds.",
+        "D. Thirty-five pounds and fifty pence."
+      ],
+      "answer": "A",
+      "explanation": "三明治 6.50 + 沙拉 7.00 + 两杯咖啡 8.00 + 餐后甜点 7.00 = 28.50。",
+      "round": 4,
+      "audio_text": "A: Right, let me read that back. One smoked-salmon sandwich at six pounds fifty, one large garden salad at seven pounds, two regular cappuccinos at four pounds each, and a slice of lemon cheesecake at seven pounds. Is that everything for you today?\nB: Yes, that is everything.\nA: That comes to twenty-eight pounds and fifty pence in total. Are you paying by card or with cash?\nB: Card, please.\nA: Pop your card in here whenever you are ready. Would you like a receipt?\nB: Yes, please.",
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "male",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for detail",
+      "content": "Listen and choose the correct answer.\n\nWhich item did the woman forget to pack?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Her phone charger.",
+        "B. Her passport.",
+        "C. Her sunglasses.",
+        "D. Her toothbrush."
+      ],
+      "answer": "A",
+      "explanation": "对话核心：她检查所有项目都带了，但最后说手机充电器没带。",
+      "round": 4,
+      "audio_text": "A: Right, last check before we leave for the airport. Passport?\nB: In the front pocket of my hand luggage.\nA: Sunglasses and a hat for the beach?\nB: Both already in the side pocket.\nA: Toothbrush, deodorant, the small medical kit?\nB: All in the toiletry bag, yes.\nA: Phone, headphones, charger?\nB: Phone and headphones yes — wait. The charger is still by my desk in the bedroom. I plugged in last night and forgot it. Honestly, every single time.\nA: Go and grab it now, we still have ten minutes before the taxi.",
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "male",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for detail",
+      "content": "Listen and choose the correct answer.\n\nWhere did the speakers finally decide to spend their weekend?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. At a quiet lakeside cabin.",
+        "B. In a luxury city hotel.",
+        "C. On a coach tour of historic castles.",
+        "D. At a music festival."
+      ],
+      "answer": "A",
+      "explanation": "对话依次否决城市酒店（贵）、城堡巴士（累）、音乐节（人多），最终选择湖边小屋。",
+      "round": 4,
+      "audio_text": "A: So I have looked at four options for the weekend break. The first is the city hotel package — central, lovely rooms, but honestly very expensive once you add meals.\nB: Out then. We were trying to save this month.\nA: The second is the coach tour around three historic castles. It is reasonably priced but the schedule looks exhausting — we would be on a bus most of the day.\nB: After this term I really cannot face that. What else?\nA: There is a music festival on the south coast. Cheaper, lots of bands.\nB: With our luck the field will be muddy and packed. I would rather not.\nA: Last option: a small cabin by the lake. Very simple, kayaks included, no Wi-Fi.\nB: That sounds perfect. Quiet is exactly what I need. Book the lake cabin.",
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "male",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for opinion & attitude",
+      "content": "Listen and choose the correct answer.\n\nWhat is the man's overall attitude towards the new traffic plan?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Cautiously supportive but with reservations about implementation.",
+        "B. Strongly opposed to every aspect of it.",
+        "C. Indifferent — he believes it makes no difference.",
+        "D. Enthusiastically in favour without any concerns."
+      ],
+      "answer": "A",
+      "explanation": "他说原则上支持但执行细节担心 — 即谨慎支持。其余三项过强或过弱。",
+      "round": 4,
+      "audio_text": "A: So you have read the new traffic plan. What do you actually think of it?\nB: In principle, I like the direction. Fewer cars in the centre, wider footpaths, more cycle lanes — those are clearly good for the city in the long term.\nA: But?\nB: But — and this is where I lose patience a bit — the implementation timetable is unrealistic. They want to redesign three major roads in eighteen months, which I think will produce a lot of half-finished works and angry residents.\nA: So the idea is fine, the schedule is wrong.\nB: Exactly. I would rather they did half as much, properly, and let people see the benefits before pushing the rest.",
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "male",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for opinion & attitude",
+      "content": "Listen and choose the correct answer.\n\nHow does the woman feel about her new job after one month?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Relieved that her early worries did not come true, but unsure about long-term prospects.",
+        "B. Bored and ready to leave the company immediately.",
+        "C. Completely satisfied with no concerns at all.",
+        "D. Frustrated because nothing has changed since her last role."
+      ],
+      "answer": "A",
+      "explanation": "她坦言早期担心未实现，但提到不确定 long-term。其余三项过极。",
+      "round": 4,
+      "audio_text": "A: It has been a month now in the new job. How are you finding it, honestly?\nB: Honestly? Better than I feared. I was convinced I had made a terrible mistake during the first week — too many systems, too many names, too much jargon. By the end of week three things had calmed down.\nA: So you are happy.\nB: I am relieved, which is not quite the same thing. The day-to-day is fine. The bigger question is whether I see myself growing here in two or three years, and on that I really cannot tell yet. I will give it another quarter before I form a real opinion.",
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "male",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for opinion & attitude",
+      "content": "Listen and choose the correct answer.\n\nWhat is the speaker's view on home-cooked meals?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. She values them but acknowledges the time pressure on busy families.",
+        "B. She believes everyone must cook from scratch every night.",
+        "C. She thinks ready meals are nutritionally identical to home cooking.",
+        "D. She has given up on home cooking entirely."
+      ],
+      "answer": "A",
+      "explanation": "讲者称重要但理解时间压力 — 平衡观点。",
+      "round": 4,
+      "audio_text": "Good evening. Tonight I want to talk briefly about home cooking — but not in the lecturing tone the topic usually attracts. Yes, food made at home tends to contain less salt, less sugar, and more vegetables than its packaged equivalents. Yes, eating around a table is good for families. None of that is news. What is more interesting, and less often discussed, is how unrealistic the standard advice can sound to a single parent finishing a long shift. So my honest position is this: home cooking matters and is worth defending; but the way to defend it is not to shame busy households into impossible standards. Two reasonable home-cooked meals a week, treated as a small ritual rather than a moral test, may do more good than a guilt-driven attempt at seven.",
+      "speakers": {
+        "_": {
+          "gender": "female",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for opinion & attitude",
+      "content": "Listen and choose the correct answer.\n\nWhat is the man's opinion on remote working?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. It works well for some tasks but harms team learning over time.",
+        "B. It is universally better than office working.",
+        "C. It should be banned by law.",
+        "D. It is identical to office work in every way."
+      ],
+      "answer": "A",
+      "explanation": "他承认 deep work 优势，但担心 junior staff 学习损失。其余三项过极。",
+      "round": 4,
+      "audio_text": "A: After three years of mixed remote and office working, what is your honest view?\nB: My view is more nuanced than it used to be. For deep individual work — writing reports, focused analysis — I am genuinely more productive at home. The numbers back this up.\nA: Sounds fully positive.\nB: That is only half. The part that worries me is the junior staff. Two or three of our recent graduates have told me they feel they are not learning the small things that used to be picked up by overhearing experienced colleagues handle a tricky call.\nA: So the question is no longer about productivity but about apprenticeship.\nB: Yes. And we have not solved it. We have only postponed thinking about it.",
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "male",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for opinion & attitude",
+      "content": "Listen and choose the correct answer.\n\nWhat is the speaker's attitude towards online reviews?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Skeptical — useful only if read with care for systematic biases.",
+        "B. Trusting — believes most reviews accurately reflect the product.",
+        "C. Hostile — believes all reviews should be banned.",
+        "D. Indifferent — believes reviews have no influence on anyone."
+      ],
+      "answer": "A",
+      "explanation": "讲者说有用但要警惕系统性偏差。",
+      "round": 4,
+      "audio_text": "Tonight, a short piece on online reviews. The standard advice — read the one-stars and the five-stars, then decide — sounds wise but it leaves out something important: the reviewers themselves are not a representative sample. People who write reviews tend to be either unusually delighted or unusually furious. The quiet middle, which is most of us most of the time, rarely posts. That does not mean the reviews are useless. It means they describe the extremes of an experience reasonably well, and the typical experience rather poorly. Read with that filter, they remain a tool. Read without it, they can mislead you into thinking the world is more dramatic than it actually is.",
+      "speakers": {
+        "_": {
+          "gender": "female",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for opinion & attitude",
+      "content": "Listen and choose the correct answer.\n\nHow does the woman feel about giving up social media?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Mostly positive but occasionally lonely about missing certain conversations.",
+        "B. Completely regretful and planning to return immediately.",
+        "C. Indifferent — she did not really use it before.",
+        "D. Hostile to anyone who still uses it."
+      ],
+      "answer": "A",
+      "explanation": "她大体满意但偶尔孤独，并不极端否定他人。",
+      "round": 4,
+      "audio_text": "A: It has been six months since you deleted the apps. Any regrets?\nB: Mostly no. My sleep is better, I read again, my actual conversations are deeper because I am not skimming everyone's life over breakfast.\nA: So an unqualified success?\nB: Not quite. There are evenings — usually after a long quiet day — when I genuinely miss the chatter, especially around things like film releases or politics, where everyone seems to have processed an event before I have heard about it.\nA: But it has not made you reinstall.\nB: Not yet. The trade is still on my side. Whether that lasts another six months, I have no idea.\nA: Fair enough.",
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "male",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for opinion & attitude",
+      "content": "Listen and choose the correct answer.\n\nWhat is the speaker's main view on self-driving cars?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Practical questions of liability matter more than the technology itself.",
+        "B. The technology will never work in any city.",
+        "C. Self-driving cars are already perfect and need no further work.",
+        "D. Insurance companies have already solved every problem."
+      ],
+      "answer": "A",
+      "explanation": "讲者强调 liability 法律问题比技术更难解决。",
+      "round": 4,
+      "audio_text": "There is a tendency, when self-driving cars come up at conferences, to focus almost entirely on the technology — the cameras, the sensors, the software. That part is genuinely impressive and improving every year. The harder problem, in my opinion, is not technical at all. When a self-driving car causes harm — and statistically, eventually, one will — who is liable? The owner who pressed the button? The manufacturer of the car? The supplier of the perception software? The agency that approved the model for road use? Until liability is settled, deployment in dense cities will remain partial and patchy. The tail will not catch up with the dog because the tail is being held back by an unanswered legal question.",
+      "speakers": {
+        "_": {
+          "gender": "male",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Multi-speaker listening",
+      "content": "Listen and choose the correct answer.\n\nWhat do all three speakers agree on?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. That the school cafeteria menu needs more vegetarian options.",
+        "B. That cafeteria food is currently perfect.",
+        "C. That all students should bring their own lunch.",
+        "D. That the cafeteria should close on Mondays."
+      ],
+      "answer": "A",
+      "explanation": "三人都说素食选择不够 — 唯一一致点。",
+      "round": 4,
+      "audio_text": "A: I really think the cafeteria menu is too meat-heavy this term.\nB: I would not go that far, but I do agree they have only one vegetarian dish per day, and it is usually the same kind of pasta.\nC: Yes, even for those of us who are not strictly vegetarian, sometimes we just want a non-meat option that is interesting.\nA: Exactly. A bean stew, a tofu curry, something with proper seasoning.\nB: Right. I would happily eat that twice a week.\nC: So we are in agreement — the food itself is fine, but the variety on the vegetarian side is the issue.",
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "teen"
+        },
+        "B": {
+          "gender": "male",
+          "age": "teen"
+        },
+        "C": {
+          "gender": "female",
+          "age": "teen"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Multi-speaker listening",
+      "content": "Listen and choose the correct answer.\n\nWhich speaker most strongly opposes the proposed school uniform change?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Speaker C",
+        "B. Speaker A",
+        "C. Speaker B",
+        "D. None of them — they all support it"
+      ],
+      "answer": "A",
+      "explanation": "C 明确强烈反对；A 支持；B 含糊。",
+      "round": 4,
+      "audio_text": "A: I think the new uniform proposal is sensible. The current jacket is too warm and too expensive.\nB: I see your point on the jacket, but changing the whole uniform feels excessive. Maybe just an alternative jacket would be enough.\nC: I have to disagree with both of you. Switching uniforms in the middle of the school year creates real costs for families, and most students are perfectly happy with what we have. I am firmly against it.\nA: But families will save money in the long run.\nC: That is a guess. The immediate cost is certain. I cannot support it.",
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "male",
+          "age": "adult"
+        },
+        "C": {
+          "gender": "female",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Multi-speaker listening",
+      "content": "Listen and choose the correct answer.\n\nWhat does the family decide to do for the trip?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Drive instead of taking the train, because of cost and luggage.",
+        "B. Cancel the trip altogether.",
+        "C. Take the train and pay extra for luggage.",
+        "D. Fly to save time despite the cost."
+      ],
+      "answer": "A",
+      "explanation": "三人最终选择开车（讨论了三选项），结合行李 + 价格。",
+      "round": 4,
+      "audio_text": "A (Father): So options for the trip: train, plane, or drive. Train is comfortable but the four of us with all the camping gear is going to be over a hundred and fifty pounds in baggage alone.\nB (Mother): That is what worries me. The basic ticket looks cheap until you add bikes and the big bag.\nC (Teenage daughter): Plane is out, right? It is too short a distance.\nA: Yes, and the train station to the campsite still needs a taxi.\nB: So we drive.\nC: I am fine with driving as long as we stop somewhere for lunch.\nA: Agreed, we drive. I will plan the route tonight.",
+      "speakers": {
+        "A": {
+          "gender": "male",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "C": {
+          "gender": "female",
+          "age": "teen"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Multi-speaker listening",
+      "content": "Listen and choose the correct answer.\n\nWhat is the main problem the team is trying to solve?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Their event website crashed and they need a quick recovery plan.",
+        "B. Their team has lost a major sponsor.",
+        "C. Their event location has been changed by the venue.",
+        "D. Their main speaker has cancelled the keynote."
+      ],
+      "answer": "A",
+      "explanation": "三人讨论网站宕机和恢复计划。其余三项与对话无关。",
+      "round": 4,
+      "audio_text": "A: Right, urgent meeting. The event registration site went down at three this afternoon and we still cannot bring it back up. We have ninety minutes before evening hits and people start trying to register after work.\nB: I have already contacted the hosting team. Their estimate is forty minutes for full recovery, but they cannot guarantee it.\nC: In the meantime, can we put up a single static page with a Google form for registrations? We feed those into the database afterwards.\nA: Good. Do that immediately. B, post a clear update on social media: not a panic, just 'site temporarily down, please use this form'.\nB: On it.\nC: I will write the form right now.",
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "male",
+          "age": "adult"
+        },
+        "C": {
+          "gender": "female",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Multi-speaker listening",
+      "content": "Listen and choose the correct answer.\n\nWhich of the three speakers is most uncertain about the plan?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Speaker B",
+        "B. Speaker A",
+        "C. Speaker C",
+        "D. None — all are equally uncertain"
+      ],
+      "answer": "A",
+      "explanation": "B 多次表示 'not sure' / 'we need more data'，A 决断，C 支持。",
+      "round": 4,
+      "audio_text": "A: We move ahead with the launch in October.\nB: I am genuinely not sure that is enough time. Marketing have only signed off on half the materials, and the user testing data we have is from a sample of barely sixty people.\nC: I share some of B's concerns about testing, but I think a delay would cost us more than another rushed quarter would.\nA: Exactly. October. We can patch in November.\nB: I would push back. We need more data before we commit publicly. I would rather a controlled November launch than an October launch we have to defend.\nC: Fair, but I lean A's way.",
+      "speakers": {
+        "A": {
+          "gender": "male",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "C": {
+          "gender": "male",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Multi-speaker listening",
+      "content": "Listen and choose the correct answer.\n\nWhat do the three friends finally decide to do for the weekend?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Visit an art exhibition together on Saturday afternoon.",
+        "B. Stay home because the weather is bad.",
+        "C. Drive to the seaside for a picnic.",
+        "D. Go to a concert in the city centre."
+      ],
+      "answer": "A",
+      "explanation": "经过提议-否决，最终决定 Saturday afternoon 看艺术展。其余被否或未选。",
+      "round": 4,
+      "audio_text": "A: What about a hike on Saturday morning?\nB: Have you seen the forecast? Heavy rain all weekend.\nC: Indoor activity then. The new photography exhibition at the gallery — anyone interested?\nA: I would go. They had good reviews in the paper.\nB: I am not a huge gallery person but I have heard this one is genuinely interesting.\nC: Saturday afternoon, two o'clock entry?\nA: Works for me.\nB: Yes, two o'clock is fine. I will buy our tickets online tonight to skip the queue.\nC: Perfect. Gallery on Saturday it is.",
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "male",
+          "age": "adult"
+        },
+        "C": {
+          "gender": "female",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Academic conversation (light, no full lecture)",
+      "content": "Listen and choose the correct answer.\n\nWhat is the tutor's main suggestion to the student?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. To narrow the essay question and add a clearer central argument.",
+        "B. To rewrite the entire draft from scratch.",
+        "C. To submit the essay without changes.",
+        "D. To choose a completely new topic."
+      ],
+      "answer": "A",
+      "explanation": "导师建议缩小问题范围 + 加明确论点；并未要求重写或换题。",
+      "round": 4,
+      "audio_text": "A (Tutor): I have read your draft. There is a great deal of good reading here, but the essay is trying to do too many things at once.\nB (Student): I was worried about that. I went down too many rabbit holes.\nA: My main suggestion is not to rewrite from scratch — there is solid material — but to narrow the question. At the moment the title is asking about three centuries of policy. Pick one clear claim that runs from your introduction through your conclusion, and prune anything that does not directly serve it.\nB: So less width, more depth.\nA: Exactly. And add an explicit thesis sentence in the introduction, not a vague signpost. That alone will tighten about half of the section issues.\nB: Got it. I will redraft the introduction tonight and rebuild the structure around it.",
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "male",
+          "age": "teen"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Academic conversation (light, no full lecture)",
+      "content": "Listen and choose the correct answer.\n\nWhat does the professor recommend before the student begins fieldwork?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. To pilot the survey on a small group and revise the unclear questions.",
+        "B. To skip the literature review.",
+        "C. To collect all data first and analyse later.",
+        "D. To switch to a quantitative method."
+      ],
+      "answer": "A",
+      "explanation": "教授强调先小规模 pilot 测试，找出题目不清楚的地方修改。",
+      "round": 4,
+      "audio_text": "A (Student): I am ready to start handing the surveys out next week. I have a list of fifty respondents.\nB (Professor): Before you do, I strongly recommend a pilot. Print just five copies, give them to people similar to your final sample, and watch them complete the survey. You will be surprised how often a question that seems clear to you confuses the actual reader.\nA: Five copies feels low. Should it be more?\nB: For a pilot, no. Five is enough to expose the worst ambiguities. Larger pilots become essentially small studies and consume time you need for the real fieldwork. Revise based on what you observe, then go to the full fifty.\nA: Got it. Pilot Monday, revise Tuesday, fieldwork from Wednesday.\nB: Sensible.",
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "male",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Academic conversation (light, no full lecture)",
+      "content": "Listen and choose the correct answer.\n\nHow does the supervisor evaluate the student's literature review?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Comprehensive but lacking critical engagement with the sources.",
+        "B. Too short and missing key authors.",
+        "C. Excellent and ready for submission.",
+        "D. Off-topic and needing a complete restart."
+      ],
+      "answer": "A",
+      "explanation": "导师称范围齐全但批判分析不足；并非太短或重启。",
+      "round": 4,
+      "audio_text": "A (Supervisor): The literature review is impressively comprehensive — you have covered every major author I would expect to see and several I would not have thought of.\nB (Student): Thanks. I worked on it most of August.\nA: Now, here is the harder feedback. At the moment it reads like a series of careful summaries. Each paragraph correctly describes what someone said. What it does not yet do, in most paragraphs, is tell me what you make of it. Where do these authors disagree? Whose argument do you find most persuasive, and why? Whose evidence is weakest?\nB: So it is a critical-engagement issue, not a coverage issue.\nA: Exactly. Coverage is solid. Take a week to add evaluative sentences — your own voice — to each section.\nB: Will do.",
+      "speakers": {
+        "A": {
+          "gender": "male",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "female",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Academic conversation (light, no full lecture)",
+      "content": "Listen and choose the correct answer.\n\nWhat is the main reason the seminar group's discussion stalled?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Most participants had not done the assigned reading in time.",
+        "B. The room was too noisy.",
+        "C. The tutor refused to attend.",
+        "D. The seminar topic was changed last minute."
+      ],
+      "answer": "A",
+      "explanation": "讨论被卡是因大多数没读 reading；其余三项与对话不符。",
+      "round": 4,
+      "audio_text": "A: I am sorry today's seminar was so flat. I had hoped for more discussion.\nB: I think only three of us had actually finished the reading, to be honest. The rest were skim-reading during the first ten minutes.\nA: Yes, that was the problem. There is no way to lead a serious discussion of a complex paper if most of the room has only read the abstract.\nB: It might help if next week's reading is shorter, or if we split it into sections and assign different students to lead each.\nA: I had not thought of dividing it. Let me take that to the staff and we will trial it for the next two seminars.\nB: Sounds good — I think people will engage more if their part is clearly theirs.",
+      "speakers": {
+        "A": {
+          "gender": "male",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "female",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Functional",
+      "knowledge_point": "Grammar/Sentence Transformation",
+      "content": "Choose the rewrite that best preserves the meaning of the original sentence.\n\nOriginal: 'I started learning the violin five years ago.'",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. I have been learning the violin for five years.",
+        "B. I had been learning the violin for five years.",
+        "C. I am learning the violin since five years.",
+        "D. I will be learning the violin in five years."
+      ],
+      "answer": "A",
+      "explanation": "started X years ago = have been V-ing for X years（现在完成进行）。其余时态错或时间介词错。",
+      "round": 4
+    },
+    {
+      "chapter": "Functional",
+      "knowledge_point": "Grammar/Sentence Transformation",
+      "content": "Choose the rewrite that best preserves the meaning.\n\nOriginal: 'It is unlikely that he will arrive on time.'",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. He is unlikely to arrive on time.",
+        "B. He must arrive on time.",
+        "C. He will likely not arrive on time, although he definitely will.",
+        "D. It is necessary that he arrives on time."
+      ],
+      "answer": "A",
+      "explanation": "It is unlikely that S V → S is unlikely to V（标准 it-shift）。其余 B/C 自相矛盾或反义；D 改成必要。",
+      "round": 4
+    },
+    {
+      "chapter": "Functional",
+      "knowledge_point": "Grammar/Sentence Transformation",
+      "content": "Choose the rewrite that best preserves the meaning.\n\nOriginal: 'Although she was tired, she finished the project.'",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Despite being tired, she finished the project.",
+        "B. Because she was tired, she finished the project.",
+        "C. If she had been tired, she would have finished the project.",
+        "D. She finished the project so that she was tired."
+      ],
+      "answer": "A",
+      "explanation": "Although + 句 = Despite + V-ing / N（让步介词替换）。B 把因果反转；C 是 type 3 假设；D 是结果状语，意思错。",
+      "round": 4
+    },
+    {
+      "chapter": "Functional",
+      "knowledge_point": "Grammar/Sentence Transformation",
+      "content": "Choose the rewrite that best preserves the meaning.\n\nOriginal: 'We should have left earlier.'",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. We didn't leave early enough — and now we regret it.",
+        "B. We will leave earlier next time, definitely.",
+        "C. We can leave earlier whenever we want.",
+        "D. We left earlier, which was correct."
+      ],
+      "answer": "A",
+      "explanation": "should have + p.p. = 当时本应做但没做（含遗憾）。B 是未来计划；C 是能力；D 与原句相反。",
+      "round": 4
+    },
+    {
+      "chapter": "Functional",
+      "knowledge_point": "Grammar/Sentence Transformation",
+      "content": "Choose the rewrite that best preserves the meaning.\n\nOriginal: 'Nobody told me about the change.'",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. I was not told about the change by anyone.",
+        "B. I told nobody about the change.",
+        "C. Nobody knew about the change.",
+        "D. I did not change anyone."
+      ],
+      "answer": "A",
+      "explanation": "主动→被动：Nobody told me → I was not told by anyone（'by anyone' 表 'nobody' 的被动等价）。其余三项含义改变。",
+      "round": 4
+    },
+    {
+      "chapter": "Functional",
+      "knowledge_point": "Grammar/Sentence Transformation",
+      "content": "Choose the rewrite that best preserves the meaning.\n\nOriginal: 'She insisted on paying the bill.'",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. She insisted that she pay the bill.",
+        "B. She refused to pay the bill.",
+        "C. She forgot to pay the bill.",
+        "D. She apologised for paying the bill."
+      ],
+      "answer": "A",
+      "explanation": "insist on + V-ing = insist that S + (should) + V（虚拟 mandative）。其余三项改了意思。",
+      "round": 4
+    },
+    {
+      "chapter": "Functional",
+      "knowledge_point": "Grammar/Sentence Transformation",
+      "content": "Choose the rewrite that best preserves the meaning.\n\nOriginal: 'If I had known about the meeting, I would have attended.'",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Had I known about the meeting, I would have attended.",
+        "B. If I knew about the meeting, I would attend.",
+        "C. If I will know about the meeting, I will attend.",
+        "D. I attended the meeting because I knew."
+      ],
+      "answer": "A",
+      "explanation": "Type 3 倒装：Had + S + p.p. = If + S + had + p.p.。其余 B 是 type 2；C 时态错；D 与虚拟相反。",
+      "round": 4
+    },
+    {
+      "chapter": "Functional",
+      "knowledge_point": "Grammar/Sentence Transformation",
+      "content": "Choose the rewrite that best preserves the meaning.\n\nOriginal: 'They didn't recognise me because I had grown a beard.'",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Having grown a beard, I was not recognised by them.",
+        "B. Although I had grown a beard, they recognised me.",
+        "C. I grew a beard because they did not recognise me.",
+        "D. They recognised me, having grown a beard."
+      ],
+      "answer": "A",
+      "explanation": "perfect participle (Having + p.p.) + 被动主句 = 因长胡子而未被认出。B/C 因果颠倒；D 主语逻辑错（grown 主语应是 I）。",
+      "round": 4
+    },
+    {
+      "chapter": "Functional",
+      "knowledge_point": "Grammar/Sentence Transformation",
+      "content": "Choose the rewrite that best preserves the meaning.\n\nOriginal: 'It was the noise that woke me up at 3 a.m.'",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. What woke me up at 3 a.m. was the noise.",
+        "B. I woke up because the noise was at 3 a.m.",
+        "C. It was 3 a.m. when the noise woke up.",
+        "D. The noise that I woke up was at 3 a.m."
+      ],
+      "answer": "A",
+      "explanation": "It-cleft → What-cleft 等价改写：It was X that... = What was... X / What... was X。其余三项语法错或意思变。",
+      "round": 4
+    },
+    {
+      "chapter": "Functional",
+      "knowledge_point": "Grammar/Sentence Transformation",
+      "content": "Choose the rewrite that best preserves the meaning.\n\nOriginal: 'She rarely complains about her workload.'",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Rarely does she complain about her workload.",
+        "B. She is rarely about her workload.",
+        "C. She does not complain rarely about her workload.",
+        "D. Rarely she complains about her workload."
+      ],
+      "answer": "A",
+      "explanation": "Rarely 置句首引发倒装：Rarely + does + S + V。B 缺动词；C 双重否定意思反；D 缺倒装结构。",
+      "round": 4
+    },
+    {
+      "chapter": "Functional",
+      "knowledge_point": "Grammar/Sentence Transformation",
+      "content": "Choose the rewrite that best preserves the meaning.\n\nOriginal: 'You can come in only if you have an appointment.'",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Only if you have an appointment can you come in.",
+        "B. You only come in if you have an appointment certainly.",
+        "C. If you come in, you have an appointment only.",
+        "D. Only you can come in, if appointment yes."
+      ],
+      "answer": "A",
+      "explanation": "Only if + 子句 → 主句倒装：Only if + clause + auxiliary + S + V。其余三项语法/意思错。",
+      "round": 4
+    },
+    {
+      "chapter": "Functional",
+      "knowledge_point": "Grammar/Sentence Transformation",
+      "content": "Choose the rewrite that best preserves the meaning.\n\nOriginal: 'He is so proud that he never asks for help.'",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. He is too proud to ask for help.",
+        "B. He asks for help because he is proud.",
+        "C. He is not proud, so he never asks.",
+        "D. Despite his pride, he asks for help."
+      ],
+      "answer": "A",
+      "explanation": "so X that 否定/never V → too X to V。其余三项与原句意相反或不连贯。",
+      "round": 4
+    },
+    {
+      "chapter": "Functional",
+      "knowledge_point": "Grammar/Sentence Transformation",
+      "content": "Choose the rewrite that best preserves the meaning.\n\nOriginal: 'I prefer reading books to watching films.'",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. I would rather read books than watch films.",
+        "B. I prefer to watch films rather than read books.",
+        "C. I have read books and not watched films.",
+        "D. Reading books is harder than watching films."
+      ],
+      "answer": "A",
+      "explanation": "prefer + V-ing to V-ing = would rather + bare-V than bare-V。其余三项意思错。",
+      "round": 4
+    },
+    {
+      "chapter": "Functional",
+      "knowledge_point": "Grammar/Sentence Transformation",
+      "content": "Choose the rewrite that best preserves the meaning.\n\nOriginal: 'They did not let us into the building.'",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. We were not allowed into the building.",
+        "B. We were not letting them into the building.",
+        "C. We did not allow them into the building.",
+        "D. They were not in the building."
+      ],
+      "answer": "A",
+      "explanation": "let sb in (主动) → be allowed in (被动 + allow 替 let 因 let 被动罕见)。其余三项主宾或意思错。",
+      "round": 4
+    },
+    {
+      "chapter": "Functional",
+      "knowledge_point": "Grammar/Sentence Transformation",
+      "content": "Choose the rewrite that best preserves the meaning.\n\nOriginal: 'It has been a long time since we last met.'",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. We have not met for a long time.",
+        "B. We have met for a long time recently.",
+        "C. We met long ago, but not since.",
+        "D. We did not meet a long time ago."
+      ],
+      "answer": "A",
+      "explanation": "It has been + 时长 + since (last) + 过去时 = S + have not + p.p. + for + 时长。B/C/D 时态或意思都不对（C 双重否定 awkward）。",
+      "round": 4
+    },
+    {
+      "chapter": "Functional",
+      "knowledge_point": "Reading/Text Coherence",
+      "content": "Read the paragraph. Choose the sentence that best fits in the gap [1].\n\nOnline learning has expanded enormously over the past decade. [1] Critics, however, point out that completion rates for these courses remain disappointingly low, especially for learners without prior university experience.\n\nWhich sentence best fits gap [1]?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Free platforms now offer thousands of courses to anyone with an internet connection.",
+        "B. Most universities will close down by 2030.",
+        "C. Pencils were invented in the seventeenth century.",
+        "D. The price of bread has risen sharply this year."
+      ],
+      "answer": "A",
+      "explanation": "A 衔接 'expanded' 主题（具体例子：免费课程数千门），并自然引出 'critics 完成率低' 的转折。其余无关。",
+      "round": 4
+    },
+    {
+      "chapter": "Functional",
+      "knowledge_point": "Reading/Text Coherence",
+      "content": "Choose the sentence that best fits the gap [1].\n\nThe city council announced a new bicycle-sharing scheme last month. [1] Despite this, ridership in the first three weeks has exceeded all forecasts, and several rental docks are routinely empty by 9 a.m.\n\nWhich sentence best fits gap [1]?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Local critics initially predicted that the bikes would mostly be stolen or vandalised.",
+        "B. The mayor announced his retirement during the same press conference.",
+        "C. Most residents prefer cars to any form of public transport.",
+        "D. Bicycle helmets were patented in 1880."
+      ],
+      "answer": "A",
+      "explanation": "A 与 'Despite this, ridership exceeded forecasts' 形成转折前提（批评者预言失败 → 实际超预期）。其余无逻辑衔接。",
+      "round": 4
+    },
+    {
+      "chapter": "Functional",
+      "knowledge_point": "Reading/Text Coherence",
+      "content": "Choose the sentence that best fits the gap [1].\n\nResearchers have long known that birdsong varies between regions. [1] By comparing the songs of birds in adjacent valleys, scientists can now identify subtle dialects that change measurably every few kilometres.\n\nWhich sentence best fits gap [1]?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. More recently, advances in audio recording have made it possible to study these variations in much greater detail.",
+        "B. Most birds eat seeds and insects.",
+        "C. Bird-watching is a popular hobby in many countries.",
+        "D. Songbirds typically migrate in the autumn."
+      ],
+      "answer": "A",
+      "explanation": "A 衔接前句 (long known variation) 和后句 (now identify subtle dialects)：技术进步推动 detail。其余三项是无关一般事实。",
+      "round": 4
+    },
+    {
+      "chapter": "Functional",
+      "knowledge_point": "Reading/Text Coherence",
+      "content": "Choose the sentence that best fits the gap [1].\n\nWhen a new restaurant opens, marketing teams often focus on a memorable opening week. [1] In the long term, however, the steady quality of an unremarkable Wednesday matters more than any launch event.\n\nWhich sentence best fits gap [1]?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Special discounts and celebrity guests can produce striking photographs and a flood of social-media posts.",
+        "B. Tomatoes are technically a fruit.",
+        "C. The first restaurants in Europe appeared in eighteenth-century Paris.",
+        "D. Most chefs use stainless-steel knives."
+      ],
+      "answer": "A",
+      "explanation": "A 是 marketing 的具体例子（折扣 + 名人 + 照片）。后句对比 'long term steady quality matters more'。",
+      "round": 4
+    },
+    {
+      "chapter": "Functional",
+      "knowledge_point": "Reading/Text Coherence",
+      "content": "Choose the sentence that best fits the gap [1].\n\nThe library plans to extend its weekend hours starting next month. [1] Funding for the additional staff and lighting will come from a small surcharge on overdue items, which the council approved at its last meeting.\n\nWhich sentence best fits gap [1]?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. This decision follows months of consultation with regular users, many of whom requested longer Saturday access.",
+        "B. Books are usually arranged on shelves by genre.",
+        "C. Some libraries have cafés inside them.",
+        "D. Reading is a popular activity in many cities."
+      ],
+      "answer": "A",
+      "explanation": "A 解释 'extend its weekend hours' 决策来源（用户 consultation），并自然引出 funding 段。",
+      "round": 4
+    }
+  ]
+}

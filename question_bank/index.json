@@ -1,10 +1,31 @@
 {
-  "version": 16,
+  "version": 19,
   "updated_at": "2026-05-08",
   "batches": [
     {
       "source": "batch_2026_05_07_g6_english_pet_r1",
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/batch_2026_05_07_g6_english_pet_r1.json",
+      "subject": "english",
+      "grade": 6,
+      "count": 200
+    },
+    {
+      "source": "batch_2026_05_08_g6_english_pet_r2",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/batch_2026_05_08_g6_english_pet_r2.json",
+      "subject": "english",
+      "grade": 6,
+      "count": 200
+    },
+    {
+      "source": "batch_2026_05_08_g6_english_pet_r3",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/batch_2026_05_08_g6_english_pet_r3.json",
+      "subject": "english",
+      "grade": 6,
+      "count": 200
+    },
+    {
+      "source": "batch_2026_05_08_g6_english_pet_r4",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/batch_2026_05_08_g6_english_pet_r4.json",
       "subject": "english",
       "grade": 6,
       "count": 200
@@ -396,6 +417,21 @@
       "version": 16,
       "date": "2026-05-08",
       "change": "V3.12.3 删除 3 卷 OCR 抢救语文（Famin 提醒\"识别不清直接放弃\"原则，纠正之前 _unverified+reviewer 重写的错误流程）"
+    },
+    {
+      "version": 17,
+      "date": "2026-05-08",
+      "change": "V3.9 添加 PET R2 中等档 200 题（Vocabulary 60 / Grammar 61 / Reading 54 / Listening 25，含 25 道听力 + speakers 元数据）"
+    },
+    {
+      "version": 18,
+      "date": "2026-05-08",
+      "change": "V3.9 添加 PET R3 较难档 200 题（Vocabulary 44 / Grammar 71 / Reading 60 / Listening 25，含 25 道听力 + speakers 元数据；R3 = R2 hard 起步，CEFR B1 完整 + B2 入门，含 FCE 入门 KP：Word Choice (Cloze) / Sentence Transformation / Open Cloze / Phrasal Verbs / Passive / Relative Clauses / Reported Speech / Linking Words）"
+    },
+    {
+      "version": 19,
+      "date": "2026-05-08",
+      "change": "V3.9 添加 PET R4 竞赛拓展档 200 题（Vocabulary 35 / Grammar 50 / Reading 70 / Listening 25 / Functional 20，含 25 道听力 + speakers 元数据；R4 = R3 hard 起步，CEFR B2 完整 + C1 入门，触及 FCE/CAE 入门 KP：Inversion / Subjunctive / Cleft Sentences / Modals Perfect / Mixed Conditionals / Cross-text Matching / Recognising irony / Identifying implied meaning / Academic conversation 等；含 14 个 reading cluster 长篇 400-600 词）"
     }
   ]
 }

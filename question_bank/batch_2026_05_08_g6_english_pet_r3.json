@@ -1,0 +1,3559 @@
+{
+  "source": "batch_2026_05_08_g6_english_pet_r3",
+  "subject": "english",
+  "grade": 6,
+  "knowledge_points_added": [],
+  "questions": [
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Family & Relationships",
+      "content": "After the wedding, my husband's mother has officially become my ____.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. mother-in-law",
+        "B. stepmother",
+        "C. godmother",
+        "D. aunt"
+      ],
+      "answer": "A",
+      "explanation": "Husband's mother = mother-in-law. Stepmother is a parent's new wife after divorce/remarriage; godmother is religious; aunt is parent's sibling.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Family & Relationships",
+      "content": "My grandmother and her sister grew up in the same house, so they are very ____.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. similar",
+        "B. close",
+        "C. distant",
+        "D. patient"
+      ],
+      "answer": "B",
+      "explanation": "When relatives have a strong bond, we say they are 'close'. 'Similar' describes appearance; 'distant' is the opposite; 'patient' is unrelated.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Family & Relationships",
+      "content": "Although my parents argue sometimes, they always ____ in the end and become friends again.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. make up",
+        "B. break up",
+        "C. give up",
+        "D. catch up"
+      ],
+      "answer": "A",
+      "explanation": "'make up' = reconcile after a quarrel. 'break up' = end a relationship; 'give up' = stop trying; 'catch up' = reach the same level.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Family & Relationships",
+      "content": "My cousin and I were born only two months apart, so we are roughly the same ____.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. age",
+        "B. height",
+        "C. size",
+        "D. shape"
+      ],
+      "answer": "A",
+      "explanation": "Born two months apart points to age. Height/size/shape do not depend on birth date.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Family & Relationships",
+      "content": "When my uncle's wife had a baby last year, I became an ____ for the first time.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. uncle",
+        "B. aunt",
+        "C. nephew",
+        "D. niece"
+      ],
+      "answer": "B",
+      "explanation": "If your uncle has a baby, you (the speaker is female) become an aunt. The cue 'an' followed by a vowel-starting word excludes 'uncle' (also wrong logically) and matches 'aunt'.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Family & Relationships",
+      "content": "Even though they live in different countries, my brother and I keep in ____ by video call every week.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. touch",
+        "B. hand",
+        "C. talk",
+        "D. line"
+      ],
+      "answer": "A",
+      "explanation": "'keep in touch' is a fixed phrase meaning to stay in regular contact. The other words do not collocate this way.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Travel & Holidays",
+      "content": "Before flying abroad, you must ____ in at the airport at least two hours before departure.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. check",
+        "B. log",
+        "C. step",
+        "D. set"
+      ],
+      "answer": "A",
+      "explanation": "'check in' is the standard collocation for airport/hotel arrival processing. 'log in' is for accounts; 'step in' = intervene; 'set in' = begin (weather).",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Travel & Holidays",
+      "content": "We had to ____ our flight to Paris because of the heavy snowstorm.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. cancel",
+        "B. close",
+        "C. finish",
+        "D. break"
+      ],
+      "answer": "A",
+      "explanation": "When a flight is no longer possible, we cancel it. 'close' is for shops; 'finish' implies it ended naturally; 'break' is for objects.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Travel & Holidays",
+      "content": "The hotel was fully ____, so we had to find another place to stay.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. booked",
+        "B. closed",
+        "C. broken",
+        "D. quiet"
+      ],
+      "answer": "A",
+      "explanation": "'fully booked' means all rooms are reserved. The other options make less sense in context.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Travel & Holidays",
+      "content": "We took the wrong train and ended up in a small town we had never heard ____.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. of",
+        "B. about",
+        "C. from",
+        "D. with"
+      ],
+      "answer": "A",
+      "explanation": "'heard of' = know about something exists. 'heard about' is also possible but 'heard of' is the strong fixed expression here.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Travel & Holidays",
+      "content": "Tourists are advised to keep their passports in a ____ place at the hotel.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. safe",
+        "B. fast",
+        "C. light",
+        "D. soft"
+      ],
+      "answer": "A",
+      "explanation": "'safe place' is a standard collocation for security. 'fast/light/soft' do not describe security.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Travel & Holidays",
+      "content": "After a long journey, we finally ____ at the small village high in the mountains.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. arrived",
+        "B. reached at",
+        "C. got",
+        "D. came at"
+      ],
+      "answer": "A",
+      "explanation": "'arrived at + place' is correct. 'reached' takes no preposition; 'got to' would be correct but 'got' alone is wrong; 'came at' is incorrect.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/School & Study",
+      "content": "Sarah finds maths difficult, but she refuses to ____ and studies extra hours every night.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. give up",
+        "B. give in",
+        "C. give back",
+        "D. give out"
+      ],
+      "answer": "A",
+      "explanation": "'give up' = stop trying / abandon. 'give in' = surrender to pressure (close meaning, but the context of independent self-effort favours 'give up'); 'give back' = return; 'give out' = distribute.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/School & Study",
+      "content": "The teacher asked us to ____ our essays before handing them in.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. proofread",
+        "B. proof",
+        "C. proving",
+        "D. prove"
+      ],
+      "answer": "A",
+      "explanation": "'proofread' (verb) = read through to find mistakes before submitting. The other forms do not exist or are wrong in this context.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/School & Study",
+      "content": "Tom has been struggling with his homework, but his older brother always ____ him a hand.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. gives",
+        "B. makes",
+        "C. takes",
+        "D. brings"
+      ],
+      "answer": "A",
+      "explanation": "'give someone a hand' = help someone. The other verbs do not collocate with 'a hand' to mean help.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/School & Study",
+      "content": "Our science teacher is very ____; he never gets bored of explaining the same idea many times.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. patient",
+        "B. silent",
+        "C. clever",
+        "D. tired"
+      ],
+      "answer": "A",
+      "explanation": "Repeating explanations without frustration shows patience. 'silent' = not talking; 'clever' is plausible but does not match the cue 'never bored of repeating'; 'tired' is the opposite.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/School & Study",
+      "content": "The exam was so ____ that even the top students complained afterwards.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. challenging",
+        "B. challenged",
+        "C. challenger",
+        "D. challenge"
+      ],
+      "answer": "A",
+      "explanation": "We need an adjective after 'so'. 'challenging' is the adjective form. 'challenged' is past participle; 'challenger' and 'challenge' are nouns.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/School & Study",
+      "content": "My classmate copied my essay word for word, which is a clear case of ____.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. plagiarism",
+        "B. revision",
+        "C. discussion",
+        "D. invitation"
+      ],
+      "answer": "A",
+      "explanation": "Plagiarism = copying someone else's work. 'revision' = review; 'discussion' = talk; 'invitation' is unrelated.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Food & Daily Life",
+      "content": "This soup is too ____; can you pass me the salt, please?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. bland",
+        "B. sweet",
+        "C. spicy",
+        "D. fresh"
+      ],
+      "answer": "A",
+      "explanation": "'bland' = lacking flavour; the cue 'pass the salt' shows the speaker wants more taste. 'sweet' / 'spicy' would not be solved by salt; 'fresh' is unrelated.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Food & Daily Life",
+      "content": "The new restaurant ____ a wide range of vegetarian dishes.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. offers",
+        "B. gives away",
+        "C. takes",
+        "D. accepts"
+      ],
+      "answer": "A",
+      "explanation": "'offer dishes' = a restaurant making them available on the menu. 'gives away' = free distribution; 'takes' is wrong direction; 'accepts' = receives.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Food & Daily Life",
+      "content": "Please ____ the chicken in the oven for thirty minutes at 180 degrees.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. roast",
+        "B. boil",
+        "C. fry",
+        "D. steam"
+      ],
+      "answer": "A",
+      "explanation": "'Roast' is the cooking method that uses an oven with dry heat. 'Boil' uses water; 'fry' uses a pan with oil; 'steam' uses steam over water.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Food & Daily Life",
+      "content": "I need to ____ to the market this morning to buy some fresh fruit.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. pop",
+        "B. jump",
+        "C. lift",
+        "D. press"
+      ],
+      "answer": "A",
+      "explanation": "'pop to a place' = go quickly to a place (informal). 'jump' implies physical jumping; 'lift'/'press' are unrelated.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Food & Daily Life",
+      "content": "These tomatoes from our garden are very ____ — we picked them this morning.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. fresh",
+        "B. raw",
+        "C. cool",
+        "D. light"
+      ],
+      "answer": "A",
+      "explanation": "Just-picked produce is 'fresh'. 'raw' = uncooked, but every tomato is uncooked, so it doesn't capture the just-picked quality; 'cool'/'light' are off-topic.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Food & Daily Life",
+      "content": "I prefer my coffee black, with no milk and no ____.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. sugar",
+        "B. flour",
+        "C. salt",
+        "D. butter"
+      ],
+      "answer": "A",
+      "explanation": "Coffee additions are typically milk and sugar. Flour/salt/butter are not added to coffee.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Hobbies & Leisure",
+      "content": "My grandfather has been collecting old coins as a ____ for over forty years.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. hobby",
+        "B. job",
+        "C. duty",
+        "D. lesson"
+      ],
+      "answer": "A",
+      "explanation": "Collecting for personal pleasure = hobby. 'job' implies paid work; 'duty' is obligation; 'lesson' is unrelated.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Hobbies & Leisure",
+      "content": "She is really ____ on photography and spends most weekends taking pictures.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. keen",
+        "B. famous",
+        "C. quick",
+        "D. lucky"
+      ],
+      "answer": "A",
+      "explanation": "'keen on something' = very interested in. 'famous' = well-known; 'quick' = fast; 'lucky' is unrelated.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Hobbies & Leisure",
+      "content": "After working long hours all week, I like to ____ on Sundays by reading novels in the garden.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. unwind",
+        "B. unpack",
+        "C. uncover",
+        "D. unlock"
+      ],
+      "answer": "A",
+      "explanation": "'unwind' = relax after stress. 'unpack' = remove items from luggage; 'uncover' = remove covering; 'unlock' = open with key.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Hobbies & Leisure",
+      "content": "She joined the chess ____ at school because she loves strategic games.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. club",
+        "B. team",
+        "C. group",
+        "D. class"
+      ],
+      "answer": "A",
+      "explanation": "'chess club' is the standard collocation in schools. Team usually applies to sports; group is too vague; class is for lessons.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Hobbies & Leisure",
+      "content": "The novel was so ____ that I couldn't put it down until I had finished it.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. gripping",
+        "B. friendly",
+        "C. cheap",
+        "D. tall"
+      ],
+      "answer": "A",
+      "explanation": "'gripping' = so interesting you can't stop reading. 'friendly' is for people; 'cheap'/'tall' are unrelated.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Hobbies & Leisure",
+      "content": "Many people take up ____ to relieve stress and improve flexibility.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. yoga",
+        "B. yawn",
+        "C. yoke",
+        "D. yard"
+      ],
+      "answer": "A",
+      "explanation": "Yoga reduces stress and increases flexibility. The other words do not match the description.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Shopping & Money",
+      "content": "The shoes were on sale, so I got them at a 30 percent ____.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. discount",
+        "B. increase",
+        "C. profit",
+        "D. interest"
+      ],
+      "answer": "A",
+      "explanation": "'discount' = price reduction. 'increase' is the opposite; 'profit' is the seller's gain; 'interest' is for loans/savings.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Shopping & Money",
+      "content": "I'm ____ a tight budget this month, so I can't buy any new clothes.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. on",
+        "B. in",
+        "C. at",
+        "D. with"
+      ],
+      "answer": "A",
+      "explanation": "'on a budget' is a fixed prepositional phrase meaning operating within financial limits.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Shopping & Money",
+      "content": "Could I have a ____, please? I might want to return the dress later.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. receipt",
+        "B. recipe",
+        "C. ticket",
+        "D. label"
+      ],
+      "answer": "A",
+      "explanation": "A 'receipt' (proof of purchase) is needed for returns. 'recipe' is for cooking; 'ticket' is for transport/events; 'label' is the tag on clothes.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Shopping & Money",
+      "content": "The shop assistant ____ me the wrong change, so I had to ask for an extra two pounds.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. gave",
+        "B. donated",
+        "C. paid",
+        "D. earned"
+      ],
+      "answer": "A",
+      "explanation": "Returning change to a customer = give. 'donate' is for charity; 'pay' is wrong direction here (the customer pays); 'earn' is income.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Family & Relationships",
+      "content": "After the divorce, my father remarried, so his new wife became my ____.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. stepmother",
+        "B. mother-in-law",
+        "C. godmother",
+        "D. half-mother"
+      ],
+      "answer": "A",
+      "explanation": "Father's new wife after remarriage = stepmother. 'mother-in-law' is your spouse's mother; 'godmother' is religious; 'half-mother' is not a real term.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Family & Relationships",
+      "content": "We are not blood relatives, but Mr Lee has been like a ____ to me for years.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. father figure",
+        "B. father-in-law",
+        "C. godfather",
+        "D. forefather"
+      ],
+      "answer": "A",
+      "explanation": "'father figure' = a man who plays the role of a father without being one biologically. The other words have specific narrower meanings.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/School & Study",
+      "content": "Don't forget to ____ your homework on Monday morning.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. hand in",
+        "B. hand over",
+        "C. hand out",
+        "D. hand off"
+      ],
+      "answer": "A",
+      "explanation": "'hand in' = submit to a teacher. 'hand over' = give to someone else (often under pressure); 'hand out' = distribute; 'hand off' is mainly American sport.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/School & Study",
+      "content": "She got a ____ in the science competition for her excellent project on solar energy.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. prize",
+        "B. price",
+        "C. praise",
+        "D. point"
+      ],
+      "answer": "A",
+      "explanation": "'prize' = award for winning. 'price' = cost; 'praise' = compliment (uncountable, no 'a'); 'point' is unrelated.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Hobbies & Leisure",
+      "content": "Painting is a great way to ____ your creativity.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. express",
+        "B. press",
+        "C. impress",
+        "D. compress"
+      ],
+      "answer": "A",
+      "explanation": "'express creativity' = show your ideas through art. 'press' = push; 'impress' = make a strong effect on someone; 'compress' = squeeze.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Shopping & Money",
+      "content": "Online stores often ____ free delivery if you spend over fifty pounds.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. offer",
+        "B. order",
+        "C. open",
+        "D. operate"
+      ],
+      "answer": "A",
+      "explanation": "'offer free delivery' = make available as a deal. 'order' = ask for something; 'open' = make accessible; 'operate' = run/function.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Present Simple",
+      "content": "Neither of the boys ____ to play football on Sundays.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. wants",
+        "B. want",
+        "C. wanting",
+        "D. is wanting"
+      ],
+      "answer": "A",
+      "explanation": "'Neither of + plural noun' takes a singular verb in formal grammar. 'is wanting' is wrong because 'want' is a stative verb.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Present Simple",
+      "content": "Each of my sisters ____ a different language at university.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. studies",
+        "B. study",
+        "C. studying",
+        "D. is studying"
+      ],
+      "answer": "A",
+      "explanation": "'Each of + plural noun' takes a singular verb. The structure focuses on individual members.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Present Simple",
+      "content": "The teacher ____ us to read three books every term.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. expects",
+        "B. expect",
+        "C. expecting",
+        "D. has expecting"
+      ],
+      "answer": "A",
+      "explanation": "Third-person singular subject 'The teacher' takes -s in Present Simple. 'expecting' alone is incomplete; 'has expecting' is ungrammatical.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Present Simple",
+      "content": "Water ____ at 100 degrees Celsius at sea level.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. boils",
+        "B. is boiling",
+        "C. boil",
+        "D. has boiled"
+      ],
+      "answer": "A",
+      "explanation": "Scientific facts use Present Simple. The third-person singular subject 'water' takes -s.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Present Continuous",
+      "content": "I ____ Sarah at the cafe at six tomorrow — we have a fixed appointment.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. am meeting",
+        "B. meet",
+        "C. will meet",
+        "D. have met"
+      ],
+      "answer": "A",
+      "explanation": "Present Continuous expresses a fixed future arrangement (especially with a time, place and person). 'will meet' is for spontaneous decisions; 'meet' = scheduled timetable; 'have met' = past experience.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Present Continuous",
+      "content": "These days, more and more people ____ online instead of going to shops.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. are shopping",
+        "B. shop",
+        "C. shops",
+        "D. have shopped"
+      ],
+      "answer": "A",
+      "explanation": "Present Continuous with 'these days' shows a temporary trend or changing situation. 'shop' is too general; 'have shopped' is completed action.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Present Continuous",
+      "content": "I ____ that your idea is excellent, but we need more time to plan.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. think",
+        "B. am thinking",
+        "C. thinking",
+        "D. have thinking"
+      ],
+      "answer": "A",
+      "explanation": "'think' here means 'have an opinion' — a stative verb that does not normally take Continuous. 'am thinking' would only mean 'considering' (an active mental process).",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Present Continuous",
+      "content": "Listen! Someone ____ at the door.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. is knocking",
+        "B. knocks",
+        "C. has knocked",
+        "D. knocked"
+      ],
+      "answer": "A",
+      "explanation": "An action happening right now uses Present Continuous, especially after the cue 'Listen!'.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Past Simple",
+      "content": "When the bus ____, we all jumped on quickly.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. arrived",
+        "B. has arrived",
+        "C. arrives",
+        "D. arriving"
+      ],
+      "answer": "A",
+      "explanation": "Both clauses describe a finished past sequence, so both verbs are in Past Simple ('arrived' and 'jumped'). Present Perfect doesn't fit a specific past sequence.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Past Simple",
+      "content": "She ____ me a beautiful card on my last birthday.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. sent",
+        "B. send",
+        "C. sended",
+        "D. sending"
+      ],
+      "answer": "A",
+      "explanation": "Irregular verb: send → sent. 'sended' is not a real word; 'send' is the base form; 'sending' is -ing form.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Past Simple",
+      "content": "They ____ in that house for ten years, but they moved out in 2020.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. lived",
+        "B. have lived",
+        "C. were living",
+        "D. had lived"
+      ],
+      "answer": "A",
+      "explanation": "The action is finished and there is a clear endpoint (moved out in 2020), so Past Simple is correct. Present Perfect would mean they still live there.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Past Simple",
+      "content": "The ancient Egyptians ____ huge pyramids without modern machines.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. built",
+        "B. build",
+        "C. have built",
+        "D. were building"
+      ],
+      "answer": "A",
+      "explanation": "Historical fact in completed past time. 'have built' implies relevance to now; 'were building' suggests an unfinished action.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Past Simple",
+      "content": "I ____ him at the party last week.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. saw",
+        "B. seen",
+        "C. seeing",
+        "D. have seen"
+      ],
+      "answer": "A",
+      "explanation": "Specific past time 'last week' requires Past Simple. 'seen' alone is past participle; 'have seen' is for unspecified time before now.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Past Continuous",
+      "content": "While I ____ dinner, the phone suddenly rang.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. was cooking",
+        "B. cooked",
+        "C. cook",
+        "D. have cooked"
+      ],
+      "answer": "A",
+      "explanation": "An ongoing past action interrupted by another past action: Past Continuous + Past Simple. 'while' typically introduces the longer action.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Past Continuous",
+      "content": "At eight o'clock yesterday evening, the children ____ their homework.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. were doing",
+        "B. did",
+        "C. have done",
+        "D. do"
+      ],
+      "answer": "A",
+      "explanation": "Action in progress at a specific past time uses Past Continuous. Past Simple would mean a single completed event at exactly 8pm.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Past Continuous",
+      "content": "When the teacher came in, some students ____ and others ____.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. were chatting / were laughing",
+        "B. chatted / laughed",
+        "C. have chatted / have laughed",
+        "D. were chatting / laughed"
+      ],
+      "answer": "A",
+      "explanation": "Two parallel ongoing actions in the past both take Past Continuous. Option D mixes tenses, which would not show simultaneity.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Past Continuous",
+      "content": "I ____ a film at nine last night when the power went out.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. was watching",
+        "B. watched",
+        "C. have watched",
+        "D. had watched"
+      ],
+      "answer": "A",
+      "explanation": "Past Continuous shows the action in progress at the exact moment another past action interrupted it.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Past Continuous",
+      "content": "It ____ heavily all morning, so we couldn't go for a walk.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. was raining",
+        "B. rained",
+        "C. has rained",
+        "D. rains"
+      ],
+      "answer": "A",
+      "explanation": "An action that lasted throughout a past period uses Past Continuous. Past Simple here would be acceptable but the cue 'all morning' + the unfinished mood favours Continuous.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Present Perfect (basic)",
+      "content": "I ____ to Japan three times — it's my favourite country.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. have been",
+        "B. went",
+        "C. have gone",
+        "D. am going"
+      ],
+      "answer": "A",
+      "explanation": "Past experience with relevance to now uses Present Perfect: 'have been' (visited and returned). 'have gone' = went and is still there.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Present Perfect (basic)",
+      "content": "She ____ her keys, so she can't get into the house.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. has lost",
+        "B. lost",
+        "C. is losing",
+        "D. had lost"
+      ],
+      "answer": "A",
+      "explanation": "Present Perfect connects past action to present result. The lost keys mean she still cannot get in.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Present Perfect (basic)",
+      "content": "We ____ each other since we were five years old.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. have known",
+        "B. know",
+        "C. knew",
+        "D. have been knowing"
+      ],
+      "answer": "A",
+      "explanation": "Action starting in the past and continuing now uses Present Perfect with 'since'. 'know' is stative, so Continuous form is wrong.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Present Perfect (basic)",
+      "content": "Have you ____ finished your dinner already? That was quick!",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. just",
+        "B. yet",
+        "C. ever",
+        "D. since"
+      ],
+      "answer": "A",
+      "explanation": "'just' indicates very recent completion, used in positive Present Perfect. 'yet' is for negatives/questions about completion; 'ever' = at any time; 'since' needs a starting point.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Present Perfect (basic)",
+      "content": "I haven't seen Tom ____ Christmas — is he okay?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. since",
+        "B. for",
+        "C. ago",
+        "D. by"
+      ],
+      "answer": "A",
+      "explanation": "'since' + a specific point in time. 'for' takes a duration; 'ago' goes after a duration with Past Simple; 'by' = no later than.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Present Perfect (basic)",
+      "content": "She ____ never ____ snow because she lives in a hot country.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. has / seen",
+        "B. is / seeing",
+        "C. did / see",
+        "D. was / seen"
+      ],
+      "answer": "A",
+      "explanation": "Present Perfect with 'never' for life experience: have/has + past participle. 'seen' is the past participle of 'see'.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Present Perfect (basic)",
+      "content": "How long ____ you ____ in this city?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. have / lived",
+        "B. did / live",
+        "C. do / live",
+        "D. are / living"
+      ],
+      "answer": "A",
+      "explanation": "'How long' asking about duration up to now uses Present Perfect. 'did/live' is for finished past; 'do/live' = present habit; 'are/living' = right now.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Present Perfect (basic)",
+      "content": "I'm sorry, I haven't read the book ____ — I was busy this week.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. yet",
+        "B. just",
+        "C. already",
+        "D. since"
+      ],
+      "answer": "A",
+      "explanation": "'yet' is used in negative Present Perfect to mean 'up to now'. 'just' = very recently (positive); 'already' = sooner than expected (positive); 'since' needs a start point.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Future Tenses (will / going to / Present Continuous)",
+      "content": "Look at those black clouds! It ____ rain.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. is going to",
+        "B. will",
+        "C. is",
+        "D. would"
+      ],
+      "answer": "A",
+      "explanation": "'going to' is used for predictions based on present evidence (cue: 'Look at those clouds'). 'will' is for predictions without evidence.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Future Tenses (will / going to / Present Continuous)",
+      "content": "I ____ the doctor at 3 p.m. tomorrow — the appointment is fixed.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. am seeing",
+        "B. will see",
+        "C. see",
+        "D. saw"
+      ],
+      "answer": "A",
+      "explanation": "Present Continuous is used for fixed personal arrangements with set times. 'will see' is more spontaneous.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Future Tenses (will / going to / Present Continuous)",
+      "content": "Don't worry about your bag — I ____ it for you.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. will carry",
+        "B. am carrying",
+        "C. carry",
+        "D. am going to carry"
+      ],
+      "answer": "A",
+      "explanation": "'will' is used for offers and spontaneous decisions made at the moment of speaking.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Future Tenses (will / going to / Present Continuous)",
+      "content": "We ____ Italy for our holiday next summer; we already booked the flights.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. are visiting",
+        "B. will visit",
+        "C. visit",
+        "D. visited"
+      ],
+      "answer": "A",
+      "explanation": "Fixed future arrangements (already booked) take Present Continuous.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Future Tenses (will / going to / Present Continuous)",
+      "content": "She has decided that she ____ a doctor when she grows up.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. is going to be",
+        "B. will be",
+        "C. is being",
+        "D. will being"
+      ],
+      "answer": "A",
+      "explanation": "'is going to' expresses an intention/plan already decided. 'will be' is also possible but 'going to' fits the cue 'has decided'.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Future Tenses (will / going to / Present Continuous)",
+      "content": "I'm sure your team ____ the match — they have the best players.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. will win",
+        "B. is winning",
+        "C. wins",
+        "D. won"
+      ],
+      "answer": "A",
+      "explanation": "'will' is used for confident predictions about the future. Cue 'I'm sure'.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Modals (can/could/should/might/must)",
+      "content": "You ____ talk loudly in the library; it's not allowed.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. mustn't",
+        "B. don't have to",
+        "C. needn't",
+        "D. shouldn't have"
+      ],
+      "answer": "A",
+      "explanation": "'mustn't' = prohibition. 'don't have to' / 'needn't' = no obligation (you may, but don't have to). 'shouldn't have' is past advice.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Modals (can/could/should/might/must)",
+      "content": "When I was a child, I ____ ride my bike for hours without getting tired.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. could",
+        "B. can",
+        "C. must",
+        "D. should"
+      ],
+      "answer": "A",
+      "explanation": "Past general ability uses 'could'. 'can' is present; 'must' = obligation; 'should' = advice.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Modals (can/could/should/might/must)",
+      "content": "It's getting late — we ____ leave now or we'll miss the train.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. should",
+        "B. shouldn't",
+        "C. couldn't",
+        "D. wouldn't"
+      ],
+      "answer": "A",
+      "explanation": "'should' gives advice based on logical consequence. The other options reverse the meaning.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Modals (can/could/should/might/must)",
+      "content": "____ I borrow your pen for a moment, please?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. May",
+        "B. Will",
+        "C. Should",
+        "D. Must"
+      ],
+      "answer": "A",
+      "explanation": "'May' is the polite formal request modal. 'Will' is for future intention; 'Should' = advice; 'Must' = strong obligation.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Modals (can/could/should/might/must)",
+      "content": "Take an umbrella — it ____ rain later.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. might",
+        "B. must",
+        "C. should",
+        "D. would"
+      ],
+      "answer": "A",
+      "explanation": "'might' expresses possibility (50% chance). 'must' implies certainty; 'should' = advice; 'would' is hypothetical.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Modals (can/could/should/might/must)",
+      "content": "She speaks Spanish very well, so she ____ have lived in Spain for a long time.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. must",
+        "B. mustn't",
+        "C. needn't",
+        "D. wouldn't"
+      ],
+      "answer": "A",
+      "explanation": "'must have + past participle' expresses logical certainty about the past. The strong evidence (speaks well) supports certainty.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Modals (can/could/should/might/must)",
+      "content": "You ____ pay for water at this restaurant; it's free.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. don't have to",
+        "B. mustn't",
+        "C. shouldn't",
+        "D. couldn't"
+      ],
+      "answer": "A",
+      "explanation": "'don't have to' = no obligation. 'mustn't' = prohibition (which would mean it's not allowed); 'shouldn't' = bad idea.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Comparatives & Superlatives",
+      "content": "This question is ____ than the last one; I can't solve it.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. much more difficult",
+        "B. more difficulter",
+        "C. most difficult",
+        "D. difficult more"
+      ],
+      "answer": "A",
+      "explanation": "'more + adjective + than' for comparatives of long adjectives. 'much' is a valid intensifier. 'more difficulter' is a double comparative; 'most' is superlative.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Comparatives & Superlatives",
+      "content": "Of all the students in my class, Maria is ____ at maths.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. the best",
+        "B. the better",
+        "C. better",
+        "D. best"
+      ],
+      "answer": "A",
+      "explanation": "Superlative needs 'the' + best (irregular form of 'good'). 'the better' is for two; 'better' alone needs 'than'; 'best' alone misses 'the'.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Comparatives & Superlatives",
+      "content": "____ you study, ____ you will learn.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. The more / the more",
+        "B. More / more",
+        "C. The most / the most",
+        "D. The much / the much"
+      ],
+      "answer": "A",
+      "explanation": "'The more X, the more Y' is the structure for proportional change. The other options are not standard.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Comparatives & Superlatives",
+      "content": "This bag is ____ expensive than that one, but the quality is the same.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. less",
+        "B. lesser",
+        "C. fewer",
+        "D. little"
+      ],
+      "answer": "A",
+      "explanation": "'less + adjective + than' is the negative comparative. 'lesser' is rare; 'fewer' is for countable nouns; 'little' is the base.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Comparatives & Superlatives",
+      "content": "She is ____ taller than her brother, so they look almost the same height.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. slightly",
+        "B. very",
+        "C. so",
+        "D. much"
+      ],
+      "answer": "A",
+      "explanation": "'slightly' = a small degree, fits 'almost the same'. 'very' / 'much' / 'so' all suggest a big difference.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Conditionals 0 & 1",
+      "content": "If you ____ harder, you will pass the exam easily.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. study",
+        "B. will study",
+        "C. studied",
+        "D. would study"
+      ],
+      "answer": "A",
+      "explanation": "First Conditional: if + Present Simple, will + base. The 'if'-clause never takes 'will'.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Conditionals 0 & 1",
+      "content": "Take an umbrella ____ it rains later.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. in case",
+        "B. unless",
+        "C. if not",
+        "D. as soon as"
+      ],
+      "answer": "A",
+      "explanation": "'in case' = as a precaution. 'unless' = if not (means: take it if it doesn't rain — wrong); 'if not' is awkward; 'as soon as' is for time.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Conditionals 0 & 1",
+      "content": "____ you are quiet, the teacher won't be angry.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. As long as",
+        "B. Although",
+        "C. Despite",
+        "D. However"
+      ],
+      "answer": "A",
+      "explanation": "'As long as' = on condition that. 'Although' / 'Despite' show contrast; 'However' is a connector.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Conditionals 0 & 1",
+      "content": "Plants die ____ they don't get enough water.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. if",
+        "B. unless",
+        "C. when not",
+        "D. as long as"
+      ],
+      "answer": "A",
+      "explanation": "Zero Conditional with 'if + don't' = general truth. 'unless' would also work but the phrase 'unless they don't get' has a double negative — wrong.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Passive (all tenses)",
+      "content": "The window ____ by my little brother yesterday.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. was broken",
+        "B. broke",
+        "C. is broken",
+        "D. has broken"
+      ],
+      "answer": "A",
+      "explanation": "Past passive: was/were + past participle. The subject (window) receives the action.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Passive (all tenses)",
+      "content": "English ____ in many countries around the world.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. is spoken",
+        "B. speaks",
+        "C. is speaking",
+        "D. has spoken"
+      ],
+      "answer": "A",
+      "explanation": "Present passive: is/are + past participle. English is the receiver of the action of speaking.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Passive (all tenses)",
+      "content": "The new bridge ____ next year.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. will be built",
+        "B. will build",
+        "C. is built",
+        "D. has been built"
+      ],
+      "answer": "A",
+      "explanation": "Future passive: will be + past participle. The bridge is the receiver of the action.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Relative Clauses (defining / non-defining)",
+      "content": "The man ____ lives next door is a famous writer.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. who",
+        "B. which",
+        "C. whose",
+        "D. where"
+      ],
+      "answer": "A",
+      "explanation": "'who' refers to people in a defining relative clause. 'which' is for things; 'whose' shows possession; 'where' is for places.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Relative Clauses (defining / non-defining)",
+      "content": "This is the book ____ I told you about last week.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. which",
+        "B. who",
+        "C. whose",
+        "D. when"
+      ],
+      "answer": "A",
+      "explanation": "'which' (or 'that') refers to things. 'who' is for people; 'whose' shows possession; 'when' is for time.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Relative Clauses (defining / non-defining)",
+      "content": "I have a friend ____ father owns a small bakery.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. whose",
+        "B. who",
+        "C. which",
+        "D. who's"
+      ],
+      "answer": "A",
+      "explanation": "'whose' shows possession. 'who's' = 'who is'; 'who' would need 'his father'; 'which' is for things.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Reported Speech (all tenses & verbs)",
+      "content": "He said, 'I am tired.' → He said that he ____ tired.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. was",
+        "B. is",
+        "C. has been",
+        "D. were"
+      ],
+      "answer": "A",
+      "explanation": "In reported speech, present tense usually shifts to past. 'I am' becomes 'he was'.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Reported Speech (all tenses & verbs)",
+      "content": "She said, 'I will help you tomorrow.' → She said she ____ help me the next day.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. would",
+        "B. will",
+        "C. wills",
+        "D. would have"
+      ],
+      "answer": "A",
+      "explanation": "'will' shifts to 'would' in reported speech. 'tomorrow' becomes 'the next day'.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Reported Speech (all tenses & verbs)",
+      "content": "Tom said, 'I bought a new phone last week.' → Tom said that he ____ a new phone the week before.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. had bought",
+        "B. bought",
+        "C. has bought",
+        "D. buys"
+      ],
+      "answer": "A",
+      "explanation": "Past Simple in direct speech often shifts to Past Perfect in reported speech. 'last week' becomes 'the week before'.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Linking Words (although / despite / however / whereas)",
+      "content": "____ it was raining, we still went for a walk.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Although",
+        "B. Despite",
+        "C. However",
+        "D. Because"
+      ],
+      "answer": "A",
+      "explanation": "'Although' + clause shows contrast. 'Despite' takes a noun/-ing, not a clause; 'However' is a connector with a different punctuation; 'Because' shows reason.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Linking Words (although / despite / however / whereas)",
+      "content": "She passed the exam ____ being ill the night before.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. despite",
+        "B. although",
+        "C. because",
+        "D. unless"
+      ],
+      "answer": "A",
+      "explanation": "'despite' + -ing form. 'although' takes a clause; 'because' shows cause; 'unless' is conditional.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Linking Words (although / despite / however / whereas)",
+      "content": "Tom likes spicy food, ____ his sister prefers sweet things.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. whereas",
+        "B. because",
+        "C. so",
+        "D. unless"
+      ],
+      "answer": "A",
+      "explanation": "'whereas' shows direct contrast between two facts. The other words don't fit the contrast pattern.",
+      "round": 3
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "A Trip to Iceland\n\nLast August, my best friend Lisa and I went on a ten-day trip to Iceland. We left London Heathrow on the eighth and landed in Reykjavik just under three hours later. Our small hotel near the city centre cost ninety euros per night and included a hot breakfast.\n\nOn the first morning, we joined a guided tour of the Golden Circle. The tour bus left at 8:30 a.m. and visited three famous places: the Thingvellir National Park, the Geysir hot springs, and the Gullfoss waterfall. The guide, a friendly woman named Anna, told us that the waterfall drops more than thirty metres in two stages.\n\nOn the third day we drove a small rented car along the south coast. The road was narrow but quiet. We stopped at a black sand beach called Reynisfjara, where huge waves crashed onto the dark stones. Lisa took at least two hundred photos. I stayed away from the water because the staff warned us about strong currents.\n\nThe highlight of the trip was on day six. We took a small boat to see whales near the town of Husavik. Within an hour, we saw four humpback whales and a group of dolphins. The boat trip cost seventy-five euros, but it was worth every cent. On day eight we visited a hot spring called the Blue Lagoon and relaxed for two hours.\n\nWe returned to London on the seventeenth. We agreed that the people, the food and the wild nature made Iceland one of our favourite holidays ever.\n\nQuestion 1: How long did the flight from London to Reykjavik take?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. About one hour",
+        "B. About two hours",
+        "C. Just under three hours",
+        "D. Around five hours"
+      ],
+      "answer": "C",
+      "explanation": "The text states 'landed in Reykjavik just under three hours later.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_001",
+      "group_order": 1
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Question 2: Which place was NOT visited on the Golden Circle tour?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Thingvellir National Park",
+        "B. Geysir hot springs",
+        "C. Gullfoss waterfall",
+        "D. The Blue Lagoon"
+      ],
+      "answer": "D",
+      "explanation": "The Golden Circle tour included the first three places. The Blue Lagoon was visited separately on day eight.",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_001",
+      "group_order": 2
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Question 3: Why did the writer stay away from the water at the black sand beach?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. The water was too cold",
+        "B. The staff warned about strong currents",
+        "C. There were no lifeguards",
+        "D. The beach was closed"
+      ],
+      "answer": "B",
+      "explanation": "The text says 'I stayed away from the water because the staff warned us about strong currents.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_001",
+      "group_order": 3
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Question 4: How much did the whale-watching boat trip cost?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Fifty euros",
+        "B. Seventy euros",
+        "C. Seventy-five euros",
+        "D. Ninety euros"
+      ],
+      "answer": "C",
+      "explanation": "The text states the boat trip 'cost seventy-five euros'. Ninety euros was the hotel price.",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_001",
+      "group_order": 4
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Question 5: When did the writers return to London?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. The eighth",
+        "B. The fifteenth",
+        "C. The seventeenth",
+        "D. The eighteenth"
+      ],
+      "answer": "C",
+      "explanation": "'We returned to London on the seventeenth.' The eighth was the departure date.",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_001",
+      "group_order": 5
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Notice: Greenfield Town Summer Festival\n\nThe annual Greenfield Town Summer Festival will take place from Friday 12 July to Sunday 14 July at the Riverside Park. All events are free except where stated. The festival opens at 10:00 a.m. each day and closes at 11:00 p.m.\n\nOn Friday evening, a large outdoor stage near the main entrance will host live music from 19:00 to 22:30. The headline act is local rock band 'The Salt Hills', which begins at 21:00. Audience members are reminded that all bags larger than 30 by 30 cm will be checked at the entrance. There is a 5-pound charge for the seated area near the stage; standing areas are free.\n\nSaturday is family day. From 10:00 to 17:00, the Children's Zone (next to the lake) will offer face painting, a small zoo with rabbits and goats, and a junior cycling track. Children must be accompanied by an adult at all times. Lost children should be brought to the help desk at the festival office.\n\nSunday morning offers a 5-kilometre charity run starting at 09:30. Runners can register at the gate by paying 8 pounds; the money goes to the Greenfield Children's Hospital. Sunday afternoon (from 14:00) is the food market, with thirty stalls offering food from over twenty countries.\n\nFree shuttle buses run every twenty minutes from the train station to the park. Cars can be parked at the Greenfield High School car park for 3 pounds per day. The festival office number is 020-555-0188 for any other questions.\n\nQuestion 1: When does the festival open each day?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. 09:00 a.m.",
+        "B. 10:00 a.m.",
+        "C. 11:00 a.m.",
+        "D. 12:00 noon"
+      ],
+      "answer": "B",
+      "explanation": "'The festival opens at 10:00 a.m. each day and closes at 11:00 p.m.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_002",
+      "group_order": 1
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Question 2: How much does it cost to use the seated area at the Friday concert?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Free",
+        "B. 3 pounds",
+        "C. 5 pounds",
+        "D. 8 pounds"
+      ],
+      "answer": "C",
+      "explanation": "'There is a 5-pound charge for the seated area near the stage; standing areas are free.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_002",
+      "group_order": 2
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Question 3: Where is the Children's Zone located?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Near the main entrance",
+        "B. Next to the lake",
+        "C. At the festival office",
+        "D. At the train station"
+      ],
+      "answer": "B",
+      "explanation": "'The Children's Zone (next to the lake) will offer face painting...'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_002",
+      "group_order": 3
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Question 4: Where will the money from the Sunday run go?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. The festival office",
+        "B. The Children's Zone",
+        "C. The Greenfield Children's Hospital",
+        "D. The food market stalls"
+      ],
+      "answer": "C",
+      "explanation": "'the money goes to the Greenfield Children's Hospital.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_002",
+      "group_order": 4
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Question 5: How often do the free shuttle buses run from the train station?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Every ten minutes",
+        "B. Every fifteen minutes",
+        "C. Every twenty minutes",
+        "D. Every thirty minutes"
+      ],
+      "answer": "C",
+      "explanation": "'Free shuttle buses run every twenty minutes from the train station to the park.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_002",
+      "group_order": 5
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Bookworm Reading Lamp - Customer Review\n\nI bought the new Bookworm Reading Lamp from City Lights three weeks ago. After using it every evening for at least an hour, I feel ready to share my thoughts.\n\nFirst, the lamp is small and light. It weighs only 380 grams and fits easily in a backpack — perfect for travelling. The base is metal so it does not move on a wooden desk. The arm bends in three places, which means I can shine the light exactly where I need it.\n\nSecond, the lamp has three brightness levels and three colour modes (warm yellow, neutral white and cool blue). I usually keep it on the warm yellow setting because it is gentler on my eyes during long reading sessions. The cool blue light is too strong for me, but my older brother says it helps him stay focused on his maths revision.\n\nOn the negative side, the lamp does not include a battery. You have to plug it in, and the cable is only 1.5 metres long. If you sit on a sofa far from a wall socket, this can be inconvenient. The instruction booklet is also very thin — only one page and three pictures — but the lamp is so simple that I never needed extra help.\n\nThe price is 32 pounds, which I think is fair for the build quality. City Lights also has a one-year warranty in case anything goes wrong. Overall, I would give the Bookworm Reading Lamp four stars out of five and would recommend it to other students. I'd say it is the most useful gift my parents have ever bought me for back-to-school season.\n\nQuestion 1: How heavy is the lamp?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. 200 grams",
+        "B. 380 grams",
+        "C. 500 grams",
+        "D. 1.5 kilograms"
+      ],
+      "answer": "B",
+      "explanation": "'It weighs only 380 grams and fits easily in a backpack.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_003",
+      "group_order": 1
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Question 2: How many colour modes does the lamp have?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Two",
+        "B. Three",
+        "C. Four",
+        "D. Five"
+      ],
+      "answer": "B",
+      "explanation": "'three brightness levels and three colour modes (warm yellow, neutral white and cool blue).'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_003",
+      "group_order": 2
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Question 3: Why does the writer prefer warm yellow light?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. It is brighter",
+        "B. It helps focus on maths",
+        "C. It is gentler on the eyes",
+        "D. It uses less electricity"
+      ],
+      "answer": "C",
+      "explanation": "'I usually keep it on the warm yellow setting because it is gentler on my eyes during long reading sessions.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_003",
+      "group_order": 3
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Question 4: What is one disadvantage of the lamp?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. The instruction booklet is too long",
+        "B. The cable is short",
+        "C. The base moves on the desk",
+        "D. It only has one brightness level"
+      ],
+      "answer": "B",
+      "explanation": "'the cable is only 1.5 metres long. If you sit on a sofa far from a wall socket, this can be inconvenient.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_003",
+      "group_order": 4
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Question 5: How long is the warranty offered by City Lights?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Six months",
+        "B. One year",
+        "C. Two years",
+        "D. Three years"
+      ],
+      "answer": "B",
+      "explanation": "'City Lights also has a one-year warranty in case anything goes wrong.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_003",
+      "group_order": 5
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Greenwood Secondary School - New Library Rules\n\nDear Students,\n\nFrom Monday 2 September, the school library will follow new opening hours and rules. Please read this notice carefully and ask your tutor if anything is unclear.\n\nThe library will open Monday to Thursday from 8:00 a.m. to 6:30 p.m. On Fridays we will close earlier, at 4:00 p.m., as the librarians attend a weekly meeting after that. On Saturdays the library will open only in the morning, from 9:00 a.m. to 12:30 p.m. Sunday remains a closed day, but you can return books through the drop box outside the main door.\n\nEach student can borrow up to four books at a time, for a maximum of two weeks. Reference books and dictionaries cannot be taken out — they may only be used inside the library. If you need a book for longer than two weeks, please ask Mrs Patel at the front desk to renew it for you. She can renew most books once for an extra week, but only if no other student has reserved it.\n\nEating is not allowed in any reading area, but covered drinks (such as bottled water) are fine in the study zones. Mobile phones must be on silent. Late returns will receive a small fine of 10 pence per day per book; fines over 5 pounds will block your library account until they are paid. Lost or damaged books must be replaced at the original price.\n\nWe hope you enjoy the new study zones and the bigger collection of fiction.\n\nQuestion 1: When does the library close on Fridays?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. 4:00 p.m.",
+        "B. 5:00 p.m.",
+        "C. 6:30 p.m.",
+        "D. 12:30 p.m."
+      ],
+      "answer": "A",
+      "explanation": "'On Fridays we will close earlier, at 4:00 p.m.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_004",
+      "group_order": 1
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Question 2: What is the maximum number of books a student can borrow at one time?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Two",
+        "B. Three",
+        "C. Four",
+        "D. Five"
+      ],
+      "answer": "C",
+      "explanation": "'Each student can borrow up to four books at a time.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_004",
+      "group_order": 2
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Question 3: What kind of book CANNOT be taken out of the library?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Fiction novels",
+        "B. Reference books and dictionaries",
+        "C. Picture books",
+        "D. New arrivals"
+      ],
+      "answer": "B",
+      "explanation": "'Reference books and dictionaries cannot be taken out — they may only be used inside the library.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_004",
+      "group_order": 3
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Question 4: What happens if your fine is over 5 pounds?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. You pay 10 pence extra per day",
+        "B. Your library account is blocked until paid",
+        "C. You can no longer use any school facility",
+        "D. You receive a warning letter"
+      ],
+      "answer": "B",
+      "explanation": "'fines over 5 pounds will block your library account until they are paid.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_004",
+      "group_order": 4
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Scanning for detail",
+      "content": "Question 5: What can you bring into the study zones?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Hot food",
+        "B. Open cups of coffee",
+        "C. Covered drinks like bottled water",
+        "D. Nothing at all"
+      ],
+      "answer": "C",
+      "explanation": "'covered drinks (such as bottled water) are fine in the study zones.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_004",
+      "group_order": 5
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Smart Speakers in Family Homes\n\nSmart speakers are small devices that listen to your voice and then play music, answer questions or control lights and heaters in your home. In the last five years, these devices have become very popular all over the world. Some homes now have three or four of them, one in each main room.\n\nMany parents say that smart speakers are a great help, especially in busy mornings. While they make breakfast, they can ask the speaker about the weather, the news headlines, or the traffic on the way to school. Children often use the speakers to play their favourite songs, set short timers when they brush their teeth, and even check spellings for their homework.\n\nHowever, not everyone is happy. Some experts worry that children may speak rudely to the speakers, because the speakers always do what they are told without complaining. There are also concerns about privacy: the speakers are 'listening' all the time, even when nobody is talking to them. Many companies promise that the conversations are not recorded, but it is hard for ordinary families to check this.\n\nThere are also small but real problems. Smart speakers sometimes misunderstand what people say, especially in noisy rooms or when several people speak together. They may order the wrong shopping or set a timer for the wrong time. Older family members, who are not used to talking to machines, often feel uncomfortable with the device.\n\nMost experts agree that smart speakers can make daily life easier, but families should set clear rules. Children should still say 'please' and 'thank you', and parents should check the privacy settings every few months.\n\nQuestion 1: What is the main idea of the text?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Smart speakers are bad for children and should be banned",
+        "B. Smart speakers are useful in family homes but bring some concerns",
+        "C. Smart speakers are too expensive for ordinary families",
+        "D. Smart speakers will replace mobile phones in the future"
+      ],
+      "answer": "B",
+      "explanation": "The text balances benefits (helpful in mornings, used by children for many tasks) with concerns (privacy, manners, misunderstandings). The conclusion calls for clear family rules — supporting B, the most balanced summary.",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_005",
+      "group_order": 1
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Question 2: What is the best title for paragraph 2?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. The history of smart speakers",
+        "B. Why parents and children find smart speakers useful",
+        "C. A list of expensive devices",
+        "D. How to repair a smart speaker"
+      ],
+      "answer": "B",
+      "explanation": "Paragraph 2 lists ways parents (weather, news, traffic) and children (music, timers, spellings) use smart speakers — useful uses.",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_005",
+      "group_order": 2
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Question 3: What is the writer's main concern about children and smart speakers?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. They might break the device",
+        "B. They might speak rudely because the speaker always obeys",
+        "C. They might damage their hearing",
+        "D. They might use too much electricity"
+      ],
+      "answer": "B",
+      "explanation": "Paragraph 3: 'children may speak rudely to the speakers, because the speakers always do what they are told without complaining.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_005",
+      "group_order": 3
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Question 4: What is the writer's overall opinion?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Smart speakers are dangerous and should be removed from homes",
+        "B. Smart speakers are excellent and have no problems",
+        "C. Smart speakers can help, but families should set rules",
+        "D. Only older people should use smart speakers"
+      ],
+      "answer": "C",
+      "explanation": "The final paragraph: 'Most experts agree that smart speakers can make daily life easier, but families should set clear rules.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_005",
+      "group_order": 4
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Question 5: Which group, according to paragraph 4, is uncomfortable with smart speakers?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Young children",
+        "B. Teenagers",
+        "C. Parents",
+        "D. Older family members"
+      ],
+      "answer": "D",
+      "explanation": "'Older family members, who are not used to talking to machines, often feel uncomfortable with the device.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_005",
+      "group_order": 5
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Plastic-Free Months\n\nEvery July, millions of people around the world try a 'Plastic-Free Month'. The idea is simple: for 31 days, you try not to use any single-use plastic, such as plastic bags, straws, bottles, or food packaging. The challenge first started in Australia in 2011 with only a small group of friends, but today over 100 million people in more than 170 countries take part.\n\nWhy does it matter? Each year, the world produces about 350 million tonnes of plastic. Many of these items are used for only a few minutes — for example, the plastic bag that wraps a sandwich or the straw in a cold drink — but they remain in the environment for hundreds of years. Some pieces end up in rivers and oceans, where animals can mistake them for food. Even the smallest pieces, called microplastics, are now found in fish that we eat.\n\nJoining the challenge is not easy. In modern shops, almost everything comes in plastic. Some people start small: they bring their own shopping bag, refuse plastic straws in cafes, or buy food at local farmers' markets where less plastic is used. Others go much further, making their own toothpaste or buying bread without packaging.\n\nOf course, one month is short. Many people find that even at the end of July they cannot live completely without plastic. However, researchers say that the real benefit is in the new habits people learn. Studies show that around half of those who join the challenge still use less plastic six months later.\n\nThe lesson is clear: a single month cannot solve the world's plastic problem, but small, lasting changes by many people can make a real difference.\n\nQuestion 1: What is this text mainly about?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. The history of plastic factories",
+        "B. A monthly challenge to reduce single-use plastic and its effects",
+        "C. How to recycle plastic bottles at home",
+        "D. The cost of producing plastic"
+      ],
+      "answer": "B",
+      "explanation": "The text describes the Plastic-Free Month challenge, why it matters, what people do, and what its lasting effect is — option B captures this scope.",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_006",
+      "group_order": 1
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Question 2: What is the best heading for paragraph 2?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Where the challenge started",
+        "B. Why plastic is a problem for the environment",
+        "C. How to recycle correctly",
+        "D. A list of cleanest beaches"
+      ],
+      "answer": "B",
+      "explanation": "Paragraph 2 explains why reducing plastic matters: production volume, brief use, long persistence, ending up in oceans, microplastics in food.",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_006",
+      "group_order": 2
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Question 3: Which sentence best summarises the writer's view in the final paragraph?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. The challenge has solved the plastic problem.",
+        "B. Small lasting habits by many people can make a real difference.",
+        "C. Only governments can solve the problem.",
+        "D. Microplastics are not a real danger."
+      ],
+      "answer": "B",
+      "explanation": "Final paragraph: 'small, lasting changes by many people can make a real difference.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_006",
+      "group_order": 3
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Question 4: Which sentence is closest in meaning to the third paragraph's main idea?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Joining the challenge is impossible",
+        "B. People can take part with small or big changes depending on their lives",
+        "C. Only farmers can join the challenge",
+        "D. Toothpaste is the biggest plastic problem"
+      ],
+      "answer": "B",
+      "explanation": "Paragraph 3 contrasts small steps (bag, straws, markets) with bigger changes (own toothpaste, unwrapped bread).",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_006",
+      "group_order": 4
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Question 5: According to researchers, what is the main long-term benefit of the challenge?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Plastic factories close down",
+        "B. People learn new habits that last beyond July",
+        "C. Plastic becomes free in shops",
+        "D. The price of plastic falls"
+      ],
+      "answer": "B",
+      "explanation": "Paragraph 4: 'around half of those who join the challenge still use less plastic six months later.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_006",
+      "group_order": 5
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Why I Stopped Using Social Media\n\nFor five years, I checked my phone the moment I woke up. The first thing I did was scroll through pictures, messages and short videos for at least twenty minutes — sometimes much longer. By the time I got out of bed, I had already laughed, felt jealous, felt angry and felt lonely.\n\nLast March, I noticed two things. First, I could not finish a chapter of any book without checking my phone. Second, after each long scroll, I felt tired and a little sad, even though I had seen many funny posts. I began to wonder whether the apps were really making me happy.\n\nI decided to delete three apps: Instagram, TikTok and Twitter. I kept WhatsApp because I needed it to talk to my family. The first week was strange. I picked up my phone many times by habit, then put it down with nothing to do. I was bored. I started reading again — first short stories, then longer novels. I also began to take morning walks, which I had not done since I was a child.\n\nAfter three months, I noticed real changes. I sleep better. I read three books in a single month, more than I had read in the whole of last year. I have started to remember small details from my friends' stories, because I am actually listening, not thinking about my phone.\n\nI am not saying that social media is always bad. For some people, it brings real joy and helps them stay in contact with friends far away. But for me, the apps were taking too much without giving enough back. If you feel the same, I would say it is worth trying — even just for a few weeks.\n\nQuestion 1: What is the main idea of this text?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Social media is dangerous for everyone and must be banned",
+        "B. The writer's experience of leaving most social media and the changes it brought",
+        "C. How to make friends through social media",
+        "D. The history of Instagram and TikTok"
+      ],
+      "answer": "B",
+      "explanation": "The whole text is the writer's personal account of quitting most social media and the resulting changes (better sleep, more reading, better listening).",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_007",
+      "group_order": 1
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Question 2: Why did the writer keep WhatsApp?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. To watch videos",
+        "B. To stay in contact with family",
+        "C. To follow famous people",
+        "D. To share photos"
+      ],
+      "answer": "B",
+      "explanation": "'I kept WhatsApp because I needed it to talk to my family.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_007",
+      "group_order": 2
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Question 3: What is the best heading for paragraph 4?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Why social media must be banned",
+        "B. The positive changes after three months without social media",
+        "C. The dangers of phones at night",
+        "D. Why books are better than apps"
+      ],
+      "answer": "B",
+      "explanation": "Paragraph 4 lists positive results: better sleep, three books in a month, listening better. Heading should reflect 'positive changes after the change'.",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_007",
+      "group_order": 3
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Question 4: Does the writer think social media is bad for everyone?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Yes, for absolutely everyone",
+        "B. No, the writer admits it brings real joy to some people",
+        "C. Yes, only for adults",
+        "D. The writer does not give an opinion"
+      ],
+      "answer": "B",
+      "explanation": "Final paragraph: 'For some people, it brings real joy and helps them stay in contact with friends far away.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_007",
+      "group_order": 4
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Question 5: What does the writer suggest to readers who feel the same way?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Try leaving the apps for at least a few weeks",
+        "B. Buy a new phone",
+        "C. Follow more accounts",
+        "D. Go to bed earlier"
+      ],
+      "answer": "A",
+      "explanation": "Final sentence: 'I would say it is worth trying — even just for a few weeks.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_007",
+      "group_order": 5
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Sunday Lunch with Grandparents\n\nEvery Sunday at noon, my brother and I cycle to our grandparents' small flat for lunch. The flat is on the third floor and you can smell the cooking from the staircase: roast chicken, garlic potatoes, and grandma's famous apple pie.\n\nWhen we arrive, grandpa is usually in the kitchen, watching a football match on a small radio. Grandma sets the table — she always uses the white plates with little blue flowers, even when it is just the four of us. Lunch lasts almost two hours, much longer than the quick meals at home. We do not check our phones; in fact, grandma collects them in a wooden bowl as we sit down.\n\nIt was not always like this. Two years ago, my brother and I would say we were too busy with sports clubs and homework. Then grandpa was in hospital for a week. When he came home, he asked us to visit at least once a week. We started with short visits and a takeaway. Slowly, the visits became longer, the takeaways turned into home-cooked meals, and now Sunday lunch feels like the best moment of the week for us all.\n\nMy friends sometimes laugh and ask why I would spend a whole afternoon with two old people. But I have noticed that I learn things at grandma's table that I cannot learn anywhere else: old family stories, a recipe with no written instructions, and even a few words of the dialect my grandparents grew up speaking.\n\nSundays remind me that some of the most important things in life are slow, simple, and shared.\n\nQuestion 1: What is this text mainly about?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. How to cook the perfect roast chicken",
+        "B. The writer's weekly Sunday lunch with their grandparents and what it means to them",
+        "C. The history of an old apartment block",
+        "D. A list of football matches"
+      ],
+      "answer": "B",
+      "explanation": "The text describes the Sunday tradition, how it began, and its meaning — option B captures the topic.",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_008",
+      "group_order": 1
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Question 2: What event made the writer and brother start visiting more?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. They moved house",
+        "B. Their grandfather was in hospital",
+        "C. They got new bicycles",
+        "D. They learnt a new dialect"
+      ],
+      "answer": "B",
+      "explanation": "'Then grandpa was in hospital for a week. When he came home, he asked us to visit at least once a week.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_008",
+      "group_order": 2
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Question 3: What does the writer learn at grandma's table that they 'cannot learn anywhere else'?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Maths and physics",
+        "B. Football rules",
+        "C. Family stories, recipes and dialect",
+        "D. How to repair the radio"
+      ],
+      "answer": "C",
+      "explanation": "Paragraph 4: 'old family stories, a recipe with no written instructions, and even a few words of the dialect.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_008",
+      "group_order": 3
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Question 4: What does the final sentence suggest the writer values?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Speed and efficiency",
+        "B. Slow, simple, shared moments",
+        "C. Big parties with many guests",
+        "D. Eating alone"
+      ],
+      "answer": "B",
+      "explanation": "'some of the most important things in life are slow, simple, and shared.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_008",
+      "group_order": 4
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Skimming for gist",
+      "content": "Question 5: What does grandma do with the phones at the start of lunch?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Hides them in a drawer",
+        "B. Locks them in a safe",
+        "C. Collects them in a wooden bowl",
+        "D. Throws them out of the window"
+      ],
+      "answer": "C",
+      "explanation": "'grandma collects them in a wooden bowl as we sit down.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_008",
+      "group_order": 5
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "Tom's First Day\n\nTom looked at the gates of his new school for a long time. The bag on his back felt heavier than usual. Two boys in matching uniforms ran past him, laughing about something that had happened the day before. Tom tried to laugh too, but no sound came out. He tightened his grip on the strap of his bag.\n\nInside, the school looked even bigger than in the photos. There were maps on every corridor, but the arrows seemed to point everywhere at once. A tall woman with a clipboard called out his name. He stepped forward quickly and almost dropped his timetable.\n\n'Welcome, Tom,' she said with a warm smile. 'You'll be in 7B with Mr Carter. The room is on the second floor, room 215.' Tom nodded, but inside his head, the numbers had already disappeared. He hoped someone in the corridor would be going the same way.\n\nIn the classroom, all the seats were full except one — at the very back, near the window. Tom sat down and pretended to read his timetable, even though the words on the page kept blurring together. The girl next to him glanced at his rucksack, which still had the price tag from the shop dangling from it. Tom flushed and quickly tried to hide it under the desk.\n\nThen she leaned closer. 'I had the same bag last year,' she whispered. 'It looks new now, but in a month it will be covered in pen marks like everyone else's.' She smiled, and for the first time that morning, Tom felt his shoulders drop.\n\nQuestion 1: How does Tom probably feel at the school gates?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Excited and confident",
+        "B. Nervous and unsure",
+        "C. Bored and tired",
+        "D. Angry and disappointed"
+      ],
+      "answer": "B",
+      "explanation": "Clues: 'bag felt heavier', 'tried to laugh but no sound came out', 'tightened his grip' — all show nervousness.",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_009",
+      "group_order": 1
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "Question 2: Why does the writer mention that the words on the page 'kept blurring together'?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. The light was bad",
+        "B. Tom needed glasses",
+        "C. Tom was too anxious to read properly",
+        "D. The timetable was written in a foreign language"
+      ],
+      "answer": "C",
+      "explanation": "Tom is nervous at his new school; his eyes blur because he is anxious, not because of vision or language problems.",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_009",
+      "group_order": 2
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "Question 3: Why does Tom try to hide the price tag under the desk?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. He doesn't want to look new and different",
+        "B. The tag has private information on it",
+        "C. The teacher will be angry",
+        "D. He wants to return the bag"
+      ],
+      "answer": "A",
+      "explanation": "The price tag marks him as new (visibly different). Tom 'flushed' (felt embarrassed) and hid it.",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_009",
+      "group_order": 3
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "Question 4: What does the phrase 'Tom felt his shoulders drop' suggest?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. He was about to fall asleep",
+        "B. He suddenly felt more relaxed",
+        "C. His bag was too heavy for him",
+        "D. He was hiding from the teacher"
+      ],
+      "answer": "B",
+      "explanation": "Drop shoulders = relaxed muscles, opposite of tense shoulders during stress. The girl's friendly comment relieved his anxiety.",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_009",
+      "group_order": 4
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "Question 5: Why does the girl next to Tom say 'I had the same bag last year'?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. To complain about her old bag",
+        "B. To make Tom feel less alone and embarrassed",
+        "C. To ask where he bought the bag",
+        "D. To suggest he buy a new one"
+      ],
+      "answer": "B",
+      "explanation": "Her comment normalises Tom's situation (the bag will look used soon, like everyone else's), aiming to comfort him.",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_009",
+      "group_order": 5
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "Review: The New Diner on Mill Street\n\nI had heard a lot about The New Diner on Mill Street before going. Friends called it 'a fresh take on home cooking', and the photos online showed bright colours and creative dishes. So last Friday I decided to try it for myself.\n\nThe first thing I noticed when I walked in was the music. It was loud — much louder than I expected for a place that calls itself 'cosy'. I had to lean across the table just to hear my friend's order. The waiter, who was friendly, had to ask twice what we wanted to drink.\n\nThe starters were small but tasty. I had a tomato soup with herbs from the kitchen garden, which was the best I have eaten in months. My friend ordered cheese on toast, and even she — usually the harder one to please — had no complaints.\n\nThen came the main courses. My pasta arrived after a 35-minute wait, and the sauce was good but cold in the centre. When I mentioned this, the waiter offered to take it back, but the second version came back even cooler than the first. My friend's chicken dish, on the other hand, was perfectly cooked, and the lemon side salad was delicious.\n\nThe bill, surprisingly, came with a free dessert as an apology — a small piece of cheesecake. It was such a kind gesture that I almost forgot how long we had been waiting. Almost.\n\nI would still come back to The New Diner, mostly for the starters and the warm staff. But I would order chicken next time, and bring earplugs.\n\nQuestion 1: What is the writer's overall opinion of the diner?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Excellent in every way",
+        "B. Mixed — some good points and some bad points",
+        "C. Terrible and not worth visiting",
+        "D. Average and forgettable"
+      ],
+      "answer": "B",
+      "explanation": "The writer praises the soup, the chicken, the apology dessert and warm staff, but criticises the loud music, the wait and the cold pasta — a mixed review.",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_010",
+      "group_order": 1
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "Question 2: What does the phrase 'usually the harder one to please' suggest about the writer's friend?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. The friend is impatient",
+        "B. The friend is hard to satisfy with food",
+        "C. The friend never complains",
+        "D. The friend never goes out to eat"
+      ],
+      "answer": "B",
+      "explanation": "'Hard to please' is an idiom for someone who is rarely satisfied. So even she had no complaints about the cheese on toast.",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_010",
+      "group_order": 2
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "Question 3: Why does the writer end the second-to-last paragraph with 'Almost'?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. To soften 'almost forgot' — the writer did not really forget the long wait",
+        "B. To say the meal was almost free",
+        "C. To say the cheesecake was almost finished",
+        "D. To suggest the staff were almost rude"
+      ],
+      "answer": "A",
+      "explanation": "The single-word 'Almost.' is a stylistic emphasis that 'almost forgot' actually means the writer still remembers the bad parts.",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_010",
+      "group_order": 3
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "Question 4: What can we infer about the kitchen's vegetable garden?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. It is far from the diner",
+        "B. The kitchen uses fresh herbs from it for the dishes",
+        "C. It is closed in winter",
+        "D. It is open to customers"
+      ],
+      "answer": "B",
+      "explanation": "'tomato soup with herbs from the kitchen garden' implies the diner grows herbs and uses them in cooking.",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_010",
+      "group_order": 4
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "Question 5: Why does the writer plan to bring earplugs next time?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. The chairs are uncomfortable",
+        "B. The music is too loud",
+        "C. The kitchen is noisy",
+        "D. There are children in the diner"
+      ],
+      "answer": "B",
+      "explanation": "Paragraph 2 said the music was loud and even the waiter had to ask twice. Earplugs would solve the noise problem.",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_010",
+      "group_order": 5
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "The Quiet Captain\n\nMaya had been playing football since she was six years old, but she did not look like a typical team captain. She rarely spoke during training and never shouted at her teammates. Some new players, on the first day, thought she might not be very confident. By the end of their first match together, they had changed their minds.\n\nOn the field, Maya seemed to know what would happen two seconds before everyone else. She would point to a corner of the pitch, and a moment later the ball would arrive there, just where her teammate was waiting. When a teammate made a mistake, she did not roll her eyes or sigh. Instead, she would jog over and say a few quick, calm words. Then she would pat the player on the back and run back to her own position.\n\nAfter the match, when everyone was tired and sweating, Maya was usually the first to pick up the cones from the pitch and the last to leave the changing room. The coach said she had never had to remind Maya about anything in three years.\n\nThe new players soon noticed that the senior players acted differently when Maya was around. They tried harder. They listened more. Even the loudest player on the team became quieter, almost as if Maya's calm had spread to him.\n\nWhen asked once what made her a good captain, Maya thought for a long moment and said, 'I don't think a captain has to be the loudest. A captain just has to make sure everyone else is doing their best.'\n\nQuestion 1: Why did the new players first doubt Maya as a captain?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. She was the youngest player",
+        "B. She was quiet and didn't shout",
+        "C. She was new to the team",
+        "D. She had never won a match"
+      ],
+      "answer": "B",
+      "explanation": "First paragraph: 'She rarely spoke... and never shouted... thought she might not be very confident.' Quietness was the cue.",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_011",
+      "group_order": 1
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "Question 2: What does the description of Maya's reactions to mistakes suggest about her?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. She is too tired to react strongly",
+        "B. She is patient and supportive",
+        "C. She does not care about winning",
+        "D. She is bad at noticing mistakes"
+      ],
+      "answer": "B",
+      "explanation": "She does not roll eyes or sigh; she gives 'quick, calm words' and pats the player. These behaviours show patience and support.",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_011",
+      "group_order": 2
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "Question 3: What does 'pick up the cones... and the last to leave the changing room' suggest?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Maya is slow",
+        "B. Maya forgets her things",
+        "C. Maya is responsible and hardworking",
+        "D. Maya does not like the coach"
+      ],
+      "answer": "C",
+      "explanation": "Doing extra work without being asked indicates responsibility. The coach 'never had to remind Maya' confirms this.",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_011",
+      "group_order": 3
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "Question 4: What does 'Maya's calm had spread to him' suggest about her influence?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. She was angry with the loudest player",
+        "B. Her quiet manner affected even the loud players",
+        "C. The loud player imitated her on purpose",
+        "D. The loud player no longer played for the team"
+      ],
+      "answer": "B",
+      "explanation": "The metaphor 'calm spread' means her behaviour subtly influenced the loudest player to be quieter — without explicit instruction.",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_011",
+      "group_order": 4
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "Question 5: What is Maya's view of leadership?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. The captain must be the loudest player",
+        "B. The captain must do everything alone",
+        "C. The captain must make sure others do their best",
+        "D. The captain must score the most goals"
+      ],
+      "answer": "C",
+      "explanation": "Last paragraph: 'A captain just has to make sure everyone else is doing their best.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_011",
+      "group_order": 5
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "The Train I Almost Missed\n\nIt was 5:47 in the morning, and the platform at Edinburgh station was almost empty. I was wearing yesterday's clothes, carrying a half-eaten sandwich in one hand and my rucksack in the other. The train I needed left at 5:50.\n\nMy alarm had not gone off — or, more precisely, I had switched it off in my sleep. By the time I realised the time, I had less than ten minutes to leave the hotel, run up the hill and find the platform. I did not bother to brush my teeth or fold the blanket. I just grabbed my bag and ran.\n\nThe man at the ticket gate looked at my crumpled ticket, then at me, then at the clock. He did not smile, but he did not delay me either. 'Platform two, hurry,' was all he said, before pointing to the stairs. I took them two at a time, almost tripping over a lost umbrella on the third step.\n\nWhen I reached the platform, the doors were already beeping. A woman in a yellow jacket saw me and held one open for an extra second, just long enough for me to throw myself through. The doors closed half a centimetre behind my rucksack. I sat down and only then realised that my heart was beating in my ears.\n\nSomewhere outside Edinburgh, I started laughing — quietly, so the other passengers would not stare. I laughed at the half-eaten sandwich still in my hand, at my missing left sock, and at the strange luck of meeting kind strangers when you most need them.\n\nQuestion 1: Why was the writer running to catch the train?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. They were late because of heavy snow",
+        "B. They had switched off the alarm in their sleep",
+        "C. The hotel had no clock",
+        "D. The train left earlier than usual"
+      ],
+      "answer": "B",
+      "explanation": "Paragraph 2: 'My alarm had not gone off — or, more precisely, I had switched it off in my sleep.'",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_012",
+      "group_order": 1
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "Question 2: What does 'He did not smile, but he did not delay me either' suggest about the man at the ticket gate?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. He was rude",
+        "B. He was professionally helpful in a serious way",
+        "C. He was angry with the writer",
+        "D. He was a friend of the writer"
+      ],
+      "answer": "B",
+      "explanation": "He was not warm, but he gave clear, quick directions — professional and helpful without being friendly.",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_012",
+      "group_order": 2
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "Question 3: What does 'half a centimetre behind my rucksack' tell us?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. The doors broke",
+        "B. The writer just barely made it inside before the doors closed",
+        "C. The rucksack was small",
+        "D. The doors closed slowly"
+      ],
+      "answer": "B",
+      "explanation": "Half a centimetre is a tiny gap — it shows just-in-time timing.",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_012",
+      "group_order": 3
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "Question 4: Why was the writer laughing at the end?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. They were embarrassed by the other passengers",
+        "B. They felt relief and amusement at the whole situation",
+        "C. The sandwich was funny",
+        "D. They were going to a comedy show"
+      ],
+      "answer": "B",
+      "explanation": "Laughter after a stressful event reflects relief; the list of small absurd details (sandwich, missing sock) is humorous in retrospect.",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_012",
+      "group_order": 4
+    },
+    {
+      "chapter": "Reading",
+      "knowledge_point": "Reading/Inferring meaning from context",
+      "content": "Question 5: What is the underlying message of the final paragraph?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Trains in Edinburgh are often late",
+        "B. Bad mornings are unforgettable",
+        "C. Strangers can be unexpectedly kind when you need help",
+        "D. You should always carry an extra sock"
+      ],
+      "answer": "C",
+      "explanation": "'the strange luck of meeting kind strangers when you most need them' is the closing reflection.",
+      "round": 3,
+      "group_id": "pet_r3_reading_cluster_012",
+      "group_order": 5
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for gist",
+      "content": "Listen and choose the correct answer.\n\nWhat is the main reason Anna decided to change her after-school activity?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. The new club is closer to her house",
+        "B. She wanted more time to spend with her younger brother",
+        "C. The old activity was too expensive",
+        "D. She was bored of doing the same thing"
+      ],
+      "answer": "B",
+      "explanation": "Anna explicitly says she wanted to spend more afternoons with her brother. The other options are not the main reason.",
+      "round": 3,
+      "audio_text": "A: Hi Anna, I noticed you weren't at the swimming club on Monday. Are you okay?\nB: Oh, yes, I'm fine. Actually, I quit the club last week.\nA: Really? But you've been going there for almost three years!\nB: I know, and I really enjoyed it. But my little brother started Year 1 last month, and he gets home at four.\nA: So you wanted to be there for him?\nB: Exactly. Mum works late on Mondays and Wednesdays, and I just felt he was always alone. The club ended at 6:30, so I never saw him before bedtime.\nA: That's really sweet of you. So what do you do now?\nB: I joined the school's Tuesday art club, which finishes at 4:15. The other days I go straight home and we read together.\nA: That sounds lovely.\nB: It does mean less swimming, though. I'll need to find another time to keep fit.",
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "child"
+        },
+        "B": {
+          "gender": "female",
+          "age": "child"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for gist",
+      "content": "Listen and choose the correct answer.\n\nWhat is the speaker mainly talking about?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. A festival she went to",
+        "B. A new restaurant in her city",
+        "C. Why she started cooking at home",
+        "D. Her favourite holiday destination"
+      ],
+      "answer": "C",
+      "explanation": "The speaker explains the reasons (cost, healthier ingredients, a hobby she enjoys) for cooking more at home, which is the central theme.",
+      "round": 3,
+      "audio_text": "Hello everyone, today I'd like to share something I've been doing for the last few months. I've started cooking most of my meals at home. Before that, I used to order food online almost every day — pizza, noodles, you name it. But last winter I got my first proper job, and I quickly noticed that almost half my salary was disappearing on takeaway. So I decided to try cooking. At first it felt difficult and slow, and many of my early meals tasted, well, average. But after a few weeks, I started to enjoy choosing fresh vegetables, mixing different sauces, and trying recipes from different countries. I sleep better, I save money, and I feel proud when friends come round and actually like what I've made. It's become a real hobby — not just something to do because I have to.",
+      "speakers": {
+        "_": {
+          "gender": "female",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for gist",
+      "content": "Listen and choose the correct answer.\n\nHow does the boy probably feel about his exam result?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Disappointed but trying to stay positive",
+        "B. Very happy and proud",
+        "C. Angry with his teacher",
+        "D. Confused about the rules"
+      ],
+      "answer": "A",
+      "explanation": "He says he had hoped for a higher mark and is 'a bit gutted', but also says he can fix the gaps and try again next time — disappointed yet positive.",
+      "round": 3,
+      "audio_text": "A: Hey James, did you get your maths result back?\nB: Yeah, I got 71 percent.\nA: That's a good mark, isn't it?\nB: Well, it's a pass, but to be honest, I had hoped for an 80. I worked really hard the last two weekends.\nA: Oh no, are you upset?\nB: A bit gutted, yeah. But Mr Hill said I lost most of the marks on one topic — fractions — so at least I know what to fix.\nA: That's a good way to look at it.\nB: Yeah, I'll go through that chapter again with my dad on Sunday. The next test is in three weeks; I think I can do better.\nA: I'm sure you will.",
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "child"
+        },
+        "B": {
+          "gender": "male",
+          "age": "child"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for gist",
+      "content": "Listen and choose the correct answer.\n\nWhat is the announcement mainly about?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. A change to the train schedule",
+        "B. A new station opening this weekend",
+        "C. A reminder about safety on platforms",
+        "D. Free travel for school children"
+      ],
+      "answer": "A",
+      "explanation": "The announcement is dominated by changes to specific times because of weekend engineering work; safety, opening, and free travel are not the main topic.",
+      "round": 3,
+      "audio_text": "Good evening passengers. This is an important announcement from Northern Railways. Due to engineering work on the main line this weekend, several services will run on a different timetable. The 6:15 train from Manchester to Leeds will be delayed by approximately twenty-five minutes on Saturday morning. The 9:00 train will not run at all; replacement buses will leave from outside the station. On Sunday, the first train of the day will be at 8:00 instead of the usual 5:30. We apologise for the inconvenience. All affected passengers can claim a refund of fifty percent at any ticket office. Please check our website for the latest information before you travel. Thank you for your patience.",
+      "speakers": {
+        "_": {
+          "gender": "male",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for gist",
+      "content": "Listen and choose the correct answer.\n\nWhat is the woman trying to do?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Buy a smaller phone",
+        "B. Return a broken item and get a refund",
+        "C. Pay for a phone repair",
+        "D. Order a new battery online"
+      ],
+      "answer": "B",
+      "explanation": "She brings the broken phone, says it stopped working in the warranty period, and explicitly asks for a refund — option B.",
+      "round": 3,
+      "audio_text": "A: Hi, can I help you?\nB: Yes, I bought this phone here three weeks ago, and it has stopped charging completely. I think the battery is broken.\nA: Oh dear, I'm sorry to hear that. Did you bring the receipt?\nB: Yes, here it is. The phone is still under the thirty-day warranty, so I'd really like a full refund rather than a repair.\nA: I see. Let me check the receipt and the model... yes, you're within the period. We can give you a refund, but the manager has to approve it.\nB: How long will that take?\nA: About ten minutes. He's just on a phone call now. Would you like to take a seat?\nB: That's fine, thanks. I really don't want a replacement — I've decided to switch brands.",
+      "speakers": {
+        "A": {
+          "gender": "male",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "female",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for gist",
+      "content": "Listen and choose the correct answer.\n\nWhat is the speaker's main message?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Reading on screens is just as good as reading on paper",
+        "B. Reading paper books has unique benefits worth keeping",
+        "C. Libraries should close because of the internet",
+        "D. Children should not use computers"
+      ],
+      "answer": "B",
+      "explanation": "The speaker compares paper and screens, arguing paper helps focus, memory and sleep — a defence of paper books.",
+      "round": 3,
+      "audio_text": "Hello, library members. Welcome to this short talk on a question I'm often asked: do paper books still matter when most of us read on phones or tablets? I think they do, and let me explain why. First, when you read a paper book, your brain knows where information is on the page. Studies show that this 'physical map' helps you remember the story or facts more easily. Second, paper does not show you adverts or pop-up messages. You can stay focused on a single chapter for an hour. Third, reading paper before bed is much better for your sleep — bright screens at night make it harder to fall asleep. I am not against e-readers; they are wonderful for travelling. But please do not throw out your paper books. They have benefits that no screen can give you.",
+      "speakers": {
+        "_": {
+          "gender": "female",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for gist",
+      "content": "Listen and choose the correct answer.\n\nWhy is the boy phoning his cousin?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. To invite him to a birthday party",
+        "B. To borrow a book for a school project",
+        "C. To complain about a film",
+        "D. To plan a trip to the cinema"
+      ],
+      "answer": "B",
+      "explanation": "The whole conversation is about borrowing 'World History since 1900'; the cousin agrees to lend it. Other options are mentioned only briefly.",
+      "round": 3,
+      "audio_text": "A: Hi Daniel, it's me, Liam. Are you busy?\nB: Hey Liam, no, I'm just playing a game. What's up?\nA: I've got a big history project due next Monday, and Mr Wilson said the best book on it is 'World History since 1900'. Mum said you might have a copy — your dad bought it last year, didn't he?\nB: Oh yeah, the green one. I think it's in the bookcase in the living room. Hold on, let me check... yes, it's here.\nA: Brilliant. Can I borrow it until next Tuesday? I'll be really careful with it.\nB: No problem. Why don't you come over after school tomorrow? I'll be home by four.\nA: Perfect. Thanks so much. By the way, did you see the new Avengers film?\nB: Not yet, but maybe at the weekend.",
+      "speakers": {
+        "A": {
+          "gender": "male",
+          "age": "child"
+        },
+        "B": {
+          "gender": "male",
+          "age": "child"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for gist",
+      "content": "Listen and choose the correct answer.\n\nWhat is the talk mainly about?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. How to make the perfect cup of tea",
+        "B. Why people should drink less tea",
+        "C. The history of British tea drinking",
+        "D. The price of tea in different shops"
+      ],
+      "answer": "C",
+      "explanation": "The speaker traces tea from its arrival in Britain in the 1660s, through how it spread among classes, to modern habits — historical narrative.",
+      "round": 3,
+      "audio_text": "Welcome to today's audio guide. Tea has been such a part of British life that many people forget it actually came from China and India. It first arrived in Britain in the 1660s, brought back on long sea journeys by traders. At first, only rich families could afford it, and a small box of tea leaves cost more than a worker earned in a month. Slowly, by the 1800s, tea became cheaper and reached working families too. By the time of Queen Victoria, drinking tea in the afternoon with cake or sandwiches was a fashionable habit, first among ladies in big houses. Today, the average British person still drinks around three cups a day, although many young people are switching to coffee. So next time you make a cuppa, remember the long journey it has been on.",
+      "speakers": {
+        "_": {
+          "gender": "male",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for gist",
+      "content": "Listen and choose the correct answer.\n\nWhat does the girl think about her new school?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. The teachers are too strict",
+        "B. The lessons are easy but the friendships are difficult",
+        "C. Everything is wonderful and easy",
+        "D. The classrooms are too small"
+      ],
+      "answer": "B",
+      "explanation": "She says lessons are not too hard but making friends has been the harder part of moving — clearly mixed.",
+      "round": 3,
+      "audio_text": "A: So Maya, how's the new school going? It's been about a month, hasn't it?\nB: Yes, just over a month. To be honest, it's been a bit mixed.\nA: How do you mean?\nB: Well, the lessons themselves aren't too hard. I was actually a bit ahead in maths and English at my old school, so the homework feels okay.\nA: That's good news.\nB: But making friends has been harder than I thought. The kids have all known each other since Year 7, and they have their groups already. I sit with two girls at lunch, and they're nice, but I don't feel I've found my close friend yet.\nA: It will come, sweetheart. Give it some time.\nB: I know. I just miss Sophie a lot.",
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "female",
+          "age": "child"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for gist",
+      "content": "Listen and choose the correct answer.\n\nWhat advice does the speaker give to new cyclists?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Buy the most expensive bicycle from the start",
+        "B. Start in quiet areas and slowly build up confidence",
+        "C. Always cycle alone for safety",
+        "D. Avoid wearing a helmet on hot days"
+      ],
+      "answer": "B",
+      "explanation": "The speaker recommends parks and quiet streets first, then bigger roads later — an emphasis on gradual confidence-building.",
+      "round": 3,
+      "audio_text": "Welcome to part one of our 'Cycling for Beginners' series. If you are getting back on a bike after many years, or starting from scratch, here are my top tips. First, do not feel that you need a fancy bike right away. A simple second-hand bike, well-checked at a local shop, is more than enough for your first months. Second, start in quiet areas — your local park, or empty side streets on a Sunday morning. Build your balance and confidence before joining busy roads. Third, always wear a helmet, even on short trips. Fourth, try cycling with a friend at first; you'll feel safer and have more fun. Once you are happy on quiet streets, you can slowly try longer routes. And remember, every experienced cyclist was a wobbly beginner once.",
+      "speakers": {
+        "_": {
+          "gender": "female",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for gist",
+      "content": "Listen and choose the correct answer.\n\nHow does the customer feel about the meal at the end of the conversation?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Very satisfied with everything",
+        "B. Pleased overall, but unhappy about one thing",
+        "C. Angry and refusing to pay",
+        "D. Confused about the price"
+      ],
+      "answer": "B",
+      "explanation": "She praises the food and atmosphere but specifically complains about the long wait between courses — pleased with one thing, not the other.",
+      "round": 3,
+      "audio_text": "A: Good evening, was everything alright with your meal?\nB: The food was lovely, thank you. The salmon was perfectly cooked, and the chocolate cake at the end was delicious.\nA: I'm so glad to hear that. And how was the service?\nB: Well, that's the only thing I have to mention. We waited almost forty minutes between the starter and the main course. We were starting to wonder if our order had been forgotten.\nA: Oh, I'm very sorry about that. We had two new staff tonight, and the kitchen was busier than usual.\nB: I understand. Please don't worry, we still had a lovely evening overall. The atmosphere is so nice here.\nA: Thank you for your patience. As an apology, please accept this small box of chocolates.",
+      "speakers": {
+        "A": {
+          "gender": "male",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "female",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for gist",
+      "content": "Listen and choose the correct answer.\n\nWhat is the boy mainly explaining?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Why he wants to change schools",
+        "B. How he organised his birthday party",
+        "C. How he learnt to swim during the summer",
+        "D. Why he no longer plays football"
+      ],
+      "answer": "C",
+      "explanation": "The whole monologue is about lessons at the local pool, his fear at first, and his progress to swimming widths — a learning-to-swim narrative.",
+      "round": 3,
+      "audio_text": "Hi everyone, I'm Sam, and I want to tell you about something I did this summer. Until June, I couldn't swim at all. I was actually a bit scared of deep water, especially after I saw a film about a shipwreck when I was seven. But this year, my parents signed me up for lessons at the local pool, three afternoons a week. The first lesson was hard. I just stood at the side of the pool and watched the others. But Mr Roberts, the teacher, was very patient. He started with my face in the water and blowing bubbles. After two weeks, I could float on my back. After six weeks, I could swim two whole widths of the pool without stopping. Last Saturday I even jumped from the small board for the first time. I'm so proud of myself, and I can't wait to swim more next summer.",
+      "speakers": {
+        "_": {
+          "gender": "male",
+          "age": "child"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for gist",
+      "content": "Listen and choose the correct answer.\n\nWhat is the woman's main worry?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. The weather might be bad on the trip",
+        "B. Her son's bag might be too heavy for him",
+        "C. Her son might forget important medicine",
+        "D. Her son might not like the food"
+      ],
+      "answer": "C",
+      "explanation": "She first checks the weather and bag (and is reassured), but the medicine concern is her main one — she gives the teacher specific instructions.",
+      "round": 3,
+      "audio_text": "A: Mrs Davis, I just wanted to confirm a few things about Tom's school trip tomorrow.\nB: Oh, of course. Have you seen the weather forecast?\nA: Yes, light showers in the morning, dry by the afternoon. Tom has a waterproof jacket in his bag.\nB: Good, good. And what about his bag — is it too heavy? The walk from the bus stop is fifteen minutes.\nA: I weighed it; it's about three kilos. He says he's fine carrying it.\nB: Alright. Now, the most important thing — he must take one tablet at lunchtime. Just one, with food. The bottle is in the front pocket.\nA: I've made a note in my own diary. I'll come and find Tom myself just before lunch.\nB: Thank you so much, Mr Hill. That puts my mind at ease.\nA: Of course. We've got it covered.",
+      "speakers": {
+        "A": {
+          "gender": "male",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "female",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for detail",
+      "content": "Listen and choose the correct answer.\n\nWhat time does the girl say her dance class starts?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. 4:00 p.m.",
+        "B. 4:30 p.m.",
+        "C. 5:00 p.m.",
+        "D. 5:30 p.m."
+      ],
+      "answer": "B",
+      "explanation": "The girl explicitly says 'my dance class starts at half past four', which is 4:30 p.m.",
+      "round": 3,
+      "audio_text": "A: Are you free this afternoon, Lucy?\nB: After 6:30, yes. Why?\nA: I wanted to ask if you can help me with the maths homework.\nB: I'd love to, but my dance class starts at half past four, and it lasts an hour and a half. So I'll be home around 6:15.\nA: Where is your class?\nB: It's at the community centre, only ten minutes from school.\nA: Got it. So could we meet at 6:30 at my house?\nB: Sure, that works. Mum said she can drive me over and pick me up at 8.\nA: Perfect. I'll save you some pizza for dinner.",
+      "speakers": {
+        "A": {
+          "gender": "male",
+          "age": "child"
+        },
+        "B": {
+          "gender": "female",
+          "age": "child"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for detail",
+      "content": "Listen and choose the correct answer.\n\nHow much does the family ticket to the museum cost?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. 12 pounds",
+        "B. 18 pounds",
+        "C. 22 pounds",
+        "D. 30 pounds"
+      ],
+      "answer": "C",
+      "explanation": "The clerk says the family ticket is 22 pounds. 12 is the adult price, 18 is two adults without kids, 30 is for buying separately.",
+      "round": 3,
+      "audio_text": "A: Hello, I'd like to buy tickets to the science museum for my family — two adults and two children.\nB: Of course. An adult ticket is twelve pounds, and a child ticket — that's under fourteen — is seven pounds.\nA: So that would be twelve plus twelve plus seven plus seven... thirty-eight pounds?\nB: Actually, may I suggest the family ticket? For two adults and up to three children, it's just twenty-two pounds.\nA: Oh that's much better!\nB: It also includes the planetarium show at three p.m.\nA: Perfect, I'll take the family ticket then.\nB: Lovely. That's twenty-two pounds, please. Card or cash?\nA: Card, thank you.",
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "male",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for detail",
+      "content": "Listen and choose the correct answer.\n\nWhich item did the woman NOT order?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. Tomato soup",
+        "B. Cheese sandwich",
+        "C. Apple pie",
+        "D. Black coffee"
+      ],
+      "answer": "C",
+      "explanation": "She orders soup, sandwich and coffee. She specifically says no to dessert: 'no, no pie today, thank you.'",
+      "round": 3,
+      "audio_text": "A: Good afternoon, what would you like?\nB: Hi. I'd like the tomato soup, please.\nA: Tomato soup, sure. Anything else?\nB: A cheese sandwich, with brown bread if you have it.\nA: We do. Anything to drink?\nB: Just a black coffee, no sugar.\nA: Of course. And to finish, would you like our apple pie? It's freshly baked today.\nB: It does smell wonderful, but no, no pie today, thank you. I'm trying to eat less sugar this month.\nA: Very well. So that's tomato soup, cheese sandwich on brown, and a black coffee. That'll be eight pounds fifty.\nB: Here you go.",
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "female",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for detail",
+      "content": "Listen and choose the correct answer.\n\nOn which day will the school football match take place?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Wednesday",
+        "B. Thursday",
+        "C. Friday",
+        "D. Saturday"
+      ],
+      "answer": "C",
+      "explanation": "The PE teacher says the match is moved from Thursday to Friday because of weather forecasts.",
+      "round": 3,
+      "audio_text": "Good morning, Year 8. Mr Carter speaking — your PE teacher. I have a quick announcement about this week's football match against Eastfield School. As you know, it was originally going to be on Thursday afternoon. However, the weather forecast for Thursday is heavy rain and strong winds, so we've decided to move it. Wednesday is not possible because the pitch is being repainted. We've now agreed with Eastfield to play on Friday after school, kick-off at 4 p.m. on the main pitch. Please bring your own water bottles. If the weather is still bad on Friday, the match will move to next Wednesday. I'll send a confirmation message to your parents on Thursday evening. Any questions, please come to the staff room at break. Thank you.",
+      "speakers": {
+        "_": {
+          "gender": "male",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for detail",
+      "content": "Listen and choose the correct answer.\n\nWhich subject did the boy enjoy least last term?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. History",
+        "B. French",
+        "C. Maths",
+        "D. Science"
+      ],
+      "answer": "B",
+      "explanation": "He says explicitly 'French was a struggle for me' and gives reasons. History was his favourite, maths and science he enjoyed.",
+      "round": 3,
+      "audio_text": "A: So, James, before you go off for the summer, your dad and I want to chat about last term. How did it go overall?\nB: I think pretty well, Mum.\nA: What was your favourite subject?\nB: Definitely history. Mr Patel made everything come alive — the Roman lessons were brilliant.\nA: That's wonderful. And what about maths?\nB: I liked maths. We did a lot of geometry, and I scored 82 percent in the end-of-term test.\nA: Great work. And science?\nB: Yeah, science was good too, especially the experiments.\nA: But your French... your report says you struggled.\nB: To be honest, French was a struggle for me. I just don't seem to remember the verbs, no matter how hard I try.\nA: Maybe we can find a tutor over the summer.",
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "male",
+          "age": "child"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for detail",
+      "content": "Listen and choose the correct answer.\n\nWhere did the woman lose her umbrella?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. On the bus",
+        "B. At the supermarket",
+        "C. At the cafe",
+        "D. On the train"
+      ],
+      "answer": "C",
+      "explanation": "She last had it at the cafe; the staff member finds an umbrella matching her description there.",
+      "round": 3,
+      "audio_text": "A: Good afternoon, customer services.\nB: Hi, I'm calling about an umbrella I lost yesterday afternoon. I'm not 100 percent sure where, but I'm trying to retrace my steps.\nA: Can you describe the umbrella?\nB: It's a small folding one, dark blue with white spots. The handle has a little bird on it.\nA: Where did you go yesterday?\nB: I took the number 14 bus to the supermarket, then walked to the cafe on Park Road, then took a train home from the central station.\nA: Right. We've had a few umbrellas handed in today. Hold on... Yes, here we are. A staff member at Park Road Cafe brought one in this morning. Dark blue, white spots, bird-shaped handle.\nB: That's mine!\nA: Wonderful. You can pick it up between 9 and 5 from our office.\nB: Thank you so much.",
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "female",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for detail",
+      "content": "Listen and choose the correct answer.\n\nWhich room is the meeting being moved to?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Room 12",
+        "B. Room 21",
+        "C. Room 122",
+        "D. Room 212"
+      ],
+      "answer": "C",
+      "explanation": "The speaker says clearly 'room one-two-two on the first floor', repeating once for clarity. Other numbers are mentioned only as wrong rooms.",
+      "round": 3,
+      "audio_text": "Good morning, this is Sarah from HR. I just want to update you on this morning's nine-thirty staff meeting. We were originally going to use room 12 on the ground floor, but the projector there is being repaired today. Room 21 is also unavailable as it's being used for new-staff training until midday. So we've moved our meeting to room 122 on the first floor. That's room one-two-two, just past the lift on the right. Please bring your own laptops as the spare cables haven't arrived yet. The meeting will still start at nine thirty sharp; coffee and pastries will be available from nine fifteen. If you can't find the room, my desk extension is 207. See you all soon.",
+      "speakers": {
+        "_": {
+          "gender": "female",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for detail",
+      "content": "Listen and choose the correct answer.\n\nHow long did the boy live in Spain?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Six months",
+        "B. Two years",
+        "C. Three years",
+        "D. Four years"
+      ],
+      "answer": "C",
+      "explanation": "He says the family moved when he was 6 and back when he was 9 — that is three years.",
+      "round": 3,
+      "audio_text": "A: So Marco, your accent is interesting — where are you originally from?\nB: I was born here in London, but my family moved to Madrid when I was six because of my dad's work.\nA: Oh wow! How long were you there?\nB: We came back when I was nine, so I was in Spain for three years.\nA: Did you go to a Spanish school?\nB: Yes, a normal local school. The first year was hard because I didn't know any Spanish, but kids learn fast. By the second year I was completely fluent.\nA: Do you still speak it?\nB: Yes, mostly with my dad on Sundays, and we visit my grandparents in Spain every summer for two weeks.\nA: That's amazing.\nB: Yeah, I'm really lucky to have two languages from a young age.",
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "child"
+        },
+        "B": {
+          "gender": "male",
+          "age": "child"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for detail",
+      "content": "Listen and choose the correct answer.\n\nWhat is the deadline for the homework?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Friday this week",
+        "B. Monday next week",
+        "C. Wednesday next week",
+        "D. Friday next week"
+      ],
+      "answer": "C",
+      "explanation": "The teacher repeats 'next Wednesday' as the deadline; this week's Friday is only mentioned as the new topic introduction date.",
+      "round": 3,
+      "audio_text": "Right, Year 7, before you all rush off for break, a reminder about the homework. We started chapter 4 today, and your homework is to read pages 56 to 62 and answer the five questions at the end. I'd like all answers in full sentences, not bullet points. The deadline is next Wednesday. I repeat, next Wednesday, not this Friday — I know some of you have football on Wednesday afternoons, so please plan your time. This Friday I'll introduce a new topic, but no homework will be set on that one yet. If you have any questions over the weekend, you can email me, and I'll reply on Monday morning. Have a lovely afternoon, everyone.",
+      "speakers": {
+        "_": {
+          "gender": "female",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for detail",
+      "content": "Listen and choose the correct answer.\n\nWhich item is the customer returning?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. A blue jumper",
+        "B. A pair of black jeans",
+        "C. A red dress",
+        "D. A pair of trainers"
+      ],
+      "answer": "B",
+      "explanation": "She returns the black jeans because they shrank. The blue jumper is what she wants to exchange for; trainers and dresses are not mentioned.",
+      "round": 3,
+      "audio_text": "A: Hello, how can I help you?\nB: Hi, I'd like to return these. I bought them last week.\nA: Of course. Let me check... black jeans, size 12, bought on the 14th. Was there anything wrong with them?\nB: They were fine when I bought them, but I followed the washing instructions and they shrank. They don't fit me anymore.\nA: Oh, I'm sorry to hear that. Do you have the receipt?\nB: Yes, here you go.\nA: Thank you. Would you like a refund or to exchange them for something else?\nB: I saw a blue jumper near the entrance — could I exchange them for that instead?\nA: Of course. Let me check the price... yes, the jumper is the same price, so it's a straight swap.\nB: Perfect, thank you.",
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "female",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for detail",
+      "content": "Listen and choose the correct answer.\n\nWhich number is the speaker's new phone number?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. 0207 555 0188",
+        "B. 0207 555 1088",
+        "C. 0207 515 0188",
+        "D. 0207 558 0188"
+      ],
+      "answer": "A",
+      "explanation": "He spells it out clearly: 'oh-two-oh-seven, five-five-five, oh-one-eight-eight'.",
+      "round": 3,
+      "audio_text": "Hi, this is Mark Brown leaving a message for John Stevens. I'm calling to confirm tomorrow's appointment at three o'clock at your office on King Street. Just one quick thing — I changed my mobile number last week. Could you please update your records? My new number is oh-two-oh-seven, five-five-five, oh-one-eight-eight. I'll repeat that: oh-two-oh-seven, five-five-five, oh-one-eight-eight. The old number doesn't work anymore, so don't try it. If you need to reach me before our meeting, that's the only number to use. Otherwise, I'll see you at three. Thanks, John, bye.",
+      "speakers": {
+        "_": {
+          "gender": "male",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Listening",
+      "knowledge_point": "Listening/Listening for detail",
+      "content": "Listen and choose the correct answer.\n\nWhat will the weather be like on Sunday afternoon?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Sunny and warm",
+        "B. Cloudy with light rain",
+        "C. Heavy snow",
+        "D. Strong wind and storms"
+      ],
+      "answer": "B",
+      "explanation": "The forecaster says Sunday morning will be bright and Sunday afternoon will be cloudy with light rain. Sunny is Saturday; snow and storms are not mentioned.",
+      "round": 3,
+      "audio_text": "And now over to Helen for the weekend weather. Thanks, Tom. So, looking ahead to the weekend, here's what we can expect. Saturday will be the better of the two days. We start with a fresh morning at around eleven degrees in London, but by afternoon temperatures climb to a pleasant nineteen, with sunshine in most parts of the south. Sunday begins brightly too, with clear skies in the morning, but a band of cloud is moving in from the west. By Sunday afternoon, expect cloudy skies with some light rain, especially in the west. Temperatures will drop a few degrees, around fifteen at best. There is no risk of storms or strong winds — it's a calm front. Back to you, Tom.",
+      "speakers": {
+        "_": {
+          "gender": "female",
+          "age": "adult"
+        }
+      }
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Word Choice (Cloze)",
+      "content": "The film's ending really ____ me by surprise — I never saw it coming.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. took",
+        "B. made",
+        "C. did",
+        "D. gave"
+      ],
+      "answer": "A",
+      "explanation": "'take someone by surprise' is the fixed expression. The other verbs do not collocate this way.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Word Choice (Cloze)",
+      "content": "She ____ a great deal of attention to detail in her work.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. pays",
+        "B. gives",
+        "C. makes",
+        "D. takes"
+      ],
+      "answer": "A",
+      "explanation": "'pay attention' is the fixed collocation. 'give/make/take attention' are wrong.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Word Choice (Cloze)",
+      "content": "The two countries finally ____ peace after the long conflict.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. made",
+        "B. did",
+        "C. took",
+        "D. got"
+      ],
+      "answer": "A",
+      "explanation": "'make peace' is the fixed collocation. 'do peace' / 'take peace' / 'get peace' are not standard.",
+      "round": 3
+    },
+    {
+      "chapter": "Vocabulary",
+      "knowledge_point": "Vocabulary/Word Choice (Cloze)",
+      "content": "Could you please ____ a favour for me and post this letter?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. do",
+        "B. make",
+        "C. take",
+        "D. give"
+      ],
+      "answer": "A",
+      "explanation": "'do someone a favour' is the fixed collocation. 'make/take/give a favour' are wrong.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Sentence Transformation",
+      "content": "Original: 'It is not necessary for you to come early.'\nWhich sentence has the same meaning?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. You needn't come early.",
+        "B. You mustn't come early.",
+        "C. You can't come early.",
+        "D. You shouldn't come early."
+      ],
+      "answer": "A",
+      "explanation": "'needn't' = no obligation, matching 'not necessary'. 'mustn't' = prohibition; 'can't' = inability/permission denied; 'shouldn't' = bad advice.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Sentence Transformation",
+      "content": "Original: 'Tom started learning Spanish four years ago.'\nWhich sentence has the same meaning?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. Tom has been learning Spanish for four years.",
+        "B. Tom learnt Spanish for four years.",
+        "C. Tom will learn Spanish in four years.",
+        "D. Tom is going to learn Spanish for four years."
+      ],
+      "answer": "A",
+      "explanation": "'started ... four years ago' (still continues) → Present Perfect Continuous 'has been learning ... for four years'. Past Simple in B suggests it has stopped.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Sentence Transformation",
+      "content": "Original: 'My sister hasn't seen this film before.'\nWhich sentence has the same meaning?",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. This is the first time my sister has seen this film.",
+        "B. My sister always sees this film.",
+        "C. My sister never wants to see this film.",
+        "D. My sister will see this film tomorrow."
+      ],
+      "answer": "A",
+      "explanation": "'hasn't seen X before' = 'first time has seen X'. The other options change the meaning.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Sentence Transformation",
+      "content": "Original: 'They didn't go to the beach because the weather was bad.'\nWhich sentence has the same meaning?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. They didn't go to the beach due to the bad weather.",
+        "B. They went to the beach despite the bad weather.",
+        "C. They went to the beach because of the bad weather.",
+        "D. The bad weather did not stop them going to the beach."
+      ],
+      "answer": "A",
+      "explanation": "'because + clause' = 'due to + noun phrase'. B/D contradict by saying they did go; C reverses cause/effect.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Open Cloze",
+      "content": "Despite ____ his best, he failed the test by two points.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. doing",
+        "B. did",
+        "C. does",
+        "D. do"
+      ],
+      "answer": "A",
+      "explanation": "After 'Despite' (preposition), use a gerund. 'doing one's best' is also a fixed phrase.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Open Cloze",
+      "content": "She refused to give up ____ matter how hard things got.",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. no",
+        "B. not",
+        "C. never",
+        "D. nothing"
+      ],
+      "answer": "A",
+      "explanation": "'no matter how' is a fixed phrase introducing a clause about extreme conditions.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Open Cloze",
+      "content": "I haven't seen Maria ____ Christmas — has she moved away?",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. since",
+        "B. for",
+        "C. ago",
+        "D. by"
+      ],
+      "answer": "A",
+      "explanation": "'since + a specific point in time' (Christmas). 'for' takes a duration; 'ago' goes after a duration with Past Simple; 'by' = no later than.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Open Cloze",
+      "content": "If you don't understand the question, please put ____ your hand.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. up",
+        "B. on",
+        "C. in",
+        "D. down"
+      ],
+      "answer": "A",
+      "explanation": "'put up your hand' = raise it (the gesture for asking). 'put on' = wear; 'put in' = insert; 'put down' = lower.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Phrasal Verbs (high-frequency)",
+      "content": "I can't believe you ____ your maths exam after only one week of revision!",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. got through",
+        "B. got over",
+        "C. got off",
+        "D. got out"
+      ],
+      "answer": "A",
+      "explanation": "'get through an exam' = pass it. 'get over' = recover from; 'get off' = dismount/leave; 'get out' = exit.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Phrasal Verbs (high-frequency)",
+      "content": "She ____ her old toys before moving to a smaller flat.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. gave away",
+        "B. gave back",
+        "C. gave in",
+        "D. gave up"
+      ],
+      "answer": "A",
+      "explanation": "'give away' = donate (no longer needed). 'give back' = return; 'give in' = surrender; 'give up' = stop trying.",
+      "round": 3
+    },
+    {
+      "chapter": "Grammar",
+      "knowledge_point": "Grammar/Phrasal Verbs (high-frequency)",
+      "content": "The meeting was ____ until next Monday because of the snowstorm.",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. put off",
+        "B. put on",
+        "C. put up",
+        "D. put in"
+      ],
+      "answer": "A",
+      "explanation": "'put off' = postpone. 'put on' = wear/start; 'put up' = raise/host; 'put in' = invest.",
+      "round": 3
+    }
+  ]
+}
