@@ -90,6 +90,8 @@ const _bundledBatchAssets = [
   'assets/data/batches/realpaper_g6_math_beishida_qizhong_002.json',
   'assets/data/batches/realpaper_g6_math_beishida_qizhong_003.json',
   'assets/data/batches/realpaper_g6_math_beishida_qimo_003.json',
+  // V3.12.5 第十批 (2026-05-08): 数学六下剩余源卷
+  'assets/data/batches/realpaper_g6_math_beishida_qimo_004.json',
 ];
 
 void main() async {

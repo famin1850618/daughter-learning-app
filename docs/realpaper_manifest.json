@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "schema": "v1",
   "created_at": "2026-05-08",
   "description": "真题处理进度 manifest。每处理一卷追加 processed[] 一项。详见 .realpaper-spec.md §10",
@@ -612,7 +612,164 @@
       "round_distribution": {"R1": 11, "R2": 18, "R3": 11, "R4": 1},
       "kp_overview": "总复习/数与代数综合 18 + 总复习/解决问题策略 4 + 圆柱与圆锥 8 + 比和比例 4 + 正反比例 1 + 总复习/图形与几何综合 6",
       "processed_at": "2026-05-08"
+    },
+    {
+      "sha1": "cc3622d601750c3161761a7e82c6ea40f2334982",
+      "source_file": "~/AI_Workspace/真题/六下/数学/6年级下册数学北师大版/期末试卷/六年级下册数学北师大版期末测试卷（含答案）.pdf",
+      "batch_source": "realpaper_g6_math_beishida_qimo_004",
+      "subject": "math",
+      "grade": 6,
+      "chapter": "总复习+圆柱与圆锥+比例+正比例和反比例",
+      "questions_emitted": 40,
+      "questions_skipped": 6,
+      "skipped_reasons": [
+        "五.1 三角形放大画图",
+        "五.2 坐标点 BC 表示（依赖图）",
+        "五.3 图形旋转平移作图",
+        "六.1 第④⑤面积/周长表格观察图（图依赖）",
+        "四.2 第二题 OCR 算式乱（已替换为另一同难度题）"
+      ],
+      "type_distribution": {"fill": 14, "judgment": 5, "choice": 6, "calculation": 15},
+      "round_distribution": {"R1": 11, "R2": 18, "R3": 11},
+      "kp_overview": "总复习/数与代数综合 25 + 总复习/图形与几何综合 4 + 总复习/解决问题策略 1 + 圆柱与圆锥 2 + 比和比例 5 + 正反比例 3",
+      "answer_match_pre": "13/31 自动配对",
+      "processed_at": "2026-05-08"
     }
   ],
-  "skipped_files": []
+  "skipped_files": [
+    {
+      "sha1": "ab7f2255cf0e036804e6fbc01b647d5a76effee3",
+      "source_file": "~/AI_Workspace/真题/六下/数学/教材帮期末真题卷六年级下册数学人教版河南专用.pdf",
+      "reason": "扫描型 PDF（pdftotext 提取 0 字节），OCR 质量不可靠（关键数字/分数/符号识别错乱），按 spec §9.1 + feedback_unclear_abandon 跳过整本",
+      "subject": "math",
+      "grade": 6,
+      "skipped_at": "2026-05-08"
+    },
+    {
+      "source_file": "~/AI_Workspace/真题/六下/数学/教材帮期末真题卷六年级下册数学北师版河南专用.pdf",
+      "reason": "扫描型 PDF（pdftotext 提取 0 字节），OCR 不可靠，按 spec §9.1 跳过",
+      "subject": "math",
+      "grade": 6,
+      "skipped_at": "2026-05-08"
+    },
+    {
+      "source_file": "~/AI_Workspace/真题/六下/数学/教材帮期末真题卷六年级下册数学苏教版河南专用.pdf",
+      "reason": "扫描型 PDF（pdftotext 提取 0 字节），OCR 不可靠，按 spec §9.1 跳过",
+      "subject": "math",
+      "grade": 6,
+      "skipped_at": "2026-05-08"
+    },
+    {
+      "source_file": "~/AI_Workspace/真题/六下/数学/小升初数学专题复习/小升初数学专题  图形与几何基础卷.pdf",
+      "reason": "扫描型 PDF（pdftotext 提取 0 字节），OCR 测试样本错乱（特殊符号/分数/比例字符识别失败），按 feedback_unclear_abandon 整组放弃 16 PDF",
+      "subject": "math",
+      "grade": 6,
+      "skipped_at": "2026-05-08"
+    },
+    {
+      "source_file": "~/AI_Workspace/真题/六下/数学/小升初数学专题复习/小升初数学专题  数与代数基础卷.pdf",
+      "reason": "扫描型 PDF，OCR 不可靠，整组小升初专题 16 PDF 一并跳过",
+      "subject": "math",
+      "grade": 6,
+      "skipped_at": "2026-05-08"
+    },
+    {
+      "source_file": "~/AI_Workspace/真题/六下/数学/小升初数学专题复习/小升初数学专题  数与代数拓展卷.pdf",
+      "reason": "扫描型 PDF，同上",
+      "subject": "math",
+      "grade": 6,
+      "skipped_at": "2026-05-08"
+    },
+    {
+      "source_file": "~/AI_Workspace/真题/六下/数学/小升初数学专题复习/小升初数学专题  数与代数提高卷.pdf",
+      "reason": "扫描型 PDF，同上",
+      "subject": "math",
+      "grade": 6,
+      "skipped_at": "2026-05-08"
+    },
+    {
+      "source_file": "~/AI_Workspace/真题/六下/数学/小升初数学专题复习/小升初数学专题  统计与可能性综合卷.pdf",
+      "reason": "扫描型 PDF，同上",
+      "subject": "math",
+      "grade": 6,
+      "skipped_at": "2026-05-08"
+    },
+    {
+      "source_file": "~/AI_Workspace/真题/六下/数学/小升初数学专题复习/小升初数学专题1：数与代数（2）数的整除、因数、倍数、合数、质数、奇数、偶数.pdf",
+      "reason": "扫描型 PDF，同上",
+      "subject": "math",
+      "grade": 6,
+      "skipped_at": "2026-05-08"
+    },
+    {
+      "source_file": "~/AI_Workspace/真题/六下/数学/小升初数学专题复习/小升初数学专题1：数与代数（3）分数与百分数.pdf",
+      "reason": "扫描型 PDF，同上",
+      "subject": "math",
+      "grade": 6,
+      "skipped_at": "2026-05-08"
+    },
+    {
+      "source_file": "~/AI_Workspace/真题/六下/数学/小升初数学专题复习/小升初数学专题1：数与代数（4）运算与规律.pdf",
+      "reason": "扫描型 PDF，同上",
+      "subject": "math",
+      "grade": 6,
+      "skipped_at": "2026-05-08"
+    },
+    {
+      "source_file": "~/AI_Workspace/真题/六下/数学/小升初数学专题复习/小升初数学专题1：数与代数（5）简易方程.pdf",
+      "reason": "扫描型 PDF，同上",
+      "subject": "math",
+      "grade": 6,
+      "skipped_at": "2026-05-08"
+    },
+    {
+      "source_file": "~/AI_Workspace/真题/六下/数学/小升初数学专题复习/小升初数学专题1：数与代数（6）单位换算和常见的数量关系式.pdf",
+      "reason": "扫描型 PDF，同上",
+      "subject": "math",
+      "grade": 6,
+      "skipped_at": "2026-05-08"
+    },
+    {
+      "source_file": "~/AI_Workspace/真题/六下/数学/小升初数学专题复习/小升初数学专题1：数与代数（7）比与比例.pdf",
+      "reason": "扫描型 PDF，同上",
+      "subject": "math",
+      "grade": 6,
+      "skipped_at": "2026-05-08"
+    },
+    {
+      "source_file": "~/AI_Workspace/真题/六下/数学/小升初数学专题复习/小升初数学专题2：图形与几何（1）图形的认识及计算.pdf",
+      "reason": "扫描型 PDF，同上",
+      "subject": "math",
+      "grade": 6,
+      "skipped_at": "2026-05-08"
+    },
+    {
+      "source_file": "~/AI_Workspace/真题/六下/数学/小升初数学专题复习/小升初数学专题2：图形与几何（2）图形与位置.pdf",
+      "reason": "扫描型 PDF，同上",
+      "subject": "math",
+      "grade": 6,
+      "skipped_at": "2026-05-08"
+    },
+    {
+      "source_file": "~/AI_Workspace/真题/六下/数学/小升初数学专题复习/小升初数学专题3：统计与概率（1）统计.pdf",
+      "reason": "扫描型 PDF，同上",
+      "subject": "math",
+      "grade": 6,
+      "skipped_at": "2026-05-08"
+    },
+    {
+      "source_file": "~/AI_Workspace/真题/六下/数学/小升初数学专题复习/小升初数学专题4：应用题（1）.pdf",
+      "reason": "扫描型 PDF，同上",
+      "subject": "math",
+      "grade": 6,
+      "skipped_at": "2026-05-08"
+    },
+    {
+      "source_file": "~/AI_Workspace/真题/六下/数学/小升初数学专题复习/小升初数学专题4：应用题（2）.pdf",
+      "reason": "扫描型 PDF，同上",
+      "subject": "math",
+      "grade": 6,
+      "skipped_at": "2026-05-08"
+    }
+  ]
 }

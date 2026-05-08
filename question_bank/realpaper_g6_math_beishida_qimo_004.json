@@ -1,0 +1,444 @@
+{
+  "source": "realpaper_g6_math_beishida_qimo_004",
+  "subject": "math",
+  "grade": 6,
+  "knowledge_points_added": [],
+  "questions": [
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "某年我国应届小学毕业生约有 14385000 人，将这个数改写成用「万」作单位的数是(    )万，省略万位后面的尾数约是(    )万。请依次填 2 个数（前一空保留小数，后一空为整数），用逗号分隔。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "1438.5,1439",
+      "explanation": "改写：14385000＝1438.5 万。省略万位后面的尾数（即四舍五入到万位）：14385000 看千位是 5，向万位进 1，约 1439 万。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "比较大小，依次给三组数填上「>」「<」或「=」，用逗号分隔（共 3 个符号）：（1）6.75÷0.98 与 6.75；（2）3 时 45 分 与 3.45 时；（3）6/7 × 4/3 与 4/3。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": ">,>,<",
+      "explanation": "（1）除数 0.98<1，所以 6.75÷0.98>6.75。（2）3 时 45 分＝3.75 时>3.45 时。（3）4/3 乘以 6/7（小于 1）必然变小，所以 6/7×4/3<4/3。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "小磊生病住院用去医药费 3760 元，根据儿童医疗保险规定，个人负担和医院报销的比是 1∶4，小磊可以报销(    )元医药费。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "3008",
+      "explanation": "个人负担∶报销＝1∶4，则报销占总额的 4/(1+4)＝4/5。报销金额＝3760×4/5＝3008 元。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "如果四位数「4□6□」是 4 的倍数，第二个方框（个位）里最大应填(    )；如果三位数「79□」是 6 的倍数，方框里可以填(    )（如有多个答案请用顿号分隔，从小到大）。请按「a,b」格式填两个空（其中 b 可能含顿号）。",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "8,2",
+      "explanation": "第一空：四位数末两位 6□ 是 4 的倍数，最大 □ 为 8（68÷4=17）。第二空：79□ 是 6 的倍数即同时是 2 和 3 的倍数，□ 为偶数且 7+9+□=16+□ 是 3 的倍数；□∈{0,2,4,6,8}，需 16+□ 是 3 的倍数，仅 □＝2 满足（16+2=18）。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "在钟面上，分针转动一周，时针转动的角度是(    )度。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "30",
+      "explanation": "分针转一周（60 分钟）相当于过去 1 小时，时针走 1 大格＝30°。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "六(1)班同学参加体育达标检测，6 人未达标，达标率为 88%。六(1)班有学生(    )人。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "50",
+      "explanation": "未达标率＝1－88%＝12%，6÷12%＝50 人。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "长、宽、高分别是 8 cm、8 cm、5 cm 的长方体的表面积是(    )cm²，体积是(    )cm³。请按「a,b」格式填两个数。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "288,320",
+      "explanation": "表面积＝2×(8×8+8×5+8×5)＝2×(64+40+40)＝288 cm²。体积＝8×8×5＝320 cm³。",
+      "round": 2
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的表面积",
+      "content": "一个圆柱形鼓，底面直径是 6 dm，高是 2 dm。它的侧面由铝皮围成，上、下底面蒙的是羊皮。做一个这样的鼓，需要铝皮(    )dm²，羊皮(    )m²。请按「a,b」格式填两个数（π 取 3.14）。",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "37.68,0.5652",
+      "explanation": "侧面积（铝皮）＝π×d×h＝3.14×6×2＝37.68 dm²。两个底面积（羊皮）＝2×π×r²＝2×3.14×9＝56.52 dm²＝0.5652 m²（1 m²＝100 dm²）。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "一根绳子用了 6/7，还剩 6/7 米，这根绳子用了(    )米。请填带分数（如 5 又 1/7 写作「5又1/7」），整数部分与分数部分用「又」分隔。",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "5又1/7",
+      "explanation": "设绳子全长 x 米。用了 6/7 即 (6/7)x 米，剩下 (1/7)x 米。已知剩 6/7 米，所以 (1/7)x＝6/7，x＝6 米。用了 6×6/7＝36/7＝5 又 1/7 米。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "把 35 块蛋糕最多放到(    )个盘子里，可以保证总有一个盘子里至少有 9 块蛋糕。",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "4",
+      "explanation": "抽屉原理：要保证至少有一个盘子里有 9 块，平均每盘最多 8 块时刚好不满足，所以盘数 n 满足 8n<35，n≤4。最多 4 个盘子（35÷4=8 余 3，必有一盘≥9 块）。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "判断：向东走一定用正数表示，向西走一定用负数表示。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "错",
+      "explanation": "正负数的规定是相对的：可以约定向东为正，也可以约定向西为正。题目「一定」表述错误。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "判断：一瓶盐水的含盐率是 10%，用去 10%后，剩下的盐和水的比是 1∶9。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "对",
+      "explanation": "用去 10%是同时用去盐和水（浓度不变），剩下盐水中含盐率仍为 10%，即盐∶盐水＝1∶10，所以盐∶水＝1∶9。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "判断：上午 9 点半，分针和时针组成的角是直角。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "错",
+      "explanation": "9 点半时，分针指 6，时针在 9 与 10 中间。分针指 6 对应 180°位置，时针约 285°位置（9×30+15＝285），夹角＝285－180＝105°，不是直角。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "判断：用 2 cm、3 cm、5 cm 的三根小棒不能围成三角形。",
+      "type": "judgment",
+      "difficulty": "easy",
+      "answer": "对",
+      "explanation": "三角形任意两边之和大于第三边，2+3＝5 不大于 5，不能构成三角形。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "判断：做一件工作，工作效率提高了 20%，所用的时间就会减少 20%。",
+      "type": "judgment",
+      "difficulty": "hard",
+      "answer": "错",
+      "explanation": "效率与时间成反比。原效率 1，新效率 1.2；原时间 1，新时间 1÷1.2＝5/6，时间减少 1/6≈16.7%，不是 20%。",
+      "round": 3
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+      "content": "底面积相等的圆柱和圆锥，它们的体积比是 2∶1，圆锥的高是 9 cm，圆柱的高是(    )。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. 3 cm",
+        "B. 6 cm",
+        "C. 9 cm",
+        "D. 18 cm"
+      ],
+      "answer": "B",
+      "explanation": "底面积相等时，V 圆柱÷V 圆锥＝(S×h 柱)÷(1/3×S×h 锥)＝3×h 柱÷h 锥。已知 V 比＝2∶1，所以 3×h 柱÷h 锥＝2，即 h 柱÷h 锥＝2/3。h 锥＝9，h 柱＝6 cm。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "已知 3/a＋3/b＝3/c（a、b、c 是不等于 0 的自然数），那么 a、b、c 中最小的是(    )。",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. a",
+        "B. b",
+        "C. c",
+        "D. 无法确定"
+      ],
+      "answer": "C",
+      "explanation": "由 3/c＝3/a＋3/b 知 1/c＝1/a＋1/b，即 1/c 比 1/a 和 1/b 都大。倒数最大者本身最小，所以 c 最小。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "将 15%的盐水和 18%的盐水混合在一起，混合后的含盐率是(    )。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. 16.5%",
+        "B. 33%",
+        "C. 17.5%",
+        "D. 无法确定"
+      ],
+      "answer": "D",
+      "explanation": "混合后浓度取决于两种盐水各自的质量比。题目没有给出两种盐水的质量比例，所以无法确定。",
+      "round": 2
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正反比例的判断",
+      "content": "在下列每组两个量中，成正比例的字母组合是(    )。\nA．盐水的浓度一定，盐和盐水的质量\nB．一个非零数与它的倒数\nC．武汉到上海的火车的平均速度与行驶时间\nD．体积一定，圆柱的高和底面半径\nE．苹果单价一定，买苹果的总价和买的数量\nF．被减数一定，减数和差",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. A 和 E",
+        "B. A 和 D",
+        "C. B 和 F",
+        "D. C 和 E"
+      ],
+      "answer": "A",
+      "explanation": "成正比例需两量比值（商）一定。A：盐/盐水＝浓度（一定），成正比例。E：总价/数量＝单价（一定），成正比例。所以 A、E 成正比例。其中 B、C 成反比例（积一定），D 圆柱体积公式底面积×高一定不能直接判定半径与高的关系（V＝πr²h，h 与 r² 反比，h 与 r 不成反比例），F 减数与差是和一定（被减数＝减数+差），不成正反比例。",
+      "round": 3
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正反比例的判断",
+      "content": "在下列每组两个量中，成反比例的字母组合是(    )。\nA．盐水的浓度一定，盐和盐水的质量\nB．一个非零数与它的倒数\nC．武汉到上海的火车的平均速度与行驶时间\nD．体积一定，圆柱的高和底面半径\nE．苹果单价一定，买苹果的总价和买的数量\nF．被减数一定，减数和差",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. A 和 D",
+        "B. B 和 C",
+        "C. C 和 E",
+        "D. D 和 F"
+      ],
+      "answer": "B",
+      "explanation": "成反比例需两量乘积（积）一定。B：一个非零数 x 与它的倒数 1/x，乘积恒为 1，成反比例。C：路程一定（武汉到上海）时，速度×时间＝路程（一定），成反比例。所以 B、C 成反比例。",
+      "round": 3
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "芳芳和媛媛各走一段路。芳芳走的路程比媛媛多 1/5，芳芳用的时间比媛媛多 1/8，芳芳和媛媛的速度比是(    )。",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. 5∶8",
+        "B. 8∶5",
+        "C. 27∶20",
+        "D. 16∶15"
+      ],
+      "answer": "D",
+      "explanation": "设媛媛路程 5、时间 8，则芳芳路程＝5×6/5＝6，时间＝8×9/8＝9。速度比＝(6/9)∶(5/8)＝(48/72)∶(45/72)＝48∶45＝16∶15。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "直接写出得数：2.323÷23＝(    )。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "0.101",
+      "explanation": "2.323÷23＝0.101（被除数与除数同时除以 23，相当于除整后小数点不动）。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "直接写出得数：6.2×0.4＝(    )。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "2.48",
+      "explanation": "62×4＝248，两位小数：6.2×0.4＝2.48。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "直接写出得数：13.5－7.8＝(    )。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "5.7",
+      "explanation": "13.5－7.8＝5.7。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "直接写出得数：7÷14%＝(    )。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "50",
+      "explanation": "7÷14%＝7÷0.14＝50。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "直接写出得数：2/5－1/10＝(    )。请填最简分数（如 a/b 形式）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "3/10",
+      "explanation": "2/5＝4/10，4/10－1/10＝3/10。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "直接写出得数：1/4＋5/12＝(    )。请填最简分数（如 a/b 形式）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "2/3",
+      "explanation": "1/4＝3/12，3/12＋5/12＝8/12＝2/3。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "直接写出得数：5/6×3/10＝(    )。请填最简分数（如 a/b 形式）。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "1/4",
+      "explanation": "5/6×3/10＝(5×3)/(6×10)＝15/60＝1/4。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "直接写出得数：7/9÷14/3＝(    )。请填最简分数（如 a/b 形式）。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "1/6",
+      "explanation": "7/9÷14/3＝7/9×3/14＝21/126＝1/6。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "用简便方法计算：(5/6＋7/12－3/8)×24。",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "25",
+      "explanation": "用乘法分配律展开：(5/6)×24＋(7/12)×24－(3/8)×24＝20＋14－9＝25。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "用简便方法计算：5×(1/3－1/5)÷5/12。",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "8/5",
+      "explanation": "1/3－1/5＝5/15－3/15＝2/15。5×2/15÷5/12＝5×2/15×12/5＝2/15×12＝24/15＝8/5。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "用简便方法计算：7.5×4.7－0.75×27。",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "15",
+      "explanation": "0.75×27＝7.5×2.7。原式＝7.5×4.7－7.5×2.7＝7.5×(4.7－2.7)＝7.5×2＝15。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/解比例",
+      "content": "解比例：3又1/2 ∶ x ＝ 0.5 ∶ 0.2。请填最简分数（如 a/b 形式）。",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "7/5",
+      "explanation": "3又1/2＝7/2。由比例性质：0.5x＝7/2×0.2＝7/10，x＝7/10÷0.5＝7/5。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "求未知数 x：x － 2/3 x － 5 ＝ 18。",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "69",
+      "explanation": "x－2x/3＝x/3，所以 x/3－5＝18，x/3＝23，x＝69。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "求未知数 x：4x＋3×0.7＝6.5。",
+      "type": "calculation",
+      "difficulty": "easy",
+      "answer": "1.1",
+      "explanation": "4x＋2.1＝6.5，4x＝4.4，x＝1.1。",
+      "round": 1
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "学校将 200 粒太空种子按 5∶3∶2 的比分配给六、五、四年级同学种植，六年级比四年级多分到太空种子多少粒？请填一个数（单位：粒）。",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "60",
+      "explanation": "总份数 5＋3＋2＝10，每份 200÷10＝20 粒。六年级比四年级多 (5－2)×20＝60 粒。",
+      "round": 2
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/反比例的意义",
+      "content": "一堆煤，原计划每天烧 3 吨，可以烧 96 天。如果改为每天烧 2.5 吨，这堆煤可以多烧多少天？（用比例知识解答）",
+      "type": "calculation",
+      "difficulty": "hard",
+      "answer": "19.2",
+      "explanation": "煤的总量一定，每天烧的吨数与烧的天数成反比。设可以烧 x 天：3×96＝2.5x，x＝288÷2.5＝115.2 天。多烧 115.2－96＝19.2 天。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "张平要把自己的 1500 元压岁钱存入银行，存期 2 年，年利率为 2.25%，到期时将利息的 80%捐给希望工程。张平还可得到利息多少元？",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "13.5",
+      "explanation": "总利息＝1500×2.25%×2＝67.5 元。捐 80%后剩 20%：67.5×20%＝13.5 元。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "一批水果，卖出这批水果的 3/8，剩下的比卖出的还多 360 千克。这批水果还剩多少千克？（用方程解答）",
+      "type": "calculation",
+      "difficulty": "hard",
+      "answer": "900",
+      "explanation": "设这批水果共 x 千克。剩下＝(1－3/8)x＝5x/8，卖出＝3x/8。由「剩下比卖出多 360」：5x/8－3x/8＝360，2x/8＝360，x＝1440 千克。剩下＝1440×5/8＝900 千克。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "中国参加第 31 届里约奥运会的运动员中，男运动员占运动员总数的 5/13，女运动员比运动员总数的 5/8 少 4 人。中国参加第 31 届奥运会的运动员共有多少人？",
+      "type": "calculation",
+      "difficulty": "hard",
+      "answer": "416",
+      "explanation": "设总人数为 x。男 5x/13，女 5x/8－4。男+女＝x：5x/13＋5x/8－4＝x。通分：40x/104＋65x/104－4＝104x/104，即 (40＋65－104)x/104＝4，x/104＝4，x＝416 人。",
+      "round": 3
+    }
+  ]
+}

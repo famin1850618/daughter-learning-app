@@ -1,5 +1,5 @@
 {
-  "version": 19,
+  "version": 20,
   "updated_at": "2026-05-08",
   "batches": [
     {
@@ -405,6 +405,14 @@
       "grade": 6,
       "count": 41,
       "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qimo_004",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qimo_004.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 40,
+      "kind": "realpaper"
     }
   ],
   "_changelog": [
@@ -432,6 +440,11 @@
       "version": 19,
       "date": "2026-05-08",
       "change": "V3.9 添加 PET R4 竞赛拓展档 200 题（Vocabulary 35 / Grammar 50 / Reading 70 / Listening 25 / Functional 20，含 25 道听力 + speakers 元数据；R4 = R3 hard 起步，CEFR B2 完整 + C1 入门，触及 FCE/CAE 入门 KP：Inversion / Subjunctive / Cleft Sentences / Modals Perfect / Mixed Conditionals / Cross-text Matching / Recognising irony / Identifying implied meaning / Academic conversation 等；含 14 个 reading cluster 长篇 400-600 词）"
+    },
+    {
+      "version": 20,
+      "date": "2026-05-08",
+      "change": "V3.12.5 数学六下剩余源卷入库 - A 组北师大期末测试卷（cc3622d6）40 题；B 组教材帮 3 PDF + C 组小升初 16 PDF 全部跳过（扫描型 PDF，OCR 质量差，按 spec §9.1 + feedback_unclear_abandon 直接放弃）"
     }
   ]
 }

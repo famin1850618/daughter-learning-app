@@ -20,3 +20,4 @@ ios/GoogleService-Info.plist
 # V3.10 真题工作流
 .cache/
 tools/realpaper/.venv/
+tools/__pycache__/
