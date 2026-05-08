@@ -1,5 +1,5 @@
 {
-  "source": "batch_2026_05_07_g6_chinese_r3",
+  "source": "batch_2026_05_07_g6_chinese_r3_deprecated",
   "subject": "chinese",
   "grade": 6,
   "knowledge_points_added": [],
@@ -20,7 +20,8 @@
         "D. 腊八粥的颜色五彩缤纷，看上去像展览品"
       ],
       "group_id": "g6_chinese_r3_reading_unit1_beijing",
-      "group_order": 1
+      "group_order": 1,
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -38,7 +39,8 @@
         "D. 灯火通宵是为了照明，方便家人吃团圆饭"
       ],
       "group_id": "g6_chinese_r3_reading_unit1_beijing",
-      "group_order": 2
+      "group_order": 2,
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -50,7 +52,8 @@
       "answer": "腊八|||腊八节",
       "explanation": "文中按时间先后顺序写：腊月初旬→腊八（这天家家熬腊八粥、泡腊八蒜）→除夕。第三空是\"除夕\"，但题面只让填中间一空——这里答\"腊八\"。",
       "group_id": "g6_chinese_r3_reading_unit1_beijing",
-      "group_order": 3
+      "group_order": 3,
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -62,7 +65,8 @@
       "answer": "比喻",
       "explanation": "\"色如翡翠\"以翡翠（绿玉）比腊八蒜的颜色，是典型的比喻（以物喻物）。",
       "group_id": "g6_chinese_r3_reading_unit1_beijing",
-      "group_order": 4
+      "group_order": 4,
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -80,7 +84,8 @@
         "D. 在外做事的人更愿意展示新衣"
       ],
       "group_id": "g6_chinese_r3_reading_unit1_beijing",
-      "group_order": 5
+      "group_order": 5,
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -96,7 +101,8 @@
         "B. cuì",
         "C. zuì",
         "D. shuì"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -112,7 +118,8 @@
         "B. 腊八蒜 翡萃 通宵达旦 张灯结彩",
         "C. 腊八蒜 翡翠 通宵达旦 张灯结彩",
         "D. 腊八蒜 翡翠 通宵达旦 张灯结采"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -128,7 +135,8 @@
         "B. 怎么办、对付",
         "C. 责怪、抱怨",
         "D. 无奈而又欣慰"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -144,7 +152,8 @@
         "B. 春节将至，街市张灯结彩，处处呈现万象更新的景象。",
         "C. 这本书看完后我万象更新，心情舒畅。",
         "D. 经过一夜的雷雨，地面万象更新地泥泞难走。"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -154,7 +163,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "彩",
-      "explanation": "\"张灯结彩\"的\"彩\"是\"色彩\"的\"彩\"，不能写作\"采\"。"
+      "explanation": "\"张灯结彩\"的\"彩\"是\"色彩\"的\"彩\"，不能写作\"采\"。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -170,7 +180,8 @@
         "B. 心甘情愿",
         "C. 不择手段",
         "D. 当仁不让"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -186,7 +197,8 @@
         "B. 拟人、反问",
         "C. 排比、比喻",
         "D. 拟人、比喻"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -196,7 +208,8 @@
       "difficulty": "hard",
       "round": 3,
       "answer": "排比",
-      "explanation": "三个并列的\"……的\"短语构成排比，强化粥的诱人。注意此处主修辞是排比（短语排比），不是反复。"
+      "explanation": "三个并列的\"……的\"短语构成排比，强化粥的诱人。注意此处主修辞是排比（短语排比），不是反复。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -206,7 +219,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "拟人",
-      "explanation": "\"欢呼雀跃\"是人的动作神态，赋予鞭炮以人的特征，是拟人。"
+      "explanation": "\"欢呼雀跃\"是人的动作神态，赋予鞭炮以人的特征，是拟人。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -222,7 +236,8 @@
         "B. 我们不应该热爱我们的传统节日。",
         "C. 我们也许应该热爱我们的传统节日。",
         "D. 我们不该不热爱我们的传统节日。"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -238,7 +253,8 @@
         "B. 因为……所以",
         "C. 虽然……但是",
         "D. 即使……也"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -254,7 +270,8 @@
         "B. 老舍写过《骆驼祥子》《茶馆》《北京的春节》、等作品。",
         "C. 老舍写过《骆驼祥子》《茶馆》《北京的春节》等作品。",
         "D. 老舍写过：《骆驼祥子》《茶馆》《北京的春节》等作品。"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -264,7 +281,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "轻烟散入五侯家",
-      "explanation": "韩翃《寒食》：春城无处不飞花，寒食东风御柳斜。日暮汉宫传蜡烛，轻烟散入五侯家。"
+      "explanation": "韩翃《寒食》：春城无处不飞花，寒食东风御柳斜。日暮汉宫传蜡烛，轻烟散入五侯家。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -274,7 +292,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "脉脉不得语",
-      "explanation": "《迢迢牵牛星》末句：\"盈盈一水间，脉脉不得语。\""
+      "explanation": "《迢迢牵牛星》末句：\"盈盈一水间，脉脉不得语。\"",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -284,7 +303,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "不知秋思落谁家",
-      "explanation": "王建《十五夜望月》：\"中庭地白树栖鸦，冷露无声湿桂花。今夜月明人尽望，不知秋思落谁家。\""
+      "explanation": "王建《十五夜望月》：\"中庭地白树栖鸦，冷露无声湿桂花。今夜月明人尽望，不知秋思落谁家。\"",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -300,7 +320,8 @@
         "B. 月光皎洁洒在地上，宛如积水空明",
         "C. 秋天霜白的颜色非常浓重",
         "D. 诗人庭院的颜色苍白冷寂"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -316,7 +337,8 @@
         "B. 沈从文 / 老舍",
         "C. 老舍 / 朱自清",
         "D. 鲁迅 / 老舍"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -332,7 +354,8 @@
         "B. 元宵节→春节→端午节→中秋→七夕→腊八",
         "C. 腊八→春节→元宵节→端午节→七夕→中秋",
         "D. 春节→元宵节→端午节→中秋→七夕→腊八"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -348,7 +371,8 @@
         "B. 没有舞台",
         "C. 演出时间很短，一般不超过一小时",
         "D. 演出时一段戏可演几天还没结束"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -364,7 +388,8 @@
         "B. 以时间为线索，详略得当地描写春节各阶段习俗",
         "C. 通过对比北京春节与上海春节突出地域差异",
         "D. 主要运用议论手法表达对民俗的看法"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -380,7 +405,8 @@
         "B. 八儿这个孩子的视角",
         "C. 父亲的视角",
         "D. 第三人称全知视角"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -396,7 +422,8 @@
         "B. 语言描写",
         "C. 动作描写",
         "D. 神态/心理描写"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -412,7 +439,8 @@
         "B. 腊月初一、腊月十五、立春",
         "C. 二月二、清明节",
         "D. 春节前的所有日子"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -428,7 +456,8 @@
         "B. 大约有三十多人参加了元宵灯会。",
         "C. 我们不能否认民俗文化没有传承价值。",
         "D. 元宵节的灯会让我感受到了浓浓的年味。"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -446,7 +475,8 @@
         "D. 自负骄傲，认为自己比同伴更强"
       ],
       "group_id": "g6_chinese_r3_reading_unit2_robinson",
-      "group_order": 1
+      "group_order": 1,
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -464,7 +494,8 @@
         "D. 表达作者对读者的直接劝诫"
       ],
       "group_id": "g6_chinese_r3_reading_unit2_robinson",
-      "group_order": 2
+      "group_order": 2,
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -476,7 +507,8 @@
       "answer": "野兽",
       "explanation": "文中三种死路按顺序：被野兽吃掉、被野人杀害、因没有食物饿死。第一空答\"野兽\"。",
       "group_id": "g6_chinese_r3_reading_unit2_robinson",
-      "group_order": 3
+      "group_order": 3,
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -488,7 +520,8 @@
       "answer": "排比",
       "explanation": "\"没有食物、没有住所、没有衣物、没有武器自卫\"四个\"没有\"短语并列，构成排比，强化绝境感。",
       "group_id": "g6_chinese_r3_reading_unit2_robinson",
-      "group_order": 4
+      "group_order": 4,
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -506,7 +539,8 @@
         "D. 热带地区不需要衣物是上天对孤岛漂流者的恩赐"
       ],
       "group_id": "g6_chinese_r3_reading_unit2_robinson",
-      "group_order": 5
+      "group_order": 5,
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -522,7 +556,8 @@
         "B. xuán",
         "C. xián 但读三声",
         "D. yán"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -538,7 +573,8 @@
         "B. 流落 凄凉 漂流 茫然",
         "C. 留落 凄凉 漂流 芒然",
         "D. 流落 凄良 飘流 茫然"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -554,7 +590,8 @@
         "B. 鲁滨逊看到野人脚印后惊喜万分。",
         "C. 面对孤岛绝境，鲁滨逊处变不惊，沉着应对。",
         "D. 鲁滨逊打猎时，对野兽闻风丧胆，迅速冲上前去。"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -564,7 +601,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "褒义",
-      "explanation": "\"自食其力\"指依靠自己的劳动维持生活，含赞美之意，是褒义词。"
+      "explanation": "\"自食其力\"指依靠自己的劳动维持生活，含赞美之意，是褒义词。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -574,7 +612,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "夸张",
-      "explanation": "\"魂飞魄散\"形容极度惊恐，是夸张手法（实际人不可能魂魄真的散开）。"
+      "explanation": "\"魂飞魄散\"形容极度惊恐，是夸张手法（实际人不可能魂魄真的散开）。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -590,7 +629,8 @@
         "B. 暗喻 (用\"是\"\"成了\")",
         "C. 借喻 (只出现喻体)",
         "D. 反喻 (用\"不像\")"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -600,7 +640,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "拟人",
-      "explanation": "\"唱起歌来\"是人的行为，赋予树叶人的特征，是拟人。"
+      "explanation": "\"唱起歌来\"是人的行为，赋予树叶人的特征，是拟人。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -616,7 +657,8 @@
         "B. 鲁滨逊是一位坚强的人。",
         "C. 鲁滨逊是不是一位坚强的人。",
         "D. 鲁滨逊也许是一位坚强的人。"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -632,7 +674,8 @@
         "B. ①②③（按时间顺序）",
         "C. ②①③",
         "D. ③②①"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -648,7 +691,8 @@
         "B. 不仅……还",
         "C. 虽然……却",
         "D. 只要……就"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -664,7 +708,8 @@
         "B. 我们要避免再发生这类事故不发生。",
         "C. 这部小说生动地刻画了鲁滨逊坚毅顽强的性格。",
         "D. 鲁滨逊的勇气是我们大家所有的人都应该学习。"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -680,7 +725,8 @@
         "B. 笛福（英）/ 安徒生（丹麦）/ 马克·吐温（美）",
         "C. 大仲马（法）/ 拉格洛芙（瑞典）/ 海明威（美）",
         "D. 笛福（英）/ 马克·吐温（美）/ 拉格洛芙（瑞典）"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -690,7 +736,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "美国|||美",
-      "explanation": "马克·吐温是美国作家，《汤姆·索亚历险记》和《哈克贝利·费恩历险记》都是其代表作。"
+      "explanation": "马克·吐温是美国作家，《汤姆·索亚历险记》和《哈克贝利·费恩历险记》都是其代表作。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -706,7 +753,8 @@
         "B. 贝琪",
         "C. 印第安·乔",
         "D. 哈克贝利"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -722,7 +770,8 @@
         "B. 星期一",
         "C. 礼拜天",
         "D. 自由人"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -738,7 +787,8 @@
         "B. 印第安·乔（真凶）",
         "C. 道格拉斯寡妇",
         "D. 哈克的父亲"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -754,7 +804,8 @@
         "B. 他做了一个长长的梦",
         "C. 他捉弄小精灵被施了魔法变成小人",
         "D. 他被鹅啄了一下"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -770,7 +821,8 @@
         "B. 心思缜密，凡事都要数学化记录",
         "C. 多疑谨慎，不敢面对真实困境",
         "D. 信仰宗教，依赖神明指引"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -786,7 +838,8 @@
         "B. 通过尼尔斯的旅行成长，传达善待生命、热爱自然的人文思想",
         "C. 主要展示瑞典各省的地理知识，是地理科普作品",
         "D. 主要讲述人与神精灵的斗争故事"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -802,7 +855,8 @@
         "B. 便于交代多个人物之间的复杂关系",
         "C. 有利于使用全知视角描写所有人物",
         "D. 便于作者发表议论评价"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -818,7 +872,8 @@
         "B. 海岛上未开化的土著居民",
         "C. 野蛮残忍的人",
         "D. 在野外生活的人"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -836,7 +891,8 @@
         "D. 表达对自然循环规律的赞美"
       ],
       "group_id": "g6_chinese_r3_reading_unit3_cong_cong",
-      "group_order": 1
+      "group_order": 1,
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -854,7 +910,8 @@
         "D. 时间像液体一样可以流动"
       ],
       "group_id": "g6_chinese_r3_reading_unit3_cong_cong",
-      "group_order": 2
+      "group_order": 2,
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -866,7 +923,8 @@
       "answer": "排比",
       "explanation": "三个结构相似的\"……的时候，日子从……过去\"构成排比，强化时光在日常琐事中悄然流逝。",
       "group_id": "g6_chinese_r3_reading_unit3_cong_cong",
-      "group_order": 3
+      "group_order": 3,
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -878,7 +936,8 @@
       "answer": "拟人",
       "explanation": "太阳本无脚，赋予其\"脚\"和\"挪移\"的人的特征，是拟人。",
       "group_id": "g6_chinese_r3_reading_unit3_cong_cong",
-      "group_order": 4
+      "group_order": 4,
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -896,7 +955,8 @@
         "D. 戏谑调侃，用幽默笔法看待时光"
       ],
       "group_id": "g6_chinese_r3_reading_unit3_cong_cong",
-      "group_order": 5
+      "group_order": 5,
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -912,7 +972,8 @@
         "B. cén / shān",
         "C. chén / shān",
         "D. cén / sǎn"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -928,7 +989,8 @@
         "B. 涔涔而泪潸潸 一去不复反 凝燃",
         "C. 涔涔而泪潸潸 一去不复返 凝然",
         "D. 涔涔而泪潸潸 一去不复返 凝燃"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -944,7 +1006,8 @@
         "B. 时来运转，天降鸿福",
         "C. 春风得意，马蹄疾驰",
         "D. 度日如年，举步维艰"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -954,7 +1017,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "中性|||中性词",
-      "explanation": "\"惆怅\"是描述情绪的中性词（虽偏伤感但不含褒贬评价）。"
+      "explanation": "\"惆怅\"是描述情绪的中性词（虽偏伤感但不含褒贬评价）。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -964,7 +1028,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "比喻",
-      "explanation": "\"日子\"是本体，\"时间的流\"是喻体，把日子比作可滴落的液滴；省去喻词的暗喻。"
+      "explanation": "\"日子\"是本体，\"时间的流\"是喻体，把日子比作可滴落的液滴；省去喻词的暗喻。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -974,7 +1039,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "排比",
-      "explanation": "三个结构相似的并列分句构成排比。"
+      "explanation": "三个结构相似的并列分句构成排比。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -984,7 +1050,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "反问|||设问",
-      "explanation": "这是文中较有争议的句子——常规判定为反问（无需回答的诘问）；部分教参视为设问（自问自答的开端）。两种答案均接受。"
+      "explanation": "这是文中较有争议的句子——常规判定为反问（无需回答的诘问）；部分教参视为设问（自问自答的开端）。两种答案均接受。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -994,7 +1061,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "拟人",
-      "explanation": "太阳本无脚，赋予人的特征，是拟人。"
+      "explanation": "太阳本无脚，赋予人的特征，是拟人。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1010,7 +1078,8 @@
         "B. 小作者感到时光流逝的可惜。",
         "C. 小作者也许感到时光流逝的可惜。",
         "D. 小作者难道感到时光流逝可惜。"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1026,7 +1095,8 @@
         "B. 既然……就",
         "C. 不仅……还",
         "D. 尽管……却"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1042,7 +1112,8 @@
         "B. 朱自清写过散文，《匆匆》、《背影》、《荷塘月色》等。",
         "C. 朱自清写过散文，《匆匆》《背影》《荷塘月色》、等。",
         "D. 朱自清写过散文《匆匆》《背影》《荷塘月色》等。"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1058,7 +1129,8 @@
         "B. 《匆匆》的语言清新优美，富有感染力。",
         "C. 我们要发扬和继承珍惜时间的好习惯。",
         "D. 朱自清是中国现代著名的文学家、散文家、诗人和作家。"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1068,7 +1140,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "何时复西归",
-      "explanation": "《长歌行》：\"百川东到海，何时复西归。少壮不努力，老大徒伤悲。\""
+      "explanation": "《长歌行》：\"百川东到海，何时复西归。少壮不努力，老大徒伤悲。\"",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1084,7 +1157,8 @@
         "B. 老舍 / 史铁生",
         "C. 朱自清 / 史铁生",
         "D. 史铁生 / 朱自清"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1100,7 +1174,8 @@
         "B. 《荷塘月色》",
         "C. 《春》",
         "D. 《骆驼祥子》"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1110,7 +1185,8 @@
       "difficulty": "hard",
       "round": 3,
       "answer": "我与地坛|||我与地坛|||地坛",
-      "explanation": "史铁生最著名的散文是《我与地坛》。注意此题答案是篇名，唯一可判定。"
+      "explanation": "史铁生最著名的散文是《我与地坛》。注意此题答案是篇名，唯一可判定。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1126,7 +1202,8 @@
         "B. 从害怕到勇敢、最后获得自信",
         "C. 从期待到漫长等待、再到希望落空的失望与委屈",
         "D. 从兴奋到无聊、最后开心入眠"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1142,7 +1219,8 @@
         "B. 直接的心理活动描写",
         "C. 外貌描写",
         "D. 语言描写"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1158,7 +1236,8 @@
         "B. 即事抒情、直抒胸臆相结合，通过日常小事感叹时光",
         "C. 托物言志，借具体物品表达志向",
         "D. 寓情于人，通过塑造人物形象抒情"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1168,7 +1247,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "反问",
-      "explanation": "\"难道……吗\"是典型反问句式，无需回答，强化\"不能让时间溜走\"的肯定意。"
+      "explanation": "\"难道……吗\"是典型反问句式，无需回答，强化\"不能让时间溜走\"的肯定意。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1184,7 +1264,8 @@
         "B. 头涔涔",
         "C. 泪潸潸",
         "D. 笑哈哈地凝然不动"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1200,7 +1281,8 @@
         "B. 一无所有、毫无遮掩地来到世上",
         "C. 性格坦率不加掩饰",
         "D. 完全暴露在阳光下"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -1210,7 +1292,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "夸张",
-      "explanation": "\"用尽全身力气抓不住一秒钟\"是不可能事件的极端化表达，是夸张。"
+      "explanation": "\"用尽全身力气抓不住一秒钟\"是不可能事件的极端化表达，是夸张。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1228,7 +1311,8 @@
         "D. 烘托法庭上紧张恐怖的气氛"
       ],
       "group_id": "g6_chinese_r3_reading_unit4_lishi",
-      "group_order": 1
+      "group_order": 1,
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1246,7 +1330,8 @@
         "D. 是对法庭气氛的描写"
       ],
       "group_id": "g6_chinese_r3_reading_unit4_lishi",
-      "group_order": 2
+      "group_order": 2,
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1258,7 +1343,8 @@
       "answer": "法庭",
       "explanation": "文中先写被捕情景，再写法庭相见——所以中间空填\"法庭\"。",
       "group_id": "g6_chinese_r3_reading_unit4_lishi",
-      "group_order": 3
+      "group_order": 3,
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1276,7 +1362,8 @@
         "D. 这只是无意义的细节"
       ],
       "group_id": "g6_chinese_r3_reading_unit4_lishi",
-      "group_order": 4
+      "group_order": 4,
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1294,7 +1381,8 @@
         "D. 妻子"
       ],
       "group_id": "g6_chinese_r3_reading_unit4_lishi",
-      "group_order": 5
+      "group_order": 5,
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1310,7 +1398,8 @@
         "B. fā",
         "C. fà",
         "D. fán"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1326,7 +1415,8 @@
         "B. 严峻 沉着 慈详 残暴",
         "C. 严峻 沉着 慈祥 残爆",
         "D. 严峻 沉着 慈祥 残暴"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1342,7 +1432,8 @@
         "B. 这位同学考试得了 100 分，真是死得其所。",
         "C. 革命先烈视死如归，为了民族解放慷慨就义。",
         "D. 他做事粗心大意，常常顾此失彼，所以视死如归。"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1352,7 +1443,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "褒义",
-      "explanation": "\"鞠躬尽瘁\"形容人忠心地竭尽所能直至死，含强烈赞美之意，是褒义。"
+      "explanation": "\"鞠躬尽瘁\"形容人忠心地竭尽所能直至死，含强烈赞美之意，是褒义。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1368,7 +1460,8 @@
         "B. 本体\"父亲\"喻体\"利剑\"",
         "C. 本体\"利剑\"喻体\"目光\"",
         "D. 这不是比喻"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1384,7 +1477,8 @@
         "B. 对比",
         "C. 拟人",
         "D. 夸张"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1394,7 +1488,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "反问",
-      "explanation": "\"难道……吗\"是反问，强化\"会愿意为这个队伍工作\"的肯定意。"
+      "explanation": "\"难道……吗\"是反问，强化\"会愿意为这个队伍工作\"的肯定意。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1404,7 +1499,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "夸张",
-      "explanation": "\"压不垮一根毛\"是极端化表述，强调克服困难的坚定信心，是夸张。"
+      "explanation": "\"压不垮一根毛\"是极端化表述，强调克服困难的坚定信心，是夸张。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1420,7 +1516,8 @@
         "B. 父亲是一位伟大的革命者。",
         "C. 父亲也许是一位伟大的革命者。",
         "D. 父亲并非不是一位伟大的革命者。"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1436,7 +1533,8 @@
         "B. 不仅……还",
         "C. 只要……就",
         "D. 即使……也"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1452,7 +1550,8 @@
         "B. 父亲对我们说：\"要听妈妈的话。\"",
         "C. 父亲对我们说：\"要听妈妈的话\"。",
         "D. 父亲对我们说\"要听妈妈的话。\""
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1468,7 +1567,8 @@
         "B. 李大钊在敌人面前表现得非常沉着冷静。",
         "C. 我们要发扬和学习革命先烈不怕牺牲的好品质。",
         "D. 大约二十多名敌人冲进了院子。"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1478,7 +1578,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "快走踏清秋",
-      "explanation": "李贺《马诗》：\"大漠沙如雪，燕山月似钩。何当金络脑，快走踏清秋。\""
+      "explanation": "李贺《马诗》：\"大漠沙如雪，燕山月似钩。何当金络脑，快走踏清秋。\"",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1488,7 +1589,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "烈火焚烧若等闲",
-      "explanation": "于谦《石灰吟》：\"千锤万凿出深山，烈火焚烧若等闲。粉骨碎身浑不怕，要留清白在人间。\""
+      "explanation": "于谦《石灰吟》：\"千锤万凿出深山，烈火焚烧若等闲。粉骨碎身浑不怕，要留清白在人间。\"",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1498,7 +1600,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "要留清白在人间",
-      "explanation": "《石灰吟》末句：\"要留清白在人间\"，托物言志，喻品格高洁。"
+      "explanation": "《石灰吟》末句：\"要留清白在人间\"，托物言志，喻品格高洁。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1508,7 +1611,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "立根原在破岩中",
-      "explanation": "郑燮《竹石》：\"咬定青山不放松，立根原在破岩中。千磨万击还坚劲，任尔东西南北风。\""
+      "explanation": "郑燮《竹石》：\"咬定青山不放松，立根原在破岩中。千磨万击还坚劲，任尔东西南北风。\"",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1524,7 +1628,8 @@
         "B. 仅指石灰的白色",
         "C. 仅指诗人的人品",
         "D. 指白色的雪花"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1540,7 +1645,8 @@
         "B. 宋代词人",
         "C. 清代书画家、诗人，扬州八怪之一",
         "D. 明代学者"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1556,7 +1662,8 @@
         "B. 民族英雄、政治家、诗人",
         "C. 农民起义领袖",
         "D. 商人"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1572,7 +1679,8 @@
         "B. 李大钊 / 李星华",
         "C. 鲁迅 / 李大钊",
         "D. 老舍 / 李大钊"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1588,7 +1696,8 @@
         "B. 张思德追悼会上的演讲",
         "C. 一次报告会上的总结发言",
         "D. 一次文学座谈会的讲话"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1604,7 +1713,8 @@
         "B. 装饰文章，使语言更优美",
         "C. 引经据典，强化\"死的意义不同\"的核心论点",
         "D. 主要表达对司马迁的敬意"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1620,7 +1730,8 @@
         "B. 象征老班长舍己为人、忠于革命的崇高品格",
         "C. 象征红军物质的匮乏",
         "D. 象征\"我\"对童年的怀念"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -1636,7 +1747,8 @@
         "B. 精锐部队、简单的政治",
         "C. 精明的士兵、简洁的政令",
         "D. 训练精兵、简化作战方式"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1654,7 +1766,8 @@
         "D. 比喻论证"
       ],
       "group_id": "g6_chinese_r3_reading_unit5_zhenli",
-      "group_order": 1
+      "group_order": 1,
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1672,7 +1785,8 @@
         "D. 是论文中的图示，对论证无关"
       ],
       "group_id": "g6_chinese_r3_reading_unit5_zhenli",
-      "group_order": 2
+      "group_order": 2,
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1690,7 +1804,8 @@
         "D. 真理只在实验室里产生"
       ],
       "group_id": "g6_chinese_r3_reading_unit5_zhenli",
-      "group_order": 3
+      "group_order": 3,
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1702,7 +1817,8 @@
       "answer": "浮力",
       "explanation": "文中明确写\"洗澡……阿基米德……发现了浮力定律\"。",
       "group_id": "g6_chinese_r3_reading_unit5_zhenli",
-      "group_order": 4
+      "group_order": 4,
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1714,7 +1830,8 @@
       "answer": "屡见不鲜|||见怪不怪",
       "explanation": "\"司空见惯\"指经常见到、不足为奇——近义成语有\"屡见不鲜\"\"见怪不怪\"\"习以为常\"。注意：本题答案要求 4 字。\"习以为常\"也是合理近义但语义略有差，\"屡见不鲜\"是最贴近的。",
       "group_id": "g6_chinese_r3_reading_unit5_zhenli",
-      "group_order": 5
+      "group_order": 5,
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1730,7 +1847,8 @@
         "B. zhuó",
         "C. zhe",
         "D. zhāo"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1746,7 +1864,8 @@
         "B. 司空见惯 见微知箸 锲而不舍",
         "C. 司空见惯 见微知著 锲而不舍",
         "D. 司空见惯 见微知著 切而不舍"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1762,7 +1881,8 @@
         "B. 微小的、苗头 / 显著的、明显的趋势",
         "C. 微弱的 / 著名的",
         "D. 微妙的 / 著作"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1778,7 +1898,8 @@
         "B. 这位老师锲而不舍地放弃了自己的教学计划。",
         "C. 这次考试他见微知著地取得了倒数第一。",
         "D. 他无独有偶地一个人去图书馆看书。"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1794,7 +1915,8 @@
         "B. 屡见不鲜",
         "C. 罕见 / 鲜为人知",
         "D. 平淡无奇"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1804,7 +1926,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "褒义",
-      "explanation": "\"锲而不舍\"形容做事坚持不放弃，是褒义。"
+      "explanation": "\"锲而不舍\"形容做事坚持不放弃，是褒义。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1820,7 +1943,8 @@
         "B. 夸张",
         "C. 拟人",
         "D. 排比"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1830,7 +1954,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "排比",
-      "explanation": "三个结构相似的句子构成排比。"
+      "explanation": "三个结构相似的句子构成排比。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1840,7 +1965,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "反问",
-      "explanation": "\"怎么能……呢\"是典型反问句式。"
+      "explanation": "\"怎么能……呢\"是典型反问句式。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1856,7 +1982,8 @@
         "B. 科学家可以忽视普通现象。",
         "C. 科学家应该忽视普通现象。",
         "D. 科学家忽视普通现象。"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1872,7 +1999,8 @@
         "B. 只有……才",
         "C. 不仅……还",
         "D. 即使……也"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1888,7 +2016,8 @@
         "B. 我们应该尽量减少不必要的浪费。",
         "C. 善于观察是科学家发现真理的重要品质。",
         "D. 大约有五十多名学生参加了科学讲座。"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1904,7 +2033,8 @@
         "B. 又",
         "C. 不",
         "D. 必定"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1914,7 +2044,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "判断|||决断",
-      "explanation": "\"决\"在此意为\"判断、决断\"。\"孔子不能决也\"即\"孔子也不能判断\"。"
+      "explanation": "\"决\"在此意为\"判断、决断\"。\"孔子不能决也\"即\"孔子也不能判断\"。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1930,7 +2061,8 @@
         "B. 难道是他的智慧最厉害吗？回答说：是这样的。",
         "C. 他怎么会不聪明呢？回答说：他确实聪明。",
         "D. 难道他的智力跟别人一样吗？回答说：不是的。"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1946,7 +2078,8 @@
         "B. 谁说你的知识多呢？（含调侃语气）",
         "C. 你为什么有这么多知识？",
         "D. 这是谁对你说的？"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1962,7 +2095,8 @@
         "B. 《论语》/《孟子》",
         "C. 《左传》/《孟子》",
         "D. 《孟子》/《论语》"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1978,7 +2112,8 @@
         "B. 冯至",
         "C. 老舍",
         "D. 巴金"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -1994,7 +2129,8 @@
         "B. 智力差异决定学习效果",
         "C. 学习要专心致志，不可三心二意",
         "D. 学习要花长时间"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -2010,7 +2146,8 @@
         "B. 总分总，但全是议论无举例",
         "C. 倒叙结构",
         "D. 散文化的随感式结构"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -2026,7 +2163,8 @@
         "B. 主要展示作者博学",
         "C. 凑字数让文章更长",
         "D. 主要表达对科学家的崇拜"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -2042,7 +2180,8 @@
         "B. 提出问题",
         "C. 追根求源",
         "D. 锲而不舍地放弃"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2058,7 +2197,8 @@
         "B. nuò",
         "C. luó",
         "D. nóu"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2074,7 +2214,8 @@
         "B. 既然 渊博 焕然一新",
         "C. 既然 渊薄 焕然一新",
         "D. 既然 渊博 涣然一新"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2090,7 +2231,8 @@
         "B. 毕业典礼上他焕然一新地说不出话来。",
         "C. 想起六年小学生活，那一幕幕仍历历在目。",
         "D. 同学们历历在目地走出了校门。"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2100,7 +2242,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "褒义",
-      "explanation": "\"语重心长\"形容言辞郑重、心意深长，是褒义词。"
+      "explanation": "\"语重心长\"形容言辞郑重、心意深长，是褒义词。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2110,7 +2253,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "比喻",
-      "explanation": "本体\"老师\"+喻词\"像\"+喻体\"灯塔\"=明喻。"
+      "explanation": "本体\"老师\"+喻词\"像\"+喻体\"灯塔\"=明喻。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2120,7 +2264,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "排比",
-      "explanation": "三个\"忘不了……\"结构相同的并列句构成排比。"
+      "explanation": "三个\"忘不了……\"结构相同的并列句构成排比。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2130,7 +2275,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "拟人",
-      "explanation": "\"等待\"\"告别\"是人的行为，赋予母校（建筑）人的特征，是拟人。"
+      "explanation": "\"等待\"\"告别\"是人的行为，赋予母校（建筑）人的特征，是拟人。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2140,7 +2286,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "夸张",
-      "explanation": "\"哭三天三夜\"是极端化表述，是夸张。"
+      "explanation": "\"哭三天三夜\"是极端化表述，是夸张。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2156,7 +2303,8 @@
         "B. 我们不能忘记母校的恩情。",
         "C. 我们也许能忘记母校的恩情。",
         "D. 我们应该忘记母校的恩情。"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2172,7 +2320,8 @@
         "B. 虽然……但",
         "C. 只要……就",
         "D. 不仅……还"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2188,7 +2337,8 @@
         "B. 我们读过《草原》、《丁香结》、《北京的春节》等课文。",
         "C. 我们读过《草原》、《丁香结》、《北京的春节》、等课文。",
         "D. 我们读过\"草原\"\"丁香结\"\"北京的春节\"等课文。"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2204,7 +2354,8 @@
         "B. 通过六年的学习，使我懂得了感恩。",
         "C. 我们应该发扬和继承母校的优良传统。",
         "D. 大约有六十多位老师参加了毕业典礼。"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2214,7 +2365,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "山是眉峰聚",
-      "explanation": "王观《卜算子》：\"水是眼波横，山是眉峰聚。\"以美人眉眼喻山水，是宋词名句。"
+      "explanation": "王观《卜算子》：\"水是眼波横，山是眉峰聚。\"以美人眉眼喻山水，是宋词名句。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2224,7 +2376,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "明月何时照我还",
-      "explanation": "王安石《泊船瓜洲》：\"京口瓜洲一水间，钟山只隔数重山。春风又绿江南岸，明月何时照我还。\""
+      "explanation": "王安石《泊船瓜洲》：\"京口瓜洲一水间，钟山只隔数重山。春风又绿江南岸，明月何时照我还。\"",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2234,7 +2387,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "一日难再晨",
-      "explanation": "陶渊明《杂诗》：\"盛年不重来，一日难再晨。及时当勉励，岁月不待人。\""
+      "explanation": "陶渊明《杂诗》：\"盛年不重来，一日难再晨。及时当勉励，岁月不待人。\"",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2244,7 +2398,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "杨柳依依",
-      "explanation": "《诗经·小雅·采薇》：\"昔我往矣，杨柳依依；今我来思，雨雪霏霏。\""
+      "explanation": "《诗经·小雅·采薇》：\"昔我往矣，杨柳依依；今我来思，雨雪霏霏。\"",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2260,7 +2415,8 @@
         "B. 把山水比作美人的眉眼，化无情为有情，构思新巧",
         "C. 主要表达诗人眼疾",
         "D. 描写美人形象"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2276,7 +2432,8 @@
         "B. 田园诗",
         "C. 宫体诗",
         "D. 婉约词"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2292,7 +2449,8 @@
         "B. 仅是书法家",
         "C. 北宋政治家、文学家、思想家，曾推行\"王安石变法\"",
         "D. 唐代隐士"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2308,7 +2466,8 @@
         "B. 100 首",
         "C. 800 首",
         "D. 1000 首"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2324,7 +2483,8 @@
         "B. 词牌名",
         "C. 一种乐器",
         "D. 散文形式"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2340,7 +2500,8 @@
         "B. 冠礼",
         "C. 吉礼",
         "D. 成礼"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2356,7 +2517,8 @@
         "B. 金箍棒（如意金箍棒）",
         "C. 方天画戟",
         "D. 青釭剑"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2372,7 +2534,8 @@
         "B. 妆奁中的盒子",
         "C. 古代妇女别在头上的首饰，借指女子",
         "D. 一种酒具"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2388,7 +2551,8 @@
         "B. 老师走进教室坐下，开始上课。",
         "C. 老师拍了拍我的肩膀就离开了。",
         "D. 老师站在讲台上微笑。"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2404,7 +2568,8 @@
         "B. 直接写一句\"老师谢谢您\"",
         "C. 全部用排比句赞美老师伟大",
         "D. 描写老师的外貌长相"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2420,7 +2585,8 @@
         "B. 用形容词作动词，化静为动，写出春风吹来江南草木一齐变绿的生机",
         "C. 主要写诗人对绿色的喜爱",
         "D. 表示诗人去过江南"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -2430,7 +2596,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "寒食东风御柳斜",
-      "explanation": "韩翃《寒食》：\"春城无处不飞花，寒食东风御柳斜。\""
+      "explanation": "韩翃《寒食》：\"春城无处不飞花，寒食东风御柳斜。\"",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -2440,7 +2607,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "老舍",
-      "explanation": "《北京的春节》是老舍的散文，描写北京旧时春节习俗。"
+      "explanation": "《北京的春节》是老舍的散文，描写北京旧时春节习俗。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -2450,7 +2618,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "沈从文",
-      "explanation": "《腊八粥》节选自沈从文短篇小说《腊八粥》。"
+      "explanation": "《腊八粥》节选自沈从文短篇小说《腊八粥》。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -2460,7 +2629,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "比喻",
-      "explanation": "\"小型的农业展览会\"是喻体，本体是\"腊八粥\"——把粥比作展览会，是比喻。"
+      "explanation": "\"小型的农业展览会\"是喻体，本体是\"腊八粥\"——把粥比作展览会，是比喻。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第一单元：民风民俗",
@@ -2470,7 +2640,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "宵",
-      "explanation": "\"通宵\"的\"宵\"是夜晚的\"宵\"（宀+肖），不要写成\"霄\"（雨字头）。"
+      "explanation": "\"通宵\"的\"宵\"是夜晚的\"宵\"（宀+肖），不要写成\"霄\"（雨字头）。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -2480,7 +2651,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "笛福|||丹尼尔·笛福",
-      "explanation": "《鲁滨逊漂流记》是英国小说家笛福（Daniel Defoe）的代表作。"
+      "explanation": "《鲁滨逊漂流记》是英国小说家笛福（Daniel Defoe）的代表作。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -2490,7 +2662,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "马克·吐温|||马克吐温",
-      "explanation": "《汤姆·索亚历险记》的作者是美国作家马克·吐温。"
+      "explanation": "《汤姆·索亚历险记》的作者是美国作家马克·吐温。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -2500,7 +2673,8 @@
       "difficulty": "hard",
       "round": 3,
       "answer": "拉格洛芙|||塞尔玛·拉格洛芙",
-      "explanation": "《尼尔斯骑鹅旅行记》的作者是瑞典作家塞尔玛·拉格洛芙——首位获诺贝尔文学奖的女性作家。"
+      "explanation": "《尼尔斯骑鹅旅行记》的作者是瑞典作家塞尔玛·拉格洛芙——首位获诺贝尔文学奖的女性作家。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -2510,7 +2684,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "比喻",
-      "explanation": "\"眼睛\"是本体、\"两团火\"是喻体、\"像\"是喻词——典型明喻。"
+      "explanation": "\"眼睛\"是本体、\"两团火\"是喻体、\"像\"是喻词——典型明喻。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -2520,7 +2695,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "漂",
-      "explanation": "\"漂流\"的\"漂\"是三点水旁的\"漂\"（漂在水面上），不要写成\"飘\"（风字旁，飘在空中）。"
+      "explanation": "\"漂流\"的\"漂\"是三点水旁的\"漂\"（漂在水面上），不要写成\"飘\"（风字旁，飘在空中）。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -2530,7 +2706,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "朱自清",
-      "explanation": "这三篇都是朱自清的散文名作，《匆匆》写于 1922 年。"
+      "explanation": "这三篇都是朱自清的散文名作，《匆匆》写于 1922 年。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -2540,7 +2717,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "史铁生",
-      "explanation": "《那个星期天》《我与地坛》《合欢树》的作者都是史铁生。"
+      "explanation": "《那个星期天》《我与地坛》《合欢树》的作者都是史铁生。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -2550,7 +2728,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "老大徒伤悲",
-      "explanation": "汉乐府《长歌行》：\"少壮不努力，老大徒伤悲。\"劝勉珍惜光阴。"
+      "explanation": "汉乐府《长歌行》：\"少壮不努力，老大徒伤悲。\"劝勉珍惜光阴。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -2560,7 +2739,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "排比",
-      "explanation": "三个\"……的时候，日子从……过去\"结构相同的并列句构成排比。"
+      "explanation": "三个\"……的时候，日子从……过去\"结构相同的并列句构成排比。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第三单元：真情流露",
@@ -2570,7 +2750,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "返",
-      "explanation": "\"一去不复返\"的\"返\"是返回的\"返\"（反+辶），不要写成\"反\"。"
+      "explanation": "\"一去不复返\"的\"返\"是返回的\"返\"（反+辶），不要写成\"反\"。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -2580,7 +2761,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "燕山月似钩",
-      "explanation": "李贺《马诗》：\"大漠沙如雪，燕山月似钩。\""
+      "explanation": "李贺《马诗》：\"大漠沙如雪，燕山月似钩。\"",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -2590,7 +2772,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "任尔东西南北风",
-      "explanation": "郑燮《竹石》：\"千磨万击还坚劲，任尔东西南北风。\""
+      "explanation": "郑燮《竹石》：\"千磨万击还坚劲，任尔东西南北风。\"",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -2600,7 +2783,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "于谦",
-      "explanation": "《石灰吟》是于谦少年立志之作，托物言志写人格清白。"
+      "explanation": "《石灰吟》是于谦少年立志之作，托物言志写人格清白。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -2610,7 +2794,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "郑燮|||郑板桥",
-      "explanation": "《竹石》作者郑燮，号板桥，世称\"郑板桥\"，扬州八怪之一。"
+      "explanation": "《竹石》作者郑燮，号板桥，世称\"郑板桥\"，扬州八怪之一。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -2620,7 +2805,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "李星华",
-      "explanation": "《十六年前的回忆》作者是李大钊的女儿李星华。"
+      "explanation": "《十六年前的回忆》作者是李大钊的女儿李星华。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第四单元：革命精神",
@@ -2630,7 +2816,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "反问",
-      "explanation": "\"难道……吗\"是反问句式，强化\"会愿意\"的肯定意。"
+      "explanation": "\"难道……吗\"是反问句式，强化\"会愿意\"的肯定意。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -2640,7 +2827,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "不",
-      "explanation": "\"弗\"是文言否定副词，意为\"不\"。"
+      "explanation": "\"弗\"是文言否定副词，意为\"不\"。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -2650,7 +2838,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "孟子|||《孟子》",
-      "explanation": "《学弈》出自《孟子·告子上》。"
+      "explanation": "《学弈》出自《孟子·告子上》。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -2660,7 +2849,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "列子|||《列子》",
-      "explanation": "《两小儿辩日》出自《列子·汤问》。"
+      "explanation": "《两小儿辩日》出自《列子·汤问》。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -2670,7 +2860,8 @@
       "difficulty": "hard",
       "round": 3,
       "answer": "著",
-      "explanation": "\"见微知著\"的\"著\"读 zhù，意\"显著\"，不要写成\"箸\"（筷子）。"
+      "explanation": "\"见微知著\"的\"著\"读 zhù，意\"显著\"，不要写成\"箸\"（筷子）。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -2680,7 +2871,8 @@
       "difficulty": "hard",
       "round": 3,
       "answer": "锲",
-      "explanation": "\"锲而不舍\"的\"锲\"是金字旁（雕刻），不要写成\"契\"或\"切\"。"
+      "explanation": "\"锲而不舍\"的\"锲\"是金字旁（雕刻），不要写成\"契\"或\"切\"。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第五单元：科学精神",
@@ -2690,7 +2882,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "比喻",
-      "explanation": "这是用问号、感叹号的形态变化做喻体来比喻探索过程，是借喻。"
+      "explanation": "这是用问号、感叹号的形态变化做喻体来比喻探索过程，是借喻。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2700,7 +2893,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "水是眼波横",
-      "explanation": "王观《卜算子》：\"水是眼波横，山是眉峰聚。\""
+      "explanation": "王观《卜算子》：\"水是眼波横，山是眉峰聚。\"",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2710,7 +2904,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "雨雪霏霏",
-      "explanation": "《诗经·小雅·采薇》：\"今我来思，雨雪霏霏。\""
+      "explanation": "《诗经·小雅·采薇》：\"今我来思，雨雪霏霏。\"",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2720,7 +2915,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "岁月不待人",
-      "explanation": "陶渊明《杂诗》：\"及时当勉励，岁月不待人。\""
+      "explanation": "陶渊明《杂诗》：\"及时当勉励，岁月不待人。\"",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2730,7 +2926,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "陶渊明",
-      "explanation": "陶渊明（约 365-427）是东晋著名诗人，田园诗开创者，代表作《归园田居》《饮酒》等。"
+      "explanation": "陶渊明（约 365-427）是东晋著名诗人，田园诗开创者，代表作《归园田居》《饮酒》等。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2740,7 +2937,8 @@
       "difficulty": "medium",
       "round": 3,
       "answer": "比喻",
-      "explanation": "本体\"老师\"+喻词\"像\"+喻体\"灯塔\"，是明喻。"
+      "explanation": "本体\"老师\"+喻词\"像\"+喻体\"灯塔\"，是明喻。",
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第二单元：外国名著",
@@ -2756,7 +2954,8 @@
         "B. 夸张",
         "C. 拟人",
         "D. 反问"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     },
     {
       "chapter": "第六单元：难忘小学生活",
@@ -2772,7 +2971,16 @@
         "B. 比喻",
         "C. 拟人",
         "D. 夸张"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r3_deprecated"
     }
-  ]
+  ],
+  "_quality_meta": {
+    "deprecated": true,
+    "deprecated_version": "V3.10",
+    "deprecated_at": "2026-05-08",
+    "deprecated_reason": "语数转真题路线（北师大数学 / 部编语文），cron AI 出题质量不稳停用",
+    "deprecated_commit": "7308f00",
+    "note": "抽题已通过 _activeSourceFilter 自动排除；保留作低水平兜底参考，但不应作锚点/训练样本"
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "source": "batch_2026_05_07_g6_english_r3",
+  "source": "batch_2026_05_07_g6_english_r3_deprecated",
   "subject": "english",
   "grade": 6,
   "knowledge_points_added": [],
@@ -18,7 +18,8 @@
       ],
       "answer": "A",
       "explanation": "sharpener 削笔器与 eraser 橡皮都是 修整/纠错 工具，B/C/D 是书写或承载文字的工具。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -34,7 +35,8 @@
       ],
       "answer": "A",
       "explanation": "A 中四个都是直接书写/绘画工具；B 含 eraser/ruler；C 含 sharpener；D 中 paper/ink 不是工具本体。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -51,7 +53,8 @@
       ],
       "answer": "A",
       "explanation": "听到 dictionary explains the meaning of words，是词典。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -61,7 +64,8 @@
       "difficulty": "hard",
       "answer": "sharpener",
       "explanation": "sharpener = 削笔器/卷笔刀。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -72,7 +76,8 @@
       "answer": "pencil case",
       "explanation": "pencil case (also pencilcase / pencil-case) = 文具盒。",
       "round": 3,
-      "audio_text": "I keep all my pens and pencils in my new pencil case."
+      "audio_text": "I keep all my pens and pencils in my new pencil case.",
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -82,7 +87,8 @@
       "difficulty": "medium",
       "answer": "uncle",
       "explanation": "父亲的兄弟称 uncle。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -99,7 +105,8 @@
       ],
       "answer": "B",
       "explanation": "妈妈的妈妈是 grandmother（外婆）。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -115,7 +122,8 @@
       ],
       "answer": "A",
       "explanation": "父亲的姐妹是 aunt（A 正确）。B 应是 uncle；C 应是 cousin；D 应是 grandmother。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -125,7 +133,8 @@
       "difficulty": "medium",
       "answer": "worker",
       "explanation": "修理工在工作间(workshop)做事的人，可填 worker。也接受 mechanic 但小学核心词为 worker。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -135,7 +144,8 @@
       "difficulty": "medium",
       "answer": "nurse",
       "explanation": "nurse = 护士。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -152,7 +162,8 @@
       ],
       "answer": "B",
       "explanation": "录音中说 take a short rest = 短暂休息一下。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -162,7 +173,8 @@
       "difficulty": "medium",
       "answer": "teeth",
       "explanation": "brush teeth = 刷牙，复数形式 teeth。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -178,7 +190,8 @@
       ],
       "answer": "B",
       "explanation": "B 起床洗脸 = 早晨；A 是晚餐；C/D 是夜晚。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -188,7 +201,8 @@
       "difficulty": "medium",
       "answer": "dinner",
       "explanation": "after dinner = 晚饭后；supper 多为口语，标准答案 dinner。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -205,7 +219,8 @@
       ],
       "answer": "C",
       "explanation": "录音中点的饮品是 a glass of orange juice。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -221,7 +236,8 @@
       ],
       "answer": "B",
       "explanation": "tomato 西红柿在生物学上是水果，但日常英语归为 vegetable。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -231,7 +247,8 @@
       "difficulty": "medium",
       "answer": "noodles",
       "explanation": "noodles 一般以复数出现 = 面条。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -247,7 +264,8 @@
       ],
       "answer": "C",
       "explanation": "tea 不可数，肯定语气邀请用 some。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -264,7 +282,8 @@
       ],
       "answer": "B",
       "explanation": "森林之王 + 黄棕色 = lion 狮子。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -280,7 +299,8 @@
       ],
       "answer": "B",
       "explanation": "bamboo 竹子是植物。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -290,7 +310,8 @@
       "difficulty": "medium",
       "answer": "panda",
       "explanation": "panda = 熊猫。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -300,7 +321,8 @@
       "difficulty": "medium",
       "answer": "bamboo",
       "explanation": "熊猫吃竹子 bamboo（不可数，零冠词）。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -310,7 +332,8 @@
       "difficulty": "medium",
       "answer": "library",
       "explanation": "library 图书馆借书。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -327,7 +350,8 @@
       ],
       "answer": "A",
       "explanation": "寄信去 post office 邮局。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -343,7 +367,8 @@
       ],
       "answer": "B",
       "explanation": "by + 交通工具（无冠词）= 乘…交通方式。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -353,7 +378,8 @@
       "difficulty": "medium",
       "answer": "airport",
       "explanation": "airport = 机场。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -369,7 +395,8 @@
       ],
       "answer": "A",
       "explanation": "九月只有 30 天，30 之后是 10 月 1 日 (October 1)。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -380,7 +407,8 @@
       "difficulty": "hard",
       "answer": "75",
       "explanation": "听到 seventy-five = 75。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -396,7 +424,8 @@
       ],
       "answer": "B",
       "explanation": "周六前是 Friday 周五。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -406,7 +435,8 @@
       "difficulty": "medium",
       "answer": "January",
       "explanation": "一年第一个月是 January。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -416,7 +446,8 @@
       "difficulty": "medium",
       "answer": "orange",
       "explanation": "红+黄=橙色 orange。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -432,7 +463,8 @@
       ],
       "answer": "C",
       "explanation": "窗户 window 多为长方形/正方形；硬币、钟面、球皆为圆形。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -449,7 +481,8 @@
       ],
       "answer": "B",
       "explanation": "录音中说 It is purple 紫色。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -459,7 +492,8 @@
       "difficulty": "medium",
       "answer": "are",
       "explanation": "主语为复数 Tom and his sister，be 用 are。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -469,7 +503,8 @@
       "difficulty": "hard",
       "answer": "is",
       "explanation": "主语 each of...为单数（each 后 of+复数仍单数），用 is。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -485,7 +520,8 @@
       ],
       "answer": "A",
       "explanation": "there be 句型就近原则，最近主语 a book 单数，用 is。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -495,7 +531,8 @@
       "difficulty": "medium",
       "answer": "is",
       "explanation": "family 整体作单数主语，用 is。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -512,7 +549,8 @@
       ],
       "answer": "B",
       "explanation": "My friends and I = we，所以 we are。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -528,7 +566,8 @@
       ],
       "answer": "B",
       "explanation": "neither...nor... 就近原则，her brothers 复数，用 are。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -538,7 +577,8 @@
       "difficulty": "hard",
       "answer": "is",
       "explanation": "a pair of shoes 视作整体单数，用 is。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -548,7 +588,8 @@
       "difficulty": "medium",
       "answer": "is",
       "explanation": "主语 He 用 is，否定 is not。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -558,7 +599,8 @@
       "difficulty": "medium",
       "answer": "goes",
       "explanation": "主语 Mary 第三人称单数，go→goes。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -574,7 +616,8 @@
       ],
       "answer": "C",
       "explanation": "C 第三人称单数 has 正确；A 应为 doesn't；B 应为 watches；D 应为 go。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -584,7 +627,8 @@
       "difficulty": "medium",
       "answer": "does",
       "explanation": "主语第三人称单数 + 一般现在时，do→does。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -601,7 +645,8 @@
       ],
       "answer": "B",
       "explanation": "录音 Lucy plays，第三人称单数 plays。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -611,7 +656,8 @@
       "difficulty": "hard",
       "answer": "teaches",
       "explanation": "teach 以 ch 结尾，第三人称单数加 -es → teaches。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -627,7 +673,8 @@
       ],
       "answer": "C",
       "explanation": "实义动词的一般现在时否定，第三人称单数用 doesn't + 动词原形。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -637,7 +684,8 @@
       "difficulty": "medium",
       "answer": "has",
       "explanation": "have 的第三人称单数特殊形式 has。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -653,7 +701,8 @@
       ],
       "answer": "B",
       "explanation": "频率副词 always 一般置于实义动词之前；now/tomorrow 等位置较灵活；yesterday 是过去时标志。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -669,7 +718,8 @@
       ],
       "answer": "C",
       "explanation": "Look! 是现在进行时标志，主语 boys 复数，用 are playing。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -686,7 +736,8 @@
       ],
       "answer": "C",
       "explanation": "录音用 is sleeping 现在进行时。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -696,7 +747,8 @@
       "difficulty": "medium",
       "answer": "is raining",
       "explanation": "现在进行时 is raining。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -712,7 +764,8 @@
       ],
       "answer": "C",
       "explanation": "is + V-ing = 现在进行时。A 一般现在；B 一般过去；D 一般将来。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -722,7 +775,8 @@
       "difficulty": "medium",
       "answer": "swimming",
       "explanation": "短元音+单辅音结尾，双写 m → swimming。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -738,7 +792,8 @@
       ],
       "answer": "B",
       "explanation": "图片描述当下动作，用现在进行时 are eating。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -748,7 +803,8 @@
       "difficulty": "medium",
       "answer": "writing",
       "explanation": "以 e 结尾去 e 加 ing → writing。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -758,7 +814,8 @@
       "difficulty": "hard",
       "answer": "are having",
       "explanation": "at this moment 现在进行时；have 表示\"上课\"为动作，用 having。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -774,7 +831,8 @@
       ],
       "answer": "C",
       "explanation": "usually 表示频率，搭配一般现在时；其他都是进行时标志。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -791,7 +849,8 @@
       ],
       "answer": "A",
       "explanation": "录音中 always reads 是一般现在时。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -808,7 +867,8 @@
       ],
       "answer": "A",
       "explanation": "录音 is running 现在进行时。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -824,7 +884,8 @@
       ],
       "answer": "C",
       "explanation": "news 不可数单数 → is（C 正确）。A 应为 are；B 应为 are；D 应为 aren't。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -840,7 +901,8 @@
       ],
       "answer": "B",
       "explanation": "every evening 一般现在时，第三人称单数 watches。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -850,7 +912,8 @@
       "difficulty": "medium",
       "answer": "sitting",
       "explanation": "短元音+单辅音 → 双写 t → sitting。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -861,7 +924,8 @@
       "difficulty": "hard",
       "answer": "are reading",
       "explanation": "录音 are reading 现在进行时。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -877,7 +941,8 @@
       ],
       "answer": "D",
       "explanation": "every week 是一般现在时频率标志。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般现在时与现在进行时",
@@ -887,7 +952,8 @@
       "difficulty": "hard",
       "answer": "is, are",
       "explanation": "主语 pen 单数 is；pencils 复数 are。两空用逗号分隔。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -897,7 +963,8 @@
       "difficulty": "medium",
       "answer": "were",
       "explanation": "last spring 过去时；主语 flowers 复数 → were。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -907,7 +974,8 @@
       "difficulty": "medium",
       "answer": "was, was",
       "explanation": "两个空主语都是单数，过去时 → was。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -924,7 +992,8 @@
       ],
       "answer": "B",
       "explanation": "录音中 The teachers were，主谓一致+过去时。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -940,7 +1009,8 @@
       ],
       "answer": "B",
       "explanation": "主语 It 单数 + 过去时 was。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -950,7 +1020,8 @@
       "difficulty": "medium",
       "answer": "were",
       "explanation": "My parents 复数 + 过去时 → were。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -961,7 +1032,8 @@
       "difficulty": "hard",
       "answer": "were",
       "explanation": "录音中 were，复数主语过去时。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -977,7 +1049,8 @@
       ],
       "answer": "D",
       "explanation": "tomorrow 是将来时标志。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -987,7 +1060,8 @@
       "difficulty": "medium",
       "answer": "was",
       "explanation": "主语 a party 单数 + last Friday 过去 → was。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -997,7 +1071,8 @@
       "difficulty": "medium",
       "answer": "was",
       "explanation": "It 单数 + yesterday 过去 → was。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -1013,7 +1088,8 @@
       ],
       "answer": "B",
       "explanation": "They were 的否定 → weren't。A 主谓不一致；C 实义动词形式不对；D 时态混乱。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -1023,7 +1099,8 @@
       "difficulty": "hard",
       "answer": "went, had",
       "explanation": "过去时不规则动词：go→went，have→had。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -1033,7 +1110,8 @@
       "difficulty": "medium",
       "answer": "finished",
       "explanation": "前后两个动作都是过去，finish 规则动词加 -ed → finished。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -1050,7 +1128,8 @@
       ],
       "answer": "C",
       "explanation": "录音中 visited 过去式。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -1060,7 +1139,8 @@
       "difficulty": "medium",
       "answer": "bought",
       "explanation": "buy 不规则变化 → bought。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -1076,7 +1156,8 @@
       ],
       "answer": "C",
       "explanation": "read 过去式不变形（仍写 read，但发音变 /red/），不能 readed。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -1086,7 +1167,8 @@
       "difficulty": "medium",
       "answer": "stopped",
       "explanation": "stop 短元音+单辅音 → 双写 p + ed = stopped。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -1097,7 +1179,8 @@
       "difficulty": "hard",
       "answer": "made",
       "explanation": "录音 made (make 的过去式)。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -1113,7 +1196,8 @@
       ],
       "answer": "B",
       "explanation": "this morning 已过去 + lose 不规则 → lost。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -1124,7 +1208,8 @@
       "answer": "came",
       "explanation": "come→came。",
       "round": 3,
-      "audio_text": "He came back home very late last night."
+      "audio_text": "He came back home very late last night.",
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -1134,7 +1219,8 @@
       "difficulty": "medium",
       "answer": "flew",
       "explanation": "two days ago 过去 + fly 不规则 → flew。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -1150,7 +1236,8 @@
       ],
       "answer": "B",
       "explanation": "drink → drank → drunk；过去式是 drank。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -1160,7 +1247,8 @@
       "difficulty": "medium",
       "answer": "did",
       "explanation": "do→did。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -1177,7 +1265,8 @@
       ],
       "answer": "C",
       "explanation": "录音中 Tom 打篮球+做作业。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -1193,7 +1282,8 @@
       ],
       "answer": "C",
       "explanation": "went + last Sunday 是一般过去时。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -1203,7 +1293,8 @@
       "difficulty": "medium",
       "answer": "saw",
       "explanation": "see→saw。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -1219,7 +1310,8 @@
       ],
       "answer": "C",
       "explanation": "last weekend 是过去时间。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -1230,7 +1322,8 @@
       "answer": "ate",
       "explanation": "eat→ate。",
       "round": 3,
-      "audio_text": "She ate a bowl of noodles for lunch yesterday."
+      "audio_text": "She ate a bowl of noodles for lunch yesterday.",
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -1247,7 +1340,8 @@
       ],
       "answer": "C",
       "explanation": "录音中 Lily 去 Sanya 三亚。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -1263,7 +1357,8 @@
       ],
       "answer": "B",
       "explanation": "didn't + 动词原形 = 一般过去否定。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -1274,7 +1369,8 @@
       "difficulty": "hard",
       "answer": "Were",
       "explanation": "主语 you + 过去时 → Were。首字母大写。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -1290,7 +1386,8 @@
       ],
       "answer": "C",
       "explanation": "过去一般疑问 Did + 主语 + 动词原形。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -1300,7 +1397,8 @@
       "difficulty": "medium",
       "answer": "took",
       "explanation": "take→took。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "一般过去时",
@@ -1316,7 +1414,8 @@
       ],
       "answer": "C",
       "explanation": "辅音字母+y 结尾 → 改 y 为 i 加 ed → studied。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1332,7 +1431,8 @@
       ],
       "answer": "C",
       "explanation": "陈述句叙述事实，C 正确；A 疑问；B 祈使；D 感叹。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1348,7 +1448,8 @@
       ],
       "answer": "C",
       "explanation": "陈述句结构：主语+谓语+宾语。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1364,7 +1465,8 @@
       ],
       "answer": "A",
       "explanation": "频率副词 usually 置于实义动词前，地点先于时间状语。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1380,7 +1482,8 @@
       ],
       "answer": "C",
       "explanation": "首次提到用 a；再次提到用 The（特指）。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1390,7 +1493,8 @@
       "difficulty": "medium",
       "answer": "There is a book on the desk",
       "explanation": "陈述句把零散成分整合：There is a book on the desk.",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1406,7 +1510,8 @@
       ],
       "answer": "B",
       "explanation": "be 动词提到主语前 → Are they good friends?",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1423,7 +1528,8 @@
       ],
       "answer": "B",
       "explanation": "录音中 Tom likes apples，肯定回答 Yes, he does.",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1439,7 +1545,8 @@
       ],
       "answer": "C",
       "explanation": "实义动词第三人称单数一般疑问：Does + 主语 + 动词原形。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1449,7 +1556,8 @@
       "difficulty": "medium",
       "answer": "Can",
       "explanation": "情态动词 can 提前 → Can he swim?",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1465,7 +1573,8 @@
       ],
       "answer": "C",
       "explanation": "过去一般疑问：Did + 主语 + 动词原形。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1481,7 +1590,8 @@
       ],
       "answer": "B",
       "explanation": "be 动词一般疑问的肯定简短回答：Yes, I am.（简略形式不能用于肯定回答末尾）",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1491,7 +1601,8 @@
       "difficulty": "medium",
       "answer": "What",
       "explanation": "答 reading 是动作，问动作用 What...doing。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1501,7 +1612,8 @@
       "difficulty": "medium",
       "answer": "Where",
       "explanation": "答地点 in Beijing → 用 Where。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1511,7 +1623,8 @@
       "difficulty": "medium",
       "answer": "When",
       "explanation": "答日期 May 6 → 用 When。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1521,7 +1634,8 @@
       "difficulty": "hard",
       "answer": "How",
       "explanation": "问交通方式 by bus 用 How。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1538,7 +1652,8 @@
       ],
       "answer": "B",
       "explanation": "录音解释了\"原因\" because…，提问用 Why。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1554,7 +1669,8 @@
       ],
       "answer": "B",
       "explanation": "问年龄用 How old。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1570,7 +1686,8 @@
       ],
       "answer": "B",
       "explanation": "How many + 复数名词 + are there + 地点。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1580,7 +1697,8 @@
       "difficulty": "medium",
       "answer": "Whose",
       "explanation": "问物品所属用 Whose。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1596,7 +1714,8 @@
       ],
       "answer": "A",
       "explanation": "实义动词 + 主语 I → don't have。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1612,7 +1731,8 @@
       ],
       "answer": "C",
       "explanation": "be 动词 is 否定 → isn't。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1628,7 +1748,8 @@
       ],
       "answer": "C",
       "explanation": "last week 过去 → didn't go，C 错。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1645,7 +1766,8 @@
       ],
       "answer": "B",
       "explanation": "录音 Mary doesn't like coffee。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1661,7 +1783,8 @@
       ],
       "answer": "A",
       "explanation": "否定句 some → any，weren't 保持复数过去。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1677,7 +1800,8 @@
       ],
       "answer": "C",
       "explanation": "情态动词 can 否定 = can not / cannot / can't。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1693,7 +1817,8 @@
       ],
       "answer": "C",
       "explanation": "didn't + 动词原形 go。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1703,7 +1828,8 @@
       "difficulty": "medium",
       "answer": "is",
       "explanation": "milk 不可数 + a lot of 看主语 → is。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1713,7 +1839,8 @@
       "difficulty": "hard",
       "answer": "are",
       "explanation": "there be 就近原则，最近主语 two cats 复数 → are。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1730,7 +1857,8 @@
       ],
       "answer": "B",
       "explanation": "录音 There are some students playing football。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1746,7 +1874,8 @@
       ],
       "answer": "C",
       "explanation": "there be 过去：There was/were。单数 → was。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1756,7 +1885,8 @@
       "difficulty": "hard",
       "answer": "isn't",
       "explanation": "water 不可数 + 否定 → isn't any。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1772,7 +1902,8 @@
       ],
       "answer": "A",
       "explanation": "there be 一般疑问：Is/Are there ...?",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -1782,7 +1913,8 @@
       "difficulty": "medium",
       "answer": "boys",
       "explanation": "How many + 复数可数名词。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -1799,7 +1931,8 @@
       ],
       "answer": "B",
       "explanation": "Nice to see you 的回答 Nice to see you, too.",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -1809,7 +1942,8 @@
       "difficulty": "medium",
       "answer": "morning",
       "explanation": "早上 7 点 = Good morning。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -1825,7 +1959,8 @@
       ],
       "answer": "D",
       "explanation": "Good morning 是问候语，不是道别。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -1841,7 +1976,8 @@
       ],
       "answer": "B",
       "explanation": "How are you 的标准回答：Fine/Good, thank you.",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -1858,7 +1994,8 @@
       ],
       "answer": "B",
       "explanation": "Good night + sweet dreams = 睡前道别。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -1874,7 +2011,8 @@
       ],
       "answer": "A",
       "explanation": "How do you do 用于初次见面的正式问候。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -1885,7 +2023,8 @@
       "answer": "you",
       "explanation": "See you tomorrow = 明天见。",
       "round": 3,
-      "audio_text": "OK then, see you tomorrow at the bus stop."
+      "audio_text": "OK then, see you tomorrow at the bus stop.",
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -1901,7 +2040,8 @@
       ],
       "answer": "B",
       "explanation": "Long time no see 多以问候回应：How are you?",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -1918,7 +2058,8 @@
       ],
       "answer": "B",
       "explanation": "录音中 I live in Toronto。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -1934,7 +2075,8 @@
       ],
       "answer": "A",
       "explanation": "介绍他人用 This is …。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -1944,7 +2086,8 @@
       "difficulty": "medium",
       "answer": "What",
       "explanation": "问姓名 What.",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -1960,7 +2103,8 @@
       ],
       "answer": "B",
       "explanation": "How old are you 问年龄。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -1977,7 +2121,8 @@
       ],
       "answer": "C",
       "explanation": "录音 She is twelve years old.",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -1993,7 +2138,8 @@
       ],
       "answer": "B",
       "explanation": "或 Where are you from?；选项中正确的是 Where do you come from?",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -2003,7 +2149,8 @@
       "difficulty": "medium",
       "answer": "Nice",
       "explanation": "标准回答 Nice to meet you, too.",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -2014,7 +2161,8 @@
       "difficulty": "hard",
       "answer": "drawing",
       "explanation": "录音中 My hobby is drawing.",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -2030,7 +2178,8 @@
       ],
       "answer": "B",
       "explanation": "Could you please... 是礼貌请求。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -2047,7 +2196,8 @@
       ],
       "answer": "B",
       "explanation": "对方问路，回应应给出方向。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -2057,7 +2207,8 @@
       "difficulty": "medium",
       "answer": "You're|||You are",
       "explanation": "You're welcome / You are welcome 是常见回应。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -2073,7 +2224,8 @@
       ],
       "answer": "B",
       "explanation": "Could you help me with sth. 是标准请求帮助。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -2089,7 +2241,8 @@
       ],
       "answer": "B",
       "explanation": "Thanks 的回应 You're welcome。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -2106,7 +2259,8 @@
       ],
       "answer": "B",
       "explanation": "录音 may I borrow your pen 借笔。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -2122,7 +2276,8 @@
       ],
       "answer": "C",
       "explanation": "道歉用 I'm sorry。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -2132,7 +2287,8 @@
       "difficulty": "medium",
       "answer": "borrow",
       "explanation": "借入用 borrow（借出 lend）。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -2149,7 +2305,8 @@
       ],
       "answer": "B",
       "explanation": "录音 My favourite sport is basketball。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -2165,7 +2322,8 @@
       ],
       "answer": "A",
       "explanation": "My favourite + 名词 + is + 内容 是地道说法。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -2175,7 +2333,8 @@
       "difficulty": "medium",
       "answer": "but",
       "explanation": "前后语义对比，用 but。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -2191,7 +2350,8 @@
       ],
       "answer": "B",
       "explanation": "don't like 直接表达不喜欢。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -2208,7 +2368,8 @@
       ],
       "answer": "B",
       "explanation": "录音中明确 his favourite food is dumplings.",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -2224,7 +2385,8 @@
       ],
       "answer": "A",
       "explanation": "日常交际表达\"我也是\"用 Me too。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -2240,7 +2402,8 @@
       ],
       "answer": "A",
       "explanation": "Which + do you like, A or B 是选择问句。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -2250,7 +2413,8 @@
       "difficulty": "medium",
       "answer": "favourite|||favorite",
       "explanation": "favourite (英) / favorite (美) 都接受。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "日常交际用语",
@@ -2266,7 +2430,8 @@
       ],
       "answer": "C",
       "explanation": "love + 动名词 → love playing；love play 错误。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "content": "Reading Passage 1:\n\nMy name is Tom and I am twelve years old. I live in a small town with my parents and my sister Lily. Last Saturday was a wonderful day for our family. We got up early and drove to the countryside. The weather was sunny and warm. My father took us to a farm owned by Uncle Bill. There were many animals on the farm: cows, sheep, ducks and chickens. Lily was very excited because she had never seen so many animals before. We helped Uncle Bill feed the chickens and pick fresh apples from the trees. At noon, Aunt Mary cooked a big lunch for us. We had vegetable soup, bread, eggs and apple pie. After lunch, we played football on the green field with Uncle Bill's children. In the afternoon, we went fishing in the small river behind the farm. I caught two fish and Lily caught one. We came back home in the evening, tired but very happy. I will never forget that wonderful day on the farm.\n\nQuestion 1: How old is Tom?",
@@ -2284,7 +2449,8 @@
       "knowledge_point": "阅读理解/阅读理解",
       "group_id": "g6_eng_r3_reading_01",
       "group_order": 1,
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "content": "Reading Passage 1:\n\nMy name is Tom and I am twelve years old. I live in a small town with my parents and my sister Lily. Last Saturday was a wonderful day for our family. We got up early and drove to the countryside. The weather was sunny and warm. My father took us to a farm owned by Uncle Bill. There were many animals on the farm: cows, sheep, ducks and chickens. Lily was very excited because she had never seen so many animals before. We helped Uncle Bill feed the chickens and pick fresh apples from the trees. At noon, Aunt Mary cooked a big lunch for us. We had vegetable soup, bread, eggs and apple pie. After lunch, we played football on the green field with Uncle Bill's children. In the afternoon, we went fishing in the small river behind the farm. I caught two fish and Lily caught one. We came back home in the evening, tired but very happy. I will never forget that wonderful day on the farm.\n\nQuestion 2: Where did Tom's family go last Saturday?",
@@ -2302,7 +2468,8 @@
       "knowledge_point": "阅读理解/阅读理解",
       "group_id": "g6_eng_r3_reading_01",
       "group_order": 2,
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "content": "Reading Passage 1:\n\nMy name is Tom and I am twelve years old. I live in a small town with my parents and my sister Lily. Last Saturday was a wonderful day for our family. We got up early and drove to the countryside. The weather was sunny and warm. My father took us to a farm owned by Uncle Bill. There were many animals on the farm: cows, sheep, ducks and chickens. Lily was very excited because she had never seen so many animals before. We helped Uncle Bill feed the chickens and pick fresh apples from the trees. At noon, Aunt Mary cooked a big lunch for us. We had vegetable soup, bread, eggs and apple pie. After lunch, we played football on the green field with Uncle Bill's children. In the afternoon, we went fishing in the small river behind the farm. I caught two fish and Lily caught one. We came back home in the evening, tired but very happy. I will never forget that wonderful day on the farm.\n\nQuestion 3: Who cooked lunch for Tom's family?",
@@ -2320,7 +2487,8 @@
       "knowledge_point": "阅读理解/阅读理解",
       "group_id": "g6_eng_r3_reading_01",
       "group_order": 3,
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "content": "Reading Passage 1:\n\nMy name is Tom and I am twelve years old. I live in a small town with my parents and my sister Lily. Last Saturday was a wonderful day for our family. We got up early and drove to the countryside. The weather was sunny and warm. My father took us to a farm owned by Uncle Bill. There were many animals on the farm: cows, sheep, ducks and chickens. Lily was very excited because she had never seen so many animals before. We helped Uncle Bill feed the chickens and pick fresh apples from the trees. At noon, Aunt Mary cooked a big lunch for us. We had vegetable soup, bread, eggs and apple pie. After lunch, we played football on the green field with Uncle Bill's children. In the afternoon, we went fishing in the small river behind the farm. I caught two fish and Lily caught one. We came back home in the evening, tired but very happy. I will never forget that wonderful day on the farm.\n\nQuestion 4: How many fish did Tom and Lily catch in total?",
@@ -2332,7 +2500,8 @@
       "knowledge_point": "阅读理解/阅读理解",
       "group_id": "g6_eng_r3_reading_01",
       "group_order": 4,
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "content": "Reading Passage 1:\n\nMy name is Tom and I am twelve years old. I live in a small town with my parents and my sister Lily. Last Saturday was a wonderful day for our family. We got up early and drove to the countryside. The weather was sunny and warm. My father took us to a farm owned by Uncle Bill. There were many animals on the farm: cows, sheep, ducks and chickens. Lily was very excited because she had never seen so many animals before. We helped Uncle Bill feed the chickens and pick fresh apples from the trees. At noon, Aunt Mary cooked a big lunch for us. We had vegetable soup, bread, eggs and apple pie. After lunch, we played football on the green field with Uncle Bill's children. In the afternoon, we went fishing in the small river behind the farm. I caught two fish and Lily caught one. We came back home in the evening, tired but very happy. I will never forget that wonderful day on the farm.\n\nQuestion 5: Which word BEST describes Tom's feeling about that day?",
@@ -2350,7 +2519,8 @@
       "knowledge_point": "阅读理解/阅读理解",
       "group_id": "g6_eng_r3_reading_01",
       "group_order": 5,
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "content": "Reading Passage 2:\n\nThe giant panda is one of the most famous animals in the world. It is also the symbol of China. Pandas live mainly in the bamboo forests of southwest China, especially in Sichuan, Shaanxi and Gansu. A grown-up panda is about 1.5 metres long and weighs about 100 kilograms. It has a round face, black ears and big black eye patches. Its body is white, but its arms and legs are black. Pandas eat bamboo for almost the whole day. They may spend twelve hours a day eating, and they need more than ten kilograms of bamboo to stay healthy. Although pandas look heavy, they can climb trees very well. Sometimes they also eat small animals or fish, but bamboo is their main food. Pandas are an endangered species. There are not many wild pandas left, so the Chinese government and many scientists work hard to protect them. Every year, more and more baby pandas are born in the panda research centres. People around the world love pandas because they are cute, lovely and very friendly.\n\nQuestion 1: Which province is NOT mentioned as a home of pandas?",
@@ -2368,7 +2538,8 @@
       "knowledge_point": "阅读理解/阅读理解",
       "group_id": "g6_eng_r3_reading_02",
       "group_order": 1,
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "content": "Reading Passage 2:\n\nThe giant panda is one of the most famous animals in the world. It is also the symbol of China. Pandas live mainly in the bamboo forests of southwest China, especially in Sichuan, Shaanxi and Gansu. A grown-up panda is about 1.5 metres long and weighs about 100 kilograms. It has a round face, black ears and big black eye patches. Its body is white, but its arms and legs are black. Pandas eat bamboo for almost the whole day. They may spend twelve hours a day eating, and they need more than ten kilograms of bamboo to stay healthy. Although pandas look heavy, they can climb trees very well. Sometimes they also eat small animals or fish, but bamboo is their main food. Pandas are an endangered species. There are not many wild pandas left, so the Chinese government and many scientists work hard to protect them. Every year, more and more baby pandas are born in the panda research centres. People around the world love pandas because they are cute, lovely and very friendly.\n\nQuestion 2: A grown-up panda weighs about ______ kilograms.",
@@ -2380,7 +2551,8 @@
       "knowledge_point": "阅读理解/阅读理解",
       "group_id": "g6_eng_r3_reading_02",
       "group_order": 2,
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "content": "Reading Passage 2:\n\nThe giant panda is one of the most famous animals in the world. It is also the symbol of China. Pandas live mainly in the bamboo forests of southwest China, especially in Sichuan, Shaanxi and Gansu. A grown-up panda is about 1.5 metres long and weighs about 100 kilograms. It has a round face, black ears and big black eye patches. Its body is white, but its arms and legs are black. Pandas eat bamboo for almost the whole day. They may spend twelve hours a day eating, and they need more than ten kilograms of bamboo to stay healthy. Although pandas look heavy, they can climb trees very well. Sometimes they also eat small animals or fish, but bamboo is their main food. Pandas are an endangered species. There are not many wild pandas left, so the Chinese government and many scientists work hard to protect them. Every year, more and more baby pandas are born in the panda research centres. People around the world love pandas because they are cute, lovely and very friendly.\n\nQuestion 3: How many hours a day do pandas spend eating?",
@@ -2398,7 +2570,8 @@
       "knowledge_point": "阅读理解/阅读理解",
       "group_id": "g6_eng_r3_reading_02",
       "group_order": 3,
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "content": "Reading Passage 2:\n\nThe giant panda is one of the most famous animals in the world. It is also the symbol of China. Pandas live mainly in the bamboo forests of southwest China, especially in Sichuan, Shaanxi and Gansu. A grown-up panda is about 1.5 metres long and weighs about 100 kilograms. It has a round face, black ears and big black eye patches. Its body is white, but its arms and legs are black. Pandas eat bamboo for almost the whole day. They may spend twelve hours a day eating, and they need more than ten kilograms of bamboo to stay healthy. Although pandas look heavy, they can climb trees very well. Sometimes they also eat small animals or fish, but bamboo is their main food. Pandas are an endangered species. There are not many wild pandas left, so the Chinese government and many scientists work hard to protect them. Every year, more and more baby pandas are born in the panda research centres. People around the world love pandas because they are cute, lovely and very friendly.\n\nQuestion 4: What is the MAIN food of pandas?",
@@ -2410,7 +2583,8 @@
       "knowledge_point": "阅读理解/阅读理解",
       "group_id": "g6_eng_r3_reading_02",
       "group_order": 4,
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "content": "Reading Passage 2:\n\nThe giant panda is one of the most famous animals in the world. It is also the symbol of China. Pandas live mainly in the bamboo forests of southwest China, especially in Sichuan, Shaanxi and Gansu. A grown-up panda is about 1.5 metres long and weighs about 100 kilograms. It has a round face, black ears and big black eye patches. Its body is white, but its arms and legs are black. Pandas eat bamboo for almost the whole day. They may spend twelve hours a day eating, and they need more than ten kilograms of bamboo to stay healthy. Although pandas look heavy, they can climb trees very well. Sometimes they also eat small animals or fish, but bamboo is their main food. Pandas are an endangered species. There are not many wild pandas left, so the Chinese government and many scientists work hard to protect them. Every year, more and more baby pandas are born in the panda research centres. People around the world love pandas because they are cute, lovely and very friendly.\n\nQuestion 5: According to the passage, which sentence is TRUE?",
@@ -2428,7 +2602,8 @@
       "knowledge_point": "阅读理解/阅读理解",
       "group_id": "g6_eng_r3_reading_02",
       "group_order": 5,
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "content": "Reading Passage 3:\n\nLucy is a sixth-grade student at Sunshine Primary School. Every weekday she gets up at six thirty and has breakfast with her family at seven. Her mother always makes warm milk and bread for her. After breakfast, Lucy walks to school with her best friend Emma. The school is only ten minutes away from her home. Classes start at eight in the morning. Lucy has six classes every day: Chinese, Maths, English, Science, Art and PE. Her favourite subject is English because the teacher tells funny stories and plays games with the students. At noon Lucy has lunch in the school dining hall. The lunch usually has rice, vegetables and meat or fish. After school, Lucy stays at the library to finish her homework. She also borrows books about animals because she wants to be a scientist when she grows up. At five o'clock she goes home and helps her mother in the kitchen. After dinner she practises the piano for half an hour and then reads stories for fun. She goes to bed at nine thirty. Lucy thinks her school life is busy but full of fun.\n\nQuestion 1: What time does Lucy have breakfast?",
@@ -2446,7 +2621,8 @@
       "knowledge_point": "阅读理解/阅读理解",
       "group_id": "g6_eng_r3_reading_03",
       "group_order": 1,
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "content": "Reading Passage 3:\n\nLucy is a sixth-grade student at Sunshine Primary School. Every weekday she gets up at six thirty and has breakfast with her family at seven. Her mother always makes warm milk and bread for her. After breakfast, Lucy walks to school with her best friend Emma. The school is only ten minutes away from her home. Classes start at eight in the morning. Lucy has six classes every day: Chinese, Maths, English, Science, Art and PE. Her favourite subject is English because the teacher tells funny stories and plays games with the students. At noon Lucy has lunch in the school dining hall. The lunch usually has rice, vegetables and meat or fish. After school, Lucy stays at the library to finish her homework. She also borrows books about animals because she wants to be a scientist when she grows up. At five o'clock she goes home and helps her mother in the kitchen. After dinner she practises the piano for half an hour and then reads stories for fun. She goes to bed at nine thirty. Lucy thinks her school life is busy but full of fun.\n\nQuestion 2: Which subject does Lucy like BEST?",
@@ -2458,7 +2634,8 @@
       "knowledge_point": "阅读理解/阅读理解",
       "group_id": "g6_eng_r3_reading_03",
       "group_order": 2,
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "content": "Reading Passage 3:\n\nLucy is a sixth-grade student at Sunshine Primary School. Every weekday she gets up at six thirty and has breakfast with her family at seven. Her mother always makes warm milk and bread for her. After breakfast, Lucy walks to school with her best friend Emma. The school is only ten minutes away from her home. Classes start at eight in the morning. Lucy has six classes every day: Chinese, Maths, English, Science, Art and PE. Her favourite subject is English because the teacher tells funny stories and plays games with the students. At noon Lucy has lunch in the school dining hall. The lunch usually has rice, vegetables and meat or fish. After school, Lucy stays at the library to finish her homework. She also borrows books about animals because she wants to be a scientist when she grows up. At five o'clock she goes home and helps her mother in the kitchen. After dinner she practises the piano for half an hour and then reads stories for fun. She goes to bed at nine thirty. Lucy thinks her school life is busy but full of fun.\n\nQuestion 3: How many classes does Lucy have every day?",
@@ -2476,7 +2653,8 @@
       "knowledge_point": "阅读理解/阅读理解",
       "group_id": "g6_eng_r3_reading_03",
       "group_order": 3,
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "content": "Reading Passage 3:\n\nLucy is a sixth-grade student at Sunshine Primary School. Every weekday she gets up at six thirty and has breakfast with her family at seven. Her mother always makes warm milk and bread for her. After breakfast, Lucy walks to school with her best friend Emma. The school is only ten minutes away from her home. Classes start at eight in the morning. Lucy has six classes every day: Chinese, Maths, English, Science, Art and PE. Her favourite subject is English because the teacher tells funny stories and plays games with the students. At noon Lucy has lunch in the school dining hall. The lunch usually has rice, vegetables and meat or fish. After school, Lucy stays at the library to finish her homework. She also borrows books about animals because she wants to be a scientist when she grows up. At five o'clock she goes home and helps her mother in the kitchen. After dinner she practises the piano for half an hour and then reads stories for fun. She goes to bed at nine thirty. Lucy thinks her school life is busy but full of fun.\n\nQuestion 4: Why does Lucy borrow books about animals?",
@@ -2494,7 +2672,8 @@
       "knowledge_point": "阅读理解/阅读理解",
       "group_id": "g6_eng_r3_reading_03",
       "group_order": 4,
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "content": "Reading Passage 3:\n\nLucy is a sixth-grade student at Sunshine Primary School. Every weekday she gets up at six thirty and has breakfast with her family at seven. Her mother always makes warm milk and bread for her. After breakfast, Lucy walks to school with her best friend Emma. The school is only ten minutes away from her home. Classes start at eight in the morning. Lucy has six classes every day: Chinese, Maths, English, Science, Art and PE. Her favourite subject is English because the teacher tells funny stories and plays games with the students. At noon Lucy has lunch in the school dining hall. The lunch usually has rice, vegetables and meat or fish. After school, Lucy stays at the library to finish her homework. She also borrows books about animals because she wants to be a scientist when she grows up. At five o'clock she goes home and helps her mother in the kitchen. After dinner she practises the piano for half an hour and then reads stories for fun. She goes to bed at nine thirty. Lucy thinks her school life is busy but full of fun.\n\nQuestion 5: How does Lucy describe her school life?",
@@ -2512,7 +2691,8 @@
       "knowledge_point": "阅读理解/阅读理解",
       "group_id": "g6_eng_r3_reading_03",
       "group_order": 5,
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "content": "Reading Passage 4:\n\nThere are four seasons in a year: spring, summer, autumn and winter. Each season has its own colour and feeling. In spring, everything wakes up. The trees turn green and flowers start to open. People often go on picnics or fly kites in the park. The weather is warm but sometimes rainy. Summer is the hottest season. The sun shines brightly and the days become very long. Many children love summer because they have the long summer holiday. They go swimming, eat ice cream and play under the trees. Autumn comes after summer. The leaves turn yellow or red and fall to the ground. Farmers are busy because it is the harvest time. Apples, pears and rice are ready to be picked or cut. Winter is the coldest season. In the north of China, it often snows and lakes are frozen. Children make snowmen and have snowball fights. Some animals, like bears, sleep through the whole winter. Different people like different seasons. Which one do you like best?\n\nQuestion 1: How many seasons are mentioned?",
@@ -2530,7 +2710,8 @@
       "knowledge_point": "阅读理解/阅读理解",
       "group_id": "g6_eng_r3_reading_04",
       "group_order": 1,
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "content": "Reading Passage 4:\n\nThere are four seasons in a year: spring, summer, autumn and winter. Each season has its own colour and feeling. In spring, everything wakes up. The trees turn green and flowers start to open. People often go on picnics or fly kites in the park. The weather is warm but sometimes rainy. Summer is the hottest season. The sun shines brightly and the days become very long. Many children love summer because they have the long summer holiday. They go swimming, eat ice cream and play under the trees. Autumn comes after summer. The leaves turn yellow or red and fall to the ground. Farmers are busy because it is the harvest time. Apples, pears and rice are ready to be picked or cut. Winter is the coldest season. In the north of China, it often snows and lakes are frozen. Children make snowmen and have snowball fights. Some animals, like bears, sleep through the whole winter. Different people like different seasons. Which one do you like best?\n\nQuestion 2: According to the passage, what do farmers do in autumn?",
@@ -2548,7 +2729,8 @@
       "knowledge_point": "阅读理解/阅读理解",
       "group_id": "g6_eng_r3_reading_04",
       "group_order": 2,
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "content": "Reading Passage 4:\n\nThere are four seasons in a year: spring, summer, autumn and winter. Each season has its own colour and feeling. In spring, everything wakes up. The trees turn green and flowers start to open. People often go on picnics or fly kites in the park. The weather is warm but sometimes rainy. Summer is the hottest season. The sun shines brightly and the days become very long. Many children love summer because they have the long summer holiday. They go swimming, eat ice cream and play under the trees. Autumn comes after summer. The leaves turn yellow or red and fall to the ground. Farmers are busy because it is the harvest time. Apples, pears and rice are ready to be picked or cut. Winter is the coldest season. In the north of China, it often snows and lakes are frozen. Children make snowmen and have snowball fights. Some animals, like bears, sleep through the whole winter. Different people like different seasons. Which one do you like best?\n\nQuestion 3: In summer, the days are very ______.",
@@ -2560,7 +2742,8 @@
       "knowledge_point": "阅读理解/阅读理解",
       "group_id": "g6_eng_r3_reading_04",
       "group_order": 3,
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "content": "Reading Passage 4:\n\nThere are four seasons in a year: spring, summer, autumn and winter. Each season has its own colour and feeling. In spring, everything wakes up. The trees turn green and flowers start to open. People often go on picnics or fly kites in the park. The weather is warm but sometimes rainy. Summer is the hottest season. The sun shines brightly and the days become very long. Many children love summer because they have the long summer holiday. They go swimming, eat ice cream and play under the trees. Autumn comes after summer. The leaves turn yellow or red and fall to the ground. Farmers are busy because it is the harvest time. Apples, pears and rice are ready to be picked or cut. Winter is the coldest season. In the north of China, it often snows and lakes are frozen. Children make snowmen and have snowball fights. Some animals, like bears, sleep through the whole winter. Different people like different seasons. Which one do you like best?\n\nQuestion 4: Which season is the COLDEST according to the passage?",
@@ -2578,7 +2761,8 @@
       "knowledge_point": "阅读理解/阅读理解",
       "group_id": "g6_eng_r3_reading_04",
       "group_order": 4,
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "基础阅读理解",
@@ -2594,7 +2778,8 @@
       ],
       "answer": "A",
       "explanation": "短文围绕祖父的园艺生活与健康，A 概括最贴切。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "基础阅读理解",
@@ -2604,7 +2789,8 @@
       "difficulty": "medium",
       "answer": "2 hours|||two hours",
       "explanation": "'The class lasts two hours'。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "基础阅读理解",
@@ -2620,7 +2806,8 @@
       ],
       "answer": "B",
       "explanation": "'plays basketball on Wednesdays'。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "基础阅读理解",
@@ -2637,7 +2824,8 @@
       ],
       "answer": "A",
       "explanation": "录音中买了 bread, milk, eggs。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "基础阅读理解",
@@ -2654,7 +2842,8 @@
       ],
       "answer": "B",
       "explanation": "录音明确 the science museum.",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "基础阅读理解",
@@ -2670,7 +2859,8 @@
       ],
       "answer": "C",
       "explanation": "对话中 Lily 说 'I have a bad cold and a fever'。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "基础阅读理解",
@@ -2680,7 +2870,8 @@
       "difficulty": "hard",
       "answer": "goes",
       "explanation": "上下文每天 + today 一般现在；主语单数 → goes。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "基础阅读理解",
@@ -2696,7 +2887,8 @@
       ],
       "answer": "C",
       "explanation": "'I arrived in Beijing... The hotel is very nice'。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "基础阅读理解",
@@ -2706,7 +2898,8 @@
       "difficulty": "medium",
       "answer": "sports shoes",
       "explanation": "通知最后一句 'must wear sports shoes'。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "基础阅读理解",
@@ -2723,7 +2916,8 @@
       ],
       "answer": "B",
       "explanation": "录音 cloudy with a little rain。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "基础阅读理解",
@@ -2739,7 +2933,8 @@
       ],
       "answer": "C",
       "explanation": "在医院 + 帮助医生照顾病人 → nurse 男护士。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "基础阅读理解",
@@ -2756,7 +2951,8 @@
       ],
       "answer": "C",
       "explanation": "录音 'tomorrow afternoon at three o'clock'。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "基础阅读理解",
@@ -2772,7 +2968,8 @@
       ],
       "answer": "D",
       "explanation": "in + 时间 表示将来 → will start。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "基础阅读理解",
@@ -2782,7 +2979,8 @@
       "difficulty": "hard",
       "answer": "between",
       "explanation": "两者之间 between A and B；三者及以上 among。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -2792,7 +2990,8 @@
       "difficulty": "medium",
       "answer": "black",
       "explanation": "black = 黑色。",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     },
     {
       "chapter": "简单句与句型转换",
@@ -2802,7 +3001,16 @@
       "difficulty": "medium",
       "answer": "It is a new book",
       "explanation": "陈述句结构 主语+谓语+宾语：It is a new book.",
-      "round": 3
+      "round": 3,
+      "source": "batch_2026_05_07_g6_english_r3_deprecated"
     }
-  ]
+  ],
+  "_quality_meta": {
+    "deprecated": true,
+    "deprecated_version": "V3.8.3",
+    "deprecated_at": "2026-05-07",
+    "deprecated_reason": "英语切剑桥 PET/FCE/CAE 体系，外研社老英语 chapter 体系不再使用",
+    "deprecated_commit": "99ccb92",
+    "note": "抽题已通过 _activeSourceFilter 自动排除；保留作低水平兜底参考，但不应作锚点/训练样本"
+  }
 }

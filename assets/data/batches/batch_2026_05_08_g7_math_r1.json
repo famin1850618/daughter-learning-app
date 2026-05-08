@@ -1,5 +1,5 @@
 {
-  "source": "batch_2026_05_08_g7_math_r1",
+  "source": "batch_2026_05_08_g7_math_r1_deprecated",
   "subject": "math",
   "grade": 7,
   "knowledge_points_added": [
@@ -43,7 +43,8 @@
         "D. 圆柱"
       ],
       "answer": "B",
-      "explanation": "三棱柱有两个平行全等的三角形底面，是棱柱。球无底面，圆锥有一个底面，圆柱有圆形底面但属于圆柱体。"
+      "explanation": "三棱柱有两个平行全等的三角形底面，是棱柱。球无底面，圆锥有一个底面，圆柱有圆形底面但属于圆柱体。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "丰富的图形世界",
@@ -53,7 +54,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "8",
-      "explanation": "正方体：8个顶点，12条棱，6个面。"
+      "explanation": "正方体：8个顶点，12条棱，6个面。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "丰富的图形世界",
@@ -63,7 +65,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "9",
-      "explanation": "三棱柱：上底3条 + 下底3条 + 侧棱3条 = 9条。"
+      "explanation": "三棱柱：上底3条 + 下底3条 + 侧棱3条 = 9条。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "丰富的图形世界",
@@ -79,7 +82,8 @@
         "D. 3"
       ],
       "answer": "B",
-      "explanation": "圆锥只有一个顶点（锥尖）。"
+      "explanation": "圆锥只有一个顶点（锥尖）。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "丰富的图形世界",
@@ -89,7 +93,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "6",
-      "explanation": "正方体由6个正方形面围成。"
+      "explanation": "正方体由6个正方形面围成。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "丰富的图形世界",
@@ -105,7 +110,8 @@
         "D. 球体"
       ],
       "answer": "D",
-      "explanation": "球体表面光滑，没有顶点；其余图形均有顶点。"
+      "explanation": "球体表面光滑，没有顶点；其余图形均有顶点。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "丰富的图形世界",
@@ -115,7 +121,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "4",
-      "explanation": "三棱锥：1个三角形底面 + 3个三角形侧面 = 4个面。"
+      "explanation": "三棱锥：1个三角形底面 + 3个三角形侧面 = 4个面。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "丰富的图形世界",
@@ -131,7 +138,8 @@
         "D. 10"
       ],
       "answer": "C",
-      "explanation": "四棱柱两个四边形底面，各4个顶点，共8个顶点。"
+      "explanation": "四棱柱两个四边形底面，各4个顶点，共8个顶点。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "丰富的图形世界",
@@ -141,7 +149,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "2",
-      "explanation": "圆柱有上、下两个圆形底面。"
+      "explanation": "圆柱有上、下两个圆形底面。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "丰富的图形世界",
@@ -151,7 +160,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "12",
-      "explanation": "四棱柱：上底4条 + 下底4条 + 侧棱4条 = 12条棱。"
+      "explanation": "四棱柱：上底4条 + 下底4条 + 侧棱4条 = 12条棱。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "丰富的图形世界",
@@ -167,7 +177,8 @@
         "D. 圆形"
       ],
       "answer": "C",
-      "explanation": "圆锥侧面展开后得到扇形。"
+      "explanation": "圆锥侧面展开后得到扇形。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "丰富的图形世界",
@@ -177,7 +188,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "12",
-      "explanation": "六棱柱：两个六边形底面，各6个顶点，共12个。"
+      "explanation": "六棱柱：两个六边形底面，各6个顶点，共12个。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "丰富的图形世界",
@@ -193,7 +205,8 @@
         "D. 面是长方形"
       ],
       "answer": "D",
-      "explanation": "正方体的6个面都是正方形，不是长方形（除非长方体）。A/B/C均正确。"
+      "explanation": "正方体的6个面都是正方形，不是长方形（除非长方体）。A/B/C均正确。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "丰富的图形世界",
@@ -209,7 +222,8 @@
         "D. 20"
       ],
       "answer": "B",
-      "explanation": "五棱柱：两个五边形底面，各5个顶点，共10个。"
+      "explanation": "五棱柱：两个五边形底面，各5个顶点，共10个。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "丰富的图形世界",
@@ -225,7 +239,8 @@
         "D. 三棱锥"
       ],
       "answer": "B",
-      "explanation": "圆柱：两个平面底面 + 一个曲侧面。正方体、三棱柱只有平面；球只有曲面。"
+      "explanation": "圆柱：两个平面底面 + 一个曲侧面。正方体、三棱柱只有平面；球只有曲面。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "丰富的图形世界",
@@ -235,7 +250,8 @@
       "difficulty": "hard",
       "round": 1,
       "answer": "3n",
-      "explanation": "n棱柱：上底n条 + 下底n条 + 侧棱n条 = 3n条棱。"
+      "explanation": "n棱柱：上底n条 + 下底n条 + 侧棱n条 = 3n条棱。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "丰富的图形世界",
@@ -251,7 +267,8 @@
         "D. 9"
       ],
       "answer": "B",
-      "explanation": "三棱锥：底面3条 + 侧棱3条 = 6条棱。"
+      "explanation": "三棱锥：底面3条 + 侧棱3条 = 6条棱。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "有理数及其运算",
@@ -267,7 +284,8 @@
         "D. $\\frac{1}{2}$"
       ],
       "answer": "C",
-      "explanation": "$-3$是负数；0既不正也不负；2和$\\frac{1}{2}$是正数。"
+      "explanation": "$-3$是负数；0既不正也不负；2和$\\frac{1}{2}$是正数。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "有理数及其运算",
@@ -277,7 +295,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "5",
-      "explanation": "相反数：绝对值相等，符号相反。$-5$的相反数是$5$。"
+      "explanation": "相反数：绝对值相等，符号相反。$-5$的相反数是$5$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "有理数及其运算",
@@ -287,7 +306,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "8",
-      "explanation": "绝对值是数到原点的距离，$|-8|=8$。"
+      "explanation": "绝对值是数到原点的距离，$|-8|=8$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "有理数及其运算",
@@ -303,7 +323,8 @@
         "D. 无法确定"
       ],
       "answer": "A",
-      "explanation": "负数在数轴原点的左侧。"
+      "explanation": "负数在数轴原点的左侧。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "有理数及其运算",
@@ -313,7 +334,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "-8",
-      "explanation": "同号相加取公共符号，绝对值相加：$3+5=8$，故结果$-8$。"
+      "explanation": "同号相加取公共符号，绝对值相加：$3+5=8$，故结果$-8$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "有理数及其运算",
@@ -323,7 +345,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "5",
-      "explanation": "异号相加取绝对值较大数的符号：$8-3=5$，结果$5$。"
+      "explanation": "异号相加取绝对值较大数的符号：$8-3=5$，结果$5$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "有理数及其运算",
@@ -333,7 +356,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "12",
-      "explanation": "负数乘负数得正数：$4\\times3=12$。"
+      "explanation": "负数乘负数得正数：$4\\times3=12$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "有理数及其运算",
@@ -343,7 +367,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "-3",
-      "explanation": "负数除以正数得负数：$12\\div4=3$，故$-3$。"
+      "explanation": "负数除以正数得负数：$12\\div4=3$，故$-3$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "有理数及其运算",
@@ -353,7 +378,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "4",
-      "explanation": "$(-3)+5-(-2)=-3+5+2=4$。减负变加正。"
+      "explanation": "$(-3)+5-(-2)=-3+5+2=4$。减负变加正。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "有理数及其运算",
@@ -369,7 +395,8 @@
         "D. $-6$"
       ],
       "answer": "B",
-      "explanation": "奇次方：$(-2)^3=(-2)\\times(-2)\\times(-2)=-8$。"
+      "explanation": "奇次方：$(-2)^3=(-2)\\times(-2)\\times(-2)=-8$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "有理数及其运算",
@@ -379,7 +406,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "16",
-      "explanation": "$2^4=2\\times2\\times2\\times2=16$。"
+      "explanation": "$2^4=2\\times2\\times2\\times2=16$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "有理数及其运算",
@@ -395,7 +423,8 @@
         "D. $3.5\\times10^3$"
       ],
       "answer": "C",
-      "explanation": "$35000=3.5\\times10^4$（$1\\le a<10$）。"
+      "explanation": "$35000=3.5\\times10^4$（$1\\le a<10$）。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "有理数及其运算",
@@ -405,7 +434,8 @@
       "difficulty": "hard",
       "round": 1,
       "answer": "-27",
-      "explanation": "$(-36)\\div(-4)=9$；$9\\times(-3)=-27$。"
+      "explanation": "$(-36)\\div(-4)=9$；$9\\times(-3)=-27$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "有理数及其运算",
@@ -415,7 +445,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "3.14",
-      "explanation": "百分位是小数后第二位，第三位是1<5，舍去，得$3.14$。"
+      "explanation": "百分位是小数后第二位，第三位是1<5，舍去，得$3.14$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "有理数及其运算",
@@ -425,7 +456,8 @@
       "difficulty": "hard",
       "round": 1,
       "answer": "0",
-      "explanation": "$(-1)^{100}=1$（偶次方正），$(-1)^{101}=-1$（奇次方负），$1+(-1)=0$。"
+      "explanation": "$(-1)^{100}=1$（偶次方正），$(-1)^{101}=-1$（奇次方负），$1+(-1)=0$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "有理数及其运算",
@@ -441,7 +473,8 @@
         "D. 整数和分数"
       ],
       "answer": "D",
-      "explanation": "有理数 = 整数 + 分数（含有限小数和无限循环小数），不含无理数。"
+      "explanation": "有理数 = 整数 + 分数（含有限小数和无限循环小数），不含无理数。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "有理数及其运算",
@@ -457,7 +490,8 @@
         "D. 无数个"
       ],
       "answer": "B",
-      "explanation": "原点左右各有一个，共两个：$3$和$-3$。"
+      "explanation": "原点左右各有一个，共两个：$3$和$-3$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式及其加减",
@@ -467,7 +501,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "3a-b",
-      "explanation": "a的3倍是$3a$，减b得$3a-b$。"
+      "explanation": "a的3倍是$3a$，减b得$3a-b$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式及其加减",
@@ -483,7 +518,8 @@
         "D. $m+n$"
       ],
       "answer": "B",
-      "explanation": "单项式：只有乘法的式子（数与字母积）。$a+b$有加法，非单项式。"
+      "explanation": "单项式：只有乘法的式子（数与字母积）。$a+b$有加法，非单项式。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式及其加减",
@@ -493,7 +529,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "5",
-      "explanation": "代入：$3\\times2-1=5$。"
+      "explanation": "代入：$3\\times2-1=5$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式及其加减",
@@ -509,7 +546,8 @@
         "D. $5$"
       ],
       "answer": "A",
-      "explanation": "同类项系数相加：$3+2=5$，结果$5x$。"
+      "explanation": "同类项系数相加：$3+2=5$，结果$5x$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式及其加减",
@@ -519,7 +557,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "3a",
-      "explanation": "$4a-1\\cdot a=(4-1)a=3a$。"
+      "explanation": "$4a-1\\cdot a=(4-1)a=3a$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式及其加减",
@@ -535,7 +574,8 @@
         "D. $7$"
       ],
       "answer": "C",
-      "explanation": "多项式：两项或以上，项间有加减。"
+      "explanation": "多项式：两项或以上，项间有加减。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式及其加减",
@@ -545,7 +585,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "$7x^2-2x$",
-      "explanation": "$x^2$项：$5+2=7$；$x$项：$-3+1=-2$；结果$7x^2-2x$。"
+      "explanation": "$x^2$项：$5+2=7$；$x$项：$-3+1=-2$；结果$7x^2-2x$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式及其加减",
@@ -555,7 +596,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "-a+b",
-      "explanation": "括号前负号，去括号各项变号：$-(a-b)=-a+b$。"
+      "explanation": "括号前负号，去括号各项变号：$-(a-b)=-a+b$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式及其加减",
@@ -565,7 +607,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "$4x-y$",
-      "explanation": "$3x+x=4x$，$2y-3y=-y$，结果$4x-y$。"
+      "explanation": "$3x+x=4x$，$2y-3y=-y$，结果$4x-y$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式及其加减",
@@ -581,7 +624,8 @@
         "D. 5"
       ],
       "answer": "C",
-      "explanation": "各字母指数之和：$1+2+1=4$次。"
+      "explanation": "各字母指数之和：$1+2+1=4$次。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式及其加减",
@@ -591,7 +635,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "3",
-      "explanation": "$(-1)^2+2=1+2=3$。"
+      "explanation": "$(-1)^2+2=1+2=3$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式及其加减",
@@ -601,7 +646,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "$a+b$",
-      "explanation": "去括号：$2a-3b-a+4b=a+b$。"
+      "explanation": "去括号：$2a-3b-a+4b=a+b$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式及其加减",
@@ -617,7 +663,8 @@
         "D. $ab$与$a^2b$"
       ],
       "answer": "B",
-      "explanation": "同类项：字母和指数完全相同。$3xy$与$-2xy$字母次数完全相同。"
+      "explanation": "同类项：字母和指数完全相同。$3xy$与$-2xy$字母次数完全相同。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式及其加减",
@@ -627,7 +674,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "4a",
-      "explanation": "周长$=4\\times a=4a$。"
+      "explanation": "周长$=4\\times a=4a$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式及其加减",
@@ -637,7 +685,8 @@
       "difficulty": "hard",
       "round": 1,
       "answer": "$4x-5$",
-      "explanation": "展开：$6x-3-2x-2=4x-5$。"
+      "explanation": "展开：$6x-3-2x-2=4x-5$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式及其加减",
@@ -653,7 +702,8 @@
         "D. $3+3x$"
       ],
       "answer": "C",
-      "explanation": "$2-(3x-1)=2-3x+1=3-3x$。括号前负号，各项变号。"
+      "explanation": "$2-(3x-1)=2-3x+1=3-3x$。括号前负号，各项变号。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式及其加减",
@@ -663,7 +713,8 @@
       "difficulty": "hard",
       "round": 1,
       "answer": "4",
-      "explanation": "$9-6+1=4$。也可用$(x-1)^2=(3-1)^2=4$。"
+      "explanation": "$9-6+1=4$。也可用$(x-1)^2=(3-1)^2=4$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "基本平面图形",
@@ -679,7 +730,8 @@
         "D. 都有两个端点"
       ],
       "answer": "B",
-      "explanation": "直线两端无限延伸（无端点）；射线一端有端点，另一端无限延伸。"
+      "explanation": "直线两端无限延伸（无端点）；射线一端有端点，另一端无限延伸。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "基本平面图形",
@@ -689,7 +741,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "180",
-      "explanation": "平角：两条射线反向排列形成，等于$180°$。"
+      "explanation": "平角：两条射线反向排列形成，等于$180°$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "基本平面图形",
@@ -699,7 +752,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "90",
-      "explanation": "直角是$90°$，常用直角符号标记。"
+      "explanation": "直角是$90°$，常用直角符号标记。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "基本平面图形",
@@ -715,7 +769,8 @@
         "D. $130°$"
       ],
       "answer": "C",
-      "explanation": "余角：两角和为$90°$。$90°-40°=50°$。"
+      "explanation": "余角：两角和为$90°$。$90°-40°=50°$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "基本平面图形",
@@ -731,7 +786,8 @@
         "D. $90°$"
       ],
       "answer": "B",
-      "explanation": "补角：两角和为$180°$。$180°-65°=115°$。"
+      "explanation": "补角：两角和为$180°$。$180°-65°=115°$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "基本平面图形",
@@ -741,7 +797,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "1",
-      "explanation": "两点确定唯一直线，几何基本公理。"
+      "explanation": "两点确定唯一直线，几何基本公理。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "基本平面图形",
@@ -757,7 +814,8 @@
         "D. $AM=\\frac{1}{3}AB$"
       ],
       "answer": "A",
-      "explanation": "中点将线段平分：$AM=MB=\\frac{1}{2}AB$。"
+      "explanation": "中点将线段平分：$AM=MB=\\frac{1}{2}AB$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "基本平面图形",
@@ -767,7 +825,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "360",
-      "explanation": "射线旋转一圈所成角，$360°$。"
+      "explanation": "射线旋转一圈所成角，$360°$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "基本平面图形",
@@ -783,7 +842,8 @@
         "D. $90°$"
       ],
       "answer": "C",
-      "explanation": "互补：$\\angle A+\\angle B=180°$，$\\angle B=180°-70°=110°$。"
+      "explanation": "互补：$\\angle A+\\angle B=180°$，$\\angle B=180°-70°=110°$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "基本平面图形",
@@ -793,7 +853,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "70°",
-      "explanation": "设角为$x°$，补角$=180°-x°$。$180-x=2x-30$，$210=3x$，$x=70°$。"
+      "explanation": "设角为$x°$，补角$=180°-x°$。$180-x=2x-30$，$210=3x$，$x=70°$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "基本平面图形",
@@ -809,7 +870,8 @@
         "D. 射线有一个端点"
       ],
       "answer": "D",
-      "explanation": "射线有一个端点，向一方无限延伸，无法度量长度。"
+      "explanation": "射线有一个端点，向一方无限延伸，无法度量长度。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "基本平面图形",
@@ -819,7 +881,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "0",
-      "explanation": "锐角：$0°<$角$<90°$。"
+      "explanation": "锐角：$0°<$角$<90°$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "基本平面图形",
@@ -835,7 +898,8 @@
         "D. $45°$"
       ],
       "answer": "B",
-      "explanation": "互余：$x+35°=90°$，$x=55°$。"
+      "explanation": "互余：$x+35°=90°$，$x=55°$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "基本平面图形",
@@ -845,7 +909,8 @@
       "difficulty": "hard",
       "round": 1,
       "answer": "45°",
-      "explanation": "设角$x$，余角$90-x$，补角$180-x$。条件：$90-x=\\frac{1}{3}(180-x)$，$270-3x=180-x$，$90=2x$，$x=45°$。"
+      "explanation": "设角$x$，余角$90-x$，补角$180-x$。条件：$90-x=\\frac{1}{3}(180-x)$，$270-3x=180-x$，$90=2x$，$x=45°$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "基本平面图形",
@@ -855,7 +920,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "2",
-      "explanation": "线段两端各一个端点，共2个。"
+      "explanation": "线段两端各一个端点，共2个。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "基本平面图形",
@@ -871,7 +937,8 @@
         "D. $180°$"
       ],
       "answer": "C",
-      "explanation": "钝角：$90°<$角$<180°$。$130°$满足。"
+      "explanation": "钝角：$90°<$角$<180°$。$130°$满足。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "基本平面图形",
@@ -887,7 +954,8 @@
         "D. 弧线"
       ],
       "answer": "A",
-      "explanation": "两点之间线段最短，这是线段公理。"
+      "explanation": "两点之间线段最短，这是线段公理。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "一元一次方程",
@@ -903,7 +971,8 @@
         "D. $3+1=4$"
       ],
       "answer": "C",
-      "explanation": "方程：含有未知数的等式。$3x-1=5$是等式且含未知数$x$。"
+      "explanation": "方程：含有未知数的等式。$3x-1=5$是等式且含未知数$x$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "一元一次方程",
@@ -913,7 +982,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "4",
-      "explanation": "两边除以2：$x=4$。"
+      "explanation": "两边除以2：$x=4$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "一元一次方程",
@@ -923,7 +993,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "8",
-      "explanation": "两边加3：$x=8$。"
+      "explanation": "两边加3：$x=8$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "一元一次方程",
@@ -939,7 +1010,8 @@
         "D. 无法判断"
       ],
       "answer": "A",
-      "explanation": "等式性质1：两边同加同一数，等式成立。"
+      "explanation": "等式性质1：两边同加同一数，等式成立。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "一元一次方程",
@@ -949,7 +1021,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "3",
-      "explanation": "$3x=9$，$x=3$。"
+      "explanation": "$3x=9$，$x=3$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "一元一次方程",
@@ -959,7 +1032,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "4",
-      "explanation": "$2x-x=7-3$，$x=4$。"
+      "explanation": "$2x-x=7-3$，$x=4$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "一元一次方程",
@@ -969,7 +1043,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "3",
-      "explanation": "$5x-3x=4+2$，$2x=6$，$x=3$。"
+      "explanation": "$5x-3x=4+2$，$2x=6$，$x=3$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "一元一次方程",
@@ -985,7 +1060,8 @@
         "D. $0.5$"
       ],
       "answer": "B",
-      "explanation": "$x=3\\div0.5=6$。"
+      "explanation": "$x=3\\div0.5=6$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "一元一次方程",
@@ -995,7 +1071,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "20km",
-      "explanation": "共同走的距离：$(4+6)\\times2=20$km。"
+      "explanation": "共同走的距离：$(4+6)\\times2=20$km。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "一元一次方程",
@@ -1005,7 +1082,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "4",
-      "explanation": "$\\frac{x}{2}=2$，$x=4$。"
+      "explanation": "$\\frac{x}{2}=2$，$x=4$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "一元一次方程",
@@ -1021,7 +1099,8 @@
         "D. 由$a=b$得$a^2=b^2+1$"
       ],
       "answer": "A",
-      "explanation": "等式两边同乘$(-1)$，等式仍成立：$-a=-b \\Rightarrow a=b$。"
+      "explanation": "等式两边同乘$(-1)$，等式仍成立：$-a=-b \\Rightarrow a=b$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "一元一次方程",
@@ -1031,7 +1110,8 @@
       "difficulty": "hard",
       "round": 1,
       "answer": "6天",
-      "explanation": "设合作$x$天，$\\frac{x}{10}+\\frac{x}{15}=1$，$3x+2x=30$，$5x=30$，$x=6$天。"
+      "explanation": "设合作$x$天，$\\frac{x}{10}+\\frac{x}{15}=1$，$3x+2x=30$，$5x=30$，$x=6$天。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "一元一次方程",
@@ -1041,7 +1121,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "20%",
-      "explanation": "利润率$=\\frac{96-80}{80}=\\frac{16}{80}=20\\%$。"
+      "explanation": "利润率$=\\frac{96-80}{80}=\\frac{16}{80}=20\\%$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "一元一次方程",
@@ -1051,7 +1132,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "1",
-      "explanation": "\"一次\"就是未知数次数为1。"
+      "explanation": "\"一次\"就是未知数次数为1。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "一元一次方程",
@@ -1067,7 +1149,8 @@
         "D. $4$"
       ],
       "answer": "C",
-      "explanation": "时间$=\\frac{240}{80}=3$小时。"
+      "explanation": "时间$=\\frac{240}{80}=3$小时。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "一元一次方程",
@@ -1077,7 +1160,8 @@
       "difficulty": "hard",
       "round": 1,
       "answer": "8",
-      "explanation": "$3x-6=2x+2$，$x=8$。"
+      "explanation": "$3x-6=2x+2$，$x=8$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "一元一次方程",
@@ -1093,7 +1177,8 @@
         "D. $90$"
       ],
       "answer": "C",
-      "explanation": "八折即$80\\%$，$100\\times0.8=80$元。"
+      "explanation": "八折即$80\\%$，$100\\times0.8=80$元。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "数据的收集与整理",
@@ -1109,7 +1194,8 @@
         "D. 食品安全抽检"
       ],
       "answer": "A",
-      "explanation": "灯泡寿命需破坏性检测，适合抽样；全市学生视力适合抽样；人口普查需全部调查，用普查。"
+      "explanation": "灯泡寿命需破坏性检测，适合抽样；全市学生视力适合抽样；人口普查需全部调查，用普查。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "数据的收集与整理",
@@ -1119,7 +1205,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "总数",
-      "explanation": "频率 $=$ 频数 $\\div$ 总数，频率范围$[0,1]$。"
+      "explanation": "频率 $=$ 频数 $\\div$ 总数，频率范围$[0,1]$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "数据的收集与整理",
@@ -1129,7 +1216,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "1",
-      "explanation": "必然事件一定发生，概率为$1$。"
+      "explanation": "必然事件一定发生，概率为$1$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "数据的收集与整理",
@@ -1139,7 +1227,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "0",
-      "explanation": "不可能事件绝不发生，概率为$0$。"
+      "explanation": "不可能事件绝不发生，概率为$0$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "数据的收集与整理",
@@ -1155,7 +1244,8 @@
         "D. 象形图"
       ],
       "answer": "B",
-      "explanation": "扇形图（饼图）最适合表示比例关系。"
+      "explanation": "扇形图（饼图）最适合表示比例关系。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "数据的收集与整理",
@@ -1165,7 +1255,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "1/6",
-      "explanation": "骰子6个面等可能，$P(6)=\\frac{1}{6}$。"
+      "explanation": "骰子6个面等可能，$P(6)=\\frac{1}{6}$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "数据的收集与整理",
@@ -1181,7 +1272,8 @@
         "D. 班级人数构成"
       ],
       "answer": "C",
-      "explanation": "折线图适合表示数据随时间的变化趋势。"
+      "explanation": "折线图适合表示数据随时间的变化趋势。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "数据的收集与整理",
@@ -1191,7 +1283,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "0.75",
-      "explanation": "频率$=30\\div40=0.75$。"
+      "explanation": "频率$=30\\div40=0.75$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "数据的收集与整理",
@@ -1207,7 +1300,8 @@
         "D. 抽样只适用于工业"
       ],
       "answer": "B",
-      "explanation": "抽样调查以样本推总体，不需全部调查，更省时省力。"
+      "explanation": "抽样调查以样本推总体，不需全部调查，更省时省力。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "数据的收集与整理",
@@ -1217,7 +1311,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "20",
-      "explanation": "频数$=0.4\\times50=20$次。"
+      "explanation": "频数$=0.4\\times50=20$次。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "数据的收集与整理",
@@ -1233,7 +1328,8 @@
         "D. $1+1=3$"
       ],
       "answer": "C",
-      "explanation": "随机事件：可能发生也可能不发生。抛硬币正面朝上是随机事件。"
+      "explanation": "随机事件：可能发生也可能不发生。抛硬币正面朝上是随机事件。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "数据的收集与整理",
@@ -1243,7 +1339,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "6",
-      "explanation": "平均数$=\\frac{5+7+8+6+4}{5}=\\frac{30}{5}=6$。"
+      "explanation": "平均数$=\\frac{5+7+8+6+4}{5}=\\frac{30}{5}=6$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "数据的收集与整理",
@@ -1259,7 +1356,8 @@
         "D. 两组数据关系"
       ],
       "answer": "A",
-      "explanation": "条形图适合比较各类别的数量多少。"
+      "explanation": "条形图适合比较各类别的数量多少。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "数据的收集与整理",
@@ -1269,7 +1367,8 @@
       "difficulty": "hard",
       "round": 1,
       "answer": "3/5",
-      "explanation": "共$5$个球，红球$3$个，概率$=\\frac{3}{5}$。"
+      "explanation": "共$5$个球，红球$3$个，概率$=\\frac{3}{5}$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "数据的收集与整理",
@@ -1279,7 +1378,8 @@
       "difficulty": "hard",
       "round": 1,
       "answer": "100",
-      "explanation": "总人数$=60\\div0.6=100$人。"
+      "explanation": "总人数$=60\\div0.6=100$人。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "数据的收集与整理",
@@ -1295,7 +1395,8 @@
         "D. $1.2$"
       ],
       "answer": "D",
-      "explanation": "概率范围$[0,1]$，$1.2>1$不可能。"
+      "explanation": "概率范围$[0,1]$，$1.2>1$不可能。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "数据的收集与整理",
@@ -1311,7 +1412,8 @@
         "D. 没有区别"
       ],
       "answer": "B",
-      "explanation": "普查调查全体对象；抽样只调查部分样本。"
+      "explanation": "普查调查全体对象；抽样只调查部分样本。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式的乘除",
@@ -1327,7 +1429,8 @@
         "D. $5x^2$"
       ],
       "answer": "B",
-      "explanation": "系数相乘$2\\times3=6$，字母相乘$x\\times x=x^2$，结果$6x^2$。"
+      "explanation": "系数相乘$2\\times3=6$，字母相乘$x\\times x=x^2$，结果$6x^2$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式的乘除",
@@ -1337,7 +1440,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "6",
-      "explanation": "系数相乘：$3\\times2=6$（指数部分另算）。"
+      "explanation": "系数相乘：$3\\times2=6$（指数部分另算）。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式的乘除",
@@ -1353,7 +1457,8 @@
         "D. $a$"
       ],
       "answer": "C",
-      "explanation": "同底数幂相乘，指数相加：$a^{2+3}=a^5$。"
+      "explanation": "同底数幂相乘，指数相加：$a^{2+3}=a^5$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式的乘除",
@@ -1363,7 +1468,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "相加",
-      "explanation": "$a^m\\times a^n=a^{m+n}$，指数相加。"
+      "explanation": "$a^m\\times a^n=a^{m+n}$，指数相加。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式的乘除",
@@ -1379,7 +1485,8 @@
         "D. $3x$"
       ],
       "answer": "C",
-      "explanation": "$6\\div2=3$，$x^3\\div x=x^{3-1}=x^2$，结果$3x^2$。"
+      "explanation": "$6\\div2=3$，$x^3\\div x=x^{3-1}=x^2$，结果$3x^2$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式的乘除",
@@ -1389,7 +1496,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "2",
-      "explanation": "指数相减：$4-2=2$。"
+      "explanation": "指数相减：$4-2=2$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式的乘除",
@@ -1405,7 +1513,8 @@
         "D. $-4x$"
       ],
       "answer": "B",
-      "explanation": "$(-2x)^2=(-2)^2\\cdot x^2=4x^2$。"
+      "explanation": "$(-2x)^2=(-2)^2\\cdot x^2=4x^2$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式的乘除",
@@ -1421,7 +1530,8 @@
         "D. $2x^2+3x$"
       ],
       "answer": "C",
-      "explanation": "分配律：$2x\\cdot x+2x\\cdot3=2x^2+6x$。"
+      "explanation": "分配律：$2x\\cdot x+2x\\cdot3=2x^2+6x$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式的乘除",
@@ -1431,7 +1541,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "$-6a^3$",
-      "explanation": "系数：$3\\times(-2)=-6$；字母：$a\\times a^2=a^3$；结果$-6a^3$。"
+      "explanation": "系数：$3\\times(-2)=-6$；字母：$a\\times a^2=a^3$；结果$-6a^3$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式的乘除",
@@ -1441,7 +1552,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "相减",
-      "explanation": "$a^m\\div a^n=a^{m-n}$（$m>n$），指数相减。"
+      "explanation": "$a^m\\div a^n=a^{m-n}$（$m>n$），指数相减。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式的乘除",
@@ -1457,7 +1569,8 @@
         "D. $-4ab$"
       ],
       "answer": "B",
-      "explanation": "系数：$-8\\div2=-4$；$a^3\\div a=a^2$；$b^2\\div b=b$；结果$-4a^2b$。"
+      "explanation": "系数：$-8\\div2=-4$；$a^3\\div a=a^2$；$b^2\\div b=b$；结果$-4a^2b$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式的乘除",
@@ -1467,7 +1580,8 @@
       "difficulty": "hard",
       "round": 1,
       "answer": "$x^2+5x+6$",
-      "explanation": "$(x+2)(x+3)=x^2+3x+2x+6=x^2+5x+6$。"
+      "explanation": "$(x+2)(x+3)=x^2+3x+2x+6=x^2+5x+6$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式的乘除",
@@ -1483,7 +1597,8 @@
         "D. $8a$"
       ],
       "answer": "C",
-      "explanation": "幂的乘方：$(2a)^3=2^3\\cdot a^3=8a^3$。"
+      "explanation": "幂的乘方：$(2a)^3=2^3\\cdot a^3=8a^3$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式的乘除",
@@ -1493,7 +1608,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "n+m",
-      "explanation": "同底数幂相乘指数相加：$x^n\\times x^m=x^{n+m}$。"
+      "explanation": "同底数幂相乘指数相加：$x^n\\times x^m=x^{n+m}$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式的乘除",
@@ -1503,7 +1619,8 @@
       "difficulty": "hard",
       "round": 1,
       "answer": "$4x^2y$",
-      "explanation": "$12\\div3=4$；$x^4\\div x^2=x^2$；$y^2\\div y=y$；结果$4x^2y$。"
+      "explanation": "$12\\div3=4$；$x^4\\div x^2=x^2$；$y^2\\div y=y$；结果$4x^2y$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式的乘除",
@@ -1519,7 +1636,8 @@
         "D. 无意义"
       ],
       "answer": "A",
-      "explanation": "任何非零数的0次幂等于1。"
+      "explanation": "任何非零数的0次幂等于1。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "整式的乘除",
@@ -1535,7 +1653,8 @@
         "D. $6x^3$"
       ],
       "answer": "B",
-      "explanation": "$6\\div2=3$；$x^3\\div x^3=x^0=1$；结果$3$。"
+      "explanation": "$6\\div2=3$；$x^3\\div x^3=x^0=1$；结果$3$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "相交线与平行线",
@@ -1551,7 +1670,8 @@
         "D. 无关系"
       ],
       "answer": "A",
-      "explanation": "对顶角相等，这是两直线相交时形成的角的性质。"
+      "explanation": "对顶角相等，这是两直线相交时形成的角的性质。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "相交线与平行线",
@@ -1561,7 +1681,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "90",
-      "explanation": "垂直定义：两直线相交成直角，即$90°$。"
+      "explanation": "垂直定义：两直线相交成直角，即$90°$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "相交线与平行线",
@@ -1571,7 +1692,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "相等",
-      "explanation": "两直线相交，对顶角相等。"
+      "explanation": "两直线相交，对顶角相等。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "相交线与平行线",
@@ -1587,7 +1709,8 @@
         "D. 对顶角相等"
       ],
       "answer": "C",
-      "explanation": "同位角相等可以判定两直线平行。"
+      "explanation": "同位角相等可以判定两直线平行。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "相交线与平行线",
@@ -1597,7 +1720,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "最短",
-      "explanation": "点到直线的距离是垂线段的长度（最短距离）。"
+      "explanation": "点到直线的距离是垂线段的长度（最短距离）。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "相交线与平行线",
@@ -1613,7 +1737,8 @@
         "D. 无关系"
       ],
       "answer": "A",
-      "explanation": "平行线性质：内错角相等。"
+      "explanation": "平行线性质：内错角相等。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "相交线与平行线",
@@ -1629,7 +1754,8 @@
         "D. 无关系"
       ],
       "answer": "B",
-      "explanation": "平行线性质：同旁内角互补，和为$180°$。"
+      "explanation": "平行线性质：同旁内角互补，和为$180°$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "相交线与平行线",
@@ -1639,7 +1765,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "对顶角$50°$，邻补角$130°$",
-      "explanation": "对顶角相等为$50°$；邻补角$=180°-50°=130°$。"
+      "explanation": "对顶角相等为$50°$；邻补角$=180°-50°=130°$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "相交线与平行线",
@@ -1655,7 +1782,8 @@
         "D. 同位角互补"
       ],
       "answer": "B",
-      "explanation": "内错角相等可判定两直线平行。"
+      "explanation": "内错角相等可判定两直线平行。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "相交线与平行线",
@@ -1665,7 +1793,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "相等",
-      "explanation": "平行线同位角相等是平行线基本性质。"
+      "explanation": "平行线同位角相等是平行线基本性质。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "相交线与平行线",
@@ -1675,7 +1804,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "70°",
-      "explanation": "内错角相等$=70°$；同位角也$=70°$（同位角与内错角相等）。"
+      "explanation": "内错角相等$=70°$；同位角也$=70°$（同位角与内错角相等）。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "相交线与平行线",
@@ -1691,7 +1821,8 @@
         "D. 4对"
       ],
       "answer": "B",
-      "explanation": "两直线相交形成4个角，共2对对顶角。"
+      "explanation": "两直线相交形成4个角，共2对对顶角。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "相交线与平行线",
@@ -1707,7 +1838,8 @@
         "D. 无法判定"
       ],
       "answer": "C",
-      "explanation": "同旁内角互补是两直线平行的判定条件之一。"
+      "explanation": "同旁内角互补是两直线平行的判定条件之一。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "相交线与平行线",
@@ -1717,7 +1849,8 @@
       "difficulty": "hard",
       "round": 1,
       "answer": "115°",
-      "explanation": "同旁内角互补：$\\angle2=180°-65°=115°$。"
+      "explanation": "同旁内角互补：$\\angle2=180°-65°=115°$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "相交线与平行线",
@@ -1733,7 +1866,8 @@
         "D. 不存在"
       ],
       "answer": "A",
-      "explanation": "过直线外一点，有且只有一条垂线。"
+      "explanation": "过直线外一点，有且只有一条垂线。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "相交线与平行线",
@@ -1749,7 +1883,8 @@
         "D. $90°$"
       ],
       "answer": "C",
-      "explanation": "对顶角相等：$40°$。"
+      "explanation": "对顶角相等：$40°$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "相交线与平行线",
@@ -1759,7 +1894,8 @@
       "difficulty": "hard",
       "round": 1,
       "answer": "同位角相等",
-      "explanation": "$\\angle1=\\angle2$（同位角相等），由平行线判定定理，两直线平行。"
+      "explanation": "$\\angle1=\\angle2$（同位角相等），由平行线判定定理，两直线平行。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "变量间的关系",
@@ -1775,7 +1911,8 @@
         "D. $y=\\frac{3}{x}$"
       ],
       "answer": "C",
-      "explanation": "正比例：$y=kx$（$k\\neq0$）。$y=3x$满足。"
+      "explanation": "正比例：$y=kx$（$k\\neq0$）。$y=3x$满足。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "变量间的关系",
@@ -1785,7 +1922,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "变量/常量",
-      "explanation": "$x,y$随关系变化，是变量；$1$是固定值，是常量。"
+      "explanation": "$x,y$随关系变化，是变量；$1$是固定值，是常量。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "变量间的关系",
@@ -1801,7 +1939,8 @@
         "D. 无法确定"
       ],
       "answer": "B",
-      "explanation": "正比例：$x$加倍，$y$也加倍。"
+      "explanation": "正比例：$x$加倍，$y$也加倍。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "变量间的关系",
@@ -1811,7 +1950,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "变量/变量",
-      "explanation": "$S$、$b$、$h$都随图形不同而变化，均为变量。"
+      "explanation": "$S$、$b$、$h$都随图形不同而变化，均为变量。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "变量间的关系",
@@ -1827,7 +1967,8 @@
         "D. $y=x^2$"
       ],
       "answer": "A",
-      "explanation": "$y=3x$（$y$是$x$的3倍），正比例关系。"
+      "explanation": "$y=3x$（$y$是$x$的3倍），正比例关系。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "变量间的关系",
@@ -1837,7 +1978,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "$y=3x$",
-      "explanation": "$y=kx$，代入$6=k\\times2$，$k=3$，故$y=3x$。"
+      "explanation": "$y=kx$，代入$6=k\\times2$，$k=3$，故$y=3x$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "变量间的关系",
@@ -1853,7 +1995,8 @@
         "D. 水温"
       ],
       "answer": "C",
-      "explanation": "光速约$3\\times10^8$m/s，是固定值，属常量。"
+      "explanation": "光速约$3\\times10^8$m/s，是固定值，属常量。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "变量间的关系",
@@ -1863,7 +2006,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "常量",
-      "explanation": "$k$是比例系数，固定值，是常量。"
+      "explanation": "$k$是比例系数，固定值，是常量。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "变量间的关系",
@@ -1873,7 +2017,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "2,4,6",
-      "explanation": "$x=1:y=2$；$x=2:y=4$；$x=3:y=6$。"
+      "explanation": "$x=1:y=2$；$x=2:y=4$；$x=3:y=6$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "变量间的关系",
@@ -1889,7 +2034,8 @@
         "D. 只有k>0才是"
       ],
       "answer": "B",
-      "explanation": "正比例函数$y=kx$（$k\\neq0$），$k=-2\\neq0$，是正比例函数（$k$可为负）。"
+      "explanation": "正比例函数$y=kx$（$k\\neq0$），$k=-2\\neq0$，是正比例函数（$k$可为负）。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "变量间的关系",
@@ -1899,7 +2045,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "$s=60t$",
-      "explanation": "路程$=速度\\times时间=60t$，是正比例关系。"
+      "explanation": "路程$=速度\\times时间=60t$，是正比例关系。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "变量间的关系",
@@ -1915,7 +2062,8 @@
         "D. 所有都是常量"
       ],
       "answer": "B",
-      "explanation": "$r$变化是变量，$h$固定是常量，$\\pi$是常量，$V$随$r$变化是变量。"
+      "explanation": "$r$变化是变量，$h$固定是常量，$\\pi$是常量，$V$随$r$变化是变量。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "变量间的关系",
@@ -1925,7 +2073,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "原点",
-      "explanation": "$y=kx$图象过原点（令$x=0$，$y=0$）。"
+      "explanation": "$y=kx$图象过原点（令$x=0$，$y=0$）。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "变量间的关系",
@@ -1941,7 +2090,8 @@
         "D. 三、四"
       ],
       "answer": "C",
-      "explanation": "$k>0$时，$y=kx$图象经过第一、三象限。"
+      "explanation": "$k>0$时，$y=kx$图象经过第一、三象限。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "变量间的关系",
@@ -1951,7 +2101,8 @@
       "difficulty": "hard",
       "round": 1,
       "answer": "24",
-      "explanation": "$k=15\\div5=3$，$y=3x$，$x=8$时$y=24$。"
+      "explanation": "$k=15\\div5=3$，$y=3x$，$x=8$时$y=24$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "变量间的关系",
@@ -1967,7 +2118,8 @@
         "D. 天气"
       ],
       "answer": "A",
-      "explanation": "每公里耗油量（燃油效率）是常量$k$，则$y=kx$，为正比例。"
+      "explanation": "每公里耗油量（燃油效率）是常量$k$，则$y=kx$，为正比例。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "三角形",
@@ -1977,7 +2129,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "180",
-      "explanation": "三角形内角和定理：三个内角之和$=180°$。"
+      "explanation": "三角形内角和定理：三个内角之和$=180°$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "三角形",
@@ -1993,7 +2146,8 @@
         "D. 钝角三角形"
       ],
       "answer": "A",
-      "explanation": "等腰三角形：两腰相等。"
+      "explanation": "等腰三角形：两腰相等。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "三角形",
@@ -2003,7 +2157,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "60",
-      "explanation": "等边三角形三个角相等，每角$=180°\\div3=60°$。"
+      "explanation": "等边三角形三个角相等，每角$=180°\\div3=60°$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "三角形",
@@ -2019,7 +2174,8 @@
         "D. $80°$"
       ],
       "answer": "B",
-      "explanation": "第三角$=180°-50°-70°=60°$。"
+      "explanation": "第三角$=180°-50°-70°=60°$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "三角形",
@@ -2035,7 +2191,8 @@
         "D. 2,3,4"
       ],
       "answer": "C",
-      "explanation": "两边之和必须大于第三边。$1+2=3$不大于$3$，不能构成三角形。"
+      "explanation": "两边之和必须大于第三边。$1+2=3$不大于$3$，不能构成三角形。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "三角形",
@@ -2045,7 +2202,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "大于",
-      "explanation": "三角形三边关系定理：两边之和大于第三边。"
+      "explanation": "三角形三边关系定理：两边之和大于第三边。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "三角形",
@@ -2061,7 +2219,8 @@
         "D. 一倍关系"
       ],
       "answer": "A",
-      "explanation": "直角三角形：一角$=90°$，另两角和$=90°$，互余。"
+      "explanation": "直角三角形：一角$=90°$，另两角和$=90°$，互余。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "三角形",
@@ -2071,7 +2230,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "30°,60°,90°",
-      "explanation": "设三角为$k,2k,3k$，$k+2k+3k=180°$，$6k=180°$，$k=30°$，三角分别$30°,60°,90°$。"
+      "explanation": "设三角为$k,2k,3k$，$k+2k+3k=180°$，$6k=180°$，$k=30°$，三角分别$30°,60°,90°$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "三角形",
@@ -2087,7 +2247,8 @@
         "D. 周长相等即可"
       ],
       "answer": "A",
-      "explanation": "全等三角形形状大小完全相同，对应边相等，对应角相等。"
+      "explanation": "全等三角形形状大小完全相同，对应边相等，对应角相等。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "三角形",
@@ -2097,7 +2258,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "3<x<13",
-      "explanation": "两边差$<$第三边$<$两边和：$8-5<x<8+5$，即$3<x<13$。"
+      "explanation": "两边差$<$第三边$<$两边和：$8-5<x<8+5$，即$3<x<13$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "三角形",
@@ -2113,7 +2275,8 @@
         "D. $80°$"
       ],
       "answer": "C",
-      "explanation": "底角$=(180°-40°)\\div2=70°$。"
+      "explanation": "底角$=(180°-40°)\\div2=70°$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "三角形",
@@ -2123,7 +2286,8 @@
       "difficulty": "hard",
       "round": 1,
       "answer": "60°",
-      "explanation": "外角与相邻内角互补：相邻内角$=180°-120°=60°$。"
+      "explanation": "外角与相邻内角互补：相邻内角$=180°-120°=60°$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "三角形",
@@ -2139,7 +2303,8 @@
         "D. SSA"
       ],
       "answer": "D",
-      "explanation": "SSA（两边夹角不对应）不能判定全等；SAS/ASA/AAS可以判定。"
+      "explanation": "SSA（两边夹角不对应）不能判定全等；SAS/ASA/AAS可以判定。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "三角形",
@@ -2149,7 +2314,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "钝角",
-      "explanation": "钝角三角形：有一内角大于$90°$。"
+      "explanation": "钝角三角形：有一内角大于$90°$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "三角形",
@@ -2165,7 +2331,8 @@
         "D. 小于相邻内角"
       ],
       "answer": "B",
-      "explanation": "三角形外角定理：外角$=$不相邻两内角之和，所以外角大于任一不相邻内角。"
+      "explanation": "三角形外角定理：外角$=$不相邻两内角之和，所以外角大于任一不相邻内角。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "三角形",
@@ -2175,7 +2342,8 @@
       "difficulty": "hard",
       "round": 1,
       "answer": "55°",
-      "explanation": "顶角$=35°+35°=70°$；底角$=(180°-70°)\\div2=55°$。"
+      "explanation": "顶角$=35°+35°=70°$；底角$=(180°-70°)\\div2=55°$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "生活中的轴对称",
@@ -2191,7 +2359,8 @@
         "D. 梯形（一般）"
       ],
       "answer": "A",
-      "explanation": "等腰三角形沿顶角平分线折叠，两半重合，是轴对称图形。"
+      "explanation": "等腰三角形沿顶角平分线折叠，两半重合，是轴对称图形。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "生活中的轴对称",
@@ -2201,7 +2370,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "3",
-      "explanation": "等边三角形：三条对称轴，分别过三个顶点的中线（也是高、角平分线）。"
+      "explanation": "等边三角形：三条对称轴，分别过三个顶点的中线（也是高、角平分线）。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "生活中的轴对称",
@@ -2211,7 +2381,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "4",
-      "explanation": "正方形：两条对角线、两条中垂线，共4条对称轴。"
+      "explanation": "正方形：两条对角线、两条中垂线，共4条对称轴。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "生活中的轴对称",
@@ -2221,7 +2392,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "无数",
-      "explanation": "圆的每条直径都是对称轴，有无数条。"
+      "explanation": "圆的每条直径都是对称轴，有无数条。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "生活中的轴对称",
@@ -2237,7 +2409,8 @@
         "D. Z"
       ],
       "answer": "C",
-      "explanation": "字母$A$沿竖直中线折叠，两半重合，是轴对称图形。"
+      "explanation": "字母$A$沿竖直中线折叠，两半重合，是轴对称图形。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "生活中的轴对称",
@@ -2247,7 +2420,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "2",
-      "explanation": "长方形：两条对称轴（分别连接两对对边中点）。"
+      "explanation": "长方形：两条对称轴（分别连接两对对边中点）。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "生活中的轴对称",
@@ -2263,7 +2437,8 @@
         "D. $AA'\\parallel l$"
       ],
       "answer": "B",
-      "explanation": "轴对称中，$l$是$AA'$的垂直平分线，$A$和$A'$到$l$距离相等。"
+      "explanation": "轴对称中，$l$是$AA'$的垂直平分线，$A$和$A'$到$l$距离相等。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "生活中的轴对称",
@@ -2279,7 +2454,8 @@
         "D. 腰"
       ],
       "answer": "A",
-      "explanation": "等腰三角形的对称轴是顶角的平分线（也是底边的垂直平分线）。"
+      "explanation": "等腰三角形的对称轴是顶角的平分线（也是底边的垂直平分线）。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "生活中的轴对称",
@@ -2289,7 +2465,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "$(-2,3)$",
-      "explanation": "关于$y$轴对称：横坐标取反，纵坐标不变：$(-2,3)$。"
+      "explanation": "关于$y$轴对称：横坐标取反，纵坐标不变：$(-2,3)$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "生活中的轴对称",
@@ -2305,7 +2482,8 @@
         "D. 圆（无数条）"
       ],
       "answer": "D",
-      "explanation": "圆有无数条对称轴，多于其他图形。"
+      "explanation": "圆有无数条对称轴，多于其他图形。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "生活中的轴对称",
@@ -2315,7 +2493,8 @@
       "difficulty": "hard",
       "round": 1,
       "answer": "(-3,-5)",
-      "explanation": "关于$x$轴对称：纵坐标取反，横坐标不变：$(-3,-5)$。"
+      "explanation": "关于$x$轴对称：纵坐标取反，横坐标不变：$(-3,-5)$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "生活中的轴对称",
@@ -2331,7 +2510,8 @@
         "D. 面积和周长"
       ],
       "answer": "D",
-      "explanation": "轴对称是等距变换，保持形状和大小（面积、周长、角度不变），但位置改变。"
+      "explanation": "轴对称是等距变换，保持形状和大小（面积、周长、角度不变），但位置改变。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "生活中的轴对称",
@@ -2341,7 +2521,8 @@
       "difficulty": "hard",
       "round": 1,
       "answer": "3",
-      "explanation": "线段中点$=\\frac{1+5}{2}=3$，对称轴过中点，$a=3$。"
+      "explanation": "线段中点$=\\frac{1+5}{2}=3$，对称轴过中点，$a=3$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "生活中的轴对称",
@@ -2357,7 +2538,8 @@
         "D. 10条"
       ],
       "answer": "C",
-      "explanation": "正五边形：5条对称轴，分别过每个顶点和对边中点。"
+      "explanation": "正五边形：5条对称轴，分别过每个顶点和对边中点。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "生活中的轴对称",
@@ -2373,7 +2555,8 @@
         "D. 无关"
       ],
       "answer": "A",
-      "explanation": "轴对称是等距变换，对应线段长度相等。"
+      "explanation": "轴对称是等距变换，对应线段长度相等。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "生活中的轴对称",
@@ -2389,7 +2572,8 @@
         "D. 两个随意图形"
       ],
       "answer": "B",
-      "explanation": "轴对称图形：沿某直线折叠完全重合。等腰三角形沿中线折叠重合。"
+      "explanation": "轴对称图形：沿某直线折叠完全重合。等腰三角形沿中线折叠重合。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "概率初步",
@@ -2405,7 +2589,8 @@
         "D. 掷骰子得7"
       ],
       "answer": "A",
-      "explanation": "明天太阳从东方升起，是必然会发生的事件。"
+      "explanation": "明天太阳从东方升起，是必然会发生的事件。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "概率初步",
@@ -2421,7 +2606,8 @@
         "D. 两偶数之和为奇数"
       ],
       "answer": "D",
-      "explanation": "两个偶数之和仍是偶数，不可能是奇数，是不可能事件。"
+      "explanation": "两个偶数之和仍是偶数，不可能是奇数，是不可能事件。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "概率初步",
@@ -2431,7 +2617,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "1/6",
-      "explanation": "骰子6个面等可能，$P(3)=\\frac{1}{6}$。"
+      "explanation": "骰子6个面等可能，$P(3)=\\frac{1}{6}$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "概率初步",
@@ -2441,7 +2628,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "1/2",
-      "explanation": "硬币正反各一面，$P(正面)=\\frac{1}{2}$。"
+      "explanation": "硬币正反各一面，$P(正面)=\\frac{1}{2}$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "概率初步",
@@ -2457,7 +2645,8 @@
         "D. $P<1$"
       ],
       "answer": "B",
-      "explanation": "随机事件概率：$0<P<1$（必然事件$P=1$，不可能事件$P=0$）。"
+      "explanation": "随机事件概率：$0<P<1$（必然事件$P=1$，不可能事件$P=0$）。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "概率初步",
@@ -2467,7 +2656,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "2/5",
-      "explanation": "总球数$4+6=10$，$P(红)=\\frac{4}{10}=\\frac{2}{5}$。"
+      "explanation": "总球数$4+6=10$，$P(红)=\\frac{4}{10}=\\frac{2}{5}$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "概率初步",
@@ -2483,7 +2673,8 @@
         "D. $1$"
       ],
       "answer": "B",
-      "explanation": "偶数：$2,4,6$，共3个，$P(偶)=\\frac{3}{6}=\\frac{1}{2}$。"
+      "explanation": "偶数：$2,4,6$，共3个，$P(偶)=\\frac{3}{6}=\\frac{1}{2}$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "概率初步",
@@ -2493,7 +2684,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "10",
-      "explanation": "$P(1)=\\frac{1}{6}$，期望频数$=60\\times\\frac{1}{6}=10$次。"
+      "explanation": "$P(1)=\\frac{1}{6}$，期望频数$=60\\times\\frac{1}{6}=10$次。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "概率初步",
@@ -2509,7 +2701,8 @@
         "D. 两者相同"
       ],
       "answer": "C",
-      "explanation": "随机事件可能发生也可能不发生；必然事件一定发生。"
+      "explanation": "随机事件可能发生也可能不发生；必然事件一定发生。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "概率初步",
@@ -2519,7 +2712,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "1/2",
-      "explanation": "奇数：$1,3,5,7,9$，共$5$个；$P(奇)=\\frac{5}{10}=\\frac{1}{2}$。"
+      "explanation": "奇数：$1,3,5,7,9$，共$5$个；$P(奇)=\\frac{5}{10}=\\frac{1}{2}$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "概率初步",
@@ -2535,7 +2729,8 @@
         "D. $\\frac{1}{5}$"
       ],
       "answer": "A",
-      "explanation": "$P(红)=\\frac{3}{3+2+5}=\\frac{3}{10}$。"
+      "explanation": "$P(红)=\\frac{3}{3+2+5}=\\frac{3}{10}$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "概率初步",
@@ -2545,7 +2740,8 @@
       "difficulty": "hard",
       "round": 1,
       "answer": "20次",
-      "explanation": "期望获奖次数$=200\\times0.1=20$次。"
+      "explanation": "期望获奖次数$=200\\times0.1=20$次。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "概率初步",
@@ -2561,7 +2757,8 @@
         "D. 两者无关"
       ],
       "answer": "B",
-      "explanation": "大量重复试验中，频率趋近于概率（大数定律）。"
+      "explanation": "大量重复试验中，频率趋近于概率（大数定律）。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "概率初步",
@@ -2571,7 +2768,8 @@
       "difficulty": "hard",
       "round": 1,
       "answer": "m/n",
-      "explanation": "古典概型概率公式：$P=\\frac{m}{n}$（等可能情况下）。"
+      "explanation": "古典概型概率公式：$P=\\frac{m}{n}$（等可能情况下）。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "概率初步",
@@ -2587,7 +2785,8 @@
         "D. $1$"
       ],
       "answer": "B",
-      "explanation": "两枚各$\\frac{1}{2}$，独立：$P=\\frac{1}{2}\\times\\frac{1}{2}=\\frac{1}{4}$。"
+      "explanation": "两枚各$\\frac{1}{2}$，独立：$P=\\frac{1}{2}\\times\\frac{1}{2}=\\frac{1}{4}$。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     },
     {
       "chapter": "概率初步",
@@ -2603,7 +2802,16 @@
         "D. 不可能事件"
       ],
       "answer": "D",
-      "explanation": "概率为$0$的是不可能事件。"
+      "explanation": "概率为$0$的是不可能事件。",
+      "source": "batch_2026_05_08_g7_math_r1_deprecated"
     }
-  ]
+  ],
+  "_quality_meta": {
+    "deprecated": true,
+    "deprecated_version": "V3.10",
+    "deprecated_at": "2026-05-08",
+    "deprecated_reason": "语数转真题路线（北师大数学 / 部编语文），cron AI 出题质量不稳停用",
+    "deprecated_commit": "7308f00",
+    "note": "抽题已通过 _activeSourceFilter 自动排除；保留作低水平兜底参考，但不应作锚点/训练样本"
+  }
 }

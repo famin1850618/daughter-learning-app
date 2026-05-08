@@ -1,5 +1,5 @@
 {
-  "source": "batch_2026_05_07_g6_english_r2",
+  "source": "batch_2026_05_07_g6_english_r2_deprecated",
   "subject": "english",
   "grade": 6,
   "knowledge_points_added": [],
@@ -12,7 +12,8 @@
       "difficulty": "medium",
       "answer": "eraser",
       "explanation": "eraser = 橡皮擦。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -28,7 +29,8 @@
       ],
       "answer": "B",
       "explanation": "ruler 用于画直线。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -44,7 +46,8 @@
       ],
       "answer": "C",
       "explanation": "听到的是 dictionary（字典）。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -54,7 +57,8 @@
       "difficulty": "hard",
       "answer": "notebook",
       "explanation": "notebook = 笔记本。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -70,7 +74,8 @@
       ],
       "answer": "D",
       "explanation": "A/B/C 都是书写/绘画工具，eraser 是擦除工具，类别不同。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -80,7 +85,8 @@
       "difficulty": "medium",
       "answer": "aunt",
       "explanation": "aunt = 姑姑/阿姨/姨妈/伯母（女性长辈）。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -90,7 +96,8 @@
       "difficulty": "medium",
       "answer": "cousin",
       "explanation": "cousin 表堂/表兄弟姐妹，男女同形。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -100,7 +107,8 @@
       "difficulty": "medium",
       "answer": "doctor",
       "explanation": "在医院帮助病人的是 doctor（医生）。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -116,7 +124,8 @@
       ],
       "answer": "A",
       "explanation": "cousin = 表/堂兄弟姐妹。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -126,7 +135,8 @@
       "difficulty": "medium",
       "answer": "farmer",
       "explanation": "farmer = 农民。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -136,7 +146,8 @@
       "difficulty": "medium",
       "answer": "breakfast",
       "explanation": "breakfast = 早餐。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -152,7 +163,8 @@
       ],
       "answer": "B",
       "explanation": "中午吃午饭 lunch。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -162,7 +174,8 @@
       "difficulty": "medium",
       "answer": "teeth",
       "explanation": "brush teeth = 刷牙，复数 teeth。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -178,7 +191,8 @@
       ],
       "answer": "B",
       "explanation": "get up = 起床。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -188,7 +202,8 @@
       "difficulty": "medium",
       "answer": "washes",
       "explanation": "she 第三人称单数，every morning 一般现在时，washes。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -198,7 +213,8 @@
       "difficulty": "medium",
       "answer": "dinner",
       "explanation": "dinner = 晚餐（正餐）。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -208,7 +224,8 @@
       "difficulty": "medium",
       "answer": "grape",
       "explanation": "grape = 葡萄（一颗），葡萄串 grapes。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -218,7 +235,8 @@
       "difficulty": "medium",
       "answer": "juice",
       "explanation": "juice = 果汁，是饮料。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -228,7 +246,8 @@
       "difficulty": "medium",
       "answer": "watermelon",
       "explanation": "watermelon = 西瓜。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -244,7 +263,8 @@
       ],
       "answer": "C",
       "explanation": "听到的是 noodles（面条）。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -254,7 +274,8 @@
       "difficulty": "medium",
       "answer": "tea",
       "explanation": "a cup of 后接饮料，tea 茶。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -264,7 +285,8 @@
       "difficulty": "medium",
       "answer": "cream",
       "explanation": "ice cream = 冰淇淋。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -274,7 +296,8 @@
       "difficulty": "medium",
       "answer": "giraffe",
       "explanation": "giraffe = 长颈鹿。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -290,7 +313,8 @@
       ],
       "answer": "D",
       "explanation": "dolphin（海豚）生活在海洋里。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -300,7 +324,8 @@
       "difficulty": "medium",
       "answer": "tiger",
       "explanation": "tiger = 老虎。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -316,7 +341,8 @@
       ],
       "answer": "A",
       "explanation": "elephant = 大象。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -326,7 +352,8 @@
       "difficulty": "hard",
       "answer": "flowers",
       "explanation": "玫瑰、百合、郁金香都是花。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -336,7 +363,8 @@
       "difficulty": "hard",
       "answer": "sheep",
       "explanation": "sheep 单复数同形。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -346,7 +374,8 @@
       "difficulty": "medium",
       "answer": "subway",
       "explanation": "subway = 地铁；underground 是英式说法。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -356,7 +385,8 @@
       "difficulty": "medium",
       "answer": "library",
       "explanation": "图书馆借书。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -366,7 +396,8 @@
       "difficulty": "medium",
       "answer": "airport",
       "explanation": "airport = 机场。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -382,7 +413,8 @@
       ],
       "answer": "C",
       "explanation": "句中提到 zoo（动物园）。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -392,7 +424,8 @@
       "difficulty": "medium",
       "answer": "bike",
       "explanation": "by bike = 骑自行车。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -408,7 +441,8 @@
       ],
       "answer": "D",
       "explanation": "zebra（斑马）是动物，不是交通工具。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -418,7 +452,8 @@
       "difficulty": "medium",
       "answer": "twelve",
       "explanation": "twelve = 12。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -434,7 +469,8 @@
       ],
       "answer": "A",
       "explanation": "英语习惯里星期日是一周第一天。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -444,7 +480,8 @@
       "difficulty": "medium",
       "answer": "September",
       "explanation": "September = 九月，首字母大写。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -460,7 +497,8 @@
       ],
       "answer": "B",
       "explanation": "录音读 May 7th（5 月 7 日）。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -470,7 +508,8 @@
       "difficulty": "hard",
       "answer": "twentieth",
       "explanation": "20 的序数词 twentieth。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -486,7 +525,8 @@
       ],
       "answer": "C",
       "explanation": "Wednesday = 星期三。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -496,7 +536,8 @@
       "difficulty": "medium",
       "answer": "purple",
       "explanation": "purple = 紫色。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -506,7 +547,8 @@
       "difficulty": "medium",
       "answer": "yellow",
       "explanation": "太阳黄色且圆。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -516,7 +558,8 @@
       "difficulty": "medium",
       "answer": "circle",
       "explanation": "circle = 圆形。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -532,7 +575,8 @@
       ],
       "answer": "D",
       "explanation": "brown = 棕色。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -542,7 +586,8 @@
       "difficulty": "hard",
       "answer": "triangle",
       "explanation": "triangle = 三角形，3 条边。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "词汇积累（小学核心1500词）",
@@ -552,7 +597,8 @@
       "difficulty": "hard",
       "answer": "orange",
       "explanation": "红+黄=橙色 orange。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -568,7 +614,8 @@
       ],
       "answer": "C",
       "explanation": "主语复数用 are。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -584,7 +631,8 @@
       ],
       "answer": "A",
       "explanation": "There be 句型就近原则，a book 单数。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -600,7 +648,8 @@
       ],
       "answer": "B",
       "explanation": "I am；she is。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -610,7 +659,8 @@
       "difficulty": "medium",
       "answer": "are",
       "explanation": "cats 复数用 are。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -626,7 +676,8 @@
       ],
       "answer": "B",
       "explanation": "be 动词后加 not。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -642,7 +693,8 @@
       ],
       "answer": "C",
       "explanation": "复数主语用 are。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -659,7 +711,8 @@
       "answer": "B",
       "explanation": "录音中说 They are happy，主语 they 复数。",
       "audio_text": "They are happy in the park",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -675,7 +728,8 @@
       ],
       "answer": "C",
       "explanation": "主语 you 用 are，疑问句 Are you...。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -685,7 +739,8 @@
       "difficulty": "medium",
       "answer": "goes",
       "explanation": "第三人称单数 + every day → goes。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -695,7 +750,8 @@
       "difficulty": "medium",
       "answer": "watches",
       "explanation": "father 第三人称单数，watches。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -705,7 +761,8 @@
       "difficulty": "medium",
       "answer": "studies",
       "explanation": "辅音字母 + y 结尾，变 y 为 i 加 es。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -715,7 +772,8 @@
       "difficulty": "medium",
       "answer": "has",
       "explanation": "have 特殊变化为 has。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -725,7 +783,8 @@
       "difficulty": "hard",
       "answer": "does",
       "explanation": "主语 Tom 第三人称单数，助动词用 does。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -735,7 +794,8 @@
       "difficulty": "easy",
       "answer": "read",
       "explanation": "主语 I，动词原形 read。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -752,7 +812,8 @@
       "answer": "B",
       "explanation": "录音中 He plays football，第三人称单数。",
       "audio_text": "He plays football every Saturday",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -762,7 +823,8 @@
       "difficulty": "medium",
       "answer": "like",
       "explanation": "复数主语用动词原形 like。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -778,7 +840,8 @@
       ],
       "answer": "C",
       "explanation": "Look! 提示进行时；boys 复数 are playing。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -788,7 +851,8 @@
       "difficulty": "medium",
       "answer": "running",
       "explanation": "重读闭音节双写 n + ing。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -798,7 +862,8 @@
       "difficulty": "medium",
       "answer": "swimming",
       "explanation": "重读闭音节双写 m + ing。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -814,7 +879,8 @@
       ],
       "answer": "B",
       "explanation": "now 提示进行时，she is reading。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -830,7 +896,8 @@
       ],
       "answer": "D",
       "explanation": "now 进行时疑问句：Are you doing。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -840,7 +907,8 @@
       "difficulty": "medium",
       "answer": "writing",
       "explanation": "去 e 加 ing。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -857,7 +925,8 @@
       "answer": "A",
       "explanation": "录音明确说 reading a book。",
       "audio_text": "What is Lily doing? She is reading a book in her room",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -873,7 +942,8 @@
       ],
       "answer": "C",
       "explanation": "every evening 一般现在时；now 现在进行时。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -889,7 +959,8 @@
       ],
       "answer": "B",
       "explanation": "yesterday 过去时，I 用 was。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -905,7 +976,8 @@
       ],
       "answer": "D",
       "explanation": "we 复数过去 were。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -915,7 +987,8 @@
       "difficulty": "medium",
       "answer": "was",
       "explanation": "he + was。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -931,7 +1004,8 @@
       ],
       "answer": "C",
       "explanation": "many people 复数 + 过去 → were。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -947,7 +1021,8 @@
       ],
       "answer": "C",
       "explanation": "主语 you 过去时疑问句 Were。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -957,7 +1032,8 @@
       "difficulty": "medium",
       "answer": "were",
       "explanation": "they 复数过去 were。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -973,7 +1049,8 @@
       ],
       "answer": "A",
       "explanation": "ten years ago 过去；she 单数 was。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -990,7 +1067,8 @@
       "answer": "B",
       "explanation": "录音中 was 表示过去。",
       "audio_text": "It was sunny yesterday",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -1000,7 +1078,8 @@
       "difficulty": "medium",
       "answer": "went",
       "explanation": "go 的过去式 went。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -1010,7 +1089,8 @@
       "difficulty": "medium",
       "answer": "saw",
       "explanation": "see 的过去式 saw。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -1020,7 +1100,8 @@
       "difficulty": "medium",
       "answer": "bought",
       "explanation": "buy 的过去式 bought。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -1030,7 +1111,8 @@
       "difficulty": "medium",
       "answer": "did",
       "explanation": "yesterday 过去；do → did。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -1040,7 +1122,8 @@
       "difficulty": "hard",
       "answer": "go",
       "explanation": "Did 之后用动词原形 go。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -1050,7 +1133,8 @@
       "difficulty": "medium",
       "answer": "had",
       "explanation": "have 的过去式 had。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -1066,7 +1150,8 @@
       ],
       "answer": "B",
       "explanation": "两个动作都过去；watched, went。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "语法时态综合",
@@ -1083,7 +1168,8 @@
       "answer": "C",
       "explanation": "录音中 visited my grandma。",
       "audio_text": "Last weekend I visited my grandma in the village",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1099,7 +1185,8 @@
       ],
       "answer": "A",
       "explanation": "陈述句基本语序：主+谓+宾。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1115,7 +1202,8 @@
       ],
       "answer": "C",
       "explanation": "now 配进行时；C 语法正确。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1125,7 +1213,8 @@
       "difficulty": "medium",
       "answer": "You",
       "explanation": "疑问句变陈述：Are you → You are，首词 You。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1141,7 +1230,8 @@
       ],
       "answer": "B",
       "explanation": "频度副词 always 位于 be 动词后。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1157,7 +1247,8 @@
       ],
       "answer": "B",
       "explanation": "频度副词 often 位于实义动词前。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1173,7 +1264,8 @@
       ],
       "answer": "D",
       "explanation": "主+系+表，The weather is sunny today。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1190,7 +1282,8 @@
       "answer": "B",
       "explanation": "录音说 oranges。",
       "audio_text": "She likes oranges very much",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1206,7 +1299,8 @@
       ],
       "answer": "A",
       "explanation": "英语基本语序。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1216,7 +1310,8 @@
       "difficulty": "medium",
       "answer": "Does",
       "explanation": "第三人称单数助动词 Does + 原形。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1226,7 +1321,8 @@
       "difficulty": "medium",
       "answer": "Are",
       "explanation": "陈述句变疑问句把 are 提前 → Are they。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1242,7 +1338,8 @@
       ],
       "answer": "A",
       "explanation": "be 动词疑问句 Yes/No 回答用相应的 be。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1258,7 +1355,8 @@
       ],
       "answer": "A",
       "explanation": "Did + 原形。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1275,7 +1373,8 @@
       "answer": "B",
       "explanation": "问句 Do you like? → 答 Yes, I do。",
       "audio_text": "Do you like ice cream",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1291,7 +1390,8 @@
       ],
       "answer": "B",
       "explanation": "now 进行时单数主语用 Is。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1307,7 +1407,8 @@
       ],
       "answer": "B",
       "explanation": "主语 I 配 was，否定 was not（题目要求不缩写）。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1317,7 +1418,8 @@
       "difficulty": "medium",
       "answer": "Can",
       "explanation": "情态动词疑问句把 can 提前。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1333,7 +1435,8 @@
       ],
       "answer": "A",
       "explanation": "问名字用 What。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1349,7 +1452,8 @@
       ],
       "answer": "C",
       "explanation": "问年龄用 How old。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1365,7 +1469,8 @@
       ],
       "answer": "D",
       "explanation": "问方式用 How。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1381,7 +1486,8 @@
       ],
       "answer": "B",
       "explanation": "问地点用 Where。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1397,7 +1503,8 @@
       ],
       "answer": "C",
       "explanation": "问日期用 When。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1414,7 +1521,8 @@
       "answer": "C",
       "explanation": "问 How old → 回答年龄。",
       "audio_text": "How old are you, my friend",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1430,7 +1538,8 @@
       ],
       "answer": "A",
       "explanation": "对宾语 a book 提问用 What。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1446,7 +1555,8 @@
       ],
       "answer": "D",
       "explanation": "问原因用 Why，回答 Because。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1462,7 +1572,8 @@
       ],
       "answer": "B",
       "explanation": "第三人称单数否定 doesn't + 原形。注此为整体短语；选项整体作答。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1478,7 +1589,8 @@
       ],
       "answer": "C",
       "explanation": "实义动词否定用 do not + 原形。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1494,7 +1606,8 @@
       ],
       "answer": "B",
       "explanation": "be 动词后加 not。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1510,7 +1623,8 @@
       ],
       "answer": "C",
       "explanation": "过去时否定 did not + 原形。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1526,7 +1640,8 @@
       ],
       "answer": "B",
       "explanation": "some 在否定句变 any，be 动词后加 not。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1542,7 +1657,8 @@
       ],
       "answer": "C",
       "explanation": "情态动词 can 否定 cannot/can not。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1559,7 +1675,8 @@
       "answer": "B",
       "explanation": "录音 I do not like… 是否定句。",
       "audio_text": "I do not like cold weather",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1575,7 +1692,8 @@
       ],
       "answer": "A",
       "explanation": "进行时否定 be + not + V-ing。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1585,7 +1703,8 @@
       "difficulty": "easy",
       "answer": "is",
       "explanation": "单数 a book 用 is。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1595,7 +1714,8 @@
       "difficulty": "medium",
       "answer": "are",
       "explanation": "many students 复数 are。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1605,7 +1725,8 @@
       "difficulty": "medium",
       "answer": "is",
       "explanation": "milk 不可数，is。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1615,7 +1736,8 @@
       "difficulty": "hard",
       "answer": "is",
       "explanation": "就近原则 a pen 单数 → is。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1631,7 +1753,8 @@
       ],
       "answer": "B",
       "explanation": "some 在疑问句变 any；apples 复数 are。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1641,7 +1764,8 @@
       "difficulty": "medium",
       "answer": "was",
       "explanation": "yesterday 过去；party 单数 was。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1658,7 +1782,8 @@
       "answer": "C",
       "explanation": "There are three cats。",
       "audio_text": "There are three cats under the tree",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "句型与转换",
@@ -1668,7 +1793,8 @@
       "difficulty": "medium",
       "answer": "is",
       "explanation": "water 不可数 is；no = not any。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -1684,7 +1810,8 @@
       ],
       "answer": "A",
       "explanation": "同样的问候语回应。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -1700,7 +1827,8 @@
       ],
       "answer": "B",
       "explanation": "问候健康，常用 I'm fine, thank you。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -1717,7 +1845,8 @@
       "answer": "C",
       "explanation": "录音 Good afternoon 表明下午。",
       "audio_text": "A: Good afternoon, Lily. B: Good afternoon, Tom",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -1734,7 +1863,8 @@
       "answer": "D",
       "explanation": "说 Good night 表示要睡觉。",
       "audio_text": "A: It's late. Good night, Mum. B: Good night, dear. Sweet dreams",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -1750,7 +1880,8 @@
       ],
       "answer": "B",
       "explanation": "告别用 Bye/Goodbye。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -1767,7 +1898,8 @@
       "answer": "B",
       "explanation": "互相喊名字、打招呼上学，是同学。",
       "audio_text": "A: Hi, Tom! B: Hi, Lily! Are you ready for class? A: Yes, let's go",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -1783,7 +1915,8 @@
       ],
       "answer": "C",
       "explanation": "See you 的回应。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -1800,7 +1933,8 @@
       "answer": "A",
       "explanation": "Good morning 上午。",
       "audio_text": "A: Good morning, Mr. Black. B: Good morning, Lily. Have a nice day",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -1817,7 +1951,8 @@
       "answer": "B",
       "explanation": "Nice to meet you 的标准回应。",
       "audio_text": "Hello, this is my new friend, Anna. Nice to meet you",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -1833,7 +1968,8 @@
       ],
       "answer": "A",
       "explanation": "标准告别 + 明天 tomorrow。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -1849,7 +1985,8 @@
       ],
       "answer": "C",
       "explanation": "问名字回答 My name is...。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -1865,7 +2002,8 @@
       ],
       "answer": "B",
       "explanation": "问职业用 What's...do? 这里 What is = What's。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -1882,7 +2020,8 @@
       "answer": "B",
       "explanation": "录音说 I'm eleven。",
       "audio_text": "A: How old are you, Tom? B: I'm eleven years old",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -1899,7 +2038,8 @@
       "answer": "C",
       "explanation": "录音 I'm from China。",
       "audio_text": "A: Where are you from, Lily? B: I'm from China. I live in Beijing",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -1915,7 +2055,8 @@
       ],
       "answer": "C",
       "explanation": "问出身地用 from。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -1932,7 +2073,8 @@
       "answer": "A",
       "explanation": "录音 He likes playing football。",
       "audio_text": "A: What does Tom like? B: He likes playing football very much",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -1948,7 +2090,8 @@
       ],
       "answer": "A",
       "explanation": "问『是谁』用 Who。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -1965,7 +2108,8 @@
       "answer": "B",
       "explanation": "录音 I'm at home。",
       "audio_text": "A: Hi Mum, where are you? B: I'm at home. Where are you, Tom? A: I'm in the park",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -1982,7 +2126,8 @@
       "answer": "C",
       "explanation": "录音 our new classmate Anna。",
       "audio_text": "A: Look! Who is that girl? B: She is our new classmate, Anna. She is from England",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -1998,7 +2143,8 @@
       ],
       "answer": "B",
       "explanation": "介绍他人用 This is...。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -2014,7 +2160,8 @@
       ],
       "answer": "B",
       "explanation": "商店常用，回 Yes, please。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -2031,7 +2178,8 @@
       "answer": "A",
       "explanation": "录音 a T-shirt。",
       "audio_text": "A: Can I help you? B: Yes, I want a T-shirt for my son",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -2047,7 +2195,8 @@
       ],
       "answer": "B",
       "explanation": "礼貌请求 Could I...。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -2064,7 +2213,8 @@
       "answer": "C",
       "explanation": "录音中 carry the books。",
       "audio_text": "A: Excuse me, could you help me carry these books? B: Sure, no problem",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -2080,7 +2230,8 @@
       ],
       "answer": "C",
       "explanation": "致谢的回应。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -2097,7 +2248,8 @@
       "answer": "B",
       "explanation": "录音 my schoolbag。",
       "audio_text": "A: Mum, I can't find my schoolbag. Can you help me? B: Sure, let's look for it together",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -2113,7 +2265,8 @@
       ],
       "answer": "C",
       "explanation": "接受邀请 Yes, please。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -2130,7 +2283,8 @@
       "answer": "B",
       "explanation": "录音 No, thanks。",
       "audio_text": "A: Would you like some coffee? B: No, thanks. I don't drink coffee",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -2146,7 +2300,8 @@
       ],
       "answer": "A",
       "explanation": "请求语句 Pass me + sth, please。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -2163,7 +2318,8 @@
       "answer": "D",
       "explanation": "录音 box。",
       "audio_text": "A: Can you help me move this box? It's heavy. B: Of course, let me help you",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -2179,7 +2335,8 @@
       ],
       "answer": "B",
       "explanation": "助动词 do 的简短回答。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -2196,7 +2353,8 @@
       "answer": "C",
       "explanation": "录音 English。",
       "audio_text": "A: What's your favourite subject, Lily? B: My favourite subject is English. I love it",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -2212,7 +2370,8 @@
       ],
       "answer": "B",
       "explanation": "favourite + 名词。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -2229,7 +2388,8 @@
       "answer": "A",
       "explanation": "录音 hate spiders。",
       "audio_text": "A: Do you like spiders? B: No, I hate them. I'm afraid of spiders",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -2245,7 +2405,8 @@
       ],
       "answer": "B",
       "explanation": "问爱好回答 I like + V-ing。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -2262,7 +2423,8 @@
       "answer": "B",
       "explanation": "录音 swimming。",
       "audio_text": "Hi, I'm Tom. I love many sports, but my favourite is swimming. I swim every weekend",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -2278,7 +2440,8 @@
       ],
       "answer": "B",
       "explanation": "prefer A to B。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -2295,7 +2458,8 @@
       "answer": "A",
       "explanation": "录音 cartoon。",
       "audio_text": "A: What movie do you want to watch tonight? B: I want to watch a cartoon. I love cartoons",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -2311,7 +2475,8 @@
       ],
       "answer": "B",
       "explanation": "二选一 or。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "日常交际情境",
@@ -2328,7 +2493,8 @@
       "answer": "C",
       "explanation": "录音 my brother's favourite, my younger brother。",
       "audio_text": "A: Wow, fried chicken! B: Yes, it's your younger brother's favourite. He'll be happy tonight",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2344,7 +2510,8 @@
       ],
       "answer": "C",
       "explanation": "原文 12-year-old。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2360,7 +2527,8 @@
       ],
       "answer": "B",
       "explanation": "原文 bread and milk。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2376,7 +2544,8 @@
       ],
       "answer": "B",
       "explanation": "原文 by bike。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2392,7 +2561,8 @@
       ],
       "answer": "C",
       "explanation": "原文 likes reading books and helping her mum with the housework。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2408,7 +2578,8 @@
       ],
       "answer": "B",
       "explanation": "原文 It was Sunday yesterday。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2424,7 +2595,8 @@
       ],
       "answer": "A",
       "explanation": "原文 The weather was sunny。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2440,7 +2612,8 @@
       ],
       "answer": "C",
       "explanation": "原文 flew a kite with his father。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2456,7 +2629,8 @@
       ],
       "answer": "D",
       "explanation": "原文 Amy ate a hot dog。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2472,7 +2646,8 @@
       ],
       "answer": "B",
       "explanation": "原文 tired but happy。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2488,7 +2663,8 @@
       ],
       "answer": "C",
       "explanation": "原文 from Australia。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2504,7 +2680,8 @@
       ],
       "answer": "B",
       "explanation": "原文 big blue eyes。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2520,7 +2697,8 @@
       ],
       "answer": "D",
       "explanation": "原文 good at swimming。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2536,7 +2714,8 @@
       ],
       "answer": "A",
       "explanation": "原文 go to the library together。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2553,7 +2732,8 @@
       "answer": "B",
       "explanation": "录音首句 My name is Jack。",
       "audio_text": "My name is Jack. I am ten years old. I am from London. I have a sister. Her name is Sue. We are very happy",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2570,7 +2750,8 @@
       "answer": "A",
       "explanation": "录音 ten years old。",
       "audio_text": "My name is Jack. I am ten years old. I am from London. I have a sister. Her name is Sue. We are very happy",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2587,7 +2768,8 @@
       "answer": "C",
       "explanation": "录音 from London。",
       "audio_text": "My name is Jack. I am ten years old. I am from London. I have a sister. Her name is Sue. We are very happy",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2604,7 +2786,8 @@
       "answer": "C",
       "explanation": "面条、橙汁、蛋糕共 3 样。",
       "audio_text": "Waiter: Good evening. May I take your order? Customer: Yes, I'd like a bowl of noodles and a glass of orange juice, please. Waiter: Anything else? Customer: A piece of cake, please. Waiter: OK, please wait a moment",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2621,7 +2804,8 @@
       "answer": "D",
       "explanation": "对话中没有点 coffee。",
       "audio_text": "Waiter: Good evening. May I take your order? Customer: Yes, I'd like a bowl of noodles and a glass of orange juice, please. Waiter: Anything else? Customer: A piece of cake, please. Waiter: OK, please wait a moment",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2638,7 +2822,8 @@
       "answer": "B",
       "explanation": "服务员 + 点单，是餐厅。",
       "audio_text": "Waiter: Good evening. May I take your order? Customer: Yes, I'd like a bowl of noodles and a glass of orange juice, please. Waiter: Anything else? Customer: A piece of cake, please. Waiter: OK, please wait a moment",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2655,7 +2840,8 @@
       "answer": "A",
       "explanation": "Monday sunny and hot。",
       "audio_text": "Hello, everyone. This is the weather report for this week. On Monday, it will be sunny and hot. On Tuesday and Wednesday, it will rain. On Thursday, it will be cloudy. On Friday, the weather will be sunny again. Have a nice week",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2672,7 +2858,8 @@
       "answer": "B",
       "explanation": "Tuesday and Wednesday it will rain。",
       "audio_text": "Hello, everyone. This is the weather report for this week. On Monday, it will be sunny and hot. On Tuesday and Wednesday, it will rain. On Thursday, it will be cloudy. On Friday, the weather will be sunny again. Have a nice week",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2689,7 +2876,8 @@
       "answer": "C",
       "explanation": "Thursday cloudy。",
       "audio_text": "Hello, everyone. This is the weather report for this week. On Monday, it will be sunny and hot. On Tuesday and Wednesday, it will rain. On Thursday, it will be cloudy. On Friday, the weather will be sunny again. Have a nice week",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2706,7 +2894,8 @@
       "answer": "B",
       "explanation": "问 where is the bookshop。",
       "audio_text": "Excuse me, where is the bookshop? Go straight along this street, then turn left at the second crossing. The bookshop is on your right, next to a big supermarket. It's about five minutes' walk. You can't miss it",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2723,7 +2912,8 @@
       "answer": "A",
       "explanation": "turn left at the second crossing。",
       "audio_text": "Excuse me, where is the bookshop? Go straight along this street, then turn left at the second crossing. The bookshop is on your right, next to a big supermarket. It's about five minutes' walk. You can't miss it",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2740,7 +2930,8 @@
       "answer": "C",
       "explanation": "five minutes' walk。",
       "audio_text": "Excuse me, where is the bookshop? Go straight along this street, then turn left at the second crossing. The bookshop is on your right, next to a big supermarket. It's about five minutes' walk. You can't miss it",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2757,7 +2948,8 @@
       "answer": "B",
       "explanation": "50 yuan。",
       "audio_text": "A: Excuse me, how much is this T-shirt? B: It's 50 yuan. A: Do you have a smaller size? B: Yes, here you are. A: I'll take it. Here is 100 yuan. B: Thank you. Here is your change, 50 yuan",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2774,7 +2966,8 @@
       "answer": "C",
       "explanation": "Here is 100 yuan。",
       "audio_text": "A: Excuse me, how much is this T-shirt? B: It's 50 yuan. A: Do you have a smaller size? B: Yes, here you are. A: I'll take it. Here is 100 yuan. B: Thank you. Here is your change, 50 yuan",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2791,7 +2984,8 @@
       "answer": "B",
       "explanation": "change 50 yuan。",
       "audio_text": "A: Excuse me, how much is this T-shirt? B: It's 50 yuan. A: Do you have a smaller size? B: Yes, here you are. A: I'll take it. Here is 100 yuan. B: Thank you. Here is your change, 50 yuan",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2807,7 +3001,8 @@
       ],
       "answer": "B",
       "explanation": "第三人称单数 teaches。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2823,7 +3018,8 @@
       ],
       "answer": "B",
       "explanation": "自我介绍→打招呼→问年龄→回答。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2839,7 +3035,8 @@
       ],
       "answer": "B",
       "explanation": "原文 The weather is hot 与之相反。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2855,7 +3052,8 @@
       ],
       "answer": "B",
       "explanation": "if 引导条件状语从句，主将从现，rains。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2871,7 +3069,8 @@
       ],
       "answer": "A",
       "explanation": "it 指上文 the book。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     },
     {
       "chapter": "阅读与听力理解",
@@ -2887,7 +3086,16 @@
       ],
       "answer": "B",
       "explanation": "主题是春天。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_english_r2_deprecated"
     }
-  ]
+  ],
+  "_quality_meta": {
+    "deprecated": true,
+    "deprecated_version": "V3.8.3",
+    "deprecated_at": "2026-05-07",
+    "deprecated_reason": "英语切剑桥 PET/FCE/CAE 体系，外研社老英语 chapter 体系不再使用",
+    "deprecated_commit": "99ccb92",
+    "note": "抽题已通过 _activeSourceFilter 自动排除；保留作低水平兜底参考，但不应作锚点/训练样本"
+  }
 }

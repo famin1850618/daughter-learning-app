@@ -225,7 +225,103 @@
 
 ---
 
+## 7. Round 源头权威性（V3.12 D1 锚点审核期间立项）
+
+**Why：** Famin 2026-05-08 审英语锚点时指出："PET R1 200 题应该都是 R1，AI 生成是先置难度再生成，而不是生成完了再去分难度。" 暴露 D1 agent 把源头 R1 题主观升档作 R2/R3/R4 锚点的错误流程。
+
+### 两类批次的 round 性质不同
+
+| 批次类型 | round 字段性质 | 流程地位 |
+|----------|--------------|---------|
+| **AI 生成批次**（cron 出题）| **源头权威**：生成时 prompt 指定 round=N，所有题统一标 N（间接 difficulty 字段在 N 内分 easy/medium/hard 微调）| 不可改写 |
+| **真题入库批次** | **入库 agent 主观打**：扫真题时按 4 维算法 / rubric 对每道题分别打 round，同卷 mixed | D1/D2/校准的对象 |
+
+### 纪律
+
+1. **AI 生成批次的 round 锁死**：
+   - source 命名带 round（如 `batch_2026_05_07_g6_math_r2`）= round=2 是源头属性
+   - 任何 agent / 锚点 / reviewer **不得修改**这类批次中题目的 round 字段
+   - 内部 difficulty 梯度（easy/medium/hard）只是 round 内部分布微调
+
+2. **真题入库批次的 round 是 D1/D2 校准目标**：
+   - 入库 agent 凭 4 维算法 + rubric 打 round，可能偏
+   - D1（锚点题）+ D2（reviewer 重审 1925 道）+ D3（Famin 实测反馈）+ D4（学情反推）四源校准
+   - 校准后 batch JSON `round` 字段更新 + 备份 `_original_agent_round`
+
+3. **锚点（D1）来源分流原则**：
+   - **R1 锚点**必须取自源头 R1 批次（AI 生成 r1 / 真题中已校准 R1）
+   - **R2 锚点**必须取自源头 R2 批次（AI 生成 r2 / 真题中已校准 R2）
+   - **R3 锚点**同上
+   - **R4 锚点**同上
+   - **不得跨档主观升降** —— 拿源头 R1 题升档作 R2 锚点 = 流程错误
+
+4. **数据缺口处理**：
+   - 缺某档真题数据时（如英语 R2/R3/R4 等 FCE/CAE 入库），**冻结该档锚点**而不是强行造伪锚点
+   - 锚点 JSON 中标 `_frozen: true` + 缺口原因
+   - difficulty skill 训练时只用源头权威的档作训练样本，缺档走 4 维算法 + 后期校准
+
+### 修锚点 vs 修 skill 的本质
+
+> Famin 2026-05-08 反馈："修锚点意味着出题难度控制不准，主要对应的就是修改 difficulty skill，修正未来出题的难度控制。"
+
+- **锚点**只是 difficulty skill 的训练样本之一
+- 真正的难度控制能力在 **difficulty skill 的 evaluate.md 算法 + rubric.md 活文档 + calibration_log 反馈循环**
+- 锚点错了应**修 skill**（更新 rubric / 调 4 维权重 / 加新维度），不是反向修锚点的 round 让锚点适配 skill
+
+---
+
+## 8. Batch JSON 与 DB Source 必须同步（V3.12 D1 锚点审核期间立项）
+
+**Why：** Famin 审英语锚点时发现 D1 agent 选了 6 道来自 `batch_2026_05_07_g6_english_r3.json`（V3.7 老外研社 cron），但这卷在 V3.8.3 已经在 DB 迁移层标 `_deprecated`，agent 读 batch JSON 文件时看不到废弃标记，错误地拿来当锚点。
+
+### 根因
+
+V3.8.3 / V3.10 deprecate 时只动 DB 迁移代码，没动 batch JSON 文件本身的 source 字段：
+```dart
+// database_helper.dart v13/v14 仅 UPDATE DB
+UPDATE questions SET source = source || '_deprecated' WHERE ...
+```
+agent 读 `assets/data/batches/*.json` 看到的 source 仍是不带 `_deprecated` 的版本。
+
+### 纪律
+
+1. **DB source 与 batch JSON source 必须双向同步**：
+   - 任何 deprecate 操作必须同时改：
+     - DB 迁移层（`database_helper.dart` 加版本迁移）
+     - batch JSON 文件 `source` 字段（双写 `assets/data/batches/` + `question_bank/`）
+     - batch JSON 顶层 `_quality_meta` 段（详见下方）
+
+2. **batch JSON 顶层 `_quality_meta` 段**：
+   ```json
+   {
+     "source": "batch_xxx_deprecated",
+     "_quality_meta": {
+       "deprecated": true,
+       "deprecated_version": "V3.8.3",
+       "deprecated_at": "2026-05-07",
+       "deprecated_reason": "...",
+       "deprecated_commit": "99ccb92",
+       "note": "抽题已通过 _activeSourceFilter 自动排除；保留作低水平兜底参考，不应作锚点/训练样本"
+     }
+   }
+   ```
+   类似的 `_quality_meta.risk_level / needs_review` 见 §6（OCR 抢救路径）。
+
+3. **agent 读 batch 前必读 `_quality_meta`**：
+   - source 后缀含 `_deprecated` / `_unverified` / `_subj_held` / `_translated_en` → 自动跳过
+   - `_quality_meta.deprecated == true` → 不作锚点 / 训练样本
+   - `_quality_meta.risk_level == "L3_multimodal_ocr"` → 加 [审] 标
+   - 任何 D1 / D2 / O10 / B agent prompt 必须包含此前置检查
+
+4. **历史已 deprecated 但 batch JSON 未同步的卷**（V3.12 修复）：
+   - V3.8.3：4 卷英语（外研社老体系）
+   - V3.10：8 卷语数（cron AI 出题）
+   - 共 12 卷，V3.12 commit 同步动 batch JSON 加 `_deprecated` 后缀 + `_quality_meta`
+
+---
+
 **修订记录**
 
 - 2026-05-08：V3.12 立项，从 Famin V3.11.0 实测反馈整理首版（§1-§5）
 - 2026-05-08：D1 锚点审核期间发现幻觉编造伪题，加 §6 入库源头可信度纪律
+- 2026-05-08：D1 英语锚点审核期间发现源头 round 改写错误 + DB/JSON source 不同步，加 §7 Round 源头权威 + §8 Batch JSON 与 DB Source 同步

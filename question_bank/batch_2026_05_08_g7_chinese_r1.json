@@ -1,5 +1,5 @@
 {
-  "source": "batch_2026_05_08_g7_chinese_r1",
+  "source": "batch_2026_05_08_g7_chinese_r1_deprecated",
   "subject": "chinese",
   "grade": 7,
   "knowledge_points_added": [],
@@ -18,7 +18,8 @@
         "D. 着（zhuó）急 / 穿着（zhe）"
       ],
       "answer": "C",
-      "explanation": "\"澄清\"的\"澄\"读chéng，\"澄澈\"读chéng，读音相同。其他选项字音有区别。"
+      "explanation": "\"澄清\"的\"澄\"读chéng，\"澄澈\"读chéng，读音相同。其他选项字音有区别。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第一单元：四季美景",
@@ -34,7 +35,8 @@
         "D. liù"
       ],
       "answer": "B",
-      "explanation": "\"绿\"在此活用为动词，读lǜ，意为使……变绿。"
+      "explanation": "\"绿\"在此活用为动词，读lǜ，意为使……变绿。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第一单元：四季美景",
@@ -44,7 +46,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "比喻",
-      "explanation": "将月亮（本体）比作小船（喻体），这是比喻修辞。"
+      "explanation": "将月亮（本体）比作小船（喻体），这是比喻修辞。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第一单元：四季美景",
@@ -60,7 +63,8 @@
         "D. 这道题真难"
       ],
       "answer": "B",
-      "explanation": "拟人：赋予非人事物人的动作或情感。\"花儿在微笑\"赋予花朵笑的能力。"
+      "explanation": "拟人：赋予非人事物人的动作或情感。\"花儿在微笑\"赋予花朵笑的能力。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第一单元：四季美景",
@@ -76,7 +80,8 @@
         "D. 清脆 碧绿 翁嗡"
       ],
       "answer": "A",
-      "explanation": "\"清脆\"\"碧绿\"\"嗡嗡\"均正确；B中\"草书\"可能有别字，C/D有错字。"
+      "explanation": "\"清脆\"\"碧绿\"\"嗡嗡\"均正确；B中\"草书\"可能有别字，C/D有错字。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第一单元：四季美景",
@@ -86,7 +91,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "本体",
-      "explanation": "比喻三要素：本体（被比喻的事物）、喻体（用来比喻的事物）、比喻词。"
+      "explanation": "比喻三要素：本体（被比喻的事物）、喻体（用来比喻的事物）、比喻词。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第一单元：四季美景",
@@ -102,7 +108,8 @@
         "D. 来了"
       ],
       "answer": "A",
-      "explanation": "主语是句子的陈述对象，此处陈述\"春天\"发生的事。"
+      "explanation": "主语是句子的陈述对象，此处陈述\"春天\"发生的事。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第一单元：四季美景",
@@ -118,7 +125,8 @@
         "D. 只写景，不抒情"
       ],
       "answer": "B",
-      "explanation": "散文特点：形散神聚（题材广泛，但有中心主旨）。"
+      "explanation": "散文特点：形散神聚（题材广泛，但有中心主旨）。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第一单元：四季美景",
@@ -134,7 +142,8 @@
         "D. 两者都是本体"
       ],
       "answer": "A",
-      "explanation": "本体：云；喻体：棉花糖；比喻词：像。"
+      "explanation": "本体：云；喻体：棉花糖；比喻词：像。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第一单元：四季美景",
@@ -150,7 +159,8 @@
         "D. 说明事物特征"
       ],
       "answer": "C",
-      "explanation": "景物描写：渲染气氛、烘托人物心情、推动故事发展等。"
+      "explanation": "景物描写：渲染气氛、烘托人物心情、推动故事发展等。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第一单元：四季美景",
@@ -160,7 +170,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "拟人",
-      "explanation": "太阳\"探出头来\"是人的动作，赋予太阳人的行为，是拟人。"
+      "explanation": "太阳\"探出头来\"是人的动作，赋予太阳人的行为，是拟人。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第一单元：四季美景",
@@ -176,7 +187,8 @@
         "D. hào / hào"
       ],
       "answer": "C",
-      "explanation": "\"好好学习\"的\"好\"读hǎo（副词义）；\"好看\"的\"好\"也读hǎo。实为同音。好（hào）是爱好义。"
+      "explanation": "\"好好学习\"的\"好\"读hǎo（副词义）；\"好看\"的\"好\"也读hǎo。实为同音。好（hào）是爱好义。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第一单元：四季美景",
@@ -192,7 +204,8 @@
         "D. 说明事物逻辑"
       ],
       "answer": "B",
-      "explanation": "排比：增强语势，抒情强烈，表达充分有力。"
+      "explanation": "排比：增强语势，抒情强烈，表达充分有力。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第一单元：四季美景",
@@ -208,7 +221,8 @@
         "D. 宾语"
       ],
       "answer": "C",
-      "explanation": "\"认真\"修饰动词\"听课\"，是状语（副词性修饰语）。"
+      "explanation": "\"认真\"修饰动词\"听课\"，是状语（副词性修饰语）。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第一单元：四季美景",
@@ -218,7 +232,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "夸张",
-      "explanation": "夸大事实以强调力气之大，是夸张修辞。"
+      "explanation": "夸大事实以强调力气之大，是夸张修辞。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第一单元：四季美景",
@@ -234,7 +249,8 @@
         "D. 夸张"
       ],
       "answer": "B",
-      "explanation": "三个结构相同的句子并列，是排比修辞；同时也有对比意味。"
+      "explanation": "三个结构相同的句子并列，是排比修辞；同时也有对比意味。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第一单元：四季美景",
@@ -250,7 +266,8 @@
         "D. 以说明为主，介绍特征"
       ],
       "answer": "A",
-      "explanation": "《春》综合运用了比喻、拟人等多种修辞，以描写为主，抒发对春天的热爱之情。"
+      "explanation": "《春》综合运用了比喻、拟人等多种修辞，以描写为主，抒发对春天的热爱之情。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第二单元：至爱亲情",
@@ -266,7 +283,8 @@
         "D. 中心思想"
       ],
       "answer": "D",
-      "explanation": "记叙文六要素：时间、地点、人物、起因、经过、结果。\"中心思想\"不是六要素。"
+      "explanation": "记叙文六要素：时间、地点、人物、起因、经过、结果。\"中心思想\"不是六要素。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第二单元：至爱亲情",
@@ -282,7 +300,8 @@
         "D. 在商场的背影"
       ],
       "answer": "A",
-      "explanation": "父亲越过月台，费力爬坡买橘子的背影，表现了深沉的父爱。"
+      "explanation": "父亲越过月台，费力爬坡买橘子的背影，表现了深沉的父爱。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第二单元：至爱亲情",
@@ -298,7 +317,8 @@
         "D. 近代"
       ],
       "answer": "B",
-      "explanation": "朱自清（1898-1948），中国现代著名散文家、诗人。"
+      "explanation": "朱自清（1898-1948），中国现代著名散文家、诗人。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第二单元：至爱亲情",
@@ -308,7 +328,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "朱自清",
-      "explanation": "朱自清是中国现代文学的重要散文家，代表作《背影》《荷塘月色》。"
+      "explanation": "朱自清是中国现代文学的重要散文家，代表作《背影》《荷塘月色》。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第二单元：至爱亲情",
@@ -324,7 +345,8 @@
         "D. 填充文章内容"
       ],
       "answer": "C",
-      "explanation": "人物外貌描写：揭示人物性格、身份、心理状态等，为刻画人物服务。"
+      "explanation": "人物外貌描写：揭示人物性格、身份、心理状态等，为刻画人物服务。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第二单元：至爱亲情",
@@ -340,7 +362,8 @@
         "D. 只描写自然景物"
       ],
       "answer": "B",
-      "explanation": "细节描写：对人物、环境中细小而典型的特征进行精确、细腻的描写。"
+      "explanation": "细节描写：对人物、环境中细小而典型的特征进行精确、细腻的描写。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第二单元：至爱亲情",
@@ -356,7 +379,8 @@
         "D. 多线索并行叙述"
       ],
       "answer": "A",
-      "explanation": "倒叙：先写事情结果或某一突出情节，再按时间顺序叙述。制造悬念，吸引读者。"
+      "explanation": "倒叙：先写事情结果或某一突出情节，再按时间顺序叙述。制造悬念，吸引读者。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第二单元：至爱亲情",
@@ -372,7 +396,8 @@
         "D. 分析人物特点"
       ],
       "answer": "B",
-      "explanation": "开头段落作用：开门见山点明主题，或设置悬念，引出下文，吸引读者。"
+      "explanation": "开头段落作用：开门见山点明主题，或设置悬念，引出下文，吸引读者。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第二单元：至爱亲情",
@@ -382,7 +407,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "心理",
-      "explanation": "人物描写四要素：外貌（肖像）描写、动作描写、语言描写、心理描写。"
+      "explanation": "人物描写四要素：外貌（肖像）描写、动作描写、语言描写、心理描写。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第二单元：至爱亲情",
@@ -398,7 +424,8 @@
         "D. 状语"
       ],
       "answer": "A",
-      "explanation": "主语是句子陈述的对象，\"阳光\"是主语，\"照耀\"是谓语。"
+      "explanation": "主语是句子陈述的对象，\"阳光\"是主语，\"照耀\"是谓语。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第二单元：至爱亲情",
@@ -414,7 +441,8 @@
         "D. 设置悬念吸引读者"
       ],
       "answer": "C",
-      "explanation": "插叙：暂时中断主要情节，插入相关回忆或补充，丰富内容，增添层次。"
+      "explanation": "插叙：暂时中断主要情节，插入相关回忆或补充，丰富内容，增添层次。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第二单元：至爱亲情",
@@ -430,7 +458,8 @@
         "D. 心理描写"
       ],
       "answer": "B",
-      "explanation": "动作描写：通过具体动作展现人物的情感状态。"
+      "explanation": "动作描写：通过具体动作展现人物的情感状态。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第二单元：至爱亲情",
@@ -446,7 +475,8 @@
         "D. 她心里很害怕"
       ],
       "answer": "A",
-      "explanation": "语言描写：直接引用人物说的话，展现人物性格。"
+      "explanation": "语言描写：直接引用人物说的话，展现人物性格。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第二单元：至爱亲情",
@@ -456,7 +486,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "引人深思",
-      "explanation": "结尾段作用：总结全文，点明主旨，升华主题，引人深思，首尾呼应等。"
+      "explanation": "结尾段作用：总结全文，点明主旨，升华主题，引人深思，首尾呼应等。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第二单元：至爱亲情",
@@ -472,7 +503,8 @@
         "D. 以抒情为主"
       ],
       "answer": "A",
-      "explanation": "记叙文以记叙为主，辅以描写、议论和抒情。"
+      "explanation": "记叙文以记叙为主，辅以描写、议论和抒情。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第二单元：至爱亲情",
@@ -488,7 +520,8 @@
         "D. 戏剧"
       ],
       "answer": "C",
-      "explanation": "《背影》是散文，通过描写父亲送别的背影表达父子深情。"
+      "explanation": "《背影》是散文，通过描写父亲送别的背影表达父子深情。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第二单元：至爱亲情",
@@ -504,7 +537,8 @@
         "D. 用排比增强气势"
       ],
       "answer": "B",
-      "explanation": "烘托：通过描写周围环境或次要人物，来突出主体事物或人物。"
+      "explanation": "烘托：通过描写周围环境或次要人物，来突出主体事物或人物。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第三单元：学习生活",
@@ -520,7 +554,8 @@
         "D. 诗歌集"
       ],
       "answer": "A",
-      "explanation": "《论语》是儒家经典，记录了孔子与弟子的对话，属于语录体散文。"
+      "explanation": "《论语》是儒家经典，记录了孔子与弟子的对话，属于语录体散文。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第三单元：学习生活",
@@ -536,7 +571,8 @@
         "D. 叙述"
       ],
       "answer": "B",
-      "explanation": "\"说\"通\"悦\"，意为高兴、愉快。"
+      "explanation": "\"说\"通\"悦\"，意为高兴、愉快。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第三单元：学习生活",
@@ -546,7 +582,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "春秋",
-      "explanation": "孔子（前551—前479），春秋时期鲁国人，儒家学派创始人。"
+      "explanation": "孔子（前551—前479），春秋时期鲁国人，儒家学派创始人。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第三单元：学习生活",
@@ -562,7 +599,8 @@
         "D. 人人都是老师"
       ],
       "answer": "C",
-      "explanation": "意思：和别人同行，其中一定有能做我老师的人。说明要善于向他人学习。"
+      "explanation": "意思：和别人同行，其中一定有能做我老师的人。说明要善于向他人学习。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第三单元：学习生活",
@@ -578,7 +616,8 @@
         "D. 墨家"
       ],
       "answer": "A",
-      "explanation": "孔子创立儒家学派，主张仁义礼智等。"
+      "explanation": "孔子创立儒家学派，主张仁义礼智等。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第三单元：学习生活",
@@ -594,7 +633,8 @@
         "D. 动词"
       ],
       "answer": "C",
-      "explanation": "\"快乐地\"修饰动词\"跑\"，是副词（状语）。"
+      "explanation": "\"快乐地\"修饰动词\"跑\"，是副词（状语）。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第三单元：学习生活",
@@ -610,7 +650,8 @@
         "D. 主谓短语"
       ],
       "answer": "B",
-      "explanation": "动宾短语：\"努力\"是动词，\"学习\"是其宾语。实为述宾（动宾）短语。实际上\"努力学习\"是偏正短语（状中）：\"努力\"修饰\"学习\"。"
+      "explanation": "动宾短语：\"努力\"是动词，\"学习\"是其宾语。实为述宾（动宾）短语。实际上\"努力学习\"是偏正短语（状中）：\"努力\"修饰\"学习\"。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第三单元：学习生活",
@@ -626,7 +667,8 @@
         "D. 递进关系"
       ],
       "answer": "A",
-      "explanation": "\"虽然…但是…\"表示转折关系。"
+      "explanation": "\"虽然…但是…\"表示转折关系。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第三单元：学习生活",
@@ -636,7 +678,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "旧知",
-      "explanation": "\"温故知新\"：温习旧的知识，从而获得新的体会和认识。"
+      "explanation": "\"温故知新\"：温习旧的知识，从而获得新的体会和认识。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第三单元：学习生活",
@@ -652,7 +695,8 @@
         "D. 表示也、又"
       ],
       "answer": "B",
-      "explanation": "\"之\"最常见的用法：结构助词\"的\"，或作代词指代前文所述事物。"
+      "explanation": "\"之\"最常见的用法：结构助词\"的\"，或作代词指代前文所述事物。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第三单元：学习生活",
@@ -668,7 +712,8 @@
         "D. 古义：走路；今义：离开"
       ],
       "answer": "A",
-      "explanation": "古义：跑；今义：行走。这是典型的古今异义词。"
+      "explanation": "古义：跑；今义：行走。这是典型的古今异义词。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第三单元：学习生活",
@@ -684,7 +729,8 @@
         "D. 当时"
       ],
       "answer": "B",
-      "explanation": "\"时\"：按时、定时（副词）。全句：学习后按时温习。"
+      "explanation": "\"时\"：按时、定时（副词）。全句：学习后按时温习。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第三单元：学习生活",
@@ -700,7 +746,8 @@
         "D. 课文"
       ],
       "answer": "B",
-      "explanation": "谓语是句子的主要陈述部分，此处谓语是\"朗读\"（\"认真地\"是状语）。"
+      "explanation": "谓语是句子的主要陈述部分，此处谓语是\"朗读\"（\"认真地\"是状语）。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第三单元：学习生活",
@@ -710,7 +757,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "然后",
-      "explanation": "\"而\"表顺承：\"而\"连接两个动作，前后动作有先后，相当于\"然后\"或\"就\"。"
+      "explanation": "\"而\"表顺承：\"而\"连接两个动作，前后动作有先后，相当于\"然后\"或\"就\"。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第三单元：学习生活",
@@ -726,7 +774,8 @@
         "D. 并列短语"
       ],
       "answer": "B",
-      "explanation": "\"伟大的\"修饰\"祖国\"，是偏正短语（定中）。"
+      "explanation": "\"伟大的\"修饰\"祖国\"，是偏正短语（定中）。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第三单元：学习生活",
@@ -742,7 +791,8 @@
         "D. 并列"
       ],
       "answer": "C",
-      "explanation": "\"如果…就…\"表示假设关系。"
+      "explanation": "\"如果…就…\"表示假设关系。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第三单元：学习生活",
@@ -758,7 +808,8 @@
         "D. 了解"
       ],
       "answer": "B",
-      "explanation": "最后\"知\"通\"智\"，意为智慧、聪明。"
+      "explanation": "最后\"知\"通\"智\"，意为智慧、聪明。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第四单元：人生之舟",
@@ -774,7 +825,8 @@
         "D. 曹操"
       ],
       "answer": "A",
-      "explanation": "《诫子书》是诸葛亮写给儿子的信，告诫儿子修身养性，淡泊明志。"
+      "explanation": "《诫子书》是诸葛亮写给儿子的信，告诫儿子修身养性，淡泊明志。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第四单元：人生之舟",
@@ -790,7 +842,8 @@
         "D. 人要多读书"
       ],
       "answer": "C",
-      "explanation": "意思：不能淡泊名利就无法明确志向，不能保持宁静就无法到达远方。强调淡泊宁静的重要性。"
+      "explanation": "意思：不能淡泊名利就无法明确志向，不能保持宁静就无法到达远方。强调淡泊宁静的重要性。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第四单元：人生之舟",
@@ -800,7 +853,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "书信",
-      "explanation": "诫子书：\"书\"即书信，是诸葛亮写给儿子的家书。"
+      "explanation": "诫子书：\"书\"即书信，是诸葛亮写给儿子的家书。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第四单元：人生之舟",
@@ -816,7 +870,8 @@
         "D. 导致"
       ],
       "answer": "B",
-      "explanation": "\"致远\"：达到远大目标。\"致\"是达到、实现之意。"
+      "explanation": "\"致远\"：达到远大目标。\"致\"是达到、实现之意。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第四单元：人生之舟",
@@ -832,7 +887,8 @@
         "D. 和、与"
       ],
       "answer": "A",
-      "explanation": "\"以\"常见意思：用、因为、来（表目的）。"
+      "explanation": "\"以\"常见意思：用、因为、来（表目的）。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第四单元：人生之舟",
@@ -848,7 +904,8 @@
         "D. 人物外貌为主线"
       ],
       "answer": "B",
-      "explanation": "叙事散文：以事件为主线，叙述真实经历或故事，融入作者情感。"
+      "explanation": "叙事散文：以事件为主线，叙述真实经历或故事，融入作者情感。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第四单元：人生之舟",
@@ -864,7 +921,8 @@
         "D. 我们要防止不浪费"
       ],
       "answer": "C",
-      "explanation": "C句结构完整，主谓宾清晰；A有\"提高……水平\"搭配问题；B\"减少浪费\"后加\"现象\"多余；D\"防止……不\"有双重否定错误。"
+      "explanation": "C句结构完整，主谓宾清晰；A有\"提高……水平\"搭配问题；B\"减少浪费\"后加\"现象\"多余；D\"防止……不\"有双重否定错误。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第四单元：人生之舟",
@@ -880,7 +938,8 @@
         "D. 才"
       ],
       "answer": "A",
-      "explanation": "\"不管…都…\"表示无论什么条件，结果不变，是让步关系。"
+      "explanation": "\"不管…都…\"表示无论什么条件，结果不变，是让步关系。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第四单元：人生之舟",
@@ -896,7 +955,8 @@
         "D. 语义重复"
       ],
       "answer": "A",
-      "explanation": "这句话结构完整，表意清晰，没有语病。"
+      "explanation": "这句话结构完整，表意清晰，没有语病。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第四单元：人生之舟",
@@ -906,7 +966,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "不知变通",
-      "explanation": "守株待兔：比喻死守狭隘经验，不知变通，妄想不劳而获。"
+      "explanation": "守株待兔：比喻死守狭隘经验，不知变通，妄想不劳而获。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第四单元：人生之舟",
@@ -922,7 +983,8 @@
         "D. 勤奋学习"
       ],
       "answer": "B",
-      "explanation": "亡羊补牢：比喻出了问题，及时补救，以后还不算晚。"
+      "explanation": "亡羊补牢：比喻出了问题，及时补救，以后还不算晚。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第四单元：人生之舟",
@@ -938,7 +1000,8 @@
         "D. 古义：除去；今义：离开"
       ],
       "answer": "A",
-      "explanation": "古义：离开；今义：往、到某地去。古今意义相反。"
+      "explanation": "古义：离开；今义：往、到某地去。古今意义相反。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第四单元：人生之舟",
@@ -954,7 +1017,8 @@
         "D. 不需要冒号"
       ],
       "answer": "A",
-      "explanation": "冒号后引导说的内容，引号引用说话内容，用法正确。"
+      "explanation": "冒号后引导说的内容，引号引用说话内容，用法正确。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第四单元：人生之舟",
@@ -964,7 +1028,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "书名",
-      "explanation": "书名号《》用于标注书籍、文章、篇章的名称。"
+      "explanation": "书名号《》用于标注书籍、文章、篇章的名称。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第四单元：人生之舟",
@@ -980,7 +1045,8 @@
         "D. 没有语病"
       ],
       "answer": "C",
-      "explanation": "\"体育\"包含\"游泳\"和\"跑步\"，有包含关系，并列不当。"
+      "explanation": "\"体育\"包含\"游泳\"和\"跑步\"，有包含关系，并列不当。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第四单元：人生之舟",
@@ -996,7 +1062,8 @@
         "D. 作业做完了小明"
       ],
       "answer": "A",
-      "explanation": "主动句改被动句：\"作业被小明做完了\"。"
+      "explanation": "主动句改被动句：\"作业被小明做完了\"。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第四单元：人生之舟",
@@ -1012,7 +1079,8 @@
         "D. 即使"
       ],
       "answer": "C",
-      "explanation": "\"只要…就…\"表示条件关系：满足条件就有结果。"
+      "explanation": "\"只要…就…\"表示条件关系：满足条件就有结果。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第五单元：动物与人",
@@ -1028,7 +1096,8 @@
         "D. 《野草》"
       ],
       "answer": "A",
-      "explanation": "《从百草园到三味书屋》收录于鲁迅的散文集《朝花夕拾》。"
+      "explanation": "《从百草园到三味书屋》收录于鲁迅的散文集《朝花夕拾》。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第五单元：动物与人",
@@ -1038,7 +1107,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "10",
-      "explanation": "《朝花夕拾》共10篇散文，记述了鲁迅从童年到青年的生活经历。"
+      "explanation": "《朝花夕拾》共10篇散文，记述了鲁迅从童年到青年的生活经历。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第五单元：动物与人",
@@ -1054,7 +1124,8 @@
         "D. 周立波"
       ],
       "answer": "B",
-      "explanation": "鲁迅，原名周树人，字豫才，浙江绍兴人。"
+      "explanation": "鲁迅，原名周树人，字豫才，浙江绍兴人。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第五单元：动物与人",
@@ -1070,7 +1141,8 @@
         "D. 家乡的自然风光"
       ],
       "answer": "A",
-      "explanation": "文章写了作者在百草园自由快乐的童年生活，以及在三味书屋严肃枯燥的学习生活，两者形成对比。"
+      "explanation": "文章写了作者在百草园自由快乐的童年生活，以及在三味书屋严肃枯燥的学习生活，两者形成对比。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第五单元：动物与人",
@@ -1086,7 +1158,8 @@
         "D. 代替情节叙述"
       ],
       "answer": "C",
-      "explanation": "景物描写可以烘托人物心情，如欢乐的景色衬托喜悦，阴郁的景色衬托悲伤。"
+      "explanation": "景物描写可以烘托人物心情，如欢乐的景色衬托喜悦，阴郁的景色衬托悲伤。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第五单元：动物与人",
@@ -1102,7 +1175,8 @@
         "D. 只能用于古诗"
       ],
       "answer": "B",
-      "explanation": "对偶：两个字数相等、结构相同或相似、意思相关的句子（一般成对出现）。"
+      "explanation": "对偶：两个字数相等、结构相同或相似、意思相关的句子（一般成对出现）。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第五单元：动物与人",
@@ -1112,7 +1186,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "对偶",
-      "explanation": "对偶句要求两句字数相等，词性相对，意思相关或相反。"
+      "explanation": "对偶句要求两句字数相等，词性相对，意思相关或相反。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第五单元：动物与人",
@@ -1128,7 +1203,8 @@
         "D. 比喻"
       ],
       "answer": "A",
-      "explanation": "反复：为了强调某个意思或情感，有意重复使用同一词语或句子。"
+      "explanation": "反复：为了强调某个意思或情感，有意重复使用同一词语或句子。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第五单元：动物与人",
@@ -1144,7 +1220,8 @@
         "D. 长篇和短篇说明文"
       ],
       "answer": "B",
-      "explanation": "说明文分类：事物说明文（介绍事物）和事理说明文（说明事物道理、规律）。"
+      "explanation": "说明文分类：事物说明文（介绍事物）和事理说明文（说明事物道理、规律）。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第五单元：动物与人",
@@ -1160,7 +1237,8 @@
         "D. 含蓄、深沉"
       ],
       "answer": "A",
-      "explanation": "说明文语言要求准确、简明，能精确说明事物特征，避免歧义。"
+      "explanation": "说明文语言要求准确、简明，能精确说明事物特征，避免歧义。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第五单元：动物与人",
@@ -1176,7 +1254,8 @@
         "D. 动词"
       ],
       "answer": "C",
-      "explanation": "\"真\"在此是程度副词，修饰形容词\"美\"。"
+      "explanation": "\"真\"在此是程度副词，修饰形容词\"美\"。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第五单元：动物与人",
@@ -1186,7 +1265,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "对偶",
-      "explanation": "上下两句字数相等，词性相对（横眉/俯首，冷对/甘为），是对偶修辞。"
+      "explanation": "上下两句字数相等，词性相对（横眉/俯首，冷对/甘为），是对偶修辞。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第五单元：动物与人",
@@ -1202,7 +1282,8 @@
         "D. 《野草》"
       ],
       "answer": "C",
-      "explanation": "《骆驼祥子》是老舍的作品；《呐喊》《朝花夕拾》《野草》均为鲁迅的作品。"
+      "explanation": "《骆驼祥子》是老舍的作品；《呐喊》《朝花夕拾》《野草》均为鲁迅的作品。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第五单元：动物与人",
@@ -1218,7 +1299,8 @@
         "D. 心理描写"
       ],
       "answer": "B",
-      "explanation": "细节描写：通过手的颤抖这一细小动作，表现人物情感，是细节描写。"
+      "explanation": "细节描写：通过手的颤抖这一细小动作，表现人物情感，是细节描写。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第五单元：动物与人",
@@ -1234,7 +1316,8 @@
         "D. 夸张"
       ],
       "answer": "B",
-      "explanation": "借代：用事物的特征或相关事物代替该事物本身。\"皱纹\"代替\"老人\"。"
+      "explanation": "借代：用事物的特征或相关事物代替该事物本身。\"皱纹\"代替\"老人\"。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第五单元：动物与人",
@@ -1250,7 +1333,8 @@
         "D. 状语"
       ],
       "answer": "C",
-      "explanation": "\"表扬\"是及物动词，\"他\"是动词的宾语（接受动作的人）。"
+      "explanation": "\"表扬\"是及物动词，\"他\"是动词的宾语（接受动作的人）。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第五单元：动物与人",
@@ -1266,7 +1350,8 @@
         "D. 打比方"
       ],
       "answer": "C",
-      "explanation": "列数字：用具体数据说明事物，使说明更准确、有说服力。"
+      "explanation": "列数字：用具体数据说明事物，使说明更准确、有说服力。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第六单元：想象之翼",
@@ -1282,7 +1367,8 @@
         "D. 曹雪芹"
       ],
       "answer": "A",
-      "explanation": "《西游记》，明代吴承恩著，是中国古典四大名著之一。"
+      "explanation": "《西游记》，明代吴承恩著，是中国古典四大名著之一。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第六单元：想象之翼",
@@ -1298,7 +1384,8 @@
         "D. 降妖宝杖"
       ],
       "answer": "B",
-      "explanation": "孙悟空的武器是如意金箍棒，变化多端。"
+      "explanation": "孙悟空的武器是如意金箍棒，变化多端。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第六单元：想象之翼",
@@ -1308,7 +1395,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "4",
-      "explanation": "唐僧、孙悟空、猪八戒、沙僧，共4人。"
+      "explanation": "唐僧、孙悟空、猪八戒、沙僧，共4人。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第六单元：想象之翼",
@@ -1324,7 +1412,8 @@
         "D. 传记文学"
       ],
       "answer": "C",
-      "explanation": "《西游记》是神话小说（神魔小说），充满奇幻想象。"
+      "explanation": "《西游记》是神话小说（神魔小说），充满奇幻想象。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第六单元：想象之翼",
@@ -1340,7 +1429,8 @@
         "D. 《四书五经》"
       ],
       "answer": "B",
-      "explanation": "四大名著：《红楼梦》《水浒传》《三国演义》《西游记》。"
+      "explanation": "四大名著：《红楼梦》《水浒传》《三国演义》《西游记》。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第六单元：想象之翼",
@@ -1356,7 +1446,8 @@
         "D. 他/心/石头"
       ],
       "answer": "A",
-      "explanation": "本体：心；喻体：石头；比喻词：像。"
+      "explanation": "本体：心；喻体：石头；比喻词：像。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第六单元：想象之翼",
@@ -1372,7 +1463,8 @@
         "D. 排比"
       ],
       "answer": "B",
-      "explanation": "\"三千尺\"极度夸大瀑布的高度，是夸张修辞。"
+      "explanation": "\"三千尺\"极度夸大瀑布的高度，是夸张修辞。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第六单元：想象之翼",
@@ -1388,7 +1480,8 @@
         "D. 排比"
       ],
       "answer": "C",
-      "explanation": "反问：用疑问的形式表达肯定的意思，加强语气。"
+      "explanation": "反问：用疑问的形式表达肯定的意思，加强语气。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第六单元：想象之翼",
@@ -1404,7 +1497,8 @@
         "D. 对偶"
       ],
       "answer": "B",
-      "explanation": "设问：自问自答，提出问题并立即回答，引起读者注意。"
+      "explanation": "设问：自问自答，提出问题并立即回答，引起读者注意。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第六单元：想象之翼",
@@ -1414,7 +1508,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "肯定",
-      "explanation": "反问句形式是疑问，但实际表达肯定意思，无需回答。"
+      "explanation": "反问句形式是疑问，但实际表达肯定意思，无需回答。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第六单元：想象之翼",
@@ -1430,7 +1525,8 @@
         "D. 设问在诗歌中用，反问在散文中用"
       ],
       "answer": "A",
-      "explanation": "设问：自问自答；反问：无需回答（答案在问句中）。"
+      "explanation": "设问：自问自答；反问：无需回答（答案在问句中）。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第六单元：想象之翼",
@@ -1446,7 +1542,8 @@
         "D. 大仲马"
       ],
       "answer": "A",
-      "explanation": "《海底两万里》是法国作家儒勒·凡尔纳的科幻小说。"
+      "explanation": "《海底两万里》是法国作家儒勒·凡尔纳的科幻小说。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第六单元：想象之翼",
@@ -1462,7 +1559,8 @@
         "D. 帆船"
       ],
       "answer": "B",
-      "explanation": "\"诺第留斯号\"（鹦鹉螺号）潜水艇，是小说中的核心道具。"
+      "explanation": "\"诺第留斯号\"（鹦鹉螺号）潜水艇，是小说中的核心道具。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第六单元：想象之翼",
@@ -1478,7 +1576,8 @@
         "D. 开头、中间、结尾"
       ],
       "answer": "C",
-      "explanation": "议论文三要素：论点（观点）、论据（证据）、论证（论证方法）。"
+      "explanation": "议论文三要素：论点（观点）、论据（证据）、论证（论证方法）。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第六单元：想象之翼",
@@ -1494,7 +1593,8 @@
         "D. 用夸张强调事物"
       ],
       "answer": "B",
-      "explanation": "象征：用具体事物表达某种特殊含义或精神，含义较为抽象和深远。"
+      "explanation": "象征：用具体事物表达某种特殊含义或精神，含义较为抽象和深远。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第六单元：想象之翼",
@@ -1510,7 +1610,8 @@
         "D. 主题"
       ],
       "answer": "A",
-      "explanation": "写人的记叙文：要以人物为中心，选取典型事件，表现人物性格品质。"
+      "explanation": "写人的记叙文：要以人物为中心，选取典型事件，表现人物性格品质。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七上·第六单元：想象之翼",
@@ -1526,7 +1627,8 @@
         "D. 拟人"
       ],
       "answer": "B",
-      "explanation": "暗喻（隐喻）：不用\"像\"等比喻词，直接用\"是\"等连接本体和喻体。"
+      "explanation": "暗喻（隐喻）：不用\"像\"等比喻词，直接用\"是\"等连接本体和喻体。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第一单元：群星闪耀",
@@ -1542,7 +1644,8 @@
         "D. 《野草》"
       ],
       "answer": "A",
-      "explanation": "《孔乙己》收录在鲁迅的小说集《呐喊》中。"
+      "explanation": "《孔乙己》收录在鲁迅的小说集《呐喊》中。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第一单元：群星闪耀",
@@ -1558,7 +1661,8 @@
         "D. 汉代"
       ],
       "answer": "A",
-      "explanation": "杜甫（712-770），唐代伟大的现实主义诗人，被称为\"诗圣\"。"
+      "explanation": "杜甫（712-770），唐代伟大的现实主义诗人，被称为\"诗圣\"。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第一单元：群星闪耀",
@@ -1574,7 +1678,8 @@
         "D. 《石壕吏》"
       ],
       "answer": "B",
-      "explanation": "这两句出自杜甫的《春望》，表达了战乱中对家人的思念。"
+      "explanation": "这两句出自杜甫的《春望》，表达了战乱中对家人的思念。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第一单元：群星闪耀",
@@ -1584,7 +1689,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "狂人日记",
-      "explanation": "《狂人日记》发表于1918年，是中国第一部现代白话小说。"
+      "explanation": "《狂人日记》发表于1918年，是中国第一部现代白话小说。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第一单元：群星闪耀",
@@ -1600,7 +1706,8 @@
         "D. 诗鬼"
       ],
       "answer": "C",
-      "explanation": "白居易是唐代著名诗人，以通俗易懂著称，有\"诗魔\"之称（也称\"诗王\"）。"
+      "explanation": "白居易是唐代著名诗人，以通俗易懂著称，有\"诗魔\"之称（也称\"诗王\"）。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第一单元：群星闪耀",
@@ -1616,7 +1723,8 @@
         "D. 地理风貌"
       ],
       "answer": "A",
-      "explanation": "传记：记述真实人物的生平事迹，是一种文学和史学体裁。"
+      "explanation": "传记：记述真实人物的生平事迹，是一种文学和史学体裁。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第一单元：群星闪耀",
@@ -1632,7 +1740,8 @@
         "D. 写所有见闻"
       ],
       "answer": "B",
-      "explanation": "写人的文章：选取最能体现人物性格和品质的典型事例，以点带面。"
+      "explanation": "写人的文章：选取最能体现人物性格和品质的典型事例，以点带面。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第一单元：群星闪耀",
@@ -1648,7 +1757,8 @@
         "D. 陆游"
       ],
       "answer": "C",
-      "explanation": "王维、李白、杜甫都是唐代诗人；苏轼是宋代文学家。"
+      "explanation": "王维、李白、杜甫都是唐代诗人；苏轼是宋代文学家。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第一单元：群星闪耀",
@@ -1658,7 +1768,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "傍晚",
-      "explanation": "\"朝花夕拾\"：早晨落下的花，傍晚拾起，比喻追忆往事。"
+      "explanation": "\"朝花夕拾\"：早晨落下的花，傍晚拾起，比喻追忆往事。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第一单元：群星闪耀",
@@ -1674,7 +1785,8 @@
         "D. 难题"
       ],
       "answer": "A",
-      "explanation": "主语是句子的陈述对象，这里主语是\"老师\"。"
+      "explanation": "主语是句子的陈述对象，这里主语是\"老师\"。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第一单元：群星闪耀",
@@ -1690,7 +1802,8 @@
         "D. xìng / xìng"
       ],
       "answer": "A",
-      "explanation": "\"兴趣\"读xìng（名词义：兴趣爱好）；\"振兴\"读xīng（动词义：使兴盛）。"
+      "explanation": "\"兴趣\"读xìng（名词义：兴趣爱好）；\"振兴\"读xīng（动词义：使兴盛）。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第一单元：群星闪耀",
@@ -1706,7 +1819,8 @@
         "D. 志向远大"
       ],
       "answer": "B",
-      "explanation": "滥竽充数：比喻没有真才实学的人混在行家里充数，或以次充好。"
+      "explanation": "滥竽充数：比喻没有真才实学的人混在行家里充数，或以次充好。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第一单元：群星闪耀",
@@ -1722,7 +1836,8 @@
         "D. 埋下伏笔"
       ],
       "answer": "C",
-      "explanation": "结尾作用：总结全文，升华主题，点明中心，首尾呼应，引人深思。"
+      "explanation": "结尾作用：总结全文，升华主题，点明中心，首尾呼应，引人深思。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第一单元：群星闪耀",
@@ -1738,7 +1853,8 @@
         "D. 苏轼"
       ],
       "answer": "B",
-      "explanation": "这是李白的《静夜思》，抒发了思乡之情。"
+      "explanation": "这是李白的《静夜思》，抒发了思乡之情。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第一单元：群星闪耀",
@@ -1754,7 +1870,8 @@
         "D. 男性"
       ],
       "answer": "B",
-      "explanation": "借代：用\"大胡子\"这一特征代替这个人，是借代修辞。"
+      "explanation": "借代：用\"大胡子\"这一特征代替这个人，是借代修辞。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第一单元：群星闪耀",
@@ -1770,7 +1887,8 @@
         "D. 成分残缺"
       ],
       "answer": "A",
-      "explanation": "这句话\"由于…所以…\"表因果，结构正确，没有语病。"
+      "explanation": "这句话\"由于…所以…\"表因果，结构正确，没有语病。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第一单元：群星闪耀",
@@ -1786,7 +1904,8 @@
         "D. 他说：我来了。"
       ],
       "answer": "B",
-      "explanation": "句号在引号内（说完整的话结束），引号后不再加句号；B项正确。"
+      "explanation": "句号在引号内（说完整的话结束），引号后不再加句号；B项正确。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第二单元：家国情怀",
@@ -1802,7 +1921,8 @@
         "D. 对大自然的赞美"
       ],
       "answer": "A",
-      "explanation": "李白《静夜思》：望月思乡，表达对故乡的思念之情。"
+      "explanation": "李白《静夜思》：望月思乡，表达对故乡的思念之情。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第二单元：家国情怀",
@@ -1818,7 +1938,8 @@
         "D. 李清照《如梦令》"
       ],
       "answer": "A",
-      "explanation": "这两句是文天祥《过零丁洋》中的名句，表现了爱国牺牲精神。"
+      "explanation": "这两句是文天祥《过零丁洋》中的名句，表现了爱国牺牲精神。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第二单元：家国情怀",
@@ -1828,7 +1949,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "李商隐",
-      "explanation": "这是唐代李商隐的《无题》，以春蚕和蜡炬比喻矢志不渝的爱情（或奉献精神）。"
+      "explanation": "这是唐代李商隐的《无题》，以春蚕和蜡炬比喻矢志不渝的爱情（或奉献精神）。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第二单元：家国情怀",
@@ -1844,7 +1966,8 @@
         "D. 对朋友的劝慰"
       ],
       "answer": "C",
-      "explanation": "这句诗表达了将士们报国杀敌、誓死报国的壮志豪情。"
+      "explanation": "这句诗表达了将士们报国杀敌、誓死报国的壮志豪情。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第二单元：家国情怀",
@@ -1860,7 +1983,8 @@
         "D. 下文的内容"
       ],
       "answer": "A",
-      "explanation": "抒情议论性结尾：直接表达作者对文章主题的感悟和观点，升华文章主旨。"
+      "explanation": "抒情议论性结尾：直接表达作者对文章主题的感悟和观点，升华文章主旨。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第二单元：家国情怀",
@@ -1876,7 +2000,8 @@
         "D. 自然灾害"
       ],
       "answer": "B",
-      "explanation": "烽火：古代边境报警的烽烟，借指战争。"
+      "explanation": "烽火：古代边境报警的烽烟，借指战争。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第二单元：家国情怀",
@@ -1892,7 +2017,8 @@
         "D. 《茅屋为秋风所破歌》"
       ],
       "answer": "C",
-      "explanation": "这两句出自杜甫《望岳》，表达了勇于攀登、志向高远的精神。"
+      "explanation": "这两句出自杜甫《望岳》，表达了勇于攀登、志向高远的精神。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第二单元：家国情怀",
@@ -1908,7 +2034,8 @@
         "D. 忧国忧民"
       ],
       "answer": "A",
-      "explanation": "王安石《泊船瓜洲》：描写江南春景，表达诗人对故乡的思念之情。"
+      "explanation": "王安石《泊船瓜洲》：描写江南春景，表达诗人对故乡的思念之情。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第二单元：家国情怀",
@@ -1918,7 +2045,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "明月",
-      "explanation": "\"婵娟\"在古诗中常指明月，此句出自苏轼《水调歌头》。"
+      "explanation": "\"婵娟\"在古诗中常指明月，此句出自苏轼《水调歌头》。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第二单元：家国情怀",
@@ -1934,7 +2062,8 @@
         "D. 曹操"
       ],
       "answer": "C",
-      "explanation": "苏轼（1037-1101），北宋著名文学家、书画家。李白、杜甫是唐代诗人，曹操是东汉末年人。"
+      "explanation": "苏轼（1037-1101），北宋著名文学家、书画家。李白、杜甫是唐代诗人，曹操是东汉末年人。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第二单元：家国情怀",
@@ -1950,7 +2079,8 @@
         "D. 宾语"
       ],
       "answer": "C",
-      "explanation": "\"很\"是程度副词，修饰形容词\"流利\"，在句中作状语。"
+      "explanation": "\"很\"是程度副词，修饰形容词\"流利\"，在句中作状语。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第二单元：家国情怀",
@@ -1966,7 +2096,8 @@
         "D. 象征"
       ],
       "answer": "A",
-      "explanation": "\"征人\"：出征打仗的人，\"征\"意为征战、出征。"
+      "explanation": "\"征人\"：出征打仗的人，\"征\"意为征战、出征。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第二单元：家国情怀",
@@ -1982,7 +2113,8 @@
         "D. 孩子们"
       ],
       "answer": "B",
-      "explanation": "古义：妻子和儿子；今义：仅指妻子（配偶）。是典型的古今异义。"
+      "explanation": "古义：妻子和儿子；今义：仅指妻子（配偶）。是典型的古今异义。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第二单元：家国情怀",
@@ -1998,7 +2130,8 @@
         "D. 原因连词"
       ],
       "answer": "B",
-      "explanation": "\"其\"：代词，代指前文的人或事物，相当于\"他的\"\"它的\"\"那\"。"
+      "explanation": "\"其\"：代词，代指前文的人或事物，相当于\"他的\"\"它的\"\"那\"。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第二单元：家国情怀",
@@ -2014,7 +2147,8 @@
         "D. 应该用破折号"
       ],
       "answer": "A",
-      "explanation": "书名号《》用于标注书籍名称，使用正确。"
+      "explanation": "书名号《》用于标注书籍名称，使用正确。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第二单元：家国情怀",
@@ -2030,7 +2164,8 @@
         "D. 语义矛盾"
       ],
       "answer": "A",
-      "explanation": "\"不但…而且…\"表示递进关系，使用正确，没有语病。"
+      "explanation": "\"不但…而且…\"表示递进关系，使用正确，没有语病。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第三单元：凡人小事",
@@ -2046,7 +2181,8 @@
         "D. 沈从文"
       ],
       "answer": "B",
-      "explanation": "老舍，原名舒庆春，字舍予，北京人，著名现代文学家。"
+      "explanation": "老舍，原名舒庆春，字舍予，北京人，著名现代文学家。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第三单元：凡人小事",
@@ -2062,7 +2198,8 @@
         "D. 曹先生"
       ],
       "answer": "A",
-      "explanation": "骆驼祥子：主人公是祥子，一个北京人力车夫，讲述他三起三落的悲剧命运。"
+      "explanation": "骆驼祥子：主人公是祥子，一个北京人力车夫，讲述他三起三落的悲剧命运。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第三单元：凡人小事",
@@ -2072,7 +2209,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "老舍",
-      "explanation": "《骆驼祥子》是老舍的长篇小说，反映了旧北京底层劳动人民的悲惨命运。"
+      "explanation": "《骆驼祥子》是老舍的长篇小说，反映了旧北京底层劳动人民的悲惨命运。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第三单元：凡人小事",
@@ -2088,7 +2226,8 @@
         "D. 娶虎妞为妻"
       ],
       "answer": "A",
-      "explanation": "祥子的梦想：拥有一辆属于自己的人力车，但梦想三次破灭。"
+      "explanation": "祥子的梦想：拥有一辆属于自己的人力车，但梦想三次破灭。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第三单元：凡人小事",
@@ -2104,7 +2243,8 @@
         "D. 适合写宏大的历史题材"
       ],
       "answer": "B",
-      "explanation": "第一人称（\"我\"）叙事：真实亲切，便于直接抒发情感，增强代入感。"
+      "explanation": "第一人称（\"我\"）叙事：真实亲切，便于直接抒发情感，增强代入感。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第三单元：凡人小事",
@@ -2120,7 +2260,8 @@
         "D. 引起读者注意"
       ],
       "answer": "C",
-      "explanation": "中间段作用：承上启下（过渡），深化主题，补充说明，推进情节等。"
+      "explanation": "中间段作用：承上启下（过渡），深化主题，补充说明，推进情节等。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第三单元：凡人小事",
@@ -2136,7 +2277,8 @@
         "D. 状语"
       ],
       "answer": "C",
-      "explanation": "\"完成\"是及物动词，\"作业\"是动词的宾语（接受动作的对象）。"
+      "explanation": "\"完成\"是及物动词，\"作业\"是动词的宾语（接受动作的对象）。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第三单元：凡人小事",
@@ -2152,7 +2294,8 @@
         "D. 他很努力"
       ],
       "answer": "B",
-      "explanation": "细节描写：具体细腻地描写某一细小的特征动作。\n\"他用颤抖的手递上那枚硬币\"是典型的细节描写。"
+      "explanation": "细节描写：具体细腻地描写某一细小的特征动作。\n\"他用颤抖的手递上那枚硬币\"是典型的细节描写。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第三单元：凡人小事",
@@ -2168,7 +2311,8 @@
         "D. cān cī"
       ],
       "answer": "A",
-      "explanation": "\"参差\"（cēn cī）：形容不整齐，高低不一。"
+      "explanation": "\"参差\"（cēn cī）：形容不整齐，高低不一。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第三单元：凡人小事",
@@ -2184,7 +2328,8 @@
         "D. 溶洽 溶化"
       ],
       "answer": "C",
-      "explanation": "\"融化\"\"融洽\"\"融合\"均正确；\"熔化\"也可（熔点高温），但\"融化\"更常用于冰雪。"
+      "explanation": "\"融化\"\"融洽\"\"融合\"均正确；\"熔化\"也可（熔点高温），但\"融化\"更常用于冰雪。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第三单元：凡人小事",
@@ -2200,7 +2345,8 @@
         "D. 阴凉"
       ],
       "answer": "B",
-      "explanation": "\"茵\"：垫子、毯子。\"绿草如茵\"：绿草像铺着的草坪（垫子一样）。"
+      "explanation": "\"茵\"：垫子、毯子。\"绿草如茵\"：绿草像铺着的草坪（垫子一样）。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第三单元：凡人小事",
@@ -2216,7 +2362,8 @@
         "D. 忽视"
       ],
       "answer": "B",
-      "explanation": "批评：指出错误；反义词是\"表扬\"（或\"称赞\"）。"
+      "explanation": "批评：指出错误；反义词是\"表扬\"（或\"称赞\"）。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第三单元：凡人小事",
@@ -2232,7 +2379,8 @@
         "D. 如果"
       ],
       "answer": "A",
-      "explanation": "\"虽然…但是…\"（或\"却\"）表转折关系。"
+      "explanation": "\"虽然…但是…\"（或\"却\"）表转折关系。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第三单元：凡人小事",
@@ -2248,7 +2396,8 @@
         "D. 喜爱这本书的是同学们"
       ],
       "answer": "A",
-      "explanation": "被字句：\"这本书被同学们喜爱。\"或\"这本书受到同学们的喜爱。\""
+      "explanation": "被字句：\"这本书被同学们喜爱。\"或\"这本书受到同学们的喜爱。\"",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第三单元：凡人小事",
@@ -2264,7 +2413,8 @@
         "D. 秋天的枫叶"
       ],
       "answer": "C",
-      "explanation": "\"万紫千红\"：形容百花盛开，色彩绚丽，并非仅指红色。"
+      "explanation": "\"万紫千红\"：形容百花盛开，色彩绚丽，并非仅指红色。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第三单元：凡人小事",
@@ -2280,7 +2430,8 @@
         "D. 有语病：缺少宾语"
       ],
       "answer": "B",
-      "explanation": "\"成绩\"搭配\"提高\"，不能用\"增长\"（增长多用于数量、经济等）。应改为\"提高\"。"
+      "explanation": "\"成绩\"搭配\"提高\"，不能用\"增长\"（增长多用于数量、经济等）。应改为\"提高\"。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第四单元：修身正己",
@@ -2296,7 +2447,8 @@
         "D. 柳宗元"
       ],
       "answer": "A",
-      "explanation": "《陋室铭》，唐代刘禹锡著，通过描写简陋居室表达自己高洁傲岸的节操。"
+      "explanation": "《陋室铭》，唐代刘禹锡著，通过描写简陋居室表达自己高洁傲岸的节操。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第四单元：修身正己",
@@ -2306,7 +2458,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "品德高尚",
-      "explanation": "\"德馨\"：品德高洁，香气远播。表达作者虽居陋室，但品德高尚。"
+      "explanation": "\"德馨\"：品德高洁，香气远播。表达作者虽居陋室，但品德高尚。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第四单元：修身正己",
@@ -2322,7 +2475,8 @@
         "D. 苏轼"
       ],
       "answer": "B",
-      "explanation": "《爱莲说》，北宋周敦颐著，以莲喻君子，表达洁身自好的情操。"
+      "explanation": "《爱莲说》，北宋周敦颐著，以莲喻君子，表达洁身自好的情操。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第四单元：修身正己",
@@ -2338,7 +2492,8 @@
         "D. 爱国情怀"
       ],
       "answer": "C",
-      "explanation": "莲花\"出淤泥而不染\"象征君子的高洁品格和洁身自好的情操。"
+      "explanation": "莲花\"出淤泥而不染\"象征君子的高洁品格和洁身自好的情操。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第四单元：修身正己",
@@ -2354,7 +2509,8 @@
         "D. 调配"
       ],
       "answer": "B",
-      "explanation": "\"调\"：弹奏（调弄），\"调素琴\"即弹奏不加装饰的琴。"
+      "explanation": "\"调\"：弹奏（调弄），\"调素琴\"即弹奏不加装饰的琴。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第四单元：修身正己",
@@ -2370,7 +2526,8 @@
         "D. 连词，表示因果"
       ],
       "answer": "A",
-      "explanation": "\"之\"作结构助词，相当于\"的\"，连接定语和中心词。"
+      "explanation": "\"之\"作结构助词，相当于\"的\"，连接定语和中心词。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第四单元：修身正己",
@@ -2386,7 +2543,8 @@
         "D. 宜家"
       ],
       "answer": "B",
-      "explanation": "\"宜\"：应该、自然、当然，此处意为\"当然（喜爱牡丹的人）众多\"。"
+      "explanation": "\"宜\"：应该、自然、当然，此处意为\"当然（喜爱牡丹的人）众多\"。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第四单元：修身正己",
@@ -2402,7 +2560,8 @@
         "D. 追求名利"
       ],
       "answer": "C",
-      "explanation": "《陋室铭》：表达作者虽居陋室，但品德高洁，精神富足，是君子之道。"
+      "explanation": "《陋室铭》：表达作者虽居陋室，但品德高洁，精神富足，是君子之道。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第四单元：修身正己",
@@ -2418,7 +2577,8 @@
         "D. 孤独"
       ],
       "answer": "A",
-      "explanation": "\"独\"：只，仅仅。\"独爱菊\"表示陶渊明只喜爱菊花。"
+      "explanation": "\"独\"：只，仅仅。\"独爱菊\"表示陶渊明只喜爱菊花。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第四单元：修身正己",
@@ -2434,7 +2594,8 @@
         "D. 可远观而不可亵玩"
       ],
       "answer": "A",
-      "explanation": "\"出淤泥而不染\"：不被世俗污染，洁身自好，是作者最欣赏的品质。"
+      "explanation": "\"出淤泥而不染\"：不被世俗污染，洁身自好，是作者最欣赏的品质。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第四单元：修身正己",
@@ -2450,7 +2611,8 @@
         "D. 水流速度决定一切"
       ],
       "answer": "B",
-      "explanation": "《河中石兽》（纪昀著）通过寻找石兽的故事，说明凡事不能主观臆断，要具体分析实际情况。"
+      "explanation": "《河中石兽》（纪昀著）通过寻找石兽的故事，说明凡事不能主观臆断，要具体分析实际情况。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第四单元：修身正己",
@@ -2466,7 +2628,8 @@
         "D. 欧阳修"
       ],
       "answer": "C",
-      "explanation": "《河中石兽》，清代纪昀（纪晓岚）著，选自《阅微草堂笔记》。"
+      "explanation": "《河中石兽》，清代纪昀（纪晓岚）著，选自《阅微草堂笔记》。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第四单元：修身正己",
@@ -2482,7 +2645,8 @@
         "D. 古义：奔；今义：走路"
       ],
       "answer": "B",
-      "explanation": "古义：跑；今义：行走。典型古今异义。"
+      "explanation": "古义：跑；今义：行走。典型古今异义。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第四单元：修身正己",
@@ -2498,7 +2662,8 @@
         "D. 统计"
       ],
       "answer": "B",
-      "explanation": "\"阅\"：经过、经历（时间）。\"阅十余岁\"：经过十多年。"
+      "explanation": "\"阅\"：经过、经历（时间）。\"阅十余岁\"：经过十多年。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第四单元：修身正己",
@@ -2514,7 +2679,8 @@
         "D. 语气助词"
       ],
       "answer": "A",
-      "explanation": "\"之\"作代词，指代前文提到的事情（寻找石兽这件事）。"
+      "explanation": "\"之\"作代词，指代前文提到的事情（寻找石兽这件事）。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第四单元：修身正己",
@@ -2530,7 +2696,8 @@
         "D. 年轻人"
       ],
       "answer": "B",
-      "explanation": "\"白丁\"：没有功名的平民，此处指没有学问的人，与\"鸿儒\"（学识渊博的人）对比。"
+      "explanation": "\"白丁\"：没有功名的平民，此处指没有学问的人，与\"鸿儒\"（学识渊博的人）对比。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第五单元：哲思与志趣",
@@ -2546,7 +2713,8 @@
         "D. 总结治国经验"
       ],
       "answer": "A",
-      "explanation": "诸葛亮写信给儿子，告诫他修身养性、淡泊明志、宁静致远，是一封劝诫之书。"
+      "explanation": "诸葛亮写信给儿子，告诫他修身养性、淡泊明志、宁静致远，是一封劝诫之书。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第五单元：哲思与志趣",
@@ -2562,7 +2730,8 @@
         "D. 清代"
       ],
       "answer": "B",
-      "explanation": "《世说新语》由南朝刘义庆组织编撰，记述魏晋人物的言行轶事。"
+      "explanation": "《世说新语》由南朝刘义庆组织编撰，记述魏晋人物的言行轶事。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第五单元：哲思与志趣",
@@ -2578,7 +2747,8 @@
         "D. 白玉碎片"
       ],
       "answer": "B",
-      "explanation": "谢道韫用\"未若柳絮因风起\"比喻雪花，更为优美，被认为更出色。"
+      "explanation": "谢道韫用\"未若柳絮因风起\"比喻雪花，更为优美，被认为更出色。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第五单元：哲思与志趣",
@@ -2594,7 +2764,8 @@
         "D. 动词"
       ],
       "answer": "A",
-      "explanation": "\"者\"：助词，\"学者\"中\"者\"指\"……的人\"（学习的人）。"
+      "explanation": "\"者\"：助词，\"学者\"中\"者\"指\"……的人\"（学习的人）。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第五单元：哲思与志趣",
@@ -2610,7 +2781,8 @@
         "D. 丢弃"
       ],
       "answer": "A",
-      "explanation": "\"去\"：离开（古义）。\"委而去之\"：丢弃它而离开。今义是\"前往\"。"
+      "explanation": "\"去\"：离开（古义）。\"委而去之\"：丢弃它而离开。今义是\"前往\"。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第五单元：哲思与志趣",
@@ -2620,7 +2792,8 @@
       "difficulty": "medium",
       "round": 1,
       "answer": "明确",
-      "explanation": "\"明\"在此为使动用法，\"明志\"：使志向明确。\"淡泊明志\"：淡泊名利，以明确自己的志向。"
+      "explanation": "\"明\"在此为使动用法，\"明志\"：使志向明确。\"淡泊明志\"：淡泊名利，以明确自己的志向。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第五单元：哲思与志趣",
@@ -2636,7 +2809,8 @@
         "D. 名词，广度"
       ],
       "answer": "B",
-      "explanation": "\"广\"：使动用法，使才能广博（增长）。\"广才\"：增广才学。"
+      "explanation": "\"广\"：使动用法，使才能广博（增长）。\"广才\"：增广才学。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第五单元：哲思与志趣",
@@ -2652,7 +2826,8 @@
         "D. 只有名人名言"
       ],
       "answer": "C",
-      "explanation": "论据类型：事实论据（具体事例、数据等）和道理论据（名言、定理等）。"
+      "explanation": "论据类型：事实论据（具体事例、数据等）和道理论据（名言、定理等）。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第五单元：哲思与志趣",
@@ -2668,7 +2843,8 @@
         "D. 与现代同义"
       ],
       "answer": "A",
-      "explanation": "\"儿女\"古义：子女、侄儿侄女等家族晚辈，非特指儿子和女儿（现代义）。"
+      "explanation": "\"儿女\"古义：子女、侄儿侄女等家族晚辈，非特指儿子和女儿（现代义）。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第五单元：哲思与志趣",
@@ -2684,7 +2860,8 @@
         "D. 如果"
       ],
       "answer": "A",
-      "explanation": "\"其\"：代词，指他的，代指那个人的剑。"
+      "explanation": "\"其\"：代词，指他的，代指那个人的剑。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第五单元：哲思与志趣",
@@ -2700,7 +2877,8 @@
         "D. 进度缓慢"
       ],
       "answer": "B",
-      "explanation": "半途而废：事情做到一半就停下来，比喻做事不能坚持到底。"
+      "explanation": "半途而废：事情做到一半就停下来，比喻做事不能坚持到底。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第五单元：哲思与志趣",
@@ -2716,7 +2894,8 @@
         "D. 非常平静的湖面"
       ],
       "answer": "C",
-      "explanation": "淡泊：不追求名誉和物质享受，心境平静淡然。"
+      "explanation": "淡泊：不追求名誉和物质享受，心境平静淡然。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第五单元：哲思与志趣",
@@ -2732,7 +2911,8 @@
         "D. 竞争"
       ],
       "answer": "B",
-      "explanation": "奋斗：努力拼搏；近义词\"拼搏\"（努力奋斗），意义最近。"
+      "explanation": "奋斗：努力拼搏；近义词\"拼搏\"（努力奋斗），意义最近。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第五单元：哲思与志趣",
@@ -2748,7 +2928,8 @@
         "D. 动宾短语"
       ],
       "answer": "B",
-      "explanation": "\"非常\"是程度副词，修饰\"高兴\"（形容词），是偏正短语（状中）。"
+      "explanation": "\"非常\"是程度副词，修饰\"高兴\"（形容词），是偏正短语（状中）。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第五单元：哲思与志趣",
@@ -2764,7 +2945,8 @@
         "D. 表示声音延长"
       ],
       "answer": "B",
-      "explanation": "破折号：这里表示解释说明，\"祖国的心脏\"解释\"北京\"。"
+      "explanation": "破折号：这里表示解释说明，\"祖国的心脏\"解释\"北京\"。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第五单元：哲思与志趣",
@@ -2780,7 +2962,8 @@
         "D. 难道妈妈关心我？"
       ],
       "answer": "B",
-      "explanation": "反问句：用疑问形式表达肯定意思。\"妈妈难道不关心我吗？\""
+      "explanation": "反问句：用疑问形式表达肯定意思。\"妈妈难道不关心我吗？\"",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第六单元：探险与科学",
@@ -2796,7 +2979,8 @@
         "D. 法拉古"
       ],
       "answer": "A",
-      "explanation": "尼摩船长是诺第留斯号的神秘船长，有着丰富的航海知识。"
+      "explanation": "尼摩船长是诺第留斯号的神秘船长，有着丰富的航海知识。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第六单元：探险与科学",
@@ -2812,7 +2996,8 @@
         "D. 讲述探险故事"
       ],
       "answer": "B",
-      "explanation": "科技说明文：向读者介绍科技知识、科学原理，使读者了解和掌握科学知识。"
+      "explanation": "科技说明文：向读者介绍科技知识、科学原理，使读者了解和掌握科学知识。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第六单元：探险与科学",
@@ -2828,7 +3013,8 @@
         "D. 批驳错误观点"
       ],
       "answer": "C",
-      "explanation": "举例子：用具体事例说明道理，使抽象内容更形象、更易理解。"
+      "explanation": "举例子：用具体事例说明道理，使抽象内容更形象、更易理解。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第六单元：探险与科学",
@@ -2844,7 +3030,8 @@
         "D. 作比较"
       ],
       "answer": "C",
-      "explanation": "打比方：利用打比方（类比）使抽象事物具体化，更生动易懂。"
+      "explanation": "打比方：利用打比方（类比）使抽象事物具体化，更生动易懂。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第六单元：探险与科学",
@@ -2860,7 +3047,8 @@
         "D. 增加权威性"
       ],
       "answer": "B",
-      "explanation": "作比较：通过对比，突出被说明事物的特点，使读者更清楚认识。"
+      "explanation": "作比较：通过对比，突出被说明事物的特点，使读者更清楚认识。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第六单元：探险与科学",
@@ -2876,7 +3064,8 @@
         "D. 神话故事"
       ],
       "answer": "A",
-      "explanation": "《海底两万里》是法国作家凡尔纳的科幻小说，具有丰富的科学想象。"
+      "explanation": "《海底两万里》是法国作家凡尔纳的科幻小说，具有丰富的科学想象。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第六单元：探险与科学",
@@ -2892,7 +3081,8 @@
         "D. 递进关系"
       ],
       "answer": "A",
-      "explanation": "\"由于…所以…\"：因果关系，前者是原因，后者是结果。"
+      "explanation": "\"由于…所以…\"：因果关系，前者是原因，后者是结果。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第六单元：探险与科学",
@@ -2908,7 +3098,8 @@
         "D. 提出、分析、解决"
       ],
       "answer": "B",
-      "explanation": "说明文常见顺序：时间顺序、空间顺序、逻辑顺序（由现象到本质等）。"
+      "explanation": "说明文常见顺序：时间顺序、空间顺序、逻辑顺序（由现象到本质等）。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第六单元：探险与科学",
@@ -2918,7 +3109,8 @@
       "difficulty": "easy",
       "round": 1,
       "answer": "准确",
-      "explanation": "说明文语言要求准确严密，确保信息正确无误。"
+      "explanation": "说明文语言要求准确严密，确保信息正确无误。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第六单元：探险与科学",
@@ -2934,7 +3126,8 @@
         "D. 由近及远的空间顺序"
       ],
       "answer": "A",
-      "explanation": "游记：通常按游览或行进的时间/地点顺序记述，是时间和空间的顺序。"
+      "explanation": "游记：通常按游览或行进的时间/地点顺序记述，是时间和空间的顺序。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第六单元：探险与科学",
@@ -2950,7 +3143,8 @@
         "D. 状语"
       ],
       "answer": "C",
-      "explanation": "\"写得非常精彩\"是\"写\"的补语，\"精彩\"补充说明写的程度。"
+      "explanation": "\"写得非常精彩\"是\"写\"的补语，\"精彩\"补充说明写的程度。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第六单元：探险与科学",
@@ -2966,7 +3160,8 @@
         "D. 因为"
       ],
       "answer": "A",
-      "explanation": "\"既然…就…\"表示因果关系（前提已定，理应如此）。"
+      "explanation": "\"既然…就…\"表示因果关系（前提已定，理应如此）。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第六单元：探险与科学",
@@ -2982,7 +3177,8 @@
         "D. 思绪万千"
       ],
       "answer": "C",
-      "explanation": "心旷神怡：心情舒畅，精神愉快。"
+      "explanation": "心旷神怡：心情舒畅，精神愉快。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第六单元：探险与科学",
@@ -2998,7 +3194,8 @@
         "D. 渲泄"
       ],
       "answer": "A",
-      "explanation": "\"宣泄\"：正确写法，意为发泄情绪；不是\"泄\"还是\"泻\"，此处是\"宣泄\"。"
+      "explanation": "\"宣泄\"：正确写法，意为发泄情绪；不是\"泄\"还是\"泻\"，此处是\"宣泄\"。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第六单元：探险与科学",
@@ -3014,7 +3211,8 @@
         "D. 条件复句"
       ],
       "answer": "B",
-      "explanation": "\"因为\"引导原因，表示因果关系的复句。"
+      "explanation": "\"因为\"引导原因，表示因果关系的复句。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第六单元：探险与科学",
@@ -3030,7 +3228,8 @@
         "D. 设置悬念"
       ],
       "answer": "B",
-      "explanation": "说明文开头：引出说明对象，激发读者兴趣，或交代说明的范围和角度。"
+      "explanation": "说明文开头：引出说明对象，激发读者兴趣，或交代说明的范围和角度。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     },
     {
       "chapter": "七下·第六单元：探险与科学",
@@ -3046,7 +3245,16 @@
         "D. 用数字增加准确性"
       ],
       "answer": "A",
-      "explanation": "下定义：用简洁明确的语言揭示事物的本质特征，常用\"…是…\"句式。"
+      "explanation": "下定义：用简洁明确的语言揭示事物的本质特征，常用\"…是…\"句式。",
+      "source": "batch_2026_05_08_g7_chinese_r1_deprecated"
     }
-  ]
+  ],
+  "_quality_meta": {
+    "deprecated": true,
+    "deprecated_version": "V3.10",
+    "deprecated_at": "2026-05-08",
+    "deprecated_reason": "语数转真题路线（北师大数学 / 部编语文），cron AI 出题质量不稳停用",
+    "deprecated_commit": "7308f00",
+    "note": "抽题已通过 _activeSourceFilter 自动排除；保留作低水平兜底参考，但不应作锚点/训练样本"
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "source": "batch_2026_05_07_g6_math_r2",
+  "source": "batch_2026_05_07_g6_math_r2_deprecated",
   "subject": "math",
   "grade": 6,
   "knowledge_points_added": [],
@@ -13,7 +13,8 @@
       "answer": "2",
       "explanation": "底面周长 = 12.56cm，半径$= 12.56 \\div (2 \\times 3.14$) = 2cm。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -24,7 +25,8 @@
       "answer": "1.5",
       "explanation": "侧面展开为正方形 → 底面周长=高=9.42cm；半径$=9.42 \\div 6.28=1.5cm$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -41,7 +43,8 @@
       "answer": "C",
       "explanation": "圆柱有无数条高，所有高都相等。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -52,7 +55,8 @@
       "answer": "2",
       "explanation": "锯 3 段多 4 个底面，$4\\pi r^{2}=50.24$，$r^{2}=4$，r=2cm。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -63,7 +67,8 @@
       "answer": "12",
       "explanation": "半径$=18.84 \\div 6.28=3cm$，高$=3 \\times 4=12cm$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -74,7 +79,8 @@
       "answer": "1.27",
       "explanation": "底面周长=4dm，直径=4÷3.14≈1.27dm。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -85,7 +91,8 @@
       "answer": "12.56",
       "explanation": "侧面积减少=底面周长$\\times 2=25.12$，底面周长=12.56cm。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -96,7 +103,8 @@
       "answer": "251.2",
       "explanation": "$S=2\\pi r^{2}+2\\pi rh=2 \\times 3.14 \\times 16+2 \\times 3.14 \\times 4 \\times 6=100.48+150.72=251.2dm^{2}$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -107,7 +115,8 @@
       "answer": "75.36",
       "explanation": "无盖只算 1 底+侧面：$3.14 \\times 4+2 \\times 3.14 \\times 2 \\times 5=12.56+62.8=75.36dm^{2}$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black' stroke-dasharray='4 2'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><text x='105' y='80' font-size='12'>h</text><text x='30' y='25' font-size='10'>无盖</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -118,7 +127,8 @@
       "answer": "113.04",
       "explanation": "最大圆柱底面直径=6，半径=3，高=6；侧面积$=2 \\times 3.14 \\times 3 \\times 6=113.04cm^{2}$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -129,7 +139,8 @@
       "answer": "125.6",
       "explanation": "半径$=12.56 \\div 6.28=2$；$S=2 \\times 3.14 \\times 4+12.56 \\times 8=25.12+100.48=125.6cm^{2}$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -140,7 +151,8 @@
       "answer": "2.512",
       "explanation": "通风管只有侧面：$3.14 \\times 0.4 \\times 2=2.512m^{2}$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -151,7 +163,8 @@
       "answer": "1142.96",
       "explanation": "底面周长=31.4，半径=5cm；S侧$=31.4 \\times 31.4=985.96$；2底$=2 \\times 3.14 \\times 25=157$；总=1142.96cm²。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -162,7 +175,8 @@
       "answer": "18.84",
       "explanation": "每节侧面$=2 \\times 3.14 \\times 0.2 \\times 3=3.768m^{2}$；5 节=18.84m²。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -179,7 +193,8 @@
       "answer": "C",
       "explanation": "圆柱表面积=侧面积+2 个底面积。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -190,7 +205,8 @@
       "answer": "18.84",
       "explanation": "$V=3.14 \\times 2^{2} \\times 1.5=18.84m^{3}$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='10' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='10' fill='none' stroke='black'/><path d='M 55 80 Q 100 92 145 80 L 145 120 Q 100 132 55 120 Z' fill='lightblue' stroke='blue'/><text x='150' y='100' font-size='10'>水</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -201,7 +217,8 @@
       "answer": "785",
       "explanation": "水面高$=12-2=10cm$；$V=3.14 \\times 25 \\times 10=785cm^{3}=785mL$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -212,7 +229,8 @@
       "answer": "62.8",
       "explanation": "V=底面积×高$=12.56 \\times 5=62.8cm^{3}$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -223,7 +241,8 @@
       "answer": "942",
       "explanation": "$V=3.14 \\times 100 \\times 3=942cm^{3}$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -234,7 +253,8 @@
       "answer": "4",
       "explanation": "$h=V \\div \\pi r^{2}=50.24 \\div$($3.14 \\times 4$)=4cm。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -245,7 +265,8 @@
       "answer": "75.36",
       "explanation": "半径$=25.12 \\div 6.28=4dm$；$V=3.14 \\times 16 \\times 1.5=75.36dm^{3}$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -256,7 +277,8 @@
       "answer": "36",
       "explanation": "体积不变：$3.14 \\times 36 \\times 9=3.14 \\times 9 \\times h$，h=36cm。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -266,7 +288,8 @@
       "difficulty": "hard",
       "answer": "10",
       "explanation": "$h=V \\div \\pi r^{2}=502.4 \\div$($3.14 \\times 16$)=10cm。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -282,7 +305,8 @@
       ],
       "answer": "B",
       "explanation": "圆锥只有 1 条高，是顶点到底面圆心的距离。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -299,7 +323,8 @@
         "C. 2.0",
         "D. 5.0"
       ],
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -315,7 +340,8 @@
       ],
       "answer": "A",
       "explanation": "圆锥只有 1 条高（顶点到底面圆心的距离）。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -331,7 +357,8 @@
         "C. 1.5",
         "D. 4.0"
       ],
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -341,7 +368,8 @@
       "difficulty": "hard",
       "answer": "28.26",
       "explanation": "绕 4cm 边旋转，底面半径=3cm；底面积$=3.14 \\times 9=28.26cm^{2}$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -357,7 +385,8 @@
       ],
       "answer": "D",
       "explanation": "圆锥沿高切开，截面是等腰三角形。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -368,7 +397,8 @@
       "answer": "5",
       "explanation": "底面半径=直径$\\div 2=5dm$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='120' rx='50' ry='12' fill='none' stroke='black'/><line x1='50' y1='120' x2='100' y2='20' stroke='black'/><line x1='150' y1='120' x2='100' y2='20' stroke='black'/><line x1='100' y1='20' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='75' font-size='12'>h</text><text x='80' y='135' font-size='12'>r</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -384,7 +414,8 @@
       ],
       "answer": "C",
       "explanation": "圆锥体积$=\\frac{1}{3} \\times$底面积×高$=(\\frac{1}{3})\\pi r^{2}h$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -394,7 +425,8 @@
       "difficulty": "medium",
       "answer": "72",
       "explanation": "$V=(\\frac{1}{3}) \\times 24 \\times 9=72cm^{3}$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -405,7 +437,8 @@
       "answer": "4710",
       "explanation": "$V=(\\frac{1}{3}) \\times 3.14 \\times 4 \\times 1.5=6.28m^{3}$；$6.28 \\times 750=4710kg$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='120' rx='50' ry='12' fill='none' stroke='black'/><line x1='50' y1='120' x2='100' y2='20' stroke='black'/><line x1='150' y1='120' x2='100' y2='20' stroke='black'/><line x1='100' y1='20' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='75' font-size='12'>h</text><text x='80' y='135' font-size='12'>r</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -415,7 +448,8 @@
       "difficulty": "medium",
       "answer": "2",
       "explanation": "$h=3V \\div \\pi r^{2}=3 \\times 18.84 \\div$($3.14 \\times 9$)=2cm。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -431,7 +465,8 @@
       ],
       "answer": "C",
       "explanation": "等底，体积比=高比$\\times \\frac{1}{3}$。圆锥V=1/3 S h₁；圆柱V=S h₂；1/3 h₁ $= (\\frac{1}{4}$) h₂，h₁:h₂=3:4。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -441,7 +476,8 @@
       "difficulty": "hard",
       "answer": "4",
       "explanation": "等底体积相等：$(\\frac{1}{3})S \\times 12=S \\times h$，h=4cm。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -457,7 +493,8 @@
       ],
       "answer": "C",
       "explanation": "$V=(\\frac{1}{3})\\pi r^{2}h$，r 扩大 3 倍则$r^{2}$扩大 9 倍。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -467,7 +504,8 @@
       "difficulty": "hard",
       "answer": "5.024",
       "explanation": "$r=12.56 \\div 6.28=2$；$V=(\\frac{1}{3}) \\times 3.14 \\times 4 \\times 1.2=5.024m^{3}$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -477,7 +515,8 @@
       "difficulty": "medium",
       "answer": "20",
       "explanation": "V锥$=\\frac{1}{3} V$柱=20cm³。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -487,7 +526,8 @@
       "difficulty": "medium",
       "answer": "24",
       "explanation": "高相等且体积相等：S柱$\\times h=(\\frac{1}{3}$)S锥×h；S锥=3 S柱=24cm²。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -498,7 +538,8 @@
       "answer": "15",
       "explanation": "$S \\times 5=(\\frac{1}{3}$)$\\times S \\times h$，h=15cm。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='60' cy='30' rx='30' ry='8' fill='none' stroke='black'/><ellipse cx='60' cy='120' rx='30' ry='8' fill='none' stroke='black'/><line x1='30' y1='30' x2='30' y2='120' stroke='black'/><line x1='90' y1='30' x2='90' y2='120' stroke='black'/><ellipse cx='150' cy='120' rx='30' ry='8' fill='none' stroke='black'/><line x1='120' y1='120' x2='150' y2='30' stroke='black'/><line x1='180' y1='120' x2='150' y2='30' stroke='black'/><text x='50' y='75' font-size='10'>圆柱</text><text x='140' y='100' font-size='10'>圆锥</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -509,7 +550,8 @@
       "answer": "301.44",
       "explanation": "V柱$=3.14 \\times 16 \\times 9=452.16$；V锥$=\\frac{1}{3} V$柱=150.72；削去$=452.16-150.72=301.44cm^{3}$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='60' cy='30' rx='30' ry='8' fill='none' stroke='black'/><ellipse cx='60' cy='120' rx='30' ry='8' fill='none' stroke='black'/><line x1='30' y1='30' x2='30' y2='120' stroke='black'/><line x1='90' y1='30' x2='90' y2='120' stroke='black'/><ellipse cx='150' cy='120' rx='30' ry='8' fill='none' stroke='black'/><line x1='120' y1='120' x2='150' y2='30' stroke='black'/><line x1='180' y1='120' x2='150' y2='30' stroke='black'/><text x='50' y='75' font-size='10'>圆柱</text><text x='140' y='100' font-size='10'>圆锥</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -519,7 +561,8 @@
       "difficulty": "hard",
       "answer": "120",
       "explanation": "V柱$=3.14 \\times 36 \\times 10=1130.4$；V锥$=(\\frac{1}{3}) \\times 3.14 \\times 9 \\times h=1130.4$；h=120cm。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -529,7 +572,8 @@
       "difficulty": "medium",
       "answer": "36",
       "explanation": "圆锥$=\\frac{1}{3}$圆柱，差是$\\frac{2}{3}$圆柱=24，圆柱=36cm³。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "圆柱与圆锥",
@@ -539,7 +583,8 @@
       "difficulty": "hard",
       "answer": "3",
       "explanation": "V锥$=3.14 \\times 25 \\times 0.36=28.26$；$(\\frac{1}{3}) \\times 3.14 \\times 9 \\times h=28.26$；h=3cm。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -555,7 +600,8 @@
       ],
       "answer": "B",
       "explanation": "糖占$1/(1+9)=\\frac{1}{10}$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -565,7 +611,8 @@
       "difficulty": "medium",
       "answer": "40",
       "explanation": "甲:乙=3:5；$24 \\div 3 \\times 5=40$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -575,7 +622,8 @@
       "difficulty": "medium",
       "answer": "8:5",
       "explanation": "$80:50=8:5$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -585,7 +633,8 @@
       "difficulty": "medium",
       "answer": "4:9",
       "explanation": "全班=45，男生:全班$=20:45=4:9$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -601,7 +650,8 @@
       ],
       "answer": "D",
       "explanation": "1:1.5=2/3≈0.667；$3:4=0.75$；6:7≈0.857；4:4.5≈0.889。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -611,7 +661,8 @@
       "difficulty": "hard",
       "answer": "140",
       "explanation": "苹果占$\\frac{7}{10}$，$200 \\times \\frac{7}{10}=140$棵。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -627,7 +678,8 @@
       ],
       "answer": "B",
       "explanation": "比值不变须前后同时扩大相同倍数。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -643,7 +695,8 @@
       ],
       "answer": "B",
       "explanation": "$4.8 \\div 0.6=8$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -653,7 +706,8 @@
       "difficulty": "medium",
       "answer": "2",
       "explanation": "$(\\frac{1}{2}) \\div (\\frac{1}{4}$)=2。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -663,7 +717,8 @@
       "difficulty": "medium",
       "answer": "1/4",
       "explanation": "化为同单位：$30:120=\\frac{1}{4}$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -673,7 +728,8 @@
       "difficulty": "medium",
       "answer": "1",
       "explanation": "$0.75=\\frac{3}{4}$，比值=1。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -683,7 +739,8 @@
       "difficulty": "medium",
       "answer": "20",
       "explanation": "$25 \\div 1.25=20$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -699,7 +756,8 @@
       ],
       "answer": "C",
       "explanation": "$9 \\div 6=1.5$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -709,7 +767,8 @@
       "difficulty": "hard",
       "answer": "3/5",
       "explanation": "$0.625=\\frac{5}{8}$；$(\\frac{3}{8}) \\div (\\frac{5}{8}$$)=\\frac{3}{5}$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -719,7 +778,8 @@
       "difficulty": "medium",
       "answer": "3:1",
       "explanation": "同乘 10：$12:4=3:1$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -729,7 +789,8 @@
       "difficulty": "medium",
       "answer": "8:9",
       "explanation": "同乘 12：8:9。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -745,7 +806,8 @@
       ],
       "answer": "B",
       "explanation": "同除以 25。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -755,7 +817,8 @@
       "difficulty": "medium",
       "answer": "1:2",
       "explanation": "$1m=100cm$；$50:100=1:2$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -765,7 +828,8 @@
       "difficulty": "medium",
       "answer": "2:5",
       "explanation": "同乘 100：$50:125=2:5$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -775,7 +839,8 @@
       "difficulty": "medium",
       "answer": "3:2",
       "explanation": "同乘 8：3:2。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -791,7 +856,8 @@
       ],
       "answer": "C",
       "explanation": "$0.8:0.6=8:6=4:3$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -807,7 +873,8 @@
       ],
       "answer": "B",
       "explanation": "比值都是$\\frac{2}{3}$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -823,7 +890,8 @@
       ],
       "answer": "A",
       "explanation": "比值都是$\\frac{5}{8}$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -833,7 +901,8 @@
       "difficulty": "medium",
       "answer": "2",
       "explanation": "外项积=内项积：$24a=48$，a=2。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -849,7 +918,8 @@
       ],
       "answer": "B",
       "explanation": "$4:3=8:6$满足等积。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -865,7 +935,8 @@
       ],
       "answer": "C",
       "explanation": "$1 \\times 6=2 \\times 3=6$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -875,7 +946,8 @@
       "difficulty": "hard",
       "answer": "5:3",
       "explanation": "3a=5b → a/b=5/3 → $a:b=5:3$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -885,7 +957,8 @@
       "difficulty": "medium",
       "answer": "10",
       "explanation": "$8x=80$，x=10。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -901,7 +974,8 @@
       ],
       "answer": "B",
       "explanation": "首末两项是外项：4 和 21。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -917,7 +991,8 @@
       ],
       "answer": "A",
       "explanation": "外项积=内项积：$ad=bc$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -927,7 +1002,8 @@
       "difficulty": "medium",
       "answer": "12",
       "explanation": "$1.5x=18$，x=12。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -943,7 +1019,8 @@
       ],
       "answer": "C",
       "explanation": "外项积$=3 \\times 24=72$；内项积$=8 \\times 9=72$，所以两者相等。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -953,7 +1030,8 @@
       "difficulty": "medium",
       "answer": "7:4",
       "explanation": "$a/b=\\frac{7}{4}$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -963,7 +1041,8 @@
       "difficulty": "medium",
       "answer": "15",
       "explanation": "外项积=60；另一内项$=60 \\div 4=15$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -973,7 +1052,8 @@
       "difficulty": "hard",
       "answer": "10:7",
       "explanation": "$m+n=10$份，n=7份。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -983,7 +1063,8 @@
       "difficulty": "medium",
       "answer": "2",
       "explanation": "$15x=30$，x=2。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -993,7 +1074,8 @@
       "difficulty": "medium",
       "answer": "3/2",
       "explanation": "$4x=6$，$x=\\frac{3}{2}$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -1003,7 +1085,8 @@
       "difficulty": "medium",
       "answer": "20",
       "explanation": "$0.6x=12$，x=20。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -1013,7 +1096,8 @@
       "difficulty": "hard",
       "answer": "12",
       "explanation": "$21x=252$，x=12。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -1023,7 +1107,8 @@
       "difficulty": "hard",
       "answer": "3/5",
       "explanation": "$(\\frac{1}{2})x=(\\frac{2}{5}$)$\\times (\\frac{3}{4})=\\frac{3}{10}$；$x=\\frac{3}{5}$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -1033,7 +1118,8 @@
       "difficulty": "medium",
       "answer": "27",
       "explanation": "$4x=108$，x=27。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -1043,7 +1129,8 @@
       "difficulty": "medium",
       "answer": "400",
       "explanation": "$3:240=5:x$；$3x=1200$；x=400。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "比和比例",
@@ -1053,7 +1140,8 @@
       "difficulty": "medium",
       "answer": "40",
       "explanation": "$4:5=32:x$；$4x=160$；x=40。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1069,7 +1157,8 @@
       ],
       "answer": "C",
       "explanation": "平移不改变图形形状和大小，只改变位置。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1080,7 +1169,8 @@
       "answer": "不变",
       "explanation": "平移不改变形状和大小。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><rect x='20' y='40' width='40' height='40' fill='none' stroke='black'/><rect x='110' y='40' width='40' height='40' fill='none' stroke='blue' stroke-dasharray='3 3'/><line x1='60' y1='60' x2='110' y2='60' stroke='red' marker-end='url(#a)'/><defs><marker id='a' markerWidth='8' markerHeight='8' refX='5' refY='3' orient='auto'><polygon points='0 0,6 3,0 6' fill='red'/></marker></defs><text x='70' y='55' font-size='10'>平移</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1096,7 +1186,8 @@
       ],
       "answer": "B",
       "explanation": "平移不改变大小，面积相等。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1112,7 +1203,8 @@
       ],
       "answer": "C",
       "explanation": "x+4，y+3 → (5,5)。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1128,7 +1220,8 @@
       ],
       "answer": "B",
       "explanation": "互相抵消，回到原位。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1144,7 +1237,8 @@
       ],
       "answer": "D",
       "explanation": "钟表指针运动是旋转。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1154,7 +1248,8 @@
       "difficulty": "medium",
       "answer": "1:1",
       "explanation": "面积不变。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1170,7 +1265,8 @@
       ],
       "answer": "A",
       "explanation": "左右抵消，相当于只向上平移 b 格。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1187,7 +1283,8 @@
       "answer": "A",
       "explanation": "旋转后边长不变，直角边仍是直角边，方向改变 90°。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><polygon points='100,75 140,75 140,40' fill='none' stroke='black'/><polygon points='100,75 100,115 60,115' fill='none' stroke='blue' stroke-dasharray='3 3'/><circle cx='100' cy='75' r='3' fill='red'/><text x='105' y='70' font-size='10'>O</text><path d='M 130 60 A 25 25 0 0 1 80 100' fill='none' stroke='red'/></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1203,7 +1300,8 @@
       ],
       "answer": "C",
       "explanation": "时针 1 小时转 30°，3 小时转 90°。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1219,7 +1317,8 @@
       ],
       "answer": "B",
       "explanation": "风车旋转。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1229,7 +1328,8 @@
       "difficulty": "medium",
       "answer": "不变",
       "explanation": "旋转不改变图形的形状和大小。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1239,7 +1339,8 @@
       "difficulty": "medium",
       "answer": "90",
       "explanation": "60+30=90°。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1255,7 +1356,8 @@
       ],
       "answer": "C",
       "explanation": "长方形是 2 阶旋转对称，180°。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1265,7 +1367,8 @@
       "difficulty": "medium",
       "answer": "90",
       "explanation": "顺 270°=逆 90°。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1281,7 +1384,8 @@
       ],
       "answer": "B",
       "explanation": "等腰三角形（非等边）只有 1 条对称轴。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1298,7 +1402,8 @@
       "answer": "D",
       "explanation": "圆有无数条对称轴。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><polygon points='40,100 80,40 80,100' fill='none' stroke='black'/><polygon points='160,100 120,40 120,100' fill='none' stroke='blue' stroke-dasharray='3 3'/><line x1='100' y1='20' x2='100' y2='130' stroke='red' stroke-dasharray='2 2'/><text x='105' y='25' font-size='10'>对称轴</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1308,7 +1413,8 @@
       "difficulty": "medium",
       "answer": "6",
       "explanation": "正 n 边形有 n 条对称轴。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1324,7 +1430,8 @@
       ],
       "answer": "A",
       "explanation": "H 有水平和竖直 2 条对称轴。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1340,7 +1447,8 @@
       ],
       "answer": "C",
       "explanation": "“田”有竖直、水平两条对称轴；其他字均不对称。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1350,7 +1458,8 @@
       "difficulty": "medium",
       "answer": "3",
       "explanation": "三条中线（=高=中垂线）。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1360,7 +1469,8 @@
       "difficulty": "medium",
       "answer": "重合",
       "explanation": "完全重合是定义。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1371,7 +1481,8 @@
       "answer": "12",
       "explanation": "$4 \\times 3=12cm$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><rect x='20' y='80' width='30' height='20' fill='none' stroke='black'/><rect x='90' y='40' width='90' height='60' fill='none' stroke='blue'/><text x='25' y='115' font-size='10'>原图</text><text x='110' y='115' font-size='10'>放大3倍</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1387,7 +1498,8 @@
       ],
       "answer": "C",
       "explanation": "边长扩大 2 倍，面积扩大 4 倍。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1397,7 +1509,8 @@
       "difficulty": "medium",
       "answer": "1/4",
       "explanation": "缩小比 1:4 → 边长$\\times \\frac{1}{4}$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1407,7 +1520,8 @@
       "difficulty": "hard",
       "answer": "40",
       "explanation": "原长=8，宽=5；原面积=40cm²。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1423,7 +1537,8 @@
       ],
       "answer": "C",
       "explanation": "线段乘 3，面积乘 9。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1433,7 +1548,8 @@
       "difficulty": "medium",
       "answer": "2",
       "explanation": "线段比即为放大倍数。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1443,7 +1559,8 @@
       "difficulty": "medium",
       "answer": "12",
       "explanation": "$60 \\times \\frac{1}{5}=12cm$；宽=8cm（题目只填长）。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "图形的运动",
@@ -1459,7 +1576,8 @@
       ],
       "answer": "B",
       "explanation": "形状不变；周长是 k 倍；面积是$k^{2}$倍。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1475,7 +1593,8 @@
       ],
       "answer": "B",
       "explanation": "速度一定时，路程÷时间=定值，路程与时间成正比。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1491,7 +1610,8 @@
       ],
       "answer": "A",
       "explanation": "路程÷油量=12（一定）。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1501,7 +1621,8 @@
       "difficulty": "medium",
       "answer": "正",
       "explanation": "比值为 4，定值。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1517,7 +1638,8 @@
       ],
       "answer": "D",
       "explanation": "总价÷数量=单价（一定）成正比。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1533,7 +1655,8 @@
       ],
       "answer": "A",
       "explanation": "总数÷时间=50（一定），是正比例。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1544,7 +1667,8 @@
       "answer": "直线",
       "explanation": "y=kx 是过原点的直线。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><line x1='30' y1='130' x2='180' y2='130' stroke='black' marker-end='url(#a2)'/><line x1='30' y1='130' x2='30' y2='10' stroke='black' marker-end='url(#a2)'/><defs><marker id='a2' markerWidth='8' markerHeight='8' refX='5' refY='3' orient='auto'><polygon points='0 0,6 3,0 6' fill='black'/></marker></defs><line x1='30' y1='130' x2='170' y2='30' stroke='blue'/><text x='180' y='140' font-size='10'>x</text><text x='15' y='15' font-size='10'>y</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1560,7 +1684,8 @@
       ],
       "answer": "A",
       "explanation": "$y/x=\\frac{7}{3}$是定值。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1576,7 +1701,8 @@
       ],
       "answer": "C",
       "explanation": "长×宽=面积（一定），是反比。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1586,7 +1712,8 @@
       "difficulty": "medium",
       "answer": "反",
       "explanation": "乘积一定。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1602,7 +1729,8 @@
       ],
       "answer": "B",
       "explanation": "路程一定，速度×时间=定值。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1612,7 +1740,8 @@
       "difficulty": "medium",
       "answer": "反",
       "explanation": "效率×时间=工程总量（定值）。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1628,7 +1757,8 @@
       ],
       "answer": "D",
       "explanation": "总价一定，单价×数量=总价。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1638,7 +1768,8 @@
       "difficulty": "medium",
       "answer": "6",
       "explanation": "总量=300t；$300 \\div 50=6$天。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1648,7 +1779,8 @@
       "difficulty": "medium",
       "answer": "反",
       "explanation": "底×高=面积（定值）。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1664,7 +1796,8 @@
       ],
       "answer": "C",
       "explanation": "判断反比例需积一定。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1680,7 +1813,8 @@
       ],
       "answer": "A",
       "explanation": "$C/r=2\\pi$是定值。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1690,7 +1824,8 @@
       "difficulty": "medium",
       "answer": "正",
       "explanation": "单价一定，总价÷数量=单价。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1700,7 +1835,8 @@
       "difficulty": "medium",
       "answer": "反",
       "explanation": "工程量一定，人×时间=工程量。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1716,7 +1852,8 @@
       ],
       "answer": "D",
       "explanation": "圆的周长除以直径等于 π，是定值，成正比例。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1732,7 +1869,8 @@
       ],
       "answer": "C",
       "explanation": "工作总量÷工作时间=工作效率（定值），总量与时间成正比。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1748,7 +1886,8 @@
       ],
       "answer": "C",
       "explanation": "男+女=50，是和一定，不成正比也不成反比。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1764,7 +1903,8 @@
       ],
       "answer": "B",
       "explanation": "圆面积=πr²，与半径平方成正比，而非半径成正比。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1781,7 +1921,8 @@
       "answer": "A",
       "explanation": "y=kx 过原点的直线。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><line x1='30' y1='130' x2='180' y2='130' stroke='black' marker-end='url(#a2)'/><line x1='30' y1='130' x2='30' y2='10' stroke='black' marker-end='url(#a2)'/><defs><marker id='a2' markerWidth='8' markerHeight='8' refX='5' refY='3' orient='auto'><polygon points='0 0,6 3,0 6' fill='black'/></marker></defs><line x1='30' y1='130' x2='170' y2='30' stroke='blue'/><text x='180' y='140' font-size='10'>x</text><text x='15' y='15' font-size='10'>y</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1792,7 +1933,8 @@
       "answer": "曲线",
       "explanation": "$xy=k$，是双曲线（曲线）。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><line x1='30' y1='130' x2='180' y2='130' stroke='black'/><line x1='30' y1='130' x2='30' y2='10' stroke='black'/><path d='M 50 20 Q 80 70 170 120' fill='none' stroke='blue'/><text x='180' y='140' font-size='10'>x</text><text x='15' y='15' font-size='10'>y</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1802,7 +1944,8 @@
       "difficulty": "medium",
       "answer": "15",
       "explanation": "$k=y/x=3$；x=5 时$y=15$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1812,7 +1955,8 @@
       "difficulty": "medium",
       "answer": "3",
       "explanation": "$xy=24$；$y=\\frac{24}{8}=3$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1828,7 +1972,8 @@
       ],
       "answer": "C",
       "explanation": "反比例是双曲线。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1838,7 +1983,8 @@
       "difficulty": "hard",
       "answer": "陡",
       "explanation": "k 越大，斜率越大，直线越陡。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1848,7 +1994,8 @@
       "difficulty": "easy",
       "answer": "原",
       "explanation": "过原点 (0,0)。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1858,7 +2005,8 @@
       "difficulty": "easy",
       "answer": "实际距离",
       "explanation": "比例尺=图上距离:实际距离。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1869,7 +2017,8 @@
       "answer": "12",
       "explanation": "实际$=6 \\times 200000=1200000cm=12km$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><rect x='20' y='30' width='160' height='80' fill='none' stroke='black'/><text x='25' y='50' font-size='10'>A 城</text><text x='150' y='100' font-size='10'>B 城</text><line x1='40' y1='55' x2='160' y2='95' stroke='blue'/><text x='80' y='80' font-size='10'>地图距离</text><text x='30' y='130' font-size='10'>比例尺 1:5000000</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1885,7 +2034,8 @@
       ],
       "answer": "C",
       "explanation": "图:实$=80mm:4mm=20:1$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1895,7 +2045,8 @@
       "difficulty": "hard",
       "answer": "4",
       "explanation": "$240km=24000000cm$；图$=24000000 \\div 6000000=4cm$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1905,7 +2056,8 @@
       "difficulty": "medium",
       "answer": "500",
       "explanation": "$50000cm=500m$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1915,7 +2067,8 @@
       "difficulty": "hard",
       "answer": "6",
       "explanation": "$60m=6000cm$；$6000 \\div 1000=6cm$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1931,7 +2084,8 @@
       ],
       "answer": "C",
       "explanation": "前项大于后项是放大。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "正反比例",
@@ -1942,7 +2096,8 @@
       "answer": "5",
       "explanation": "实际$=8 \\times 5000000=40000000cm=400km$；时间$=400 \\div 80=5h$。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><rect x='20' y='30' width='160' height='80' fill='none' stroke='black'/><text x='25' y='50' font-size='10'>A 城</text><text x='150' y='100' font-size='10'>B 城</text><line x1='40' y1='55' x2='160' y2='95' stroke='blue'/><text x='80' y='80' font-size='10'>地图距离</text><text x='30' y='130' font-size='10'>比例尺 1:5000000</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "数学综合",
@@ -1952,7 +2107,8 @@
       "difficulty": "medium",
       "answer": "300",
       "explanation": "原价$\\times 0.8=240$，原价=300 元。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "数学综合",
@@ -1962,7 +2118,8 @@
       "difficulty": "hard",
       "answer": "48",
       "explanation": "调和平均：$2 \\times 60 \\times 40 \\div$($60+40)=\\frac{4800}{100}=48km/h$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "数学综合",
@@ -1972,7 +2129,8 @@
       "difficulty": "medium",
       "answer": "3",
       "explanation": "苹果 8 元/斤，梨 5 元/斤，差 3 元。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "数学综合",
@@ -1982,7 +2140,8 @@
       "difficulty": "hard",
       "answer": "少",
       "explanation": "(1+10%)(1-10%)=0.99，比原价少 1%。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "数学综合",
@@ -1992,7 +2151,8 @@
       "difficulty": "medium",
       "answer": "225",
       "explanation": "利息=本金×利率×年$=5000 \\times 0.0225 \\times 2=225$元。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "数学综合",
@@ -2008,7 +2168,8 @@
       ],
       "answer": "B",
       "explanation": "百分数后不可以加单位。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "数学综合",
@@ -2018,7 +2179,8 @@
       "difficulty": "medium",
       "answer": "2200",
       "explanation": "$3000 \\times 0.8=2400$；$2400-200=2200$元。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "数学综合",
@@ -2028,7 +2190,8 @@
       "difficulty": "hard",
       "answer": "30",
       "explanation": "$\\frac{1}{12}-\\frac{1}{20}=\\frac{8}{240}=\\frac{1}{30}$；乙=30 天。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "数学综合",
@@ -2045,7 +2208,8 @@
       "answer": "A",
       "explanation": "长方形绕一边旋转得到圆柱。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='30' rx='45' ry='12' fill='none' stroke='black'/><ellipse cx='100' cy='120' rx='45' ry='12' fill='none' stroke='black'/><line x1='55' y1='30' x2='55' y2='120' stroke='black'/><line x1='145' y1='30' x2='145' y2='120' stroke='black'/><line x1='100' y1='30' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='80' font-size='12'>h</text><text x='100' y='35' font-size='12'>O</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "数学综合",
@@ -2062,7 +2226,8 @@
       "answer": "B",
       "explanation": "形成圆锥。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='100' cy='120' rx='50' ry='12' fill='none' stroke='black'/><line x1='50' y1='120' x2='100' y2='20' stroke='black'/><line x1='150' y1='120' x2='100' y2='20' stroke='black'/><line x1='100' y1='20' x2='100' y2='120' stroke='gray' stroke-dasharray='3 3'/><text x='105' y='75' font-size='12'>h</text><text x='80' y='135' font-size='12'>r</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "数学综合",
@@ -2078,7 +2243,8 @@
       ],
       "answer": "C",
       "explanation": "形成球。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "数学综合",
@@ -2094,7 +2260,8 @@
       ],
       "answer": "D",
       "explanation": "等腰梯形绕一底旋转，形成圆台。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "数学综合",
@@ -2110,7 +2277,8 @@
       ],
       "answer": "B",
       "explanation": "放大改变图形大小（边长×2，面积×4）。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "数学综合",
@@ -2120,7 +2288,8 @@
       "difficulty": "medium",
       "answer": "6",
       "explanation": "$2 \\times 3 \\times 1=6$倍。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "数学综合",
@@ -2130,7 +2299,8 @@
       "difficulty": "medium",
       "answer": "9",
       "explanation": "面积比=边长比的平方=9。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2146,7 +2316,8 @@
       ],
       "answer": "A",
       "explanation": "3/5=0.6 < 0.65。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2156,7 +2327,8 @@
       "difficulty": "medium",
       "answer": "18/5",
       "explanation": "$3.6=\\frac{36}{10}=\\frac{18}{5}$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2166,7 +2338,8 @@
       "difficulty": "medium",
       "answer": "15/16",
       "explanation": "通分相加：$8+4+2+1=15$，即$\\frac{15}{16}$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2176,7 +2349,8 @@
       "difficulty": "easy",
       "answer": "2",
       "explanation": "$10x=20$，x=2。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2186,7 +2360,8 @@
       "difficulty": "easy",
       "answer": "200",
       "explanation": "$60 \\div 0.3=200$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2202,7 +2377,8 @@
       ],
       "answer": "B",
       "explanation": "0.808 > 0.8 = 80% $= \\frac{4}{5}$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2212,7 +2388,8 @@
       "difficulty": "medium",
       "answer": "110",
       "explanation": "$25 \\times 4.4=25 \\times 4+25 \\times 0.4=100+10=110$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2222,7 +2399,8 @@
       "difficulty": "medium",
       "answer": "15",
       "explanation": "甲$=60 \\times \\frac{3}{4}=45$；乙-甲$=60-45=15$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2232,7 +2410,8 @@
       "difficulty": "easy",
       "answer": "78.5",
       "explanation": "$S=\\pi r^{2}=3.14 \\times 25=78.5cm^{2}$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2242,7 +2421,8 @@
       "difficulty": "medium",
       "answer": "236",
       "explanation": "$S=2(8 \\times 6+8 \\times 5+6 \\times 5$)$=2(48+40+30)=236cm^{2}$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2252,7 +2432,8 @@
       "difficulty": "easy",
       "answer": "64",
       "explanation": "$V=4^{3}=64dm^{3}$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2263,7 +2444,8 @@
       "answer": "45",
       "explanation": "圆柱-圆锥$=\\frac{2}{3}$圆柱=30；圆柱=45cm³。",
       "image": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150' width='200' height='150'><ellipse cx='60' cy='30' rx='30' ry='8' fill='none' stroke='black'/><ellipse cx='60' cy='120' rx='30' ry='8' fill='none' stroke='black'/><line x1='30' y1='30' x2='30' y2='120' stroke='black'/><line x1='90' y1='30' x2='90' y2='120' stroke='black'/><ellipse cx='150' cy='120' rx='30' ry='8' fill='none' stroke='black'/><line x1='120' y1='120' x2='150' y2='30' stroke='black'/><line x1='180' y1='120' x2='150' y2='30' stroke='black'/><text x='50' y='75' font-size='10'>圆柱</text><text x='140' y='100' font-size='10'>圆锥</text></svg>",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2273,7 +2455,8 @@
       "difficulty": "hard",
       "answer": "2400",
       "explanation": "实际长=60m，宽=40m；面积=2400m²。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2289,7 +2472,8 @@
       ],
       "answer": "C",
       "explanation": "正方形既是轴对称又是中心对称。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2299,7 +2483,8 @@
       "difficulty": "medium",
       "answer": "长方形",
       "explanation": "圆柱沿轴切，截面为长方形（高×直径）。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2309,7 +2494,8 @@
       "difficulty": "medium",
       "answer": "60",
       "explanation": "$V=50 \\times 40 \\times 30=60000cm^{3}=60dm^{3}$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2319,7 +2505,8 @@
       "difficulty": "medium",
       "answer": "150",
       "explanation": "$(145+150+148+152+155) \\div 5=750 \\div 5=150cm$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2335,7 +2522,8 @@
       ],
       "answer": "C",
       "explanation": "$\\frac{6}{10}=\\frac{3}{5}$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2351,7 +2539,8 @@
       ],
       "answer": "B",
       "explanation": "折线统计图反映变化趋势。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2361,7 +2550,8 @@
       "difficulty": "medium",
       "answer": "百分比",
       "explanation": "扇形统计图反映百分比关系。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2371,7 +2561,8 @@
       "difficulty": "easy",
       "answer": "黄",
       "explanation": "黄球数量最多。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2381,7 +2572,8 @@
       "difficulty": "medium",
       "answer": "11",
       "explanation": "总和=55；$x=55-44=11$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2391,7 +2583,8 @@
       "difficulty": "medium",
       "answer": "40",
       "explanation": "$12+18+8+2=40$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2401,7 +2594,8 @@
       "difficulty": "medium",
       "answer": "50",
       "explanation": "和差问题：$(80+20) \\div 2=50$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2411,7 +2605,8 @@
       "difficulty": "hard",
       "answer": "23",
       "explanation": "假设全是鸡：脚=70，差 24，每换 1 只兔多 2 脚，兔=12，鸡=23。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2421,7 +2616,8 @@
       "difficulty": "medium",
       "answer": "6",
       "explanation": "$1 \\div (\\frac{1}{15}+\\frac{1}{10})=1 \\div$($\\frac{1}{6})=6$天。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2431,7 +2627,8 @@
       "difficulty": "medium",
       "answer": "3",
       "explanation": "速度=72km/h；剩 216km；$216 \\div 72=3$小时。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2441,7 +2638,8 @@
       "difficulty": "hard",
       "answer": "46",
       "explanation": "一班$=110+100-156=54$；三班$=100-54=46$。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2451,7 +2649,8 @@
       "difficulty": "hard",
       "answer": "72",
       "explanation": "$0.25x+18=0.5x$；$0.25x=18$；x=72。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     },
     {
       "chapter": "总复习",
@@ -2461,7 +2660,16 @@
       "difficulty": "medium",
       "answer": "18",
       "explanation": "差 2 份=12，1 份=6；乙=3 份=18。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_math_r2_deprecated"
     }
-  ]
+  ],
+  "_quality_meta": {
+    "deprecated": true,
+    "deprecated_version": "V3.10",
+    "deprecated_at": "2026-05-08",
+    "deprecated_reason": "语数转真题路线（北师大数学 / 部编语文），cron AI 出题质量不稳停用",
+    "deprecated_commit": "7308f00",
+    "note": "抽题已通过 _activeSourceFilter 自动排除；保留作低水平兜底参考，但不应作锚点/训练样本"
+  }
 }

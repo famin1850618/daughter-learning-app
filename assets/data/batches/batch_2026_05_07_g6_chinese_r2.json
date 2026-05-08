@@ -1,5 +1,5 @@
 {
-  "source": "batch_2026_05_07_g6_chinese_r2",
+  "source": "batch_2026_05_07_g6_chinese_r2_deprecated",
   "subject": "chinese",
   "grade": 6,
   "knowledge_points_added": [],
@@ -18,7 +18,8 @@
       ],
       "answer": "A",
       "explanation": "「正月」读 zhēng；「正规」读 zhèng。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -34,7 +35,8 @@
       ],
       "answer": "D",
       "explanation": "D 三个「削」均读 xuē；A 处理 chǔ、处所 chù、处境 chǔ；B 兴奋 xīng、兴趣 xìng、兴旺 xīng；C 露 lù/lòu 不一致。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -50,7 +52,8 @@
       ],
       "answer": "B",
       "explanation": "「曾经」读 céng；「不曾」也读 céng；A、C、D 均读 zēng。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -60,7 +63,8 @@
       "difficulty": "easy",
       "answer": "锲",
       "explanation": "「锲而不舍」出自《荀子》，意为坚持不懈。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -76,7 +80,8 @@
       ],
       "answer": "B",
       "explanation": "「覆」字意为翻转，「翻天覆地」是正确写法。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -92,7 +97,8 @@
       ],
       "answer": "A",
       "explanation": "「司空」是古代官名；「司空见惯」原意是身居司空高位的人见多了不觉得奇怪。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -108,7 +114,8 @@
       ],
       "answer": "A",
       "explanation": "「微」指细小苗头，「著」指明显结果。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -118,7 +125,8 @@
       "difficulty": "medium",
       "answer": "停止",
       "explanation": "「已」意为「停止」，「万不得已」意为没有办法停下来，必须如此。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -134,7 +142,8 @@
       ],
       "answer": "C",
       "explanation": "A、B、D 中「绝」均意为「断绝、停止」；C 中「绝」意为「绝望、走投无路」，与其他三项不同。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -144,7 +153,8 @@
       "difficulty": "medium",
       "answer": "智慧",
       "explanation": "「知」通「智」，意为「智慧」。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -160,7 +170,8 @@
       ],
       "answer": "A",
       "explanation": "「截然」形容界限非常分明。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -176,7 +187,8 @@
       ],
       "answer": "A",
       "explanation": "「焉」意为「怎么、哪里」，「焉知非福」即「怎么知道不是福气呢」。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -192,7 +204,8 @@
       ],
       "answer": "A",
       "explanation": "「其所」指应得之处，「死得其所」形容死得有意义。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -208,7 +221,8 @@
       ],
       "answer": "A",
       "explanation": "「精兵简政」指精减人员、简化机构。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -224,7 +238,8 @@
       ],
       "answer": "B",
       "explanation": "「完全」表示不掺杂别的目的，全部、彻底地为解放人民。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -240,7 +255,8 @@
       ],
       "answer": "A",
       "explanation": "「依依不舍」与「难舍难分」均形容舍不得离开。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -256,7 +272,8 @@
       ],
       "answer": "A",
       "explanation": "「鄙视」反义词为「尊敬」，B、C 都是近义词。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -272,7 +289,8 @@
       ],
       "answer": "C",
       "explanation": "C 是反义词；A、B、D 都是近义词。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -288,7 +306,8 @@
       ],
       "answer": "D",
       "explanation": "「精兵简政」与「减员增效」均强调精简人员提高效率。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -304,7 +323,8 @@
       ],
       "answer": "C",
       "explanation": "「不可思议」指无法理解；「显而易见」指容易看出，正好相反。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -320,7 +340,8 @@
       ],
       "answer": "A",
       "explanation": "习惯搭配：改善生活、改进方法、改正错误。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -336,7 +357,8 @@
       ],
       "answer": "A",
       "explanation": "「鲜艳」修饰色彩明艳的事物，「旗帜」最恰当。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -352,7 +374,8 @@
       ],
       "answer": "C",
       "explanation": "「精神」要用「发扬」搭配，「发挥」常与「才能、作用、水平」搭配。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -368,7 +391,8 @@
       ],
       "answer": "A",
       "explanation": "「匆匆的脚步」搭配自然，呼应朱自清《匆匆》。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -384,7 +408,8 @@
       ],
       "answer": "C",
       "explanation": "「矛盾」要用「化解」「解决」，不能「改善」。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -400,7 +425,8 @@
       ],
       "answer": "B",
       "explanation": "A「司空见惯」用来形容常见事物；C「锲而不舍」与「三天打鱼」矛盾；D「见微知著」用错对象。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -410,7 +436,8 @@
       "difficulty": "easy",
       "answer": "锲",
       "explanation": "「锲而不舍」即坚持不懈。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -426,7 +453,8 @@
       ],
       "answer": "A",
       "explanation": "B、C 含贬义，D 比喻空想，均不合语境。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -442,7 +470,8 @@
       ],
       "answer": "A",
       "explanation": "「见微知著」字面是看见微小知道显著，整体比喻从苗头看本质。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -458,7 +487,8 @@
       ],
       "answer": "A",
       "explanation": "「有声有色」形容活动办得精彩。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -474,7 +504,8 @@
       ],
       "answer": "A",
       "explanation": "B 全贬；C 顽固贬；D 阴险贬。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -490,7 +521,8 @@
       ],
       "answer": "A",
       "explanation": "「执着」中性偏褒，其他三个均贬义。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -506,7 +538,8 @@
       ],
       "answer": "B",
       "explanation": "「武断」含贬义，其余三个均褒义。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -522,7 +555,8 @@
       ],
       "answer": "A",
       "explanation": "「鄙视」含贬义，其余褒义。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "字词专题",
@@ -538,7 +572,8 @@
         "B. 贬义",
         "C. 中性",
         "D. 既褒又贬"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -554,7 +589,8 @@
       ],
       "answer": "A",
       "explanation": "句式整齐，由两个相同结构的分句构成排比；不是比喻（无本体喻体），不是拟人（无人格化动作）。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -570,7 +606,8 @@
         "B. 拟人",
         "C. 夸张",
         "D. 排比"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -586,7 +623,8 @@
       ],
       "answer": "B",
       "explanation": "暗喻不用「像」「似」「仿佛」，而用「是」「成了」等判断词。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -602,7 +640,8 @@
       ],
       "answer": "A",
       "explanation": "「日子如轻烟……如薄雾」是比喻；句式整齐排列是排比。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -618,7 +657,8 @@
       ],
       "answer": "B",
       "explanation": "B 是同类比较（人比人），不是比喻；其他三项是不同类事物间的比喻。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -634,7 +674,8 @@
       ],
       "answer": "A",
       "explanation": "「溜」是人或动物的动作，用在「日子」上是拟人。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -650,7 +691,8 @@
       ],
       "answer": "A",
       "explanation": "「抚摸」是人的动作，赋予风以人的行为，是拟人。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -666,7 +708,8 @@
       ],
       "answer": "A",
       "explanation": "两个分句都是拟人；不构成排比（分句结构不严格平行），也无比喻。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -682,7 +725,8 @@
         "B. 比喻",
         "C. 夸张",
         "D. 设问"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -698,7 +742,8 @@
       ],
       "answer": "A",
       "explanation": "「歌唱」是人的行为，赋予鸟儿，构成拟人。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -714,7 +759,8 @@
       ],
       "answer": "A",
       "explanation": "两句对照鲜明，构成对比；不是排比（排比需三个或以上同结构分句）。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -730,7 +776,8 @@
       ],
       "answer": "A",
       "explanation": "三个结构相同的分句构成排比。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -740,7 +787,8 @@
       "difficulty": "easy",
       "answer": "三",
       "explanation": "排比修辞要求三个或以上结构相同或相似的句子。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -756,7 +804,8 @@
       ],
       "answer": "A",
       "explanation": "三个相同结构的分句构成排比；「枯」「青」「谢」「开」赋予杨柳桃花以生命动态，含拟人。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -772,7 +821,8 @@
       ],
       "answer": "A",
       "explanation": "排比的核心作用是增强气势、加强情感表达。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -788,7 +838,8 @@
         "B. 比喻",
         "C. 拟人",
         "D. 排比"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -804,7 +855,8 @@
       ],
       "answer": "A",
       "explanation": "「能吃下一头牛」是放大事实的夸张；C 是比喻。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -820,7 +872,8 @@
       ],
       "answer": "A",
       "explanation": "夸张分扩大夸张、缩小夸张和超前夸张三类。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -836,7 +889,8 @@
       ],
       "answer": "A",
       "explanation": "把「能听见」的极限缩小到极致，是缩小夸张。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -852,7 +906,8 @@
       ],
       "answer": "D",
       "explanation": "D 是写实，没有夸张。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -868,7 +923,8 @@
       ],
       "answer": "A",
       "explanation": "反问句去掉「难道……吗」并将否定句改肯定。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -884,7 +940,8 @@
       ],
       "answer": "A",
       "explanation": "反问只问不答，答案就在反问的相反方向。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -900,7 +957,8 @@
       ],
       "answer": "B",
       "explanation": "B 是反问，意思是「这让人感动」；其他都是真的疑问。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -916,7 +974,8 @@
         "B. 设问",
         "C. 普通疑问",
         "D. 感叹"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -932,7 +991,8 @@
       ],
       "answer": "A",
       "explanation": "「难道……吗？」是典型反问句式，强化肯定语气。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -948,7 +1008,8 @@
       ],
       "answer": "A",
       "explanation": "设问是自问自答，A 提出问题立即回答。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -964,7 +1025,8 @@
       ],
       "answer": "A",
       "explanation": "设问自问自答；反问无疑而问，答在问中。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -980,7 +1042,8 @@
         "B. 反问",
         "C. 感叹",
         "D. 陈述"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -996,7 +1059,8 @@
       ],
       "answer": "A",
       "explanation": "设问能吸引注意，自然引出下文。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "修辞专题",
@@ -1012,7 +1076,8 @@
       ],
       "answer": "A",
       "explanation": "A 自问自答，是设问；B 是反问；C 是感叹；D 是陈述。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "句式与标点专题",
@@ -1028,7 +1093,8 @@
       ],
       "answer": "C",
       "explanation": "A 缺主语（「通过……使……」病句）；B「大约」与「左右」重复；D「能否」与「努力」一面对两面。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "句式与标点专题",
@@ -1044,7 +1110,8 @@
       ],
       "answer": "C",
       "explanation": "本句关联词使用恰当，因果关系合理，无语病。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "句式与标点专题",
@@ -1060,7 +1127,8 @@
       ],
       "answer": "A",
       "explanation": "「美丽」修饰具体事物，作文应用「优美」「精彩」。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "句式与标点专题",
@@ -1076,7 +1144,8 @@
       ],
       "answer": "A",
       "explanation": "应先发现后克服，词序需调整。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "句式与标点专题",
@@ -1092,7 +1161,8 @@
       ],
       "answer": "A",
       "explanation": "「大概」表猜测，「一定」表肯定，自相矛盾。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "句式与标点专题",
@@ -1108,7 +1178,8 @@
       ],
       "answer": "A",
       "explanation": "用「像」连接本体「桃花」与喻体「粉色的云霞」，构成比喻。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "句式与标点专题",
@@ -1124,7 +1195,8 @@
       ],
       "answer": "C",
       "explanation": "反问需含「难道……吗」，且改为否定形式。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "句式与标点专题",
@@ -1140,7 +1212,8 @@
       ],
       "answer": "A",
       "explanation": "转述句中「你们」改为「我们」（站在听话者角度）。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "句式与标点专题",
@@ -1156,7 +1229,8 @@
       ],
       "answer": "A",
       "explanation": "双重否定改肯定句。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "句式与标点专题",
@@ -1172,7 +1246,8 @@
       ],
       "answer": "A",
       "explanation": "被字句结构：受事 + 被 + 施事 + 动词。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "句式与标点专题",
@@ -1188,7 +1263,8 @@
       ],
       "answer": "A",
       "explanation": "「即使……也……」表示假设让步关系。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "句式与标点专题",
@@ -1204,7 +1280,8 @@
       ],
       "answer": "A",
       "explanation": "「只有……才……」表示必要条件；认真复习是取得好成绩的必要条件。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "句式与标点专题",
@@ -1220,7 +1297,8 @@
       ],
       "answer": "C",
       "explanation": "C「虽然……所以……」搭配错误，应为「虽然……但是……」。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "句式与标点专题",
@@ -1236,7 +1314,8 @@
       ],
       "answer": "A",
       "explanation": "假设关系。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "句式与标点专题",
@@ -1246,7 +1325,8 @@
       "difficulty": "medium",
       "answer": "又",
       "explanation": "「既……又……」表示并列。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "句式与标点专题",
@@ -1262,7 +1342,8 @@
       ],
       "answer": "A",
       "explanation": "先打开窗户，然后突然有风，最后描写感受。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "句式与标点专题",
@@ -1278,7 +1359,8 @@
       ],
       "answer": "A",
       "explanation": "因果连接自然，A 最恰当。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "句式与标点专题",
@@ -1294,7 +1376,8 @@
       ],
       "answer": "A",
       "explanation": "春天对应万物复苏，景物呼应。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "句式与标点专题",
@@ -1310,7 +1393,8 @@
       ],
       "answer": "A",
       "explanation": "总起句「春天来了」开头，后接具体描绘。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "句式与标点专题",
@@ -1326,7 +1410,8 @@
       ],
       "answer": "A",
       "explanation": "时间和逻辑关系最清楚。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "句式与标点专题",
@@ -1342,7 +1427,8 @@
       ],
       "answer": "A",
       "explanation": "提示语后用冒号，引语用引号，疑问号在引号内。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "句式与标点专题",
@@ -1358,7 +1444,8 @@
       ],
       "answer": "A",
       "explanation": "书名号用于书名、篇名、刊名等。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "句式与标点专题",
@@ -1374,7 +1461,8 @@
       ],
       "answer": "A",
       "explanation": "A 解释说明；B 表声音延长；C 表延长；D 表停顿。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "句式与标点专题",
@@ -1390,7 +1478,8 @@
       ],
       "answer": "A",
       "explanation": "冒号引出列举内容。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "句式与标点专题",
@@ -1400,7 +1489,8 @@
       "difficulty": "medium",
       "answer": "六",
       "explanation": "汉语省略号为六个圆点（两组三点）。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "阅读理解专题",
@@ -1416,7 +1506,8 @@
       ],
       "answer": "A",
       "explanation": "三个相同结构的分句构成排比；「燕子去」「杨柳枯」「桃花谢」赋予自然以动态生命，含拟人。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "阅读理解专题",
@@ -1432,7 +1523,8 @@
       ],
       "answer": "C",
       "explanation": "作者真正在向读者发问，并未自答；不是反问也不是设问，是抒情性的疑问。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "阅读理解专题",
@@ -1448,7 +1540,8 @@
       ],
       "answer": "A",
       "explanation": "全文流露对时光易逝的无奈与追问。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "阅读理解专题",
@@ -1458,7 +1551,8 @@
       "difficulty": "medium",
       "answer": "日子",
       "explanation": "上文「我们的日子……」，下文「他们」即指日子。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "阅读理解专题",
@@ -1474,7 +1568,8 @@
       ],
       "answer": "A",
       "explanation": "在危险面前从容镇定，表现革命者的坚毅与勇敢。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "阅读理解专题",
@@ -1490,7 +1585,8 @@
         "B. 李大钊",
         "C. 朱自清",
         "D. 老舍"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "阅读理解专题",
@@ -1506,7 +1602,8 @@
       ],
       "answer": "A",
       "explanation": "文章以「我」回忆十六年前的事开头，是倒叙。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "阅读理解专题",
@@ -1522,7 +1619,8 @@
         "B. 鲁迅",
         "C. 朱自华",
         "D. 张思德"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "阅读理解专题",
@@ -1538,7 +1636,8 @@
       ],
       "answer": "A",
       "explanation": "本段强调发现真理的方法：从细小现象中追根求源。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "阅读理解专题",
@@ -1554,7 +1653,8 @@
       ],
       "answer": "A",
       "explanation": "「司空见惯」形容常见而不觉奇怪。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "阅读理解专题",
@@ -1570,7 +1670,8 @@
       ],
       "answer": "A",
       "explanation": "文中举出谢皮罗、波义耳、阿瑟林斯基等多个科学家的例子。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "阅读理解专题",
@@ -1586,7 +1687,8 @@
       ],
       "answer": "A",
       "explanation": "课文核心：从「？」追问到「！」发现真理。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "阅读理解专题",
@@ -1602,7 +1704,8 @@
       ],
       "answer": "A",
       "explanation": "课文明确写「二十八年」。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "阅读理解专题",
@@ -1612,7 +1715,8 @@
       "difficulty": "hard",
       "answer": "星期五",
       "explanation": "因为是星期五救下的，故取名「星期五」。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "阅读理解专题",
@@ -1628,7 +1732,8 @@
       ],
       "answer": "A",
       "explanation": "鲁滨逊面对绝境积极开荒、建造、自救，体现顽强意志。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "文学常识专题",
@@ -1644,7 +1749,8 @@
       ],
       "answer": "A",
       "explanation": "《两小儿辩日》出自《列子·汤问》。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "文学常识专题",
@@ -1660,7 +1766,8 @@
         "B. 《论语》",
         "C. 《列子》",
         "D. 《庄子》"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "文学常识专题",
@@ -1676,7 +1783,8 @@
         "B. 苏轼",
         "C. 陆游",
         "D. 王维"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "文学常识专题",
@@ -1686,7 +1794,8 @@
       "difficulty": "hard",
       "answer": "仙",
       "explanation": "李白「诗仙」、杜甫「诗圣」。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "文学常识专题",
@@ -1702,7 +1811,8 @@
       ],
       "answer": "C",
       "explanation": "《静夜思》是李白的诗，李清照名作有《如梦令》《声声慢》等。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "文学常识专题",
@@ -1718,7 +1828,8 @@
         "B. 鲁迅",
         "C. 巴金",
         "D. 朱自清"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "文学常识专题",
@@ -1734,7 +1845,8 @@
         "B. 老舍",
         "C. 冰心",
         "D. 巴金"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "文学常识专题",
@@ -1750,7 +1862,8 @@
       ],
       "answer": "A",
       "explanation": "鲁迅原名周树人，浙江绍兴人。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "文学常识专题",
@@ -1766,7 +1879,8 @@
       ],
       "answer": "A",
       "explanation": "B 作者是李星华（李大钊之女）；C 作者是老舍；D 作者是老舍。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "文学常识专题",
@@ -1782,7 +1896,8 @@
       ],
       "answer": "A",
       "explanation": "老舍原名舒庆春，字舍予。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "文学常识专题",
@@ -1798,7 +1913,8 @@
         "B. 凡尔纳（法国）",
         "C. 马克·吐温（美国）",
         "D. 拉格洛夫（瑞典）"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "文学常识专题",
@@ -1814,7 +1930,8 @@
       ],
       "answer": "A",
       "explanation": "拉格洛夫是首位获诺贝尔文学奖的女性。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "文学常识专题",
@@ -1830,7 +1947,8 @@
         "B. 笛福（英国）",
         "C. 凡尔纳（法国）",
         "D. 安徒生（丹麦）"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "文学常识专题",
@@ -1846,7 +1964,8 @@
       ],
       "answer": "D",
       "explanation": "《海底两万里》作者凡尔纳是法国人。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "文学常识专题",
@@ -1862,7 +1981,8 @@
       ],
       "answer": "A",
       "explanation": "哈克贝利·费恩是汤姆的好朋友。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "文学常识专题",
@@ -1878,7 +1998,8 @@
         "B. 小说",
         "C. 散文",
         "D. 议论文"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "文学常识专题",
@@ -1894,7 +2015,8 @@
       ],
       "answer": "A",
       "explanation": "议论文三要素：论点、论据、论证。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "文学常识专题",
@@ -1910,7 +2032,8 @@
         "B. 小说",
         "C. 诗歌",
         "D. 演讲稿"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "文学常识专题",
@@ -1926,7 +2049,8 @@
       ],
       "answer": "D",
       "explanation": "《骆驼祥子》是长篇小说，不是散文集。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "文学常识专题",
@@ -1942,7 +2066,8 @@
       ],
       "answer": "A",
       "explanation": "记叙文六要素：时、地、人、起、经、结。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "文学常识专题",
@@ -1958,7 +2083,8 @@
       ],
       "answer": "A",
       "explanation": "北方腊月二十三过小年，南方多为腊月二十四。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "文学常识专题",
@@ -1974,7 +2100,8 @@
       ],
       "answer": "A",
       "explanation": "正月初一春节—正月十五元宵—四月清明—五月端午—八月中秋—九月重阳。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "文学常识专题",
@@ -1984,7 +2111,8 @@
       "difficulty": "medium",
       "answer": "九月九日",
       "explanation": "九月九日为重阳节，又称登高节、敬老节。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "文学常识专题",
@@ -2000,7 +2128,8 @@
       ],
       "answer": "A",
       "explanation": "清明在春分之后，谷雨之前。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "文学常识专题",
@@ -2010,7 +2139,8 @@
       "difficulty": "hard",
       "answer": "二十",
       "explanation": "「弱冠」指男子二十岁行冠礼。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "古诗文专题",
@@ -2020,7 +2150,8 @@
       "difficulty": "medium",
       "answer": "一去二三里",
       "explanation": "邵雍《山村咏怀》：「一去二三里，烟村四五家。」（六下补充）。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "古诗文专题",
@@ -2030,7 +2161,8 @@
       "difficulty": "hard",
       "answer": "春风又绿",
       "explanation": "王安石《泊船瓜洲》。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "古诗文专题",
@@ -2046,7 +2178,8 @@
       ],
       "answer": "A",
       "explanation": "文天祥《过零丁洋》。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "古诗文专题",
@@ -2062,7 +2195,8 @@
       ],
       "answer": "A",
       "explanation": "《竹石》「千磨万击还坚劲，任尔东西南北风」直接表现竹子在磨难中依然坚劲不屈的品格。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "古诗文专题",
@@ -2078,7 +2212,8 @@
       ],
       "answer": "A",
       "explanation": "于谦借石灰自喻清白志节。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "古诗文专题",
@@ -2094,7 +2229,8 @@
       ],
       "answer": "A",
       "explanation": "诗人借石灰托物言志，表达不畏牺牲、坚守清白的志向。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "古诗文专题",
@@ -2110,7 +2246,8 @@
       ],
       "answer": "A",
       "explanation": "突出竹子在风雨中挺立不屈的品格。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "古诗文专题",
@@ -2126,7 +2263,8 @@
       ],
       "answer": "A",
       "explanation": "「绿」由形容词活用为动词，化静为动，富有生机。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "古诗文专题",
@@ -2142,7 +2280,8 @@
       ],
       "answer": "A",
       "explanation": "劝诫年轻人珍惜时间。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "古诗文专题",
@@ -2158,7 +2297,8 @@
       ],
       "answer": "A",
       "explanation": "韩翃借寒食禁火却独许五侯家用烛之事，含蓄讽喻。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "古诗文专题",
@@ -2174,7 +2314,8 @@
       ],
       "answer": "A",
       "explanation": "李白浪漫主义代表，豪放飘逸；杜甫沉郁顿挫；陶渊明清新淡远。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "古诗文专题",
@@ -2190,7 +2331,8 @@
         "B. 豪放飘逸",
         "C. 清新淡远",
         "D. 婉约缠绵"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "古诗文专题",
@@ -2206,7 +2348,8 @@
       ],
       "answer": "C",
       "explanation": "杜甫沉郁顿挫，不是婉约。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "古诗文专题",
@@ -2222,7 +2365,8 @@
       ],
       "answer": "A",
       "explanation": "陆游临终遗诗表达深沉爱国之情。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "古诗文专题",
@@ -2238,7 +2382,8 @@
       ],
       "answer": "A",
       "explanation": "于谦借石灰之质表达自己清白节操。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "古诗文专题",
@@ -2254,7 +2399,8 @@
       ],
       "answer": "A",
       "explanation": "「援」此处指拉、引（弓）。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "古诗文专题",
@@ -2264,7 +2410,8 @@
       "difficulty": "medium",
       "answer": "距离",
       "explanation": "古汉语「去」常表「距离」，与今天「离开」不同。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "古诗文专题",
@@ -2280,7 +2427,8 @@
       ],
       "answer": "A",
       "explanation": "「弗」即「不」，「弗若」即「不如」。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "古诗文专题",
@@ -2296,7 +2444,8 @@
       ],
       "answer": "A",
       "explanation": "「决」此处指判断、裁决。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "古诗文专题",
@@ -2312,7 +2461,8 @@
       ],
       "answer": "A",
       "explanation": "此处「为」读 wèi，表「因为、是因为」。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "古诗文专题",
@@ -2322,7 +2472,8 @@
       "difficulty": "medium",
       "answer": "不",
       "explanation": "「弗」即「不」，「弗若」即「不如」。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "古诗文专题",
@@ -2338,7 +2489,8 @@
       ],
       "answer": "A",
       "explanation": "「孰」谁；「为」认为、说；「汝」你；「知」通「智」。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "古诗文专题",
@@ -2354,7 +2506,8 @@
       ],
       "answer": "A",
       "explanation": "「虽」虽然；「俱」一起；「弗若」不如。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "古诗文专题",
@@ -2364,7 +2517,8 @@
       "difficulty": "hard",
       "answer": "热水",
       "explanation": "古汉语「汤」指「热水」，「探汤」指把手伸到热水里。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "古诗文专题",
@@ -2380,7 +2534,8 @@
       ],
       "answer": "A",
       "explanation": "「以」认为；「去」距离。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2396,7 +2551,8 @@
       ],
       "answer": "A",
       "explanation": "「一件」要求只写一件；「难忘」要求有深刻印象与意义。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2412,7 +2568,8 @@
       ],
       "answer": "A",
       "explanation": "题目重点是「学会」的过程，应突出过程与体会。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2428,7 +2585,8 @@
       ],
       "answer": "A",
       "explanation": "A 侧重写景，与「小伙伴」无关。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2444,7 +2602,8 @@
       ],
       "answer": "A",
       "explanation": "审题三要点：对象、文体、范围。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2460,7 +2619,8 @@
       ],
       "answer": "A",
       "explanation": "「以小见大」是常用写作手法。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2476,7 +2636,8 @@
       ],
       "answer": "A",
       "explanation": "议论文常用「引论—本论—结论」结构。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2492,7 +2653,8 @@
       ],
       "answer": "A",
       "explanation": "首尾呼应让文章浑然一体。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2508,7 +2670,8 @@
       ],
       "answer": "A",
       "explanation": "抄袭违反写作规范。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2524,7 +2687,8 @@
       ],
       "answer": "A",
       "explanation": "总起部分概括全文，点明主题。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2540,7 +2704,8 @@
       ],
       "answer": "A",
       "explanation": "过渡段连接前后内容，使文章衔接自然。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2556,7 +2721,8 @@
       ],
       "answer": "A",
       "explanation": "于谦借石灰托物言志，表达清白志向。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2572,7 +2738,8 @@
       ],
       "answer": "A",
       "explanation": "「借景抒情」情先景后；「触景生情」景先情后。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2588,7 +2755,8 @@
       ],
       "answer": "A",
       "explanation": "两种死的轻重对照鲜明。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2604,7 +2772,8 @@
       ],
       "answer": "A",
       "explanation": "「欲扬先抑」先抑后扬，使情感对比鲜明。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2620,7 +2789,8 @@
       ],
       "answer": "A",
       "explanation": "人物描写的五种方法：外貌、语言、动作、神态、心理。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2636,7 +2806,8 @@
       ],
       "answer": "A",
       "explanation": "「攥紧拳头」是动作；「咬着牙」是神态。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2652,7 +2823,8 @@
         "B. 神态描写",
         "C. 动作描写",
         "D. 心理描写"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2668,7 +2840,8 @@
       ],
       "answer": "A",
       "explanation": "描写人物内心活动是心理描写。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2684,7 +2857,8 @@
       ],
       "answer": "C",
       "explanation": "外貌描写是为了刻画人物形象、暗示性格，不是凑字数。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2700,7 +2874,8 @@
       ],
       "answer": "A",
       "explanation": "景物描写的作用是渲染、烘托、推动情节。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2716,7 +2891,8 @@
       ],
       "answer": "A",
       "explanation": "阴沉景象渲染紧张压抑氛围。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2732,7 +2908,8 @@
       ],
       "answer": "A",
       "explanation": "景物描写讲究观察顺序：远近、整体局部、动静等。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2748,7 +2925,8 @@
       ],
       "answer": "A",
       "explanation": "拟人手法使景物生动鲜活。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2764,7 +2942,8 @@
       ],
       "answer": "A",
       "explanation": "「一动不动」突出静景。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2780,7 +2959,8 @@
       ],
       "answer": "A",
       "explanation": "修改作文先看全局：主题、结构。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2796,7 +2976,8 @@
       ],
       "answer": "A",
       "explanation": "抄袭违反写作规范。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2806,7 +2987,8 @@
       "difficulty": "medium",
       "answer": "增补",
       "explanation": "「∧」是增补符。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "写作专题",
@@ -2816,7 +2998,8 @@
       "difficulty": "hard",
       "answer": "英俊",
       "explanation": "「美丽」一般形容女性或景物；男性多用「英俊」。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "课文与名著专题",
@@ -2832,7 +3015,8 @@
       ],
       "answer": "A",
       "explanation": "课文从腊八到正月十九按时间顺序展开。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "课文与名著专题",
@@ -2848,7 +3032,8 @@
         "B. 李大钊",
         "C. 方志敏",
         "D. 雷锋"
-      ]
+      ],
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "课文与名著专题",
@@ -2864,7 +3049,8 @@
       ],
       "answer": "A",
       "explanation": "课文表现「我」充满好奇与想象。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "课文与名著专题",
@@ -2880,7 +3066,8 @@
       ],
       "answer": "A",
       "explanation": "史铁生回忆童年那个落空的星期天，刻画失望心理。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "课文与名著专题",
@@ -2896,7 +3083,8 @@
       ],
       "answer": "A",
       "explanation": "引用名言进行道理论证，论述死的价值。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "课文与名著专题",
@@ -2912,7 +3100,8 @@
       ],
       "answer": "A",
       "explanation": "汤姆和哈克在山洞里发现了印第安人乔藏的金子。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "课文与名著专题",
@@ -2928,7 +3117,8 @@
       ],
       "answer": "A",
       "explanation": "尼尔斯因捉弄小精灵被变成只有拇指大的小人。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "课文与名著专题",
@@ -2944,7 +3134,8 @@
       ],
       "answer": "A",
       "explanation": "祥子三起三落，始终想拥有一辆属于自己的洋车。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "课文与名著专题",
@@ -2960,7 +3151,8 @@
       ],
       "answer": "A",
       "explanation": "鲁滨逊用刻痕记录每一天，保持时间感。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     },
     {
       "chapter": "课文与名著专题",
@@ -2976,7 +3168,16 @@
       ],
       "answer": "D",
       "explanation": "《骆驼祥子》主人公是祥子，没有「星期五」。",
-      "round": 2
+      "round": 2,
+      "source": "batch_2026_05_07_g6_chinese_r2_deprecated"
     }
-  ]
+  ],
+  "_quality_meta": {
+    "deprecated": true,
+    "deprecated_version": "V3.10",
+    "deprecated_at": "2026-05-08",
+    "deprecated_reason": "语数转真题路线（北师大数学 / 部编语文），cron AI 出题质量不稳停用",
+    "deprecated_commit": "7308f00",
+    "note": "抽题已通过 _activeSourceFilter 自动排除；保留作低水平兜底参考，但不应作锚点/训练样本"
+  }
 }
