@@ -1,5 +1,5 @@
 {
-  "source": "realpaper_g6_chinese_bubian_d5_kp1_001",
+  "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312",
   "subject": "chinese",
   "grade": 6,
   "knowledge_points_added": [],
@@ -18,7 +18,8 @@
       ],
       "answer": "C",
       "explanation": "C 项三个「屏」均读 píng；A「单调」diào，「调整/空调」tiáo；B「曲谱/歌曲」qǔ，「弯曲」qū；D「蒙」分别读 méng/mēng/měng。",
-      "round": 2
+      "round": 2,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -28,7 +29,8 @@
       "difficulty": "easy",
       "answer": "蟋蟀",
       "explanation": "「蟋蟀」是一种昆虫，俗称蛐蛐。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -38,7 +40,8 @@
       "difficulty": "easy",
       "answer": "诞生",
       "explanation": "「诞生」指出生、产生。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -48,7 +51,8 @@
       "difficulty": "easy",
       "answer": "机械",
       "explanation": "「机械」指利用力学原理组成的装置。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -58,7 +62,8 @@
       "difficulty": "easy",
       "answer": "辩论",
       "explanation": "「辩论」指彼此用语言争论是非。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -68,7 +73,8 @@
       "difficulty": "easy",
       "answer": "援助",
       "explanation": "「援助」指支援、帮助。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -78,7 +84,8 @@
       "difficulty": "easy",
       "answer": "清脆",
       "explanation": "「清脆」形容声音悦耳响亮。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -88,7 +95,8 @@
       "difficulty": "easy",
       "answer": "恐怖",
       "explanation": "「恐怖」指由于受到威胁而产生的恐惧。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -98,7 +106,8 @@
       "difficulty": "easy",
       "answer": "射箭",
       "explanation": "「射箭」指用弓把箭发射出去。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -108,7 +117,8 @@
       "difficulty": "easy",
       "answer": "逆时针",
       "explanation": "「逆时针」指与时针运行方向相反，从右下经左下、左上到右上的方向。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -116,10 +126,15 @@
       "content": "句中加点字「汤」与下列哪一项中「汤」的意思相同？句子：及其日中如探汤。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 赴汤蹈火", "B. 四菜一汤", "C. 柴胡汤"],
+      "options": [
+        "A. 赴汤蹈火",
+        "B. 四菜一汤",
+        "C. 柴胡汤"
+      ],
       "answer": "A",
       "explanation": "「探汤」中「汤」是古义「热水」；「赴汤蹈火」的「汤」也是热水。B、C 中「汤」均指食物汤汁或汤药。",
-      "round": 2
+      "round": 2,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -127,10 +142,15 @@
       "content": "句中加点字「然」与下列哪一项中「然」的意思相同？句子：为是其智弗若与？曰：非然也。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 不尽然", "B. 不以为然", "C. 飘飘然"],
+      "options": [
+        "A. 不尽然",
+        "B. 不以为然",
+        "C. 飘飘然"
+      ],
       "answer": "A",
       "explanation": "「非然也」中「然」意为「这样」；「不尽然」也表示「不完全是这样」。B「然」表「对、正确」；C「然」表「……的样子」。",
-      "round": 2
+      "round": 2,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -138,10 +158,15 @@
       "content": "句中加点字「及」与下列哪一项中「及」的意思相同？句子：及日中则如盘盂。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 老吾老，以及人之老", "B. 望尘莫及", "C. 目力所及"],
+      "options": [
+        "A. 老吾老，以及人之老",
+        "B. 望尘莫及",
+        "C. 目力所及"
+      ],
       "answer": "C",
       "explanation": "「及日中」中「及」意为「到、达到」；「目力所及」的「及」也表「到达」。A「及」表「推及」；B「及」表「赶上」。",
-      "round": 2
+      "round": 2,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -151,7 +176,8 @@
       "difficulty": "easy",
       "answer": "偶",
       "explanation": "「无独有偶」指虽然罕见，但竟然有相对的、相似的事物配合。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -161,7 +187,8 @@
       "difficulty": "easy",
       "answer": "贯注",
       "explanation": "「全神贯注」指全部精神集中在一点上，形容注意力高度集中。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -171,7 +198,8 @@
       "difficulty": "easy",
       "answer": "俱",
       "explanation": "「声泪俱下」指边说边哭，形容极其悲恸或激动。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -181,7 +209,8 @@
       "difficulty": "easy",
       "answer": "鄙",
       "explanation": "「鄙夷不屑」形容轻视、看不起的样子。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -189,10 +218,16 @@
       "content": "意思为「看惯了就不觉得奇怪」的成语是（    ）。",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 走马观花", "B. 司空见惯", "C. 锲而不舍", "D. 追根求源"],
+      "options": [
+        "A. 走马观花",
+        "B. 司空见惯",
+        "C. 锲而不舍",
+        "D. 追根求源"
+      ],
       "answer": "B",
       "explanation": "「司空见惯」原指司空见多了就不觉得奇怪，现指事物常见、不足为奇。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -200,10 +235,16 @@
       "content": "选词填空：要学好一门语言很不容易，但只要有（    ）的精神，就总会有收获的。",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 走马观花", "B. 司空见惯", "C. 锲而不舍", "D. 追根求源"],
+      "options": [
+        "A. 走马观花",
+        "B. 司空见惯",
+        "C. 锲而不舍",
+        "D. 追根求源"
+      ],
       "answer": "C",
       "explanation": "「锲而不舍」指雕刻时坚持不停，比喻有恒心、有毅力，符合学习语言的语境。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -211,10 +252,16 @@
       "content": "「春风得意马蹄疾，一日看尽长安花。」出自这两句诗的成语是（    ）。",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 走马观花", "B. 司空见惯", "C. 锲而不舍", "D. 追根求源"],
+      "options": [
+        "A. 走马观花",
+        "B. 司空见惯",
+        "C. 锲而不舍",
+        "D. 追根求源"
+      ],
       "answer": "A",
       "explanation": "「走马观花」出自孟郊《登科后》，原指骑在奔跑的马上看花，后比喻粗略地观察事物。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "课文与名著",
@@ -222,10 +269,16 @@
       "content": "《学弈》选自（    ）。",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 《论语》", "B. 《孟子·告子上》", "C. 《庄子》", "D. 《列子·汤问》"],
+      "options": [
+        "A. 《论语》",
+        "B. 《孟子·告子上》",
+        "C. 《庄子》",
+        "D. 《列子·汤问》"
+      ],
       "answer": "B",
       "explanation": "《学弈》选自《孟子·告子上》，讲述跟弈秋学下棋的故事。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "课文与名著",
@@ -233,10 +286,16 @@
       "content": "《学弈》中跟弈秋学下棋的两个人最后结果不同，因为前一个人态度（    ）。",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 专心致志", "B. 三心二意", "C. 心猿意马", "D. 漫不经心"],
+      "options": [
+        "A. 专心致志",
+        "B. 三心二意",
+        "C. 心猿意马",
+        "D. 漫不经心"
+      ],
       "answer": "A",
       "explanation": "前一个人专心致志，只听弈秋的教诲，所以学得好。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "课文与名著",
@@ -244,10 +303,16 @@
       "content": "《学弈》中跟弈秋学下棋的两个人最后结果不同，因为后一个人态度（    ）。",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 专心致志", "B. 三心二意", "C. 一丝不苟", "D. 锲而不舍"],
+      "options": [
+        "A. 专心致志",
+        "B. 三心二意",
+        "C. 一丝不苟",
+        "D. 锲而不舍"
+      ],
       "answer": "B",
       "explanation": "后一个人三心二意，不认真听讲，一心想着射天鹅，所以学不好。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "课文与名著",
@@ -263,7 +328,8 @@
       ],
       "answer": "B",
       "explanation": "两小儿一个认为太阳早晨离人近，一个认为正午时离人近，因「太阳离人远近」展开辩论。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "课文与名著",
@@ -271,10 +337,16 @@
       "content": "《两小儿辩日》中「孔子不能决也」反映出孔子对知识持怎样的态度？",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 不懂装懂", "B. 实事求是", "C. 妄自尊大", "D. 漠不关心"],
+      "options": [
+        "A. 不懂装懂",
+        "B. 实事求是",
+        "C. 妄自尊大",
+        "D. 漠不关心"
+      ],
       "answer": "B",
       "explanation": "孔子坦言「不能决」，体现其实事求是、知之为知之、不知为不知的治学态度。",
-      "round": 2
+      "round": 2,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "课文与名著",
@@ -282,10 +354,16 @@
       "content": "从《两小儿辩日》中我们可以悟出（    ）的道理。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 学无止境", "B. 明哲保身", "C. 各执己见", "D. 见微知著"],
+      "options": [
+        "A. 学无止境",
+        "B. 明哲保身",
+        "C. 各执己见",
+        "D. 见微知著"
+      ],
       "answer": "A",
       "explanation": "孔子博学却也有不能解答的问题，说明知识无穷、学无止境。",
-      "round": 2
+      "round": 2,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "课文与名著",
@@ -295,7 +373,8 @@
       "difficulty": "easy",
       "answer": "对",
       "explanation": "概括准确：本文正是通过「我」对表的好奇与父亲的解释，表现了「我」善于观察、爱思考的特点。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "课文与名著",
@@ -305,7 +384,8 @@
       "difficulty": "easy",
       "answer": "对",
       "explanation": "课文以洗澡水漩涡、蚯蚓分布、睡眠眼珠转动三个具体科学事例论证「真理诞生于一百个问号之后」。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "文学常识",
@@ -315,7 +395,8 @@
       "difficulty": "easy",
       "answer": "错",
       "explanation": "艾萨克·阿西莫夫是美国（俄裔）科幻作家，不是英国作家。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "阅读理解",
@@ -323,10 +404,14 @@
       "content": "短文《与死神抢时间 卧病榻攀高峰》中，加点字「转载」的「转」正确读音是（    ）。",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. zhuàn", "B. zhuǎn"],
+      "options": [
+        "A. zhuàn",
+        "B. zhuǎn"
+      ],
       "answer": "B",
       "explanation": "「转载」指报刊上转登别处发表过的文章，「转」读 zhuǎn；读 zhuàn 用于「自转」「转动」等。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "阅读理解",
@@ -334,10 +419,14 @@
       "content": "短文《与死神抢时间 卧病榻攀高峰》中，加点字「浸（  ）」的正确读音是（    ）。",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. qiàn", "B. jìn"],
+      "options": [
+        "A. qiàn",
+        "B. jìn"
+      ],
       "answer": "B",
       "explanation": "「浸」读 jìn，意为泡在液体里、渗透；qiàn 不是「浸」的读音，是干扰项。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "阅读理解",
@@ -347,7 +436,8 @@
       "difficulty": "easy",
       "answer": "塑料袋",
       "explanation": "材料一开篇即点明：英国《卫报》评出 20 世纪「人类最糟糕的发明」就是塑料袋。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "阅读理解",
@@ -357,7 +447,8 @@
       "difficulty": "easy",
       "answer": "错",
       "explanation": "材料一明确写道：塑料袋家族包括快餐饭盒、包装纸、餐用杯子、饮料瓶、酸奶杯、雪糕杯等等，故四者均属于塑料袋家族。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "阅读理解",
@@ -367,7 +458,8 @@
       "difficulty": "medium",
       "answer": "错",
       "explanation": "「人类最糟糕的发明」是直接引用《卫报》原文（引用作用），「光荣」加引号则表示反语、讽刺，两者作用不同。",
-      "round": 2
+      "round": 2,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "阅读理解",
@@ -377,7 +469,8 @@
       "difficulty": "medium",
       "answer": "错",
       "explanation": "「仅」强调范围之小（只是塑料袋一项），「将近」强调数据为接近值，去掉后表达不再准确，意思发生改变。",
-      "round": 2
+      "round": 2,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     },
     {
       "chapter": "阅读理解",
@@ -385,10 +478,23 @@
       "content": "短文《塑料袋》材料二主要运用的说明方法是（    ）。",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 打比方", "B. 举例子", "C. 列数字", "D. 作比较"],
+      "options": [
+        "A. 打比方",
+        "B. 举例子",
+        "C. 列数字",
+        "D. 作比较"
+      ],
       "answer": "C",
       "explanation": "材料二用「160 万吨」「1 吨」「3 吨」「480 万吨」等具体数据说明塑料袋耗能巨大，是典型的列数字。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d5_kp1_001_unverified_v312"
     }
-  ]
+  ],
+  "_quality_meta": {
+    "risk_level": "L3_multimodal_ocr",
+    "needs_review": true,
+    "original_commit": "62e5eb4",
+    "marked_unverified_at": "2026-05-08",
+    "reason": "V3.10 第六批 OCR 抢救多模态出题，r2_anchor_4 发现幻觉编造伪题（妻子转述句）"
+  }
 }

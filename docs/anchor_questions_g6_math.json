@@ -211,7 +211,7 @@
     },
     {
       "anchor_id": "math_r2_anchor_5",
-      "round": 2,
+      "round": 1,
       "kp": "正反比例/反比例的意义",
       "chapter": "正比例和反比例",
       "type": "choice",
@@ -231,6 +231,12 @@
         "distractor_density": 0.5,
         "kp_span": 2,
         "data_complexity": 0.2
+      },
+      "_original_agent_round": 2,
+      "_famin_review": {
+        "famin_round": 1,
+        "comment": "一眼可知，是假陷阱",
+        "reviewed_at": "2026-05-08T06:11:18.988962Z"
       }
     },
     {
@@ -271,7 +277,7 @@
     },
     {
       "anchor_id": "math_r3_anchor_3",
-      "round": 3,
+      "round": 2,
       "kp": "圆柱与圆锥/圆柱圆锥综合应用",
       "chapter": "圆柱与圆锥",
       "type": "fill",
@@ -285,6 +291,12 @@
         "distractor_density": null,
         "kp_span": 3,
         "data_complexity": 0.3
+      },
+      "_original_agent_round": 3,
+      "_famin_review": {
+        "famin_round": 2,
+        "comment": "计算常规，没有陷阱",
+        "reviewed_at": "2026-05-08T06:11:18.988962Z"
       }
     },
     {
@@ -307,7 +319,7 @@
     },
     {
       "anchor_id": "math_r3_anchor_5",
-      "round": 3,
+      "round": 4,
       "kp": "总复习/数与代数综合",
       "chapter": "总复习",
       "type": "fill",
@@ -321,6 +333,12 @@
         "distractor_density": null,
         "kp_span": 2,
         "data_complexity": 0.5
+      },
+      "_original_agent_round": 3,
+      "_famin_review": {
+        "famin_round": 4,
+        "comment": "这个题思路具有一定突破性，且容易算错",
+        "reviewed_at": "2026-05-08T06:11:18.988962Z"
       }
     },
     {
@@ -367,7 +385,7 @@
     },
     {
       "anchor_id": "math_r4_anchor_3",
-      "round": 4,
+      "round": 2,
       "kp": "总复习/数与代数综合",
       "chapter": "小升初综合",
       "type": "calculation",
@@ -381,6 +399,12 @@
         "distractor_density": null,
         "kp_span": 2,
         "data_complexity": 0.9
+      },
+      "_original_agent_round": 4,
+      "_famin_review": {
+        "famin_round": 2,
+        "comment": "一个小技巧，没有计算量，最多R3",
+        "reviewed_at": "2026-05-08T06:11:18.988962Z"
       }
     },
     {

@@ -1,5 +1,5 @@
 {
-  "source": "realpaper_g6_chinese_bubian_d4_kp1_001",
+  "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312",
   "subject": "chinese",
   "grade": 6,
   "knowledge_points_added": [],
@@ -10,10 +10,16 @@
       "content": "多音字组词：「劲」读 jìn 时可以组成的词语是？",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 使劲", "B. 坚劲", "C. 苍劲", "D. 强劲"],
+      "options": [
+        "A. 使劲",
+        "B. 坚劲",
+        "C. 苍劲",
+        "D. 强劲"
+      ],
       "answer": "A",
       "explanation": "「劲」表力气、用力时读 jìn，如「使劲」；表坚强有力时读 jìng，如「坚劲」「苍劲」。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -21,10 +27,16 @@
       "content": "多音字组词：「劲」读 jìng 时可以组成的词语是？",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 使劲", "B. 坚劲", "C. 干劲", "D. 鼓劲"],
+      "options": [
+        "A. 使劲",
+        "B. 坚劲",
+        "C. 干劲",
+        "D. 鼓劲"
+      ],
       "answer": "B",
       "explanation": "「劲」读 jìng 时多用于书面语，表坚强有力，如「坚劲」「苍劲有力」。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -32,10 +44,16 @@
       "content": "多音字组词：「燕」读 yān 时可以组成的词语是？",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 燕子", "B. 海燕", "C. 燕山", "D. 燕尾服"],
+      "options": [
+        "A. 燕子",
+        "B. 海燕",
+        "C. 燕山",
+        "D. 燕尾服"
+      ],
       "answer": "C",
       "explanation": "「燕」读 yān 多用于古地名、姓氏，如「燕山」「燕国」；读 yàn 表鸟名，如「燕子」。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -43,10 +61,16 @@
       "content": "多音字组词：「燕」读 yàn 时可以组成的词语是？",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 燕子", "B. 燕山", "C. 燕京", "D. 燕赵"],
+      "options": [
+        "A. 燕子",
+        "B. 燕山",
+        "C. 燕京",
+        "D. 燕赵"
+      ],
       "answer": "A",
       "explanation": "「燕」读 yàn 表燕子（鸟），如「燕子」「家燕」。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -54,10 +78,16 @@
       "content": "多音字组词：「削」读 xuē 时可以组成的词语是？",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 削皮", "B. 削苹果", "C. 剥削", "D. 削铅笔"],
+      "options": [
+        "A. 削皮",
+        "B. 削苹果",
+        "C. 剥削",
+        "D. 削铅笔"
+      ],
       "answer": "C",
       "explanation": "「削」用于合成词、书面语时读 xuē，如「剥削」「削减」；用于口语单用、表用刀去掉表层时读 xiāo。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -65,10 +95,16 @@
       "content": "多音字组词：「削」读 xiāo 时可以组成的词语是？",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 剥削", "B. 削皮", "C. 削减", "D. 削弱"],
+      "options": [
+        "A. 剥削",
+        "B. 削皮",
+        "C. 削减",
+        "D. 削弱"
+      ],
       "answer": "B",
       "explanation": "「削」读 xiāo 多用于口语，表用刀斜着去掉表层，如「削皮」「削苹果」。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -78,7 +114,8 @@
       "difficulty": "easy",
       "answer": "魔鬼",
       "explanation": "「魔鬼」指传说中的鬼怪，比喻邪恶势力。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -88,7 +125,8 @@
       "difficulty": "easy",
       "answer": "焚烧",
       "explanation": "「焚烧」指烧、用火烧毁。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -98,7 +136,8 @@
       "difficulty": "easy",
       "answer": "军阀",
       "explanation": "「军阀」指拥有武装部队、割据一方、自成派系的军人或军人集团。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -108,7 +147,8 @@
       "difficulty": "easy",
       "answer": "迁移",
       "explanation": "「迁移」指离开原来的所在地而另换地点。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -118,7 +158,8 @@
       "difficulty": "easy",
       "answer": "压迫",
       "explanation": "「压迫」指以权势强制别人服从。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -128,7 +169,8 @@
       "difficulty": "easy",
       "answer": "牺牲",
       "explanation": "「牺牲」指为正义事业舍弃生命，也指放弃利益。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -138,7 +180,8 @@
       "difficulty": "easy",
       "answer": "抽屉",
       "explanation": "「抽屉」指桌子、柜子等家具中可以拉出推进、用以盛放东西的部分。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -148,7 +191,8 @@
       "difficulty": "easy",
       "answer": "泰山",
       "explanation": "「泰山」是五岳之首，常用以比喻分量重、价值大。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -158,7 +202,8 @@
       "difficulty": "medium",
       "answer": "严肃",
       "explanation": "「严肃」形容神情、态度郑重认真，搭配「面对」表示郑重对待。",
-      "round": 2
+      "round": 2,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -168,7 +213,8 @@
       "difficulty": "medium",
       "answer": "严峻",
       "explanation": "「严峻」形容形势严重、情势危急，常与「形势」搭配。",
-      "round": 2
+      "round": 2,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -178,7 +224,8 @@
       "difficulty": "medium",
       "answer": "严厉",
       "explanation": "「严厉」形容严肃而厉害，常与「打击」「批评」搭配，强调毫不留情。",
-      "round": 2
+      "round": 2,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -188,7 +235,8 @@
       "difficulty": "medium",
       "answer": "严格",
       "explanation": "「严格」表示掌握标准很认真、不放松，常与「要求」搭配。",
-      "round": 2
+      "round": 2,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -198,7 +246,8 @@
       "difficulty": "easy",
       "answer": "锤",
       "explanation": "「千锤万凿」形容开采石头极为艰难，出自于谦《石灰吟》。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -208,7 +257,8 @@
       "difficulty": "easy",
       "answer": "简",
       "explanation": "「精兵简政」指缩小机构、精简人员，是毛泽东时期的政策建议。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -218,7 +268,8 @@
       "difficulty": "easy",
       "answer": "其",
       "explanation": "「死得其所」指死得有意义、有价值。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -228,7 +279,8 @@
       "difficulty": "easy",
       "answer": "聚",
       "explanation": "「聚精会神」形容注意力高度集中。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -238,7 +290,8 @@
       "difficulty": "easy",
       "answer": "碎",
       "explanation": "「粉骨碎身」形容不顾性命危险，多用于为正义牺牲。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -248,7 +301,8 @@
       "difficulty": "easy",
       "answer": "湖",
       "explanation": "「五湖四海」泛指全国各地，也比喻广大地区。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -256,10 +310,16 @@
       "content": "「死得其所」中「所」的意思是什么？",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 处所、地方", "B. 时机、机会", "C. 表被动", "D. 量词，表房屋"],
+      "options": [
+        "A. 处所、地方",
+        "B. 时机、机会",
+        "C. 表被动",
+        "D. 量词，表房屋"
+      ],
       "answer": "A",
       "explanation": "「死得其所」中「所」指处所、地方，引申为「合适的归宿」，整体形容死得有价值。",
-      "round": 2
+      "round": 2,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -267,10 +327,16 @@
       "content": "「精兵简政」这个词语的意思是什么？",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 训练精锐部队，整顿政治", "B. 缩小机构，精简人员", "C. 招募士兵，简化政策", "D. 选拔精英，简化政府"],
+      "options": [
+        "A. 训练精锐部队，整顿政治",
+        "B. 缩小机构，精简人员",
+        "C. 招募士兵，简化政策",
+        "D. 选拔精英，简化政府"
+      ],
       "answer": "B",
       "explanation": "「精兵简政」指缩小机构，精简人员，提高效率，是抗战时期的重要政策。",
-      "round": 2
+      "round": 2,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -278,10 +344,16 @@
       "content": "「聚精会神」的近义词是？",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 心不在焉", "B. 全神贯注", "C. 三心二意", "D. 漫不经心"],
+      "options": [
+        "A. 心不在焉",
+        "B. 全神贯注",
+        "C. 三心二意",
+        "D. 漫不经心"
+      ],
       "answer": "B",
       "explanation": "「聚精会神」「全神贯注」都形容注意力高度集中，是近义词。",
-      "round": 2
+      "round": 2,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -289,10 +361,16 @@
       "content": "「聚精会神」的反义词是？",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 全神贯注", "B. 专心致志", "C. 心不在焉", "D. 一丝不苟"],
+      "options": [
+        "A. 全神贯注",
+        "B. 专心致志",
+        "C. 心不在焉",
+        "D. 一丝不苟"
+      ],
       "answer": "C",
       "explanation": "「聚精会神」表示注意力集中，「心不在焉」表示心思不在这里，二者相反。",
-      "round": 2
+      "round": 2,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "字词",
@@ -300,10 +378,16 @@
       "content": "「五湖四海」的意思是什么？",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 五个湖泊和四个海洋", "B. 全国各地", "C. 海纳百川", "D. 江河湖海"],
+      "options": [
+        "A. 五个湖泊和四个海洋",
+        "B. 全国各地",
+        "C. 海纳百川",
+        "D. 江河湖海"
+      ],
       "answer": "B",
       "explanation": "「五湖四海」泛指全国各地或世界各地，比喻范围广。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "句式与标点",
@@ -319,7 +403,8 @@
       ],
       "answer": "A",
       "explanation": "改转述句要把第一人称「我」改成第三人称「他」，并把指示代词「这」改成「那」，去掉引号。",
-      "round": 2
+      "round": 2,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "古诗文",
@@ -329,7 +414,8 @@
       "difficulty": "easy",
       "answer": "任尔东西南北风",
       "explanation": "出自清代郑燮《竹石》：「咬定青山不放松，立根原在破岩中。千磨万击还坚劲，任尔东西南北风。」",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "古诗文",
@@ -339,7 +425,8 @@
       "difficulty": "easy",
       "answer": "良药苦口利于病",
       "explanation": "出自《孔子家语》：「良药苦口利于病，忠言逆耳利于行。」常用于劝告他人接受批评。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "古诗文",
@@ -349,7 +436,8 @@
       "difficulty": "easy",
       "answer": "事非经过不知难",
       "explanation": "出自陆游对联，劝勉人要勤学苦练、躬身实践。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "课文与名著",
@@ -359,7 +447,8 @@
       "difficulty": "easy",
       "answer": "人民",
       "explanation": "出自毛泽东《为人民服务》：「为人民利益而死，就比泰山还重；替法西斯卖力，替剥削人民和压迫人民的人去死，就比鸿毛还轻。」",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "课文与名著",
@@ -369,7 +458,8 @@
       "difficulty": "easy",
       "answer": "错",
       "explanation": "《为人民服务》是毛泽东为悼念张思德所作的演讲，文体是议论文（演讲稿），不是记叙文。",
-      "round": 2
+      "round": 2,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "课文与名著",
@@ -379,7 +469,8 @@
       "difficulty": "easy",
       "answer": "对",
       "explanation": "《十六年前的回忆》开头先写父亲被害的日子，再回忆事件经过，最后又回到现在，是典型的倒叙。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "课文与名著",
@@ -389,7 +480,8 @@
       "difficulty": "easy",
       "answer": "错",
       "explanation": "「精兵简政」是党外人士李鼎铭先生提出的建议，并非司马迁。课文中毛泽东引用「精兵简政」举例说明接受合理意见。",
-      "round": 2
+      "round": 2,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "课文与名著",
@@ -399,7 +491,8 @@
       "difficulty": "easy",
       "answer": "对",
       "explanation": "《马诗》以马、《石灰吟》以石灰、《竹石》以竹子为对象托物言志，分别表达建功立业、清白做人、坚贞不屈的志向。",
-      "round": 2
+      "round": 2,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "阅读理解",
@@ -409,7 +502,8 @@
       "difficulty": "easy",
       "answer": "张骞",
       "explanation": "汉代张骞出使西域，开辟了联通亚欧非的陆上丝绸之路。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "阅读理解",
@@ -419,7 +513,8 @@
       "difficulty": "easy",
       "answer": "郑和",
       "explanation": "明代郑和七下西洋，开辟出连接东西方的海上丝绸之路。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "阅读理解",
@@ -429,7 +524,8 @@
       "difficulty": "easy",
       "answer": "习近平",
       "explanation": "2013 年习近平主席先后提出共建「丝绸之路经济带」和「21 世纪海上丝绸之路」倡议，合称「一带一路」。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "阅读理解",
@@ -439,7 +535,8 @@
       "difficulty": "easy",
       "answer": "航运",
       "explanation": "材料原文为「铁路、公路、航运、航空、管道和空间综合信息网络」。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "阅读理解",
@@ -454,7 +551,8 @@
       ],
       "answer": "C",
       "explanation": "结合上下文（敌人威胁、爸爸坚定的神情），紧紧搂住爸爸表明男孩与爸爸立场一致，宁死不屈，选 C 最全面。",
-      "round": 2
+      "round": 2,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "阅读理解",
@@ -469,7 +567,8 @@
       ],
       "answer": "B",
       "explanation": "「东方黎明的曙光」象征革命胜利的希望，结合儿子坚定的表现，爸爸欣慰的是儿子继承了革命精神、革命必胜，选 B。",
-      "round": 2
+      "round": 2,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     },
     {
       "chapter": "写作",
@@ -477,10 +576,23 @@
       "content": "《雨花石》中「爸爸欣慰地看着自己的儿子，望着东方黎明的曙光，说……」一句主要运用了哪种描写？",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 外貌、神态描写", "B. 动作描写", "C. 语言描写", "D. 心理描写"],
+      "options": [
+        "A. 外貌、神态描写",
+        "B. 动作描写",
+        "C. 语言描写",
+        "D. 心理描写"
+      ],
       "answer": "A",
       "explanation": "「欣慰地看着」「望着曙光」刻画了人物的神态与外在表现，属于外貌、神态描写，突出人物的坚贞不屈。",
-      "round": 1
+      "round": 1,
+      "source": "realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312"
     }
-  ]
+  ],
+  "_quality_meta": {
+    "risk_level": "L3_multimodal_ocr",
+    "needs_review": true,
+    "original_commit": "62e5eb4",
+    "marked_unverified_at": "2026-05-08",
+    "reason": "V3.10 第六批 OCR 抢救多模态出题，r2_anchor_4 发现幻觉编造伪题（妻子转述句）"
+  }
 }

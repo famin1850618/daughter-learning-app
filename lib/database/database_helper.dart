@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 16,
+      version: 17,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
@@ -416,6 +416,26 @@ class DatabaseHelper {
       try {
         await db.execute('ALTER TABLE questions ADD COLUMN speakers_json TEXT');
       } catch (_) {/* 列已存在则忽略 */}
+    }
+    if (oldVersion < 17) {
+      // v17: V3.12 第六批 OCR 抢救语文 122 题标 _unverified_v312。
+      // 详见 docs/realpaper_quality_rules.md §6（多模态 OCR 抢救发现幻觉编造伪题）
+      // _activeSourceFilter 自动过滤 → 这些题用户不会再抽到，直到 reviewer agent 重写
+      const ocrRescueSources = [
+        'realpaper_g6_chinese_bubian_d4_kp1_001',
+        'realpaper_g6_chinese_bubian_d5_kp1_001',
+        'realpaper_g6_chinese_bubian_d6_kp1_001',
+      ];
+      for (final src in ocrRescueSources) {
+        try {
+          await db.update(
+            'questions',
+            {'source': '${src}_unverified_v312'},
+            where: 'source = ?',
+            whereArgs: [src],
+          );
+        } catch (_) {/* 已迁移则跳过 */}
+      }
     }
   }
 

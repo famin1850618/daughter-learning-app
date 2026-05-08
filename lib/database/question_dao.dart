@@ -207,14 +207,16 @@ class QuestionDao {
   static const _masteredSubquery =
       'SELECT question_id FROM practice_records WHERE is_correct = 1 GROUP BY question_id HAVING COUNT(*) >= 3';
 
-  /// V3.10：抽题白名单过滤（排除三类不应被抽到的 source）
+  /// V3.10/V3.12：抽题白名单过滤（排除四类不应被抽到的 source）
   /// - `_deprecated`：V3.8.3 老外研社英语 + V3.10 老 cron AI 出的语数英
   /// - `_subj_held`：V3.10 主观题保留区（等 AI 评分 API 后启用）
   /// - `_translated_en`：V3.10 已翻译为英文的中文题（避免重复练）
+  /// - `_unverified`：V3.12 多模态 OCR 抢救路径入库题（详见 docs/realpaper_quality_rules.md §6）
   static const _activeSourceFilter =
       "(source NOT LIKE '%_deprecated' "
       "AND source NOT LIKE '%_subj_held' "
-      "AND source NOT LIKE '%_translated_en')";
+      "AND source NOT LIKE '%_translated_en' "
+      "AND source NOT LIKE '%_unverified%')";
 
   /// V3.8.2: 展开 group 系列题
   /// 抽中含 group_id 的题 → 把同 group_id 全部题拉出来 + 按 group_order 排序 + 替换原位置

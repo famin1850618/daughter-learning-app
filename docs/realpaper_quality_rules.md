@@ -178,6 +178,54 @@
 
 ---
 
+## 6. 入库源头可信度（V3.12 D1 锚点审核期间立项）
+
+**Why：** Famin 2026-05-08 审 D1 锚点题时发现 `chinese_r2_anchor_4`（妻子转述句）原文不存在于 cache raw.txt —— 真身是 `爸爸说："我正为这件事操心。"` 的 fill 题。源头追溯到 V3.10 第六批（commit `62e5eb4`）的"OCR 抢救"路径：3 卷 PDF 嵌入私有字体 → pdftoppm 渲染 + tesseract chi_sim + **多模态 agent 看 PNG 出题**。受影响 122 道语文题（d4/d5/d6_kp1_001）。
+
+### 入库源头三级可信度
+
+| 等级 | 标准 | source 后缀 | 抽题状态 |
+|------|------|-------------|---------|
+| **L1 可信** | 标准 OCR pipeline（pdftotext/libreoffice）+ raw.txt 直接 segment + match → batch JSON。题面与 raw.txt 字符级一致 | 无 | 正常抽 |
+| **L2 待验证** | OCR 文本质量差（乱码/排版乱）但 cache 中有 raw.txt 作锚定。题面可能改写但答案配对仍可信 | 无（标 manifest）| 正常抽 + 加监控 |
+| **L3 不可信** | cache 中 raw.txt 不可用（嵌入私有字体/扫描版无文本层）。需多模态 agent 看 PNG 出题 | **`_unverified_<版本>`** | **禁抽**（_activeSourceFilter 过滤）|
+
+### L3 强制流程
+
+1. **source 命名**：`<原 source>_unverified_<版本>`（如 `realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312`）
+2. **`_activeSourceFilter` 自动排除** —— 用户练习/测评/错题集都不会抽到（同 deprecated 机制）
+3. **batch JSON 顶层加 `_quality_meta`**：
+   ```json
+   "_quality_meta": {
+     "risk_level": "L3_multimodal_ocr",
+     "needs_review": true,
+     "original_commit": "62e5eb4",
+     "marked_unverified_at": "2026-05-08",
+     "reason": "..."
+   }
+   ```
+4. **逐道 reviewer agent 重写** —— 必须对照原 PDF 截图（pdftoppm 渲染再让多模态人/agent 看），与 raw.txt（如有部分可读）交叉验证。**重写不是改写**：以原图为准，宁可下架也不臆造。
+5. **重写通过后** source 去掉 `_unverified_<版本>` 后缀，进入正式题库。
+
+### 多模态 agent 看图出题的允许场景（仅这两种）
+
+- **几何图配文字描述题**：agent 描述图 → 写 SVG 入 `image` 字段。**不改原题文字**，文字必须来自 raw.txt 或人工录入。
+- **真题答案区被遮挡/缺失**：agent 仅辅助补全 `answer` 字段。**不改 content / options**。
+
+### 入库前自查（L1/L2 也要做）
+
+- [ ] 双写 batch JSON 之前必须运行 `tools/realpaper/validate.py`
+- [ ] 抽样 5-10 道与 raw.txt **字符级 diff**（不是相似度）
+- [ ] manifest 标注每卷的 OCR pipeline + L1/L2/L3 等级
+- [ ] L3 题入库时 source 必带 `_unverified_<版本>` 后缀；不带后缀的 L3 入库视为质量事故
+
+### 已知历史 L3 受影响范围
+
+- V3.10 第六批 (commit `62e5eb4`) 语文 d4/d5/d6_kp1_001 共 **122 题** → 已 V3.12 标 `_unverified_v312`，待 reviewer 逐道重写
+
+---
+
 **修订记录**
 
-- 2026-05-08：V3.12 立项，从 Famin V3.11.0 实测反馈整理首版
+- 2026-05-08：V3.12 立项，从 Famin V3.11.0 实测反馈整理首版（§1-§5）
+- 2026-05-08：D1 锚点审核期间发现幻觉编造伪题，加 §6 入库源头可信度纪律

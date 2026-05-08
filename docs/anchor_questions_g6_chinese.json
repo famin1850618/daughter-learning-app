@@ -37,7 +37,10 @@
       "现代文阅读/主旨概括",
       "现代文阅读/词句赏析"
     ],
-    "type_distribution": {"choice": 14, "fill": 6}
+    "type_distribution": {
+      "choice": 14,
+      "fill": 6
+    }
   },
   "anchors": [
     {
@@ -85,7 +88,10 @@
       "chapter": "字词",
       "type": "choice",
       "content": "「薄」字加点的字（薄雾）正确读音是（    ）。",
-      "options": ["A. bó", "B. báo"],
+      "options": [
+        "A. bó",
+        "B. báo"
+      ],
       "answer": "A",
       "explanation": "「薄雾」中「薄」读 bó，意为稀薄、轻微；读 báo 时多用于厚度小的具体物。",
       "reasoning": "R1 因为：理解层级 1（多音字字面读音判定），陷阱密度 0.0（仅 2 选项 A/B，干扰极弱，bó/báo 语境提示明显），KP 跨度 1（仅字音），数据复杂度 0.15（单词「薄雾」+ 释义）。属字音识记型 R1 锚点。",
@@ -128,7 +134,12 @@
       "chapter": "修辞",
       "type": "choice",
       "content": "「世界上还有几个剧种一部戏可以演出三五天还没有结束的呢？」这句话运用了哪种修辞手法？",
-      "options": ["A. 夸张", "B. 比喻", "C. 设问", "D. 反问"],
+      "options": [
+        "A. 夸张",
+        "B. 比喻",
+        "C. 设问",
+        "D. 反问"
+      ],
       "answer": "D",
       "explanation": "句中以反问的形式（「还有几个……呢？」）表达「没有几个」的肯定意思，强调藏戏剧目的独特，是反问修辞。",
       "reasoning": "R1 因为：理解层级 1（修辞特征字面识别 —— 含反问标志「还有……呢？」），陷阱密度 0.25（4 种修辞同类干扰中夸张/比喻明显错，仅设问稍近 — 但设问要自答），KP 跨度 1（仅修辞），数据复杂度 0.2（单句 31 字，无文言）。属修辞识记型 R1 锚点。",
@@ -252,7 +263,7 @@
     },
     {
       "anchor_id": "chinese_r3_anchor_1",
-      "round": 3,
+      "round": 1,
       "kp": "课文与名著/课文内容理解",
       "chapter": "课文与名著",
       "type": "choice",
@@ -273,11 +284,17 @@
         "kp_span": 2,
         "data_complexity": 0.6
       },
-      "review_flag": true
+      "review_flag": true,
+      "_original_agent_round": 3,
+      "_famin_review": {
+        "famin_round": 1,
+        "comment": "褒贬明显，选项无任何迷惑性",
+        "reviewed_at": "2026-05-08T06:11:18.990744Z"
+      }
     },
     {
       "anchor_id": "chinese_r3_anchor_2",
-      "round": 3,
+      "round": 2,
       "kp": "阅读理解/阅读理解",
       "chapter": "阅读理解",
       "type": "choice",
@@ -298,7 +315,13 @@
         "kp_span": 1,
         "data_complexity": 0.5
       },
-      "review_flag": true
+      "review_flag": true,
+      "_original_agent_round": 3,
+      "_famin_review": {
+        "famin_round": 2,
+        "comment": "理解直白，选项迷惑性不高",
+        "reviewed_at": "2026-05-08T06:11:18.990744Z"
+      }
     },
     {
       "anchor_id": "chinese_r3_anchor_3",
@@ -396,7 +419,7 @@
     },
     {
       "anchor_id": "chinese_r4_anchor_2",
-      "round": 4,
+      "round": 2,
       "kp": "阅读理解/阅读理解",
       "chapter": "阅读理解",
       "type": "choice",
@@ -417,7 +440,13 @@
         "kp_span": 2,
         "data_complexity": 0.7
       },
-      "review_flag": true
+      "review_flag": true,
+      "_original_agent_round": 4,
+      "_famin_review": {
+        "famin_round": 2,
+        "comment": "三短一长选最长，选项无迷惑性",
+        "reviewed_at": "2026-05-08T06:11:18.990744Z"
+      }
     },
     {
       "anchor_id": "chinese_r4_anchor_3",
