@@ -80,6 +80,15 @@ const _bundledBatchAssets = [
   'assets/data/batches/realpaper_g6_math_beishida_shudaishu_001.json',
   'assets/data/batches/realpaper_g6_math_beishida_xingjitongji_001.json',
   'assets/data/batches/realpaper_g6_math_beishida_kaodian_zonghe_003.json',
+  // V3.10 第九批 (2026-05-08): 8 卷数学六下 184 题
+  'assets/data/batches/realpaper_g6_math_beishida_kaodian_guoguan_004.json',
+  'assets/data/batches/realpaper_g6_math_beishida_kaodian_guoguan_005.json',
+  'assets/data/batches/realpaper_g6_math_beishida_kaodian_guoguan_006.json',
+  'assets/data/batches/realpaper_g6_math_beishida_kaodian_guoguan_007.json',
+  'assets/data/batches/realpaper_g6_math_beishida_kaodian_guoguan_008.json',
+  'assets/data/batches/realpaper_g6_math_beishida_qizhong_002.json',
+  'assets/data/batches/realpaper_g6_math_beishida_qizhong_003.json',
+  'assets/data/batches/realpaper_g6_math_beishida_qimo_003.json',
 ];
 
 void main() async {

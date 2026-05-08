@@ -1,0 +1,381 @@
+{
+  "source": "realpaper_g6_math_beishida_qizhong_002",
+  "subject": "math",
+  "grade": 6,
+  "knowledge_points_added": [],
+  "questions": [
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的认识",
+      "content": "一个圆柱的底面半径是 3 厘米，高是 2 厘米，这个圆柱的底面周长是多少厘米？",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "18.84",
+      "alt_answers": "18.84厘米|||18.84cm",
+      "explanation": "底面周长 = 2πr = 2×3.14×3 = 18.84 cm。",
+      "round": 1
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的认识",
+      "content": "一个圆柱的底面半径是 3 厘米，高是 2 厘米，这个圆柱的底面积是多少平方厘米？",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "28.26",
+      "alt_answers": "28.26cm²|||28.26平方厘米|||28.26cm2",
+      "explanation": "底面积 = πr² = 3.14×9 = 28.26 cm²。",
+      "round": 1
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的表面积",
+      "content": "一个圆柱的底面半径是 3 厘米，高是 2 厘米，这个圆柱的侧面积是多少平方厘米？",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "37.68",
+      "alt_answers": "37.68cm²|||37.68平方厘米|||37.68cm2",
+      "explanation": "侧面积 = 底面周长×高 = 18.84×2 = 37.68 cm²。",
+      "round": 1
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的表面积",
+      "content": "一个圆柱的底面半径是 3 厘米，高是 2 厘米，这个圆柱的表面积是多少平方厘米？",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "94.2",
+      "alt_answers": "94.2cm²|||94.2平方厘米|||94.2cm2",
+      "explanation": "表面积 = 侧面积 + 2 个底面积 = 37.68 + 2×28.26 = 94.2 cm²。",
+      "round": 2
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "content": "一个圆柱的底面半径是 3 厘米，高是 2 厘米，这个圆柱的体积是多少立方厘米？",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "56.52",
+      "alt_answers": "56.52cm³|||56.52立方厘米|||56.52cm3",
+      "explanation": "体积 = πr²h = 3.14×9×2 = 56.52 cm³。",
+      "round": 1
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+      "content": "一个圆柱的底面半径是 3 厘米，高是 2 厘米，和它等底等高的圆锥的体积是多少立方厘米？",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "18.84",
+      "alt_answers": "18.84cm³|||18.84立方厘米|||18.84cm3",
+      "explanation": "等底等高的圆锥 = 圆柱体积的 1/3 = 56.52÷3 = 18.84 cm³。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比例的意义",
+      "content": "两个比的(    )相等，这两个比就相等。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "比值",
+      "explanation": "比值相等的两个比可以组成比例。",
+      "round": 1
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "content": "将一根长是 5 米的圆柱形木料锯成 4 段，表面积增加 60 平方分米，这根木料的体积是多少立方分米？",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "500",
+      "alt_answers": "500dm³|||500立方分米|||500dm3",
+      "explanation": "锯 4 段共增加 6 个底面积 = 60 dm²，1 个底面积 = 10 dm²；长 = 5 m = 50 dm；体积 = 10×50 = 500 dm³。",
+      "round": 3
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比例的基本性质",
+      "content": "根据 8×9 = 3×24，写出一个比例。请按「a:b=c:d」格式（用半角冒号），举一个正确的写法。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "8:3=24:9",
+      "alt_answers": "8∶3=24∶9|||8:3=24:9|||3:8=9:24|||9:24=3:8|||24:8=9:3|||8:24=3:9|||9:3=24:8|||24:9=8:3",
+      "explanation": "由 8×9 = 3×24（积相等），可作内项与外项交换写出多种比例，如 8:3=24:9。",
+      "round": 2
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正比例的意义",
+      "content": "出售小麦的单价一定，出售小麦的总量与总钱数成(    )比例。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "正",
+      "alt_answers": "正比例",
+      "explanation": "总钱数÷总量 = 单价（一定），所以总量与总钱数成正比例。",
+      "round": 1
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/反比例的意义",
+      "content": "体操比赛的总人数一定，每排的人数与排数成(    )比例。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "反",
+      "alt_answers": "反比例",
+      "explanation": "每排人数×排数 = 总人数（一定），所以每排人数与排数成反比例。",
+      "round": 1
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/旋转",
+      "content": "李叔叔在笔直的公路上开车，方向盘的运动属于(    )现象。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "旋转",
+      "explanation": "方向盘绕轴转动，属于旋转。",
+      "round": 1
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "content": "圆柱的高扩大到原来的 2 倍，体积就扩大到原来的 2 倍。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "错",
+      "explanation": "体积 = 底面积×高，前提是「底面积不变」时高扩大 2 倍体积才扩大 2 倍。题目没说底面积不变。",
+      "round": 2
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/反比例的意义",
+      "content": "订阅《少先队员》杂志的数量和总金额成反比例。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "错",
+      "explanation": "总金额÷数量 = 单价（一定），所以应成正比例，不是反比例。",
+      "round": 2
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+      "content": "等底等高的圆柱和圆锥，圆柱的体积比圆锥的体积大 2 倍。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "对",
+      "explanation": "圆柱 = 3 倍圆锥，所以圆柱比圆锥多 2 倍（差 2 倍 = 3-1）。",
+      "round": 2
+    },
+    {
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/旋转",
+      "content": "自行车的车轮转了一圈又一圈属于旋转现象。",
+      "type": "judgment",
+      "difficulty": "easy",
+      "answer": "对",
+      "explanation": "车轮绕轴转动，是旋转。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "数对表示位置的方法：第一个数字表示列，第二个数字表示行。",
+      "type": "judgment",
+      "difficulty": "easy",
+      "answer": "对",
+      "explanation": "数对约定：(列, 行)。",
+      "round": 1
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "content": "把一个棱长是 4 分米的正方体木块削成一个最大的圆柱，圆柱的体积是多少立方分米？",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": "[\"A. 50.24\", \"B. 100.48\", \"C. 64\"]",
+      "answer": "A",
+      "explanation": "最大圆柱：底面直径 = 棱长 = 4 dm，半径 2 dm；高 = 棱长 4 dm；V = 3.14×2²×4 = 50.24 dm³。",
+      "round": 2
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+      "content": "把一团圆柱形橡皮泥揉成与它等底的圆锥体，高将(    )。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": "[\"A. 扩大到原来的 3 倍\", \"B. 缩小到原来的 1/3\", \"C. 扩大到原来的 6 倍\"]",
+      "answer": "A",
+      "explanation": "体积不变（揉橡皮泥）+ 等底；圆锥 V = (1/3)Sh，要等于圆柱 Sh，则圆锥的 h 必须是圆柱的 3 倍。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "把 2 千克盐加入 15 千克水中，盐与盐水的质量比是(    )。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": "[\"A. 2∶15\", \"B. 15∶17\", \"C. 2∶17\"]",
+      "answer": "C",
+      "explanation": "盐水 = 盐+水 = 2+15 = 17 kg；盐:盐水 = 2:17。",
+      "round": 2
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆锥的体积",
+      "content": "一个圆锥的体积是 36 dm³，它的底面积是 18 dm²，它的高是多少 dm？",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": "[\"A. 2/3\", \"B. 2\", \"C. 6\"]",
+      "answer": "C",
+      "explanation": "V = (1/3)Sh → h = 3V÷S = 3×36÷18 = 6 dm。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/化简比",
+      "content": "化简下面的比：0.6∶0.24（结果为最简整数比，按「a:b」半角冒号格式填写）",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "5:2",
+      "alt_answers": "5∶2|||5比2",
+      "explanation": "0.6∶0.24 = 60:24 = 5:2（同除 12）。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/求比值",
+      "content": "求 0.6∶0.24 的比值。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "2.5",
+      "alt_answers": "5/2|||2又1/2",
+      "explanation": "0.6÷0.24 = 2.5。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/化简比",
+      "content": "化简比：15∶105（结果为最简整数比，按「a:b」格式）",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "1:7",
+      "alt_answers": "1∶7|||1比7",
+      "explanation": "15∶105 = 1:7（同除 15）。",
+      "round": 1
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/解比例",
+      "content": "解比例：25∶7 = x∶35。x = ?",
+      "type": "calculation",
+      "difficulty": "easy",
+      "answer": "125",
+      "explanation": "x = 25×35÷7 = 125。",
+      "round": 1
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/解比例",
+      "content": "解比例：23∶x = 11.5∶14。x = ?",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "28",
+      "explanation": "x = 23×14÷11.5 = 28。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/解比例",
+      "content": "解比例：x∶15 = 13∶65。x = ?",
+      "type": "calculation",
+      "difficulty": "easy",
+      "answer": "3",
+      "explanation": "x = 13×15÷65 = 3。",
+      "round": 1
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/解比例",
+      "content": "解比例：34∶x = 68∶2。x = ?",
+      "type": "calculation",
+      "difficulty": "easy",
+      "answer": "1",
+      "explanation": "x = 34×2÷68 = 1。",
+      "round": 1
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/解比例",
+      "content": "解比例：x∶0.75 = 81∶25。x = ?",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "2.43",
+      "explanation": "x = 0.75×81÷25 = 60.75÷25 = 2.43。",
+      "round": 2
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "content": "一个圆柱形的木桶，底面直径是 5 分米，高是 8 分米，在这个木桶外加一条铁箍，接头处重叠 0.3 分米。这个木桶的容积是多少升？",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "157",
+      "alt_answers": "157升|||157L",
+      "explanation": "半径 = 2.5 dm；V = 3.14×2.5²×8 = 3.14×6.25×8 = 157 dm³ = 157 L。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "配制一种农药，药粉和水的比是 1∶500。现有 6000 千克水，配制这种农药需要多少千克药粉？",
+      "type": "calculation",
+      "difficulty": "easy",
+      "answer": "12",
+      "alt_answers": "12kg|||12千克",
+      "explanation": "药粉 = 水÷500 = 6000÷500 = 12 kg。",
+      "round": 1
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "配制一种农药，药粉和水的比是 1∶500。现有药粉 3.6 千克，配制这种农药需要多少千克水？",
+      "type": "calculation",
+      "difficulty": "easy",
+      "answer": "1800",
+      "alt_answers": "1800kg|||1800千克",
+      "explanation": "水 = 药粉×500 = 3.6×500 = 1800 kg。",
+      "round": 1
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/反比例的意义",
+      "content": "修一条路，如果每天修 120 米，8 天可以修完；如果每天修 150 米，几天可以修完？（用比例解）",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "6.4",
+      "alt_answers": "6.4天|||32/5",
+      "explanation": "总工作量一定 → 工效×时间一定，反比例。设 x 天，150x = 120×8，x = 960÷150 = 6.4 天。",
+      "round": 2
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+      "content": "张师傅要把一根底面直径 2 分米、高 3 分米的圆柱形木料削成一个最大的圆锥。削成的圆锥的体积最大是多少立方分米？",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "3.14",
+      "alt_answers": "3.14dm³|||3.14立方分米|||3.14dm3",
+      "explanation": "等底等高最大圆锥 = (1/3)×3.14×1²×3 = 3.14 dm³。",
+      "round": 2
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆锥的体积",
+      "content": "在一个直径是 20 厘米的圆柱形容器里放入一个底面半径是 3 厘米的圆锥形铁块，全部浸没在水中，这时水面上升 0.3 厘米。圆锥形铁块的高是多少厘米？",
+      "type": "calculation",
+      "difficulty": "hard",
+      "answer": "10",
+      "alt_answers": "10cm|||10厘米",
+      "explanation": "排开水体积 = 3.14×10²×0.3 = 94.2 cm³（即铁块体积）；铁块底面积 = 3.14×3² = 28.26 cm²；高 = 94.2×3÷28.26 = 10 cm。",
+      "round": 3
+    }
+  ]
+}

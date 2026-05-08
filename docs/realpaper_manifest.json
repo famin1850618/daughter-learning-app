@@ -456,6 +456,162 @@
       },
       "kp_overview": "总复习/数与代数综合 12 + 总复习/图形与几何综合 5 + 比例 4 + 正反比例 4 + 圆柱与圆锥 2 + 总复习/解决问题策略 2",
       "processed_at": "2026-05-08"
+    },
+    {
+      "sha1": "a11f1c57b353663e5e1901048087737ee0badc7a",
+      "batch_source": "realpaper_g6_math_beishida_kaodian_guoguan_004",
+      "subject": "math",
+      "grade": 6,
+      "chapter": "总复习+圆柱与圆锥",
+      "questions_emitted": 22,
+      "questions_skipped": 2,
+      "skipped_reasons": [
+        "四.1 阴影面积(图)",
+        "四.2 立体图表面积(图)"
+      ],
+      "type_distribution": {"fill": 10, "judgment": 3, "choice": 3, "calculation": 6},
+      "round_distribution": {"R1": 6, "R2": 9, "R3": 7},
+      "kp_overview": "总复习/图形与几何综合 8 + 圆柱与圆锥 5 + 总复习/解决问题策略 5 + 总复习/图形与几何综合 4",
+      "processed_at": "2026-05-08"
+    },
+    {
+      "sha1": "6f72e3b5076050f7a0b78c46890218cdfa4a5817",
+      "batch_source": "realpaper_g6_math_beishida_kaodian_guoguan_005",
+      "subject": "math",
+      "grade": 6,
+      "chapter": "图形的运动+圆柱与圆锥",
+      "questions_emitted": 12,
+      "questions_skipped": 9,
+      "skipped_reasons": [
+        "一.4 平移/旋转图",
+        "一.7 立体图形拼搭",
+        "三.2/3 旋转/对折图",
+        "四.1-4 全图操作（画对称轴/旋转/方位）"
+      ],
+      "type_distribution": {"fill": 6, "judgment": 3, "choice": 1, "calculation": 2},
+      "round_distribution": {"R1": 7, "R2": 5},
+      "kp_overview": "图形的运动 6 + 总复习/图形与几何综合 3 + 圆柱与圆锥 2 + 图形的运动/平移 1",
+      "processed_at": "2026-05-08"
+    },
+    {
+      "sha1": "59b9c6017f083101f3a4e28bff83d788513147a8",
+      "batch_source": "realpaper_g6_math_beishida_kaodian_guoguan_006",
+      "subject": "math",
+      "grade": 6,
+      "chapter": "总复习",
+      "questions_emitted": 13,
+      "questions_skipped": 8,
+      "skipped_reasons": [
+        "一.5 水位折线图依赖",
+        "二.5 牌摸图",
+        "三 条形统计图绘制",
+        "四.1 服装店统计图分析",
+        "四.3 部分图依赖"
+      ],
+      "type_distribution": {"fill": 5, "choice": 6, "calculation": 2},
+      "round_distribution": {"R1": 5, "R2": 6, "R3": 2},
+      "kp_overview": "总复习/统计与可能性 11 + 总复习/解决问题策略 2",
+      "processed_at": "2026-05-08"
+    },
+    {
+      "sha1": "c4994969c1f4d9e065a5d201425881dd19dbe772",
+      "batch_source": "realpaper_g6_math_beishida_kaodian_guoguan_007",
+      "subject": "math",
+      "grade": 6,
+      "chapter": "总复习",
+      "questions_emitted": 21,
+      "questions_skipped": 6,
+      "skipped_reasons": [
+        "一.3 黑白正方体堆图",
+        "一.7(2) 复杂分数序列OCR乱",
+        "三.2 三角形数图",
+        "四.1 珠子序列图(已用文本写)",
+        "四.4 比赛逻辑(标答含图)",
+        "四.5 三人说谎逻辑题(开放推理)"
+      ],
+      "type_distribution": {"fill": 9, "judgment": 3, "choice": 4, "calculation": 5},
+      "round_distribution": {"R1": 2, "R2": 11, "R3": 8},
+      "kp_overview": "总复习/解决问题策略 18 + 总复习/图形与几何综合 2 + 总复习/数与代数综合 1",
+      "processed_at": "2026-05-08"
+    },
+    {
+      "sha1": "24cc023e4484e805286778d941fb7c029df5bb3c",
+      "batch_source": "realpaper_g6_math_beishida_kaodian_guoguan_008",
+      "subject": "math",
+      "grade": 6,
+      "chapter": "总复习",
+      "questions_emitted": 18,
+      "questions_skipped": 5,
+      "skipped_reasons": [
+        "一.2 图形规律(图)",
+        "一.7 天平称次品(开放推理)",
+        "二.1/二.3 答案不唯一",
+        "六.6 手机卡比较(主观)"
+      ],
+      "type_distribution": {"fill": 7, "judgment": 1, "choice": 4, "calculation": 6},
+      "round_distribution": {"R1": 2, "R2": 10, "R3": 6},
+      "kp_overview": "总复习/解决问题策略 17 + 总复习/数与代数综合 1",
+      "processed_at": "2026-05-08"
+    },
+    {
+      "sha1": "01ebac9874099e2e7c3002ff35fc84cb4bf6fbbe",
+      "batch_source": "realpaper_g6_math_beishida_qizhong_002",
+      "subject": "math",
+      "grade": 6,
+      "chapter": "圆柱与圆锥+比例+正比例和反比例",
+      "questions_emitted": 35,
+      "questions_skipped": 5,
+      "skipped_reasons": [
+        "一.5 三角形数对图",
+        "三.1 圆柱展开图",
+        "五.* 表/作图/平移旋转判断",
+        "六.1 铁箍图依赖（部分写入）"
+      ],
+      "type_distribution": {"fill": 14, "judgment": 5, "choice": 4, "calculation": 12},
+      "round_distribution": {"R1": 13, "R2": 17, "R3": 5},
+      "kp_overview": "圆柱与圆锥 11 + 比和比例 13 + 正反比例 5 + 图形的运动 2 + 总复习 4",
+      "processed_at": "2026-05-08"
+    },
+    {
+      "sha1": "51a22bdb4edafd3607547d9b1f6de5b531460d57",
+      "batch_source": "realpaper_g6_math_beishida_qizhong_003",
+      "subject": "math",
+      "grade": 6,
+      "chapter": "圆柱与圆锥+正比例和反比例",
+      "questions_emitted": 22,
+      "questions_skipped": 5,
+      "skipped_reasons": [
+        "三.1 线段比例尺图",
+        "四.4 量距离作图",
+        "四.6 旋转体计算(图)",
+        "四.7(1)(2) 表格补全/画图"
+      ],
+      "type_distribution": {"fill": 12, "judgment": 5, "choice": 2, "calculation": 3},
+      "round_distribution": {"R1": 6, "R2": 13, "R3": 3},
+      "kp_overview": "圆柱与圆锥 9 + 正反比例 8 + 比和比例 0 + 总复习 0",
+      "processed_at": "2026-05-08"
+    },
+    {
+      "sha1": "8165304e93fcee6f2cd0ccc7f29e5199f7b9ba5c",
+      "batch_source": "realpaper_g6_math_beishida_qimo_003",
+      "subject": "math",
+      "grade": 6,
+      "chapter": "总复习+圆柱与圆锥+比例",
+      "questions_emitted": 41,
+      "questions_skipped": 7,
+      "skipped_reasons": [
+        "一.5 A:C比 OCR乱",
+        "一.7 长方形拼正方形需要图（已文本改写）",
+        "一.9 循环小数特殊符号",
+        "四.4 阴影面积(图)",
+        "四.4(2) 立体图体积(图)",
+        "五.* 画图操作",
+        "六.5 看书天数应用题（OCR算式乱）"
+      ],
+      "type_distribution": {"fill": 17, "judgment": 5, "choice": 3, "calculation": 16},
+      "round_distribution": {"R1": 11, "R2": 18, "R3": 11, "R4": 1},
+      "kp_overview": "总复习/数与代数综合 18 + 总复习/解决问题策略 4 + 圆柱与圆锥 8 + 比和比例 4 + 正反比例 1 + 总复习/图形与几何综合 6",
+      "processed_at": "2026-05-08"
     }
   ],
   "skipped_files": []

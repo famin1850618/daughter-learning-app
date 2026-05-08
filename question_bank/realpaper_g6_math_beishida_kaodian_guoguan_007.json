@@ -1,0 +1,233 @@
+{
+  "source": "realpaper_g6_math_beishida_kaodian_guoguan_007",
+  "subject": "math",
+  "grade": 6,
+  "knowledge_points_added": [],
+  "questions": [
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "三角形的内角和是 180°，四边形的内角和是(    )°。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "360",
+      "alt_answers": "360°|||360度",
+      "explanation": "n 边形内角和 = (n-2)×180°；四边形 = (4-2)×180° = 360°。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "六边形的内角和是(    )°。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "720",
+      "alt_answers": "720°|||720度",
+      "explanation": "六边形内角和 = (6-2)×180° = 720°。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "n(n≥3) 边形的内角和的公式表达是怎样的？",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": "[\"A. 180°×n\", \"B. 180°×(n-1)\", \"C. 180°×(n-2)\", \"D. 360°×(n-2)\"]",
+      "answer": "C",
+      "explanation": "n 边形可分成 (n-2) 个三角形，内角和 = 180°×(n-2)。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "□ 和 △ 分别代表一个数，已知 □ + △ = 24，△ + △ + △ = □，那么 □ = (    )。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "18",
+      "explanation": "由 △+△+△ = □ 得 □ = 3△；代入 □+△ = 24，3△+△ = 24，4△ = 24，△ = 6，□ = 18。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "□ 和 △ 分别代表一个数，已知 □ + △ = 24，△ + △ + △ = □，那么 △ = (    )。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "6",
+      "explanation": "由 4△ = 24 得 △ = 6。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "学校为艺术节选送节目，要从 4 个舞蹈节目中选出 2 个，从 3 个器乐节目中选出 1 个，一共有(    )种选送方案。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "18",
+      "alt_answers": "18种",
+      "explanation": "从 4 选 2 = C(4,2) = 6 种；从 3 选 1 = 3 种；总方案 = 6×3 = 18 种。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "有 6 名同学进行乒乓球比赛，如果每 2 名同学之间都进行一场比赛，一共要比赛(    )场。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "15",
+      "alt_answers": "15场",
+      "explanation": "C(6,2) = 6×5÷2 = 15 场。或 5+4+3+2+1 = 15。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "现有一元、五角、一角的硬币各一枚，共能得到(    )种不同的钱数（不取也算）。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "7",
+      "alt_answers": "7种",
+      "explanation": "三枚硬币的子集（不含空集）：单枚 3 种 + 两枚 3 种 + 三枚 1 种 = 7 种。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "按规律填数：1，1，2，3，5，(    )，13，21，34。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "8",
+      "explanation": "斐波那契数列：每个数 = 前两个数之和。5+3 = 8。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "按规律填数：4，2，1，1/2，1/4，(    )，1/16。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "1/8",
+      "alt_answers": "0.125|||1/8",
+      "explanation": "等比数列，公比 = 1/2；1/4×1/2 = 1/8。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "在一条长 80 米的公路两侧每隔 2 米栽一棵树（两端都要栽），一共要栽 41 棵树。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "错",
+      "explanation": "一侧棵数 = 80÷2+1 = 41 棵，两侧共 82 棵。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "拥有身份证号 421182196807010070 的主人是一名男性。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "对",
+      "explanation": "身份证倒数第 2 位是性别码：奇数为男，偶数为女。该号倒数第 2 位是 7（奇数），所以是男性。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "围棋盘的最外层每边能放 19 个棋子。最外层一共能放 68 个棋子。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "错",
+      "explanation": "最外层 = 4×19-4 = 72 个（4 个角共用）。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "从一副扑克牌（大、小王除外）中至少抽出(    )张牌，才能保证一定有一张红桃。",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": "[\"A. 5\", \"B. 14\", \"C. 40\", \"D. 42\"]",
+      "answer": "C",
+      "explanation": "最坏情况：先抽完所有黑桃、方块、梅花共 39 张，第 40 张必为红桃。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "画 3 个点可连成 3 条线段，画 4 个点可连成 6 条线段，画 8 个点可连成(    )条线段。（上述各点均不在同一条直线上）",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": "[\"A. 28\", \"B. 29\", \"C. 30\", \"D. 36\"]",
+      "answer": "A",
+      "explanation": "n 个点两两相连 = C(n,2) = n(n-1)/2；8 个点 = 8×7÷2 = 28 条。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "聪聪有一串珠子按「黑黑白白白白」6 颗一组循环排列。从左往右数，第 100 颗是什么颜色？",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": "[\"A. 黑色\", \"B. 白色\", \"C. 无法判断\"]",
+      "answer": "B",
+      "explanation": "100÷6 = 16 余 4；余数 4 对应组内第 4 颗，是白色。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "聪聪有一串珠子按「黑黑白白白白」6 颗一组循环排列。从左往右数，第 216 颗是什么颜色？",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": "[\"A. 黑色\", \"B. 白色\", \"C. 无法判断\"]",
+      "answer": "B",
+      "explanation": "216÷6 = 36 整除；正好是组内第 6 颗，是白色。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "按下面的方式摆桌子和椅子，一张桌子可坐 4 人，两张桌子可坐 6 人，每多一张桌子多坐 2 人。15 张桌子可以坐多少人？",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "32",
+      "alt_answers": "32人",
+      "explanation": "规律：n 张桌子坐 (2n+2) 人；15 张桌子 = 2×15+2 = 32 人。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "按桌椅排法：一张桌子可坐 4 人，两张可坐 6 人，每多一张多坐 2 人。坐 77 人需要多少张桌子？",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "38",
+      "alt_answers": "38张",
+      "explanation": "由 2n+2≥77 得 n≥37.5；37 张坐 76 人不够，需 38 张坐 78 人。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "已知 △ABC 中 ∠A = 58°，∠1 = ∠2，∠3 = ∠4（其中∠1 和 ∠2 是 ∠B 的两等分角，∠3 和 ∠4 是 ∠C 的两等分角，O 是 BO 与 CO 的交点）。求 ∠BOC 的度数。",
+      "type": "calculation",
+      "difficulty": "hard",
+      "answer": "119",
+      "alt_answers": "119°|||119度",
+      "explanation": "三角形内角和：∠B+∠C = 180°-58° = 122°；半角和 = 122°÷2 = 61°；∠BOC = 180°-61° = 119°。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "编号为 1、2、3、4、5 的 5 个学生参加乒乓球比赛，每 2 人要比赛一场。到现在为止，1 号已赛 4 场，2 号赛 3 场，3 号赛 2 场，4 号赛 1 场。问：5 号已经赛了几场？",
+      "type": "calculation",
+      "difficulty": "hard",
+      "answer": "2",
+      "alt_answers": "2场",
+      "explanation": "1号赛4场即与2,3,4,5都赛过；4号只赛1场，必是与1号；2号赛3场，除与1号还与3、5；3号赛2场，与1、2号；故5号与1号、2号交手，共2场。",
+      "round": 3
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "source": "realpaper_g6_math_beishida_kaodian_guoguan_008",
+  "subject": "math",
+  "grade": 6,
+  "knowledge_points_added": [],
+  "questions": [
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "选一套服装，上衣有 3 件，裤子有 5 条，共有(    )种不同的搭配。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "15",
+      "alt_answers": "15种",
+      "explanation": "搭配总数 = 上衣数 × 裤子数 = 3×5 = 15。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "用边长 1 cm 的正方形拼成长方形（每行连续排列），用 6 个这样的正方形拼成 1×6 的长方形的周长是(    )cm。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "14",
+      "alt_answers": "14cm|||14厘米",
+      "explanation": "1×6 长方形：长 6 cm、宽 1 cm；周长 = (6+1)×2 = 14 cm。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "用边长 1 cm 的正方形连成一行拼成长方形，用 n 个这样的正方形拼成的长方形（1×n）的周长是(    )cm（用含 n 的式子表示）。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "2n+2",
+      "alt_answers": "2n+2cm|||(2n+2)cm",
+      "explanation": "长 n cm，宽 1 cm；周长 = 2(n+1) = 2n+2 cm。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "一把钥匙开一把锁，现在有 10 把钥匙和 10 把锁弄混了，要把它们重新配对，最多试(    )次。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "45",
+      "alt_answers": "45次",
+      "explanation": "最坏情况：第1把锁最多试 9 次（第 10 次必中），第2把试 8 次……最后一把不用试，共 9+8+7+...+1 = 45 次。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "1+2+3+…+9+10+9+8+7+…+3+2+1 = (    )。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "100",
+      "explanation": "等于 10² = 100。或拆开：(1+2+…+10) + (1+2+…+9) = 55+45 = 100。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "学校举行经典诵读，六年级同学站成一个方阵，最外层每边站 16 人，最外层一共有(    )人。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "60",
+      "alt_answers": "60人",
+      "explanation": "方阵最外层 = 4×边长 - 4 = 4×16-4 = 60 人。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "学校举行经典诵读，六年级同学站成一个方阵，最外层每边站 16 人，整个方阵有(    )人。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "256",
+      "alt_answers": "256人",
+      "explanation": "方阵每边 16 人，整个方阵 = 16² = 256 人。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "李老师从 4 幅绘画作品中选出 2 幅参加校书画大赛，共有 6 种不同的选法。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "对",
+      "explanation": "C(4,2) = 4×3÷2 = 6 种。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "一只平底锅只能同时烙两张饼，烙熟一面需要 2 分。烙好三张饼至少需要(    )分。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": "[\"A. 12\", \"B. 10\", \"C. 8\", \"D. 6\"]",
+      "answer": "D",
+      "explanation": "经典烙饼问题：3 张饼最少 = 3×2 = 6 分（轮换法）。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "某公交车早上 7:00 发第一班车，以后每隔半小时发一班，最后一班是晚上 9:00。一天共发了(    )班车。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": "[\"A. 14\", \"B. 28\", \"C. 27\", \"D. 29\"]",
+      "answer": "D",
+      "explanation": "总时长 = 14 时 = 14×60 = 840 分；间隔 30 分；班数 = 840÷30+1 = 29 班。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "某客运列车行驶于北京、济南、南京这 3 个城市之间，火车站应准备(    )种不同的车票。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": "[\"A. 3\", \"B. 4\", \"C. 6\", \"D. 8\"]",
+      "answer": "C",
+      "explanation": "n 个城市需要 n×(n-1) 种车票（往返不同方向）：3×2 = 6 种。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "买 3 千克苹果和 5 千克梨共花 27 元，买 2 千克苹果和 2 千克梨共花 14 元。只买 5 千克梨要花多少元？",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "15",
+      "alt_answers": "15元",
+      "explanation": "由 2(苹果+梨) = 14 得 苹果+梨 = 7元；3 苹果+5 梨 = 27；3(苹果+梨)+2梨 = 27，21+2梨 = 27，梨 = 3元/kg，5 kg 梨 = 15 元。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "六(4)班做完语文作业的有 37 人，做完数学作业的有 42 人，两种作业都做完的有 31 人，每人至少做完一种作业。六(4)班共有多少人？",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "48",
+      "alt_answers": "48人",
+      "explanation": "容斥原理：总数 = 语文+数学-两种都做 = 37+42-31 = 48 人。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "2018 年某地区载货汽车保有量达到 2143 万辆，比 2017 年增产 3.47%。2017 年该地区载货汽车保有量约是多少万辆？（结果保留两位小数）",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "2071.13",
+      "alt_answers": "2071.13万辆",
+      "explanation": "设 2017 年为 x，则 x×(1+3.47%) = 2143，x = 2143÷1.0347 ≈ 2071.13 万辆。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "学校组织北京亲子两日游：A 方案大人 300 元/人、小孩 120 元/人；B 方案团体 6 人以上每人 220 元。如果有 8 个大人、5 个小孩一起去，哪种方案更省钱？",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": "[\"A. A 方案\", \"B. B 方案\", \"C. 两种一样\"]",
+      "answer": "B",
+      "explanation": "A 方案：300×8+120×5 = 2400+600 = 3000 元；B 方案：(8+5)×220 = 2860 元；2860<3000，B 更省。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "鸡兔同笼，共有头 53 个，鸡的脚比兔的脚少 98 只。鸡有多少只？",
+      "type": "calculation",
+      "difficulty": "hard",
+      "answer": "19",
+      "alt_answers": "19只",
+      "explanation": "设兔 x 只，鸡 (53-x) 只。兔脚 4x，鸡脚 2(53-x)，兔脚-鸡脚 = 98：4x-2(53-x) = 98；6x = 204；x = 34；鸡 = 53-34 = 19 只。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "鸡兔同笼，共有头 53 个，鸡的脚比兔的脚少 98 只。兔有多少只？",
+      "type": "calculation",
+      "difficulty": "hard",
+      "answer": "34",
+      "alt_answers": "34只",
+      "explanation": "由 4x-2(53-x) = 98 解得 x = 34；兔有 34 只。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "某通信公司：A 卡月租 40 元、每分通话 0.35 元；B 卡月租 0 元、每分 0.60 元。当每月累计通话 x 分时两种卡话费相等，x = ？",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "160",
+      "alt_answers": "160分|||160分钟",
+      "explanation": "列方程：40+0.35x = 0.6x；0.25x = 40；x = 160 分。",
+      "round": 3
+    }
+  ]
+}
