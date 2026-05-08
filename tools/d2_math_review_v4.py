@@ -755,6 +755,8 @@ def main():
                 'kp': q.get('knowledge_point', ''),
                 'content_preview': (q.get('content', '') or '')[:80],
                 'type': q.get('type'),
+                'group_id': q.get('group_id'),
+                'group_order': q.get('group_order'),
                 'original_round': original_round,
                 'v1_suggested_round': v1_sug,
                 'v2_suggested_round': v2_round,
@@ -773,12 +775,51 @@ def main():
                 'v2_anchor_round': anchor_round,
                 'v2_reasoning': reasoning,
             }
-            out_lines.append(json.dumps(rec, ensure_ascii=False))
+            out_lines.append(rec)
+
+    # ----------- V3.12.5 §6.5: 组合题难度统一（ceil 平均）-----------
+    # 所有题判完后再做组内统一，确保同 group_id 的子题最终 round 一致
+    import math
+    from collections import defaultdict
+    groups = defaultdict(list)
+    for rec in out_lines:
+        gid = rec.get('group_id')
+        if gid:
+            groups[gid].append(rec)
+
+    n_unified = 0
+    for gid, recs in groups.items():
+        if len(recs) <= 1:
+            continue  # 单子题（虽有 group_id 但只 1 道）不处理
+        rounds = [r['v2_suggested_round'] for r in recs if r.get('v2_suggested_round') is not None]
+        if not rounds:
+            continue
+        avg = sum(rounds) / len(rounds)
+        unified = math.ceil(avg)
+        for r in recs:
+            individual = r['v2_suggested_round']
+            r['v2_round_before_group_unify'] = individual  # 留痕原始
+            r['v2_suggested_round'] = unified
+            r['v2_combined'] = unified
+            # 重算 v2_verdict 基于统一后 round
+            orig = r['original_round']
+            if unified == orig:
+                r['v2_verdict'] = 'no_change'
+            elif abs(unified - orig) >= 2:
+                r['v2_verdict'] = 'flag_review'
+            else:
+                r['v2_verdict'] = 'suggest_change'
+            # reasoning 末尾追加组统一信息
+            r['v2_reasoning'] += f' | group_unify(§6.5): individual=R{individual} → group_avg={avg:.2f} → ceil R{unified}'
+            if individual != unified:
+                n_unified += 1
+    n_groups = sum(1 for recs in groups.values() if len(recs) > 1)
 
     with open(OUT_PATH, 'w') as f:
-        for line in out_lines:
-            f.write(line + '\n')
+        for rec in out_lines:
+            f.write(json.dumps(rec, ensure_ascii=False) + '\n')
     print(f'V2 reviewer: {n_total} questions, {skipped} skipped (deprecated), wrote {OUT_PATH}')
+    print(f'  §6.5 组合题难度统一: {n_groups} 组（≥2 子题），{n_unified} 道题 round 被改写')
     return n_total
 
 
