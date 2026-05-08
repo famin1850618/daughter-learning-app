@@ -45,26 +45,8 @@ const _bundledBatchAssets = [
   // V3.10 第九批 (2026-05-08): 8 卷数学六下 184 题
   // V3.12.5 第十批 (2026-05-08): 数学六下剩余源卷
   // V3.12.6 语文六下部编版真题入库 8 套共 247 题
-  'assets/data/batches/realpaper_g6_chinese_bubian_qizhong_001.json',
-  'assets/data/batches/realpaper_g6_chinese_bubian_qizhong_002.json',
-  'assets/data/batches/realpaper_g6_chinese_bubian_qizhong_003.json',
-  'assets/data/batches/realpaper_g6_chinese_bubian_qizhong_004.json',
-  'assets/data/batches/realpaper_g6_chinese_bubian_qizhong_005.json',
-  'assets/data/batches/realpaper_g6_chinese_bubian_qizhong_006.json',
-  'assets/data/batches/realpaper_g6_chinese_bubian_qimo_quanzhen_001.json',
-  'assets/data/batches/realpaper_g6_chinese_bubian_qimo_mokuai_004.json',
   // V3.12.6 数学六下北师大版真题重扫入库 10 卷共 419 题
   //   d1/d2 跟踪+过关 + d4 过关（5 卷）+ 周测 1 + 期中 1 + 期末 1 + 京/西小升初 2
-  'assets/data/batches/realpaper_g6_math_beishida_d1_genzong_001.json',
-  'assets/data/batches/realpaper_g6_math_beishida_d1_guoguan_001.json',
-  'assets/data/batches/realpaper_g6_math_beishida_d2_genzong_001.json',
-  'assets/data/batches/realpaper_g6_math_beishida_d2_guoguan_001.json',
-  'assets/data/batches/realpaper_g6_math_beishida_d4_guoguan_001.json',
-  'assets/data/batches/realpaper_g6_math_beishida_zhouce_peiyou_003.json',
-  'assets/data/batches/realpaper_g6_math_beishida_qizhong_001.json',
-  'assets/data/batches/realpaper_g6_math_beishida_qimo_001.json',
-  'assets/data/batches/realpaper_g6_math_beishida_xshchu_beijing_001.json',
-  'assets/data/batches/realpaper_g6_math_beishida_xshchu_xian_001.json',
 ];
 
 void main() async {

@@ -9,6 +9,7 @@ import '../services/plan_service.dart';
 import '../services/navigation_service.dart';
 import '../services/practice_service.dart';
 import '../services/difficulty_settings_service.dart';
+import '../services/data_reset_service.dart';
 import 'chapter_detail_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -69,6 +70,7 @@ class _WeakKpSummary extends StatefulWidget {
 class _WeakKpSummaryState extends State<_WeakKpSummary> {
   late Future<List<ReviewKpSummary>> _future;
   PracticeService? _practiceRef;
+  DataResetService? _resetRef;
   bool _wasSessionActive = false;
 
   @override
@@ -88,6 +90,13 @@ class _WeakKpSummaryState extends State<_WeakKpSummary> {
       p.addListener(_onPracticeChanged);
       _wasSessionActive = p.sessionActive;
     }
+    // V3.12.7：监听 DataResetService 主动重置→ 薄弱 KP 即时清零
+    final r = context.read<DataResetService>();
+    if (_resetRef != r) {
+      _resetRef?.removeListener(_onResetChanged);
+      _resetRef = r;
+      r.addListener(_onResetChanged);
+    }
   }
 
   void _onPracticeChanged() {
@@ -100,9 +109,15 @@ class _WeakKpSummaryState extends State<_WeakKpSummary> {
     _wasSessionActive = nowActive;
   }
 
+  void _onResetChanged() {
+    if (!mounted) return;
+    setState(() => _future = QuestionDao().getTopWeakKnowledgePoints(3));
+  }
+
   @override
   void dispose() {
     _practiceRef?.removeListener(_onPracticeChanged);
+    _resetRef?.removeListener(_onResetChanged);
     super.dispose();
   }
 

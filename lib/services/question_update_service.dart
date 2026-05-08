@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:crypto/crypto.dart';
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
@@ -180,8 +181,10 @@ class QuestionUpdateService extends ChangeNotifier {
       );
     }).toList();
 
-    final inserted = await _qDao.insertBatchIfMissing(source, questions);
-    return inserted ? questions.length : 0;
+    // V3.12.7：用 (source + batch_hash) 决定增量/覆盖。修反复出现的"题数不更新"bug。
+    // 同 source 不同 hash → 自动 DELETE 旧题 + INSERT 新数据。
+    final batchHash = sha1.convert(utf8.encode(jsonStr)).toString();
+    return await _qDao.upsertBatchByHash(source, batchHash, questions);
   }
 
   Future<bool> _hasSource(String source) async {

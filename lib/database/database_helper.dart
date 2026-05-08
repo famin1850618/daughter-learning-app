@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 18,
+      version: 19,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
@@ -448,6 +448,21 @@ class DatabaseHelper {
             where: "source LIKE '%_deprecated' OR source LIKE '%_unverified%'");
       } catch (_) {/* 已无数据则跳过 */}
     }
+
+    if (oldVersion < 19) {
+      // v19: V3.12.7 batch_hash 机制（题数 bug 底层修复）
+      // 1. questions 表加 batch_hash 字段
+      // 2. 删除六下数学/语文 realpaper 题：让 V3.12.6 重扫的 batch 在下次启动重新 import
+      //    （V3.12.6 batch source 跟 V3.10 同名，但内容不同。旧机制按 source 幂等跳过新内容
+      //     → 题数显示一直是 V3.10 数据。V3.12.7 加 batch_hash 后此 bug 不会再现。）
+      try {
+        await db.execute('ALTER TABLE questions ADD COLUMN batch_hash TEXT');
+      } catch (_) {/* 已加过则跳 */}
+      try {
+        await db.delete('questions',
+            where: "source LIKE 'realpaper_g6_math_%' OR source LIKE 'realpaper_g6_chinese_%'");
+      } catch (_) {/* 无数据 */}
+    }
   }
 
   Future<void> _createAllTables(Database db) async {
@@ -512,6 +527,7 @@ class DatabaseHelper {
         group_id TEXT,
         group_order INTEGER,
         source TEXT DEFAULT 'pregenerated',
+        batch_hash TEXT,
         user_id TEXT DEFAULT 'local'
       )
     ''');

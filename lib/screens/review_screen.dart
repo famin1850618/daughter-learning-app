@@ -15,6 +15,7 @@ import '../services/assessment_service.dart';
 import '../services/reward_service.dart';
 import '../services/difficulty_settings_service.dart';
 import '../services/review_request_service.dart';
+import '../services/data_reset_service.dart';
 import '../models/review_request.dart';
 
 /// 错题集（按 KP 聚类）
@@ -33,6 +34,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
   final _dao = QuestionDao();
   late Future<List<ReviewKpSummary>> _future;
   PracticeService? _practiceListenerRef;
+  DataResetService? _resetListenerRef;
   bool _wasSessionActive = false;
 
   @override
@@ -55,6 +57,13 @@ class _ReviewScreenState extends State<ReviewScreen> {
       p.addListener(_onPracticeChanged);
       _wasSessionActive = p.sessionActive;
     }
+    // V3.12.7：监听 DataResetService 主动重置→ 错题集即时清零
+    final r = context.read<DataResetService>();
+    if (_resetListenerRef != r) {
+      _resetListenerRef?.removeListener(_onResetChanged);
+      _resetListenerRef = r;
+      r.addListener(_onResetChanged);
+    }
   }
 
   void _onPracticeChanged() {
@@ -69,9 +78,16 @@ class _ReviewScreenState extends State<ReviewScreen> {
     _wasSessionActive = nowActive;
   }
 
+  void _onResetChanged() {
+    if (!mounted) return;
+    setState(() => _future = _dao.getReviewKnowledgePoints());
+    context.read<AssessmentService>().refresh();
+  }
+
   @override
   void dispose() {
     _practiceListenerRef?.removeListener(_onPracticeChanged);
+    _resetListenerRef?.removeListener(_onResetChanged);
     super.dispose();
   }
 

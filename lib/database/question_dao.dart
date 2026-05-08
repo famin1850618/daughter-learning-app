@@ -56,7 +56,7 @@ class QuestionDao {
     await batch.commit(noResult: true);
   }
 
-  /// 按 source 幂等导入：source 已存在就跳过，避免重复入库
+  /// 按 source 幂等导入：source 已存在就跳过，避免重复入库（V3.6 起）
   Future<bool> insertBatchIfMissing(String source, List<Question> questions) async {
     final db = await _db.database;
     final exists = await db.rawQuery(
@@ -70,6 +70,41 @@ class QuestionDao {
     }
     await batch.commit(noResult: true);
     return true;
+  }
+
+  /// V3.12.7：按 (source + batch_hash) 决定是否重导入。
+  /// - source 不存在 → INSERT 全题（首次导入）
+  /// - source 存在 + 同 hash → 跳过（性能优化，无变化）
+  /// - source 存在 + 异 hash → DELETE 该 source 全题 + INSERT 新数据（内容更新）
+  ///
+  /// 修复反复出现的"DB 题数不更新"老 bug。返回 0=跳过 / N=新插入题数（含覆盖场景）。
+  Future<int> upsertBatchByHash(
+    String source,
+    String batchHash,
+    List<Question> questions,
+  ) async {
+    final db = await _db.database;
+    final existing = await db.rawQuery(
+      'SELECT batch_hash FROM questions WHERE source = ? LIMIT 1',
+      [source],
+    );
+    if (existing.isNotEmpty) {
+      final oldHash = existing.first['batch_hash'] as String?;
+      if (oldHash == batchHash) {
+        return 0; // 完全相同，跳过
+      }
+      // hash 异，DELETE 该 source 旧题（practice_records 等外键 ON DELETE 维持）
+      await db.delete('questions', where: 'source = ?', whereArgs: [source]);
+    }
+    final batch = db.batch();
+    for (final q in questions) {
+      final m = q.toMap();
+      m['source'] = source;
+      m['batch_hash'] = batchHash;
+      batch.insert('questions', m);
+    }
+    await batch.commit(noResult: true);
+    return questions.length;
   }
 
   Future<int> count() async {
