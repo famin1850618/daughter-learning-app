@@ -235,6 +235,14 @@
         "distractor_density": 0.6,
         "kp_span": 1,
         "data_complexity": 0.3
+      },
+      "_famin_review": {
+        "famin_round": 2,
+        "comment": "这个题的答案有问题吧，A选项是人表达的方式吗？",
+        "reviewed_at": "2026-05-08T13:33:11.702385Z",
+        "verdict": "agree",
+        "disabled": true,
+        "disabled_reason": "题面/答案有问题，撤下不当锚点"
       }
     },
     {
@@ -259,6 +267,14 @@
         "distractor_density": 0.5,
         "kp_span": 2,
         "data_complexity": 0.4
+      },
+      "_famin_review": {
+        "famin_round": 2,
+        "comment": "这题又是答案问题，你确认原题A选项是这样吗？A怎么看都没问题啊",
+        "reviewed_at": "2026-05-08T13:33:11.702385Z",
+        "verdict": "agree",
+        "disabled": true,
+        "disabled_reason": "题面/答案有问题，撤下不当锚点"
       }
     },
     {
@@ -289,7 +305,8 @@
       "_famin_review": {
         "famin_round": 1,
         "comment": "褒贬明显，选项无任何迷惑性",
-        "reviewed_at": "2026-05-08T06:11:18.990744Z"
+        "reviewed_at": "2026-05-08T13:33:11.702385Z",
+        "verdict": "disagree"
       }
     },
     {
@@ -320,7 +337,8 @@
       "_famin_review": {
         "famin_round": 2,
         "comment": "理解直白，选项迷惑性不高",
-        "reviewed_at": "2026-05-08T06:11:18.990744Z"
+        "reviewed_at": "2026-05-08T13:33:11.702385Z",
+        "verdict": "disagree"
       }
     },
     {
@@ -370,6 +388,12 @@
         "distractor_density": 0.7,
         "kp_span": 1,
         "data_complexity": 0.6
+      },
+      "_famin_review": {
+        "famin_round": 3,
+        "comment": "我没看到原文，但感觉选项迷惑性强，或许可以到R4",
+        "reviewed_at": "2026-05-08T13:33:11.702385Z",
+        "verdict": "unsure"
       }
     },
     {
@@ -445,7 +469,8 @@
       "_famin_review": {
         "famin_round": 2,
         "comment": "三短一长选最长，选项无迷惑性",
-        "reviewed_at": "2026-05-08T06:11:18.990744Z"
+        "reviewed_at": "2026-05-08T13:33:11.702385Z",
+        "verdict": "disagree"
       }
     },
     {
@@ -471,7 +496,13 @@
         "kp_span": 3,
         "data_complexity": 0.7
       },
-      "review_flag": true
+      "review_flag": true,
+      "_famin_review": {
+        "famin_round": 4,
+        "comment": "没看到原文，如果描写清楚应该是R3，如果描写有不确定的地方可以是R4",
+        "reviewed_at": "2026-05-08T13:33:11.702385Z",
+        "verdict": "unsure"
+      }
     },
     {
       "anchor_id": "chinese_r4_anchor_4",
@@ -521,7 +552,13 @@
         "kp_span": 3,
         "data_complexity": 0.8
       },
-      "review_flag": true
+      "review_flag": true,
+      "_famin_review": {
+        "famin_round": 4,
+        "comment": "这个没有原文我怎么判断？但这种题转折之意明显，我觉得最多R3",
+        "reviewed_at": "2026-05-08T13:33:11.702385Z",
+        "verdict": "agree"
+      }
     }
   ]
 }

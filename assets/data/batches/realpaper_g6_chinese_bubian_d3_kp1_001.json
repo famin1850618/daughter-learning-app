@@ -158,7 +158,7 @@
       "difficulty": "easy",
       "answer": "渴望",
       "explanation": "「渴望」表迫切希望，符合「我希望妈妈能带我出去玩」的强烈期待语境。",
-      "round": 1
+      "round": 2
     },
     {
       "chapter": "字词",
@@ -168,7 +168,7 @@
       "difficulty": "easy",
       "answer": "盼望",
       "explanation": "「盼望」与「热切地」搭配，表达急切期待。",
-      "round": 1
+      "round": 2
     },
     {
       "chapter": "字词",
@@ -178,7 +178,7 @@
       "difficulty": "easy",
       "answer": "希望",
       "explanation": "「希望落空」是固定搭配，指愿望未能实现。",
-      "round": 1
+      "round": 2
     },
     {
       "chapter": "字词",
@@ -188,7 +188,7 @@
       "difficulty": "easy",
       "answer": "失望",
       "explanation": "「失望」指希望落空后的情绪，与上句「希望落空了」逻辑衔接。",
-      "round": 1
+      "round": 2
     },
     {
       "chapter": "文学常识",
@@ -273,7 +273,7 @@
       "difficulty": "medium",
       "answer": "焦急兴奋",
       "explanation": "课文开头写「我」既因终于等到星期天而兴奋，又因母亲未立即出发而焦急。",
-      "round": 2
+      "round": 1
     },
     {
       "chapter": "课文与名著",
@@ -283,7 +283,7 @@
       "difficulty": "medium",
       "answer": "焦急无奈",
       "explanation": "母亲不断推迟出门，「我」由焦急兴奋转为焦急无奈。",
-      "round": 2
+      "round": 1
     },
     {
       "chapter": "课文与名著",
@@ -293,7 +293,7 @@
       "difficulty": "medium",
       "answer": "失望委屈",
       "explanation": "天黑后「我」彻底等不到出门，由失望演变为委屈大哭，是全文情感的高潮。",
-      "round": 2
+      "round": 1
     },
     {
       "chapter": "现代文阅读",
@@ -307,7 +307,7 @@
       ],
       "answer": "B",
       "explanation": "说明书第④条明确：「请勿将保温杯置于明火上或微波炉中加热」，故奶奶的做法是错误的。",
-      "round": 1
+      "round": 2
     },
     {
       "chapter": "句式与标点",
