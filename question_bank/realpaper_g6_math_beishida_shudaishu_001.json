@@ -1,0 +1,457 @@
+{
+  "source": "realpaper_g6_math_beishida_shudaishu_001",
+  "subject": "math",
+  "grade": 6,
+  "knowledge_points_added": [],
+  "questions": [
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "一个数由 19 个亿、7 个千万、8 个万、4 个百和 8 个十组成，这个数写作(    )。请填阿拉伯数字。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "1970080480",
+      "alt_answers": "1970080480",
+      "explanation": "19 亿=1900000000，7 千万=70000000，8 万=80000，4 百=400，8 十=80。合计 1900000000+70000000+80000+400+80=1970080480。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "数 1970080480 省略亿位后面的尾数约是(    )亿。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "20",
+      "alt_answers": "20亿|||约20亿",
+      "explanation": "1970080480 ≈ 1970000000，从亿位后面看千万位是 7，四舍五入向上进位，约为 20 亿。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "20 以内既是奇数又是合数的数有哪些？请按从小到大顺序填，逗号分隔。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "9,15",
+      "alt_answers": "9、15|||9和15",
+      "explanation": "20 以内的奇合数：9（=3×3）、15（=3×5）。其它如 1（非合数）、3、5、7、11、13、17、19 都是质数，所以只有 9 和 15。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "20 以内既是奇数又是合数的数（9 和 15），它们的最大公因数是(    )，最小公倍数是(    )。请按顺序填两个答案，逗号分隔。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "3,45",
+      "alt_answers": "3,45",
+      "explanation": "9=3²，15=3×5。最大公因数=3，最小公倍数=3²×5=45。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "填空：3/4 = (    )÷8 = (    )/12 = (    )∶4 = (    )（填小数）。请按顺序填四个答案，逗号分隔。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "6,9,3,0.75",
+      "alt_answers": "6,9,3,0.75",
+      "explanation": "3/4=6/8（即 6÷8）；3/4=9/12；3/4 即 3∶4；3÷4=0.75。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "单位换算：3800 g = (    ) kg。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "3.8",
+      "alt_answers": "3.8kg|||3.8千克",
+      "explanation": "1 kg = 1000 g，3800÷1000 = 3.8 kg。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "单位换算：3.05 t = (    ) t (    ) kg。请按顺序填吨数和千克数，逗号分隔。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "3,50",
+      "alt_answers": "3,50",
+      "explanation": "整数部分 3 t，小数部分 0.05 t = 50 kg（1 t=1000 kg）。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "比较大小，填 「>」「<」 或 「=」：5/6(    )0.83。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": ">",
+      "alt_answers": "大于|||＞",
+      "explanation": "5÷6 ≈ 0.833... > 0.83。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "比较大小：-5(    )-3。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "<",
+      "alt_answers": "小于|||＜",
+      "explanation": "负数中绝对值大的反而小：-5<-3。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "比较大小：0.89×1.03(    )0.89。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": ">",
+      "alt_answers": "大于|||＞",
+      "explanation": "乘以大于 1 的数会变大：0.89×1.03 > 0.89。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "比较大小：7.2×0.25(    )7.2÷4。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "=",
+      "alt_answers": "等于|||＝",
+      "explanation": "0.25 = 1/4，所以乘以 0.25 等于除以 4。两式相等。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "13/5 的分数单位是(    )。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "1/5",
+      "alt_answers": "五分之一",
+      "explanation": "分数单位是分母不变、分子为 1 的分数。13/5 的分数单位是 1/5。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "13/5 有 13 个分数单位 1/5，再添上(    )个这样的分数单位就是最小的合数。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "7",
+      "alt_answers": "7个",
+      "explanation": "最小合数是 4。4 = 20/5。13/5 加 (20-13)/5 = 7/5 即可。所以再添 7 个 1/5。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "甲数比乙数的 1.8 倍少 b。若乙数是 a，则甲数是(    )。请用含 a、b 的代数式表示。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "1.8a-b",
+      "alt_answers": "1.8a－b|||1.8*a-b",
+      "explanation": "甲 = 乙×1.8 - b = 1.8a - b。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "甲数比乙数的 1.8 倍少 b。若甲数是 a，则乙数是(    )。请用含 a、b 的代数式表示。",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "(a+b)/1.8",
+      "alt_answers": "(a+b)÷1.8|||(a＋b)/1.8",
+      "explanation": "由甲 = 乙×1.8 - b，得乙×1.8 = a+b，所以乙 = (a+b)/1.8。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "超市某商品原价 480 元，现在「满 300 元送 120 元」。实际上这件商品相当于打(    )折出售。",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "七五折",
+      "alt_answers": "7.5折|||75折|||0.75",
+      "explanation": "买 480 元，赠 120 元，相当于支付 480 元买价值 480+120 = ？错。重新理解：满 300 减 120，即付 480 - 120 = 360 元。折扣 = 360/480 = 0.75 = 七五折。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "甲数是乙数的 4/5。乙数是甲数的(    )%（百分数取整）。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "125",
+      "alt_answers": "125%|||125",
+      "explanation": "若甲=4，乙=5。乙/甲 = 5/4 = 1.25 = 125%。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "甲数是乙数的 4/5。甲数比乙数少(    )%。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "20",
+      "alt_answers": "20%|||百分之二十",
+      "explanation": "甲=4，乙=5。少 1，少 1/5 = 20%。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "甲数是乙数的 4/5。乙数比甲数多(    )%。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "25",
+      "alt_answers": "25%",
+      "explanation": "甲=4，乙=5。多 1，1/4 = 25%。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/求比值",
+      "content": "判断对错：比的前项扩大到原来的 2 倍，后项不变，比值扩大到原来的 2 倍。",
+      "type": "judgment",
+      "difficulty": "easy",
+      "answer": "对",
+      "explanation": "比值 = 前项÷后项。前项扩大 2 倍，后项不变，比值扩大 2 倍。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "判断对错：一种商品先涨价 15%，再降价 15%，这种商品现价与原价相等。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "错",
+      "explanation": "原价 1，涨后 1.15，再降 15%：1.15×0.85 = 0.9775 ≠ 1。所以不相等。",
+      "round": 2
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正反比例的判断",
+      "content": "判断对错：圆的面积与半径成正比例。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "错",
+      "explanation": "面积 = πr²，与 r² 成正比例，与 r 不成正比例（不是线性关系）。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "判断对错：北京某天的气温是 -3°C 到 8°C，这天的温差是 5°C。",
+      "type": "judgment",
+      "difficulty": "easy",
+      "answer": "错",
+      "explanation": "温差 = 最高 - 最低 = 8 - (-3) = 11°C，不是 5°C。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "判断对错：如果甲数是乙数的 5 倍，那么乙数一定是甲数的因数。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "错",
+      "explanation": "因数概念限于自然数（非零整数）。例如甲=5×0.5=2.5，乙=0.5，0.5 不是 2.5 的因数。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "甲数的 2/7 与乙数的 3/5 相等（甲、乙均不为 0）。甲数和乙数比较，(    )。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. 甲数 > 乙数",
+        "B. 甲数 < 乙数",
+        "C. 甲数 = 乙数",
+        "D. 无法比较"
+      ],
+      "answer": "A",
+      "explanation": "甲×2/7 = 乙×3/5。甲/乙 = (3/5)÷(2/7) = 21/10 > 1，所以甲>乙。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "如果 m÷n = 12（m、n 都是不为 0 的自然数），那么 m 和 n 的最小公倍数是(    )。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. m",
+        "B. n",
+        "C. 12",
+        "D. mn"
+      ],
+      "answer": "A",
+      "explanation": "m÷n=12 即 m = 12n，n 是 m 的因数。所以最小公倍数 = m。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "如果 x/4 是假分数（≥1），x/5 是真分数（<1），那么 x 应(    )。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. 大于 4",
+        "B. 等于 4",
+        "C. 大于 5",
+        "D. 等于 5"
+      ],
+      "answer": "B",
+      "explanation": "x/4 假分数即 x≥4，x/5 真分数即 x<5。所以 4≤x<5，自然数 x=4。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "把一根长 3/4 m 的木料锯成长度相等的小段，一共锯了 4 次，平均每段长多少米？正确算式是(    )。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. 3/4 ÷ 4",
+        "B. 3/4 ÷ (4-1)",
+        "C. 3/4 × 4",
+        "D. 3/4 ÷ (4+1)"
+      ],
+      "answer": "D",
+      "explanation": "锯 4 次得 5 段，每段长 = 3/4 ÷ 5 = 3/4 ÷ (4+1)。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/化简比",
+      "content": "修一条路，甲队单独修 15 天完成，乙队单独修 12 天完成。甲队的工作效率与乙队的工作效率的最简整数比是(    )。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. 15∶12",
+        "B. 12∶15",
+        "C. 5∶4",
+        "D. 4∶5"
+      ],
+      "answer": "D",
+      "explanation": "甲效率 = 1/15，乙效率 = 1/12。1/15∶1/12 = 12∶15 = 4∶5。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "解方程：7(x + 1.3) = 56。x = ?",
+      "type": "calculation",
+      "difficulty": "easy",
+      "answer": "6.7",
+      "alt_answers": "6.7",
+      "explanation": "x + 1.3 = 56÷7 = 8，所以 x = 8 - 1.3 = 6.7。",
+      "round": 1
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/解比例",
+      "content": "解比例：x/9 = 0.8/4.5。x = ?",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "1.6",
+      "alt_answers": "1.6|||8/5",
+      "explanation": "外积=内积：4.5x = 9×0.8 = 7.2，所以 x = 7.2÷4.5 = 1.6 = 8/5。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "解方程：1/4 x + 50% x = 60。x = ?",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "80",
+      "alt_answers": "80",
+      "explanation": "0.25x + 0.5x = 0.75x = 60，所以 x = 60÷0.75 = 80。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "六一儿童节那天，某体育用品商店开展促销活动，所有商品一律九折。明明买一副羽毛球拍便宜了 15 元。他买这副羽毛球拍用了多少元？",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "135",
+      "alt_answers": "135元",
+      "explanation": "便宜 15 元 = 原价×10%，所以原价 = 150 元，实付 = 150×90% = 135 元。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "贝贝到文具店买了 5 支圆珠笔和 4 支铅笔，共用去 8 元。每支圆珠笔 1.2 元，每支铅笔多少元？",
+      "type": "calculation",
+      "difficulty": "easy",
+      "answer": "0.5",
+      "alt_answers": "0.5元|||5角|||1/2",
+      "explanation": "5 支圆珠笔花 5×1.2 = 6 元。4 支铅笔花 8-6 = 2 元。每支 = 2÷4 = 0.5 元。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "小可有 72 张邮票，是小悦的邮票数的 8/9。小军的邮票数比小悦多 1/3。小军有邮票多少张？",
+      "type": "calculation",
+      "difficulty": "hard",
+      "answer": "108",
+      "alt_answers": "108张",
+      "explanation": "小悦 = 72÷(8/9) = 81 张。小军 = 81×(1+1/3) = 81×4/3 = 108 张。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "六年级数学竞赛共 20 道题，做对一道得 5 分，没做或做错一道扣 3 分。笑笑得 60 分，她做对了几道题？",
+      "type": "calculation",
+      "difficulty": "hard",
+      "answer": "15",
+      "alt_answers": "15道",
+      "explanation": "全对得 100。设做错 x 道。100 - 8x = 60（每错 1 道扣 8：失 5 加扣 3）→ x = 5。做对 = 20-5 = 15 道。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "一列匀速行驶的火车通过一座长 1000 m 的大桥用了 30 秒，穿越长 1920 m 的隧道用了 50 秒。这列火车每秒行多少米？",
+      "type": "calculation",
+      "difficulty": "hard",
+      "answer": "46",
+      "alt_answers": "46m/s|||46米每秒",
+      "explanation": "桥长比 = 1920-1000 = 920 m，时间比 = 50-30 = 20 秒。速度 = 920÷20 = 46 m/s。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "一列匀速行驶的火车通过一座长 1000 m 的大桥用了 30 秒（速度 46 m/s）。车身长多少米？",
+      "type": "calculation",
+      "difficulty": "hard",
+      "answer": "380",
+      "alt_answers": "380m|||380米",
+      "explanation": "30 秒走的总路程 = 46×30 = 1380 m。这等于桥长 + 车身。车身 = 1380 - 1000 = 380 m。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "某电脑厂生产一批电脑，原计划 15 天完成。实际每天生产 298 台，提前 3 天完成任务且超额 201 台。原计划每天生产电脑多少台？",
+      "type": "calculation",
+      "difficulty": "hard",
+      "answer": "225",
+      "alt_answers": "225台",
+      "explanation": "实际生产总数 = 298×(15-3) = 3576 台。原计划数 = 3576-201 = 3375 台。原计划每天 = 3375÷15 = 225 台。",
+      "round": 3
+    }
+  ]
+}

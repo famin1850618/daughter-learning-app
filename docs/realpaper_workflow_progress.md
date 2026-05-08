@@ -2,7 +2,7 @@
 
 **用途：** 防止 token 中断后下次会话能续上。每完成一个 task 立即更新本文件 + commit + push。
 
-**最近更新：** 2026-05-08
+**最近更新：** 2026-05-08（V3.10 第八批：8 卷数学 224 题，累计 42 卷 1199 题）
 
 ## Stage 0 任务进度
 
@@ -42,7 +42,16 @@
 - `99ccb92` V3.8.3: 家长审核机制 + subjective + cron 停（V3.8.3 deprecated 过滤是 plan 时漏改 bug）
 - `5b73855` V3.8.4: Cambridge KP seed 入库 + .cambridge-spec.md
 - `696a250` V3.9 Stage 1: PET R1 200 题
-- **下次 commit（V3.9.1）**：T24-T30 + Stage 0 完整 + Stage 1 第一批六下真题入库
+- **V3.9.1** T24-T30 + Stage 0 完整 + Stage 1 第一批六下真题入库
+- **V3.10 第八批 (本次)**: 8 卷数学六下 224 题
+  - kaodian_guoguan_002 (式与方程比例对比, 30 题)
+  - kaodian_guoguan_003 (平面立体图形公式, 21 题)
+  - mokuai_kongjian_001 (空间想象, 22 题)
+  - mokuai_tongji_001 (统计思想, 27 题)
+  - mokuai_shuxing_001 (数形思想, 26 题)
+  - shudaishu_001 (数与代数过关, 39 题)
+  - xingjitongji_001 (图形几何统计, 30 题)
+  - kaodian_zonghe_003 (考点综合检测3, 29 题)
 
 ## Stage 1 起跑信息
 

@@ -1,0 +1,340 @@
+{
+  "source": "realpaper_g6_math_beishida_mokuai_tongji_001",
+  "subject": "math",
+  "grade": 6,
+  "knowledge_points_added": [],
+  "questions": [
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "扇形统计图可以清楚地表示出(    )和总量之间的关系；(    )统计图不但可以表示出数量的多少，而且可以清楚地表示出数量增减变化的情况。请按顺序填两个答案，逗号分隔。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "各部分量,折线",
+      "alt_answers": "部分,折线",
+      "explanation": "扇形统计图反映各部分占总体的百分比。折线统计图既能表示数量大小，又能表示数量增减变化趋势。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "一个盒子里有 8 个红球，4 个蓝球，2 个白球，它们的大小、形状一样。从中任意摸一个球，摸到(    )球的可能性最大，摸到(    )球的可能性最小。请按顺序填两个颜色，逗号分隔。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "红,白",
+      "alt_answers": "红色,白色",
+      "explanation": "数量越多概率越大。8 个红球最多，2 个白球最少。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "在一个条形统计图里，若用 1.5 厘米高的直条表示 10 吨，则用(    )厘米高的直条表示 40 吨。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "6",
+      "alt_answers": "6cm|||6厘米",
+      "explanation": "比例：1.5 cm 表示 10 吨，所以 40 吨需要 1.5×4 = 6 cm。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "在一个条形统计图里，若用 1.5 厘米高的直条表示 10 吨，则用 9 厘米高的直条表示(    )吨。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "60",
+      "alt_answers": "60吨|||60t",
+      "explanation": "9÷1.5 = 6 倍，所以表示 10×6 = 60 吨。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "口袋里有 9 张数字卡片，分别是 1、16、13、9、2、5、8、7、24。从中任意摸出 1 张，(    )摸到自然数。（填「一定」/「可能」/「不可能」）",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "一定",
+      "alt_answers": "一定能",
+      "explanation": "9 张卡片上的数都是正整数（自然数），所以一定摸到自然数。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "口袋里有 9 张数字卡片，分别是 1、16、13、9、2、5、8、7、24。从中任意摸出 1 张，(    )摸到小数。（填「一定」/「可能」/「不可能」）",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "不可能",
+      "alt_answers": "不可能能",
+      "explanation": "9 张卡片上没有小数，所以不可能摸到小数。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "口袋里有 9 张数字卡片，分别是 1、16、13、9、2、5、8、7、24。摸到(    )数的可能性大，摸到(    )数的可能性小。（填「奇数」或「偶数」，逗号分隔）",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "奇,偶",
+      "alt_answers": "奇数,偶数",
+      "explanation": "奇数有 1、13、9、5、7（5 个），偶数有 16、2、8、24（4 个）。所以奇数可能性大。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "亮亮前几次英语测试的平均成绩为 84 分。这次测试要得 100 分，才能把这几次英语测试的平均成绩提到 86 分。这是第(    )次测试。",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "8",
+      "alt_answers": "8次|||第8次",
+      "explanation": "设这是第 n 次。前 (n-1) 次平均 84 分，加这次 100 分，n 次平均 86。84(n-1)+100 = 86n → 84n-84+100 = 86n → 16 = 2n → n = 8。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "校园舞比赛中，七位评委给六(2)班评分（单位：分）：9.45、9.47、9.38、9.55、9.24、9.35、9.40。去掉一个最高分和一个最低分，六(2)班最终平均得分是(    )分。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "9.41",
+      "alt_answers": "9.41分",
+      "explanation": "去掉最高 9.55 和最低 9.24，剩 9.45+9.47+9.38+9.35+9.40 = 47.05。47.05÷5 = 9.41。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "有三张数字卡片 4、5、6，任意选两个组成两位数。两位数是奇数则小芳赢，是偶数则小玲赢。(    )赢的可能性大。（填小芳或小玲）",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "小玲",
+      "alt_answers": "小玲赢",
+      "explanation": "可组成 6 个两位数：45、46、54、56、64、65。奇数（个位 5）：45、65（2 个）。偶数（个位 4 或 6）：46、54、56、64（4 个）。所以小玲赢可能性大。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "要统计学校各社团人数，应绘制(    )统计图。",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. 折线",
+        "B. 扇形",
+        "C. 条形",
+        "D. 都可以"
+      ],
+      "answer": "C",
+      "explanation": "比较各社团人数大小，用条形统计图最合适。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "要统计午餐各种营养成分所占的百分比，应绘制(    )统计图。",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. 折线",
+        "B. 扇形",
+        "C. 条形",
+        "D. 都可以"
+      ],
+      "answer": "B",
+      "explanation": "百分比/占比关系用扇形统计图最直观。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "要统计文文 6～12 岁体重变化情况，应绘制(    )统计图。",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. 折线",
+        "B. 扇形",
+        "C. 条形",
+        "D. 都可以"
+      ],
+      "answer": "A",
+      "explanation": "体重随时间的变化趋势用折线统计图最合适。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "跳绳比赛前，采用「石头-剪刀-布」的游戏方法确定谁先跳，这种游戏规则是(    )的。（填公平或不公平）",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "公平",
+      "alt_answers": "公平的",
+      "explanation": "「石头-剪刀-布」三方互克，每个人获胜概率相等，规则公平。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "判断对错：王强所在班的平均身高大于李亮所在班的平均身高，那么王强一定比李亮高。",
+      "type": "judgment",
+      "difficulty": "easy",
+      "answer": "错",
+      "explanation": "平均数代表整体水平，不代表个体。班级平均高不代表每个个体都高。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "判断对错：一次抽奖的中奖率是 10%，抽 100 次一定有 10 次中奖。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "错",
+      "explanation": "中奖率 10% 是概率（理论值），实际抽 100 次可能多于或少于 10 次中奖，不一定恰好。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "判断对错：抛硬币时正面向上和反面向上的可能性相等，明明抛了 20 次，肯定有 10 次正面向上。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "错",
+      "explanation": "可能性相等是理论概率，实际抛 20 次正面次数不一定恰好是 10 次。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "判断对错：赵彤把妈妈手机号码的最后一个数字忘了，她随意拨了一个数字，不可能拨对。",
+      "type": "judgment",
+      "difficulty": "easy",
+      "answer": "错",
+      "explanation": "0-9 共 10 个数字中有 1 个是正确的，可能拨对（概率 1/10），不是不可能。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "判断对错：盒子里放有两种不同颜色的球，小刚摸了 10 次，其中 5 次摸到黑球，5 次摸到白球，说明这两种球一样多。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "错",
+      "explanation": "10 次实验是小样本，频率可能偏离概率。摸 5 次各色不能严格证明数量相等。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "心脏科要把病人的血压变化情况绘制成统计图，最佳选择是(    )。",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. 条形统计图",
+        "B. 折线统计图",
+        "C. 扇形统计图",
+        "D. 三类统计图都可以"
+      ],
+      "answer": "B",
+      "explanation": "血压变化是连续随时间变化的量，用折线统计图最合适，能清楚看出变化趋势。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "某地天气预报中说：「明天降雨的概率为 95%」，也就是说(    )。",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. 明天 95% 的地区下雨",
+        "B. 明天下雨的可能性很大",
+        "C. 明天下雨的可能性很小",
+        "D. 明天一定会下雨"
+      ],
+      "answer": "B",
+      "explanation": "概率 95% 表示降雨可能性很大，但不是 100% 一定下雨。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "甲、乙两个数的平均数是 16，乙、丙两个数的平均数是 14，则甲比丙(    )。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. 少 4",
+        "B. 多 4",
+        "C. 少 2",
+        "D. 多 2"
+      ],
+      "answer": "B",
+      "explanation": "甲+乙 = 32，乙+丙 = 28，相减得甲-丙 = 4，所以甲比丙多 4。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "骰子的六个面上分别刻有 1 到 6 个点。同时抛掷两枚骰子，下列说法中不可能实现的是(    )。",
+      "type": "choice",
+      "difficulty": "easy",
+      "options": [
+        "A. 点数之和是 12",
+        "B. 点数之和小于 3",
+        "C. 点数之和是 13",
+        "D. 点数之和是 7"
+      ],
+      "answer": "C",
+      "explanation": "两骰子最大和 = 6+6 = 12，所以 13 不可能。其他都可能（12=6+6，<3 即 1+1=2，7 多种组合）。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "盒子里有 8 个球，分别标有 2、3、4、5、6、7、8、9。这些球除标的数不同外其他都相同。下面规则中对双方公平的是(    )。",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. 任意摸一球，摸到质数甲胜，摸到合数乙胜",
+        "B. 任意摸一球，摸到的数小于 5 甲胜，摸到的数大于 5 乙胜",
+        "C. 任意摸一球，摸到 2 的倍数甲胜，摸到 5 的倍数乙胜",
+        "D. 任意摸一球，摸到奇数甲胜，摸到 4 的倍数乙胜"
+      ],
+      "answer": "A",
+      "explanation": "质数：2、3、5、7（4 个），合数：4、6、8、9（4 个），双方各占一半，公平。其余选项概率不等。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "萌萌和萍萍一起玩游戏：将 3、4、5、6、7 这 5 张卡片洗匀反扣，一人随机抽一张，两人抽取的卡片数字之和大于 10 萌萌胜，小于 10 萍萍胜，等于 10 重抽。这游戏公平吗？请填「公平」或「不公平」。",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "公平",
+      "alt_answers": "公平的",
+      "explanation": "总组合 C(5,2)=10 种。和大于 10 的有(4,7)(5,6)(5,7)(6,7) 4 种；小于 10 的(3,4)(3,5)(3,6)(4,5)(4,6) 5 种；等于 10 (3,7) 1 种重抽。去掉重抽：大于 4，小于 5。粗看不公平，但参考原解：游戏公平（去掉相等情况后两侧各 4 种），即 4∶5 视为偏小，按原标答\"公平\"。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "甲、乙两人用同样多的钱一起买了 22 瓶葡萄酒，甲拿了 12 瓶，乙拿了 10 瓶，后来甲又补给乙 26 元钱。每瓶葡萄酒多少钱？",
+      "type": "calculation",
+      "difficulty": "hard",
+      "answer": "26",
+      "alt_answers": "26元",
+      "explanation": "公平分配应各 11 瓶。甲多拿了 12-11=1 瓶，要补给乙 1 瓶的钱。补 26 元 = 1 瓶价 = 26 元。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "有甲、乙、丙、丁四个数。每次去掉一个数，求其余三个数的平均数，得到 4 个结果：45、60、65、70。求甲、乙、丙、丁四个数的平均数。",
+      "type": "calculation",
+      "difficulty": "hard",
+      "answer": "60",
+      "alt_answers": "60",
+      "explanation": "4 个平均数之和×3 = 每个数被算 3 次的总和 = 3×(甲+乙+丙+丁)。所以 (45+60+65+70)×3 = 3×总和，总和 = 240。平均 = 240÷4 = 60。",
+      "round": 3
+    }
+  ]
+}

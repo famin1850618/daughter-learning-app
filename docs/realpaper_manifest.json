@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "schema": "v1",
   "created_at": "2026-05-08",
   "description": "真题处理进度 manifest。每处理一卷追加 processed[] 一项。详见 .realpaper-spec.md §10",
@@ -18,11 +18,26 @@
         "Q18 (三.3): 5 个圆柱/圆锥比较图，复杂图，spec §9.4 跳过"
       ],
       "figures_handled": [
-        {"q": "一.2 长方形旋转", "method": "text-rewrite (5×4 dimensions inline)"},
-        {"q": "一.3 直角三角形旋转", "method": "text-rewrite (legs 6,8 inline)"},
-        {"q": "四.1 圆柱SA+V + 圆锥V", "method": "split-into-2 + text-rewrite (dimensions inline)"},
-        {"q": "四.3 空心圆柱", "method": "text-rewrite (内外径inline)"},
-        {"q": "四.4 圆柱挖圆锥", "method": "text-rewrite (尺寸inline)"}
+        {
+          "q": "一.2 长方形旋转",
+          "method": "text-rewrite (5×4 dimensions inline)"
+        },
+        {
+          "q": "一.3 直角三角形旋转",
+          "method": "text-rewrite (legs 6,8 inline)"
+        },
+        {
+          "q": "四.1 圆柱SA+V + 圆锥V",
+          "method": "split-into-2 + text-rewrite (dimensions inline)"
+        },
+        {
+          "q": "四.3 空心圆柱",
+          "method": "text-rewrite (内外径inline)"
+        },
+        {
+          "q": "四.4 圆柱挖圆锥",
+          "method": "text-rewrite (尺寸inline)"
+        }
       ],
       "kp_distribution": {
         "圆柱与圆锥/圆柱的认识": 2,
@@ -32,8 +47,18 @@
         "圆柱与圆锥/圆锥的体积": 4,
         "圆柱与圆锥/圆柱圆锥综合应用": 5
       },
-      "type_distribution": {"fill": 13, "judgment": 5, "choice": 4, "calculation": 10},
-      "round_distribution": {"R1": 9, "R2": 21, "R3": 2, "R4": 0},
+      "type_distribution": {
+        "fill": 13,
+        "judgment": 5,
+        "choice": 4,
+        "calculation": 10
+      },
+      "round_distribution": {
+        "R1": 9,
+        "R2": 21,
+        "R3": 2,
+        "R4": 0
+      },
       "answer_match_pre": "15/29 自动配对",
       "processed_at": "2026-05-08"
     },
@@ -47,9 +72,21 @@
       "raw_segments": 28,
       "questions_emitted": 25,
       "questions_skipped": 3,
-      "skipped_reasons": ["五.1/五.2 画图任务（不适合 app 输入）", "三.6 图形选择题（4 图比较）"],
-      "type_distribution": {"fill": 13, "judgment": 5, "choice": 5, "calculation": 5},
-      "round_distribution": {"R1": 6, "R2": 18, "R3": 1},
+      "skipped_reasons": [
+        "五.1/五.2 画图任务（不适合 app 输入）",
+        "三.6 图形选择题（4 图比较）"
+      ],
+      "type_distribution": {
+        "fill": 13,
+        "judgment": 5,
+        "choice": 5,
+        "calculation": 5
+      },
+      "round_distribution": {
+        "R1": 6,
+        "R2": 18,
+        "R3": 1
+      },
       "answer_match_pre": "15/28",
       "processed_at": "2026-05-08"
     },
@@ -63,9 +100,21 @@
       "raw_segments": 27,
       "questions_emitted": 19,
       "questions_skipped": 8,
-      "skipped_reasons": ["一.7/8/9 表/图依赖", "三.5 图象比较", "五.* 图象阅读"],
-      "type_distribution": {"fill": 11, "judgment": 5, "choice": 4, "calculation": 0},
-      "round_distribution": {"R1": 11, "R2": 8},
+      "skipped_reasons": [
+        "一.7/8/9 表/图依赖",
+        "三.5 图象比较",
+        "五.* 图象阅读"
+      ],
+      "type_distribution": {
+        "fill": 11,
+        "judgment": 5,
+        "choice": 4,
+        "calculation": 0
+      },
+      "round_distribution": {
+        "R1": 11,
+        "R2": 8
+      },
       "answer_match_pre": "25/27",
       "processed_at": "2026-05-08"
     },
@@ -79,53 +128,334 @@
       "raw_segments": 20,
       "questions_emitted": 16,
       "questions_skipped": 4,
-      "skipped_reasons": ["一.4 表依赖", "五.* 表/图依赖"],
-      "type_distribution": {"fill": 10, "judgment": 3, "choice": 3, "calculation": 0},
-      "round_distribution": {"R1": 8, "R2": 8},
+      "skipped_reasons": [
+        "一.4 表依赖",
+        "五.* 表/图依赖"
+      ],
+      "type_distribution": {
+        "fill": 10,
+        "judgment": 3,
+        "choice": 3,
+        "calculation": 0
+      },
+      "round_distribution": {
+        "R1": 8,
+        "R2": 8
+      },
       "answer_match_pre": "19/20",
       "processed_at": "2026-05-08"
     },
     {
       "batch_source": "realpaper_g6_math_beishida_d1_genzong_001",
-      "subject": "math", "grade": 6, "chapter": "圆柱与圆锥",
-      "questions_emitted": 22, "questions_skipped": 5,
-      "skipped_reasons": ["一.7 直角三角形旋转(图)", "一.8 圆锥路障(图)", "三.2 圆柱切面(图)", "三.5 圆锥圆柱比较(图)", "五.4 葡萄酒瓶(图)"],
-      "by_agent": true, "processed_at": "2026-05-08"
+      "subject": "math",
+      "grade": 6,
+      "chapter": "圆柱与圆锥",
+      "questions_emitted": 22,
+      "questions_skipped": 5,
+      "skipped_reasons": [
+        "一.7 直角三角形旋转(图)",
+        "一.8 圆锥路障(图)",
+        "三.2 圆柱切面(图)",
+        "三.5 圆锥圆柱比较(图)",
+        "五.4 葡萄酒瓶(图)"
+      ],
+      "by_agent": true,
+      "processed_at": "2026-05-08"
     },
     {
       "batch_source": "realpaper_g6_math_beishida_d2_genzong_001",
-      "subject": "math", "grade": 6, "chapter": "比例",
-      "questions_emitted": 29, "questions_skipped": 4,
-      "skipped_reasons": ["三.3 4图比较", "五.1/五.2 画图", "六.2 测图"],
-      "by_agent": true, "processed_at": "2026-05-08"
+      "subject": "math",
+      "grade": 6,
+      "chapter": "比例",
+      "questions_emitted": 29,
+      "questions_skipped": 4,
+      "skipped_reasons": [
+        "三.3 4图比较",
+        "五.1/五.2 画图",
+        "六.2 测图"
+      ],
+      "by_agent": true,
+      "processed_at": "2026-05-08"
     },
     {
       "batch_source": "realpaper_g6_math_beishida_d4_guoguan_001",
-      "subject": "math", "grade": 6, "chapter": "正比例和反比例",
-      "questions_emitted": 21, "questions_skipped": 11,
-      "skipped_reasons": ["一.1 公式填空(LaTeX)", "一.5 字母6空(乱)", "一.10/三.4/三.5 表/图", "三.2 图象选择", "四.1-6 解比例(分式乱)", "五.1-4 表/画图", "六.4(1) 表"],
-      "by_agent": true, "processed_at": "2026-05-08"
+      "subject": "math",
+      "grade": 6,
+      "chapter": "正比例和反比例",
+      "questions_emitted": 21,
+      "questions_skipped": 11,
+      "skipped_reasons": [
+        "一.1 公式填空(LaTeX)",
+        "一.5 字母6空(乱)",
+        "一.10/三.4/三.5 表/图",
+        "三.2 图象选择",
+        "四.1-6 解比例(分式乱)",
+        "五.1-4 表/画图",
+        "六.4(1) 表"
+      ],
+      "by_agent": true,
+      "processed_at": "2026-05-08"
     },
     {
       "batch_source": "realpaper_g6_math_beishida_zhouce_peiyou_007",
-      "subject": "math", "grade": 6, "chapter": "正比例和反比例",
-      "questions_emitted": 13, "questions_skipped": 5,
-      "skipped_reasons": ["四.1-3 图象读数", "五.1-2 表格补全+开放简答"],
-      "by_agent": true, "processed_at": "2026-05-08"
+      "subject": "math",
+      "grade": 6,
+      "chapter": "正比例和反比例",
+      "questions_emitted": 13,
+      "questions_skipped": 5,
+      "skipped_reasons": [
+        "四.1-3 图象读数",
+        "五.1-2 表格补全+开放简答"
+      ],
+      "by_agent": true,
+      "processed_at": "2026-05-08"
     },
     {
       "batch_source": "realpaper_g6_math_beishida_zhouce_peiyou_005",
-      "subject": "math", "grade": 6, "chapter": "图形的运动",
-      "questions_emitted": 4, "questions_skipped": 12,
-      "skipped_reasons": ["卷主题图形运动，~75% 题需图(网格/几何)"],
-      "by_agent": true, "processed_at": "2026-05-08"
+      "subject": "math",
+      "grade": 6,
+      "chapter": "图形的运动",
+      "questions_emitted": 4,
+      "questions_skipped": 12,
+      "skipped_reasons": [
+        "卷主题图形运动，~75% 题需图(网格/几何)"
+      ],
+      "by_agent": true,
+      "processed_at": "2026-05-08"
     },
     {
       "batch_source": "realpaper_g6_math_beishida_qizhong_001",
-      "subject": "math", "grade": 6, "chapter": "跨章节(圆柱+比例+正反比例+图形+总复习)",
-      "questions_emitted": 30, "questions_skipped": 5,
-      "skipped_reasons": ["一.5 数对网格图", "三.1 圆柱展开图", "五.1/五.2/五.3 表/画图/网格"],
-      "by_agent": true, "processed_at": "2026-05-08"
+      "subject": "math",
+      "grade": 6,
+      "chapter": "跨章节(圆柱+比例+正反比例+图形+总复习)",
+      "questions_emitted": 30,
+      "questions_skipped": 5,
+      "skipped_reasons": [
+        "一.5 数对网格图",
+        "三.1 圆柱展开图",
+        "五.1/五.2/五.3 表/画图/网格"
+      ],
+      "by_agent": true,
+      "processed_at": "2026-05-08"
+    },
+    {
+      "sha1": "b2194c2528f1d08c7cb14ffbb06d2abab0cb25b9",
+      "batch_source": "realpaper_g6_math_beishida_kaodian_guoguan_002",
+      "subject": "math",
+      "grade": 6,
+      "chapter": "总复习+比例",
+      "questions_emitted": 30,
+      "questions_skipped": 0,
+      "skipped_reasons": [],
+      "type_distribution": {
+        "fill": 16,
+        "judgment": 3,
+        "choice": 4,
+        "calculation": 7
+      },
+      "round_distribution": {
+        "R1": 6,
+        "R2": 18,
+        "R3": 6
+      },
+      "kp_overview": "比和比例 5 + 总复习/数与代数综合 18 + 总复习/解决问题策略 6 + 正反比例/比例尺 1",
+      "processed_at": "2026-05-08"
+    },
+    {
+      "sha1": "7be4cad7ca7b242762ca0b92c305488a4b1e669a",
+      "batch_source": "realpaper_g6_math_beishida_kaodian_guoguan_003",
+      "subject": "math",
+      "grade": 6,
+      "chapter": "总复习+圆柱与圆锥",
+      "questions_emitted": 21,
+      "questions_skipped": 4,
+      "skipped_reasons": [
+        "三.2 展开图(图)",
+        "四.1/2 阴影/立体图(图)",
+        "五.1 图形描述差(图)"
+      ],
+      "type_distribution": {
+        "fill": 9,
+        "judgment": 3,
+        "choice": 3,
+        "calculation": 6
+      },
+      "round_distribution": {
+        "R1": 4,
+        "R2": 11,
+        "R3": 6
+      },
+      "kp_overview": "总复习/图形与几何综合 14 + 圆柱与圆锥 5 + 总复习/解决问题策略 1 + 总复习/数与代数综合 1",
+      "processed_at": "2026-05-08"
+    },
+    {
+      "sha1": "c7cb01cb8e9894ed945d663b8bdfcaf23cc10969",
+      "batch_source": "realpaper_g6_math_beishida_mokuai_kongjian_001",
+      "subject": "math",
+      "grade": 6,
+      "chapter": "总复习+圆柱与圆锥",
+      "questions_emitted": 22,
+      "questions_skipped": 8,
+      "skipped_reasons": [
+        "3 三角形比 (图)",
+        "4/5 椭圆面积/包装盒(图)",
+        "10 方位图",
+        "12 正反三视图(图)",
+        "三.2/3/4/5/6 全图依赖",
+        "四操作 全图",
+        "五.1/2/3 阴影/体积(图)"
+      ],
+      "type_distribution": {
+        "fill": 11,
+        "judgment": 5,
+        "choice": 2,
+        "calculation": 4
+      },
+      "round_distribution": {
+        "R1": 8,
+        "R2": 7,
+        "R3": 7
+      },
+      "kp_overview": "总复习/图形与几何综合 11 + 圆柱与圆锥 4 + 图形的运动 2 + 总复习/数与代数综合 5",
+      "processed_at": "2026-05-08"
+    },
+    {
+      "sha1": "0b3f09119c050197dccd054083b1c4fb8d7d9f92",
+      "batch_source": "realpaper_g6_math_beishida_mokuai_tongji_001",
+      "subject": "math",
+      "grade": 6,
+      "chapter": "总复习",
+      "questions_emitted": 27,
+      "questions_skipped": 5,
+      "skipped_reasons": [
+        "3 扇形统计图(图)",
+        "5 数字卡片复杂分类",
+        "四操作连一连绘制(图)",
+        "五.1 调查图依赖",
+        "五.5 烧杯-水槽(图)"
+      ],
+      "type_distribution": {
+        "fill": 13,
+        "judgment": 5,
+        "choice": 6,
+        "calculation": 3
+      },
+      "round_distribution": {
+        "R1": 12,
+        "R2": 9,
+        "R3": 6
+      },
+      "kp_overview": "总复习/统计与可能性 21 + 总复习/解决问题策略 6",
+      "processed_at": "2026-05-08"
+    },
+    {
+      "sha1": "c7751f067402fc6f4df358ddb015218ddd601906",
+      "batch_source": "realpaper_g6_math_beishida_mokuai_shuxing_001",
+      "subject": "math",
+      "grade": 6,
+      "chapter": "总复习",
+      "questions_emitted": 26,
+      "questions_skipped": 6,
+      "skipped_reasons": [
+        "4 △/△排列规律(图)",
+        "9 杠杆秤(图)",
+        "11 正方体表面积/12 杠杆原理(图)",
+        "三.2 三角形数(图)",
+        "四.1 正方形三角形数表(图)",
+        "六.6 出租车标准(图)"
+      ],
+      "type_distribution": {
+        "fill": 14,
+        "judgment": 4,
+        "choice": 6,
+        "calculation": 2
+      },
+      "round_distribution": {
+        "R1": 4,
+        "R2": 12,
+        "R3": 10
+      },
+      "kp_overview": "总复习/数与代数综合 12 + 总复习/解决问题策略 13 + 总复习/图形与几何综合 1",
+      "processed_at": "2026-05-08"
+    },
+    {
+      "sha1": "94700d5c041b94f0bce201d9664fd7d93c33b00b",
+      "batch_source": "realpaper_g6_math_beishida_shudaishu_001",
+      "subject": "math",
+      "grade": 6,
+      "chapter": "总复习+比例",
+      "questions_emitted": 39,
+      "questions_skipped": 0,
+      "skipped_reasons": [
+        "四.1 口算/2 简便计算 部分含格式乱（保留可读部分）"
+      ],
+      "type_distribution": {
+        "fill": 19,
+        "judgment": 5,
+        "choice": 5,
+        "calculation": 10
+      },
+      "round_distribution": {
+        "R1": 14,
+        "R2": 17,
+        "R3": 8
+      },
+      "kp_overview": "总复习/数与代数综合 22 + 总复习/解决问题策略 8 + 比和比例 4 + 正反比例 1",
+      "processed_at": "2026-05-08"
+    },
+    {
+      "sha1": "999f2524621c799fb000695639589e1e55fc41d8",
+      "batch_source": "realpaper_g6_math_beishida_xingjitongji_001",
+      "subject": "math",
+      "grade": 6,
+      "chapter": "总复习+圆柱与圆锥",
+      "questions_emitted": 30,
+      "questions_skipped": 5,
+      "skipped_reasons": [
+        "4 正方形与圆比(图)",
+        "三.1 展开图/3 三视图(图)",
+        "三.5 阴影面积(图)",
+        "四/五.体积/六操作(图)",
+        "七.1 兴趣小组(图)"
+      ],
+      "type_distribution": {
+        "fill": 14,
+        "judgment": 4,
+        "choice": 4,
+        "calculation": 8
+      },
+      "round_distribution": {
+        "R1": 9,
+        "R2": 13,
+        "R3": 8
+      },
+      "kp_overview": "总复习/图形与几何综合 18 + 圆柱与圆锥 4 + 总复习/统计与可能性 5 + 总复习/解决问题策略 1 + 总复习/数与代数综合 2",
+      "processed_at": "2026-05-08"
+    },
+    {
+      "sha1": "dc3e9673df60a2f3163ece287295ad159b0157b3",
+      "batch_source": "realpaper_g6_math_beishida_kaodian_zonghe_003",
+      "subject": "math",
+      "grade": 6,
+      "chapter": "总复习+圆柱与圆锥",
+      "questions_emitted": 29,
+      "questions_skipped": 1,
+      "skipped_reasons": [
+        "五 圆锥-圆柱组合体表面积/体积(图)"
+      ],
+      "type_distribution": {
+        "fill": 19,
+        "judgment": 3,
+        "choice": 4,
+        "calculation": 3
+      },
+      "round_distribution": {
+        "R1": 13,
+        "R2": 9,
+        "R3": 7
+      },
+      "kp_overview": "总复习/数与代数综合 12 + 总复习/图形与几何综合 5 + 比例 4 + 正反比例 4 + 圆柱与圆锥 2 + 总复习/解决问题策略 2",
+      "processed_at": "2026-05-08"
     }
   ],
   "skipped_files": []

@@ -1,0 +1,343 @@
+{
+  "source": "realpaper_g6_math_beishida_kaodian_zonghe_003",
+  "subject": "math",
+  "grade": 6,
+  "knowledge_points_added": [],
+  "questions": [
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "一个正方形的面积是 81 平方米，它的边长是(    )米。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "9",
+      "alt_answers": "9米|||9m",
+      "explanation": "面积 = 边长²，边长 = √81 = 9 米。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "一个正方体的体积是 125 立方米，它的棱长是(    )米。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "5",
+      "alt_answers": "5米|||5m",
+      "explanation": "体积 = 棱长³，棱长 = ∛125 = 5 米。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "如果用 a 表示自然数，那么偶数可以表示为(    )。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "2a",
+      "alt_answers": "2*a|||2×a",
+      "explanation": "偶数能被 2 整除，可写成 2 的倍数 2a。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "如果用 a 表示自然数，那么奇数可以表示为(    )。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "2a+1",
+      "alt_answers": "2a＋1|||2a-1|||2a+1或2a-1",
+      "explanation": "奇数 = 偶数 + 1，所以可表示为 2a+1（也可 2a-1）。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "妹妹的身高是 120 cm，哥哥的身高是 150 cm，哥哥比妹妹高(    )%。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "25",
+      "alt_answers": "25%",
+      "explanation": "(150-120)÷120 = 30/120 = 0.25 = 25%。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "妹妹身高 120 cm，哥哥身高 150 cm。在同一张照片上，哥哥身高 10 cm，则妹妹身高(    )cm。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "8",
+      "alt_answers": "8cm",
+      "explanation": "比例尺一致：照片高/实际高 = 10/150 = 1/15。妹妹照片身高 = 120×1/15 = 8 cm。",
+      "round": 2
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "哥哥实际身高 150 cm，照片身高 10 cm。这张照片是把人按照(    )的比例缩小的。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "1:15",
+      "alt_answers": "1∶15|||1比15",
+      "explanation": "比例尺 = 图上∶实际 = 10∶150 = 1∶15。",
+      "round": 2
+    },
+    {
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆锥的体积",
+      "content": "一个高是 45 厘米的圆锥形容器，盛满水后再倒入和它等底等高的圆柱形容器里。此时水面的高度是(    )厘米。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "15",
+      "alt_answers": "15cm|||15厘米",
+      "explanation": "等底等高圆锥体积 = 圆柱的 1/3。水倒入圆柱后水高 = 1/3×45 = 15 cm。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "一个等腰三角形的一个底角是 55°，顶角是(    )°。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "70",
+      "alt_answers": "70°|||70度",
+      "explanation": "等腰三角形两底角相等，三角形内角和 180°。顶角 = 180 - 2×55 = 70°。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "一个直角三角形，三条边分别长 6 cm、8 cm、10 cm。那么斜边上的高是(    )cm。",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "4.8",
+      "alt_answers": "4.8cm|||24/5",
+      "explanation": "直角三角形面积 = 两直角边×÷2 = 6×8÷2 = 24 cm²。也 = 斜边×斜边上的高÷2 = 10×h÷2。所以 h = 48÷10 = 4.8 cm。",
+      "round": 3
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/反比例的意义",
+      "content": "一辆摩托车 1/2 时行驶 18 千米，那么行驶 1 千米需要(    )时。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "1/36",
+      "alt_answers": "1/36小时",
+      "explanation": "时间 = 1÷速度。速度 = 18÷(1/2) = 36 km/h。所以 1 km 用时 = 1/36 时。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "判断对错：一个分数的分母含有质因数 7，这个分数一定不能化成有限小数。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "错",
+      "explanation": "需先把分数化为最简。比如 7/14 = 1/2，分母不含 7（约分掉了）能化有限小数。原说法忽略了化简前提。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "判断对错：甲班人数的 1/2 一定比乙班人数的 2/3 少。",
+      "type": "judgment",
+      "difficulty": "easy",
+      "answer": "错",
+      "explanation": "不知道甲、乙班人数总数，无法判断。比如甲 100 人 1/2=50，乙 60 人 2/3=40，反而甲多。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "判断对错：最小的合数是 4，最小的奇数是 1，最小的偶数是 0。",
+      "type": "judgment",
+      "difficulty": "easy",
+      "answer": "对",
+      "explanation": "最小合数是 4（因数有 1、2、4），最小奇数是 1，最小偶数是 0（0÷2=0 整除）。都正确。",
+      "round": 1
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "比的前项是 30，如果前项增加 60，要使比值不变，后项应该(    )。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. 增加 60",
+        "B. 减少 60",
+        "C. 乘 3",
+        "D. 除以 3"
+      ],
+      "answer": "C",
+      "explanation": "前项 30 增加 60 变 90，是原来的 3 倍。要比值不变，后项也要乘 3。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "妈妈准备用一些钱采购四套西装。由于降价，用同样多的钱现采购了五套。这种西装每套降价了(    )。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. 20%",
+        "B. 25%",
+        "C. 75%",
+        "D. 80%"
+      ],
+      "answer": "A",
+      "explanation": "总价不变，4×原价 = 5×现价，现价/原价 = 4/5 = 80%。降价 20%。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "将一些书放入 3 个抽屉里，放得最多的抽屉至少放 5 本。这些书共有(    )本。",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. 13～15",
+        "B. 12～16",
+        "C. 12～15",
+        "D. 16～18"
+      ],
+      "answer": "A",
+      "explanation": "鸽巢原理。最多至少 5 本：要保证最多至少 5，最少 5×3-2=13；最多 5×3=15（若再多则最大>5）。范围 13～15。",
+      "round": 3
+    },
+    {
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正反比例的判断",
+      "content": "下列各数量关系中，成反比例关系的是(    )。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. 全班人数一定，出勤人数和缺勤人数",
+        "B. 单价一定，买的数量和总价",
+        "C. 运送一批货物，每天运的质量和需要的天数"
+      ],
+      "answer": "C",
+      "explanation": "C：每天运量×天数 = 总货物（一定），是反比例。A 是和不变（一加一减）。B 是正比例。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "口算：6/5 × 15 = ?",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "18",
+      "alt_answers": "18",
+      "explanation": "6×15÷5 = 90÷5 = 18。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "口算：2/7 ÷ 8/11 = ?",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "11/28",
+      "alt_answers": "11/28",
+      "explanation": "2/7 ÷ 8/11 = 2/7 × 11/8 = 22/56 = 11/28。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "口算：8 × 3.14 = ?",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "25.12",
+      "alt_answers": "25.12",
+      "explanation": "8×3.14 = 25.12。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "口算：1 - 1/3 × 3/7 = ?",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "6/7",
+      "alt_answers": "6/7",
+      "explanation": "先算 1/3 × 3/7 = 1/7，再 1 - 1/7 = 6/7。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "口算：2/3 ÷ 4/9 = ?",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "3/2",
+      "alt_answers": "3/2|||1.5|||1又1/2",
+      "explanation": "2/3 ÷ 4/9 = 2/3 × 9/4 = 18/12 = 3/2。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "口算：1 ÷ 50% = ?",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "2",
+      "alt_answers": "2",
+      "explanation": "50% = 1/2，1÷1/2 = 2。",
+      "round": 1
+    },
+    {
+      "chapter": "比例",
+      "knowledge_point": "比和比例/解比例",
+      "content": "解比例：12∶x = 2/1.5。x = ?",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "9",
+      "alt_answers": "9",
+      "explanation": "外项积 = 内项积：2x = 12×1.5 = 18，所以 x = 9。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "解方程：1/4 x + 1/3 x = 1.4。x = ?",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "2.4",
+      "alt_answers": "2.4|||12/5",
+      "explanation": "(1/4+1/3)x = (3+4)/12 x = 7/12 x = 1.4，所以 x = 1.4 ÷ 7/12 = 1.4×12/7 = 2.4。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "六年级有三个班，六(1)班人数占全年级总人数的 25%，六(2)班和六(3)班人数的比是 7∶8，六(1)班比六(3)班少 24 人。六年级共有多少人？",
+      "type": "calculation",
+      "difficulty": "hard",
+      "answer": "160",
+      "alt_answers": "160人",
+      "explanation": "六(2)+六(3) = 75%。六(3)/(六(2)+六(3)) = 8/15。所以六(3) = 75%×8/15 = 40%。差 40%-25% = 15%对应 24 人。总人数 = 24÷15% = 160 人。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "28 人乘车去县城，可租用面包车（每辆坐 8 人，租金 300 元）和小轿车（每辆坐 4 人，租金 200 元）。要恰好坐满（不能空座或超员），花费最少是多少元？",
+      "type": "calculation",
+      "difficulty": "hard",
+      "answer": "1100",
+      "alt_answers": "1100元",
+      "explanation": "枚举：3 面包+1 小轿（24+4=28，900+200=1100）；2 面包+3 小轿（16+12=28，600+600=1200）；1 面包+5 小轿（8+20=28，300+1000=1300）。最少 1100 元。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "将 2 L 水倒入两个长方体水槽中，使它们水面的高度相等。已知一个水槽底面 12×10 cm，另一个水槽底面 8×5 cm。那么水高多少 cm？",
+      "type": "calculation",
+      "difficulty": "hard",
+      "answer": "12.5",
+      "alt_answers": "12.5cm",
+      "explanation": "2 L = 2000 cm³。两槽水高相同，总底面积 = 12×10+8×5 = 160 cm²。水高 = 2000÷160 = 12.5 cm。",
+      "round": 3
+    }
+  ]
+}

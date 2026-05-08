@@ -1,0 +1,315 @@
+{
+  "source": "realpaper_g6_math_beishida_mokuai_shuxing_001",
+  "subject": "math",
+  "grade": 6,
+  "knowledge_points_added": [],
+  "questions": [
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "按规律填数：1、4、9、16、(    )、(    )……请按顺序填两个答案，逗号分隔。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "25,36",
+      "alt_answers": "25,36",
+      "explanation": "这是平方数列：1²=1, 2²=4, 3²=9, 4²=16, 5²=25, 6²=36。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "按规律填数：1、2、2、4、3、8、4、16、5、(    )、(    )……（提示：奇数项是自然数 1,2,3,4,5,...，偶数项是 2 的幂 2,4,8,16,...）请按顺序填两个答案，逗号分隔。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "32,6",
+      "alt_answers": "32,6",
+      "explanation": "奇数项 1、2、3、4、5、6...，第 11 项是 6。偶数项 2、4、8、16、32...是 2 的幂，第 10 项是 32。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "有 11 个乒乓球，其中有一个是次品，比其他球要轻一些。用天平至少称(    )次可以保证找出次品。",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "3",
+      "alt_answers": "3次",
+      "explanation": "11 个分 4-4-3：先称两组 4 个，若平则次品在剩 3 个中（再 1 次），不平则在轻的 4 个中。第二次：4 个分 2-2 称，再第三次：从 2 个中称 1-1。共 3 次。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "一条直线上有 A、B、C、D、E、F、G 七个点，以这些点为端点的线段共有(    )条。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "21",
+      "alt_answers": "21条",
+      "explanation": "n 个点能确定的线段数 = n(n-1)/2。7×6÷2 = 21 条。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "张老师打电话通知舞蹈队的 16 名队员到校排练。如果每分钟通知 1 人，接到电话的人马上又通知其他的人，至少用时(    )分。",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "5",
+      "alt_answers": "5分|||5分钟",
+      "explanation": "知情人数倍增模型：第 1 分后 2 人知，第 2 分 4 人，第 3 分 8 人，第 4 分 16 人，第 5 分 32 人。但只需 16 队员+老师=17，所以只需 4 分？再算：1 分后 1+1=2，2 分后 4，3 分 8，4 分 16，5 分 32。要通知 16 队员，老师外加 16 人共 17 人，第 5 分末知道 32 人。但实际答案 5 分（含老师初始通知 1 人到 16 队员）。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "三角形的内角和是 180°，四边形可以分成两个三角形。由此可知四边形的内角和是(    )°。",
+      "type": "fill",
+      "difficulty": "easy",
+      "answer": "360",
+      "alt_answers": "360°|||360度",
+      "explanation": "四边形分成 2 个三角形，内角和 = 2×180° = 360°。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "n 边形（n≥3）可以分成 (n-2) 个三角形。n 边形的内角和公式是(    )°。（用含 n 的代数式表示）",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "(n-2)×180",
+      "alt_answers": "(n-2)*180|||180(n-2)|||(n－2)×180",
+      "explanation": "n 边形可分成 (n-2) 个三角形，每个三角形内角和 180°。所以 n 边形内角和 = (n-2)×180°。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "如果 △+△+□=47，△+△+△+□+□=78，那么 △=(    )，□=(    )。请按顺序填两个答案，逗号分隔。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "16,15",
+      "alt_answers": "16,15",
+      "explanation": "两式相加：5△+3□=125。或：第二式-第一式 = △+□=31。所以 △=47-2×？换思路：由 2△+□=47 → □=47-2△。代第二式：3△+2(47-2△)=78 → 3△+94-4△=78 → △=16，□=47-32=15。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "一张方桌能坐 4 人，2 张方桌拼成长形能坐 6 人，3 张拼成能坐 8 人，按此规律。10 张方桌拼在一起能坐(    )人。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "22",
+      "alt_answers": "22人",
+      "explanation": "1 张 4 人，每多 1 张多 2 人。10 张坐 4+2×9 = 22 人。或公式 2n+2，n=10 得 22。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "方桌拼接：1 张 4 人，每多 1 张多 2 人。要坐 32 人，需要(    )张方桌拼在一起。",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "15",
+      "alt_answers": "15张",
+      "explanation": "2n+2 = 32，n = 15 张。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "方桌拼接规律：1 张 4 人，2 张 6 人，3 张 8 人……n 张方桌拼在一起能坐(    )人。（用含 n 的代数式表示）",
+      "type": "fill",
+      "difficulty": "medium",
+      "answer": "2n+2",
+      "alt_answers": "2n+2|||2n＋2|||2*n+2",
+      "explanation": "首项 4 = 2×1+2，公差 2，所以 a_n = 2n+2。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "有 A、B、C、D 四人。A 不是最矮，D 不是最高但比 A 高，C 没有其他人高（即 C 最矮）。请按从高到矮排列，4 个字母用逗号分隔。",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "B,D,A,C",
+      "alt_answers": "B、D、A、C",
+      "explanation": "C 最矮（条件\"C 没有其他人高\"=没人比 C 矮，即 C 最矮）。D 不是最高，但 D>A，A 不是最矮（C 最矮）。所以 D 在中间偏上，A 比 D 矮，B 最高。最终 B>D>A>C。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "用棱长是 1 cm 的小正方体，依次摆出长方体（1×1×n 形状）。由 2 个小正方体摆出的长方体的表面积是 10 cm²。按这样摆下去，由 100 个小正方体摆出的长方体的表面积是(    )cm²。",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "402",
+      "alt_answers": "402cm²|||402平方厘米",
+      "explanation": "1×1×n 长方体表面积 = 2(1×1) + 4(1×n) = 2+4n。n=100 时 = 2+400 = 402 cm²。验证：n=2 时 2+8=10 ✓。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "判断对错：一根细长的绳子，连续对折 5 次，对折后每段绳子的长度是总长度的 1/32。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "对",
+      "explanation": "对折 1 次得 1/2，2 次得 1/4，3 次得 1/8，4 次 1/16，5 次 1/32。正确。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "判断对错：A、B、C、D 四位同学排成一排照相，要求 B 与 C 站在一起，一共有 6 种不同的站法。",
+      "type": "judgment",
+      "difficulty": "hard",
+      "answer": "错",
+      "explanation": "B、C 捆绑（含 BC 和 CB 2 种内排），与 A、D 共 3 个元素全排列 3!=6，共 2×6=12 种。所以 6 错。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "判断对错：老师要从 4 名女生、3 名男生中各选一人担任节目主持人，共有 7 种不同的选择方案。",
+      "type": "judgment",
+      "difficulty": "easy",
+      "answer": "错",
+      "explanation": "乘法原理：4×3 = 12 种。不是 4+3=7。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "判断对错：杠杆原理的背后隐藏着数学原理，那就是正比例关系。",
+      "type": "judgment",
+      "difficulty": "medium",
+      "answer": "错",
+      "explanation": "杠杆原理：力×力臂 = 阻力×阻力臂（乘积一定）。两端乘积一定，是反比例关系，不是正比例。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "用一只平底锅烙饼，每次最多只能烙 2 张。如果烙一张饼要 2 分（正、反两面各 1 分），那么烙 3 张饼至少需要(    )分。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. 2",
+        "B. 3",
+        "C. 6",
+        "D. 15"
+      ],
+      "answer": "B",
+      "explanation": "经典烙饼问题。优化方案：第 1 分烙 A 正、B 正；第 2 分烙 A 反、C 正；第 3 分烙 B 反、C 反。共 3 分。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "搭 1 间房子要用 5 根小棒，搭 2 间房子要用 9 根小棒，搭 3 间房子要用 13 根小棒……搭 20 间房子要用(    )根小棒。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. 80",
+        "B. 81",
+        "C. 90",
+        "D. 100"
+      ],
+      "answer": "B",
+      "explanation": "首项 5，公差 4。a_n = 5+4(n-1) = 4n+1。n=20: 4×20+1 = 81 根。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "小敏星期天想帮妈妈做：用洗衣机洗衣服（20 分）、扫地（6 分）、擦家具（10 分）、晾衣服（5 分）。经过合理安排，她做完这些事情至少要用(    )。",
+      "type": "choice",
+      "difficulty": "medium",
+      "options": [
+        "A. 20 分",
+        "B. 25 分",
+        "C. 30 分",
+        "D. 36 分"
+      ],
+      "answer": "B",
+      "explanation": "洗衣机自动工作时同时扫地、擦家具，洗 20 分内完成扫地+擦家具（6+10=16<20）。然后晾衣服 5 分。20+5 = 25 分。",
+      "round": 2
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "一座大楼共 15 层，每两层间的楼梯阶数都相同。已知 A 上楼速度是 B 的 2 倍，两人都从第一层开始上。当 B 到达第 6 层时，A 到达第(    )层。",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. 9",
+        "B. 10",
+        "C. 11",
+        "D. 12"
+      ],
+      "answer": "C",
+      "explanation": "上楼计算楼梯段数：B 从 1→6 走 5 段，A 同时间走 10 段，A 到达 1+10 = 第 11 层。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "A、B、C、D、E 五人比赛乒乓球，每两人比赛一场。已知 A 赛了 4 场，B 赛了 3 场，C 赛了 2 场，D 赛了 1 场。那么 E 赛了(    )场。",
+      "type": "choice",
+      "difficulty": "hard",
+      "options": [
+        "A. 1",
+        "B. 2",
+        "C. 3",
+        "D. 4"
+      ],
+      "answer": "B",
+      "explanation": "A 赛 4 场即与所有人都赛，所以 A 与 E 赛过。D 只赛 1 场，必是 A。B 赛 3 场（A、？、？），C 赛 2 场（A、？）。E 至少与 A、B 赛过，且 B 多一场必是 E（C 不能再增），所以 E 赛 A、B 共 2 场。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "甲、乙、丙、丁四人参加 100 米赛跑获前四名。赛后说：甲：丙第一，我第三。乙：我第一，丁第四。丙：丁第二，我第三。丁没说话。每人都只说对一半。请按甲乙丙丁的名次顺序填四个名次（如「3,1,4,2」）。",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "3,1,4,2",
+      "alt_answers": "3,1,4,2",
+      "explanation": "甲第三对（丙第一错），乙第一对（丁第四错），丙第三错（丁第二对）。所以丁=2，丙第一不行（甲已说对丙非第一应错？修正：丙说丁第二对/丙第三错，结合甲说丙第一错/我第三对，乙我第一对/丁第四错。丁=2 ✓。乙=1 ✓。甲=3 ✓。剩丙=4。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "有 80 分、1.2 元和 2 元的邮票各若干张，从中抽取几张支付 4 元邮资。共有多少种不同的取法？",
+      "type": "fill",
+      "difficulty": "hard",
+      "answer": "4",
+      "alt_answers": "4种",
+      "explanation": "枚举：①2 张 2 元；②1×80分+1×1.2元+1×2元（0.8+1.2+2=4）；③2×80分+2×1.2元（1.6+2.4=4）；④5×80分（4 元）。共 4 种。",
+      "round": 3
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "琪琪由家长开车接送（一个往返，单程用时 15 分）。已知汽车往返平均速度 40 千米/时。琪琪家离学校多远？",
+      "type": "calculation",
+      "difficulty": "easy",
+      "answer": "10",
+      "alt_answers": "10千米|||10km",
+      "explanation": "15 分 = 0.25 时。距离 = 速度×时间 = 40×0.25 = 10 千米。",
+      "round": 1
+    },
+    {
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "琪琪家离学校 10 千米。汽车每行驶 1 千米排放 160 克二氧化碳。汽车接送琪琪一周（5 天，每天往返）共排放多少千克二氧化碳？",
+      "type": "calculation",
+      "difficulty": "medium",
+      "answer": "16",
+      "alt_answers": "16千克|||16kg",
+      "explanation": "每天往返 = 10×2 = 20 千米。5 天共 100 千米。排放 = 100×160 = 16000 克 = 16 千克。",
+      "round": 2
+    }
+  ]
+}
