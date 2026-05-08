@@ -178,50 +178,37 @@
 
 ---
 
-## 6. 入库源头可信度（V3.12 D1 锚点审核期间立项）
+## 6. 入库源头可信度（V3.12 D1 锚点审核期间立项；V3.12.3 简化）
 
-**Why：** Famin 2026-05-08 审 D1 锚点题时发现 `chinese_r2_anchor_4`（妻子转述句）原文不存在于 cache raw.txt —— 真身是 `爸爸说："我正为这件事操心。"` 的 fill 题。源头追溯到 V3.10 第六批（commit `62e5eb4`）的"OCR 抢救"路径：3 卷 PDF 嵌入私有字体 → pdftoppm 渲染 + tesseract chi_sim + **多模态 agent 看 PNG 出题**。受影响 122 道语文题（d4/d5/d6_kp1_001）。
+**Why：** Famin 2026-05-08 审 D1 锚点题时发现 `chinese_r2_anchor_4`（妻子转述句）原文不存在于 cache raw.txt —— 真身是 `爸爸说："我正为这件事操心。"` 的 fill 题。源头追溯到 V3.10 第六批（commit `62e5eb4`）的"OCR 抢救"路径：3 卷 PDF 嵌入私有字体 → pdftoppm 渲染 + tesseract + **多模态 agent 看 PNG 出题**。受影响 122 道语文题。
 
-### 入库源头三级可信度
+**V3.12.3 简化决策（Famin 提醒原则）：** 一开始的纪律就是 `.realpaper-spec.md §9.1`：
 
-| 等级 | 标准 | source 后缀 | 抽题状态 |
-|------|------|-------------|---------|
-| **L1 可信** | 标准 OCR pipeline（pdftotext/libreoffice）+ raw.txt 直接 segment + match → batch JSON。题面与 raw.txt 字符级一致 | 无 | 正常抽 |
-| **L2 待验证** | OCR 文本质量差（乱码/排版乱）但 cache 中有 raw.txt 作锚定。题面可能改写但答案配对仍可信 | 无（标 manifest）| 正常抽 + 加监控 |
-| **L3 不可信** | cache 中 raw.txt 不可用（嵌入私有字体/扫描版无文本层）。需多模态 agent 看 PNG 出题 | **`_unverified_<版本>`** | **禁抽**（_activeSourceFilter 过滤）|
+> **"图/文字不清晰 → 直接放弃。OCR 失败 / 扫描质量差 / 关键文字模糊 → 整题跳过。不要浪费 token 修复。"**
 
-### L3 强制流程
+V3.12.1 我引入的 `_unverified` + reviewer 重写流程**违反了这条原则**（试图修复识别不清的题）。V3.12.3 纠正回归原则：**直接删除 / 不入库**。
 
-1. **source 命名**：`<原 source>_unverified_<版本>`（如 `realpaper_g6_chinese_bubian_d4_kp1_001_unverified_v312`）
-2. **`_activeSourceFilter` 自动排除** —— 用户练习/测评/错题集都不会抽到（同 deprecated 机制）
-3. **batch JSON 顶层加 `_quality_meta`**：
-   ```json
-   "_quality_meta": {
-     "risk_level": "L3_multimodal_ocr",
-     "needs_review": true,
-     "original_commit": "62e5eb4",
-     "marked_unverified_at": "2026-05-08",
-     "reason": "..."
-   }
-   ```
-4. **逐道 reviewer agent 重写** —— 必须对照原 PDF 截图（pdftoppm 渲染再让多模态人/agent 看），与 raw.txt（如有部分可读）交叉验证。**重写不是改写**：以原图为准，宁可下架也不臆造。
-5. **重写通过后** source 去掉 `_unverified_<版本>` 后缀，进入正式题库。
+### 入库源头两级（简化为允许 vs 拒绝）
 
-### 多模态 agent 看图出题的允许场景（仅这两种）
+| 等级 | 标准 | 处理 |
+|------|------|------|
+| **可信** | 标准 OCR pipeline（pdftotext / libreoffice）+ raw.txt 字符级与最终入库一致 | 正常入库 |
+| **不可信** | OCR 失败 / 扫描质量差 / 关键文字模糊 / cache raw.txt 不可用需多模态看图 | **整题/整卷跳过，不入库**。已入库的 deprecate 后下一版本完全删除 |
 
-- **几何图配文字描述题**：agent 描述图 → 写 SVG 入 `image` 字段。**不改原题文字**，文字必须来自 raw.txt 或人工录入。
-- **真题答案区被遮挡/缺失**：agent 仅辅助补全 `answer` 字段。**不改 content / options**。
+### 关键纪律
 
-### 入库前自查（L1/L2 也要做）
+1. **不修复**：识别不清的题不要尝试 OCR 抢救 / 多模态读图 / reviewer 重写。题量足够，卷子很多，时间成本高且容易出问题。
+2. **跳过即完结**：跳过的卷在 `manifest.skipped[]` 注明原因，**不开后续 reviewer task**。
+3. **入库前自查**：双写 batch JSON 前运行 `tools/realpaper/validate.py` + 抽样 5-10 道与 raw.txt **字符级 diff**；不一致直接整卷废弃。
+4. **多模态 agent 仅允许两种受限场景**：
+   - 几何图配文字描述题：agent 描述图 → 写 SVG 入 `image` 字段。**不改原题文字**，文字必须来自 raw.txt。
+   - 真题答案区被遮挡/缺失：agent 仅辅助补全 `answer` 字段。**不改 content / options**。
+5. **遇到嵌入私有字体 / 扫描版 PDF / 无文本层 → 直接换下一卷**，不投入修复成本。
 
-- [ ] 双写 batch JSON 之前必须运行 `tools/realpaper/validate.py`
-- [ ] 抽样 5-10 道与 raw.txt **字符级 diff**（不是相似度）
-- [ ] manifest 标注每卷的 OCR pipeline + L1/L2/L3 等级
-- [ ] L3 题入库时 source 必带 `_unverified_<版本>` 后缀；不带后缀的 L3 入库视为质量事故
+### 历史事件
 
-### 已知历史 L3 受影响范围
-
-- V3.10 第六批 (commit `62e5eb4`) 语文 d4/d5/d6_kp1_001 共 **122 题** → 已 V3.12 标 `_unverified_v312`，待 reviewer 逐道重写
+- **V3.10 第六批** (commit `62e5eb4`)：3 卷 OCR 抢救语文 122 题入库 → V3.12.1 标 `_unverified_v312` → V3.12.3 **完全删除**（含 batch JSON / question_bank / DB / index.json / main.dart 注册）
+- **V3.7-V3.8.3 cron AI 出题**：12 卷语数英 → V3.8.3/V3.10 标 `_deprecated` → V3.12.3 **完全删除**
 
 ---
 

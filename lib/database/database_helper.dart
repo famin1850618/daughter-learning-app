@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 17,
+      version: 18,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
@@ -418,9 +418,8 @@ class DatabaseHelper {
       } catch (_) {/* 列已存在则忽略 */}
     }
     if (oldVersion < 17) {
-      // v17: V3.12 第六批 OCR 抢救语文 122 题标 _unverified_v312。
-      // 详见 docs/realpaper_quality_rules.md §6（多模态 OCR 抢救发现幻觉编造伪题）
-      // _activeSourceFilter 自动过滤 → 这些题用户不会再抽到，直到 reviewer agent 重写
+      // v17: V3.12 第六批 OCR 抢救语文 122 题原本只标 _unverified_v312（暂存待 reviewer 重写）。
+      // V3.12.3 起按 .realpaper-spec.md §9.1 "识别不清直接放弃"原则，v18 一并删除。
       const ocrRescueSources = [
         'realpaper_g6_chinese_bubian_d4_kp1_001',
         'realpaper_g6_chinese_bubian_d5_kp1_001',
@@ -436,6 +435,18 @@ class DatabaseHelper {
           );
         } catch (_) {/* 已迁移则跳过 */}
       }
+    }
+    if (oldVersion < 18) {
+      // v18: V3.12.3 完全删除老题（Famin 决策：经常因老题引发 bug，识别不清直接放弃）
+      // 删除范围：
+      //   - V3.8.3 / V3.10 标 _deprecated 的 12 卷 cron AI 出语数英（外研社英语 + 部编/北师大语数）
+      //   - V3.12.1 标 _unverified_v312 的 3 卷 OCR 抢救语文（122 题）
+      // _ 是 SQLite LIKE 单字符通配符；'%_deprecated' 末尾匹配任意字符 + "deprecated"
+      // 实际数据中只有 source 末尾确实是 "_deprecated" 的会被命中
+      try {
+        await db.delete('questions',
+            where: "source LIKE '%_deprecated' OR source LIKE '%_unverified%'");
+      } catch (_) {/* 已无数据则跳过 */}
     }
   }
 

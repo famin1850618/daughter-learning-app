@@ -1,91 +1,7 @@
 {
-  "version": 14,
+  "version": 16,
   "updated_at": "2026-05-08",
   "batches": [
-    {
-      "source": "batch_2026_05_06_g6_math",
-      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/batch_2026_05_06_g6_math.json",
-      "subject": "math",
-      "grade": 6,
-      "count": 201
-    },
-    {
-      "source": "batch_2026_05_06_g6_chinese",
-      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/batch_2026_05_06_g6_chinese.json",
-      "subject": "chinese",
-      "grade": 6,
-      "count": 200
-    },
-    {
-      "source": "batch_2026_05_06_g6_english",
-      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/batch_2026_05_06_g6_english.json",
-      "subject": "english",
-      "grade": 6,
-      "count": 198
-    },
-    {
-      "source": "batch_2026_05_07_g6_math_r2",
-      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/batch_2026_05_07_g6_math_r2.json",
-      "subject": "math",
-      "grade": 6,
-      "count": 200
-    },
-    {
-      "source": "batch_2026_05_07_g6_chinese_r2",
-      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/batch_2026_05_07_g6_chinese_r2.json",
-      "subject": "chinese",
-      "grade": 6,
-      "count": 200
-    },
-    {
-      "source": "batch_2026_05_07_g6_english_r2",
-      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/batch_2026_05_07_g6_english_r2.json",
-      "subject": "english",
-      "grade": 6,
-      "count": 200
-    },
-    {
-      "source": "batch_2026_05_07_g6_math_r3",
-      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/batch_2026_05_07_g6_math_r3.json",
-      "subject": "math",
-      "grade": 6,
-      "count": 200
-    },
-    {
-      "source": "batch_2026_05_07_g6_chinese_r3",
-      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/batch_2026_05_07_g6_chinese_r3.json",
-      "subject": "chinese",
-      "grade": 6,
-      "count": 200
-    },
-    {
-      "source": "batch_2026_05_07_g6_english_r3",
-      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/batch_2026_05_07_g6_english_r3.json",
-      "subject": "english",
-      "grade": 6,
-      "count": 200
-    },
-    {
-      "source": "batch_2026_05_08_g7_math_r1",
-      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/batch_2026_05_08_g7_math_r1.json",
-      "subject": "math",
-      "grade": 7,
-      "count": 200
-    },
-    {
-      "source": "batch_2026_05_08_g7_chinese_r1",
-      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/batch_2026_05_08_g7_chinese_r1.json",
-      "subject": "chinese",
-      "grade": 7,
-      "count": 200
-    },
-    {
-      "source": "batch_2026_05_08_g7_english_r1",
-      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/batch_2026_05_08_g7_english_r1.json",
-      "subject": "english",
-      "grade": 7,
-      "count": 200
-    },
     {
       "source": "batch_2026_05_07_g6_english_pet_r1",
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/batch_2026_05_07_g6_english_pet_r1.json",
@@ -294,30 +210,6 @@
       "kind": "realpaper"
     },
     {
-      "source": "realpaper_g6_chinese_bubian_d4_kp1_001",
-      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_d4_kp1_001.json",
-      "subject": "chinese",
-      "grade": 6,
-      "count": 45,
-      "kind": "realpaper"
-    },
-    {
-      "source": "realpaper_g6_chinese_bubian_d5_kp1_001",
-      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_d5_kp1_001.json",
-      "subject": "chinese",
-      "grade": 6,
-      "count": 36,
-      "kind": "realpaper"
-    },
-    {
-      "source": "realpaper_g6_chinese_bubian_d6_kp1_001",
-      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_d6_kp1_001.json",
-      "subject": "chinese",
-      "grade": 6,
-      "count": 41,
-      "kind": "realpaper"
-    },
-    {
       "source": "realpaper_g6_math_beishida_mokuai_daishu_001",
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_mokuai_daishu_001.json",
       "subject": "math",
@@ -492,6 +384,18 @@
       "grade": 6,
       "count": 41,
       "kind": "realpaper"
+    }
+  ],
+  "_changelog": [
+    {
+      "version": 15,
+      "date": "2026-05-08",
+      "change": "V3.12.3 删除 12 卷 deprecated batches (V3.7 cron + V3.8.3 老英语)"
+    },
+    {
+      "version": 16,
+      "date": "2026-05-08",
+      "change": "V3.12.3 删除 3 卷 OCR 抢救语文（Famin 提醒\"识别不清直接放弃\"原则，纠正之前 _unverified+reviewer 重写的错误流程）"
     }
   ]
 }

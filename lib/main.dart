@@ -63,9 +63,7 @@ const _bundledBatchAssets = [
   'assets/data/batches/realpaper_g6_math_beishida_kaodian_zonghe_001.json',
   'assets/data/batches/realpaper_g6_math_beishida_kaodian_zonghe_002.json',
   'assets/data/batches/realpaper_g6_math_beishida_xshchu_beijing_001.json',
-  'assets/data/batches/realpaper_g6_chinese_bubian_d4_kp1_001.json',
-  'assets/data/batches/realpaper_g6_chinese_bubian_d5_kp1_001.json',
-  'assets/data/batches/realpaper_g6_chinese_bubian_d6_kp1_001.json',
+  // V3.12.3 删除 d4/d5/d6 OCR 抢救卷（识别不清直接放弃，原则见 .realpaper-spec.md §9.1）
   'assets/data/batches/realpaper_g6_math_beishida_mokuai_daishu_001.json',
   'assets/data/batches/realpaper_g6_math_beishida_xshchu_xian_001.json',
   'assets/data/batches/realpaper_g6_math_beishida_xshchu_shenyang_001.json',
