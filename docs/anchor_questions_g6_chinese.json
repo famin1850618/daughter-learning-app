@@ -1,0 +1,498 @@
+{
+  "subject": "chinese",
+  "grade": 6,
+  "schema_version": "0.1.0",
+  "_meta": {
+    "created": "2026-05-08",
+    "purpose": "Layer 3 difficulty-chinese skill 锚点题 (T1 成果) — 20 道公认标杆，R1/R2/R3/R4 各 5 道，从 9 卷六下语文真题（373 道实存）中筛选。",
+    "selection_pool": "9 卷 / 373 道（实测；用户 brief 称 342，差异为最新 batch 增量未刷新）",
+    "selection_rules": [
+      "排除主观题/写作题（题库已无）",
+      "排除阅读理解 cluster 系列（本批数据无 group_id，按共享材料判定，cluster 题只取首题或独立题）",
+      "排除答案不唯一（V3.12 修复后剩余可疑保留 [审]）",
+      "排除拼音→字形 fill 题面引导（V3.12 已修 18 道，避险）",
+      "R(n+1) 内最简单题 ≥ R(n) 内最难题（V3.8.2 单调性约束）。",
+      "原 batch 仅含 R1=274 / R2=95 / R3=4 / R4=0；R3/R4 锚点中 4 道沿用既有 R3 标，其余按 4 维评估升档并标 [审] 待人工确认。"
+    ],
+    "evaluation_dimensions": {
+      "step_count": "理解层级数。1=字面识记 / 2=单层推断 / 3=综合分析 / 4=鉴赏评价",
+      "distractor_density": "选项干扰强度（choice）：0.0-0.25 R1 / 0.25-0.5 R2 / 0.5-0.75 R3 / 0.75+ R4。fill 题用 fallback：答案候选近似度。",
+      "kp_span": "跨课文 / 跨修辞 / 跨文体的概念数。1 单一 / 2 中等 / 3+ 高跨度",
+      "data_complexity": "材料字数 + 文言/古诗/说明文密度。0-0.3 短句 / 0.3-0.5 段落 / 0.5-0.8 长篇 / 0.8+ 文言古诗"
+    },
+    "kp_coverage": [
+      "古诗文/古诗词背诵默写",
+      "文学常识/外国作家作品",
+      "文学常识/文化常识",
+      "字词/字音",
+      "字词/成语运用",
+      "字词/词语理解",
+      "修辞/反问",
+      "修辞/对偶",
+      "句式与标点/病句修改",
+      "句式与标点/句式转换",
+      "句式与标点/标点符号",
+      "课文与名著/课文内容理解",
+      "阅读理解/阅读理解",
+      "现代文阅读/主旨概括",
+      "现代文阅读/词句赏析"
+    ],
+    "type_distribution": {"choice": 14, "fill": 6}
+  },
+  "anchors": [
+    {
+      "anchor_id": "chinese_r1_anchor_1",
+      "round": 1,
+      "kp": "古诗文/古诗词背诵默写",
+      "chapter": "古诗文",
+      "type": "fill",
+      "content": "默写：「少壮不努力，________」（出自汉乐府《长歌行》）。横线处应填的诗句是？",
+      "options": null,
+      "answer": "老大徒伤悲",
+      "explanation": "汉乐府《长歌行》警示珍惜年少时光的名句。",
+      "reasoning": "R1 因为：理解层级 1（直接背诵默写，字面识记），陷阱密度 0.0（fill 无选项干扰，答案唯一指向课内名句下句），KP 跨度 1（仅古诗背诵），数据复杂度 0.2（5 字短句，单首古诗）。属字面记忆型 R1 锚点。",
+      "source_ref": "realpaper_g6_chinese_bubian_d3_kp1_001#21",
+      "evaluation_breakdown": {
+        "step_count": 1,
+        "distractor_density": 0.0,
+        "kp_span": 1,
+        "data_complexity": 0.2
+      }
+    },
+    {
+      "anchor_id": "chinese_r1_anchor_2",
+      "round": 1,
+      "kp": "文学常识/外国作家作品",
+      "chapter": "文学常识",
+      "type": "fill",
+      "content": "《汤姆·索亚历险记》是（    ）国作家的代表作品。",
+      "options": null,
+      "answer": "美",
+      "explanation": "《汤姆·索亚历险记》是美国作家马克·吐温的代表作。",
+      "reasoning": "R1 因为：理解层级 1（作品-作家国别直接对应记忆），陷阱密度 0.0（单字 fill，答案唯一），KP 跨度 1（仅外国作家国别），数据复杂度 0.1（题干仅 18 字）。属常识识记型 R1 锚点。",
+      "source_ref": "realpaper_g6_chinese_bubian_d2_kp1_001#34",
+      "evaluation_breakdown": {
+        "step_count": 1,
+        "distractor_density": 0.0,
+        "kp_span": 1,
+        "data_complexity": 0.1
+      }
+    },
+    {
+      "anchor_id": "chinese_r1_anchor_3",
+      "round": 1,
+      "kp": "字词/字音",
+      "chapter": "字词",
+      "type": "choice",
+      "content": "「薄」字加点的字（薄雾）正确读音是（    ）。",
+      "options": ["A. bó", "B. báo"],
+      "answer": "A",
+      "explanation": "「薄雾」中「薄」读 bó，意为稀薄、轻微；读 báo 时多用于厚度小的具体物。",
+      "reasoning": "R1 因为：理解层级 1（多音字字面读音判定），陷阱密度 0.0（仅 2 选项 A/B，干扰极弱，bó/báo 语境提示明显），KP 跨度 1（仅字音），数据复杂度 0.15（单词「薄雾」+ 释义）。属字音识记型 R1 锚点。",
+      "source_ref": "realpaper_g6_chinese_bubian_d3_kp1_001#0",
+      "evaluation_breakdown": {
+        "step_count": 1,
+        "distractor_density": 0.0,
+        "kp_span": 1,
+        "data_complexity": 0.15
+      }
+    },
+    {
+      "anchor_id": "chinese_r1_anchor_4",
+      "round": 1,
+      "kp": "文学常识/外国作家作品",
+      "chapter": "文学常识",
+      "type": "choice",
+      "content": "《鲁滨逊漂流记》的作者是（    ）。",
+      "options": [
+        "A. 丹尼尔·笛福",
+        "B. 刘易斯·卡罗尔",
+        "C. 塞尔玛·拉格洛芙",
+        "D. 马克·吐温"
+      ],
+      "answer": "A",
+      "explanation": "《鲁滨逊漂流记》是英国作家丹尼尔·笛福的代表作。",
+      "reasoning": "R1 因为：理解层级 1（作品-作家匹配），陷阱密度 0.25（4 个外国作家选项虽同类，但年代/作品差异明显，错答可瞬间排除），KP 跨度 1（仅外国作家），数据复杂度 0.1（题干 14 字）。属课内必修常识 R1 锚点。",
+      "source_ref": "realpaper_g6_chinese_bubian_d2_kp1_001#27",
+      "evaluation_breakdown": {
+        "step_count": 1,
+        "distractor_density": 0.25,
+        "kp_span": 1,
+        "data_complexity": 0.1
+      }
+    },
+    {
+      "anchor_id": "chinese_r1_anchor_5",
+      "round": 1,
+      "kp": "修辞/反问",
+      "chapter": "修辞",
+      "type": "choice",
+      "content": "「世界上还有几个剧种一部戏可以演出三五天还没有结束的呢？」这句话运用了哪种修辞手法？",
+      "options": ["A. 夸张", "B. 比喻", "C. 设问", "D. 反问"],
+      "answer": "D",
+      "explanation": "句中以反问的形式（「还有几个……呢？」）表达「没有几个」的肯定意思，强调藏戏剧目的独特，是反问修辞。",
+      "reasoning": "R1 因为：理解层级 1（修辞特征字面识别 —— 含反问标志「还有……呢？」），陷阱密度 0.25（4 种修辞同类干扰中夸张/比喻明显错，仅设问稍近 — 但设问要自答），KP 跨度 1（仅修辞），数据复杂度 0.2（单句 31 字，无文言）。属修辞识记型 R1 锚点。",
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_quanzhen_001#4",
+      "evaluation_breakdown": {
+        "step_count": 1,
+        "distractor_density": 0.25,
+        "kp_span": 1,
+        "data_complexity": 0.2
+      }
+    },
+    {
+      "anchor_id": "chinese_r2_anchor_1",
+      "round": 2,
+      "kp": "字词/成语运用",
+      "chapter": "字词",
+      "type": "fill",
+      "content": "选择合适的成语填空：比喻老师教育的学生众多、各地都有的成语是「（    ）」（填 5 字成语）。",
+      "options": null,
+      "answer": "桃李满天下",
+      "explanation": "「桃李满天下」比喻老师培养的学生众多、遍布各地。",
+      "reasoning": "R2 因为：理解层级 2（释义反推 — 从「学生众多 + 各地都有」推出特定 5 字成语），陷阱密度 0.4（fill 答案需精确字数+用字，常见误答如「桃李遍天下/遍及天下」，但仅「桃李满天下」标准），KP 跨度 2（成语含义 + 师生关系语境），数据复杂度 0.3（释义提示 + 字数限制 25 字）。属释义反推型 R2 锚点。",
+      "source_ref": "realpaper_g6_chinese_bubian_d6_kp1_001#12",
+      "evaluation_breakdown": {
+        "step_count": 2,
+        "distractor_density": 0.4,
+        "kp_span": 2,
+        "data_complexity": 0.3
+      }
+    },
+    {
+      "anchor_id": "chinese_r2_anchor_2",
+      "round": 2,
+      "kp": "字词/词语理解",
+      "chapter": "字词",
+      "type": "fill",
+      "content": "选词填空（严肃／严格／严厉／严峻）：我们必须（    ）地面对当前的形势。横线处应填的词语是？",
+      "options": null,
+      "answer": "严肃",
+      "explanation": "「严肃」形容神情、态度郑重认真，搭配「面对」表示郑重对待。",
+      "reasoning": "R2 因为：理解层级 2（4 个近义词辨析需结合搭配习惯），陷阱密度 0.6（4 候选「严肃/严格/严厉/严峻」字面同根，需按动宾搭配「面对」精确选 — 严峻常修饰形势本身、严厉修饰惩处、严格修饰要求），KP 跨度 1（近义词辨析），数据复杂度 0.3（单句 + 4 词候选池）。属近义词搭配型 R2 锚点。",
+      "source_ref": "realpaper_g6_chinese_bubian_d4_kp1_001#14",
+      "evaluation_breakdown": {
+        "step_count": 2,
+        "distractor_density": 0.6,
+        "kp_span": 1,
+        "data_complexity": 0.3
+      }
+    },
+    {
+      "anchor_id": "chinese_r2_anchor_3",
+      "round": 2,
+      "kp": "句式与标点/病句修改",
+      "chapter": "句式与标点",
+      "type": "choice",
+      "content": "下列句子中，有语病的一项是？",
+      "options": [
+        "A. 在逃去如飞的日子里，在千门万户的世界里的我能做什么呢？",
+        "B. 灯一悬起，任何人都可以进到铺中参观。",
+        "C. 我们即使有缺点，就不怕别人批评指出。",
+        "D. 鲁滨逊想要在荒岛上生活是一件十分困难的事。"
+      ],
+      "answer": "C",
+      "explanation": "C 项关联词搭配不当：「即使」应与「也」搭配，不能与「就」搭配，应改为「我们即使有缺点，也不怕别人批评指出」。",
+      "reasoning": "R2 因为：理解层级 2（识别关联词搭配错误，需逐句对照标准句法），陷阱密度 0.5（4 选项均成立的中式叙述句，仅 C 关联词「即使……就」搭配错；A B D 表面奇怪但语法成立），KP 跨度 1（病句修改），数据复杂度 0.4（4 个长句叠加约 90 字）。属语法甄别型 R2 锚点。",
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_quanzhen_001#5",
+      "evaluation_breakdown": {
+        "step_count": 2,
+        "distractor_density": 0.5,
+        "kp_span": 1,
+        "data_complexity": 0.4
+      }
+    },
+    {
+      "anchor_id": "chinese_r2_anchor_4",
+      "round": 2,
+      "kp": "句式与标点/句式转换",
+      "chapter": "句式与标点",
+      "type": "choice",
+      "content": "把直接引语「『这是我的妻子。』他指着母亲说。」改为转述句，正确的是？",
+      "options": [
+        "A. 那是他的妻子，他指着母亲说。",
+        "B. 这是我的妻子，他指着母亲说。",
+        "C. 他指着母亲说这是他的妻子。",
+        "D. 他对母亲说这是我的妻子。"
+      ],
+      "answer": "A",
+      "explanation": "改转述句要把第一人称「我」改成第三人称「他」，并把指示代词「这」改成「那」，去掉引号。",
+      "reasoning": "R2 因为：理解层级 2（双重转换 — 人称由「我」→「他」、指示词由「这」→「那」），陷阱密度 0.6（4 选项中 B 仅去引号、C 仅改人称、D 错保留「我」 — 都是「部分对」陷阱），KP 跨度 1（句式转换），数据复杂度 0.3（单句 + 4 选项约 60 字）。属规则应用型 R2 锚点。",
+      "source_ref": "realpaper_g6_chinese_bubian_d4_kp1_001#29",
+      "evaluation_breakdown": {
+        "step_count": 2,
+        "distractor_density": 0.6,
+        "kp_span": 1,
+        "data_complexity": 0.3
+      }
+    },
+    {
+      "anchor_id": "chinese_r2_anchor_5",
+      "round": 2,
+      "kp": "句式与标点/标点符号",
+      "chapter": "句式与标点",
+      "type": "choice",
+      "content": "下列四个句子中，标点符号使用正确的是？",
+      "options": [
+        "A. 腊月二十三过小年，差不多就是过春节的彩排。",
+        "B. 张思德同志是为人民利益而死的，他的死是比泰山还要重的。",
+        "C. 「鲁滨逊漂流记」就是这样一本令人无限回味的书。",
+        "D. 「不要多嘴。」法官怒气冲冲的，又拿起他面前那块木板狠狠地拍了几下！"
+      ],
+      "answer": "B",
+      "explanation": "A 项原句中「腊月二十三过小年」与后句构成解释关系，应在「小年」后用冒号；C 项书名应用书名号《》而非引号；D 项末尾应为陈述结尾，用句号即可，叹号搭配不当。",
+      "reasoning": "R2 因为：理解层级 2（标点综合甄别 — 冒号、书名号、句号叹号 3 种规则），陷阱密度 0.5（4 选项均看似合理；C 用引号代书名号最易混；A D 各有标点错；B 只是标准正确句），KP 跨度 2（标点符号 + 书名号），数据复杂度 0.4（4 句叠加约 100 字）。属规则综合型 R2 锚点。",
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_002#11",
+      "evaluation_breakdown": {
+        "step_count": 2,
+        "distractor_density": 0.5,
+        "kp_span": 2,
+        "data_complexity": 0.4
+      }
+    },
+    {
+      "anchor_id": "chinese_r3_anchor_1",
+      "round": 3,
+      "kp": "课文与名著/课文内容理解",
+      "chapter": "课文与名著",
+      "type": "choice",
+      "content": "《两小儿辩日》中「孔子不能决也」反映出孔子对知识持怎样的态度？",
+      "options": [
+        "A. 不懂装懂",
+        "B. 实事求是",
+        "C. 妄自尊大",
+        "D. 漠不关心"
+      ],
+      "answer": "B",
+      "explanation": "孔子面对两小儿的辩日难题坦然承认「不能决」，体现知之为知之、不知为不知的实事求是的治学态度。",
+      "reasoning": "R3 因为：理解层级 3（人物态度推断 — 需把文言行为「不能决」抽象为治学品质），陷阱密度 0.65（A「不懂装懂」反义陷阱、C「妄自尊大」与「不能决」相反、D「漠不关心」偏离 — 但 A 易误选为「孔子也不知道」的负面解读），KP 跨度 2（文言文理解 + 人物态度评价），数据复杂度 0.6（依赖《两小儿辩日》全文 + 文言句义 + 孔子形象）。属文言人物评价型 R3 锚点。[审] — 原批 R2 标，按文言人物态度推断综合性升 R3。",
+      "source_ref": "realpaper_g6_chinese_bubian_d5_kp1_001#24",
+      "evaluation_breakdown": {
+        "step_count": 3,
+        "distractor_density": 0.65,
+        "kp_span": 2,
+        "data_complexity": 0.6
+      },
+      "review_flag": true
+    },
+    {
+      "anchor_id": "chinese_r3_anchor_2",
+      "round": 3,
+      "kp": "阅读理解/阅读理解",
+      "chapter": "阅读理解",
+      "type": "choice",
+      "content": "概括下面这段话的大意，最恰当的一句是？\n局势越来越严重，父亲的工作也越来越紧张。他的朋友劝他离开北京，母亲也几次劝他。父亲坚决地对母亲说：「不是常对你说吗？我是不能轻易离开北京的。你要知道现在是什么时候，这里的工作多么重要。我哪能离开呢？」母亲只好不再说什么了。",
+      "options": [
+        "A. 局势越来越严重，父亲的工作也越来越紧张。",
+        "B. 在局势严重时，父亲坚决不同意离开北京。",
+        "C. 父亲担心家人不愿离开。",
+        "D. 母亲劝父亲离开而心情不好。"
+      ],
+      "answer": "B",
+      "explanation": "段落核心信息是：在局势紧张、众人劝说的背景下，父亲仍坚决不离开北京。B 项最完整概括了「时间背景＋人物核心态度」。",
+      "reasoning": "R3 因为：理解层级 3（段意综合概括，需识别背景＋核心态度并整合为一句），陷阱密度 0.6（A 只复述背景一面、C 偷换概念为「家人」、D 偏题为「母亲心情」— 均为常见「部分对」陷阱），KP 跨度 1（段意概括），数据复杂度 0.5（独立段落 110 字，含直接引语）。属语段综合型 R3 锚点。[审] — 原批 R2 标，按概括综合性升 R3。",
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_quanzhen_001#9",
+      "evaluation_breakdown": {
+        "step_count": 3,
+        "distractor_density": 0.6,
+        "kp_span": 1,
+        "data_complexity": 0.5
+      },
+      "review_flag": true
+    },
+    {
+      "anchor_id": "chinese_r3_anchor_3",
+      "round": 3,
+      "kp": "现代文阅读/主旨概括",
+      "chapter": "现代文阅读",
+      "type": "choice",
+      "content": "《走出心灵的监狱》一文最能说明作者写作目的的一项是（    ）。",
+      "options": [
+        "A. 谴责白人统治者对年事已高的曼德拉进行残酷的虐待。",
+        "B. 赞扬曼德拉在就职典礼上对看守他的 3 名狱警的致敬。",
+        "C. 告诉我们要学会冷静地处理自己遭遇的痛苦，并用极强的毅力来训练。",
+        "D. 希望我们舍弃悲痛与怨恨，像曼德拉那样，让感恩与宽容永驻人间。"
+      ],
+      "answer": "D",
+      "explanation": "全文借曼德拉走出心灵监狱、释怀仇恨的故事，呼唤人们用感恩与宽容代替悲痛与怨恨，故选 D。",
+      "reasoning": "R3 因为：理解层级 3（主旨提炼，需透过事件层识别作者写作意图），陷阱密度 0.65（A 只见现象、B 只见情节、C 偏题为「冷静处理」），KP 跨度 2（主旨概括 + 文本意图），数据复杂度 0.55（依赖全文《走出心灵的监狱》通读约 500 字）。属主旨升华型 R3 锚点。[审] — 原批 R2 标，按全文主旨综合性升 R3。",
+      "source_ref": "realpaper_g6_chinese_bubian_d2_kp1_001#47",
+      "evaluation_breakdown": {
+        "step_count": 3,
+        "distractor_density": 0.65,
+        "kp_span": 2,
+        "data_complexity": 0.55
+      },
+      "review_flag": true
+    },
+    {
+      "anchor_id": "chinese_r3_anchor_4",
+      "round": 3,
+      "kp": "阅读理解/阅读理解",
+      "chapter": "阅读理解",
+      "type": "choice",
+      "content": "阅读《人类能在地球上生活多久》：文中画波浪线的句子「人类面临的真正威胁，却是来自人类自身」中「来自人类自身」的威胁主要指？",
+      "options": [
+        "A. 人类对大自然的破坏",
+        "B. 人类不懂得保护水资源",
+        "C. 人类的总人口数的不断上涨",
+        "D. 对资源过度地消耗"
+      ],
+      "answer": "D",
+      "explanation": "结合下文「近 400 年中所消耗的地球上的资源，大大超过了……」可知，文中所指的真正威胁是人类对资源的过度消耗，故选 D。",
+      "reasoning": "R3 因为：理解层级 3（指代推断 — 需返回文本下文找具体所指），陷阱密度 0.7（A「破坏自然」泛化、B「水资源」局部、C「人口」相关但偏题；D「过度消耗资源」需精确锁定下文段），KP 跨度 1（说明文阅读），数据复杂度 0.6（依赖整篇科普说明文约 700 字）。属说明文指代型 R3 锚点（原批已标 R3，作为 R3 校准基准）。",
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_002#32",
+      "evaluation_breakdown": {
+        "step_count": 3,
+        "distractor_density": 0.7,
+        "kp_span": 1,
+        "data_complexity": 0.6
+      }
+    },
+    {
+      "anchor_id": "chinese_r3_anchor_5",
+      "round": 3,
+      "kp": "文学常识/文化常识",
+      "chapter": "文学常识",
+      "type": "choice",
+      "content": "下列说法不正确的一项是？",
+      "options": [
+        "A. 《学弈》通过两个人跟从同一个老师学下棋因学习态度大不相同导致最终结果也不同的故事，告诉我们做任何事都应专心致志、用心钻研。",
+        "B. 《骑鹅旅行记》中的尼尔斯是一个调皮捣蛋的孩子，本想阻止一只大雄鹅飞走而爬上了鹅的背，开启了一场「骑鹅旅行记」。",
+        "C. 《汤姆·索亚历险记》中，汤姆和贝奇在洞里忍受了三天三夜的劳累和饥饿。",
+        "D. 「青，取之于蓝而青于蓝」出自《淮南子》，它的下一句是「冰，水为之而寒于水」。"
+      ],
+      "answer": "D",
+      "explanation": "D 项错误：「青，取之于蓝而青于蓝」出自《荀子·劝学》，并非《淮南子》。",
+      "reasoning": "R3 因为：理解层级 3（4 项均含课内+课外文学常识细节，需逐项核对作家、情节、出处），陷阱密度 0.65（A B C 描述均成立，仅 D 偷换出处《荀子》→《淮南子》— 「青出于蓝」名句很熟但出处易混），KP 跨度 3（文言、外国文学、古典名句出处），数据复杂度 0.55（4 选项叠加约 230 字，含文言）。属跨文化常识综合型 R3 锚点。[审] — 原批 R2 标，按 4 项跨文化跨文体综合性升 R3。",
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_quanzhen_001#6",
+      "evaluation_breakdown": {
+        "step_count": 3,
+        "distractor_density": 0.65,
+        "kp_span": 3,
+        "data_complexity": 0.55
+      },
+      "review_flag": true
+    },
+    {
+      "anchor_id": "chinese_r4_anchor_1",
+      "round": 4,
+      "kp": "现代文阅读/词句赏析",
+      "chapter": "现代文阅读",
+      "type": "fill",
+      "content": "沈从文《端午日》文中加点的三个「莫不」的作用：从程度上渲染观看龙舟竞赛的人之(    )，涉及面之(    )，具体写出了「全茶峒人」度端午节的(    )。请按顺序填三个词，用逗号分隔。",
+      "options": null,
+      "answer": "多,广,盛况",
+      "explanation": "三个「莫不」从程度上写出观赛人数之「多」，从范围上写出涉及面之「广」，整体上呈现了端午节的「盛况」。",
+      "reasoning": "R4 因为：理解层级 4（鉴赏评价 — 把同一虚词三次复现的修辞效果分解为「程度+范围+综合呈现」三层），陷阱密度 0.5（fill 三空答案需精准 — 多/广/盛况均为概括性单字或两字词，不能用「人多/范围广」散答；三空互不可换），KP 跨度 3（修辞反复 + 词句赏析 + 民俗散文），数据复杂度 0.6（依赖《端午日》全段语境）。属虚词修辞鉴赏型 R4 锚点（原批已标 R3，按多空鉴赏综合性升 R4）。[审] — 原 R3 升 R4。",
+      "source_ref": "realpaper_g6_chinese_bubian_d1_kp1_001#31",
+      "evaluation_breakdown": {
+        "step_count": 4,
+        "distractor_density": 0.5,
+        "kp_span": 3,
+        "data_complexity": 0.6
+      },
+      "review_flag": true
+    },
+    {
+      "anchor_id": "chinese_r4_anchor_2",
+      "round": 4,
+      "kp": "阅读理解/阅读理解",
+      "chapter": "阅读理解",
+      "type": "choice",
+      "content": "阅读《人类能在地球上生活多久》：「这一过程还将至少持续 40 亿年」中「这一过程」指什么？",
+      "options": [
+        "A. 太阳将持续而稳定地向地球提供光和热。",
+        "B. 太阳将持续而稳定地向地球提供光和热，地球绕太阳旋转的平均半径，将长期维持不变，至多只有极小的摆动。",
+        "C. 地球绕太阳旋转的平均半径，将长期维持不变。",
+        "D. 地球绕太阳旋转的平均半径，将长期维持不变，至多只有极小的摆动。"
+      ],
+      "answer": "B",
+      "explanation": "联系上文，「这一过程」承接前句完整的两件事——太阳持续提供光和热，以及地球公转半径长期稳定，故选最全面的 B。",
+      "reasoning": "R4 因为：理解层级 4（指代精确推断 + 选项嵌套式包含关系 — A C D 都是 B 的子集，必须把「过程」识别为「太阳供热 ∧ 地球公转稳定」两个并列条件的合取），陷阱密度 0.85（A 部分 1、C 部分 2 简版、D 部分 2 全版，所有错答都需正向算才能排除「漏一半」），KP 跨度 2（科普文章长句指代 + 集合关系），数据复杂度 0.7（说明文 + 4 长选项 ≥ 100 字）。属指代精读型 R4 锚点（原批 R3，按选项嵌套高密度升 R4）。[审] — 原 R3 升 R4。",
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_002#33",
+      "evaluation_breakdown": {
+        "step_count": 4,
+        "distractor_density": 0.85,
+        "kp_span": 2,
+        "data_complexity": 0.7
+      },
+      "review_flag": true
+    },
+    {
+      "anchor_id": "chinese_r4_anchor_3",
+      "round": 4,
+      "kp": "阅读理解/阅读理解",
+      "chapter": "阅读理解",
+      "type": "choice",
+      "content": "阅读《向日葵》：对「我」情感态度变化（    ）→ 冷淡心痛 →（    ）→（    ）的概括，正确的一项是？",
+      "options": [
+        "A. 生气抱怨／惊讶诧异／高兴感动",
+        "B. 生气抱怨／惴惴不安／高兴感动",
+        "C. 开心等待／惊讶诧异／高兴感动",
+        "D. 生气抱怨／惊讶诧异／心绪不宁"
+      ],
+      "answer": "A",
+      "explanation": "文中「我」由等待时的生气抱怨，到女儿到后冷淡心痛，再到次日见到向日葵时的惊讶诧异，最后读卡片后高兴感动，对应 A。",
+      "reasoning": "R4 因为：理解层级 4（情感曲线鉴赏 — 4 阶段情感变化需逐段对位文本，3 个空格独立判定后再综合），陷阱密度 0.85（B 第 2 空「惴惴不安」、C 第 1 空「开心等待」、D 第 3 空「心绪不宁」均部分对，4 选项每个都只错 1 空），KP 跨度 3（人物情感分析 + 文本结构 + 短篇散文鉴赏），数据复杂度 0.7（《向日葵》整篇散文阅读）。属情感曲线鉴赏型 R4 锚点。[审] — 原 R3 升 R4。",
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_002#35",
+      "evaluation_breakdown": {
+        "step_count": 4,
+        "distractor_density": 0.85,
+        "kp_span": 3,
+        "data_complexity": 0.7
+      },
+      "review_flag": true
+    },
+    {
+      "anchor_id": "chinese_r4_anchor_4",
+      "round": 4,
+      "kp": "修辞/对偶",
+      "chapter": "修辞",
+      "type": "choice",
+      "content": "下列诗句中，具有对仗工整特点的一项是？",
+      "options": [
+        "A. 春城无处不飞花，寒食东风御柳斜。",
+        "B. 千锤万凿出深山，烈火焚烧若等闲。",
+        "C. 迢迢牵牛星，皎皎河汉女。",
+        "D. 何当金络脑，快走踏清秋。"
+      ],
+      "answer": "C",
+      "explanation": "C 项「迢迢」对「皎皎」（叠词对叠词）、「牵牛星」对「河汉女」（名词对名词），词性、结构、字数完全相对，对仗最工整。",
+      "reasoning": "R4 因为：理解层级 4（古诗对仗鉴赏 — 需逐句拆字数+词性+结构+平仄四维核对），陷阱密度 0.8（A 韩翃《寒食》上下句意义关联但词性不严工对、B 于谦《石灰吟》上下句字数同但「千锤万凿」对「烈火焚烧」结构不严、D 李贺《马诗》也是叙述句不严工对；C 叠词对叠词最严），KP 跨度 4（4 首课内古诗 + 对仗规则 + 词性辨析 + 字数结构），数据复杂度 0.75（4 句古诗叠加约 50 字 + 课内整诗背景）。属古诗鉴赏综合型 R4 锚点。[审] — 原批 R2 标，按跨 4 首古诗对比鉴赏升 R4。",
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_002#12",
+      "evaluation_breakdown": {
+        "step_count": 4,
+        "distractor_density": 0.8,
+        "kp_span": 4,
+        "data_complexity": 0.75
+      },
+      "review_flag": true
+    },
+    {
+      "anchor_id": "chinese_r4_anchor_5",
+      "round": 4,
+      "kp": "阅读理解/阅读理解",
+      "chapter": "阅读理解",
+      "type": "choice",
+      "content": "《买馒头》中，将文末「但不论如何，生活的本身是值得庆喜的吧！」插入原文，最恰当的位置是？",
+      "options": [
+        "A. ⑩⑪段之间",
+        "B. ⑪⑫段之间",
+        "C. ⑫⑬段之间",
+        "D. ⑬⑭段之间"
+      ],
+      "answer": "C",
+      "explanation": "⑫段写「人的生活又是多么相似」感慨生命的相似处，⑬段以「驻馒头摊」作者反思生活的意义，将「生活本身值得庆喜」插于⑫⑬之间承上启下最为顺畅。",
+      "reasoning": "R4 因为：理解层级 4（句子衔接综合鉴赏 — 需识别上文「相似」与下文「反思意义」的过渡逻辑，把抒情句嵌入恰当的承上启下位置），陷阱密度 0.85（A B D 各为相邻段位，仅相差一段；需精准识别 ⑫「相似」 + ⑬「反思」 的逻辑断层；4 段位均合语流），KP 跨度 3（散文结构 + 段落衔接 + 抒情句功能），数据复杂度 0.8（《买馒头》整篇散文 14 段约 1200 字 + 段落标号定位）。属高阶散文衔接型 R4 锚点。[审] — 原批 R2 标，按整篇散文段落衔接综合升 R4。",
+      "source_ref": "realpaper_g6_chinese_bubian_zhuanxiang_zixingyin_001#70",
+      "evaluation_breakdown": {
+        "step_count": 4,
+        "distractor_density": 0.85,
+        "kp_span": 3,
+        "data_complexity": 0.8
+      },
+      "review_flag": true
+    }
+  ]
+}
