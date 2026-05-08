@@ -10,7 +10,10 @@
       "content": "「薄」字加点的字（薄雾）正确读音是（    ）。",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. bó", "B. báo"],
+      "options": [
+        "A. bó",
+        "B. báo"
+      ],
       "answer": "A",
       "explanation": "「薄雾」中「薄」读 bó，意为稀薄、轻微；读 báo 时多用于厚度小的具体物。",
       "round": 1
@@ -21,7 +24,10 @@
       "content": "「晃」字加点的字（晃动）正确读音是（    ）。",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. huǎng", "B. huàng"],
+      "options": [
+        "A. huǎng",
+        "B. huàng"
+      ],
       "answer": "B",
       "explanation": "「晃动」中「晃」读 huàng，表示摇动；读 huǎng 时表「闪过、明亮」，如「明晃晃」。",
       "round": 1
@@ -32,7 +38,10 @@
       "content": "「咔嚓」中加点的「嚓」正确读音是（    ）。",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. chā", "B. chà"],
+      "options": [
+        "A. chā",
+        "B. chà"
+      ],
       "answer": "A",
       "explanation": "拟声词「咔嚓」中「嚓」读 chā，模拟物体折断或快门声响。",
       "round": 1
@@ -43,7 +52,10 @@
       "content": "「缥缈」中加点的「缈」正确读音是（    ）。",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. miǎo", "B. miǎn"],
+      "options": [
+        "A. miǎo",
+        "B. miǎn"
+      ],
       "answer": "A",
       "explanation": "「缥缈」读 piāo miǎo，形容隐隐约约、若有若无。",
       "round": 1
@@ -54,7 +66,10 @@
       "content": "感叹词「哦」加点字正确读音是（    ）。",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. ǒ", "B. áo"],
+      "options": [
+        "A. ǒ",
+        "B. áo"
+      ],
       "answer": "A",
       "explanation": "表示领悟、惊讶的感叹词「哦」读 ǒ；读 áo 时为「吟哦」（吟咏）的意思。",
       "round": 1
@@ -286,10 +301,13 @@
       "content": "（保温杯说明书阅读）早晨放在保温杯中的汤有些凉了，奶奶打算把保温杯放入微波炉中加热，你觉得奶奶的做法是（    ）的。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 正确", "B. 错误"],
+      "options": [
+        "A. 正确",
+        "B. 错误"
+      ],
       "answer": "B",
       "explanation": "说明书第④条明确：「请勿将保温杯置于明火上或微波炉中加热」，故奶奶的做法是错误的。",
-      "round": 2
+      "round": 1
     },
     {
       "chapter": "句式与标点",

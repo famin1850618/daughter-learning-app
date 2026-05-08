@@ -10,7 +10,12 @@
       "content": "下列加点字读音错误的是？　蜜饯(jiàn)　黑莓(méi)　铭记(mín)",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 蜜饯(jiàn)", "B. 黑莓(méi)", "C. 铭记(mín)", "D. 全部正确"],
+      "options": [
+        "A. 蜜饯(jiàn)",
+        "B. 黑莓(méi)",
+        "C. 铭记(mín)",
+        "D. 全部正确"
+      ],
       "answer": "C",
       "explanation": "「铭」应读 míng，「铭记」表示深刻记住，常用于书面语。",
       "round": 1
@@ -21,7 +26,12 @@
       "content": "下列加点字读音错误的是？　正月(zhèng)　潺潺(chán)　搀扶(chān)",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 正月(zhèng)", "B. 潺潺(chán)", "C. 搀扶(chān)", "D. 全部正确"],
+      "options": [
+        "A. 正月(zhèng)",
+        "B. 潺潺(chán)",
+        "C. 搀扶(chān)",
+        "D. 全部正确"
+      ],
       "answer": "A",
       "explanation": "「正月」中「正」读 zhēng，是多音字特例；表正确、正式时读 zhèng。",
       "round": 1
@@ -32,7 +42,12 @@
       "content": "下列加点字读音错误的是？　娴熟(xián)　潸潸(sān)　瞻仰(zhān)",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 娴熟(xián)", "B. 潸潸(sān)", "C. 瞻仰(zhān)", "D. 全部正确"],
+      "options": [
+        "A. 娴熟(xián)",
+        "B. 潸潸(sān)",
+        "C. 瞻仰(zhān)",
+        "D. 全部正确"
+      ],
       "answer": "B",
       "explanation": "「潸潸」应读 shān shān，形容流泪不止的样子，不读 sān。",
       "round": 1
@@ -43,7 +58,12 @@
       "content": "下列加点字读音错误的是？　嘟囔(náng)　急躁(zào)　钵子(bō)",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 嘟囔(náng)", "B. 急躁(zào)", "C. 钵子(bō)", "D. 全部正确"],
+      "options": [
+        "A. 嘟囔(náng)",
+        "B. 急躁(zào)",
+        "C. 钵子(bō)",
+        "D. 全部正确"
+      ],
       "answer": "A",
       "explanation": "「嘟囔」中「囔」应读 nǎng（自言自语，含不满），不读 náng。",
       "round": 1
@@ -54,7 +74,12 @@
       "content": "「机杼」中「杼」的正确读音是？",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. zhū", "B. zhù", "C. shū", "D. yǔ"],
+      "options": [
+        "A. zhū",
+        "B. zhù",
+        "C. shū",
+        "D. yǔ"
+      ],
       "answer": "B",
       "explanation": "「杼」读 zhù，指织布机上的梭子；「机杼」也比喻诗文的构思布局。",
       "round": 1
@@ -65,7 +90,12 @@
       "content": "「严峻」中「峻」的正确读音是？",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. jǔn", "B. jùn", "C. zùn", "D. xùn"],
+      "options": [
+        "A. jǔn",
+        "B. jùn",
+        "C. zùn",
+        "D. xùn"
+      ],
       "answer": "B",
       "explanation": "「峻」读 jùn，本义高大，引申为严厉；「严峻」形容严厉、严重。",
       "round": 1
@@ -468,7 +498,7 @@
       "difficulty": "medium",
       "answer": "躲躲藏藏",
       "explanation": "「躲躲藏藏」形容隐藏不让人看见，AABB 式叠词。",
-      "round": 2
+      "round": 1
     },
     {
       "chapter": "字词",
@@ -656,7 +686,12 @@
       "content": "《买馒头》文中「掀(xiān)开」的「掀」读音是？",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. xiān", "B. xián", "C. xuān", "D. qiān"],
+      "options": [
+        "A. xiān",
+        "B. xián",
+        "C. xuān",
+        "D. qiān"
+      ],
       "answer": "A",
       "explanation": "「掀」读 xiān，意为揭起、翻动，如「掀开锅盖」。",
       "round": 1
@@ -667,7 +702,12 @@
       "content": "《买馒头》文中「俺(ǎn)」是什么意思？读音正确的是？",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. ān，第一人称", "B. ǎn，方言中「我」", "C. yǎn，方言中「你」", "D. àn，叹词"],
+      "options": [
+        "A. ān，第一人称",
+        "B. ǎn，方言中「我」",
+        "C. yǎn，方言中「你」",
+        "D. àn，叹词"
+      ],
       "answer": "B",
       "explanation": "「俺」读 ǎn，是北方方言中「我」的意思。",
       "round": 1
@@ -678,7 +718,12 @@
       "content": "《买馒头》文中「沧(cāng)桑」的「沧」读音是？",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. cǎng", "B. cāng", "C. chāng", "D. zāng"],
+      "options": [
+        "A. cǎng",
+        "B. cāng",
+        "C. chāng",
+        "D. zāng"
+      ],
       "answer": "B",
       "explanation": "「沧」读 cāng，「沧桑」指沧海桑田，比喻世事变化巨大。",
       "round": 1
@@ -689,7 +734,12 @@
       "content": "《买馒头》文中「笼(lóng)笼」的「笼」读音是？",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. lǒng，包罗", "B. lóng，量词或竹器", "C. nóng，浓密", "D. lěng，冷"],
+      "options": [
+        "A. lǒng，包罗",
+        "B. lóng，量词或竹器",
+        "C. nóng，浓密",
+        "D. lěng，冷"
+      ],
       "answer": "B",
       "explanation": "「笼」读 lóng 时指竹篾编的盛器或量词（一笼蒸笼）；读 lǒng 时表笼罩、概括。文中「开笼笼」指打开蒸笼，读 lóng。",
       "round": 2
@@ -724,7 +774,7 @@
       ],
       "answer": "B",
       "explanation": "「钱只要够用就好」体现了山东老乡不贪心、对生活心满意足的态度，属于豁达开朗、乐观知足。",
-      "round": 2
+      "round": 1
     },
     {
       "chapter": "阅读理解",
@@ -740,7 +790,7 @@
       ],
       "answer": "C",
       "explanation": "⑫段写「人的生活又是多么相似」感慨生命的相似处，⑬段以「驻馒头摊」作者反思生活的意义，将「生活本身值得庆喜」插于⑫⑬之间承上启下最为顺畅。",
-      "round": 2
+      "round": 4
     }
   ]
 }
