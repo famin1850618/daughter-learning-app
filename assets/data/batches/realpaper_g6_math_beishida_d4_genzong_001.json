@@ -11,7 +11,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "正",
-      "explanation": "腿数 ÷ 只数 = 4（一定），所以成正比例。",
+      "explanation": "腿数 $\\div$ 只数 = 4（一定），所以成正比例。",
       "round": 1
     },
     {
@@ -21,7 +21,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "反",
-      "explanation": "路程一定时，速度×时间 = 路程（一定），所以成反比例。",
+      "explanation": "路程一定时，速度$\\times$时间 = 路程（一定），所以成反比例。",
       "round": 1
     },
     {
@@ -57,7 +57,7 @@
     {
       "chapter": "正比例和反比例",
       "knowledge_point": "正反比例/正反比例的判断",
-      "content": "A×B＝C（C≠0）。A 一定时，B 和 C 成(    )比例；B 一定时，A 和 C 成(    )比例；C 一定时，A 和 B 成(    )比例。请依次填三个答案，逗号分隔。",
+      "content": "A$\\times$B＝C（C≠0）。A 一定时，B 和 C 成(    )比例；B 一定时，A 和 C 成(    )比例；C 一定时，A 和 B 成(    )比例。请依次填三个答案，逗号分隔。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "正,正,反",
@@ -81,13 +81,13 @@
       "type": "judgment",
       "difficulty": "easy",
       "answer": "对",
-      "explanation": "数 × 倒数 = 1（一定），成反比例。",
+      "explanation": "数 $\\times$ 倒数 = 1（一定），成反比例。",
       "round": 1
     },
     {
       "chapter": "正比例和反比例",
       "knowledge_point": "正反比例/正比例的意义",
-      "content": "今年爸爸的年龄÷小明的年龄＝5，所以爸爸的年龄和小明的年龄成正比例。",
+      "content": "今年爸爸的年龄$\\div$小明的年龄＝5，所以爸爸的年龄和小明的年龄成正比例。",
       "type": "judgment",
       "difficulty": "medium",
       "answer": "错",
@@ -101,7 +101,7 @@
       "type": "judgment",
       "difficulty": "easy",
       "answer": "对",
-      "explanation": "单价 × 本数 = 总钱数（一定），成反比例。",
+      "explanation": "单价 $\\times$ 本数 = 总钱数（一定），成反比例。",
       "round": 1
     },
     {
@@ -111,7 +111,7 @@
       "type": "judgment",
       "difficulty": "easy",
       "answer": "对",
-      "explanation": "C = 2πr，C/r = 2π（一定），成正比例。",
+      "explanation": "C = 2$\\pi r$，C/r = 2$\\pi$（一定），成正比例。",
       "round": 1
     },
     {
@@ -120,7 +120,12 @@
       "content": "成正比例的两个量在变化时的规律是它们的(    )不变。",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 和", "B. 差", "C. 积", "D. 比值"],
+      "options": [
+        "A. 和",
+        "B. 差",
+        "C. 积",
+        "D. 比值"
+      ],
       "answer": "D",
       "explanation": "正比例：y/x = k（一定），即比值不变。",
       "round": 1
@@ -131,9 +136,14 @@
       "content": "比的前项一定，后项和比值(    )。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 成正比例", "B. 成反比例", "C. 不成比例", "D. 无法判断"],
+      "options": [
+        "A. 成正比例",
+        "B. 成反比例",
+        "C. 不成比例",
+        "D. 无法判断"
+      ],
       "answer": "B",
-      "explanation": "前项 = 后项 × 比值（一定），后项与比值乘积一定，成反比例。",
+      "explanation": "前项 = 后项 $\\times$ 比值（一定），后项与比值乘积一定，成反比例。",
       "round": 2
     },
     {
@@ -142,7 +152,12 @@
       "content": "下列关系式中，能表示 a 和 b 成反比例关系的是(    )。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. a + b = 5", "B. a - b = 3", "C. a/b = 4", "D. ab = 12"],
+      "options": [
+        "A. a + b = 5",
+        "B. a - b = 3",
+        "C. a/b = 4",
+        "D. ab = 12"
+      ],
       "answer": "D",
       "explanation": "反比例的标准：两数乘积一定，即 ab=k。",
       "round": 2
@@ -153,9 +168,14 @@
       "content": "下面各组量中，(    )成反比例。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 圆的半径和面积", "B. 路程一定，时间与速度", "C. 长方形长一定，宽和面积", "D. 大米总量一定，吃了的和剩下的"],
+      "options": [
+        "A. 圆的半径和面积",
+        "B. 路程一定，时间与速度",
+        "C. 长方形长一定，宽和面积",
+        "D. 大米总量一定，吃了的和剩下的"
+      ],
       "answer": "B",
-      "explanation": "B 路程一定 = 时间×速度，成反比例。A 是平方关系，C 成正比例，D 是和一定。",
+      "explanation": "B 路程一定 = 时间$\\times$速度，成反比例。A 是平方关系，C 成正比例，D 是和一定。",
       "round": 2
     },
     {
@@ -165,7 +185,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "正",
-      "explanation": "总话费 ÷ 通话时间 = 每分话费（一定），成正比例。",
+      "explanation": "总话费 $\\div$ 通话时间 = 每分话费（一定），成正比例。",
       "round": 1
     },
     {
@@ -185,7 +205,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "反",
-      "explanation": "行数 × 列数 = 总人数（一定），成反比例。",
+      "explanation": "行数 $\\times$ 列数 = 总人数（一定），成反比例。",
       "round": 1
     },
     {
@@ -195,7 +215,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "正",
-      "explanation": "总面积 ÷ 块数 = 每块面积（一定），成正比例。",
+      "explanation": "总面积 $\\div$ 块数 = 每块面积（一定），成正比例。",
       "round": 1
     }
   ]

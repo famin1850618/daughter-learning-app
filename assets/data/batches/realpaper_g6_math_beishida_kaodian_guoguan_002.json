@@ -12,7 +12,7 @@
       "difficulty": "easy",
       "answer": "6",
       "alt_answers": "6发",
-      "explanation": "命中率 97%，则没命中率 = 1 - 97% = 3%。没命中数 = 200 × 3% = 6 发。",
+      "explanation": "命中率 97%，则没命中率 = 1 - 97% = 3%。没命中数 = 200 $\\times$ 3% = 6 发。",
       "round": 1
     },
     {
@@ -23,7 +23,7 @@
       "difficulty": "medium",
       "answer": "60/7,60:7",
       "alt_answers": "60/7,60∶7|||60/7,60比7",
-      "explanation": "比值 = 5.4 ÷ 0.63 = 540/63 = 60/7。化简比：5.4∶0.63 = 540∶63 = 60∶7。",
+      "explanation": "比值 = 5.4 $\\div$ 0.63 = 540/63 = 60/7。化简比：5.4∶0.63 = 540∶63 = 60∶7。",
       "round": 2
     },
     {
@@ -73,22 +73,22 @@
     {
       "chapter": "总复习",
       "knowledge_point": "总复习/数与代数综合",
-      "content": "当 x = 0.5 时，x² = (    )，2x = (    )；当 y = (    ) 时，y² = 2y。请按顺序填三个答案，逗号分隔。",
+      "content": "当 x = 0.5 时，$x^{2}$ = (    )，2x = (    )；当 y = (    ) 时，$y^{2}$ = 2y。请按顺序填三个答案，逗号分隔。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "0.25,1,2",
       "alt_answers": "0.25,1,0或2",
-      "explanation": "x = 0.5：x² = 0.25，2x = 1。y² = 2y 即 y(y-2) = 0，y = 0 或 y = 2（正常上下文取非零正解 2）。",
+      "explanation": "x = 0.5：$x^{2}$ = 0.25，2x = 1。$y^{2}$ = 2y 即 y(y-2) = 0，y = 0 或 y = 2（正常上下文取非零正解 2）。",
       "round": 2
     },
     {
       "chapter": "总复习",
       "knowledge_point": "总复习/数与代数综合",
-      "content": "判断对错：当 b < 1 时，b² < 2b。",
+      "content": "判断对错：当 b < 1 时，$b^{2}$ < 2b。",
       "type": "judgment",
       "difficulty": "medium",
       "answer": "错",
-      "explanation": "反例：b = -1 时，b² = 1，2b = -2，b² > 2b。所以命题错误。",
+      "explanation": "反例：b = -1 时，$b^{2}$ = 1，2b = -2，$b^{2}$ > 2b。所以命题错误。",
       "round": 3
     },
     {
@@ -104,11 +104,11 @@
     {
       "chapter": "总复习",
       "knowledge_point": "总复习/数与代数综合",
-      "content": "判断对错：当 a³ = 729 时，a = 243。",
+      "content": "判断对错：当 $a^{3}$ = 729 时，a = 243。",
       "type": "judgment",
       "difficulty": "easy",
       "answer": "错",
-      "explanation": "a³ = 729 = 9×9×9，所以 a = 9。243 是 729÷3 而不是开三次方。",
+      "explanation": "$a^{3}$ = 729 = 9$\\times$9$\\times$9，所以 a = 9。243 是 729$\\div$3 而不是开三次方。",
       "round": 2
     },
     {
@@ -164,13 +164,13 @@
       "type": "choice",
       "difficulty": "medium",
       "options": [
-        "A. m÷4 - n",
-        "B. (m-n)÷4",
-        "C. (m+n)÷4",
+        "A. m$\\div$4 - n",
+        "B. (m-n)$\\div$4",
+        "C. (m+n)$\\div$4",
         "D. 4m - n"
       ],
       "answer": "C",
-      "explanation": "苹果 = 梨×4 - n，所以梨×4 = m+n，梨 = (m+n)÷4。",
+      "explanation": "苹果 = 梨$\\times$4 - n，所以梨$\\times$4 = m+n，梨 = (m+n)$\\div$4。",
       "round": 2
     },
     {
@@ -181,7 +181,7 @@
       "difficulty": "easy",
       "answer": "3:4,3/4",
       "alt_answers": "3∶4,3/4|||3比4,0.75",
-      "explanation": "0.51∶0.68 = 51∶68 = 3∶4。比值 = 3÷4 = 3/4 = 0.75。",
+      "explanation": "0.51∶0.68 = 51∶68 = 3∶4。比值 = 3$\\div$4 = 3/4 = 0.75。",
       "round": 1
     },
     {
@@ -192,7 +192,7 @@
       "difficulty": "medium",
       "answer": "6:1,6",
       "alt_answers": "6∶1,6|||6比1,6",
-      "explanation": "2.5 时 = 150 分。150∶25 = 6∶1。比值 = 6÷1 = 6。",
+      "explanation": "2.5 时 = 150 分。150∶25 = 6∶1。比值 = 6$\\div$1 = 6。",
       "round": 2
     },
     {
@@ -203,7 +203,7 @@
       "difficulty": "medium",
       "answer": "1:7,1/7",
       "alt_answers": "1∶7,1/7|||1比7,1/7",
-      "explanation": "0.125 = 1/8。1/8∶7/8 = 1∶7。比值 = 1÷7 = 1/7。",
+      "explanation": "0.125 = 1/8。1/8∶7/8 = 1∶7。比值 = 1$\\div$7 = 1/7。",
       "round": 2
     },
     {
@@ -214,7 +214,7 @@
       "difficulty": "medium",
       "answer": "6:1,6",
       "alt_answers": "6∶1,6",
-      "explanation": "38/13 ÷ 19/39 = 38/13 × 39/19 = 6。所以比 = 6∶1，比值 = 6。",
+      "explanation": "38/13 $\\div$ 19/39 = 38/13 $\\times$ 39/19 = 6。所以比 = 6∶1，比值 = 6。",
       "round": 2
     },
     {
@@ -236,7 +236,7 @@
       "difficulty": "medium",
       "answer": "0.5",
       "alt_answers": "0.5|||1/2",
-      "explanation": "0.62x = 3.81 - 3.5 = 0.31，所以 x = 0.31 ÷ 0.62 = 0.5。",
+      "explanation": "0.62x = 3.81 - 3.5 = 0.31，所以 x = 0.31 $\\div$ 0.62 = 0.5。",
       "round": 2
     },
     {
@@ -247,7 +247,7 @@
       "difficulty": "medium",
       "answer": "3/4",
       "alt_answers": "3/4|||0.75",
-      "explanation": "外项积 = 内项积：0.8x = 2/7 × 2.1 = 0.6，所以 x = 0.6÷0.8 = 0.75 = 3/4。",
+      "explanation": "外项积 = 内项积：0.8x = 2/7 $\\times$ 2.1 = 0.6，所以 x = 0.6$\\div$0.8 = 0.75 = 3/4。",
       "round": 2
     },
     {
@@ -258,13 +258,13 @@
       "difficulty": "easy",
       "answer": "10",
       "alt_answers": "10",
-      "explanation": "3.6x = 8 × 4.5 = 36，所以 x = 10。",
+      "explanation": "3.6x = 8 $\\times$ 4.5 = 36，所以 x = 10。",
       "round": 1
     },
     {
       "chapter": "总复习",
       "knowledge_point": "总复习/数与代数综合",
-      "content": "解方程：(1.42 + x) × 4 = 21.68。x = ?",
+      "content": "解方程：(1.42 + x) $\\times$ 4 = 21.68。x = ?",
       "type": "calculation",
       "difficulty": "easy",
       "answer": "4",
@@ -291,7 +291,7 @@
       "difficulty": "medium",
       "answer": "45",
       "alt_answers": "45g|||45克",
-      "explanation": "水 4 份对应 60 g，每份 = 15 g。苹果汁 3 份 = 3×15 = 45 g。",
+      "explanation": "水 4 份对应 60 g，每份 = 15 g。苹果汁 3 份 = 3$\\times$15 = 45 g。",
       "round": 2
     },
     {
@@ -302,7 +302,7 @@
       "difficulty": "medium",
       "answer": "40,30",
       "alt_answers": "40g,30g|||40克,30克",
-      "explanation": "果汁=苹果汁+水，比例 3+4=7 份对应 70 g，每份 10 g。水 4×10=40 g，苹果汁 3×10=30 g。",
+      "explanation": "果汁=苹果汁+水，比例 3+4=7 份对应 70 g，每份 10 g。水 4$\\times$10=40 g，苹果汁 3$\\times$10=30 g。",
       "round": 2
     },
     {
@@ -313,7 +313,7 @@
       "difficulty": "hard",
       "answer": "40",
       "alt_answers": "40千米|||40km",
-      "explanation": "实际距离 = 6×5000000 = 30000000 cm = 300 km。两车速度和 = 300÷3 = 100 km/h。甲速 = 100×2/(2+3) = 40 km/h。",
+      "explanation": "实际距离 = 6$\\times$5000000 = 30000000 cm = 300 km。两车速度和 = 300$\\div$3 = 100 km/h。甲速 = 100$\\times$2/(2+3) = 40 km/h。",
       "round": 3
     },
     {
@@ -324,7 +324,7 @@
       "difficulty": "hard",
       "answer": "60",
       "alt_answers": "60千米|||60km",
-      "explanation": "实际距离 300 km，速度和 100 km/h。乙速 = 100×3/(2+3) = 60 km/h。",
+      "explanation": "实际距离 300 km，速度和 100 km/h。乙速 = 100$\\times$3/(2+3) = 60 km/h。",
       "round": 3
     },
     {
@@ -335,7 +335,7 @@
       "difficulty": "hard",
       "answer": "112",
       "alt_answers": "112台",
-      "explanation": "实际比计划多 5/9 + 2/3 - 1 = 5/9 + 6/9 - 9/9 = 2/9。超额 = 504 × 2/9 = 112 台。",
+      "explanation": "实际比计划多 5/9 + 2/3 - 1 = 5/9 + 6/9 - 9/9 = 2/9。超额 = 504 $\\times$ 2/9 = 112 台。",
       "round": 3
     },
     {
@@ -346,7 +346,7 @@
       "difficulty": "hard",
       "answer": "4/3",
       "alt_answers": "4/3|||1又1/3|||1.33|||1.333",
-      "explanation": "甲 2 时录完 2/5。剩 1-2/5 = 3/5。两人合作每小时 1/5+1/4 = 9/20。剩余时间 = (3/5)÷(9/20) = 12/9 = 4/3 时。",
+      "explanation": "甲 2 时录完 2/5。剩 1-2/5 = 3/5。两人合作每小时 1/5+1/4 = 9/20。剩余时间 = (3/5)$\\div$(9/20) = 12/9 = 4/3 时。",
       "round": 3
     }
   ]

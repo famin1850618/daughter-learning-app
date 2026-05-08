@@ -11,13 +11,13 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "正,不成",
-      "explanation": "周长 = 4×边长（比值4一定，正比例）；面积 = 边长²（不是简单比例关系）。",
+      "explanation": "周长 = 4$\\times$边长（比值4一定，正比例）；面积 = 边长的平方（不是简单比例关系）。",
       "round": 2
     },
     {
       "chapter": "正比例和反比例",
       "knowledge_point": "正反比例/比例尺",
-      "content": "实际距离 = 图上距离 ÷ 比例尺。当(    )一定时，(    )和(    )成正比例。请依次填三个答案，逗号分隔。",
+      "content": "在比例尺关系中，当下列哪个量一定时，另外两个量成正比例？请按\"一定的量,成正比例的量1,成正比例的量2\"顺序填入比例尺/图上距离/实际距离三者。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "比例尺,图上距离,实际距离",
@@ -31,7 +31,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "反",
-      "explanation": "每段长 × 段数 = 总长（一定），成反比例。",
+      "explanation": "每段长 $\\times$ 段数 = 总长（一定），成反比例。",
       "round": 1
     },
     {
@@ -41,7 +41,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "反,反",
-      "explanation": "面积 = (底×高)/2，面积定则底×高一定，反比例。圆柱V=底面积×高，V定则两者积一定，反比例。",
+      "explanation": "面积 = (底$\\times$高)/2，面积定则底$\\times$高一定，反比例。圆柱V=底面积$\\times$高，V定则两者积一定，反比例。",
       "round": 2
     },
     {
@@ -80,7 +80,12 @@
       "content": "已知 x＝y（x，y≠0），则 x 与 y 是(    )。",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 成正比例", "B. 成反比例", "C. 不成比例", "D. 无法判断"],
+      "options": [
+        "A. 成正比例",
+        "B. 成反比例",
+        "C. 不成比例",
+        "D. 无法判断"
+      ],
       "answer": "A",
       "explanation": "x/y = 1（一定），成正比例。",
       "round": 1
@@ -91,9 +96,14 @@
       "content": "下列各项中，两个量成反比例的是(    )。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 圆的面积和它的直径", "B. 圆的周长和它的直径", "C. 单价一定，总价和数量", "D. 长方形面积一定，长和宽"],
+      "options": [
+        "A. 圆的面积和它的直径",
+        "B. 圆的周长和它的直径",
+        "C. 单价一定，总价和数量",
+        "D. 长方形面积一定，长和宽"
+      ],
       "answer": "D",
-      "explanation": "D 长×宽 = 面积（一定），反比例。A 平方关系，B/C 是正比例。",
+      "explanation": "D 长$\\times$宽 = 面积（一定），反比例。A 平方关系，B/C 是正比例。",
       "round": 2
     },
     {
@@ -102,9 +112,14 @@
       "content": "乐乐把 1000 mL 水倒入不同的圆柱形容器中，容器中水的高度与容器的底面积(    )。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 成正比例", "B. 成反比例", "C. 不成比例", "D. 无法判断"],
+      "options": [
+        "A. 成正比例",
+        "B. 成反比例",
+        "C. 不成比例",
+        "D. 无法判断"
+      ],
       "answer": "B",
-      "explanation": "底面积×高 = 1000 mL（一定），成反比例。",
+      "explanation": "底面积$\\times$高 = 1000 mL（一定），成反比例。",
       "round": 2
     },
     {
@@ -124,7 +139,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "反",
-      "explanation": "前项 = 后项 × 比值（一定）→ 后项与比值积一定，反比例。",
+      "explanation": "前项 = 后项 $\\times$ 比值（一定）→ 后项与比值积一定，反比例。",
       "round": 2
     },
     {
@@ -134,7 +149,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "反",
-      "explanation": "底面积 × 高 = V（一定），反比例。",
+      "explanation": "底面积 $\\times$ 高 = V（一定），反比例。",
       "round": 1
     },
     {
@@ -154,7 +169,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "不",
-      "explanation": "S = πr²（平方关系，不是简单比例）。",
+      "explanation": "S = $\\pi r^{2}$（平方关系，不是简单比例）。",
       "round": 2
     },
     {
@@ -164,7 +179,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "反",
-      "explanation": "速度 × 时间 = 100 m（一定），反比例。",
+      "explanation": "速度 $\\times$ 时间 = 100 m（一定），反比例。",
       "round": 1
     }
   ]

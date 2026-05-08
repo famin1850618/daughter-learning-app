@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 15,
+      version: 16,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
@@ -410,6 +410,13 @@ class DatabaseHelper {
       await db.execute(
           'CREATE INDEX IF NOT EXISTS idx_archive_rows_batch ON data_reset_rows (archive_batch_id)');
     }
+    if (oldVersion < 16) {
+      // v16: V3.12 听力多角色 TTS。questions 加 speakers_json 列存
+      // {role: {gender, age}} 映射，_ListenButton 解析 audioText 后按角色切 voice/pitch。
+      try {
+        await db.execute('ALTER TABLE questions ADD COLUMN speakers_json TEXT');
+      } catch (_) {/* 列已存在则忽略 */}
+    }
   }
 
   Future<void> _createAllTables(Database db) async {
@@ -469,6 +476,7 @@ class DatabaseHelper {
         explanation TEXT,
         image_data TEXT,
         audio_text TEXT,
+        speakers_json TEXT,
         round INTEGER,
         group_id TEXT,
         group_order INTEGER,

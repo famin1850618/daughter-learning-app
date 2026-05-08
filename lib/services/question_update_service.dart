@@ -4,6 +4,7 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../models/question.dart';
+import '../models/speaker_profile.dart';
 import '../models/subject.dart';
 import '../models/knowledge_point.dart';
 import '../database/database_helper.dart';
@@ -146,24 +147,38 @@ class QuestionUpdateService extends ChangeNotifier {
 
     // 2. 题目按 source 幂等
     final qList = (batch['questions'] as List).cast<Map<String, dynamic>>();
-    final questions = qList.map((m) => Question(
-          subject: subject,
-          grade: grade,
-          chapter: m['chapter'] as String,
-          knowledgePoint: m['knowledge_point'] as String?,
-          content: m['content'] as String,
-          type: _typeFromKey(m['type'] as String),
-          difficulty: _difficultyFromKey(m['difficulty'] as String),
-          options: (m['options'] as List?)?.cast<String>(),
-          answer: m['answer'] as String,
-          explanation: m['explanation'] as String?,
-          imageData: m['image'] as String?,
-          audioText: m['audio_text'] as String?,
-          round: m['round'] as int?,
-          groupId: m['group_id'] as String?,
-          groupOrder: m['group_order'] as int?,
-          source: source,
-        )).toList();
+    final questions = qList.map((m) {
+      // V3.12: 解析 speakers 字段（多角色 TTS 元数据）
+      Map<String, SpeakerProfile>? speakers;
+      final raw = m['speakers'];
+      if (raw is Map) {
+        speakers = raw.map(
+          (k, v) => MapEntry(
+            k.toString(),
+            SpeakerProfile.fromMap((v as Map).cast<String, dynamic>()),
+          ),
+        );
+      }
+      return Question(
+        subject: subject,
+        grade: grade,
+        chapter: m['chapter'] as String,
+        knowledgePoint: m['knowledge_point'] as String?,
+        content: m['content'] as String,
+        type: _typeFromKey(m['type'] as String),
+        difficulty: _difficultyFromKey(m['difficulty'] as String),
+        options: (m['options'] as List?)?.cast<String>(),
+        answer: m['answer'] as String,
+        explanation: m['explanation'] as String?,
+        imageData: m['image'] as String?,
+        audioText: m['audio_text'] as String?,
+        speakers: speakers,
+        round: m['round'] as int?,
+        groupId: m['group_id'] as String?,
+        groupOrder: m['group_order'] as int?,
+        source: source,
+      );
+    }).toList();
 
     final inserted = await _qDao.insertBatchIfMissing(source, questions);
     return inserted ? questions.length : 0;

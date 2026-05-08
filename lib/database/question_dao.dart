@@ -78,6 +78,37 @@ class QuestionDao {
     return (r.first['c'] as int?) ?? 0;
   }
 
+  /// V3.12: 某 (subject, grade) 下每个 chapter 的活跃题数（排除 deprecated 类）。
+  /// 章节列表 UI 直接用，避免显示包含 deprecated 题的虚高总数。
+  Future<Map<String, int>> countActiveQuestionsByChapter({
+    required Subject subject,
+    required int grade,
+  }) async {
+    final db = await _db.database;
+    final rows = await db.rawQuery('''
+      SELECT chapter, COUNT(*) AS c
+      FROM questions
+      WHERE subject = ? AND grade = ? AND $_activeSourceFilter
+      GROUP BY chapter
+    ''', [subject.index, grade]);
+    return {
+      for (final r in rows) (r['chapter'] as String? ?? ''): (r['c'] as int?) ?? 0,
+    };
+  }
+
+  /// V3.12: 某 (subject, grade) 的活跃题总数（排除 deprecated）。科目页头部用。
+  Future<int> countActiveQuestionsForSubject({
+    required Subject subject,
+    required int grade,
+  }) async {
+    final db = await _db.database;
+    final r = await db.rawQuery('''
+      SELECT COUNT(*) AS c FROM questions
+      WHERE subject = ? AND grade = ? AND $_activeSourceFilter
+    ''', [subject.index, grade]);
+    return (r.first['c'] as int?) ?? 0;
+  }
+
   Future<List<Question>> getRandom({
     required Subject subject,
     required int grade,

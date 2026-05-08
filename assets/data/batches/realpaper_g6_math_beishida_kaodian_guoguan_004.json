@@ -12,7 +12,7 @@
       "difficulty": "easy",
       "answer": "60",
       "alt_answers": "60cm²|||60平方厘米|||60cm2",
-      "explanation": "长 = 周长÷2 - 宽 = 32÷2 - 6 = 10 cm；面积 = 10×6 = 60 cm²。",
+      "explanation": "长 = 周长$\\div$2 - 宽 = 32$\\div$2 - 6 = 10 cm；面积 = 10$\\times$6 = 60 cm²。",
       "round": 1
     },
     {
@@ -23,7 +23,7 @@
       "difficulty": "medium",
       "answer": "12.5,10",
       "alt_answers": "10,12.5|||12.5cm,10cm|||10cm,12.5cm",
-      "explanation": "情况一：15 cm 是腰，腰共 30 cm，底边 = 40-30 = 10 cm（满足三角形不等式 10<30，✓）。情况二：15 cm 是底边，两腰相等 = (40-15)÷2 = 12.5 cm（满足 12.5+12.5>15，✓）。所以是 10 或 12.5。",
+      "explanation": "情况一：15 cm 是腰，腰共 30 cm，底边 = 40-30 = 10 cm（满足三角形不等式 10<30，✓）。情况二：15 cm 是底边，两腰相等 = (40-15)$\\div$2 = 12.5 cm（满足 12.5+12.5>15，✓）。所以是 10 或 12.5。",
       "round": 3
     },
     {
@@ -34,7 +34,7 @@
       "difficulty": "medium",
       "answer": "2",
       "alt_answers": "2m|||2米",
-      "explanation": "半圆周长 = πr + 2r = (π+2)r；10.28 = (3.14+2)×r = 5.14r；r = 2 m。",
+      "explanation": "半圆周长 = $\\pi r$+ 2r = ($\\pi$+2)r；10.28 = (3.14+2)$\\times$r = 5.14r；r = 2 m。",
       "round": 2
     },
     {
@@ -45,7 +45,7 @@
       "difficulty": "medium",
       "answer": "6.28",
       "alt_answers": "6.28m²|||6.28平方米|||6.28m2",
-      "explanation": "半圆面积 = πr²÷2 = 3.14×4÷2 = 6.28 m²。",
+      "explanation": "半圆面积 = $\\pi r^{2}\\div$2 = 3.14$\\times$4$\\div$2 = 6.28 m²。",
       "round": 2
     },
     {
@@ -56,7 +56,7 @@
       "difficulty": "easy",
       "answer": "150",
       "alt_answers": "150cm²|||150平方厘米|||150cm2",
-      "explanation": "棱长 = 60÷12 = 5 cm；表面积 = 6×5² = 150 cm²。",
+      "explanation": "棱长 = 60$\\div$12 = 5 cm；表面积 = 6$\\times 5^{2}$ = 150 cm²。",
       "round": 1
     },
     {
@@ -67,7 +67,7 @@
       "difficulty": "easy",
       "answer": "125",
       "alt_answers": "125cm³|||125立方厘米|||125cm3",
-      "explanation": "棱长 = 60÷12 = 5 cm；体积 = 5³ = 125 cm³。",
+      "explanation": "棱长 = 60$\\div$12 = 5 cm；体积 = $5^{3}$ = 125 cm³。",
       "round": 1
     },
     {
@@ -78,7 +78,7 @@
       "difficulty": "medium",
       "answer": "65.94",
       "alt_answers": "65.94dm³|||65.94立方分米|||65.94dm3",
-      "explanation": "底面半径 = 18.84÷3.14÷2 = 3 dm；最大圆锥底面与高都等于圆柱：V = (1/3)×3.14×3²×7 = 65.94 dm³。",
+      "explanation": "底面半径 = 18.84$\\div$3.14$\\div$2 = 3 dm；最大圆锥底面与高都等于圆柱：V = (1/3)$\\times$3.14$\\times 3^{2}\\times$7 = 65.94 dm³。",
       "round": 2
     },
     {
@@ -89,7 +89,7 @@
       "difficulty": "medium",
       "answer": "7.065",
       "alt_answers": "7.065cm²|||7.065平方厘米|||7.065cm2",
-      "explanation": "减少的是侧面积 = 底面周长×2 = 18.84，底面周长 = 9.42 cm，半径 = 1.5 cm，底面积 = 3.14×1.5² = 7.065 cm²。",
+      "explanation": "减少的是侧面积 = 底面周长$\\times$2 = 18.84，底面周长 = 9.42 cm，半径 = 1.5 cm，底面积 = 3.14$\\times$1.$5^{2}$ = 7.065 cm²。",
       "round": 3
     },
     {
@@ -100,7 +100,7 @@
       "difficulty": "easy",
       "answer": "18",
       "alt_answers": "18cm³|||18立方厘米|||18cm3",
-      "explanation": "等底等高时圆锥:圆柱 = 1:3，比例和 1+3 = 4；圆锥 = 72×1/4 = 18 cm³。",
+      "explanation": "等底等高时圆锥:圆柱 = 1:3，比例和 1+3 = 4；圆锥 = 72$\\times$1/4 = 18 cm³。",
       "round": 1
     },
     {
@@ -111,7 +111,7 @@
       "difficulty": "easy",
       "answer": "54",
       "alt_answers": "54cm³|||54立方厘米|||54cm3",
-      "explanation": "圆柱 = 72×3/4 = 54 cm³。",
+      "explanation": "圆柱 = 72$\\times$3/4 = 54 cm³。",
       "round": 1
     },
     {
@@ -127,11 +127,11 @@
     {
       "chapter": "总复习",
       "knowledge_point": "总复习/图形与几何综合",
-      "content": "梯形的高 = 面积÷2×(上底+下底)。",
+      "content": "梯形的高 = 面积$\\div$2$\\times$(上底+下底)。",
       "type": "judgment",
       "difficulty": "easy",
       "answer": "错",
-      "explanation": "正确公式应是：梯形的高 = 面积×2÷(上底+下底)。",
+      "explanation": "正确公式应是：梯形的高 = 面积$\\times$2$\\div$(上底+下底)。",
       "round": 1
     },
     {
@@ -150,9 +150,14 @@
       "content": "用 160 m³ 混凝土铺路，要铺一条长 100 m，宽 8 m 的人行道，可以铺(    )厚。",
       "type": "choice",
       "difficulty": "medium",
-      "options": "[\"A. 2 cm\", \"B. 2 dm\", \"C. 2 m\", \"D. 3 m\"]",
+      "options": [
+        "A. 2 cm",
+        "B. 2 dm",
+        "C. 2 m",
+        "D. 3 m"
+      ],
       "answer": "B",
-      "explanation": "厚度 = 体积÷面积 = 160÷(100×8) = 0.2 m = 2 dm。",
+      "explanation": "厚度 = 体积$\\div$面积 = 160$\\div$(100$\\times$8) = 0.2 m = 2 dm。",
       "round": 2
     },
     {
@@ -161,9 +166,14 @@
       "content": "一个圆柱和圆锥的体积、底面积都相等，圆柱的高是 3 dm，那么圆锥的高是(    )dm。",
       "type": "choice",
       "difficulty": "medium",
-      "options": "[\"A. 3\", \"B. 1\", \"C. 6\", \"D. 9\"]",
+      "options": [
+        "A. 3",
+        "B. 1",
+        "C. 6",
+        "D. 9"
+      ],
       "answer": "D",
-      "explanation": "等底等体积时，圆锥的高是圆柱高的 3 倍：3×3 = 9 dm。",
+      "explanation": "等底等体积时，圆锥的高是圆柱高的 3 倍：3$\\times$3 = 9 dm。",
       "round": 2
     },
     {
@@ -172,9 +182,13 @@
       "content": "两个正方体的棱长的比是 2∶3，则这两个正方体的体积的比是(    )。",
       "type": "choice",
       "difficulty": "medium",
-      "options": "[\"A. 2∶3\", \"B. 4∶9\", \"C. 8∶27\"]",
+      "options": [
+        "A. 2∶3",
+        "B. 4∶9",
+        "C. 8∶27"
+      ],
       "answer": "C",
-      "explanation": "体积比 = 棱长比的立方 = 2³∶3³ = 8∶27。",
+      "explanation": "体积比 = 棱长比的立方 = $2^{3}$∶$3^{3}$ = 8∶27。",
       "round": 2
     },
     {
@@ -185,7 +199,7 @@
       "difficulty": "medium",
       "answer": "26/3",
       "alt_answers": "26/3dm|||26/3分米|||8又2/3",
-      "explanation": "铁丝总长 = (16+8+2)×4 = 104 dm；正方体棱长和有 12 条；棱长 = 104÷12 = 26/3 dm。",
+      "explanation": "铁丝总长 = (16+8+2)$\\times$4 = 104 dm；正方体棱长和有 12 条；棱长 = 104$\\div$12 = 26/3 dm。",
       "round": 2
     },
     {
@@ -196,7 +210,7 @@
       "difficulty": "medium",
       "answer": "16.956",
       "alt_answers": "16.956吨|||16.956t",
-      "explanation": "半径 = 18.84÷3.14÷2 = 3 m；体积 = (1/3)×3.14×3²×1.2 = 11.304 m³；重 = 11.304×1.5 = 16.956 t。",
+      "explanation": "半径 = 18.84$\\div$3.14$\\div$2 = 3 m；体积 = (1/3)$\\times$3.14$\\times 3^{2}\\times$1.2 = 11.304 m³；重 = 11.304$\\times$1.5 = 16.956 t。",
       "round": 2
     },
     {
@@ -207,7 +221,7 @@
       "difficulty": "medium",
       "answer": "6000",
       "alt_answers": "6000dm²|||6000平方分米|||6000dm2",
-      "explanation": "上下底之和 = 23-8 = 15 m；面积 = (上底+下底)×高÷2 = 15×8÷2 = 60 m² = 6000 dm²。",
+      "explanation": "上下底之和 = 23-8 = 15 m；面积 = (上底+下底)$\\times$高$\\div$2 = 15$\\times$8$\\div$2 = 60 m² = 6000 dm²。",
       "round": 3
     },
     {
@@ -218,7 +232,7 @@
       "difficulty": "medium",
       "answer": "382",
       "alt_answers": "382dm²|||382平方分米|||382dm2",
-      "explanation": "长+宽+高 = 96÷4 = 24 dm；连续自然数和为 24 → 7、8、9；表面积 = (7×8+7×9+8×9)×2 = (56+63+72)×2 = 191×2 = 382 dm²。",
+      "explanation": "长+宽+高 = 96$\\div$4 = 24 dm；连续自然数和为 24 → 7、8、9；表面积 = (7$\\times$8+7$\\times$9+8$\\times$9)$\\times$2 = (56+63+72)$\\times$2 = 191$\\times$2 = 382 dm²。",
       "round": 3
     },
     {
@@ -229,7 +243,7 @@
       "difficulty": "medium",
       "answer": "504",
       "alt_answers": "504dm³|||504立方分米|||504dm3",
-      "explanation": "三条棱为 7、8、9；体积 = 7×8×9 = 504 dm³。",
+      "explanation": "三条棱为 7、8、9；体积 = 7$\\times$8$\\times$9 = 504 dm³。",
       "round": 2
     },
     {
@@ -240,7 +254,7 @@
       "difficulty": "medium",
       "answer": "30",
       "alt_answers": "30cm|||30厘米",
-      "explanation": "长方体体积 = 20×10×15.7 = 3140 cm³；圆锥底面积 = 3.14×10² = 314 cm²；圆锥高 = 3140×3÷314 = 30 cm。",
+      "explanation": "长方体体积 = 20$\\times$10$\\times$15.7 = 3140 cm³；圆锥底面积 = 3.14$\\times$1$0^{2}$ = 314 cm²；圆锥高 = 3140$\\times$3$\\div$314 = 30 cm。",
       "round": 3
     }
   ]

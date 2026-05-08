@@ -21,7 +21,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "24,3:5",
-      "explanation": "比例的基本性质：内项之积=外项之积。a×b = 3×8 = 24。5a=3b → a:b = 3:5。",
+      "explanation": "比例的基本性质：内项之积=外项之积。a$\\times$b = 3$\\times$8 = 24。5a=3b → a:b = 3:5。",
       "round": 2
     },
     {
@@ -31,7 +31,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "4:3",
-      "explanation": "甲×1/4 = 乙×1/3 → 甲/乙 = (1/3)/(1/4) = 4/3。",
+      "explanation": "甲$\\times$1/4 = 乙$\\times$1/3 → 甲/乙 = (1/3)/(1/4) = 4/3。",
       "round": 2
     },
     {
@@ -41,7 +41,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "6",
-      "explanation": "新比 3:7 = 6:x → x = 7×6/3 = 14，加上 14-8=6。",
+      "explanation": "新比 3:7 = 6:x → x = 7$\\times$6/3 = 14，加上 14-8=6。",
       "round": 2
     },
     {
@@ -51,7 +51,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "18,4",
-      "explanation": "边长按 2:1 放大变 2 倍：9×2=18 dm。面积按比例平方：2²=4 倍。",
+      "explanation": "边长按 2:1 放大变 2 倍：9$\\times$2=18 dm。面积按比例平方：$2^{2}$=4 倍。",
       "round": 1
     },
     {
@@ -71,7 +71,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "3",
-      "explanation": "30 cm × 1/10 = 3 cm。圆心角不变。",
+      "explanation": "30 cm $\\times$ 1/10 = 3 cm。圆心角不变。",
       "round": 2
     },
     {
@@ -81,7 +81,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "450",
-      "explanation": "比例尺 = 7/350 = 9/x → x = 350×9/7 = 450 km。",
+      "explanation": "比例尺 = 7/350 = 9/x → x = 350$\\times$9/7 = 450 km。",
       "round": 2
     },
     {
@@ -111,7 +111,7 @@
       "type": "judgment",
       "difficulty": "easy",
       "answer": "对",
-      "explanation": "1.2×0.25 = 0.3，0.4×0.75 = 0.3，乘积相等可组成比例。",
+      "explanation": "1.2$\\times$0.25 = 0.3，0.4$\\times$0.75 = 0.3，乘积相等可组成比例。",
       "round": 1
     },
     {
@@ -131,7 +131,7 @@
       "type": "judgment",
       "difficulty": "easy",
       "answer": "对",
-      "explanation": "边长 4 倍，面积 4²=16 倍。",
+      "explanation": "边长 4 倍，面积 $4^{2}$=16 倍。",
       "round": 1
     },
     {
@@ -160,9 +160,14 @@
       "content": "在下面的数中，只有选择(    )，才可以与 4，5，6 组成一个比例。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 8", "B. 10", "C. 7.5", "D. 12"],
+      "options": [
+        "A. 8",
+        "B. 10",
+        "C. 7.5",
+        "D. 12"
+      ],
       "answer": "C",
-      "explanation": "组比例需 a×d = b×c。试 7.5：4×7.5 = 30 = 5×6 ✓，所以 4:5 = 6:7.5。",
+      "explanation": "组比例需 a$\\times$d = b$\\times$c。试 7.5：4$\\times$7.5 = 30 = 5$\\times$6 ✓，所以 4:5 = 6:7.5。",
       "round": 2
     },
     {
@@ -171,7 +176,12 @@
       "content": "下面(    )组的两个比不能组成比例。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 7∶8 和 14∶16", "B. 0.6∶0.2 和 3∶1", "C. 1/2∶1/3 和 6∶4", "D. 5∶2 和 4∶10"],
+      "options": [
+        "A. 7∶8 和 14∶16",
+        "B. 0.6∶0.2 和 3∶1",
+        "C. 1/2∶1/3 和 6∶4",
+        "D. 5∶2 和 4∶10"
+      ],
       "answer": "D",
       "explanation": "比值不相等不能组成比例。D：5/2=2.5，4/10=0.4，不相等。",
       "round": 2
@@ -182,7 +192,12 @@
       "content": "把一幅图按下面(    )项中的比缩小后画出来的图最小。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 1∶10", "B. 1∶100", "C. 1∶50", "D. 1∶1000"],
+      "options": [
+        "A. 1∶10",
+        "B. 1∶100",
+        "C. 1∶50",
+        "D. 1∶1000"
+      ],
       "answer": "D",
       "explanation": "比例尺前项=1 时，后项越大缩得越小。1:1000 最小。",
       "round": 2
@@ -193,9 +208,14 @@
       "content": "把一个正方形按 1∶3 的比缩小后，正方形缩小前后的面积比是(    )。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 1∶3", "B. 1∶6", "C. 9∶1", "D. 3∶1"],
+      "options": [
+        "A. 1∶3",
+        "B. 1∶6",
+        "C. 9∶1",
+        "D. 3∶1"
+      ],
       "answer": "C",
-      "explanation": "边长 1:3 → 面积 1²:3² = 1:9，缩小前:缩小后 = 9:1。",
+      "explanation": "边长 1:3 → 面积 $1^{2}$:$3^{2}$ = 1:9，缩小前:缩小后 = 9:1。",
       "round": 2
     },
     {
@@ -204,7 +224,12 @@
       "content": "在比例尺是 1∶200 的图纸上，甲、乙两个圆的半径比是 2∶5，那么甲、乙两个圆实际半径的比是(    )。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 1∶100", "B. 2∶5", "C. 5∶2", "D. 4∶25"],
+      "options": [
+        "A. 1∶100",
+        "B. 2∶5",
+        "C. 5∶2",
+        "D. 4∶25"
+      ],
       "answer": "B",
       "explanation": "图上比例确定后实际比与图上比相同。半径比仍是 2:5。",
       "round": 2
@@ -216,7 +241,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "60",
-      "explanation": "设六年级 x kg，4:5 = 48:x → x = 48×5/4 = 60 kg。",
+      "explanation": "设六年级 x kg，4:5 = 48:x → x = 48$\\times$5/4 = 60 kg。",
       "round": 2
     },
     {
@@ -226,7 +251,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "36,24",
-      "explanation": "总份数 5 份，每份 60÷5=12。玥玥 3×12=36 张，婵婵 2×12=24 张。",
+      "explanation": "总份数 5 份，每份 60$\\div$5=12。玥玥 3$\\times$12=36 张，婵婵 2$\\times$12=24 张。",
       "round": 2
     },
     {
@@ -236,7 +261,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "7.5",
-      "explanation": "实际距离 = 12 × 5000000 = 60000000 cm。新图距离 = 60000000 / 8000000 = 7.5 cm。",
+      "explanation": "实际距离 = 12 $\\times$ 5000000 = 60000000 cm。新图距离 = 60000000 / 8000000 = 7.5 cm。",
       "round": 2
     },
     {
@@ -256,7 +281,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "120,60",
-      "explanation": "实际长 = 6×2000 = 12000 cm = 120 m。实际宽 = 3×2000 = 6000 cm = 60 m。",
+      "explanation": "实际长 = 6$\\times$2000 = 12000 cm = 120 m。实际宽 = 3$\\times$2000 = 6000 cm = 60 m。",
       "round": 2
     }
   ]

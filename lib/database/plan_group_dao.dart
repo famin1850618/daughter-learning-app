@@ -25,9 +25,57 @@ class PlanGroupDao {
         where: 'id = ?', whereArgs: [id]);
   }
 
+  /// 级联删除：连同所有后代 group（week → child days；month → child weeks → child days）
+  /// 以及所有指向这些 group 的 plan_items（按 day_plan_id / origin_week_plan_id /
+  /// origin_month_plan_id 三路清理）。Famin V3.11.0 实测发现：删周计划后该日仍残留
+  /// 空周计划，根因是这里只删了 plan_groups 一行，child days + plan_items 全留了。
   Future<void> delete(int id) async {
     final db = await _db.database;
-    await db.delete('plan_groups', where: 'id = ?', whereArgs: [id]);
+    final rows = await db.rawQuery('''
+      WITH RECURSIVE descendants(id, type) AS (
+        SELECT id, type FROM plan_groups WHERE id = ?
+        UNION ALL
+        SELECT pg.id, pg.type FROM plan_groups pg
+          INNER JOIN descendants d ON pg.parent_id = d.id
+      )
+      SELECT id, type FROM descendants
+    ''', [id]);
+    if (rows.isEmpty) return;
+
+    final allIds = rows.map((r) => r['id'] as int).toList();
+    final dayIds = rows
+        .where((r) => r['type'] == PlanGroupType.day.index)
+        .map((r) => r['id'] as int)
+        .toList();
+    final weekIds = rows
+        .where((r) => r['type'] == PlanGroupType.week.index)
+        .map((r) => r['id'] as int)
+        .toList();
+    final monthIds = rows
+        .where((r) => r['type'] == PlanGroupType.month.index)
+        .map((r) => r['id'] as int)
+        .toList();
+
+    String ph(List<int> ids) => ids.map((_) => '?').join(',');
+
+    await db.transaction((txn) async {
+      if (dayIds.isNotEmpty) {
+        await txn.delete('plan_items',
+            where: 'day_plan_id IN (${ph(dayIds)})', whereArgs: dayIds);
+      }
+      if (weekIds.isNotEmpty) {
+        await txn.delete('plan_items',
+            where: 'origin_week_plan_id IN (${ph(weekIds)})',
+            whereArgs: weekIds);
+      }
+      if (monthIds.isNotEmpty) {
+        await txn.delete('plan_items',
+            where: 'origin_month_plan_id IN (${ph(monthIds)})',
+            whereArgs: monthIds);
+      }
+      await txn.delete('plan_groups',
+          where: 'id IN (${ph(allIds)})', whereArgs: allIds);
+    });
   }
 
   /// 找某天所属的日计划列表

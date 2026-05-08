@@ -21,7 +21,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "正",
-      "explanation": "总质量 ÷ 数量 = 每个铁钉的质量（一定），成正比例。",
+      "explanation": "总质量 $\\div$ 数量 = 每个铁钉的质量（一定），成正比例。",
       "round": 1
     },
     {
@@ -31,7 +31,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "反",
-      "explanation": "每段长度 × 段数 = 总长度（一定），成反比例。",
+      "explanation": "每段长度 $\\times$ 段数 = 总长度（一定），成反比例。",
       "round": 1
     },
     {
@@ -51,7 +51,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "64,60",
-      "explanation": "甲=40 → 1 份=8 → 乙=24 → 和=64；差是 5−3=2 份=24 → 1 份=12 → 甲=5×12=60。",
+      "explanation": "甲=40 → 1 份=8 → 乙=24 → 和=64；差是 5−3=2 份=24 → 1 份=12 → 甲=5$\\times$12=60。",
       "round": 2
     },
     {
@@ -71,7 +71,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "160",
-      "explanation": "齿数 × 转数 = 啮合的齿数（一定），成反比例：80×60=30×x → x=160。",
+      "explanation": "齿数 $\\times$ 转数 = 啮合的齿数（一定），成反比例：80$\\times$60=30$\\times$x → x=160。",
       "round": 2
     },
     {
@@ -91,7 +91,7 @@
       "type": "judgment",
       "difficulty": "easy",
       "answer": "错",
-      "explanation": "每页字数 × 页数 = 总字数（积一定），成反比例，不是正比例。",
+      "explanation": "每页字数 $\\times$ 页数 = 总字数（积一定），成反比例，不是正比例。",
       "round": 1
     },
     {
@@ -111,7 +111,7 @@
       "type": "judgment",
       "difficulty": "medium",
       "answer": "错",
-      "explanation": "S=πr²，S/r=πr 不是定值（随 r 变化），不成正比例。",
+      "explanation": "S=$\\pi r^{2}$，S/r=$\\pi r$不是定值（随 r 变化），不成正比例。",
       "round": 2
     },
     {
@@ -130,7 +130,12 @@
       "content": "a 和 b 成正比例，如果 a 扩大到原来的 5 倍，那么 b(    )。",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 扩大到原来的 25 倍", "B. 扩大到原来的 5 倍", "C. 缩小到原来的 1/5", "D. 不变"],
+      "options": [
+        "A. 扩大到原来的 25 倍",
+        "B. 扩大到原来的 5 倍",
+        "C. 缩小到原来的 1/5",
+        "D. 不变"
+      ],
       "answer": "B",
       "explanation": "正比例 a/b=k（一定），a 变 5 倍，b 也要变 5 倍才能保持比值不变。",
       "round": 1
@@ -148,7 +153,7 @@
         "D. 房间的面积一定，每块正方形瓷砖的边长和所需的块数"
       ],
       "answer": "B",
-      "explanation": "B：出勤率 = 出勤人数 ÷ 总人数（一定），出勤人数/出勤率 = 总人数（一定），成正比例。A 是和一定，C 是积一定（反比例），D 不成比例（边长平方）。",
+      "explanation": "B：出勤率 = 出勤人数 $\\div$ 总人数（一定），出勤人数/出勤率 = 总人数（一定），成正比例。A 是和一定，C 是积一定（反比例），D 不成比例（边长平方）。",
       "round": 2
     },
     {
@@ -158,7 +163,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "正",
-      "explanation": "路程 ÷ 时间 = 速度 = 80 km/h（一定），成正比例。",
+      "explanation": "路程 $\\div$ 时间 = 速度 = 80 km/h（一定），成正比例。",
       "round": 1
     },
     {
@@ -168,7 +173,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "反",
-      "explanation": "单价 × 数量 = 总价（一定），成反比例。",
+      "explanation": "单价 $\\times$ 数量 = 总价（一定），成反比例。",
       "round": 1
     },
     {
@@ -178,7 +183,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "正",
-      "explanation": "总数 ÷ 捆数 = 每捆本数（一定），成正比例。",
+      "explanation": "总数 $\\div$ 捆数 = 每捆本数（一定），成正比例。",
       "round": 1
     },
     {
@@ -188,7 +193,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "反",
-      "explanation": "每时装订的册数 × 装订的时间 = 这批图书的总册数（一定），成反比例。",
+      "explanation": "每时装订的册数 $\\times$ 装订的时间 = 这批图书的总册数（一定），成反比例。",
       "round": 1
     },
     {
@@ -198,7 +203,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "3",
-      "explanation": "盐占总质量的 1/(1+250)=1/251，753×1/251=3（g）。",
+      "explanation": "盐占总质量的 1/(1+250)=1/251，753$\\times$1/251=3（g）。",
       "round": 2
     },
     {
@@ -208,7 +213,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "600",
-      "explanation": "总册数一定，每时册数 × 时间 = 一定。设每时装订 x 册：200×24=8x，x=600。",
+      "explanation": "总册数一定，每时册数 $\\times$ 时间 = 一定。设每时装订 x 册：200$\\times$24=8x，x=600。",
       "round": 2
     },
     {
@@ -218,7 +223,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "0.6",
-      "explanation": "屋子面积一定，每块面积 × 块数 = 一定（反比例）：0.16×300=48 m²，48÷80=0.6 m²。",
+      "explanation": "屋子面积一定，每块面积 $\\times$ 块数 = 一定（反比例）：0.16$\\times$300=48 m²，48$\\div$80=0.6 m²。",
       "round": 2
     }
   ]

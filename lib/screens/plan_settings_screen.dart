@@ -14,6 +14,7 @@ import '../services/data_reset_service.dart';
 import '../services/practice_service.dart';
 import '../services/reward_service.dart';
 import '../services/assessment_service.dart';
+import '../services/plan_service.dart';
 import 'curriculum_management_screen.dart';
 import 'parent_review_screen.dart';
 
@@ -836,34 +837,50 @@ class _DataResetSectionState extends State<_DataResetSection> {
   }
 
   /// 三段确认重置流程：警告弹窗 → 输入"重置"二字 → 最终确认
-  Future<void> _confirmReset() async {
+  ///
+  /// [wipePlans] 决定是否一并清空 plan_groups + plan_items（V3.12 新增）
+  Future<void> _confirmReset({required bool wipePlans}) async {
     // Step 1: 警告
+    final clearedItems = StringBuffer()
+      ..writeln('• 所有错题记录')
+      ..writeln('• 所有奖励星星')
+      ..writeln('• 所有测评成绩')
+      ..writeln('• 所有练习记录与进行中的会话')
+      ..writeln('• 所有家长审核记录');
+    if (wipePlans) {
+      clearedItems.writeln('• 所有月/周/日计划及其完成度（整张计划清空）');
+    } else {
+      clearedItems.writeln('• 所有计划完成度（计划本身保留）');
+    }
+
     final step1 = await showDialog<bool>(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: const Row(
+        title: Row(
           children: [
-            Icon(Icons.warning_amber, color: Colors.orange, size: 24),
-            SizedBox(width: 8),
-            Text('重置学习进度'),
+            Icon(
+              wipePlans ? Icons.delete_forever : Icons.warning_amber,
+              color: wipePlans ? Colors.red : Colors.orange,
+              size: 24,
+            ),
+            const SizedBox(width: 8),
+            Text(wipePlans ? '重置全部（含计划）' : '重置学习进度'),
           ],
         ),
-        content: const Text(
+        content: Text(
           '此操作会清空：\n\n'
-          '• 所有错题记录\n'
-          '• 所有奖励星星\n'
-          '• 所有测评成绩\n'
-          '• 所有练习记录与进行中的会话\n'
-          '• 所有家长审核记录\n'
-          '• 所有计划完成度（计划本身保留）\n\n'
+          '$clearedItems\n'
           '题目本身不删。归档保留 7 天，期间可回滚。',
-          style: TextStyle(fontSize: 13),
+          style: const TextStyle(fontSize: 13),
         ),
         actions: [
           TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text('取消')),
           TextButton(
             onPressed: () => Navigator.pop(ctx, true),
-            child: const Text('继续', style: TextStyle(color: Colors.orange)),
+            child: Text(
+              '继续',
+              style: TextStyle(color: wipePlans ? Colors.red : Colors.orange),
+            ),
           ),
         ],
       ),
@@ -928,8 +945,12 @@ class _DataResetSectionState extends State<_DataResetSection> {
     if (step3 != true || !mounted) return;
 
     // 执行重置
-    final reason = '手动重置 ${DateFormat('yyyy-MM-dd HH:mm').format(DateTime.now())}';
-    final batchId = await DataResetService().resetAllProgress(reason: reason);
+    final timestamp = DateFormat('yyyy-MM-dd HH:mm').format(DateTime.now());
+    final reason = wipePlans ? '手动重置（含计划）$timestamp' : '手动重置 $timestamp';
+    final batchId = await DataResetService().resetAllProgress(
+      reason: reason,
+      wipePlans: wipePlans,
+    );
 
     if (!mounted) return;
     if (batchId == null) {
@@ -949,14 +970,18 @@ class _DataResetSectionState extends State<_DataResetSection> {
   }
 
   Future<void> _confirmRollback(DataResetArchive archive) async {
+    final detail = archive.includesPlans
+        ? '这会把 ${archive.totalRowsArchived} 行进度数据 + '
+            '${archive.stats['plan_groups'] ?? 0} 个计划组 + '
+            '${archive.stats['plan_items'] ?? 0} 个计划项整体恢复。'
+        : '这会把 ${archive.totalRowsArchived} 行进度数据恢复回主表，'
+            '同时回滚 ${archive.stats['plan_items_completion'] ?? 0} 项计划完成度。';
     final ok = await showDialog<bool>(
       context: context,
       builder: (ctx) => AlertDialog(
         title: const Text('回滚归档？'),
         content: Text(
-          '这会把 ${archive.totalRowsArchived} 行进度数据恢复回主表，'
-          '同时回滚 ${archive.stats['plan_items_completion'] ?? 0} 项计划完成度。\n\n'
-          '回滚后该归档会被删除，无法再次回滚。',
+          '$detail\n\n回滚后该归档会被删除，无法再次回滚。',
           style: const TextStyle(fontSize: 13),
         ),
         actions: [
@@ -1001,6 +1026,10 @@ class _DataResetSectionState extends State<_DataResetSection> {
     try {
       context.read<PracticeService>().endSession();
     } catch (_) {}
+    // wipePlans 时 plan_groups/plan_items 整表变更，PlanService 必须重读
+    try {
+      await context.read<PlanService>().reload();
+    } catch (_) {}
   }
 
   @override
@@ -1009,13 +1038,24 @@ class _DataResetSectionState extends State<_DataResetSection> {
       child: Column(
         children: [
           ListTile(
-            leading: const Icon(Icons.delete_sweep, color: Colors.red),
-            title: const Text('重置全部学习数据'),
-            subtitle: const Text('清空错题/奖励/测评/练习记录/计划完成度（题目不删）'),
+            leading: const Icon(Icons.delete_sweep, color: Colors.orange),
+            title: const Text('重置学习数据'),
+            subtitle: const Text('清空错题/奖励/测评/练习记录/计划完成度（计划本身保留）'),
             trailing: TextButton(
-              onPressed: _confirmReset,
-              style: TextButton.styleFrom(foregroundColor: Colors.red),
+              onPressed: () => _confirmReset(wipePlans: false),
+              style: TextButton.styleFrom(foregroundColor: Colors.orange),
               child: const Text('重置'),
+            ),
+          ),
+          const Divider(height: 1, indent: 56),
+          ListTile(
+            leading: const Icon(Icons.delete_forever, color: Colors.red),
+            title: const Text('重置全部（含计划）'),
+            subtitle: const Text('上面那项 + 整张月/周/日计划全部清空'),
+            trailing: TextButton(
+              onPressed: () => _confirmReset(wipePlans: true),
+              style: TextButton.styleFrom(foregroundColor: Colors.red),
+              child: const Text('全部重置'),
             ),
           ),
           if (_loading)
@@ -1042,10 +1082,18 @@ class _DataResetSectionState extends State<_DataResetSection> {
 
   Widget _buildArchiveTile(DataResetArchive a) {
     final timeStr = DateFormat('MM-dd HH:mm').format(a.createdAt);
+    final tag = a.includesPlans ? ' · 含计划' : '';
     return ListTile(
       dense: true,
-      leading: const Icon(Icons.history, color: Colors.grey, size: 20),
-      title: Text('$timeStr · ${a.totalRowsArchived} 行', style: const TextStyle(fontSize: 13)),
+      leading: Icon(
+        a.includesPlans ? Icons.delete_forever : Icons.history,
+        color: a.includesPlans ? Colors.red : Colors.grey,
+        size: 20,
+      ),
+      title: Text(
+        '$timeStr · ${a.totalRowsArchived} 行$tag',
+        style: const TextStyle(fontSize: 13),
+      ),
       subtitle: Text(
         '${a.reason}\n剩余可回滚：${a.daysUntilExpiry} 天',
         style: const TextStyle(fontSize: 11),

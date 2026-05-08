@@ -7,22 +7,24 @@
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/比例的基本性质",
-      "content": "3:4 = (    ):12 = 12:(    ) = 24÷(    ) = (    )%。请依次填四个数字，逗号分隔。",
+      "content": "3:4 = (    ):12 = 12:(    ) = 24$\\div$(    ) = (    )%。请依次填四个数字，逗号分隔。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "9,16,32,75",
-      "explanation": "3/4 = 9/12（3×3）= 12/16（×4/3）；3/4 = 24/32；3/4 = 75/100 = 75%。",
+      "explanation": "3/4 = 9/12（3$\\times$3）= 12/16（$\\times$4/3）；3/4 = 24/32；3/4 = 75/100 = 75%。",
       "round": 2
     },
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/比例的基本性质",
-      "content": "在一个比例里，两个外项互为倒数（积为 1），其中一个内项是最小的合数 4，则另一个内项是(    )。请填一个分数（如 1/4）。",
+      "content": "在一个比例里，两个外项互为倒数（积为 1），其中一个内项是最小的合数 4，则另一个内项是(    )。请填一个分数。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "1/4",
-      "alt_answers": ["0.25"],
-      "explanation": "外项之积 = 内项之积 = 1，故另一内项 = 1÷4 = 1/4。",
+      "alt_answers": [
+        "0.25"
+      ],
+      "explanation": "外项之积 = 内项之积 = 1，故另一内项 = 1$\\div$4 = 1/4。",
       "round": 2
     },
     {
@@ -32,7 +34,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "1.5",
-      "explanation": "模型:实物 = 10:1，模型高 = 15×10 = 150 cm = 1.5 m。",
+      "explanation": "模型:实物 = 10:1，模型高 = 15$\\times$10 = 150 cm = 1.5 m。",
       "round": 2
     },
     {
@@ -52,7 +54,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "4",
-      "explanation": "内项之积 = 外项之积 = 2，另一内项 = 2÷0.5 = 4。",
+      "explanation": "内项之积 = 外项之积 = 2，另一内项 = 2$\\div$0.5 = 4。",
       "round": 2
     },
     {
@@ -91,9 +93,14 @@
       "content": "下列各组比能与 1/5 : 1/6 组成比例的是(    )。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 5:6", "B. 6:5", "C. 1/6 : 1/5", "D. 1/5 : 1/6 的相反数"],
+      "options": [
+        "A. 5:6",
+        "B. 6:5",
+        "C. 1/6 : 1/5",
+        "D. 1/5 : 1/6 的相反数"
+      ],
       "answer": "B",
-      "explanation": "1/5 : 1/6 = (1/5)÷(1/6) = 6/5 = 6:5，故选 B。",
+      "explanation": "1/5 : 1/6 = (1/5)$\\div$(1/6) = 6/5 = 6:5，故选 B。",
       "round": 2
     },
     {
@@ -102,7 +109,12 @@
       "content": "(    )不能与 1、2、3 组成比例。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 1.5", "B. 6", "C. 2/3", "D. 1/2"],
+      "options": [
+        "A. 1.5",
+        "B. 6",
+        "C. 2/3",
+        "D. 1/2"
+      ],
       "answer": "D",
       "explanation": "A: 1.5:3 = 1:2；B: 1:2 = 3:6；C: 2/3 : 1 = 2:3。D 与 1、2、3 任意搭配都不成比例。",
       "round": 3
@@ -113,9 +125,14 @@
       "content": "下面(    )组的两个比不能组成比例。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 19:109 和 91:901", "B. 1/2 : 1/3 和 1/6 : 1/9", "C. 7:8 和 14:16", "D. 5:2.5 和 1:0.5"],
+      "options": [
+        "A. 19:109 和 91:901",
+        "B. 1/2 : 1/3 和 1/6 : 1/9",
+        "C. 7:8 和 14:16",
+        "D. 5:2.5 和 1:0.5"
+      ],
       "answer": "A",
-      "explanation": "A：19×901 = 17119，109×91 = 9919，不相等。其余三组内外项之积均相等。",
+      "explanation": "A：19$\\times$901 = 17119，109$\\times$91 = 9919，不相等。其余三组内外项之积均相等。",
       "round": 3
     },
     {
@@ -124,7 +141,12 @@
       "content": "从甲地到乙地，客车和货车所用的时间比是 4:5，那么它们的速度之比是(    )。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 5:4", "B. 1/5 : 1/4", "C. 4:5", "D. 无法确定"],
+      "options": [
+        "A. 5:4",
+        "B. 1/5 : 1/4",
+        "C. 4:5",
+        "D. 无法确定"
+      ],
       "answer": "A",
       "explanation": "路程相同，速度与时间成反比例，时间比 4:5 → 速度比 5:4。",
       "round": 2
@@ -136,7 +158,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "5",
-      "explanation": "9x = 3×15 = 45，x = 5。",
+      "explanation": "9x = 3$\\times$15 = 45，x = 5。",
       "round": 2
     },
     {
@@ -146,18 +168,20 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "300",
-      "explanation": "0.49x = 9.8×15 = 147，x = 300。",
+      "explanation": "0.49x = 9.8$\\times$15 = 147，x = 300。",
       "round": 3
     },
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/解比例",
-      "content": "解比例：(3/4) : (1/5) = x : (2/5)。x = (    )（填分数，如 3/2）",
+      "content": "解比例：(3/4) : (1/5) = x : (2/5)。x = (    )（填分数）",
       "type": "fill",
       "difficulty": "medium",
       "answer": "3/2",
-      "alt_answers": ["1.5"],
-      "explanation": "(1/5)x = (3/4)×(2/5) = 3/10，x = (3/10)÷(1/5) = 3/2。",
+      "alt_answers": [
+        "1.5"
+      ],
+      "explanation": "(1/5)x = (3/4)$\\times$(2/5) = 3/10，x = (3/10)$\\div$(1/5) = 3/2。",
       "round": 3
     },
     {
@@ -167,8 +191,10 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "1/5",
-      "alt_answers": ["0.2"],
-      "explanation": "(3/4)x = 0.6×(1/4) = 0.15，x = 0.15÷(3/4) = 0.2 = 1/5。",
+      "alt_answers": [
+        "0.2"
+      ],
+      "explanation": "(3/4)x = 0.6$\\times$(1/4) = 0.15，x = 0.15$\\div$(3/4) = 0.2 = 1/5。",
       "round": 3
     },
     {
@@ -178,18 +204,20 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "0.2",
-      "alt_answers": ["1/5"],
-      "explanation": "2.48x = 1.24×0.4 = 0.496，x = 0.2。",
+      "alt_answers": [
+        "1/5"
+      ],
+      "explanation": "2.48x = 1.24$\\times$0.4 = 0.496，x = 0.2。",
       "round": 3
     },
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/解比例",
-      "content": "解比例：14/x = 21/4。x = (    )（填分数，如 8/3）",
+      "content": "解比例：14/x = 21/4。x = (    )（填分数）",
       "type": "fill",
       "difficulty": "medium",
       "answer": "8/3",
-      "explanation": "21x = 14×4 = 56，x = 56/21 = 8/3。",
+      "explanation": "21x = 14$\\times$4 = 56，x = 56/21 = 8/3。",
       "round": 3
     },
     {
@@ -199,7 +227,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "55",
-      "explanation": "比萨斜塔高 = 160÷32×11 = 5×11 = 55 m。",
+      "explanation": "比萨斜塔高 = 160$\\div$32$\\times$11 = 5$\\times$11 = 55 m。",
       "round": 3
     },
     {
@@ -219,7 +247,7 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "180",
-      "explanation": "设添置 x 本，360:(360+x) = 2:3，2(360+x) = 3×360，720+2x = 1080，x = 180。",
+      "explanation": "设添置 x 本，360:(360+x) = 2:3，2(360+x) = 3$\\times$360，720+2x = 1080，x = 180。",
       "round": 3
     },
     {
@@ -229,7 +257,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "36",
-      "explanation": "1.8:x = 1:200，x = 1.8×200 = 360 dm = 36 m。",
+      "explanation": "1.8:x = 1:200，x = 1.8$\\times$200 = 360 dm = 36 m。",
       "round": 3
     },
     {
@@ -239,7 +267,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "0.24",
-      "explanation": "48÷200 = 0.24 m。",
+      "explanation": "48$\\div$200 = 0.24 m。",
       "round": 3
     }
   ]

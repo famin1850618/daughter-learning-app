@@ -21,7 +21,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "18",
-      "explanation": "等底等积时，圆锥的高是圆柱的 3 倍，故 6×3＝18 dm。",
+      "explanation": "等底等积时，圆锥的高是圆柱的 3 倍，故 6$\\times$3＝18 dm。",
       "round": 2
     },
     {
@@ -31,7 +31,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "8.1,2.7",
-      "explanation": "等底等高时圆锥体积是圆柱的 1/3，削去部分占 2/3。原木料 V＝5.4÷(2/3)＝8.1 dm³，圆锥 V＝8.1×1/3＝2.7 dm³。",
+      "explanation": "等底等高时圆锥体积是圆柱的 1/3，削去部分占 2/3。原木料 V＝5.4$\\div$(2/3)＝8.1 dm³，圆锥 V＝8.1$\\times$1/3＝2.7 dm³。",
       "round": 2
     },
     {
@@ -41,7 +41,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "2/3",
-      "explanation": "V＝1/3×π×r²×h，h＝3V÷(πr²)＝3×6.28÷(3.14×9)＝18.84÷28.26＝2/3 cm。",
+      "explanation": "V＝1/3$\\times\\pi\\times r^{2}\\times$h，h＝3V$\\div$($\\pi r^{2}$)＝3$\\times$6.28$\\div$(3.14$\\times$9)＝18.84$\\div$28.26＝2/3 cm。",
       "round": 2
     },
     {
@@ -51,7 +51,7 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "2,4",
-      "explanation": "V＝1/3πr²h。底面积不变高 2 倍，V 变 2 倍。半径变 2 倍，底面积变 4 倍，高不变 V 变 4 倍。",
+      "explanation": "V＝1/3$\\pi r^{2}h$。底面积不变高 2 倍，V 变 2 倍。半径变 2 倍，底面积变 4 倍，高不变 V 变 4 倍。",
       "round": 3
     },
     {
@@ -61,7 +61,7 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "30",
-      "explanation": "圆柱体积＝3.14×2²×20＝251.2 dm³（2 m＝20 dm）。圆锥高＝3V÷S＝3×251.2÷25.12＝30 dm。",
+      "explanation": "圆柱体积＝3.14$\\times 2^{2}\\times$20＝251.2 dm³（2 m＝20 dm）。圆锥高＝3V$\\div$S＝3$\\times$251.2$\\div$25.12＝30 dm。",
       "round": 3
     },
     {
@@ -91,7 +91,7 @@
       "type": "judgment",
       "difficulty": "hard",
       "answer": "错",
-      "explanation": "纵切产生 2 个相同的等腰三角形截面，每个面积＝1/2×底×高＝1/2×6×6＝18 dm²，共增加 2×18＝36 dm²，不是 12 dm²。",
+      "explanation": "纵切产生 2 个相同的等腰三角形截面，每个面积＝1/2$\\times$底$\\times$高＝1/2$\\times$6$\\times$6＝18 dm²，共增加 2$\\times$18＝36 dm²，不是 12 dm²。",
       "round": 3
     },
     {
@@ -100,9 +100,14 @@
       "content": "把一支新的圆柱形铅笔削尖，笔尖（圆锥部分）的体积是削去部分体积的(    )。",
       "type": "choice",
       "difficulty": "hard",
-      "options": ["A. 1/3", "B. 2/3", "C. 1/2", "D. 2 倍"],
+      "options": [
+        "A. 1/3",
+        "B. 2/3",
+        "C. 1/2",
+        "D. 2 倍"
+      ],
       "answer": "C",
-      "explanation": "设削去段的圆柱长度为 L，原圆柱体积＝πr²L，笔尖（圆锥）体积＝1/3 πr²L，削去部分＝πr²L－1/3 πr²L＝2/3 πr²L。比值＝(1/3)÷(2/3)＝1/2。",
+      "explanation": "设削去段的圆柱长度为 L，原圆柱体积＝$\\pi r^{2}L$，笔尖（圆锥）体积＝1/3 $\\pi r^{2}L$，削去部分＝$\\pi r^{2}L$－1/3 $\\pi r^{2}L$＝2/3 $\\pi r^{2}L$。比值＝(1/3)$\\div$(2/3)＝1/2。",
       "round": 3
     },
     {
@@ -111,9 +116,14 @@
       "content": "两个圆锥的高相等，底面半径的比是 2∶3，它们体积的比是(    )。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 2∶3", "B. 4∶9", "C. 8∶27", "D. 无法确定"],
+      "options": [
+        "A. 2∶3",
+        "B. 4∶9",
+        "C. 8∶27",
+        "D. 无法确定"
+      ],
       "answer": "B",
-      "explanation": "高相等时 V＝1/3πr²h 中 h 一定，体积比＝半径平方比＝2²∶3²＝4∶9。",
+      "explanation": "高相等时 V＝1/3$\\pi r^{2}h$ 中 h 一定，体积比＝半径平方比＝$2^{2}$∶$3^{2}$＝4∶9。",
       "round": 2
     },
     {
@@ -123,7 +133,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "4121.25",
-      "explanation": "底面半径＝5÷2＝2.5 m。体积＝1/3×3.14×2.5²×1.8＝11.775 m³。大米＝11.775×500×70%＝4121.25 kg。",
+      "explanation": "底面半径＝5$\\div$2＝2.5 m。体积＝1/3$\\times$3.14$\\times$2.$5^{2}\\times$1.8＝11.775 m³。大米＝11.775$\\times$500$\\times$70%＝4121.25 kg。",
       "round": 3
     },
     {
@@ -133,7 +143,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "35.325",
-      "explanation": "底面半径＝3÷2＝1.5 cm，圆锥高＝4×3/4＝3 cm。陀螺体积＝圆柱＋圆锥＝3.14×1.5²×4＋1/3×3.14×1.5²×3＝28.26＋7.065＝35.325 cm³。",
+      "explanation": "底面半径＝3$\\div$2＝1.5 cm，圆锥高＝4$\\times$3/4＝3 cm。陀螺体积＝圆柱＋圆锥＝3.14$\\times$1.$5^{2}\\times$4＋1/3$\\times$3.14$\\times$1.$5^{2}\\times$3＝28.26＋7.065＝35.325 cm³。",
       "round": 3
     },
     {
@@ -143,7 +153,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "300",
-      "explanation": "底面半径＝37.68÷3.14÷2＝6 m。三合土体积＝1/3×3.14×6²×5＝188.4 m³。4 cm＝0.04 m。铺路长＝188.4÷(15.7×0.04)＝188.4÷0.628＝300 m。",
+      "explanation": "底面半径＝37.68$\\div$3.14$\\div$2＝6 m。三合土体积＝1/3$\\times$3.14$\\times 6^{2}\\times$5＝188.4 m³。4 cm＝0.04 m。铺路长＝188.4$\\div$(15.7$\\times$0.04)＝188.4$\\div$0.628＝300 m。",
       "round": 3
     },
     {
@@ -153,7 +163,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "18.84",
-      "explanation": "圆柱底面半径＝12÷2＝6 cm。水位下降的体积＝铅锤体积＝3.14×6²×0.5＝56.52 cm³。圆锥底面积＝3V÷h＝3×56.52÷9＝18.84 cm²。",
+      "explanation": "圆柱底面半径＝12$\\div$2＝6 cm。水位下降的体积＝铅锤体积＝3.14$\\times 6^{2}\\times$0.5＝56.52 cm³。圆锥底面积＝3V$\\div$h＝3$\\times$56.52$\\div$9＝18.84 cm²。",
       "round": 3
     }
   ]

@@ -42,7 +42,12 @@
       "content": "下面四个汉字中，造字方法与其他三个不同的一项是？",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 迫", "B. 迁", "C. 鼎", "D. 俱"],
+      "options": [
+        "A. 迫",
+        "B. 迁",
+        "C. 鼎",
+        "D. 俱"
+      ],
       "answer": "C",
       "explanation": "「迫」「迁」「俱」都是形声字（形旁加声旁），「鼎」是象形字（依鼎的外形造字），造字方法不同。",
       "round": 2
@@ -69,7 +74,12 @@
       "content": "「世界上还有几个剧种一部戏可以演出三五天还没有结束的呢？」这句话运用了哪种修辞手法？",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 夸张", "B. 比喻", "C. 设问", "D. 反问"],
+      "options": [
+        "A. 夸张",
+        "B. 比喻",
+        "C. 设问",
+        "D. 反问"
+      ],
       "answer": "D",
       "explanation": "句中以反问的形式（「还有几个……呢？」）表达「没有几个」的肯定意思，强调藏戏剧目的独特，是反问修辞。",
       "round": 1
@@ -112,7 +122,12 @@
       "content": "《十六年前的回忆》中，「他脸上的表情非常安定，非常沉着」表现了谁坚毅的品质？",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 周恩来", "B. 阎振三", "C. 江姐", "D. 李大钊"],
+      "options": [
+        "A. 周恩来",
+        "B. 阎振三",
+        "C. 江姐",
+        "D. 李大钊"
+      ],
       "answer": "D",
       "explanation": "《十六年前的回忆》是李星华回忆父亲李大钊的文章，被捕后法庭上「非常安定，非常沉着」描写的正是李大钊坚毅不屈的革命者形象。",
       "round": 1
@@ -123,7 +138,12 @@
       "content": "将句子「在做作业的时候他们就可以互相帮助，」插入下面一段话中，最合适的位置是？\n原文：玛琪叹了口气，去上课。她脑子里还在想着当她爷爷的爷爷是个小孩子的时候，①他们上的那种老式学校。附近所有的孩子都到一处去上学，他们在校园里笑啊、喊啊，他们一起坐在课堂里上课；②上完一天的课，就一块儿回家③。他们学的功课都一样，这样，④有问题还可以互相讨论。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. ①", "B. ②", "C. ③", "D. ④"],
+      "options": [
+        "A. ①",
+        "B. ②",
+        "C. ③",
+        "D. ④"
+      ],
       "answer": "D",
       "explanation": "插入句的「互相帮助」与原文④处「有问题还可以互相讨论」语意衔接最紧密，且共同对应「他们学的功课都一样，这样」的结果，故选 D。",
       "round": 2
@@ -147,7 +167,7 @@
     {
       "chapter": "字词",
       "knowledge_point": "字词/字形",
-      "content": "看拼音写词语：fěn suì（不带声调）。",
+      "content": "看拼音写词语：fěn suì。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "粉碎",
@@ -157,7 +177,7 @@
     {
       "chapter": "字词",
       "knowledge_point": "字词/字形",
-      "content": "看拼音写词语：shuǐ yuán（不带声调）。",
+      "content": "看拼音写词语：shuǐ yuán。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "水源",
@@ -167,7 +187,7 @@
     {
       "chapter": "字词",
       "knowledge_point": "字词/字形",
-      "content": "看拼音写词语：quē fá（不带声调）。",
+      "content": "看拼音写词语：quē fá。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "缺乏",
@@ -177,7 +197,7 @@
     {
       "chapter": "字词",
       "knowledge_point": "字词/字形",
-      "content": "看拼音写词语：chǔ jìng（不带声调）。",
+      "content": "看拼音写词语：chǔ jìng。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "处境",
@@ -187,7 +207,7 @@
     {
       "chapter": "字词",
       "knowledge_point": "字词/字形",
-      "content": "看拼音写词语：nuó yí（不带声调）。",
+      "content": "看拼音写词语：nuó yí。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "挪移",
@@ -197,7 +217,7 @@
     {
       "chapter": "字词",
       "knowledge_point": "字词/字形",
-      "content": "看拼音写词语：jūn fá（不带声调）。",
+      "content": "看拼音写词语：jūn fá。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "军阀",
@@ -207,7 +227,7 @@
     {
       "chapter": "字词",
       "knowledge_point": "字词/字形",
-      "content": "看拼音写词语：ān dìng（不带声调）。",
+      "content": "看拼音写词语：ān dìng。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "安定",
@@ -217,7 +237,7 @@
     {
       "chapter": "字词",
       "knowledge_point": "字词/字形",
-      "content": "看拼音写词语：zé rèn（不带声调）。",
+      "content": "看拼音写词语：zé rèn。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "责任",
@@ -227,7 +247,7 @@
     {
       "chapter": "字词",
       "knowledge_point": "字词/字形",
-      "content": "看拼音写词语：xué shuō（不带声调）。",
+      "content": "看拼音写词语：xué shuō。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "学说",
@@ -237,7 +257,7 @@
     {
       "chapter": "字词",
       "knowledge_point": "字词/字形",
-      "content": "看拼音写词语：jiàn jiě（不带声调）。",
+      "content": "看拼音写词语：jiàn jiě。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "见解",
@@ -306,7 +326,12 @@
       "content": "阅读「网络安全」材料：「攻击受害者的分布略有不同，从中国看，受害者集中于东南沿海地区……」据此，从中国看，受害者集中于哪个地区？",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 南部沿海", "B. 华东沿海", "C. 东南沿海", "D. 西部内陆"],
+      "options": [
+        "A. 南部沿海",
+        "B. 华东沿海",
+        "C. 东南沿海",
+        "D. 西部内陆"
+      ],
       "answer": "C",
       "explanation": "材料明确指出「从中国看，受害者集中于东南沿海地区」，故选 C。",
       "round": 1
@@ -365,7 +390,12 @@
       "content": "阅读《纵观气象发展史》：根据文中「海拔每升高 100 米，气温便会降低 0.6℃」可推算，海拔每升高 1000 米，气温便会降低（    ）℃。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 0.6", "B. 0.06", "C. 6", "D. 60"],
+      "options": [
+        "A. 0.6",
+        "B. 0.06",
+        "C. 6",
+        "D. 60"
+      ],
       "answer": "C",
       "explanation": "100 米降 0.6℃，1000 米是 100 米的 10 倍，故降温 0.6×10＝6℃，选 C。",
       "round": 2
@@ -376,7 +406,12 @@
       "content": "阅读《纵观气象发展史》：白居易诗「人间四月芳菲尽，山寺桃花始盛开」中，大林寺的桃花开得比山下迟的原因是？",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 种得迟", "B. 种得早", "C. 气温低", "D. 气温高"],
+      "options": [
+        "A. 种得迟",
+        "B. 种得早",
+        "C. 气温低",
+        "D. 气温高"
+      ],
       "answer": "C",
       "explanation": "文中说明大林寺所处山地比平原高出 1100 余米，海拔升高使气温下降，气温低导致桃花花期延后，选 C。",
       "round": 2
@@ -387,7 +422,12 @@
       "content": "阅读《记忆里的香甜》：「我」带邻居家的孩子到雨中玩耍导致她发烧，被外公打了，此时「我」的心情是？",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 喜", "B. 怒", "C. 恨", "D. 乐"],
+      "options": [
+        "A. 喜",
+        "B. 怒",
+        "C. 恨",
+        "D. 乐"
+      ],
       "answer": "C",
       "explanation": "原文最后一句「我恨死外公了」直接点明了「我」的心情是恨，选 C。",
       "round": 1
@@ -414,7 +454,12 @@
       "content": "阅读《记忆里的香甜》：「外公突然从堂屋跑出来，大喝一声：『快回来！』」此处应读出（    ）的语气。",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 愤怒", "B. 轻柔", "C. 嘲笑", "D. 可怜"],
+      "options": [
+        "A. 愤怒",
+        "B. 轻柔",
+        "C. 嘲笑",
+        "D. 可怜"
+      ],
       "answer": "A",
       "explanation": "「突然」「大喝」「眼神语气仿佛洪水猛兽」等词都体现外公此刻的愤怒，应用愤怒的语气朗读，选 A。",
       "round": 1

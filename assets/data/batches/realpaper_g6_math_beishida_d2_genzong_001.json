@@ -11,17 +11,17 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "0.4",
-      "explanation": "比例的基本性质：两外项之积等于两内项之积。两内项互为倒数，乘积是 1，所以两外项之积也是 1。另一外项 = 1÷2.5 = 0.4。",
+      "explanation": "比例的基本性质：两外项之积等于两内项之积。两内项互为倒数，乘积是 1，所以两外项之积也是 1。另一外项 = 1$\\div$2.5 = 0.4。",
       "round": 2
     },
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/比例的基本性质",
-      "content": "若 a∶b＝3∶5，则 a×(    )＝b×(    )。请依次填两个答案，逗号分隔。",
+      "content": "若 a∶b＝3∶5，则 a$\\times$(    )＝b$\\times$(    )。请依次填两个答案，逗号分隔。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "5,3",
-      "explanation": "由比例 a:b=3:5 得 5a = 3b，即 a×5 = b×3。",
+      "explanation": "由比例 a:b=3:5 得 5a = 3b，即 a$\\times$5 = b$\\times$3。",
       "round": 2
     },
     {
@@ -41,7 +41,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "75",
-      "explanation": "红色:黄色 = 3:1，黄色 25 个，红色 = 25×3 = 75 个。",
+      "explanation": "红色:黄色 = 3:1，黄色 25 个，红色 = 25$\\times$3 = 75 个。",
       "round": 1
     },
     {
@@ -61,7 +61,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "6:7",
-      "explanation": "男×1/6 = 女×1/7，男:女 = (1/7):(1/6) = 6:7。",
+      "explanation": "男$\\times$1/6 = 女$\\times$1/7，男:女 = (1/7):(1/6) = 6:7。",
       "round": 2
     },
     {
@@ -71,7 +71,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "3",
-      "explanation": "1020 km = 102000000 cm，图上距离 = 102000000 ÷ 34000000 = 3 cm。",
+      "explanation": "1020 km = 102000000 cm，图上距离 = 102000000 $\\div$ 34000000 = 3 cm。",
       "round": 2
     },
     {
@@ -81,7 +81,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "4:1",
-      "explanation": "边长比 2:1，面积比 = 2²:1² = 4:1。",
+      "explanation": "边长比 2:1，面积比 = $2^{2}$:$1^{2}$ = 4:1。",
       "round": 1
     },
     {
@@ -91,7 +91,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "4.272",
-      "explanation": "实际长度 = 35.6×12 = 427.2 cm = 4.272 m。",
+      "explanation": "实际长度 = 35.6$\\times$12 = 427.2 cm = 4.272 m。",
       "round": 2
     },
     {
@@ -101,7 +101,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "20:1,6.4",
-      "explanation": "10 cm = 100 mm，比例尺 = 100:5 = 20:1。图上宽 = 3.2×20 = 64 mm = 6.4 cm。",
+      "explanation": "10 cm = 100 mm，比例尺 = 100:5 = 20:1。图上宽 = 3.2$\\times$20 = 64 mm = 6.4 cm。",
       "round": 3
     },
     {
@@ -111,7 +111,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "40",
-      "explanation": "放大后长 4×2 = 8 dm，宽 2.5×2 = 5 dm，面积 = 8×5 = 40 dm²。",
+      "explanation": "放大后长 4$\\times$2 = 8 dm，宽 2.5$\\times$2 = 5 dm，面积 = 8$\\times$5 = 40 dm²。",
       "round": 2
     },
     {
@@ -151,7 +151,7 @@
       "type": "judgment",
       "difficulty": "medium",
       "answer": "错",
-      "explanation": "周长按边长比放大 4 倍正确，但面积按边长比的平方放大 4²=16 倍，所以面积是原来的 16 倍。",
+      "explanation": "周长按边长比放大 4 倍正确，但面积按边长比的平方放大 $4^{2}$=16 倍，所以面积是原来的 16 倍。",
       "round": 2
     },
     {
@@ -170,20 +170,30 @@
       "content": "能与 4，5 和 8 组成比例的数是(    )。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 1", "B. 2", "C. 3", "D. 10"],
+      "options": [
+        "A. 1",
+        "B. 2",
+        "C. 3",
+        "D. 10"
+      ],
       "answer": "D",
-      "explanation": "组比例需有两数之积等于另两数之积。试 D：4×10 = 40 = 5×8，所以 4:5 = 8:10 成立。",
+      "explanation": "组比例需有两数之积等于另两数之积。试 D：4$\\times$10 = 40 = 5$\\times$8，所以 4:5 = 8:10 成立。",
       "round": 2
     },
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/比例的基本性质",
-      "content": "根据 4×9＝3×12 写成的比例，不正确的是(    )。",
+      "content": "根据 4$\\times$9＝3$\\times$12 写成的比例，不正确的是(    )。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 4∶3＝12∶9", "B. 3∶4＝9∶12", "C. 4∶9＝3∶12", "D. 12∶9＝4∶3"],
+      "options": [
+        "A. 4∶3＝12∶9",
+        "B. 3∶4＝9∶12",
+        "C. 4∶9＝3∶12",
+        "D. 12∶9＝4∶3"
+      ],
       "answer": "C",
-      "explanation": "由 4×9 = 3×12 写比例，C 项中外项积 4×12 = 48，内项积 9×3 = 27，不相等，不成立。",
+      "explanation": "由 4$\\times$9 = 3$\\times$12 写比例，C 项中外项积 4$\\times$12 = 48，内项积 9$\\times$3 = 27，不相等，不成立。",
       "round": 2
     },
     {
@@ -192,7 +202,12 @@
       "content": "比例尺 100∶1 表示(    )。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 图上距离是实际距离的 1/100", "B. 实际距离是图上距离的 1/100", "C. 图上距离 100 cm 相当于实际距离 1 m", "D. 实际距离 1 cm 相当于图上距离 100 m"],
+      "options": [
+        "A. 图上距离是实际距离的 1/100",
+        "B. 实际距离是图上距离的 1/100",
+        "C. 图上距离 100 cm 相当于实际距离 1 m",
+        "D. 实际距离 1 cm 相当于图上距离 100 m"
+      ],
       "answer": "B",
       "explanation": "比例尺 100:1，图:实 = 100:1，实际是图上的 1/100。C 中 100 cm = 1 m 看似相等，但单位换算后图实比为 1:1 不符；正确表述是 B。",
       "round": 2
@@ -203,9 +218,14 @@
       "content": "君合小区的草坪长 120 m，宽 80 m，把它的平面图画在作业本上，选用比例尺(    )比较合适。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 1/200", "B. 1/2000", "C. 1/20000", "D. 1/100000"],
+      "options": [
+        "A. 1/200",
+        "B. 1/2000",
+        "C. 1/20000",
+        "D. 1/100000"
+      ],
       "answer": "B",
-      "explanation": "1/2000 时图上长 120÷20 = 6 cm，宽 80÷20 = 4 cm，正好画在作业本上。其他比例尺画出来过大或过小。",
+      "explanation": "1/2000 时图上长 120$\\div$20 = 6 cm，宽 80$\\div$20 = 4 cm，正好画在作业本上。其他比例尺画出来过大或过小。",
       "round": 2
     },
     {
@@ -215,7 +235,7 @@
       "type": "calculation",
       "difficulty": "easy",
       "answer": "0.15",
-      "explanation": "由比例性质：0.8x = 0.3×0.4 = 0.12，x = 0.15。",
+      "explanation": "由比例性质：0.8x = 0.3$\\times$0.4 = 0.12，x = 0.15。",
       "round": 1
     },
     {
@@ -225,7 +245,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "24",
-      "explanation": "由比例性质：(2/3)x = 20×(4/5) = 16，x = 16÷(2/3) = 24。",
+      "explanation": "由比例性质：(2/3)x = 20$\\times$(4/5) = 16，x = 16$\\div$(2/3) = 24。",
       "round": 2
     },
     {
@@ -235,7 +255,7 @@
       "type": "calculation",
       "difficulty": "easy",
       "answer": "5",
-      "explanation": "18x = 25×3.6 = 90，x = 5。",
+      "explanation": "18x = 25$\\times$3.6 = 90，x = 5。",
       "round": 1
     },
     {
@@ -245,7 +265,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "4/27",
-      "explanation": "(1/4)x = (1/9)×(1/3) = 1/27，x = (1/27)×4 = 4/27。",
+      "explanation": "(1/4)x = (1/9)$\\times$(1/3) = 1/27，x = (1/27)$\\times$4 = 4/27。",
       "round": 2
     },
     {
@@ -255,7 +275,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "324",
-      "explanation": "设实际高度 x m，108:x = 1:3，x = 108×3 = 324 m。",
+      "explanation": "设实际高度 x m，108:x = 1:3，x = 108$\\times$3 = 324 m。",
       "round": 2
     },
     {
@@ -275,7 +295,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "9",
-      "explanation": "实际距离 = 12×3000000 = 36000000 cm，新图距离 = 36000000÷4000000 = 9 cm。",
+      "explanation": "实际距离 = 12$\\times$3000000 = 36000000 cm，新图距离 = 36000000$\\div$4000000 = 9 cm。",
       "round": 2
     },
     {
@@ -295,7 +315,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "174",
-      "explanation": "实际长度 = 58×300000 = 17400000 cm = 174 km。",
+      "explanation": "实际长度 = 58$\\times$300000 = 17400000 cm = 174 km。",
       "round": 3
     }
   ]

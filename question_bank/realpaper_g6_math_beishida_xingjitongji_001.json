@@ -29,7 +29,7 @@
       "options": [
         "A. mL",
         "B. L",
-        "C. m³",
+        "C. $m^{3}$",
         "D. dm³"
       ],
       "answer": "A",
@@ -46,7 +46,7 @@
         "A. mm²",
         "B. cm²",
         "C. dm²",
-        "D. m²"
+        "D. $m^{2}$"
       ],
       "answer": "B",
       "explanation": "登记照较小，面积单位用 cm²，17 cm² 合理。",
@@ -60,7 +60,7 @@
       "difficulty": "easy",
       "answer": "4500",
       "alt_answers": "4500dm³|||4500立方分米",
-      "explanation": "1 m³ = 1000 dm³，4.5×1000 = 4500 dm³。",
+      "explanation": "1 m³ = 1000 dm³，4.5$\\times$1000 = 4500 dm³。",
       "round": 1
     },
     {
@@ -104,7 +104,7 @@
       "difficulty": "medium",
       "answer": "80",
       "alt_answers": "80cm²",
-      "explanation": "最大平行四边形的底 = 上底 8 cm，高 = 10 cm。面积 = 8×10 = 80 cm²。",
+      "explanation": "最大平行四边形的底 = 上底 8 cm，高 = 10 cm。面积 = 8$\\times$10 = 80 cm²。",
       "round": 2
     },
     {
@@ -115,18 +115,18 @@
       "difficulty": "hard",
       "answer": "40",
       "alt_answers": "40cm²",
-      "explanation": "梯形面积 = (8+12)×10÷2 = 100 cm²。最大三角形底 = 12（下底），高 10，面积 = 60 cm²。剩余 = 100-60 = 40 cm²。",
+      "explanation": "梯形面积 = (8+12)$\\times$10$\\div$2 = 100 cm²。最大三角形底 = 12（下底），高 10，面积 = 60 cm²。剩余 = 100-60 = 40 cm²。",
       "round": 3
     },
     {
       "chapter": "总复习",
       "knowledge_point": "总复习/图形与几何综合",
-      "content": "一个半圆形的直径是 8 cm，这个半圆形的周长是(    )cm。（π取3.14）",
+      "content": "一个半圆形的直径是 8 cm，这个半圆形的周长是(    )cm。（$\\pi$取3.14）",
       "type": "fill",
       "difficulty": "medium",
       "answer": "20.56",
       "alt_answers": "20.56cm",
-      "explanation": "半圆周长 = 半圆弧 + 直径 = πd÷2 + d = 3.14×8÷2 + 8 = 12.56 + 8 = 20.56 cm。",
+      "explanation": "半圆周长 = 半圆弧 + 直径 = $\\pi d\\div$2 + d = 3.14$\\times$8$\\div$2 + 8 = 12.56 + 8 = 20.56 cm。",
       "round": 2
     },
     {
@@ -137,7 +137,7 @@
       "difficulty": "easy",
       "answer": "25.12",
       "alt_answers": "25.12cm²",
-      "explanation": "半圆面积 = πr²÷2 = 3.14×16÷2 = 25.12 cm²（半径 4 cm）。",
+      "explanation": "半圆面积 = $\\pi r^{2}\\div$2 = 3.14$\\times$16$\\div$2 = 25.12 cm²（半径 4 cm）。",
       "round": 1
     },
     {
@@ -148,7 +148,7 @@
       "difficulty": "easy",
       "answer": "56",
       "alt_answers": "56dm",
-      "explanation": "棱长总和 = 4×(长+宽+高) = 4×(6+5+3) = 56 dm。",
+      "explanation": "棱长总和 = 4$\\times$(长+宽+高) = 4$\\times$(6+5+3) = 56 dm。",
       "round": 1
     },
     {
@@ -159,7 +159,7 @@
       "difficulty": "medium",
       "answer": "126",
       "alt_answers": "126dm²",
-      "explanation": "表面积 = 2(长×宽+长×高+宽×高) = 2(30+18+15) = 126 dm²。",
+      "explanation": "表面积 = 2(长$\\times$宽+长$\\times$高+宽$\\times$高) = 2(30+18+15) = 126 dm²。",
       "round": 2
     },
     {
@@ -170,7 +170,7 @@
       "difficulty": "easy",
       "answer": "90",
       "alt_answers": "90dm³",
-      "explanation": "体积 = 长×宽×高 = 6×5×3 = 90 dm³。",
+      "explanation": "体积 = 长$\\times$宽$\\times$高 = 6$\\times$5$\\times$3 = 90 dm³。",
       "round": 1
     },
     {
@@ -181,7 +181,7 @@
       "difficulty": "medium",
       "answer": "100.48",
       "alt_answers": "100.48dm³",
-      "explanation": "半径 = 25.12÷3.14÷2 = 4 dm。圆锥体积 = (1/3)×π×r²×h = (1/3)×3.14×16×6 = 100.48 dm³。",
+      "explanation": "半径 = 25.12$\\div$3.14$\\div$2 = 4 dm。圆锥体积 = (1/3)$\\times\\pi\\times r^{2}\\times$h = (1/3)$\\times$3.14$\\times$16$\\times$6 = 100.48 dm³。",
       "round": 2
     },
     {
@@ -192,7 +192,7 @@
       "difficulty": "hard",
       "answer": "0.12",
       "alt_answers": "0.12m³",
-      "explanation": "锯成 4 段需 3 刀，每刀 2 个面，共 6 个新底面。每底面 = 36÷6 = 6 dm²。体积 = 底×高 = 6×20 = 120 dm³ = 0.12 m³（高 2m=20dm）。",
+      "explanation": "锯成 4 段需 3 刀，每刀 2 个面，共 6 个新底面。每底面 = 36$\\div$6 = 6 dm²。体积 = 底$\\times$高 = 6$\\times$20 = 120 dm³ = 0.12 m³（高 2m=20dm）。",
       "round": 3
     },
     {
@@ -203,7 +203,7 @@
       "difficulty": "medium",
       "answer": "4",
       "alt_answers": "4cm",
-      "explanation": "比例：1.5 cm : 9 t = x cm : 24 t。x = 1.5×24÷9 = 4 cm。",
+      "explanation": "比例：1.5 cm : 9 t = x cm : 24 t。x = 1.5$\\times$24$\\div$9 = 4 cm。",
       "round": 2
     },
     {
@@ -270,7 +270,7 @@
         "D. 4050000 cm³"
       ],
       "answer": "B",
-      "explanation": "化为 cm³：A=4.05×10⁶=4050000；C=4050×1000=4050000；D=4050000；B=40500（少 100 倍）。",
+      "explanation": "化为 cm³：A=4.05$\\times$10⁶=4050000；C=4050$\\times$1000=4050000；D=4050000；B=40500（少 100 倍）。",
       "round": 2
     },
     {
@@ -313,7 +313,7 @@
       "difficulty": "hard",
       "answer": "168",
       "alt_answers": "168m²|||168平方米",
-      "explanation": "篱笆围三边 = 上底 + 两腰 + 下底（其中一边是围墙）。简化解：(40-12)×12÷2 = 168 m²（按原题数据）。",
+      "explanation": "篱笆围三边 = 上底 + 两腰 + 下底（其中一边是围墙）。简化解：(40-12)$\\times$12$\\div$2 = 168 m²（按原题数据）。",
       "round": 3
     },
     {
@@ -324,7 +324,7 @@
       "difficulty": "medium",
       "answer": "376",
       "alt_answers": "376dm²|||376平方分米",
-      "explanation": "需 6 个面（封闭油箱）。表面积 = 2(10×8+10×6+8×6) = 2(80+60+48) = 2×188 = 376 dm²。",
+      "explanation": "需 6 个面（封闭油箱）。表面积 = 2(10$\\times$8+10$\\times$6+8$\\times$6) = 2(80+60+48) = 2$\\times$188 = 376 dm²。",
       "round": 2
     },
     {
@@ -335,7 +335,7 @@
       "difficulty": "medium",
       "answer": "360",
       "alt_answers": "360kg|||360千克",
-      "explanation": "容积 = 10×8×6 = 480 dm³ = 480 L。汽油重 = 480×0.75 = 360 kg。",
+      "explanation": "容积 = 10$\\times$8$\\times$6 = 480 dm³ = 480 L。汽油重 = 480$\\times$0.75 = 360 kg。",
       "round": 2
     },
     {
@@ -346,7 +346,7 @@
       "difficulty": "hard",
       "answer": "62.8",
       "alt_answers": "62.8cm|||62.8厘米",
-      "explanation": "圆锥半径 = 25.12÷3.14÷2 = 4 m。沙体积 = (1/3)×3.14×16×1.5 = 25.12 m³。沙坑底面积 = 8×5 = 40 m²。厚度 = 25.12÷40 = 0.628 m = 62.8 cm。",
+      "explanation": "圆锥半径 = 25.12$\\div$3.14$\\div$2 = 4 m。沙体积 = (1/3)$\\times$3.14$\\times$16$\\times$1.5 = 25.12 m³。沙坑底面积 = 8$\\times$5 = 40 m²。厚度 = 25.12$\\div$40 = 0.628 m = 62.8 cm。",
       "round": 3
     },
     {
@@ -357,7 +357,7 @@
       "difficulty": "hard",
       "answer": "131.88",
       "alt_answers": "131.88dm²",
-      "explanation": "分段：6.28÷2 = 3.14（每个底面积），所以底面半径 1 dm，直径 2 dm。沿直径劈：80÷2 = 40 是 2 个矩形，每个矩形 = 直径×高 = 2×h = 40，h = 20 dm。原表面积 = 侧 + 2底 = π×d×h + 2π×r² = 3.14×2×20 + 2×3.14×1² = 125.6 + 6.28 = 131.88 dm²。",
+      "explanation": "分段：6.28$\\div$2 = 3.14（每个底面积），所以底面半径 1 dm，直径 2 dm。沿直径劈：80$\\div$2 = 40 是 2 个矩形，每个矩形 = 直径$\\times$高 = 2$\\times$h = 40，h = 20 dm。原表面积 = 侧 + 2底 = $\\pi\\times$d$\\times$h + 2$\\pi\\times r^{2}$ = 3.14$\\times$2$\\times$20 + 2$\\times$3.14$\\times 1^{2}$ = 125.6 + 6.28 = 131.88 dm²。",
       "round": 3
     }
   ]

@@ -17,41 +17,41 @@
     {
       "chapter": "圆柱与圆锥",
       "knowledge_point": "圆柱与圆锥/圆柱的认识",
-      "content": "一个长 5 cm、宽 4 cm 的长方形，以它的长所在的直线为轴旋转一周，得到的图形是(    )，它的表面积是(    )cm²，体积是(    )cm³。请依次填三个答案，用逗号分隔。（π取3.14）",
+      "content": "一个长 5 cm、宽 4 cm 的长方形，以它的长所在的直线为轴旋转一周，得到的图形是(    )，它的表面积是(    )cm²，体积是(    )cm³。请依次填三个答案，用逗号分隔。（$\\pi$取3.14）",
       "type": "fill",
       "difficulty": "medium",
       "answer": "圆柱,226.08,251.2",
-      "explanation": "以长（5 cm）所在直线为轴旋转，半径 r = 宽 = 4 cm，高 h = 长 = 5 cm。表面积 = 2πr² + 2πrh = 2×3.14×16 + 2×3.14×4×5 = 100.48 + 125.6 = 226.08 cm²。体积 = πr²h = 3.14×16×5 = 251.2 cm³。",
+      "explanation": "以长（5 cm）所在直线为轴旋转，半径 r = 宽 = 4 cm，高 h = 长 = 5 cm。表面积 = 2$\\pi r^{2}$+ 2$\\pi rh$ = 2$\\times$3.14$\\times$16 + 2$\\times$3.14$\\times$4$\\times$5 = 100.48 + 125.6 = 226.08 cm²。体积 = $\\pi r^{2}h$ = 3.14$\\times$16$\\times$5 = 251.2 cm³。",
       "round": 2
     },
     {
       "chapter": "圆柱与圆锥",
       "knowledge_point": "圆柱与圆锥/圆锥的认识",
-      "content": "一个直角三角形的两条直角边分别为 6 cm 和 8 cm。分别以这两条直角边为轴旋转一周，所得到的两个立体图形（都是圆锥）的体积差是(    )cm³。（π取3.14）",
+      "content": "一个直角三角形的两条直角边分别为 6 cm 和 8 cm。分别以这两条直角边为轴旋转一周，所得到的两个立体图形（都是圆锥）的体积差是(    )cm³。（$\\pi$取3.14）",
       "type": "fill",
       "difficulty": "medium",
       "answer": "100.48",
-      "explanation": "以 6 为轴旋转：圆锥半径=8，高=6，V = (1/3)×3.14×64×6 = 401.92 cm³。以 8 为轴旋转：圆锥半径=6，高=8，V = (1/3)×3.14×36×8 = 301.44 cm³。体积差 = 401.92 - 301.44 = 100.48 cm³。",
+      "explanation": "以 6 为轴旋转：圆锥半径=8，高=6，V = (1/3)$\\times$3.14$\\times$64$\\times$6 = 401.92 cm³。以 8 为轴旋转：圆锥半径=6，高=8，V = (1/3)$\\times$3.14$\\times$36$\\times$8 = 301.44 cm³。体积差 = 401.92 - 301.44 = 100.48 cm³。",
       "round": 2
     },
     {
       "chapter": "圆柱与圆锥",
       "knowledge_point": "圆柱与圆锥/圆锥的体积",
-      "content": "一个圆锥的体积是 75.36 dm³，底面半径是 4 dm，这个圆锥的高是(    )dm。（π取3.14）",
+      "content": "一个圆锥的体积是 75.36 dm³，底面半径是 4 dm，这个圆锥的高是(    )dm。（$\\pi$取3.14）",
       "type": "fill",
       "difficulty": "medium",
       "answer": "4.5",
-      "explanation": "V = (1/3)πr²h，所以 h = 3V / (πr²) = 3×75.36 / (3.14×16) = 226.08 / 50.24 = 4.5 dm。",
+      "explanation": "V = (1/3)$\\pi r^{2}h$，所以 h = 3V / ($\\pi r^{2}$) = 3$\\times$75.36 / (3.14$\\times$16) = 226.08 / 50.24 = 4.5 dm。",
       "round": 2
     },
     {
       "chapter": "圆柱与圆锥",
       "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
-      "content": "把一根长 2 m 的圆柱形木料锯成相同的三段，表面积增加了 12.56 dm²，这根圆柱形木料的体积是(    )dm³。（π取3.14）",
+      "content": "把一根长 2 m 的圆柱形木料锯成相同的三段，表面积增加了 12.56 dm²，这根圆柱形木料的体积是(    )dm³。（$\\pi$取3.14）",
       "type": "fill",
       "difficulty": "medium",
       "answer": "62.8",
-      "explanation": "锯成3段产生4个新底面（每锯一刀产生2个底面，共锯2刀=4个新底面）。所以 4πr² = 12.56，πr² = 3.14，r² = 1，r = 1 dm。原长 2 m = 20 dm。V = πr²h = 3.14 × 1 × 20 = 62.8 dm³。",
+      "explanation": "锯成3段产生4个新底面（每锯一刀产生2个底面，共锯2刀=4个新底面）。所以 4$\\pi r^{2}$= 12.56，$\\pi r^{2}$= 3.14，$r^{2}$ = 1，r = 1 dm。原长 2 m = 20 dm。V = $\\pi r^{2}h$ = 3.14 $\\times$ 1 $\\times$ 20 = 62.8 dm³。",
       "round": 2
     },
     {
@@ -71,7 +71,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "5",
-      "explanation": "等底情况下，圆锥体积 = (1/3)πr²×15 = 5πr²。倒入圆柱（同 r），水高 h = 体积/(πr²) = 5πr²/(πr²) = 5 cm。",
+      "explanation": "等底情况下，圆锥体积 = (1/3)$\\pi r^{2}\\times$15 = 5$\\pi r^{2}$。倒入圆柱（同 r），水高 h = 体积/($\\pi r^{2}$) = 5$\\pi r^{2}$/($\\pi r^{2}$) = 5 cm。",
       "round": 2
     },
     {
@@ -81,27 +81,27 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "10.8",
-      "explanation": "等底等体积时，圆锥的高是圆柱的3倍：3.6 × 3 = 10.8 dm。",
+      "explanation": "等底等体积时，圆锥的高是圆柱的3倍：3.6 $\\times$ 3 = 10.8 dm。",
       "round": 2
     },
     {
       "chapter": "圆柱与圆锥",
       "knowledge_point": "圆柱与圆锥/圆柱的体积",
-      "content": "一个圆柱，如果高增加 1 cm，那么它的侧面积就增加 25.12 cm²。如果这个圆柱的高是 25 cm，那么这个圆柱的体积是(    )cm³。（π取3.14）",
+      "content": "一个圆柱，如果高增加 1 cm，那么它的侧面积就增加 25.12 cm²。如果这个圆柱的高是 25 cm，那么这个圆柱的体积是(    )cm³。（$\\pi$取3.14）",
       "type": "fill",
       "difficulty": "medium",
       "answer": "1256",
-      "explanation": "高增加 1 cm 时侧面积增加 = 2πr×1 = 2πr = 25.12，所以 r = 4 cm。V = πr²h = 3.14×16×25 = 1256 cm³。",
+      "explanation": "高增加 1 cm 时侧面积增加 = 2$\\pi r\\times$1 = 2$\\pi r$= 25.12，所以 r = 4 cm。V = $\\pi r^{2}h$ = 3.14$\\times$16$\\times$25 = 1256 cm³。",
       "round": 2
     },
     {
       "chapter": "圆柱与圆锥",
       "knowledge_point": "圆柱与圆锥/圆柱的表面积",
-      "content": "一个圆柱的底面半径是 2 dm，截去 3 dm 长的一段，剩下的圆柱表面积比原来减少了(    )dm²，体积比原来减少了(    )dm³。请依次填两个答案，用逗号分隔。（π取3.14）",
+      "content": "一个圆柱的底面半径是 2 dm，截去 3 dm 长的一段，剩下的圆柱表面积比原来减少了(    )dm²，体积比原来减少了(    )dm³。请依次填两个答案，用逗号分隔。（$\\pi$取3.14）",
       "type": "fill",
       "difficulty": "hard",
       "answer": "37.68,37.68",
-      "explanation": "截掉一段，表面积减少 = 减少的侧面积 = 2πr×3 = 2×3.14×2×3 = 37.68 dm²。体积减少 = πr²×3 = 3.14×4×3 = 37.68 dm³。两者数值恰好相等。",
+      "explanation": "截掉一段，表面积减少 = 减少的侧面积 = 2$\\pi r\\times$3 = 2$\\times$3.14$\\times$2$\\times$3 = 37.68 dm²。体积减少 = $\\pi r^{2}\\times$3 = 3.14$\\times$4$\\times$3 = 37.68 dm³。两者数值恰好相等。",
       "round": 3
     },
     {
@@ -131,7 +131,7 @@
       "type": "judgment",
       "difficulty": "easy",
       "answer": "对",
-      "explanation": "V = 底面积 × 高，圆柱与长方体公式相同。",
+      "explanation": "V = 底面积 $\\times$ 高，圆柱与长方体公式相同。",
       "round": 1
     },
     {
@@ -141,7 +141,7 @@
       "type": "judgment",
       "difficulty": "easy",
       "answer": "对",
-      "explanation": "V = 底面积×高，体积相等可以由「底大高矮」或「底小高高」组合，不必都相等。",
+      "explanation": "V = 底面积$\\times$高，体积相等可以由「底大高矮」或「底小高高」组合，不必都相等。",
       "round": 1
     },
     {
@@ -151,7 +151,7 @@
       "type": "judgment",
       "difficulty": "medium",
       "answer": "错",
-      "explanation": "V = πr²h，半径2倍则面积4倍，再乘高2倍 = 8倍，不是4倍。",
+      "explanation": "V = $\\pi r^{2}h$，半径2倍则面积4倍，再乘高2倍 = 8倍，不是4倍。",
       "round": 2
     },
     {
@@ -160,7 +160,12 @@
       "content": "求一台压路机前轮转动一周压路的面积，就是求压路机前轮的(    )。",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 侧面积", "B. 底面积", "C. 体积", "D. 表面积"],
+      "options": [
+        "A. 侧面积",
+        "B. 底面积",
+        "C. 体积",
+        "D. 表面积"
+      ],
       "answer": "A",
       "explanation": "圆柱滚动一周覆盖的面积等于圆柱的侧面积（展开成矩形）。",
       "round": 1
@@ -168,23 +173,33 @@
     {
       "chapter": "圆柱与圆锥",
       "knowledge_point": "圆柱与圆锥/圆柱的表面积",
-      "content": "一个圆柱的底面半径是 5 dm，若高增加 2 dm，则侧面积增加(    )dm²。（π取3.14）",
+      "content": "一个圆柱的底面半径是 5 dm，若高增加 2 dm，则侧面积增加(    )dm²。（$\\pi$取3.14）",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 10", "B. 20", "C. 31.4", "D. 62.8"],
+      "options": [
+        "A. 10",
+        "B. 20",
+        "C. 31.4",
+        "D. 62.8"
+      ],
       "answer": "D",
-      "explanation": "侧面积增加 = 2πr×Δh = 2×3.14×5×2 = 62.8 dm²。",
+      "explanation": "侧面积增加 = 2$\\pi r\\times$Δh = 2$\\times$3.14$\\times$5$\\times$2 = 62.8 dm²。",
       "round": 2
     },
     {
       "chapter": "圆柱与圆锥",
       "knowledge_point": "圆柱与圆锥/圆柱的表面积",
-      "content": "制作一个底面直径是 10 cm、长 4 m 的通风管，至少需要(    )m² 的铁皮。（通风管两端无底面；π取3.14）",
+      "content": "制作一个底面直径是 10 cm、长 4 m 的通风管，至少需要(    )m² 的铁皮。（通风管两端无底面；$\\pi$取3.14）",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 1.256", "B. 12.56", "C. 125.6", "D. 1256"],
+      "options": [
+        "A. 1.256",
+        "B. 12.56",
+        "C. 125.6",
+        "D. 1256"
+      ],
       "answer": "A",
-      "explanation": "通风管只有侧面：2πr×h = π×d×h = 3.14×0.1×4 = 1.256 m²。注意单位换算：直径 10 cm = 0.1 m。",
+      "explanation": "通风管只有侧面：2$\\pi r\\times h$ = $\\pi\\times$d$\\times$h = 3.14$\\times$0.1$\\times$4 = 1.256 m²。注意单位换算：直径 10 cm = 0.1 m。",
       "round": 2
     },
     {
@@ -193,49 +208,54 @@
       "content": "用一块长 28.26 cm、宽 15.7 cm 的长方形铁皮，配上直径为(    )的圆形铁皮，可以做成容积最大的圆柱形容器。",
       "type": "choice",
       "difficulty": "hard",
-      "options": ["A. 4.5 cm", "B. 9 cm", "C. 5 cm", "D. 2.5 cm"],
+      "options": [
+        "A. 4.5 cm",
+        "B. 9 cm",
+        "C. 5 cm",
+        "D. 2.5 cm"
+      ],
       "answer": "B",
-      "explanation": "长方形围成圆柱时，可以用长边或宽边作为圆柱底面周长。比较两种容积：(1) 周长28.26 → 半径=4.5，V = π×4.5²×15.7 = 998.6 cm³；(2) 周长15.7 → 半径=2.5，V = π×2.5²×28.26 = 554.6 cm³。第一种更大，底面直径 = 9 cm。",
+      "explanation": "长方形围成圆柱时，可以用长边或宽边作为圆柱底面周长。比较两种容积：(1) 周长28.26 → 半径=4.5，V = $\\pi\\times$4.$5^{2}\\times$15.7 = 998.6 cm³；(2) 周长15.7 → 半径=2.5，V = $\\pi\\times$2.$5^{2}\\times$28.26 = 554.6 cm³。第一种更大，底面直径 = 9 cm。",
       "round": 3
     },
     {
       "chapter": "圆柱与圆锥",
       "knowledge_point": "圆柱与圆锥/圆柱的表面积",
-      "content": "计算圆柱的表面积和体积。底面直径 8 cm，高 10 cm。请依次填两个答案（表面积，体积），用逗号分隔，单位分别为 cm² 和 cm³。（π取3.14）",
+      "content": "计算圆柱的表面积和体积。底面直径 8 cm，高 10 cm。请依次填两个答案（表面积，体积），用逗号分隔，单位分别为 cm² 和 cm³。（$\\pi$取3.14）",
       "type": "fill",
       "difficulty": "medium",
       "answer": "351.68,502.4",
-      "explanation": "半径 r = 4 cm。侧面积 = 2πrh = 3.14×8×10 = 251.2，两底面积 = 2×3.14×16 = 100.48，表面积 = 251.2+100.48 = 351.68 cm²。体积 = πr²h = 3.14×16×10 = 502.4 cm³。",
+      "explanation": "半径 r = 4 cm。侧面积 = 2$\\pi rh$ = 3.14$\\times$8$\\times$10 = 251.2，两底面积 = 2$\\times$3.14$\\times$16 = 100.48，表面积 = 251.2+100.48 = 351.68 cm²。体积 = $\\pi r^{2}h$ = 3.14$\\times$16$\\times$10 = 502.4 cm³。",
       "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
       "knowledge_point": "圆柱与圆锥/圆锥的体积",
-      "content": "计算圆锥的体积。底面直径 12 cm，高 12 cm，单位 cm³。（π取3.14）",
+      "content": "计算圆锥的体积。底面直径 12 cm，高 12 cm，单位 cm³。（$\\pi$取3.14）",
       "type": "fill",
       "difficulty": "easy",
       "answer": "452.16",
-      "explanation": "半径 r = 6 cm。V = (1/3)πr²h = (1/3)×3.14×36×12 = 452.16 cm³。",
+      "explanation": "半径 r = 6 cm。V = (1/3)$\\pi r^{2}h$ = (1/3)$\\times$3.14$\\times$36$\\times$12 = 452.16 cm³。",
       "round": 1
     },
     {
       "chapter": "圆柱与圆锥",
       "knowledge_point": "圆柱与圆锥/圆柱的体积",
-      "content": "求空心圆柱的体积。外圆直径 10 dm，内圆直径 8 dm，高 18 dm，单位 dm³。（π取3.14）",
+      "content": "求空心圆柱的体积。外圆直径 10 dm，内圆直径 8 dm，高 18 dm，单位 dm³。（$\\pi$取3.14）",
       "type": "fill",
       "difficulty": "medium",
       "answer": "508.68",
-      "explanation": "V = π×(R²−r²)×h = 3.14×(25−16)×18 = 3.14×9×18 = 508.68 dm³。",
+      "explanation": "V = $\\pi\\times$($R^{2}$−$r^{2}$)$\\times$h = 3.14$\\times$(25−16)$\\times$18 = 3.14$\\times$9$\\times$18 = 508.68 dm³。",
       "round": 2
     },
     {
       "chapter": "圆柱与圆锥",
       "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
-      "content": "从一个圆柱（底面直径 12 cm、高 20 cm）中挖去一个圆锥（与圆柱同底，高 10 cm，挖在圆柱内部）。请计算剩余部分的体积，单位 cm³。（π取3.14）",
+      "content": "从一个圆柱（底面直径 12 cm、高 20 cm）中挖去一个圆锥（与圆柱同底，高 10 cm，挖在圆柱内部）。请计算剩余部分的体积，单位 cm³。（$\\pi$取3.14）",
       "type": "fill",
       "difficulty": "medium",
       "answer": "1884",
-      "explanation": "圆柱 V = π×6²×20 = 2260.8。圆锥 V = (1/3)×π×6²×10 = 376.8。剩余 = 2260.8 − 376.8 = 1884 cm³。",
+      "explanation": "圆柱 V = $\\pi\\times 6^{2}\\times$20 = 2260.8。圆锥 V = (1/3)$\\times\\pi\\times 6^{2}\\times$10 = 376.8。剩余 = 2260.8 − 376.8 = 1884 cm³。",
       "round": 2
     },
     {
@@ -245,7 +265,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "15.072",
-      "explanation": "最大圆柱形花坛底面圆直径 = 短边 = 16 m，半径 = 8 m。侧面积 = πd×h = 3.14×16×0.3 = 15.072 m²。",
+      "explanation": "最大圆柱形花坛底面圆直径 = 短边 = 16 m，半径 = 8 m。侧面积 = $\\pi d\\times h$ = 3.14$\\times$16$\\times$0.3 = 15.072 m²。",
       "round": 2
     },
     {
@@ -255,7 +275,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "60.288",
-      "explanation": "底面圆半径 r = 8 m，高 0.3 m。V = πr²h = 3.14×64×0.3 = 60.288 m³。",
+      "explanation": "底面圆半径 r = 8 m，高 0.3 m。V = $\\pi r^{2}h$ = 3.14$\\times$64$\\times$0.3 = 60.288 m³。",
       "round": 2
     },
     {
@@ -265,7 +285,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "50.24",
-      "explanation": "每根侧面积 = πd×h = 3.14×0.4×5 = 6.28 m²。8 根：8×6.28 = 50.24 m²。",
+      "explanation": "每根侧面积 = $\\pi d\\times h$ = 3.14$\\times$0.4$\\times$5 = 6.28 m²。8 根：8$\\times$6.28 = 50.24 m²。",
       "round": 2
     },
     {
@@ -275,7 +295,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "11.2",
-      "explanation": "总侧面积 50.24 m²，50.24÷4.5 ≈ 11.2 kg。",
+      "explanation": "总侧面积 50.24 m²，50.24$\\div$4.5 ≈ 11.2 kg。",
       "round": 2
     },
     {
@@ -285,7 +305,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "3",
-      "explanation": "底面周长 25.12 → 半径 = 25.12÷(2×3.14) = 4 cm。每杯容积 = π×16×12 = 602.88 cm³。2 L = 2000 cm³。2000÷602.88 ≈ 3.32，最多倒满 3 杯。",
+      "explanation": "底面周长 25.12 → 半径 = 25.12$\\div$(2$\\times$3.14) = 4 cm。每杯容积 = $\\pi\\times$16$\\times$12 = 602.88 cm³。2 L = 2000 cm³。2000$\\div$602.88 ≈ 3.32，最多倒满 3 杯。",
       "round": 2
     },
     {
@@ -295,7 +315,7 @@
       "type": "calculation",
       "difficulty": "hard",
       "answer": "200.96",
-      "explanation": "沙堆体积 = (1/3)×π×r²×h，半径 r = 25.12÷(2×3.14) = 4 m，V = (1/3)×3.14×16×2.4 = 40.192 m³。铺路：长×宽×厚 = V，2 cm = 0.02 m，长 = 40.192÷(10×0.02) = 200.96 m。",
+      "explanation": "沙堆体积 = (1/3)$\\times\\pi\\times r^{2}\\times$h，半径 r = 25.12$\\div$(2$\\times$3.14) = 4 m，V = (1/3)$\\times$3.14$\\times$16$\\times$2.4 = 40.192 m³。铺路：长$\\times$宽$\\times$厚 = V，2 cm = 0.02 m，长 = 40.192$\\div$(10$\\times$0.02) = 200.96 m。",
       "round": 3
     },
     {
@@ -305,7 +325,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "942",
-      "explanation": "铜的体积 = 水位上升的圆柱体积 = π×r²×Δh = 3.14×100×3 = 942 cm³。",
+      "explanation": "铜的体积 = 水位上升的圆柱体积 = $\\pi\\times r^{2}\\times$Δh = 3.14$\\times$100$\\times$3 = 942 cm³。",
       "round": 2
     },
     {
@@ -315,7 +335,7 @@
       "type": "calculation",
       "difficulty": "medium",
       "answer": "94.2",
-      "explanation": "皮套圈面积 = 圆柱周长 × 套圈宽 = π×6×5 = 94.2 cm²。",
+      "explanation": "皮套圈面积 = 圆柱周长 $\\times$ 套圈宽 = $\\pi\\times$6$\\times$5 = 94.2 cm²。",
       "round": 2
     },
     {
@@ -325,7 +345,7 @@
       "type": "calculation",
       "difficulty": "easy",
       "answer": "565.2",
-      "explanation": "V = π×r²×h = 3.14×9×20 = 565.2 cm³ = 565.2 mL。",
+      "explanation": "V = $\\pi\\times r^{2}\\times$h = 3.14$\\times$9$\\times$20 = 565.2 cm³ = 565.2 mL。",
       "round": 1
     }
   ]

@@ -2928,8 +2928,18 @@
       ],
       "answer": "A",
       "explanation": "The speakers discuss going to the beach on Saturday and a picnic on Sunday, so the topic is weekend plans. The other options are not mentioned.",
-      "audio_text": "A: So, what are you doing this weekend? B: I think I will go to the beach on Saturday with my sister. The weather is going to be sunny and warm. A: That sounds nice. On Sunday, my family is having a small picnic in the park. Would you like to come? B: Yes, I would love to. I will bring some sandwiches and orange juice. A: Great, see you on Sunday at noon.",
-      "round": 1
+      "audio_text": "A: So, what are you doing this weekend?\nB: I think I will go to the beach on Saturday with my sister. The weather is going to be sunny and warm.\nA: That sounds nice. On Sunday, my family is having a small picnic in the park. Would you like to come?\nB: Yes, I would love to. I will bring some sandwiches and orange juice.\nA: Great, see you on Sunday at noon.",
+      "round": 1,
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "child"
+        },
+        "B": {
+          "gender": "male",
+          "age": "child"
+        }
+      }
     },
     {
       "chapter": "Listening",
@@ -2946,7 +2956,13 @@
       "answer": "B",
       "explanation": "The speaker talks about starting to paint and how much she enjoys it, so the main topic is her new hobby. Food and friends are not mentioned.",
       "audio_text": "Hello everyone. I want to tell you about something I started doing last month. I began to paint pictures at home. My mum bought me some colours and brushes for my birthday. Now, every evening after dinner, I sit by the window and paint flowers, animals, or the sky. It makes me feel calm and happy. I think painting is the best new thing in my life this year. I want to keep doing it for a long time.",
-      "round": 1
+      "round": 1,
+      "speakers": {
+        "_": {
+          "gender": "female",
+          "age": "child"
+        }
+      }
     },
     {
       "chapter": "Listening",
@@ -2962,8 +2978,18 @@
       ],
       "answer": "A",
       "explanation": "The boy says the teachers are kind and he likes his classmates, showing he is happy. He never says he is bored, angry, or afraid.",
-      "audio_text": "A: How is your new school, Tom? B: Oh, it is really good. The teachers are very kind and the classrooms are big and bright. A: And the other students? B: My classmates are friendly. I have already made two new friends. We eat lunch together every day. A: That is wonderful news. B: Yes, I am very pleased that we moved to this town. I think I will enjoy my time here a lot.",
-      "round": 1
+      "audio_text": "A: How is your new school, Tom?\nB: Oh, it is really good. The teachers are very kind and the classrooms are big and bright.\nA: And the other students?\nB: My classmates are friendly. I have already made two new friends. We eat lunch together every day.\nA: That is wonderful news.\nB: Yes, I am very pleased that we moved to this town. I think I will enjoy my time here a lot.",
+      "round": 1,
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "male",
+          "age": "child"
+        }
+      }
     },
     {
       "chapter": "Listening",
@@ -2980,7 +3006,13 @@
       "answer": "C",
       "explanation": "The speaker invites students to a music concert on Friday evening. The library, sports, and book sale are not mentioned.",
       "audio_text": "Good morning students. This is your principal speaking. I have an exciting announcement for you all. This Friday evening, our school music club will hold a special concert in the main hall. The concert will start at seven o'clock and finish at nine o'clock. Students from grade six and grade seven will sing and play the piano. Tickets are free, but please collect one from the office before Thursday. We hope to see many of you there.",
-      "round": 1
+      "round": 1,
+      "speakers": {
+        "_": {
+          "gender": "female",
+          "age": "adult"
+        }
+      }
     },
     {
       "chapter": "Listening",
@@ -2996,8 +3028,18 @@
       ],
       "answer": "A",
       "explanation": "The woman says the food is delicious and the service is great, showing she likes it. She does not complain about price or noise.",
-      "audio_text": "A: Did you enjoy your dinner at the new Italian restaurant? B: Yes, I really did. The food was delicious. I had pasta with cheese and tomato sauce, and it was the best I have ever eaten. A: How about the service? B: The waiters were very kind and friendly. They brought our food quickly and smiled all the time. A: Will you go back again? B: Of course. I want to try the pizza next time. I would say it is now my favourite restaurant.",
-      "round": 1
+      "audio_text": "A: Did you enjoy your dinner at the new Italian restaurant?\nB: Yes, I really did. The food was delicious. I had pasta with cheese and tomato sauce, and it was the best I have ever eaten.\nA: How about the service?\nB: The waiters were very kind and friendly. They brought our food quickly and smiled all the time.\nA: Will you go back again?\nB: Of course. I want to try the pizza next time. I would say it is now my favourite restaurant.",
+      "round": 1,
+      "speakers": {
+        "A": {
+          "gender": "male",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "female",
+          "age": "adult"
+        }
+      }
     },
     {
       "chapter": "Listening",
@@ -3014,7 +3056,13 @@
       "answer": "A",
       "explanation": "The speaker explains digging a hole, putting in a young tree, and watering it, which is about planting a tree. The other topics are not discussed.",
       "audio_text": "Hi class, today I will show you something easy and fun. First, find a soft place in your garden. Then, take a small spade and dig a hole about thirty centimetres deep. Next, take your young tree out of the pot very carefully. Put it gently into the hole and cover the roots with soil. After that, give it some water, about one big bottle. Finally, put the tree near sunlight. In a few months, it will grow taller. It is a great activity for the weekend.",
-      "round": 1
+      "round": 1,
+      "speakers": {
+        "_": {
+          "gender": "female",
+          "age": "adult"
+        }
+      }
     },
     {
       "chapter": "Listening",
@@ -3030,8 +3078,18 @@
       ],
       "answer": "A",
       "explanation": "The girl says it was the best holiday ever and she cannot wait to go again, showing excitement and happiness.",
-      "audio_text": "A: How was your holiday in Spain, Lisa? B: Oh, it was amazing. We stayed in a small hotel near the sea. Every morning, we swam in the warm water and built sandcastles. A: Did you eat anything special? B: Yes, we tried fresh fish and ice cream every day. A: It sounds great. B: It was the best holiday ever. I cannot wait to go back next summer with my parents and brother.",
-      "round": 1
+      "audio_text": "A: How was your holiday in Spain, Lisa?\nB: Oh, it was amazing. We stayed in a small hotel near the sea. Every morning, we swam in the warm water and built sandcastles.\nA: Did you eat anything special?\nB: Yes, we tried fresh fish and ice cream every day.\nA: It sounds great.\nB: It was the best holiday ever. I cannot wait to go back next summer with my parents and brother.",
+      "round": 1,
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "female",
+          "age": "child"
+        }
+      }
     },
     {
       "chapter": "Listening",
@@ -3048,7 +3106,13 @@
       "answer": "A",
       "explanation": "The speaker lists the things she does every morning: wake up, brush teeth, eat breakfast, walk to school. So she is describing her morning routine.",
       "audio_text": "Every weekday morning, I wake up at half past six. The first thing I do is brush my teeth and wash my face. Then, I go down to the kitchen and have breakfast with my parents. I usually eat bread, eggs, and a glass of milk. After breakfast, I put my books in my bag and walk to school. The walk takes about fifteen minutes. I always arrive before the bell rings. My morning is busy but I like it.",
-      "round": 1
+      "round": 1,
+      "speakers": {
+        "_": {
+          "gender": "female",
+          "age": "child"
+        }
+      }
     },
     {
       "chapter": "Listening",
@@ -3064,8 +3128,18 @@
       ],
       "answer": "A",
       "explanation": "The boy invites his friend to come to his birthday party on Saturday. Homework, pizza, and cinema are not the reason for the call.",
-      "audio_text": "A: Hello, is that Daniel? B: Yes, speaking. A: Hi Daniel, it is Mark. I am calling to invite you to my birthday party this Saturday. B: Oh, how nice. What time does it start? A: It begins at three in the afternoon. We will have cake, games, and music in the garden. B: Sounds wonderful. I will be there for sure. A: Great, see you on Saturday. Do not forget to bring your camera.",
-      "round": 1
+      "audio_text": "A: Hello, is that Daniel?\nB: Yes, speaking.\nA: Hi Daniel, it is Mark. I am calling to invite you to my birthday party this Saturday.\nB: Oh, how nice. What time does it start?\nA: It begins at three in the afternoon. We will have cake, games, and music in the garden.\nB: Sounds wonderful. I will be there for sure.\nA: Great, see you on Saturday. Do not forget to bring your camera.",
+      "round": 1,
+      "speakers": {
+        "A": {
+          "gender": "male",
+          "age": "child"
+        },
+        "B": {
+          "gender": "male",
+          "age": "child"
+        }
+      }
     },
     {
       "chapter": "Listening",
@@ -3081,8 +3155,18 @@
       ],
       "answer": "A",
       "explanation": "The woman complains about the rain and says she hates it, showing she does not like the weather. The other options do not match her words.",
-      "audio_text": "A: What a horrible day. B: I know, it has been raining since this morning. A: I really do not like rainy days. My shoes are wet and my hair is a mess. B: Did you bring an umbrella? A: Yes, but the wind is so strong that the umbrella is almost broken. B: That is bad luck. A: I just hate this kind of weather. I hope tomorrow will be sunny so we can go outside again.",
-      "round": 1
+      "audio_text": "A: What a horrible day.\nB: I know, it has been raining since this morning.\nA: I really do not like rainy days. My shoes are wet and my hair is a mess.\nB: Did you bring an umbrella?\nA: Yes, but the wind is so strong that the umbrella is almost broken.\nB: That is bad luck.\nA: I just hate this kind of weather. I hope tomorrow will be sunny so we can go outside again.",
+      "round": 1,
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "male",
+          "age": "adult"
+        }
+      }
     },
     {
       "chapter": "Listening",
@@ -3098,8 +3182,18 @@
       ],
       "answer": "B",
       "explanation": "The girl explicitly says she will go to the zoo with her cousin on Saturday. The museum, pool, and library are mentioned but not for Saturday.",
-      "audio_text": "A: Hi Anna, do you have any plans for the weekend? B: Yes, on Saturday I am going to the zoo with my cousin. We want to see the new baby panda. A: How nice. I went to the museum last Saturday and the library on Sunday. B: That sounds fun. On Sunday, I will probably stay home or go to the swimming pool with my mum. A: Have a great weekend. B: Thanks, you too.",
-      "round": 1
+      "audio_text": "A: Hi Anna, do you have any plans for the weekend?\nB: Yes, on Saturday I am going to the zoo with my cousin. We want to see the new baby panda.\nA: How nice. I went to the museum last Saturday and the library on Sunday.\nB: That sounds fun. On Sunday, I will probably stay home or go to the swimming pool with my mum.\nA: Have a great weekend.\nB: Thanks, you too.",
+      "round": 1,
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "child"
+        },
+        "B": {
+          "gender": "female",
+          "age": "child"
+        }
+      }
     },
     {
       "chapter": "Listening",
@@ -3116,7 +3210,13 @@
       "answer": "B",
       "explanation": "The speaker clearly says the meeting will begin at ten o'clock in the morning. The other times are not mentioned for the meeting.",
       "audio_text": "Good morning team. I want to remind everyone about our weekly meeting. It will take place tomorrow in the big meeting room on the second floor. The meeting will begin at ten o'clock in the morning, not at nine like last week. Please bring your notebook and your monthly report. The meeting will last about one hour, so we should finish before lunch. If you have questions, please send me an email today. Thank you and see you tomorrow.",
-      "round": 1
+      "round": 1,
+      "speakers": {
+        "_": {
+          "gender": "female",
+          "age": "adult"
+        }
+      }
     },
     {
       "chapter": "Listening",
@@ -3132,8 +3232,18 @@
       ],
       "answer": "C",
       "explanation": "The boy says he has three sisters: Lily, Emma, and Sophie. The other numbers do not match.",
-      "audio_text": "A: Tell me about your family, Peter. B: Well, I live with my parents and my sisters. A: How many sisters do you have? B: I have three sisters. The oldest is Lily. She is fifteen. The middle one is Emma, she is twelve, and the youngest is Sophie. She is only six. A: Wow, that is a big family. Do you have brothers? B: No, I am the only boy. Sometimes it is noisy at home, but I love my sisters very much.",
-      "round": 1
+      "audio_text": "A: Tell me about your family, Peter.\nB: Well, I live with my parents and my sisters.\nA: How many sisters do you have?\nB: I have three sisters. The oldest is Lily. She is fifteen. The middle one is Emma, she is twelve, and the youngest is Sophie. She is only six.\nA: Wow, that is a big family. Do you have brothers?\nB: No, I am the only boy. Sometimes it is noisy at home, but I love my sisters very much.",
+      "round": 1,
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "male",
+          "age": "child"
+        }
+      }
     },
     {
       "chapter": "Listening",
@@ -3149,8 +3259,18 @@
       ],
       "answer": "C",
       "explanation": "The shop assistant tells the customer the T-shirt is fifteen pounds. The other prices are mentioned for different items.",
-      "audio_text": "A: Excuse me, how much is this blue T-shirt? B: Let me check. The blue T-shirt is fifteen pounds. A: And this red cap? B: The cap is ten pounds, and the white socks are twelve pounds for two pairs. A: Okay, I will take the T-shirt. Here is twenty pounds. B: Thank you. Here is your change, five pounds, and your receipt. A: Thanks a lot. B: You are welcome. Have a nice day.",
-      "round": 1
+      "audio_text": "A: Excuse me, how much is this blue T-shirt?\nB: Let me check. The blue T-shirt is fifteen pounds.\nA: And this red cap?\nB: The cap is ten pounds, and the white socks are twelve pounds for two pairs.\nA: Okay, I will take the T-shirt. Here is twenty pounds.\nB: Thank you. Here is your change, five pounds, and your receipt.\nA: Thanks a lot.\nB: You are welcome. Have a nice day.",
+      "round": 1,
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "male",
+          "age": "adult"
+        }
+      }
     },
     {
       "chapter": "Listening",
@@ -3166,8 +3286,18 @@
       ],
       "answer": "B",
       "explanation": "The woman says her new bag is brown. Black, red, and green are mentioned but for other items.",
-      "audio_text": "A: I love your new bag, Sarah. Where did you get it? B: Thank you. My husband gave it to me last week. It is brown leather. A: It looks lovely with your green coat. B: Yes, I think so too. My old bag was black, but I wanted a different colour this time. A: Did you also see the red one in that shop? B: Yes, but the brown one was nicer. A: Good choice. B: Thanks, it is my favourite bag now.",
-      "round": 1
+      "audio_text": "A: I love your new bag, Sarah. Where did you get it?\nB: Thank you. My husband gave it to me last week. It is brown leather.\nA: It looks lovely with your green coat.\nB: Yes, I think so too. My old bag was black, but I wanted a different colour this time.\nA: Did you also see the red one in that shop?\nB: Yes, but the brown one was nicer.\nA: Good choice.\nB: Thanks, it is my favourite bag now.",
+      "round": 1,
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "female",
+          "age": "adult"
+        }
+      }
     },
     {
       "chapter": "Listening",
@@ -3184,7 +3314,13 @@
       "answer": "C",
       "explanation": "The teacher clearly says the school trip is on Friday. Monday, Wednesday, and Sunday are mentioned for other reasons.",
       "audio_text": "Good afternoon class. I have important news about our school trip. The trip will be on Friday this week, not on Wednesday as we said before. We will leave the school at eight in the morning and come back around five in the evening. Please remember to bring your lunch, water, and a warm jacket. The bus will not wait for late students. On Monday, I will give you a list of things to pack. On Sunday before, please go to bed early. Have a great trip.",
-      "round": 1
+      "round": 1,
+      "speakers": {
+        "_": {
+          "gender": "female",
+          "age": "adult"
+        }
+      }
     },
     {
       "chapter": "Listening",
@@ -3200,8 +3336,18 @@
       ],
       "answer": "D",
       "explanation": "The man tells the tourist the bank is near the train station. The post office, school, and supermarket are mentioned but not as the bank's location.",
-      "audio_text": "A: Excuse me, can you help me? I am looking for the bank. B: Of course. The bank is near the train station. A: Is it far from here? B: No, it takes about five minutes to walk. Go straight down this road, then turn right at the post office. The supermarket will be on your left, and the school is opposite the supermarket. Keep walking and you will see the train station, with the bank right next to it. A: Thank you very much. B: You are welcome.",
-      "round": 1
+      "audio_text": "A: Excuse me, can you help me? I am looking for the bank.\nB: Of course. The bank is near the train station.\nA: Is it far from here?\nB: No, it takes about five minutes to walk. Go straight down this road, then turn right at the post office. The supermarket will be on your left, and the school is opposite the supermarket. Keep walking and you will see the train station, with the bank right next to it.\nA: Thank you very much.\nB: You are welcome.",
+      "round": 1,
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "male",
+          "age": "adult"
+        }
+      }
     },
     {
       "chapter": "Listening",
@@ -3217,8 +3363,18 @@
       ],
       "answer": "A",
       "explanation": "The mother asks the boy to buy milk and bread, and he agrees. The other items are not on his shopping list.",
-      "audio_text": "A: Tom, can you go to the shop for me, please? B: Sure mum, what do you need? A: I need some milk and a loaf of bread. We have run out. B: Anything else? Eggs or cheese? A: No, we still have eggs and cheese in the fridge. Just milk and bread. B: Okay, do you want me to buy any fruit, like apples or bananas? A: No thank you, only milk and bread today. B: Got it, I will be back in ten minutes.",
-      "round": 1
+      "audio_text": "A: Tom, can you go to the shop for me, please?\nB: Sure mum, what do you need?\nA: I need some milk and a loaf of bread. We have run out.\nB: Anything else? Eggs or cheese?\nA: No, we still have eggs and cheese in the fridge. Just milk and bread.\nB: Okay, do you want me to buy any fruit, like apples or bananas?\nA: No thank you, only milk and bread today.\nB: Got it, I will be back in ten minutes.",
+      "round": 1,
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "male",
+          "age": "child"
+        }
+      }
     },
     {
       "chapter": "Listening",
@@ -3234,8 +3390,18 @@
       ],
       "answer": "B",
       "explanation": "The girl says her cat's name is Coco. Bella, Max, and Luna are her friends' pets.",
-      "audio_text": "A: Do you have a pet, Mia? B: Yes, I have a small white cat. Her name is Coco. A: That is a sweet name. How old is she? B: She is two years old. My friend Anna also has a cat called Bella, and my cousin has a dog named Max. A: And Luna? B: Oh, Luna is my neighbour's rabbit. But my own pet is just Coco. A: She must be lovely. B: Yes, Coco is the best cat in the world.",
-      "round": 1
+      "audio_text": "A: Do you have a pet, Mia?\nB: Yes, I have a small white cat. Her name is Coco.\nA: That is a sweet name. How old is she?\nB: She is two years old. My friend Anna also has a cat called Bella, and my cousin has a dog named Max.\nA: And Luna?\nB: Oh, Luna is my neighbour's rabbit. But my own pet is just Coco.\nA: She must be lovely.\nB: Yes, Coco is the best cat in the world.",
+      "round": 1,
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "child"
+        },
+        "B": {
+          "gender": "female",
+          "age": "child"
+        }
+      }
     },
     {
       "chapter": "Listening",
@@ -3251,8 +3417,18 @@
       ],
       "answer": "C",
       "explanation": "The cinema worker says the film is one hundred and twenty minutes long. The other lengths are not the film's actual duration.",
-      "audio_text": "A: Hi, two tickets for the new adventure film, please. B: Sure. The next show starts at seven o'clock. A: And the running time? B: It runs for one hundred and twenty minutes, so it will end at nine o'clock. A: Oh, that is longer than I thought. The last film I saw here was only ninety minutes. B: Yes, this one is bigger. There are also some short clips before, about ten minutes. A: Great, we will take the seven o'clock show. B: That is twenty pounds, please.",
-      "round": 1
+      "audio_text": "A: Hi, two tickets for the new adventure film, please.\nB: Sure. The next show starts at seven o'clock.\nA: And the running time?\nB: It runs for one hundred and twenty minutes, so it will end at nine o'clock.\nA: Oh, that is longer than I thought. The last film I saw here was only ninety minutes.\nB: Yes, this one is bigger. There are also some short clips before, about ten minutes.\nA: Great, we will take the seven o'clock show.\nB: That is twenty pounds, please.",
+      "round": 1,
+      "speakers": {
+        "A": {
+          "gender": "female",
+          "age": "adult"
+        },
+        "B": {
+          "gender": "male",
+          "age": "adult"
+        }
+      }
     }
   ]
 }

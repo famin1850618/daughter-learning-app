@@ -12,7 +12,7 @@
       "difficulty": "easy",
       "answer": "157",
       "alt_answers": "157cm²|||157平方厘米|||157cm2",
-      "explanation": "侧面积 = πd×h = 3.14×5×10 = 157 cm²。",
+      "explanation": "侧面积 = $\\pi d\\times h$ = 3.14$\\times$5$\\times$10 = 157 cm²。",
       "round": 1
     },
     {
@@ -23,7 +23,7 @@
       "difficulty": "medium",
       "answer": "196.25",
       "alt_answers": "196.25cm²|||196.25平方厘米|||196.25cm2",
-      "explanation": "底面积 = 3.14×2.5² = 19.625 cm²；表面积 = 157+2×19.625 = 196.25 cm²。",
+      "explanation": "底面积 = 3.14$\\times$2.$5^{2}$ = 19.625 cm²；表面积 = 157+2$\\times$19.625 = 196.25 cm²。",
       "round": 2
     },
     {
@@ -34,7 +34,7 @@
       "difficulty": "medium",
       "answer": "196.25",
       "alt_answers": "196.25cm³|||196.25立方厘米|||196.25cm3",
-      "explanation": "体积 = πr²h = 3.14×2.5²×10 = 196.25 cm³。",
+      "explanation": "体积 = $\\pi r^{2}h$ = 3.14$\\times$2.$5^{2}\\times$10 = 196.25 cm³。",
       "round": 2
     },
     {
@@ -65,9 +65,13 @@
       "content": "圆的直径和它的面积成什么比例？",
       "type": "choice",
       "difficulty": "medium",
-      "options": "[\"A. 正比例\", \"B. 反比例\", \"C. 不成比例\"]",
+      "options": [
+        "A. 正比例",
+        "B. 反比例",
+        "C. 不成比例"
+      ],
       "answer": "C",
-      "explanation": "面积 = πr² = π×(d/2)² = πd²/4，比值 πd/4 不一定（随 d 变），积也不一定，故不成比例。",
+      "explanation": "面积 = $\\pi r^{2}$= $\\pi\\times(d/2)^{2}$ = $\\pi d^{2}$/4，比值 $\\pi d$/4 不一定（随 d 变），积也不一定，故不成比例。",
       "round": 2
     },
     {
@@ -78,7 +82,7 @@
       "difficulty": "medium",
       "answer": "960",
       "alt_answers": "960km|||960千米",
-      "explanation": "实际距离 = 图上距离÷比例尺 = 48×2000000 = 96000000 cm = 960 km。",
+      "explanation": "实际距离 = 图上距离$\\div$比例尺 = 48$\\times$2000000 = 96000000 cm = 960 km。",
       "round": 2
     },
     {
@@ -89,7 +93,7 @@
       "difficulty": "medium",
       "answer": "21",
       "alt_answers": "21m³|||21立方米|||21m3",
-      "explanation": "等底等高时圆柱:圆锥 = 3:1，比例和 4；圆柱 = 28×3/4 = 21 m³。",
+      "explanation": "等底等高时圆柱:圆锥 = 3:1，比例和 4；圆柱 = 28$\\times$3/4 = 21 m³。",
       "round": 2
     },
     {
@@ -99,7 +103,7 @@
       "type": "judgment",
       "difficulty": "easy",
       "answer": "对",
-      "explanation": "体积 = 底面积×高，底面积和高都相等则体积必然相等。",
+      "explanation": "体积 = 底面积$\\times$高，底面积和高都相等则体积必然相等。",
       "round": 1
     },
     {
@@ -119,7 +123,7 @@
       "type": "judgment",
       "difficulty": "medium",
       "answer": "错",
-      "explanation": "侧面展开为正方形 → 高 = 底面周长 = 2π×8 = 50.24 cm，不是 16 cm。",
+      "explanation": "侧面展开为正方形 → 高 = 底面周长 = 2$\\pi\\times$8 = 50.24 cm，不是 16 cm。",
       "round": 2
     },
     {
@@ -129,7 +133,7 @@
       "type": "judgment",
       "difficulty": "medium",
       "answer": "错",
-      "explanation": "周长÷直径 = π（一定，正比例）✓；但面积 = πr²，r 越大面积越大（不成反比例），不成正比例也不成反比例。",
+      "explanation": "周长$\\div$直径 = $\\pi$（一定，正比例）✓；但面积 = $\\pi r^{2}$，r 越大面积越大（不成反比例），不成正比例也不成反比例。",
       "round": 2
     },
     {
@@ -139,7 +143,7 @@
       "type": "judgment",
       "difficulty": "medium",
       "answer": "对",
-      "explanation": "x×y = k → 3x×y = 3k（积仍一定）→ 仍是反比例。",
+      "explanation": "x$\\times$y = k → 3x$\\times$y = 3k（积仍一定）→ 仍是反比例。",
       "round": 2
     },
     {
@@ -148,9 +152,14 @@
       "content": "一个圆柱的侧面展开图是一个正方形，则底面直径与高的比为(    )。",
       "type": "choice",
       "difficulty": "hard",
-      "options": "[\"A. 2π:1\", \"B. π:1\", \"C. 1∶π\", \"D. 1:2\"]",
+      "options": [
+        "A. 2$\\pi$:1",
+        "B. $\\pi$:1",
+        "C. 1∶$\\pi$",
+        "D. 1:2"
+      ],
       "answer": "C",
-      "explanation": "展开为正方形 → 高 = 底面周长 = πd；d:高 = d:πd = 1:π。",
+      "explanation": "展开为正方形 → 高 = 底面周长 = $\\pi d$；d:高 = d:$\\pi d$= 1:$\\pi$。",
       "round": 3
     },
     {
@@ -159,7 +168,12 @@
       "content": "圆柱的体积是圆锥体积的(    )（前提：等底等高）。",
       "type": "choice",
       "difficulty": "easy",
-      "options": "[\"A. 3 倍\", \"B. 1/3\", \"C. 2/3\", \"D. 无法比较\"]",
+      "options": [
+        "A. 3 倍",
+        "B. 1/3",
+        "C. 2/3",
+        "D. 无法比较"
+      ],
       "answer": "D",
       "explanation": "题目没有说等底等高，所以无法比较。",
       "round": 2
@@ -172,7 +186,7 @@
       "difficulty": "medium",
       "answer": "47.1",
       "alt_answers": "47.1m²|||47.1平方米|||47.1m2",
-      "explanation": "滚一圈面积 = 侧面积 = 周长×长 = 3.14×1.5 = 4.71 m²；10 圈 = 47.1 m²。",
+      "explanation": "滚一圈面积 = 侧面积 = 周长$\\times$长 = 3.14$\\times$1.5 = 4.71 m²；10 圈 = 47.1 m²。",
       "round": 2
     },
     {
@@ -183,7 +197,7 @@
       "difficulty": "hard",
       "answer": "0.6",
       "alt_answers": "0.6cm|||0.6厘米",
-      "explanation": "铅锤体积 = (1/3)×3.14×3²×20 = 188.4 cm³；下降水柱体积也是 188.4 cm³；杯底面积 = 3.14×10² = 314 cm²；下降高 = 188.4÷314 = 0.6 cm。",
+      "explanation": "铅锤体积 = (1/3)$\\times$3.14$\\times 3^{2}\\times$20 = 188.4 cm³；下降水柱体积也是 188.4 cm³；杯底面积 = 3.14$\\times$1$0^{2}$ = 314 cm²；下降高 = 188.4$\\div$314 = 0.6 cm。",
       "round": 3
     },
     {
@@ -194,7 +208,7 @@
       "difficulty": "medium",
       "answer": "14.13",
       "alt_answers": "14.13m³|||14.13立方米|||14.13m3",
-      "explanation": "半径 = 18.84÷3.14÷2 = 3 m；V = (1/3)×3.14×3²×1.5 = 14.13 m³。",
+      "explanation": "半径 = 18.84$\\div$3.14$\\div$2 = 3 m；V = (1/3)$\\times$3.14$\\times 3^{2}\\times$1.5 = 14.13 m³。",
       "round": 2
     },
     {
@@ -205,7 +219,7 @@
       "difficulty": "medium",
       "answer": "211.95",
       "alt_answers": "211.95元",
-      "explanation": "总价 = 14.13×15 = 211.95 元。",
+      "explanation": "总价 = 14.13$\\times$15 = 211.95 元。",
       "round": 2
     },
     {
@@ -216,7 +230,7 @@
       "difficulty": "medium",
       "answer": "48",
       "alt_answers": "48m²|||48平方米|||48m2",
-      "explanation": "实际长 = 8×100 = 800 cm = 8 m；实际宽 = 6 m；面积 = 8×6 = 48 m²。",
+      "explanation": "实际长 = 8$\\times$100 = 800 cm = 8 m；实际宽 = 6 m；面积 = 8$\\times$6 = 48 m²。",
       "round": 2
     },
     {
@@ -225,9 +239,13 @@
       "content": "一列磁悬浮列车匀速行驶，时间 1 分行驶 7 千米，时间 2 分行驶 14 千米，时间 3 分行驶 21 千米。从表中可得出，路程和时间成什么比例？",
       "type": "choice",
       "difficulty": "easy",
-      "options": "[\"A. 正比例\", \"B. 反比例\", \"C. 不成比例\"]",
+      "options": [
+        "A. 正比例",
+        "B. 反比例",
+        "C. 不成比例"
+      ],
       "answer": "A",
-      "explanation": "路程÷时间 = 7（速度，一定），路程和时间成正比例。",
+      "explanation": "路程$\\div$时间 = 7（速度，一定），路程和时间成正比例。",
       "round": 1
     },
     {
@@ -238,7 +256,7 @@
       "difficulty": "easy",
       "answer": "17.5",
       "alt_answers": "17.5km|||17.5千米",
-      "explanation": "路程 = 速度×时间 = 7×2.5 = 17.5 km。",
+      "explanation": "路程 = 速度$\\times$时间 = 7$\\times$2.5 = 17.5 km。",
       "round": 1
     }
   ]

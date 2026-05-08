@@ -11,6 +11,7 @@ import '../utils/settings_action.dart';
 import '../services/difficulty_settings_service.dart';
 import '../models/subject.dart';
 import '../models/question.dart';
+import '../models/speaker_profile.dart';
 import '../models/curriculum.dart';
 import '../database/curriculum_dao.dart';
 import '../database/question_dao.dart';
@@ -495,9 +496,13 @@ class _QuestionScreenState extends State<_QuestionScreen> {
             ]),
             const SizedBox(height: 12),
 
-            // 听力题播放按钮
+            // 听力题播放按钮（V3.12 多角色：按 audioText 中 "角色:文本" 行切 turn，
+            // 配合 question.speakers 切 voice/pitch；单角色独白走默认 profile）
             if (q.audioText != null && q.audioText!.isNotEmpty)
-              _ListenButton(text: q.audioText!),
+              _ListenButton(
+                audioText: q.audioText!,
+                speakers: q.speakers,
+              ),
 
             // 题目附图
             if (q.imageData != null && q.imageData!.isNotEmpty) ...[
@@ -1213,10 +1218,15 @@ class _QuestionImage extends StatelessWidget {
   }
 }
 
-// ── 听力按钮（TTS 朗读 audioText）─────────────────
+// ── 听力按钮（V3.12 多角色 TTS）─────────────────
+//
+// audioText 解析：每行用 `^[A-Za-z]+:` 切 turn，无前缀的行附到上一 turn。
+// 每 turn 按 speakers[role] 取 SpeakerProfile，调用 setPitch + speak 串行播放。
+// awaitSpeakCompletion(true) 让 speak 自动 await 直到说完，turn 间留 300ms 间隙。
 class _ListenButton extends StatefulWidget {
-  final String text;
-  const _ListenButton({required this.text});
+  final String audioText;
+  final Map<String, SpeakerProfile>? speakers;
+  const _ListenButton({required this.audioText, this.speakers});
 
   @override
   State<_ListenButton> createState() => _ListenButtonState();
@@ -1225,15 +1235,22 @@ class _ListenButton extends StatefulWidget {
 class _ListenButtonState extends State<_ListenButton> {
   final _tts = FlutterTts();
   bool _speaking = false;
+  bool _ready = false;
+
+  // 单字母 / 短描述前缀：A: / B: / Boy: / Girl: / Man: / Woman: 等
+  static final _turnPattern = RegExp(r'^([A-Za-z][A-Za-z]{0,9}):\s*(.*)$');
 
   @override
   void initState() {
     super.initState();
-    _tts.setLanguage('en-US');
-    _tts.setSpeechRate(0.45);
-    _tts.setCompletionHandler(() {
-      if (mounted) setState(() => _speaking = false);
-    });
+    _initTts();
+  }
+
+  Future<void> _initTts() async {
+    await _tts.setLanguage('en-US');
+    await _tts.setSpeechRate(0.45);
+    await _tts.awaitSpeakCompletion(true);
+    if (mounted) setState(() => _ready = true);
   }
 
   @override
@@ -1242,29 +1259,74 @@ class _ListenButtonState extends State<_ListenButton> {
     super.dispose();
   }
 
+  /// 把 audioText 切成 turns。多角色：每行 `角色:文本`；纯独白：单 turn 角色 '_'。
+  List<({String role, String text})> _parseTurns(String raw) {
+    final lines = raw
+        .split(RegExp(r'\r?\n'))
+        .map((l) => l.trim())
+        .where((l) => l.isNotEmpty)
+        .toList();
+    final turns = <({String role, String text})>[];
+    for (final line in lines) {
+      final match = _turnPattern.firstMatch(line);
+      if (match != null && (widget.speakers?.containsKey(match.group(1)) ?? false)) {
+        turns.add((role: match.group(1)!, text: match.group(2)!.trim()));
+      } else if (turns.isNotEmpty) {
+        // 续接上一 turn（独白被换行分段或角色名不在 speakers map 中的 fallback）
+        final last = turns.last;
+        turns[turns.length - 1] = (
+          role: last.role,
+          text: '${last.text} $line'.trim(),
+        );
+      } else {
+        turns.add((role: '_', text: line));
+      }
+    }
+    return turns.where((t) => t.text.isNotEmpty).toList();
+  }
+
   Future<void> _toggle() async {
+    if (!_ready) return;
     if (_speaking) {
       await _tts.stop();
       if (mounted) setState(() => _speaking = false);
-    } else {
-      setState(() => _speaking = true);
-      await _tts.speak(widget.text);
+      return;
     }
+    setState(() => _speaking = true);
+
+    final turns = _parseTurns(widget.audioText);
+    for (var i = 0; i < turns.length; i++) {
+      if (!mounted || !_speaking) break;
+      final turn = turns[i];
+      final profile = widget.speakers?[turn.role] ?? SpeakerProfile.defaultProfile;
+      try {
+        await _tts.setPitch(profile.fallbackPitch);
+        await _tts.speak(turn.text);
+      } catch (_) {/* 单 turn 失败不阻断后续 */}
+      if (i < turns.length - 1 && _speaking) {
+        await Future.delayed(const Duration(milliseconds: 300));
+      }
+    }
+    if (mounted) setState(() => _speaking = false);
   }
 
   @override
   Widget build(BuildContext context) {
+    final hasMultipleSpeakers =
+        widget.speakers != null && widget.speakers!.length > 1;
     return Align(
       alignment: Alignment.centerLeft,
       child: ElevatedButton.icon(
         icon: Icon(_speaking ? Icons.stop : Icons.volume_up, size: 18),
-        label: Text(_speaking ? '停止' : '🔊 播放听力'),
+        label: Text(_speaking
+            ? '停止'
+            : (hasMultipleSpeakers ? '🔊 播放对话' : '🔊 播放听力')),
         style: ElevatedButton.styleFrom(
           backgroundColor: AppTheme.primary.withOpacity(0.1),
           foregroundColor: AppTheme.primary,
           elevation: 0,
         ),
-        onPressed: _toggle,
+        onPressed: _ready ? _toggle : null,
       ),
     );
   }

@@ -5,6 +5,7 @@ import '../models/subject.dart';
 import '../models/curriculum.dart';
 import '../database/curriculum_dao.dart';
 import '../database/plan_item_dao.dart';
+import '../database/question_dao.dart';
 import '../models/plan_group.dart';
 import '../services/practice_service.dart';
 import '../services/navigation_service.dart';
@@ -20,7 +21,10 @@ class ChapterDetailScreen extends StatefulWidget {
 
 class _ChapterDetailScreenState extends State<ChapterDetailScreen> {
   final _dao = CurriculumDao();
+  final _qDao = QuestionDao();
   List<Chapter> _chapters = [];
+  Map<String, int> _activeCounts = {};
+  int _activeTotal = 0;
 
   static const _gradeLabels = {6: '六年级', 7: '初一', 8: '初二', 9: '初三'};
 
@@ -32,8 +36,17 @@ class _ChapterDetailScreenState extends State<ChapterDetailScreen> {
 
   Future<void> _load() async {
     final chapters = await _dao.getChapters(widget.subject.name, widget.grade);
+    final counts = await _qDao.countActiveQuestionsByChapter(
+      subject: widget.subject,
+      grade: widget.grade,
+    );
+    final total = counts.values.fold<int>(0, (a, b) => a + b);
     if (!mounted) return;
-    setState(() => _chapters = chapters);
+    setState(() {
+      _chapters = chapters;
+      _activeCounts = counts;
+      _activeTotal = total;
+    });
   }
 
   @override
@@ -44,13 +57,33 @@ class _ChapterDetailScreenState extends State<ChapterDetailScreen> {
       ),
       body: _chapters.isEmpty
           ? const Center(child: CircularProgressIndicator())
-          : ListView.builder(
-              padding: const EdgeInsets.all(12),
-              itemCount: _chapters.length,
-              itemBuilder: (ctx, i) => _ChapterTile(
-                chapter: _chapters[i],
-                subject: widget.subject,
-              ),
+          : Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
+                  child: Row(
+                    children: [
+                      Icon(Icons.library_books, size: 16, color: Colors.grey.shade600),
+                      const SizedBox(width: 6),
+                      Text(
+                        '共 ${_chapters.length} 章 · 活跃题 $_activeTotal 道',
+                        style: TextStyle(fontSize: 12, color: Colors.grey.shade700),
+                      ),
+                    ],
+                  ),
+                ),
+                Expanded(
+                  child: ListView.builder(
+                    padding: const EdgeInsets.fromLTRB(12, 4, 12, 12),
+                    itemCount: _chapters.length,
+                    itemBuilder: (ctx, i) => _ChapterTile(
+                      chapter: _chapters[i],
+                      subject: widget.subject,
+                      activeQuestionCount: _activeCounts[_chapters[i].chapterName] ?? 0,
+                    ),
+                  ),
+                ),
+              ],
             ),
     );
   }
@@ -59,7 +92,12 @@ class _ChapterDetailScreenState extends State<ChapterDetailScreen> {
 class _ChapterTile extends StatefulWidget {
   final Chapter chapter;
   final Subject subject;
-  const _ChapterTile({required this.chapter, required this.subject});
+  final int activeQuestionCount;
+  const _ChapterTile({
+    required this.chapter,
+    required this.subject,
+    required this.activeQuestionCount,
+  });
 
   @override
   State<_ChapterTile> createState() => _ChapterTileState();
@@ -116,9 +154,26 @@ class _ChapterTileState extends State<_ChapterTile> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(widget.chapter.chapterName,
-                      style: const TextStyle(
-                          fontWeight: FontWeight.w600, fontSize: 15)),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Text(widget.chapter.chapterName,
+                            style: const TextStyle(
+                                fontWeight: FontWeight.w600, fontSize: 15)),
+                      ),
+                      Text(
+                        widget.activeQuestionCount > 0
+                            ? '${widget.activeQuestionCount} 道题'
+                            : '暂无题',
+                        style: TextStyle(
+                          fontSize: 11,
+                          color: widget.activeQuestionCount > 0
+                              ? Colors.grey.shade600
+                              : Colors.red.shade300,
+                        ),
+                      ),
+                    ],
+                  ),
                   if (_loaded && hasPlan)
                     Text(
                       '📅 计划中 ($doneCount/${_planItems.length} 完成)',
@@ -137,7 +192,9 @@ class _ChapterTileState extends State<_ChapterTile> {
               icon: const Icon(Icons.play_circle_outline,
                   color: AppTheme.primary),
               tooltip: '开始练习',
-              onPressed: () => _startPractice(context),
+              onPressed: widget.activeQuestionCount > 0
+                  ? () => _startPractice(context)
+                  : null,
             ),
           ],
         ),

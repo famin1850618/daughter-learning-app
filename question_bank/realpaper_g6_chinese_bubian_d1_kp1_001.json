@@ -7,7 +7,7 @@
     {
       "chapter": "字词",
       "knowledge_point": "字词/字形",
-      "content": "读拼音，写词语：腊八这天，家家都会熬「zā lā bā zhōu」(    )。（拼音不带声调，答案为汉语词语）",
+      "content": "读拼音，写词语：腊八这天，家家都会熬「zā lā bā zhōu」(    )。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "腊八粥",
@@ -17,7 +17,7 @@
     {
       "chapter": "字词",
       "knowledge_point": "字词/字形",
-      "content": "读拼音，写词语：除夕家家「dēnɡ huǒ tōnɡ xiāo」(    )。（拼音不带声调，答案为汉语四字词）",
+      "content": "读拼音，写词语：除夕家家「dēnɡ huǒ tōnɡ xiāo」(    )。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "灯火通宵",
@@ -27,7 +27,7 @@
     {
       "chapter": "字词",
       "knowledge_point": "字词/字形",
-      "content": "读拼音，写词语：除夕「biān pào」(    )声日夜不绝。（拼音不带声调）",
+      "content": "读拼音，写词语：除夕「biān pào」(    )声日夜不绝。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "鞭炮",
@@ -37,7 +37,7 @@
     {
       "chapter": "字词",
       "knowledge_point": "字词/字形",
-      "content": "读拼音，写词语：「yuán dàn」(    )这天，男人们午前到亲戚家拜年。（拼音不带声调）",
+      "content": "读拼音，写词语：「yuán dàn」(    )这天，男人们午前到亲戚家拜年。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "元旦",
@@ -47,7 +47,7 @@
     {
       "chapter": "字词",
       "knowledge_point": "字词/字形",
-      "content": "读拼音，写词语：男人们午前到「qīn qi」(    )家、朋友家拜年。（拼音不带声调）",
+      "content": "读拼音，写词语：男人们午前到「qīn qi」(    )家、朋友家拜年。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "亲戚",
@@ -57,7 +57,7 @@
     {
       "chapter": "字词",
       "knowledge_point": "字词/字形",
-      "content": "读拼音，写词语：男人们午前到亲戚家、朋友家「bài nián」(    )。（拼音不带声调）",
+      "content": "读拼音，写词语：男人们午前到亲戚家、朋友家「bài nián」(    )。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "拜年",
@@ -67,7 +67,7 @@
     {
       "chapter": "字词",
       "knowledge_point": "字词/字形",
-      "content": "读拼音，写词语：庙会上有「sài jiào chē」(    )表演。（拼音不带声调）",
+      "content": "读拼音，写词语：庙会上有「sài jiào chē」(    )表演。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "赛轿车",
@@ -77,7 +77,7 @@
     {
       "chapter": "字词",
       "knowledge_point": "字词/字形",
-      "content": "读拼音，写词语：庙会上有「sài luò tuo」(    )表演。（拼音不带声调）",
+      "content": "读拼音，写词语：庙会上有「sài luò tuo」(    )表演。",
       "type": "fill",
       "difficulty": "easy",
       "answer": "赛骆驼",
@@ -151,7 +151,9 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "张灯结彩,万象更新",
-      "alt_answers": ["万象更新,张灯结彩"],
+      "alt_answers": [
+        "万象更新,张灯结彩"
+      ],
       "explanation": "「张灯结彩」描绘春节装饰布置的喜庆氛围；「万象更新」描绘新春景象焕然一新。两者搭配使用最贴切。",
       "round": 2
     },
@@ -182,7 +184,11 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "不但,而且",
-      "alt_answers": ["不仅,而且", "不但,还", "不仅,还"],
+      "alt_answers": [
+        "不仅,而且",
+        "不但,还",
+        "不仅,还"
+      ],
       "explanation": "前后分句是递进关系：买玩意儿和放鞭炮是叠加的乐趣，用「不但……而且……」最恰当。",
       "round": 1
     },
@@ -213,7 +219,9 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "虽然,但是",
-      "alt_answers": ["虽然,可是"],
+      "alt_answers": [
+        "虽然,可是"
+      ],
       "explanation": "前后分句是转折关系：先肯定「快乐」，再转折「转瞬即逝」，用「虽然……但是……」最恰当。",
       "round": 1
     },
@@ -263,7 +271,12 @@
       "content": "过年时吃年糕，寓意(    )。下面正确的一项是？",
       "type": "choice",
       "difficulty": "easy",
-      "options": ["A. 万事如意年年高", "B. 步步高升", "C. 五谷丰登", "D. 平安吉祥"],
+      "options": [
+        "A. 万事如意年年高",
+        "B. 步步高升",
+        "C. 五谷丰登",
+        "D. 平安吉祥"
+      ],
       "answer": "A",
       "explanation": "「年糕」与「年高」谐音，寓意「万事如意年年高」，希望生活水平和事业一年比一年高。",
       "round": 1
@@ -285,7 +298,9 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "等,喝",
-      "alt_answers": ["等,吃"],
+      "alt_answers": [
+        "等,吃"
+      ],
       "explanation": "课文按八儿心理活动分为「等粥」（盼粥、想粥、猜粥、看粥）和「喝粥」（吃粥）两个部分。",
       "round": 2
     },
@@ -295,7 +310,12 @@
       "content": "《十五夜望月》（王建）补全：「今夜月明人尽望，____________？」请填出空缺的诗句（七字）。下面正确的一项是？",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 不知秋思落谁家", "B. 何处春江无月明", "C. 不知何处吹芦管", "D. 千里共婵娟时"],
+      "options": [
+        "A. 不知秋思落谁家",
+        "B. 何处春江无月明",
+        "C. 不知何处吹芦管",
+        "D. 千里共婵娟时"
+      ],
       "answer": "A",
       "explanation": "《十五夜望月》全诗：「中庭地白树栖鸦，冷露无声湿桂花。今夜月明人尽望，不知秋思落谁家？」",
       "round": 2

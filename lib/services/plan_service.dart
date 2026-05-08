@@ -65,6 +65,12 @@ class PlanService extends ChangeNotifier {
     await loadDate(DateTime.now());
   }
 
+  /// V3.12 数据重置后必须重读，避免 UI 还显示已删除的 plan_groups/plan_items
+  Future<void> reload() async {
+    _markedDates = await _groupDao.getDatesWithPlans();
+    await loadDate(_selectedDate);
+  }
+
   // ── Main screen data loading ─────────────────
 
   Future<void> loadDate(DateTime date) async {

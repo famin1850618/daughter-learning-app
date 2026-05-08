@@ -34,7 +34,7 @@
       "difficulty": "easy",
       "answer": "6",
       "alt_answers": "6cm|||6厘米",
-      "explanation": "比例：1.5 cm 表示 10 吨，所以 40 吨需要 1.5×4 = 6 cm。",
+      "explanation": "比例：1.5 cm 表示 10 吨，所以 40 吨需要 1.5$\\times$4 = 6 cm。",
       "round": 1
     },
     {
@@ -45,7 +45,7 @@
       "difficulty": "easy",
       "answer": "60",
       "alt_answers": "60吨|||60t",
-      "explanation": "9÷1.5 = 6 倍，所以表示 10×6 = 60 吨。",
+      "explanation": "9$\\div$1.5 = 6 倍，所以表示 10$\\times$6 = 60 吨。",
       "round": 1
     },
     {
@@ -100,7 +100,7 @@
       "difficulty": "medium",
       "answer": "9.41",
       "alt_answers": "9.41分",
-      "explanation": "去掉最高 9.55 和最低 9.24，剩 9.45+9.47+9.38+9.35+9.40 = 47.05。47.05÷5 = 9.41。",
+      "explanation": "去掉最高 9.55 和最低 9.24，剩 9.45+9.47+9.38+9.35+9.40 = 47.05。47.05$\\div$5 = 9.41。",
       "round": 2
     },
     {
@@ -333,7 +333,7 @@
       "difficulty": "hard",
       "answer": "60",
       "alt_answers": "60",
-      "explanation": "4 个平均数之和×3 = 每个数被算 3 次的总和 = 3×(甲+乙+丙+丁)。所以 (45+60+65+70)×3 = 3×总和，总和 = 240。平均 = 240÷4 = 60。",
+      "explanation": "4 个平均数之和$\\times$3 = 每个数被算 3 次的总和 = 3$\\times$(甲+乙+丙+丁)。所以 (45+60+65+70)$\\times$3 = 3$\\times$总和，总和 = 240。平均 = 240$\\div$4 = 60。",
       "round": 3
     }
   ]

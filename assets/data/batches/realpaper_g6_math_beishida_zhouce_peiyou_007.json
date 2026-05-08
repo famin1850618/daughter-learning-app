@@ -11,7 +11,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "反",
-      "explanation": "总钱数 100 元一定，单价 × 数量 = 100，积一定，成反比例。",
+      "explanation": "总钱数 100 元一定，单价 $\\times$ 数量 = 100，积一定，成反比例。",
       "round": 1
     },
     {
@@ -21,7 +21,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "积,反比例",
-      "explanation": "每块砖面积 × 块数 = 铺地总面积（一定），积一定，成反比例。",
+      "explanation": "每块砖面积 $\\times$ 块数 = 铺地总面积（一定），积一定，成反比例。",
       "round": 2
     },
     {
@@ -31,7 +31,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "体积,底面积",
-      "explanation": "长方体体积 = 底面积 × 高，高一定时体积 ÷ 底面积 = 高（一定），成正比例。",
+      "explanation": "长方体体积 = 底面积 $\\times$ 高，高一定时体积 $\\div$ 底面积 = 高（一定），成正比例。",
       "round": 2
     },
     {
@@ -41,7 +41,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "反",
-      "explanation": "每排人数 × 排数 = 总人数（一定），积一定，成反比例。",
+      "explanation": "每排人数 $\\times$ 排数 = 总人数（一定），积一定，成反比例。",
       "round": 1
     },
     {
@@ -51,7 +51,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "成",
-      "explanation": "合格数 ÷ 总数 = 96.5%（一定），比值一定，成正比例。",
+      "explanation": "合格数 $\\div$ 总数 = 96.5%（一定），比值一定，成正比例。",
       "round": 1
     },
     {
@@ -61,7 +61,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "840,1680",
-      "explanation": "速度 = 140÷2 = 70 km/时。12 时游 70×12 = 840 km；24 时游 70×24 = 1680 km。",
+      "explanation": "速度 = 140$\\div$2 = 70 km/时。12 时游 70$\\times$12 = 840 km；24 时游 70$\\times$24 = 1680 km。",
       "round": 2
     },
     {
@@ -81,7 +81,7 @@
       "type": "judgment",
       "difficulty": "medium",
       "answer": "错",
-      "explanation": "S = πr²，面积与半径的平方成正比，不是与半径本身成正比例。",
+      "explanation": "S = $\\pi r^{2}$，面积与半径的平方成正比，不是与半径本身成正比例。",
       "round": 2
     },
     {
@@ -91,7 +91,7 @@
       "type": "judgment",
       "difficulty": "medium",
       "answer": "错",
-      "explanation": "由比例性质 xy = 6×9 = 54（积一定），所以 x 与 y 成反比例，不是正比例。",
+      "explanation": "由比例性质 xy = 6$\\times$9 = 54（积一定），所以 x 与 y 成反比例，不是正比例。",
       "round": 3
     },
     {
@@ -100,9 +100,14 @@
       "content": "下列关系式中，表示 x 和 y 成正比例关系的是(    )。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. x－y＝4", "B. xy＝100", "C. x＋y＝24", "D. y＝100x"],
+      "options": [
+        "A. x－y＝4",
+        "B. xy＝100",
+        "C. x＋y＝24",
+        "D. y＝100x"
+      ],
       "answer": "D",
-      "explanation": "y = 100x 即 y÷x = 100（一定），成正比例。A 差一定、B 积一定（反比例）、C 和一定都不是正比例。",
+      "explanation": "y = 100x 即 y$\\div$x = 100（一定），成正比例。A 差一定、B 积一定（反比例）、C 和一定都不是正比例。",
       "round": 2
     },
     {
@@ -111,9 +116,13 @@
       "content": "下列选项中，相关联的两个量成正比例关系的是(    )。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 等边三角形的周长和任意一边的长度", "B. 圆锥的体积一定，底面积和高", "C. 利息和利率"],
+      "options": [
+        "A. 等边三角形的周长和任意一边的长度",
+        "B. 圆锥的体积一定，底面积和高",
+        "C. 利息和利率"
+      ],
       "answer": "A",
-      "explanation": "A 周长 = 3 × 边长，比值 3 一定，成正比例。B 积一定是反比例。C 利息还与本金、时间有关，不一定成正比例。",
+      "explanation": "A 周长 = 3 $\\times$ 边长，比值 3 一定，成正比例。B 积一定是反比例。C 利息还与本金、时间有关，不一定成正比例。",
       "round": 2
     },
     {
@@ -122,9 +131,13 @@
       "content": "下列选项中两个量不成比例的是(    )。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 从合肥到安庆，列车行驶的平均速度与所需时间", "B. 一箱桃子，吃掉的个数与剩下的个数", "C. 在太阳光下，同一时刻、同一地点物体的高度与影子的长度"],
+      "options": [
+        "A. 从合肥到安庆，列车行驶的平均速度与所需时间",
+        "B. 一箱桃子，吃掉的个数与剩下的个数",
+        "C. 在太阳光下，同一时刻、同一地点物体的高度与影子的长度"
+      ],
       "answer": "B",
-      "explanation": "A 路程一定，速度 × 时间 = 路程，反比例。B 吃掉 + 剩下 = 总数（和一定），不成比例。C 同时同地物高与影长比一定，正比例。",
+      "explanation": "A 路程一定，速度 $\\times$ 时间 = 路程，反比例。B 吃掉 + 剩下 = 总数（和一定），不成比例。C 同时同地物高与影长比一定，正比例。",
       "round": 2
     },
     {
@@ -134,7 +147,7 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "A、B,C",
-      "explanation": "A 每本页数定，本数 × 页数 = 总数 → 本数与总数比一定（正比例）。B 本数定，每本页数与总数比一定（正比例）。C 总数定，每本页数 × 本数 = 总数（反比例）。",
+      "explanation": "A 每本页数定，本数 $\\times$ 页数 = 总数 → 本数与总数比一定（正比例）。B 本数定，每本页数与总数比一定（正比例）。C 总数定，每本页数 $\\times$ 本数 = 总数（反比例）。",
       "round": 3
     }
   ]

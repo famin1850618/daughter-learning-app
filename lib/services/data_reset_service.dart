@@ -33,22 +33,28 @@ class DataResetService extends ChangeNotifier {
 
   /// 归档 + 清零全部学习进度数据。返回 batchId（成功）或 null（失败）。
   ///
+  /// [wipePlans] = true 时（V3.12 新增）：除 5 个进度表外，连同 plan_groups +
+  /// plan_items 整表全部归档并 DELETE，回滚时整体恢复。默认 false 仅重置完成度。
+  ///
   /// 流程：
   /// 1) 启动 transaction
-  /// 2) 给 6 个表里所有行序列化进 data_reset_rows，标 batchId
-  /// 3) plan_items 中已完成（status != 0 或 completed_at != null）的行也归档
-  /// 4) DELETE 6 个主表
-  /// 5) UPDATE plan_items SET status=0, completed_at=NULL
-  /// 6) 写 data_reset_archives 一行（含 stats）
-  /// 7) commit
-  Future<String?> resetAllProgress({required String reason}) async {
+  /// 2) 5 个进度表全行归档 → DELETE
+  /// 3a) wipePlans=false：plan_items 已完成行归档（'plan_items_completion'），
+  ///     UPDATE plan_items SET status=0, completed_at=NULL
+  /// 3b) wipePlans=true：plan_groups + plan_items 全表归档 → DELETE
+  /// 4) 写 data_reset_archives 一行（含 stats / wipe_plans 标志）
+  /// 5) commit
+  Future<String?> resetAllProgress({
+    required String reason,
+    bool wipePlans = false,
+  }) async {
     final db = await DatabaseHelper().database;
     final batchId = 'reset_${DateTime.now().millisecondsSinceEpoch}';
     final stats = <String, int>{};
 
     try {
       await db.transaction((txn) async {
-        // 归档 6 个进度表
+        // 归档 5 个进度表
         for (final t in _resetTables) {
           final rows = await txn.query(t);
           stats[t] = rows.length;
@@ -62,25 +68,42 @@ class DataResetService extends ChangeNotifier {
           await txn.delete(t);
         }
 
-        // plan_items 已完成行归档（不删整行，只重置 status / completed_at）
-        final completedItems = await txn.query(
-          'plan_items',
-          where: 'status != 0 OR completed_at IS NOT NULL',
-        );
-        stats['plan_items_completion'] = completedItems.length;
-        for (final r in completedItems) {
-          await txn.insert('data_reset_rows', {
-            'archive_batch_id': batchId,
-            'table_name': 'plan_items_completion',
-            'row_json': jsonEncode(r),
-          });
+        if (wipePlans) {
+          // 整表归档 plan_groups + plan_items（FK 顺序要求：先 items 再 groups
+          // 才能 DELETE 不被 FK 阻挡；但归档顺序无所谓，回滚时显式排序）
+          for (final t in const ['plan_items', 'plan_groups']) {
+            final rows = await txn.query(t);
+            stats[t] = rows.length;
+            for (final r in rows) {
+              await txn.insert('data_reset_rows', {
+                'archive_batch_id': batchId,
+                'table_name': t,
+                'row_json': jsonEncode(r),
+              });
+            }
+            await txn.delete(t);
+          }
+        } else {
+          // 仅归档已完成 plan_items 行（不删整行，只重置 status / completed_at）
+          final completedItems = await txn.query(
+            'plan_items',
+            where: 'status != 0 OR completed_at IS NOT NULL',
+          );
+          stats['plan_items_completion'] = completedItems.length;
+          for (final r in completedItems) {
+            await txn.insert('data_reset_rows', {
+              'archive_batch_id': batchId,
+              'table_name': 'plan_items_completion',
+              'row_json': jsonEncode(r),
+            });
+          }
+          await txn.update(
+            'plan_items',
+            {'status': 0, 'completed_at': null},
+          );
         }
-        await txn.update(
-          'plan_items',
-          {'status': 0, 'completed_at': null},
-        );
 
-        // 写归档主记录
+        // wipe_plans 标志通过 stats 里是否存在 'plan_groups' key 反推（避免 schema 改动）
         await txn.insert('data_reset_archives', {
           'batch_id': batchId,
           'created_at': DateTime.now().toIso8601String(),
@@ -133,36 +156,60 @@ class DataResetService extends ChangeNotifier {
           'data_reset_rows',
           where: 'archive_batch_id = ?',
           whereArgs: [batchId],
+          orderBy: 'id ASC',
         );
 
+        // 三批分组保 FK 顺序：
+        //   1. 进度表 + plan_groups → INSERT
+        //   2. plan_items → INSERT（依赖 plan_groups 已先回）
+        //   3. plan_items_completion → UPDATE 完成度
+        final firstPass = <Map<String, Object?>>[];
+        final itemRows = <Map<String, Object?>>[];
+        final completionRows = <Map<String, Object?>>[];
         for (final row in rows) {
+          final t = row['table_name'] as String;
+          if (t == 'plan_items') {
+            itemRows.add(row);
+          } else if (t == 'plan_items_completion') {
+            completionRows.add(row);
+          } else {
+            firstPass.add(row);
+          }
+        }
+
+        Future<void> insertRow(Map<String, Object?> row) async {
           final tableName = row['table_name'] as String;
           final dataJson = row['row_json'] as String;
           final data = Map<String, dynamic>.from(jsonDecode(dataJson) as Map);
+          try {
+            await txn.insert(
+              tableName,
+              data,
+              conflictAlgorithm: ConflictAlgorithm.ignore,
+            );
+          } catch (_) {/* 单行失败不阻断 */}
+        }
 
-          if (tableName == 'plan_items_completion') {
-            // plan_items 完成度回滚：UPDATE 而不是 INSERT
-            final id = data['id'];
-            if (id != null) {
-              await txn.update(
-                'plan_items',
-                {
-                  'status': data['status'],
-                  'completed_at': data['completed_at'],
-                },
-                where: 'id = ?',
-                whereArgs: [id],
-              );
-            }
-          } else {
-            // 6 进度表：直接 INSERT（保持原 id）
-            try {
-              await txn.insert(
-                tableName,
-                data,
-                conflictAlgorithm: ConflictAlgorithm.ignore,
-              );
-            } catch (_) {/* 单行失败不阻断 */}
+        for (final row in firstPass) {
+          await insertRow(row);
+        }
+        for (final row in itemRows) {
+          await insertRow(row);
+        }
+        for (final row in completionRows) {
+          final dataJson = row['row_json'] as String;
+          final data = Map<String, dynamic>.from(jsonDecode(dataJson) as Map);
+          final id = data['id'];
+          if (id != null) {
+            await txn.update(
+              'plan_items',
+              {
+                'status': data['status'],
+                'completed_at': data['completed_at'],
+              },
+              where: 'id = ?',
+              whereArgs: [id],
+            );
           }
         }
 
@@ -173,8 +220,8 @@ class DataResetService extends ChangeNotifier {
           whereArgs: [batchId],
         );
 
-        // 删归档行（已回滚不再保留）
-        await txn.delete('data_reset_rows', where: 'archive_batch_id = ?', whereArgs: [batchId]);
+        await txn.delete('data_reset_rows',
+            where: 'archive_batch_id = ?', whereArgs: [batchId]);
       });
     } catch (e) {
       debugPrint('DataResetService.rollbackArchive failed: $e');
@@ -246,4 +293,7 @@ class DataResetArchive {
   /// 总归档行数（不含 plan_items_completion 单独记的）
   int get totalRowsArchived =>
       stats.entries.where((e) => e.key != 'plan_items_completion').fold(0, (a, b) => a + b.value);
+
+  /// 这次归档是否一并清空了计划（plan_groups + plan_items）
+  bool get includesPlans => stats.containsKey('plan_groups');
 }

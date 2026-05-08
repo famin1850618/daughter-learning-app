@@ -34,7 +34,7 @@
       "difficulty": "medium",
       "answer": "9,15",
       "alt_answers": "9、15|||9和15",
-      "explanation": "20 以内的奇合数：9（=3×3）、15（=3×5）。其它如 1（非合数）、3、5、7、11、13、17、19 都是质数，所以只有 9 和 15。",
+      "explanation": "20 以内的奇合数：9（=3$\\times$3）、15（=3$\\times$5）。其它如 1（非合数）、3、5、7、11、13、17、19 都是质数，所以只有 9 和 15。",
       "round": 2
     },
     {
@@ -45,18 +45,18 @@
       "difficulty": "medium",
       "answer": "3,45",
       "alt_answers": "3,45",
-      "explanation": "9=3²，15=3×5。最大公因数=3，最小公倍数=3²×5=45。",
+      "explanation": "9=$3^{2}$，15=3$\\times$5。最大公因数=3，最小公倍数=$3^{2}\\times$5=45。",
       "round": 2
     },
     {
       "chapter": "总复习",
       "knowledge_point": "总复习/数与代数综合",
-      "content": "填空：3/4 = (    )÷8 = (    )/12 = (    )∶4 = (    )（填小数）。请按顺序填四个答案，逗号分隔。",
+      "content": "填空：3/4 = (    )$\\div$8 = (    )/12 = (    )∶4 = (    )（填小数）。请按顺序填四个答案，逗号分隔。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "6,9,3,0.75",
       "alt_answers": "6,9,3,0.75",
-      "explanation": "3/4=6/8（即 6÷8）；3/4=9/12；3/4 即 3∶4；3÷4=0.75。",
+      "explanation": "3/4=6/8（即 6$\\div$8）；3/4=9/12；3/4 即 3∶4；3$\\div$4=0.75。",
       "round": 2
     },
     {
@@ -67,7 +67,7 @@
       "difficulty": "easy",
       "answer": "3.8",
       "alt_answers": "3.8kg|||3.8千克",
-      "explanation": "1 kg = 1000 g，3800÷1000 = 3.8 kg。",
+      "explanation": "1 kg = 1000 g，3800$\\div$1000 = 3.8 kg。",
       "round": 1
     },
     {
@@ -89,7 +89,7 @@
       "difficulty": "easy",
       "answer": ">",
       "alt_answers": "大于|||＞",
-      "explanation": "5÷6 ≈ 0.833... > 0.83。",
+      "explanation": "5$\\div$6 ≈ 0.833... > 0.83。",
       "round": 1
     },
     {
@@ -106,18 +106,18 @@
     {
       "chapter": "总复习",
       "knowledge_point": "总复习/数与代数综合",
-      "content": "比较大小：0.89×1.03(    )0.89。",
+      "content": "比较大小：0.89$\\times$1.03(    )0.89。",
       "type": "fill",
       "difficulty": "easy",
       "answer": ">",
       "alt_answers": "大于|||＞",
-      "explanation": "乘以大于 1 的数会变大：0.89×1.03 > 0.89。",
+      "explanation": "乘以大于 1 的数会变大：0.89$\\times$1.03 > 0.89。",
       "round": 1
     },
     {
       "chapter": "总复习",
       "knowledge_point": "总复习/数与代数综合",
-      "content": "比较大小：7.2×0.25(    )7.2÷4。",
+      "content": "比较大小：7.2$\\times$0.25(    )7.2$\\div$4。",
       "type": "fill",
       "difficulty": "medium",
       "answer": "=",
@@ -155,7 +155,7 @@
       "difficulty": "medium",
       "answer": "1.8a-b",
       "alt_answers": "1.8a－b|||1.8*a-b",
-      "explanation": "甲 = 乙×1.8 - b = 1.8a - b。",
+      "explanation": "甲 = 乙$\\times$1.8 - b = 1.8a - b。",
       "round": 2
     },
     {
@@ -166,7 +166,7 @@
       "difficulty": "hard",
       "answer": "(a+b)/1.8",
       "alt_answers": "(a+b)÷1.8|||(a＋b)/1.8",
-      "explanation": "由甲 = 乙×1.8 - b，得乙×1.8 = a+b，所以乙 = (a+b)/1.8。",
+      "explanation": "由甲 = 乙$\\times$1.8 - b，得乙$\\times$1.8 = a+b，所以乙 = (a+b)/1.8。",
       "round": 3
     },
     {
@@ -220,7 +220,7 @@
       "type": "judgment",
       "difficulty": "easy",
       "answer": "对",
-      "explanation": "比值 = 前项÷后项。前项扩大 2 倍，后项不变，比值扩大 2 倍。",
+      "explanation": "比值 = 前项$\\div$后项。前项扩大 2 倍，后项不变，比值扩大 2 倍。",
       "round": 1
     },
     {
@@ -230,7 +230,7 @@
       "type": "judgment",
       "difficulty": "medium",
       "answer": "错",
-      "explanation": "原价 1，涨后 1.15，再降 15%：1.15×0.85 = 0.9775 ≠ 1。所以不相等。",
+      "explanation": "原价 1，涨后 1.15，再降 15%：1.15$\\times$0.85 = 0.9775 ≠ 1。所以不相等。",
       "round": 2
     },
     {
@@ -240,7 +240,7 @@
       "type": "judgment",
       "difficulty": "medium",
       "answer": "错",
-      "explanation": "面积 = πr²，与 r² 成正比例，与 r 不成正比例（不是线性关系）。",
+      "explanation": "面积 = $\\pi r^{2}$，与 $r^{2}$ 成正比例，与 r 不成正比例（不是线性关系）。",
       "round": 2
     },
     {
@@ -260,7 +260,7 @@
       "type": "judgment",
       "difficulty": "medium",
       "answer": "错",
-      "explanation": "因数概念限于自然数（非零整数）。例如甲=5×0.5=2.5，乙=0.5，0.5 不是 2.5 的因数。",
+      "explanation": "因数概念限于自然数（非零整数）。例如甲=5$\\times$0.5=2.5，乙=0.5，0.5 不是 2.5 的因数。",
       "round": 2
     },
     {
@@ -276,13 +276,13 @@
         "D. 无法比较"
       ],
       "answer": "A",
-      "explanation": "甲×2/7 = 乙×3/5。甲/乙 = (3/5)÷(2/7) = 21/10 > 1，所以甲>乙。",
+      "explanation": "甲$\\times$2/7 = 乙$\\times$3/5。甲/乙 = (3/5)$\\div$(2/7) = 21/10 > 1，所以甲>乙。",
       "round": 2
     },
     {
       "chapter": "总复习",
       "knowledge_point": "总复习/数与代数综合",
-      "content": "如果 m÷n = 12（m、n 都是不为 0 的自然数），那么 m 和 n 的最小公倍数是(    )。",
+      "content": "如果 m$\\div$n = 12（m、n 都是不为 0 的自然数），那么 m 和 n 的最小公倍数是(    )。",
       "type": "choice",
       "difficulty": "medium",
       "options": [
@@ -292,7 +292,7 @@
         "D. mn"
       ],
       "answer": "A",
-      "explanation": "m÷n=12 即 m = 12n，n 是 m 的因数。所以最小公倍数 = m。",
+      "explanation": "m$\\div$n=12 即 m = 12n，n 是 m 的因数。所以最小公倍数 = m。",
       "round": 2
     },
     {
@@ -318,13 +318,13 @@
       "type": "choice",
       "difficulty": "medium",
       "options": [
-        "A. 3/4 ÷ 4",
-        "B. 3/4 ÷ (4-1)",
-        "C. 3/4 × 4",
-        "D. 3/4 ÷ (4+1)"
+        "A. 3/4 $\\div$ 4",
+        "B. 3/4 $\\div$ (4-1)",
+        "C. 3/4 $\\times$ 4",
+        "D. 3/4 $\\div$ (4+1)"
       ],
       "answer": "D",
-      "explanation": "锯 4 次得 5 段，每段长 = 3/4 ÷ 5 = 3/4 ÷ (4+1)。",
+      "explanation": "锯 4 次得 5 段，每段长 = 3/4 $\\div$ 5 = 3/4 $\\div$ (4+1)。",
       "round": 2
     },
     {
@@ -351,7 +351,7 @@
       "difficulty": "easy",
       "answer": "6.7",
       "alt_answers": "6.7",
-      "explanation": "x + 1.3 = 56÷7 = 8，所以 x = 8 - 1.3 = 6.7。",
+      "explanation": "x + 1.3 = 56$\\div$7 = 8，所以 x = 8 - 1.3 = 6.7。",
       "round": 1
     },
     {
@@ -362,7 +362,7 @@
       "difficulty": "medium",
       "answer": "1.6",
       "alt_answers": "1.6|||8/5",
-      "explanation": "外积=内积：4.5x = 9×0.8 = 7.2，所以 x = 7.2÷4.5 = 1.6 = 8/5。",
+      "explanation": "外积=内积：4.5x = 9$\\times$0.8 = 7.2，所以 x = 7.2$\\div$4.5 = 1.6 = 8/5。",
       "round": 2
     },
     {
@@ -373,7 +373,7 @@
       "difficulty": "medium",
       "answer": "80",
       "alt_answers": "80",
-      "explanation": "0.25x + 0.5x = 0.75x = 60，所以 x = 60÷0.75 = 80。",
+      "explanation": "0.25x + 0.5x = 0.75x = 60，所以 x = 60$\\div$0.75 = 80。",
       "round": 2
     },
     {
@@ -384,7 +384,7 @@
       "difficulty": "medium",
       "answer": "135",
       "alt_answers": "135元",
-      "explanation": "便宜 15 元 = 原价×10%，所以原价 = 150 元，实付 = 150×90% = 135 元。",
+      "explanation": "便宜 15 元 = 原价$\\times$10%，所以原价 = 150 元，实付 = 150$\\times$90% = 135 元。",
       "round": 2
     },
     {
@@ -395,7 +395,7 @@
       "difficulty": "easy",
       "answer": "0.5",
       "alt_answers": "0.5元|||5角|||1/2",
-      "explanation": "5 支圆珠笔花 5×1.2 = 6 元。4 支铅笔花 8-6 = 2 元。每支 = 2÷4 = 0.5 元。",
+      "explanation": "5 支圆珠笔花 5$\\times$1.2 = 6 元。4 支铅笔花 8-6 = 2 元。每支 = 2$\\div$4 = 0.5 元。",
       "round": 1
     },
     {
@@ -406,7 +406,7 @@
       "difficulty": "hard",
       "answer": "108",
       "alt_answers": "108张",
-      "explanation": "小悦 = 72÷(8/9) = 81 张。小军 = 81×(1+1/3) = 81×4/3 = 108 张。",
+      "explanation": "小悦 = 72$\\div$(8/9) = 81 张。小军 = 81$\\times$(1+1/3) = 81$\\times$4/3 = 108 张。",
       "round": 3
     },
     {
@@ -428,7 +428,7 @@
       "difficulty": "hard",
       "answer": "46",
       "alt_answers": "46m/s|||46米每秒",
-      "explanation": "桥长比 = 1920-1000 = 920 m，时间比 = 50-30 = 20 秒。速度 = 920÷20 = 46 m/s。",
+      "explanation": "桥长比 = 1920-1000 = 920 m，时间比 = 50-30 = 20 秒。速度 = 920$\\div$20 = 46 m/s。",
       "round": 3
     },
     {
@@ -439,7 +439,7 @@
       "difficulty": "hard",
       "answer": "380",
       "alt_answers": "380m|||380米",
-      "explanation": "30 秒走的总路程 = 46×30 = 1380 m。这等于桥长 + 车身。车身 = 1380 - 1000 = 380 m。",
+      "explanation": "30 秒走的总路程 = 46$\\times$30 = 1380 m。这等于桥长 + 车身。车身 = 1380 - 1000 = 380 m。",
       "round": 3
     },
     {
@@ -450,7 +450,7 @@
       "difficulty": "hard",
       "answer": "225",
       "alt_answers": "225台",
-      "explanation": "实际生产总数 = 298×(15-3) = 3576 台。原计划数 = 3576-201 = 3375 台。原计划每天 = 3375÷15 = 225 台。",
+      "explanation": "实际生产总数 = 298$\\times$(15-3) = 3576 台。原计划数 = 3576-201 = 3375 台。原计划每天 = 3375$\\div$15 = 225 台。",
       "round": 3
     }
   ]

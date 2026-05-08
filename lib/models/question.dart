@@ -1,4 +1,6 @@
+import 'dart:convert';
 import 'subject.dart';
+import 'speaker_profile.dart';
 
 /// V3.8.3：新增 subjective（主观题）—— 答完不立即判定，自动入家长审核队列由家长打分。
 /// 用于作文、阅读理解开放问答、Cambridge Writing 等无标准答案的题型。
@@ -62,7 +64,11 @@ class Question {
   /// 题目附图：SVG 字符串（以 `<svg` 开头）或 data URL（如 `data:image/png;base64,...`）。null 表示无图。
   final String? imageData;
   /// 听力题朗读原文（设备 TTS 朗读，仅英语题用）。null 表示无听力。
+  /// 多角色对话格式：每行一个 turn，`角色名:` 开头，与 [speakers] map 的 key 对齐。
   final String? audioText;
+  /// V3.12: 多角色 TTS 元数据。key 是 audioText 中的角色名，value 是 SpeakerProfile。
+  /// audioText 是单角色独白时此字段可省略，TTS 端用 SpeakerProfile.defaultProfile。
+  final Map<String, SpeakerProfile>? speakers;
   /// 难度档（V3.8）：1=基础 / 2=中等 / 3=较难 / 4=竞赛
   /// null 表示历史题包未标 round（V3.6/V3.7.6 之前），后续 Agent 回填。
   final int? round;
@@ -85,6 +91,7 @@ class Question {
     this.explanation,
     this.imageData,
     this.audioText,
+    this.speakers,
     this.round,
     this.groupId,
     this.groupOrder,
@@ -110,6 +117,9 @@ class Question {
       'explanation': explanation,
       'image_data': imageData,
       'audio_text': audioText,
+      'speakers_json': speakers == null
+          ? null
+          : jsonEncode(speakers!.map((k, v) => MapEntry(k, v.toMap()))),
       'round': round,
       'group_id': groupId,
       'group_order': groupOrder,
@@ -119,6 +129,16 @@ class Question {
 
   factory Question.fromMap(Map<String, dynamic> map) {
     final optionsRaw = map['options'] as String?;
+    final speakersRaw = map['speakers_json'] as String?;
+    Map<String, SpeakerProfile>? speakersMap;
+    if (speakersRaw != null && speakersRaw.isNotEmpty) {
+      try {
+        final decoded = jsonDecode(speakersRaw) as Map<String, dynamic>;
+        speakersMap = decoded.map(
+          (k, v) => MapEntry(k, SpeakerProfile.fromMap((v as Map).cast<String, dynamic>())),
+        );
+      } catch (_) {/* 损坏的 JSON 忽略，TTS 走 default */}
+    }
     return Question(
       id: map['id'] as int?,
       subject: Subject.values[map['subject'] as int],
@@ -133,6 +153,7 @@ class Question {
       explanation: map['explanation'] as String?,
       imageData: map['image_data'] as String?,
       audioText: map['audio_text'] as String?,
+      speakers: speakersMap,
       round: map['round'] as int?,
       groupId: map['group_id'] as String?,
       groupOrder: map['group_order'] as int?,

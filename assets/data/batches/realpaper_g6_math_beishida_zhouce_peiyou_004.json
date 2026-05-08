@@ -11,7 +11,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "5,25",
-      "explanation": "边长按比例缩小：25÷5=5 cm；面积 = 5×5 = 25 cm²。",
+      "explanation": "边长按比例缩小：25$\\div$5=5 cm；面积 = 5$\\times$5 = 25 cm²。",
       "round": 2
     },
     {
@@ -51,7 +51,7 @@
       "type": "fill",
       "difficulty": "easy",
       "answer": "50",
-      "explanation": "5×1000000 = 5000000 cm = 50 km。",
+      "explanation": "5$\\times$1000000 = 5000000 cm = 50 km。",
       "round": 1
     },
     {
@@ -61,7 +61,7 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "3:2,3:2,9:4",
-      "explanation": "半径=直径÷2，半径比与直径比相同；周长=π×直径，周长比=直径比；面积=πr²，面积比=半径比的平方。",
+      "explanation": "半径=直径$\\div$2，半径比与直径比相同；周长=$\\pi\\times$直径，周长比=直径比；面积=$\\pi r^{2}$，面积比=半径比的平方。",
       "round": 3
     },
     {
@@ -71,7 +71,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "81",
-      "explanation": "缩小后边长 = 36÷4 = 9 cm；面积 = 9×9 = 81 cm²。",
+      "explanation": "缩小后边长 = 36$\\div$4 = 9 cm；面积 = 9$\\times$9 = 81 cm²。",
       "round": 2
     },
     {
@@ -81,7 +81,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "120,15",
-      "explanation": "6×2000 = 12000 cm = 120 m；300 m = 30000 cm，30000÷2000 = 15 cm。",
+      "explanation": "6$\\times$2000 = 12000 cm = 120 m；300 m = 30000 cm，30000$\\div$2000 = 15 cm。",
       "round": 2
     },
     {
@@ -91,7 +91,7 @@
       "type": "judgment",
       "difficulty": "medium",
       "answer": "错",
-      "explanation": "周长是原来的 2 倍，但面积是 2² = 4 倍。",
+      "explanation": "周长是原来的 2 倍，但面积是 $2^{2}$ = 4 倍。",
       "round": 2
     },
     {
@@ -120,7 +120,11 @@
       "content": "一种长 4 mm 的精密零件在图纸上长 8 cm，这张图纸的比例尺是(    )。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 1∶2", "B. 1∶20", "C. 20∶1"],
+      "options": [
+        "A. 1∶2",
+        "B. 1∶20",
+        "C. 20∶1"
+      ],
       "answer": "C",
       "explanation": "8 cm = 80 mm，比例尺 = 80∶4 = 20∶1（放大图）。",
       "round": 2
@@ -131,7 +135,11 @@
       "content": "比例尺一定，实际距离扩大到原来的 5 倍，则图上距离(    )。",
       "type": "choice",
       "difficulty": "medium",
-      "options": ["A. 缩小到原来的 1/5", "B. 扩大到原来的 5 倍", "C. 不变"],
+      "options": [
+        "A. 缩小到原来的 1/5",
+        "B. 扩大到原来的 5 倍",
+        "C. 不变"
+      ],
       "answer": "B",
       "explanation": "比例尺 = 图上∶实际（一定），图上距离与实际距离成正比例，实际扩大几倍图上也扩大几倍。",
       "round": 2
@@ -153,7 +161,7 @@
       "type": "fill",
       "difficulty": "medium",
       "answer": "3",
-      "explanation": "实际长度 = 图上长度÷比例尺 = 9÷30 = 0.3 cm = 3 mm。",
+      "explanation": "实际长度 = 图上长度$\\div$比例尺 = 9$\\div$30 = 0.3 cm = 3 mm。",
       "round": 2
     },
     {
@@ -163,17 +171,17 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "1.8",
-      "explanation": "实际距离 = 3.6×3000000 = 10800000 cm = 108 km；时间 = 108÷60 = 1.8 时。",
+      "explanation": "实际距离 = 3.6$\\times$3000000 = 10800000 cm = 108 km；时间 = 108$\\div$60 = 1.8 时。",
       "round": 3
     },
     {
       "chapter": "图形的运动",
       "knowledge_point": "图形的运动/图形放大缩小",
-      "content": "一个圆的半径是 2 cm，按 3∶1 放大后，得到的图形的面积是多少 cm²？（π 取 3.14）",
+      "content": "一个圆的半径是 2 cm，按 3∶1 放大后，得到的图形的面积是多少 cm²？（$\\pi$ 取 3.14）",
       "type": "fill",
       "difficulty": "medium",
       "answer": "113.04",
-      "explanation": "放大后半径 = 2×3 = 6 cm；面积 = 3.14×6² = 3.14×36 = 113.04 cm²。",
+      "explanation": "放大后半径 = 2$\\times$3 = 6 cm；面积 = 3.14$\\times 6^{2}$ = 3.14$\\times$36 = 113.04 cm²。",
       "round": 3
     },
     {
@@ -183,7 +191,7 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "17600",
-      "explanation": "实际底 = 8×2000 = 16000 cm = 160 m；实际高 = 5.5×2000 = 11000 cm = 110 m；面积 = 160×110 = 17600 m²。",
+      "explanation": "实际底 = 8$\\times$2000 = 16000 cm = 160 m；实际高 = 5.5$\\times$2000 = 11000 cm = 110 m；面积 = 160$\\times$110 = 17600 m²。",
       "round": 3
     },
     {
@@ -193,7 +201,7 @@
       "type": "fill",
       "difficulty": "hard",
       "answer": "3.2",
-      "explanation": "总路程一定，速度与时间成反比例。返回速度 = 80×(1+1/4) = 100 km/h；80×4 = 100×x，解得 x = 3.2 时。",
+      "explanation": "总路程一定，速度与时间成反比例。返回速度 = 80$\\times$(1+1/4) = 100 km/h；80$\\times$4 = 100$\\times$x，解得 x = 3.2 时。",
       "round": 3
     }
   ]
