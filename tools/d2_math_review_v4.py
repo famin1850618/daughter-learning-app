@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-D2 V3 Math Reviewer — V3.12 D2+ algorithm v3 implementation.
+D2 V4 Math Reviewer — V3.12 D2+ algorithm v4 implementation.
+
+V3.12.7 兼容修正:
+  - 4a annotate 阶段 round 字段强制 null（spec §2.1）
+  - 脚本读 question 字段时 original_round=None 是合法状态
+  - 不要因为 None 报错（V3.12.7 第三轮 agent 实测发现）
 
 V2 → V3 changes (基于 Famin V2 verify 反馈，B 组 4/5 道偏高 1-2 档):
-  1. distractor 单维拉高保护：当 max(step,mental,calc,kp) <= R2 时，
+  1. distractor 单维拉高保护：当 max(step,mental,calc,kp) <= R2 时,
      distractor 上限 R2（不让单维 distractor=3 拉高 max）
   2. mental_flex 阈值下调：hidden_score >= 5 → R3（原 >= 6）
   3. anchor 匹配仅 round ±2 内候选（高噪音去除）
