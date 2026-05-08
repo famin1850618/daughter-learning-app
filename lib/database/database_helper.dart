@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 19,
+      version: 20,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
@@ -453,8 +453,6 @@ class DatabaseHelper {
       // v19: V3.12.7 batch_hash 机制（题数 bug 底层修复）
       // 1. questions 表加 batch_hash 字段
       // 2. 删除六下数学/语文 realpaper 题：让 V3.12.6 重扫的 batch 在下次启动重新 import
-      //    （V3.12.6 batch source 跟 V3.10 同名，但内容不同。旧机制按 source 幂等跳过新内容
-      //     → 题数显示一直是 V3.10 数据。V3.12.7 加 batch_hash 后此 bug 不会再现。）
       try {
         await db.execute('ALTER TABLE questions ADD COLUMN batch_hash TEXT');
       } catch (_) {/* 已加过则跳 */}
@@ -462,6 +460,21 @@ class DatabaseHelper {
         await db.delete('questions',
             where: "source LIKE 'realpaper_g6_math_%' OR source LIKE 'realpaper_g6_chinese_%'");
       } catch (_) {/* 无数据 */}
+    }
+
+    if (oldVersion < 20) {
+      // v20: V3.12.8 兜底——再次强制清掉所有 realpaper_g6 题（含可能漏的英语）
+      // V3.12.7 实测：用户装 final.apk 后题数仍接近旧值，说明 v18→v19 升级在某些设备没正确执行。
+      // v20 作为兜底：无论之前 batch_hash 机制是否生效，强制清 realpaper_g6 旧数据 + 重 import。
+      // 同时清 V3.6/V3.10 cron 时期的老 source（外研社、cron AI 出题等历史残留）。
+      try {
+        await db.delete('questions', where: "source LIKE 'realpaper_g6_%'");
+      } catch (_) {}
+      try {
+        // 老 cron / 外研社 / V3.7.6 R2 等 batch_2026_05_*g6_* 仅保留 PET R1-R4
+        await db.delete('questions',
+            where: "source LIKE 'batch_2026_05_%g6_%' AND source NOT LIKE '%pet_r%'");
+      } catch (_) {}
     }
   }
 
