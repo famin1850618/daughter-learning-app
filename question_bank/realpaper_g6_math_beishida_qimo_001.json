@@ -261,7 +261,7 @@
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/解比例",
-      "content": "解比例：3又1/2 ∶ x = 0.5 ∶ 0.2，求 x。请用小数或分数表示（如「1.4」或「7/5」）。",
+      "content": "解比例：3又1/2 ∶ x = 0.5 ∶ 0.2，求 x。请用小数或分数表示（如「2.5」或「5/2」）。",
       "type": "calculation",
       "difficulty": "medium",
       "answer": "1.4",

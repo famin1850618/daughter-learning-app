@@ -114,7 +114,7 @@
     {
       "chapter": "总复习",
       "knowledge_point": "总复习/数与代数综合",
-      "content": "40 kg 减少它的 2/5 后，再增加 2/5 kg 是(    ) kg。（结果写小数，如「24.4」）",
+      "content": "40 kg 减少它的 2/5 后，再增加 2/5 kg 是(    ) kg。（结果写小数，如「12.5」）",
       "type": "fill",
       "difficulty": "medium",
       "answer": "24.4",
@@ -289,7 +289,7 @@
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/化简比",
-      "content": "化简比并求比值：(2/50)∶(1/7)。请依次填化简后的比和比值，用逗号分隔（写法如「7:25,7/25」）。",
+      "content": "化简比并求比值：(2/50)∶(1/7)。请依次填化简后的比和比值，用逗号分隔（写法如「3:5,3/5」）。",
       "type": "calculation",
       "difficulty": "medium",
       "answer": "7:25,7/25",
@@ -302,7 +302,7 @@
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/化简比",
-      "content": "化简比并求比值：(1/2) t∶750 kg。请依次填化简后的比和比值，用逗号分隔（写法如「2:3,2/3」）。",
+      "content": "化简比并求比值：(1/2) t∶750 kg。请依次填化简后的比和比值，用逗号分隔（写法如「3:5,3/5」）。",
       "type": "calculation",
       "difficulty": "medium",
       "answer": "2:3,2/3",
@@ -315,7 +315,7 @@
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/化简比",
-      "content": "化简比并求比值：4.5∶(4/9)。请依次填化简后的比和比值，用逗号分隔（写法如「81:8,81/8」）。",
+      "content": "化简比并求比值：4.5∶(4/9)。请依次填化简后的比和比值，用逗号分隔（写法如「3:5,3/5」）。",
       "type": "calculation",
       "difficulty": "hard",
       "answer": "81:8,81/8",
@@ -328,7 +328,7 @@
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/解比例",
-      "content": "求未知数 x：x$\\div$(6/5)＝(13/12)。（结果写分数，如「13/10」）",
+      "content": "求未知数 x：x$\\div$(6/5)＝(13/12)。（结果写分数，如「3/4」）",
       "type": "calculation",
       "difficulty": "medium",
       "answer": "13/10",
@@ -341,7 +341,7 @@
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/解比例",
-      "content": "求未知数 x：1.4∶0.5＝2.1∶x。（写小数，如「0.75」）",
+      "content": "求未知数 x：1.4∶0.5＝2.1∶x。（写小数，如「1.25」）",
       "type": "calculation",
       "difficulty": "medium",
       "answer": "0.75",
@@ -354,7 +354,7 @@
     {
       "chapter": "比例",
       "knowledge_point": "比和比例/解比例",
-      "content": "求未知数 x：(3/5)∶(1/20)＝(4/9)∶x。（结果写分数，如「1/27」）",
+      "content": "求未知数 x：(3/5)∶(1/20)＝(4/9)∶x。（结果写分数，如「3/4」）",
       "type": "calculation",
       "difficulty": "hard",
       "answer": "1/27",
