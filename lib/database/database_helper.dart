@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 14,
+      version: 15,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
@@ -333,6 +333,83 @@ class DatabaseHelper {
         } catch (_) {/* 忽略 */}
       }
     }
+    if (oldVersion < 15) {
+      // v15: V3.11 真题切换收尾
+      // 1) 删 curriculum 老语文 42 章 + 老英语 24 章 = 66 行（与 curriculum_seed.dart 同步）
+      // 2) 创建数据归档表（重置进度时落档，7 天内可回滚）
+      // 3) 真正的"自动清零"动作不在 SQL 迁移层做，由 DataResetService 在 main.dart 启动时
+      //    凭 SharedPreferences 标志触发一次（这样 service 初始化齐全 + 走统一归档路径）。
+
+      const deletedChineseChapters = [
+        // g6 老 6 单元
+        '第一单元：民风民俗', '第二单元：外国名著', '第三单元：真情流露',
+        '第四单元：革命精神', '第五单元：科学精神', '第六单元：难忘小学生活',
+        // g7 老 12 单元
+        '七上·第一单元：四季美景', '七上·第二单元：至爱亲情', '七上·第三单元：学习生活',
+        '七上·第四单元：人生之舟', '七上·第五单元：动物与人', '七上·第六单元：想象之翼',
+        '七下·第一单元：群星闪耀', '七下·第二单元：家国情怀', '七下·第三单元：凡人小事',
+        '七下·第四单元：修身正己', '七下·第五单元：哲思与志趣', '七下·第六单元：探险与科学',
+        // g8 老 12 单元
+        '八上·第一单元：新闻阅读', '八上·第二单元：回忆往事', '八上·第三单元：山川美景',
+        '八上·第四单元：情感哲思', '八上·第五单元：文明的印迹', '八上·第六单元：情操与志趣',
+        '八下·第一单元：民俗风情', '八下·第二单元：自然科学', '八下·第三单元：古代山水',
+        '八下·第四单元：演讲口语', '八下·第五单元：山水游记', '八下·第六单元：古代哲思',
+        // g9 老 12 单元
+        '九上·第一单元：诗歌鉴赏', '九上·第二单元：议论文·思辨', '九上·第三单元：山水古文',
+        '九上·第四单元：小说阅读', '九上·第五单元：议论文·创新', '九上·第六单元：古典小说',
+        '九下·第一单元：现代诗歌', '九下·第二单元：小说人物', '九下·第三单元：先秦诸子',
+        '九下·第四单元：文艺理论', '九下·第五单元：戏剧阅读', '九下·第六单元：古代史传',
+      ];
+      for (final n in deletedChineseChapters) {
+        try {
+          await db.delete('curriculum',
+              where: 'subject = ? AND chapter_name = ?', whereArgs: ['语文', n]);
+        } catch (_) {}
+      }
+
+      const deletedEnglishChapters = [
+        // g6 老 6 章
+        '词汇积累（小学核心1500词）', '一般现在时与现在进行时', '一般过去时',
+        '简单句与句型转换', '日常交际用语', '基础阅读理解',
+        // g7 老 6 章
+        '词汇扩展（初中核心词2000词）', '一般将来时与情态动词', '比较级与最高级',
+        'there be 句型与介词', '阅读理解：记叙文', '写作：简单段落',
+        // g8 老 6 章
+        '词汇扩展（3000词）', '现在完成时', '被动语态',
+        '宾语从句', '阅读理解：说明文与议论文', '写作：应用文（书信/邮件）',
+        // g9 老 6 章
+        '词汇扩展（4000词）', '定语从句', '各类从句综合',
+        '阅读理解：综合题型', '写作：议论文与说明文', '听力与口语表达',
+      ];
+      for (final n in deletedEnglishChapters) {
+        try {
+          await db.delete('curriculum',
+              where: 'subject = ? AND chapter_name = ?', whereArgs: ['英语', n]);
+        } catch (_) {}
+      }
+
+      // 数据归档表（DataResetService 用）
+      await db.execute('''
+        CREATE TABLE IF NOT EXISTS data_reset_archives (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          batch_id TEXT NOT NULL UNIQUE,
+          created_at TEXT NOT NULL,
+          reason TEXT,
+          stats_json TEXT,
+          rolled_back_at TEXT
+        )
+      ''');
+      await db.execute('''
+        CREATE TABLE IF NOT EXISTS data_reset_rows (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          archive_batch_id TEXT NOT NULL,
+          table_name TEXT NOT NULL,
+          row_json TEXT NOT NULL
+        )
+      ''');
+      await db.execute(
+          'CREATE INDEX IF NOT EXISTS idx_archive_rows_batch ON data_reset_rows (archive_batch_id)');
+    }
   }
 
   Future<void> _createAllTables(Database db) async {
@@ -498,6 +575,27 @@ class DatabaseHelper {
         user_id TEXT DEFAULT 'local'
       )
     ''');
+
+    // V3.11: 数据重置归档（DataResetService 用，7 天内可回滚）
+    await db.execute('''
+      CREATE TABLE data_reset_archives (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        batch_id TEXT NOT NULL UNIQUE,
+        created_at TEXT NOT NULL,
+        reason TEXT,
+        stats_json TEXT,
+        rolled_back_at TEXT
+      )
+    ''');
+    await db.execute('''
+      CREATE TABLE data_reset_rows (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        archive_batch_id TEXT NOT NULL,
+        table_name TEXT NOT NULL,
+        row_json TEXT NOT NULL
+      )
+    ''');
+    await db.execute('CREATE INDEX idx_archive_rows_batch ON data_reset_rows (archive_batch_id)');
 
     await db.execute('CREATE INDEX idx_rewards_earned_at ON rewards (earned_at)');
     await db.execute('CREATE INDEX idx_rewards_source ON rewards (source)');

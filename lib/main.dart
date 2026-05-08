@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:provider/provider.dart';
 import 'package:intl/date_symbol_data_local.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'utils/app_theme.dart';
 import 'screens/home_screen.dart';
@@ -19,6 +20,7 @@ import 'services/assessment_service.dart';
 import 'services/learning_sync_service.dart';
 import 'services/difficulty_settings_service.dart';
 import 'services/review_request_service.dart';
+import 'services/data_reset_service.dart';
 import 'database/question_dao.dart';
 import 'models/question.dart';
 import 'models/subject.dart';
@@ -101,6 +103,24 @@ Future<void> _seedDatabase() async {
     } catch (e) {
       debugPrint('Failed to load $asset: $e');
     }
+  }
+
+  // 4. V3.11：清理过期归档（>7 天）
+  final resetService = DataResetService();
+  await resetService.gcExpiredArchives();
+
+  // 5. V3.11 升级首次启动自动清零（试题期间累积数据 → 归档 + 清空）
+  // 一次性触发，标记位 'v311_auto_reset_done'。已触发过的设备不再清零。
+  // 用户后续可在设置页主动重置；归档 7 天内可回滚。
+  final prefs = await SharedPreferences.getInstance();
+  if (!(prefs.getBool('v311_auto_reset_done') ?? false)) {
+    final batchId = await resetService.resetAllProgress(
+      reason: 'V3.11 升级自动清零（试题期间累积数据）',
+    );
+    if (batchId != null) {
+      debugPrint('V3.11 auto-reset succeeded: $batchId');
+    }
+    await prefs.setBool('v311_auto_reset_done', true);
   }
 }
 
@@ -267,6 +287,7 @@ class _LearningAppState extends State<LearningApp> {
         ChangeNotifierProvider.value(value: _syncService),
         ChangeNotifierProvider.value(value: _difficultySettings),
         ChangeNotifierProvider.value(value: _reviewService),
+        ChangeNotifierProvider<DataResetService>.value(value: DataResetService()),
       ],
       child: MaterialApp(
         title: '学习小助手',

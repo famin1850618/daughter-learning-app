@@ -52,85 +52,12 @@ List<Chapter> get curriculumChapters => [
   Chapter(subject: '数学', grade: 9, orderIndex: 9,  chapterName: '圆'),
 
   // ══════════════════════════════════════════
-  // 语文（人教版部编版）六年级下 ～ 初三，按单元主题
+  // 语文（人教版部编版）—— V3.11：删除老 6 单元体系，统一走 KP-category（见下方）
   // ══════════════════════════════════════════
-  Chapter(subject: '语文', grade: 6, orderIndex: 1,  chapterName: '第一单元：民风民俗'),
-  Chapter(subject: '语文', grade: 6, orderIndex: 2,  chapterName: '第二单元：外国名著'),
-  Chapter(subject: '语文', grade: 6, orderIndex: 3,  chapterName: '第三单元：真情流露'),
-  Chapter(subject: '语文', grade: 6, orderIndex: 4,  chapterName: '第四单元：革命精神'),
-  Chapter(subject: '语文', grade: 6, orderIndex: 5,  chapterName: '第五单元：科学精神'),
-  Chapter(subject: '语文', grade: 6, orderIndex: 6,  chapterName: '第六单元：难忘小学生活'),
-
-  Chapter(subject: '语文', grade: 7, orderIndex: 1,  chapterName: '七上·第一单元：四季美景'),
-  Chapter(subject: '语文', grade: 7, orderIndex: 2,  chapterName: '七上·第二单元：至爱亲情'),
-  Chapter(subject: '语文', grade: 7, orderIndex: 3,  chapterName: '七上·第三单元：学习生活'),
-  Chapter(subject: '语文', grade: 7, orderIndex: 4,  chapterName: '七上·第四单元：人生之舟'),
-  Chapter(subject: '语文', grade: 7, orderIndex: 5,  chapterName: '七上·第五单元：动物与人'),
-  Chapter(subject: '语文', grade: 7, orderIndex: 6,  chapterName: '七上·第六单元：想象之翼'),
-  Chapter(subject: '语文', grade: 7, orderIndex: 7,  chapterName: '七下·第一单元：群星闪耀'),
-  Chapter(subject: '语文', grade: 7, orderIndex: 8,  chapterName: '七下·第二单元：家国情怀'),
-  Chapter(subject: '语文', grade: 7, orderIndex: 9,  chapterName: '七下·第三单元：凡人小事'),
-  Chapter(subject: '语文', grade: 7, orderIndex: 10, chapterName: '七下·第四单元：修身正己'),
-  Chapter(subject: '语文', grade: 7, orderIndex: 11, chapterName: '七下·第五单元：哲思与志趣'),
-  Chapter(subject: '语文', grade: 7, orderIndex: 12, chapterName: '七下·第六单元：探险与科学'),
-
-  Chapter(subject: '语文', grade: 8, orderIndex: 1,  chapterName: '八上·第一单元：新闻阅读'),
-  Chapter(subject: '语文', grade: 8, orderIndex: 2,  chapterName: '八上·第二单元：回忆往事'),
-  Chapter(subject: '语文', grade: 8, orderIndex: 3,  chapterName: '八上·第三单元：山川美景'),
-  Chapter(subject: '语文', grade: 8, orderIndex: 4,  chapterName: '八上·第四单元：情感哲思'),
-  Chapter(subject: '语文', grade: 8, orderIndex: 5,  chapterName: '八上·第五单元：文明的印迹'),
-  Chapter(subject: '语文', grade: 8, orderIndex: 6,  chapterName: '八上·第六单元：情操与志趣'),
-  Chapter(subject: '语文', grade: 8, orderIndex: 7,  chapterName: '八下·第一单元：民俗风情'),
-  Chapter(subject: '语文', grade: 8, orderIndex: 8,  chapterName: '八下·第二单元：自然科学'),
-  Chapter(subject: '语文', grade: 8, orderIndex: 9,  chapterName: '八下·第三单元：古代山水'),
-  Chapter(subject: '语文', grade: 8, orderIndex: 10, chapterName: '八下·第四单元：演讲口语'),
-  Chapter(subject: '语文', grade: 8, orderIndex: 11, chapterName: '八下·第五单元：山水游记'),
-  Chapter(subject: '语文', grade: 8, orderIndex: 12, chapterName: '八下·第六单元：古代哲思'),
-
-  Chapter(subject: '语文', grade: 9, orderIndex: 1,  chapterName: '九上·第一单元：诗歌鉴赏'),
-  Chapter(subject: '语文', grade: 9, orderIndex: 2,  chapterName: '九上·第二单元：议论文·思辨'),
-  Chapter(subject: '语文', grade: 9, orderIndex: 3,  chapterName: '九上·第三单元：山水古文'),
-  Chapter(subject: '语文', grade: 9, orderIndex: 4,  chapterName: '九上·第四单元：小说阅读'),
-  Chapter(subject: '语文', grade: 9, orderIndex: 5,  chapterName: '九上·第五单元：议论文·创新'),
-  Chapter(subject: '语文', grade: 9, orderIndex: 6,  chapterName: '九上·第六单元：古典小说'),
-  Chapter(subject: '语文', grade: 9, orderIndex: 7,  chapterName: '九下·第一单元：现代诗歌'),
-  Chapter(subject: '语文', grade: 9, orderIndex: 8,  chapterName: '九下·第二单元：小说人物'),
-  Chapter(subject: '语文', grade: 9, orderIndex: 9,  chapterName: '九下·第三单元：先秦诸子'),
-  Chapter(subject: '语文', grade: 9, orderIndex: 10, chapterName: '九下·第四单元：文艺理论'),
-  Chapter(subject: '语文', grade: 9, orderIndex: 11, chapterName: '九下·第五单元：戏剧阅读'),
-  Chapter(subject: '语文', grade: 9, orderIndex: 12, chapterName: '九下·第六单元：古代史传'),
 
   // ══════════════════════════════════════════
-  // 英语（外研社版）六年级下 ～ 初三，按技能分类
+  // 英语（剑桥体系）—— V3.11：删除老外研社 6 章体系，统一走剑桥 4 模块（见下方）
   // ══════════════════════════════════════════
-  Chapter(subject: '英语', grade: 6, orderIndex: 1,  chapterName: '词汇积累（小学核心1500词）'),
-  Chapter(subject: '英语', grade: 6, orderIndex: 2,  chapterName: '一般现在时与现在进行时'),
-  Chapter(subject: '英语', grade: 6, orderIndex: 3,  chapterName: '一般过去时'),
-  Chapter(subject: '英语', grade: 6, orderIndex: 4,  chapterName: '简单句与句型转换'),
-  Chapter(subject: '英语', grade: 6, orderIndex: 5,  chapterName: '日常交际用语'),
-  Chapter(subject: '英语', grade: 6, orderIndex: 6,  chapterName: '基础阅读理解'),
-
-  Chapter(subject: '英语', grade: 7, orderIndex: 1,  chapterName: '词汇扩展（初中核心词2000词）'),
-  Chapter(subject: '英语', grade: 7, orderIndex: 2,  chapterName: '一般将来时与情态动词'),
-  Chapter(subject: '英语', grade: 7, orderIndex: 3,  chapterName: '比较级与最高级'),
-  Chapter(subject: '英语', grade: 7, orderIndex: 4,  chapterName: 'there be 句型与介词'),
-  Chapter(subject: '英语', grade: 7, orderIndex: 5,  chapterName: '阅读理解：记叙文'),
-  Chapter(subject: '英语', grade: 7, orderIndex: 6,  chapterName: '写作：简单段落'),
-
-  Chapter(subject: '英语', grade: 8, orderIndex: 1,  chapterName: '词汇扩展（3000词）'),
-  Chapter(subject: '英语', grade: 8, orderIndex: 2,  chapterName: '现在完成时'),
-  Chapter(subject: '英语', grade: 8, orderIndex: 3,  chapterName: '被动语态'),
-  Chapter(subject: '英语', grade: 8, orderIndex: 4,  chapterName: '宾语从句'),
-  Chapter(subject: '英语', grade: 8, orderIndex: 5,  chapterName: '阅读理解：说明文与议论文'),
-  Chapter(subject: '英语', grade: 8, orderIndex: 6,  chapterName: '写作：应用文（书信/邮件）'),
-
-  Chapter(subject: '英语', grade: 9, orderIndex: 1,  chapterName: '词汇扩展（4000词）'),
-  Chapter(subject: '英语', grade: 9, orderIndex: 2,  chapterName: '定语从句'),
-  Chapter(subject: '英语', grade: 9, orderIndex: 3,  chapterName: '各类从句综合'),
-  Chapter(subject: '英语', grade: 9, orderIndex: 4,  chapterName: '阅读理解：综合题型'),
-  Chapter(subject: '英语', grade: 9, orderIndex: 5,  chapterName: '写作：议论文与说明文'),
-  Chapter(subject: '英语', grade: 9, orderIndex: 6,  chapterName: '听力与口语表达'),
-
   // ══════════════════════════════════════════
   // 物理（人教版）初二 ～ 初三
   // ══════════════════════════════════════════

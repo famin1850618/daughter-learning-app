@@ -10,6 +10,10 @@ import '../services/learning_sync_service.dart';
 import '../services/data_backup_service.dart';
 import '../services/difficulty_settings_service.dart';
 import '../services/review_request_service.dart';
+import '../services/data_reset_service.dart';
+import '../services/practice_service.dart';
+import '../services/reward_service.dart';
+import '../services/assessment_service.dart';
 import 'curriculum_management_screen.dart';
 import 'parent_review_screen.dart';
 
@@ -146,6 +150,14 @@ class _PlanSettingsScreenState extends State<PlanSettingsScreen> {
               ],
             ),
           ),
+          const SizedBox(height: 16),
+
+          // ── 重置全部学习数据（V3.11）──────────
+          _SectionHeader(
+            title: '重置学习进度',
+            subtitle: '一键清空错题、奖励、测评、练习记录、计划完成度。归档保留 7 天，可回滚。',
+          ),
+          const _DataResetSection(),
           const SizedBox(height: 16),
 
           // ── 分配到哪几天 ──────────────────────
@@ -791,6 +803,257 @@ class _SectionHeader extends StatelessWidget {
           Text(subtitle,
               style: TextStyle(color: Colors.grey.shade500, fontSize: 12)),
         ],
+      ),
+    );
+  }
+}
+
+class _DataResetSection extends StatefulWidget {
+  const _DataResetSection();
+
+  @override
+  State<_DataResetSection> createState() => _DataResetSectionState();
+}
+
+class _DataResetSectionState extends State<_DataResetSection> {
+  List<DataResetArchive> _archives = [];
+  bool _loading = true;
+
+  @override
+  void initState() {
+    super.initState();
+    _refreshArchives();
+  }
+
+  Future<void> _refreshArchives() async {
+    setState(() => _loading = true);
+    final list = await DataResetService().listArchives();
+    if (!mounted) return;
+    setState(() {
+      _archives = list;
+      _loading = false;
+    });
+  }
+
+  /// 三段确认重置流程：警告弹窗 → 输入"重置"二字 → 最终确认
+  Future<void> _confirmReset() async {
+    // Step 1: 警告
+    final step1 = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Row(
+          children: [
+            Icon(Icons.warning_amber, color: Colors.orange, size: 24),
+            SizedBox(width: 8),
+            Text('重置学习进度'),
+          ],
+        ),
+        content: const Text(
+          '此操作会清空：\n\n'
+          '• 所有错题记录\n'
+          '• 所有奖励星星\n'
+          '• 所有测评成绩\n'
+          '• 所有练习记录与进行中的会话\n'
+          '• 所有家长审核记录\n'
+          '• 所有计划完成度（计划本身保留）\n\n'
+          '题目本身不删。归档保留 7 天，期间可回滚。',
+          style: TextStyle(fontSize: 13),
+        ),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text('取消')),
+          TextButton(
+            onPressed: () => Navigator.pop(ctx, true),
+            child: const Text('继续', style: TextStyle(color: Colors.orange)),
+          ),
+        ],
+      ),
+    );
+    if (step1 != true || !mounted) return;
+
+    // Step 2: 输入"重置"
+    final controller = TextEditingController();
+    final step2 = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('确认操作'),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text('请输入"重置"两字以继续：', style: TextStyle(fontSize: 13)),
+            const SizedBox(height: 12),
+            TextField(
+              controller: controller,
+              autofocus: true,
+              decoration: const InputDecoration(
+                hintText: '重置',
+                border: OutlineInputBorder(),
+                isDense: true,
+              ),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text('取消')),
+          TextButton(
+            onPressed: () => Navigator.pop(ctx, controller.text.trim() == '重置'),
+            child: const Text('确认', style: TextStyle(color: Colors.red)),
+          ),
+        ],
+      ),
+    );
+    if (step2 != true || !mounted) return;
+
+    // Step 3: 最终确认
+    final step3 = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('最终确认'),
+        content: const Text(
+          '将立即归档并清空全部学习进度数据。\n\n'
+          '7 天内可在本页面回滚。\n\n'
+          '是否继续？',
+          style: TextStyle(fontSize: 13),
+        ),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text('再想想')),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+            onPressed: () => Navigator.pop(ctx, true),
+            child: const Text('立即重置', style: TextStyle(color: Colors.white)),
+          ),
+        ],
+      ),
+    );
+    if (step3 != true || !mounted) return;
+
+    // 执行重置
+    final reason = '手动重置 ${DateFormat('yyyy-MM-dd HH:mm').format(DateTime.now())}';
+    final batchId = await DataResetService().resetAllProgress(reason: reason);
+
+    if (!mounted) return;
+    if (batchId == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('重置失败，请重试'), backgroundColor: Colors.red),
+      );
+      return;
+    }
+
+    // 刷新所有相关 service
+    await _refreshAllServices();
+    await _refreshArchives();
+    if (!mounted) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text('已重置，归档 7 天内可回滚（$batchId）')),
+    );
+  }
+
+  Future<void> _confirmRollback(DataResetArchive archive) async {
+    final ok = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('回滚归档？'),
+        content: Text(
+          '这会把 ${archive.totalRowsArchived} 行进度数据恢复回主表，'
+          '同时回滚 ${archive.stats['plan_items_completion'] ?? 0} 项计划完成度。\n\n'
+          '回滚后该归档会被删除，无法再次回滚。',
+          style: const TextStyle(fontSize: 13),
+        ),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text('取消')),
+          ElevatedButton(
+            onPressed: () => Navigator.pop(ctx, true),
+            child: const Text('回滚'),
+          ),
+        ],
+      ),
+    );
+    if (ok != true || !mounted) return;
+
+    final success = await DataResetService().rollbackArchive(archive.batchId);
+    if (!mounted) return;
+    if (!success) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('回滚失败（可能已过期或归档不存在）')),
+      );
+      return;
+    }
+    await _refreshAllServices();
+    await _refreshArchives();
+    if (!mounted) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(content: Text('已回滚')),
+    );
+  }
+
+  /// 重置/回滚后刷新所有依赖学情数据的 service
+  Future<void> _refreshAllServices() async {
+    if (!mounted) return;
+    try {
+      context.read<RewardService>().refresh();
+    } catch (_) {}
+    try {
+      context.read<AssessmentService>().refresh();
+    } catch (_) {}
+    try {
+      context.read<ReviewRequestService>().refresh();
+    } catch (_) {}
+    try {
+      context.read<PracticeService>().endSession();
+    } catch (_) {}
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: Column(
+        children: [
+          ListTile(
+            leading: const Icon(Icons.delete_sweep, color: Colors.red),
+            title: const Text('重置全部学习数据'),
+            subtitle: const Text('清空错题/奖励/测评/练习记录/计划完成度（题目不删）'),
+            trailing: TextButton(
+              onPressed: _confirmReset,
+              style: TextButton.styleFrom(foregroundColor: Colors.red),
+              child: const Text('重置'),
+            ),
+          ),
+          if (_loading)
+            const Padding(
+              padding: EdgeInsets.all(16),
+              child: SizedBox(width: 18, height: 18, child: CircularProgressIndicator(strokeWidth: 2)),
+            )
+          else if (_archives.isNotEmpty) ...[
+            const Divider(height: 1, indent: 16),
+            const Padding(
+              padding: EdgeInsets.fromLTRB(16, 12, 16, 4),
+              child: Align(
+                alignment: Alignment.centerLeft,
+                child: Text('可回滚的归档（7 天内）',
+                    style: TextStyle(fontWeight: FontWeight.w600, fontSize: 13)),
+              ),
+            ),
+            ..._archives.map((a) => _buildArchiveTile(a)),
+          ],
+        ],
+      ),
+    );
+  }
+
+  Widget _buildArchiveTile(DataResetArchive a) {
+    final timeStr = DateFormat('MM-dd HH:mm').format(a.createdAt);
+    return ListTile(
+      dense: true,
+      leading: const Icon(Icons.history, color: Colors.grey, size: 20),
+      title: Text('$timeStr · ${a.totalRowsArchived} 行', style: const TextStyle(fontSize: 13)),
+      subtitle: Text(
+        '${a.reason}\n剩余可回滚：${a.daysUntilExpiry} 天',
+        style: const TextStyle(fontSize: 11),
+      ),
+      isThreeLine: true,
+      trailing: TextButton(
+        onPressed: () => _confirmRollback(a),
+        child: const Text('回滚'),
       ),
     );
   }
