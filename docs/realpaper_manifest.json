@@ -1,9 +1,203 @@
 {
-  "version": 5,
+  "version": 6,
   "schema": "v1",
   "created_at": "2026-05-08",
   "description": "真题处理进度 manifest。每处理一卷追加 processed[] 一项。详见 .realpaper-spec.md §10",
-  "processed": [],
+  "processed": [
+    {
+      "sha1": "2318474ff5c26b434ac27e445c1112883baaa6db",
+      "source_file": "/home/faminwsl/AI_Workspace/真题/六下/语文/6年级下册语文部编版/期中试卷/六年级下册语文部编版期中试卷2（含答案）.pdf",
+      "batch_source": "realpaper_g6_chinese_bubian_qizhong_002",
+      "subject": "chinese",
+      "grade": 6,
+      "chapter": "(混合：语文 KP 一级)",
+      "questions_emitted": 22,
+      "questions_skipped": 0,
+      "image_count": 2,
+      "type_distribution": {
+        "fill": 4,
+        "choice": 18
+      },
+      "processed_at": "2026-05-09",
+      "skill_version": "0.1.0",
+      "spec_version": "V3.12.7",
+      "round_judge_method": "llm_anchors_rubric"
+    },
+    {
+      "sha1": "b67942a05c5b5c2044602921a7ecda388d4b31fb",
+      "source_file": "/home/faminwsl/AI_Workspace/真题/六下/语文/6年级下册语文部编版/期中试卷/六年级下册语文部编版期中试卷3（含答案）.pdf",
+      "batch_source": "realpaper_g6_chinese_bubian_qizhong_003",
+      "subject": "chinese",
+      "grade": 6,
+      "chapter": "(混合：语文 KP 一级)",
+      "questions_emitted": 10,
+      "questions_skipped": 0,
+      "image_count": 0,
+      "type_distribution": {
+        "fill": 6,
+        "choice": 4
+      },
+      "processed_at": "2026-05-09",
+      "skill_version": "0.1.0",
+      "spec_version": "V3.12.7",
+      "round_judge_method": "llm_anchors_rubric"
+    },
+    {
+      "sha1": "6929173f269b06dbfe60d62f045ca10bb76cd706",
+      "source_file": "/home/faminwsl/AI_Workspace/真题/六下/语文/6年级下册语文部编版/期中试卷/六年级下册语文部编版期中试卷4（含答案）.pdf",
+      "batch_source": "realpaper_g6_chinese_bubian_qizhong_004",
+      "subject": "chinese",
+      "grade": 6,
+      "chapter": "(混合：语文 KP 一级)",
+      "questions_emitted": 9,
+      "questions_skipped": 0,
+      "image_count": 0,
+      "type_distribution": {
+        "fill": 8,
+        "choice": 1
+      },
+      "processed_at": "2026-05-09",
+      "skill_version": "0.1.0",
+      "spec_version": "V3.12.7",
+      "round_judge_method": "llm_anchors_rubric"
+    },
+    {
+      "sha1": "0c97df2d802d24b3c94f41d46eb4d530a75f17bd",
+      "source_file": "/home/faminwsl/AI_Workspace/真题/六下/语文/6年级下册语文部编版/期中试卷/六年级下册语文部编版期中试卷8（含答案）.pdf",
+      "batch_source": "realpaper_g6_chinese_bubian_qizhong_008",
+      "subject": "chinese",
+      "grade": 6,
+      "chapter": "(混合：语文 KP 一级)",
+      "questions_emitted": 13,
+      "questions_skipped": 0,
+      "image_count": 0,
+      "type_distribution": {
+        "fill": 9,
+        "choice": 4
+      },
+      "processed_at": "2026-05-09",
+      "skill_version": "0.1.0",
+      "spec_version": "V3.12.7",
+      "round_judge_method": "llm_anchors_rubric"
+    },
+    {
+      "sha1": "fdeea4a1af618aac21d4d0f04db6671749a79c54",
+      "source_file": "/home/faminwsl/AI_Workspace/真题/六下/语文/6年级下册语文部编版/期末试卷/六年级下册语文部编版期末全真卷1（含答案）.pdf",
+      "batch_source": "realpaper_g6_chinese_bubian_qimo_quanzhen_001",
+      "subject": "chinese",
+      "grade": 6,
+      "chapter": "(混合：语文 KP 一级)",
+      "questions_emitted": 22,
+      "questions_skipped": 0,
+      "image_count": 3,
+      "type_distribution": {
+        "choice": 20,
+        "fill": 2
+      },
+      "processed_at": "2026-05-09",
+      "skill_version": "0.1.0",
+      "spec_version": "V3.12.7",
+      "round_judge_method": "llm_anchors_rubric"
+    },
+    {
+      "sha1": "ab6c6ba5410962f437a190a954b9a379534f9635",
+      "source_file": "/home/faminwsl/AI_Workspace/真题/六下/语文/6年级下册语文部编版/期末试卷/六年级下册语文部编版期末模拟卷4（含答案）.pdf",
+      "batch_source": "realpaper_g6_chinese_bubian_qimo_moni_004",
+      "subject": "chinese",
+      "grade": 6,
+      "chapter": "(混合：语文 KP 一级)",
+      "questions_emitted": 20,
+      "questions_skipped": 0,
+      "image_count": 0,
+      "type_distribution": {
+        "fill": 2,
+        "choice": 18
+      },
+      "processed_at": "2026-05-09",
+      "skill_version": "0.1.0",
+      "spec_version": "V3.12.7",
+      "round_judge_method": "llm_anchors_rubric"
+    },
+    {
+      "sha1": "c950f656acb2c43461cc04000b9ba978b5255a89",
+      "source_file": "六年级下册数学北师大版第1单元过关检测卷（含答案）.pdf",
+      "batch_source": "realpaper_g6_math_beishida_d1_guoguan_001",
+      "subject": "math",
+      "grade": 6,
+      "chapter_default": "圆柱与圆锥",
+      "paper_type": "unit",
+      "questions_emitted": 33,
+      "questions_skipped": 0,
+      "skipped_reasons": [],
+      "image_count": 7,
+      "processed_at": "2026-05-09",
+      "skill_version": "0.1.0"
+    },
+    {
+      "sha1": "45c450c71f1e44972e38a08020ecd2676f7330f8",
+      "source_file": "六年级下册数学北师大版第2单元过关检测卷（含答案）.pdf",
+      "batch_source": "realpaper_g6_math_beishida_d2_guoguan_001",
+      "subject": "math",
+      "grade": 6,
+      "chapter_default": "比例",
+      "paper_type": "unit",
+      "questions_emitted": 35,
+      "questions_skipped": 1,
+      "skipped_reasons": [
+        "§9.4 画图作答题"
+      ],
+      "image_count": 2,
+      "processed_at": "2026-05-09",
+      "skill_version": "0.1.0"
+    },
+    {
+      "sha1": "01ebac9874099e2e7c3002ff35fc84cb4bf6fbbe",
+      "source_file": "六年级下册数学北师大版期中测试卷1（含详解）.pdf",
+      "batch_source": "realpaper_g6_math_beishida_qizhong_001",
+      "subject": "math",
+      "grade": 6,
+      "chapter_default": "比例",
+      "paper_type": "midterm",
+      "questions_emitted": 43,
+      "questions_skipped": 0,
+      "skipped_reasons": [],
+      "image_count": 9,
+      "processed_at": "2026-05-09",
+      "skill_version": "0.1.0"
+    },
+    {
+      "sha1": "8165304e93fcee6f2cd0ccc7f29e5199f7b9ba5c",
+      "source_file": "六年级下册数学北师大版期末检测卷（含答案）.pdf",
+      "batch_source": "realpaper_g6_math_beishida_qimo_001",
+      "subject": "math",
+      "grade": 6,
+      "chapter_default": "总复习",
+      "paper_type": "final",
+      "questions_emitted": 46,
+      "questions_skipped": 0,
+      "skipped_reasons": [],
+      "image_count": 2,
+      "processed_at": "2026-05-09",
+      "skill_version": "0.1.0"
+    },
+    {
+      "sha1": "b70d1fdd386efd50429c322a9e9b86c814570159",
+      "source_file": "六年级下册数学北师大版北京市名校小升初测试卷（含答案）.pdf",
+      "batch_source": "realpaper_g6_math_beishida_xsc_beijing_001",
+      "subject": "math",
+      "grade": 6,
+      "chapter_default": "总复习",
+      "paper_type": "special",
+      "questions_emitted": 48,
+      "questions_skipped": 3,
+      "skipped_reasons": [
+        "§9.4 画图作答题"
+      ],
+      "image_count": 5,
+      "processed_at": "2026-05-09",
+      "skill_version": "0.1.0"
+    }
+  ],
   "skipped_files": [
     {
       "sha1": "5edc83ed4de4500c8b1045c9888f39fb8ad10302",
@@ -22,14 +216,29 @@
       "source_file": "/home/faminwsl/AI_Workspace/真题/六下/数学/6年级下册数学北师大版/期中试卷/六年级下册数学北师大版期中测试卷5（含答案）.pdf",
       "reason": "扫描型 PDF（仅 9 行可识别文本，全部为页脚），按 §9.1 整卷跳过",
       "processed_at": "2026-05-08"
+    },
+    {
+      "source_file": "/home/faminwsl/AI_Workspace/真题/六下/语文/6年级下册语文部编版/单元试卷/* (17 卷)",
+      "reason": "嵌入私有字体导致 pdftotext 乱码（标题 + 正文部分关键字符无法识别）→ 整卷跳过 (§9.1 完整性优先 + feedback_unclear_abandon)",
+      "skipped_at": "2026-05-09",
+      "spec_version": "V3.12.7"
     }
   ],
-  "updated_at": "2026-05-08",
+  "updated_at": "2026-05-09",
   "_changelog": [
     {
       "version": 4,
       "date": "2026-05-08",
       "change": "V3.12.6 语文六下部编版真题首批入库 8 套（247 题），跳过 15 卷不可读 PDF（私有字体/图片型）。LLM 必读 anchors+rubric 判 round（阶段 1），100% 锚点引用覆盖。"
+    },
+    {
+      "version": 6,
+      "date": "2026-05-09",
+      "change": "V3.12.7 第三轮语文六下部编版真题入库 6 卷 96 题，§1.5 原题保真严格执行 + §5.4 形式 A/B 正确选择"
+    },
+    {
+      "version": "V3.12.7 第三轮 (2026-05-09)",
+      "change": "数学六下北师大版 5 卷重扫入库 205 题。严格执行 §1.5 原题保真 + §5.7 LaTeX + §9.2 图嵌入 + §6.5 group_unify。前两轮全清重做的卷不在本批，本批为 d1/d2 单元 + 期中 1 + 期末 + 北京小升初。"
     }
   ]
 }

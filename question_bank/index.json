@@ -1,5 +1,5 @@
 {
-  "version": 24,
+  "version": 26,
   "updated_at": "2026-05-09",
   "batches": [
     {
@@ -29,6 +29,94 @@
       "subject": "english",
       "grade": 6,
       "count": 200
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qizhong_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qizhong_002.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 22,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qizhong_003",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qizhong_003.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 10,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qizhong_004",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qizhong_004.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 9,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qizhong_008",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qizhong_008.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 13,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qimo_quanzhen_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qimo_quanzhen_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 22,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qimo_moni_004",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qimo_moni_004.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 20,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_d1_guoguan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_d1_guoguan_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 33,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_d2_guoguan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_d2_guoguan_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 35,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qizhong_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qizhong_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 43,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qimo_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qimo_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 46,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_xsc_beijing_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_xsc_beijing_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 48,
+      "kind": "realpaper"
     }
   ],
   "_changelog": [
@@ -71,6 +159,16 @@
       "version": 23,
       "date": "2026-05-08",
       "change": "V3.12.6 数学六下重扫入库 10 卷（419 题，d1/d2/d4 单元 + 周测 + 期中 + 期末 + 京西小升初）"
+    },
+    {
+      "version": 25,
+      "date": "2026-05-09",
+      "change": "V3.12.7 第三轮语文六下部编版真题入库 6 卷共 96 题（期中卷 002/003/004/008 + 期末全真卷 001 + 期末模拟卷 004）。LLM 必读 anchors+rubric 判 round（阶段 1），100% 锚点引用覆盖。形式 A 压题 22 道，形式 B 组 13 个；图嵌入 5 道；§6.5 unify 触发 6 组。严格遵守 §1.5 原题保真（无加工痕迹）。"
+    },
+    {
+      "version": 26,
+      "date": "2026-05-09",
+      "change": "V3.12.7 数学六下北师大版第三轮入库 5 卷共 205 题（§1.5 原题保真硬约束 / §5.7 LaTeX / §9.2 图嵌入 / §6.5 group_unify）"
     }
   ]
 }

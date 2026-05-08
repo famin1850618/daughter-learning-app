@@ -40,6 +40,19 @@ const _bundledBatchAssets = [
   'assets/data/batches/batch_2026_05_08_g6_english_pet_r2.json',
   'assets/data/batches/batch_2026_05_08_g6_english_pet_r3.json',
   'assets/data/batches/batch_2026_05_08_g6_english_pet_r4.json',
+  // V3.12.7 语文六下部编版真题入库 6 卷共 96 题（第三轮重扫，§1.5 原题保真）
+  'assets/data/batches/realpaper_g6_chinese_bubian_qizhong_002.json',
+  'assets/data/batches/realpaper_g6_chinese_bubian_qizhong_003.json',
+  'assets/data/batches/realpaper_g6_chinese_bubian_qizhong_004.json',
+  'assets/data/batches/realpaper_g6_chinese_bubian_qizhong_008.json',
+  'assets/data/batches/realpaper_g6_chinese_bubian_qimo_quanzhen_001.json',
+  'assets/data/batches/realpaper_g6_chinese_bubian_qimo_moni_004.json',
+  // V3.12.7 数学六下北师大版真题入库 5 卷共 205 题（第三轮重扫，§1.5 原题保真）
+  'assets/data/batches/realpaper_g6_math_beishida_d1_guoguan_001.json',
+  'assets/data/batches/realpaper_g6_math_beishida_d2_guoguan_001.json',
+  'assets/data/batches/realpaper_g6_math_beishida_qizhong_001.json',
+  'assets/data/batches/realpaper_g6_math_beishida_qimo_001.json',
+  'assets/data/batches/realpaper_g6_math_beishida_xsc_beijing_001.json',
   // V3.10 真题入库后陆续追加
   // V3.12.3 删除 d4/d5/d6 OCR 抢救卷（识别不清直接放弃，原则见 .realpaper-spec.md §9.1）
   // V3.10 第九批 (2026-05-08): 8 卷数学六下 184 题

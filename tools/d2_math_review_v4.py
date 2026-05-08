@@ -700,6 +700,8 @@ def main():
             ref = f'{fname}#{i}'
             n_total += 1
             original_round = q.get('round', 1)
+            if original_round is None:
+                original_round = 0  # 4a annotate 阶段未填 round（V3.12.7 §2.1）
 
             sc = calc_step_count(q)
             mf = mental_flex_eval(q)
