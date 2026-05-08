@@ -1,5 +1,5 @@
 {
-  "version": 21,
+  "version": 23,
   "updated_at": "2026-05-08",
   "batches": [
     {
@@ -29,6 +29,150 @@
       "subject": "english",
       "grade": 6,
       "count": 200
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qimo_mokuai_004",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qimo_mokuai_004.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 28,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qimo_quanzhen_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qimo_quanzhen_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 32,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qizhong_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qizhong_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 24,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qizhong_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qizhong_002.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 34,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qizhong_003",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qizhong_003.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 16,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qizhong_004",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qizhong_004.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 37,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qizhong_005",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qizhong_005.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 35,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qizhong_006",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qizhong_006.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 41,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_d1_genzong_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_d1_genzong_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 31,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_d1_guoguan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_d1_guoguan_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 32,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_d2_genzong_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_d2_genzong_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 32,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_d2_guoguan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_d2_guoguan_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 42,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_d4_guoguan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_d4_guoguan_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 45,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qimo_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qimo_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 52,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qizhong_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qizhong_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 54,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_xshchu_beijing_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_xshchu_beijing_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 54,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_xshchu_xian_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_xshchu_xian_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 47,
+      "kind": "realpaper"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_zhouce_peiyou_003",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_zhouce_peiyou_003.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 30,
+      "kind": "realpaper"
     }
   ],
   "_changelog": [
@@ -61,6 +205,16 @@
       "version": 20,
       "date": "2026-05-08",
       "change": "V3.12.5 数学六下剩余源卷入库 - A 组北师大期末测试卷（cc3622d6）40 题；B 组教材帮 3 PDF + C 组小升初 16 PDF 全部跳过（扫描型 PDF，OCR 质量差，按 spec §9.1 + feedback_unclear_abandon 直接放弃）"
+    },
+    {
+      "version": 22,
+      "date": "2026-05-08",
+      "change": "V3.12.6 语文六下部编版真题入库 8 套共 247 题（period: 期中卷 6 套 / 期末卷 2 套）。剩余 PDF 源是私有字体乱码或图片型，按 §9.1 完整性优先 + feedback_unclear_abandon 整卷跳过。LLM 必读 anchors+rubric 判 round（阶段 1），100% 锚点引用覆盖。组合题 §6.5 ceil-平均 unify 触发 21 组。"
+    },
+    {
+      "version": 23,
+      "date": "2026-05-08",
+      "change": "V3.12.6 数学六下重扫入库 10 卷（419 题，d1/d2/d4 单元 + 周测 + 期中 + 期末 + 京西小升初）"
     }
   ]
 }

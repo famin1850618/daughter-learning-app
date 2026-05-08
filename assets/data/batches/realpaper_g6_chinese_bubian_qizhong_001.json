@@ -1,0 +1,532 @@
+{
+  "source": "realpaper_g6_chinese_bubian_qizhong_001",
+  "subject": "chinese",
+  "grade": 6,
+  "kind": "realpaper",
+  "version": 1,
+  "_meta": {
+    "skill_version": "0.1.0",
+    "spec_version": "V3.12.6",
+    "round_method": "llm_anchors_rubric_v0.1",
+    "anchors_used": "docs/anchor_questions_g6_chinese.json (active 18)",
+    "rubric_used": "docs/rubric_chinese.md V0.1"
+  },
+  "questions": [
+    {
+      "index": 0,
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_001#0",
+      "type": "fill",
+      "knowledge_point": "字词/字形",
+      "chapter": "字词",
+      "content": "读拼音，写词语。chú xī（除夕）这天，家家户户贴 chūn lián（春联），rán fàng（燃放）biān pào（鞭炮），十分热闹。鲁滨逊在 háng hǎi（航海）时流落 huāng dǎo（荒岛），但他一点儿也不 kǒng jù（恐惧）。他一边 fān xiāng dǎo guì（翻箱倒柜），一边 niàn dɑo（念叨）着「我的笔记本到哪里去了呢？」\n当前小题：写出「chú xī」对应的词语。",
+      "answer": "除夕",
+      "explanation": "「chú xī」是「除夕」。",
+      "round": 1,
+      "group_id": "realpaper_g6_chinese_bubian_qizhong_001_q1",
+      "group_order": 1,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_3",
+        "rubric_signals": [
+          "课内必修字词识记"
+        ],
+        "reasoning": "R1：拼音→字形识记。参 chinese_r1_anchor_3 同档 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 1,
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_001#1",
+      "type": "fill",
+      "knowledge_point": "字词/字形",
+      "chapter": "字词",
+      "content": "读拼音，写词语。chú xī（除夕）这天，家家户户贴 chūn lián（春联），rán fàng（燃放）biān pào（鞭炮），十分热闹。鲁滨逊在 háng hǎi（航海）时流落 huāng dǎo（荒岛），但他一点儿也不 kǒng jù（恐惧）。他一边 fān xiāng dǎo guì（翻箱倒柜），一边 niàn dɑo（念叨）着「我的笔记本到哪里去了呢？」\n当前小题：写出「chūn lián」对应的词语。",
+      "answer": "春联",
+      "explanation": "「chūn lián」是「春联」。",
+      "round": 1,
+      "group_id": "realpaper_g6_chinese_bubian_qizhong_001_q1",
+      "group_order": 2,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_3",
+        "rubric_signals": [
+          "课内必修字词识记"
+        ],
+        "reasoning": "R1：拼音→字形识记。参 chinese_r1_anchor_3 同档 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 2,
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_001#2",
+      "type": "fill",
+      "knowledge_point": "字词/字形",
+      "chapter": "字词",
+      "content": "读拼音，写词语。chú xī（除夕）这天，家家户户贴 chūn lián（春联），rán fàng（燃放）biān pào（鞭炮），十分热闹。鲁滨逊在 háng hǎi（航海）时流落 huāng dǎo（荒岛），但他一点儿也不 kǒng jù（恐惧）。他一边 fān xiāng dǎo guì（翻箱倒柜），一边 niàn dɑo（念叨）着「我的笔记本到哪里去了呢？」\n当前小题：写出「rán fàng」对应的词语。",
+      "answer": "燃放",
+      "explanation": "「rán fàng」是「燃放」。",
+      "round": 1,
+      "group_id": "realpaper_g6_chinese_bubian_qizhong_001_q1",
+      "group_order": 3,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_3",
+        "rubric_signals": [
+          "课内必修字词识记"
+        ],
+        "reasoning": "R1：拼音→字形识记。参 chinese_r1_anchor_3 同档 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 3,
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_001#3",
+      "type": "fill",
+      "knowledge_point": "字词/字形",
+      "chapter": "字词",
+      "content": "读拼音，写词语。chú xī（除夕）这天，家家户户贴 chūn lián（春联），rán fàng（燃放）biān pào（鞭炮），十分热闹。鲁滨逊在 háng hǎi（航海）时流落 huāng dǎo（荒岛），但他一点儿也不 kǒng jù（恐惧）。他一边 fān xiāng dǎo guì（翻箱倒柜），一边 niàn dɑo（念叨）着「我的笔记本到哪里去了呢？」\n当前小题：写出「biān pào」对应的词语。",
+      "answer": "鞭炮",
+      "explanation": "「biān pào」是「鞭炮」。",
+      "round": 1,
+      "group_id": "realpaper_g6_chinese_bubian_qizhong_001_q1",
+      "group_order": 4,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_3",
+        "rubric_signals": [
+          "课内必修字词识记"
+        ],
+        "reasoning": "R1：拼音→字形识记。参 chinese_r1_anchor_3 同档 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 4,
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_001#4",
+      "type": "fill",
+      "knowledge_point": "字词/字形",
+      "chapter": "字词",
+      "content": "读拼音，写词语。chú xī（除夕）这天，家家户户贴 chūn lián（春联），rán fàng（燃放）biān pào（鞭炮），十分热闹。鲁滨逊在 háng hǎi（航海）时流落 huāng dǎo（荒岛），但他一点儿也不 kǒng jù（恐惧）。他一边 fān xiāng dǎo guì（翻箱倒柜），一边 niàn dɑo（念叨）着「我的笔记本到哪里去了呢？」\n当前小题：写出「háng hǎi」对应的词语。",
+      "answer": "航海",
+      "explanation": "「háng hǎi」是「航海」。",
+      "round": 1,
+      "group_id": "realpaper_g6_chinese_bubian_qizhong_001_q1",
+      "group_order": 5,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_3",
+        "rubric_signals": [
+          "课内必修字词识记"
+        ],
+        "reasoning": "R1：拼音→字形识记。参 chinese_r1_anchor_3 同档 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 5,
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_001#5",
+      "type": "fill",
+      "knowledge_point": "字词/字形",
+      "chapter": "字词",
+      "content": "读拼音，写词语。chú xī（除夕）这天，家家户户贴 chūn lián（春联），rán fàng（燃放）biān pào（鞭炮），十分热闹。鲁滨逊在 háng hǎi（航海）时流落 huāng dǎo（荒岛），但他一点儿也不 kǒng jù（恐惧）。他一边 fān xiāng dǎo guì（翻箱倒柜），一边 niàn dɑo（念叨）着「我的笔记本到哪里去了呢？」\n当前小题：写出「huāng dǎo」对应的词语。",
+      "answer": "荒岛",
+      "explanation": "「huāng dǎo」是「荒岛」。",
+      "round": 1,
+      "group_id": "realpaper_g6_chinese_bubian_qizhong_001_q1",
+      "group_order": 6,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_3",
+        "rubric_signals": [
+          "课内必修字词识记"
+        ],
+        "reasoning": "R1：拼音→字形识记。参 chinese_r1_anchor_3 同档 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 6,
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_001#6",
+      "type": "fill",
+      "knowledge_point": "字词/字形",
+      "chapter": "字词",
+      "content": "读拼音，写词语。chú xī（除夕）这天，家家户户贴 chūn lián（春联），rán fàng（燃放）biān pào（鞭炮），十分热闹。鲁滨逊在 háng hǎi（航海）时流落 huāng dǎo（荒岛），但他一点儿也不 kǒng jù（恐惧）。他一边 fān xiāng dǎo guì（翻箱倒柜），一边 niàn dɑo（念叨）着「我的笔记本到哪里去了呢？」\n当前小题：写出「kǒng jù」对应的词语。",
+      "answer": "恐惧",
+      "explanation": "「kǒng jù」是「恐惧」。",
+      "round": 1,
+      "group_id": "realpaper_g6_chinese_bubian_qizhong_001_q1",
+      "group_order": 7,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_3",
+        "rubric_signals": [
+          "课内必修字词识记"
+        ],
+        "reasoning": "R1：拼音→字形识记。参 chinese_r1_anchor_3 同档 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 7,
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_001#7",
+      "type": "fill",
+      "knowledge_point": "字词/字形",
+      "chapter": "字词",
+      "content": "读拼音，写词语。chú xī（除夕）这天，家家户户贴 chūn lián（春联），rán fàng（燃放）biān pào（鞭炮），十分热闹。鲁滨逊在 háng hǎi（航海）时流落 huāng dǎo（荒岛），但他一点儿也不 kǒng jù（恐惧）。他一边 fān xiāng dǎo guì（翻箱倒柜），一边 niàn dɑo（念叨）着「我的笔记本到哪里去了呢？」\n当前小题：写出「fān xiāng dǎo guì」对应的词语。",
+      "answer": "翻箱倒柜",
+      "explanation": "「fān xiāng dǎo guì」是「翻箱倒柜」。",
+      "round": 1,
+      "group_id": "realpaper_g6_chinese_bubian_qizhong_001_q1",
+      "group_order": 8,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_3",
+        "rubric_signals": [
+          "课内必修字词识记"
+        ],
+        "reasoning": "R1：拼音→字形识记。参 chinese_r1_anchor_3 同档 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 8,
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_001#8",
+      "type": "fill",
+      "knowledge_point": "字词/字形",
+      "chapter": "字词",
+      "content": "读拼音，写词语。chú xī（除夕）这天，家家户户贴 chūn lián（春联），rán fàng（燃放）biān pào（鞭炮），十分热闹。鲁滨逊在 háng hǎi（航海）时流落 huāng dǎo（荒岛），但他一点儿也不 kǒng jù（恐惧）。他一边 fān xiāng dǎo guì（翻箱倒柜），一边 niàn dɑo（念叨）着「我的笔记本到哪里去了呢？」\n当前小题：写出「niàn dɑo」对应的词语。",
+      "answer": "念叨",
+      "explanation": "「niàn dɑo」是「念叨」。",
+      "round": 1,
+      "group_id": "realpaper_g6_chinese_bubian_qizhong_001_q1",
+      "group_order": 9,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_3",
+        "rubric_signals": [
+          "课内必修字词识记"
+        ],
+        "reasoning": "R1：拼音→字形识记。参 chinese_r1_anchor_3 同档 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 9,
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_001#9",
+      "type": "choice",
+      "knowledge_point": "字词/字形",
+      "chapter": "字词",
+      "content": "下列词语中没有错别字的一项是？",
+      "answer": "D",
+      "explanation": "A「青面缭牙」错（青面獠牙）；B「荒芜人烟」错（荒无人烟）；C「行善极德」错（行善积德）。D 全部正确。",
+      "round": 2,
+      "options": [
+        "A. 万象更新  截然不同  青面缭牙  随心所欲",
+        "B. 张灯结彩  悠哉游哉  荒芜人烟  春风拂面",
+        "C. 哄堂大笑  行善极德  得意扬扬  垂头丧气",
+        "D. 能歌善舞  天涯海角  无济于事  千门万户"
+      ],
+      "_round_judge": {
+        "anchor_used": "chinese_r2_anchor_1",
+        "rubric_signals": [
+          "形近字辨析"
+        ],
+        "reasoning": "R2：4 组成语逐字辨认错别字。参 chinese_r2_anchor_1 同型 R2。"
+      }
+    },
+    {
+      "index": 10,
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_001#10",
+      "type": "choice",
+      "knowledge_point": "字词/词语理解",
+      "chapter": "字词",
+      "content": "下列词语与「贫富」「贵贱」的形式相同的一项是？",
+      "answer": "B",
+      "explanation": "「贫富」「贵贱」均由反义词组成。A 巨大渺小、C 遥远嘶哑、D 是非规矩 不全为反义；B 高低、厚薄全为反义词。",
+      "round": 2,
+      "options": [
+        "A. 巨大 渺小",
+        "B. 高低 厚薄",
+        "C. 遥远 嘶哑",
+        "D. 是非 规矩"
+      ],
+      "_round_judge": {
+        "anchor_used": "chinese_r2_anchor_2",
+        "rubric_signals": [
+          "近义词辨析"
+        ],
+        "reasoning": "R2：识别词语构造规律（反义词组合）。参 chinese_r2_anchor_2 同档 R2。"
+      }
+    },
+    {
+      "index": 11,
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_001#11",
+      "type": "choice",
+      "knowledge_point": "修辞/比喻",
+      "chapter": "修辞",
+      "content": "下列句子没有运用比喻修辞手法的一项是？",
+      "answer": "B",
+      "explanation": "A 把「日子」比作「轻烟、薄雾」；C 把「肚子」比作「小鼓」；D 把「日子」比作「针尖上一滴水」；B 是状写，没有比喻。",
+      "round": 2,
+      "options": [
+        "A. 过去的日子如轻烟，被微风吹散了，如薄雾，被初阳蒸融了。",
+        "B. 波莉阿姨已经陷入了无言的深愁，她那灰色的头发几乎都变白了。",
+        "C. 晚饭桌边，靠着妈妈斜立着的八儿，肚子已成了一面小鼓了。",
+        "D. 在默默里算着，八千多日子已经从我手中溜去，像针尖上一滴水滴在大海里。"
+      ],
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_5",
+        "rubric_signals": [
+          "修辞识别"
+        ],
+        "reasoning": "R2：4 选项中 3 项含明显比喻词「如/像」，仅 B 是普通陈述。比 chinese_r1_anchor_5 反问识记 R1 略难（需识别比喻分句结构），定 R2。"
+      }
+    },
+    {
+      "index": 12,
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_001#12",
+      "type": "choice",
+      "knowledge_point": "句式与标点/标点符号",
+      "chapter": "句式与标点",
+      "content": "下列句子标点符号使用正确的一项是？",
+      "answer": "A",
+      "explanation": "B「等」字后不应有省略号叠加；C 书名应用书名号《》；D 大喇叭是节目名，应用引号「」而非书名号《》。",
+      "round": 2,
+      "options": [
+        "A. 每个人都讲究卫生，我们的健康就会有保障。",
+        "B. 我的书包里有课本、笔、纸……等文具。",
+        "C. 「鲁滨逊漂流记」是我最爱读的一本书。",
+        "D. 爷爷声音洪亮，被人称作《大喇叭》。"
+      ],
+      "_round_judge": {
+        "anchor_used": "chinese_r2_anchor_3",
+        "rubric_signals": [
+          "标点综合甄别"
+        ],
+        "reasoning": "R2：4 选项标点综合甄别（书名号、引号、省略号）。参 chinese_r2_anchor_3 R2 同档。"
+      }
+    },
+    {
+      "index": 13,
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_001#13",
+      "type": "fill",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "chapter": "古诗文",
+      "content": "古诗日积月累填空。\n当前小题：填空「________，寒食东风御柳斜。」",
+      "answer": "春城无处不飞花",
+      "explanation": "韩翃《寒食》：春城无处不飞花，寒食东风御柳斜。",
+      "round": 1,
+      "group_id": "realpaper_g6_chinese_bubian_qizhong_001_q14",
+      "group_order": 1,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_1",
+        "rubric_signals": [
+          "古诗背诵默写"
+        ],
+        "reasoning": "R1：课内古诗背诵默写。参 chinese_r1_anchor_1 同档 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 14,
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_001#14",
+      "type": "fill",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "chapter": "古诗文",
+      "content": "古诗日积月累填空。\n当前小题：填空「青青园中葵，________。」",
+      "answer": "朝露待日晞",
+      "explanation": "汉乐府《长歌行》：青青园中葵，朝露待日晞。",
+      "round": 1,
+      "group_id": "realpaper_g6_chinese_bubian_qizhong_001_q14",
+      "group_order": 2,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_1",
+        "rubric_signals": [
+          "古诗背诵默写"
+        ],
+        "reasoning": "R1：课内古诗背诵默写。参 chinese_r1_anchor_1 同档 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 15,
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_001#15",
+      "type": "fill",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "chapter": "古诗文",
+      "content": "古诗日积月累填空。\n当前小题：填空「阳春布德泽，________。」",
+      "answer": "万物生光辉",
+      "explanation": "汉乐府《长歌行》：阳春布德泽，万物生光辉。",
+      "round": 1,
+      "group_id": "realpaper_g6_chinese_bubian_qizhong_001_q14",
+      "group_order": 3,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_1",
+        "rubric_signals": [
+          "古诗背诵默写"
+        ],
+        "reasoning": "R1：课内古诗背诵默写。参 chinese_r1_anchor_1 同档 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 16,
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_001#16",
+      "type": "fill",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "chapter": "古诗文",
+      "content": "古诗日积月累填空。\n当前小题：填空「________牵牛星，________河汉女。」（请按顺序填两个叠词，用逗号分隔）",
+      "answer": "迢迢,皎皎",
+      "explanation": "古诗十九首《迢迢牵牛星》：迢迢牵牛星，皎皎河汉女。",
+      "round": 1,
+      "group_id": "realpaper_g6_chinese_bubian_qizhong_001_q14",
+      "group_order": 4,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_1",
+        "rubric_signals": [
+          "古诗背诵默写"
+        ],
+        "reasoning": "R1：课内古诗背诵默写。参 chinese_r1_anchor_1 同档 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 17,
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_001#17",
+      "type": "fill",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "chapter": "古诗文",
+      "content": "古诗日积月累填空。\n当前小题：填空「________，札札弄机杼。」",
+      "answer": "纤纤擢素手",
+      "explanation": "古诗十九首《迢迢牵牛星》：纤纤擢素手，札札弄机杼。",
+      "round": 1,
+      "group_id": "realpaper_g6_chinese_bubian_qizhong_001_q14",
+      "group_order": 5,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_1",
+        "rubric_signals": [
+          "古诗背诵默写"
+        ],
+        "reasoning": "R1：课内古诗背诵默写。参 chinese_r1_anchor_1 同档 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 18,
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_001#18",
+      "type": "fill",
+      "knowledge_point": "文学常识/中国现代作家作品",
+      "chapter": "文学常识",
+      "content": "《北京的春节》的作者是________。本文按________顺序介绍了老北京春节的风俗。当前小题：作者是？",
+      "answer": "老舍",
+      "explanation": "《北京的春节》作者老舍。",
+      "round": 1,
+      "group_id": "realpaper_g6_chinese_bubian_qizhong_001_q19",
+      "group_order": 1,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_2",
+        "rubric_signals": [
+          "课内必修常识"
+        ],
+        "reasoning": "R1：课内必修课文作者识记。参 chinese_r1_anchor_2 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 19,
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_001#19",
+      "type": "fill",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "chapter": "课文与名著",
+      "content": "《北京的春节》一文按________顺序介绍了老北京春节的风俗。当前小题：本文按何种顺序写？",
+      "answer": "时间",
+      "explanation": "本文按时间顺序介绍春节风俗。",
+      "round": 1,
+      "group_id": "realpaper_g6_chinese_bubian_qizhong_001_q19",
+      "group_order": 2,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_2",
+        "rubric_signals": [
+          "课内必修常识"
+        ],
+        "reasoning": "R1：课内课文写作顺序。参 chinese_r1_anchor_2 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 20,
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_001#20",
+      "type": "fill",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "chapter": "古诗文",
+      "content": "《长歌行》中劝告人们珍惜时间的诗句是「________，________？________，________！」当前小题：第 1 空填？",
+      "answer": "百川东到海",
+      "explanation": "《长歌行》：百川东到海，何时复西归？少壮不努力，老大徒伤悲！",
+      "round": 1,
+      "group_id": "realpaper_g6_chinese_bubian_qizhong_001_q19",
+      "group_order": 3,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_1",
+        "rubric_signals": [
+          "古诗背诵默写"
+        ],
+        "reasoning": "R1：古诗背诵。参 chinese_r1_anchor_1 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 21,
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_001#21",
+      "type": "fill",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "chapter": "古诗文",
+      "content": "《长歌行》：百川东到海，________？少壮不努力，老大徒伤悲！当前小题：填第 1 个空。",
+      "answer": "何时复西归",
+      "explanation": "《长歌行》：百川东到海，何时复西归？",
+      "round": 1,
+      "group_id": "realpaper_g6_chinese_bubian_qizhong_001_q19",
+      "group_order": 4,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_1",
+        "rubric_signals": [
+          "古诗背诵默写"
+        ],
+        "reasoning": "R1：古诗背诵。参 chinese_r1_anchor_1 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 22,
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_001#22",
+      "type": "fill",
+      "knowledge_point": "字词/词语理解",
+      "chapter": "字词",
+      "content": "阅读《雕像》：\n一位致富不忘家乡的农民企业家出资修了一座跨河大桥。大桥竣工后，企业家找到一位颇有名气的雕塑家，请他塑一尊人物石雕立在桥边。\n企业家说：照片我没有，但请您听听这个故事——\n20 年前一个夏日的傍晚，山洪暴发，天昏地暗。一个放学归来的少年躲在河边一棵孤柳下浑身湿透，惊恐地盯着面前咆哮的河水。突然，少年听到一声声呼唤：「狗子——狗子——」\n少年隐约看见河对岸母亲顶着一块塑料布艰难地走来了，可河上的小木桥早被洪水冲走了。母亲也看见了儿子，来不及挽起裤腿便踏进湍急的河里。突然，一股更猛的洪水奔涌过来，母亲一闪不见了。少年急了，跟着洪水往下游跑。\n良久，母亲又被洪水托了起来。\n「娘！娘——」少年哭喊道。\n母亲被浪头掀起的片刻，用了最大的声音喊：「狗子——饭在灶膛里……热着——有 20 块钱在床上的棉絮里……」母亲话音未落就被洪水卷走了。\n后来少年辍学了。少年用母亲积攒下的分分角角到镇上做生意，一直到今天。\n企业家讲到这里，声音有些哽咽了，他说：「您知道，那少年是我，我要给母亲塑一尊雕像。」\n那一夜雕塑家失眠了，那场景总缠绕在脑子里。雕塑家开始了自己雕塑生涯中最重要的一幅作品的创作与雕刻。\n雕像揭幕的那一天，当这位农民企业家亲手掀起雕像上的红绸时，他惊呆了，久久不语——风雨中，一位头发凌乱的母亲顶着一块塑料布，佝偻着腰，神情焦急地呼唤着……母亲的背后，映衬着彩虹一样的跨河大桥。\n企业家紧紧抓着雕塑家的手：「谢谢您！谢谢您！」企业家的声音颤动着，眼睛里闪着泪光。随后他说：「工钱多少？您说个价！」\n雕塑家轻轻推开企业家的手，郑重地问：「你说呢？」\n问：根据意思「非常疲乏，忍受不了」从文中找出合适的词语。",
+      "answer": "疲惫不堪",
+      "explanation": "「疲惫不堪」即非常疲乏，忍受不了。",
+      "round": 2,
+      "group_id": "realpaper_g6_chinese_bubian_qizhong_001_q23",
+      "group_order": 1,
+      "_round_judge": {
+        "anchor_used": "chinese_r2_anchor_1",
+        "rubric_signals": [
+          "释义反推"
+        ],
+        "reasoning": "R2：释义→词语反推。参 chinese_r2_anchor_1 释义反推型 R2。"
+      },
+      "_round_before_group_unify": 2
+    },
+    {
+      "index": 23,
+      "source_ref": "realpaper_g6_chinese_bubian_qizhong_001#23",
+      "type": "fill",
+      "knowledge_point": "字词/词语理解",
+      "chapter": "字词",
+      "content": "阅读《雕像》：\n一位致富不忘家乡的农民企业家出资修了一座跨河大桥。大桥竣工后，企业家找到一位颇有名气的雕塑家，请他塑一尊人物石雕立在桥边。\n企业家说：照片我没有，但请您听听这个故事——\n20 年前一个夏日的傍晚，山洪暴发，天昏地暗。一个放学归来的少年躲在河边一棵孤柳下浑身湿透，惊恐地盯着面前咆哮的河水。突然，少年听到一声声呼唤：「狗子——狗子——」\n少年隐约看见河对岸母亲顶着一块塑料布艰难地走来了，可河上的小木桥早被洪水冲走了。母亲也看见了儿子，来不及挽起裤腿便踏进湍急的河里。突然，一股更猛的洪水奔涌过来，母亲一闪不见了。少年急了，跟着洪水往下游跑。\n良久，母亲又被洪水托了起来。\n「娘！娘——」少年哭喊道。\n母亲被浪头掀起的片刻，用了最大的声音喊：「狗子——饭在灶膛里……热着——有 20 块钱在床上的棉絮里……」母亲话音未落就被洪水卷走了。\n后来少年辍学了。少年用母亲积攒下的分分角角到镇上做生意，一直到今天。\n企业家讲到这里，声音有些哽咽了，他说：「您知道，那少年是我，我要给母亲塑一尊雕像。」\n那一夜雕塑家失眠了，那场景总缠绕在脑子里。雕塑家开始了自己雕塑生涯中最重要的一幅作品的创作与雕刻。\n雕像揭幕的那一天，当这位农民企业家亲手掀起雕像上的红绸时，他惊呆了，久久不语——风雨中，一位头发凌乱的母亲顶着一块塑料布，佝偻着腰，神情焦急地呼唤着……母亲的背后，映衬着彩虹一样的跨河大桥。\n企业家紧紧抓着雕塑家的手：「谢谢您！谢谢您！」企业家的声音颤动着，眼睛里闪着泪光。随后他说：「工钱多少？您说个价！」\n雕塑家轻轻推开企业家的手，郑重地问：「你说呢？」\n问：根据意思「尽管睁着眼睛看，却什么也没看见」从文中找出合适的词语。",
+      "answer": "视而不见",
+      "explanation": "「视而不见」即看了却不重视。",
+      "round": 2,
+      "group_id": "realpaper_g6_chinese_bubian_qizhong_001_q23",
+      "group_order": 2,
+      "_round_judge": {
+        "anchor_used": "chinese_r2_anchor_1",
+        "rubric_signals": [
+          "释义反推"
+        ],
+        "reasoning": "R2：释义→词语反推。参 chinese_r2_anchor_1 R2。"
+      },
+      "_round_before_group_unify": 2
+    }
+  ]
+}

@@ -1,0 +1,688 @@
+{
+  "source": "realpaper_g6_chinese_bubian_qimo_mokuai_004",
+  "subject": "chinese",
+  "grade": 6,
+  "kind": "realpaper",
+  "version": 1,
+  "_meta": {
+    "skill_version": "0.1.0",
+    "spec_version": "V3.12.6",
+    "round_method": "llm_anchors_rubric_v0.1",
+    "anchors_used": "docs/anchor_questions_g6_chinese.json (active 18)",
+    "rubric_used": "docs/rubric_chinese.md V0.1"
+  },
+  "questions": [
+    {
+      "index": 0,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#0",
+      "type": "fill",
+      "knowledge_point": "字词/字形",
+      "chapter": "字词",
+      "content": "根据语境，读拼音，写词语。过年时，烟火 rán fàng（燃放），全家人围坐在一起，共享年味。而远在祖国的边疆，那里 tiān hán dì dòng（天寒地冻），一片 qī liáng（凄凉），但正是由于最可爱的人守卫国门，才让我们能够尽享 tiān lún zhī lè（天伦之乐）。待到 míng mèi（明媚）的春天，我会让鸟儿衔着 zhàn fàng（绽放）的鲜花送给守卫边防的战士。\n当前小题：写出「rán fàng」对应的词语。",
+      "answer": "燃放",
+      "explanation": "「rán fàng」是「燃放」。",
+      "round": 1,
+      "group_id": "realpaper_g6_chinese_bubian_qimo_mokuai_004_q1",
+      "group_order": 1,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_3",
+        "rubric_signals": [
+          "课内必修字词识记"
+        ],
+        "reasoning": "R1：拼音→字形识记。参 chinese_r1_anchor_3 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 1,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#1",
+      "type": "fill",
+      "knowledge_point": "字词/字形",
+      "chapter": "字词",
+      "content": "根据语境，读拼音，写词语。过年时，烟火 rán fàng（燃放），全家人围坐在一起，共享年味。而远在祖国的边疆，那里 tiān hán dì dòng（天寒地冻），一片 qī liáng（凄凉），但正是由于最可爱的人守卫国门，才让我们能够尽享 tiān lún zhī lè（天伦之乐）。待到 míng mèi（明媚）的春天，我会让鸟儿衔着 zhàn fàng（绽放）的鲜花送给守卫边防的战士。\n当前小题：写出「tiān hán dì dòng」对应的词语。",
+      "answer": "天寒地冻",
+      "explanation": "「tiān hán dì dòng」是「天寒地冻」。",
+      "round": 1,
+      "group_id": "realpaper_g6_chinese_bubian_qimo_mokuai_004_q1",
+      "group_order": 2,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_3",
+        "rubric_signals": [
+          "课内必修字词识记"
+        ],
+        "reasoning": "R1：拼音→字形识记。参 chinese_r1_anchor_3 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 2,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#2",
+      "type": "fill",
+      "knowledge_point": "字词/字形",
+      "chapter": "字词",
+      "content": "根据语境，读拼音，写词语。过年时，烟火 rán fàng（燃放），全家人围坐在一起，共享年味。而远在祖国的边疆，那里 tiān hán dì dòng（天寒地冻），一片 qī liáng（凄凉），但正是由于最可爱的人守卫国门，才让我们能够尽享 tiān lún zhī lè（天伦之乐）。待到 míng mèi（明媚）的春天，我会让鸟儿衔着 zhàn fàng（绽放）的鲜花送给守卫边防的战士。\n当前小题：写出「qī liáng」对应的词语。",
+      "answer": "凄凉",
+      "explanation": "「qī liáng」是「凄凉」。",
+      "round": 1,
+      "group_id": "realpaper_g6_chinese_bubian_qimo_mokuai_004_q1",
+      "group_order": 3,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_3",
+        "rubric_signals": [
+          "课内必修字词识记"
+        ],
+        "reasoning": "R1：拼音→字形识记。参 chinese_r1_anchor_3 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 3,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#3",
+      "type": "fill",
+      "knowledge_point": "字词/字形",
+      "chapter": "字词",
+      "content": "根据语境，读拼音，写词语。过年时，烟火 rán fàng（燃放），全家人围坐在一起，共享年味。而远在祖国的边疆，那里 tiān hán dì dòng（天寒地冻），一片 qī liáng（凄凉），但正是由于最可爱的人守卫国门，才让我们能够尽享 tiān lún zhī lè（天伦之乐）。待到 míng mèi（明媚）的春天，我会让鸟儿衔着 zhàn fàng（绽放）的鲜花送给守卫边防的战士。\n当前小题：写出「tiān lún zhī lè」对应的词语。",
+      "answer": "天伦之乐",
+      "explanation": "「tiān lún zhī lè」是「天伦之乐」。",
+      "round": 1,
+      "group_id": "realpaper_g6_chinese_bubian_qimo_mokuai_004_q1",
+      "group_order": 4,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_3",
+        "rubric_signals": [
+          "课内必修字词识记"
+        ],
+        "reasoning": "R1：拼音→字形识记。参 chinese_r1_anchor_3 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 4,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#4",
+      "type": "fill",
+      "knowledge_point": "字词/字形",
+      "chapter": "字词",
+      "content": "根据语境，读拼音，写词语。过年时，烟火 rán fàng（燃放），全家人围坐在一起，共享年味。而远在祖国的边疆，那里 tiān hán dì dòng（天寒地冻），一片 qī liáng（凄凉），但正是由于最可爱的人守卫国门，才让我们能够尽享 tiān lún zhī lè（天伦之乐）。待到 míng mèi（明媚）的春天，我会让鸟儿衔着 zhàn fàng（绽放）的鲜花送给守卫边防的战士。\n当前小题：写出「míng mèi」对应的词语。",
+      "answer": "明媚",
+      "explanation": "「míng mèi」是「明媚」。",
+      "round": 1,
+      "group_id": "realpaper_g6_chinese_bubian_qimo_mokuai_004_q1",
+      "group_order": 5,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_3",
+        "rubric_signals": [
+          "课内必修字词识记"
+        ],
+        "reasoning": "R1：拼音→字形识记。参 chinese_r1_anchor_3 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 5,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#5",
+      "type": "fill",
+      "knowledge_point": "字词/字形",
+      "chapter": "字词",
+      "content": "根据语境，读拼音，写词语。过年时，烟火 rán fàng（燃放），全家人围坐在一起，共享年味。而远在祖国的边疆，那里 tiān hán dì dòng（天寒地冻），一片 qī liáng（凄凉），但正是由于最可爱的人守卫国门，才让我们能够尽享 tiān lún zhī lè（天伦之乐）。待到 míng mèi（明媚）的春天，我会让鸟儿衔着 zhàn fàng（绽放）的鲜花送给守卫边防的战士。\n当前小题：写出「zhàn fàng」对应的词语。",
+      "answer": "绽放",
+      "explanation": "「zhàn fàng」是「绽放」。",
+      "round": 1,
+      "group_id": "realpaper_g6_chinese_bubian_qimo_mokuai_004_q1",
+      "group_order": 6,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_3",
+        "rubric_signals": [
+          "课内必修字词识记"
+        ],
+        "reasoning": "R1：拼音→字形识记。参 chinese_r1_anchor_3 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 6,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#6",
+      "type": "choice",
+      "knowledge_point": "字词/字形",
+      "chapter": "字词",
+      "content": "下列四组词语中，字形书写都正确的一项是？",
+      "answer": "A",
+      "explanation": "B「萋凉」错（凄凉）；C「蒸溶」错（蒸融）；D「粗爆」错（粗暴）。A 全部正确。",
+      "round": 2,
+      "options": [
+        "A. 猜想  领域 残暴",
+        "B. 萋凉   剥削 宴会",
+        "C. 蒸溶  隔绝 忧郁",
+        "D. 粗爆   荒岛 糊涂"
+      ],
+      "_round_judge": {
+        "anchor_used": "chinese_r2_anchor_1",
+        "rubric_signals": [
+          "形近字辨析"
+        ],
+        "reasoning": "R2：4 组形近字辨认。参 chinese_r2_anchor_1 R2。"
+      }
+    },
+    {
+      "index": 7,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#7",
+      "type": "choice",
+      "knowledge_point": "字词/字义",
+      "chapter": "字词",
+      "content": "「髻」字的意思最有可能是？",
+      "answer": "B",
+      "explanation": "「髻」字头从「髟」（毛发），与头发相关；指盘成各种形状的头发。",
+      "round": 3,
+      "options": [
+        "A. 古代男子的胡子的别称",
+        "B. 在头顶或脑后盘成各种形状的头发",
+        "C. 马脖子上的鬃毛",
+        "D. 胡子"
+      ],
+      "_round_judge": {
+        "anchor_used": "chinese_r3_anchor_5",
+        "rubric_signals": [
+          "跨文化常识 4 选 1"
+        ],
+        "reasoning": "R3：4 选项中「髻」需结合部首推断字义，A C D 与头发无关。参 chinese_r3_anchor_5 R3 同档。"
+      }
+    },
+    {
+      "index": 8,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#8",
+      "type": "choice",
+      "knowledge_point": "字词/成语运用",
+      "chapter": "字词",
+      "content": "下列成语中，源于寓言故事的一组是？",
+      "answer": "A",
+      "explanation": "「守株待兔」「亡羊补牢」均为寓言故事；B 见微知著、C 重见天日、D 司空见惯均非寓言。",
+      "round": 2,
+      "options": [
+        "A. 守株待兔  亡羊补牢",
+        "B. 随心所欲   见微知著",
+        "C. 重见天日  悬灯结彩",
+        "D. 不以为然 司空见惯"
+      ],
+      "_round_judge": {
+        "anchor_used": "chinese_r3_anchor_5",
+        "rubric_signals": [
+          "跨文化常识 4 选 1"
+        ],
+        "reasoning": "R2：4 组成语逐项核对来源。参 chinese_r3_anchor_5 R3 略低（仅 2 个寓言成语容易识别），定 R2。"
+      }
+    },
+    {
+      "index": 9,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#9",
+      "type": "choice",
+      "knowledge_point": "字词/成语运用",
+      "chapter": "字词",
+      "content": "下面四组成语中，与神态无关的一项是？",
+      "answer": "D",
+      "explanation": "A 神采奕奕、眉开眼笑；B 目瞪口呆、笑逐颜开；C 大惊失色、垂头丧气均为神态；D「仪表堂堂」是仪表，「囫囵吞枣」是动作，与神态无关。",
+      "round": 3,
+      "options": [
+        "A. 神采奕奕  眉开眼笑",
+        "B. 目瞪口呆   笑逐颜开",
+        "C. 大惊失色  垂头丧气",
+        "D. 仪表堂堂  囫囵吞枣"
+      ],
+      "_round_judge": {
+        "anchor_used": "chinese_r3_anchor_5",
+        "rubric_signals": [
+          "跨文化常识 4 选 1"
+        ],
+        "reasoning": "R3：4 组成语逐项核对是否表达神态。参 chinese_r3_anchor_5 R3 同档。"
+      }
+    },
+    {
+      "index": 10,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#10",
+      "type": "choice",
+      "knowledge_point": "句式与标点/标点符号",
+      "chapter": "句式与标点",
+      "content": "下列各句标点符号使用不正确的一项是？",
+      "answer": "A",
+      "explanation": "A 错：诗句结尾的「。」应在引号外（B C D 标点正确）。",
+      "round": 3,
+      "options": [
+        "A. 我很喜欢背诵和默写「大漠沙如雪，燕山月似钩。」这两句古诗。",
+        "B. 「五彩斑斓的花儿，翠色欲流的草坡，还有……」说着说着，诗人醉了。",
+        "C. 「今天好热啊！——你书读得怎么样了？」妈妈望着我，担心地问道。",
+        "D. 元宵上市，春节的又一个高潮到了。"
+      ],
+      "_round_judge": {
+        "anchor_used": "chinese_r2_anchor_3",
+        "rubric_signals": [
+          "标点综合甄别"
+        ],
+        "reasoning": "R3：4 选项标点综合甄别（引号内外的句号位置规则）。比 chinese_r2_anchor_3 R2 高（涉及引号内外标点的细致规则），定 R3。"
+      }
+    },
+    {
+      "index": 11,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#11",
+      "type": "choice",
+      "knowledge_point": "修辞/比喻",
+      "chapter": "修辞",
+      "content": "诗句「大漠沙如雪，燕山月似钩」运用的修辞手法是？",
+      "answer": "A",
+      "explanation": "「沙如雪」「月似钩」均为比喻（沙比雪、月比钩）。",
+      "round": 1,
+      "options": [
+        "A. 比喻",
+        "B. 排比",
+        "C. 拟人",
+        "D. 夸张"
+      ],
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_5",
+        "rubric_signals": [
+          "修辞识记"
+        ],
+        "reasoning": "R1：含「如」「似」字明显比喻。参 chinese_r1_anchor_5 修辞识记 R1。"
+      }
+    },
+    {
+      "index": 12,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#12",
+      "type": "choice",
+      "knowledge_point": "句式与标点/句子衔接",
+      "chapter": "句式与标点",
+      "content": "「我们应当尽量地减少那些不必要的牺牲。」这句话应插在下面这段话的什么位置？\n要奋斗就会有牺牲，死人的事是经常发生的①。但是我们想到人民的利益，想到大多数人民的痛苦，我们为人民而死，就是死得其所②。不过，③我们的干部要关心每一个战士，④一切革命队伍的人都要互相关心，互相爱护，互相帮助。",
+      "answer": "C",
+      "explanation": "插入句「我们应当尽量地减少那些不必要的牺牲」与下文「关心战士、互相爱护」呼应，应插在 ③ 处。",
+      "round": 3,
+      "options": [
+        "A. ①",
+        "B. ②",
+        "C. ③",
+        "D. ④"
+      ],
+      "_round_judge": {
+        "anchor_used": "chinese_r4_anchor_5",
+        "rubric_signals": [
+          "句子衔接需上下文逻辑"
+        ],
+        "reasoning": "R3：4 段位均合语流，需精准识别上下文逻辑。比 chinese_r4_anchor_5 散文段落衔接 R4 复杂度低（仅小段），定 R3。"
+      }
+    },
+    {
+      "index": 13,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#13",
+      "type": "choice",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "chapter": "课文与名著",
+      "content": "六（1）班要编排一份以「保护地球」为主题的手抄报，以下语句可以选作本次手抄报标题的一项是？",
+      "answer": "C",
+      "explanation": "C「但留方寸土，留与子孙耕」直接表达保护土地、惠及后代，与「保护地球」主题契合。",
+      "round": 2,
+      "options": [
+        "A. 《常将有日思无日，莫把无时当有时》",
+        "B. 《书到用时方恨少，事非经过不知难》",
+        "C. 《但留方寸土，留与子孙耕》",
+        "D. 《穷则变，变则通，通则久》"
+      ],
+      "_round_judge": {
+        "anchor_used": "chinese_r3_anchor_5",
+        "rubric_signals": [
+          "跨文化常识 4 选 1"
+        ],
+        "reasoning": "R2：4 个引文逐项核对主题相关性。参 chinese_r3_anchor_5 R3 同档（4 选 1 内容理解）。"
+      }
+    },
+    {
+      "index": 14,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#14",
+      "type": "fill",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "chapter": "古诗文",
+      "content": "文天祥的「人生自古谁无死？________」表现了他坚贞不屈的高贵品质。",
+      "answer": "留取丹心照汗青",
+      "explanation": "文天祥《过零丁洋》：人生自古谁无死？留取丹心照汗青。",
+      "round": 2,
+      "group_id": "realpaper_g6_chinese_bubian_qimo_mokuai_004_q3",
+      "group_order": 1,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_1",
+        "rubric_signals": [
+          "古诗背诵默写"
+        ],
+        "reasoning": "R1：课内古诗背诵。参 chinese_r1_anchor_1 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 15,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#15",
+      "type": "fill",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "chapter": "古诗文",
+      "content": "李清照的「生当作人杰，________」告诉我们即使死也要有价值。",
+      "answer": "死亦为鬼雄",
+      "explanation": "李清照《夏日绝句》：生当作人杰，死亦为鬼雄。",
+      "round": 2,
+      "group_id": "realpaper_g6_chinese_bubian_qimo_mokuai_004_q3",
+      "group_order": 2,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_1",
+        "rubric_signals": [
+          "古诗背诵默写"
+        ],
+        "reasoning": "R1：课内古诗背诵。参 chinese_r1_anchor_1 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 16,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#16",
+      "type": "fill",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "chapter": "古诗文",
+      "content": "「________，要留清白在人间」表现了诗人于谦的高尚节操。",
+      "answer": "粉骨碎身浑不怕",
+      "explanation": "于谦《石灰吟》：粉骨碎身浑不怕，要留清白在人间。",
+      "round": 2,
+      "alt_answers": [
+        "粉身碎骨浑不怕"
+      ],
+      "group_id": "realpaper_g6_chinese_bubian_qimo_mokuai_004_q3",
+      "group_order": 3,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_1",
+        "rubric_signals": [
+          "古诗背诵默写"
+        ],
+        "reasoning": "R1：课内古诗背诵。参 chinese_r1_anchor_1 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 17,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#17",
+      "type": "fill",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "chapter": "古诗文",
+      "content": "「________，去留肝胆两昆仑」表现了谭嗣同英勇就义前的豪迈。",
+      "answer": "我自横刀向天笑",
+      "explanation": "谭嗣同《狱中题壁》：我自横刀向天笑，去留肝胆两昆仑。",
+      "round": 2,
+      "group_id": "realpaper_g6_chinese_bubian_qimo_mokuai_004_q3",
+      "group_order": 4,
+      "_round_judge": {
+        "anchor_used": "chinese_r1_anchor_1",
+        "rubric_signals": [
+          "古诗背诵默写"
+        ],
+        "reasoning": "R2：课外名诗（《狱中题壁》），比课内 R1 略难，定 R2。"
+      },
+      "_round_before_group_unify": 2
+    },
+    {
+      "index": 18,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#18",
+      "type": "choice",
+      "knowledge_point": "阅读理解/阅读理解",
+      "chapter": "阅读理解",
+      "content": "阅读材料：\n材料一：手提式干粉灭火器主要用以扑救固体材料火（A 类）、可燃液体火（B 类）、可燃气体火（C 类）及一般电器类火灾。灭火器因其操作灵活，应用范围广泛，被应用在社会的各个角落，其操作方法：先拔下保险销，拉出喷管，然后对准火焰根部左右扫射，适用于扑救初期火灾。\n材料二：手提式干粉灭火器使用方法。\n1.使用手提式干粉灭火器时，应手提灭火器的提把，迅速赶到着火处。\n2.在距离起火点 5 米左右处，放下灭火器。在室外使用时，应占据上风方向。\n3.使用前，先把灭火器上下颠倒几次，使筒内干粉松动。\n4.如使用的是内装式或贮压式干粉灭火器，应先拔下保险销，一只手握住喷嘴，另一只手用力压下压把。\n5.如使用的是外置式干粉灭火器，则一只手握住喷嘴，另一只手提起提环，握住提柄。\n6.用干粉灭火器扑救流散液体火灾时，应从火焰侧面，对准火焰根部喷射，并由近而远，左右扫射。\n7.用干粉灭火器扑救容器内可燃液体火灾时，亦应从火焰侧面对准火焰根部，左右扫射。\n8.用干粉灭火器扑救固体物质火灾时，应使灭火器嘴对准燃烧最猛烈处，左右扫射。\n9.使用干粉灭火器应注意灭火过程中应始终保持直立状态。\n10.使用手提式干粉灭火器扑救固体可燃物火灾时，应对准燃烧最猛烈处喷射，并上下、左右扫射。如条件许可，使用者可提着灭火器沿着燃烧物的四周边走边喷，使干粉灭火剂均匀地喷在燃烧物的表面。\n11.干粉灭火器应每个月都进行一次外观检查，主要检查灭火器压力表，当压力表指针低于绿线区时，应立即充压维修；新购买的 ABC 干粉灭火器罐体应 5 年进行水压测试 1 次。\n问：下列不属于手提式干粉灭火器扑救范围的一项是？",
+      "answer": "B",
+      "explanation": "材料一明确列出 A 类、B 类、C 类及电器类火灾，不包括「腐蚀性气体」。",
+      "round": 2,
+      "options": [
+        "A. 固体材料火",
+        "B. 腐蚀性气体",
+        "C. 可燃气体火",
+        "D. 可燃液体火"
+      ],
+      "group_id": "realpaper_g6_chinese_bubian_qimo_mokuai_004_q4",
+      "group_order": 1,
+      "_round_judge": {
+        "anchor_used": "chinese_r3_anchor_2",
+        "rubric_signals": [
+          "段意直白"
+        ],
+        "reasoning": "R2：信息直接定位文中。参 chinese_r3_anchor_2 R2。"
+      },
+      "_round_before_group_unify": 2
+    },
+    {
+      "index": 19,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#19",
+      "type": "choice",
+      "knowledge_point": "阅读理解/阅读理解",
+      "chapter": "阅读理解",
+      "content": "阅读材料：\n材料一：手提式干粉灭火器主要用以扑救固体材料火（A 类）、可燃液体火（B 类）、可燃气体火（C 类）及一般电器类火灾。灭火器因其操作灵活，应用范围广泛，被应用在社会的各个角落，其操作方法：先拔下保险销，拉出喷管，然后对准火焰根部左右扫射，适用于扑救初期火灾。\n材料二：手提式干粉灭火器使用方法。\n1.使用手提式干粉灭火器时，应手提灭火器的提把，迅速赶到着火处。\n2.在距离起火点 5 米左右处，放下灭火器。在室外使用时，应占据上风方向。\n3.使用前，先把灭火器上下颠倒几次，使筒内干粉松动。\n4.如使用的是内装式或贮压式干粉灭火器，应先拔下保险销，一只手握住喷嘴，另一只手用力压下压把。\n5.如使用的是外置式干粉灭火器，则一只手握住喷嘴，另一只手提起提环，握住提柄。\n6.用干粉灭火器扑救流散液体火灾时，应从火焰侧面，对准火焰根部喷射，并由近而远，左右扫射。\n7.用干粉灭火器扑救容器内可燃液体火灾时，亦应从火焰侧面对准火焰根部，左右扫射。\n8.用干粉灭火器扑救固体物质火灾时，应使灭火器嘴对准燃烧最猛烈处，左右扫射。\n9.使用干粉灭火器应注意灭火过程中应始终保持直立状态。\n10.使用手提式干粉灭火器扑救固体可燃物火灾时，应对准燃烧最猛烈处喷射，并上下、左右扫射。如条件许可，使用者可提着灭火器沿着燃烧物的四周边走边喷，使干粉灭火剂均匀地喷在燃烧物的表面。\n11.干粉灭火器应每个月都进行一次外观检查，主要检查灭火器压力表，当压力表指针低于绿线区时，应立即充压维修；新购买的 ABC 干粉灭火器罐体应 5 年进行水压测试 1 次。\n问：根据材料一，手提式干粉灭火器操作方法的第一步是？",
+      "answer": "C",
+      "explanation": "材料一明确「先拔下保险销」是第一步。",
+      "round": 2,
+      "options": [
+        "A. 拉出喷管",
+        "B. 跑到火源处",
+        "C. 拔下保险销",
+        "D. 对准火焰根部左右扫射"
+      ],
+      "group_id": "realpaper_g6_chinese_bubian_qimo_mokuai_004_q4",
+      "group_order": 2,
+      "_round_judge": {
+        "anchor_used": "chinese_r3_anchor_2",
+        "rubric_signals": [
+          "段意直白"
+        ],
+        "reasoning": "R1：信息直接定位文中第一步即可。参 chinese_r3_anchor_2 R2 略低（仅一句信息），定 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 20,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#20",
+      "type": "choice",
+      "knowledge_point": "阅读理解/阅读理解",
+      "chapter": "阅读理解",
+      "content": "阅读材料：\n材料一：手提式干粉灭火器主要用以扑救固体材料火（A 类）、可燃液体火（B 类）、可燃气体火（C 类）及一般电器类火灾。灭火器因其操作灵活，应用范围广泛，被应用在社会的各个角落，其操作方法：先拔下保险销，拉出喷管，然后对准火焰根部左右扫射，适用于扑救初期火灾。\n材料二：手提式干粉灭火器使用方法。\n1.使用手提式干粉灭火器时，应手提灭火器的提把，迅速赶到着火处。\n2.在距离起火点 5 米左右处，放下灭火器。在室外使用时，应占据上风方向。\n3.使用前，先把灭火器上下颠倒几次，使筒内干粉松动。\n4.如使用的是内装式或贮压式干粉灭火器，应先拔下保险销，一只手握住喷嘴，另一只手用力压下压把。\n5.如使用的是外置式干粉灭火器，则一只手握住喷嘴，另一只手提起提环，握住提柄。\n6.用干粉灭火器扑救流散液体火灾时，应从火焰侧面，对准火焰根部喷射，并由近而远，左右扫射。\n7.用干粉灭火器扑救容器内可燃液体火灾时，亦应从火焰侧面对准火焰根部，左右扫射。\n8.用干粉灭火器扑救固体物质火灾时，应使灭火器嘴对准燃烧最猛烈处，左右扫射。\n9.使用干粉灭火器应注意灭火过程中应始终保持直立状态。\n10.使用手提式干粉灭火器扑救固体可燃物火灾时，应对准燃烧最猛烈处喷射，并上下、左右扫射。如条件许可，使用者可提着灭火器沿着燃烧物的四周边走边喷，使干粉灭火剂均匀地喷在燃烧物的表面。\n11.干粉灭火器应每个月都进行一次外观检查，主要检查灭火器压力表，当压力表指针低于绿线区时，应立即充压维修；新购买的 ABC 干粉灭火器罐体应 5 年进行水压测试 1 次。\n问：用干粉灭火器扑救流散液体火灾时应从哪里扑灭？",
+      "answer": "A",
+      "explanation": "第 6 条：「应从火焰侧面，对准火焰根部喷射」。",
+      "round": 2,
+      "options": [
+        "A. 火焰侧面根部",
+        "B. 火焰正面根部",
+        "C. 火焰侧面上部",
+        "D. 火焰下面上部"
+      ],
+      "group_id": "realpaper_g6_chinese_bubian_qimo_mokuai_004_q4",
+      "group_order": 3,
+      "_round_judge": {
+        "anchor_used": "chinese_r3_anchor_2",
+        "rubric_signals": [
+          "段意直白"
+        ],
+        "reasoning": "R2：信息精确定位（侧面 + 根部）。参 chinese_r3_anchor_2 R2。"
+      },
+      "_round_before_group_unify": 2
+    },
+    {
+      "index": 21,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#21",
+      "type": "choice",
+      "knowledge_point": "阅读理解/阅读理解",
+      "chapter": "阅读理解",
+      "content": "阅读《恐龙的自述》（节选）：\n①大家好，相信你们一定对我不会感到陌生吧，我就是生活在距今大约 6500 万年前的史前动物——恐龙。\n②虽然我们恐龙化石在地球上存在了数千万年，但是直到十九世纪，人们才知道地球上曾经有过这么一种奇特的动物。说起「恐龙」名字的由来，还有一段故事呢！1820 年，英国一个叫曼特尔的医师首先发现了我们牙齿的化石，知道可能是某种庞大爬行动物所有，取名「禽龙」。1841 年，当时一位杰出的科学家理查·欧文爵士，才将我们正式命名为恐龙。\n③我们恐龙的种类很多，大约有 900 多种呢。所以我们的体形和习性相差很大。其中个子大的可达 45 米，有几十头大象加起来那么大；小的却不足一米，跟一只鸡差不多。就拿食性来说，我们恐龙有温顺的素食者和凶残的食肉者，还有荤素都吃的杂食性恐龙。6500 万年前的地球可是由我们统治和称霸的啊，无论天上、陆地和海里都有我们恐龙的身影。\n④以前人们一直认为恐龙和今天的爬行动物一样，都是一生下蛋就走开，根本不管它们的孩子会怎么样，其实不全是如此。有一种恐龙，它的幼龙是在巢中由父母来养育的，它们列队外出的时候，大恐龙在两侧，小恐龙在队列中间受到保护。它每次能生 25 个蛋，这 25 只小恐龙每天要吃掉几百斤鲜嫩的植物，大恐龙就要不辞辛劳地到处寻找食物。于是，科学家给它们取了一个很有人情味的名字——慈母龙。在加拿大的雷德迪尔河沿岸，有一种恐龙叫阿尔伯特龙，与一般恐龙相比，它们的身躯要小一些，但它们却更令其他动物害怕。因为它们奔跑的速度极快，据估计，短距离内可达时速 30 多公里。阿尔伯特龙的可怕之处还在于它的嘴巴特别大，里边排满了尖利的牙齿，能咬穿坚硬的骨头。另外它们的前爪像老鹰的一样非常尖锐。\n⑤我们恐龙和其他生物一样，都会经历产生、繁荣和灭亡的过程，这是一个生物演化史的必然规律。\n问：恐龙是生活在距今大约（    ）年前的史前动物。",
+      "answer": "A",
+      "explanation": "文中 ① 段「距今大约 6500 万年前」直接对应。",
+      "round": 2,
+      "options": [
+        "A. 6500 万",
+        "B. 650",
+        "C. 1 亿",
+        "D. 650 万"
+      ],
+      "group_id": "realpaper_g6_chinese_bubian_qimo_mokuai_004_q5",
+      "group_order": 1,
+      "_round_judge": {
+        "anchor_used": "chinese_r3_anchor_2",
+        "rubric_signals": [
+          "段意直白"
+        ],
+        "reasoning": "R1：信息直接定位文中。比 chinese_r3_anchor_2 R2 简单（仅一处数字识记），定 R1。"
+      },
+      "_round_before_group_unify": 1
+    },
+    {
+      "index": 22,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#22",
+      "type": "choice",
+      "knowledge_point": "阅读理解/阅读理解",
+      "chapter": "阅读理解",
+      "content": "阅读《恐龙的自述》（节选）：\n①大家好，相信你们一定对我不会感到陌生吧，我就是生活在距今大约 6500 万年前的史前动物——恐龙。\n②虽然我们恐龙化石在地球上存在了数千万年，但是直到十九世纪，人们才知道地球上曾经有过这么一种奇特的动物。说起「恐龙」名字的由来，还有一段故事呢！1820 年，英国一个叫曼特尔的医师首先发现了我们牙齿的化石，知道可能是某种庞大爬行动物所有，取名「禽龙」。1841 年，当时一位杰出的科学家理查·欧文爵士，才将我们正式命名为恐龙。\n③我们恐龙的种类很多，大约有 900 多种呢。所以我们的体形和习性相差很大。其中个子大的可达 45 米，有几十头大象加起来那么大；小的却不足一米，跟一只鸡差不多。就拿食性来说，我们恐龙有温顺的素食者和凶残的食肉者，还有荤素都吃的杂食性恐龙。6500 万年前的地球可是由我们统治和称霸的啊，无论天上、陆地和海里都有我们恐龙的身影。\n④以前人们一直认为恐龙和今天的爬行动物一样，都是一生下蛋就走开，根本不管它们的孩子会怎么样，其实不全是如此。有一种恐龙，它的幼龙是在巢中由父母来养育的，它们列队外出的时候，大恐龙在两侧，小恐龙在队列中间受到保护。它每次能生 25 个蛋，这 25 只小恐龙每天要吃掉几百斤鲜嫩的植物，大恐龙就要不辞辛劳地到处寻找食物。于是，科学家给它们取了一个很有人情味的名字——慈母龙。在加拿大的雷德迪尔河沿岸，有一种恐龙叫阿尔伯特龙，与一般恐龙相比，它们的身躯要小一些，但它们却更令其他动物害怕。因为它们奔跑的速度极快，据估计，短距离内可达时速 30 多公里。阿尔伯特龙的可怕之处还在于它的嘴巴特别大，里边排满了尖利的牙齿，能咬穿坚硬的骨头。另外它们的前爪像老鹰的一样非常尖锐。\n⑤我们恐龙和其他生物一样，都会经历产生、繁荣和灭亡的过程，这是一个生物演化史的必然规律。\n问：第 ③ 段运用了哪两种说明方法？",
+      "answer": "A",
+      "explanation": "「900 多种」「45 米」是列数字；「几十头大象加起来那么大」是作比较。",
+      "round": 2,
+      "options": [
+        "A. 列数字 作比较",
+        "B. 打比方 列数字",
+        "C. 打比方 举例子",
+        "D. 举例子 列数字"
+      ],
+      "group_id": "realpaper_g6_chinese_bubian_qimo_mokuai_004_q5",
+      "group_order": 2,
+      "_round_judge": {
+        "anchor_used": "chinese_r3_anchor_2",
+        "rubric_signals": [
+          "段意直白"
+        ],
+        "reasoning": "R2：识别说明方法（列数字 + 作比较）。参 chinese_r3_anchor_2 R2。"
+      },
+      "_round_before_group_unify": 2
+    },
+    {
+      "index": 23,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#23",
+      "type": "choice",
+      "knowledge_point": "阅读理解/阅读理解",
+      "chapter": "阅读理解",
+      "content": "阅读《恐龙的自述》（节选）：\n①大家好，相信你们一定对我不会感到陌生吧，我就是生活在距今大约 6500 万年前的史前动物——恐龙。\n②虽然我们恐龙化石在地球上存在了数千万年，但是直到十九世纪，人们才知道地球上曾经有过这么一种奇特的动物。说起「恐龙」名字的由来，还有一段故事呢！1820 年，英国一个叫曼特尔的医师首先发现了我们牙齿的化石，知道可能是某种庞大爬行动物所有，取名「禽龙」。1841 年，当时一位杰出的科学家理查·欧文爵士，才将我们正式命名为恐龙。\n③我们恐龙的种类很多，大约有 900 多种呢。所以我们的体形和习性相差很大。其中个子大的可达 45 米，有几十头大象加起来那么大；小的却不足一米，跟一只鸡差不多。就拿食性来说，我们恐龙有温顺的素食者和凶残的食肉者，还有荤素都吃的杂食性恐龙。6500 万年前的地球可是由我们统治和称霸的啊，无论天上、陆地和海里都有我们恐龙的身影。\n④以前人们一直认为恐龙和今天的爬行动物一样，都是一生下蛋就走开，根本不管它们的孩子会怎么样，其实不全是如此。有一种恐龙，它的幼龙是在巢中由父母来养育的，它们列队外出的时候，大恐龙在两侧，小恐龙在队列中间受到保护。它每次能生 25 个蛋，这 25 只小恐龙每天要吃掉几百斤鲜嫩的植物，大恐龙就要不辞辛劳地到处寻找食物。于是，科学家给它们取了一个很有人情味的名字——慈母龙。在加拿大的雷德迪尔河沿岸，有一种恐龙叫阿尔伯特龙，与一般恐龙相比，它们的身躯要小一些，但它们却更令其他动物害怕。因为它们奔跑的速度极快，据估计，短距离内可达时速 30 多公里。阿尔伯特龙的可怕之处还在于它的嘴巴特别大，里边排满了尖利的牙齿，能咬穿坚硬的骨头。另外它们的前爪像老鹰的一样非常尖锐。\n⑤我们恐龙和其他生物一样，都会经历产生、繁荣和灭亡的过程，这是一个生物演化史的必然规律。\n问：「其中个子大的可达 45 米，有几十头大象加起来那么大。」从句中的两个数字可以感受到？",
+      "answer": "C",
+      "explanation": "「45 米」+「几十头大象」突出体型大，但未提高度，故选「大」最准确。",
+      "round": 2,
+      "options": [
+        "A. 恐龙又高又重",
+        "B. 恐龙很高",
+        "C. 恐龙很大",
+        "D. 恐龙又高又大"
+      ],
+      "group_id": "realpaper_g6_chinese_bubian_qimo_mokuai_004_q5",
+      "group_order": 3,
+      "_round_judge": {
+        "anchor_used": "chinese_r3_anchor_2",
+        "rubric_signals": [
+          "段意直白"
+        ],
+        "reasoning": "R2：识别数字传达的核心特征。参 chinese_r3_anchor_2 R2。"
+      },
+      "_round_before_group_unify": 2
+    },
+    {
+      "index": 24,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#24",
+      "type": "choice",
+      "knowledge_point": "字词/词语搭配",
+      "chapter": "字词",
+      "content": "阅读《我爱家乡的秋夜》：\n家乡的秋夜素雅、幽静。我对家乡的秋夜有一种眷恋之情，我爱家乡的秋夜。\n家乡的秋夜像一幅美丽的水墨画。柔和的月光下，一望无际的田野是碧绿的翡翠，水稻的叶子挑起一粒粒的秋露，远远望去，好像珍珠撒在翡翠上。\n月光慢慢地从浓密的竹林里一丝一缕地透过来，撒在细密的竹叶上，撒在亭亭玉立的竹茎上，撒在浓黑的小草上。叶的碎影、枝的碎影、茎的碎影，重叠错落，把竹的绿映照得深浅明暗，美丽极了。\n柿子园里的景色更是迷人。走进柿子园，枝繁叶茂的柿子树上，挂满了沉甸甸的柿子。\n家乡的秋夜像一首美妙的交响曲。瑶寨的小伙子、大姑娘能歌善舞，每当夜幕降临，他们就会载歌载舞。田野里的小艺术家们也不甘示弱：蝈蝈们欢快地哼着小夜曲，蛤蟆用粗大的喉咙在弹奏大提琴，青蛙似男高音唱着那粗犷嘹亮的歌儿，蟋蟀们更是尽情地伴奏，构成了一首无与伦比的交响曲。这声音在空旷的山野间回荡，如春蚕的咀嚼声，似清风拂过杨柳，又似草原上的野马在奔驰……\n夜深了，人们睡了，大山睡了，湖也睡了，只有风儿还在神采奕奕地守护着。\n问：根据短文内容，下列词语搭配正确的一项是？\n（    ）的月光 （    ）的翡翠 （    ）的交响曲 （    ）的水墨画",
+      "answer": "B",
+      "explanation": "原文「柔和的月光」「碧绿的翡翠」「无与伦比的交响曲」「美丽的水墨画」对应 B。",
+      "round": 3,
+      "options": [
+        "A. 无与伦比 柔和 美丽 碧绿",
+        "B. 柔和 碧绿 无与伦比 美丽",
+        "C. 柔和 美丽 无与伦比 碧绿",
+        "D. 美丽 柔和 无与伦比 碧绿"
+      ],
+      "group_id": "realpaper_g6_chinese_bubian_qimo_mokuai_004_q6",
+      "group_order": 1,
+      "_round_judge": {
+        "anchor_used": "chinese_r2_anchor_2",
+        "rubric_signals": [
+          "近义词搭配"
+        ],
+        "reasoning": "R2：4 选项 4 个词语搭配组合，需精准回原文匹配。参 chinese_r2_anchor_2 R2。"
+      },
+      "_round_before_group_unify": 2
+    },
+    {
+      "index": 25,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#25",
+      "type": "choice",
+      "knowledge_point": "字词/成语运用",
+      "chapter": "字词",
+      "content": "阅读《我爱家乡的秋夜》：\n家乡的秋夜素雅、幽静。我对家乡的秋夜有一种眷恋之情，我爱家乡的秋夜。\n家乡的秋夜像一幅美丽的水墨画。柔和的月光下，一望无际的田野是碧绿的翡翠，水稻的叶子挑起一粒粒的秋露，远远望去，好像珍珠撒在翡翠上。\n月光慢慢地从浓密的竹林里一丝一缕地透过来，撒在细密的竹叶上，撒在亭亭玉立的竹茎上，撒在浓黑的小草上。叶的碎影、枝的碎影、茎的碎影，重叠错落，把竹的绿映照得深浅明暗，美丽极了。\n柿子园里的景色更是迷人。走进柿子园，枝繁叶茂的柿子树上，挂满了沉甸甸的柿子。\n家乡的秋夜像一首美妙的交响曲。瑶寨的小伙子、大姑娘能歌善舞，每当夜幕降临，他们就会载歌载舞。田野里的小艺术家们也不甘示弱：蝈蝈们欢快地哼着小夜曲，蛤蟆用粗大的喉咙在弹奏大提琴，青蛙似男高音唱着那粗犷嘹亮的歌儿，蟋蟀们更是尽情地伴奏，构成了一首无与伦比的交响曲。这声音在空旷的山野间回荡，如春蚕的咀嚼声，似清风拂过杨柳，又似草原上的野马在奔驰……\n夜深了，人们睡了，大山睡了，湖也睡了，只有风儿还在神采奕奕地守护着。\n问：与下列解释相对应的词语，正确的一项是？\n①不愿意显得比别人差。\n②馋得口水都快要流下来。形容非常馋或眼红。\n③指边唱歌，边跳舞。形容尽情欢乐。\n④一眼望不到边。形容十分辽阔。",
+      "answer": "A",
+      "explanation": "①不甘示弱 ②垂涎欲滴 ③载歌载舞 ④一望无际，对应 A。",
+      "round": 3,
+      "options": [
+        "A. 不甘示弱   垂涎欲滴   载歌载舞  一望无际",
+        "B. 毫不示弱   如饥似渴   歌舞升平  一望无际",
+        "C. 不甘示弱   垂涎欲滴   歌舞升平  一望无际",
+        "D. 毫不示弱   如饥似渴   载歌载舞  一望无际"
+      ],
+      "group_id": "realpaper_g6_chinese_bubian_qimo_mokuai_004_q6",
+      "group_order": 2,
+      "_round_judge": {
+        "anchor_used": "chinese_r2_anchor_2",
+        "rubric_signals": [
+          "近义词辨析"
+        ],
+        "reasoning": "R2：4 选项均含 4 个成语+释义匹配。参 chinese_r2_anchor_2 R2。"
+      },
+      "_round_before_group_unify": 2
+    },
+    {
+      "index": 26,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#26",
+      "type": "choice",
+      "knowledge_point": "现代文阅读/记叙文阅读",
+      "chapter": "现代文阅读",
+      "content": "阅读《我爱家乡的秋夜》：\n家乡的秋夜素雅、幽静。我对家乡的秋夜有一种眷恋之情，我爱家乡的秋夜。\n家乡的秋夜像一幅美丽的水墨画。柔和的月光下，一望无际的田野是碧绿的翡翠，水稻的叶子挑起一粒粒的秋露，远远望去，好像珍珠撒在翡翠上。\n月光慢慢地从浓密的竹林里一丝一缕地透过来，撒在细密的竹叶上，撒在亭亭玉立的竹茎上，撒在浓黑的小草上。叶的碎影、枝的碎影、茎的碎影，重叠错落，把竹的绿映照得深浅明暗，美丽极了。\n柿子园里的景色更是迷人。走进柿子园，枝繁叶茂的柿子树上，挂满了沉甸甸的柿子。\n家乡的秋夜像一首美妙的交响曲。瑶寨的小伙子、大姑娘能歌善舞，每当夜幕降临，他们就会载歌载舞。田野里的小艺术家们也不甘示弱：蝈蝈们欢快地哼着小夜曲，蛤蟆用粗大的喉咙在弹奏大提琴，青蛙似男高音唱着那粗犷嘹亮的歌儿，蟋蟀们更是尽情地伴奏，构成了一首无与伦比的交响曲。这声音在空旷的山野间回荡，如春蚕的咀嚼声，似清风拂过杨柳，又似草原上的野马在奔驰……\n夜深了，人们睡了，大山睡了，湖也睡了，只有风儿还在神采奕奕地守护着。\n问：「田野里的小艺术家们」指的是？",
+      "answer": "D",
+      "explanation": "原文「蝈蝈们/蛤蟆/青蛙/蟋蟀」是田野里的演奏者，是「小艺术家们」；春蚕、清风、野马是比喻对象，不是。",
+      "round": 3,
+      "options": [
+        "A. 蝈蝈、蛤蟆、青蛙、蟋蟀、春蚕",
+        "B. 蝈蝈、蛤蟆、青蛙、蟋蟀、清风、野马",
+        "C. 春蚕、清风、野马",
+        "D. 蝈蝈、蛤蟆、青蛙、蟋蟀"
+      ],
+      "group_id": "realpaper_g6_chinese_bubian_qimo_mokuai_004_q6",
+      "group_order": 3,
+      "_round_judge": {
+        "anchor_used": "chinese_r3_anchor_4",
+        "rubric_signals": [
+          "说明文指代"
+        ],
+        "reasoning": "R3：指代精确推断 — 排除比喻喻体、保留实指对象。参 chinese_r3_anchor_4 R3 同档。"
+      },
+      "_round_before_group_unify": 3
+    },
+    {
+      "index": 27,
+      "source_ref": "realpaper_g6_chinese_bubian_qimo_mokuai_004#27",
+      "type": "fill",
+      "knowledge_point": "句式与标点/句式转换",
+      "chapter": "句式与标点",
+      "content": "阅读《我爱家乡的秋夜》：\n家乡的秋夜素雅、幽静。我对家乡的秋夜有一种眷恋之情，我爱家乡的秋夜。\n家乡的秋夜像一幅美丽的水墨画。柔和的月光下，一望无际的田野是碧绿的翡翠，水稻的叶子挑起一粒粒的秋露，远远望去，好像珍珠撒在翡翠上。\n月光慢慢地从浓密的竹林里一丝一缕地透过来，撒在细密的竹叶上，撒在亭亭玉立的竹茎上，撒在浓黑的小草上。叶的碎影、枝的碎影、茎的碎影，重叠错落，把竹的绿映照得深浅明暗，美丽极了。\n柿子园里的景色更是迷人。走进柿子园，枝繁叶茂的柿子树上，挂满了沉甸甸的柿子。\n家乡的秋夜像一首美妙的交响曲。瑶寨的小伙子、大姑娘能歌善舞，每当夜幕降临，他们就会载歌载舞。田野里的小艺术家们也不甘示弱：蝈蝈们欢快地哼着小夜曲，蛤蟆用粗大的喉咙在弹奏大提琴，青蛙似男高音唱着那粗犷嘹亮的歌儿，蟋蟀们更是尽情地伴奏，构成了一首无与伦比的交响曲。这声音在空旷的山野间回荡，如春蚕的咀嚼声，似清风拂过杨柳，又似草原上的野马在奔驰……\n夜深了，人们睡了，大山睡了，湖也睡了，只有风儿还在神采奕奕地守护着。\n问：缩写句子：「柔和的月光下，一望无际的田野是碧绿的翡翠。」",
+      "answer": "田野是翡翠。",
+      "explanation": "缩写后保留主干「田野是翡翠」。",
+      "round": 3,
+      "alt_answers": [
+        "田野是翡翠"
+      ],
+      "group_id": "realpaper_g6_chinese_bubian_qimo_mokuai_004_q6",
+      "group_order": 4,
+      "_round_judge": {
+        "anchor_used": "chinese_r2_anchor_4",
+        "rubric_signals": [
+          "句式转换"
+        ],
+        "reasoning": "R2：句子缩写。参 chinese_r2_anchor_4 句式转换 R2。"
+      },
+      "_round_before_group_unify": 2
+    }
+  ]
+}
