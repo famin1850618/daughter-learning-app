@@ -14,18 +14,22 @@ V3.10 起这个 workflow 已在 ≥ 5 次 session 复用（V3.10.0 / 各批次 /
 
 ```
 ~/.claude/skills/realpaper-extract/
-  SKILL.md                  # 入口
-  pipeline.md               # 4 步 pipeline 详解 + 每步常见报错
-  scripts/                  # V3.10 已稳定脚本拷贝
-    extract.py              # PDF → raw text（pdftotext）
-    segment.py              # raw text → 题目段（含全角句号 / 大题感知）
-    match_ans.py            # 题目段 ↔ 答案配对（big_section + local_idx）
-    validate.py             # JSON schema 验证
-  kp_match_template.md      # 标 KP 时的对照清单
-  round_assign_guide.md     # round 评估接口（调 difficulty skill）
-  troubleshooting.md        # OCR 乱字 / 全角句号 / 大题重置等踩过的坑
-  manifest_schema.md        # docs/realpaper_manifest.json schema 说明
+  SKILL.md                       # 入口（含上方"第一原则"作为 abort gate）
+  abandonment_principle.md       # ⚠️ 第一原则独立扩展：识别不清直接放弃 + 触发条件 + 反例
+  pipeline.md                    # 4 步 pipeline 详解 + 每步常见报错
+  scripts/                       # V3.10 已稳定脚本拷贝
+    extract.py                   # PDF → raw text（pdftotext）
+    segment.py                   # raw text → 题目段（含全角句号 / 大题感知）
+    match_ans.py                 # 题目段 ↔ 答案配对（big_section + local_idx）
+    validate.py                  # JSON schema 验证
+  kp_match_template.md           # 标 KP 时的对照清单
+  round_assign_guide.md          # round 评估接口（调 difficulty skill）
+  troubleshooting.md             # OCR 乱字 / 全角句号 / 大题重置等踩过的坑
+  manifest_schema.md             # docs/realpaper_manifest.json schema 说明
+  history_lessons.md             # 历史教训（V3.10 第六批伪题事件 / V3.12.3 删除）
 ```
+
+**`abandonment_principle.md`**: 上方"第一原则"段独立成文件，避免 SKILL.md body 太长被 LLM 截掉。任何调用此 skill 的 agent 启动时必须先读此文件并 ack。
 
 仅一份 skill，跨学科通用（输入参数指定 subject / grade / textbook）。
 
@@ -34,11 +38,60 @@ V3.10 起这个 workflow 已在 ≥ 5 次 session 复用（V3.10.0 / 各批次 /
 ```yaml
 ---
 name: realpaper-extract
-description: 当需要把真题 PDF（北师大数学/部编语文/人教物理化学/PET 英语）转成 daughter_learning_app 标准 batch JSON 入库时使用。典型场景：Famin 提供 PDF 一键入库、批量处理 cache 中已下载真题、新教材版本扩展。Skill 内置 V3.10 起稳定的 4 步 pipeline（pdftotext → segment → match_ans → validate）+ 踩坑清单（OCR 乱字、全角句号、大题感知配对、双引号替换）+ KP 匹配模板 + 与 difficulty skill 联动评 round。输出标准 batch JSON 双写 assets/data/batches/ 和 question_bank/。
+description: 当需要把真题 PDF（北师大数学/部编语文/人教物理化学/PET 英语）转成 daughter_learning_app 标准 batch JSON 入库时使用。典型场景：Famin 提供 PDF 一键入库、批量处理 cache 中已下载真题、新教材版本扩展。Skill 内置 V3.10 起稳定的 4 步 pipeline（pdftotext → segment → match_ans → validate）+ 踩坑清单 + KP 匹配模板 + 与 difficulty skill 联动评 round。**核心原则：识别不清直接放弃，不浪费 token 修复**（V3.12.3 重申，详见 abandonment_principle.md）。输出标准 batch JSON 双写 assets/data/batches/ 和 question_bank/。
 version: 0.1.0
 tools: ["Read", "Write", "Bash", "Edit"]
 ---
 ```
+
+## 🔴 第一原则：识别不清直接放弃（不可妥协）
+
+**这条原则在 skill 任何工作流前置生效。读到这里 stop and ack。**
+
+**触发条件**（满足任一）：
+- pdftotext / libreoffice 失败（嵌入私有字体 / 扫描版 PDF / 加密）
+- OCR 输出乱码严重（关键文字模糊 / 错位 / 缺字）
+- raw.txt 字符级与最终入库文字不一致
+- 几何图模糊看不清 / 听力音频质量差
+- 任何"我不太确定但好像可以猜"的情境
+
+**处理动作**：
+
+1. ✋ **整题/整卷跳过** — 不进入后续 pipeline 步骤
+2. 📝 在 `manifest.skipped[]` 记原因（一行）
+3. ➡️ 换下一卷继续
+4. ❌ **不要做以下任何事**：
+   - pdftoppm 高分辨率渲染再 OCR
+   - tesseract 中文 OCR 抢救
+   - 多模态 agent 看 PNG 出题
+   - reviewer agent 重写
+   - 标 `_unverified_<版本>` 暂存待重写
+   - "部分内容能识别，部分用 LLM 推断填补"
+   - 任何"宁可保留也不放弃"的修复路径
+
+**理由**（Famin 决策）：
+- 题量足够（V3.10 cache 已扫 150 卷，正式入库 50+ 卷已够用）
+- 修复成本高（pdftoppm + tesseract + 多模态 + reviewer + 人工审）
+- 容易出问题（多模态 agent 会幻觉编造伪题）
+- 历史教训：V3.10 第六批 122 道 OCR 抢救语文 → 发现伪题 → V3.12.3 全部删除
+
+### 多模态 agent 仅允许两种受限场景
+
+不是出题用，是图/答案补全用：
+
+1. **几何图配文字描述题**：
+   - 输入：清晰图片 + raw.txt 中已存在的文字题面
+   - 动作：agent 描述图 → 写 SVG 入 `image` 字段
+   - **不改原题文字** —— 文字必须严格来自 raw.txt 或人工录入
+
+2. **真题答案区被遮挡/缺失**：
+   - 输入：题面完整 + 答案不完整
+   - 动作：agent 仅补 `answer` 字段
+   - **不改 content / options** —— 题面/选项必须严格来自 raw.txt
+
+任何超出这两个场景的多模态调用 = 违反原则，触发 abort。
+
+
 
 ## 调用方式
 
@@ -192,9 +245,11 @@ realpaper-extract → observations_<科目>.md
 
 T-RP2 实施时需先满足：
 - [x] V3.10 pipeline 在 ≥ 5 次 session 复用（已满足）
-- [ ] T-RP1 资产盘点（4 个脚本 + manifest schema + observations）完成
-- [ ] difficulty-<科目> skill schema 已对齐（本文件 + skill_difficulty_template.md 互查）
+- [x] T-RP1 资产盘点 → `docs/skill_realpaper_extract_assets.md`（2026-05-08）
+- [x] D5 difficulty-<科目> skill schema 已对齐（2026-05-08 commit e65234d）
+- [x] **第一原则"识别不清直接放弃"已前置写入 SKILL.md 草案 + 独立 abandonment_principle.md**（V3.12.3 教训沉淀，强制 abort gate）
 - [ ] kp_match_template.md 全学科 dump（grep knowledge_points_seed.dart）
+- [ ] history_lessons.md 含 V3.10 第六批伪题 + V3.12.1 _unverified 反例 + V3.12.3 删除（教训跨 session 不丢）
 - [ ] Famin 拍板 skill 化
 
 ## 与现有项目代码的接口
