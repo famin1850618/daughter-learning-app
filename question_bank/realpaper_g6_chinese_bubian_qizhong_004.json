@@ -6,18 +6,6 @@
   "questions": [
     {
       "chapter": "字词",
-      "knowledge_point": "字词/多音字辨析",
-      "content": "给加点字选择正确的读音，打「√」。请按出现顺序填写 6 个加点字的正确读音（如 pù），用逗号分隔。\n店**铺**(pū pù)、更改(**更**)(gēng gèng)、**薄**雾(bó báo)、**间**隔(jiàn jiān)、**正**月(zhēng zhèng)、**扇**翅膀(shàn shān)。",
-      "type": "fill",
-      "answer": "pù,gēng,bó,jiàn,zhēng,shān",
-      "alt_answers": [
-        "pù、gēng、bó、jiàn、zhēng、shān"
-      ],
-      "explanation": "店「铺」是名词，读 pù；「更改」中「更」读 gēng（变更）；「薄雾」读 bó；「间隔」读 jiàn（中间隔开）；「正月」读 zhēng（农历一月）；「扇翅膀」是动词读 shān。（**加粗字**为原题加点字）",
-      "round": 2
-    },
-    {
-      "chapter": "字词",
       "knowledge_point": "字词/字形",
       "content": "看拼音，写词语。请按出现顺序填写 8 个词语，用逗号分隔。\nchóu chàng（    ）、kòng zhì（    ）、qī xī（    ）、róu cuō（    ）、yǐ xué（    ）、nóng chóu（    ）、nuó yí（    ）、xì nì（    ）。",
       "type": "fill",
@@ -86,7 +74,7 @@
     {
       "chapter": "文学常识",
       "knowledge_point": "文学常识/外国作家作品",
-      "content": "下列哪部作品是英国作家笛福写的？（    ）\nA. 《鲁滨逊漂流记》\nB. 《骑鹅旅行记》\nC. 《汤姆·索亚历险记》",
+      "content": "下列哪部作品是英国作家笛福写的？（    ）",
       "type": "choice",
       "options": [
         "A. 《鲁滨逊漂流记》",
