@@ -172,11 +172,13 @@ class _PlanBody extends StatelessWidget {
           _DayGroupCard(group: dg),
           const SizedBox(height: 8),
         ],
-        for (final wg in weekPlans) ...[
+        // V3.12.9 bug 4 修复: 过滤空周计划（已删 day plan 后 week 残留 0 items
+        // 仍显示"周计划"字样空 Card）
+        for (final wg in weekPlans.where((w) => w.allItems.isNotEmpty)) ...[
           const SizedBox(height: 8),
           _WeekPlanCard(group: wg),
         ],
-        for (final mg in monthPlans) ...[
+        for (final mg in monthPlans.where((m) => m.allItems.isNotEmpty)) ...[
           const SizedBox(height: 8),
           _MonthPlanCard(group: mg),
         ],

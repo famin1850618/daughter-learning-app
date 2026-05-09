@@ -137,8 +137,11 @@ class _WeakKpSummaryState extends State<_WeakKpSummary> {
 
   @override
   Widget build(BuildContext context) {
+    // V3.12.9: watch resetVersion 强制 rebuild + 重 fetch（兜底 listener 在某些设备不触发的问题）
+    final resetVersion = context.select<DataResetService, int>((s) => s.resetVersion);
     return FutureBuilder<List<ReviewKpSummary>>(
-      future: _future,
+      key: ValueKey('weak_kp_$resetVersion'),
+      future: QuestionDao().getTopWeakKnowledgePoints(3),
       builder: (context, snapshot) {
         final list = snapshot.data ?? [];
         if (list.isEmpty) return const SizedBox.shrink();

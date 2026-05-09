@@ -31,6 +31,12 @@ class DataResetService extends ChangeNotifier {
   /// 回滚窗口（天）
   static const int rollbackDays = 7;
 
+  /// V3.12.9: 重置/回滚版本号，每次 mutation +1。
+  /// UI 用 context.select<DataResetService,int>((s)=>s.resetVersion) + ValueKey
+  /// 强制重建依赖控件（错题集/薄弱 KP），修 V3.12.7 listener 在某些设备不触发的问题。
+  int _resetVersion = 0;
+  int get resetVersion => _resetVersion;
+
   /// 归档 + 清零全部学习进度数据。返回 batchId（成功）或 null（失败）。
   ///
   /// [wipePlans] = true 时（V3.12 新增）：除 5 个进度表外，连同 plan_groups +
@@ -116,8 +122,47 @@ class DataResetService extends ChangeNotifier {
       return null;
     }
 
+    _resetVersion++;
     notifyListeners();
     return batchId;
+  }
+
+  /// V3.12.9: 删除归档（不回滚，直接清归档行 + data_reset_rows）。
+  /// 用户不想回滚某次重置时直接删，避免归档列表越积越多。
+  Future<bool> deleteArchive(String batchId) async {
+    final db = await DatabaseHelper().database;
+    try {
+      await db.transaction((txn) async {
+        await txn.delete('data_reset_rows',
+            where: 'archive_batch_id = ?', whereArgs: [batchId]);
+        await txn.delete('data_reset_archives',
+            where: 'batch_id = ?', whereArgs: [batchId]);
+      });
+      _resetVersion++;
+      notifyListeners();
+      return true;
+    } catch (e) {
+      debugPrint('DataResetService.deleteArchive failed: $e');
+      return false;
+    }
+  }
+
+  /// V3.12.9: 强制重建题库（清 questions 表，让 main.dart 启动钩子重 import bundled）。
+  /// 用户主动触发；适用题量显示错误（DB 升级 DELETE 没生效等场景）。
+  /// 注：不影响 practice_records 等学情数据（题被删 → 错题集 view 自动消失，不会孤儿 FK）。
+  Future<int> rebuildQuestions() async {
+    final db = await DatabaseHelper().database;
+    try {
+      final before = await db.rawQuery('SELECT COUNT(*) as c FROM questions');
+      final beforeCount = (before.first['c'] as int?) ?? 0;
+      await db.delete('questions');
+      _resetVersion++;
+      notifyListeners();
+      return beforeCount;
+    } catch (e) {
+      debugPrint('DataResetService.rebuildQuestions failed: $e');
+      return -1;
+    }
   }
 
   /// 列出未过期且未回滚的归档（按 created_at 倒序）。
@@ -228,6 +273,7 @@ class DataResetService extends ChangeNotifier {
       return false;
     }
 
+    _resetVersion++;
     notifyListeners();
     return true;
   }

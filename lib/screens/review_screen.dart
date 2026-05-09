@@ -36,6 +36,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
   PracticeService? _practiceListenerRef;
   DataResetService? _resetListenerRef;
   bool _wasSessionActive = false;
+  int _lastReadResetVersion = 0;
 
   @override
   void initState() {
@@ -108,6 +109,15 @@ class _ReviewScreenState extends State<ReviewScreen> {
 
   @override
   Widget build(BuildContext context) {
+    // V3.12.9: watch resetVersion 强制重 fetch 错题集（每次 reset 重新读 DB）
+    final resetVersion = context.select<DataResetService, int>((s) => s.resetVersion);
+    final futureWithKey = (resetVersion > _lastReadResetVersion)
+        ? _dao.getReviewKnowledgePoints()
+        : _future;
+    if (resetVersion > _lastReadResetVersion) {
+      _future = futureWithKey;
+      _lastReadResetVersion = resetVersion;
+    }
     return DefaultTabController(
       length: 2,
       child: Scaffold(

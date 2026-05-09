@@ -1,4 +1,6 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:provider/provider.dart';
 import 'package:intl/intl.dart';
 import '../utils/app_theme.dart';
@@ -1058,6 +1060,19 @@ class _DataResetSectionState extends State<_DataResetSection> {
               child: const Text('全部重置'),
             ),
           ),
+          const Divider(height: 1, indent: 56),
+          // V3.12.9: 重建题库按钮（修题量显示错误老 bug）
+          ListTile(
+            leading: const Icon(Icons.refresh, color: Colors.blue),
+            title: const Text('重建题库'),
+            subtitle: const Text('清空 questions 表 + 重新导入内置题包（修题量显示不更新 bug）。\n不影响错题记录/奖励/计划。'),
+            isThreeLine: true,
+            trailing: TextButton(
+              onPressed: _confirmRebuild,
+              style: TextButton.styleFrom(foregroundColor: Colors.blue),
+              child: const Text('重建'),
+            ),
+          ),
           if (_loading)
             const Padding(
               padding: EdgeInsets.all(16),
@@ -1099,10 +1114,105 @@ class _DataResetSectionState extends State<_DataResetSection> {
         style: const TextStyle(fontSize: 11),
       ),
       isThreeLine: true,
-      trailing: TextButton(
-        onPressed: () => _confirmRollback(a),
-        child: const Text('回滚'),
+      trailing: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          TextButton(
+            onPressed: () => _confirmRollback(a),
+            child: const Text('回滚'),
+          ),
+          IconButton(
+            icon: const Icon(Icons.delete_outline, size: 20),
+            tooltip: '删除归档（不回滚）',
+            onPressed: () => _confirmDeleteArchive(a),
+          ),
+        ],
       ),
     );
+  }
+
+  /// V3.12.9: 重建题库
+  Future<void> _confirmRebuild() async {
+    final ok = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('重建题库？'),
+        content: const Text(
+          '会清空 questions 表 + 重新从内置题包导入。\n\n'
+          '不影响错题记录、奖励、计划等学情数据。\n\n'
+          '适合修题量显示不更新的老 bug。',
+        ),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text('取消')),
+          TextButton(
+            onPressed: () => Navigator.pop(ctx, true),
+            style: TextButton.styleFrom(foregroundColor: Colors.blue),
+            child: const Text('重建'),
+          ),
+        ],
+      ),
+    );
+    if (ok != true || !mounted) return;
+    setState(() => _loading = true);
+    final before = await DataResetService().rebuildQuestions();
+    // 重 import 内置题包
+    int imported = 0;
+    int totalQ = 0;
+    try {
+      final manifest = await rootBundle.loadString('AssetManifest.json');
+      final assets = (jsonDecode(manifest) as Map<String, dynamic>).keys
+          .where((k) => k.startsWith('assets/data/batches/') && k.endsWith('.json'))
+          .toList();
+      final svc = QuestionUpdateService();
+      for (final a in assets) {
+        try {
+          final j = await rootBundle.loadString(a);
+          totalQ += await svc.importBatchJsonString(j);
+          imported++;
+        } catch (_) {}
+      }
+    } catch (_) {}
+    if (!mounted) return;
+    setState(() => _loading = false);
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text('重建完成：清 $before 道，新导入 $imported 卷 / $totalQ 题')),
+      // ignore: use_build_context_synchronously
+    );
+  }
+
+  /// V3.12.9: 删除归档（不回滚）
+  Future<void> _confirmDeleteArchive(DataResetArchive a) async {
+    final ok = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('删除归档？'),
+        content: Text(
+          '删除后无法回滚。\n\n${a.reason}\n${a.totalRowsArchived} 行进度数据将永久丢失。',
+        ),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text('取消')),
+          TextButton(
+            onPressed: () => Navigator.pop(ctx, true),
+            style: TextButton.styleFrom(foregroundColor: Colors.red),
+            child: const Text('确认删除'),
+          ),
+        ],
+      ),
+    );
+    if (ok != true || !mounted) return;
+    final success = await DataResetService().deleteArchive(a.batchId);
+    if (!mounted) return;
+    if (success) {
+      await _refreshArchives();
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('归档已删除')),
+        );
+      }
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('删除失败'), backgroundColor: Colors.red),
+      );
+    }
   }
 }
