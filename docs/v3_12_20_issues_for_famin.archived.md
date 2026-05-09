@@ -1,3 +1,13 @@
+> ⚠ **V3.12.21 已废弃** (2026-05-09 晚)
+>
+> Famin 决定全清旧库（数学 15 + 语文 13 = 707 题）+ 基于深圳真题新源（217 docx）重扫。
+> 本文件 ~50 条 Issues 大部分基于旧 PDF 入库流程的痕迹（PDFPatcher 扫描型 / 部编 cid 私有字体 / SVG 几何重画等），
+> docx 新源大幅消除这些 case，不再决策这些 Issues。
+>
+> 保留本文件仅作复盘参考；新工作流见 `tools/realpaper/extract_docx.py` + V3.12.21 起的 spec 修订。
+
+---
+
 # V3.12.20.1 入库 Issues 汇总（待 Famin 决策）
 
 **入库总览**：12 batch / 333 题 / version 47→48
