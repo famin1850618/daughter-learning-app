@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart' show rootBundle, Clipboard, ClipboardData;
+import 'package:flutter/services.dart' show Clipboard, ClipboardData;
 import 'package:provider/provider.dart';
 import 'package:intl/intl.dart';
 import '../utils/app_theme.dart';
@@ -14,7 +14,6 @@ import '../services/difficulty_settings_service.dart';
 import '../services/review_request_service.dart';
 import '../services/data_reset_service.dart';
 import '../services/diagnostic_service.dart';
-import '../data/bundled_batches.dart';
 import '../services/practice_service.dart';
 import '../services/reward_service.dart';
 import '../services/assessment_service.dart';
@@ -358,26 +357,88 @@ class _UpdateSection extends StatelessWidget {
       child: Column(
         children: [
           ListTile(
-            leading: const Icon(Icons.cloud_download, color: AppTheme.primary),
-            title: const Text('立即检查更新'),
-            subtitle: Text(svc.syncing ? svc.status : '上次：$lastSyncStr · ${svc.status}'),
+            leading: const Icon(Icons.cloud_sync, color: AppTheme.primary),
+            title: const Text('同步题库（云端 → 本地）'),
+            subtitle: Text(svc.syncing
+                ? svc.status
+                : '上次：$lastSyncStr · ${svc.status}\n本地与云端 1:1 镜像；新增/调整/去除自动同步'),
+            isThreeLine: !svc.syncing,
             trailing: svc.syncing
                 ? const SizedBox(
                     width: 16, height: 16,
                     child: CircularProgressIndicator(strokeWidth: 2))
                 : const Icon(Icons.refresh, size: 18),
             onTap: svc.syncing ? null : () async {
-              final result = await svc.checkAndImport();
-              if (!context.mounted) return;
-              ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(content: Text(result)));
+              try {
+                final result = await svc.checkAndImport();
+                if (!context.mounted) return;
+                final msg = result.errors.isEmpty
+                    ? '同步完成 (+${result.added} ~${result.updated} -${result.removed})'
+                    : '同步完成 (+${result.added} ~${result.updated} -${result.removed}; ${result.errors.length} 错，详见诊断面板)';
+                ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(msg)));
+              } on SyncException catch (e) {
+                if (!context.mounted) return;
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text('同步失败 [${e.phase}]: ${e.message}'),
+                    backgroundColor: Colors.red,
+                    duration: const Duration(seconds: 6),
+                  ),
+                );
+              }
+            },
+          ),
+          const Divider(height: 1, indent: 16),
+          ListTile(
+            leading: const Icon(Icons.refresh_outlined, color: Colors.orange),
+            title: const Text('强制全量刷新'),
+            subtitle: const Text('清空 questions 表 + 重新从云端拉全部 batch（同步异常时用）'),
+            trailing: svc.syncing
+                ? null
+                : const Icon(Icons.warning_amber, size: 18, color: Colors.orange),
+            onTap: svc.syncing ? null : () async {
+              final ok = await showDialog<bool>(
+                context: context,
+                builder: (ctx) => AlertDialog(
+                  title: const Text('强制全量刷新？'),
+                  content: const Text(
+                    '会清空本地 questions 表 + 从云端重新拉全部 batch。\n'
+                    '不影响错题记录、奖励、计划等学情数据。\n\n'
+                    '需要联网。失败可重试。',
+                  ),
+                  actions: [
+                    TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text('取消')),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(backgroundColor: Colors.orange),
+                      onPressed: () => Navigator.pop(ctx, true),
+                      child: const Text('强制刷新'),
+                    ),
+                  ],
+                ),
+              );
+              if (ok != true || !context.mounted) return;
+              try {
+                final result = await svc.refreshAll();
+                if (!context.mounted) return;
+                final msg = result.errors.isEmpty
+                    ? '已清空 + 拉全部：${result.added} 卷'
+                    : '已清空 + 拉 ${result.added} 卷；${result.errors.length} 错（详见诊断面板）';
+                ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(msg)));
+              } on SyncException catch (e) {
+                if (!context.mounted) return;
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text('刷新失败 [${e.phase}]: ${e.message}'),
+                    backgroundColor: Colors.red,
+                    duration: const Duration(seconds: 6),
+                  ),
+                );
+              }
             },
           ),
           const Divider(height: 1, indent: 16),
           SwitchListTile(
             secondary: const Icon(Icons.autorenew, color: AppTheme.primary),
             title: const Text('启动时自动检查'),
-            subtitle: const Text('打开 app 时静默拉取新题包'),
+            subtitle: const Text('打开 app 时静默 sync（题库已存在；首次装强制阻塞 sync）'),
             value: svc.autoCheck,
             activeColor: AppTheme.primary,
             onChanged: (v) => svc.setAutoCheck(v),
@@ -1070,19 +1131,7 @@ class _DataResetSectionState extends State<_DataResetSection> {
               child: const Text('全部重置'),
             ),
           ),
-          const Divider(height: 1, indent: 56),
-          // V3.12.9: 重建题库按钮（修题量显示错误老 bug）
-          ListTile(
-            leading: const Icon(Icons.refresh, color: Colors.blue),
-            title: const Text('重建题库'),
-            subtitle: const Text('清空 questions 表 + 重新导入内置题包（修题量显示不更新 bug）。\n不影响错题记录/奖励/计划。'),
-            isThreeLine: true,
-            trailing: TextButton(
-              onPressed: _confirmRebuild,
-              style: TextButton.styleFrom(foregroundColor: Colors.blue),
-              child: const Text('重建'),
-            ),
-          ),
+          // V3.12.11：原"重建题库"按钮已并入"题库"区的"强制全量刷新"（CDN 拉云端）
           if (_loading)
             const Padding(
               padding: EdgeInsets.all(16),
@@ -1141,66 +1190,8 @@ class _DataResetSectionState extends State<_DataResetSection> {
     );
   }
 
-  /// V3.12.9: 重建题库
-  Future<void> _confirmRebuild() async {
-    final ok = await showDialog<bool>(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        title: const Text('重建题库？'),
-        content: const Text(
-          '会清空 questions 表 + 重新从内置题包导入。\n\n'
-          '不影响错题记录、奖励、计划等学情数据。\n\n'
-          '适合修题量显示不更新的老 bug。',
-        ),
-        actions: [
-          TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text('取消')),
-          TextButton(
-            onPressed: () => Navigator.pop(ctx, true),
-            style: TextButton.styleFrom(foregroundColor: Colors.blue),
-            child: const Text('重建'),
-          ),
-        ],
-      ),
-    );
-    if (ok != true || !mounted) return;
-    setState(() => _loading = true);
-    final before = await DataResetService().rebuildQuestions();
-    // 重 import 内置题包（V3.12.9_fix: 用 bundledBatchAssets 硬编码 list，
-    // 跟 main.dart 启动钩子共用同一份。AssetManifest 反射在新版 Flutter 不稳定。）
-    int imported = 0;
-    int totalQ = 0;
-    final failedAssets = <String>[];
-    final svc = QuestionUpdateService();
-    for (final a in bundledBatchAssets) {
-      try {
-        final j = await rootBundle.loadString(a);
-        final n = await svc.importBatchJsonString(j);
-        totalQ += n;
-        if (n > 0) imported++;
-        if (n == 0) {
-          failedAssets.add('$a (0 题)');
-          await DiagnosticService().logError(
-            level: 'warn', context: 'rebuild_import',
-            error: 'Import returned 0: $a',
-          );
-        }
-      } catch (e, stack) {
-        failedAssets.add('$a (异常)');
-        await DiagnosticService().logError(
-          level: 'error', context: 'rebuild_import',
-          error: 'Import failed: $a -> $e', stack: stack,
-        );
-      }
-    }
-    if (!mounted) return;
-    setState(() => _loading = false);
-    final msg = failedAssets.isEmpty
-        ? '重建完成：清 $before 道，新导入 $imported 卷 / $totalQ 题'
-        : '重建完成：清 $before 道，导入 $imported 卷 / $totalQ 题；${failedAssets.length} 卷失败（详见诊断面板）';
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text(msg), duration: const Duration(seconds: 6)),
-    );
-  }
+  // V3.12.11: 原 _confirmRebuild 已删除，功能并入题库 section 的"强制全量刷新"
+  // (走 QuestionUpdateService.refreshAll() → 清表 + 拉 CDN 全量)
 
   /// V3.12.9: 删除归档（不回滚）
   Future<void> _confirmDeleteArchive(DataResetArchive a) async {

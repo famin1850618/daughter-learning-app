@@ -61,66 +61,119 @@ class QuestionUpdateService extends ChangeNotifier {
     notifyListeners();
   }
 
-  /// 主入口：拉 manifest → diff 本地 source → 下载缺失批次 → 导入
-  Future<String> checkAndImport({bool silent = false}) async {
-    if (_syncing) return '同步中，请稍候';
+  /// V3.12.11 CDN-first mirror sync：本地 = 云端最新版本 1:1 镜像
+  ///
+  /// 三向 diff 算法：
+  ///   - 新增（云端有 source / 本地无）→ INSERT
+  ///   - 调整（云端 hash 异 / 本地有同 source）→ DELETE source + INSERT
+  ///   - 去除（本地有 source / 云端无）→ DELETE FROM questions WHERE source = ?
+  ///
+  /// 返回结果含 added/updated/removed/skipped 计数 + error 列表
+  /// 失败抛 SyncException（含 phase: manifest|download|import|delete + 详细信息）
+  ///
+  /// silent=true 时不更新 _status（用于自动后台同步）
+  Future<SyncResult> checkAndImport({bool silent = false}) async {
+    if (_syncing) {
+      throw SyncException('manifest', '同步中，请稍候（已有同步在跑）');
+    }
     _syncing = true;
     if (!silent) _status = '检查更新...';
     notifyListeners();
 
+    final result = SyncResult();
     try {
+      // Step 1: 拉 manifest
       final manifestJson = await _fetchWithFallback(_manifestUrls);
       if (manifestJson == null) {
-        _status = silent ? _status : '无法连接更新服务（已离线兜底）';
-        return _status;
+        throw SyncException('manifest', '无法拉取 CDN manifest（jsDelivr + GitHub raw 都失败，请检查网络）');
       }
-
       final manifest = jsonDecode(manifestJson) as Map<String, dynamic>;
-      final batches = (manifest['batches'] as List? ?? [])
+      final remoteBatches = (manifest['batches'] as List? ?? [])
           .cast<Map<String, dynamic>>();
+      result.manifestVersion = manifest['version'] as int? ?? 0;
 
-      final missing = <Map<String, dynamic>>[];
-      for (final b in batches) {
+      // Step 2: 拉本地 source + hash 列表
+      final localMap = await _qDao.getSourceHashMap();
+
+      // Step 3: 三向 diff
+      final remoteSources = <String>{};
+      final toAddOrUpdate = <Map<String, dynamic>>[];
+      for (final b in remoteBatches) {
         final src = b['source'] as String;
-        if (!await _hasSource(src)) missing.add(b);
+        final remoteHash = b['batch_hash'] as String? ?? '';
+        remoteSources.add(src);
+        final localHash = localMap[src];
+        if (localHash == null) {
+          // 新增
+          toAddOrUpdate.add({...b, '_action': 'add'});
+        } else if (localHash != remoteHash) {
+          // 调整
+          toAddOrUpdate.add({...b, '_action': 'update'});
+        }
+        // 否则跳过（同步无变化）
+      }
+      // 本地多出来的（云端没有 → 去除）
+      final toRemove = localMap.keys.where((s) => !remoteSources.contains(s)).toList();
+
+      if (!silent) {
+        _status = 'Diff: +${toAddOrUpdate.where((b) => b['_action'] == 'add').length} '
+            '~${toAddOrUpdate.where((b) => b['_action'] == 'update').length} '
+            '-${toRemove.length}';
+        notifyListeners();
       }
 
-      if (missing.isEmpty) {
-        _status = '题库已是最新';
-        await _saveLastSync();
-        return _status;
-      }
-
-      _status = '下载 ${missing.length} 个新题包...';
-      notifyListeners();
-
-      int totalNewQuestions = 0;
-      for (final b in missing) {
-        final src = b['source'] as String;
-        final fileName = '$src.json';
-        final urls = _batchUrlPrefixes.map((p) => '$p$fileName').toList();
-        final body = await _fetchWithFallback(urls);
-        if (body == null) continue;
-
+      // Step 4: 删除"云端去除"的 source
+      for (final src in toRemove) {
         try {
-          totalNewQuestions += await _importBatchJson(body);
-        } catch (_) {
-          // 单批失败不影响其他批
+          await _qDao.deleteSource(src);
+          result.removed++;
+        } catch (e, stack) {
+          result.errors.add(SyncErrorInfo('delete', src, e.toString(), stack.toString()));
+        }
+      }
+
+      // Step 5: 下载 + 导入新增/调整 batches
+      for (final b in toAddOrUpdate) {
+        final src = b['source'] as String;
+        final action = b['_action'] as String;
+        final urls = _batchUrlPrefixes.map((p) => '$p$src.json').toList();
+        final body = await _fetchWithFallback(urls);
+        if (body == null) {
+          result.errors.add(SyncErrorInfo('download', src, 'CDN 下载失败', null));
           continue;
+        }
+        try {
+          await _importBatchJson(body);
+          if (action == 'add') {
+            result.added++;
+          } else {
+            result.updated++;
+          }
+        } catch (e, stack) {
+          result.errors.add(SyncErrorInfo('import', src, e.toString(), stack.toString()));
         }
       }
 
       await _saveLastSync();
-      _status = totalNewQuestions == 0
-          ? '更新完成（无新增题目）'
-          : '成功导入 $totalNewQuestions 道新题';
-    } catch (e) {
-      _status = silent ? _status : '同步失败：$e';
+      _status = result.errors.isEmpty
+          ? '同步完成 (+${result.added} ~${result.updated} -${result.removed})'
+          : '同步完成 (+${result.added} ~${result.updated} -${result.removed}; ${result.errors.length} 错)';
+    } catch (e, stack) {
+      if (e is SyncException) rethrow;
+      throw SyncException('unknown', e.toString(), stack: stack.toString());
     } finally {
       _syncing = false;
       notifyListeners();
     }
-    return _status;
+    return result;
+  }
+
+  /// 强制全量重置 + 拉云端最新（"刷新题库"按钮调）
+  /// 1. 清空 questions 表（用 PRAGMA foreign_keys=OFF 包，避免 FK 约束错）
+  /// 2. 拉 CDN 全量
+  Future<SyncResult> refreshAll({bool silent = false}) async {
+    await _qDao.deleteAllQuestionsBypassingFK();
+    return await checkAndImport(silent: silent);
   }
 
   /// 公开方法：解析任意 batch JSON 字符串并入库（assets 首装与 CDN 同步共用）
@@ -191,13 +244,6 @@ class QuestionUpdateService extends ChangeNotifier {
     return await _qDao.upsertBatchByHash(source, batchHash, questions);
   }
 
-  Future<bool> _hasSource(String source) async {
-    final db = await _dbHelper.database;
-    final r = await db.rawQuery(
-        'SELECT 1 FROM questions WHERE source = ? LIMIT 1', [source]);
-    return r.isNotEmpty;
-  }
-
   Future<String?> _fetchWithFallback(List<String> urls) async {
     for (final url in urls) {
       try {
@@ -248,4 +294,38 @@ class QuestionUpdateService extends ChangeNotifier {
       default: return Difficulty.easy;
     }
   }
+}
+
+/// Sync 结果（V3.12.11 mirror sync）
+class SyncResult {
+  int manifestVersion = 0;
+  int added = 0;     // 云端新增
+  int updated = 0;   // 云端调整（hash 异）
+  int removed = 0;   // 云端去除（本地有但云端无）
+  final List<SyncErrorInfo> errors = [];
+
+  bool get success => errors.isEmpty;
+  int get totalChanges => added + updated + removed;
+
+  @override
+  String toString() => 'SyncResult(+$added ~$updated -$removed, ${errors.length} errors)';
+}
+
+class SyncErrorInfo {
+  final String phase;   // manifest|download|import|delete
+  final String source;
+  final String error;
+  final String? stack;
+  SyncErrorInfo(this.phase, this.source, this.error, this.stack);
+  @override
+  String toString() => '[$phase] $source: $error';
+}
+
+class SyncException implements Exception {
+  final String phase;
+  final String message;
+  final String? stack;
+  SyncException(this.phase, this.message, {this.stack});
+  @override
+  String toString() => 'SyncException[$phase]: $message';
 }

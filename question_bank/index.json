@@ -1,5 +1,5 @@
 {
-  "version": 26,
+  "version": 28,
   "updated_at": "2026-05-09",
   "batches": [
     {
@@ -7,28 +7,32 @@
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/batch_2026_05_07_g6_english_pet_r1.json",
       "subject": "english",
       "grade": 6,
-      "count": 200
+      "count": 200,
+      "batch_hash": "78613f42046bb41bcbaa06959524be52847a8d00"
     },
     {
       "source": "batch_2026_05_08_g6_english_pet_r2",
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/batch_2026_05_08_g6_english_pet_r2.json",
       "subject": "english",
       "grade": 6,
-      "count": 200
+      "count": 200,
+      "batch_hash": "fdbb8a0569ee0ffd26ea465eb5468b2843fcca29"
     },
     {
       "source": "batch_2026_05_08_g6_english_pet_r3",
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/batch_2026_05_08_g6_english_pet_r3.json",
       "subject": "english",
       "grade": 6,
-      "count": 200
+      "count": 200,
+      "batch_hash": "b88c61ce2af6c5d45c221bcd1d3e31133230e8d1"
     },
     {
       "source": "batch_2026_05_08_g6_english_pet_r4",
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/batch_2026_05_08_g6_english_pet_r4.json",
       "subject": "english",
       "grade": 6,
-      "count": 200
+      "count": 200,
+      "batch_hash": "1454a0d4fa38d122b8868e694fb4a50b612a9445"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qizhong_002",
@@ -36,23 +40,26 @@
       "subject": "chinese",
       "grade": 6,
       "count": 22,
-      "kind": "realpaper"
+      "kind": "realpaper",
+      "batch_hash": "40e854c076e133210e1a1c298db6840666943c28"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qizhong_003",
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qizhong_003.json",
       "subject": "chinese",
       "grade": 6,
-      "count": 10,
-      "kind": "realpaper"
+      "count": 8,
+      "kind": "realpaper",
+      "batch_hash": "195f168793a9e271595a07b1ef3391309b342b57"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qizhong_004",
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qizhong_004.json",
       "subject": "chinese",
       "grade": 6,
-      "count": 9,
-      "kind": "realpaper"
+      "count": 8,
+      "kind": "realpaper",
+      "batch_hash": "8c5960c34e50f4b316f493e65b3722a3089aa97e"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qizhong_008",
@@ -60,7 +67,8 @@
       "subject": "chinese",
       "grade": 6,
       "count": 13,
-      "kind": "realpaper"
+      "kind": "realpaper",
+      "batch_hash": "48ce21969f0ad087263d1cce002d5ac29509e8a2"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qimo_quanzhen_001",
@@ -68,7 +76,8 @@
       "subject": "chinese",
       "grade": 6,
       "count": 22,
-      "kind": "realpaper"
+      "kind": "realpaper",
+      "batch_hash": "bba89f9389f6bcf8507cb70132b33bf9f3c69c37"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qimo_moni_004",
@@ -76,7 +85,8 @@
       "subject": "chinese",
       "grade": 6,
       "count": 20,
-      "kind": "realpaper"
+      "kind": "realpaper",
+      "batch_hash": "a21dc5d05227cb782da130756fbc52f5fcd31685"
     },
     {
       "source": "realpaper_g6_math_beishida_d1_guoguan_001",
@@ -84,7 +94,8 @@
       "subject": "math",
       "grade": 6,
       "count": 33,
-      "kind": "realpaper"
+      "kind": "realpaper",
+      "batch_hash": "0adc139f2a8ecaa64be33098f1c1bc14f9f6068b"
     },
     {
       "source": "realpaper_g6_math_beishida_d2_guoguan_001",
@@ -92,7 +103,8 @@
       "subject": "math",
       "grade": 6,
       "count": 35,
-      "kind": "realpaper"
+      "kind": "realpaper",
+      "batch_hash": "7e8afe0ff50373a0d6961ce687143e7285705ca0"
     },
     {
       "source": "realpaper_g6_math_beishida_qizhong_001",
@@ -100,7 +112,8 @@
       "subject": "math",
       "grade": 6,
       "count": 43,
-      "kind": "realpaper"
+      "kind": "realpaper",
+      "batch_hash": "dab83b7bd9295e263583ac8cb9b265ba39d4d289"
     },
     {
       "source": "realpaper_g6_math_beishida_qimo_001",
@@ -108,7 +121,8 @@
       "subject": "math",
       "grade": 6,
       "count": 46,
-      "kind": "realpaper"
+      "kind": "realpaper",
+      "batch_hash": "4e81354ed4f1449cf79445a7c056a6862203b354"
     },
     {
       "source": "realpaper_g6_math_beishida_xsc_beijing_001",
@@ -116,7 +130,8 @@
       "subject": "math",
       "grade": 6,
       "count": 48,
-      "kind": "realpaper"
+      "kind": "realpaper",
+      "batch_hash": "61baf7073337c8b945f7633e3ce439e422c31aa8"
     }
   ],
   "_changelog": [
@@ -169,6 +184,16 @@
       "version": 26,
       "date": "2026-05-09",
       "change": "V3.12.7 数学六下北师大版第三轮入库 5 卷共 205 题（§1.5 原题保真硬约束 / §5.7 LaTeX / §9.2 图嵌入 / §6.5 group_unify）"
+    },
+    {
+      "version": 27,
+      "date": "2026-05-09",
+      "change": "V3.12.11 加 batch_hash 字段 (15 entries) + 补 0 unlisted batches; CDN-first 架构准备"
+    },
+    {
+      "version": 28,
+      "date": "2026-05-09",
+      "change": "V3.12.11 修 2 卷 count 同步 + 重算所有 batch_hash"
     }
   ]
 }

@@ -36,5 +36,5 @@ flutter:
   uses-material-design: true
   assets:
     - assets/data/
-    - assets/data/batches/
     - assets/images/
+  # V3.12.11: assets/data/batches/ 不再 bundled（CDN-first 架构，从 jsdelivr 拉）

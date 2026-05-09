@@ -93,8 +93,16 @@ class QuestionDao {
       if (oldHash == batchHash) {
         return 0; // 完全相同，跳过
       }
-      // hash 异，DELETE 该 source 旧题（practice_records 等外键 ON DELETE 维持）
-      await db.delete('questions', where: 'source = ?', whereArgs: [source]);
+      // V3.12.11: hash 异，DELETE 该 source 旧题
+      // PRAGMA foreign_keys=OFF 包：practice_records 引用 questions(id) 没设
+      // ON DELETE CASCADE，开启 FK 会让 DELETE 抛错。关掉 FK 让 DELETE 通过，
+      // 学情数据保留（孤儿引用错题集 JOIN 时自动失效，不会显示题面）。
+      await db.execute('PRAGMA foreign_keys = OFF');
+      try {
+        await db.delete('questions', where: 'source = ?', whereArgs: [source]);
+      } finally {
+        await db.execute('PRAGMA foreign_keys = ON');
+      }
     }
     final batch = db.batch();
     for (final q in questions) {
@@ -111,6 +119,45 @@ class QuestionDao {
     final db = await _db.database;
     final r = await db.rawQuery('SELECT COUNT(*) as c FROM questions');
     return (r.first['c'] as int?) ?? 0;
+  }
+
+  /// V3.12.11 CDN-first sync 用：拿本地所有 source → batch_hash 映射
+  /// （如某 source 多题 hash 不一致，取任一；同 source 应该 hash 一致）
+  Future<Map<String, String>> getSourceHashMap() async {
+    final db = await _db.database;
+    final rows = await db.rawQuery(
+      'SELECT source, batch_hash FROM questions GROUP BY source',
+    );
+    final map = <String, String>{};
+    for (final r in rows) {
+      final src = r['source'] as String?;
+      final h = r['batch_hash'] as String?;
+      if (src != null) map[src] = h ?? '';
+    }
+    return map;
+  }
+
+  /// V3.12.11：DELETE 单个 source（FK 用 PRAGMA off/on 包，避免 practice_records 引用阻挡）
+  /// 学情数据保留：practice_records.question_id 留孤儿引用，错题集 JOIN 时自动失效
+  Future<int> deleteSource(String source) async {
+    final db = await _db.database;
+    await db.execute('PRAGMA foreign_keys = OFF');
+    try {
+      return await db.delete('questions', where: 'source = ?', whereArgs: [source]);
+    } finally {
+      await db.execute('PRAGMA foreign_keys = ON');
+    }
+  }
+
+  /// V3.12.11：DELETE 全表（"刷新题库"按钮调）+ FK 绕过
+  Future<int> deleteAllQuestionsBypassingFK() async {
+    final db = await _db.database;
+    await db.execute('PRAGMA foreign_keys = OFF');
+    try {
+      return await db.delete('questions');
+    } finally {
+      await db.execute('PRAGMA foreign_keys = ON');
+    }
   }
 
   /// V3.12: 某 (subject, grade) 下每个 chapter 的活跃题数（排除 deprecated 类）。

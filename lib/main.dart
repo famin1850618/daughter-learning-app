@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart' show rootBundle;
 import 'package:provider/provider.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'utils/app_theme.dart';
 import 'screens/home_screen.dart';
+import 'screens/initial_sync_screen.dart';
 import 'screens/plan_screen.dart';
 import 'screens/practice_screen.dart';
 import 'screens/review_screen.dart';
@@ -22,7 +22,6 @@ import 'services/difficulty_settings_service.dart';
 import 'services/review_request_service.dart';
 import 'services/data_reset_service.dart';
 import 'services/diagnostic_service.dart';
-import 'data/bundled_batches.dart';
 import 'database/question_dao.dart';
 import 'models/question.dart';
 import 'models/subject.dart';
@@ -32,18 +31,19 @@ import 'database/knowledge_point_dao.dart';
 import 'database/knowledge_points_seed.dart';
 import 'database/cambridge_english_kp_seed.dart';
 
-/// 内置题包路径（assets 首装兜底）
-/// V3.10：删除 12 个 cron AI 出的老 batch（语数英 R1-R3 + 初一 R1）—— 全部 deprecated。
-/// 新装 app 不再 import 这些题；老用户升级时 DB v14 迁移把已入库的 source 改 _deprecated。
-/// JSON 文件本身保留在 question_bank/ 仓库做历史 / CDN 回滚用。
-// V3.12.9_fix: list 已抽到 lib/data/bundled_batches.dart，main.dart 和设置页"重建题库"共用
-const _bundledBatchAssets = bundledBatchAssets;
+// V3.12.11 起：题库不再 bundled，由 InitialSyncScreen / 后台 silent sync 从 CDN 拉。
+// bundled_batches.dart 已废弃（保留作历史参考）。
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await initializeDateFormatting('zh_CN');
   await _seedDatabase();
-  runApp(const LearningApp());
+  // V3.12.11 CDN-first：题库 0 题（首次装 / 强制刷新后）→ 走 InitialSyncScreen
+  // 阻塞拉云端最新；失败显示重试。否则正常进 LearningApp（后台 silent sync）。
+  final qCount = await QuestionDao().count();
+  // 注册回调让 InitialSyncScreen 完成后切到 LearningApp
+  launchMainAppCallback = () => runApp(const LearningApp());
+  runApp(qCount == 0 ? const InitialSyncApp() : const LearningApp());
 }
 
 Future<void> _seedDatabase() async {
@@ -59,16 +59,8 @@ Future<void> _seedDatabase() async {
   await KnowledgePointDao().insertIfMissing(knowledgePointsSeed);
   await KnowledgePointDao().insertIfMissing(cambridgeEnglishKpSeed);
 
-  // 3. 题包（assets 首装兜底；按 source 幂等，已装则跳过）
-  final updateService = QuestionUpdateService();
-  for (final asset in _bundledBatchAssets) {
-    try {
-      final json = await rootBundle.loadString(asset);
-      await updateService.importBatchJsonString(json);
-    } catch (e) {
-      debugPrint('Failed to load $asset: $e');
-    }
-  }
+  // 3. V3.12.11 起：题库不再 bundled，由 InitialSyncApp / 后台 silent sync 从 CDN 拉
+  // 删除 bundled 内置后 APK 体积更小，避免 V3.10-V3.12.10 双数据源逻辑混乱。
 
   // 4. V3.11：清理过期归档（>7 天）
   final resetService = DataResetService();
