@@ -1,5 +1,5 @@
 {
-  "version": 30,
+  "version": 31,
   "updated_at": "2026-05-09",
   "batches": [
     {
@@ -41,7 +41,7 @@
       "grade": 6,
       "count": 22,
       "kind": "realpaper",
-      "batch_hash": "82662e73c95806eaf3f682713da79cd16d5c157a"
+      "batch_hash": "07739ff00210e348994bba3c37bb101e190fb276"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qizhong_003",
@@ -204,6 +204,11 @@
       "version": 30,
       "date": "2026-05-09",
       "change": "V3.12.13 数学 5 卷拆题修 (42 处 group 修) + manifest hash 重算"
+    },
+    {
+      "version": 31,
+      "date": "2026-05-09",
+      "change": "V3.12.14 波浪线句子级 markdown + spec §5.6.6 + 多选 UI 代码（待 build）"
     }
   ]
 }

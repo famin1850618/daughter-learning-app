@@ -102,6 +102,16 @@ class Question {
   /// 这里仅取第一种用于 UI 显示）
   String get displayAnswer => answer.split('|||').first;
 
+  /// V3.12.14: 多选题判定（隐式：answer 含 ≥ 2 个字母 A/B/C/D/Z）
+  /// 例 answer='AC' / 'A,C' / 'A、C' / 'ABD' → 多选；'A' / 'B' → 单选
+  /// 仅 multipleChoice 题型有意义；其他类型返回 false
+  bool get isMultiSelect {
+    if (type != QuestionType.multipleChoice) return false;
+    final firstSeg = displayAnswer.toUpperCase();
+    final letters = RegExp(r'[A-DZ]').allMatches(firstSeg);
+    return letters.length >= 2;
+  }
+
   Map<String, dynamic> toMap() {
     return {
       if (id != null) 'id': id,

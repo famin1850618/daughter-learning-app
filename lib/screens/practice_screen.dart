@@ -596,44 +596,102 @@ class _QuestionScreenState extends State<_QuestionScreen> {
     return _answerCtrl.text.trim().isNotEmpty;
   }
 
+  /// V3.12.14: 多选题 toggle（点击 letter 加入/移除 _selectedOption）
+  /// _selectedOption 永远保持"AC"格式（排序去重）
+  void _toggleOption(String letter) {
+    final cur = _selectedOption ?? '';
+    String next;
+    if (cur.contains(letter)) {
+      next = cur.replaceAll(letter, '');
+    } else {
+      final letters = (cur + letter).split('').toSet().toList()..sort();
+      next = letters.join();
+    }
+    setState(() => _selectedOption = next.isEmpty ? null : next);
+  }
+
   Widget _buildInputArea(Question q) {
     switch (q.type) {
       case QuestionType.multipleChoice:
+        final isMulti = q.isMultiSelect;
         return Column(
-          children: q.options!.map((opt) {
-            final letter = opt.substring(0, 1);
-            final isSelected = _selectedOption == letter;
-            return GestureDetector(
-              onTap: () => setState(() => _selectedOption = letter),
-              child: Container(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            if (isMulti)
+              Container(
                 margin: const EdgeInsets.only(bottom: 8),
-                padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                 decoration: BoxDecoration(
-                  color: isSelected ? AppTheme.primary.withOpacity(0.08) : Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                  border: Border.all(
-                    color: isSelected ? AppTheme.primary : Colors.grey[300]!,
-                    width: isSelected ? 2 : 1,
-                  ),
+                  color: Colors.orange.shade50,
+                  borderRadius: BorderRadius.circular(6),
                 ),
                 child: Row(children: [
-                  CircleAvatar(
-                    radius: 12,
-                    backgroundColor: isSelected ? AppTheme.primary : Colors.grey[200],
-                    child: Text(letter,
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: isSelected ? Colors.white : Colors.grey[600],
-                          fontWeight: FontWeight.bold,
-                        )),
-                  ),
-                  const SizedBox(width: 10),
-                  Expanded(child: MathText(opt.length > 2 ? opt.substring(2) : opt,
-                      style: const TextStyle(fontSize: 15))),
+                  const Icon(Icons.check_box, size: 14, color: Colors.orange),
+                  const SizedBox(width: 6),
+                  Text('多选题（请勾选所有正确项）',
+                      style: TextStyle(fontSize: 12, color: Colors.orange.shade800)),
                 ]),
               ),
-            );
-          }).toList(),
+            ...q.options!.map((opt) {
+              final letter = opt.substring(0, 1);
+              final isSelected = (_selectedOption ?? '').contains(letter);
+              return GestureDetector(
+                onTap: () {
+                  if (isMulti) {
+                    _toggleOption(letter);
+                  } else {
+                    setState(() => _selectedOption = letter);
+                  }
+                },
+                child: Container(
+                  margin: const EdgeInsets.only(bottom: 8),
+                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+                  decoration: BoxDecoration(
+                    color: isSelected ? AppTheme.primary.withOpacity(0.08) : Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(
+                      color: isSelected ? AppTheme.primary : Colors.grey[300]!,
+                      width: isSelected ? 2 : 1,
+                    ),
+                  ),
+                  child: Row(children: [
+                    if (isMulti)
+                      Container(
+                        width: 24, height: 24,
+                        decoration: BoxDecoration(
+                          color: isSelected ? AppTheme.primary : Colors.white,
+                          borderRadius: BorderRadius.circular(4),
+                          border: Border.all(
+                            color: isSelected ? AppTheme.primary : Colors.grey[400]!,
+                            width: 2,
+                          ),
+                        ),
+                        child: isSelected
+                            ? const Icon(Icons.check, size: 16, color: Colors.white)
+                            : null,
+                      )
+                    else
+                      CircleAvatar(
+                        radius: 12,
+                        backgroundColor: isSelected ? AppTheme.primary : Colors.grey[200],
+                        child: Text(letter,
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: isSelected ? Colors.white : Colors.grey[600],
+                              fontWeight: FontWeight.bold,
+                            )),
+                      ),
+                    const SizedBox(width: 10),
+                    if (isMulti)
+                      Text('$letter. ',
+                          style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
+                    Expanded(child: MathText(opt.length > 2 ? opt.substring(2) : opt,
+                        style: const TextStyle(fontSize: 15))),
+                  ]),
+                ),
+              );
+            }),
+          ],
         );
 
       case QuestionType.fillBlank:
@@ -717,14 +775,21 @@ class _QuestionScreenState extends State<_QuestionScreen> {
   }
 
   /// V3.8.2: 答完后展示选项（disabled），标正解 + 用户选择
+  /// V3.12.14: 多选题用 contains 而非 == 判断（correct/user 都可能多字母）
   Widget _buildAnsweredOptions(Question q) {
-    final correctLetter = q.displayAnswer.trim().toUpperCase();
-    final userLetter = (_selectedOption ?? '').toUpperCase();
+    final correctSet = RegExp(r'[A-DZ]')
+        .allMatches(q.displayAnswer.toUpperCase())
+        .map((m) => m.group(0)!)
+        .toSet();
+    final userSet = RegExp(r'[A-DZ]')
+        .allMatches((_selectedOption ?? '').toUpperCase())
+        .map((m) => m.group(0)!)
+        .toSet();
     return Column(
       children: q.options!.map((opt) {
         final letter = opt.isNotEmpty ? opt[0].toUpperCase() : '';
-        final isCorrect = letter == correctLetter;
-        final isUserChoice = letter == userLetter;
+        final isCorrect = correctSet.contains(letter);
+        final isUserChoice = userSet.contains(letter);
         Color? bg;
         Color border = Colors.grey.shade300;
         IconData? icon;

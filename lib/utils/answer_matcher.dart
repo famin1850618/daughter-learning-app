@@ -88,9 +88,15 @@ class AnswerMatcher {
     if (accepts.isEmpty) return false;
 
     if (type == QuestionType.multipleChoice) {
-      // 选择题：精确匹配字母（不归一化，避免 A↔a 之外的误判）
-      final u = userAns.trim().toUpperCase();
-      return accepts.any((a) => a.trim().toUpperCase() == u);
+      // V3.12.14 选择题：单选 + 多选共用判定
+      // 提取所有字母 → 排序去重 → 比较（"AC"=="CA"=="A,C"=="AC,"）
+      String norm(String s) {
+        final letters = RegExp(r'[A-DZ]').allMatches(s.toUpperCase())
+            .map((m) => m.group(0)!).toSet().toList()..sort();
+        return letters.join();
+      }
+      final u = norm(userAns);
+      return accepts.any((a) => norm(a) == u);
     }
 
     if (type == QuestionType.judgment) {
