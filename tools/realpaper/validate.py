@@ -261,6 +261,64 @@ def check_emphasis_phrasing(q: dict, idx: int) -> str:
 
 CHOICE_LETTER_PAT = re.compile(r'^[ABCDZ][.、:：．]')
 
+SVG_TEXT_PAT = re.compile(r'<text\s+([^>]*?)>([^<]*)</text>')
+SVG_VIEWBOX_PAT = re.compile(r'viewBox="([\d.\s\-]+)"')
+SVG_FONTSIZE_PAT = re.compile(r'font-size="([\d.]+)"')
+CJK_PAT = re.compile(r'[一-鿿]')
+
+
+def check_svg_text_quality(q: dict, idx: int) -> str:
+    """18. SVG <text> 标签纪律（V3.12.19）：
+    a) 仅 ASCII/数字/Latin（避免中文 fallback 字体问题）
+    b) <text> bbox 必须在 viewBox 内（rough 估算，避免 text-anchor=middle 裁出）
+
+    例外：data:image/svg+xml 的 base64 不 parse；只校验 inline `<svg>` 文本。
+    """
+    img = q.get('image_data') or ''
+    if not img.lstrip().startswith('<svg'):
+        return None
+    # a) ASCII only
+    for m in SVG_TEXT_PAT.finditer(img):
+        content = m.group(2)
+        if CJK_PAT.search(content):
+            return f'#{idx}: SVG <text> 含中文 {content!r}（应改 ASCII，移动端渲染稳定）'
+    # b) viewBox bbox check (rough)
+    vb_m = SVG_VIEWBOX_PAT.search(img)
+    if not vb_m:
+        return None
+    parts = vb_m.group(1).split()
+    if len(parts) != 4:
+        return None
+    try:
+        vb_x, vb_y, vb_w, vb_h = map(float, parts)
+    except ValueError:
+        return None
+    fs_m = SVG_FONTSIZE_PAT.search(img)
+    fs = float(fs_m.group(1)) if fs_m else 12.0
+    char_w = fs * 0.55  # rough estimate
+    for m in SVG_TEXT_PAT.finditer(img):
+        attrs, content = m.group(1), m.group(2)
+        if not content.strip():
+            continue
+        x_m = re.search(r'\bx="([\-\d.]+)"', attrs)
+        if not x_m:
+            continue
+        x = float(x_m.group(1))
+        anc_m = re.search(r'text-anchor="(\w+)"', attrs)
+        anchor = anc_m.group(1) if anc_m else 'start'
+        text_w = len(content) * char_w
+        if anchor == 'middle':
+            left, right = x - text_w / 2, x + text_w / 2
+        elif anchor == 'end':
+            left, right = x - text_w, x
+        else:
+            left, right = x, x + text_w
+        # tolerance 2px
+        if left < vb_x - 2 or right > vb_x + vb_w + 2:
+            return (f'#{idx}: SVG <text> {content!r} (x={x},anchor={anchor}) '
+                    f'超 viewBox（[{left:.1f},{right:.1f}] vs [{vb_x},{vb_x+vb_w}]）')
+    return None
+
 def check_choice_letter_prefix(q: dict, idx: int) -> str:
     """17. choice 题 options 必须 'A. xxx' 格式 + answer 字母（§5.1 V3.12.19）
 
@@ -346,7 +404,13 @@ def run_full_check(batch: dict, batch_path: Path, kp_set: set, chapter_set: set)
     report['10_no_spoiler'] = {'pass': None, 'errors': ['【需 LLM/人手动核查】']}
     report['11_sample_5'] = {'pass': None, 'errors': ['【需 LLM/人手动核查 5 题】']}
 
-    # 12. 理科 SVG 优先
+    # 12. 理科 SVG 优先（V3.12.19 强化：svg_attempted_failed=true 时必须给 svg_failed_category 白名单）
+    SVG_FAIL_CATEGORIES = {
+        'cartoon_decoration',     # 卡通/写实装饰风格（帐篷、杯子、瓶子、动物等）
+        'photo_realistic',        # 真实照片或写实彩色图
+        'composite_assembly',     # 多部件复杂组装/切拼示意（多块扇形 + 箭头）
+        'legacy_pre_v3_12_17',    # V3.12.17 之前入库存量遗留（不再扩用）
+    }
     sci_screenshot = []
     for i, q in enumerate(questions):
         if q.get('subject') in ('math', 'physics', 'chemistry'):
@@ -355,6 +419,12 @@ def run_full_check(batch: dict, batch_path: Path, kp_set: set, chapter_set: set)
                 meta = q.get('_image_meta', {})
                 if not meta.get('svg_attempted_failed'):
                     sci_screenshot.append(f'#{i+1}: 理科用 screenshot 但无 svg_attempted_failed 标记')
+                else:
+                    cat = meta.get('svg_failed_category')
+                    if not cat:
+                        sci_screenshot.append(f'#{i+1}: svg_attempted_failed=true 但缺 svg_failed_category（V3.12.19）')
+                    elif cat not in SVG_FAIL_CATEGORIES:
+                        sci_screenshot.append(f'#{i+1}: svg_failed_category={cat!r} 不在白名单 {SVG_FAIL_CATEGORIES}')
     report['12_science_svg_priority'] = {'pass': not sci_screenshot, 'errors': sci_screenshot}
 
     report['13_svg_4step_followed'] = {'pass': None, 'errors': ['【需 LLM/人核查 commit message】']}
@@ -373,6 +443,11 @@ def run_full_check(batch: dict, batch_path: Path, kp_set: set, chapter_set: set)
     errs = [check_choice_letter_prefix(q, i+1) for i, q in enumerate(questions)]
     errs = [e for e in errs if e]
     report['17_choice_letter_prefix'] = {'pass': not errs, 'errors': errs}
+
+    # 18. SVG <text> ASCII + 在 viewBox 内（V3.12.19）
+    errs = [check_svg_text_quality(q, i+1) for i, q in enumerate(questions)]
+    errs = [e for e in errs if e]
+    report['18_svg_text_quality'] = {'pass': not errs, 'errors': errs}
 
     # summary
     auto_items = [k for k, v in report.items() if v['pass'] is not None]

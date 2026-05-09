@@ -1,5 +1,5 @@
 {
-  "version": 41,
+  "version": 42,
   "updated_at": "2026-05-09",
   "batches": [
     {
@@ -86,7 +86,7 @@
       "grade": 6,
       "count": 20,
       "kind": "realpaper",
-      "batch_hash": "ffcedab4dd168450c7b40d8888005066124db34d"
+      "batch_hash": "0c532589798cdfd854b542b7dfe76fbbfbaa1f22"
     },
     {
       "source": "realpaper_g6_math_beishida_d1_guoguan_001",
@@ -95,7 +95,7 @@
       "grade": 6,
       "count": 33,
       "kind": "realpaper",
-      "batch_hash": "f73ef70ac25129f2b7b37fb9a001ff6aff11e5c1"
+      "batch_hash": "eb6f24231c7f38c536142ad920fdf356933e40d3"
     },
     {
       "source": "realpaper_g6_math_beishida_d2_guoguan_001",
@@ -104,7 +104,7 @@
       "grade": 6,
       "count": 35,
       "kind": "realpaper",
-      "batch_hash": "9308c44632f1643d5308792792dd9c0a93791ca7"
+      "batch_hash": "14b0ee9b727c6397f46a4f44c448091fdb359b58"
     },
     {
       "source": "realpaper_g6_math_beishida_qizhong_001",
@@ -113,7 +113,7 @@
       "grade": 6,
       "count": 43,
       "kind": "realpaper",
-      "batch_hash": "cc9f642ffdd08d677e29c192b036df3a76ee7c71"
+      "batch_hash": "32cf9ef73e20474dd5bacaf514477cc6c65621e8"
     },
     {
       "source": "realpaper_g6_math_beishida_qimo_001",
@@ -131,7 +131,7 @@
       "grade": 6,
       "count": 43,
       "kind": "realpaper",
-      "batch_hash": "a856e8b7986d773f798269e261795ca1a3eb4dcb"
+      "batch_hash": "7d8703ff2dc7d9d1b0a089fa416c29da85961e52"
     },
     {
       "source": "realpaper_g6_math_beishida_d1_genzong_001",
@@ -139,7 +139,7 @@
       "subject": "math",
       "grade": 6,
       "count": 27,
-      "batch_hash": "bbf95b61b5ddb4a29d631429d512dc839c874e8b"
+      "batch_hash": "dca435db89191acdc875be6d07921d6f2e5c9240"
     },
     {
       "source": "realpaper_g6_math_beishida_d2_genzong_001",
@@ -147,7 +147,7 @@
       "subject": "math",
       "grade": 6,
       "count": 30,
-      "batch_hash": "15f4cc23cf920ee18d04f835fed95c3e1de723fc"
+      "batch_hash": "449f4b09c80e76dab16f3cfb8c82f9467fb3bb46"
     },
     {
       "source": "realpaper_g6_math_beishida_zhouce_peiyou_001",
@@ -155,7 +155,7 @@
       "subject": "math",
       "grade": 6,
       "count": 20,
-      "batch_hash": "d2991e0c127a0bd4d52e300e6a8e2223bcf01855"
+      "batch_hash": "32b1ebfe8e4dc45722053728927133c800c1e834"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qimo_zhuanxiang_11_juyi_001",
