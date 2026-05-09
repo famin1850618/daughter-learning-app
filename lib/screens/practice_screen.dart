@@ -481,6 +481,7 @@ class _QuestionScreenState extends State<_QuestionScreen> {
             const SizedBox(height: 12),
 
             // 元信息（V3.8.3: 不显示 KP 标签——KP 是答题后复盘维度，做题中暴露相当于给提示）
+            // V3.12.17: 加组合题进度标签（同 groupId 题数 ≥ 2 时显示），让用户感知"这是连续 N 题"
             Row(children: [
               _Tag(q.type.label, AppTheme.primary.withOpacity(0.15), AppTheme.primary),
               if (q.round != null) ...[
@@ -493,6 +494,7 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                 _Tag('📚 第 $_attemptCount 次',
                     Colors.deepPurple.withOpacity(0.10), Colors.deepPurple),
               ],
+              ..._groupTags(service.currentQuestions, q),
             ]),
             const SizedBox(height: 12),
 
@@ -916,6 +918,22 @@ class _QuestionScreenState extends State<_QuestionScreen> {
       case Difficulty.medium: return Colors.orange;
       case Difficulty.hard:   return Colors.red;
     }
+  }
+
+  /// V3.12.17: 组合题位置标签（同 groupId ≥ 2 题时显示「📑 组合题 X/N」）
+  List<Widget> _groupTags(List<Question> all, Question q) {
+    final gid = q.groupId;
+    if (gid == null || gid.isEmpty) return const [];
+    final mates = all.where((x) => x.groupId == gid).toList()
+      ..sort((a, b) => (a.groupOrder ?? 0).compareTo(b.groupOrder ?? 0));
+    if (mates.length < 2) return const [];
+    final pos = mates.indexWhere((x) => x.id == q.id) + 1;
+    if (pos == 0) return const [];
+    return [
+      const SizedBox(width: 6),
+      _Tag('📑 组合题 $pos/${mates.length}',
+          Colors.teal.withOpacity(0.15), Colors.teal),
+    ];
   }
 
   String _roundLabel(int r) {

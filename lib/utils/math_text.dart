@@ -25,29 +25,43 @@ class MathText extends StatelessWidget {
     if (segments.length == 1 && segments.first.kind == _Kind.plain) {
       return Text(text, style: style, textAlign: textAlign);
     }
-    final fontSize = style?.fontSize ?? 16;
-    final color = style?.color ?? DefaultTextStyle.of(context).style.color;
-    final boldStyle = (style ?? const TextStyle()).copyWith(fontWeight: FontWeight.bold);
+    final defaultStyle = DefaultTextStyle.of(context).style;
+    final mergedStyle = defaultStyle.merge(style);
+    final fontSize = mergedStyle.fontSize ?? 16;
+    final color = mergedStyle.color;
 
-    return Wrap(
-      crossAxisAlignment: WrapCrossAlignment.center,
-      spacing: 0,
-      runSpacing: 4,
-      children: segments.map((s) {
-        switch (s.kind) {
-          case _Kind.math:
-            return Math.tex(
-              s.content,
-              mathStyle: MathStyle.text,
-              textStyle: TextStyle(fontSize: fontSize, color: color),
-              onErrorFallback: (err) => Text('\$${s.content}\$', style: style),
-            );
-          case _Kind.bold:
-            return Text(s.content, style: boldStyle, textAlign: textAlign);
-          case _Kind.plain:
-            return Text(s.content, style: style, textAlign: textAlign);
-        }
-      }).toList(),
+    // V3.12.17 修折叠屏横屏公式上移：旧版 Wrap+WrapCrossAlignment.center
+    // 按 item 垂直中心对齐，公式高度（分数/上下标）大于文字时，公式相对文字
+    // 被推高（"上移"），横屏一行内 item 多更明显。
+    // 新版 RichText + WidgetSpan + PlaceholderAlignment.baseline，公式底部
+    // 与文字字符基线对齐，跟印刷品一致。
+    return Text.rich(
+      TextSpan(
+        style: mergedStyle,
+        children: segments.map<InlineSpan>((s) {
+          switch (s.kind) {
+            case _Kind.math:
+              return WidgetSpan(
+                alignment: PlaceholderAlignment.baseline,
+                baseline: TextBaseline.alphabetic,
+                child: Math.tex(
+                  s.content,
+                  mathStyle: MathStyle.text,
+                  textStyle: TextStyle(fontSize: fontSize, color: color),
+                  onErrorFallback: (err) => Text('\$${s.content}\$', style: mergedStyle),
+                ),
+              );
+            case _Kind.bold:
+              return TextSpan(
+                text: s.content,
+                style: const TextStyle(fontWeight: FontWeight.bold),
+              );
+            case _Kind.plain:
+              return TextSpan(text: s.content);
+          }
+        }).toList(),
+      ),
+      textAlign: textAlign,
     );
   }
 
