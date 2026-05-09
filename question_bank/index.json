@@ -1,5 +1,5 @@
 {
-  "version": 49,
+  "version": 51,
   "updated_at": "2026-05-09",
   "batches": [
     {
@@ -33,6 +33,86 @@
       "grade": 6,
       "count": 200,
       "batch_hash": "1454a0d4fa38d122b8868e694fb4a50b612a9445"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qm_guangming_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_guangming_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 12,
+      "batch_hash": "c42dac41652009bff605784cf84bc32b584cb4be"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qm_nanshan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_nanshan_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 13,
+      "batch_hash": "ac2d9902d799c86eca9ec2eee8140cb8dbf4abac"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qm_futian_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_futian_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 16,
+      "batch_hash": "c337c9935d66922d3ed9e7cad20c5381efa176cf"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qm_pingshan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_pingshan_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 20,
+      "batch_hash": "843a4921075c9d0e2a010b2fd794ff373ec709a6"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_xsc_baoan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_xsc_baoan_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 17,
+      "batch_hash": "32741f3537ea159ad8b7b0842886ce2d1a34f22d"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qm_shenzhen_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_shenzhen_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 17,
+      "batch_hash": "9b3233425a01885be446a3a49dbefeb06e9f24ae"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_nanshan_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 40,
+      "batch_hash": "56de6af8b6ee4b4c6ed90ee93c4d463e02ca6e22"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qm_futian_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_futian_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 17,
+      "batch_hash": "27008eaa05dbb513b38eb06b56f979ef6964fe14"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qm_luohu_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_luohu_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 14,
+      "batch_hash": "282e98045d3c3e9de334768ed2b8acc5785f1d0e"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_xsc_baoan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_xsc_baoan_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 10,
+      "batch_hash": "6569a612f671ce4798c87db3536260a480be1090"
     }
   ],
   "_changelog": [
@@ -130,6 +210,16 @@
       "version": 47,
       "date": "2026-05-09",
       "change": "V3.12.20.1 入库数学 realpaper_g6_math_beishida_zhouce_peiyou_003（A 批）"
+    },
+    {
+      "version": 50,
+      "date": "2026-05-09",
+      "change": "V3.12.21 入库深圳数学 5 套真题 78 题（光明 12 / 南山 13 / 福田 16 / 坪山 20 / 宝安 17）docx-only 路径首次实战"
+    },
+    {
+      "version": 51,
+      "date": "2026-05-09",
+      "change": "V3.12.21 docx 路径首批 — 深圳语文六下真题入库 5 套（98 题）。期末 1 套（shenzhen）+ 小升初 4 套（nanshan/futian/luohu/baoan，文件名标注 期末 但内容均为小升初题）。LLM 必读 anchors+rubric 判 round（阶段 1），100% 锚点引用覆盖。形式 A 压题 18 道，形式 B 组 12 个；§6.5 unify 触发 8 组；image_data 嵌入 1 道；听录音/写作/口语交际开放题按 §9.1 完整性优先全部跳过。"
     }
   ]
 }

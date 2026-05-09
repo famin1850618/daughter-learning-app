@@ -1,9 +1,250 @@
 {
-  "version": 7,
+  "version": 8,
   "schema": "v1",
   "created_at": "2026-05-08",
   "description": "真题处理进度 manifest。每处理一卷追加 processed[] 一项。详见 .realpaper-spec.md §10",
-  "processed": [],
+  "processed": [
+    {
+      "sha1": "09494531ed704cc3",
+      "source_file": "~/AI_Workspace/深圳真题/(真题)深圳6下数学/.../广东省深圳市光明区2024-2025学年六年级下学期期末数学试题.docx",
+      "batch_source": "realpaper_g6_math_beishida_qm_guangming_001",
+      "subject": "math",
+      "grade": 6,
+      "paper_type": "midterm",
+      "questions_emitted": 12,
+      "image_count": 2,
+      "type_distribution": {
+        "fill": 6,
+        "choice": 4,
+        "calculation": 2
+      },
+      "round_distribution": {
+        "R3": 2,
+        "R2": 7,
+        "R1": 2,
+        "R4": 1
+      },
+      "processed_at": "2026-05-09",
+      "skill_version": "V3.12.21 docx-only",
+      "_v4_routing": "d2_math_review_v4"
+    },
+    {
+      "sha1": "5025c5a5be520653",
+      "source_file": "~/AI_Workspace/深圳真题/(真题)深圳6下数学/.../广东省深圳市南山区2024-2025学年六年级下学期期末数学试题.docx",
+      "batch_source": "realpaper_g6_math_beishida_qm_nanshan_001",
+      "subject": "math",
+      "grade": 6,
+      "paper_type": "midterm",
+      "questions_emitted": 13,
+      "image_count": 1,
+      "type_distribution": {
+        "choice": 3,
+        "fill": 6,
+        "calculation": 4
+      },
+      "round_distribution": {
+        "R1": 3,
+        "R3": 2,
+        "R2": 7,
+        "R4": 1
+      },
+      "processed_at": "2026-05-09",
+      "skill_version": "V3.12.21 docx-only",
+      "_v4_routing": "d2_math_review_v4"
+    },
+    {
+      "sha1": "d6eaba666cf1c5d7",
+      "source_file": "~/AI_Workspace/深圳真题/(真题)深圳6下数学/.../广东省深圳市福田区2024-2025学年六年级下学期质量检测数学试题.docx",
+      "batch_source": "realpaper_g6_math_beishida_qm_futian_001",
+      "subject": "math",
+      "grade": 6,
+      "paper_type": "midterm",
+      "questions_emitted": 16,
+      "image_count": 4,
+      "type_distribution": {
+        "choice": 8,
+        "fill": 5,
+        "calculation": 3
+      },
+      "round_distribution": {
+        "R2": 13,
+        "R1": 2,
+        "R3": 1
+      },
+      "processed_at": "2026-05-09",
+      "skill_version": "V3.12.21 docx-only",
+      "_v4_routing": "d2_math_review_v4"
+    },
+    {
+      "sha1": "57ea472b0a22741a",
+      "source_file": "~/AI_Workspace/深圳真题/(真题)深圳6下数学/.../广东省深圳市坪山区2023-2024学年六年级下学期期末数学试题.docx",
+      "batch_source": "realpaper_g6_math_beishida_qm_pingshan_001",
+      "subject": "math",
+      "grade": 6,
+      "paper_type": "midterm",
+      "questions_emitted": 20,
+      "image_count": 7,
+      "type_distribution": {
+        "choice": 7,
+        "fill": 10,
+        "calculation": 3
+      },
+      "round_distribution": {
+        "R2": 16,
+        "R3": 1,
+        "R1": 2,
+        "R4": 1
+      },
+      "processed_at": "2026-05-09",
+      "skill_version": "V3.12.21 docx-only",
+      "_v4_routing": "d2_math_review_v4"
+    },
+    {
+      "sha1": "d959e0f49a90280e",
+      "source_file": "~/AI_Workspace/深圳真题/(真题)深圳6下数学/.../2023年广东省深圳市宝安区六年级下学期小升初模拟数学试卷.docx",
+      "batch_source": "realpaper_g6_math_beishida_xsc_baoan_001",
+      "subject": "math",
+      "grade": 6,
+      "paper_type": "xsc",
+      "questions_emitted": 17,
+      "image_count": 3,
+      "type_distribution": {
+        "fill": 8,
+        "choice": 5,
+        "calculation": 4
+      },
+      "round_distribution": {
+        "R2": 12,
+        "R1": 1,
+        "R3": 3,
+        "R4": 1
+      },
+      "processed_at": "2026-05-09",
+      "skill_version": "V3.12.21 docx-only",
+      "_v4_routing": "d2_math_review_v4"
+    },
+    {
+      "sha1": "36cac853aee4a95d",
+      "source_file": "/home/faminwsl/AI_Workspace/深圳真题/(真题)深圳6下语文/深圳语文六下期中期末考试真题/广东省深圳市2022-2023学年六年级下学期期末考试语文试题.docx",
+      "batch_source": "realpaper_g6_chinese_bubian_qm_shenzhen_001",
+      "subject": "chinese",
+      "grade": 6,
+      "chapter": "小升初综合",
+      "questions_emitted": 17,
+      "questions_skipped": 2,
+      "skipped_reasons": [
+        "Q1 听录音填空（无音频，§9.1）",
+        "Q11 习作（开放题，无定答案）"
+      ],
+      "image_count": 1,
+      "image_format": "png",
+      "svg_count": 0,
+      "form_a_compress": 4,
+      "form_b_groups": 4,
+      "unify_count": 0,
+      "processed_at": "2026-05-09",
+      "skill_version": "V3.12.21 docx-only"
+    },
+    {
+      "sha1": "a26a8c0f5a17efe2",
+      "source_file": "/home/faminwsl/AI_Workspace/深圳真题/(真题)深圳6下语文/深圳语文六下期中期末考试真题/广东省深圳市南山区2022-2023学年六年级下学期期末语文试卷.docx",
+      "batch_source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
+      "subject": "chinese",
+      "grade": 6,
+      "chapter": "小升初综合",
+      "questions_emitted": 40,
+      "questions_skipped": 2,
+      "skipped_reasons": [
+        "Q9(3) 仿写句子（开放题）",
+        "Q17 习作"
+      ],
+      "image_count": 0,
+      "svg_count": 0,
+      "form_a_compress": 8,
+      "form_b_groups": 6,
+      "unify_count": 5,
+      "processed_at": "2026-05-09",
+      "skill_version": "V3.12.21 docx-only",
+      "_observation": "试卷文件名为「2022-2023学年六年级下学期期末语文试卷」，但内容标题为「2023年广东省深圳市南山区小升初语文试卷」——文件名与实际内容类型不符（小升初）。Source 命名按用户输入保留为 qm_nanshan_001。"
+    },
+    {
+      "sha1": "dc2669a9e5263b06",
+      "source_file": "/home/faminwsl/AI_Workspace/深圳真题/(真题)深圳6下语文/深圳语文六下期中期末考试真题/广东省深圳市福田区2022—2023学年六年级语文下学期期末试卷.docx",
+      "batch_source": "realpaper_g6_chinese_bubian_qm_futian_001",
+      "subject": "chinese",
+      "grade": 6,
+      "chapter": "小升初综合",
+      "questions_emitted": 17,
+      "questions_skipped": 6,
+      "skipped_reasons": [
+        "Q1-Q4 听录音相关（无音频，§9.1）",
+        "Q15 口语交际（开放题）",
+        "Q16(3) 童年好奇分享（开放）",
+        "Q17(2)(3)(6)(8) 部分子题（思维导图/批注/拓展为开放表达）",
+        "Q18 整本书阅读（讨论）",
+        "Q19 Q20 习作"
+      ],
+      "image_count": 0,
+      "svg_count": 0,
+      "form_a_compress": 4,
+      "form_b_groups": 2,
+      "unify_count": 2,
+      "processed_at": "2026-05-09",
+      "skill_version": "V3.12.21 docx-only",
+      "_observation": "试卷文件名标 「期末试卷」，内容实际为「2023年福田区小升初语文试卷」。Source 命名保留为 qm_futian_001。"
+    },
+    {
+      "sha1": "4863935b66a25bd9",
+      "source_file": "/home/faminwsl/AI_Workspace/深圳真题/(真题)深圳6下语文/深圳语文六下期中期末考试真题/广东省深圳市罗湖区2022-2023学年六年级下学期7月期末语文试题.docx",
+      "batch_source": "realpaper_g6_chinese_bubian_qm_luohu_001",
+      "subject": "chinese",
+      "grade": 6,
+      "chapter": "小升初综合",
+      "questions_emitted": 14,
+      "questions_skipped": 5,
+      "skipped_reasons": [
+        "Q1-Q3 倾听与思考录音相关（无音频，§9.1）",
+        "Q10 课内阅读（开放题/谈谈想法）",
+        "Q11(2)/(4)/(5) 部分子题（开放表达）",
+        "Q12(6) 开放分享",
+        "Q13 Q14 习作"
+      ],
+      "image_count": 0,
+      "svg_count": 0,
+      "form_a_compress": 4,
+      "form_b_groups": 2,
+      "unify_count": 1,
+      "processed_at": "2026-05-09",
+      "skill_version": "V3.12.21 docx-only",
+      "_observation": "试卷文件名标 「7月期末」，内容实际为「2023年罗湖区小升初语文试卷」。Source 命名保留为 qm_luohu_001。"
+    },
+    {
+      "sha1": "59931e2f80c3564f",
+      "source_file": "/home/faminwsl/AI_Workspace/深圳真题/(真题)深圳6下语文/深圳语文小升初模拟押题真题卷/2023年广东省深圳市宝安区小升初语文试卷.docx",
+      "batch_source": "realpaper_g6_chinese_bubian_xsc_baoan_001",
+      "subject": "chinese",
+      "grade": 6,
+      "chapter": "小升初综合",
+      "questions_emitted": 10,
+      "questions_skipped": 7,
+      "skipped_reasons": [
+        "Q4(后部) 选成语叙写一件事（开放）",
+        "Q5 研学策划书（开放）",
+        "Q6 赏析文段（开放）",
+        "Q7 名著阅读（主观）",
+        "Q8(4)(5) 开放观点",
+        "Q9(3)(4) 开放表达",
+        "Q10 Q11 习作"
+      ],
+      "image_count": 0,
+      "svg_count": 0,
+      "form_a_compress": 4,
+      "form_b_groups": 2,
+      "unify_count": 0,
+      "processed_at": "2026-05-09",
+      "skill_version": "V3.12.21 docx-only"
+    }
+  ],
   "skipped_files": [
     {
       "sha1": "5edc83ed4de4500c8b1045c9888f39fb8ad10302",
@@ -63,6 +304,15 @@
     {
       "version": "V3.12.7 第三轮 (2026-05-09)",
       "change": "数学六下北师大版 5 卷重扫入库 205 题。严格执行 §1.5 原题保真 + §5.7 LaTeX + §9.2 图嵌入 + §6.5 group_unify。前两轮全清重做的卷不在本批，本批为 d1/d2 单元 + 期中 1 + 期末 + 北京小升初。"
+    },
+    {
+      "date": "2026-05-09",
+      "change": "V3.12.21 入库深圳数学 5 套真题 78 题（光明 12 / 南山 13 / 福田 16 / 坪山 20 / 宝安 17）docx-only 路径首次实战"
+    },
+    {
+      "version": 8,
+      "date": "2026-05-09",
+      "change": "V3.12.21 docx 路径首批入库 — 深圳语文六下真题 5 套（98 题），4 套小升初 + 1 套期末。开放题/听录音/习作按 §9.1 完整性优先跳过。"
     }
   ]
 }
