@@ -1,5 +1,5 @@
 {
-  "version": 35,
+  "version": 36,
   "updated_at": "2026-05-09",
   "batches": [
     {
@@ -113,7 +113,7 @@
       "grade": 6,
       "count": 43,
       "kind": "realpaper",
-      "batch_hash": "0af164d6ba991a5fc07637c6e2ae10efbd93664a"
+      "batch_hash": "3782613e0b5eb8c15cc530dada6979f87018cb99"
     },
     {
       "source": "realpaper_g6_math_beishida_qimo_001",
