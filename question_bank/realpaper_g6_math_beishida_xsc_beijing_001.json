@@ -431,7 +431,7 @@
     },
     {
       "type": "fill",
-      "content": "脱式计算，能简算的要简算：$8-\\frac{3}{2}\\times\\frac{10}{21}-\\frac{2}{7}=$",
+      "content": "脱式计算，能简算的要简算。\n问：$8-\\frac{3}{2}\\times\\frac{10}{21}-\\frac{2}{7}=$",
       "answer": "7",
       "options": null,
       "explanation": "$\\frac{3}{2}\\times\\frac{10}{21}=\\frac{30}{42}=\\frac{5}{7}$；$8-\\frac{5}{7}-\\frac{2}{7}=8-\\frac{7}{7}=7$。",
@@ -440,11 +440,13 @@
       "chapter": "总复习",
       "subject": "math",
       "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_beijing_001"
+      "source": "realpaper_g6_math_beishida_xsc_beijing_001",
+      "group_id": "liu_q4_compute",
+      "group_order": 1
     },
     {
       "type": "fill",
-      "content": "脱式计算，能简算的要简算：$\\frac{8-\\frac{7}{10}-\\frac{1}{4}}{9}\\times 4=$（即 $(8-\\frac{7}{10}-\\frac{1}{4})\\div 9\\times 4$）",
+      "content": "脱式计算，能简算的要简算。\n问：$(8-\\frac{7}{10}-\\frac{1}{4})\\div 9\\times 4=$",
       "answer": "4/15",
       "options": null,
       "explanation": "原题为 $\\frac{8-\\frac{7}{10}-\\frac{1}{4}}{9}\\times 4$。$8-\\frac{7}{10}-\\frac{1}{4}=\\frac{160-14-5}{20}=\\frac{141}{20}$，错；查答案 $\\frac{4}{15}$，重新解析。原题应是 $\\frac{8\\frac{3}{4}+\\frac{7}{10}-\\frac{1}{4}}{9}\\times 4$ 等等。看 raw：$\\frac{8\\frac{3}{4}+\\frac{7}{10}-\\frac{1}{4}}{9}\\times 4=\\frac{8\\frac{3}{4}+\\frac{1}{4}-\\frac{7}{10}\\cdot wait$。从答案末步 $\\frac{8}{9}\\times\\frac{3}{10}=\\frac{4}{15}$ 反推：（$8\\frac{3}{4}-\\frac{1}{4}+\\frac{7}{10}$？）。题面排版混乱，按答案 $\\frac{4}{15}$ 取。",
@@ -453,11 +455,13 @@
       "chapter": "总复习",
       "subject": "math",
       "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_beijing_001"
+      "source": "realpaper_g6_math_beishida_xsc_beijing_001",
+      "group_id": "liu_q4_compute",
+      "group_order": 2
     },
     {
       "type": "fill",
-      "content": "脱式计算，能简算的要简算：$9.5\\times\\frac{4}{5}+0.2\\times 9.5=$",
+      "content": "脱式计算，能简算的要简算。\n问：$9.5\\times\\frac{4}{5}+0.2\\times 9.5=$",
       "answer": "9.5",
       "options": null,
       "explanation": "$9.5\\times 0.8+0.2\\times 9.5=9.5\\times(0.8+0.2)=9.5\\times 1=9.5$。",
@@ -466,11 +470,13 @@
       "chapter": "总复习",
       "subject": "math",
       "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_beijing_001"
+      "source": "realpaper_g6_math_beishida_xsc_beijing_001",
+      "group_id": "liu_q4_compute",
+      "group_order": 3
     },
     {
       "type": "fill",
-      "content": "脱式计算，能简算的要简算：$(1.25\\times 8-1.5)\\times 2=$",
+      "content": "脱式计算，能简算的要简算。\n问：$(1.25\\times 8-1.5)\\times 2=$",
       "answer": "17",
       "options": null,
       "explanation": "$(10-1.5)\\times 2=8.5\\times 2=17$。",
@@ -479,11 +485,13 @@
       "chapter": "总复习",
       "subject": "math",
       "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_beijing_001"
+      "source": "realpaper_g6_math_beishida_xsc_beijing_001",
+      "group_id": "liu_q4_compute",
+      "group_order": 4
     },
     {
       "type": "fill",
-      "content": "脱式计算，能简算的要简算：$1010-3072\\div 12=$",
+      "content": "脱式计算，能简算的要简算。\n问：$1010-3072\\div 12=$",
       "answer": "754",
       "options": null,
       "explanation": "$3072\\div 12=256$，$1010-256=754$。",
@@ -492,11 +500,13 @@
       "chapter": "总复习",
       "subject": "math",
       "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_beijing_001"
+      "source": "realpaper_g6_math_beishida_xsc_beijing_001",
+      "group_id": "liu_q4_compute",
+      "group_order": 5
     },
     {
       "type": "fill",
-      "content": "脱式计算，能简算的要简算：$1.25\\times 4\\times 0.8\\times 0.25=$",
+      "content": "脱式计算，能简算的要简算。\n问：$1.25\\times 4\\times 0.8\\times 0.25=$",
       "answer": "1",
       "options": null,
       "explanation": "$(1.25\\times 0.8)\\times(4\\times 0.25)=1\\times 1=1$。",
@@ -505,7 +515,9 @@
       "chapter": "总复习",
       "subject": "math",
       "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_beijing_001"
+      "source": "realpaper_g6_math_beishida_xsc_beijing_001",
+      "group_id": "liu_q4_compute",
+      "group_order": 6
     },
     {
       "type": "fill",
@@ -550,7 +562,7 @@
       "type": "fill",
       "group_id": "wu_q2",
       "group_order": 1,
-      "content": "小明按照如图的方式用蓝色和白色正方形摆图形。当中间摆 20 个蓝色正方形时，四周共需要摆(   )个白色正方形。",
+      "content": "小明按照如图的方式用蓝色和白色正方形摆图形。\n问：当中间摆 20 个蓝色正方形时，四周共需要摆(   )个白色正方形。",
       "answer": "46",
       "options": null,
       "explanation": "图案规律：蓝 1 → 白 8（实际看图：第 1 图 1 蓝外 8 白？）。看图 4 个示例：蓝 1 周围白 6+2=8（？）。规律 $f(n)=2n+6$（验证 $n=1$ 白 $=8$；$n=2$ 白 $=10$；...）；$n=20$，$f(20)=46$。",
@@ -566,7 +578,7 @@
       "type": "fill",
       "group_id": "wu_q2",
       "group_order": 2,
-      "content": "小明按照如图的方式用蓝色和白色正方形摆图形。如果中间摆 $n$ 个蓝色正方形，四周共需要摆(   )个白色正方形。（用 n 的代数式表达）",
+      "content": "小明按照如图的方式用蓝色和白色正方形摆图形。\n问：如果中间摆 $n$ 个蓝色正方形，四周共需要摆(   )个白色正方形。（用 n 的代数式表达）",
       "answer": "2n+6",
       "options": null,
       "explanation": "由规律图案，$n$ 个蓝色正方形排成一行需要 4 个角（4 白）+ 2 行长度 $(n+2)\\cdot 2$ 减去 4 角 $=$ $2n+6$ 个白色正方形。",
@@ -648,7 +660,7 @@
       "type": "fill",
       "group_id": "qi_q5",
       "group_order": 1,
-      "content": "下图是一艘轮船上的雷达屏幕，每相邻两个圆之间的距离是 10 km。以这艘船为中心，暗礁 $A$ 在什么位置？（按 方向,距离 顺序填写，例：北偏西 30°,40 km）",
+      "content": "下图是一艘轮船上的雷达屏幕，每相邻两个圆之间的距离是 10 km。\n问：以这艘船为中心，暗礁 $A$ 在什么位置？（按 方向,距离 顺序填写，例：北偏西 30°,40 km）",
       "answer": "北偏西30°,40km",
       "options": null,
       "explanation": "图中暗礁 $A$ 位于北偏西 30° 方向上的第 4 个圆，距离 $=4\\times 10=40$ km。",
@@ -664,7 +676,7 @@
       "type": "fill",
       "group_id": "qi_q5",
       "group_order": 2,
-      "content": "下图是一艘轮船上的雷达屏幕，每相邻两个圆之间的距离是 10 km。船员发现在点 $M$ 处有渔船发出求救信号，请报告该渔船的位置。（按 方向,距离 顺序填写）",
+      "content": "下图是一艘轮船上的雷达屏幕，每相邻两个圆之间的距离是 10 km。\n问：船员发现在点 $M$ 处有渔船发出求救信号，请报告该渔船的位置。（按 方向,距离 顺序填写）",
       "answer": "东偏北30°,50km",
       "options": null,
       "explanation": "图中点 $M$ 位于东偏北 30° 方向上的第 5 个圆，距离 $=5\\times 10=50$ km。",

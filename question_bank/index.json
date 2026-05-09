@@ -1,5 +1,5 @@
 {
-  "version": 29,
+  "version": 30,
   "updated_at": "2026-05-09",
   "batches": [
     {
@@ -95,7 +95,7 @@
       "grade": 6,
       "count": 33,
       "kind": "realpaper",
-      "batch_hash": "0adc139f2a8ecaa64be33098f1c1bc14f9f6068b"
+      "batch_hash": "c54a5ab1980af2f58a5185a5bfca2b691ae41718"
     },
     {
       "source": "realpaper_g6_math_beishida_d2_guoguan_001",
@@ -104,7 +104,7 @@
       "grade": 6,
       "count": 35,
       "kind": "realpaper",
-      "batch_hash": "7e8afe0ff50373a0d6961ce687143e7285705ca0"
+      "batch_hash": "2871ac53c49beeb563a515373fdd1a310eec1d4c"
     },
     {
       "source": "realpaper_g6_math_beishida_qizhong_001",
@@ -113,7 +113,7 @@
       "grade": 6,
       "count": 43,
       "kind": "realpaper",
-      "batch_hash": "dab83b7bd9295e263583ac8cb9b265ba39d4d289"
+      "batch_hash": "b8a31af555d589cba3c5a0f10fadc2edd6564ce6"
     },
     {
       "source": "realpaper_g6_math_beishida_qimo_001",
@@ -122,7 +122,7 @@
       "grade": 6,
       "count": 46,
       "kind": "realpaper",
-      "batch_hash": "4e81354ed4f1449cf79445a7c056a6862203b354"
+      "batch_hash": "66e280fa574cc73ec8baf715b551ec2a877dc45b"
     },
     {
       "source": "realpaper_g6_math_beishida_xsc_beijing_001",
@@ -131,7 +131,7 @@
       "grade": 6,
       "count": 48,
       "kind": "realpaper",
-      "batch_hash": "61baf7073337c8b945f7633e3ce439e422c31aa8"
+      "batch_hash": "bb80a14d4742d38a5d33cb5e7a80043d36229491"
     }
   ],
   "_changelog": [
@@ -199,6 +199,11 @@
       "version": 29,
       "date": "2026-05-09",
       "change": "V3.12.12 阅读理解原文恢复 6 group 21 题 hash 重算"
+    },
+    {
+      "version": 30,
+      "date": "2026-05-09",
+      "change": "V3.12.13 数学 5 卷拆题修 (42 处 group 修) + manifest hash 重算"
     }
   ]
 }

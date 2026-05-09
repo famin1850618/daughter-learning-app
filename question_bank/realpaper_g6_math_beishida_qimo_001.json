@@ -427,7 +427,7 @@
     },
     {
       "type": "fill",
-      "content": "计算下列各题，能简算的要简算：$60\\times\\left(\\frac{7}{12}+\\frac{2}{15}\\right)=$",
+      "content": "计算下列各题，能简算的要简算。\n问：$60\\times\\left(\\frac{7}{12}+\\frac{2}{15}\\right)=$",
       "answer": "43",
       "options": null,
       "explanation": "$60\\times\\frac{7}{12}+60\\times\\frac{2}{15}=35+8=43$。",
@@ -436,11 +436,13 @@
       "chapter": "总复习",
       "subject": "math",
       "grade": 6,
-      "source": "realpaper_g6_math_beishida_qimo_001"
+      "source": "realpaper_g6_math_beishida_qimo_001",
+      "group_id": "liu_q3_compute",
+      "group_order": 1
     },
     {
       "type": "fill",
-      "content": "计算下列各题，能简算的要简算：$\\frac{2}{3}+\\left(\\frac{5}{6}-\\frac{3}{4}\\right)\\div\\frac{3}{8}=$",
+      "content": "计算下列各题，能简算的要简算。\n问：$\\frac{2}{3}+\\left(\\frac{5}{6}-\\frac{3}{4}\\right)\\div\\frac{3}{8}=$",
       "answer": "8/9",
       "options": null,
       "explanation": "$\\left(\\frac{5}{6}-\\frac{3}{4}\\right)=\\frac{1}{12}$；$\\frac{1}{12}\\div\\frac{3}{8}=\\frac{8}{36}=\\frac{2}{9}$；$\\frac{2}{3}+\\frac{2}{9}=\\frac{6+2}{9}=\\frac{8}{9}$。",
@@ -449,11 +451,13 @@
       "chapter": "总复习",
       "subject": "math",
       "grade": 6,
-      "source": "realpaper_g6_math_beishida_qimo_001"
+      "source": "realpaper_g6_math_beishida_qimo_001",
+      "group_id": "liu_q3_compute",
+      "group_order": 2
     },
     {
       "type": "fill",
-      "content": "计算下列各题，能简算的要简算：$0.125\\times 2\\frac{3}{4}+\\frac{1}{8}\\times 6.25-12.5\\%=$",
+      "content": "计算下列各题，能简算的要简算。\n问：$0.125\\times 2\\frac{3}{4}+\\frac{1}{8}\\times 6.25-12.5\\%=$",
       "answer": "1",
       "options": null,
       "explanation": "$0.125=\\frac{1}{8}=12.5\\%$。提公因子 $\\frac{1}{8}$：$\\frac{1}{8}(2\\frac{3}{4}+6.25-1)=\\frac{1}{8}\\times 8=1$。",
@@ -462,11 +466,13 @@
       "chapter": "总复习",
       "subject": "math",
       "grade": 6,
-      "source": "realpaper_g6_math_beishida_qimo_001"
+      "source": "realpaper_g6_math_beishida_qimo_001",
+      "group_id": "liu_q3_compute",
+      "group_order": 3
     },
     {
       "type": "fill",
-      "content": "计算下列各题，能简算的要简算：$\\left(\\frac{2}{3}-\\frac{1}{4}\\right)\\times 0.6\\div 4=$",
+      "content": "计算下列各题，能简算的要简算。\n问：$\\left(\\frac{2}{3}-\\frac{1}{4}\\right)\\times 0.6\\div 4=$",
       "answer": "1/16",
       "options": null,
       "explanation": "$\\frac{2}{3}-\\frac{1}{4}=\\frac{8-3}{12}=\\frac{5}{12}$；$\\frac{5}{12}\\times 0.6=\\frac{5}{12}\\times\\frac{3}{5}=\\frac{1}{4}$；$\\frac{1}{4}\\div 4=\\frac{1}{16}$。",
@@ -475,7 +481,9 @@
       "chapter": "总复习",
       "subject": "math",
       "grade": 6,
-      "source": "realpaper_g6_math_beishida_qimo_001"
+      "source": "realpaper_g6_math_beishida_qimo_001",
+      "group_id": "liu_q3_compute",
+      "group_order": 4
     },
     {
       "type": "fill",
@@ -492,7 +500,7 @@
     },
     {
       "type": "fill",
-      "content": "解比例：$\\frac{4}{7}x:\\frac{2}{3}=4: 7$，$x$＝(   )。",
+      "content": "解比例。\n问：$\\frac{4}{7}x:\\frac{2}{3}=4: 7$，$x$＝(   )。",
       "answer": "2/3",
       "options": null,
       "explanation": "$7\\times\\frac{4}{7}x=4\\times\\frac{2}{3}$，$4 x=\\frac{8}{3}$，$x=\\frac{2}{3}$。",
@@ -501,11 +509,13 @@
       "chapter": "比例",
       "subject": "math",
       "grade": 6,
-      "source": "realpaper_g6_math_beishida_qimo_001"
+      "source": "realpaper_g6_math_beishida_qimo_001",
+      "group_id": "liu_q4_proportion",
+      "group_order": 1
     },
     {
       "type": "fill",
-      "content": "解比例：$\\frac{2.4}{x}=\\frac{72}{3}$，$x$＝(   )。",
+      "content": "解比例。\n问：$\\frac{2.4}{x}=\\frac{72}{3}$，$x$＝(   )。",
       "answer": "0.1",
       "options": null,
       "explanation": "$72 x=2.4\\times 3=7.2$，$x=0.1$。",
@@ -514,11 +524,13 @@
       "chapter": "比例",
       "subject": "math",
       "grade": 6,
-      "source": "realpaper_g6_math_beishida_qimo_001"
+      "source": "realpaper_g6_math_beishida_qimo_001",
+      "group_id": "liu_q4_proportion",
+      "group_order": 2
     },
     {
       "type": "fill",
-      "content": "按要求计算（如图，单位：cm）：求阴影部分的面积。（图为半径 5 的半圆与长 10、宽 5 的长方形组合，阴影是右侧扇形外的矩形部分；π 取 3.14）",
+      "content": "按要求计算（如图，单位：cm，π 取 3.14）。\n问：求阴影部分的面积。（图为半径 5 的半圆与长 10、宽 5 的长方形组合，阴影是右侧扇形外的矩形部分）",
       "answer": "30.375",
       "options": null,
       "explanation": "阴影 $=$ 矩形面积 $-\\frac{1}{4}$ 圆面积 $=10\\times 5-\\frac{1}{4}\\times 3.14\\times 5^{2}=50-19.625=30.375\\ \\text{cm}^{2}$。",
@@ -528,11 +540,13 @@
       "chapter": "总复习",
       "subject": "math",
       "grade": 6,
-      "source": "realpaper_g6_math_beishida_qimo_001"
+      "source": "realpaper_g6_math_beishida_qimo_001",
+      "group_id": "liu_q5_figure",
+      "group_order": 1
     },
     {
       "type": "fill",
-      "content": "按要求计算（如图，单位：cm）：求图形的体积。（图为斜柱：底面圆直径 2，长边 6，短边 4；π 取 3.14）",
+      "content": "按要求计算（如图，单位：cm，π 取 3.14）。\n问：求图形的体积。（图为斜柱：底面圆直径 2，长边 6，短边 4）",
       "answer": "15.7",
       "options": null,
       "explanation": "斜柱体积 $=$ 底面积 $\\times$ 平均高。$r=1$，底面积 $=\\pi=3.14$。平均高 $=(6+4)\\div 2=5$。$V=3.14\\times 5=15.7\\ \\text{cm}^{3}$。",
@@ -542,13 +556,15 @@
       "chapter": "圆柱与圆锥",
       "subject": "math",
       "grade": 6,
-      "source": "realpaper_g6_math_beishida_qimo_001"
+      "source": "realpaper_g6_math_beishida_qimo_001",
+      "group_id": "liu_q5_figure",
+      "group_order": 2
     },
     {
       "type": "fill",
       "group_id": "liu_q1",
       "group_order": 1,
-      "content": "六年级同学开展太空黄瓜种植活动。他们先在学校的“科技种植园”中选择了一块周长是 32 m，长与宽的比是 $5: 3$ 的长方形地。这块长方形地的面积是多少平方米？(单位 m²)",
+      "content": "六年级同学开展太空黄瓜种植活动，先要平整一块长方形地。\n问：他们先在学校的\"科技种植园\"中选择了一块周长是 32 m，长与宽的比是 $5: 3$ 的长方形地。这块长方形地的面积是多少平方米？(单位 m²)",
       "answer": "60",
       "options": null,
       "explanation": "周长 32 → 长 + 宽 $=16$。比 $5: 3$，长 $=16\\times\\frac{5}{8}=10$，宽 $=16\\times\\frac{3}{8}=6$。面积 $=10\\times 6=60$ m²。",
@@ -563,7 +579,7 @@
       "type": "fill",
       "group_id": "liu_q1",
       "group_order": 2,
-      "content": "六年级同学开展太空黄瓜种植活动，先要平整一块长方形地。如果让小华单独做需要 5 时，让陈老师单独做需要 3 时。如果小华和陈老师合作，几时能平整完这块土地？（单位 时，分数形式回答）",
+      "content": "六年级同学开展太空黄瓜种植活动，先要平整一块长方形地。\n问：如果让小华单独做需要 5 时，让陈老师单独做需要 3 时。如果小华和陈老师合作，几时能平整完这块土地？（单位 时，分数形式回答）",
       "answer": "15/8",
       "options": null,
       "explanation": "工作效率：小华 $\\frac{1}{5}$，陈 $\\frac{1}{3}$，合作 $\\frac{1}{5}+\\frac{1}{3}=\\frac{8}{15}$/时。所需时间 $=1\\div\\frac{8}{15}=\\frac{15}{8}=1\\frac{7}{8}$ 时。",
@@ -578,7 +594,7 @@
       "type": "fill",
       "group_id": "liu_q2",
       "group_order": 1,
-      "content": "一个圆柱形的水池，水池的内壁和底面要抹水泥，从内部量得水池的底面周长是 50.24 m，池深 1.2 m，抹水泥的面积是多少平方米？(π 取 3.14)",
+      "content": "一个圆柱形的水池，从内部量得水池的底面周长是 50.24 m，池深 1.2 m。(π 取 3.14)\n问：水池的内壁和底面要抹水泥，抹水泥的面积是多少平方米？",
       "answer": "261.248",
       "options": null,
       "explanation": "$d=50.24/3.14=16$，$r=8$。抹水泥 $=$ 1 个底面积 + 侧面积 $=\\pi r^{2}+Ch=3.14\\times 64+50.24\\times 1.2=200.96+60.288=261.248$ m²。",
@@ -593,7 +609,7 @@
       "type": "fill",
       "group_id": "liu_q2",
       "group_order": 2,
-      "content": "一个圆柱形的水池，从内部量得水池的底面周长是 50.24 m，池深 1.2 m，这个水池最多能装多少升水？(π 取 3.14，单位 L)",
+      "content": "一个圆柱形的水池，从内部量得水池的底面周长是 50.24 m，池深 1.2 m。(π 取 3.14)\n问：这个水池最多能装多少升水？(单位 L)",
       "answer": "241152",
       "options": null,
       "explanation": "$r=8$，体积 $=\\pi r^{2} h=3.14\\times 64\\times 1.2=241.152$ m³ $=241152$ L。",
