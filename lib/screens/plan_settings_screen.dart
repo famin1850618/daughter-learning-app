@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart' show rootBundle;
+import 'package:flutter/services.dart' show rootBundle, Clipboard, ClipboardData;
 import 'package:provider/provider.dart';
 import 'package:intl/intl.dart';
 import '../utils/app_theme.dart';
@@ -13,6 +13,7 @@ import '../services/data_backup_service.dart';
 import '../services/difficulty_settings_service.dart';
 import '../services/review_request_service.dart';
 import '../services/data_reset_service.dart';
+import '../services/diagnostic_service.dart';
 import '../services/practice_service.dart';
 import '../services/reward_service.dart';
 import '../services/assessment_service.dart';
@@ -161,6 +162,14 @@ class _PlanSettingsScreenState extends State<PlanSettingsScreen> {
             subtitle: '一键清空错题、奖励、测评、练习记录、计划完成度。归档保留 7 天，可回滚。',
           ),
           const _DataResetSection(),
+          const SizedBox(height: 16),
+
+          // ── 诊断面板（V3.12.9_fix）─────────────
+          _SectionHeader(
+            title: '诊断',
+            subtitle: '题库 self-check + 错误日志。任何 bug 反复出现先看这里。',
+          ),
+          const _DiagnosticSection(),
           const SizedBox(height: 16),
 
           // ── 分配到哪几天 ──────────────────────
@@ -1214,5 +1223,96 @@ class _DataResetSectionState extends State<_DataResetSection> {
         const SnackBar(content: Text('删除失败'), backgroundColor: Colors.red),
       );
     }
+  }
+}
+
+// ── 诊断面板（V3.12.9_fix）──────────────────────────────
+// feedback_bug_diagnosis_discipline.md 的 app 端实施
+class _DiagnosticSection extends StatelessWidget {
+  const _DiagnosticSection();
+
+  @override
+  Widget build(BuildContext context) {
+    final svc = context.watch<DiagnosticService>();
+    return Card(
+      child: Column(
+        children: [
+          // self-check 报告
+          ExpansionTile(
+            leading: Icon(
+              svc.startupReport.every((e) => e.ok) ? Icons.check_circle : Icons.warning,
+              color: svc.startupReport.every((e) => e.ok) ? Colors.green : Colors.orange,
+            ),
+            title: const Text('启动 self-check 报告'),
+            subtitle: Text('${svc.startupReport.where((e) => e.ok).length} / ${svc.startupReport.length} 项通过'),
+            children: svc.startupReport.map((e) => ListTile(
+              dense: true,
+              leading: Icon(
+                e.ok ? Icons.check : Icons.error,
+                color: e.ok ? Colors.green : Colors.red,
+                size: 18,
+              ),
+              title: Text(e.key, style: const TextStyle(fontSize: 13)),
+              subtitle: e.hint != null
+                  ? Text(e.hint!, style: const TextStyle(fontSize: 11, color: Colors.red))
+                  : null,
+              trailing: Text(e.value,
+                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13)),
+            )).toList(),
+          ),
+          const Divider(height: 1, indent: 56),
+          // 错误日志
+          ExpansionTile(
+            leading: Icon(
+              svc.errorCount > 0 ? Icons.error : Icons.info_outline,
+              color: svc.errorCount > 0 ? Colors.red : Colors.grey,
+            ),
+            title: Text('错误日志（${svc.errorLogs.length} 条）'),
+            subtitle: svc.errorCount > 0
+                ? Text('${svc.errorCount} 条错误', style: const TextStyle(color: Colors.red))
+                : const Text('无错误'),
+            trailing: svc.errorLogs.isNotEmpty
+                ? Wrap(
+                    spacing: 4,
+                    children: [
+                      IconButton(
+                        icon: const Icon(Icons.copy, size: 18),
+                        tooltip: '复制全部日志',
+                        onPressed: () async {
+                          await Clipboard.setData(ClipboardData(text: svc.exportErrorLogs()));
+                          if (context.mounted) {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              const SnackBar(content: Text('日志已复制到剪贴板')),
+                            );
+                          }
+                        },
+                      ),
+                      IconButton(
+                        icon: const Icon(Icons.delete_sweep, size: 18),
+                        tooltip: '清空日志',
+                        onPressed: () async => svc.clearErrorLogs(),
+                      ),
+                    ],
+                  )
+                : null,
+            children: svc.errorLogs.take(20).map((l) => ListTile(
+              dense: true,
+              leading: Icon(
+                l.level == 'error' ? Icons.error :
+                l.level == 'warn' ? Icons.warning : Icons.info,
+                color: l.level == 'error' ? Colors.red :
+                       l.level == 'warn' ? Colors.orange : Colors.blue,
+                size: 18,
+              ),
+              title: Text('${l.context} | ${l.message}',
+                  style: const TextStyle(fontSize: 12), maxLines: 2, overflow: TextOverflow.ellipsis),
+              subtitle: Text(
+                  DateFormat('MM-dd HH:mm:ss').format(l.timestamp),
+                  style: const TextStyle(fontSize: 10)),
+            )).toList(),
+          ),
+        ],
+      ),
+    );
   }
 }

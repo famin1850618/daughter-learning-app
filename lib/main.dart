@@ -21,6 +21,7 @@ import 'services/learning_sync_service.dart';
 import 'services/difficulty_settings_service.dart';
 import 'services/review_request_service.dart';
 import 'services/data_reset_service.dart';
+import 'services/diagnostic_service.dart';
 import 'database/question_dao.dart';
 import 'models/question.dart';
 import 'models/subject.dart';
@@ -109,6 +110,18 @@ Future<void> _seedDatabase() async {
       debugPrint('V3.11 auto-reset succeeded: $batchId');
     }
     await prefs.setBool('v311_auto_reset_done', true);
+  }
+
+  // 6. V3.12.9_fix: 启动 self-check（diagnostic service）
+  // 检查 DB version / 题数 by subject / source 状态 / 关键字段健康
+  // 错误存到 ErrorLog（设置页诊断面板可查 + 可导出）
+  try {
+    await DiagnosticService().runStartupSelfCheck();
+  } catch (e, stack) {
+    await DiagnosticService().logError(
+      level: 'error', context: 'startup_self_check',
+      error: e, stack: stack,
+    );
   }
 }
 
@@ -274,6 +287,7 @@ class _LearningAppState extends State<LearningApp> {
         ChangeNotifierProvider.value(value: _updateService),
         ChangeNotifierProvider.value(value: _syncService),
         ChangeNotifierProvider.value(value: _difficultySettings),
+        ChangeNotifierProvider.value(value: DiagnosticService()),
         ChangeNotifierProvider.value(value: _reviewService),
         ChangeNotifierProvider<DataResetService>.value(value: DataResetService()),
       ],
