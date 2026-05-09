@@ -1,5 +1,5 @@
 {
-  "version": 31,
+  "version": 32,
   "updated_at": "2026-05-09",
   "batches": [
     {
@@ -41,16 +41,16 @@
       "grade": 6,
       "count": 22,
       "kind": "realpaper",
-      "batch_hash": "07739ff00210e348994bba3c37bb101e190fb276"
+      "batch_hash": "6861782c78dd2c16994c8842c9d0ab773b925b0b"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qizhong_003",
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qizhong_003.json",
       "subject": "chinese",
       "grade": 6,
-      "count": 8,
+      "count": 7,
       "kind": "realpaper",
-      "batch_hash": "195f168793a9e271595a07b1ef3391309b342b57"
+      "batch_hash": "9a230635b19df4571b79319769a89cf34c5bab6b"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qizhong_004",
@@ -59,7 +59,7 @@
       "grade": 6,
       "count": 8,
       "kind": "realpaper",
-      "batch_hash": "8c5960c34e50f4b316f493e65b3722a3089aa97e"
+      "batch_hash": "e030ca050e6dc0d903f924c64d90e7f8ee26c174"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qizhong_008",
@@ -68,7 +68,7 @@
       "grade": 6,
       "count": 13,
       "kind": "realpaper",
-      "batch_hash": "48ce21969f0ad087263d1cce002d5ac29509e8a2"
+      "batch_hash": "e0b4f9fbe820bd76fb2706a67038e4e9219cb466"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qimo_quanzhen_001",
@@ -77,7 +77,7 @@
       "grade": 6,
       "count": 22,
       "kind": "realpaper",
-      "batch_hash": "d57a32fbdf259812268eff7b179bb7bcc7dfbd13"
+      "batch_hash": "f946628fc5c9606ffb9471bc317f1e9cd2005ae3"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qimo_moni_004",
@@ -86,7 +86,7 @@
       "grade": 6,
       "count": 20,
       "kind": "realpaper",
-      "batch_hash": "7529ae511c77259694584f2a510b34a0dffce82c"
+      "batch_hash": "ffcedab4dd168450c7b40d8888005066124db34d"
     },
     {
       "source": "realpaper_g6_math_beishida_d1_guoguan_001",
@@ -104,7 +104,7 @@
       "grade": 6,
       "count": 35,
       "kind": "realpaper",
-      "batch_hash": "2871ac53c49beeb563a515373fdd1a310eec1d4c"
+      "batch_hash": "3a7fd1f202074b4315022a1497b3db1c427351fa"
     },
     {
       "source": "realpaper_g6_math_beishida_qizhong_001",

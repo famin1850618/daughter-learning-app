@@ -97,12 +97,16 @@ def detect_emphasis(pdf_path: str, page_filter: int = None) -> list:
                     )
                 ]
                 if candidates:
-                    # 取距离最近的
+                    # V3.12.16 修：tie-break 改成 x 中心主、y 副。
+                    # 旧版主排序按 y 距离，相邻字 bottom 差 1-2px（字形）就误判。
+                    # 例：「浏览」加点在「浏」下方，但「览」字 bottom 比「浏」低 1px →
+                    # 旧版优先选「览」。新版按 x 中心主排序：dot 和加点字 x 中心
+                    # 应几乎完全对齐（< 1px），相邻字差 5+px，区分明显。
                     target = min(
                         candidates,
                         key=lambda c: (
-                            abs(dot['top'] - c['bottom']),
-                            abs(dot_cx - (c['x0']+c['x1'])/2),
+                            abs(dot_cx - (c['x0']+c['x1'])/2),  # 主: x 中心对齐
+                            abs(dot['top'] - c['bottom']),       # 副: y 距离
                         )
                     )
                     records.append(EmphasisRecord(
