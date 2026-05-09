@@ -119,7 +119,7 @@
       "content": "线段比例尺（如图）改写成数值比例尺是(   )。",
       "answer": "1:5000000",
       "options": null,
-      "explanation": "图中线段每段表示 50 km，1 cm 对应 50 km。$50\\ \\text{km}=5000000\\ \\text{cm}$，比例尺 $=1: 5000000$。",
+      "explanation": "线段比例尺中，每一格在纸面上代表 1 cm（小学教材约定），图中 1 cm 对应实际 50 km。$50\\ \\text{km}=5000000\\ \\text{cm}$，所以比例尺 $=1: 5000000$。",
       "knowledge_point": "正反比例/比例尺",
       "round": 2,
       "image_data": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 60\" font-family=\"-apple-system,sans-serif\" font-size=\"11\">\n  <line x1=\"20\" y1=\"35\" x2=\"260\" y2=\"35\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <line x1=\"20\" y1=\"28\" x2=\"20\" y2=\"42\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <line x1=\"100\" y1=\"28\" x2=\"100\" y2=\"42\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <line x1=\"180\" y1=\"28\" x2=\"180\" y2=\"42\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <line x1=\"260\" y1=\"28\" x2=\"260\" y2=\"42\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <text x=\"20\" y=\"22\" text-anchor=\"middle\">0</text>\n  <text x=\"100\" y=\"22\" text-anchor=\"middle\">50</text>\n  <text x=\"180\" y=\"22\" text-anchor=\"middle\">100</text>\n  <text x=\"260\" y=\"22\" text-anchor=\"middle\">150</text>\n  <text x=\"280\" y=\"38\">km</text>\n</svg>",

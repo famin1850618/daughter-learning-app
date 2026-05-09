@@ -16,6 +16,8 @@ const bundledBatchAssets = <String>[
   'assets/data/batches/realpaper_g6_chinese_bubian_qizhong_008.json',
   'assets/data/batches/realpaper_g6_chinese_bubian_qimo_quanzhen_001.json',
   'assets/data/batches/realpaper_g6_chinese_bubian_qimo_moni_004.json',
+  // V3.12.20.1 D 批语文期中卷5
+  'assets/data/batches/realpaper_g6_chinese_bubian_qizhong_005.json',
   // V3.12.7 数学六下北师大版真题第三轮 5 卷 205 题
   'assets/data/batches/realpaper_g6_math_beishida_d1_guoguan_001.json',
   'assets/data/batches/realpaper_g6_math_beishida_d2_guoguan_001.json',

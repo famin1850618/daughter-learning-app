@@ -1,5 +1,5 @@
 {
-  "version": 42,
+  "version": 48,
   "updated_at": "2026-05-09",
   "batches": [
     {
@@ -172,6 +172,110 @@
       "grade": 6,
       "count": 5,
       "batch_hash": "cb16f5ba7aef109d7dd299ef751f33afade41a70"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qizhong_005",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qizhong_005.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 13,
+      "kind": "realpaper",
+      "batch_hash": "d3a2920e11a9ae71229c752bbacbb08c1e218d90"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_d4_genzong_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_d4_genzong_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 42,
+      "batch_hash": "1a5c7f0108cb15a5475302b183c37ad3d7764075"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_d4_guoguan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_d4_guoguan_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 37,
+      "batch_hash": "776747dab40327089c2c8061f664867b1f85b3ae"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_zhouce_peiyou_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_zhouce_peiyou_002.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 20,
+      "batch_hash": "bcf8795de2f5510914768b86ba968c3dd3128c3b"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_zhouce_peiyou_003",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_zhouce_peiyou_003.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 26,
+      "batch_hash": "1c0d95fc0eb4cfaedc79909dbd92a11800a01bad"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qizhong_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qizhong_002.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 22,
+      "kind": "realpaper",
+      "batch_hash": "dd0ae4093618cb47278010a2fe921d7c41507f5d"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qimo_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qimo_002.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 37,
+      "kind": "realpaper",
+      "batch_hash": "db66a0f340cfe979245ed53921979a8f121acef0"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_xsc_shenyang_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_xsc_shenyang_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 42,
+      "kind": "realpaper",
+      "batch_hash": "519ec578548d3bd236fafb15d9dded10bb1f34f7"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_unit1_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_unit1_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 22,
+      "kind": "realpaper",
+      "batch_hash": "c654e7ae9cfdf47f83f80721728aa6d61f26c9d3"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_unit1_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_unit1_002.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 27,
+      "kind": "realpaper",
+      "batch_hash": "d2d701ff79a2a730fcd94d9c8fac889fa57f1871"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_unit2_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_unit2_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 28,
+      "kind": "realpaper",
+      "batch_hash": "bed759302f717976726824f048a94b15ff76fb86"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_unit3_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_unit3_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 17,
+      "kind": "realpaper",
+      "batch_hash": "92b88daf1b1b368aa73f6fadc4ae88a981855b7c"
     }
   ],
   "_changelog": [
@@ -249,6 +353,26 @@
       "version": 31,
       "date": "2026-05-09",
       "change": "V3.12.14 波浪线句子级 markdown + spec §5.6.6 + 多选 UI 代码（待 build）"
+    },
+    {
+      "version": 44,
+      "date": "2026-05-09",
+      "change": "V3.12.20.1 入库数学 realpaper_g6_math_beishida_d4_genzong_001（A 批）"
+    },
+    {
+      "version": 45,
+      "date": "2026-05-09",
+      "change": "V3.12.20.1 入库数学 realpaper_g6_math_beishida_d4_guoguan_001（A 批）"
+    },
+    {
+      "version": 46,
+      "date": "2026-05-09",
+      "change": "V3.12.20.1 入库数学 realpaper_g6_math_beishida_zhouce_peiyou_002（A 批）"
+    },
+    {
+      "version": 47,
+      "date": "2026-05-09",
+      "change": "V3.12.20.1 入库数学 realpaper_g6_math_beishida_zhouce_peiyou_003（A 批）"
     }
   ]
 }

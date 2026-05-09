@@ -342,6 +342,39 @@
       "spec_version": "V3.12.18",
       "round_judge_method": "v4_script + supervisor_review",
       "supervisor_findings": "V3.12.18 supervisor 抽查发现 d1 q6/q8 PNG 截错 → 重绘 SVG; 6 道 round 调整 (d1 q7 R1→R2, d1 q26 R1→R3, d2 q11 R3→R2, d2 q12 R3→R1, d2 q28 R4→R3, zhouce q5 R1→R2)"
+    },
+    {
+      "sha1": "fcda49eb2376ef184e19a22b41b03a7339150de8",
+      "source_file": "/mnt/d/AI_Workspace/真题/六下/语文/6年级下册语文部编版/期中试卷/六年级下册语文部编版期中试卷5（含答案）.pdf",
+      "batch_source": "realpaper_g6_chinese_bubian_qizhong_005",
+      "subject": "chinese",
+      "grade": 6,
+      "paper_type": "midterm",
+      "questions_emitted": 13,
+      "questions_skipped": 6,
+      "skipped_reasons": [
+        "大题四（1)(2)(3) 按要求写句子（造句/仿写/改有礼貌说法）—— subjective 主观题暂不出（V3.12.20 spec §5 写作题保留区）",
+        "大题五·1 课文人物形象 5 空（不畏艰险/顽皮淘气/勇于探险/天真可爱/坚贞不屈）—— 答案为开放性形象描述短语，非唯一标准答案，跳过",
+        "大题七·2 富人震惊原因 2 处—— 答案开放性表述（结合原文复述）",
+        "大题七·3 「富有」的理解（结合生活实际）—— 主观开放题",
+        "大题七·4 写出赞美梅花的诗句两句—— 主观开放题",
+        "大题八 口语交际（鼓励同学）—— subjective",
+        "大题九 习作 30 分—— 写作题暂不出（V3.12.20 任务约束）"
+      ],
+      "type_distribution": {
+        "fill": 7,
+        "choice": 6
+      },
+      "round_distribution": {
+        "R1": 3,
+        "R2": 8,
+        "R3": 2
+      },
+      "image_count": 0,
+      "svg_count": 0,
+      "processed_at": "2026-05-09",
+      "skill_version": "0.1.0 (V3.12.20.1)",
+      "round_method": "chinese stage 1: LLM read anchors+rubric, every reasoning cites anchor_id + rubric signal"
     }
   ],
   "skipped_files": [
@@ -375,6 +408,35 @@
       "reason": "嵌入私有字体导致 pdftotext 全卷乱码（一/二/三/四/五/六/七大题题面、候选池、表格信息全部不可读，仅页脚『关注微信公众号』可识别）→ §9.1 完整性优先整卷跳过；视觉清晰但禁多模态抢救（V3.10 122 道伪题反例）",
       "skipped_at": "2026-05-09",
       "spec_version": "V3.12.18"
+    },
+    {
+      "sha1": "eb957249b810539b5e67a833512124e530324d0d",
+      "source_file": "/mnt/d/AI_Workspace/真题/初二/八年级下册物理期末真题卷/1北京市朝阳区2020-2021学年八年级（下学期）期末检测物理试题.pdf",
+      "subject": "physics",
+      "grade": 8,
+      "target_source_id": "realpaper_g8_physics_renjiao_qimo_beijing_chaoyang_001",
+      "reason": "PDFPatcher 0.6.2.3572 输出的纯扫描型 PDF（pdftotext -layout / -raw 均仅 16 字节，全部为 form-feed 0x0c；pdffonts 显示 0 字体；preview-01.png 视觉确认页面是图像渲染）→ §9.1 完整性优先 + Step 1.3 整卷跳过；feedback_unclear_abandon 严禁 OCR/多模态抢救（V3.10 122 道伪题反例 + V3.12.5 §9.1 立硬规则）",
+      "skipped_at": "2026-05-09",
+      "spec_version": "V3.12.20.1",
+      "_observation": "初二物理 38 套 PDF 抽查全部 3-16 字节可识别文本（同 PDFPatcher 来源） → 整个八下物理真题源池在当前 pipeline 下不可处理；需 Famin 决策：换源 / 引入 OCR 例外通道 / 跳过初二物理整阶段"
+    },
+    {
+      "sha1": "8c38a43a817b0e15d4403a6a121d1f43e5527c6c",
+      "source_file": "/mnt/d/AI_Workspace/真题/六下/语文/6年级下册语文部编版/期末试卷/六年级下册语文部编版期末模拟卷1.pdf",
+      "subject": "chinese",
+      "grade": 6,
+      "target_source_id": "realpaper_g6_chinese_bubian_qimo_moni_001",
+      "reason": "扫描型 PDF（pdftotext -layout 输出 312 字节仅页脚，无题目文本可提取）→ §9.1 完整性优先 + Step 1.3 整卷跳过；feedback_unclear_abandon 严禁 OCR 抢救。答案 PDF 文本可读但题面不可读 → 整卷弃。",
+      "skipped_at": "2026-05-09"
+    },
+    {
+      "sha1": "d1de5d7ccd7b3217992c96420b38d7ff3a5737c7",
+      "source_file": "/mnt/d/AI_Workspace/真题/六下/语文/6年级下册语文部编版/期末试卷/六年级下册语文部编版期末全真卷2.pdf",
+      "subject": "chinese",
+      "grade": 6,
+      "target_source_id": "realpaper_g6_chinese_bubian_qimo_quanzhen_002",
+      "reason": "扫描型 PDF（pdftotext -layout 输出 69 字节仅页脚，无题目文本可提取）→ §9.1 完整性优先 + Step 1.3 整卷跳过；feedback_unclear_abandon 严禁 OCR 抢救。答案 PDF 文本可读但题面不可读 → 整卷弃。",
+      "skipped_at": "2026-05-09"
     }
   ],
   "updated_at": "2026-05-09",

@@ -21,3 +21,4 @@ ios/GoogleService-Info.plist
 .cache/
 tools/realpaper/.venv/
 tools/__pycache__/
+tools/realpaper/__pycache__/

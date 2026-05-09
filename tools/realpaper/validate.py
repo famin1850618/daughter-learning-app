@@ -319,6 +319,81 @@ def check_svg_text_quality(q: dict, idx: int) -> str:
                     f'超 viewBox（[{left:.1f},{right:.1f}] vs [{vb_x},{vb_x+vb_w}]）')
     return None
 
+SVG_DIM_NUM_PAT = re.compile(r'^\s*[\d.]+\s*(cm|mm|dm|km|m|°)?\s*$', re.IGNORECASE)
+SVG_DIM_EXPR_PAT = re.compile(r'^\s*[rRdDhHLC]\s*=\s*[\d.]+', re.IGNORECASE)
+SVG_DIM_INLINE_PAT = re.compile(r'\d+\s*(cm|mm|dm|km)\b', re.IGNORECASE)
+SVG_LABEL_PAT = re.compile(r'^[A-Za-z][\d′″]?$')
+
+def _is_svg_dim_label(t: str) -> bool:
+    t = t.strip()
+    if not t:
+        return False
+    if SVG_DIM_NUM_PAT.match(t):
+        return True
+    if SVG_DIM_EXPR_PAT.match(t):
+        return True
+    if SVG_DIM_INLINE_PAT.search(t):
+        return True
+    return False
+
+def check_svg_dim_arrow(q: dict, idx: int) -> str:
+    """19. SVG 长度标注必带双箭头（V3.12.20）。
+
+    长度标注（数字±单位 / r= / d= / h= / L= / C=）必须配对左右 ↔ 双箭头三角 polygon。
+    判定：每个长度标注期望 ≥2 个 polygon 三角形（双箭头一对），允许 marker 替代。
+
+    例外：
+    - ≥10 个数字 text → 视为坐标系，跳
+    - 含 ≥2 个 ABCD label + ≥6 个数字 → 多候选展开图，跳
+    - 等差数列（≥3 个等距数字）→ 坐标刻度，跳
+    """
+    img = q.get('image_data') or ''
+    if not img.lstrip().startswith('<svg'):
+        return None
+    texts = SVG_TEXT_PAT.findall(img)
+    if not texts:
+        return None
+    text_contents = [t[1] for t in texts]  # SVG_TEXT_PAT group(2) = content
+    dim_texts = [t for t in text_contents if _is_svg_dim_label(t)]
+    if not dim_texts:
+        return None
+    # V3.12.20.1：曲线长度（周长/弧长）例外，不要求双箭头（直线双箭头会误导学生以为是直径）
+    dim_texts = [t for t in dim_texts if not re.match(r'^\s*C\s*=', t.strip()) and '周长' not in t and '弧长' not in t]
+    if not dim_texts:
+        return None
+    # 排除坐标系（>=10 个数字）
+    if len(dim_texts) >= 10:
+        return None
+    # 排除等差刻度
+    nums = []
+    for t in dim_texts:
+        m = re.search(r'[\d.]+', t)
+        if m:
+            try:
+                nums.append(float(m.group()))
+            except ValueError:
+                pass
+    if len(nums) >= 3:
+        sorted_nums = sorted(set(nums))
+        if len(sorted_nums) >= 3:
+            diffs = [sorted_nums[i+1]-sorted_nums[i] for i in range(len(sorted_nums)-1)]
+            if max(diffs) > 0 and (max(diffs) - min(diffs)) < 0.01 * max(diffs):
+                return None
+    # 排除多候选展开图
+    label_texts = [t for t in text_contents if SVG_LABEL_PAT.match(t.strip())]
+    abcd = sum(1 for t in label_texts if t.strip().upper() in ('A','B','C','D'))
+    if abcd >= 2 and len(dim_texts) >= 6:
+        return None
+    # 检查箭头数
+    polygon_count = img.count('<polygon')
+    marker_count = img.count('<marker') + img.count('marker-start') + img.count('marker-end')
+    expected = len(dim_texts) * 2
+    actual = polygon_count + marker_count
+    if actual < expected:
+        return (f'#{idx}: SVG 长度标注 {dim_texts!r} ({len(dim_texts)} 个) '
+                f'需双箭头 ×{expected}，实有 polygon/marker {actual}（V3.12.20）')
+    return None
+
 def check_choice_letter_prefix(q: dict, idx: int) -> str:
     """17. choice 题 options 必须 'A. xxx' 格式 + answer 字母（§5.1 V3.12.19）
 
@@ -448,6 +523,11 @@ def run_full_check(batch: dict, batch_path: Path, kp_set: set, chapter_set: set)
     errs = [check_svg_text_quality(q, i+1) for i, q in enumerate(questions)]
     errs = [e for e in errs if e]
     report['18_svg_text_quality'] = {'pass': not errs, 'errors': errs}
+
+    # 19. SVG 长度标注必带双箭头（V3.12.20）
+    errs = [check_svg_dim_arrow(q, i+1) for i, q in enumerate(questions)]
+    errs = [e for e in errs if e]
+    report['19_svg_dim_arrow'] = {'pass': not errs, 'errors': errs}
 
     # summary
     auto_items = [k for k, v in report.items() if v['pass'] is not None]
