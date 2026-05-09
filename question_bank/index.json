@@ -1,5 +1,5 @@
 {
-  "version": 37,
+  "version": 38,
   "updated_at": "2026-05-09",
   "batches": [
     {
@@ -95,7 +95,7 @@
       "grade": 6,
       "count": 33,
       "kind": "realpaper",
-      "batch_hash": "aefe3c1ed46800e645b4d8bc0f2d252bc807c256"
+      "batch_hash": "01ccfee1f0820217c9d2209cc5dae5b745c71951"
     },
     {
       "source": "realpaper_g6_math_beishida_d2_guoguan_001",
