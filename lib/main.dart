@@ -32,7 +32,8 @@ import 'database/knowledge_points_seed.dart';
 import 'database/cambridge_english_kp_seed.dart';
 
 // V3.12.11 起：题库不再 bundled，由 InitialSyncScreen / 后台 silent sync 从 CDN 拉。
-// bundled_batches.dart 已废弃（保留作历史参考）。
+// V3.12.21（2026-05-09 晚）：Famin 决定全清旧库重新基于深圳真题源（217 docx）扫起。
+// lib/data/bundled_batches.dart 已删除（V3.12.11 已废弃 + 本轮全清孤儿）。
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
