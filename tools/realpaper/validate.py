@@ -259,6 +259,39 @@ def check_emphasis_phrasing(q: dict, idx: int) -> str:
     return None
 
 
+CHOICE_LETTER_PAT = re.compile(r'^[ABCDZ][.、:：．]')
+
+def check_choice_letter_prefix(q: dict, idx: int) -> str:
+    """17. choice 题 options 必须 'A. xxx' 格式 + answer 字母（§5.1 V3.12.19）
+
+    存为裸文本（无 ABCD 前缀）会让 practice_screen.dart 取首字符当字母编号，
+    所有选项共享同首字符 → UI 全选 + LaTeX 砍前 2 字符崩溃。
+    例外：options=['A','B','C','D'] 是图选项题（option 文本是字母占位符）。
+    """
+    if q.get('type') != 'choice':
+        return None
+    opts = q.get('options') or []
+    if not opts:
+        return None
+    # 例外：options 全是单字母 (图选项)
+    if all((o or '').strip().upper() in ('A', 'B', 'C', 'D', 'Z') for o in opts):
+        # answer 必须也是字母
+        ans = (q.get('answer') or '').strip().upper()
+        if not re.fullmatch(r'[ABCDZ]+', ans):
+            return f'#{idx}: 图选项题 answer 应为字母，实为 {q.get("answer")!r}'
+        return None
+    # 正常文本选项：必须全部 ABCD 前缀
+    if not all(CHOICE_LETTER_PAT.match(o or '') for o in opts):
+        return f'#{idx}: 选项缺 ABCD 前缀（例 {opts[0][:30]!r}）'
+    # answer 必须是字母（A/B/C/D 或多选 AC）
+    ans = (q.get('answer') or '').strip().upper()
+    # 接受 'A'、'AC'、'A,C'、'A、C'
+    letters_only = re.sub(r'[^ABCDZ]', '', ans)
+    if not letters_only:
+        return f'#{idx}: answer 应为字母（A/B/AC 等），实为 {q.get("answer")!r}'
+    return None
+
+
 def run_full_check(batch: dict, batch_path: Path, kp_set: set, chapter_set: set) -> dict:
     """跑全 16 项自检（D 方案：可脚本化的 12 项）。
 
@@ -335,6 +368,11 @@ def run_full_check(batch: dict, batch_path: Path, kp_set: set, chapter_set: set)
     errs = [check_emphasis_phrasing(q, i+1) for i, q in enumerate(questions)]
     errs = [e for e in errs if e]
     report['16_emphasis_phrasing'] = {'pass': not errs, 'errors': errs}
+
+    # 17. choice 题 ABCD 前缀（V3.12.19）
+    errs = [check_choice_letter_prefix(q, i+1) for i, q in enumerate(questions)]
+    errs = [e for e in errs if e]
+    report['17_choice_letter_prefix'] = {'pass': not errs, 'errors': errs}
 
     # summary
     auto_items = [k for k, v in report.items() if v['pass'] is not None]
