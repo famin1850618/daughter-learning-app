@@ -167,11 +167,15 @@ class QuestionUpdateService extends ChangeNotifier {
         knowledgePoint: m['knowledge_point'] as String?,
         content: m['content'] as String,
         type: _typeFromKey(m['type'] as String),
-        difficulty: _difficultyFromKey(m['difficulty'] as String),
+        // V3.12.9 修：difficulty 改 nullable cast。V3.12.7 batch 不带 difficulty
+        // 字段（4a 阶段 spec §2.1 只判 round，不判 difficulty）。旧代码强 cast
+        // String 触发异常 → 整道题 import 失败 → main.dart 的 try-catch 静默吞错 →
+        // 用户看到"导入完成无新增题目"。这是反复修不好题量 bug 的真凶。
+        difficulty: _difficultyFromKey(m['difficulty'] as String?),
         options: (m['options'] as List?)?.cast<String>(),
         answer: m['answer'] as String,
         explanation: m['explanation'] as String?,
-        imageData: m['image'] as String?,
+        imageData: (m['image'] as String?) ?? (m['image_data'] as String?),
         audioText: m['audio_text'] as String?,
         speakers: speakers,
         round: m['round'] as int?,
@@ -235,7 +239,8 @@ class QuestionUpdateService extends ChangeNotifier {
     }
   }
 
-  Difficulty _difficultyFromKey(String k) {
+  Difficulty _difficultyFromKey(String? k) {
+    if (k == null) return Difficulty.easy;
     switch (k) {
       case 'easy': return Difficulty.easy;
       case 'medium': return Difficulty.medium;
