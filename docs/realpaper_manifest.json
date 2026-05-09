@@ -1,5 +1,5 @@
 {
-  "version": 6,
+  "version": 7,
   "schema": "v1",
   "created_at": "2026-05-08",
   "description": "真题处理进度 manifest。每处理一卷追加 processed[] 一项。详见 .realpaper-spec.md §10",
@@ -196,6 +196,152 @@
       "image_count": 5,
       "processed_at": "2026-05-09",
       "skill_version": "0.1.0"
+    },
+    {
+      "sha1": "b7632e87156379f9dc32eaefa96c910503b19b98",
+      "source_file": "/home/faminwsl/AI_Workspace/真题/六下/语文/6年级下册语文部编版/专项试卷/六年级下册语文部编版期末专项测试卷11体会句意（含答案）.pdf",
+      "batch_source": "realpaper_g6_chinese_bubian_qimo_zhuanxiang_11_juyi_001",
+      "subject": "chinese",
+      "grade": 6,
+      "chapter_default": "句式与标点",
+      "paper_type": "special",
+      "questions_emitted": 4,
+      "questions_skipped": 7,
+      "skipped_reasons": [
+        "三大题（写出对列夫·托尔斯泰名言的理解）→ subjective 主观表达题，按 writing_pending 纪律不入库",
+        "四大题（《莫忘一朵花儿叫马兰》阅读理解 + 5 子题）→ §9.1 + §5.4 阅读原文整篇 pdftotext 乱码（文章正文 60+ 行字符乱码），整组（含 5 子题）跳过；禁多模态抢救（V3.10 反例）"
+      ],
+      "type_distribution": {
+        "fill": 1,
+        "choice": 3
+      },
+      "round_distribution": {
+        "R2": 2,
+        "R3": 2
+      },
+      "image_count": 0,
+      "svg_count": 0,
+      "processed_at": "2026-05-09",
+      "skill_version": "0.1.0",
+      "garbled_warning": "标题/章节标题（一、二、三、四…）pdftotext 乱码（私有字体），但题面正文绝大部分可读；agent 在 content 中以标准提示语重写章节标题（如『下面的句意理解正确吗？』），不是从乱码反推内容"
+    },
+    {
+      "sha1": "6cf00321edcbf2a8ab951d93dfeb7e88676e9d63",
+      "source_file": "/home/faminwsl/AI_Workspace/真题/六下/语文/6年级下册语文部编版/专项试卷/六年级下册语文部编版期末专项测试卷16课内阅读（含答案）.pdf",
+      "batch_source": "realpaper_g6_chinese_bubian_qimo_zhuanxiang_16_keneiyuedu_001",
+      "subject": "chinese",
+      "grade": 6,
+      "chapter_default": "古诗文",
+      "paper_type": "special",
+      "questions_emitted": 5,
+      "questions_skipped": 13,
+      "skipped_reasons": [
+        "二大题（『人总是要死的，但...』 + 4 子题）→ §9.1 阅读原文整篇 pdftotext 乱码（line 51-61 全乱码），整组跳过",
+        "三大题（爸爸场景对话 + 4 子题）→ §9.1 阅读原文整篇 pdftotext 乱码（line 101-129 全乱码），整组跳过",
+        "四大题（文言文《学弈》原文 + 4 子题）→ §9.1 文言原文 pdftotext 乱码（line 161-173），整组跳过；禁多模态抢救"
+      ],
+      "type_distribution": {
+        "fill": 4,
+        "choice": 1
+      },
+      "round_distribution": {
+        "R3": 5
+      },
+      "image_count": 0,
+      "svg_count": 0,
+      "group_count": 1,
+      "processed_at": "2026-05-09",
+      "skill_version": "0.1.0",
+      "round_unification": "5 题原 round=[2,3,3,2,2] avg=2.4 ceil=R3，§6.5 组合题难度统一",
+      "garbled_warning": "标题（一、二、三、四…）+ 阅读材料 pdftotext 乱码（私有字体）；古诗《石灰吟》正文 + 4 子题题面可读，整组入库"
+    },
+    {
+      "sha1": "84fda3101f8fac41de79cedd02fe12892af4fbc8",
+      "source_file": "/home/faminwsl/AI_Workspace/真题/六下/数学/6年级下册数学北师大版/单元试卷/六年级下册数学北师大版第1单元跟踪检测卷（含答案）.pdf",
+      "batch_source": "realpaper_g6_math_beishida_d1_genzong_001",
+      "subject": "math",
+      "grade": 6,
+      "paper_type": "unit",
+      "questions_emitted": 27,
+      "questions_skipped": 0,
+      "type_distribution": {
+        "fill": 9,
+        "judgment": 5,
+        "choice": 5,
+        "calculation": 8
+      },
+      "round_distribution": {
+        "R2": 18,
+        "R1": 6,
+        "R3": 3
+      },
+      "image_count": 5,
+      "svg_count": 10,
+      "group_count": 0,
+      "processed_at": "2026-05-09",
+      "skill_version": "0.1.0",
+      "spec_version": "V3.12.18",
+      "round_judge_method": "v4_script + supervisor_review",
+      "supervisor_findings": "V3.12.18 supervisor 抽查发现 d1 q6/q8 PNG 截错 → 重绘 SVG; 6 道 round 调整 (d1 q7 R1→R2, d1 q26 R1→R3, d2 q11 R3→R2, d2 q12 R3→R1, d2 q28 R4→R3, zhouce q5 R1→R2)"
+    },
+    {
+      "sha1": "20ba70ca8131763974b1b14a3c423cbeac44cdf8",
+      "source_file": "/home/faminwsl/AI_Workspace/真题/六下/数学/6年级下册数学北师大版/单元试卷/六年级下册数学北师大版第2单元跟踪检测卷（含答案）.pdf",
+      "batch_source": "realpaper_g6_math_beishida_d2_genzong_001",
+      "subject": "math",
+      "grade": 6,
+      "paper_type": "unit",
+      "questions_emitted": 30,
+      "questions_skipped": 0,
+      "type_distribution": {
+        "fill": 11,
+        "judgment": 5,
+        "choice": 5,
+        "calculation": 9
+      },
+      "round_distribution": {
+        "R1": 6,
+        "R2": 21,
+        "R3": 3
+      },
+      "image_count": 1,
+      "svg_count": 0,
+      "group_count": 1,
+      "processed_at": "2026-05-09",
+      "skill_version": "0.1.0",
+      "spec_version": "V3.12.18",
+      "round_judge_method": "v4_script + supervisor_review",
+      "supervisor_findings": "V3.12.18 supervisor 抽查发现 d1 q6/q8 PNG 截错 → 重绘 SVG; 6 道 round 调整 (d1 q7 R1→R2, d1 q26 R1→R3, d2 q11 R3→R2, d2 q12 R3→R1, d2 q28 R4→R3, zhouce q5 R1→R2)"
+    },
+    {
+      "sha1": "9bac4f687ef6039f2e0f538aa9ede0da6602fad5",
+      "source_file": "/home/faminwsl/AI_Workspace/真题/六下/数学/6年级下册数学北师大版/周测试卷/六年级下册数学北师大版周测培优卷1（含答案）.pdf",
+      "batch_source": "realpaper_g6_math_beishida_zhouce_peiyou_001",
+      "subject": "math",
+      "grade": 6,
+      "paper_type": "special",
+      "questions_emitted": 20,
+      "questions_skipped": 0,
+      "type_distribution": {
+        "fill": 8,
+        "judgment": 3,
+        "choice": 2,
+        "calculation": 7
+      },
+      "round_distribution": {
+        "R3": 2,
+        "R2": 13,
+        "R1": 3,
+        "R4": 2
+      },
+      "image_count": 9,
+      "svg_count": 1,
+      "group_count": 2,
+      "processed_at": "2026-05-09",
+      "skill_version": "0.1.0",
+      "spec_version": "V3.12.18",
+      "round_judge_method": "v4_script + supervisor_review",
+      "supervisor_findings": "V3.12.18 supervisor 抽查发现 d1 q6/q8 PNG 截错 → 重绘 SVG; 6 道 round 调整 (d1 q7 R1→R2, d1 q26 R1→R3, d2 q11 R3→R2, d2 q12 R3→R1, d2 q28 R4→R3, zhouce q5 R1→R2)"
     }
   ],
   "skipped_files": [
@@ -222,6 +368,13 @@
       "reason": "嵌入私有字体导致 pdftotext 乱码（标题 + 正文部分关键字符无法识别）→ 整卷跳过 (§9.1 完整性优先 + feedback_unclear_abandon)",
       "skipped_at": "2026-05-09",
       "spec_version": "V3.12.7"
+    },
+    {
+      "sha1": "86aa47aa353c0ce1186d6779ed78edd774bf9582",
+      "source_file": "/home/faminwsl/AI_Workspace/真题/六下/语文/6年级下册语文部编版/专项试卷/六年级下册语文部编版期末非连续性文本阅读卷（含答案）.pdf",
+      "reason": "嵌入私有字体导致 pdftotext 全卷乱码（一/二/三/四/五/六/七大题题面、候选池、表格信息全部不可读，仅页脚『关注微信公众号』可识别）→ §9.1 完整性优先整卷跳过；视觉清晰但禁多模态抢救（V3.10 122 道伪题反例）",
+      "skipped_at": "2026-05-09",
+      "spec_version": "V3.12.18"
     }
   ],
   "updated_at": "2026-05-09",
