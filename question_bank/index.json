@@ -1,6 +1,6 @@
 {
-  "version": 51,
-  "updated_at": "2026-05-09",
+  "version": 52,
+  "updated_at": "2026-05-10",
   "batches": [
     {
       "source": "batch_2026_05_07_g6_english_pet_r1",
@@ -113,6 +113,15 @@
       "grade": 6,
       "count": 10,
       "batch_hash": "6569a612f671ce4798c87db3536260a480be1090"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_xsc_baoan_001_subj_held",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 1,
+      "batch_hash": "7cacd3597b83efb2",
+      "updated_at": "2026-05-10",
+      "description": "V3.12.22 主观题保留区（_subj_held 后缀，QuestionDao 自动过滤）"
     }
   ],
   "_changelog": [

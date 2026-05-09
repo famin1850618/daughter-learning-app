@@ -475,59 +475,42 @@ def run_full_check(batch: dict, batch_path: Path, kp_set: set, chapter_set: set)
     errs = [e for e in errs if e]
     report['9_no_double_quotes'] = {'pass': not errs, 'errors': errs}
 
-    # 10/11/13/14: 需 LLM/人，标 manual_required
-    report['10_no_spoiler'] = {'pass': None, 'errors': ['【需 LLM/人手动核查】']}
-    report['11_sample_5'] = {'pass': None, 'errors': ['【需 LLM/人手动核查 5 题】']}
+    # 10/11: 需 LLM/人手动核查
+    report['M1_no_spoiler'] = {'pass': None, 'errors': ['【需 LLM/人手动核查 explanation 不剧透题面答案】']}
+    report['M2_sample_5'] = {'pass': None, 'errors': ['【需 LLM/人手动核查 5 题】']}
 
-    # 12. 理科 SVG 优先（V3.12.19 强化：svg_attempted_failed=true 时必须给 svg_failed_category 白名单）
-    SVG_FAIL_CATEGORIES = {
-        'cartoon_decoration',     # 卡通/写实装饰风格（帐篷、杯子、瓶子、动物等）
-        'photo_realistic',        # 真实照片或写实彩色图
-        'composite_assembly',     # 多部件复杂组装/切拼示意（多块扇形 + 箭头）
-        'legacy_pre_v3_12_17',    # V3.12.17 之前入库存量遗留（不再扩用）
-    }
-    sci_screenshot = []
-    for i, q in enumerate(questions):
-        if q.get('subject') in ('math', 'physics', 'chemistry'):
-            img = q.get('image_data') or ''
-            if img and not img.lstrip().startswith('<svg'):
-                meta = q.get('_image_meta', {})
-                if not meta.get('svg_attempted_failed'):
-                    sci_screenshot.append(f'#{i+1}: 理科用 screenshot 但无 svg_attempted_failed 标记')
-                else:
-                    cat = meta.get('svg_failed_category')
-                    if not cat:
-                        sci_screenshot.append(f'#{i+1}: svg_attempted_failed=true 但缺 svg_failed_category（V3.12.19）')
-                    elif cat not in SVG_FAIL_CATEGORIES:
-                        sci_screenshot.append(f'#{i+1}: svg_failed_category={cat!r} 不在白名单 {SVG_FAIL_CATEGORIES}')
-    report['12_science_svg_priority'] = {'pass': not sci_screenshot, 'errors': sci_screenshot}
+    # V3.12.22: 删 V3.12.20 PDF 路径 5 项（12 svg_priority / 13 svg_4step / 14 dim_consistent / 18 svg_text / 19 svg_dim_arrow）
+    # docx 路径不画 SVG，原图直接 base64 用，相关检查无意义
+    # V3.12.21 worker 错加 `_image_meta.svg_failed_category=legacy_pre_v3_12_17` 字段绕过旧 check 12，是权宜——本 V3.12.22 升级后该兼容字段不再需要
 
-    report['13_svg_4step_followed'] = {'pass': None, 'errors': ['【需 LLM/人核查 commit message】']}
-    report['14_dim_consistent'] = {'pass': None, 'errors': ['【需 LLM/人对照原图】']}
-
-    # 15. group_id 命名空间
+    # 11. group_id 命名空间（V3.12.17）
     errs = check_group_namespace(batch)
-    report['15_group_namespace'] = {'pass': not errs, 'errors': errs}
+    report['11_group_namespace'] = {'pass': not errs, 'errors': errs}
 
-    # 16. 题面措辞同步
+    # 12. 题面措辞同步（V3.12.17）
     errs = [check_emphasis_phrasing(q, i+1) for i, q in enumerate(questions)]
     errs = [e for e in errs if e]
-    report['16_emphasis_phrasing'] = {'pass': not errs, 'errors': errs}
+    report['12_emphasis_phrasing'] = {'pass': not errs, 'errors': errs}
 
-    # 17. choice 题 ABCD 前缀（V3.12.19）
+    # 13. choice 题 ABCD 前缀（V3.12.19）
     errs = [check_choice_letter_prefix(q, i+1) for i, q in enumerate(questions)]
     errs = [e for e in errs if e]
-    report['17_choice_letter_prefix'] = {'pass': not errs, 'errors': errs}
+    report['13_choice_letter_prefix'] = {'pass': not errs, 'errors': errs}
 
-    # 18. SVG <text> ASCII + 在 viewBox 内（V3.12.19）
-    errs = [check_svg_text_quality(q, i+1) for i, q in enumerate(questions)]
-    errs = [e for e in errs if e]
-    report['18_svg_text_quality'] = {'pass': not errs, 'errors': errs}
+    # 14. image_data MIME 不含 WMF/EMF（V3.12.21 docx 路径专）
+    # docx 路径必须把 WMF/EMF 转 PNG/JPEG 后入库，Flutter 不支持渲染 WMF
+    wmf_errors = []
+    for i, q in enumerate(questions):
+        img = q.get('image_data') or ''
+        if img and isinstance(img, str):
+            head = img.lstrip()[:60].lower()
+            if 'image/x-wmf' in head or 'image/x-emf' in head or 'image/wmf' in head or 'image/emf' in head:
+                wmf_errors.append(f'#{i+1}: image_data MIME 是 WMF/EMF（必须 extract_docx.py 转 PNG）')
+    report['14_no_wmf_in_image'] = {'pass': not wmf_errors, 'errors': wmf_errors}
 
-    # 19. SVG 长度标注必带双箭头（V3.12.20）
-    errs = [check_svg_dim_arrow(q, i+1) for i, q in enumerate(questions)]
-    errs = [e for e in errs if e]
-    report['19_svg_dim_arrow'] = {'pass': not errs, 'errors': errs}
+    # M3/M4: docx 路径手动核查（替代 V3.12.20 SVG 4 步 + 标注一致）
+    report['M3_image_owner'] = {'pass': None, 'errors': ['【需 LLM/人核查 docx 内嵌图归属（用 paragraph_image_map）】']}
+    report['M4_image_content_match'] = {'pass': None, 'errors': ['【需 LLM/人核查 content 描述与 image_data 视觉一致】']}
 
     # summary
     auto_items = [k for k, v in report.items() if v['pass'] is not None]
@@ -544,8 +527,11 @@ def run_full_check(batch: dict, batch_path: Path, kp_set: set, chapter_set: set)
 
 
 def print_full_report(report: dict, batch_name: str):
-    """格式化打印 16 项自检报告"""
-    print(f'\n=== Pre-commit check 16 项 ({batch_name}) ===\n')
+    """格式化打印自检报告（V3.12.22 docx 路径简版：13 自动 + 4 手动 M1-M4）"""
+    items = [(k, v) for k, v in report.items() if not k.startswith('_')]
+    auto_n = sum(1 for k, v in items if v['pass'] is not None)
+    manual_n = sum(1 for k, v in items if v['pass'] is None)
+    print(f'\n=== Pre-commit check ({batch_name}): {auto_n} 自动 + {manual_n} 手动 ===\n')
     items = [(k, v) for k, v in report.items() if not k.startswith('_')]
     for k, v in items:
         if v['pass'] is None:
@@ -596,7 +582,7 @@ def main():
     batch = json.loads(Path(args.batch_path).read_text(encoding='utf-8'))
 
     if args.full:
-        # V3.12.17: 跑 16 项完整自检
+        # V3.12.22: 跑 14 项完整自检（docx 路径简版，删 V3.12.20 SVG 5 项）
         report = run_full_check(batch, Path(args.batch_path), kp_set, chapter_set)
         print_full_report(report, Path(args.batch_path).name)
         # 任一自动项 fail → exit 1
