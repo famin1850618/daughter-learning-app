@@ -1,5 +1,5 @@
 {
-  "version": 38,
+  "version": 39,
   "updated_at": "2026-05-09",
   "batches": [
     {
@@ -41,7 +41,7 @@
       "grade": 6,
       "count": 22,
       "kind": "realpaper",
-      "batch_hash": "2fa77f0c9e9b1aac577aafad09fb4d7a63ad4d0e"
+      "batch_hash": "df1167465a225cc48cc3c0f6d8808980eca42a40"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qizhong_003",
@@ -77,7 +77,7 @@
       "grade": 6,
       "count": 22,
       "kind": "realpaper",
-      "batch_hash": "f946628fc5c9606ffb9471bc317f1e9cd2005ae3"
+      "batch_hash": "66bc3e60463e391fc878c603ad3049a6a9ec76f7"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qimo_moni_004",
@@ -95,7 +95,7 @@
       "grade": 6,
       "count": 33,
       "kind": "realpaper",
-      "batch_hash": "01ccfee1f0820217c9d2209cc5dae5b745c71951"
+      "batch_hash": "f73ef70ac25129f2b7b37fb9a001ff6aff11e5c1"
     },
     {
       "source": "realpaper_g6_math_beishida_d2_guoguan_001",
@@ -104,7 +104,7 @@
       "grade": 6,
       "count": 35,
       "kind": "realpaper",
-      "batch_hash": "7eda4681926f8830ee2c4b428804d61d83c933df"
+      "batch_hash": "9308c44632f1643d5308792792dd9c0a93791ca7"
     },
     {
       "source": "realpaper_g6_math_beishida_qizhong_001",
@@ -113,7 +113,7 @@
       "grade": 6,
       "count": 43,
       "kind": "realpaper",
-      "batch_hash": "3782613e0b5eb8c15cc530dada6979f87018cb99"
+      "batch_hash": "78783221c411b5c2fb1500fc4af1cabeb4ded5c1"
     },
     {
       "source": "realpaper_g6_math_beishida_qimo_001",
@@ -122,7 +122,7 @@
       "grade": 6,
       "count": 42,
       "kind": "realpaper",
-      "batch_hash": "1dc8527624ba37afc9d410373689579f31595e02"
+      "batch_hash": "e5cace9e73d474997611797c6348be6e3828d46a"
     },
     {
       "source": "realpaper_g6_math_beishida_xsc_beijing_001",
@@ -131,7 +131,7 @@
       "grade": 6,
       "count": 43,
       "kind": "realpaper",
-      "batch_hash": "e79dcb7816cb9c6b98470de7a28aea0de4069772"
+      "batch_hash": "a856e8b7986d773f798269e261795ca1a3eb4dcb"
     }
   ],
   "_changelog": [

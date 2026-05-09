@@ -477,7 +477,7 @@
       "subject": "math",
       "grade": 6,
       "source": "realpaper_g6_math_beishida_qimo_001",
-      "group_id": "liu_q5_figure",
+      "group_id": "qimo_001_liu_q5_figure",
       "group_order": 1
     },
     {
@@ -493,14 +493,14 @@
       "subject": "math",
       "grade": 6,
       "source": "realpaper_g6_math_beishida_qimo_001",
-      "group_id": "liu_q5_figure",
+      "group_id": "qimo_001_liu_q5_figure",
       "group_order": 2
     },
     {
       "type": "fill",
       "group_id": "qimo_001_liu_q1",
       "group_order": 1,
-      "content": "六年级同学开展太空黄瓜种植活动，先要平整一块长方形地。\n问：他们先在学校的\"科技种植园\"中选择了一块周长是 32 m，长与宽的比是 $5: 3$ 的长方形地。这块长方形地的面积是多少平方米？(单位 m²)",
+      "content": "六年级同学开展太空黄瓜种植活动，先要平整一块长方形地。\n问：他们先在学校的“科技种植园”中选择了一块周长是 32 m，长与宽的比是 $5: 3$ 的长方形地。这块长方形地的面积是多少平方米？(单位 m²)",
       "answer": "60",
       "options": null,
       "explanation": "周长 32 → 长 + 宽 $=16$。比 $5: 3$，长 $=16\\times\\frac{5}{8}=10$，宽 $=16\\times\\frac{3}{8}=6$。面积 $=10\\times 6=60$ m²。",

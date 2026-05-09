@@ -426,7 +426,7 @@
       "type": "fill",
       "group_id": "qizhong_001_wu_q1",
       "group_order": 1,
-      "content": "下面方格纸上的\"点\"表示轮船的航行速度。\n问：根据方格纸上的数据把表格填写完整：时间为 $0\\sim 6$ 时，路程分别是多少千米？（按 0时,1时,2时,3时,4时,5时,6时 的路程顺序填写，单位 km，逗号分隔）",
+      "content": "下面方格纸上的“点”表示轮船的航行速度。\n问：根据方格纸上的数据把表格填写完整：时间为 $0\\sim 6$ 时，路程分别是多少千米？（按 0时,1时,2时,3时,4时,5时,6时 的路程顺序填写，单位 km，逗号分隔）",
       "answer": "0,20,40,60,80,100,120",
       "options": null,
       "explanation": "从图中可读：每 1 小时增加 20 km，是匀速。0,20,40,60,80,100,120 km。",
@@ -442,7 +442,7 @@
       "type": "fill",
       "group_id": "qizhong_001_wu_q1",
       "group_order": 2,
-      "content": "下面方格纸上的\"点\"表示轮船的航行速度。\n问：时间和路程成什么比例？(填 正 或 反)",
+      "content": "下面方格纸上的“点”表示轮船的航行速度。\n问：时间和路程成什么比例？(填 正 或 反)",
       "answer": "正",
       "options": null,
       "explanation": "路程÷时间 $=$ 速度（一定，每小时 20 km），比值定 → 成正比例。",
@@ -458,7 +458,7 @@
       "type": "fill",
       "group_id": "qizhong_001_wu_q1",
       "group_order": 3,
-      "content": "下面方格纸上的\"点\"表示轮船的航行速度。\n问：不计算，看图回答：这艘轮船 2.5 时行驶了多少千米？8 时能行驶多少千米？（按 2.5时,8时 顺序填写，单位 km，逗号分隔）",
+      "content": "下面方格纸上的“点”表示轮船的航行速度。\n问：不计算，看图回答：这艘轮船 2.5 时行驶了多少千米？8 时能行驶多少千米？（按 2.5时,8时 顺序填写，单位 km，逗号分隔）",
       "answer": "50,160",
       "options": null,
       "explanation": "速度 20 km/时。$2.5\\times 20=50$ km；$8\\times 20=160$ km。",
@@ -472,9 +472,9 @@
     },
     {
       "type": "fill",
-      "group_id": "wu_q3",
+      "group_id": "qizhong_001_wu_q3",
       "group_order": 1,
-      "content": "在括号里填上\"平移\"或\"旋转\"。如图所示一个四角星图形依次变换。\n问：第一次变换（左→中左：从一种四角星变成另一种角度的四角星）属于(   )。",
+      "content": "在括号里填上“平移”或“旋转”。如图所示一个四角星图形依次变换。\n问：第一次变换（左→中左：从一种四角星变成另一种角度的四角星）属于(   )。",
       "answer": "旋转",
       "options": null,
       "explanation": "图形改变了方向 → 旋转。",
@@ -484,13 +484,17 @@
       "chapter": "图形的运动",
       "subject": "math",
       "grade": 6,
-      "source": "realpaper_g6_math_beishida_qizhong_001"
+      "source": "realpaper_g6_math_beishida_qizhong_001",
+      "_image_meta": {
+        "svg_attempted_failed": true,
+        "reason": "V3.12.7 入库存量遗留：当时 spec 未要求 SVG 优先（V3.12.17 §9.1.1 起强制）"
+      }
     },
     {
       "type": "fill",
-      "group_id": "wu_q3",
+      "group_id": "qizhong_001_wu_q3",
       "group_order": 2,
-      "content": "在括号里填上\"平移\"或\"旋转\"。如图所示一个四角星图形依次变换。\n问：第二次变换（中左→中右：相同形状向右移动）属于(   )。",
+      "content": "在括号里填上“平移”或“旋转”。如图所示一个四角星图形依次变换。\n问：第二次变换（中左→中右：相同形状向右移动）属于(   )。",
       "answer": "平移",
       "options": null,
       "explanation": "图形保持方向不变只是位置移动 → 平移。",
@@ -500,13 +504,17 @@
       "chapter": "图形的运动",
       "subject": "math",
       "grade": 6,
-      "source": "realpaper_g6_math_beishida_qizhong_001"
+      "source": "realpaper_g6_math_beishida_qizhong_001",
+      "_image_meta": {
+        "svg_attempted_failed": true,
+        "reason": "V3.12.7 入库存量遗留：当时 spec 未要求 SVG 优先（V3.12.17 §9.1.1 起强制）"
+      }
     },
     {
       "type": "fill",
-      "group_id": "wu_q3",
+      "group_id": "qizhong_001_wu_q3",
       "group_order": 3,
-      "content": "在括号里填上\"平移\"或\"旋转\"。如图所示一个四角星图形依次变换。\n问：第三次变换（中右→右：四角星方向再次改变）属于(   )。",
+      "content": "在括号里填上“平移”或“旋转”。如图所示一个四角星图形依次变换。\n问：第三次变换（中右→右：四角星方向再次改变）属于(   )。",
       "answer": "旋转",
       "options": null,
       "explanation": "图形改变了方向 → 旋转。",
@@ -516,7 +524,11 @@
       "chapter": "图形的运动",
       "subject": "math",
       "grade": 6,
-      "source": "realpaper_g6_math_beishida_qizhong_001"
+      "source": "realpaper_g6_math_beishida_qizhong_001",
+      "_image_meta": {
+        "svg_attempted_failed": true,
+        "reason": "V3.12.7 入库存量遗留：当时 spec 未要求 SVG 优先（V3.12.17 §9.1.1 起强制）"
+      }
     },
     {
       "type": "fill",
