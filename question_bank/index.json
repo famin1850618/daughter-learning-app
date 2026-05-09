@@ -1,5 +1,5 @@
 {
-  "version": 33,
+  "version": 34,
   "updated_at": "2026-05-09",
   "batches": [
     {
@@ -120,18 +120,18 @@
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qimo_001.json",
       "subject": "math",
       "grade": 6,
-      "count": 46,
+      "count": 42,
       "kind": "realpaper",
-      "batch_hash": "944238535f94ed0d5d03eb4fa30c67e2efe51ffe"
+      "batch_hash": "845628b55c03c99ce46861b95ae9e2336e304798"
     },
     {
       "source": "realpaper_g6_math_beishida_xsc_beijing_001",
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_xsc_beijing_001.json",
       "subject": "math",
       "grade": 6,
-      "count": 48,
+      "count": 43,
       "kind": "realpaper",
-      "batch_hash": "ae1658ff64770d723a36a40a03ea4ca5213f898d"
+      "batch_hash": "c7eb203a3646700d2f182960ef39003f4044a776"
     }
   ],
   "_changelog": [

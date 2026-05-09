@@ -427,8 +427,8 @@
     },
     {
       "type": "fill",
-      "content": "计算下列各题，能简算的要简算。\n问：$60\\times\\left(\\frac{7}{12}+\\frac{2}{15}\\right)=$",
-      "answer": "43",
+      "content": "计算下列各题，能简算的要简算。请按 (1)(2)(3)(4) 顺序填 4 个答案，分数写成 a/b 形式，逗号分隔。\n(1) $60\\times\\left(\\frac{7}{12}+\\frac{2}{15}\\right)=$\n(2) $\\frac{2}{3}+\\left(\\frac{5}{6}-\\frac{3}{4}\\right)\\div\\frac{3}{8}=$\n(3) $0.125\\times 2\\frac{3}{4}+\\frac{1}{8}\\times 6.25-12.5\\%=$\n(4) $\\left(\\frac{2}{3}-\\frac{1}{4}\\right)\\times 0.6\\div 4=$",
+      "answer": "43,8/9,1,1/16",
       "options": null,
       "explanation": "$60\\times\\frac{7}{12}+60\\times\\frac{2}{15}=35+8=43$。",
       "knowledge_point": "总复习/数与代数综合",
@@ -436,54 +436,7 @@
       "chapter": "总复习",
       "subject": "math",
       "grade": 6,
-      "source": "realpaper_g6_math_beishida_qimo_001",
-      "group_id": "liu_q3_compute",
-      "group_order": 1
-    },
-    {
-      "type": "fill",
-      "content": "计算下列各题，能简算的要简算。\n问：$\\frac{2}{3}+\\left(\\frac{5}{6}-\\frac{3}{4}\\right)\\div\\frac{3}{8}=$",
-      "answer": "8/9",
-      "options": null,
-      "explanation": "$\\left(\\frac{5}{6}-\\frac{3}{4}\\right)=\\frac{1}{12}$；$\\frac{1}{12}\\div\\frac{3}{8}=\\frac{8}{36}=\\frac{2}{9}$；$\\frac{2}{3}+\\frac{2}{9}=\\frac{6+2}{9}=\\frac{8}{9}$。",
-      "knowledge_point": "总复习/数与代数综合",
-      "round": 2,
-      "chapter": "总复习",
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_qimo_001",
-      "group_id": "liu_q3_compute",
-      "group_order": 2
-    },
-    {
-      "type": "fill",
-      "content": "计算下列各题，能简算的要简算。\n问：$0.125\\times 2\\frac{3}{4}+\\frac{1}{8}\\times 6.25-12.5\\%=$",
-      "answer": "1",
-      "options": null,
-      "explanation": "$0.125=\\frac{1}{8}=12.5\\%$。提公因子 $\\frac{1}{8}$：$\\frac{1}{8}(2\\frac{3}{4}+6.25-1)=\\frac{1}{8}\\times 8=1$。",
-      "knowledge_point": "总复习/数与代数综合",
-      "round": 2,
-      "chapter": "总复习",
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_qimo_001",
-      "group_id": "liu_q3_compute",
-      "group_order": 3
-    },
-    {
-      "type": "fill",
-      "content": "计算下列各题，能简算的要简算。\n问：$\\left(\\frac{2}{3}-\\frac{1}{4}\\right)\\times 0.6\\div 4=$",
-      "answer": "1/16",
-      "options": null,
-      "explanation": "$\\frac{2}{3}-\\frac{1}{4}=\\frac{8-3}{12}=\\frac{5}{12}$；$\\frac{5}{12}\\times 0.6=\\frac{5}{12}\\times\\frac{3}{5}=\\frac{1}{4}$；$\\frac{1}{4}\\div 4=\\frac{1}{16}$。",
-      "knowledge_point": "总复习/数与代数综合",
-      "round": 2,
-      "chapter": "总复习",
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_qimo_001",
-      "group_id": "liu_q3_compute",
-      "group_order": 4
+      "source": "realpaper_g6_math_beishida_qimo_001"
     },
     {
       "type": "fill",
@@ -500,8 +453,8 @@
     },
     {
       "type": "fill",
-      "content": "解比例。\n问：$\\frac{4}{7}x:\\frac{2}{3}=4: 7$，$x$＝(   )。",
-      "answer": "2/3",
+      "content": "解比例。请按 (1)(2) 顺序填 2 个 $x$ 的值，分数写成 a/b 形式，逗号分隔。\n(1) $\\frac{4}{7}x:\\frac{2}{3}=4: 7$，$x$＝(   )。\n(2) $\\frac{2.4}{x}=\\frac{72}{3}$，$x$＝(   )。",
+      "answer": "2/3,0.1",
       "options": null,
       "explanation": "$7\\times\\frac{4}{7}x=4\\times\\frac{2}{3}$，$4 x=\\frac{8}{3}$，$x=\\frac{2}{3}$。",
       "knowledge_point": "比和比例/解比例",
@@ -509,24 +462,7 @@
       "chapter": "比例",
       "subject": "math",
       "grade": 6,
-      "source": "realpaper_g6_math_beishida_qimo_001",
-      "group_id": "liu_q4_proportion",
-      "group_order": 1
-    },
-    {
-      "type": "fill",
-      "content": "解比例。\n问：$\\frac{2.4}{x}=\\frac{72}{3}$，$x$＝(   )。",
-      "answer": "0.1",
-      "options": null,
-      "explanation": "$72 x=2.4\\times 3=7.2$，$x=0.1$。",
-      "knowledge_point": "比和比例/解比例",
-      "round": 2,
-      "chapter": "比例",
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_qimo_001",
-      "group_id": "liu_q4_proportion",
-      "group_order": 2
+      "source": "realpaper_g6_math_beishida_qimo_001"
     },
     {
       "type": "fill",
