@@ -22,6 +22,7 @@ import 'services/difficulty_settings_service.dart';
 import 'services/review_request_service.dart';
 import 'services/data_reset_service.dart';
 import 'services/diagnostic_service.dart';
+import 'data/bundled_batches.dart';
 import 'database/question_dao.dart';
 import 'models/question.dart';
 import 'models/subject.dart';
@@ -35,33 +36,8 @@ import 'database/cambridge_english_kp_seed.dart';
 /// V3.10：删除 12 个 cron AI 出的老 batch（语数英 R1-R3 + 初一 R1）—— 全部 deprecated。
 /// 新装 app 不再 import 这些题；老用户升级时 DB v14 迁移把已入库的 source 改 _deprecated。
 /// JSON 文件本身保留在 question_bank/ 仓库做历史 / CDN 回滚用。
-const _bundledBatchAssets = [
-  // V3.9 Cambridge English (PET / FCE / CAE Foundation)
-  'assets/data/batches/batch_2026_05_07_g6_english_pet_r1.json',
-  'assets/data/batches/batch_2026_05_08_g6_english_pet_r2.json',
-  'assets/data/batches/batch_2026_05_08_g6_english_pet_r3.json',
-  'assets/data/batches/batch_2026_05_08_g6_english_pet_r4.json',
-  // V3.12.7 语文六下部编版真题入库 6 卷共 96 题（第三轮重扫，§1.5 原题保真）
-  'assets/data/batches/realpaper_g6_chinese_bubian_qizhong_002.json',
-  'assets/data/batches/realpaper_g6_chinese_bubian_qizhong_003.json',
-  'assets/data/batches/realpaper_g6_chinese_bubian_qizhong_004.json',
-  'assets/data/batches/realpaper_g6_chinese_bubian_qizhong_008.json',
-  'assets/data/batches/realpaper_g6_chinese_bubian_qimo_quanzhen_001.json',
-  'assets/data/batches/realpaper_g6_chinese_bubian_qimo_moni_004.json',
-  // V3.12.7 数学六下北师大版真题入库 5 卷共 205 题（第三轮重扫，§1.5 原题保真）
-  'assets/data/batches/realpaper_g6_math_beishida_d1_guoguan_001.json',
-  'assets/data/batches/realpaper_g6_math_beishida_d2_guoguan_001.json',
-  'assets/data/batches/realpaper_g6_math_beishida_qizhong_001.json',
-  'assets/data/batches/realpaper_g6_math_beishida_qimo_001.json',
-  'assets/data/batches/realpaper_g6_math_beishida_xsc_beijing_001.json',
-  // V3.10 真题入库后陆续追加
-  // V3.12.3 删除 d4/d5/d6 OCR 抢救卷（识别不清直接放弃，原则见 .realpaper-spec.md §9.1）
-  // V3.10 第九批 (2026-05-08): 8 卷数学六下 184 题
-  // V3.12.5 第十批 (2026-05-08): 数学六下剩余源卷
-  // V3.12.6 语文六下部编版真题入库 8 套共 247 题
-  // V3.12.6 数学六下北师大版真题重扫入库 10 卷共 419 题
-  //   d1/d2 跟踪+过关 + d4 过关（5 卷）+ 周测 1 + 期中 1 + 期末 1 + 京/西小升初 2
-];
+// V3.12.9_fix: list 已抽到 lib/data/bundled_batches.dart，main.dart 和设置页"重建题库"共用
+const _bundledBatchAssets = bundledBatchAssets;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

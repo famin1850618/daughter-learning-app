@@ -14,6 +14,7 @@ import '../services/difficulty_settings_service.dart';
 import '../services/review_request_service.dart';
 import '../services/data_reset_service.dart';
 import '../services/diagnostic_service.dart';
+import '../data/bundled_batches.dart';
 import '../services/practice_service.dart';
 import '../services/reward_service.dart';
 import '../services/assessment_service.dart';
@@ -1164,28 +1165,40 @@ class _DataResetSectionState extends State<_DataResetSection> {
     if (ok != true || !mounted) return;
     setState(() => _loading = true);
     final before = await DataResetService().rebuildQuestions();
-    // 重 import 内置题包
+    // 重 import 内置题包（V3.12.9_fix: 用 bundledBatchAssets 硬编码 list，
+    // 跟 main.dart 启动钩子共用同一份。AssetManifest 反射在新版 Flutter 不稳定。）
     int imported = 0;
     int totalQ = 0;
-    try {
-      final manifest = await rootBundle.loadString('AssetManifest.json');
-      final assets = (jsonDecode(manifest) as Map<String, dynamic>).keys
-          .where((k) => k.startsWith('assets/data/batches/') && k.endsWith('.json'))
-          .toList();
-      final svc = QuestionUpdateService();
-      for (final a in assets) {
-        try {
-          final j = await rootBundle.loadString(a);
-          totalQ += await svc.importBatchJsonString(j);
-          imported++;
-        } catch (_) {}
+    final failedAssets = <String>[];
+    final svc = QuestionUpdateService();
+    for (final a in bundledBatchAssets) {
+      try {
+        final j = await rootBundle.loadString(a);
+        final n = await svc.importBatchJsonString(j);
+        totalQ += n;
+        if (n > 0) imported++;
+        if (n == 0) {
+          failedAssets.add('$a (0 题)');
+          await DiagnosticService().logError(
+            level: 'warn', context: 'rebuild_import',
+            error: 'Import returned 0: $a',
+          );
+        }
+      } catch (e, stack) {
+        failedAssets.add('$a (异常)');
+        await DiagnosticService().logError(
+          level: 'error', context: 'rebuild_import',
+          error: 'Import failed: $a -> $e', stack: stack,
+        );
       }
-    } catch (_) {}
+    }
     if (!mounted) return;
     setState(() => _loading = false);
+    final msg = failedAssets.isEmpty
+        ? '重建完成：清 $before 道，新导入 $imported 卷 / $totalQ 题'
+        : '重建完成：清 $before 道，导入 $imported 卷 / $totalQ 题；${failedAssets.length} 卷失败（详见诊断面板）';
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('重建完成：清 $before 道，新导入 $imported 卷 / $totalQ 题')),
-      // ignore: use_build_context_synchronously
+      SnackBar(content: Text(msg), duration: const Duration(seconds: 6)),
     );
   }
 
