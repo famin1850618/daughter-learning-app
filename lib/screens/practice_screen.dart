@@ -634,9 +634,15 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                       style: TextStyle(fontSize: 12, color: Colors.orange.shade800)),
                 ]),
               ),
-            ...q.options!.map((opt) {
+            ...q.options!.asMap().entries.map((e) {
+              final idx = e.key;
+              final opt = e.value;
               final letter = opt.substring(0, 1);
               final isSelected = (_selectedOption ?? '').contains(letter);
+              // V3.12.22 A3: 选项图（可选）
+              final optImage = (q.optionImages != null && idx < q.optionImages!.length)
+                  ? q.optionImages![idx]
+                  : null;
               return GestureDetector(
                 onTap: () {
                   if (isMulti) {
@@ -656,40 +662,53 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                       width: isSelected ? 2 : 1,
                     ),
                   ),
-                  child: Row(children: [
-                    if (isMulti)
-                      Container(
-                        width: 24, height: 24,
-                        decoration: BoxDecoration(
-                          color: isSelected ? AppTheme.primary : Colors.white,
-                          borderRadius: BorderRadius.circular(4),
-                          border: Border.all(
-                            color: isSelected ? AppTheme.primary : Colors.grey[400]!,
-                            width: 2,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(children: [
+                        if (isMulti)
+                          Container(
+                            width: 24, height: 24,
+                            decoration: BoxDecoration(
+                              color: isSelected ? AppTheme.primary : Colors.white,
+                              borderRadius: BorderRadius.circular(4),
+                              border: Border.all(
+                                color: isSelected ? AppTheme.primary : Colors.grey[400]!,
+                                width: 2,
+                              ),
+                            ),
+                            child: isSelected
+                                ? const Icon(Icons.check, size: 16, color: Colors.white)
+                                : null,
+                          )
+                        else
+                          CircleAvatar(
+                            radius: 12,
+                            backgroundColor: isSelected ? AppTheme.primary : Colors.grey[200],
+                            child: Text(letter,
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  color: isSelected ? Colors.white : Colors.grey[600],
+                                  fontWeight: FontWeight.bold,
+                                )),
                           ),
+                        const SizedBox(width: 10),
+                        if (isMulti)
+                          Text('$letter. ',
+                              style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
+                        Expanded(child: MathText(opt.length > 2 ? opt.substring(2) : opt,
+                            style: const TextStyle(fontSize: 15))),
+                      ]),
+                      // V3.12.22 A3: 选项图（PNG/JPEG base64 或 SVG）
+                      if (optImage != null && optImage.isNotEmpty) ...[
+                        const SizedBox(height: 8),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 34),
+                          child: _renderOptionImage(optImage),
                         ),
-                        child: isSelected
-                            ? const Icon(Icons.check, size: 16, color: Colors.white)
-                            : null,
-                      )
-                    else
-                      CircleAvatar(
-                        radius: 12,
-                        backgroundColor: isSelected ? AppTheme.primary : Colors.grey[200],
-                        child: Text(letter,
-                            style: TextStyle(
-                              fontSize: 12,
-                              color: isSelected ? Colors.white : Colors.grey[600],
-                              fontWeight: FontWeight.bold,
-                            )),
-                      ),
-                    const SizedBox(width: 10),
-                    if (isMulti)
-                      Text('$letter. ',
-                          style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
-                    Expanded(child: MathText(opt.length > 2 ? opt.substring(2) : opt,
-                        style: const TextStyle(fontSize: 15))),
-                  ]),
+                      ],
+                    ],
+                  ),
                 ),
               );
             }),
@@ -1259,6 +1278,27 @@ class _RewardSummaryCard extends StatelessWidget {
       ),
     );
   }
+}
+
+// V3.12.22 A3: 选项图渲染 helper（比题目图小，限制 100px 高度）
+Widget _renderOptionImage(String data) {
+  Widget child;
+  if (data.trimLeft().startsWith('<svg')) {
+    child = SvgPicture.string(data, height: 100, fit: BoxFit.contain,
+      placeholderBuilder: (_) => const SizedBox(height: 100,
+        child: Center(child: CircularProgressIndicator(strokeWidth: 2))),
+    );
+  } else if (data.startsWith('data:image/')) {
+    try {
+      final base64Str = data.split(',').last;
+      child = Image.memory(base64Decode(base64Str), height: 100, fit: BoxFit.contain);
+    } catch (_) {
+      child = const Text('（选项图加载失败）', style: TextStyle(color: Colors.grey, fontSize: 12));
+    }
+  } else {
+    child = const SizedBox.shrink();
+  }
+  return Align(alignment: Alignment.centerLeft, child: child);
 }
 
 // ── 题目附图（SVG 或 base64 image）───────────────

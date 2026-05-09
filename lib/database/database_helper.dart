@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 20,
+      version: 21,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
@@ -462,6 +462,13 @@ class DatabaseHelper {
       } catch (_) {/* 无数据 */}
     }
 
+    if (oldVersion < 21) {
+      // v21: V3.12.22 A3 加 option_images 列（choice 选项图：折线行程图/几何图选项等）
+      try {
+        await db.execute('ALTER TABLE questions ADD COLUMN option_images TEXT');
+      } catch (_) {/* 已加过则跳 */}
+    }
+
     if (oldVersion < 20) {
       // v20: V3.12.8 兜底——再次强制清掉所有 realpaper_g6 题（含可能漏的英语）
       // V3.12.7 实测：用户装 final.apk 后题数仍接近旧值，说明 v18→v19 升级在某些设备没正确执行。
@@ -531,6 +538,7 @@ class DatabaseHelper {
         type INTEGER NOT NULL,
         difficulty INTEGER NOT NULL,
         options TEXT,
+        option_images TEXT,
         answer TEXT NOT NULL,
         explanation TEXT,
         image_data TEXT,

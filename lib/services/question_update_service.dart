@@ -227,6 +227,9 @@ class QuestionUpdateService extends ChangeNotifier {
         // 用户看到"导入完成无新增题目"。这是反复修不好题量 bug 的真凶。
         difficulty: _difficultyFromKey(m['difficulty'] as String?),
         options: (m['options'] as List?)?.cast<String>(),
+        // V3.12.22 A3: option_images 解析（与 options 同长，每元素 base64 data URL 或 null）
+        optionImages: (m['option_images'] as List?)?.map((e) =>
+            e == null || (e is String && e.isEmpty) ? null : e as String).toList(),
         answer: m['answer'] as String,
         explanation: m['explanation'] as String?,
         imageData: (m['image'] as String?) ?? (m['image_data'] as String?),

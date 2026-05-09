@@ -97,6 +97,29 @@ def extract_text_pythondocx(docx_path: Path) -> Optional[str]:
         return None
 
 
+def extract_text_paragraph_aligned(docx_path: Path) -> Optional[str]:
+    """V3.12.22 A1: 用 python-docx 按 word/document.xml 段顺序输出 raw.txt
+    每行 = 一个 docx 段落（含空段保留）→ raw.txt 行号 == paragraph_image_map 段索引
+
+    解决 V3.12.21 痛点：libreoffice 转 txt 拼接段落后，raw.txt 行号与 pmap 段索引不对应。
+    """
+    if docx_lib is None:
+        return None
+    try:
+        d = docx_lib.Document(str(docx_path))
+        # 按 document.xml 顺序遍历，包括空段（与 paragraph_image_map 索引同步）
+        lines = []
+        # python-docx 的 d.paragraphs 是 body level 段落（不含 table 内部）
+        # paragraph_image_map 解析的也是 body 段落（同源），所以索引天然对齐
+        for p in d.paragraphs:
+            t = p.text  # 保留空段（不 strip 整行）
+            lines.append(t)
+        return '\n'.join(lines)
+    except Exception as e:
+        print(f'  ⚠ paragraph-aligned extract failed: {e}', file=sys.stderr)
+        return None
+
+
 # ----------------------------------------------------------------------
 # Step 2: extract media
 # ----------------------------------------------------------------------
@@ -347,6 +370,20 @@ def process_docx(docx_path: Path, force: bool = False) -> dict:
             text = extract_text_pythondocx(docx_path) or ''
         raw_path.write_text(text, encoding='utf-8')
         print(f'  · text 提取 {len(text)} chars')
+
+    # 1.5. V3.12.22 A1: 段对齐 raw_aligned.txt（行号 == paragraph_image_map 段索引）
+    # 修 V3.12.21 paragraph_image_map 索引与 raw.txt 行号不对应的痛点
+    aligned_path = out_dir / 'raw_aligned.txt'
+    if aligned_path.exists() and not force:
+        print(f'  · raw_aligned 已缓存')
+    else:
+        aligned = extract_text_paragraph_aligned(docx_path)
+        if aligned is not None:
+            aligned_path.write_text(aligned, encoding='utf-8')
+            n_para = len(aligned.split('\n'))
+            print(f'  · raw_aligned 输出 {n_para} 段（与 paragraph_image_map 索引同步）')
+        else:
+            print(f'  ⚠ raw_aligned 提取失败（pmap 推断图归属时 fallback 用 raw.txt）')
 
     # 2. extract media
     media_meta_path = out_dir / 'media_meta.json'

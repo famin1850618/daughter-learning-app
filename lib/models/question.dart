@@ -59,6 +59,11 @@ class Question {
   final QuestionType type;
   final Difficulty difficulty;
   final List<String>? options;
+  /// V3.12.22 A3：选项图（与 options 同长，每元素对应该选项的图片 data URL）。
+  /// null 表示该选项纯文字；非 null 表示该选项含图（可与 options 文字共存或仅图无文字）。
+  /// UI 渲染：options[i] 文字 + （如有）optionImages[i] 图片，垂直堆叠。
+  /// 适用场景：选项是图（折线行程图 / 几何图选项 / 漫画选项）的 choice 题。
+  final List<String?>? optionImages;
   final String answer;
   final String? explanation;
   /// 题目附图：SVG 字符串（以 `<svg` 开头）或 data URL（如 `data:image/png;base64,...`）。null 表示无图。
@@ -87,6 +92,7 @@ class Question {
     required this.type,
     required this.difficulty,
     this.options,
+    this.optionImages,
     required this.answer,
     this.explanation,
     this.imageData,
@@ -123,6 +129,8 @@ class Question {
       'type': type.index,
       'difficulty': difficulty.index,
       'options': options?.join('||'),
+      // V3.12.22 A3: option_images 用 \\n 分隔（base64 不含 \\n，安全）；null 用空字符串占位
+      'option_images': optionImages?.map((i) => i ?? '').join('\n'),
       'answer': answer,
       'explanation': explanation,
       'image_data': imageData,
@@ -159,6 +167,13 @@ class Question {
       type: QuestionType.values[map['type'] as int],
       difficulty: Difficulty.values[map['difficulty'] as int],
       options: optionsRaw?.split('||'),
+      // V3.12.22 A3: option_images 解析（'\n' 分隔，空字符串 → null）
+      optionImages: () {
+        final raw = map['option_images'] as String?;
+        if (raw == null || raw.isEmpty) return null;
+        final parts = raw.split('\n');
+        return parts.map((p) => p.isEmpty ? null : p).toList();
+      }(),
       answer: map['answer'] as String,
       explanation: map['explanation'] as String?,
       imageData: map['image_data'] as String?,
