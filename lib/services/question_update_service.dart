@@ -15,16 +15,17 @@ import '../database/knowledge_point_dao.dart';
 /// 通过 GitHub + jsDelivr CDN 拉取静态题包做增量更新。
 /// 不是 API（没有后端代码）—— 本质就是下载 JSON 文件 + 按 source 幂等导入。
 class QuestionUpdateService extends ChangeNotifier {
+  // V3.12.15: GitHub raw 优先（实时无缓存）/ jsDelivr 备选
+  // V3.12.14 实测: jsDelivr 多边缘节点缓存延迟 30+ min, 部分节点拿老版本
+  // GitHub raw 实时反映 commit, 国内偶尔慢但可接受 + jsDelivr fallback 兜底
   static const _manifestUrls = [
-    // 首选：jsDelivr 全球 CDN（国内访问稳定）
-    'https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/index.json',
-    // 备选：GitHub raw（国内可能慢）
     'https://raw.githubusercontent.com/famin1850618/daughter-learning-app/main/question_bank/index.json',
+    'https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/index.json',
   ];
 
   static const _batchUrlPrefixes = [
-    'https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/',
     'https://raw.githubusercontent.com/famin1850618/daughter-learning-app/main/question_bank/',
+    'https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/',
   ];
 
   static const _keyLastSync = 'q_last_sync';
