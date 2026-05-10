@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 23,
+      version: 24,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
@@ -474,6 +474,32 @@ class DatabaseHelper {
       try {
         await db.execute('ALTER TABLE questions ADD COLUMN ai_dispute_json TEXT');
       } catch (_) {/* 已加过则跳 */}
+    }
+
+    if (oldVersion < 24) {
+      // v24: V3.18 章节体系简化（Famin 7 chapter 决策）—— 老 chapter 表残留清理
+      // 问题: curriculum_dao.insertIfMissing 用 INSERT OR IGNORE 只加新的不删老的。
+      // V3.14 简化后 seed 只有 7 个语文 chapter，但老用户 db 里还有 13+ 个老的
+      // （修辞/句式与标点/现代文阅读/课文与名著/名著阅读/语法/语法与句式/小升初综合/中考综合）
+      // → app 章节列表显示老旧体系，跟 V3.18 v2 题库匹配不上。
+      //
+      // 修法：DELETE 不在新 seed 中的 chapter + 同步清 KP 老命名残留
+      // （新 seed 用 7 chapter 命名，老 KP "修辞/比喻"等已无对应入库题）
+      try {
+        // 语文 chapter: 删不在 7 个标准里的（V3.14 简化）
+        await db.execute('''
+          DELETE FROM curriculum
+          WHERE subject = '语文' AND chapter_name NOT IN
+            ('字词','句子和语法','阅读理解','古诗文','文学常识','综合性学习','写作')
+        ''');
+        // 数学 chapter 不动（数学 chapter 没简化过）
+        // KP 表: 删语文老 category 残留
+        await db.execute('''
+          DELETE FROM knowledge_points
+          WHERE subject = '语文' AND category NOT IN
+            ('字词','句子和语法','阅读理解','古诗文','文学常识','综合性学习','写作')
+        ''');
+      } catch (_) {/* 已删过则跳 */}
     }
 
     if (oldVersion < 23) {
