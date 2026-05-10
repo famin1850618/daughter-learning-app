@@ -233,6 +233,40 @@
       "reason": "v3_18_residual_format_hint",
       "raw_excerpt": "如图中每个小方格都可以看成是边长 $1$ 厘米的小正方形。如果用数对表示点 $P$ 的位置是（$9$，$4$），那么点 $O$ 的位置可以用 ____ 表示。（格式：（列, 行））",
       "_violation": "audit_v3_18_keyword_格式："
+    },
+    {
+      "qnum": "23",
+      "reason": "simplified_dazu_omath_lost",
+      "audit_date": "2026-05-11",
+      "audit_source": "audit_phase1_simplified_dazu_v3.18_supplement",
+      "evidence": "原 q23 脱式计算 (1)(2)(3) 三子题，OMath 完全丢失（omath_map.json 空），(1)(3) raw 题面空。worker 只入 (2) 8×(4.2×12.5)。按 V3.16 OMath 丢失硬规则整组撤回。",
+      "missing_subqs": "(1)(3) OMath 丢失题面空白",
+      "withdrawn_indices_in_batch": [
+        8
+      ],
+      "withdrawn_raw_excerpts": [
+        "23．脱式计算，能简算的要写出简算过程。\n（1）\n（2）8×（4.2×12.5）\n（3）"
+      ],
+      "withdrawn_contents": [
+        "脱式计算（能简算的要简算）：$8\\times(4.2\\times 12.5)$"
+      ]
+    },
+    {
+      "qnum": "24",
+      "reason": "simplified_dazu",
+      "audit_date": "2026-05-11",
+      "audit_source": "audit_phase1_simplified_dazu_v3.18_supplement",
+      "evidence": "原 q24 解方程 (1) 4x-1.6=36 (2) x-40%x=4.2 (3) OMath 丢失。worker 只入 (1)，(2) 也是有效方程。违 ⊥1。",
+      "missing_subqs": "(2) x-40%x=4.2 (3) OMath 丢失",
+      "withdrawn_indices_in_batch": [
+        9
+      ],
+      "withdrawn_raw_excerpts": [
+        "24．解方程。\n（1）4x﹣1.6＝36\n（2）x﹣40%x＝4.2\n（3）"
+      ],
+      "withdrawn_contents": [
+        "解方程：$4x-1.6=36$"
+      ]
     }
   ],
   "questions": [
@@ -389,32 +423,6 @@
       "answer": "C",
       "explanation": "图示去 $0\\to 1$ 时行 $50$ km，活动 $1\\to 5$ 时（$4$ 小时），返 $5\\to 6$ 时。速度 $50\\div 1=50$ km/h ✓。A 错（$4$ 小时）；B 错（往返 $100$ km）；D 错。",
       "_raw_excerpt": "14．如图表示育才小学六年级同学从学校出发，乘车到光明农场参加实践活动，之后乘车返回学校的情况。下面四种描述正确的是（　　）\n\nA．他们在光明农场活动了6个小时。\t\nB．汽车往返一共行驶了50千米。\t\nC．汽车往返的速度都是50千米/时。\t\nD．汽车往返的速度都是100千米/时。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_qm_luohu_001",
-      "round": 2,
-      "type": "fill",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/数与代数综合",
-      "content": "脱式计算（能简算的要简算）：$8\\times(4.2\\times 12.5)$",
-      "answer": "420",
-      "explanation": "$8\\times(4.2\\times 12.5)=8\\times 12.5\\times 4.2=100\\times 4.2=420$（乘法交换律 + 结合律）。",
-      "_raw_excerpt": "23．脱式计算，能简算的要写出简算过程。\n（1）\n（2）8×（4.2×12.5）\n（3）"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_qm_luohu_001",
-      "round": 1,
-      "type": "fill",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/数与代数综合",
-      "content": "解方程：$4x-1.6=36$",
-      "answer": "9.4",
-      "explanation": "$4x=36+1.6=37.6$，$x=37.6\\div 4=9.4$。",
-      "_raw_excerpt": "24．解方程。\n（1）4x﹣1.6＝36\n（2）x﹣40%x＝4.2\n（3）"
     },
     {
       "subject": "math",
