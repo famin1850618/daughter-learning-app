@@ -167,7 +167,7 @@
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
       "round": 2,
-      "type": "fill",
+      "type": "choice",
       "chapter": "字词",
       "knowledge_point": "字词/成语运用",
       "group_id": "realpaper_g6_chinese_bubian_qm_nanshan_001_q5",
@@ -176,14 +176,21 @@
       "answer": "B",
       "explanation": "「与世隔绝之态」搭配恰当，形容隐居的状态。",
       "_round_reasoning": "R2 因为：成语 + 修饰词搭配，参考 chinese_r2_anchor_1 R2 同档。",
-      "_raw_excerpt": "5．（3分）照样子，选择合适的词语搭配填空，写序号。\nA.之策B.之态C.之义D.之苦E.之物\n零七八碎（E）"
+      "_raw_excerpt": "5．（3分）照样子，选择合适的词语搭配填空，写序号。\nA.之策B.之态C.之义D.之苦E.之物\n零七八碎（E）",
+      "options": [
+        "A. 之策",
+        "B. 之态",
+        "C. 之义",
+        "D. 之苦",
+        "E. 之物"
+      ]
     },
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
       "round": 2,
-      "type": "fill",
+      "type": "choice",
       "chapter": "字词",
       "knowledge_point": "字词/成语运用",
       "group_id": "realpaper_g6_chinese_bubian_qm_nanshan_001_q5",
@@ -192,14 +199,21 @@
       "answer": "A",
       "explanation": "「精兵简政之策」是政策措施。",
       "_round_reasoning": "R2 因为：成语+搭配。",
-      "_raw_excerpt": "5．（3分）照样子，选择合适的词语搭配填空，写序号。\nA.之策B.之态C.之义D.之苦E.之物\n零七八碎（E）"
+      "_raw_excerpt": "5．（3分）照样子，选择合适的词语搭配填空，写序号。\nA.之策B.之态C.之义D.之苦E.之物\n零七八碎（E）",
+      "options": [
+        "A. 之策",
+        "B. 之态",
+        "C. 之义",
+        "D. 之苦",
+        "E. 之物"
+      ]
     },
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
       "round": 2,
-      "type": "fill",
+      "type": "choice",
       "chapter": "字词",
       "knowledge_point": "字词/成语运用",
       "group_id": "realpaper_g6_chinese_bubian_qm_nanshan_001_q5",
@@ -208,14 +222,21 @@
       "answer": "D",
       "explanation": "「声泪俱下之苦」描述悲痛之苦。",
       "_round_reasoning": "R2 因为：成语+搭配。",
-      "_raw_excerpt": "5．（3分）照样子，选择合适的词语搭配填空，写序号。\nA.之策B.之态C.之义D.之苦E.之物\n零七八碎（E）"
+      "_raw_excerpt": "5．（3分）照样子，选择合适的词语搭配填空，写序号。\nA.之策B.之态C.之义D.之苦E.之物\n零七八碎（E）",
+      "options": [
+        "A. 之策",
+        "B. 之态",
+        "C. 之义",
+        "D. 之苦",
+        "E. 之物"
+      ]
     },
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
       "round": 2,
-      "type": "fill",
+      "type": "choice",
       "chapter": "字词",
       "knowledge_point": "字词/成语运用",
       "group_id": "realpaper_g6_chinese_bubian_qm_nanshan_001_q5",
@@ -224,7 +245,14 @@
       "answer": "C",
       "explanation": "「赴汤蹈火之义」=不畏艰险的大义。",
       "_round_reasoning": "R2 因为：成语+搭配。",
-      "_raw_excerpt": "5．（3分）照样子，选择合适的词语搭配填空，写序号。\nA.之策B.之态C.之义D.之苦E.之物\n零七八碎（E）"
+      "_raw_excerpt": "5．（3分）照样子，选择合适的词语搭配填空，写序号。\nA.之策B.之态C.之义D.之苦E.之物\n零七八碎（E）",
+      "options": [
+        "A. 之策",
+        "B. 之态",
+        "C. 之义",
+        "D. 之苦",
+        "E. 之物"
+      ]
     },
     {
       "subject": "chinese",
@@ -326,7 +354,7 @@
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
       "round": 2,
-      "type": "fill",
+      "type": "choice",
       "chapter": "文学常识",
       "knowledge_point": "文学常识/古代文学常识",
       "group_id": "realpaper_g6_chinese_bubian_qm_nanshan_001_q11",
@@ -335,14 +363,20 @@
       "answer": "D",
       "explanation": "「苟日新，日日新，又日新」（出自《礼记》）强调不断革新，与「创新」语境对位。",
       "_round_reasoning": "R2 因为：理解层级 2（名言释义+语境对位），4 选项均含变化/创新主题；rubric 无降档信号。",
-      "_raw_excerpt": "11．（3分）根据句意选择相关的名言，填序号。\nA.穷则变，变则通，通则久。\nB.苟利于民，不必法古；苟周于事，不必循旧。\nC.青，取之于蓝，而青于蓝。\nD.苟日新，日日新，又日新。\n①创新是民族进步的灵魂，是一个国家兴旺发达的不竭源泉，正所谓“　   　”。\n②在新冠疫情的冲击之下，许多中小企业难以为继，要应对前所未有的危机和挑战，必须明白“　   　”的道理。"
+      "_raw_excerpt": "11．（3分）根据句意选择相关的名言，填序号。\nA.穷则变，变则通，通则久。\nB.苟利于民，不必法古；苟周于事，不必循旧。\nC.青，取之于蓝，而青于蓝。\nD.苟日新，日日新，又日新。\n①创新是民族进步的灵魂，是一个国家兴旺发达的不竭源泉，正所谓“　   　”。\n②在新冠疫情的冲击之下，许多中小企业难以为继，要应对前所未有的危机和挑战，必须明白“　   　”的道理。",
+      "options": [
+        "A. 穷则变，变则通，通则久",
+        "B. 苟利于民，不必法古；苟周于事，不必循旧",
+        "C. 青，取之于蓝，而青于蓝",
+        "D. 苟日新，日日新，又日新"
+      ]
     },
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
       "round": 2,
-      "type": "fill",
+      "type": "choice",
       "chapter": "文学常识",
       "knowledge_point": "文学常识/古代文学常识",
       "group_id": "realpaper_g6_chinese_bubian_qm_nanshan_001_q11",
@@ -351,7 +385,13 @@
       "answer": "A",
       "explanation": "「穷则变，变则通，通则久」（出自《周易》）强调遇到困境要变通，与「危机和挑战」语境对位。",
       "_round_reasoning": "R2 因为：名言释义+语境对位。",
-      "_raw_excerpt": "11．（3分）根据句意选择相关的名言，填序号。\nA.穷则变，变则通，通则久。\nB.苟利于民，不必法古；苟周于事，不必循旧。\nC.青，取之于蓝，而青于蓝。\nD.苟日新，日日新，又日新。\n①创新是民族进步的灵魂，是一个国家兴旺发达的不竭源泉，正所谓“　   　”。\n②在新冠疫情的冲击之下，许多中小企业难以为继，要应对前所未有的危机和挑战，必须明白“　   　”的道理。"
+      "_raw_excerpt": "11．（3分）根据句意选择相关的名言，填序号。\nA.穷则变，变则通，通则久。\nB.苟利于民，不必法古；苟周于事，不必循旧。\nC.青，取之于蓝，而青于蓝。\nD.苟日新，日日新，又日新。\n①创新是民族进步的灵魂，是一个国家兴旺发达的不竭源泉，正所谓“　   　”。\n②在新冠疫情的冲击之下，许多中小企业难以为继，要应对前所未有的危机和挑战，必须明白“　   　”的道理。",
+      "options": [
+        "A. 穷则变，变则通，通则久",
+        "B. 苟利于民，不必法古；苟周于事，不必循旧",
+        "C. 青，取之于蓝，而青于蓝",
+        "D. 苟日新，日日新，又日新"
+      ]
     },
     {
       "subject": "chinese",

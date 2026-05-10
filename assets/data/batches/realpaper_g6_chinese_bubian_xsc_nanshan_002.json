@@ -199,7 +199,7 @@
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 2,
-      "type": "fill",
+      "type": "choice",
       "chapter": "字词",
       "knowledge_point": "字词/成语运用",
       "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_002_q5",
@@ -208,14 +208,21 @@
       "_common_prefix_raw": "5. 照样子（零七八碎—之物），选择合适的词语搭配填空，写序号。\nA．之策  B．之态  C．之义  D．之苦  E．之物",
       "content": "照样子（零七八碎—之物），选择合适的词语搭配填字母（A/B/C/D/E）。\n\n候选：A. 之策  B. 之态  C. 之义  D. 之苦  E. 之物\n\n1. 与世隔绝（    ）",
       "answer": "D",
-      "explanation": "「与世隔绝」搭配「之苦」（隔绝带来的苦楚）。"
+      "explanation": "「与世隔绝」搭配「之苦」（隔绝带来的苦楚）。",
+      "options": [
+        "A. 之策",
+        "B. 之态",
+        "C. 之义",
+        "D. 之苦",
+        "E. 之物"
+      ]
     },
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 2,
-      "type": "fill",
+      "type": "choice",
       "chapter": "字词",
       "knowledge_point": "字词/成语运用",
       "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_002_q5",
@@ -224,14 +231,21 @@
       "_common_prefix_raw": "5. 照样子（零七八碎—之物），选择合适的词语搭配填空，写序号。\nA．之策  B．之态  C．之义  D．之苦  E．之物",
       "content": "照样子（零七八碎—之物），选择合适的词语搭配填字母（A/B/C/D/E）。\n\n候选：A. 之策  B. 之态  C. 之义  D. 之苦  E. 之物\n\n2. 精兵简政（    ）",
       "answer": "A",
-      "explanation": "「精兵简政」是一种政策方略，搭配「之策」。"
+      "explanation": "「精兵简政」是一种政策方略，搭配「之策」。",
+      "options": [
+        "A. 之策",
+        "B. 之态",
+        "C. 之义",
+        "D. 之苦",
+        "E. 之物"
+      ]
     },
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 2,
-      "type": "fill",
+      "type": "choice",
       "chapter": "字词",
       "knowledge_point": "字词/成语运用",
       "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_002_q5",
@@ -240,14 +254,21 @@
       "_common_prefix_raw": "5. 照样子（零七八碎—之物），选择合适的词语搭配填空，写序号。\nA．之策  B．之态  C．之义  D．之苦  E．之物",
       "content": "照样子（零七八碎—之物），选择合适的词语搭配填字母（A/B/C/D/E）。\n\n候选：A. 之策  B. 之态  C. 之义  D. 之苦  E. 之物\n\n3. 声泪俱下（    ）",
       "answer": "B",
-      "explanation": "「声泪俱下」是一种悲伤情态，搭配「之态」。"
+      "explanation": "「声泪俱下」是一种悲伤情态，搭配「之态」。",
+      "options": [
+        "A. 之策",
+        "B. 之态",
+        "C. 之义",
+        "D. 之苦",
+        "E. 之物"
+      ]
     },
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 2,
-      "type": "fill",
+      "type": "choice",
       "chapter": "字词",
       "knowledge_point": "字词/成语运用",
       "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_002_q5",
@@ -256,7 +277,14 @@
       "_common_prefix_raw": "5. 照样子（零七八碎—之物），选择合适的词语搭配填空，写序号。\nA．之策  B．之态  C．之义  D．之苦  E．之物",
       "content": "照样子（零七八碎—之物），选择合适的词语搭配填字母（A/B/C/D/E）。\n\n候选：A. 之策  B. 之态  C. 之义  D. 之苦  E. 之物\n\n4. 赴汤蹈火（    ）",
       "answer": "C",
-      "explanation": "「赴汤蹈火」体现深明大义、不畏艰险的义举，搭配「之义」。"
+      "explanation": "「赴汤蹈火」体现深明大义、不畏艰险的义举，搭配「之义」。",
+      "options": [
+        "A. 之策",
+        "B. 之态",
+        "C. 之义",
+        "D. 之苦",
+        "E. 之物"
+      ]
     },
     {
       "subject": "chinese",
@@ -359,7 +387,7 @@
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 2,
-      "type": "fill",
+      "type": "choice",
       "chapter": "阅读理解",
       "knowledge_point": "阅读理解/课文内容理解",
       "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_002_q8",
@@ -368,14 +396,19 @@
       "_common_prefix_raw": "8. 根据下列句子的描述概括人物印象，填字母。\nA．知足安命、乐观向上  B．坚贞不屈、镇定自若  C．阴险狡诈、心狠手辣",
       "content": "根据下列句子的描述概括人物印象，填字母（A/B/C）。\n\n候选：A. 知足安命、乐观向上  B. 坚贞不屈、镇定自若  C. 阴险狡诈、心狠手辣\n\n1. 「父亲瞅了瞅我们，没有说一句话。他的神情非常安定，非常沉着。他的心被一种伟大的力量占据着。」",
       "answer": "B",
-      "explanation": "「神情非常安定，非常沉着」「心被一种伟大的力量占据」体现父亲（李大钊）面对敌人坚贞不屈、镇定自若。"
+      "explanation": "「神情非常安定，非常沉着」「心被一种伟大的力量占据」体现父亲（李大钊）面对敌人坚贞不屈、镇定自若。",
+      "options": [
+        "A. 知足安命、乐观向上",
+        "B. 坚贞不屈、镇定自若",
+        "C. 阴险狡诈、心狠手辣"
+      ]
     },
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 2,
-      "type": "fill",
+      "type": "choice",
       "chapter": "阅读理解",
       "knowledge_point": "阅读理解/课文内容理解",
       "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_002_q8",
@@ -384,14 +417,19 @@
       "_common_prefix_raw": "8. 根据下列句子的描述概括人物印象，填字母。\nA．知足安命、乐观向上  B．坚贞不屈、镇定自若  C．阴险狡诈、心狠手辣",
       "content": "根据下列句子的描述概括人物印象，填字母（A/B/C）。\n\n候选：A. 知足安命、乐观向上  B. 坚贞不屈、镇定自若  C. 阴险狡诈、心狠手辣\n\n2. 「我不再远眺大海，一心想看到船的踪影了。我着手调整我的生活方式，尽我可能把一切安排得舒舒服服。」",
       "answer": "A",
-      "explanation": "鲁滨逊不再执着等船救援，转而调整生活方式安排得舒舒服服，体现知足安命、乐观向上。"
+      "explanation": "鲁滨逊不再执着等船救援，转而调整生活方式安排得舒舒服服，体现知足安命、乐观向上。",
+      "options": [
+        "A. 知足安命、乐观向上",
+        "B. 坚贞不屈、镇定自若",
+        "C. 阴险狡诈、心狠手辣"
+      ]
     },
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 2,
-      "type": "fill",
+      "type": "choice",
       "chapter": "阅读理解",
       "knowledge_point": "阅读理解/课文内容理解",
       "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_002_q8",
@@ -400,7 +438,12 @@
       "_common_prefix_raw": "8. 根据下列句子的描述概括人物印象，填字母。\nA．知足安命、乐观向上  B．坚贞不屈、镇定自若  C．阴险狡诈、心狠手辣",
       "content": "根据下列句子的描述概括人物印象，填字母（A/B/C）。\n\n候选：A. 知足安命、乐观向上  B. 坚贞不屈、镇定自若  C. 阴险狡诈、心狠手辣\n\n3. 「扁鼻子军官的目光立刻变得凶恶可怕，他向前弓着身子，伸出两只大手。啊！那双手就像鹰的爪子，扭着雨来的两只耳朵，向两边拉。」",
       "answer": "C",
-      "explanation": "「凶恶可怕」「鹰的爪子」「扭着耳朵」体现扁鼻子军官的阴险狡诈、心狠手辣。"
+      "explanation": "「凶恶可怕」「鹰的爪子」「扭着耳朵」体现扁鼻子军官的阴险狡诈、心狠手辣。",
+      "options": [
+        "A. 知足安命、乐观向上",
+        "B. 坚贞不屈、镇定自若",
+        "C. 阴险狡诈、心狠手辣"
+      ]
     },
     {
       "subject": "chinese",
@@ -455,7 +498,7 @@
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 2,
-      "type": "fill",
+      "type": "choice",
       "chapter": "古诗文",
       "knowledge_point": "古诗文/古诗词背诵默写",
       "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_002_q11",
@@ -464,14 +507,20 @@
       "_common_prefix_raw": "11. 根据句意选择相关的名言，填字母。\nA. 穷则变，变则通，通则久。\nB. 苟利于民，不必法古；苟周于事，不必循旧。\nC. 青，取之于蓝，而青于蓝。\nD. 苟日新，日日新，又日新。",
       "content": "根据句意选择相关的名言，填字母（A/B/C/D）。\n\n候选：\nA. 穷则变，变则通，通则久。\nB. 苟利于民，不必法古；苟周于事，不必循旧。\nC. 青，取之于蓝，而青于蓝。\nD. 苟日新，日日新，又日新。\n\n1. 创新是民族进步的灵魂，是一个国家兴旺发达的不竭源泉，正所谓「________」。",
       "answer": "D",
-      "explanation": "D「苟日新，日日新，又日新」强调持续革新创新，故选 D。"
+      "explanation": "D「苟日新，日日新，又日新」强调持续革新创新，故选 D。",
+      "options": [
+        "A. 穷则变，变则通，通则久",
+        "B. 苟利于民，不必法古；苟周于事，不必循旧",
+        "C. 青，取之于蓝，而青于蓝",
+        "D. 苟日新，日日新，又日新"
+      ]
     },
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 2,
-      "type": "fill",
+      "type": "choice",
       "chapter": "古诗文",
       "knowledge_point": "古诗文/古诗词背诵默写",
       "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_002_q11",
@@ -480,7 +529,13 @@
       "_common_prefix_raw": "11. 根据句意选择相关的名言，填字母。\nA. 穷则变，变则通，通则久。\nB. 苟利于民，不必法古；苟周于事，不必循旧。\nC. 青，取之于蓝，而青于蓝。\nD. 苟日新，日日新，又日新。",
       "content": "根据句意选择相关的名言，填字母（A/B/C/D）。\n\n候选：\nA. 穷则变，变则通，通则久。\nB. 苟利于民，不必法古；苟周于事，不必循旧。\nC. 青，取之于蓝，而青于蓝。\nD. 苟日新，日日新，又日新。\n\n2. 在新冠疫情的冲击下，许多中小企业难以为继，要应对前所未有的危机和挑战，必须明白「________」的道理。",
       "answer": "A",
-      "explanation": "A「穷则变，变则通，通则久」强调遇到困境要懂得变通，故选 A。"
+      "explanation": "A「穷则变，变则通，通则久」强调遇到困境要懂得变通，故选 A。",
+      "options": [
+        "A. 穷则变，变则通，通则久",
+        "B. 苟利于民，不必法古；苟周于事，不必循旧",
+        "C. 青，取之于蓝，而青于蓝",
+        "D. 苟日新，日日新，又日新"
+      ]
     },
     {
       "subject": "chinese",
@@ -538,7 +593,7 @@
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 3,
-      "type": "fill",
+      "type": "choice",
       "chapter": "古诗文",
       "knowledge_point": "古诗文/文言句子翻译",
       "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_002_q14",
@@ -547,14 +602,20 @@
       "_common_prefix_raw": "文言文《杀驼破瓮》：\n昔有一人，于瓮中盛谷。骆驼入瓮食谷，   ①   。主人以为忧，无计可施。有一老人来语之，曰：「汝莫忧，吾教汝出。」主人亟问：「法何？」老人曰：「   ②   ，自当出之。」主人以为妙，即依其语，   ③   。既杀驼，   ④   ，如此痴人，为世人所笑。",
       "content": "联系上下文，选择合适的词语填在文中横线上，填字母（A/B/C/D）。\n\n候选：A. 以刀斩头  B. 而复破瓮  C. 首不得出  D. 汝当斩头\n\n《杀驼破瓮》：骆驼入瓮食谷，①________。主人以为忧。\n\n1. ① 处填：",
       "answer": "C",
-      "explanation": "「主人以为忧」前应说骆驼吃谷被卡，故填 C「首不得出」（头出不来）。"
+      "explanation": "「主人以为忧」前应说骆驼吃谷被卡，故填 C「首不得出」（头出不来）。",
+      "options": [
+        "A. 以刀斩头",
+        "B. 而复破瓮",
+        "C. 首不得出",
+        "D. 汝当斩头"
+      ]
     },
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 3,
-      "type": "fill",
+      "type": "choice",
       "chapter": "古诗文",
       "knowledge_point": "古诗文/文言句子翻译",
       "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_002_q14",
@@ -563,14 +624,20 @@
       "_common_prefix_raw": "文言文《杀驼破瓮》：\n昔有一人，于瓮中盛谷。骆驼入瓮食谷，   ①   。主人以为忧，无计可施。有一老人来语之，曰：「汝莫忧，吾教汝出。」主人亟问：「法何？」老人曰：「   ②   ，自当出之。」主人以为妙，即依其语，   ③   。既杀驼，   ④   ，如此痴人，为世人所笑。",
       "content": "联系上下文，选择合适的词语填在文中横线上，填字母（A/B/C/D）。\n\n候选：A. 以刀斩头  B. 而复破瓮  C. 首不得出  D. 汝当斩头\n\n《杀驼破瓮》：老人曰：「②________，自当出之。」\n\n2. ② 处填：",
       "answer": "D",
-      "explanation": "老人对主人说话用第二人称，故填 D「汝当斩头」（你应当斩骆驼的头）。"
+      "explanation": "老人对主人说话用第二人称，故填 D「汝当斩头」（你应当斩骆驼的头）。",
+      "options": [
+        "A. 以刀斩头",
+        "B. 而复破瓮",
+        "C. 首不得出",
+        "D. 汝当斩头"
+      ]
     },
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 3,
-      "type": "fill",
+      "type": "choice",
       "chapter": "古诗文",
       "knowledge_point": "古诗文/文言句子翻译",
       "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_002_q14",
@@ -579,14 +646,20 @@
       "_common_prefix_raw": "文言文《杀驼破瓮》：\n昔有一人，于瓮中盛谷。骆驼入瓮食谷，   ①   。主人以为忧，无计可施。有一老人来语之，曰：「汝莫忧，吾教汝出。」主人亟问：「法何？」老人曰：「   ②   ，自当出之。」主人以为妙，即依其语，   ③   。既杀驼，   ④   ，如此痴人，为世人所笑。",
       "content": "联系上下文，选择合适的词语填在文中横线上，填字母（A/B/C/D）。\n\n候选：A. 以刀斩头  B. 而复破瓮  C. 首不得出  D. 汝当斩头\n\n《杀驼破瓮》：主人以为妙，即依其语，③________。\n\n3. ③ 处填：",
       "answer": "A",
-      "explanation": "主人按老人话执行斩头，故填 A「以刀斩头」。"
+      "explanation": "主人按老人话执行斩头，故填 A「以刀斩头」。",
+      "options": [
+        "A. 以刀斩头",
+        "B. 而复破瓮",
+        "C. 首不得出",
+        "D. 汝当斩头"
+      ]
     },
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 3,
-      "type": "fill",
+      "type": "choice",
       "chapter": "古诗文",
       "knowledge_point": "古诗文/文言句子翻译",
       "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_002_q14",
@@ -595,14 +668,20 @@
       "_common_prefix_raw": "文言文《杀驼破瓮》：\n昔有一人，于瓮中盛谷。骆驼入瓮食谷，   ①   。主人以为忧，无计可施。有一老人来语之，曰：「汝莫忧，吾教汝出。」主人亟问：「法何？」老人曰：「   ②   ，自当出之。」主人以为妙，即依其语，   ③   。既杀驼，   ④   ，如此痴人，为世人所笑。",
       "content": "联系上下文，选择合适的词语填在文中横线上，填字母（A/B/C/D）。\n\n候选：A. 以刀斩头  B. 而复破瓮  C. 首不得出  D. 汝当斩头\n\n《杀驼破瓮》：既杀驼，④________，如此痴人，为世人所笑。\n\n4. ④ 处填：",
       "answer": "B",
-      "explanation": "杀驼后还要把瓮打破才能取出骆驼头，故填 B「而复破瓮」。"
+      "explanation": "杀驼后还要把瓮打破才能取出骆驼头，故填 B「而复破瓮」。",
+      "options": [
+        "A. 以刀斩头",
+        "B. 而复破瓮",
+        "C. 首不得出",
+        "D. 汝当斩头"
+      ]
     },
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 3,
-      "type": "fill",
+      "type": "choice",
       "chapter": "古诗文",
       "knowledge_point": "古诗文/文言虚词",
       "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_002_q15",
@@ -611,14 +690,20 @@
       "_common_prefix_raw": "15. \"之\"在文言文中经常指某人、某物或某事，下列句中的\"之\"指的是什么？请选择正确答案，写序号。\nA．老人  B．主人  C．骆驼  D．瓮",
       "content": "「之」在文言文中经常指某人、某物或某事。下列《杀驼破瓮》句中的「之」指的是什么？\n\n候选：A. 老人  B. 主人  C. 骆驼  D. 瓮\n\n1. 「有一老人来语之」中「之」指：",
       "answer": "B",
-      "explanation": "「来语之」=来告诉他，「他」指被骆驼困扰的瓮主人，故选 B。"
+      "explanation": "「来语之」=来告诉他，「他」指被骆驼困扰的瓮主人，故选 B。",
+      "options": [
+        "A. 老人",
+        "B. 主人",
+        "C. 骆驼",
+        "D. 瓮"
+      ]
     },
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 3,
-      "type": "fill",
+      "type": "choice",
       "chapter": "古诗文",
       "knowledge_point": "古诗文/文言虚词",
       "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_002_q15",
@@ -627,7 +712,13 @@
       "_common_prefix_raw": "15. \"之\"在文言文中经常指某人、某物或某事，下列句中的\"之\"指的是什么？请选择正确答案，写序号。\nA．老人  B．主人  C．骆驼  D．瓮",
       "content": "「之」在文言文中经常指某人、某物或某事。下列《杀驼破瓮》句中的「之」指的是什么？\n\n候选：A. 老人  B. 主人  C. 骆驼  D. 瓮\n\n2. 「自当出之」中「之」指：",
       "answer": "D",
-      "explanation": "「自当出之」=自然就能从瓮里出来，「之」指代瓮（即「从瓮中出来」），故选 D。"
+      "explanation": "「自当出之」=自然就能从瓮里出来，「之」指代瓮（即「从瓮中出来」），故选 D。",
+      "options": [
+        "A. 老人",
+        "B. 主人",
+        "C. 骆驼",
+        "D. 瓮"
+      ]
     },
     {
       "subject": "chinese",
@@ -653,9 +744,9 @@
       "_raw_excerpt": "17. 选择这个故事的寓意，填序号。（　　）\nA. 做事循规蹈矩，不知变通，就会闹出笑话。\nB. 凡事要认真思考，仔细研究，不能因小失大，更不能盲目听从他人的建议。\nC. 对待事物要懂得去看到它的本质，不要只看表面。",
       "content": "阅读《杀驼破瓮》（同上）。\n\n选择这个故事的寓意（    ）",
       "options": [
-        "A. 做事循规蹈矩，不知变通，就会闹出笑话。",
-        "B. 凡事要认真思考，仔细研究，不能因小失大，更不能盲目听从他人的建议。",
-        "C. 对待事物要懂得去看到它的本质，不要只看表面。"
+        "A. 做事循规蹈矩，不知变通，就会闹出笑话",
+        "B. 凡事要认真思考，仔细研究，不能因小失大，更不能盲目听从他人的建议",
+        "C. 对待事物要懂得去看到它的本质，不要只看表面"
       ],
       "answer": "B",
       "explanation": "故事中主人盲目听从老人「斩头」的建议，最终既杀驼又破瓮，因小失大被世人耻笑，寓意凡事要认真思考、不能盲从，故选 B。"
@@ -665,7 +756,7 @@
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 2,
-      "type": "fill",
+      "type": "choice",
       "chapter": "阅读理解",
       "knowledge_point": "阅读理解/课文内容理解",
       "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_002_q19",
@@ -674,14 +765,20 @@
       "_common_prefix_raw": "19. 给下列句子中\"固\"字选择正确的解释，填字母。\nA．结实，牢靠  B．坚定，不变动  C．本，原来  D．坚硬",
       "content": "给下列句中「固」字选择正确的解释，填字母（A/B/C/D）。\n\n候选：A. 结实，牢靠  B. 坚定，不变动  C. 本，原来  D. 坚硬\n\n1. 人**固**有一死。",
       "answer": "C",
-      "explanation": "「人固有一死」中「固」=本，原来（「人本来就会死」），故选 C。"
+      "explanation": "「人固有一死」中「固」=本，原来（「人本来就会死」），故选 C。",
+      "options": [
+        "A. 结实，牢靠",
+        "B. 坚定，不变动",
+        "C. 本，原来",
+        "D. 坚硬"
+      ]
     },
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 2,
-      "type": "fill",
+      "type": "choice",
       "chapter": "阅读理解",
       "knowledge_point": "阅读理解/课文内容理解",
       "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_002_q19",
@@ -690,14 +787,20 @@
       "_common_prefix_raw": "19. 给下列句子中\"固\"字选择正确的解释，填字母。\nA．结实，牢靠  B．坚定，不变动  C．本，原来  D．坚硬",
       "content": "给下列句中「固」字选择正确的解释，填字母（A/B/C/D）。\n\n候选：A. 结实，牢靠  B. 坚定，不变动  C. 本，原来  D. 坚硬\n\n2. 岩浆冷却并凝**固**下来后，形成了火山岩。",
       "answer": "D",
-      "explanation": "「凝固」中「固」=坚硬（液态变坚硬固态），故选 D。"
+      "explanation": "「凝固」中「固」=坚硬（液态变坚硬固态），故选 D。",
+      "options": [
+        "A. 结实，牢靠",
+        "B. 坚定，不变动",
+        "C. 本，原来",
+        "D. 坚硬"
+      ]
     },
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 2,
-      "type": "fill",
+      "type": "choice",
       "chapter": "阅读理解",
       "knowledge_point": "阅读理解/课文内容理解",
       "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_002_q19",
@@ -706,14 +809,20 @@
       "_common_prefix_raw": "19. 给下列句子中\"固\"字选择正确的解释，填字母。\nA．结实，牢靠  B．坚定，不变动  C．本，原来  D．坚硬",
       "content": "给下列句中「固」字选择正确的解释，填字母（A/B/C/D）。\n\n候选：A. 结实，牢靠  B. 坚定，不变动  C. 本，原来  D. 坚硬\n\n3. 庄严的佛塔，**固**守着这片苍凉的高原。",
       "answer": "B",
-      "explanation": "「固守」=坚定地守护、不变动，故选 B。"
+      "explanation": "「固守」=坚定地守护、不变动，故选 B。",
+      "options": [
+        "A. 结实，牢靠",
+        "B. 坚定，不变动",
+        "C. 本，原来",
+        "D. 坚硬"
+      ]
     },
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 2,
-      "type": "fill",
+      "type": "choice",
       "chapter": "阅读理解",
       "knowledge_point": "阅读理解/课文内容理解",
       "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_002_q19",
@@ -722,14 +831,20 @@
       "_common_prefix_raw": "19. 给下列句子中\"固\"字选择正确的解释，填字母。\nA．结实，牢靠  B．坚定，不变动  C．本，原来  D．坚硬",
       "content": "给下列句中「固」字选择正确的解释，填字母（A/B/C/D）。\n\n候选：A. 结实，牢靠  B. 坚定，不变动  C. 本，原来  D. 坚硬\n\n4. 这个军事基地在我军的严密保护下**固**若金汤。",
       "answer": "A",
-      "explanation": "「固若金汤」=坚固得像金属城墙、护城河热水（结实牢靠），故选 A。"
+      "explanation": "「固若金汤」=坚固得像金属城墙、护城河热水（结实牢靠），故选 A。",
+      "options": [
+        "A. 结实，牢靠",
+        "B. 坚定，不变动",
+        "C. 本，原来",
+        "D. 坚硬"
+      ]
     },
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 1,
-      "type": "fill",
+      "type": "choice",
       "chapter": "字词",
       "knowledge_point": "字词/词语理解",
       "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_002_q24",
@@ -738,14 +853,19 @@
       "_common_prefix_raw": "阅读《天上飘下来的礼物》（节选）：\n①一楼的林老太太，人有点①____，不太好说话。林老太太唯一的儿子在美国，老伴去世得早，一直一个人生活。退休后，生活更②____了，跟外面的联系越来越少，人也变得更少言寡语了。\n候选：A．孤单  B．孤僻  C．孤寂",
       "content": "阅读《天上飘下来的礼物》（节选）：\n\n①一楼的林老太太，人有点①________，不太好说话。林老太太唯一的儿子在美国，老伴去世得早，一直一个人生活。退休后，生活更②________了，跟外面的联系越来越少，人也变得更少言寡语了。\n\n[第⑤段]那也许是老人③________的生活里，唯一的一点期盼。\n\n选择合适的词语填入横线（A/B/C）：\n\n候选：A. 孤单  B. 孤僻  C. 孤寂\n\n1. ① 处填：",
       "answer": "B",
-      "explanation": "「不太好说话」体现性情孤僻（不合群），故 ① 选 B。"
+      "explanation": "「不太好说话」体现性情孤僻（不合群），故 ① 选 B。",
+      "options": [
+        "A. 孤单",
+        "B. 孤僻",
+        "C. 孤寂"
+      ]
     },
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 1,
-      "type": "fill",
+      "type": "choice",
       "chapter": "字词",
       "knowledge_point": "字词/词语理解",
       "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_002_q24",
@@ -754,14 +874,19 @@
       "_common_prefix_raw": "阅读《天上飘下来的礼物》（节选）：\n①一楼的林老太太，人有点①____，不太好说话。林老太太唯一的儿子在美国，老伴去世得早，一直一个人生活。退休后，生活更②____了，跟外面的联系越来越少，人也变得更少言寡语了。\n候选：A．孤单  B．孤僻  C．孤寂",
       "content": "阅读《天上飘下来的礼物》（节选）：\n\n①一楼的林老太太，人有点①孤僻，不太好说话。林老太太唯一的儿子在美国，老伴去世得早，一直一个人生活。退休后，生活更②________了，跟外面的联系越来越少。\n\n选择合适的词语填入横线（A/B/C）：\n\n候选：A. 孤单  B. 孤僻  C. 孤寂\n\n2. ② 处填：",
       "answer": "A",
-      "explanation": "「老伴去世，一个人生活，退休后联系少」体现单身无靠的孤单，故 ② 选 A。"
+      "explanation": "「老伴去世，一个人生活，退休后联系少」体现单身无靠的孤单，故 ② 选 A。",
+      "options": [
+        "A. 孤单",
+        "B. 孤僻",
+        "C. 孤寂"
+      ]
     },
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 1,
-      "type": "fill",
+      "type": "choice",
       "chapter": "字词",
       "knowledge_point": "字词/词语理解",
       "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_002_q24",
@@ -770,7 +895,12 @@
       "_common_prefix_raw": "阅读《天上飘下来的礼物》（节选）：\n第⑤段：那也许是老人③____的生活里，唯一的一点期盼。\n候选：A．孤单  B．孤僻  C．孤寂",
       "content": "阅读《天上飘下来的礼物》（节选）：\n\n[第⑤段]人们在整理老人的遗物时，看到了一个日记本。老人在日记里多次提到，从楼上刮下来的衣服。老人的日记里，反复出现这样一句话：那是从天上飘下来的礼物。我明白老人的话。那也许是老人③________的生活里，唯一的一点期盼。\n\n选择合适的词语填入横线（A/B/C）：\n\n候选：A. 孤单  B. 孤僻  C. 孤寂\n\n3. ③ 处填：",
       "answer": "C",
-      "explanation": "形容老太太一个人没人陪伴，孤独寂寞的生活，故 ③ 选 C。"
+      "explanation": "形容老太太一个人没人陪伴，孤独寂寞的生活，故 ③ 选 C。",
+      "options": [
+        "A. 孤单",
+        "B. 孤僻",
+        "C. 孤寂"
+      ]
     },
     {
       "subject": "chinese",
