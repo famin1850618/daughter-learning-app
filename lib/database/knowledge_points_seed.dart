@@ -171,6 +171,28 @@ List<KnowledgePoint> get knowledgePointsSeed => [
       KnowledgePoint(
           subject: '语文', category: '写作', name: '应用文写作', introducedGrade: 6),
 
+      // V3.14 修 42 错: worker 实际使用的 KP 命名补全（与现有同义但 category/name 不同）
+      KnowledgePoint(
+          subject: '语文', category: '现代文阅读', name: '材料阅读', introducedGrade: 6),
+      KnowledgePoint(
+          subject: '语文', category: '现代文阅读', name: '标题概括', introducedGrade: 6),
+      KnowledgePoint(
+          subject: '语文', category: '现代文阅读', name: '说明方法', introducedGrade: 6),
+      KnowledgePoint(
+          subject: '语文', category: '古诗文', name: '文言文阅读', introducedGrade: 6),
+      KnowledgePoint(
+          subject: '语文', category: '古诗文', name: '文学常识', introducedGrade: 6),
+      KnowledgePoint(
+          subject: '语文', category: '句式与标点', name: '关联词', introducedGrade: 6),
+      KnowledgePoint(
+          subject: '语文', category: '字词', name: '拼音字形', introducedGrade: 6),
+      KnowledgePoint(
+          subject: '语文', category: '字词', name: '词语运用', introducedGrade: 6),
+      KnowledgePoint(
+          subject: '语文', category: '课文与名著', name: '名著阅读', introducedGrade: 6),
+      KnowledgePoint(
+          subject: '语文', category: '综合性学习', name: '生活常识', introducedGrade: 6),
+
       // 古诗文
       KnowledgePoint(
           subject: '语文', category: '古诗文', name: '古诗词背诵默写', introducedGrade: 6),

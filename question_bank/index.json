@@ -1,5 +1,5 @@
 {
-  "version": 66,
+  "version": 67,
   "updated_at": "2026-05-10",
   "batches": [
     {
@@ -208,7 +208,7 @@
       "subject": "chinese",
       "grade": 6,
       "count": 5,
-      "batch_hash": "abfa9d193ba9d58a77a109c2478fab3d3c8d680f"
+      "batch_hash": "06cb9eff77d92617ce998d5bf7aa42985e03e85e"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
