@@ -515,6 +515,25 @@ def run_full_check(batch: dict, batch_path: Path, kp_set: set, chapter_set: set)
                 wmf_errors.append(f'#{i+1}: image_data MIME 是 WMF/EMF（必须 extract_docx.py 转 PNG）')
     report['14_no_wmf_in_image'] = {'pass': not wmf_errors, 'errors': wmf_errors}
 
+    # 15. V3.14 新增: knowledge_points_added 顶层字段格式校验（修 42 错教训）
+    # 必须是 List<String> "category/name" 或 List<Map>{category,name}，混用/格式错触发整 batch import 失败
+    kp_added_errs = []
+    kpsAdded = batch.get('knowledge_points_added')
+    if kpsAdded is not None:
+        if not isinstance(kpsAdded, list):
+            kp_added_errs.append(f'knowledge_points_added 不是 list: {type(kpsAdded).__name__}')
+        else:
+            for i, item in enumerate(kpsAdded):
+                if isinstance(item, str):
+                    if '/' not in item:
+                        kp_added_errs.append(f'#{i}: 字符串"{item}"缺 / 分隔符（应 category/name）')
+                elif isinstance(item, dict):
+                    if 'category' not in item or 'name' not in item:
+                        kp_added_errs.append(f'#{i}: dict 缺 category/name 字段')
+                else:
+                    kp_added_errs.append(f'#{i}: 类型 {type(item).__name__}（应 str 或 dict）')
+    report['15_kp_added_schema'] = {'pass': not kp_added_errs, 'errors': kp_added_errs}
+
     # M3/M4: docx 路径手动核查（替代 V3.12.20 SVG 4 步 + 标注一致）
     report['M3_image_owner'] = {'pass': None, 'errors': ['【需 LLM/人核查 docx 内嵌图归属（用 paragraph_image_map）】']}
     report['M4_image_content_match'] = {'pass': None, 'errors': ['【需 LLM/人核查 content 描述与 image_data 视觉一致】']}
