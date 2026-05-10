@@ -188,16 +188,38 @@ class QuestionUpdateService extends ChangeNotifier {
     final grade = batch['grade'] as int;
 
     // 1. 合并 knowledge_points_added 到 KP 表（subject 用中文，与 curriculum 一致）
-    final kpsAdded = (batch['knowledge_points_added'] as List? ?? [])
-        .cast<Map<String, dynamic>>();
-    if (kpsAdded.isNotEmpty) {
-      final kps = kpsAdded.map((m) => KnowledgePoint(
-            subject: subject.displayName,
-            category: m['category'] as String,
-            name: m['name'] as String,
-            introducedGrade: grade,
-          )).toList();
-      await _kpDao.insertIfMissing(kps);
+    // V3.14 修 42 错：兼容两种 batch JSON 格式：
+    //   List<Map> = [{"category":"字词","name":"字音"},...]  （V3.10 老格式）
+    //   List<String> = ["字词/字音",...]  （V3.13/V3.14 worker 实际写的格式）
+    // 之前只支持 Map 格式 → List<String> 触发 cast 异常 → 整 batch import 失败 → 42 错。
+    final kpsRaw = batch['knowledge_points_added'] as List? ?? [];
+    if (kpsRaw.isNotEmpty) {
+      final kps = <KnowledgePoint>[];
+      for (final item in kpsRaw) {
+        try {
+          if (item is String) {
+            // "category/name" 格式
+            final parts = item.split('/');
+            if (parts.length >= 2) {
+              kps.add(KnowledgePoint(
+                subject: subject.displayName,
+                category: parts[0],
+                name: parts.sublist(1).join('/'),
+                introducedGrade: grade,
+              ));
+            }
+          } else if (item is Map) {
+            final m = item.cast<String, dynamic>();
+            kps.add(KnowledgePoint(
+              subject: subject.displayName,
+              category: m['category'] as String,
+              name: m['name'] as String,
+              introducedGrade: grade,
+            ));
+          }
+        } catch (_) {/* 跳过格式异常的单条，不阻塞整 batch */}
+      }
+      if (kps.isNotEmpty) await _kpDao.insertIfMissing(kps);
     }
 
     // 2. 题目按 source 幂等
