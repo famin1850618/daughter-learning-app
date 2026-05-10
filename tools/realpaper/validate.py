@@ -241,40 +241,20 @@ def check_no_double_quotes(q: dict, idx: int) -> str:
     return None
 
 
-SUBJECT_PREFIXES = {'chn', 'math', 'eng', 'sci', 'phy', 'chm'}
-SUBJECT_TO_PREFIX = {
-    'chinese': 'chn', '语文': 'chn',
-    'math': 'math', '数学': 'math',
-    'english': 'eng', '英语': 'eng',
-    'science': 'sci', '科学': 'sci',
-    'physics': 'phy', '物理': 'phy',
-    'chemistry': 'chm', '化学': 'chm',
-}
-
-
 def check_group_namespace(batch: dict) -> list:
-    """15. group_id 必须为三段式 {subject_prefix}_{batch_short}_{local}（§9.3.3 V3.19.1）。
-    2026-05-11 Famin 实测：xsc_baoan_001_q2 跨 数学+语文 batch 重名 → app 合并大组合题。
+    """15. group_id 必须以完整 source_id 为前缀（§9.3.3 V3.19.2）。
+    格式: {source}_{local}，例如 realpaper_g6_math_beishida_xsc_baoan_001_q2。
+    2026-05-11 Famin 实测后 D 方案：用完整 source 全名前缀，命名空间 100% 唯一，
+    任何新科目（物理/化学）进库自动隔离，不依赖 worker 选对 subject_prefix。
     """
     src = batch.get('source', '')
-    src_short = src.replace('realpaper_g6_math_beishida_', '') \
-                   .replace('realpaper_g6_chinese_bubian_', '') \
-                   .replace('realpaper_g6_english_', '') \
-                   .replace('.json', '')
-    subj = batch.get('subject', '')
-    expected_pfx = SUBJECT_TO_PREFIX.get(subj)
     errors = []
     for i, q in enumerate(batch.get('questions', [])):
         gid = q.get('group_id')
         if not gid:
             continue
-        parts = gid.split('_', 1)
-        if parts[0] not in SUBJECT_PREFIXES:
-            errors.append(f'#{i+1}: group_id={gid!r} 缺 subject 前缀（必须 chn_/math_/eng_/sci_/phy_/chm_ 开头）')
-        elif expected_pfx and parts[0] != expected_pfx:
-            errors.append(f'#{i+1}: group_id={gid!r} subject 前缀={parts[0]} 与 batch.subject={subj}({expected_pfx}) 不符')
-        elif not gid.startswith(f'{parts[0]}_{src_short}_'):
-            errors.append(f'#{i+1}: group_id={gid!r} 缺 batch_short 段，应为 {parts[0]}_{src_short}_<local>')
+        if not gid.startswith(src + '_'):
+            errors.append(f'#{i+1}: group_id={gid!r} 必须以 batch source 全名为前缀（应为 {src}_<local>）')
     return errors
 
 
@@ -308,7 +288,7 @@ def check_emphasis_phrasing(q: dict, idx: int) -> str:
     return None
 
 
-CHOICE_LETTER_PAT = re.compile(r'^[ABCDZ][.、:：．]')
+CHOICE_LETTER_PAT = re.compile(r'^[A-FZ][.、:：．]')
 
 SVG_TEXT_PAT = re.compile(r'<text\s+([^>]*?)>([^<]*)</text>')
 SVG_VIEWBOX_PAT = re.compile(r'viewBox="([\d.\s\-]+)"')
@@ -456,19 +436,19 @@ def check_choice_letter_prefix(q: dict, idx: int) -> str:
     if not opts:
         return None
     # 例外：options 全是单字母 (图选项)
-    if all((o or '').strip().upper() in ('A', 'B', 'C', 'D', 'Z') for o in opts):
+    if all((o or '').strip().upper() in ('A','B','C','D','E','F','Z') for o in opts):
         # answer 必须也是字母
         ans = (q.get('answer') or '').strip().upper()
-        if not re.fullmatch(r'[ABCDZ]+', ans):
+        if not re.fullmatch(r'[A-FZ]+', ans):
             return f'#{idx}: 图选项题 answer 应为字母，实为 {q.get("answer")!r}'
         return None
-    # 正常文本选项：必须全部 ABCD 前缀
+    # 正常文本选项：必须全部 A-F/Z 前缀（V3.19.3 扩展到 5/6 选项）
     if not all(CHOICE_LETTER_PAT.match(o or '') for o in opts):
-        return f'#{idx}: 选项缺 ABCD 前缀（例 {opts[0][:30]!r}）'
-    # answer 必须是字母（A/B/C/D 或多选 AC）
+        return f'#{idx}: 选项缺 ABCDEF 前缀（例 {opts[0][:30]!r}）'
+    # answer 必须是字母（A/B/C/D/E/F 或多选 AC）
     ans = (q.get('answer') or '').strip().upper()
     # 接受 'A'、'AC'、'A,C'、'A、C'
-    letters_only = re.sub(r'[^ABCDZ]', '', ans)
+    letters_only = re.sub(r'[^A-FZ]', '', ans)
     if not letters_only:
         return f'#{idx}: answer 应为字母（A/B/AC 等），实为 {q.get("answer")!r}'
     return None
