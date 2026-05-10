@@ -156,7 +156,8 @@
         "D. $1200340$"
       ],
       "answer": "A",
-      "explanation": "按数位顺序读：A 一百二十万三千四百（不读零）；B 一百零二万零三百四十（读 1 个零）；C 一百万零二百三十四（读 1 个零）；D 一百二十万零三百四十（读 1 个零）。"
+      "explanation": "按数位顺序读：A 一百二十万三千四百（不读零）；B 一百零二万零三百四十（读 1 个零）；C 一百万零二百三十四（读 1 个零）；D 一百二十万零三百四十（读 1 个零）。",
+      "_raw_excerpt": "下面各数中，一个零也不读的是（　　）\nA．1203400\tB．1020340\tC．1000234\tD．1200340"
     },
     {
       "subject": "math",
@@ -174,7 +175,8 @@
         "D. $72$"
       ],
       "answer": "B",
-      "explanation": "$24=2^3\\times 3$，$36=2^2\\times 3^2$，最大公因数 $=2^2\\times 3=12$。"
+      "explanation": "$24=2^3\\times 3$，$36=2^2\\times 3^2$，最大公因数 $=2^2\\times 3=12$。",
+      "_raw_excerpt": "24和36 的最大公因数是（　　）\nA．6\tB．12\tC．36\tD．72"
     },
     {
       "subject": "math",
@@ -192,7 +194,8 @@
         "D. $51$"
       ],
       "answer": "C",
-      "explanation": "千位是 $5$，五入：$495102\\approx 50$ 万。"
+      "explanation": "千位是 $5$，五入：$495102\\approx 50$ 万。",
+      "_raw_excerpt": "把 495102这个数四舍五入到万位是（　　）万\nA．48\tB．49\tC．50\tD．51"
     },
     {
       "subject": "math",
@@ -210,7 +213,8 @@
         "D. $8060$"
       ],
       "answer": "A",
-      "explanation": "$60$ 千克 $=0.06$ 吨，所以 $8$ 吨 $60$ 千克 $=8.06$ 吨。"
+      "explanation": "$60$ 千克 $=0.06$ 吨，所以 $8$ 吨 $60$ 千克 $=8.06$ 吨。",
+      "_raw_excerpt": "8吨60千克＝（　　）吨\nA．8.06\tB．8.6\tC．860\tD．8060"
     },
     {
       "subject": "math",
@@ -228,7 +232,8 @@
         "D. $7$ 的倍数"
       ],
       "answer": "B",
-      "explanation": "$0+2+5+8=15$ 是 $3$ 的倍数，所以无论排列如何，所得四位数都是 $3$ 的倍数。"
+      "explanation": "$0+2+5+8=15$ 是 $3$ 的倍数，所以无论排列如何，所得四位数都是 $3$ 的倍数。",
+      "_raw_excerpt": "用0、2、5、8这几张数字卡片摆四位数，摆出的所有四位数都是（　　）\nA．2的倍数\tB．3的倍数\tC．5的倍数\tD．倍数"
     },
     {
       "subject": "math",
@@ -246,7 +251,8 @@
         "D. 圆柱"
       ],
       "answer": "D",
-      "explanation": "长方形绕一边为轴旋转一周得到圆柱体（半径 $=$ 另一边长 $=5$ 厘米，高 $=$ 旋转轴长 $=8$ 厘米）。"
+      "explanation": "长方形绕一边为轴旋转一周得到圆柱体（半径 $=$ 另一边长 $=5$ 厘米，高 $=$ 旋转轴长 $=8$ 厘米）。",
+      "_raw_excerpt": "一个长方形的长是8厘米，宽是5厘米。以它的长为轴旋转一周，能够形成（　　）\nA．长方体\tB．正方体\tC．圆锥\tD．圆柱"
     },
     {
       "subject": "math",
@@ -264,7 +270,8 @@
         "D. $10:1$"
       ],
       "answer": "C",
-      "explanation": "盐水 $=$ 盐 $+$ 水 $=5+45=50$ 克，盐 $:$ 盐水 $=5:50=1:10$。"
+      "explanation": "盐水 $=$ 盐 $+$ 水 $=5+45=50$ 克，盐 $:$ 盐水 $=5:50=1:10$。",
+      "_raw_excerpt": "把5克盐放入45克的水中，盐与盐水的比是（　　）\nA．1：9\tB．9：1\tC．1：10\tD．10：1"
     },
     {
       "subject": "math",
@@ -288,7 +295,8 @@
         "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAjCAYAAABPTYA6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAALiMAAC4jAXilP3YAAADgSURBVEhLxZLbCoMwDIZ7Iwx2N/b+z+mxWX6b1MxG60TmB6H28CVpMdAJbpRCCG5YXKnGzZINj2olT/RTrSgSybhLVXLb+VVyk8j4BQ5qePirFf4o2f5D86LwfC/RmD0bIi/ESF0faYgyd7ha4ugnahGcATniGOf5fiX5ntIOw+u8UW0Pj4NKM6jOn5sSsqfXenCb6TCqQM/SNKTeZ0k35Yn1LtgGWdKNVrLiMEgjr5m7le0xKoAsjWkODknoQlsDhWQF3BO/U2eqAFfaCqWQ1tjDyrWSbUtDqVbyOCERfQA6P1U4Rhy4hQAAAABJRU5ErkJggjAwMDAAAABre2hzdAAAAAA0NzU2MzU1NwAAAGt7aHN0AAAAAA=="
       ],
       "answer": "A",
-      "explanation": "平均分成 $4$ 段，每段占总长的 $\\frac{1}{4}$（与总长是几米无关）。选项 A $=\\frac{1}{4}$。"
+      "explanation": "平均分成 $4$ 段，每段占总长的 $\\frac{1}{4}$（与总长是几米无关）。选项 A $=\\frac{1}{4}$。",
+      "_raw_excerpt": "把一根长5米的铁丝平均分成4段，每段长度占这根铁丝总长度的（　　）\nA．\tB．\tC．\tD．"
     },
     {
       "subject": "math",
@@ -306,7 +314,8 @@
         "D. 加 $8$"
       ],
       "answer": "D",
-      "explanation": "前项 $3+6=9$，相当于乘 $3$。要保比值不变，后项也乘 $3$：$4\\times 3=12$，即加 $12-4=8$。"
+      "explanation": "前项 $3+6=9$，相当于乘 $3$。要保比值不变，后项也乘 $3$：$4\\times 3=12$，即加 $12-4=8$。",
+      "_raw_excerpt": "在3：4中，如果比的前项加上6，要使比值不变，后项应该（　　）\nA．加6\tB．乘2\tC．乘6\tD．加8"
     },
     {
       "subject": "math",
@@ -324,7 +333,8 @@
         "D. $625$"
       ],
       "answer": "C",
-      "explanation": "$125\\times(1+\\frac{1}{5})=125\\times\\frac{6}{5}=150$ 厘米。"
+      "explanation": "$125\\times(1+\\frac{1}{5})=125\\times\\frac{6}{5}=150$ 厘米。",
+      "_raw_excerpt": "小华的身高是125厘米，小美的身高比小华高，小美的身高是（　　）厘米\nA．100\tB．130\tC．150\tD．625"
     },
     {
       "subject": "math",
@@ -342,7 +352,8 @@
         "D. $57$"
       ],
       "answer": "C",
-      "explanation": "$56\\times\\frac{8}{7}=\\frac{56\\times 8}{7}=\\frac{448}{7}=64$ 吨。"
+      "explanation": "$56\\times\\frac{8}{7}=\\frac{56\\times 8}{7}=\\frac{448}{7}=64$ 吨。",
+      "_raw_excerpt": "56吨的是（　　）吨。\nA．56\tB．49\tC．64\tD．57"
     },
     {
       "subject": "math",
@@ -360,7 +371,8 @@
         "D. $240$"
       ],
       "answer": "B",
-      "explanation": "切拼后多出两个矩形（边长 $=$ 圆柱半径 $\\times$ 高），增加面积 $=2\\times r\\times h=2\\times 6\\times 10=120$ 平方厘米。"
+      "explanation": "切拼后多出两个矩形（边长 $=$ 圆柱半径 $\\times$ 高），增加面积 $=2\\times r\\times h=2\\times 6\\times 10=120$ 平方厘米。",
+      "_raw_excerpt": "把一个高为10厘米，半径为6厘米的圆柱切成若干等份。拼成一个近似的长方体。拼成的长方体表面积比圆柱增加了（　　）平方厘米\nA．60\tB．120\tC．180\tD．240"
     },
     {
       "subject": "math",
@@ -378,7 +390,8 @@
         "D. $2a+180$"
       ],
       "answer": "A",
-      "explanation": "上衣 $=$ 裤子 $\\times 2-180=2a-180$ 元。"
+      "explanation": "上衣 $=$ 裤子 $\\times 2-180=2a-180$ 元。",
+      "_raw_excerpt": "一条裤子的价格是a元，一件上衣的价格比这条裤子的2倍少180元，这件上衣的价格是（　　）元\nA．2a﹣180\tB．360\tC．2a\tD．2a+180"
     },
     {
       "subject": "math",
@@ -396,7 +409,8 @@
         "D. 也是一定的"
       ],
       "answer": "B",
-      "explanation": "三角形面积 $=\\frac{1}{2}\\times$ 底 $\\times$ 高，底 $\\times$ 高 $=2\\times$ 面积（一定），积一定 $\\Rightarrow$ 成反比例。"
+      "explanation": "三角形面积 $=\\frac{1}{2}\\times$ 底 $\\times$ 高，底 $\\times$ 高 $=2\\times$ 面积（一定），积一定 $\\Rightarrow$ 成反比例。",
+      "_raw_excerpt": "三角形的面积一定，它的底和高（　　）\nA．成正比例\tB．成反比例\tC．不成比例\tD．也是一定的"
     },
     {
       "subject": "math",
@@ -414,7 +428,8 @@
         "D. 南偏东 $30°$"
       ],
       "answer": "D",
-      "explanation": "两点方向相反，北偏西 $30°$ 反方向是南偏东 $30°$。"
+      "explanation": "两点方向相反，北偏西 $30°$ 反方向是南偏东 $30°$。",
+      "_raw_excerpt": "小智家在小瞳家的北偏西30°方向800米，那么小瞳家在小智家的（　　）方向800米处\nA．西偏北30°\tB．北偏西60°\tC．东偏南30°\tD．南偏东30°"
     },
     {
       "subject": "math",
@@ -426,7 +441,8 @@
       "knowledge_point": "总复习/解决问题策略",
       "content": "一袋大米，第一周吃了 $12\\%$，第二周吃了 $6$ 千克，还剩 $29.2$ 千克，这袋大米原有多少千克？",
       "answer": "40",
-      "explanation": "设原有 $x$ 千克，则 $x\\times(1-12\\%)=6+29.2$，即 $0.88x=35.2$，$x=40$ 千克。"
+      "explanation": "设原有 $x$ 千克，则 $x\\times(1-12\\%)=6+29.2$，即 $0.88x=35.2$，$x=40$ 千克。",
+      "_raw_excerpt": "一袋大米，第一周吃了12%，第二周吃了6千克，还剩29.2千克，这袋大米原有多少千克？"
     },
     {
       "subject": "math",
@@ -438,7 +454,8 @@
       "knowledge_point": "总复习/解决问题策略",
       "content": "小红看一本故事书，第一天看了 $45$ 页，第二天看了全书的 $\\frac{2}{5}$，第二天看的页数恰好比第一天多 $20\\%$，这本书一共有多少页？",
       "answer": "135",
-      "explanation": "第二天看 $45\\times(1+20\\%)=54$ 页，对应全书 $\\frac{2}{5}$，故全书 $=54\\div\\frac{2}{5}=135$ 页。"
+      "explanation": "第二天看 $45\\times(1+20\\%)=54$ 页，对应全书 $\\frac{2}{5}$，故全书 $=54\\div\\frac{2}{5}=135$ 页。",
+      "_raw_excerpt": "小红看一本故事书，第一天看了45页，第二天看了全书的，第二天看的页数恰好比第一天多20%，这本书一共有多少页？"
     },
     {
       "subject": "math",
@@ -451,7 +468,8 @@
       "content": "一个直角三角形的两条直角边分别长 $3$ 厘米和 $4$ 厘米，斜边的长度是 $5$ 厘米，如图，如果以 $4$ 厘米长的直角边为轴，把这个三角形旋转一周，得到一个圆锥体，这个圆锥体的体积是多少立方厘米？（取 $\\pi=3.14$）",
       "image_data": "data:image/png;base64,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",
       "answer": "37.68",
-      "explanation": "绕 $4$ 厘米直角边旋转得到圆锥：底面半径 $=3$ 厘米，高 $=4$ 厘米。体积 $=\\frac{1}{3}\\pi r^{2} h=\\frac{1}{3}\\times 3.14\\times 9\\times 4=37.68$ 立方厘米。"
+      "explanation": "绕 $4$ 厘米直角边旋转得到圆锥：底面半径 $=3$ 厘米，高 $=4$ 厘米。体积 $=\\frac{1}{3}\\pi r^{2} h=\\frac{1}{3}\\times 3.14\\times 9\\times 4=37.68$ 立方厘米。",
+      "_raw_excerpt": "一个直角三角形的两条直角边分别长3厘米和4厘米，斜边的长度是5厘米，如果以4厘米长的直角边为轴，把这个三角形旋转一周，得到一个圆锥体，这个圆锥体的体积是多少立方厘米？\n​"
     },
     {
       "subject": "math",
@@ -463,7 +481,8 @@
       "knowledge_point": "总复习/解决问题策略",
       "content": "甲、乙两地相距 $288$ 千米，一辆客车和一辆货车同时从甲、乙两地相对开出，客车每小时行驶 $80$ 千米，货车行驶的速度是客车的 $80\\%$，两车经过多长时间能够相遇？（用列方程的方法解答，单位：小时）",
       "answer": "2",
-      "explanation": "货车速度 $=80\\times 80\\%=64$ 千米/时，速度和 $=80+64=144$ 千米/时。设相遇时间 $x$ 小时，$144x=288$，$x=2$。"
+      "explanation": "货车速度 $=80\\times 80\\%=64$ 千米/时，速度和 $=80+64=144$ 千米/时。设相遇时间 $x$ 小时，$144x=288$，$x=2$。",
+      "_raw_excerpt": "甲、乙两地相距288千米，一辆客车和一辆货车同时从甲、乙两地相对开出，客车每小时行驶80千米，货车行驶的速度是客车的80%，两车经过多长时间能够相遇？（用列方程的方法解答）"
     },
     {
       "subject": "math",
@@ -475,7 +494,8 @@
       "knowledge_point": "总复习/解决问题策略",
       "content": "一瓶糖水的质量是 $400$ 克，浓度为 $10\\%$，如果要把这瓶糖水调为浓度为 $8\\%$ 的糖水，需要往里面加入多少克水？（糖水的浓度是指糖水中糖的质量与糖水质量的百分比）",
       "answer": "100",
-      "explanation": "糖的质量不变 $=400\\times 10\\%=40$ 克。加水后糖水总质量 $=40\\div 8\\%=500$ 克。需加入水 $=500-400=100$ 克。"
+      "explanation": "糖的质量不变 $=400\\times 10\\%=40$ 克。加水后糖水总质量 $=40\\div 8\\%=500$ 克。需加入水 $=500-400=100$ 克。",
+      "_raw_excerpt": "一瓶糖水的质量是400克，浓度为10%，如果要把这直糖水调为浓度为8%的糖水，需要往里面加入多少克水？（糖水的浓度是指糖水中糖的质量与糖水质量的百分比。）"
     }
   ],
   "_v2_workflow_version": "V3.17"

@@ -114,43 +114,37 @@
     {
       "qnum": "idx8",
       "reason": "v3_18_content_violation_audit",
-      "raw_excerpt": "",
+      "raw_excerpt": "有编号为1、2、3、4的四个人准备抽签决定谁参加公益活动，公证人制作了外表一样的四枚签，其中一枚刻着“去”，四人照字母顺序先后抽签，抽完不放回，谁抽到“去”字，即可以参加。那么这四人谁被抽中的概率最大？（    ）\nA．1号\tB．4号\tC．一样大\tD．无法确定",
       "_violation": "audit_v2_final_content_violation_p0"
     },
     {
       "qnum": "idx9",
       "reason": "v3_18_content_violation_audit",
-      "raw_excerpt": "",
+      "raw_excerpt": "盒子里有红，黑，黄，蓝四种颜色的球各5个，想摸出的球一定有2个是同色的，最少要摸出(      )个球．摸出的球一定有2个是不同色的，最少要摸出(      )个球．",
       "_violation": "audit_v2_final_content_violation_p0"
     },
     {
       "qnum": "idx10",
       "reason": "v3_18_content_violation_audit",
-      "raw_excerpt": "",
+      "raw_excerpt": "时针从“12”开始，顺时针旋转(        )°到“3”；分针从“6”开始，顺时针旋转150°到“(        )”。",
       "_violation": "audit_v2_final_content_violation_p0"
     },
     {
       "qnum": "idx11",
       "reason": "v3_18_content_violation_audit",
-      "raw_excerpt": "",
+      "raw_excerpt": "一只挂钟的分针长10厘米，15分钟后，分针的尖端所走的路程是     厘米，扫过的面积是     平方厘米．",
       "_violation": "audit_v2_final_content_violation_p0"
     },
     {
       "qnum": "idx20",
       "reason": "v3_18_content_violation_audit",
-      "raw_excerpt": "",
+      "raw_excerpt": "我国建成了世界上第二大铁路网和最发达的高速铁路网。2018年全国铁路（分为普通铁路和高速铁路）营业总里程约13万千米。其中高速铁路营业里程占普通铁路的，2018年高速铁路和普通铁路的营业里程分别约是多少万千米？",
       "_violation": "audit_v2_final_content_violation_p0"
     },
     {
       "qnum": "?",
       "reason": "v3_18_residual_format_hint",
       "raw_excerpt": "$5.68$ 中的 $6$ 表示 $6$ 个（　　），$0.06$ 中的 $6$ 表示 $6$ 个（　　），$26.5\\%$ 中的 $6$ 表示 $6$ 个（　　）。请按顺序写出 $3$ 个答案，用「，」分隔。",
-      "_violation": "audit_v3_18_keyword_用「，」分隔"
-    },
-    {
-      "qnum": "?",
-      "reason": "v3_18_residual_format_hint",
-      "raw_excerpt": "我国建成了世界上第二大铁路网和最发达的高速铁路网。$2018$ 年全国铁路（分为普通铁路和高速铁路）营业总里程约 $13$ 万千米。其中高速铁路营业里程占普通铁路的 $\\frac{3}{10}$。$2018$ 年高速铁路和普通铁路的营业里程",
       "_violation": "audit_v3_18_keyword_用「，」分隔"
     }
   ],
@@ -171,7 +165,8 @@
         "D. $32\\%$"
       ],
       "answer": "D",
-      "explanation": "三次倒出再加水，药量依次为：$80\\% \\times (1-\\frac{1}{3}) \\times (1-\\frac{1}{4}) \\times (1-\\frac{1}{5}) = 80\\% \\times \\frac{2}{3} \\times \\frac{3}{4} \\times \\frac{4}{5} = 80\\% \\times \\frac{2}{5} = 32\\%$。"
+      "explanation": "三次倒出再加水，药量依次为：$80\\% \\times (1-\\frac{1}{3}) \\times (1-\\frac{1}{4}) \\times (1-\\frac{1}{5}) = 80\\% \\times \\frac{2}{3} \\times \\frac{3}{4} \\times \\frac{4}{5} = 80\\% \\times \\frac{2}{5} = 32\\%$。",
+      "_raw_excerpt": "一瓶药液含药为80%，倒出后再加满水，再倒出后仍用水加满，再倒出后还用水加满，这时药液含药为（　　）\nA．50%\tB．30%\tC．35%\tD．32%"
     },
     {
       "subject": "math",
@@ -188,7 +183,8 @@
         "C. $9:2$"
       ],
       "answer": "B",
-      "explanation": "圆面积 $= \\pi r^2$。半径比 $3:1$，则面积比 $= 3^2:1^2 = 9:1$。"
+      "explanation": "圆面积 $= \\pi r^2$。半径比 $3:1$，则面积比 $= 3^2:1^2 = 9:1$。",
+      "_raw_excerpt": "大圆和小圆的半径比是3︰1，那么大圆和小圆的面积比是（    ）。\nA．3∶1\tB．9∶1\tC．9∶2"
     },
     {
       "subject": "math",
@@ -206,7 +202,8 @@
         "D. $1:100$"
       ],
       "answer": "C",
-      "explanation": "图上距离 > 实际距离，应选放大比例尺（前项 > 后项），故 BD 排除。\n选 A：图上 $= 2.1 \\times 150 = 315$ mm $= 31.5$ cm > $30$ cm，画不下。\n选 C：图上 $= 2.1 \\times 100 = 210$ mm $= 21$ cm < $30$ cm，可画下。故选 C。"
+      "explanation": "图上距离 > 实际距离，应选放大比例尺（前项 > 后项），故 BD 排除。\n选 A：图上 $= 2.1 \\times 150 = 315$ mm $= 31.5$ cm > $30$ cm，画不下。\n选 C：图上 $= 2.1 \\times 100 = 210$ mm $= 21$ cm < $30$ cm，可画下。故选 C。",
+      "_raw_excerpt": "一张图纸长30厘米，王技术员打算把一个实际长度是2.1毫米的零件画到这张图纸上，可选用适当的比例尺是（ ）\nA．150：1\tB．1：150\tC．100：1\tD．1：100"
     },
     {
       "subject": "math",
@@ -224,7 +221,8 @@
         "D. 同时完成"
       ],
       "answer": "B",
-      "explanation": "甲：用 $2x$ 时间，加工 $5x+4x=9x$ 件，平均速度 $4.5$ 件/分。乙：完成 $\\frac{9x}{2}$ 件用 $\\frac{9x/2}{5}$，再 $\\frac{9x/2}{4}$，共 $\\frac{9x}{10}+\\frac{9x}{8}=\\frac{36x+45x}{40}=\\frac{81x}{40}=2.025x$。$2x < 2.025x$，甲用时少，先完成。"
+      "explanation": "甲：用 $2x$ 时间，加工 $5x+4x=9x$ 件，平均速度 $4.5$ 件/分。乙：完成 $\\frac{9x}{2}$ 件用 $\\frac{9x/2}{5}$，再 $\\frac{9x/2}{4}$，共 $\\frac{9x}{10}+\\frac{9x}{8}=\\frac{36x+45x}{40}=\\frac{81x}{40}=2.025x$。$2x < 2.025x$，甲用时少，先完成。",
+      "_raw_excerpt": "甲、乙两人各加工相同的零件，甲在一半时间内每分钟加工5个，另一半时间内每分钟加工4个；乙在一半任务内每分钟加工5个，另一半任务内每分钟加工4个，结果完成工作的情况是（　　）\nA．无法确定谁先完成\tB．甲先完成\nC．乙先完成\tD．同时完成"
     },
     {
       "subject": "math",
@@ -241,7 +239,8 @@
         "C. $12.56$"
       ],
       "answer": "B",
-      "explanation": "$\\pi r^2 = 3.14$ → $r^2=1$ → $r=1$ m。周长 $= 2\\pi r = 2 \\times 3.14 \\times 1 = 6.28$ m。"
+      "explanation": "$\\pi r^2 = 3.14$ → $r^2=1$ → $r=1$ m。周长 $= 2\\pi r = 2 \\times 3.14 \\times 1 = 6.28$ m。",
+      "_raw_excerpt": "这个圆的周长是（    ）m。\nA．3.14\tB．6.28\tC．12.56"
     },
     {
       "subject": "math",
@@ -258,7 +257,8 @@
         "C. $\\frac{4}{3}$"
       ],
       "answer": "A",
-      "explanation": "甲 $\\div$ 乙 $= 3 \\div 4 = \\frac{3}{4}$，故甲是乙的 $\\frac{3}{4}$。"
+      "explanation": "甲 $\\div$ 乙 $= 3 \\div 4 = \\frac{3}{4}$，故甲是乙的 $\\frac{3}{4}$。",
+      "_raw_excerpt": "甲与乙的比是3：4，甲是乙的（　　）\nA．\tB．1倍\tC．"
     },
     {
       "subject": "math",
@@ -277,7 +277,8 @@
       ],
       "answer": "D",
       "explanation": "设重叠面积为 $x$。小三角形 $= x \\div \\frac{1}{4} = 4x$；大三角形 $= x \\div \\frac{1}{9} = 9x$。比 $= 4x : 9x = 4:9$。",
-      "image_data": "data:image/png;base64,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"
+      "image_data": "data:image/png;base64,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",
+      "_raw_excerpt": "如下图，两个三角形重叠部分的面积相当于小三角形面积的，相当于大三角形面积的，那么小三角形和大三角形的面积之比是（    ）。"
     },
     {
       "subject": "math",
@@ -293,7 +294,8 @@
         "B. 错误"
       ],
       "answer": "B",
-      "explanation": "现价 $= 1 \\times (1+5\\%) \\times (1-5\\%) = 1 \\times 1.05 \\times 0.95 = 0.9975 < 1$，比原价低，故说法错误。"
+      "explanation": "现价 $= 1 \\times (1+5\\%) \\times (1-5\\%) = 1 \\times 1.05 \\times 0.95 = 0.9975 < 1$，比原价低，故说法错误。",
+      "_raw_excerpt": "某商品先提价5%，后又降阶5%，这件商品的现价与原价相等。(        )"
     },
     {
       "subject": "math",
@@ -309,7 +311,8 @@
         "B. 错误"
       ],
       "answer": "B",
-      "explanation": "相反方向「北 ↔ 南、东 ↔ 西」。北偏西 $20°$ 的相反方向是南偏东 $20°$，而非北偏东 $20°$。故说法错误。"
+      "explanation": "相反方向「北 ↔ 南、东 ↔ 西」。北偏西 $20°$ 的相反方向是南偏东 $20°$，而非北偏东 $20°$。故说法错误。",
+      "_raw_excerpt": "北偏西20°”和“北偏东20°”是相反的方向。(        )"
     },
     {
       "subject": "math",
@@ -325,23 +328,8 @@
         "B. 错误"
       ],
       "answer": "B",
-      "explanation": "$2:1$ 放大：长宽各放大 $2$ 倍。周长 = 原周长 $\\times 2$（成立）；面积 = 原面积 $\\times 2 \\times 2 = 4$ 倍（不是 $2$ 倍）。故说法错误。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_zdzx_002",
-      "round": 2,
-      "type": "choice",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/数与代数综合",
-      "content": "$-2°C$ 表示零下 $2°C$，$0°C$ 表示没有温度。（判断对错）",
-      "options": [
-        "A. 正确",
-        "B. 错误"
-      ],
-      "answer": "B",
-      "explanation": "$0°C$ 是温度的一个具体数值（冰水混合物的温度），不是「没有温度」，故说法错误。"
+      "explanation": "$2:1$ 放大：长宽各放大 $2$ 倍。周长 = 原周长 $\\times 2$（成立）；面积 = 原面积 $\\times 2 \\times 2 = 4$ 倍（不是 $2$ 倍）。故说法错误。",
+      "_raw_excerpt": "放大后，它的周长和面积都是原来的2倍。(        )"
     },
     {
       "subject": "math",
@@ -357,7 +345,8 @@
         "B. 错误"
       ],
       "answer": "A",
-      "explanation": "半圆所对的圆心角 = 周角 $\\div 2 = 360° \\div 2 = 180°$，故说法正确。"
+      "explanation": "半圆所对的圆心角 = 周角 $\\div 2 = 360° \\div 2 = 180°$，故说法正确。",
+      "_raw_excerpt": "以半圆为弧的扇形的圆心角是180°。(        )"
     },
     {
       "subject": "math",
@@ -373,7 +362,8 @@
         "B. 错误"
       ],
       "answer": "B",
-      "explanation": "$45\\%$ 与 $47\\%$ 之间有 $46\\%$、$45.5\\%$、$46.5\\%$、$45.99\\%$ 等无数个百分数，故说法错误。"
+      "explanation": "$45\\%$ 与 $47\\%$ 之间有 $46\\%$、$45.5\\%$、$46.5\\%$、$45.99\\%$ 等无数个百分数，故说法错误。",
+      "_raw_excerpt": "大于45%而小于47%的百分数只有一个。(      )"
     },
     {
       "subject": "math",
@@ -389,7 +379,25 @@
         "B. 错误"
       ],
       "answer": "B",
-      "explanation": "假设路程为 $1$，甲速 $= \\frac{1}{4}$，乙速 $= \\frac{1}{5}$。甲速 $\\div$ 乙速 $= \\frac{1}{4} \\div \\frac{1}{5} = \\frac{5}{4} = 125\\%$，是乙的 $125\\%$ 而非 $80\\%$。说法错误。"
+      "explanation": "假设路程为 $1$，甲速 $= \\frac{1}{4}$，乙速 $= \\frac{1}{5}$。甲速 $\\div$ 乙速 $= \\frac{1}{4} \\div \\frac{1}{5} = \\frac{5}{4} = 125\\%$，是乙的 $125\\%$ 而非 $80\\%$。说法错误。",
+      "_raw_excerpt": "走同一段路，甲用了4分钟，乙用了5分钟，甲的速度是乙的80%。(        )"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正比例的意义",
+      "content": "小明家买了新房子，用同样的木地板铺地，若铺 $5$ 平方米要 $60$ 块地板，照这样计算，再铺 $95$ 平方米，一共需要这种木地板多少块？（用比例知识解答）",
+      "answer": "1200",
+      "alt_answers": [
+        "1200块",
+        "1200 块"
+      ],
+      "explanation": "面积与块数成正比例。设共需 $x$ 块，$\\frac{x}{5+95}=\\frac{60}{5}$，$5x = 60 \\times 100 = 6000$，$x=1200$ 块。",
+      "_raw_excerpt": "小明家买了新房子，用同样的木地板铺地，若铺5平方米要60块地板，照这样计算，再铺95平方米，一共需要这种木地板多少块？（用比例知识解答）"
     },
     {
       "subject": "math",
@@ -407,7 +415,8 @@
         "24万",
         "24万元"
       ],
-      "explanation": "设原价 $x$ 元。分期付款 $= (1+4\\%)x=1.04x$。一次付款 $= 0.98x$。差 $1.04x-0.98x=0.06x=14400 \\Rightarrow x=240000$ 元。"
+      "explanation": "设原价 $x$ 元。分期付款 $= (1+4\\%)x=1.04x$。一次付款 $= 0.98x$。差 $1.04x-0.98x=0.06x=14400 \\Rightarrow x=240000$ 元。",
+      "_raw_excerpt": "一套住房，分期付款要加价4%，如果一次交清可按原价的98%交款，分期比一次交清多付14400元，这套住房的原价是多少？"
     },
     {
       "subject": "math",
@@ -431,7 +440,25 @@
         "alt_answer": "",
         "confidence": "low",
         "raised_by": "worker_a8361fea_v3_14_phase3_b6"
-      }
+      },
+      "_raw_excerpt": "中秋晚会结束后，三年级还剩16个月饼，三（1）班分走全部的，三（4）班分走了剩余的。哪个班分得的多？"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "$-2°C$ 表示零下 $2°C$，$0°C$ 表示没有温度。（判断对错）",
+      "options": [
+        "A. 正确",
+        "B. 错误"
+      ],
+      "answer": "B",
+      "explanation": "$0°C$ 是温度的一个具体数值（冰水混合物的温度），不是「没有温度」，故说法错误。",
+      "_raw_excerpt": "20．-2℃表示零下2℃，0℃表示没有温度。                          (       )"
     }
   ],
   "_v2_workflow_version": "V3.17"

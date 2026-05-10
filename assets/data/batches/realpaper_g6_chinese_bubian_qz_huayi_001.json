@@ -23,16 +23,56 @@
     "_v3_17_notes": "v1 q3 #10「按顺序填两句话，用「|||」分隔」+ q18 同款违纪。v2 拆为两子题各自 fill。"
   },
   "_skipped_for_future": [
-    {"qnum": "5", "reason": "open_writing_subjective", "raw_excerpt": "文学常识填空：（1）《北京的春节》作者+写作方法（开放概括）（2）《那个星期天》出处（已 v2 入库简易版）"},
-    {"qnum": "6", "reason": "subjective_short", "raw_excerpt": "标点符号作用（破折号/冒号/引号/省略号）开放表达"},
-    {"qnum": "7", "reason": "open_writing_subjective", "raw_excerpt": "综合阅读：心情好/不好状态、《匆匆》问句感受、推荐外国名著（开放）"},
-    {"qnum": "10", "reason": "subjective_short", "raw_excerpt": "翻译诗句开放表达"},
-    {"qnum": "11", "reason": "open_writing_subjective", "raw_excerpt": "传统节日相关诗句填空（自由发挥）"},
-    {"qnum": "12", "reason": "subjective_short", "raw_excerpt": "比较两诗选材立意"},
-    {"qnum": "13", "reason": "info_lost_irrecoverable", "raw_excerpt": "近义词找词（爱丽丝原文略，归入 14）"},
-    {"qnum": "14", "reason": "subjective_short", "raw_excerpt": "片段+描写类型分析（开放）"},
-    {"qnum": "16", "reason": "open_writing_subjective", "raw_excerpt": "想象爱丽丝最后是怎样进入小门"},
-    {"qnum": "17", "reason": "subjective_essay", "raw_excerpt": "习作"}
+    {
+      "qnum": "5",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "文学常识填空：（1）《北京的春节》作者+写作方法（开放概括）（2）《那个星期天》出处（已 v2 入库简易版）"
+    },
+    {
+      "qnum": "6",
+      "reason": "subjective_short",
+      "raw_excerpt": "标点符号作用（破折号/冒号/引号/省略号）开放表达"
+    },
+    {
+      "qnum": "7",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "综合阅读：心情好/不好状态、《匆匆》问句感受、推荐外国名著（开放）"
+    },
+    {
+      "qnum": "10",
+      "reason": "subjective_short",
+      "raw_excerpt": "翻译诗句开放表达"
+    },
+    {
+      "qnum": "11",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "传统节日相关诗句填空（自由发挥）"
+    },
+    {
+      "qnum": "12",
+      "reason": "subjective_short",
+      "raw_excerpt": "比较两诗选材立意"
+    },
+    {
+      "qnum": "13",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "近义词找词（爱丽丝原文略，归入 14）"
+    },
+    {
+      "qnum": "14",
+      "reason": "subjective_short",
+      "raw_excerpt": "片段+描写类型分析（开放）"
+    },
+    {
+      "qnum": "16",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "想象爱丽丝最后是怎样进入小门"
+    },
+    {
+      "qnum": "17",
+      "reason": "subjective_essay",
+      "raw_excerpt": "习作"
+    }
   ],
   "questions": [
     {
@@ -43,7 +83,7 @@
       "type": "fill",
       "chapter": "字词",
       "knowledge_point": "字词/成语运用",
-      "group_id": "qz_huayi_001_q1",
+      "group_id": "chn_qz_huayi_001_q1",
       "group_order": 1,
       "_raw_excerpt": "万（      ）更新",
       "_common_prefix_raw": "1. 补充下面成语。",
@@ -59,7 +99,7 @@
       "type": "fill",
       "chapter": "字词",
       "knowledge_point": "字词/成语运用",
-      "group_id": "qz_huayi_001_q1",
+      "group_id": "chn_qz_huayi_001_q1",
       "group_order": 2,
       "_raw_excerpt": "独出心（      ）",
       "_common_prefix_raw": "1. 补充下面成语。",
@@ -75,7 +115,7 @@
       "type": "fill",
       "chapter": "字词",
       "knowledge_point": "字词/成语运用",
-      "group_id": "qz_huayi_001_q1",
+      "group_id": "chn_qz_huayi_001_q1",
       "group_order": 3,
       "_raw_excerpt": "跃跃（      ）试",
       "_common_prefix_raw": "1. 补充下面成语。",
@@ -91,7 +131,7 @@
       "type": "fill",
       "chapter": "字词",
       "knowledge_point": "字词/成语运用",
-      "group_id": "qz_huayi_001_q1",
+      "group_id": "chn_qz_huayi_001_q1",
       "group_order": 4,
       "_raw_excerpt": "（      ）然不同",
       "_common_prefix_raw": "1. 补充下面成语。",
@@ -107,7 +147,7 @@
       "type": "fill",
       "chapter": "字词",
       "knowledge_point": "字词/成语运用",
-      "group_id": "qz_huayi_001_q1",
+      "group_id": "chn_qz_huayi_001_q1",
       "group_order": 5,
       "_raw_excerpt": "无（      ）于事",
       "_common_prefix_raw": "1. 补充下面成语。",
@@ -123,7 +163,7 @@
       "type": "fill",
       "chapter": "字词",
       "knowledge_point": "字词/成语运用",
-      "group_id": "qz_huayi_001_q1",
+      "group_id": "chn_qz_huayi_001_q1",
       "group_order": 6,
       "_raw_excerpt": "一声不（      ）",
       "_common_prefix_raw": "1. 补充下面成语。",
@@ -158,7 +198,7 @@
       "type": "fill",
       "chapter": "古诗文",
       "knowledge_point": "古诗文/古诗词背诵默写",
-      "group_id": "qz_huayi_001_q3",
+      "group_id": "chn_qz_huayi_001_q3",
       "group_order": 1,
       "_raw_excerpt": "（1）盈盈一水间，__________。",
       "_common_prefix_raw": "3. 古诗文积累。",
@@ -174,7 +214,7 @@
       "type": "fill",
       "chapter": "古诗文",
       "knowledge_point": "古诗文/古诗词背诵默写",
-      "group_id": "qz_huayi_001_q3",
+      "group_id": "chn_qz_huayi_001_q3",
       "group_order": 2,
       "_raw_excerpt": "（2）_______，日久见人心。",
       "_common_prefix_raw": "3. 古诗文积累。",
@@ -190,7 +230,7 @@
       "type": "fill",
       "chapter": "古诗文",
       "knowledge_point": "古诗文/古诗词背诵默写",
-      "group_id": "qz_huayi_001_q3",
+      "group_id": "chn_qz_huayi_001_q3",
       "group_order": 3,
       "_raw_excerpt": "（3）《长歌行》中表示珍惜时间的名句是：_____________，____________。",
       "_common_prefix_raw": "3. 古诗文积累。",
@@ -206,7 +246,7 @@
       "type": "fill",
       "chapter": "古诗文",
       "knowledge_point": "古诗文/古诗词背诵默写",
-      "group_id": "qz_huayi_001_q3",
+      "group_id": "chn_qz_huayi_001_q3",
       "group_order": 4,
       "_raw_excerpt": "（3）《长歌行》中表示珍惜时间的名句是：_____________，____________。",
       "_common_prefix_raw": "3. 古诗文积累。",
@@ -222,7 +262,7 @@
       "type": "fill",
       "chapter": "古诗文",
       "knowledge_point": "古诗文/古诗词背诵默写",
-      "group_id": "qz_huayi_001_q3",
+      "group_id": "chn_qz_huayi_001_q3",
       "group_order": 5,
       "_raw_excerpt": "（4）“树欲静而风不止，________”这句话提醒我们面对父母，要常怀感恩之心，好好孝顺父母，不要错过时机，将来后悔。",
       "_common_prefix_raw": "3. 古诗文积累。",
@@ -238,7 +278,7 @@
       "type": "fill",
       "chapter": "古诗文",
       "knowledge_point": "古诗文/古诗词背诵默写",
-      "group_id": "qz_huayi_001_q3",
+      "group_id": "chn_qz_huayi_001_q3",
       "group_order": 6,
       "_raw_excerpt": "（5）_________，冷露无声湿桂花。",
       "_common_prefix_raw": "3. 古诗文积累。",
@@ -254,7 +294,7 @@
       "type": "fill",
       "chapter": "字词",
       "knowledge_point": "字词/词语理解",
-      "group_id": "qz_huayi_001_q4",
+      "group_id": "chn_qz_huayi_001_q4",
       "group_order": 1,
       "_raw_excerpt": "（1）过年吃年糕：________________ 。",
       "_common_prefix_raw": "4. 写出下面事物的寓意。",
@@ -270,7 +310,7 @@
       "type": "fill",
       "chapter": "字词",
       "knowledge_point": "字词/词语理解",
-      "group_id": "qz_huayi_001_q4",
+      "group_id": "chn_qz_huayi_001_q4",
       "group_order": 2,
       "_raw_excerpt": "（2）建筑上雕刻蝙蝠：_________________ 。",
       "_common_prefix_raw": "4. 写出下面事物的寓意。",
@@ -286,7 +326,7 @@
       "type": "fill",
       "chapter": "文学常识",
       "knowledge_point": "文学常识/中国现代作家作品",
-      "group_id": "qz_huayi_001_q5",
+      "group_id": "chn_qz_huayi_001_q5",
       "group_order": 1,
       "_raw_excerpt": "（1）《北京的春节》作者是___________，",
       "_common_prefix_raw": "5. 文常识填空。",
@@ -302,7 +342,7 @@
       "type": "fill",
       "chapter": "文学常识",
       "knowledge_point": "文学常识/中国现代作家作品",
-      "group_id": "qz_huayi_001_q5",
+      "group_id": "chn_qz_huayi_001_q5",
       "group_order": 2,
       "_raw_excerpt": "（2）《那个星期天》选自的___________的《___________》。",
       "_common_prefix_raw": "5. 文常识填空。",

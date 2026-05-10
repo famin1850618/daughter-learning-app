@@ -19,15 +19,51 @@
     "_v3_17_notes": "v1 q3 自创候选成语池违纪（原题前需先补 6 成语，raw 缺）→ skipped。q4 古诗 5 子题拆 group。q11 第 1 空双答案分两子题。"
   },
   "_skipped_for_future": [
-    {"qnum": "3", "reason": "info_lost_irrecoverable", "raw_excerpt": "先补充词语再选词填空：raw 缺前置 6 成语候选池，仅有 2 选词应用句"},
-    {"qnum": "5", "reason": "open_writing_subjective", "raw_excerpt": "仿写小诗（自由创作）"},
-    {"qnum": "6", "reason": "subjective_short", "raw_excerpt": "演讲稿改 4 处病句（修改符号）"},
-    {"qnum": "7", "reason": "open_writing_subjective", "raw_excerpt": "名著观点辩论（开放）"},
-    {"qnum": "8", "reason": "open_writing_subjective", "raw_excerpt": "毕业活动策划+开场白"},
-    {"qnum": "9(2)+(3)+(4)", "reason": "subjective_short", "raw_excerpt": "三首竹诗品格分析+四君子+表现手法（开放）"},
-    {"qnum": "10", "reason": "subjective_short", "raw_excerpt": "《我的爸爸》李大钊事件概括/比较选材/补结尾"},
-    {"qnum": "11(2)+(3)+(4)", "reason": "subjective_short", "raw_excerpt": "拮据妙处+悟性思考+生命精神规划"},
-    {"qnum": "12", "reason": "subjective_essay", "raw_excerpt": "习作《较量》"}
+    {
+      "qnum": "3",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "先补充词语再选词填空：raw 缺前置 6 成语候选池，仅有 2 选词应用句"
+    },
+    {
+      "qnum": "5",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "仿写小诗（自由创作）"
+    },
+    {
+      "qnum": "6",
+      "reason": "subjective_short",
+      "raw_excerpt": "演讲稿改 4 处病句（修改符号）"
+    },
+    {
+      "qnum": "7",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "名著观点辩论（开放）"
+    },
+    {
+      "qnum": "8",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "毕业活动策划+开场白"
+    },
+    {
+      "qnum": "9(2)+(3)+(4)",
+      "reason": "subjective_short",
+      "raw_excerpt": "三首竹诗品格分析+四君子+表现手法（开放）"
+    },
+    {
+      "qnum": "10",
+      "reason": "subjective_short",
+      "raw_excerpt": "《我的爸爸》李大钊事件概括/比较选材/补结尾"
+    },
+    {
+      "qnum": "11(2)+(3)+(4)",
+      "reason": "subjective_short",
+      "raw_excerpt": "拮据妙处+悟性思考+生命精神规划"
+    },
+    {
+      "qnum": "12",
+      "reason": "subjective_essay",
+      "raw_excerpt": "习作《较量》"
+    }
   ],
   "questions": [
     {
@@ -76,7 +112,7 @@
       "type": "fill",
       "chapter": "古诗文",
       "knowledge_point": "古诗文/古诗词背诵默写",
-      "group_id": "xsc_longhua_002_q4",
+      "group_id": "chn_xsc_longhua_002_q4",
       "group_order": 1,
       "_raw_excerpt": "①在月夜，诗人王建面对月亮思乡的情绪油然而生，不禁写下了“今夜月明人尽望，　   　？”",
       "_common_prefix_raw": "4．（3分）古诗文填空。",
@@ -92,7 +128,7 @@
       "type": "fill",
       "chapter": "古诗文",
       "knowledge_point": "古诗文/古诗词背诵默写",
-      "group_id": "xsc_longhua_002_q4",
+      "group_id": "chn_xsc_longhua_002_q4",
       "group_order": 2,
       "_raw_excerpt": "“劝君更尽一杯酒，　   　”表达了王维与友人依依惜别的不舍场景。",
       "_common_prefix_raw": "4．（3分）古诗文填空。",
@@ -108,7 +144,7 @@
       "type": "fill",
       "chapter": "古诗文",
       "knowledge_point": "古诗文/古诗词背诵默写",
-      "group_id": "xsc_longhua_002_q4",
+      "group_id": "chn_xsc_longhua_002_q4",
       "group_order": 3,
       "_raw_excerpt": "同时明代朝诗人于谦则用“　   　，要留清白在人间”来表明自己不怕挫折、积极进取、正直清白的骨气。",
       "_common_prefix_raw": "4．（3分）古诗文填空。",
@@ -124,7 +160,7 @@
       "type": "fill",
       "chapter": "古诗文",
       "knowledge_point": "古诗文/古诗词背诵默写",
-      "group_id": "xsc_longhua_002_q4",
+      "group_id": "chn_xsc_longhua_002_q4",
       "group_order": 4,
       "_raw_excerpt": "②苟日新，　   　，又日新。",
       "_common_prefix_raw": "4．（3分）古诗文填空。",
@@ -140,7 +176,7 @@
       "type": "fill",
       "chapter": "古诗文",
       "knowledge_point": "古诗文/古诗词背诵默写",
-      "group_id": "xsc_longhua_002_q4",
+      "group_id": "chn_xsc_longhua_002_q4",
       "group_order": 5,
       "_raw_excerpt": "③莫道君行早，　   　。",
       "_common_prefix_raw": "4．（3分）古诗文填空。",

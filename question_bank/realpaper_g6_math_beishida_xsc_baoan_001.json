@@ -125,7 +125,7 @@
       "type": "fill",
       "chapter": "小升初综合",
       "knowledge_point": "总复习/数与代数综合",
-      "group_id": "xsc_baoan_001_q1",
+      "group_id": "math_xsc_baoan_001_q1",
       "group_order": 1,
       "content": "某影院去年全年接待观众 $258600$ 人次。\n\n1. 改写成「万」为单位的数是（　　）万人次。",
       "answer": "25.86",
@@ -140,7 +140,7 @@
       "type": "fill",
       "chapter": "小升初综合",
       "knowledge_point": "总复习/数与代数综合",
-      "group_id": "xsc_baoan_001_q1",
+      "group_id": "math_xsc_baoan_001_q1",
       "group_order": 2,
       "content": "某影院去年全年共收入票款 $6297000$ 元。\n\n2. 省略「万」后面的尾数，约（　　）万元。",
       "answer": "630",
@@ -155,7 +155,7 @@
       "type": "fill",
       "chapter": "小升初综合",
       "knowledge_point": "总复习/数与代数综合",
-      "group_id": "xsc_baoan_001_q2",
+      "group_id": "math_xsc_baoan_001_q2",
       "group_order": 1,
       "content": "单位换算。\n\n1. $0.75$ 千克 $=$（　　）克。",
       "answer": "750",
@@ -170,7 +170,7 @@
       "type": "fill",
       "chapter": "小升初综合",
       "knowledge_point": "总复习/数与代数综合",
-      "group_id": "xsc_baoan_001_q2",
+      "group_id": "math_xsc_baoan_001_q2",
       "group_order": 2,
       "content": "单位换算。\n\n2. $4.3$ 时 $=$（　　）分。",
       "answer": "258",
@@ -185,22 +185,7 @@
       "type": "fill",
       "chapter": "小升初综合",
       "knowledge_point": "比和比例/比例的意义",
-      "group_id": "xsc_baoan_001_q3",
-      "group_order": 1,
-      "content": "已知 $37.5\\%$ 与一系列等价表达。$37.5\\% = (\\ \\ ):24 = 24\\div(\\ \\ ) = \\dfrac{(\\ \\ )}{(\\ \\ )} = (\\ \\ )$（小数）。\n\n1. 第一空 $(\\ \\ ):24$ 中前项应填（　　）。",
-      "answer": "9",
-      "explanation": "$37.5\\% = \\dfrac{3}{8} = 9:24$（分子分母各乘 $3$）。",
-      "_raw_excerpt": "3．（2分）37.5%　   　：24＝24÷　     　＝　        　【填小数】\n  [OMATH: $=\\frac{()}{()}=$]"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_baoan_001",
-      "round": 2,
-      "type": "fill",
-      "chapter": "小升初综合",
-      "knowledge_point": "比和比例/比例的意义",
-      "group_id": "xsc_baoan_001_q3",
+      "group_id": "math_xsc_baoan_001_q3",
       "group_order": 2,
       "content": "$37.5\\% = (\\ \\ ):24 = 24\\div(\\ \\ ) = \\dfrac{(\\ \\ )}{(\\ \\ )} = (\\ \\ )$（小数）。\n\n2. 第二空 $24\\div(\\ \\ )$ 应填（　　）。",
       "answer": "64",
@@ -211,68 +196,11 @@
       "subject": "math",
       "grade": 6,
       "source": "realpaper_g6_math_beishida_xsc_baoan_001",
-      "round": 2,
-      "type": "fill",
-      "chapter": "小升初综合",
-      "knowledge_point": "比和比例/比例的意义",
-      "group_id": "xsc_baoan_001_q3",
-      "group_order": 3,
-      "content": "$37.5\\% = (\\ \\ ):24 = 24\\div(\\ \\ ) = \\dfrac{(\\ \\ )}{(\\ \\ )} = (\\ \\ )$（小数）。\n\n3. 最后一空（小数）应填（　　）。",
-      "answer": "0.375",
-      "explanation": "$37.5\\% = 0.375$。",
-      "_raw_excerpt": "3．（2分）37.5%　   　：24＝24÷　     　＝　        　【填小数】\n  [OMATH: $=\\frac{()}{()}=$]"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_baoan_001",
-      "round": 2,
-      "type": "choice",
-      "chapter": "小升初综合",
-      "knowledge_point": "总复习/数与代数综合",
-      "group_id": "xsc_baoan_001_q4",
-      "group_order": 1,
-      "content": "在 $\\pi$、$3.142$、$\\dfrac{10}{3}$、$320\\%$ 中。\n\n1. 最大的数是（　　）。",
-      "options": [
-        "A. $\\pi$",
-        "B. $3.142$",
-        "C. $\\dfrac{10}{3}$",
-        "D. $320\\%$"
-      ],
-      "answer": "C",
-      "explanation": "$\\pi\\approx 3.1416$，$320\\%=3.2$，$\\dfrac{10}{3}\\approx 3.333$。最大 $\\dfrac{10}{3}$。",
-      "_raw_excerpt": "4.3时＝　      　分．\n3．（2分）37.5%　   　：24＝24÷　     　＝　        　【填小数】\n  [OMATH: $=\\frac{()}{()}=$]\n4．（2分）在π，3.142，，320%中，最大的数是　                 　，最小的数是　   　．\n  [OMATH: $\\frac{10}{3}$]"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_baoan_001",
-      "round": 2,
-      "type": "choice",
-      "chapter": "小升初综合",
-      "knowledge_point": "总复习/数与代数综合",
-      "group_id": "xsc_baoan_001_q4",
-      "group_order": 2,
-      "content": "在 $\\pi$、$3.142$、$\\dfrac{10}{3}$、$320\\%$ 中。\n\n2. 最小的数是（　　）。",
-      "options": [
-        "A. $\\pi$",
-        "B. $3.142$",
-        "C. $\\dfrac{10}{3}$",
-        "D. $320\\%$"
-      ],
-      "answer": "A",
-      "explanation": "$\\pi\\approx 3.1416 < 3.142 < 320\\%=3.2 < \\dfrac{10}{3}$。",
-      "_raw_excerpt": "4.3时＝　      　分．\n3．（2分）37.5%　   　：24＝24÷　     　＝　        　【填小数】\n  [OMATH: $=\\frac{()}{()}=$]\n4．（2分）在π，3.142，，320%中，最大的数是　                 　，最小的数是　   　．\n  [OMATH: $\\frac{10}{3}$]"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_baoan_001",
       "round": 1,
       "type": "fill",
       "chapter": "小升初综合",
       "knowledge_point": "比和比例/化简比",
-      "group_id": "xsc_baoan_001_q5",
+      "group_id": "math_xsc_baoan_001_q5",
       "group_order": 1,
       "content": "一辆高速火车 $4$ 小时行驶了 $960$ km。\n\n1. 路程与时间的最简整数比是（　　）。（写成 $a:b$ 形式）",
       "answer": "240:1",
@@ -287,7 +215,7 @@
       "type": "fill",
       "chapter": "小升初综合",
       "knowledge_point": "比和比例/求比值",
-      "group_id": "xsc_baoan_001_q5",
+      "group_id": "math_xsc_baoan_001_q5",
       "group_order": 2,
       "content": "一辆高速火车 $4$ 小时行驶了 $960$ km。\n\n2. 路程与时间的比值是（　　）。",
       "answer": "240",
@@ -304,7 +232,8 @@
       "knowledge_point": "总复习/图形与几何综合",
       "content": "把一个圆分成若干等份，拼成一个近似的长方形。已知拼成的长方形宽为 $5$ cm。$\\pi$ 取 $3$。\n\n那么长是（　　）cm。",
       "answer": "15",
-      "explanation": "圆拼长方形：长 $=$ 圆周长的一半 $=\\pi r$；宽 $=$ 半径 $=5$。所以长 $= 3\\times 5 = 15$ cm。"
+      "explanation": "圆拼长方形：长 $=$ 圆周长的一半 $=\\pi r$；宽 $=$ 半径 $=5$。所以长 $= 3\\times 5 = 15$ cm。",
+      "_raw_excerpt": "3．\n8．（2分）如图，把圆分成若干等份，拼成一个近似的长方形．已知宽为5cm，那么长是　     　cm．【π≈3】"
     },
     {
       "subject": "math",
@@ -316,7 +245,8 @@
       "knowledge_point": "总复习/数与代数综合",
       "content": "一串珠子，按 $5$ 个红色 + $3$ 个白色 + $5$ 个红色 + $3$ 个白色 …… 规律排列。\n\n第 $100$ 个珠子的颜色是（　　）色。",
       "answer": "红",
-      "explanation": "周期 $= 5+3 = 8$。$100\\div 8 = 12$ 余 $4$。第 $12$ 周期完，再数 $4$ 个，前 $5$ 个是红 → 第 $4$ 个是红色。"
+      "explanation": "周期 $= 5+3 = 8$。$100\\div 8 = 12$ 余 $4$。第 $12$ 周期完，再数 $4$ 个，前 $5$ 个是红 → 第 $4$ 个是红色。",
+      "_raw_excerpt": "m，那么长是　     　cm．【π≈3】\n9．（2分）一串珠子，按5个红色，3个白色，5个红色，3个白色…规律排列，第100个珠子的颜色是　   　色．"
     },
     {
       "subject": "math",
@@ -328,7 +258,8 @@
       "knowledge_point": "总复习/解决问题策略",
       "content": "笑笑要用 $20$ 克糖给妈妈调制一杯浓度为 $10\\%$ 的糖水。\n\n需要加水（　　）克。",
       "answer": "180",
-      "explanation": "糖水总质量 $= 20\\div 10\\% = 200$ 克；水 $= 200-20 = 180$ 克。"
+      "explanation": "糖水总质量 $= 20\\div 10\\% = 200$ 克；水 $= 200-20 = 180$ 克。",
+      "_raw_excerpt": "颜色是　   　色．\n10．（2分）笑笑要用20克糖给妈妈调制一杯浓度为10%的糖水，需要加水　      　克．"
     },
     {
       "subject": "math",
@@ -346,7 +277,8 @@
         "D. $1006400$"
       ],
       "answer": "A",
-      "explanation": "A. $1060402$ → 一百零六万零四百零二（读出两个零）。B. 万级末尾 $0$ 不读 → 读「一千零六十万四千零二十五」，0 在末尾省略不全读。C. $106040$ → 十万六千零四十（读 1 个零）。D. $1006400$ → 一百万六千四百（不读零）。A 中两个零都需读出。"
+      "explanation": "A. $1060402$ → 一百零六万零四百零二（读出两个零）。B. 万级末尾 $0$ 不读 → 读「一千零六十万四千零二十五」，0 在末尾省略不全读。C. $106040$ → 十万六千零四十（读 1 个零）。D. $1006400$ → 一百万六千四百（不读零）。A 中两个零都需读出。",
+      "_raw_excerpt": "共10分）\n11．（2分）下面的数中，每个零都要读出的数是（　　）\nA．1060402\tB．10604025\tC．106040\tD．1006400"
     },
     {
       "subject": "math",
@@ -364,7 +296,8 @@
         "D. $25$ 名六年级学生的体重"
       ],
       "answer": "D",
-      "explanation": "A. $50\\times 500 = 25000$ 克 $= 25$ kg。B. $10\\times 15 = 150$ kg。C. $1000\\times 6 = 6000$ 克 $=6$ kg。D. $25\\times 40 = 1000$ kg $= 1$ 吨 ✓。"
+      "explanation": "A. $50\\times 500 = 25000$ 克 $= 25$ kg。B. $10\\times 15 = 150$ kg。C. $1000\\times 6 = 6000$ 克 $=6$ kg。D. $25\\times 40 = 1000$ kg $= 1$ 吨 ✓。",
+      "_raw_excerpt": "6400\n12．（2分）下面物体中，哪一组的质量最接近一吨？（　　）\nA．50瓶矿泉水\tB．10箱装满樱桃的礼盒\nC．1000枚1元硬币\tD．25名六年级学生的体重"
     },
     {
       "subject": "math",
@@ -382,7 +315,8 @@
         "D. $36$"
       ],
       "answer": "C",
-      "explanation": "$V_{\\text{圆柱}} = 12.56\\times 6$；$h_{\\text{圆锥}} = \\dfrac{3V}{S} = \\dfrac{3\\times 12.56\\times 6}{12.56} = 18$ cm。"
+      "explanation": "$V_{\\text{圆柱}} = 12.56\\times 6$；$h_{\\text{圆锥}} = \\dfrac{3V}{S} = \\dfrac{3\\times 12.56\\times 6}{12.56} = 18$ cm。",
+      "_raw_excerpt": "D．10，6\n15．（2分）一个圆柱形橡皮泥，底面积是12.56cm2，高是6cm，如果把它捏成同样底面积大小的圆锥，这个圆锥的高是（　　）cm．\nA．2\tB．3\tC．18\tD．36"
     },
     {
       "subject": "math",
@@ -394,19 +328,50 @@
       "knowledge_point": "总复习/数与代数综合",
       "content": "解方程：$30\\%x + 5 = 17$，则 $x = $（　　）。",
       "answer": "40",
-      "explanation": "$0.3x = 12$，$x = 40$。"
+      "explanation": "$0.3x = 12$，$x = 40$。",
+      "_raw_excerpt": "18．（6分）求未知数．\n30%x+5＝17\n18：x＝6：5\n2yy．\n  [OMATH: $-\\frac{2}{5}$ | $=\\frac{2}{3}$]"
     },
     {
       "subject": "math",
       "grade": 6,
       "source": "realpaper_g6_math_beishida_xsc_baoan_001",
-      "round": 1,
-      "type": "fill",
+      "round": 2,
+      "type": "choice",
       "chapter": "小升初综合",
-      "knowledge_point": "比和比例/解比例",
-      "content": "解比例：$18:x = 6:5$，则 $x = $（　　）。",
-      "answer": "15",
-      "explanation": "$6x = 18\\times 5 = 90$，$x = 15$。"
+      "knowledge_point": "总复习/数与代数综合",
+      "group_id": "math_xsc_baoan_001_q4",
+      "group_order": 1,
+      "content": "在 $\\pi$、$3.142$、$\\dfrac{10}{3}$、$320\\%$ 中。\n\n1. 最大的数是（　　）。",
+      "options": [
+        "A. $\\pi$",
+        "B. $3.142$",
+        "C. $\\dfrac{10}{3}$",
+        "D. $320\\%$"
+      ],
+      "answer": "C",
+      "explanation": "$\\pi\\approx 3.1416$，$320\\%=3.2$，$\\dfrac{10}{3}\\approx 3.333$。最大 $\\dfrac{10}{3}$。",
+      "_raw_excerpt": "4．（2分）在π，3.142，，320%中，最大的数是　                 　，最小的数是　   　．\n  [OMATH: $\\frac{10}{3}$]"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_baoan_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "group_id": "math_xsc_baoan_001_q4",
+      "group_order": 2,
+      "content": "在 $\\pi$、$3.142$、$\\dfrac{10}{3}$、$320\\%$ 中。\n\n2. 最小的数是（　　）。",
+      "options": [
+        "A. $\\pi$",
+        "B. $3.142$",
+        "C. $\\dfrac{10}{3}$",
+        "D. $320\\%$"
+      ],
+      "answer": "A",
+      "explanation": "$\\pi\\approx 3.1416 < 3.142 < 320\\%=3.2 < \\dfrac{10}{3}$。",
+      "_raw_excerpt": "4．（2分）在π，3.142，，320%中，最大的数是　                 　，最小的数是　   　．\n  [OMATH: $\\frac{10}{3}$]"
     },
     {
       "subject": "math",
@@ -418,7 +383,8 @@
       "knowledge_point": "总复习/解决问题策略",
       "content": "市政部门修一条路，已经修了 $\\dfrac{2}{5}$，已修部分比没修部分少 $1020$ 米。\n\n这条路一共长（　　）米。（用方程解答，仅填总长）",
       "answer": "5100",
-      "explanation": "设全长 $x$ 米。没修 $= \\dfrac{3}{5}x$，已修 $= \\dfrac{2}{5}x$。$\\dfrac{3}{5}x - \\dfrac{2}{5}x = 1020$，$\\dfrac{1}{5}x = 1020$，$x = 5100$。"
+      "explanation": "设全长 $x$ 米。没修 $= \\dfrac{3}{5}x$，已修 $= \\dfrac{2}{5}x$。$\\dfrac{3}{5}x - \\dfrac{2}{5}x = 1020$，$\\dfrac{1}{5}x = 1020$，$x = 5100$。",
+      "_raw_excerpt": "市政部门修一条路，已经修了，比没修的少1020米．这条路一共长多少米？（用方程解答．）\n  [OMATH: $\\frac{2}{5}$]"
     },
     {
       "subject": "math",
@@ -430,7 +396,8 @@
       "knowledge_point": "正反比例/比例尺",
       "content": "在比例尺是 $1:4000000$ 的地图上，量得两地相距 $20$ 厘米。两车同时从两地相对开出，甲车 $55$ 千米/时，乙车 $45$ 千米/时。\n\n两车（　　）小时相遇。",
       "answer": "8",
-      "explanation": "实际距离 $= 20\\times 4000000 = 8\\times 10^7$ cm $= 800$ km。速度和 $= 55+45 = 100$ km/h。时间 $= 800\\div 100 = 8$ 小时。"
+      "explanation": "实际距离 $= 20\\times 4000000 = 8\\times 10^7$ cm $= 800$ km。速度和 $= 55+45 = 100$ km/h。时间 $= 800\\div 100 = 8$ 小时。",
+      "_raw_excerpt": "在比例尺是1：4000000的地图上，量得两地相距20厘米，两车同时从两地相对开出，甲车55千米/时，乙车45千米/时，两车几时相遇？"
     },
     {
       "subject": "math",
@@ -442,7 +409,51 @@
       "knowledge_point": "总复习/解决问题策略",
       "content": "商场举行促销活动。某种手机如果按每台 $840$ 元售出，可获得利润 $20\\%$；如果按原价售出，可获利 $30\\%$。\n\n这种手机在促销活动中降价了（　　）元。",
       "answer": "70",
-      "explanation": "成本 $\\times 1.2 = 840$，成本 $= 700$。原价 $=$ 成本 $\\times 1.3 = 910$。降价 $= 910 - 840 = 70$ 元。"
+      "explanation": "成本 $\\times 1.2 = 840$，成本 $= 700$。原价 $=$ 成本 $\\times 1.3 = 910$。降价 $= 910 - 840 = 70$ 元。",
+      "_raw_excerpt": "商场举行促销活动，某种手机如果按每台840元售出，可获得利润20%，如果按原价售出，则可获利30%，这种手机在促销活动中降价多少元？"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_baoan_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "比和比例/比例的意义",
+      "group_id": "math_xsc_baoan_001_q3",
+      "group_order": 3,
+      "content": "$37.5\\% = (\\ \\ ):24 = 24\\div(\\ \\ ) = \\dfrac{(\\ \\ )}{(\\ \\ )} = (\\ \\ )$（小数）。\n\n3. 最后一空（小数）应填（　　）。",
+      "answer": "0.375",
+      "explanation": "$37.5\\% = 0.375$。",
+      "_raw_excerpt": "3．（2分）37.5%　   　：24＝24÷　     　＝　        　【填小数】\n  [OMATH: $=\\frac{()}{()}=$]"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_baoan_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "比和比例/比例的意义",
+      "group_id": "math_xsc_baoan_001_q3",
+      "group_order": 1,
+      "content": "已知 $37.5\\%$ 与一系列等价表达。$37.5\\% = (\\ \\ ):24 = 24\\div(\\ \\ ) = \\dfrac{(\\ \\ )}{(\\ \\ )} = (\\ \\ )$（小数）。\n\n1. 第一空 $(\\ \\ ):24$ 中前项应填（　　）。",
+      "answer": "9",
+      "explanation": "$37.5\\% = \\dfrac{3}{8} = 9:24$（分子分母各乘 $3$）。",
+      "_raw_excerpt": "3．（2分）37.5%　   　：24＝24÷　     　＝　        　【填小数】\n  [OMATH: $=\\frac{()}{()}=$]"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_baoan_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "比和比例/解比例",
+      "content": "解比例：$18:x = 6:5$，则 $x = $（　　）。",
+      "answer": "15",
+      "explanation": "$6x = 18\\times 5 = 90$，$x = 15$。",
+      "_raw_excerpt": "18．（6分）求未知数．\n30%x+5＝17\n18：x＝6：5\n2yy．"
     }
   ],
   "_v2_workflow_version": "V3.17"

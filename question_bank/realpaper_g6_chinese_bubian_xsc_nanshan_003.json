@@ -15,18 +15,66 @@
     ]
   },
   "_skipped_for_future": [
-    {"qnum": "15", "reason": "open_writing_subjective", "raw_excerpt": "请向大家推荐一本印象深刻的经典名著，说说推荐的理由，并分享一种你喜欢的读书方法。"},
-    {"qnum": "16(4)", "reason": "open_writing_subjective", "raw_excerpt": "「炳烛之明，孰与昧行乎？」这句话的意思就是：___与___相比，哪个更好？如果请你来回答这个问题，你会说：____________________"},
-    {"qnum": "16(5)", "reason": "open_writing_subjective", "raw_excerpt": "如果请你来论学，你会用什么来打比方呢？少而好学，如___；壮而好学，如___；老而好学，如___。"},
-    {"qnum": "17(1)", "reason": "format_unsupported", "raw_excerpt": "为下列词语匹配恰当的反义词，将序号填写在相应的括号中（多组词语对反义词，6 个空对 6 个候选 A-F）。"},
-    {"qnum": "17(3)", "reason": "open_writing_subjective", "raw_excerpt": "请找到并摘抄文中描写光线变化的句子；这里看似是写光线，实际上是写___，烘托出「我」___的内心感受。"},
-    {"qnum": "17(4)", "reason": "open_writing_subjective", "raw_excerpt": "你如何看待作者笔下的母亲？联系课文，尝试从两个不同的角度进行分析。"},
-    {"qnum": "17(6)", "reason": "open_writing_subjective", "raw_excerpt": "你能用同样的事物来表现「欣喜若狂」的情感体验吗？请仿照片段进行描写。"},
-    {"qnum": "18(2)", "reason": "open_writing_subjective", "raw_excerpt": "请根据材料 1 的具体内容，为这则新闻拟定一个引人注目的标题。"},
-    {"qnum": "18(3)", "reason": "open_writing_subjective", "raw_excerpt": "请你根据材料 3 的内容，围绕「表演方式」和「文化价值」两个要点，创编一则社团招募广告词。"},
-    {"qnum": "18(4)", "reason": "info_lost_irrecoverable", "raw_excerpt": "材料 4 是「深圳市国家级非物质文化遗产一览表」表格图，docx 文字层未能保留表内容；后续小题需依赖完整表格数据。"},
-    {"qnum": "18(5)", "reason": "open_writing_subjective", "raw_excerpt": "曾经有人说：深圳是「文化沙漠」。听到这样的评价，你会反驳吗？请发表你的观点……"},
-    {"qnum": "19", "reason": "open_writing_subjective", "raw_excerpt": "以「滋味」为题目写一篇文章……"}
+    {
+      "qnum": "15",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "请向大家推荐一本印象深刻的经典名著，说说推荐的理由，并分享一种你喜欢的读书方法。"
+    },
+    {
+      "qnum": "16(4)",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "「炳烛之明，孰与昧行乎？」这句话的意思就是：___与___相比，哪个更好？如果请你来回答这个问题，你会说：____________________"
+    },
+    {
+      "qnum": "16(5)",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "如果请你来论学，你会用什么来打比方呢？少而好学，如___；壮而好学，如___；老而好学，如___。"
+    },
+    {
+      "qnum": "17(1)",
+      "reason": "format_unsupported",
+      "raw_excerpt": "为下列词语匹配恰当的反义词，将序号填写在相应的括号中（多组词语对反义词，6 个空对 6 个候选 A-F）。"
+    },
+    {
+      "qnum": "17(3)",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "请找到并摘抄文中描写光线变化的句子；这里看似是写光线，实际上是写___，烘托出「我」___的内心感受。"
+    },
+    {
+      "qnum": "17(4)",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "你如何看待作者笔下的母亲？联系课文，尝试从两个不同的角度进行分析。"
+    },
+    {
+      "qnum": "17(6)",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "你能用同样的事物来表现「欣喜若狂」的情感体验吗？请仿照片段进行描写。"
+    },
+    {
+      "qnum": "18(2)",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "请根据材料 1 的具体内容，为这则新闻拟定一个引人注目的标题。"
+    },
+    {
+      "qnum": "18(3)",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "请你根据材料 3 的内容，围绕「表演方式」和「文化价值」两个要点，创编一则社团招募广告词。"
+    },
+    {
+      "qnum": "18(4)",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "材料 4 是「深圳市国家级非物质文化遗产一览表」表格图，docx 文字层未能保留表内容；后续小题需依赖完整表格数据。"
+    },
+    {
+      "qnum": "18(5)",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "曾经有人说：深圳是「文化沙漠」。听到这样的评价，你会反驳吗？请发表你的观点……"
+    },
+    {
+      "qnum": "19",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "以「滋味」为题目写一篇文章……"
+    }
   ],
   "questions": [
     {
@@ -53,10 +101,13 @@
       "type": "choice",
       "chapter": "字词",
       "knowledge_point": "字词/字义",
-      "group_id": "xsc_nanshan_003_q2",
+      "group_id": "chn_xsc_nanshan_003_q2",
       "group_order": 1,
       "content": "选择与文言文中加点字意思相同的词语，写序号。\n\n2. 因释其耒而守株\n\nA. 手不释卷\nB. 冰释前嫌",
-      "options": ["A. 手不释卷", "B. 冰释前嫌"],
+      "options": [
+        "A. 手不释卷",
+        "B. 冰释前嫌"
+      ],
       "answer": "A",
       "explanation": "「因释其耒而守株」中「释」是「放下」之义。A「手不释卷」中「释」也是「放下」；B「冰释前嫌」中「释」是「消散、消除」。故选 A。",
       "image_data": null,
@@ -70,10 +121,13 @@
       "type": "choice",
       "chapter": "字词",
       "knowledge_point": "字词/字义",
-      "group_id": "xsc_nanshan_003_q2",
+      "group_id": "chn_xsc_nanshan_003_q2",
       "group_order": 2,
       "content": "选择与文言文中加点字意思相同的词语，写序号。\n\n3. 通国之善弈者也\n\nA. 乐善好施\nB. 循循善诱",
-      "options": ["A. 乐善好施", "B. 循循善诱"],
+      "options": [
+        "A. 乐善好施",
+        "B. 循循善诱"
+      ],
       "answer": "B",
       "explanation": "「通国之善弈者也」中「善」是「擅长」之义。A「乐善好施」中「善」是「善事」；B「循循善诱」中「善」是「善于、擅长」。故选 B。",
       "image_data": null,
@@ -87,10 +141,13 @@
       "type": "choice",
       "chapter": "字词",
       "knowledge_point": "字词/字义",
-      "group_id": "xsc_nanshan_003_q2",
+      "group_id": "chn_xsc_nanshan_003_q2",
       "group_order": 3,
       "content": "选择与文言文中加点字意思相同的词语，写序号。\n\n4. 及其日中如探汤\n\nA. 固若金汤\nB. 赴汤蹈火",
-      "options": ["A. 固若金汤", "B. 赴汤蹈火"],
+      "options": [
+        "A. 固若金汤",
+        "B. 赴汤蹈火"
+      ],
       "answer": "B",
       "explanation": "「及其日中如探汤」中「汤」是「热水」之义。A「固若金汤」中「汤」指防守严密的护城河；B「赴汤蹈火」中「汤」也是「热水」。故选 B。",
       "image_data": null,
@@ -104,10 +161,13 @@
       "type": "choice",
       "chapter": "字词",
       "knowledge_point": "字词/字义",
-      "group_id": "xsc_nanshan_003_q2",
+      "group_id": "chn_xsc_nanshan_003_q2",
       "group_order": 4,
       "content": "选择与文言文中加点字意思相同的词语，写序号。\n\n5. 我以日始出时去人近\n\nA. 扬长而去\nB. 相去甚远",
-      "options": ["A. 扬长而去", "B. 相去甚远"],
+      "options": [
+        "A. 扬长而去",
+        "B. 相去甚远"
+      ],
       "answer": "B",
       "explanation": "「我以日始出时去人近」中「去」是「距离」之义。A「扬长而去」中「去」是「离开」；B「相去甚远」中「去」是「距离」。故选 B。",
       "image_data": null,
@@ -265,7 +325,7 @@
       "type": "fill",
       "chapter": "字词",
       "knowledge_point": "字词/字音",
-      "group_id": "xsc_nanshan_003_q16",
+      "group_id": "chn_xsc_nanshan_003_q16",
       "group_order": 1,
       "content": "阅读《师旷论学》。\n\n晋平公问于师旷曰：「吾年七十，欲学，恐已暮矣！」师旷曰：「暮，何不炳烛乎？」平公曰：「安有为人臣而戏其君乎？」师旷曰：「盲臣安敢戏其君乎！臣闻之，少（shǎo / shào）而好（hǎo / hào）学，如①___；壮而好学，如②___；老而好学，如③___。炳烛之明，孰与昧行乎？」平公曰：「善哉！」\n\n注释：[1]晋平公：春秋时期晋国国君。[2]师旷：春秋时期晋国的乐师，双目失明。[3]炳烛：点燃蜡烛。[4]昧（mèi）行：在黑暗中行走。\n\n1. 给文中加点的字「少」「好」选择正确的读音，打「√」。",
       "answer": "shào,hào",
@@ -281,7 +341,7 @@
       "type": "fill",
       "chapter": "古诗文",
       "knowledge_point": "古诗文/文言实词",
-      "group_id": "xsc_nanshan_003_q16",
+      "group_id": "chn_xsc_nanshan_003_q16",
       "group_order": 2,
       "content": "阅读《师旷论学》。\n\n晋平公问于师旷曰：「吾年七十，欲学，恐已暮矣！」师旷曰：「暮，何不炳烛乎？」平公曰：「安有为人臣而戏其君乎？」师旷曰：「盲臣安敢戏其君乎！臣闻之，少而好学，如①___；壮而好学，如②___；老而好学，如③___。炳烛之明，孰与昧行乎？」平公曰：「善哉！」\n\n注释：[1]晋平公：春秋时期晋国国君。[2]师旷：春秋时期晋国的乐师。[3]炳烛：点燃蜡烛。[4]昧（mèi）行：在黑暗中行走。\n\n2. 联系上下文，推测并选择加点字的意思，写序号。\n\n①「欲学，恐已暮矣」中「暮」的意思是 ___\n②「暮，何不炳烛乎」中「暮」的意思是 ___\n\nA. 太阳已落，天色将晚\nB. 年龄老大，为时已晚",
       "answer": "B,A",
@@ -297,7 +357,7 @@
       "type": "fill",
       "chapter": "古诗文",
       "knowledge_point": "古诗文/古诗词意境理解",
-      "group_id": "xsc_nanshan_003_q16",
+      "group_id": "chn_xsc_nanshan_003_q16",
       "group_order": 3,
       "content": "阅读《师旷论学》。\n\n晋平公问于师旷曰：「吾年七十，欲学，恐已暮矣！」师旷曰：「暮，何不炳烛乎？」平公曰：「安有为人臣而戏其君乎？」师旷曰：「盲臣安敢戏其君乎！臣闻之，少而好学，如①___；壮而好学，如②___；老而好学，如③___。炳烛之明，孰与昧行乎？」平公曰：「善哉！」\n\n注释：[1]晋平公：春秋时期晋国国君。[2]师旷：春秋时期晋国的乐师。[3]炳烛：点燃蜡烛。[4]昧（mèi）行：在黑暗中行走。\n\n3. 联系上下文，选择合适的词语填入文中，在相应的横线上写序号。\n\nA. 炳烛之明\nB. 日中之光\nC. 日出之阳",
       "answer": "C,B,A",
@@ -313,7 +373,7 @@
       "type": "choice",
       "chapter": "古诗文",
       "knowledge_point": "古诗文/古诗词意境理解",
-      "group_id": "xsc_nanshan_003_q16",
+      "group_id": "chn_xsc_nanshan_003_q16",
       "group_order": 4,
       "content": "阅读《师旷论学》。\n\n晋平公问于师旷曰：「吾年七十，欲学，恐已暮矣！」师旷曰：「暮，何不炳烛乎？」平公曰：「安有为人臣而戏其君乎？」师旷曰：「盲臣安敢戏其君乎！臣闻之，少而好学，如日出之阳；壮而好学，如日中之光；老而好学，如炳烛之明。炳烛之明，孰与昧行乎？」平公曰：「善哉！」\n\n4. 这篇小古文所蕴含的道理，下列选项中表述不恰当的一项是？",
       "options": [
