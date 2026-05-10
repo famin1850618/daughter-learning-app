@@ -23,6 +23,18 @@ class ReviewRequestDao {
   }
 
   /// 同一条 practice_record 一旦申诉过就不能再发起（pending/approved/rejected 任一状态都拦）
+  /// V3.14: 清孤儿 review_requests（关联的 question_id 已被删）
+  /// 修 bug: "已删的题如果提起过申诉会留在申诉页面去不掉"
+  /// 老 v22 升级到 v23 前 INSERT 的 review_requests 没 ON DELETE CASCADE，
+  /// 导致 question 被删后 review_request 残留。每次 refresh 头部调用清理。
+  Future<int> cleanupOrphans() async {
+    final db = await _helper.database;
+    return await db.rawDelete('''
+      DELETE FROM review_requests
+      WHERE question_id NOT IN (SELECT id FROM questions)
+    ''');
+  }
+
   Future<ReviewRequest?> findByPracticeRecordId(int recordId) async {
     final db = await _helper.database;
     final rows = await db.query(

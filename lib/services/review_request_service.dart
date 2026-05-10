@@ -70,6 +70,13 @@ class ReviewRequestService extends ChangeNotifier {
   bool _aiDisputesSeeded = false;
 
   Future<void> refresh() async {
+    // V3.14 修：清孤儿 review_requests（删题后残留申诉项）
+    try {
+      final cleaned = await _dao.cleanupOrphans();
+      if (cleaned > 0) {
+        debugPrint('ReviewRequestService: cleaned $cleaned orphan review_requests');
+      }
+    } catch (_) {/* 失败不阻塞 */}
     // V3.13 修正：首次 refresh 时扫题库 INSERT aiDispute review_requests（小孩不做题直接审核）
     if (!_aiDisputesSeeded) {
       try {
