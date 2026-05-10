@@ -1,5 +1,5 @@
 {
-  "version": 63,
+  "version": 64,
   "updated_at": "2026-05-10",
   "batches": [
     {
@@ -8,7 +8,7 @@
       "subject": "english",
       "grade": 6,
       "count": 200,
-      "batch_hash": "78613f42046bb41bcbaa06959524be52847a8d00"
+      "batch_hash": "77448d674949d92dfdf9fffc5dd9cb05440b26a6"
     },
     {
       "source": "batch_2026_05_08_g6_english_pet_r2",
@@ -16,7 +16,7 @@
       "subject": "english",
       "grade": 6,
       "count": 200,
-      "batch_hash": "fdbb8a0569ee0ffd26ea465eb5468b2843fcca29"
+      "batch_hash": "95c2023b6926b51e70b68e3d529df84bcaa71036"
     },
     {
       "source": "batch_2026_05_08_g6_english_pet_r3",
@@ -24,7 +24,7 @@
       "subject": "english",
       "grade": 6,
       "count": 200,
-      "batch_hash": "b88c61ce2af6c5d45c221bcd1d3e31133230e8d1"
+      "batch_hash": "b1b660b52773813ed74680d5a09ba474ce151bbd"
     },
     {
       "source": "batch_2026_05_08_g6_english_pet_r4",
@@ -32,7 +32,7 @@
       "subject": "english",
       "grade": 6,
       "count": 200,
-      "batch_hash": "1454a0d4fa38d122b8868e694fb4a50b612a9445"
+      "batch_hash": "50c68a223214cfb94eb8f449d60d74d075f0b91d"
     },
     {
       "source": "realpaper_g6_math_beishida_qm_futian_002",
