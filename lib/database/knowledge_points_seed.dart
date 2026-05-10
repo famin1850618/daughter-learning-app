@@ -127,9 +127,21 @@ List<KnowledgePoint> get knowledgePointsSeed => [
       KnowledgePoint(
           subject: '语文', category: '句式与标点', name: '标点符号', introducedGrade: 6),
 
-      // 阅读理解（不细分，单一 KP）
+      // 阅读理解（V3.13 C-1 Famin 决策 A 扩充：现代文细分）
       KnowledgePoint(
           subject: '语文', category: '阅读理解', name: '阅读理解', introducedGrade: 6),
+      KnowledgePoint(
+          subject: '语文', category: '阅读理解', name: '材料阅读', introducedGrade: 6),
+      KnowledgePoint(
+          subject: '语文', category: '阅读理解', name: '标题概括', introducedGrade: 6),
+      KnowledgePoint(
+          subject: '语文', category: '阅读理解', name: '说明方法', introducedGrade: 6),
+      KnowledgePoint(
+          subject: '语文', category: '阅读理解', name: '段意概括', introducedGrade: 6),
+      KnowledgePoint(
+          subject: '语文', category: '阅读理解', name: '人物形象分析', introducedGrade: 6),
+      KnowledgePoint(
+          subject: '语文', category: '阅读理解', name: '主旨理解', introducedGrade: 6),
 
       // 文学常识
       KnowledgePoint(
@@ -148,6 +160,16 @@ List<KnowledgePoint> get knowledgePointsSeed => [
           subject: '语文', category: '文学常识', name: '文体常识', introducedGrade: 6),
       KnowledgePoint(
           subject: '语文', category: '文学常识', name: '文化常识', introducedGrade: 6),
+      KnowledgePoint(
+          subject: '语文', category: '文学常识', name: '名著阅读', introducedGrade: 6),
+
+      // 写作（V3.13 C-1 新 category）
+      KnowledgePoint(
+          subject: '语文', category: '写作', name: '记叙文写作', introducedGrade: 6),
+      KnowledgePoint(
+          subject: '语文', category: '写作', name: '说明文写作', introducedGrade: 6),
+      KnowledgePoint(
+          subject: '语文', category: '写作', name: '应用文写作', introducedGrade: 6),
 
       // 古诗文
       KnowledgePoint(

@@ -85,6 +85,13 @@
       "qnum": "29-40",
       "reason": "computation_visual_mix",
       "raw_excerpt": "计算+操作+解决问题（位图算式或开放题）"
+    },
+    {
+      "qnum": "5",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "铁丝平均截 10 段占比题：原 docx OMath 段缺铁丝长度数据。worker 第三批擅改\"1/2 米\" → V3.13 主 session 撤回（§1.5 §1.5）。即使数据等价亦不允许 worker 自行填补。",
+      "source_para": null,
+      "_violation": "worker_filled_missing_data_to_match_answer"
     }
   ],
   "questions": [
@@ -183,24 +190,6 @@
       "content": "$(\\ \\ )\\div 80 = 10:(\\ \\ ) = \\dfrac{5}{16} = (\\ \\ )$（小数）。\n\n3. 第三空（小数）应填（　　）。",
       "answer": "0.3125",
       "explanation": "$5\\div 16 = 0.3125$。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_qm_yantian_001",
-      "round": 1,
-      "type": "choice",
-      "chapter": "小升初综合",
-      "knowledge_point": "总复习/数与代数综合",
-      "content": "把一根 $\\dfrac{1}{2}$ 米长的铁丝平均截成 $10$ 段，其中 $3$ 段的长度占全长的（　　）。",
-      "options": [
-        "A. $\\dfrac{1}{10}$",
-        "B. $\\dfrac{3}{10}$",
-        "C. $\\dfrac{1}{5}$",
-        "D. $\\dfrac{3}{20}$"
-      ],
-      "answer": "B",
-      "explanation": "全长看作单位 $1$，每段 $= \\dfrac{1}{10}$，$3$ 段 $= \\dfrac{3}{10}$。注意「占全长」是问占比，与铁丝实际长度无关。"
     },
     {
       "subject": "math",
