@@ -112,7 +112,9 @@
       "explanation": "A 项「走」均为「跑」；B 项「汤」均为「热水」；C 项「俱」均为「一起」；D 项前「善」是「擅长」，后「善」是「友好」，意思不同。",
       "_round_reasoning": "R3 因为：理解层级 3（4 项跨课内古诗文一字多义辨析），陷阱密度 0.7（4 选项均含课内常见多义字），KP 跨度 3（古诗 + 文言文 + 一字多义），数据复杂度 0.55。属跨文言一字多义型 R3，参考 anchor chinese_r3_anchor_5（跨文化常识 4 选 1）+ rubric §2.2「跨文化常识 4 选 1」升档。",
       "_round_anchor_used": "chinese_r3_anchor_5",
-      "_round_rubric_signals": ["§2.2 跨文化常识 4 选 1"]
+      "_round_rubric_signals": [
+        "§2.2 跨文化常识 4 选 1"
+      ]
     },
     {
       "subject": "chinese",
@@ -180,7 +182,9 @@
       "explanation": "跃跃欲试：形容心情急切，想试一试。AABC 式词语。",
       "_round_reasoning": "R1 因为：理解层级 1（AABC 成语补字），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.1。",
       "_round_anchor_used": "chinese_r1_anchor_3",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -197,7 +201,9 @@
       "explanation": "奄奄一息：形容呼吸微弱，临近死亡。AABC 式词语。",
       "_round_reasoning": "R1 因为：理解层级 1（AABC 成语补字），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.1。",
       "_round_anchor_used": "chinese_r1_anchor_3",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -214,7 +220,9 @@
       "explanation": "恋恋不舍 / 依依不舍：形容十分留恋，舍不得分开。AABC 式词语，两种均符合。",
       "_round_reasoning": "R1 因为：理解层级 1（AABC 成语补字），陷阱密度 0.0（fill 含同义兜底），KP 跨度 1，数据复杂度 0.1。",
       "_round_anchor_used": "chinese_r1_anchor_3",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -231,7 +239,9 @@
       "explanation": "与世隔绝：与社会隔离、断绝来往，形容隐居或人迹不到的偏僻地方。与「之苦」搭配。",
       "_round_reasoning": "R2 因为：理解层级 2（成语词义 + 搭配类型），陷阱密度 0.5（5 候选，需结合成语含义判断），KP 跨度 1，数据复杂度 0.3。属释义反推型 R2，参考 anchor chinese_r2_anchor_1。",
       "_round_anchor_used": "chinese_r2_anchor_1",
-      "_round_rubric_signals": ["§2.1 候选池窄"]
+      "_round_rubric_signals": [
+        "§2.1 候选池窄"
+      ]
     },
     {
       "subject": "chinese",
@@ -248,7 +258,9 @@
       "explanation": "精兵简政：是一种政策。与「之策」搭配。",
       "_round_reasoning": "R2 因为：理解层级 2（成语词义 + 搭配类型），陷阱密度 0.5，KP 跨度 1，数据复杂度 0.3。",
       "_round_anchor_used": "chinese_r2_anchor_1",
-      "_round_rubric_signals": ["§2.1 候选池窄"]
+      "_round_rubric_signals": [
+        "§2.1 候选池窄"
+      ]
     },
     {
       "subject": "chinese",
@@ -265,7 +277,9 @@
       "explanation": "声泪俱下：一边诉说，一边哭泣。形容十分悲痛的情状，形容情态。与「之态」搭配。",
       "_round_reasoning": "R2 因为：理解层级 2（成语词义 + 搭配类型），陷阱密度 0.5，KP 跨度 1，数据复杂度 0.3。",
       "_round_anchor_used": "chinese_r2_anchor_1",
-      "_round_rubric_signals": ["§2.1 候选池窄"]
+      "_round_rubric_signals": [
+        "§2.1 候选池窄"
+      ]
     },
     {
       "subject": "chinese",
@@ -282,7 +296,9 @@
       "explanation": "赴汤蹈火：形容不避艰险，奋不顾身，多形容人深明大义之举。与「之义」搭配。",
       "_round_reasoning": "R2 因为：理解层级 2（成语词义 + 搭配类型），陷阱密度 0.5，KP 跨度 1，数据复杂度 0.3。",
       "_round_anchor_used": "chinese_r2_anchor_1",
-      "_round_rubric_signals": ["§2.1 候选池窄"]
+      "_round_rubric_signals": [
+        "§2.1 候选池窄"
+      ]
     },
     {
       "subject": "chinese",
@@ -299,7 +315,9 @@
       "explanation": "出自《学弈》。",
       "_round_reasoning": "R1 因为：理解层级 1（课内文言文默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。参考 anchor chinese_r1_anchor_1。",
       "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -316,7 +334,9 @@
       "explanation": "出自朱自清《匆匆》。",
       "_round_reasoning": "R1 因为：理解层级 1（课内名篇默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.3（4 空）。参考 anchor chinese_r1_anchor_1。",
       "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -324,8 +344,8 @@
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 2,
       "type": "fill",
-      "chapter": "课文与名著",
-      "knowledge_point": "课文与名著/课文内容理解",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/课文内容理解",
       "group_id": "xsc_nanshan_002_q8",
       "group_order": 1,
       "content": "根据下列句子的描述概括人物印象，填字母。\n\n候选：A．知足安命、乐观向上  B．坚贞不屈、镇定自若  C．阴险狡诈、心狠手辣。\n\n1. 「父亲瞅了瞅我们，没有说一句话。他的神情非常安定，非常沉着。他的心被一种伟大的力量占据着」。（    ）",
@@ -333,7 +353,9 @@
       "explanation": "「神情非常安定」「非常沉着」「伟大的力量」可见父亲（李大钊）在严刑下坚贞不屈、镇定自若。",
       "_round_reasoning": "R2 因为：理解层级 2（人物形象判断），陷阱密度 0.5（3 候选，关键词指向明确），KP 跨度 1，数据复杂度 0.3。属课内人物形象 R2。",
       "_round_anchor_used": "chinese_r3_anchor_2",
-      "_round_rubric_signals": ["§2.1 段意直白"]
+      "_round_rubric_signals": [
+        "§2.1 段意直白"
+      ]
     },
     {
       "subject": "chinese",
@@ -341,8 +363,8 @@
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 2,
       "type": "fill",
-      "chapter": "课文与名著",
-      "knowledge_point": "课文与名著/课文内容理解",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/课文内容理解",
       "group_id": "xsc_nanshan_002_q8",
       "group_order": 2,
       "content": "根据下列句子的描述概括人物印象，填字母。\n\n候选：A．知足安命、乐观向上  B．坚贞不屈、镇定自若  C．阴险狡诈、心狠手辣。\n\n2. 「我不再远眺大海，一心想看到船的踪影了。我着手调整我的生活方式，尽我可能把一切安排得舒舒服服」。（    ）",
@@ -350,7 +372,9 @@
       "explanation": "「调整生活方式」「尽可能舒舒服服」体现鲁滨逊知足安命、乐观向上。",
       "_round_reasoning": "R2 因为：理解层级 2（人物形象判断），陷阱密度 0.5，KP 跨度 1，数据复杂度 0.3。",
       "_round_anchor_used": "chinese_r3_anchor_2",
-      "_round_rubric_signals": ["§2.1 段意直白"]
+      "_round_rubric_signals": [
+        "§2.1 段意直白"
+      ]
     },
     {
       "subject": "chinese",
@@ -358,8 +382,8 @@
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 2,
       "type": "fill",
-      "chapter": "课文与名著",
-      "knowledge_point": "课文与名著/课文内容理解",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/课文内容理解",
       "group_id": "xsc_nanshan_002_q8",
       "group_order": 3,
       "content": "根据下列句子的描述概括人物印象，填字母。\n\n候选：A．知足安命、乐观向上  B．坚贞不屈、镇定自若  C．阴险狡诈、心狠手辣。\n\n3. 「扁鼻子军官的目光立刻变得凶恶可怕，他向前弓着身子，伸出两只大手。啊！那双手就像鹰的爪子，扭着雨来的两只耳朵，向两边拉」。（    ）",
@@ -367,7 +391,9 @@
       "explanation": "「凶恶可怕」「鹰的爪子」「扭耳朵向两边拉」体现扁鼻子军官阴险狡诈、心狠手辣。",
       "_round_reasoning": "R2 因为：理解层级 2（人物形象判断），陷阱密度 0.5，KP 跨度 1，数据复杂度 0.3。",
       "_round_anchor_used": "chinese_r3_anchor_2",
-      "_round_rubric_signals": ["§2.1 段意直白"]
+      "_round_rubric_signals": [
+        "§2.1 段意直白"
+      ]
     },
     {
       "subject": "chinese",
@@ -384,7 +410,9 @@
       "explanation": "出自唐代王建《十五夜望月》。",
       "_round_reasoning": "R1 因为：理解层级 1（课内名句默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。参考 anchor chinese_r1_anchor_1。",
       "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -401,7 +429,9 @@
       "explanation": "出自明代于谦《石灰吟》。",
       "_round_reasoning": "R1 因为：理解层级 1（课内名句默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。",
       "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -418,7 +448,9 @@
       "explanation": "出自唐代王维《送元二使安西》。",
       "_round_reasoning": "R1 因为：理解层级 1（课内名句默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。",
       "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -467,7 +499,9 @@
       "explanation": "「且喜」对「莫悲」，「满园」对「两鬓」，「桃李艳」对「霜雪寒」。「满园桃李艳」赞美老师桃李满天下，「两鬓霜雪寒」写老师辛勤付出两鬓花白。",
       "_round_reasoning": "R3 因为：理解层级 3（对联拟写综合 — 词性+结构+对仗），陷阱密度 0.5（候选词需精确组合），KP 跨度 2（对联 + 老师主题），数据复杂度 0.4。属对联鉴赏组合型 R3，参考 anchor chinese_r4_anchor_4（对仗鉴赏 R4）+ rubric §2.2 升档但本题候选已限制降至 R3。",
       "_round_anchor_used": "chinese_r4_anchor_4",
-      "_round_rubric_signals": ["§2.2 古诗对仗鉴赏"]
+      "_round_rubric_signals": [
+        "§2.2 古诗对仗鉴赏"
+      ]
     },
     {
       "subject": "chinese",
@@ -584,8 +618,8 @@
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 2,
       "type": "fill",
-      "chapter": "课文与名著",
-      "knowledge_point": "课文与名著/课文内容理解",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/课文内容理解",
       "group_id": "xsc_nanshan_002_q19",
       "group_order": 1,
       "content": "给下列句子中「固」字选择正确的解释，填字母。\n\n候选：A．结实，牢靠  B．坚定，不变动  C．本，原来  D．坚硬\n\n1. 人固有一死。（    ）",
@@ -601,8 +635,8 @@
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 2,
       "type": "fill",
-      "chapter": "课文与名著",
-      "knowledge_point": "课文与名著/课文内容理解",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/课文内容理解",
       "group_id": "xsc_nanshan_002_q19",
       "group_order": 2,
       "content": "给下列句子中「固」字选择正确的解释，填字母。\n\n候选：A．结实，牢靠  B．坚定，不变动  C．本，原来  D．坚硬\n\n2. 岩浆冷却并凝固下来后，形成了火山岩。（    ）",
@@ -618,8 +652,8 @@
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 2,
       "type": "fill",
-      "chapter": "课文与名著",
-      "knowledge_point": "课文与名著/课文内容理解",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/课文内容理解",
       "group_id": "xsc_nanshan_002_q19",
       "group_order": 3,
       "content": "给下列句子中「固」字选择正确的解释，填字母。\n\n候选：A．结实，牢靠  B．坚定，不变动  C．本，原来  D．坚硬\n\n3. 庄严的佛塔，固守着这片苍凉的高原。（    ）",
@@ -635,8 +669,8 @@
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 2,
       "type": "fill",
-      "chapter": "课文与名著",
-      "knowledge_point": "课文与名著/课文内容理解",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/课文内容理解",
       "group_id": "xsc_nanshan_002_q19",
       "group_order": 4,
       "content": "给下列句子中「固」字选择正确的解释，填字母。\n\n候选：A．结实，牢靠  B．坚定，不变动  C．本，原来  D．坚硬\n\n4. 这个军事基地在我军的严密保护下固若金汤。（    ）",
@@ -652,14 +686,16 @@
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 1,
       "type": "fill",
-      "chapter": "现代文阅读",
-      "knowledge_point": "现代文阅读/词句赏析",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/词句赏析",
       "content": "阅读《天上飘下来的礼物》（节选）：\n\n①一楼的林老太太，人有点 ①，不太好说话。林老太太唯一的儿子在美国，老伴去世得早，一直一个人生活。退休后，生活更 ② 了，跟外面的联系越来越少，人也变得更少言寡语了。……\n\n⑤……我明白老人的话。那也许是老人 ③ 的生活里，唯一的一点期盼。\n\n候选：A. 孤单  B. 孤僻  C. 孤寂\n\n请按 ①、②、③ 顺序填入字母（用「|||」分隔），即「①|||②|||③」。",
       "answer": "B|||A|||C",
       "explanation": "①「不太好说话」→ 性情孤独不合群 → B 孤僻；②「老伴去世得早，一直一个人生活」→ 单身无靠 → A 孤单；③「唯一的一点期盼」→ 没有人陪伴感到孤单寂寞 → C 孤寂。",
       "_round_reasoning": "R1 因为：理解层级 1（近义词词义对位语境），陷阱密度 0.25（3 候选词，关键词指向明确），KP 跨度 1，数据复杂度 0.3（含完整文段）。属近义词辨析型 R1（属于直白型，参 rubric §2.1 段意直白）。",
       "_round_anchor_used": "chinese_r2_anchor_2",
-      "_round_rubric_signals": ["§2.1 段意直白"]
+      "_round_rubric_signals": [
+        "§2.1 段意直白"
+      ]
     },
     {
       "subject": "chinese",
@@ -667,14 +703,16 @@
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 1,
       "type": "fill",
-      "chapter": "现代文阅读",
-      "knowledge_point": "现代文阅读/词句赏析",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/词句赏析",
       "content": "阅读《天上飘下来的礼物》（节选）：（见上文）\n\n「从天上飘下来的礼物」表面上指 ____（用原文回答）。",
       "answer": "从楼上刮下来的衣服",
       "explanation": "原文第⑤段「老人在日记里多次提到，从楼上刮下来的衣服。老人的日记里，反复出现这样一句话：那是从天上飘下来的礼物」，可见表面上指从楼上刮下来的衣服。",
       "_round_reasoning": "R1 因为：理解层级 1（原文细节直接摘抄），陷阱密度 0.0（fill 答案唯一），KP 跨度 1，数据复杂度 0.4（依赖完整文段）。属原文摘抄型 R1，参考 rubric §2.1 段意直白。",
       "_round_anchor_used": "chinese_r3_anchor_4",
-      "_round_rubric_signals": ["§2.1 段意直白"]
+      "_round_rubric_signals": [
+        "§2.1 段意直白"
+      ]
     },
     {
       "subject": "chinese",
@@ -682,14 +720,16 @@
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 1,
       "type": "fill",
-      "chapter": "现代文阅读",
-      "knowledge_point": "现代文阅读/词句赏析",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/词句赏析",
       "content": "非连续性文本：\n\n材料一【资料卡】：软件名称：ChatGPT；别名：聊天生成预训练转换器；发布时间：2022年11月30日；开发商：OpenAI。\n\n根据材料一信息：ChatGPT 是一款由 ____ 开发的 ____。请按顺序填两空，用「|||」分隔。",
       "answer": "OpenAI|||聊天生成预训练转换器",
       "explanation": "由材料一资料卡「开发商：OpenAI」「别名：聊天生成预训练转换器」可知。",
       "_round_reasoning": "R1 因为：理解层级 1（资料卡信息提取），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.3。属信息提取型 R1，参考 rubric §2.1 段意直白。",
       "_round_anchor_used": "chinese_r3_anchor_4",
-      "_round_rubric_signals": ["§2.1 段意直白"]
+      "_round_rubric_signals": [
+        "§2.1 段意直白"
+      ]
     },
     {
       "subject": "chinese",
@@ -697,8 +737,8 @@
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 2,
       "type": "choice",
-      "chapter": "现代文阅读",
-      "knowledge_point": "现代文阅读/词句赏析",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/词句赏析",
       "content": "非连续性文本（见上文）：\n\nChatGPT 还可以应用于哪些场景？请选择**两项**合理的答案（多选，按字母顺序填，用逗号分隔，如「A,B」）。",
       "options": [
         "A. 独立完成外科手术",

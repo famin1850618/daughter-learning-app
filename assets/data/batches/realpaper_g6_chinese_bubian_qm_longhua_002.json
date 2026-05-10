@@ -118,8 +118,8 @@
       "source": "realpaper_g6_chinese_bubian_qm_longhua_002",
       "round": 2,
       "type": "fill",
-      "chapter": "句式与标点",
-      "knowledge_point": "句式与标点/病句修改",
+      "chapter": "句子和语法",
+      "knowledge_point": "句子和语法/病句修改",
       "content": "按要求完成句子练习（修改病句）：\n\n做任何事情都要考虑周到，尽量避免不发生错误。",
       "answer": "做任何事情都要考虑周到，尽量避免发生错误。|||做任何事情都要考虑周到，尽量不发生错误。",
       "explanation": "原句「避免」与「不」叠用造成双重否定，与原意相反。删去「避免」或「不」即可。"

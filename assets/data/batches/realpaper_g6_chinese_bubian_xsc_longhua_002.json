@@ -83,7 +83,9 @@
       "explanation": "A 项「通霄」应为「通宵」；B 项「书藉」应为「书籍」；C 项「拔弄」应为「拨弄」。",
       "_round_reasoning": "R1 因为：理解层级 1（字形辨析直接识记），陷阱密度 0.25（4 选项 3 项各错一字，错处明显常见错别字），KP 跨度 1（仅字形），数据复杂度 0.15（4 组短词）。属字形识记型 R1，参考 anchor chinese_r1_anchor_3（字音字形识记类）+ rubric §2.1「课内必修常识」一律 R1。",
       "_round_anchor_used": "chinese_r1_anchor_3",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -104,7 +106,9 @@
       "explanation": "A 项前「之」是「到」，后「之」是「的」；B 项前「绿」是动词「吹绿」，后「绿」是名词「绿叶」；C 项两个「等闲」都是「平常」之意，相同；D 项前「善」是「好」，后「善」是「擅长」。",
       "_round_reasoning": "R3 因为：理解层级 3（4 项跨课内多首诗文一字多义辨析），陷阱密度 0.7（4 选项均含课内常见多义字，需逐项核对古今义+语境），KP 跨度 3（古诗 + 文言文 + 一字多义），数据复杂度 0.55（4 对古诗文片段叠加约 60 字）。属跨文言一字多义型 R3，参考 anchor chinese_r3_anchor_5（文学常识跨文化辨析 R3）+ rubric §2.2「跨文化常识 4 选 1」升档。",
       "_round_anchor_used": "chinese_r3_anchor_5",
-      "_round_rubric_signals": ["§2.2 跨文化常识 4 选 1"]
+      "_round_rubric_signals": [
+        "§2.2 跨文化常识 4 选 1"
+      ]
     },
     {
       "subject": "chinese",
@@ -121,7 +125,9 @@
       "explanation": "「不可思议」形容无法想象，很难理解，与玻璃凸片点燃火柴的奇异现象语境一致。",
       "_round_reasoning": "R2 因为：理解层级 2（候选成语释义反推），陷阱密度 0.5（6 候选含义需逐一对比语境），KP 跨度 1（成语运用），数据复杂度 0.3（短句语境 + 6 词候选池）。属释义反推型 R2，参考 anchor chinese_r2_anchor_1（成语释义反推 R2）。",
       "_round_anchor_used": "chinese_r2_anchor_1",
-      "_round_rubric_signals": ["§2.1 候选池窄"]
+      "_round_rubric_signals": [
+        "§2.1 候选池窄"
+      ]
     },
     {
       "subject": "chinese",
@@ -138,7 +144,9 @@
       "explanation": "「司空见惯」指某事物常见，不觉得奇怪，与「无理取闹已经是常态」语境一致。",
       "_round_reasoning": "R2 因为：理解层级 2（候选成语释义反推），陷阱密度 0.5（6 候选成语，需结合「无理取闹已经是」语境判断常见性），KP 跨度 1，数据复杂度 0.3。属释义反推型 R2，参考 anchor chinese_r2_anchor_1。",
       "_round_anchor_used": "chinese_r2_anchor_1",
-      "_round_rubric_signals": ["§2.1 候选池窄"]
+      "_round_rubric_signals": [
+        "§2.1 候选池窄"
+      ]
     },
     {
       "subject": "chinese",
@@ -155,7 +163,9 @@
       "explanation": "出自唐代王建《十五夜望月》。",
       "_round_reasoning": "R1 因为：理解层级 1（课内名句直接背诵默写），陷阱密度 0.0（fill 唯一答案），KP 跨度 1（古诗背诵），数据复杂度 0.2。属默写型 R1，参考 anchor chinese_r1_anchor_1。",
       "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -172,7 +182,9 @@
       "explanation": "出自唐代王维《送元二使安西》。",
       "_round_reasoning": "R1 因为：理解层级 1（课内名句直接默写），陷阱密度 0.0（fill 唯一答案），KP 跨度 1，数据复杂度 0.2。属默写型 R1，参考 anchor chinese_r1_anchor_1。",
       "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -189,7 +201,9 @@
       "explanation": "出自明代于谦《石灰吟》。",
       "_round_reasoning": "R1 因为：理解层级 1（课内名句直接默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。属默写型 R1，参考 anchor chinese_r1_anchor_1。",
       "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -206,7 +220,9 @@
       "explanation": "出自《礼记·大学》「苟日新，日日新，又日新」。",
       "_round_reasoning": "R1 因为：理解层级 1（课内名句直接默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。属默写型 R1，参考 anchor chinese_r1_anchor_1。",
       "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -223,7 +239,9 @@
       "explanation": "出自《增广贤文》「莫道君行早，更有早行人」，意思是不要说你走得早，还有比你走得更早的人。",
       "_round_reasoning": "R1 因为：理解层级 1（俗语谚语直接默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。属默写型 R1，参考 anchor chinese_r1_anchor_1。",
       "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -238,7 +256,9 @@
       "explanation": "出自清代郑燮《竹石》。",
       "_round_reasoning": "R1 因为：理解层级 1（课内名句直接默写），陷阱密度 0.0（fill 唯一答案），KP 跨度 1，数据复杂度 0.2。属默写型 R1，参考 anchor chinese_r1_anchor_1。",
       "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -246,14 +266,16 @@
       "source": "realpaper_g6_chinese_bubian_xsc_longhua_002",
       "round": 2,
       "type": "fill",
-      "chapter": "现代文阅读",
-      "knowledge_point": "现代文阅读/词句赏析",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/词句赏析",
       "content": "阅读《时光》（冯骥才）节选：\n\n一岁将尽，便进入一种此间特有的情氛中，平日里奔波忙碌，只觉得时间的紧迫，很难感受到「时光」的存在。\n今晚突然停电，摸黑点起蜡烛。烛光如同光明的花苞，宁静地浮在漆黑的空间里；室内无风，这光之花苞便分外优雅与美丽；些许的光散布开来，朦胧依稀地勾勒出周边的事物，没有电就没有音乐相伴，但我有比音乐更好的伴侣——思考。\n可是对于生活最具悟性的，不是思想者，而是普通大众。比如大众俗语中，把临近年终这几天称做「年根儿」，多么真切和形象！它叫我们顿时发觉，一棵本来是绿意盈盈的岁月之树，已被我们消耗殆尽，只剩下一点点根底。时光竟然这样的紧迫、拮据与深浓……\n一下子，一年里经历过的种种事物的影像全都重叠地堆在眼前。不管这些事情怎样庞杂与艰辛，无奈与突兀，我更想从中找到自己的足痕。**从春天落英缤纷的京都退藏到冬日小雨连绵的雅典德尔菲遗址；从重庆荒芜的红卫兵墓到津南那条神奇的蛤蜊堤；从一个会场到另一个会场，一个活动到另一个活动中，究竟哪一些足迹至今清晰犹在，哪一些足迹杂沓模糊甚至早被时光干干净净一抹而去？**\n\n文中加粗句子是一个 ____ 句，写出了作者一年里 ____ 的状态。请按顺序填两个词，用「|||」分隔。",
       "answer": "排比|||忙碌而充实",
       "explanation": "三个「从……」结构相同、句式一致，是排比修辞；通过列举一年里的多处足迹，写出作者一年里忙碌而充实的状态。",
       "_round_reasoning": "R2 因为：理解层级 2（修辞识别 + 文段语意概括），陷阱密度 0.4（修辞名词 + 状态描述均较直接），KP 跨度 2（修辞 + 词句赏析），数据复杂度 0.4（含完整文段）。参考 anchor chinese_r1_anchor_5（修辞识别 R1）+ rubric §2.1「段意直白」考虑——但因含两空且第二空需文意提炼，比单纯修辞识别 R1 略升一档至 R2。",
       "_round_anchor_used": "chinese_r1_anchor_5",
-      "_round_rubric_signals": ["§2.1 段意直白"]
+      "_round_rubric_signals": [
+        "§2.1 段意直白"
+      ]
     }
   ]
 }

@@ -80,150 +80,72 @@ List<KnowledgePoint> get knowledgePointsSeed => [
           subject: '数学', category: '总复习', name: '解决问题策略', introducedGrade: 6),
 
       // ════════════════════════════════════
-      // 语文（人教部编六下，KP 跨单元按考点维度）— 38 个
+      // 语文（V3.14 Famin 简化 7 chapter，2026-05-10）
+      // 字词 / 句子和语法 / 阅读理解 / 古诗文 / 文学常识 / 综合性学习 / 写作
       // ════════════════════════════════════
 
       // 字词
-      KnowledgePoint(
-          subject: '语文', category: '字词', name: '字音', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '字词', name: '字形', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '字词', name: '字义', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '字词', name: '词语理解', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '字词', name: '近义词反义词', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '字词', name: '词语搭配', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '字词', name: '成语运用', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '字词', name: '词语感情色彩', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '字词', name: '字音', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '字词', name: '字形', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '字词', name: '字义', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '字词', name: '词语理解', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '字词', name: '近义词反义词', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '字词', name: '词语搭配', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '字词', name: '成语运用', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '字词', name: '词语感情色彩', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '字词', name: '多音字辨析', introducedGrade: 6),
 
-      // 修辞
-      KnowledgePoint(
-          subject: '语文', category: '修辞', name: '比喻', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '修辞', name: '拟人', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '修辞', name: '排比', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '修辞', name: '夸张', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '修辞', name: '反问', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '修辞', name: '设问', introducedGrade: 6),
+      // 句子和语法（合并旧 句式与标点 + 修辞）
+      KnowledgePoint(subject: '语文', category: '句子和语法', name: '病句修改', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '句子和语法', name: '句式转换', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '句子和语法', name: '关联词运用', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '句子和语法', name: '句子衔接', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '句子和语法', name: '标点符号', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '句子和语法', name: '比喻', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '句子和语法', name: '拟人', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '句子和语法', name: '排比', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '句子和语法', name: '夸张', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '句子和语法', name: '反问', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '句子和语法', name: '设问', introducedGrade: 6),
 
-      // 句式与标点
-      KnowledgePoint(
-          subject: '语文', category: '句式与标点', name: '病句修改', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '句式与标点', name: '句式转换', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '句式与标点', name: '关联词运用', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '句式与标点', name: '句子衔接', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '句式与标点', name: '标点符号', introducedGrade: 6),
-
-      // 阅读理解（V3.13 C-1 Famin 决策 A 扩充：现代文细分）
-      KnowledgePoint(
-          subject: '语文', category: '阅读理解', name: '阅读理解', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '阅读理解', name: '材料阅读', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '阅读理解', name: '标题概括', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '阅读理解', name: '说明方法', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '阅读理解', name: '段意概括', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '阅读理解', name: '人物形象分析', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '阅读理解', name: '主旨理解', introducedGrade: 6),
-
-      // 文学常识
-      KnowledgePoint(
-          subject: '语文',
-          category: '文学常识',
-          name: '中国古代作家作品',
-          introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文',
-          category: '文学常识',
-          name: '中国现代作家作品',
-          introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '文学常识', name: '外国作家作品', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '文学常识', name: '文体常识', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '文学常识', name: '文化常识', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '文学常识', name: '名著阅读', introducedGrade: 6),
-
-      // 写作（V3.13 C-1 新 category）
-      KnowledgePoint(
-          subject: '语文', category: '写作', name: '记叙文写作', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '写作', name: '说明文写作', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '写作', name: '应用文写作', introducedGrade: 6),
-
-      // V3.14 修 42 错: worker 实际使用的 KP 命名补全（与现有同义但 category/name 不同）
-      KnowledgePoint(
-          subject: '语文', category: '现代文阅读', name: '材料阅读', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '现代文阅读', name: '标题概括', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '现代文阅读', name: '说明方法', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '古诗文', name: '文言文阅读', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '古诗文', name: '文学常识', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '句式与标点', name: '关联词', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '字词', name: '拼音字形', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '字词', name: '词语运用', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '课文与名著', name: '名著阅读', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '综合性学习', name: '生活常识', introducedGrade: 6),
+      // 阅读理解（合并旧 现代文阅读 + 课文与名著课文部分）
+      KnowledgePoint(subject: '语文', category: '阅读理解', name: '阅读理解', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '阅读理解', name: '材料阅读', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '阅读理解', name: '标题概括', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '阅读理解', name: '说明方法', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '阅读理解', name: '段意概括', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '阅读理解', name: '人物形象分析', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '阅读理解', name: '主旨理解', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '阅读理解', name: '词句赏析', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '阅读理解', name: '课文内容理解', introducedGrade: 6),
 
       // 古诗文
-      KnowledgePoint(
-          subject: '语文', category: '古诗文', name: '古诗词背诵默写', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '古诗文', name: '古诗词意境理解', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '古诗文', name: '古诗词作者风格', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '古诗文', name: '文言实词', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '古诗文', name: '文言句子翻译', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '古诗文', name: '古诗词背诵默写', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '古诗文', name: '古诗词意境理解', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '古诗文', name: '古诗词作者风格', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '古诗文', name: '文言实词', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '古诗文', name: '文言虚词', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '古诗文', name: '文言句子翻译', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '古诗文', name: '文言文阅读', introducedGrade: 6),
 
-      // 写作
-      KnowledgePoint(
-          subject: '语文', category: '写作', name: '审题立意', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '写作', name: '文章结构', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '写作', name: '表达手法', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '写作', name: '人物描写', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '写作', name: '景物描写', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '写作', name: '修改作文', introducedGrade: 6),
+      // 文学常识（合并旧 课文与名著名著部分 + 古诗文文学常识）
+      KnowledgePoint(subject: '语文', category: '文学常识', name: '中国古代作家作品', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '文学常识', name: '中国现代作家作品', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '文学常识', name: '外国作家作品', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '文学常识', name: '文体常识', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '文学常识', name: '文化常识', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '文学常识', name: '名著阅读', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '文学常识', name: '名著情节人物', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '文学常识', name: '古代文学常识', introducedGrade: 6),
 
-      // 课文与名著
-      KnowledgePoint(
-          subject: '语文', category: '课文与名著', name: '课文内容理解', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '语文', category: '课文与名著', name: '名著情节人物', introducedGrade: 6),
+      // 综合性学习
+      KnowledgePoint(subject: '语文', category: '综合性学习', name: '生活常识', introducedGrade: 6),
+
+      // 写作（V3.14 Famin 决策：100% 主观题，应转 _subj_held 不入主抽题池）
+      // KP 保留供未来 AI 评分接入后启用
+      KnowledgePoint(subject: '语文', category: '写作', name: '记叙文写作', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '写作', name: '说明文写作', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '写作', name: '应用文写作', introducedGrade: 6),
 
       // ════════════════════════════════════
       // 英语（外研社六下，KP 跨章节）— 23 个

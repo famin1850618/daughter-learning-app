@@ -61,7 +61,9 @@
       "explanation": "万象更新：宇宙间的一切事物或景象改换了样子，出现了一番新气象。",
       "_round_reasoning": "R1 因为：理解层级 1（成语补字），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.1。属字面识记型 R1，参考 anchor chinese_r1_anchor_3 + rubric §2.1 课内必修常识。",
       "_round_anchor_used": "chinese_r1_anchor_3",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -78,7 +80,9 @@
       "explanation": "独出心裁：想出的办法与众不同。",
       "_round_reasoning": "R1 因为：理解层级 1（成语补字），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.1。属字面识记型 R1，参考 anchor chinese_r1_anchor_3。",
       "_round_anchor_used": "chinese_r1_anchor_3",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -95,7 +99,9 @@
       "explanation": "跃跃欲试：形容心情激动，急于想试一试。",
       "_round_reasoning": "R1 因为：理解层级 1（成语补字），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.1。属字面识记型 R1。",
       "_round_anchor_used": "chinese_r1_anchor_3",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -112,7 +118,9 @@
       "explanation": "截然不同：事物之间，界限分明，全然不一样。",
       "_round_reasoning": "R1 因为：理解层级 1（成语补字），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.1。",
       "_round_anchor_used": "chinese_r1_anchor_3",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -129,7 +137,9 @@
       "explanation": "无济于事：对事情没有什么帮助或益处，比喻解决不了问题。",
       "_round_reasoning": "R1 因为：理解层级 1（成语补字），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.1。",
       "_round_anchor_used": "chinese_r1_anchor_3",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -146,7 +156,9 @@
       "explanation": "一声不吭：指一直沉默不语，一句话也没有说过。",
       "_round_reasoning": "R1 因为：理解层级 1（成语补字），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.1。",
       "_round_anchor_used": "chinese_r1_anchor_3",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -167,7 +179,9 @@
       "explanation": "A 项「密饯」应为「蜜饯」，「销逝」应为「消逝」；B 项「掺和」读 chān huo，「急遽」读 jù；C 项「担搁」中「担」读 dān 不读 dū，「抽噎」读 yē 不读 yè。",
       "_round_reasoning": "R2 因为：理解层级 2（字音字形综合辨析），陷阱密度 0.5（4 选项每项含 4 词，3 项各错处需逐一识别），KP 跨度 2（字音 + 字形），数据复杂度 0.4。属字音字形综合型 R2，参考 anchor chinese_r1_anchor_3（字音识记 R1）+ rubric §2.2 多项需逐一核对升 R2。",
       "_round_anchor_used": "chinese_r1_anchor_3",
-      "_round_rubric_signals": ["§2.2 跨文化常识 4 选 1"]
+      "_round_rubric_signals": [
+        "§2.2 跨文化常识 4 选 1"
+      ]
     },
     {
       "subject": "chinese",
@@ -184,7 +198,9 @@
       "explanation": "出自汉乐府《迢迢牵牛星》。",
       "_round_reasoning": "R1 因为：理解层级 1（课内名句直接默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。参考 anchor chinese_r1_anchor_1。",
       "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -201,7 +217,9 @@
       "explanation": "出自宋·陈元靓《事林广记》「路遥知马力，日久见人心」。",
       "_round_reasoning": "R1 因为：理解层级 1（俗语谚语直接默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。",
       "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -218,7 +236,9 @@
       "explanation": "出自汉乐府《长歌行》。",
       "_round_reasoning": "R1 因为：理解层级 1（课内名句直接默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。",
       "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -235,7 +255,9 @@
       "explanation": "出自《孔子家语》「树欲静而风不止，子欲养而亲不待」。",
       "_round_reasoning": "R1 因为：理解层级 1（古文名句直接默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。",
       "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -252,7 +274,9 @@
       "explanation": "出自唐代王建《十五夜望月》。",
       "_round_reasoning": "R1 因为：理解层级 1（课内名句默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。",
       "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -269,7 +293,9 @@
       "explanation": "「年糕」与「年年高」谐音，寓意年年高、生活和工作一年比一年好。",
       "_round_reasoning": "R2 因为：理解层级 2（民俗谐音寓意推断），陷阱密度 0.4（fill 含同义兜底），KP 跨度 1，数据复杂度 0.3。属习俗推断型 R2。",
       "_round_anchor_used": "chinese_r2_anchor_2",
-      "_round_rubric_signals": ["§2.1 候选池窄"]
+      "_round_rubric_signals": [
+        "§2.1 候选池窄"
+      ]
     },
     {
       "subject": "chinese",
@@ -286,7 +312,9 @@
       "explanation": "「蝠」与「福」同音，蝙蝠纹寓意福气、幸福。",
       "_round_reasoning": "R2 因为：理解层级 2（民俗谐音寓意推断），陷阱密度 0.4，KP 跨度 1，数据复杂度 0.3。属习俗推断型 R2。",
       "_round_anchor_used": "chinese_r2_anchor_2",
-      "_round_rubric_signals": ["§2.1 候选池窄"]
+      "_round_rubric_signals": [
+        "§2.1 候选池窄"
+      ]
     },
     {
       "subject": "chinese",
@@ -294,8 +322,8 @@
       "source": "realpaper_g6_chinese_bubian_qz_huayi_001",
       "round": 1,
       "type": "fill",
-      "chapter": "课文与名著",
-      "knowledge_point": "课文与名著/课文内容理解",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/课文内容理解",
       "group_id": "qz_huayi_001_q5",
       "group_order": 1,
       "content": "文学常识填空。\n\n1. 《北京的春节》作者是 ____。",
@@ -303,7 +331,9 @@
       "explanation": "《北京的春节》是著名作家老舍的散文。",
       "_round_reasoning": "R1 因为：理解层级 1（作品-作家直接对应），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.1。参考 anchor chinese_r1_anchor_2（外国作家国别 R1）。",
       "_round_anchor_used": "chinese_r1_anchor_2",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -311,8 +341,8 @@
       "source": "realpaper_g6_chinese_bubian_qz_huayi_001",
       "round": 1,
       "type": "fill",
-      "chapter": "课文与名著",
-      "knowledge_point": "课文与名著/课文内容理解",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/课文内容理解",
       "group_id": "qz_huayi_001_q5",
       "group_order": 2,
       "content": "文学常识填空。\n\n2. 《那个星期天》的作者是 ____。",
@@ -320,7 +350,9 @@
       "explanation": "《那个星期天》选自史铁生的《务虚笔记》，是其首部长篇小说，也是半自传式作品。",
       "_round_reasoning": "R1 因为：理解层级 1（作品-作家直接对应），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.1。",
       "_round_anchor_used": "chinese_r1_anchor_2",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -335,7 +367,9 @@
       "explanation": "出自唐代韩翃《寒食》。",
       "_round_reasoning": "R1 因为：理解层级 1（古诗默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。参考 anchor chinese_r1_anchor_1。",
       "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -350,7 +384,9 @@
       "explanation": "「日暮汉宫传蜡烛，轻烟散入五侯家」反映寒食节这天家家不能生火点灯，但皇宫例外，宫里忙着分送蜡烛给皇族和宠臣，体现统治者特权——即「只许州官放火，不许百姓点灯」。",
       "_round_reasoning": "R3 因为：理解层级 3（需联系俗语含义反推诗句），陷阱密度 0.5（fill 唯一答案，但需把文化俗语映射到诗句），KP 跨度 2（古诗 + 文化常识），数据复杂度 0.4（4 行古诗背景）。属诗文意境理解型 R3，参考 anchor chinese_r3_anchor_3（主旨概括 R3）+ rubric §2.2 跨主题升档。",
       "_round_anchor_used": "chinese_r3_anchor_3",
-      "_round_rubric_signals": ["§2.2 跨文化常识 4 选 1"]
+      "_round_rubric_signals": [
+        "§2.2 跨文化常识 4 选 1"
+      ]
     }
   ]
 }

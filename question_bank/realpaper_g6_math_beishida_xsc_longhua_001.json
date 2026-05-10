@@ -79,6 +79,13 @@
       "raw_excerpt": "圆柱铁块容器水面上升题：原题面 OCR/位图丢失关键容器尺寸数据。worker 第三批擅改为圆锥体积题 → V3.13 主 session 撤回（违反 §1.5 原题保真）",
       "source_para": null,
       "_voilation": "worker_rewrote_question_to_match_answer"
+    },
+    {
+      "qnum": "21(1)",
+      "reason": "subjective_short",
+      "raw_excerpt": "牙膏题原题：哪家商城更优惠？请说明理由（主观论述）。worker 第三批改写为\"甲商城需付（）元（保留1位小数）\"客观计算 + 自加保留指引 + 答案与指引矛盾，⊥0 D-9 + D-7 双违纪 + ⊥1 简化大题，主 session 撤回",
+      "source_para": null,
+      "_violation": "worker_rewrote_subjective_to_objective_AND_added_fake_precision_instruction"
     }
   ],
   "questions": [
@@ -265,18 +272,6 @@
       "content": "妙想妈妈在一块长 $20$ m、宽 $15$ m 的长方形地上种植鲜花。今年她进行了扩建，宽不变，长增加了 $\\dfrac{1}{4}$（即新长 $= 20\\times(1+\\dfrac{1}{4})=25$ m）。每平方米土地的鲜花卖 $200$ 元。\n\n今年这块地种植的鲜花可以卖（　　）元。",
       "answer": "75000",
       "explanation": "新面积 $= 25\\times 15 = 375\\,\\text{m}^2$；总收入 $= 375\\times 200 = 75000$ 元。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_longhua_001",
-      "round": 2,
-      "type": "fill",
-      "chapter": "小升初综合",
-      "knowledge_point": "总复习/解决问题策略",
-      "content": "$\\text{A}$ 品牌牙膏原价 $15.4$ 元/支。亮亮家想买 $3$ 支。\n\n甲商城八折，乙商城每满 $45$ 元减 $10$ 元。\n\n甲商城需付（　　）元（保留 $1$ 位小数）。",
-      "answer": "36.96",
-      "explanation": "$15.4\\times 3\\times 0.8 = 46.2\\times 0.8 = 36.96$ 元。"
     },
     {
       "subject": "math",

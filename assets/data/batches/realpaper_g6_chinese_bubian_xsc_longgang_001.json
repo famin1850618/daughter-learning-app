@@ -77,7 +77,9 @@
       "explanation": "A 项「鼎沸（dǐn）」应读 dǐng；B 项「憎恶（zèng）」应读 zēng；C 项读音全对。",
       "_round_reasoning": "R2 因为：理解层级 2（字音综合辨析），陷阱密度 0.4（3 选项 2 项各错处），KP 跨度 1，数据复杂度 0.3。属字音综合型 R2，参考 anchor chinese_r1_anchor_3 + rubric §2.2 多项需逐一核对升 R2。",
       "_round_anchor_used": "chinese_r1_anchor_3",
-      "_round_rubric_signals": ["§2.2 跨文化常识 4 选 1"]
+      "_round_rubric_signals": [
+        "§2.2 跨文化常识 4 选 1"
+      ]
     },
     {
       "subject": "chinese",
@@ -97,7 +99,9 @@
       "explanation": "A 项「藤箩」应为「藤萝」；C 项「嘶咬」应为「撕咬」；B 项书写正确。",
       "_round_reasoning": "R1 因为：理解层级 1（字形辨析），陷阱密度 0.25（仅 3 选项），KP 跨度 1，数据复杂度 0.15。属字形识记型 R1。",
       "_round_anchor_used": "chinese_r1_anchor_3",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -117,7 +121,9 @@
       "explanation": "A 项两个「和谐」都是「协调一致」之意；B 项前「平淡」指「平凡，没有曲折」，后「平淡」指「味道平」；C 项前「寄托」指「托付」，后「寄托」指「心灵的某种依靠」。",
       "_round_reasoning": "R3 因为：理解层级 3（多义词跨语境辨析），陷阱密度 0.65（3 选项每项含两次同词，需精确比较语境），KP 跨度 2（多义词 + 语境理解），数据复杂度 0.5。属多义词跨语境型 R3，参考 anchor chinese_r3_anchor_5（跨文化常识 R3）+ rubric §2.2 跨文化常识 4 选 1 升档。",
       "_round_anchor_used": "chinese_r3_anchor_5",
-      "_round_rubric_signals": ["§2.2 跨文化常识 4 选 1"]
+      "_round_rubric_signals": [
+        "§2.2 跨文化常识 4 选 1"
+      ]
     },
     {
       "subject": "chinese",
@@ -137,7 +143,9 @@
       "explanation": "「众人划桨开大船」对应「齐心协力」（团结协作）；「兵来将挡水来土掩」对应「随机应变」（灵活应付）；「叫天天不应，叫地地不灵」对应「走投无路」（无路可走）；「三个臭皮匠，合成一个诸葛亮」对应「集思广益」（集中智慧）。故选 A。",
       "_round_reasoning": "R2 因为：理解层级 2（俗语 → 成语等义对应），陷阱密度 0.5（3 选项每项 4 个成语，需逐一比较表达效果），KP 跨度 2（俗语 + 成语对应），数据复杂度 0.4。属释义对应型 R2，参考 anchor chinese_r2_anchor_1（成语释义反推 R2）。",
       "_round_anchor_used": "chinese_r2_anchor_1",
-      "_round_rubric_signals": ["§2.1 候选池窄"]
+      "_round_rubric_signals": [
+        "§2.1 候选池窄"
+      ]
     },
     {
       "subject": "chinese",
@@ -157,7 +165,9 @@
       "explanation": "A 项《竹石》借竹子赋予人刚毅风骨和高尚节操，表现诗人正直、刚正不阿的品格；B 项是劝勉珍惜时光，无人格象征；C 项以活水比喻持续学习，无人格象征。故选 A。",
       "_round_reasoning": "R2 因为：理解层级 2（诗歌表现手法识别——托物言志），陷阱密度 0.5（3 选项均是名诗，需理解托物言志特点），KP 跨度 2（古诗 + 表现手法），数据复杂度 0.5。属诗意理解型 R2，参考 anchor chinese_r3_anchor_3（主旨理解 R3）+ rubric §2.1 段意直白降至 R2。",
       "_round_anchor_used": "chinese_r3_anchor_3",
-      "_round_rubric_signals": ["§2.1 段意直白"]
+      "_round_rubric_signals": [
+        "§2.1 段意直白"
+      ]
     },
     {
       "subject": "chinese",
@@ -177,7 +187,9 @@
       "explanation": "「青，取之于蓝，而青于蓝」常用来比喻学生超过老师或后人胜过前人，与「帮助他人有意义」无关。A B 引用恰当。故选 C。",
       "_round_reasoning": "R3 因为：理解层级 3（名言释义 + 语境合用判断），陷阱密度 0.6（3 选项均含名句，需精确理解每句含义），KP 跨度 2（名言 + 语境运用），数据复杂度 0.5。属名言运用型 R3，参考 anchor chinese_r3_anchor_5（跨文化常识 R3）。",
       "_round_anchor_used": "chinese_r3_anchor_5",
-      "_round_rubric_signals": ["§2.2 跨文化常识 4 选 1"]
+      "_round_rubric_signals": [
+        "§2.2 跨文化常识 4 选 1"
+      ]
     },
     {
       "subject": "chinese",
@@ -197,7 +209,9 @@
       "explanation": "A 项「津津有味」形容兴味浓厚，与情境一致；C 项「眼花缭乱」形容看见复杂事物迷乱，一致；B 项情境是主观比较「好看与否」，「相提并论」指把不同事物放一起谈论，需要可比性，与「好看与否」简单比较不一致。故选 B。",
       "_round_reasoning": "R3 因为：理解层级 3（成语适用性辨析），陷阱密度 0.65（3 选项每项含完整情境 + 成语），KP 跨度 2（成语 + 语境匹配），数据复杂度 0.5。属成语运用辨析型 R3，参考 anchor chinese_r3_anchor_5（跨文化常识 R3）。",
       "_round_anchor_used": "chinese_r3_anchor_5",
-      "_round_rubric_signals": ["§2.2 跨文化常识 4 选 1"]
+      "_round_rubric_signals": [
+        "§2.2 跨文化常识 4 选 1"
+      ]
     },
     {
       "subject": "chinese",
@@ -205,8 +219,8 @@
       "source": "realpaper_g6_chinese_bubian_xsc_longgang_001",
       "round": 4,
       "type": "choice",
-      "chapter": "现代文阅读",
-      "knowledge_point": "现代文阅读/词句赏析",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/词句赏析",
       "content": "下列描写的表达效果与例子中的描写表达效果不一样的是（    ）。\n\n【例】车船过后，一切又恢复了平静。最后一抹晚霞也渐渐消失了。整个天地都暗了下来。狗不叫了，圈里的牛也不再发出哞哞声，马也忘记了踢马房的挡板。",
       "options": [
         "A. 清晨，洞庭湖如同笼罩了一层轻盈的白纱，湖泊被烟雾淹没。远处，天地间连成一片，似玉绢般那么薄，那么淡，那么轻，仿佛一伸手触摸便会损坏它那原本的淡定。",
@@ -217,7 +231,9 @@
       "explanation": "例子通过「狗不叫」「牛不发出哞哞声」等动物静默以动衬静，突出环境平静；A 描绘洞庭湖宁静淡雅，整体安静；B 描写夜幕静谧场景；C 描写孩子们欢快嬉戏的热闹场景，与例子的「以动衬静」表达效果不同。故选 C。",
       "_round_reasoning": "R4 因为：理解层级 4（写作手法对比鉴赏 — 以动衬静），陷阱密度 0.75（3 选项均为景物描写，需识别隐性手法），KP 跨度 3（写作手法 + 动静关系 + 文段细读），数据复杂度 0.6（含 4 个长描写段）。属写作手法鉴赏型 R4，参考 anchor chinese_r4_anchor_1（多空虚词修辞 R4）+ rubric §2.2 修辞鉴赏升档。",
       "_round_anchor_used": "chinese_r4_anchor_1",
-      "_round_rubric_signals": ["§2.2 古诗对仗鉴赏"]
+      "_round_rubric_signals": [
+        "§2.2 古诗对仗鉴赏"
+      ]
     },
     {
       "subject": "chinese",
@@ -225,8 +241,8 @@
       "source": "realpaper_g6_chinese_bubian_xsc_longgang_001",
       "round": 3,
       "type": "choice",
-      "chapter": "句式与标点",
-      "knowledge_point": "句式与标点/句式转换",
+      "chapter": "句子和语法",
+      "knowledge_point": "句子和语法/句式转换",
       "content": "将下列内容排成一段意思连贯的话，最合理的排序是（    ）。\n\n①它们时而高飞，时而低飞，偶尔又像比赛，向高空飞去。\n②天寒地冻的冬季，太阳带着冷意射向大地，大自然的一切都被冰雪包裹起来，动物们躲起来冬眠了，人类更耐不住这样的寒冷，躲在家里很少出门。\n③大乌鸦的舞姿真是无法用言语形容！\n④它们轮番交替，有时候向低空俯冲，又马上凌空而起，自由地做着高难度动作。\n⑤这时，一群黑黝黝的大乌鸦出现了，这给寒冷的天气带来一丝活跃。他们在身着银装的冬日上空飞翔着，翅膀在冷风中发出嚓嚓的声音，丝毫不畏严寒。",
       "options": [
         "A. ④①③⑤②",
@@ -245,8 +261,8 @@
       "source": "realpaper_g6_chinese_bubian_xsc_longgang_001",
       "round": 2,
       "type": "choice",
-      "chapter": "课文与名著",
-      "knowledge_point": "课文与名著/名著情节人物",
+      "chapter": "文学常识",
+      "knowledge_point": "文学常识/名著情节人物",
       "content": "下面说法中错误的一项是（    ）。",
       "options": [
         "A. 《童年》中，最关心阿廖沙，对阿廖沙影响最大的是他的外祖父。",
@@ -257,7 +273,9 @@
       "explanation": "《童年》中最关心阿廖沙、对其影响最大的是**外祖母**（不是外祖父）。外祖母慈祥善良、聪明能干，对阿廖沙起到积极引导作用。故 A 错误。",
       "_round_reasoning": "R2 因为：理解层级 2（名著细节核对），陷阱密度 0.5（3 选项均含名著情节细节），KP 跨度 2（俄国 + 美国 + 中国名著），数据复杂度 0.4。属名著常识型 R2，参考 anchor chinese_r1_anchor_4（外国作家作品 R1）+ rubric §2.2 升档。",
       "_round_anchor_used": "chinese_r1_anchor_4",
-      "_round_rubric_signals": ["§2.2 跨文化常识 4 选 1"]
+      "_round_rubric_signals": [
+        "§2.2 跨文化常识 4 选 1"
+      ]
     },
     {
       "subject": "chinese",
@@ -274,7 +292,9 @@
       "explanation": "出自唐代张志和《渔歌子》。",
       "_round_reasoning": "R1 因为：理解层级 1（课内名句默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。参考 anchor chinese_r1_anchor_1。",
       "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -291,7 +311,9 @@
       "explanation": "出自唐代李白《黄鹤楼送孟浩然之广陵》。",
       "_round_reasoning": "R1 因为：理解层级 1（课内名句默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。",
       "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -308,7 +330,9 @@
       "explanation": "出自清代龚自珍《己亥杂诗·其二百二十》。",
       "_round_reasoning": "R1 因为：理解层级 1（课内名句默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。",
       "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -325,7 +349,9 @@
       "explanation": "出自唐代孟浩然《宿建德江》。",
       "_round_reasoning": "R1 因为：理解层级 1（课内名句默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。",
       "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -342,7 +368,9 @@
       "explanation": "出自元代王冕《墨梅》。",
       "_round_reasoning": "R1 因为：理解层级 1（课内名句默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。",
       "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
@@ -359,7 +387,9 @@
       "explanation": "「使弈秋悔二人弈」中的「悔」应为「诲」（教导）；「虽与之具学」中的「具」应为「俱」（一起）。",
       "_round_reasoning": "R2 因为：理解层级 2（古文错别字辨析），陷阱密度 0.4（fill 唯一答案），KP 跨度 2（古文 + 字形辨析），数据复杂度 0.4（含完整文段）。属古文辨析型 R2。",
       "_round_anchor_used": "chinese_r1_anchor_3",
-      "_round_rubric_signals": ["§2.1 课内必修常识"]
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
     },
     {
       "subject": "chinese",
