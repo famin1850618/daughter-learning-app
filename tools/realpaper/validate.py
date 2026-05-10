@@ -241,17 +241,59 @@ def check_no_double_quotes(q: dict, idx: int) -> str:
     return None
 
 
+SUBJECT_PREFIXES = {'chn', 'math', 'eng', 'sci', 'phy', 'chm'}
+SUBJECT_TO_PREFIX = {
+    'chinese': 'chn', '语文': 'chn',
+    'math': 'math', '数学': 'math',
+    'english': 'eng', '英语': 'eng',
+    'science': 'sci', '科学': 'sci',
+    'physics': 'phy', '物理': 'phy',
+    'chemistry': 'chm', '化学': 'chm',
+}
+
+
 def check_group_namespace(batch: dict) -> list:
-    """15. group_id 必须含 batch source 前缀（§9.3.3 V3.12.17）"""
-    src_short = batch.get('source', '').replace('realpaper_g6_math_beishida_', '') \
-                                       .replace('realpaper_g6_chinese_bubian_', '') \
-                                       .replace('realpaper_g6_english_', '') \
-                                       .replace('.json', '')
+    """15. group_id 必须为三段式 {subject_prefix}_{batch_short}_{local}（§9.3.3 V3.19.1）。
+    2026-05-11 Famin 实测：xsc_baoan_001_q2 跨 数学+语文 batch 重名 → app 合并大组合题。
+    """
+    src = batch.get('source', '')
+    src_short = src.replace('realpaper_g6_math_beishida_', '') \
+                   .replace('realpaper_g6_chinese_bubian_', '') \
+                   .replace('realpaper_g6_english_', '') \
+                   .replace('.json', '')
+    subj = batch.get('subject', '')
+    expected_pfx = SUBJECT_TO_PREFIX.get(subj)
     errors = []
     for i, q in enumerate(batch.get('questions', [])):
         gid = q.get('group_id')
-        if gid and not gid.startswith(src_short + '_'):
-            errors.append(f'#{i+1}: group_id={gid!r} 缺 batch 前缀，应改为 {src_short}_{gid}')
+        if not gid:
+            continue
+        parts = gid.split('_', 1)
+        if parts[0] not in SUBJECT_PREFIXES:
+            errors.append(f'#{i+1}: group_id={gid!r} 缺 subject 前缀（必须 chn_/math_/eng_/sci_/phy_/chm_ 开头）')
+        elif expected_pfx and parts[0] != expected_pfx:
+            errors.append(f'#{i+1}: group_id={gid!r} subject 前缀={parts[0]} 与 batch.subject={subj}({expected_pfx}) 不符')
+        elif not gid.startswith(f'{parts[0]}_{src_short}_'):
+            errors.append(f'#{i+1}: group_id={gid!r} 缺 batch_short 段，应为 {parts[0]}_{src_short}_<local>')
+    return errors
+
+
+def check_cross_batch_collision(batches: list) -> list:
+    """跨 batch group_id 命名空间冲突检查（§9.3.3 V3.19.1）。
+    只在多 batch 验证模式下调用（CLI --all）。
+    """
+    from collections import defaultdict
+    gid_to_batches = defaultdict(set)
+    for b in batches:
+        src = b.get('source', '<unknown>')
+        for q in b.get('questions', []):
+            gid = q.get('group_id')
+            if gid:
+                gid_to_batches[gid].add(src)
+    errors = []
+    for gid, srcs in gid_to_batches.items():
+        if len(srcs) > 1:
+            errors.append(f'group_id={gid!r} 跨 batch 重名: {sorted(srcs)}')
     return errors
 
 
@@ -637,7 +679,23 @@ def main():
     ap.add_argument('--chapter-list', action='store_true', help='输出 chapter 清单')
     ap.add_argument('--full', action='store_true',
                     help='V3.12.17 16 项自检完整报告（D 方案脚本化）')
+    ap.add_argument('--cross-batch', action='store_true',
+                    help='V3.19.1 跨 batch group_id 冲突检查（扫 assets/data/batches/realpaper_*.json）')
     args = ap.parse_args()
+
+    if args.cross_batch:
+        import glob
+        repo = Path(__file__).resolve().parents[2]
+        files = sorted(glob.glob(str(repo / 'assets/data/batches/realpaper_*.json')))
+        batches = [json.loads(Path(f).read_text(encoding='utf-8')) for f in files]
+        errs = check_cross_batch_collision(batches)
+        print(f'=== Cross-batch group_id 冲突检查 ({len(files)} batch)')
+        if errs:
+            for e in errs:
+                print(f'  ❌ {e}')
+            sys.exit(1)
+        print('  ✅ 0 冲突')
+        sys.exit(0)
 
     kp_set = parse_kp_seed()
     chapter_set = parse_chapter_seed()
