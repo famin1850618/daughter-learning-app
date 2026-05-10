@@ -400,7 +400,7 @@
       "content": "直接写出得数：\n$\\frac{2}{4}+\\frac{1}{5}=$ ____",
       "answer": "0.7|||7/10",
       "explanation": "$\\frac{2}{4}+\\frac{1}{5}=\\frac{1}{2}+\\frac{1}{5}=\\frac{5}{10}+\\frac{2}{10}=\\frac{7}{10}=0.7$。",
-      "group_id": "math_qm_futian_002_q14",
+      "group_id": "realpaper_g6_math_beishida_qm_futian_002_q14",
       "group_order": 1,
       "_raw_excerpt": "14．直接写出得数\n　     　　     　        0.4×15=　     　             1.25÷0.5=　     　\n  [OMATH: $\\frac{2}{4}+\\frac{1}{5}=$ | $\\frac{3}{14}\\times 7=$]"
     },
@@ -415,7 +415,7 @@
       "content": "直接写出得数：\n$\\frac{3}{14}\\times 7=$ ____",
       "answer": "1.5",
       "explanation": "$\\frac{3}{14}\\times 7=\\frac{21}{14}=\\frac{3}{2}=1.5$。",
-      "group_id": "math_qm_futian_002_q14",
+      "group_id": "realpaper_g6_math_beishida_qm_futian_002_q14",
       "group_order": 2,
       "_raw_excerpt": "14．直接写出得数\n　     　　     　        0.4×15=　     　             1.25÷0.5=　     　\n  [OMATH: $\\frac{2}{4}+\\frac{1}{5}=$ | $\\frac{3}{14}\\times 7=$]"
     },
@@ -430,7 +430,7 @@
       "content": "直接写出得数：\n$0.4\\times 15=$ ____",
       "answer": "6",
       "explanation": "$0.4\\times 15=6$。",
-      "group_id": "math_qm_futian_002_q14",
+      "group_id": "realpaper_g6_math_beishida_qm_futian_002_q14",
       "group_order": 3,
       "_raw_excerpt": "14．直接写出得数\n　     　　     　        0.4×15=　     　             1.25÷0.5=　     　\n  [OMATH: $\\frac{2}{4}+\\frac{1}{5}=$ | $\\frac{3}{14}\\times 7=$]"
     },
@@ -445,7 +445,7 @@
       "content": "直接写出得数：\n$1.25\\div 0.5=$ ____",
       "answer": "2.5",
       "explanation": "$1.25\\div 0.5=2.5$。",
-      "group_id": "math_qm_futian_002_q14",
+      "group_id": "realpaper_g6_math_beishida_qm_futian_002_q14",
       "group_order": 4,
       "_raw_excerpt": "14．直接写出得数\n　     　　     　        0.4×15=　     　             1.25÷0.5=　     　\n  [OMATH: $\\frac{2}{4}+\\frac{1}{5}=$ | $\\frac{3}{14}\\times 7=$]"
     },
@@ -460,7 +460,7 @@
       "content": "将 $\\frac{3}{8}$ 化为指定形式。\n1. $\\frac{3}{8}=$ ____ $:16$",
       "answer": "6",
       "explanation": "$\\frac{3}{8}=\\frac{6}{16}$，所以 $=6:16$。",
-      "group_id": "math_qm_futian_002_q16",
+      "group_id": "realpaper_g6_math_beishida_qm_futian_002_q16",
       "group_order": 1,
       "_raw_excerpt": "16．互化。=　     　：16=　     　\n  [OMATH: $\\frac{3}{8}$ | $\\frac{3+6}{8+（）}$]"
     },
@@ -475,7 +475,7 @@
       "content": "将 $\\frac{3}{8}$ 化为指定形式。\n2. $\\frac{3}{8}=\\frac{3+6}{8+(?)}$，$?=$ ____",
       "answer": "16",
       "explanation": "$\\frac{3}{8}=\\frac{9}{?}\\Rightarrow ?=24$，所以 $8+(?)=24$，$?=16$。",
-      "group_id": "math_qm_futian_002_q16",
+      "group_id": "realpaper_g6_math_beishida_qm_futian_002_q16",
       "group_order": 2,
       "_raw_excerpt": "16．互化。=　     　：16=　     　\n  [OMATH: $\\frac{3}{8}$ | $\\frac{3+6}{8+（）}$]"
     },
@@ -490,7 +490,7 @@
       "content": "今年「五一」假期，深圳接待游客大约六百九十六万三千六百人次。\n1. 这个数写作 ____ 。",
       "answer": "6963600",
       "explanation": "六百九十六万三千六百 $=696\\times 10000+3600=6963600$。",
-      "group_id": "math_qm_futian_002_q17",
+      "group_id": "realpaper_g6_math_beishida_qm_futian_002_q17",
       "group_order": 1,
       "_raw_excerpt": "17．大数的读写。今年“五一”假期，深圳文旅市场呈现安全平稳、繁荣有序的良好发展态势。数据显示，深圳接待游客大约六百九十六万三千六百人次，横线上的数写作　        　，改为以“万”为单位的数是　     　万。"
     },
@@ -505,7 +505,7 @@
       "content": "今年「五一」假期，深圳接待游客大约六百九十六万三千六百人次。\n2. 改写为以「万」为单位的数是 ____ 万。",
       "answer": "696.36",
       "explanation": "$6963600\\div 10000=696.36$ 万。",
-      "group_id": "math_qm_futian_002_q17",
+      "group_id": "realpaper_g6_math_beishida_qm_futian_002_q17",
       "group_order": 2,
       "_raw_excerpt": "17．大数的读写。今年“五一”假期，深圳文旅市场呈现安全平稳、繁荣有序的良好发展态势。数据显示，深圳接待游客大约六百九十六万三千六百人次，横线上的数写作　        　，改为以“万”为单位的数是　     　万。"
     },
@@ -520,7 +520,7 @@
       "content": "儿童的负重最好不要超过自身体重的 $15\\%$。田田的体重是 $40$ kg。实际测得她的书包重 $6.06$ kg。\n1. 她的书包最大重量应是 ____ kg。",
       "answer": "6",
       "explanation": "$40\\times 15\\%=6$ kg。",
-      "group_id": "math_qm_futian_002_q19",
+      "group_id": "realpaper_g6_math_beishida_qm_futian_002_q19",
       "group_order": 1,
       "_raw_excerpt": "19．书包。儿童的负重最好不要超过自身体重的15%，如果长期背负过重物体，会妨碍骨骼生长。田田的体重是40kg，那么她的书包最大重量应是　     　kg。实际测得她的书包重6.06kg，超出了书包最大重量的　     　%。"
     },
@@ -535,7 +535,7 @@
       "content": "儿童的负重最好不要超过自身体重的 $15\\%$。田田的体重是 $40$ kg。实际测得她的书包重 $6.06$ kg。\n2. $6.06$ 超出了书包最大重量的 ____ %。",
       "answer": "1",
       "explanation": "$(6.06-6)\\div 6=0.06\\div 6=0.01=1\\%$。",
-      "group_id": "math_qm_futian_002_q19",
+      "group_id": "realpaper_g6_math_beishida_qm_futian_002_q19",
       "group_order": 2,
       "_raw_excerpt": "19．书包。儿童的负重最好不要超过自身体重的15%，如果长期背负过重物体，会妨碍骨骼生长。田田的体重是40kg，那么她的书包最大重量应是　     　kg。实际测得她的书包重6.06kg，超出了书包最大重量的　     　%。"
     },
@@ -550,7 +550,7 @@
       "content": "田田想用三根竹条制作一个等腰三角形的风筝骨架，已有两根竹条分别长 $8$ 厘米和 $5$ 厘米，要求第三根竹条的长度也必须是整厘米数。\n1. 这个风筝骨架的周长最小是 ____ 厘米。",
       "answer": "18",
       "explanation": "等腰三角形：第三边 $=5$（与 $5$ 相等）→ 三边 $5,5,8$，周长 $=18$ cm。",
-      "group_id": "math_qm_futian_002_q22",
+      "group_id": "realpaper_g6_math_beishida_qm_futian_002_q22",
       "group_order": 1,
       "_raw_excerpt": "22．风筝。田田想用三根竹条制作一个等腰三角形的风筝骨架，已有两根竹条分别长8厘米和5厘米，要求第三根竹条的长度也必须是整厘米数。这个风筝骨架的周长最小是　     　厘米，最大是　     　厘米。"
     },
@@ -565,7 +565,7 @@
       "content": "田田想用三根竹条制作一个等腰三角形的风筝骨架，已有两根竹条分别长 $8$ 厘米和 $5$ 厘米，要求第三根竹条的长度也必须是整厘米数。\n2. 这个风筝骨架的周长最大是 ____ 厘米。",
       "answer": "21",
       "explanation": "等腰：第三边 $=8$（与 $8$ 相等）→ 三边 $5,8,8$，周长 $=21$ cm。",
-      "group_id": "math_qm_futian_002_q22",
+      "group_id": "realpaper_g6_math_beishida_qm_futian_002_q22",
       "group_order": 2,
       "_raw_excerpt": "22．风筝。田田想用三根竹条制作一个等腰三角形的风筝骨架，已有两根竹条分别长8厘米和5厘米，要求第三根竹条的长度也必须是整厘米数。这个风筝骨架的周长最小是　     　厘米，最大是　     　厘米。"
     },
@@ -584,7 +584,7 @@
       ],
       "answer": "正确",
       "explanation": "A 侧面积 $=2\\pi\\times 1\\times 3=6\\pi$；B 侧面积 $=2\\pi\\times 3\\times 1=6\\pi$。相等。",
-      "group_id": "math_qm_futian_002_q29",
+      "group_id": "realpaper_g6_math_beishida_qm_futian_002_q29",
       "group_order": 1,
       "_raw_excerpt": "29．圆柱，用一张长3dm、宽1dm的长方形硬纸分别以长边为轴、短边为轴旋转(如下图)形成两个圆柱。对于这两个圆柱的侧面积和体积，同学们发表了自己的见解。\n悦悦说：“A圆柱和B圆柱的侧面积相等。”\n朗朗说：“A圆柱和B圆柱的体积相等。”\n请你分别判断他们的说法是否正确，并说明理由。"
     },
@@ -603,7 +603,7 @@
       ],
       "answer": "错误",
       "explanation": "A 体积 $=\\pi\\times 1^2\\times 3=3\\pi$；B 体积 $=\\pi\\times 3^2\\times 1=9\\pi$。不相等。",
-      "group_id": "math_qm_futian_002_q29",
+      "group_id": "realpaper_g6_math_beishida_qm_futian_002_q29",
       "group_order": 2,
       "_raw_excerpt": "29．圆柱，用一张长3dm、宽1dm的长方形硬纸分别以长边为轴、短边为轴旋转(如下图)形成两个圆柱。对于这两个圆柱的侧面积和体积，同学们发表了自己的见解。\n悦悦说：“A圆柱和B圆柱的侧面积相等。”\n朗朗说：“A圆柱和B圆柱的体积相等。”\n请你分别判断他们的说法是否正确，并说明理由。"
     }

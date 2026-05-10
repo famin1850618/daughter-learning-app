@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# V3.19.2 pre-commit hook: 防 group_id 跨 batch 命名空间冲突
+# 启用方式（新设备 clone 后跑一次）: git config core.hooksPath .githooks
+#
+# 触发条件：本次 commit 改动了 assets/data/batches/realpaper_*.json
+# 行为：跑 validate.py --cross-batch，0 冲突才放行。
+
+set -e
+
+# 看是不是有 realpaper batch 改动
+staged=$(git diff --cached --name-only --diff-filter=ACM | grep -E '^(assets/data/batches|question_bank)/realpaper_.*\.json$' || true)
+if [ -z "$staged" ]; then
+    exit 0  # 没动题库，跳
+fi
+
+echo "[pre-commit] 检测到 realpaper batch 改动，跑 cross-batch group_id 冲突检查..."
+if ! python3 tools/realpaper/validate.py --cross-batch; then
+    echo ""
+    echo "❌ commit 被拦：group_id 跨 batch 冲突未解决。"
+    echo "   修法：tools/realpaper/validate.py 显示了冲突的 group_id 和涉及的 batch。"
+    echo "   群组 ID 必须以完整 batch source 为前缀（§9.3.3 V3.19.2）。"
+    exit 1
+fi
+echo "[pre-commit] ✅ cross-batch 0 冲突，放行"
+exit 0
