@@ -1,0 +1,216 @@
+{
+  "source": "realpaper_g6_chinese_bubian_qm_longhua_002",
+  "_source_docx_sha1": "78241c0fe51e82d0",
+  "subject": "chinese",
+  "grade": 6,
+  "_skipped_for_future": [
+    {
+      "qnum": "5",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "照样子，将句子补充完整（描写花开放，开放性补写）"
+    },
+    {
+      "qnum": "6(2)",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "图片是鲁滨逊不听劝告，跑出去航海时遭遇的场景（依赖图位图+两个译本对比）"
+    },
+    {
+      "qnum": "7",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "比较阅读，完成下面的导图（依赖导图位图）"
+    },
+    {
+      "qnum": "8(3)",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "请仿照《我的思念是圆的》，写一写你的思念"
+    },
+    {
+      "qnum": "9",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "感悟诗词中的情，读句子展开联想，诗词人心里在想什么"
+    },
+    {
+      "qnum": "11",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "联系上下文解释下列词语（开放释义）"
+    },
+    {
+      "qnum": "12",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "读句子，体会划线部分的表达效果"
+    },
+    {
+      "qnum": "13",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "我当时会怎么想？写写心理活动"
+    },
+    {
+      "qnum": "14",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "作者为什么以「盲人看」为题？结合文章说说理解"
+    },
+    {
+      "qnum": "15",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "创造性思维的两个基本条件是什么（开放概括）"
+    },
+    {
+      "qnum": "16",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "句子中加点词语能不能删去，为什么"
+    },
+    {
+      "qnum": "17",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "为了印证观点，作者列举的具体事例"
+    },
+    {
+      "qnum": "19",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "1+1=？展开联想，写一个等式并解释"
+    },
+    {
+      "qnum": "20",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "作文：有你，真好 / 智脑时代"
+    }
+  ],
+  "questions": [
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_002",
+      "round": 1,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "成长卷首语：读语段，根据拼音写词语（按顺序填 5 个词，用逗号分隔）：\n\n明媚的阳光，照不散离别的 yōu shāng（①___）。回顾六年，想起了刚入学时 yòu zhì（②___）的模样；想起了教室 hóng liàng（③___）的读书声；想起了图书馆里浩瀚的书籍。pái huái（④___）在校园里，平时司空 jiàn guàn（⑤___）的走廊、操场，此时却分外耀眼。再见了，我亲爱的母校！",
+      "answer": "忧伤,幼稚,洪亮,徘徊,见惯",
+      "explanation": "「忧、幼、徘、惯」笔画较复杂，需注意工整。「司空见惯」指经常看到、不足为奇。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/成语运用",
+      "content": "先补充词语，再选词填空（共 8 空：①-⑥补全词语字，⑦⑧选词填空，用逗号依次分隔）：\n\n万①___更新；心②___气③___；万不得④___；重⑤___⑥___日；焉知非福；翻箱倒柜\n\n（1）春风拂过，草儿抽芽，花朵绽放，蜂蝶飞舞，一派⑦___ 的景象。\n（2）这座消失已久的城市在挖掘工作中⑧___，让人们得以一窥其往日的繁荣。",
+      "answer": "象,平,和,已,见,天,万象更新,重见天日",
+      "explanation": "「万象更新」「心平气和」「万不得已」「重见天日」「焉知非福」「翻箱倒柜」。（1）描写春景应填「万象更新」；（2）「重见天日」比喻脱离黑暗见光明。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_002",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "根据提示，完成填空（按顺序填 6 空，用逗号分隔）：\n\n少年当惜时，不负韶华，否则就会像《长歌行》中所说那样：「①___，②___！」；少年当顽强，就像《竹石》中所写「③___，④___」；少年当用心，因为「读书须用意，⑤___。」少年当创新，因为「⑥___，日日新，又日新。」",
+      "answer": "少壮不努力,老大徒伤悲,千磨万击还坚劲,任尔东西南北风,一字值千金,苟日新",
+      "explanation": "①②《长歌行》；③④郑燮《竹石》；⑤《增广贤文》；⑥《大学》。注意「壮、徒、磨、劲、尔、值、苟」的写法。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "句式与标点",
+      "knowledge_point": "句式与标点/病句修改",
+      "content": "按要求完成句子练习（修改病句）：\n\n做任何事情都要考虑周到，尽量避免不发生错误。",
+      "answer": "做任何事情都要考虑周到，尽量避免发生错误。|||做任何事情都要考虑周到，尽量不发生错误。",
+      "explanation": "原句「避免」与「不」叠用造成双重否定，与原意相反。删去「避免」或「不」即可。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_002",
+      "round": 1,
+      "type": "choice",
+      "chapter": "文学常识",
+      "knowledge_point": "文学常识/名著阅读",
+      "group_id": "qm_longhua_002_q6",
+      "group_order": 1,
+      "content": "综合实践【猜书名】根据主持人的话语提示，从下列名著中猜测书名（填序号）：\n\nA．《汤姆索亚历险记》\nB．《骑鹅旅行记》\nC．《鲁滨逊漂流记》\nD．《爱的教育》\n\n1. 在考虑到所有坏事的时候，应当想到坏事中还有好事。",
+      "options": [
+        "A. 《汤姆索亚历险记》",
+        "B. 《骑鹅旅行记》",
+        "C. 《鲁滨逊漂流记》",
+        "D. 《爱的教育》"
+      ],
+      "answer": "C",
+      "explanation": "这句话体现了在面对困境时保持积极乐观态度，与《鲁滨逊漂流记》中鲁滨逊在孤岛上积极乐观、顽强生存的精神相契合。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_002",
+      "round": 1,
+      "type": "choice",
+      "chapter": "文学常识",
+      "knowledge_point": "文学常识/名著阅读",
+      "group_id": "qm_longhua_002_q6",
+      "group_order": 2,
+      "content": "综合实践【猜书名】根据主持人的话语提示，从下列名著中猜测书名（填序号）：\n\nA．《汤姆索亚历险记》\nB．《骑鹅旅行记》\nC．《鲁滨逊漂流记》\nD．《爱的教育》\n\n2. 一个小男孩，跟着大雁走南闯北周游各地，八个月后回到家乡。",
+      "options": [
+        "A. 《汤姆索亚历险记》",
+        "B. 《骑鹅旅行记》",
+        "C. 《鲁滨逊漂流记》",
+        "D. 《爱的教育》"
+      ],
+      "answer": "B",
+      "explanation": "尼尔斯被变成拇指般大，骑着大白鹅周游各地，最终八个月后回到家乡——这是《骑鹅旅行记》的情节。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词意境理解",
+      "content": "品读《十五夜望月》中月：「中庭地白树栖鸦，冷露无声湿桂花。今夜月明人尽望，不知秋思落谁家。」\n\n问：《十五夜望月》的前两句写景，不带一个月字，我们却可以从「___」一词中看出月色的清冷空明。请从前两句中找出该词。",
+      "answer": "地白",
+      "explanation": "「中庭地白」中「地白」形象描绘月光洒满庭院，地面仿佛铺上一层银白，给人清冷、寂静之感，无月字而月色尽显。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词意境理解",
+      "content": "品读《中秋月·中秋月》：作者认为月到中秋是「___」的（填两字，原文）。",
+      "answer": "皎洁|||偏皎洁",
+      "explanation": "原词「月到中秋偏皎洁」直接表达对中秋月光的赞美，认为中秋月特别明亮、清澈。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/多音字辨析",
+      "content": "阅读《盲人看》节选：\n\n「①每逢下学的时候，校门口都有家长等着接各自的孩童回家。在远离人群的地方，有个人，倚着白杨树，悄（qiāo / qiǎo）无声息地站着……」\n\n「②……只有电线杆（gān / gǎn）旁，一束光柱如食指捅破星天。」\n\n问：给文中加粗字「悄」「杆」选择正确的读音（按顺序填两个读音，用逗号分隔，如「qiāo,gān」）。",
+      "answer": "qiǎo,gān",
+      "explanation": "「悄无声息」中「悄」表寂静无声，应读 qiǎo；「电线杆」中「杆」指竖立的细长之物，应读 gān。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "有人用「条条大路通罗马」来表达答案不止一个，是丰富多彩的。宋代诗人苏轼也写过这样的诗句「___，___」来告诉世人，即使同一事物，角度不同，答案也是无穷的。\n\n按顺序填两句诗，用逗号分隔。",
+      "answer": "横看成岭侧成峰,远近高低各不同",
+      "explanation": "苏轼《题西林壁》：「横看成岭侧成峰，远近高低各不同。」表达从不同角度看同一事物会有不同认知的哲理。"
+    }
+  ]
+}

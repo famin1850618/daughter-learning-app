@@ -1,0 +1,575 @@
+{
+  "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+  "_source_docx_sha1": "c27d7aa2f9e27e04",
+  "subject": "math",
+  "grade": 6,
+  "knowledge_points_added": [
+    "圆柱与圆锥/圆柱圆锥综合应用",
+    "圆柱与圆锥/圆柱的体积",
+    "圆柱与圆锥/圆锥的体积",
+    "总复习/图形与几何综合",
+    "总复习/数与代数综合",
+    "数学综合/生活中的数学",
+    "正反比例/正比例的意义",
+    "正反比例/比例尺",
+    "比和比例/比的意义"
+  ],
+  "_quality_meta": {
+    "source_file": "广东省深圳市重点中学2022-2023学年小升初自主招生分班数学提高卷（北师大版）.docx",
+    "sha1": "c27d7aa2f9e27e04",
+    "paper_type": "xsc",
+    "chapter_default": "总复习",
+    "omath_total_formulas": 0,
+    "images_used": 7,
+    "questions_total_paper": 36,
+    "questions_imported": 31,
+    "questions_skipped": 5,
+    "option_images_used": 0,
+    "ai_dispute_count": 3
+  },
+  "_skipped_for_future": [
+    {
+      "qnum": "20",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "一个比的前项乘 ___，后项除以 10，它的比值不变 (位图缺前项乘的具体数据)",
+      "source_para": 42
+    },
+    {
+      "qnum": "24",
+      "reason": "input_method_unsupported_dense_fractions",
+      "raw_excerpt": "直接写得数 8 个分数算式（2-2/5、7/12×3/5 等）位图，答案多为分数，密集子题不利输入",
+      "source_para": 47
+    },
+    {
+      "qnum": "25",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "简便计算 6 题，OMath=0 关键算式（如 1/2+1/4 ÷ 2/3 等）作为位图，部分位图模糊",
+      "source_para": 50
+    },
+    {
+      "qnum": "26",
+      "reason": "input_method_unsupported_dense_fractions",
+      "raw_excerpt": "解比例 4 子题，子题答案中含分数（2/5），密集子题输入限制",
+      "source_para": 57
+    },
+    {
+      "qnum": "36",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "张叔叔银行存款 vs 李阿姨理财 4%。题面引用「中国人民银行公布的存款利率（如表）」表格未在 docx 渲染，worker 无法看到 1 年期利率，整题跳",
+      "source_para": 77
+    }
+  ],
+  "questions": [
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+      "content": "把一团圆柱体橡皮泥揉成与它等底的圆锥体，高将（　　）。",
+      "options": [
+        "A. 扩大到原来的 $3$ 倍",
+        "B. 缩小为原来的 $\\frac{1}{3}$",
+        "C. 不变",
+        "D. 扩大到原来的 $9$ 倍"
+      ],
+      "answer": "A",
+      "explanation": "等底等体积，圆锥高 = 圆柱高 × $3$。揉前圆柱体积 = 揉后圆锥体积，等底，故圆锥高 = 圆柱高 × $3$，即高扩大到原来的 $3$ 倍。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "一个长方形周长是 $20$ cm，宽是长的 $\\frac{2}{3}$。它的面积是（　　）。",
+      "options": [
+        "A. $6$ cm²",
+        "B. $24$ cm²",
+        "C. $96$ cm²",
+        "D. $20$ cm²"
+      ],
+      "answer": "B",
+      "explanation": "长 + 宽 = $20 \\div 2 = 10$ cm。长 + $\\frac{2}{3}$ 长 = 10，长 = $10 \\div \\frac{5}{3} = 6$ cm，宽 = $6 \\times \\frac{2}{3} = 4$ cm。面积 = $6 \\times 4 = 24$ cm²。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 3,
+      "type": "choice",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+      "content": "一个圆柱和一个圆锥的底面半径之比是 $2:3$，体积之比是 $3:2$，则圆柱和圆锥的高的比是（　　）。",
+      "options": [
+        "A. $1:3$",
+        "B. $3:4$",
+        "C. $9:8$",
+        "D. $4:3$"
+      ],
+      "answer": "C",
+      "explanation": "底面积之比 = 半径平方之比 = $4:9$。圆柱体积 = 底面积 × 高 $\\Rightarrow$ 高 = 体积 ÷ 底面积。圆锥体积 = 底面积 × 高 × $\\frac{1}{3}$ $\\Rightarrow$ 高 = 体积 ÷ 底面积 × $3$。圆柱高:圆锥高 = $\\frac{3}{4} : \\frac{2 \\times 3}{9} = \\frac{3}{4} : \\frac{2}{3} = 9:8$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "如图 A 点在 B 点的（　　）方向上。",
+      "options": [
+        "A. 南偏东 $65°$",
+        "B. 北偏西 $65°$",
+        "C. 北偏东 $25°$"
+      ],
+      "answer": "B",
+      "explanation": "由图可知 B 在 A 的南偏东 $65°$ 方向，则 A 在 B 的北偏西 $65°$ 方向（互为相反方向，角度不变）。",
+      "image_data": "data:image/png;base64,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"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "一根铁丝长 $37.68$ 厘米，把它围成一个最大的圆形，圆的面积是（　　）平方厘米。",
+      "options": [
+        "A. $452.16$",
+        "B. $113.04$",
+        "C. $37.68$"
+      ],
+      "answer": "B",
+      "explanation": "周长 $= 2\\pi r = 37.68 \\Rightarrow r = 37.68 \\div 3.14 \\div 2 = 6$ cm。面积 $= \\pi r^2 = 3.14 \\times 36 = 113.04$ cm²。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 3,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "阅读材料：「勾股定理」是指在一个直角三角形中，两条直角边的平方和等于斜边的平方。例如：两条直角边的长分别为 $3$、$4$，则 $3^2+4^2=5^2$，即斜边的长为 $5$。已知图中两条直角边的长度（如图，分别为 $6$ 分米和 $8$ 分米），求出图中以斜边为直径所作圆的面积是（　　）。",
+      "options": [
+        "A. $314$ 平方分米",
+        "B. $78.5$ 平方分米",
+        "C. $153.86$ 平方分米",
+        "D. $31.4$ 平方分米"
+      ],
+      "answer": "B",
+      "explanation": "斜边平方 $= 6^2 + 8^2 = 36 + 64 = 100$，斜边 $= 10$ 分米。圆的半径 $= 10 \\div 2 = 5$ 分米，面积 $= 3.14 \\times 5^2 = 78.5$ 平方分米。",
+      "image_data": "data:image/png;base64,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"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "淘气和笑笑看同一本书，淘气每天看全书的 $\\frac{1}{8}$，笑笑 $7$ 天看完全书，（　　）看得快些。",
+      "options": [
+        "A. 淘气",
+        "B. 笑笑",
+        "C. 无法比较"
+      ],
+      "answer": "B",
+      "explanation": "笑笑每天看 $\\frac{1}{7}$，$\\frac{1}{7} > \\frac{1}{8}$，故笑笑看得快。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "如下图，已知圆的周长是 $37.68$ cm，圆的面积等于长方形的面积。阴影部分的面积是（　　）cm²。",
+      "answer": "84.78",
+      "explanation": "圆半径 $= 37.68 \\div 3.14 \\div 2 = 6$ cm；圆面积 $= 3.14 \\times 36 = 113.04$ cm² 也是长方形面积。阴影 = $\\frac{3}{4}$ 圆 + $\\frac{1}{4}$ 长方形 = $113.04 \\times \\frac{3}{4} = 84.78$ cm²。",
+      "image_data": "data:image/png;base64,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",
+      "_ai_dispute": "答案 84.78 来自参考答案；图中阴影具体位置依赖图意，worker 仅看图无法 100% 复算公式，按参考答案保留。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "甲、乙两个正方形，边长的比 $4:5$，已知甲的面积比乙的面积少 $180$ 平方厘米，那么甲、乙两个正方形的面积和是（　　）平方厘米。",
+      "answer": "820",
+      "explanation": "正方形面积比 = 边长平方比 = $16:25$。差 $25-16=9$ 份对应 $180$，每份 $20$ 平方厘米。和 $= 20 \\times (16+25) = 820$ 平方厘米。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆锥的体积",
+      "content": "一个圆柱的体积是 $6$ dm³，与它等底等高的圆锥体积（　　）dm³。",
+      "answer": "2",
+      "explanation": "等底等高时圆锥体积 = $\\frac{1}{3}$ 圆柱体积 = $6 \\div 3 = 2$ dm³。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "如果下降 $9$ 米，记作 $-9$ 米，那么上升 $5$ 米记作（　　）米；如果 $+3$ 千克表示增加 $3$ 千克，那么 $-5$ 千克表示（　　）。",
+      "answer": "+5、减少5千克",
+      "alt_answers": [
+        "+5,减少5千克",
+        "5、减少5千克",
+        "+5、减少 5 千克"
+      ],
+      "explanation": "正负数表示相反意义的量。下降记作负，上升记作正：$+5$ 米；$+3$ 表示增加，$-5$ 表示减少 $5$ 千克。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+      "content": "一个圆锥形状的麦堆，底面半径 $3$ 米，高 $1.5$ 米，把它装入圆柱形的麦圈内。如果麦圈与麦堆等底，则麦圈内麦子的高度是（　　）米；如果麦圈内粮食与麦堆等高，则麦圈的底面积是（　　）平方米。",
+      "options": [
+        "A. 高 $0.5$ 米，底面积 $3\\pi$ 平方米",
+        "B. 高 $1$ 米，底面积 $\\pi$ 平方米",
+        "C. 高 $4.5$ 米，底面积 $9\\pi$ 平方米",
+        "D. 高 $0.5$ 米，底面积 $9\\pi$ 平方米"
+      ],
+      "answer": "A",
+      "explanation": "等底等体积时圆柱高 = 圆锥高 $\\div 3 = 1.5 \\div 3 = 0.5$ 米。等高等体积时圆柱底面积 = 圆锥底面积 $\\div 3$；圆锥底面积 $= \\pi \\times 3^2 = 9\\pi$，故圆柱底面积 $= 9\\pi \\div 3 = 3\\pi$ 平方米。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "如下图，拼 $1$ 个三角形用 $3$ 根小棒，拼 $2$ 个三角形用 $5$ 根小棒，拼 $3$ 个三角形用 $7$ 根小棒，拼 $4$ 个三角形用（　　）根小棒，拼 $10$ 个三角形用（　　）根小棒。",
+      "answer": "9、21",
+      "alt_answers": [
+        "9,21"
+      ],
+      "explanation": "规律：小棒数 $= 2n+1$（$n$ 为三角形数）。$n=4$：$2 \\times 4+1=9$；$n=10$：$2 \\times 10+1=21$。",
+      "image_data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVIAAABDCAYAAADOKI1lAAAfXklEQVR4nO3dB5BkVfUG8LdkJAfJKEGyApIlSdxFAQUUFkQlSs5gkav+VYKSocigEgUkKTkKqCg5KVnJSckYyGH//C511qaZnu3u93pm3uz9iilmezq8vvec73znnHvvGzHmYxTFx/8VI4r//b8oPvvYmKI1Gv8+op/nZWRkZAw/jPiESDMyMjIyusUEg30BGRkZGXVHJtKMjIyMkshEmpGRkVESEw32BWRkDHVoIzz//PPFs88+W0wwwSfa44MPPig+/PDDYsSI8s1V7zPVVFMVX/ziF4sZZ5yx9PtlDDwykdYQHO/FF18snnvuueLNN98sJplkkvSYnyox7bTTFnPOOed47dzvvfde8de//rW4/PLLi0cffbT46KOPEnki1/i9LJDyNNNMU3z1q18tvvOd7xSzzTbbWMLOqAcykdYQjz/+eHH++ecXF1xwQfGPf/wjOZ0fzl3VIgzvs+CCCxajR48utt5662KyySar5H3rhnvvvbc44YQTit/85jfFzDPPnFSpgCW4zDDDDJUFr3/961/FtddemwLkLrvsUswyyyyVvG/GwCATac3w9ttvF8cff3zxu9/9LqnFeeaZJzngwgsvXCy66KLF5z73ueL9998v9RkTTjhhUkl33nlncdRRRxUTTzxx8cMf/rCYfPLJK/oW9cENN9xQ3H333cVWW21VbLTRRsVxxx2XlOmyyy5brLPOOsV//vOf0p8x6aSTFv/85z/TZ51yyinFWmutlYm0ZhgQIpUCPfHEE8lQOCMjXGCBBT7zvP/+97/JqDhuRt8wjn/5y1+SOtp9990T4f39738vpptuumKRRRYp5p9//kqce8opp0yq65prrikuvvjiYsMNNxwvifTf//53Su+XWGKJlHp/6UtfKp566qmU0s8666zFFFNMUSoL8FrBz9gKjK+//nqa04x6oedEKvW55557il/96lfJAN95553i9ttvL9Zee+3im9/8ZnqOv998883Fk08+mQhhzTXXLJZaaqlU+xtf8MYbbxQvvPBCCiJzzDFHS9ISaAQmzsfxwhH9IL7ZZ589vVcZIImpp546pa5SeteEWIcLEONDDz2USiS+F4KcaaaZPvUcqbbvHSk8EYA0qVONp+mnn7645ZZbUo26bDnFXEvpH3jggZRV+Exk6n2zqKgHek6kDz/8cHH22WcXV155ZbHBBhskA73rrruSaqKg4IwzzhhrlBNNNFHxyCOPFPvvv3/x5S9/udeXN+jgLC+99FJxxRVXJOdGXBx7lVVWSQ6M1F577bXimWeeSf8XiDSB/P7rX/86OZqmk/cRkDjkW2+9Veqa1Fu9r/qgLIFz33rrrYk8Pv/5z9c67RTY//CHPySlzc4EDOP+7W9/O5VJkOxjjz2Wvu+7776b7BXJ3nHHHakebUyQnFrppZdeWrqMAkop/MFnr7766sXf/va34sEHH0xCwtjPO++8Y5tPrskcU8oaVDKT8UlwDFX0nEivuuqq4txzzy0WWmihYptttkmOeMwxxxS33XZb+htHRaJf+cpXiq9//espTT311FPTv6lTCms4Qyp35plnFqeddloiUU51/fXXJ3JVl4TLLrusOOuss5JTR8ot4Jx00kmJWClU5EnRR9OpDKIT7TOQOQW27777JodVF9xkk01qOS9IlH397Gc/S3YnXVdzZo++8/e///2UFfj7/fffn8aSCpXCC2wU4+KLL57GBel5bRVde+RoPBdbbLGkTk888cREloIZv/nJT36SSN683nfffanxpU7rb0ouvkfG4KKnREohaVggC4ZBQa2wwgrpd0bNMUX4ueaaKxnR3HPPnchEaq8uZ13dpptu2stLHHRwziOOOKJYbbXVip133jk5D4WuU+yxm266KQUizrvuuuumAITYvva1r6XuLvKU7sfyp6q69tY1IhVlmKeffjo5LBVmGZDPPPjgg5MiqoJIBgoI6xe/+EVSm4KBrAcQJ1s1jsoi0vctttgi2aVMSl161VVXLQ455JCxS82gqrEOtYkkN9544xSstt122zTuxMbhhx+eyNRcCJ7mQdZy4YUXprnYbrvtEtFnDB56SqRS+ldeeWVso+K6665L6goRMMxRo0YVL7/8cvHb3/42GYdUnqH6m7V7v//971O0FXmHI9ToLGEyBrq20jXOK5WURlJPnEtw+cY3vpECi7+dc8456e8CTzhQrGusCkgSmQt0Sy+9dFrfaA49Jjh6fMUVV6xNDQ/5UXFWO/hd+oyIrNn0u3FVLmGvFL+mHfWvMUrtX3TRRcV6662X6tK9gPn0GXwDZGSWn/ELNqBEduONN6asBNlSqEosAq3voacwnOrYdcOE//cxqn5TDq15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"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "比 $120$ 多 $\\frac{1}{2}$ 的数是（　　），$200$ 比（　　）少 $\\frac{1}{5}$。",
+      "answer": "180、250",
+      "alt_answers": [
+        "180,250",
+        "180、250"
+      ],
+      "explanation": "$120 \\times (1+\\frac{1}{2}) = 120 \\times \\frac{3}{2} = 180$；$200 \\div (1-\\frac{1}{5}) = 200 \\div \\frac{4}{5} = 250$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "$79\\%$ 与 $\\frac{79}{100}$ 读法完全相同，意义也相同。（判断对错）",
+      "options": [
+        "A. 正确",
+        "B. 错误"
+      ],
+      "answer": "B",
+      "explanation": "$79\\%$ 读作「百分之七十九」，$\\frac{79}{100}$ 读作「一百分之七十九」，读法不完全相同；且百分数表示两个数的比，分数可表示具体数量，意义也不完全相同。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "比的前项、后项可以是任意数。（判断对错）",
+      "options": [
+        "A. 正确",
+        "B. 错误"
+      ],
+      "answer": "B",
+      "explanation": "比的后项不能为 $0$（相当于除数为 $0$），故说法错误。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "男生人数比女生人数少 $\\frac{1}{6}$，男生人数与女生人数的比是 $5:6$。（判断对错）",
+      "options": [
+        "A. 正确",
+        "B. 错误"
+      ],
+      "answer": "A",
+      "explanation": "把女生看作 $6$ 份，男生少 $\\frac{1}{6}$ 即少 $1$ 份，男生为 $5$ 份。男:女 = $5:6$，正确。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "$10$ 个保温瓶中有 $2$ 个是次品，要保证取出的瓶中至少有一个是次品，则至少应取出 $3$ 个。（判断对错）",
+      "options": [
+        "A. 正确",
+        "B. 错误"
+      ],
+      "answer": "B",
+      "explanation": "考虑最差情况：先取出 $8$ 个全是正品（$10-2=8$），再取 $1$ 个一定是次品。至少应取 $9$ 个，故说法错误。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/生活中的数学",
+      "content": "任意给出 $3$ 个不同的自然数，其中一定有 $2$ 个数的和是奇数。（判断对错）",
+      "options": [
+        "A. 正确",
+        "B. 错误"
+      ],
+      "answer": "B",
+      "explanation": "反例：取 $1$、$3$、$5$ 三个奇数，任两个之和都是偶数。或取 $2$、$4$、$6$ 三个偶数，和也都是偶数。故说法错误。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "一件商品先提价 $15\\%$，再降价 $15\\%$，现在的价格与原来不相等。（判断对错）",
+      "options": [
+        "A. 正确",
+        "B. 错误"
+      ],
+      "answer": "A",
+      "explanation": "设原价为 $1$，提价后 $1 \\times 1.15=1.15$，再降价 $15\\%$ 得 $1.15 \\times 0.85=0.9775$，与原价 $1$ 不相等。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "在 $0.25$ 的后面添上百分号，这个数就扩大 $100$ 倍。（判断对错）",
+      "options": [
+        "A. 正确",
+        "B. 错误"
+      ],
+      "answer": "B",
+      "explanation": "$0.25\\% = 0.25 \\div 100 = 0.0025$，是缩小到原来的 $\\frac{1}{100}$，不是扩大 $100$ 倍。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "比例尺 $5:1$ 表示图上距离 $1$ cm 相当于实际距离 $5$ cm。（判断对错）",
+      "options": [
+        "A. 正确",
+        "B. 错误"
+      ],
+      "answer": "B",
+      "explanation": "比例尺 $5:1$ 表示图上 $5$ cm 对应实际 $1$ cm，即图上 $1$ cm 对应实际 $0.2$ cm，故说法错误。",
+      "_ai_dispute": "原题题面缺关键数据「比例尺 X:X」，worker 推断为 $5:1$（参考答案错的依据正是此比例尺方向反），未必为唯一原题原意，须 Famin 复核题面位图。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "看图列出算式或方程解答。如图，杨树有 $84$ 棵，杨树的棵数比柳树多 $\\frac{2}{5}$，柳树有多少棵？",
+      "answer": "60",
+      "alt_answers": [
+        "60棵",
+        "60 棵"
+      ],
+      "explanation": "设柳树有 $x$ 棵，则 $x \\times (1+\\frac{2}{5}) = 84$，$x \\times \\frac{7}{5}=84$，$x=84 \\div \\frac{7}{5}=60$。柳树有 $60$ 棵。",
+      "image_data": "data:image/png;base64,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"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "求下图阴影部分的面积。（单位：厘米，图中标注 $4$）",
+      "answer": "24",
+      "alt_answers": [
+        "24平方厘米",
+        "24 平方厘米"
+      ],
+      "explanation": "通过平移把上方阴影对应到下方，得两个三角形面积之和：$AC \\times CE \\div 2 + EF \\times \\text{高} \\div 2 = 4 \\times 4 \\div 2 + 8 \\times 4 \\div 2 = 8+16 = 24$ 平方厘米。",
+      "image_data": "data:image/png;base64,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"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 4,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "图形计算（求阴影部分的面积）。如图共三个独立图形，单位均为厘米：(1) 边长 $10$ 的正方形挖去内切圆余的两块；(2) 直径 $12$ 的半圆挖去内接三角形；(3) 大圆半径 $3$、小圆半径 $2$ 同心环。\n请按顺序写出三个阴影面积（用「，」分隔）。",
+      "answer": "21.5,20.52,15.7",
+      "alt_answers": [
+        "21.5、20.52、15.7",
+        "21.5,20.52,15.7",
+        "21.5 平方厘米,20.52 平方厘米,15.7 平方厘米"
+      ],
+      "explanation": "(1) $10 \\times 10 - 3.14 \\times 5^2 = 100-78.5 = 21.5$ 平方厘米；(2) $\\frac{1}{2} \\times 3.14 \\times 6^2 - \\frac{1}{2} \\times 12 \\times 6 = 56.52-36 = 20.52$ 平方厘米；(3) $3.14 \\times (3^2-2^2) = 3.14 \\times 5 = 15.7$ 平方厘米。",
+      "image_data": "data:image/png;base64,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",
+      "_ai_dispute": "答案为 3 个面积顺序填，输入用「，」分隔。Famin 后续可能希望拆为 3 道独立题；此处合 1 题以保完整原题结构。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "content": "一个底面半径为 $10$ 厘米的圆柱形容器里盛有足量的水，放入一个圆锥形铁块（完全没入水中），水面上升了 $1$ 厘米，求这个圆锥形铁块的体积是多少？",
+      "answer": "314",
+      "alt_answers": [
+        "314立方厘米",
+        "314 立方厘米"
+      ],
+      "explanation": "铁块体积 = 上升水的体积 = $\\pi r^2 h = 3.14 \\times 10^2 \\times 1 = 314$ 立方厘米。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "创建文明校园活动中，六（1）班共 $48$ 人，分成两组清洁课室和校道。负责清洁课室的人数和负责清洁校道的人数的比是 $3:5$。请按顺序写出清洁课室、清洁校道的人数（用「，」分隔）。",
+      "answer": "18,30",
+      "alt_answers": [
+        "18、30",
+        "18,30人",
+        "18人,30人"
+      ],
+      "explanation": "总份数 = $3+5 = 8$，每份 $48 \\div 8=6$ 人。清洁课室 $6 \\times 3=18$ 人，清洁校道 $6 \\times 5=30$ 人。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "一件衣服进价 $120$ 元，祝经理原打算提高 $50\\%$ 的价格出售，结果无人问津，只好按标价的 $80\\%$ 销售。现在这件衣服卖多少钱？",
+      "answer": "144",
+      "alt_answers": [
+        "144元",
+        "144 元"
+      ],
+      "explanation": "标价 = $120 \\times (1+50\\%) = 180$ 元；现价 = $180 \\times 80\\% = 144$ 元。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "今年植树节六年级女生共植树 $150$ 棵，男生植树棵数比女生的 $\\frac{3}{5}$ 多 $10$ 棵，六年级学生共植树多少棵？",
+      "answer": "250",
+      "alt_answers": [
+        "250棵",
+        "250 棵"
+      ],
+      "explanation": "男生植 $150 \\times \\frac{3}{5} + 10 = 90+10=100$ 棵。共植 $150+100=250$ 棵。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正比例的意义",
+      "content": "超市里的酸奶，$6$ 元钱可以买 $4$ 袋，照这样计算，$8$ 元钱够买 $6$ 袋酸奶吗？（用比例知识解答）",
+      "options": [
+        "A. 够",
+        "B. 不够"
+      ],
+      "answer": "B",
+      "explanation": "单价一定，总价与数量成正比。设买 $6$ 袋需 $x$ 元，$\\frac{6}{4}=\\frac{x}{6}$，$x=9$ 元。$8 < 9$，所以 $8$ 元不够。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_zdzx_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "某汽车制造厂全年共生产小汽车 $42000$ 辆，下半年生产的小汽车是上半年的 $110\\%$，该汽车厂上半年生产小汽车多少辆？（用方程解）",
+      "answer": "20000",
+      "alt_answers": [
+        "20000辆",
+        "20000 辆",
+        "2万",
+        "2万辆"
+      ],
+      "explanation": "设上半年 $x$ 辆，则下半年 $110\\%x$ 辆。$x + 1.1x = 42000$，$2.1x = 42000$，$x=20000$ 辆。"
+    }
+  ]
+}

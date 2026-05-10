@@ -1,0 +1,245 @@
+{
+  "source": "realpaper_g6_chinese_bubian_qm_longgang_002",
+  "_source_docx_sha1": "7c9035be2cc671b2",
+  "subject": "chinese",
+  "grade": 6,
+  "_skipped_for_future": [
+    {
+      "qnum": "L1-L5",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "倾听思考听录音题 5 题（依赖音频，文字层无录音内容）"
+    },
+    {
+      "qnum": "5",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "卫冕：第 19-21 届世界杯冠军队（图为表格，图位图丢失）"
+    },
+    {
+      "qnum": "8",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "读拼音写词语（文字层无具体拼音空，OCR 后丢失）"
+    },
+    {
+      "qnum": "10",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "请选择其中一位老师，根据档案资料，写一则毕业赠言（开放写作）"
+    },
+    {
+      "qnum": "12",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "漫画题目+作者（依赖漫画位图签名）"
+    },
+    {
+      "qnum": "14",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "你怎么看待生活中的这种现象？请有条理地陈述自己的观点"
+    },
+    {
+      "qnum": "15",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "请给短文加个合适的标题（开放拟题）"
+    },
+    {
+      "qnum": "16",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "请用简洁的语言概括短文的主要内容"
+    },
+    {
+      "qnum": "17",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "看到火光，「我」反应、船夫反应、火光象征（开放概括 3 空）"
+    },
+    {
+      "qnum": "18",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "「依然是这么近，又依然是那么远…」前后矛盾吗？为什么"
+    },
+    {
+      "qnum": "20",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "结合生活实际，谈谈你对画线句子的理解"
+    },
+    {
+      "qnum": "21",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "作文：诚信主题 / 科幻主题"
+    }
+  ],
+  "questions": [
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "下列各组词语中加粗字的读音完全正确的一组是？",
+      "options": [
+        "A. 马**蹄**（tí）  **沮**丧（jǔ）  斗**篷**（peng）  **毡**帽（zhān）",
+        "B. 花**蕾**（lěi）  **间**断（jiān）  **滥**用（làn）  **疙**瘩（gē）",
+        "C. **宾**客（bīng）  **谚**语（yàn）  **纯**熟（chún）  叱**咤**（chà）"
+      ],
+      "answer": "A",
+      "explanation": "B 错（间断 jiàn 不是 jiān）；C 错（宾客 bīn 不是 bīng；叱咤 zhà 不是 chà）；A 全对。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言实词",
+      "content": "下列加粗字与「孔子东游，见两小儿辩斗，问其**故**」中的「故」意思相同的是？",
+      "options": [
+        "A. 无缘无**故**",
+        "B. 一见如**故**",
+        "C. 明知**故**问",
+        "D. **故**作镇定"
+      ],
+      "answer": "A",
+      "explanation": "原句「故」意为「原因」。A 无缘无故（原因）；B 一见如故（朋友）；C 明知故问（故意）；D 故作镇定（故意）。故选 A。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/成语运用",
+      "content": "下列句子中，加粗的词语运用不恰当的一句是？",
+      "options": [
+        "A. 失去那份工作也算是「**塞翁失马焉知非福**」吧，我找到了更喜欢的工作。",
+        "B. 我的同桌总是摆出一副**居高临下**的样子跟我说话。",
+        "C. 凡是看过野柳海岸奇石的人，莫不惊叹大自然**别出心裁**的奇妙。"
+      ],
+      "answer": "C",
+      "explanation": "「别出心裁」用于人的思维创造，不能用于大自然。形容大自然奇妙应用「鬼斧神工」。A、B 使用得当。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_002",
+      "round": 3,
+      "type": "choice",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/说明方法",
+      "content": "下列对句子运用的说明方法的判断，有误的一项是？",
+      "options": [
+        "A. 火星是一个非常干燥的星球，在它的大气中虽然找到了水汽，但含量极少，只有地球上沙漠地区的 1%。（作比较）",
+        "B. 弯弯的内金水河像一条玉带横贯东西，河上是五座精美的汉白玉石桥。（举例子）",
+        "C. 为了对火星作进一步的考察，1975 年，美国发射了两个名叫「海盗号」的探测器。（举例子）"
+      ],
+      "answer": "B",
+      "explanation": "B 句把「内金水河」比作「玉带」，运用的是打比方的说明方法，不是举例子。A 作比较、C 举例子均判断正确。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词意境理解",
+      "content": "在我们成长的时候，父母也在慢慢变老，趁他们健在，我们要及时行孝，否则会留下「___」的遗憾。横线处填入下列哪句最恰当？",
+      "options": [
+        "A. 树欲静而风不止，子欲养而亲不待",
+        "B. 常将有日思无日，莫把无时当有时",
+        "C. 平时肯帮人，急时有人帮"
+      ],
+      "answer": "A",
+      "explanation": "A 句直接表达子女希望尽孝时父母已亡故的遗憾，最契合题意。B 是对节俭忆苦的劝诫。C 是助人互助。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_002",
+      "round": 3,
+      "type": "choice",
+      "chapter": "课文与名著",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "下列说法表述错误的一项是？",
+      "options": [
+        "A. 「起初是全场肃静，只听见炮声和乐曲声，只听见国旗和其他许多旗帜飘拂的声音」，连用两个「只听见」，以动衬静，突出了全场肃静的气氛。",
+        "B. 在《桥》这篇小说中，作者通过对雨、洪水、桥的描写，有力地烘托了老支书镇定自若、舍己为人的人物形象。",
+        "C. 《宿建德江》《西江月·夜行黄沙道中》都写了月夜的景色，都表达了作者思念家乡的情感。"
+      ],
+      "answer": "C",
+      "explanation": "C 错：《宿建德江》表达羁旅之思、客居异乡的孤寂愁闷；《西江月·夜行黄沙道中》表达对田园美景的热爱与丰收喜悦。两首情感不同，且都不是「思念家乡」。A、B 正确。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_002",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "按课文内容填空（按顺序填 8 空，用逗号分隔）：\n\n（1）敲成玉磬穿林响，___。\n（2）___，家祭无忘告乃翁。\n（3）___，两山排闼送青来。\n（4）今夜月明人尽望，___。\n（5）爆竹声中一岁除，___。\n（6）独在异乡为异客，___。\n（7）千磨万击还坚劲，___。\n（8）粉骨碎身浑不怕，___。",
+      "answer": "忽作玻璃碎地声,王师北定中原日,一水护田将绿绕,不知秋思落谁家,春风送暖入屠苏,每逢佳节倍思亲,任尔东西南北风,要留清白在人间",
+      "explanation": "（1）杨万里《稚子弄冰》；（2）陆游《示儿》；（3）王安石《书湖阴先生壁》；（4）王建《十五夜望月》；（5）王安石《元日》；（6）王维《九月九日忆山东兄弟》；（7）郑燮《竹石》；（8）于谦《石灰吟》。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_002",
+      "round": 3,
+      "type": "fill",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/人物形象分析",
+      "content": "美文品鉴《十六年前的回忆》：\n\n「我奇怪地问他：『爹，为什么要烧掉呢？怪可惜的。』\n待了一会儿，父亲才回答：『不要了就烧掉。你小孩子家知道什么！』\n父亲是很慈祥的，从来没骂过我们，更没打过我们。我总爱向父亲问许多幼稚可笑的问题。他不论多忙，对我的问题总是很感兴趣，总是耐心地讲给我听。这一次不知道为什么，父亲竟这样含糊地回答我。」\n\n问：从段末「___」一字看出，作者对父亲的回答不但没想到，还很惊讶。请填出该字。",
+      "answer": "竟",
+      "explanation": "段末「父亲竟这样含糊地回答我」中「竟」字表惊讶、出乎意料。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/词语理解",
+      "content": "美文品鉴《十六年前的回忆》（同上文）：\n\n「含糊」含义有：1．言语不清楚。2．是非不分。3．做事心里没底。4．偏离规律，乱中没把握。\n\n问：「父亲竟这样含糊地回答我」中「含糊」应选第几个含义？请填阿拉伯数字。",
+      "answer": "1",
+      "explanation": "父亲只是言语简短不清晰，并非是非不分或做事心里没底，故选义项 1：言语不清楚。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/材料阅读",
+      "content": "欣赏漫画《送货难》（蒋跃新作）：\n\n问：下列说法不正确的一项是？",
+      "options": [
+        "A. 快递员每天的工作量很大，任务繁杂。",
+        "B. 方便快捷的网购为人们的生活提供了便利。",
+        "C. 为了把包裹准确送达，快递员只打了四个电话。",
+        "D. 每个人都有自己的实际情况，快递员的工作也因此增加了难度。"
+      ],
+      "answer": "C",
+      "explanation": "C 错：漫画反映快递员工作量大、任务繁杂，不可能「只打了四个电话」就送达。A、B、D 均符合漫画反映现象。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_002",
+      "round": 3,
+      "type": "choice",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/主旨理解",
+      "content": "阅读《火光》（柯罗连科）。\n\n「①很久以前，在一个漆黑的秋天的夜晚，我乘坐一叶扁舟，航行在西伯利亚一条阴沉沉的小河上。突然，前面小河的拐弯处，只见黑魅的峰峦下面，一星火光蓦地一闪。\n\n②火光又明又亮，好像就在眼前……\n\n③『好啦，谢天谢地！』我高兴地说，『马上就到过夜的地方啦！』\n\n④船夫扭头朝身后的火光望了一眼，又不以为然地俯身划起桨来。\n\n⑤『远着呢！』\n\n⑥我不相信他的话，因为火光冲破朦胧的夜色，明明在那儿闪烁。不过船夫是对的：事实上，火光的确还离我们远着呢。\n\n⑦在如磐的黑夜里，火光的特点就是：驱散黑暗，闪闪发亮，近在眼前令人神往，给人以希望，促你前进。眼见火光渐渐临近，似乎只要再挥两三桨行程就结束了……其实却还远着呢！\n\n⑧我们又在漆黑如墨的河上划了很久。峡谷两岸的峭壁，迎面驶来，又依次向后移去，仿佛消失在无边无际的远方，而那火光却依然在前面闪耀着，闪闪发亮，令人神往，召你前行——依然是这么近，又依然是那么远……\n\n⑨现在，无论是这条被悬崖峭壁的阴影笼罩的漆黑的河流，还是那一星明亮的火光，都经常浮现在我的脑际。在这以前和在这以后，曾有许多闪耀的火光，似乎近在眼前，不止使我一人心驰神往，也召唤着夜行者奋勇前进。但是生活之河却仍然在那阴森森的两岸之间奔流，奔流，而火光也依旧非常遥远。因此，必须加劲划桨……\n\n⑩然而，火光啊……毕竟……毕竟就在前头！」\n\n问：李红读了上文有感触，准备写读后感，请围绕下列哪个选项谈感受最合适？",
+      "options": [
+        "A. 只有那些勇敢镇定的人，才能熬过黑暗，迎来光明",
+        "B. 不到黄河心不死，不撞南墙不回头",
+        "C. 上帝关上了一扇窗，必定会打开另一扇窗。",
+        "D. 其实地上本没有路，走的人多了，也便成了路。"
+      ],
+      "answer": "A",
+      "explanation": "《火光》主题是面对黑暗与艰难仍坚持划桨向前，呼应「勇敢镇定者熬过黑暗迎来光明」（A）。B 含贬义、C 强调机遇、D 强调实践开路，均偏离原文主旨。"
+    }
+  ]
+}

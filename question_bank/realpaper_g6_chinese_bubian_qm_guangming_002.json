@@ -1,0 +1,247 @@
+{
+  "source": "realpaper_g6_chinese_bubian_qm_guangming_002",
+  "_source_docx_sha1": "b797f5a5a326e82e",
+  "subject": "chinese",
+  "grade": 6,
+  "_skipped_for_future": [
+    {
+      "qnum": "1",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "根据语境，看拼音，写出正确的词语（拼音原图位图丢失，文字层无拼音音标）"
+    },
+    {
+      "qnum": "6",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "名家书「竹」：下图中属于赵孟頫楷书作品的一项是（4 选项书法位图，文字层无 ABCD 文字描述）"
+    },
+    {
+      "qnum": "9",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "请仿照示例，续写《感民俗之节》宣传语"
+    },
+    {
+      "qnum": "11",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "请你用自己的话说说对划线语句的理解"
+    },
+    {
+      "qnum": "13",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "请你至少从两个角度对木兰进行评价"
+    },
+    {
+      "qnum": "15(2)",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "联系上下文，此时的袁隆平院士会想些什么？请试着写出来"
+    },
+    {
+      "qnum": "16",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "请为本文拟一个恰当的题目"
+    },
+    {
+      "qnum": "17",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "完成仿写：看今朝，______"
+    },
+    {
+      "qnum": "18",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "谈谈你读了本文后的感受和体会"
+    },
+    {
+      "qnum": "19",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "照样子给每个画面配上小标题（依赖图位图）"
+    },
+    {
+      "qnum": "20",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "结合人物与所处环境的冲突，品析老人的形象特点"
+    },
+    {
+      "qnum": "21",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "结合名著内容和自身经历两个方面，说说你对这句话的理解"
+    },
+    {
+      "qnum": "22",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "完成名著荐读卡（依赖图位图书评卡）"
+    },
+    {
+      "qnum": "23",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "请你写一篇故事来讲述你的成长故事"
+    }
+  ],
+  "questions": [
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_guangming_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "请结合释义判断，下列词语与「不禁」（jīn）读音相同的一项是？",
+      "options": [
+        "A. 令行禁止",
+        "B. 看押监禁",
+        "C. 禁乱除暴",
+        "D. 情难自禁"
+      ],
+      "answer": "D",
+      "explanation": "「不禁」中「禁」读 jīn，意为「忍住」。A 令行禁止「禁」读 jìn（停止）；B 看押监禁「禁」读 jìn（拘押）；C 禁乱除暴「禁」读 jìn（制止）；D 情难自禁「禁」读 jīn（忍住）。故选 D。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_guangming_002",
+      "round": 3,
+      "type": "choice",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言实词",
+      "content": "下列句子中的「之」与前言「传承文化**之**精髓」中加粗字「之」用法相同的一项是？",
+      "options": [
+        "A. 光持石击瓮破之",
+        "B. 通国之善弈者也",
+        "C. 思援弓缴而射之",
+        "D. 送鲍浩然之浙东"
+      ],
+      "answer": "B",
+      "explanation": "「传承文化之精髓」中「之」是助词「的」。A 中「之」是代词代缸；B 中「之」是助词「的」；C 中「之」是代词代鸿鹄；D 中「之」是动词「到」。故选 B。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_guangming_002",
+      "round": 1,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "字形看「竹」：从如图小篆字形判断，「竹」属于（    ）字。",
+      "options": [
+        "A. 象形",
+        "B. 指事",
+        "C. 形声",
+        "D. 会意"
+      ],
+      "answer": "A",
+      "explanation": "图中字形像两株并列的竹，有下垂的叶子，是直接描绘物体外形的造字方式，属象形字。",
+      "image_data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHEAAAB/CAYAAADYdC2gAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAUaElEQVR4nO2dBbAXRRzHMVBRbEwUsQVbQWzFRGzFDhBsBgMdu9BRsbsLE1Qs7FbUwUTs7gC7O9b5rLNv9u1/L/Z29+4e731nblC4/93efW9/++ttJ9rQ4tGu6gG0wR8tmsS//vpLfPrpp9bj/PPPFzfccIO4//77G/7tm2++Ef/++2/Vww+GFkGieuH8+f3334tjjjlGHvvvv79o166d89GtWzdx9NFHy2vceOONFT+dP2pP4sSJE8Xtt98uBg0aJOaee24xxxxzSCI22GADsemmm8oDQj7//PNcxwUXXND0u0UWWURMN9108roco0aNEg899FDVj+yMWpL466+/ildffVVsvPHGokePHmLKKacUnTt3FhtttJG488475fHbb7953YNZ/frrr8trXXnllfL6HLPOOqu877HHHis++eQT8eOPP9Ze9NaOxEcffVRsv/32TaLvoIMOEqeffnpp97/66qvFsGHDxDTTTCPvv/7664ubbrqptPsXQeUkqq8cBQQR2bFjR/ni7rvvPilK//7770pmwqRJk8TBBx8sNttsMzHDDDOIZZddVop1lKm6zcxKSUQkvvbaa6Jv375illlmkQrHXXfdJcUpL6rKl6Xuz3HvvfeKtddeW35gG264oRg7dmytiKyUxL333luKrLXWWktcf/31VQ4lF5AW7du3F7PPPrtUpv7444+qhyRROol8wWiAc801l9QI77nnHvHTTz+VPYzCQMyyTi+00EJSw62DNlsqiT/88IPYaaedxDzzzCP22GMP8cwzz9RKLOUFY2YZWHDBBcVss80mRowYUelzlEbizz//LHr37i1ts9NOO62s20bHqaeeKpeEkSNHVjaGUkg866yzpJG+6KKLinfeeaeMW5YGtNVzzjlHTD/99GK55ZYT7777buljiEoi5sGll14qDejFF19cvPnmmzFvVynQYFdddVWpYbNuloloJLJGXHHFFVLUnHfeeS1y7XPFF198IXr16iWWXnpp8dFHH5V232gknn322dKuuuiii+SMbC3ATbfSSitJ6XPZZZeV8vEGJ1EXocOHD8/9Owx8TA2iFL/88ou8RlX47rvvxMcffyyPIr5TfK6rrLJKaaI1OIk4kxGh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"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_guangming_002",
+      "round": 3,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/成语运用",
+      "content": "词义解「竹」：下列词语依次填空，最恰当的一项是？\n\n历史长河，风云激荡，有志之士，砥砺前行。他们 ① ___ ，心中有所设想与谋划；他们 ② ___ ， ③ ___ 面对怎样的艰难险阻， ④ ___ 能一往无前，生生不息。",
+      "options": [
+        "A. 势如破竹    胸有成竹    无论    就",
+        "B. 胸有成竹    势如破竹    无论    都",
+        "C. 胸有成竹    势如破竹    只要    就",
+        "D. 势如破竹    胸有成竹    只要    都"
+      ],
+      "answer": "B",
+      "explanation": "①「胸有成竹」对应「心中有所设想与谋划」；②「势如破竹」形容毫无阻碍。③④「无论……都……」表条件下结果不变。故选 B。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_guangming_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "诗人赞「竹」：按古诗文默写填空，按顺序填 9 空，用逗号分隔：\n\n郑燮《竹石》：「①___，②___。」表达不向任何势力低头的高傲风骨；\n于谦《石灰吟》：「③___，④___。」表达不与世俗同流合污的高尚节操；\n新时代中国青年，应有「⑤___，事非经过不知难。」的智慧；\n应有「⑥___，不必法古；⑦___，⑧___。」的胆识；\n应有「谁道人生无再少？⑨___！」的态度。",
+      "answer": "千磨万击还坚劲,任尔东西南北风,粉骨碎身浑不怕,要留清白在人间,书到用时方恨少,苟利于民,苟周于事,不必循旧,门前流水尚能西",
+      "explanation": "依次为《竹石》、《石灰吟》、《冬夜读书示子聿》、《淮南子·氾论训》、苏轼《浣溪沙》。注意「恨、苟、循、尚」的写法。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_guangming_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "下列诗句中的民俗节日按一年中的顺序排列，正确的一项是？\n\n①千门万户曈曈日，总把新桃换旧符。\n②遥知兄弟登高处，遍插茱萸少一人。\n③清明时节雨纷纷，路上行人欲断魂。\n④今夜月明人尽望，不知秋思落谁家。",
+      "options": [
+        "A. ①③②④",
+        "B. ③①④②",
+        "C. ①③④②",
+        "D. ③①②④"
+      ],
+      "answer": "C",
+      "explanation": "①春节（正月初一），②重阳（九月初九），③清明（四月初），④中秋（八月十五）。按时间顺序：春节→清明→中秋→重阳，即①③④②。故选 C。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_guangming_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言实词",
+      "group_id": "qm_guangming_002_q10",
+      "group_order": 1,
+      "content": "阅读《木兰从军》。\n\n「木兰者，古时一民间女子也。少习骑，长而益精。值可汗点兵，其父名在军书，与同里诸少年皆次当行。因其父以老病不能行。木兰乃易男装，市鞍马，代父从军。溯黄河，度黑山，转战驱驰，凡十有二年，数建奇功。嘻！男子可为之事女子未必不可为。余观夫木兰从军之事因益信。」\n\n注释：①皆次当行：都被编在征发的队伍中。②市：买。③驱驰：策马疾驰。\n\n1. 下列对加粗字的解释，不正确的一项是？",
+      "options": [
+        "A. 少习骑（年幼）",
+        "B. 长而益精（好处）",
+        "C. 易男装（变换）",
+        "D. 数建奇功（多次）"
+      ],
+      "answer": "B",
+      "explanation": "B 项「长而益精」中「益」应解释为「更加」，不是「好处」。故选 B。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_guangming_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言句子翻译",
+      "group_id": "qm_guangming_002_q10",
+      "group_order": 2,
+      "content": "阅读《木兰从军》。\n\n「木兰者，古时一民间女子也。少习骑，长而益精。值可汗点兵，其父名在军书，与同里诸少年皆次当行。因其父以老病不能行。木兰乃易男装，市鞍马，代父从军。溯黄河，度黑山，转战驱驰，凡十有二年，数建奇功。嘻！男子可为之事女子未必不可为。余观夫木兰从军之事因益信。」\n\n2. 文中详写了 ① ___（填序号：①木兰代父从军的原因及出征准备；②木兰的征战生活），其中木兰替父从军的原因是 ② ___（填原文 7 个字）。\n\n按顺序填两空，用逗号分隔。",
+      "answer": "①,其父以老病不能行|||1,其父以老病不能行",
+      "explanation": "原文详细写了「易男装，市鞍马」的出征准备，征战只用「溯黄河，度黑山」一句，故详写①；替父从军的原因是「其父以老病不能行」。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_guangming_002",
+      "round": 3,
+      "type": "choice",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "阅读《国之脊梁》中第①段（爱国气节）：\n\n「自古以来，中国人最看重气节和操守。李清照的『___』让我们体会到诗人所向无惧、报效祖国的崇高气节；文天祥的『___』让我们感受到诗人大义凛然、视死如归的民族气节……」\n\n以及第⑥段（结尾）：「林则徐说：『___』百年之前，国家命运多舛……」\n\n下列诗句依次填入文中横线处（李清照→文天祥→林则徐），最恰当的一项是？\n\n①生当作人杰，死亦为鬼雄。\n②苟利国家生死以，岂因祸福避趋之。\n③人生自古谁无死，留取丹心照汗青。",
+      "options": [
+        "A. ②①③",
+        "B. ③①②",
+        "C. ①③②",
+        "D. ②③①"
+      ],
+      "answer": "C",
+      "explanation": "①出自李清照《夏日绝句》；③出自文天祥《过零丁洋》；②出自林则徐《赴戍登程口占示家人》。故顺序为①③②，选 C。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_guangming_002",
+      "round": 3,
+      "type": "fill",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/人物形象分析",
+      "content": "阅读《国之脊梁》第②自然段（赵一曼）：\n\n「铮铮巾帼英雄骨。押送赵一曼的马车从最热闹的街市穿过。戴着手铐、锁着脚链、被紧紧捆绑着的赵一曼，在车上坐直了身子，微凉的晨风，吹拂着她那许多天没有梳理的头发和她那染着血迹的破烂的衣襟。刑场到了，赵一曼纵身跳下马车，从容地走上前去，面对一排黑色的枪口，站住，站得稳稳的、牢牢的。然后她高举手臂，用力地喊道：『打倒日本帝国主义！中国共产党万岁！』」\n\n问：第②自然段运用了 ① ___ 、 ② ___ 和 ③ ___ 描写。按顺序填三种描写类型，用逗号分隔（如「外貌,动作,语言」）。",
+      "answer": "外貌,动作,语言",
+      "explanation": "「戴着手铐……血迹的破烂的衣襟」是外貌描写；「纵身跳下马车，从容地走上前去」是动作描写；「她高举手臂，用力地喊道……」是语言描写。"
+    }
+  ]
+}

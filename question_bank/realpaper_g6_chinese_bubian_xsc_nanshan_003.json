@@ -1,0 +1,385 @@
+{
+  "source": "realpaper_g6_chinese_bubian_xsc_nanshan_003",
+  "_source_docx_sha1": "6559803240963c53",
+  "subject": "chinese",
+  "grade": 6,
+  "_skipped_for_future": [
+    {
+      "qnum": "15",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "请向大家推荐一本印象深刻的经典名著，说说推荐的理由，并分享一种你喜欢的读书方法。"
+    },
+    {
+      "qnum": "16(4)",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "炳烛之明与昧行相比，哪个更好？如果请你来回答这个问题，你会说"
+    },
+    {
+      "qnum": "16(5)",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "如果请你来论学，你会用什么来打比方？少而好学，如_____；壮而好学，如_____；老而好学，如_____。"
+    },
+    {
+      "qnum": "17(1)",
+      "reason": "format_unsupported",
+      "raw_excerpt": "为下列词语匹配恰当的反义词（6 词对 6 候选 ABCDEF）连线匹配题超 4 选项 validator 不支持"
+    },
+    {
+      "qnum": "17(3)",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "找到并摘抄文中描写光线变化的句子；这里看似是写光线，实际上是写_____，烘托出'我'_____的内心感受（开放摘抄+开放概括）"
+    },
+    {
+      "qnum": "17(4)",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "你如何看待作者笔下的母亲？联系课文，尝试从两个不同的角度进行分析。"
+    },
+    {
+      "qnum": "17(6)",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "请仿照片段进行描写（欣喜若狂仿写）"
+    },
+    {
+      "qnum": "18(2)",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "为这则新闻拟定一个引人注目的标题（开放拟题）"
+    },
+    {
+      "qnum": "18(3)",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "创编一则社团招募广告词"
+    },
+    {
+      "qnum": "18(4)",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "材料 4 表格图原图位图缺失（material 4 文字层无表格内容只有标题）"
+    },
+    {
+      "qnum": "18(5)",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "请发表你的观点，并结合阅读材料，通过列举事实的方式来说服对方。"
+    },
+    {
+      "qnum": "19",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "请以「滋味」为题目写一篇文章"
+    }
+  ],
+  "questions": [
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_003",
+      "round": 1,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "group_id": "xsc_nanshan_003_q1",
+      "group_order": 1,
+      "content": "看拼音写词语（如图田字格上方拼音，依次填入对应词语，用逗号分隔）：\n\nlǐng yù , fǎ tíng , pái huái , fèi téng , biān pào",
+      "answer": "领域,法庭,徘徊,沸腾,鞭炮",
+      "explanation": "「领」「域」「庭」「腾」「鞭」笔画较复杂，需注意工整规范。",
+      "image_data": "data:image/png;base64,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"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_003",
+      "round": 2,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/字义",
+      "group_id": "xsc_nanshan_003_q2",
+      "group_order": 1,
+      "content": "选择与文言文中加粗字意思相同的词语，写序号。\n\n2. 「因释其耒而守株」中加粗的「**释**」字，与下列哪个词语中「释」的意思相同？",
+      "options": [
+        "A. 手不释卷",
+        "B. 冰释前嫌"
+      ],
+      "answer": "A",
+      "explanation": "「因释其耒而守株」中「释」意为「放下」。A 项「手不释卷」中「释」意为「放下」（手不离开书本）；B 项「冰释前嫌」中「释」意为「消散、消除」。故选 A。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_003",
+      "round": 2,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/字义",
+      "group_id": "xsc_nanshan_003_q2",
+      "group_order": 2,
+      "content": "选择与文言文中加粗字意思相同的词语，写序号。\n\n3. 「通国之善弈者也」中加粗的「**善**」字，与下列哪个词语中「善」的意思相同？",
+      "options": [
+        "A. 乐善好施",
+        "B. 循循善诱"
+      ],
+      "answer": "B",
+      "explanation": "「通国之善弈者也」中「善」意为「擅长」。A 项「乐善好施」中「善」意为「善事」；B 项「循循善诱」中「善」意为「善于」。故选 B。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_003",
+      "round": 2,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/字义",
+      "group_id": "xsc_nanshan_003_q2",
+      "group_order": 3,
+      "content": "选择与文言文中加粗字意思相同的词语，写序号。\n\n4. 「及其日中如探汤」中加粗的「**汤**」字，与下列哪个词语中「汤」的意思相同？",
+      "options": [
+        "A. 固若金汤",
+        "B. 赴汤蹈火"
+      ],
+      "answer": "B",
+      "explanation": "「及其日中如探汤」中「汤」意为「热水」。A 项「固若金汤」中「汤」意为「汤池（防守严密的护城河）」；B 项「赴汤蹈火」中「汤」意为「热水」。故选 B。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_003",
+      "round": 2,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/字义",
+      "group_id": "xsc_nanshan_003_q2",
+      "group_order": 4,
+      "content": "选择与文言文中加粗字意思相同的词语，写序号。\n\n5. 「我以日始出时去人近」中加粗的「**去**」字，与下列哪个词语中「去」的意思相同？",
+      "options": [
+        "A. 扬长而去",
+        "B. 相去甚远"
+      ],
+      "answer": "B",
+      "explanation": "「我以日始出时去人近」中「去」意为「距离」。A 项「扬长而去」中「去」意为「离开」；B 项「相去甚远」中「去」意为「距离」。故选 B。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_003",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "根据词语提示，给「肖」字加上不同的偏旁组成新字，填入横线（按顺序：通__达旦、喜上眉__、__无声息、九__云外、悬崖__壁、__纵即逝），用逗号分隔。",
+      "answer": "宵,梢,悄,霄,峭,稍",
+      "explanation": "通宵达旦、喜上眉梢、悄无声息、九霄云外、悬崖峭壁、稍纵即逝。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_003",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/词语理解",
+      "content": "给下列句中加粗的词语换一种说法，保持句子意思不变，用逗号依次分隔（4 空）：\n\n（1）腊月和正月，在农村正是大家最**闲在**的时候。\n（2）但不能平的，为什么偏要白白走这一**遭**啊？\n（3）全校运动会上，宁宁在游泳比赛中**拔得头筹**。\n（4）这段时光不好**挨**。",
+      "answer": "清闲,回,摘得桂冠,过|||清闲,次,夺得冠军,过",
+      "explanation": "（1）「闲在」指清闲自在，可换成「清闲」；（2）「遭」是量词，可换成「回」或「次」；（3）「拔得头筹」指比赛中取得第一名，可换成「摘得桂冠」「独占鳌头」「勇夺第一」等；（4）「挨」指过、忍受，可换成「过」。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_003",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/词语理解",
+      "content": "选择下列叠词所描绘的画面，写序号（按顺序填字母，用逗号分隔，共 4 空）：\n\n①雨雪纷飞的样子\n②柳丝摇曳的样子\n③相视无言的样子\n④洁白明亮的样子\n\n候选叠词：A.脉脉  B.依依  C.霏霏  D.皎皎",
+      "answer": "C,B,A,D",
+      "explanation": "霏霏：雨雪密集细密的样子；依依：柳枝随风摇曳；脉脉：默默相对、用眼神交流；皎皎：洁白明亮（如月光）。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_003",
+      "round": 3,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/成语运用",
+      "content": "在横线上将四字词语补充完整，再根据语意选填入语段中的括号，用逗号依次分隔答案（先填 4 个补全词，再填 4 个序号）：\n\nA．见微__________\nB．锲而__________\nC．司空__________\nD．追根__________\n\n那些在科学领域有所建树的人，都善于从①_____的现象中发现问题，凭借②_____的能力和③_____的精神，不断探索和解决问题，④_____，最后把「？」拉直变成「！」，找到真理。",
+      "answer": "知著,不舍,见惯,溯源,C,A,B,D",
+      "explanation": "「见微知著」「锲而不舍」「司空见惯」「追根溯源」。①科学家从「司空见惯」的现象发现问题（C）；②靠「见微知著」的洞察能力（A）；③凭「锲而不舍」的精神（B）；④最终「追根溯源」找到真理（D）。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_003",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "按课文内容填空（按横线顺序填，用逗号分隔，共 6 空）：\n\n①中国古时候有个文学家叫做 ________ 的说过：「人 _________，或 _________，或轻于鸿毛。」（《为人民服务》）\n②太阳他有脚啊，_____________，我也 ________ 跟着旋转。（《匆匆》）\n③读书须用意，__________。（《增广贤文》）",
+      "answer": "司马迁,固有一死,重于泰山,轻轻悄悄地挪移了,茫茫然,一字值千金",
+      "explanation": "①司马迁《为人民服务》原文「人固有一死，或重于泰山，或轻于鸿毛」；②朱自清《匆匆》「太阳他有脚啊，轻轻悄悄地挪移了；我也茫茫然跟着旋转」；③《增广贤文》「读书须用意，一字值千金」。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_003",
+      "round": 3,
+      "type": "fill",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "读句子，体会人物未说出的话里传递的情感，选词填空，写序号（按顺序填 3 个字母，用逗号分隔）：\n\n①「河汉清且浅，相去复几许。盈盈一水间，脉脉不得语。」（《迢迢牵牛星》）\n②父亲瞅了瞅我们，没有说一句话。他的心被一种伟大的力量占据着。（《十六年前的回忆》）\n③老汉清瘦的脸上淌着雨水。他不说话，盯着乱哄哄的人们。他像一座山。（《桥》）\n\n候选情感：A. 坚毅、勇敢、对家人默默的爱与牵挂  B. 相思之苦、不能相守的哀愁  C. 沉着冷静、临危不乱的威严",
+      "answer": "B,A,C",
+      "explanation": "①《迢迢牵牛星》通过「盈盈一水间，脉脉不得语」表达相思之苦（B）；②《十六年前的回忆》父亲沉默饱含坚毅与对家人的牵挂（A）；③《桥》老汉如山般沉着冷静、威严（C）。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_003",
+      "round": 3,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/词语理解",
+      "content": "根据语境，将短语选填到语段中，在相应的括号里写序号（按顺序填 4 个字母，用逗号分隔）：\n\nA．轻轻地为你拂去心中的愁云\nB．默默地为你驱散心灵的阴霾\nC．尽情地为你弹奏生活的愉悦\nD．热情地将你引向阳光的地带\n\n朋友是什么？朋友是快乐日子里一把吉他，①_____；朋友是忧伤日子里的一股春风，②_____；朋友是成功道路上的一位良师，③_____；朋友是苦闷黑暗中的一盏明灯，④_____。",
+      "answer": "C,A,D,B",
+      "explanation": "①吉他对应「弹奏」→C；②春风对应「拂去愁云」→A；③良师对应「引向阳光」→D；④明灯对应「驱散阴霾」→B。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_003",
+      "round": 2,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词意境理解",
+      "content": "选择下列事物所蕴含的寓意，写序号（按顺序填 4 个字母，用逗号分隔）：\n\n①子规啼\n②鸿鹄志\n③唱黄鸡\n④树栖鸦\n\n候选寓意：A．雄心勃勃  B．悲伤哀切  C．寂寞孤独  D．时光易逝",
+      "answer": "B,A,D,C",
+      "explanation": "①「子规啼」借杜鹃凄切鸣叫表达悲伤哀切（B）；②「鸿鹄志」喻志向高远、雄心壮志（A）；③苏轼「休将白发唱黄鸡」喻时光易逝（D）；④「树栖鸦」营造清冷孤寂氛围（C）。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_003",
+      "round": 3,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "托物言志是我国古代诗人常用的表现手法，找准言「志」之「物」，才能理解所言之「志」。按顺序填空（共 6 空，前 5 空填诗句，第 6 空填所托之物，用逗号分隔）：\n\n「何当金络脑，__________」（第 1 空），是唐代诗人李贺借 ___（第 2 空：所托之物）来抒发自由驰骋、为国建功的热切愿望；\n\n「____________，要留清白在人间」（第 3 空），是明代诗人于谦借 ___（第 4 空：所托之物）来歌咏勇于牺牲、清白正直的崇高志向；\n\n「千磨万击还坚劲，____________」（第 5 空），是清代诗人郑燮借 ___（第 6 空：所托之物）来表达顽强刚毅、不随波逐流的高尚情操。",
+      "answer": "快走踏清秋,马,粉骨碎身浑不怕,石灰,任尔东西南北风,竹子|||快走踏清秋,马,粉骨碎身浑不怕,石灰,任尔东西南北风,竹",
+      "explanation": "李贺《马诗》借马言志（快走踏清秋）；于谦《石灰吟》借石灰言志（粉骨碎身浑不怕）；郑燮《竹石》借竹言志（任尔东西南北风）。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_003",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "_image_skip_reason": "text_self_contained_image_decorative",
+      "group_id": "xsc_nanshan_003_q16",
+      "group_order": 1,
+      "content": "阅读《师旷论学》。\n\n晋平公问于师旷曰：「吾年七十，欲学，恐已暮矣！」师旷曰：「暮，何不炳烛乎？」平公曰：「安有为人臣而戏其君乎？」师旷曰：「盲臣安敢戏其君乎！臣闻之，少（shǎo / shào）而好（hǎo / hào）学，如①___；壮而好学，如②___；老而好学，如③___。炳烛之明，孰与昧行乎？」平公曰：「善哉！」\n\n注释：[1]晋平公：春秋时期晋国国君。[2]师旷：春秋时期晋国的乐师，双目失明。[3]炳烛：点燃蜡烛。[4]昧（mèi）行：在黑暗中行走。\n\n1. 给文中加粗字「少」「好」选择正确的读音，写出读音组合（用逗号分隔，如「shǎo,hǎo」）。",
+      "answer": "shào,hào",
+      "explanation": "「少而好学」中「少」指年少，应读 shào；「好学」中「好」指喜爱，应读 hào。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_003",
+      "round": 3,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言实词",
+      "_image_skip_reason": "text_self_contained_image_decorative",
+      "group_id": "xsc_nanshan_003_q16",
+      "group_order": 2,
+      "content": "阅读《师旷论学》。\n\n晋平公问于师旷曰：「吾年七十，欲学，恐已暮矣！」师旷曰：「暮，何不炳烛乎？」平公曰：「安有为人臣而戏其君乎？」师旷曰：「盲臣安敢戏其君乎！臣闻之，少而好学，如①___；壮而好学，如②___；老而好学，如③___。炳烛之明，孰与昧行乎？」平公曰：「善哉！」\n\n注释：[1]晋平公：春秋时期晋国国君。[2]师旷：春秋时期晋国的乐师。[3]炳烛：点燃蜡烛。[4]昧（mèi）行：在黑暗中行走。\n\n2. 联系上下文，推测并选择加粗字「暮」的意思，写序号（按顺序，用逗号分隔，共 2 空）：\n\n①「欲学，恐已暮矣」中「暮」的意思是 ___\n②「暮，何不炳烛乎」中「暮」的意思是 ___\n\nA．太阳已落，天色将晚\nB．年龄老大，为时已晚",
+      "answer": "B,A",
+      "explanation": "①「欲学，恐已暮矣」中「暮」比喻年龄已晚（B）；②「暮，何不炳烛乎」中「暮」指天色将晚（A）。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_003",
+      "round": 3,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词意境理解",
+      "_image_skip_reason": "text_self_contained_image_decorative",
+      "group_id": "xsc_nanshan_003_q16",
+      "group_order": 3,
+      "content": "阅读《师旷论学》。\n\n晋平公问于师旷曰：「吾年七十，欲学，恐已暮矣！」师旷曰：「暮，何不炳烛乎？」平公曰：「安有为人臣而戏其君乎？」师旷曰：「盲臣安敢戏其君乎！臣闻之，少而好学，如①___；壮而好学，如②___；老而好学，如③___。炳烛之明，孰与昧行乎？」平公曰：「善哉！」\n\n注释：[1]晋平公：春秋时期晋国国君。[2]师旷：春秋时期晋国的乐师。[3]炳烛：点燃蜡烛。[4]昧（mèi）行：在黑暗中行走。\n\n3. 联系上下文，选择合适的词语填入文中三个横线，写序号（按顺序填①②③对应的字母，用逗号分隔）：\n\nA．炳烛之明  B．日中之光  C．日出之阳",
+      "answer": "C,B,A",
+      "explanation": "「日出之阳」对应少时充满潜力（①C）；「日中之光」对应壮年精力充沛（②B）；「炳烛之明」虽弱仍可照明，对应老年学习有得（③A）。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_003",
+      "round": 3,
+      "type": "choice",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词意境理解",
+      "_image_skip_reason": "text_self_contained_image_decorative",
+      "group_id": "xsc_nanshan_003_q16",
+      "group_order": 4,
+      "content": "阅读《师旷论学》。\n\n晋平公问于师旷曰：「吾年七十，欲学，恐已暮矣！」师旷曰：「暮，何不炳烛乎？」平公曰：「安有为人臣而戏其君乎？」师旷曰：「盲臣安敢戏其君乎！臣闻之，少而好学，如日出之阳；壮而好学，如日中之光；老而好学，如炳烛之明。炳烛之明，孰与昧行乎？」平公曰：「善哉！」\n\n4. 这篇小古文所蕴含的道理，下列选项中表述不恰当的一项是？",
+      "options": [
+        "A. 学无止境，一个人应该活到老，学到老。",
+        "B. 在人生的任何一个阶段，学习都是有益的。",
+        "C. 应虚心接受别人的意见，做到从善如流。",
+        "D. 要让人信服自己，必须用打比方的方法。"
+      ],
+      "answer": "D",
+      "explanation": "本文核心在「活到老学到老」+「学习无年龄限制」+「虚心听劝」，A B C 均为文章主旨。D 项「打比方说服」只是师旷的说服技巧，并非主旨，故不恰当。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_003",
+      "round": 3,
+      "type": "choice",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "阅读《那个星期天》节选。\n\n「①我不知道那堆衣服要洗多久，可母亲应该知道。我蹲在她身边，看着她洗。我一声不吭，盼着。我想我再不离开半步，再不把觉睡过头。我想衣服一洗完我马上拉起她就走，决不许她再耽搁。我看着盆里的衣服和盆外的衣服，我看着太阳，看着光线，我一声不吭。看着盆里揉动的衣服和绽开的泡沫，我感觉到周围的光线渐渐暗下去，渐渐地凉下去沉郁下去，越来越远越来越缥缈，我一声不吭，忽然有点儿明白了。\n\n②我现在还能感觉到那光线漫长而急遽的变化，孤独而惆怅的黄昏的到来，并且听得见母亲咔嚓咔嚓搓衣服的声音，那声音永无休止就像时光的脚步。那个星期天。就在那天。母亲发现男孩儿蹲在那儿一动不动，发现他在哭，在不出声地流泪。我感到母亲惊惶地甩了甩手上的水，把我拉过去拉进她的怀里。我听见母亲在说，一边亲吻着我一边不停地说：「噢，对不起，噢，对不起……」那个星期天，本该是出去的，去哪儿记不得了。男孩儿蹲在那个又大又重的洗衣盆旁，依偎在母亲怀里，闭上眼睛不再看太阳，光线正无可挽回地消逝，一派荒凉。」\n\n问：文段结尾写男孩「闭上眼睛不再看太阳，光线正无可挽回地消逝，一派荒凉。」下面选项中理解不够准确的一项是？",
+      "options": [
+        "A. 希望彻底地破灭，男孩感受到了无可挽回的失望和伤心。",
+        "B. 情绪低落到极点，男孩无声表达着对母亲的不满和责怪。",
+        "C. 等待漫长又煎熬，男孩体会到了事与愿违的沮丧和失落。",
+        "D. 光线持续地变化，男孩品味到了时间消逝的无助和惆怅。"
+      ],
+      "answer": "B",
+      "explanation": "结尾男孩「依偎在母亲怀里」、母亲已道歉，男孩此刻是失望、无奈而非「不满和责怪」。A、C、D 均符合文意。故 B 不准确。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_003",
+      "round": 3,
+      "type": "fill",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "阅读《那个星期天》节选第①自然段：「我蹲在她身边，看着她洗。我一声不吭①___，盼着……我感觉到周围的光线渐渐暗下去……我一声不吭③___，忽然有点儿明白了。」\n\n文段中三次用到「一声不吭」，每一次都传递出了人物不同的情绪。请联系上下文，用不同的两字词语描述「我」心情的变化，按顺序填①②③三处对应的两字词语，用逗号分隔。",
+      "answer": "期待,焦急,失望|||期待,焦急,绝望",
+      "explanation": "①最初蹲在母亲身旁盼着出门，情绪是期待；②看着光线变化担心母亲耽搁，情绪是焦急；③感觉光线暗下去明白外出无望，情绪是失望/绝望。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_003",
+      "round": 1,
+      "type": "fill",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/阅读理解",
+      "content": "阅读《那个星期天》节选第②自然段：「我感到母亲惊惶地甩了甩手上的水，把我拉过去拉进她的怀里。我听见母亲在说，一边亲吻着我一边不停地说：『噢，对不起，噢，对不起……』」\n\n文段中加粗的片段是对母亲哪三种描写？请按顺序填三种描写类型，用逗号分隔（如「神态,动作,语言」）。",
+      "answer": "动作,神态,语言|||神态,动作,语言",
+      "explanation": "「惊惶地甩了甩手」是动作和神态描写，「不停地说」是语言描写。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_003",
+      "round": 2,
+      "type": "fill",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/材料阅读",
+      "content": "阅读「深圳非遗·传承有我」材料。\n\n材料 1：近日，深圳少年练习英歌舞的视频走红，二十余名学生在市民中心广场展示英歌舞，三百多年历史的传统舞蹈与城市 CBD 的现代楼宇交相辉映。\n\n材料 2：英歌舞是潮汕地区集戏剧、舞蹈、武术于一体的民间舞蹈，取材于《水浒传》。早在 2006 年，广东潮阳和普宁的英歌就被列入了第一批国家级非物质文化遗产名录，被称为「中华战舞」。\n\n材料 3：沙头角鱼灯舞起源于明末清初，是深圳市盐田区沙头角沙栏吓村的民间舞蹈，经过三百多年历史沿袭。2008 年，沙头角渔灯舞被列入第二批国家级非物质文化遗产。\n\n问：根据材料判断下列说法是否正确（用「√」或「×」按顺序填，用逗号分隔，共 4 空）：\n\n①英歌舞是深圳市第一批国家级非物质文化遗产。\n②深圳市的国家级非物质文化遗产涉及传统舞蹈、传统医药和民俗三大类别。\n③英歌舞和沙头角鱼灯舞都是有着三百多年历史的传统民间舞蹈。\n④国家第一批非物质文化遗产名录于 2006 年公布。",
+      "answer": "√,√,√,√",
+      "explanation": "①材料 2 明确「2006 年潮阳和普宁的英歌列入第一批国家级非遗名录」，深圳代表对了；②材料 4 表格涉及三大类别；③材料 1 称英歌舞「三百多年历史」，材料 3 称沙头角鱼灯舞「三百多年历史」；④材料 2 明确 2006 年公布第一批名录。四项均正确。"
+    }
+  ]
+}
