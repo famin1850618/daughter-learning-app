@@ -91,7 +91,6 @@ class _RequestList extends StatelessWidget {
   Widget build(BuildContext context) {
     final svc = context.watch<ReviewRequestService>();
     return FutureBuilder<List<ReviewRequest>>(
-      // svc.pendingCount 变化时 watch 触发 rebuild → 重新 load
       future: _load(svc),
       builder: (context, snap) {
         if (snap.connectionState != ConnectionState.done) {
@@ -107,6 +106,45 @@ class _RequestList extends StatelessWidget {
             ),
           );
         }
+        // V3.13 修正（Famin 反馈）: 待审核 tab 内分两区"小孩的 / AI 的"
+        if (status == ReviewRequestStatus.pending) {
+          final fromChild = list.where((r) =>
+              r.requestType == ReviewRequestType.appeal ||
+              r.requestType == ReviewRequestType.subjectiveGrading).toList();
+          final fromAi = list.where((r) =>
+              r.requestType == ReviewRequestType.aiDispute).toList();
+          return ListView(
+            padding: const EdgeInsets.all(12),
+            children: [
+              _SectionHeader(title: '小孩的（${fromChild.length}）',
+                  subtitle: '判错申诉 / 主观题待批',
+                  color: Colors.orange.shade100,
+                  textColor: Colors.orange.shade900),
+              if (fromChild.isEmpty)
+                Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Text('暂无',
+                      style: TextStyle(color: Colors.grey[500], fontSize: 13)),
+                )
+              else
+                ...fromChild.map((r) => _ReviewCard(request: r)),
+              const SizedBox(height: 16),
+              _SectionHeader(title: 'AI 的（${fromAi.length}）',
+                  subtitle: 'AI 标注题面/答案有疑问，待你定夺',
+                  color: Colors.amber.shade100,
+                  textColor: Colors.amber.shade900),
+              if (fromAi.isEmpty)
+                Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Text('暂无',
+                      style: TextStyle(color: Colors.grey[500], fontSize: 13)),
+                )
+              else
+                ...fromAi.map((r) => _ReviewCard(request: r)),
+            ],
+          );
+        }
+        // approved / rejected：原列表
         return ListView.builder(
           padding: const EdgeInsets.all(12),
           itemCount: list.length,
@@ -125,6 +163,44 @@ class _RequestList extends StatelessWidget {
       case ReviewRequestStatus.rejected:
         return '暂无已驳回记录';
     }
+  }
+}
+
+/// V3.13 修正：分组标题（"小孩的"/"AI 的"）
+class _SectionHeader extends StatelessWidget {
+  final String title;
+  final String subtitle;
+  final Color color;
+  final Color textColor;
+  const _SectionHeader({
+    required this.title,
+    required this.subtitle,
+    required this.color,
+    required this.textColor,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      margin: const EdgeInsets.only(bottom: 8),
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+      decoration: BoxDecoration(
+        color: color,
+        borderRadius: BorderRadius.circular(8),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title,
+              style: TextStyle(
+                  fontSize: 14, fontWeight: FontWeight.bold, color: textColor)),
+          const SizedBox(height: 2),
+          Text(subtitle,
+              style: TextStyle(fontSize: 11, color: textColor.withOpacity(0.75))),
+        ],
+      ),
+    );
   }
 }
 

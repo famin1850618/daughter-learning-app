@@ -36,6 +36,21 @@ class ReviewRequestDao {
     return ReviewRequest.fromMap(rows.first);
   }
 
+  /// V3.13 修正：用于 aiDispute 去重（同 question_id + type 已存在则跳）
+  Future<ReviewRequest?> findExistingByQuestionAndType(
+      int questionId, ReviewRequestType type) async {
+    final db = await _helper.database;
+    final rows = await db.query(
+      'review_requests',
+      where: 'question_id = ? AND request_type = ?',
+      whereArgs: [questionId, type.key],
+      orderBy: 'created_at DESC',
+      limit: 1,
+    );
+    if (rows.isEmpty) return null;
+    return ReviewRequest.fromMap(rows.first);
+  }
+
   Future<List<ReviewRequest>> listByStatus(
     ReviewRequestStatus status, {
     ReviewRequestType? type,

@@ -494,11 +494,8 @@ class PracticeService extends ChangeNotifier {
       bool correct;
       if (gq.type == QuestionType.subjective) {
         correct = false; // 主观题待批，整组不算全对
-      } else if (gq.aiDispute != null) {
-        // V3.13: AI 争议题学情冻结，正常算对错供未来回放
-        correct = AnswerMatcher.isCorrect(
-          userAns: ans, correctAnswerField: gq.answer, type: gq.type);
       } else {
+        // V3.13 修正: aiDispute 已在抽题阶段过滤，组合题里也不会出现
         correct = AnswerMatcher.isCorrect(
           userAns: ans, correctAnswerField: gq.answer, type: gq.type);
       }
@@ -517,20 +514,15 @@ class PracticeService extends ChangeNotifier {
       if (gq.type == QuestionType.subjective) {
         await _reviewService.submitSubjectiveGrading(practiceRecordId: recordId);
       }
-      if (gq.aiDispute != null) {
-        await _reviewService.submitAiDispute(
-          practiceRecordId: recordId, aiDisputeMeta: gq.aiDispute!);
-      }
+      // V3.13 修正：组合题里 aiDispute 已过滤
       results.add(GroupResultEntry(
         question: gq, userAnswer: ans, isCorrect: correct));
     }
 
-    // 整组全对 → _score+1（除非含主观/AI 争议题，则不计学情，等家长审）
-    final hasSubjOrDispute = group.any((i) {
-      final gq = _currentQuestions[i];
-      return gq.type == QuestionType.subjective || gq.aiDispute != null;
-    });
-    if (allCorrect && !hasSubjOrDispute) _score++;
+    // 整组全对 → _score+1（除非含主观题，则不计学情，等家长审）
+    final hasSubj = group.any((i) =>
+        _currentQuestions[i].type == QuestionType.subjective);
+    if (allCorrect && !hasSubj) _score++;
 
     _lastGroupResult = results;
     _pendingGroupAnswers.clear();
@@ -546,18 +538,11 @@ class PracticeService extends ChangeNotifier {
         : DateTime.now().difference(_questionStartTime!).inSeconds;
 
     // V3.8.3: 主观题答完不立即判定，is_correct=false（待批），自动入家长审核队列
-    // V3.13: AI 争议题（q.aiDispute != null）答完正常算对错但**不计 score**（学情冻结），自动入审核
+    // V3.13 修正（Famin 反馈）: AI dispute 题在抽题阶段已被过滤（小孩根本抽不到），
+    //   家长审核由启动 seedAiDisputes 直接 INSERT review_request，不走做题流程。
     final bool correct;
     if (q.type == QuestionType.subjective) {
       correct = false; // 待家长评分（fail/pass/good/perfect）
-    } else if (q.aiDispute != null) {
-      // V3.13: 按当前 answer 正常判对错（供未来回放/重判），但不增加 _score（学情冻结）
-      correct = AnswerMatcher.isCorrect(
-        userAns: answer,
-        correctAnswerField: q.answer,
-        type: q.type,
-      );
-      // _score++ 不调用 → 不影响该 session 通过率/奖励
     } else {
       correct = AnswerMatcher.isCorrect(
         userAns: answer,
@@ -583,13 +568,7 @@ class PracticeService extends ChangeNotifier {
     if (q.type == QuestionType.subjective) {
       await _reviewService.submitSubjectiveGrading(practiceRecordId: recordId);
     }
-    // V3.13: AI 争议题自动入家长审核
-    if (q.aiDispute != null) {
-      await _reviewService.submitAiDispute(
-        practiceRecordId: recordId,
-        aiDisputeMeta: q.aiDispute!,
-      );
-    }
+    // V3.13 修正：AI 争议题不走做题路径（启动 seedAiDisputes 已入审核）
 
     notifyListeners();
     await _persist();

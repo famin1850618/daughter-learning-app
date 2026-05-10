@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 22,
+      version: 23,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
@@ -471,10 +471,51 @@ class DatabaseHelper {
 
     if (oldVersion < 22) {
       // v22: V3.13 加 ai_dispute_json 列。worker 入库时若发现答案算法冲突写此字段。
-      // 小孩做这道题时 banner 提示 + 答完冻结学情 + 自动 INSERT review_request (type=ai_dispute)
       try {
         await db.execute('ALTER TABLE questions ADD COLUMN ai_dispute_json TEXT');
       } catch (_) {/* 已加过则跳 */}
+    }
+
+    if (oldVersion < 23) {
+      // v23: V3.13 修正（Famin 反馈）—— AI dispute 题不让小孩做，直接进家长审核。
+      // review_requests.practice_record_id 改 nullable（aiDispute 不关联做题）。
+      // SQLite 不支持直接 ALTER COLUMN nullable → 重建表。
+      try {
+        await db.execute('''
+          CREATE TABLE review_requests_v23 (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            request_type TEXT NOT NULL,
+            question_id INTEGER NOT NULL,
+            practice_record_id INTEGER,
+            session_id TEXT,
+            user_answer TEXT NOT NULL DEFAULT '',
+            standard_answer TEXT,
+            status TEXT NOT NULL DEFAULT 'pending',
+            child_note TEXT,
+            parent_note TEXT,
+            parent_score TEXT,
+            created_at TEXT NOT NULL,
+            reviewed_at TEXT,
+            FOREIGN KEY (question_id) REFERENCES questions(id) ON DELETE CASCADE,
+            FOREIGN KEY (practice_record_id) REFERENCES practice_records(id) ON DELETE SET NULL
+          )
+        ''');
+        await db.execute('''
+          INSERT INTO review_requests_v23
+          (id, request_type, question_id, practice_record_id, session_id, user_answer,
+           standard_answer, status, child_note, parent_note, parent_score, created_at, reviewed_at)
+          SELECT id, request_type, question_id, practice_record_id, session_id, user_answer,
+                 standard_answer, status, child_note, parent_note, parent_score, created_at, reviewed_at
+          FROM review_requests
+        ''');
+        await db.execute('DROP TABLE review_requests');
+        await db.execute('ALTER TABLE review_requests_v23 RENAME TO review_requests');
+        await db.execute('CREATE INDEX IF NOT EXISTS idx_review_requests_status ON review_requests (status)');
+        await db.execute('CREATE INDEX IF NOT EXISTS idx_review_requests_question ON review_requests (question_id)');
+        await db.execute('CREATE INDEX IF NOT EXISTS idx_review_requests_record ON review_requests (practice_record_id)');
+      } catch (e) {
+        // 失败兜底：旧 review_requests 仍可用（NOT NULL 约束在），新 aiDispute INSERT 会失败但不崩
+      }
     }
 
     if (oldVersion < 20) {
@@ -647,9 +688,9 @@ class DatabaseHelper {
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         request_type TEXT NOT NULL,
         question_id INTEGER NOT NULL,
-        practice_record_id INTEGER NOT NULL,
+        practice_record_id INTEGER,
         session_id TEXT,
-        user_answer TEXT NOT NULL,
+        user_answer TEXT NOT NULL DEFAULT '',
         standard_answer TEXT,
         status TEXT NOT NULL DEFAULT 'pending',
         child_note TEXT,

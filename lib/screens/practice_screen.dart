@@ -730,46 +730,7 @@ class _QuestionScreenState extends State<_QuestionScreen> {
               ..._groupTags(service.currentQuestions, q),
             ]),
 
-            // V3.13: AI 争议题 banner（学情冻结提示）
-            if (q.aiDispute != null) ...[
-              const SizedBox(height: 10),
-              Container(
-                width: double.infinity,
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Colors.amber.shade50,
-                  border: Border.all(color: Colors.amber.shade400, width: 1),
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Icon(Icons.warning_amber_rounded, size: 20, color: Colors.amber.shade800),
-                    const SizedBox(width: 8),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'AI 标注：这题答案有疑问',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.amber.shade900,
-                              fontSize: 13,
-                            ),
-                          ),
-                          const SizedBox(height: 4),
-                          Text(
-                            '做完会提交爸爸审核，对错先不算分。',
-                            style: TextStyle(color: Colors.amber.shade900, fontSize: 12),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
+            // V3.13 修正（Famin 反馈）: AI 争议题在抽题阶段已过滤（小孩抽不到），banner 删除
 
             const SizedBox(height: 12),
 

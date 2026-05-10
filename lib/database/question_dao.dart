@@ -294,11 +294,14 @@ class QuestionDao {
   /// - `_subj_held`：V3.10 主观题保留区（等 AI 评分 API 后启用）
   /// - `_translated_en`：V3.10 已翻译为英文的中文题（避免重复练）
   /// - `_unverified`：V3.12 多模态 OCR 抢救路径入库题（详见 docs/realpaper_quality_rules.md §6）
+  /// - `ai_dispute_json IS NOT NULL`：V3.13 修正（Famin 反馈）AI 争议题不抽到练习，
+  ///   直接进家长审核（启动 seedAiDisputes INSERT review_request）
   static const _activeSourceFilter =
       "(source NOT LIKE '%_deprecated' "
       "AND source NOT LIKE '%_subj_held' "
       "AND source NOT LIKE '%_translated_en' "
-      "AND source NOT LIKE '%_unverified%')";
+      "AND source NOT LIKE '%_unverified%' "
+      "AND ai_dispute_json IS NULL)";
 
   /// V3.8.2: 展开 group 系列题
   /// 抽中含 group_id 的题 → 把同 group_id 全部题拉出来 + 按 group_order 排序 + 替换原位置
@@ -864,6 +867,16 @@ class QuestionDao {
     );
     if (rows.isEmpty) return null;
     return Question.fromMap(rows.first);
+  }
+
+  /// V3.13 修正：扫所有含 ai_dispute_json 的题（用于启动 seedAiDisputesFromQuestions）
+  Future<List<Question>> findAllWithAiDispute() async {
+    final db = await _db.database;
+    final rows = await db.query(
+      'questions',
+      where: "ai_dispute_json IS NOT NULL AND ai_dispute_json != ''",
+    );
+    return rows.map(Question.fromMap).toList();
   }
 
   Future<PracticeRecord?> findPracticeRecord(int recordId) async {

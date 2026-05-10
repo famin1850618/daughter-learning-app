@@ -18,7 +18,8 @@ enum AppealEligibility {
 class ApproveContext {
   final ReviewRequestType requestType;
   final int questionId;
-  final int practiceRecordId;
+  /// V3.13 修正：aiDispute 无关联做题，practiceRecordId 为 null
+  final int? practiceRecordId;
   final String? sessionId;
   final SubjectiveScore? score;
   final bool nowCorrect;
@@ -66,15 +67,25 @@ class ReviewRequestService extends ChangeNotifier {
   /// 已发起过申诉/审核的 record id → 最新一条 request；UI 用于显示状态徽章
   ReviewRequest? requestForRecord(int recordId) => _byRecordId[recordId];
 
+  bool _aiDisputesSeeded = false;
+
   Future<void> refresh() async {
+    // V3.13 修正：首次 refresh 时扫题库 INSERT aiDispute review_requests（小孩不做题直接审核）
+    if (!_aiDisputesSeeded) {
+      try {
+        await seedAiDisputesFromQuestions();
+      } catch (_) {/* 失败不阻塞 refresh */}
+      _aiDisputesSeeded = true;
+    }
     final all = await _dao.listByStatus(ReviewRequestStatus.pending);
     final approved = await _dao.listByStatus(ReviewRequestStatus.approved);
     final rejected = await _dao.listByStatus(ReviewRequestStatus.rejected);
     _pendingCount = all.length;
     final map = <int, ReviewRequest>{};
     for (final r in [...approved, ...rejected, ...all]) {
-      // 后写覆盖前写：pending 最新（如果对同一 record 重复申诉，理论上 DAO 已限制）
-      map[r.practiceRecordId] = r;
+      // 后写覆盖前写：pending 最新
+      // V3.13 修正：aiDispute 的 practiceRecordId 为 null，不入此 map（map 仅给做题历史用）
+      if (r.practiceRecordId != null) map[r.practiceRecordId!] = r;
     }
     _byRecordId = map;
     notifyListeners();
@@ -148,19 +159,18 @@ class ReviewRequestService extends ChangeNotifier {
     return id;
   }
 
-  /// V3.13: AI 争议题答完后由 PracticeService 调用，自动入审核队列。
-  /// 不要求是错题（争议题学情冻结，家长决策后再回写）。
-  /// childNote 字段借用存 AI 争议原因摘要（type/reason/alt_answer 等）。
-  Future<int?> submitAiDispute({
-    required int practiceRecordId,
+  /// V3.13 修正（Famin 反馈）：AI 争议题在题库导入后由启动钩子直接 INSERT review_request，
+  /// 不让小孩做题。practice_record_id 为 null。
+  /// 调用入口：app 启动 / 题库更新后 → seedAiDisputesFromQuestions()
+  Future<int?> createAiDisputeFromQuestion({
+    required int questionId,
     required Map<String, dynamic> aiDisputeMeta,
+    required String currentAnswer,
   }) async {
-    final existing = await _dao.findByPracticeRecordId(practiceRecordId);
+    // 去重：同 question_id + type=aiDispute 已存在则跳（含 pending/已审）
+    final existing = await _dao.findExistingByQuestionAndType(
+        questionId, ReviewRequestType.aiDispute);
     if (existing != null) return null;
-    final record = await _qDao.findPracticeRecord(practiceRecordId);
-    if (record == null) return null;
-    final question = await _qDao.findById(record.questionId);
-    if (question == null) return null;
 
     final reason = aiDisputeMeta['reason'] as String? ?? 'AI 标注答案有疑问';
     final alt = aiDisputeMeta['alt_answer'] as String? ?? '';
@@ -168,17 +178,34 @@ class ReviewRequestService extends ChangeNotifier {
 
     final id = await _dao.insert(ReviewRequest(
       requestType: ReviewRequestType.aiDispute,
-      questionId: record.questionId,
-      practiceRecordId: practiceRecordId,
-      sessionId: record.sessionId,
-      userAnswer: record.userAnswer,
-      standardAnswer: question.answer,
+      questionId: questionId,
+      practiceRecordId: null, // V3.13 修正：不关联做题
+      sessionId: null,
+      userAnswer: '', // 没小孩答
+      standardAnswer: currentAnswer,
       status: ReviewRequestStatus.pending,
-      childNote: summary, // 借 child_note 存 AI 争议元数据摘要
+      childNote: summary,
       createdAt: DateTime.now(),
     ));
     await refresh();
     return id;
+  }
+
+  /// V3.13 启动钩子：扫题库找含 ai_dispute_json 的题，自动 INSERT 待审核 review_request。
+  /// app 启动 / 题库更新后调用。已存在的不重复 INSERT（findExistingByQuestionAndType 去重）。
+  Future<int> seedAiDisputesFromQuestions() async {
+    final questions = await _qDao.findAllWithAiDispute();
+    int inserted = 0;
+    for (final q in questions) {
+      if (q.id == null || q.aiDispute == null) continue;
+      final id = await createAiDisputeFromQuestion(
+        questionId: q.id!,
+        aiDisputeMeta: q.aiDispute!,
+        currentAnswer: q.answer,
+      );
+      if (id != null) inserted++;
+    }
+    return inserted;
   }
 
   // ── 审核 ──────────────────────────────────────────
@@ -208,13 +235,12 @@ class ReviewRequestService extends ChangeNotifier {
       rewardSource = 'appeal_approved';
       rewardNote = '申诉通过补发';
     } else if (req.requestType == ReviewRequestType.aiDispute) {
-      // V3.13: AI 争议-家长认"AI 推荐答案对" → 翻转 record.isCorrect 重判
-      // (原 record.is_correct 按原 question.answer 算，approve = AI 对 = 翻转)
-      final record = await _qDao.findPracticeRecord(req.practiceRecordId);
-      nowCorrect = record == null ? true : !record.isCorrect;
-      rewardStars = nowCorrect ? 0.5 : 0.0;
+      // V3.13 修正：AI 争议题不关联做题（practice_record_id 为 null）
+      // approve = 家长认 "AI 推荐答案对" → 标 nowCorrect=true（仅记录，无 record 重判）
+      nowCorrect = true;
+      rewardStars = 0.0; // 不发奖励（小孩没做题）
       rewardSource = 'ai_dispute_approved';
-      rewardNote = nowCorrect ? 'AI 争议通过-小孩答对补发' : 'AI 争议通过-小孩答错';
+      rewardNote = '家长采纳 AI 推荐答案';
     } else {
       // subjective_grading
       final s = score!;
@@ -234,7 +260,10 @@ class ReviewRequestService extends ChangeNotifier {
     );
 
     // 3) UPDATE practice_records.is_correct（subjective 默认 false，approve 后视评分调整）
-    await _qDao.updatePracticeRecordIsCorrect(req.practiceRecordId, nowCorrect);
+    // V3.13 修正：aiDispute 无关联 record，跳过
+    if (req.practiceRecordId != null) {
+      await _qDao.updatePracticeRecordIsCorrect(req.practiceRecordId!, nowCorrect);
+    }
 
     // 4) 补发⭐
     if (rewardStars > 0) {

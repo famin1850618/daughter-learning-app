@@ -112,8 +112,9 @@ class ReviewRequest {
   final int? id;
   final ReviewRequestType requestType;
   final int questionId;
-  /// 对应 practice_records.id；approve 时 UPDATE 这条 is_correct
-  final int practiceRecordId;
+  /// 对应 practice_records.id；approve 时 UPDATE 这条 is_correct。
+  /// V3.13 修正（Famin 反馈）: aiDispute 题不关联做题（小孩根本不做），practice_record_id 为 null。
+  final int? practiceRecordId;
   /// 来源 session id（重算 session 通过状态用；老练习无 session_id 时为 null）
   final String? sessionId;
   final String userAnswer;
@@ -131,7 +132,7 @@ class ReviewRequest {
     this.id,
     required this.requestType,
     required this.questionId,
-    required this.practiceRecordId,
+    this.practiceRecordId,
     this.sessionId,
     required this.userAnswer,
     this.standardAnswer,
@@ -164,7 +165,7 @@ class ReviewRequest {
         requestType:
             ReviewRequestTypeExt.fromKey(m['request_type'] as String),
         questionId: m['question_id'] as int,
-        practiceRecordId: m['practice_record_id'] as int,
+        practiceRecordId: m['practice_record_id'] as int?,
         sessionId: m['session_id'] as String?,
         userAnswer: m['user_answer'] as String,
         standardAnswer: m['standard_answer'] as String?,
