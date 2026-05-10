@@ -1,0 +1,280 @@
+{
+  "source": "realpaper_g6_chinese_bubian_qm_guangming_001",
+  "subject": "chinese",
+  "grade": 6,
+  "knowledge_points_added": [
+    "字词/字音",
+    "字词/字形",
+    "字词/词语理解",
+    "古诗文/古诗词背诵默写",
+    "古诗文/文言文阅读",
+    "课文与名著/名著阅读",
+    "现代文阅读/词句赏析"
+  ],
+  "_quality_meta": {
+    "source_file": "广东省深圳市光明区2022-2023学年六年级下学期期末语文试卷.docx",
+    "sha1": "ec6bbf09e0c3815b",
+    "paper_type": "final",
+    "chapter_default": "综合",
+    "omath_total_formulas": 0,
+    "images_used": 0,
+    "questions_total_paper": 11,
+    "questions_imported": 14,
+    "questions_skipped": 5
+  },
+  "_skipped_for_future": [
+    {
+      "qnum": "1",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "看拼音写词语 6 空（gé mìng/shí xiàn/jiě fàng/zhēn lǐ/lǐng yù jiàn shù/jī yù），仅入 2 空"
+    },
+    {
+      "qnum": "4",
+      "reason": "open_drawing_question",
+      "raw_excerpt": "赵孟頫书法作品 4 选 1（图选项题，docx 缺图）"
+    },
+    {
+      "qnum": "6",
+      "reason": "subjective_short",
+      "raw_excerpt": "《骑鹅旅行记》仿写句"
+    },
+    {
+      "qnum": "7(1)②+(2)+8(3)+(4)+(5)",
+      "reason": "subjective_short",
+      "raw_excerpt": "锦袋意象 + 文言阅读启示 + 写勤学故事"
+    },
+    {
+      "qnum": "9-11",
+      "reason": "subjective_short_or_essay",
+      "raw_excerpt": "《走在太阳路上》阅读 / 劳动课程材料 / 习作「有一种爱」"
+    }
+  ],
+  "questions": [
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_guangming_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "group_id": "qm_guangming_001_q1",
+      "group_order": 1,
+      "content": "看拼音写词语。\n\n「从 gé mìng 岁月为 shí xiàn 人民 jiě fàng 不懈努力的战士」\n\n1. gé mìng = ？",
+      "answer": "革命",
+      "explanation": "「革命」指变革旧的制度。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_guangming_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "group_id": "qm_guangming_001_q1",
+      "group_order": 2,
+      "content": "看拼音写词语。\n\n2. zhēn lǐ = ？（语境：「为找到 zhēn lǐ 不断攻克难题的科学家」）",
+      "answer": "真理",
+      "explanation": "「真理」指正确反映事物本质规律的认识。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_guangming_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "下列词语的读音和书写完全正确的一项是（　　）。",
+      "options": [
+        "A. 瘦**削**（xiāo） **戛**然而止（jiá） 消毁 司空见惯",
+        "B. **圈**养（quān） 含情**脉**脉（mò） 严峻 迫不急待",
+        "C. 笨**拙**（zhuó） **锲**而不舍（qiè） 倾覆 焉之非福",
+        "D. **分**外（fèn） 蛮**横**无理（hèng） 惊惶 斩钉截铁"
+      ],
+      "answer": "D",
+      "explanation": "A 错（「削」应读 xuē、「消毁」应为「销毁」）；B 错（「迫不急待」应为「迫不及待」）；C 错（「拙」应读 zhuō、「焉之非福」应为「焉知非福」）；D 全对。",
+      "_round_reasoning": "R2 因为：4 选项各 4 字音/字形组合，参考 chinese_r2 字词辨析水准。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_guangming_001",
+      "round": 3,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/成语运用",
+      "content": "选择词语依次填空，最恰当的一项是（　　）。\n\n生逢其时，重任在肩，新时代的中国青年要有 ① 、建功立业的志气，要有 ② 、敢拼敢闯的锐气，要有 ③ 、自主自强的骨气。",
+      "options": [
+        "A. 国泰民安   生龙活虎   披荆斩棘   俯首帖耳",
+        "B. 强国兴邦   眉飞色舞   走南闯北   拱伏无违",
+        "C. 强国兴邦   生龙活虎   攻坚克难   不卑不亢",
+        "D. 国泰民安   精神焕发   攻坚克难   不骄不躁"
+      ],
+      "answer": "C",
+      "explanation": "①「强国兴邦」与「建功立业」对应（志气）；②「生龙活虎」与「敢拼敢闯」对应（锐气）；③「攻坚克难」与「自主自强」对应（骨气）。仅 C 三组都对。",
+      "_round_reasoning": "R3 因为：理解层级 3（3 个空格成语依次匹配），陷阱密度 0.7（4 选项每个差异点不同，需逐空辨析），KP 跨度 2。参考 chinese_r3 综合 R3。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_guangming_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "课文与名著",
+      "knowledge_point": "课文与名著/名著阅读",
+      "content": "下列关于「阅读外国文学名著」的方法，表述**不正确**的一项是（　　）。",
+      "options": [
+        "A. 同一本外国名著常常会有不同的译者，翻译虽略有不同，但一般不影响我们阅读。",
+        "B. 大致了解写作背景和名家评价，有助于我们理解这本书的文学价值和深刻内涵。",
+        "C. 有些名著读起来不那么通俗易懂，可以通过观看影视作品来代替整本书的阅读。",
+        "D. 遇到人物关系比较复杂的情况，可以画一个人物图谱，以便阅读时随时查阅。"
+      ],
+      "answer": "C",
+      "explanation": "C 错。影视作品不能完全替代整本书阅读（细节/语言/思想会有损失）。A B D 都是合理的阅读方法。",
+      "_round_reasoning": "R2 因为：阅读策略辨析，rubric §2.1 不适用降档（C 不是显著反义）。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_guangming_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "qm_guangming_001_q7",
+      "group_order": 1,
+      "content": "古诗意象默写。\n\n1. 「柳」象征送别。《采薇》「昔我往矣，________」述说了离别的不舍之情。",
+      "answer": "杨柳依依",
+      "explanation": "出自《诗经·采薇》。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_guangming_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "qm_guangming_001_q7",
+      "group_order": 2,
+      "content": "古诗意象默写。\n\n2. 「月」代表思乡。《十五夜望月》「________，不知秋思落谁家」抒发了诗人对亲朋好友的深深思念。",
+      "answer": "今夜月明人尽望",
+      "explanation": "出自王建《十五夜望月》。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_guangming_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "qm_guangming_001_q7",
+      "group_order": 3,
+      "content": "古诗意象默写。\n\n3. 「竹」象征坚韧。《竹石》「________，任尔东西南北风」寄托了诗人不屈的高尚情操。",
+      "answer": "千磨万击还坚劲",
+      "explanation": "出自郑燮《竹石》。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_guangming_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "qm_guangming_001_q7",
+      "group_order": 4,
+      "content": "名言默写。\n\n4. 追梦专心：「________，一字值千金」。",
+      "answer": "读书须用意",
+      "explanation": "「读书须用意，一字值千金」（《增广贤文》）。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_guangming_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "qm_guangming_001_q7",
+      "group_order": 5,
+      "content": "名言默写。\n\n5. 追梦恒心：「________，日日新，又日新」。",
+      "answer": "苟日新",
+      "explanation": "出自《礼记·大学》。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_guangming_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "qm_guangming_001_q7",
+      "group_order": 6,
+      "content": "名言默写。\n\n6. 追梦信心：「青，________，________」。请按顺序填两句话，用「|||」分隔。",
+      "answer": "出于蓝|||而胜于蓝",
+      "alt_answers": [
+        "取之于蓝|||而青于蓝"
+      ],
+      "explanation": "原句「青，取之于蓝而青于蓝」（《荀子》），后世简化为「青出于蓝而胜于蓝」。",
+      "_round_reasoning": "R2 因为：原句默写+答案有歧义（多种通行表述）。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_guangming_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言文阅读",
+      "group_id": "qm_guangming_001_q8",
+      "group_order": 1,
+      "content": "阅读《张溥嗜学》节选 + 《孙权劝学》节选。\n\n1. 解释加粗字「日**沃**汤数次」中「沃汤」的「汤」。",
+      "answer": "热水",
+      "explanation": "「日沃汤数次」=每天用热水暖手数次。「汤」古义为热水。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_guangming_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言文阅读",
+      "group_id": "qm_guangming_001_q8",
+      "group_order": 2,
+      "content": "文言文阅读《张溥嗜学》《孙权劝学》。\n\n2. 解释「**及**鲁肃过寻阳」中「及」的意思。",
+      "answer": "到了……的时候",
+      "alt_answers": [
+        "等到",
+        "到"
+      ],
+      "explanation": "「及」=等到、到了。常见文言虚词。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_guangming_001",
+      "round": 3,
+      "type": "choice",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言文阅读",
+      "group_id": "qm_guangming_001_q8",
+      "group_order": 3,
+      "content": "下列「之」的用法**与其它三项不同**的一项是？（4 例文言文出自《张溥嗜学》《孙权劝学》《学弈》）",
+      "options": [
+        "A. 朗诵一过即焚**之**",
+        "B. 大兄何见事**之**晚乎",
+        "C. 虽与**之**俱学",
+        "D. 思援弓缴而射**之**"
+      ],
+      "answer": "B",
+      "explanation": "A C D 三项「之」都是**代词**（A 焚书=焚之；C「之」=他/其一人；D「之」=鸿鹄）；B 项「之」是**助词**（用在主谓之间，取消句子独立性，无实义）。",
+      "_round_reasoning": "R3 因为：文言虚词用法辨析，4 选项均同字「之」需精确区分代词/助词，参考 chinese_r3 文言推断 R3 同档。"
+    }
+  ]
+}

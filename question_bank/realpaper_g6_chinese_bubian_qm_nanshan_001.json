@@ -2,833 +2,419 @@
   "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
   "subject": "chinese",
   "grade": 6,
-  "knowledge_points_added": [],
+  "knowledge_points_added": [
+    "字词/字音",
+    "字词/字形",
+    "字词/词语理解",
+    "字词/成语运用",
+    "古诗文/文言文阅读",
+    "古诗文/古诗词背诵默写",
+    "课文与名著/课文内容理解",
+    "现代文阅读/材料阅读",
+    "现代文阅读/词句赏析"
+  ],
+  "_quality_meta": {
+    "source_file": "广东省深圳市南山区2022-2023学年六年级下学期期末语文试卷.docx",
+    "sha1": "a26a8c0f5a17efe2",
+    "paper_type": "final",
+    "chapter_default": "综合",
+    "omath_total_formulas": 0,
+    "images_used": 0,
+    "questions_total_paper": 17,
+    "questions_imported": 22,
+    "questions_skipped": 7
+  },
+  "_skipped_for_future": [
+    {
+      "qnum": "1",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "看拼音写词语（题干给的拼音字母 docx 中丢失，只能从答案反推 5 词）"
+    },
+    {
+      "qnum": "4",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "照样子根据构词规律补全词语（样例缺失，仅有答案）"
+    },
+    {
+      "qnum": "9",
+      "reason": "subjective_short",
+      "raw_excerpt": "用一字概括 + 仿写句子"
+    },
+    {
+      "qnum": "10",
+      "reason": "open_drawing_question",
+      "raw_excerpt": "古诗-主题-表达方式连线题（含 image3.png）"
+    },
+    {
+      "qnum": "12",
+      "reason": "subjective_short",
+      "raw_excerpt": "对联拟写（且喜……莫悲……）"
+    },
+    {
+      "qnum": "15",
+      "reason": "subjective_short",
+      "raw_excerpt": "《天上飘下来的礼物》阅读理解开放短答（建议性长答）"
+    },
+    {
+      "qnum": "17",
+      "reason": "subjective_essay",
+      "raw_excerpt": "作文：「这件事真让我____」"
+    }
+  ],
   "questions": [
     {
-      "chapter": "小升初综合",
-      "knowledge_point": "字词/字形",
-      "content": "看拼音，写词语。\ntōng xiāo ______\nyī wei ______\nkǒng bù ______\nnuó yí ______\nqīng fù ______",
-      "type": "fill",
-      "difficulty": "easy",
-      "answer": "通宵,依偎,恐怖,挪移,倾覆",
-      "explanation": "tōng xiāo→通宵；yī wei（应为 wēi）→依偎；kǒng bù→恐怖；nuó yí→挪移；qīng fù→倾覆。",
-      "round": 1,
-      "_round_meta": {
-        "anchor_used": "chinese_r1_anchor_3",
-        "rubric_signals": [
-          "§2.1 课内必修常识"
-        ],
-        "reasoning": "R1：理解层级 1（拼音→字形识记），陷阱密度 0，KP 跨度 1，数据复杂度 0.2（5 词）。引用 chinese_r1_anchor_3 字形识记 R1。"
-      }
-    },
-    {
-      "chapter": "小升初综合",
-      "knowledge_point": "字词/字义",
-      "content": "下列各组词句中，加粗字意思不同的一项是（    ）",
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
+      "round": 2,
       "type": "choice",
-      "difficulty": "easy",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言文阅读",
+      "content": "下列各组词句中，加粗字意思**不同**的一项是（　　）。",
       "options": [
-        "A. 儿童急**走**追黄蝶 / **走**马观花",
-        "B. 及其日中如探**汤** / 赴**汤**蹈火",
-        "C. 虽与之**俱**学 / 声泪**俱**下",
-        "D. 通国之**善**弈者也 / 与人为**善**"
+        "A. 儿童急**走**追黄蝶／**走**马观花",
+        "B. 及其日中如探**汤**／赴**汤**蹈火",
+        "C. 虽与之**俱**学／声泪**俱**下",
+        "D. 通国之**善**弈者也／与人为**善**"
       ],
       "answer": "D",
-      "explanation": "A 「走」均为「跑」；B 「汤」均为「热水」；C 「俱」均为「一起」；D 「通国之善弈者」中「善」为「擅长」，「与人为善」中「善」为「友好」，意思不同。",
-      "round": 3,
-      "_round_meta": {
-        "anchor_used": "chinese_r3_anchor_5 (跨文化常识 4 选 1)",
-        "rubric_signals": [
-          "§2.2 跨文化常识 4 选 1"
-        ],
-        "reasoning": "R3：理解层级 3（4 项均含文言+成语跨文体逐项核对一字多义），陷阱密度 0.65（4 选项均看似成立，需逐字辨义），KP 跨度 2（文言字义+成语），数据复杂度 0.5。引用 chinese_r3_anchor_5。"
-      }
+      "explanation": "A「走」=跑（同）；B「汤」=热水（同）；C「俱」=一起（同）；D 前者「善」=擅长，后者「善」=友好（不同）。",
+      "_round_reasoning": "R2 因为：理解层级 2（文言一字多义辨析），陷阱密度 0.5（4 选项均文言短句对照），KP 跨度 2（文言+一字多义）。参考 chinese_r2_anchor_2 近义辨析水准。"
     },
     {
-      "chapter": "小升初综合",
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
       "knowledge_point": "字词/字形",
-      "content": "根据词语提示，给「辟」字加上不同的偏旁组成新字，填在横线上。\n辟：偏______幽静\n______波斩浪\n扬长______短",
-      "type": "fill",
-      "difficulty": "easy",
-      "answer": "僻,劈,避",
-      "explanation": "偏僻（亻+辟）、劈波斩浪（刀/「劈」省略部首结构）、扬长避短（辶+辟）。",
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r2_anchor_1 (释义反推字形)",
-        "rubric_signals": [],
-        "reasoning": "R2：理解层级 2（释义反推字形+偏旁辨识），陷阱密度 0.4，KP 跨度 1（字形），数据复杂度 0.3。"
-      }
-    },
-    {
-      "chapter": "小升初综合",
-      "knowledge_point": "字词/词语搭配",
-      "content": "照样子，根据构词的规律补全词语。\n娓娓动听\n______欲试\n______一息\n______不舍\n漫长而急遽的变化\n______而惆怅的黄昏\n______而______的脸",
-      "type": "fill",
-      "difficulty": "easy",
-      "answer": "跃跃,奄奄,依依,孤独,平静,慈祥",
-      "explanation": "前 3 空是 AABC 式词语：跃跃欲试、奄奄一息、依依不舍。后 3 空是「形容词+而+形容词」结构：孤独而惆怅、平静而慈祥。",
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r2_anchor_2 (词语辨析+仿写)",
-        "rubric_signals": [],
-        "reasoning": "R2：理解层级 2（词语规律识别+仿写），陷阱密度 0.5（多空，最后两空答案有变体），KP 跨度 2（词语结构+搭配），数据复杂度 0.4。"
-      }
-    },
-    {
-      "chapter": "小升初综合",
-      "knowledge_point": "字词/词语搭配",
-      "content": "照样子，选择合适的词语搭配填空，写序号。\nA. 之策  B. 之态  C. 之义  D. 之苦  E. 之物\n例：零七八碎（E）\n与世隔绝（  ）\n精兵简政（  ）\n声泪俱下（  ）\n赴汤蹈火（  ）",
-      "type": "fill",
-      "difficulty": "easy",
-      "answer": "B,A,D,C",
-      "explanation": "与世隔绝之态（B）；精兵简政之策（A）；声泪俱下之苦（D）；赴汤蹈火之义（C）。",
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r2_anchor_2 (词语搭配)",
-        "rubric_signals": [],
-        "reasoning": "R2：理解层级 2（成语+方位词搭配辨析），陷阱密度 0.55（5 选 4 中的 4 个空），KP 跨度 1，数据复杂度 0.4。引用 chinese_r2_anchor_2。"
-      }
-    },
-    {
-      "chapter": "小升初综合",
-      "knowledge_point": "字词/近义词反义词",
-      "content": "理解句意，并根据划线词语的提示补充填写同义词。\n1. 全校运动会上，大山在短跑比赛中**勇夺**第二，志杰在跳高比赛中______金牌，思语在跳远比赛中**摘得**______，宁宁在游泳比赛中______头筹。请按 3 空顺序填，逗号分隔（动词,名词,动词）。",
-      "type": "fill",
-      "difficulty": "easy",
-      "answer": "喜获,桂冠,拔得",
-      "explanation": "动词「勇夺、喜获、拔得（头筹）」均表「取得第一」之意；名词「桂冠」是冠军/第一名的雅称。",
-      "group_id": "qm_nanshan_001_q6",
+      "group_id": "qm_nanshan_001_q3",
       "group_order": 1,
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r2_anchor_2",
-        "rubric_signals": [],
-        "reasoning": "R2：理解层级 2（近义词+搭配填空），陷阱密度 0.5，KP 跨度 1，数据复杂度 0.4。"
-      },
-      "_round_before_group_unify": 2
+      "content": "根据词语提示，给「辟」字加上不同的偏旁组成新字，填在横线上。\n\n1. 偏 ____ 幽静（提示：远离人口集中居住）",
+      "answer": "僻",
+      "explanation": "「偏僻」=「亻」+「辟」=远离人群居住的地方。",
+      "_round_reasoning": "R2 因为：构字规则 + 释义反推，类似 chinese_r2_anchor_1 释义反推 R2。"
     },
     {
-      "chapter": "小升初综合",
-      "knowledge_point": "字词/近义词反义词",
-      "content": "理解句意，并根据划线词语的提示补充填写同义词。\n2. 这场围棋大战，黑白双方**势均力敌**，对垒中的战术经验旗鼓______，鏖战一个小时仍然不相______，最终握手言和，两位棋手的表现可谓是______秋色。请按 3 空顺序填，逗号分隔。",
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
+      "round": 2,
       "type": "fill",
-      "difficulty": "easy",
-      "answer": "相当,上下,平分",
-      "explanation": "「旗鼓相当」「不相上下」「平分秋色」均表水平相当之意。",
-      "group_id": "qm_nanshan_001_q6",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "group_id": "qm_nanshan_001_q3",
       "group_order": 2,
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r2_anchor_2",
-        "rubric_signals": [],
-        "reasoning": "R2：理解层级 2（近义词成语补全），陷阱密度 0.5，KP 跨度 1，数据复杂度 0.4。"
-      },
-      "_round_before_group_unify": 2
+      "content": "根据词语提示，给「辟」字加上不同的偏旁组成新字，填在横线上。\n\n2. ____ 波斩浪（提示：排除前进中的困难和障碍）",
+      "answer": "劈",
+      "explanation": "「劈波斩浪」=「刂」+「辟」=破开波浪。",
+      "_round_reasoning": "R2 因为：构字+释义反推。"
     },
     {
-      "chapter": "小升初综合",
-      "knowledge_point": "古诗文/古诗词背诵默写",
-      "content": "按课文内容填空。\n1. 使弈秋______，其一人______，惟弈秋之为听。请按 2 空顺序填，逗号分隔。",
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
+      "round": 2,
       "type": "fill",
-      "difficulty": "easy",
-      "answer": "诲二人弈,专心致志",
-      "explanation": "出自《学弈》：使弈秋诲二人弈，其一人专心致志，惟弈秋之为听。",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "group_id": "qm_nanshan_001_q3",
+      "group_order": 3,
+      "content": "根据词语提示，给「辟」字加上不同的偏旁组成新字，填在横线上。\n\n3. 扬长 ____ 短（提示：发扬长处，避开短处）",
+      "answer": "避",
+      "explanation": "「扬长避短」=「辶」+「辟」=避开。",
+      "_round_reasoning": "R2 因为：构字+释义反推。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/成语运用",
+      "group_id": "qm_nanshan_001_q5",
+      "group_order": 1,
+      "content": "选择合适的词语搭配填空，写序号。\n\nA. 之策    B. 之态    C. 之义    D. 之苦    E. 之物\n\n例：零七八碎（E）\n\n1. 与世隔绝（    ）",
+      "answer": "B",
+      "explanation": "「与世隔绝之态」搭配恰当，形容隐居的状态。",
+      "_round_reasoning": "R2 因为：成语 + 修饰词搭配，参考 chinese_r2_anchor_1 R2 同档。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/成语运用",
+      "group_id": "qm_nanshan_001_q5",
+      "group_order": 2,
+      "content": "选择合适的词语搭配填空，写序号。\n\nA. 之策    B. 之态    C. 之义    D. 之苦    E. 之物\n\n2. 精兵简政（    ）",
+      "answer": "A",
+      "explanation": "「精兵简政之策」是政策措施。",
+      "_round_reasoning": "R2 因为：成语+搭配。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/成语运用",
+      "group_id": "qm_nanshan_001_q5",
+      "group_order": 3,
+      "content": "选择合适的词语搭配填空，写序号。\n\nA. 之策    B. 之态    C. 之义    D. 之苦    E. 之物\n\n3. 声泪俱下（    ）",
+      "answer": "D",
+      "explanation": "「声泪俱下之苦」描述悲痛之苦。",
+      "_round_reasoning": "R2 因为：成语+搭配。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/成语运用",
+      "group_id": "qm_nanshan_001_q5",
+      "group_order": 4,
+      "content": "选择合适的词语搭配填空，写序号。\n\nA. 之策    B. 之态    C. 之义    D. 之苦    E. 之物\n\n4. 赴汤蹈火（    ）",
+      "answer": "C",
+      "explanation": "「赴汤蹈火之义」=不畏艰险的大义。",
+      "_round_reasoning": "R2 因为：成语+搭配。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
       "group_id": "qm_nanshan_001_q7",
       "group_order": 1,
-      "round": 1,
-      "_round_meta": {
-        "anchor_used": "chinese_r1_anchor_1",
-        "rubric_signals": [
-          "§2.1 课内必修常识"
-        ],
-        "reasoning": "R1：理解层级 1（课内文言原文默写），陷阱密度 0，KP 跨度 1，数据复杂度 0.3。"
-      },
-      "_round_before_group_unify": 1
+      "content": "按课文内容填空。\n\n1. 「使弈秋 ________，其一人 ________，惟弈秋之为听。」（《学弈》）",
+      "answer": "诲二人弈|||专心致志",
+      "explanation": "《学弈》原文「使弈秋诲二人弈，其一人专心致志，惟弈秋之为听。」。两空答案用「|||」分隔。",
+      "_round_reasoning": "R1 因为：课内文言文背诵默写，rubric §2.1 课内必修一律 R1。同 chinese_r1_anchor_1 类型。"
     },
     {
-      "chapter": "小升初综合",
-      "knowledge_point": "古诗文/古诗词背诵默写",
-      "content": "按课文内容填空。\n2. 过去的日子如______，被微风______了；如______，被初阳______了。请按 4 空顺序填，逗号分隔。",
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
+      "round": 1,
       "type": "fill",
-      "difficulty": "easy",
-      "answer": "轻烟,吹散,薄雾,蒸融",
-      "explanation": "出自朱自清《匆匆》：过去的日子如轻烟，被微风吹散了；如薄雾，被初阳蒸融了。",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
       "group_id": "qm_nanshan_001_q7",
       "group_order": 2,
-      "round": 1,
-      "_round_meta": {
-        "anchor_used": "chinese_r1_anchor_1",
-        "rubric_signals": [
-          "§2.1 课内必修常识"
-        ],
-        "reasoning": "R1：理解层级 1（课内现代文默写），陷阱密度 0，KP 跨度 1，数据复杂度 0.3。"
-      },
-      "_round_before_group_unify": 1
+      "content": "按课文内容填空。\n\n2. 「过去的日子如 ____，被微风 ____ 了；如 ____，被初阳 ____ 了。」（朱自清《匆匆》）",
+      "answer": "轻烟|||吹散|||薄雾|||蒸融",
+      "explanation": "朱自清《匆匆》原文「过去的日子如轻烟，被微风吹散了；如薄雾，被初阳蒸融了」。四空答案用「|||」分隔。",
+      "_round_reasoning": "R1 因为：课内现代散文背诵默写。"
     },
     {
-      "chapter": "现代文阅读",
-      "knowledge_point": "现代文阅读/小说人物形象",
-      "content": "根据下列句子的描述概括人物印象，填序号。\nA. 知足安命、乐观向上\nB. 坚贞不屈、镇定自若\nC. 阴险狡诈、心狠手辣\n1. 父亲瞅了瞅我们，没有说一句话。他的神情非常安定，非常沉着。他的心被一种伟大的力量占据着。",
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
+      "round": 2,
       "type": "choice",
-      "difficulty": "easy",
+      "chapter": "课文与名著",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "group_id": "qm_nanshan_001_q8",
+      "group_order": 1,
+      "content": "根据下列句子的描述概括人物印象，填序号。\n\nA. 知足安命、乐观向上\nB. 坚贞不屈、镇定自若\nC. 阴险狡诈、心狠手辣\n\n1. 父亲瞅了瞅我们，没有说一句话。他的神情非常安定，非常沉着。他的心被一种伟大的力量占据着。",
       "options": [
         "A. 知足安命、乐观向上",
         "B. 坚贞不屈、镇定自若",
         "C. 阴险狡诈、心狠手辣"
       ],
       "answer": "B",
-      "explanation": "选自《十六年前的回忆》，「父亲」李大钊面对敌人时神情安定沉着，体现坚贞不屈、镇定自若。",
-      "group_id": "qm_nanshan_001_q8",
-      "group_order": 1,
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r3_anchor_2 (段意综合) — 降档",
-        "rubric_signals": [
-          "§2.1 段意直白（神情描写已明）"
-        ],
-        "reasoning": "R2：理解层级 2（神态描写→品质判断），陷阱密度 0.4（3 选项褒贬差异明显），KP 跨度 1，数据复杂度 0.3（短句）。降档信号：神态描写+伟大力量已明示。"
-      },
-      "_round_before_group_unify": 2
+      "explanation": "选自《十六年前的回忆》，李大钊面对敌人「神情非常安定，非常沉着」体现坚贞不屈、镇定自若。",
+      "_round_reasoning": "R2 因为：人物形象判断，参考 chinese_r3_anchor_1 类型但选项有褒贬区分（rubric §2.1 褒贬明显的可降到 R1）；本题三选项中 A 和 B 都是正面，C 反面，需细辨「沉着」具体特质，定 R2。"
     },
     {
-      "chapter": "现代文阅读",
-      "knowledge_point": "现代文阅读/小说人物形象",
-      "content": "根据下列句子的描述概括人物印象，填序号。\nA. 知足安命、乐观向上\nB. 坚贞不屈、镇定自若\nC. 阴险狡诈、心狠手辣\n2. 我不再远眺大海，一心想看到船的踪影了。我着手调整我的生活方式，尽我可能把一切安排得舒舒服服。",
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
+      "round": 1,
       "type": "choice",
-      "difficulty": "easy",
+      "chapter": "课文与名著",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "group_id": "qm_nanshan_001_q8",
+      "group_order": 2,
+      "content": "根据下列句子的描述概括人物印象，填序号。\n\nA. 知足安命、乐观向上\nB. 坚贞不屈、镇定自若\nC. 阴险狡诈、心狠手辣\n\n2. 我不再远眺大海，一心想看到船的踪影了。我着手调整我的生活方式，尽我可能把一切安排得舒舒服服。",
       "options": [
         "A. 知足安命、乐观向上",
         "B. 坚贞不屈、镇定自若",
         "C. 阴险狡诈、心狠手辣"
       ],
       "answer": "A",
-      "explanation": "选自《鲁滨逊漂流记》，鲁滨逊放弃远眺大海的渴望，调整生活方式安心生存，体现知足安命、乐观向上。",
-      "group_id": "qm_nanshan_001_q8",
-      "group_order": 2,
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r3_anchor_2 — 降档",
-        "rubric_signals": [
-          "§2.1 段意直白"
-        ],
-        "reasoning": "R2：理解层级 2（行为→态度判断），陷阱密度 0.4（3 项褒贬辨明），KP 跨度 1，数据复杂度 0.3。"
-      },
-      "_round_before_group_unify": 2
+      "explanation": "选自《鲁滨逊漂流记》，鲁滨逊「不再远眺...调整生活方式...安排舒舒服服」体现知足安命、乐观向上。",
+      "_round_reasoning": "R1 因为：rubric §2.1「褒贬明显」适用——A/B 都正面但 A「知足」与「调整生活舒舒服服」直接对位，C 反面易排除。降到 R1。"
     },
     {
-      "chapter": "现代文阅读",
-      "knowledge_point": "现代文阅读/小说人物形象",
-      "content": "根据下列句子的描述概括人物印象，填序号。\nA. 知足安命、乐观向上\nB. 坚贞不屈、镇定自若\nC. 阴险狡诈、心狠手辣\n3. 扁鼻子军官的目光立刻变得凶恶可怕，他向前弓着身子，伸出两只大手。啊！那双手就像鹰的爪子，扭着雨来的两只耳朵，向两边拉。",
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
+      "round": 1,
       "type": "choice",
-      "difficulty": "easy",
+      "chapter": "课文与名著",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "group_id": "qm_nanshan_001_q8",
+      "group_order": 3,
+      "content": "根据下列句子的描述概括人物印象，填序号。\n\nA. 知足安命、乐观向上\nB. 坚贞不屈、镇定自若\nC. 阴险狡诈、心狠手辣\n\n3. 扁鼻子军官的目光立刻变得凶恶可怕，他向前弓着身子，伸出两只大手。啊！那双手就像鹰的爪子，扭着雨来的两只耳朵，向两边拉。",
       "options": [
         "A. 知足安命、乐观向上",
         "B. 坚贞不屈、镇定自若",
         "C. 阴险狡诈、心狠手辣"
       ],
       "answer": "C",
-      "explanation": "选自《小英雄雨来》，扁鼻子军官凶恶比喻+残忍动作，体现阴险狡诈、心狠手辣。",
-      "group_id": "qm_nanshan_001_q8",
-      "group_order": 3,
+      "explanation": "选自《小英雄雨来》，扁鼻子军官「凶恶可怕」「鹰的爪子」描写体现阴险狡诈、心狠手辣。",
+      "_round_reasoning": "R1 因为：rubric §2.1「褒贬明显」适用——「凶恶可怕/鹰的爪子」直接给反面信号，与 C 极易匹配。降到 R1。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
       "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r1_anchor_5 (修辞识别) — 类比",
-        "rubric_signals": [
-          "§2.1 褒贬明显"
-        ],
-        "reasoning": "R1：理解层级 1（凶恶神态+残忍动作描写直接对应「阴险狡诈、心狠手辣」），陷阱密度 0.1（褒贬选项极易判断），KP 跨度 1，数据复杂度 0.3。降档信号：褒贬明显（rubric §2.1）→ 降 R1。"
-      },
-      "_round_before_group_unify": 1
-    },
-    {
-      "chapter": "小升初综合",
-      "knowledge_point": "字词/词语含义理解",
-      "content": "用一个字概括下列句子中划线的部分表达的意思或情感（按 1、2 顺序填，逗号分隔）。\n1. ______：过了二十三，大家就更忙了，春节**眨眼就到了**啊。\n2. ______：镇上的人排着队来到撒切尔法官家，搂着两个获救的孩子又亲又吻，……**泪水如雨，洒了一地**。",
       "type": "fill",
-      "difficulty": "easy",
-      "answer": "快,喜",
-      "explanation": "1 题「眨眼就到了」表达「快」；2 题「泪水如雨」表达感动喜悦，提炼为「喜」。",
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r2_anchor_2",
-        "rubric_signals": [],
-        "reasoning": "R2：理解层级 2（句子情感单字概括），陷阱密度 0.45（每字答案需精准），KP 跨度 1，数据复杂度 0.3。"
-      }
-    },
-    {
-      "chapter": "小升初综合",
-      "knowledge_point": "古诗文/古诗词背诵默写",
-      "content": "先补充诗句，再选择与诗句相对应的「主题」和「表达方法」连线。\n（诗句）\n①今夜月明人尽望，______\n②______，要留清白在人间。\n③______，西出阳关无故人。\n请按 ①②③ 顺序填补全诗句，逗号分隔。",
-      "type": "fill",
-      "difficulty": "easy",
-      "answer": "不知秋思落谁家,粉骨碎身浑不怕,劝君更尽一杯酒",
-      "explanation": "①出自王建《十五夜望月》下句；②出自于谦《石灰吟》上句；③出自王维《送元二使安西》上句。",
-      "round": 1,
-      "_round_meta": {
-        "anchor_used": "chinese_r1_anchor_1 (古诗背诵默写)",
-        "rubric_signals": [
-          "§2.1 课内必修常识"
-        ],
-        "reasoning": "R1：理解层级 1（古诗背诵默写），陷阱密度 0，KP 跨度 1（古诗），数据复杂度 0.3。"
-      }
-    },
-    {
-      "chapter": "文学常识",
-      "knowledge_point": "文学常识/中考文化常识",
-      "content": "根据句意选择相关的名言，填序号。\nA. 穷则变，变则通，通则久。\nB. 苟利于民，不必法古；苟周于事，不必循旧。\nC. 青，取之于蓝，而青于蓝。\nD. 苟日新，日日新，又日新。\n\n1. 创新是民族进步的灵魂，是一个国家兴旺发达的不竭源泉，正所谓「______」。",
-      "type": "choice",
-      "difficulty": "easy",
-      "options": [
-        "A. 穷则变，变则通，通则久。",
-        "B. 苟利于民，不必法古；苟周于事，不必循旧。",
-        "C. 青，取之于蓝，而青于蓝。",
-        "D. 苟日新，日日新，又日新。"
-      ],
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文学常识",
+      "group_id": "qm_nanshan_001_q11",
+      "group_order": 1,
+      "content": "根据句意选择相关的名言，填序号。\n\nA. 穷则变，变则通，通则久。\nB. 苟利于民，不必法古；苟周于事，不必循旧。\nC. 青，取之于蓝，而青于蓝。\nD. 苟日新，日日新，又日新。\n\n1. 创新是民族进步的灵魂，是一个国家兴旺发达的不竭源泉，正所谓「____」。",
       "answer": "D",
-      "explanation": "「苟日新，日日新，又日新」直接表达「日复一日的革新」，最贴合「创新」语境。",
-      "group_id": "qm_nanshan_001_q11",
-      "group_order": 1,
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r2_anchor_1 (释义反推)",
-        "rubric_signals": [],
-        "reasoning": "R2：理解层级 2（名言释义匹配语境），陷阱密度 0.5，KP 跨度 1，数据复杂度 0.4。"
-      },
-      "_round_before_group_unify": 2
+      "explanation": "「苟日新，日日新，又日新」（出自《礼记》）强调不断革新，与「创新」语境对位。",
+      "_round_reasoning": "R2 因为：理解层级 2（名言释义+语境对位），4 选项均含变化/创新主题；rubric 无降档信号。"
     },
     {
-      "chapter": "文学常识",
-      "knowledge_point": "文学常识/中考文化常识",
-      "content": "根据句意选择相关的名言，填序号。\nA. 穷则变，变则通，通则久。\nB. 苟利于民，不必法古；苟周于事，不必循旧。\nC. 青，取之于蓝，而青于蓝。\nD. 苟日新，日日新，又日新。\n\n2. 在新冠疫情的冲击之下，许多中小企业难以为继，要应对前所未有的危机和挑战，必须明白「______」的道理。",
-      "type": "choice",
-      "difficulty": "easy",
-      "options": [
-        "A. 穷则变，变则通，通则久。",
-        "B. 苟利于民，不必法古；苟周于事，不必循旧。",
-        "C. 青，取之于蓝，而青于蓝。",
-        "D. 苟日新，日日新，又日新。"
-      ],
-      "answer": "A",
-      "explanation": "「穷则变，变则通，通则久」表达「事物到了极点必须变通」，最贴合「危机中变革」语境。",
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文学常识",
       "group_id": "qm_nanshan_001_q11",
       "group_order": 2,
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r2_anchor_1",
-        "rubric_signals": [],
-        "reasoning": "R2：理解层级 2（名言释义匹配语境），陷阱密度 0.5，KP 跨度 1，数据复杂度 0.4。"
-      },
-      "_round_before_group_unify": 2
-    },
-    {
-      "chapter": "修辞",
-      "knowledge_point": "修辞/对偶",
-      "content": "根据提示，用下面的词语拟一副对联，表达对老师的感激和敬意。\n词语：桃李艳 / 两鬓 / 满园 / 霜雪寒\n上联：且喜 ______\n下联：莫悲 ______\n请按上下联顺序填，逗号分隔。",
-      "type": "fill",
-      "difficulty": "easy",
-      "answer": "满园桃李艳,两鬓霜雪寒",
-      "explanation": "上联「且喜满园桃李艳」赞老师培育学生（桃李满天下），下联「莫悲两鬓霜雪寒」体恤老师为学生白发。「满园」对「两鬓」，「桃李艳」对「霜雪寒」工整对仗。",
-      "round": 3,
-      "_round_meta": {
-        "anchor_used": "chinese_r4_anchor_4 (古诗对仗鉴赏) — 降档",
-        "rubric_signals": [],
-        "reasoning": "R3：理解层级 3（对联词语排序+词性结构对应），陷阱密度 0.6，KP 跨度 2（对联格律+词义），数据复杂度 0.4。降档至 R3：对仗简单且候选池窄。"
-      }
-    },
-    {
-      "chapter": "古诗文",
-      "knowledge_point": "古诗文/文言文比较阅读",
-      "content": "阅读《杀驼破瓮》，回答问题。\nㅤㅤ昔有一人，于瓮中盛谷。骆驼入瓮食谷，①______。主人以为忧，无计可施。有一老人来语之，曰：「汝莫忧，吾教（jiāo jiào）______汝出。」主人亟问：「法何？」老人曰：「②______，自当出之。」主人以为妙，即依其语，③______。既杀驼，④______，如此痴人，为（wéi wèi）______世人所笑。\n【注释】[1]语：yu，告诉。[2]亟：jí，同「急」。\n\n候选短句：A. 以刀斩头  B. 而复破瓮  C. 首不得出  D. 汝当斩头\n\n1. 给文中划线的字「教」选择正确的读音。",
-      "type": "choice",
-      "difficulty": "easy",
-      "options": [
-        "A. jiāo（传授）",
-        "B. jiào（使、命令）"
-      ],
+      "content": "根据句意选择相关的名言，填序号。\n\nA. 穷则变，变则通，通则久。\nB. 苟利于民，不必法古；苟周于事，不必循旧。\nC. 青，取之于蓝，而青于蓝。\nD. 苟日新，日日新，又日新。\n\n2. 在新冠疫情的冲击之下，许多中小企业难以为继，要应对前所未有的危机和挑战，必须明白「____」的道理。",
       "answer": "A",
-      "explanation": "「吾教汝出」中「教」为「传授（方法）」，应读 jiāo。",
+      "explanation": "「穷则变，变则通，通则久」（出自《周易》）强调遇到困境要变通，与「危机和挑战」语境对位。",
+      "_round_reasoning": "R2 因为：名言释义+语境对位。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言文阅读",
       "group_id": "qm_nanshan_001_q13",
       "group_order": 1,
-      "round": 3,
-      "_round_meta": {
-        "anchor_used": "chinese_r2_anchor_2",
-        "rubric_signals": [
-          "§2.1 候选池窄"
-        ],
-        "reasoning": "R2：理解层级 2（多音字+文言释义结合），陷阱密度 0.5（2 选 1），KP 跨度 1，数据复杂度 0.4（含文言）。"
-      },
-      "_round_before_group_unify": 2
+      "content": "阅读《杀驼破瓮》：\n\n昔有一人，于瓮中盛谷。骆驼入瓮食谷，①____。主人以为忧，无计可施。有一老人来语之，曰：「汝莫忧，吾教汝出。」主人亟问：「法何？」老人曰：「②____，自当出之。」主人以为妙，即依其语，③____。既杀驼，④____，如此痴人，为世人所笑。\n\n选项：A. 以刀斩头  B. 而复破瓮  C. 首不得出  D. 汝当斩头\n\n1. ①处应填什么？",
+      "answer": "C",
+      "explanation": "①承接「骆驼入瓮食谷」+「主人以为忧」，首不得出 C 最贴切。",
+      "_round_reasoning": "R2 因为：文言文上下文衔接判断。"
     },
     {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
+      "round": 2,
+      "type": "fill",
       "chapter": "古诗文",
-      "knowledge_point": "古诗文/文言文比较阅读",
-      "content": "阅读《杀驼破瓮》，回答问题。\nㅤㅤ昔有一人，于瓮中盛谷。骆驼入瓮食谷，①______。主人以为忧，无计可施。有一老人来语之，曰：「汝莫忧，吾教（jiāo jiào）______汝出。」主人亟问：「法何？」老人曰：「②______，自当出之。」主人以为妙，即依其语，③______。既杀驼，④______，如此痴人，为（wéi wèi）______世人所笑。\n【注释】[1]语：yu，告诉。[2]亟：jí，同「急」。\n\n候选短句：A. 以刀斩头  B. 而复破瓮  C. 首不得出  D. 汝当斩头\n\n2. 给文中划线的字「为」选择正确的读音。",
-      "type": "choice",
-      "difficulty": "easy",
-      "options": [
-        "A. wéi（被）",
-        "B. wèi（对、向）"
-      ],
-      "answer": "A",
-      "explanation": "「为世人所笑」中「为……所」是被动结构，「为」读 wéi（被）。",
+      "knowledge_point": "古诗文/文言文阅读",
       "group_id": "qm_nanshan_001_q13",
       "group_order": 2,
-      "round": 3,
-      "_round_meta": {
-        "anchor_used": "chinese_r2_anchor_2",
-        "rubric_signals": [
-          "§2.1 候选池窄"
-        ],
-        "reasoning": "R2：理解层级 2（多音字+文言被动），陷阱密度 0.5，KP 跨度 1，数据复杂度 0.4。"
-      },
-      "_round_before_group_unify": 2
+      "content": "阅读《杀驼破瓮》：\n\n（同上文段）\n\n选项：A. 以刀斩头  B. 而复破瓮  C. 首不得出  D. 汝当斩头\n\n2. ②处「老人曰」之后应填什么？",
+      "answer": "D",
+      "explanation": "②是老人提出的方法「汝当斩头」（你应该砍下骆驼的头）。",
+      "_round_reasoning": "R2 因为：文言文上下文衔接判断。"
     },
     {
-      "chapter": "古诗文",
-      "knowledge_point": "古诗文/文言文比较阅读",
-      "content": "阅读《杀驼破瓮》，回答问题。\nㅤㅤ昔有一人，于瓮中盛谷。骆驼入瓮食谷，①______。主人以为忧，无计可施。有一老人来语之，曰：「汝莫忧，吾教（jiāo jiào）______汝出。」主人亟问：「法何？」老人曰：「②______，自当出之。」主人以为妙，即依其语，③______。既杀驼，④______，如此痴人，为（wéi wèi）______世人所笑。\n【注释】[1]语：yu，告诉。[2]亟：jí，同「急」。\n\n候选短句：A. 以刀斩头  B. 而复破瓮  C. 首不得出  D. 汝当斩头\n\n3. 联系上下文，请按横线 ①②③④ 顺序，依次填入合适候选短句的字母（候选 A. 以刀斩头  B. 而复破瓮  C. 首不得出  D. 汝当斩头）。",
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
+      "round": 2,
       "type": "fill",
-      "difficulty": "easy",
-      "answer": "C,D,A,B",
-      "explanation": "①「骆驼入瓮食谷，首不得出（C）」；②老人曰「汝当斩头（D），自当出之」；③「即依其语，以刀斩头（A）」；④「既杀驼，而复破瓮（B）」。",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言文阅读",
       "group_id": "qm_nanshan_001_q13",
       "group_order": 3,
-      "round": 3,
-      "_round_meta": {
-        "anchor_used": "chinese_r3_anchor_2 (段意综合) — 降档",
-        "rubric_signals": [
-          "§2.1 段意直白（事件顺序明确）"
-        ],
-        "reasoning": "R2：理解层级 2（事件顺序还原），陷阱密度 0.55（4 短句 4 空全填），KP 跨度 1，数据复杂度 0.5。"
-      },
-      "_round_before_group_unify": 2
+      "content": "阅读《杀驼破瓮》：\n\n（同上文段）\n\n选项：A. 以刀斩头  B. 而复破瓮  C. 首不得出  D. 汝当斩头\n\n3. ③处「即依其语」之后应填什么？",
+      "answer": "A",
+      "explanation": "③主人「即依其语」即按老人说的做（以刀斩头）。",
+      "_round_reasoning": "R2 因为：文言文上下文衔接判断。"
     },
     {
-      "chapter": "古诗文",
-      "knowledge_point": "古诗文/文言虚词",
-      "content": "阅读《杀驼破瓮》，回答问题。\nㅤㅤ昔有一人，于瓮中盛谷。骆驼入瓮食谷，①______。主人以为忧，无计可施。有一老人来语之，曰：「汝莫忧，吾教（jiāo jiào）______汝出。」主人亟问：「法何？」老人曰：「②______，自当出之。」主人以为妙，即依其语，③______。既杀驼，④______，如此痴人，为（wéi wèi）______世人所笑。\n【注释】[1]语：yu，告诉。[2]亟：jí，同「急」。\n\n候选短句：A. 以刀斩头  B. 而复破瓮  C. 首不得出  D. 汝当斩头\n\n4. 「之」在文言文中经常指某人、某物或某事。下列两句中「之」分别指什么？\n候选：A. 老人  B. 主人  C. 骆驼  D. 瓮\n①有一老人来语**之**\n②自当出**之**\n请按 ①② 顺序填字母，逗号分隔。",
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
+      "round": 2,
       "type": "fill",
-      "difficulty": "easy",
-      "answer": "B,D",
-      "explanation": "①「有一老人来语之」中「之」指主人（老人对主人说话），故 B；②「自当出之」中「之」指瓮（骆驼从瓮中出来），故 D。",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言文阅读",
       "group_id": "qm_nanshan_001_q13",
       "group_order": 4,
-      "round": 3,
-      "_round_meta": {
-        "anchor_used": "chinese_r3_anchor_1 (文言人物态度推断)",
-        "rubric_signals": [],
-        "reasoning": "R3：理解层级 3（文言虚词指代推断），陷阱密度 0.65（4 选 2 但 ②的「之」可能误填 C），KP 跨度 1，数据复杂度 0.5。"
-      },
-      "_round_before_group_unify": 3
+      "content": "阅读《杀驼破瓮》：\n\n（同上文段）\n\n选项：A. 以刀斩头  B. 而复破瓮  C. 首不得出  D. 汝当斩头\n\n4. ④处「既杀驼」之后应填什么？",
+      "answer": "B",
+      "explanation": "④「既杀驼」之后还要打破瓮（而复破瓮）才能取出骆驼头。",
+      "_round_reasoning": "R2 因为：文言文上下文衔接判断。"
     },
     {
-      "chapter": "古诗文",
-      "knowledge_point": "古诗文/文言文比较阅读",
-      "content": "阅读《杀驼破瓮》，回答问题。\nㅤㅤ昔有一人，于瓮中盛谷。骆驼入瓮食谷，①______。主人以为忧，无计可施。有一老人来语之，曰：「汝莫忧，吾教（jiāo jiào）______汝出。」主人亟问：「法何？」老人曰：「②______，自当出之。」主人以为妙，即依其语，③______。既杀驼，④______，如此痴人，为（wéi wèi）______世人所笑。\n【注释】[1]语：yu，告诉。[2]亟：jí，同「急」。\n\n候选短句：A. 以刀斩头  B. 而复破瓮  C. 首不得出  D. 汝当斩头\n\n5. 选择这个故事的寓意，填序号。",
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
+      "round": 2,
       "type": "choice",
-      "difficulty": "easy",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言文阅读",
+      "group_id": "qm_nanshan_001_q13",
+      "group_order": 5,
+      "content": "阅读《杀驼破瓮》后选择这个故事的寓意，填序号。",
       "options": [
         "A. 做事循规蹈矩，不知变通，就会闹出笑话。",
         "B. 凡事要认真思考，仔细研究，不能因小失大，更不能盲目听从他人的建议。",
         "C. 对待事物要懂得去看到它的本质，不要只看表面。"
       ],
       "answer": "B",
-      "explanation": "主人盲目听从老人的建议，杀驼破瓮，因小失大——故事告诫凡事认真思考，不能盲目听从。",
-      "group_id": "qm_nanshan_001_q13",
-      "group_order": 5,
-      "round": 3,
-      "_round_meta": {
-        "anchor_used": "chinese_r3_anchor_1 (寓意推断)",
-        "rubric_signals": [],
-        "reasoning": "R3：理解层级 3（寓意提炼），陷阱密度 0.5（A C 偏题），KP 跨度 2（文言+寓意），数据复杂度 0.5。"
-      },
-      "_round_before_group_unify": 3
+      "explanation": "故事核心是主人「即依其语」盲目听从老人建议，导致杀驼破瓮的笑话，寓意 B 最贴切。",
+      "_round_reasoning": "R2 因为：文言文寓意综合，参考 chinese_r3_anchor_1 R3 是文言人物态度，本题是寓意识别（更直接）→ R2。"
     },
     {
-      "chapter": "课文与名著",
-      "knowledge_point": "字词/字义",
-      "content": "阅读《为人民服务》（节选），回答问题。\nㅤㅤ人总是要死的，但死的意义有不同。中国古时候有个文学家叫作司马迁的说过：「人固有一死，或重于泰山，或轻于鸿毛。」为人民利益而死，就比泰山还重；替法西斯卖力，替剥削人民和压迫人民的人去死，就比鸿毛还轻。张思德同志是为人民利益而死的，他的死是比泰山还要重的。\nㅤㅤ①______我们是为人民服务的，②______，我们③______有缺点，④______不怕别人批评指出。⑤______是什么人，谁向我们指出，⑥______行。⑦______你说得对，我们⑧______改正。你说的办法对人民有好处，我们就照你的办。\n\n1. 给「固」字选择正确的解释（句中「人**固**有一死」）。\n候选：A. 结实，牢靠  B. 坚定，不变动  C. 本，原来  D. 坚硬",
-      "type": "choice",
-      "difficulty": "easy",
-      "options": [
-        "A. 结实，牢靠",
-        "B. 坚定，不变动",
-        "C. 本，原来",
-        "D. 坚硬"
-      ],
-      "answer": "C",
-      "explanation": "「人固有一死」中「固」是「本来、原来」之意（人本来就有一死）。",
-      "group_id": "qm_nanshan_001_q14",
-      "group_order": 1,
-      "round": 3,
-      "_round_meta": {
-        "anchor_used": "chinese_r2_anchor_2",
-        "rubric_signals": [
-          "§2.1 课内必修常识"
-        ],
-        "reasoning": "R2：理解层级 2（一字多义辨析），陷阱密度 0.5（4 选项均有相近义），KP 跨度 1，数据复杂度 0.4。"
-      },
-      "_round_before_group_unify": 2
-    },
-    {
-      "chapter": "课文与名著",
-      "knowledge_point": "字词/字义",
-      "content": "阅读《为人民服务》（节选），回答问题。\nㅤㅤ人总是要死的，但死的意义有不同。中国古时候有个文学家叫作司马迁的说过：「人固有一死，或重于泰山，或轻于鸿毛。」为人民利益而死，就比泰山还重；替法西斯卖力，替剥削人民和压迫人民的人去死，就比鸿毛还轻。张思德同志是为人民利益而死的，他的死是比泰山还要重的。\nㅤㅤ①______我们是为人民服务的，②______，我们③______有缺点，④______不怕别人批评指出。⑤______是什么人，谁向我们指出，⑥______行。⑦______你说得对，我们⑧______改正。你说的办法对人民有好处，我们就照你的办。\n\n2. 给「固」字选择正确的解释（句中「岩浆冷却并**凝固**下来后，形成了火山岩」）。\n候选：A. 结实，牢靠  B. 坚定，不变动  C. 本，原来  D. 坚硬",
-      "type": "choice",
-      "difficulty": "easy",
-      "options": [
-        "A. 结实，牢靠",
-        "B. 坚定，不变动",
-        "C. 本，原来",
-        "D. 坚硬"
-      ],
-      "answer": "D",
-      "explanation": "「凝固」指由液态变为固态——岩浆由液态变硬，「固」表「坚硬」。",
-      "group_id": "qm_nanshan_001_q14",
-      "group_order": 2,
-      "round": 3,
-      "_round_meta": {
-        "anchor_used": "chinese_r2_anchor_2",
-        "rubric_signals": [],
-        "reasoning": "R2：理解层级 2（一字多义辨析），陷阱密度 0.5，KP 跨度 1，数据复杂度 0.3。"
-      },
-      "_round_before_group_unify": 2
-    },
-    {
-      "chapter": "课文与名著",
-      "knowledge_point": "字词/字义",
-      "content": "阅读《为人民服务》（节选），回答问题。\nㅤㅤ人总是要死的，但死的意义有不同。中国古时候有个文学家叫作司马迁的说过：「人固有一死，或重于泰山，或轻于鸿毛。」为人民利益而死，就比泰山还重；替法西斯卖力，替剥削人民和压迫人民的人去死，就比鸿毛还轻。张思德同志是为人民利益而死的，他的死是比泰山还要重的。\nㅤㅤ①______我们是为人民服务的，②______，我们③______有缺点，④______不怕别人批评指出。⑤______是什么人，谁向我们指出，⑥______行。⑦______你说得对，我们⑧______改正。你说的办法对人民有好处，我们就照你的办。\n\n3. 给「固」字选择正确的解释（句中「庄严的佛塔，**固守**着这片苍凉的高原」）。\n候选：A. 结实，牢靠  B. 坚定，不变动  C. 本，原来  D. 坚硬",
-      "type": "choice",
-      "difficulty": "easy",
-      "options": [
-        "A. 结实，牢靠",
-        "B. 坚定，不变动",
-        "C. 本，原来",
-        "D. 坚硬"
-      ],
-      "answer": "B",
-      "explanation": "「固守」指坚定地守护、不变动——「固」表「坚定，不变动」。",
-      "group_id": "qm_nanshan_001_q14",
-      "group_order": 3,
-      "round": 3,
-      "_round_meta": {
-        "anchor_used": "chinese_r2_anchor_2",
-        "rubric_signals": [],
-        "reasoning": "R2：理解层级 2（一字多义辨析），陷阱密度 0.5，KP 跨度 1，数据复杂度 0.3。"
-      },
-      "_round_before_group_unify": 2
-    },
-    {
-      "chapter": "课文与名著",
-      "knowledge_point": "字词/字义",
-      "content": "阅读《为人民服务》（节选），回答问题。\nㅤㅤ人总是要死的，但死的意义有不同。中国古时候有个文学家叫作司马迁的说过：「人固有一死，或重于泰山，或轻于鸿毛。」为人民利益而死，就比泰山还重；替法西斯卖力，替剥削人民和压迫人民的人去死，就比鸿毛还轻。张思德同志是为人民利益而死的，他的死是比泰山还要重的。\nㅤㅤ①______我们是为人民服务的，②______，我们③______有缺点，④______不怕别人批评指出。⑤______是什么人，谁向我们指出，⑥______行。⑦______你说得对，我们⑧______改正。你说的办法对人民有好处，我们就照你的办。\n\n4. 给「固」字选择正确的解释（句中「这个军事基地在我军的严密保护下**固若金汤**」）。\n候选：A. 结实，牢靠  B. 坚定，不变动  C. 本，原来  D. 坚硬",
-      "type": "choice",
-      "difficulty": "easy",
-      "options": [
-        "A. 结实，牢靠",
-        "B. 坚定，不变动",
-        "C. 本，原来",
-        "D. 坚硬"
-      ],
-      "answer": "A",
-      "explanation": "「固若金汤」形容防御工事坚固——「固」表「结实、牢靠」。",
-      "group_id": "qm_nanshan_001_q14",
-      "group_order": 4,
-      "round": 3,
-      "_round_meta": {
-        "anchor_used": "chinese_r2_anchor_2",
-        "rubric_signals": [],
-        "reasoning": "R2：理解层级 2（一字多义辨析），陷阱密度 0.5，KP 跨度 1，数据复杂度 0.3。"
-      },
-      "_round_before_group_unify": 2
-    },
-    {
-      "chapter": "课文与名著",
-      "knowledge_point": "字词/词语含义理解",
-      "content": "阅读《为人民服务》（节选），回答问题。\nㅤㅤ人总是要死的，但死的意义有不同。中国古时候有个文学家叫作司马迁的说过：「人固有一死，或重于泰山，或轻于鸿毛。」为人民利益而死，就比泰山还重；替法西斯卖力，替剥削人民和压迫人民的人去死，就比鸿毛还轻。张思德同志是为人民利益而死的，他的死是比泰山还要重的。\nㅤㅤ①______我们是为人民服务的，②______，我们③______有缺点，④______不怕别人批评指出。⑤______是什么人，谁向我们指出，⑥______行。⑦______你说得对，我们⑧______改正。你说的办法对人民有好处，我们就照你的办。\n\n5. 根据对句子的理解，选词填空：张思德为人民的利益而死，这就是______。\n候选：A. 死不足惜  B. 死得其所  C. 舍己为人  D. 舍生取义",
-      "type": "choice",
-      "difficulty": "easy",
-      "options": [
-        "A. 死不足惜",
-        "B. 死得其所",
-        "C. 舍己为人",
-        "D. 舍生取义"
-      ],
-      "answer": "B",
-      "explanation": "「死得其所」指死得有意义、有价值，最契合「为人民利益而死」。",
-      "group_id": "qm_nanshan_001_q14",
-      "group_order": 5,
-      "round": 3,
-      "_round_meta": {
-        "anchor_used": "chinese_r2_anchor_2",
-        "rubric_signals": [],
-        "reasoning": "R2：理解层级 2（成语释义匹配），陷阱密度 0.55，KP 跨度 1，数据复杂度 0.4。"
-      },
-      "_round_before_group_unify": 2
-    },
-    {
-      "chapter": "课文与名著",
-      "knowledge_point": "字词/词语含义理解",
-      "content": "阅读《为人民服务》（节选），回答问题。\nㅤㅤ人总是要死的，但死的意义有不同。中国古时候有个文学家叫作司马迁的说过：「人固有一死，或重于泰山，或轻于鸿毛。」为人民利益而死，就比泰山还重；替法西斯卖力，替剥削人民和压迫人民的人去死，就比鸿毛还轻。张思德同志是为人民利益而死的，他的死是比泰山还要重的。\nㅤㅤ①______我们是为人民服务的，②______，我们③______有缺点，④______不怕别人批评指出。⑤______是什么人，谁向我们指出，⑥______行。⑦______你说得对，我们⑧______改正。你说的办法对人民有好处，我们就照你的办。\n\n6. 根据对句子的理解，选词填空：替法西斯卖力，替剥削人民和压迫人民的人去死，这就是______。\n候选：A. 死不足惜  B. 死得其所  C. 舍己为人  D. 舍生取义",
-      "type": "choice",
-      "difficulty": "easy",
-      "options": [
-        "A. 死不足惜",
-        "B. 死得其所",
-        "C. 舍己为人",
-        "D. 舍生取义"
-      ],
-      "answer": "A",
-      "explanation": "「死不足惜」指死得不可惜（贬义），最契合「替法西斯卖力」语境。",
-      "group_id": "qm_nanshan_001_q14",
-      "group_order": 6,
-      "round": 3,
-      "_round_meta": {
-        "anchor_used": "chinese_r2_anchor_2",
-        "rubric_signals": [],
-        "reasoning": "R2：理解层级 2（成语褒贬辨析），陷阱密度 0.55，KP 跨度 1，数据复杂度 0.4。"
-      },
-      "_round_before_group_unify": 2
-    },
-    {
-      "chapter": "课文与名著",
-      "knowledge_point": "字词/词语含义理解",
-      "content": "阅读《为人民服务》（节选），回答问题。\nㅤㅤ人总是要死的，但死的意义有不同。中国古时候有个文学家叫作司马迁的说过：「人固有一死，或重于泰山，或轻于鸿毛。」为人民利益而死，就比泰山还重；替法西斯卖力，替剥削人民和压迫人民的人去死，就比鸿毛还轻。张思德同志是为人民利益而死的，他的死是比泰山还要重的。\nㅤㅤ①______我们是为人民服务的，②______，我们③______有缺点，④______不怕别人批评指出。⑤______是什么人，谁向我们指出，⑥______行。⑦______你说得对，我们⑧______改正。你说的办法对人民有好处，我们就照你的办。\n\n7. 根据对句子的理解，选词填空：李大钊为共产主义事业而牺牲生命，这就是______。\n候选：A. 死不足惜  B. 死得其所  C. 舍己为人  D. 舍生取义",
-      "type": "choice",
-      "difficulty": "easy",
-      "options": [
-        "A. 死不足惜",
-        "B. 死得其所",
-        "C. 舍己为人",
-        "D. 舍生取义"
-      ],
-      "answer": "D",
-      "explanation": "「舍生取义」指为正义事业宁可牺牲生命，契合「为共产主义事业而牺牲」。",
-      "group_id": "qm_nanshan_001_q14",
-      "group_order": 7,
-      "round": 3,
-      "_round_meta": {
-        "anchor_used": "chinese_r2_anchor_2",
-        "rubric_signals": [],
-        "reasoning": "R2：理解层级 2（成语释义匹配），陷阱密度 0.55，KP 跨度 1，数据复杂度 0.4。"
-      },
-      "_round_before_group_unify": 2
-    },
-    {
-      "chapter": "课文与名著",
-      "knowledge_point": "字词/词语含义理解",
-      "content": "阅读《为人民服务》（节选），回答问题。\nㅤㅤ人总是要死的，但死的意义有不同。中国古时候有个文学家叫作司马迁的说过：「人固有一死，或重于泰山，或轻于鸿毛。」为人民利益而死，就比泰山还重；替法西斯卖力，替剥削人民和压迫人民的人去死，就比鸿毛还轻。张思德同志是为人民利益而死的，他的死是比泰山还要重的。\nㅤㅤ①______我们是为人民服务的，②______，我们③______有缺点，④______不怕别人批评指出。⑤______是什么人，谁向我们指出，⑥______行。⑦______你说得对，我们⑧______改正。你说的办法对人民有好处，我们就照你的办。\n\n8. 根据对句子的理解，选词填空：白衣天使冲在疫情防控的最前线，守护每个人的健康和生命安全，这就是______。\n候选：A. 死不足惜  B. 死得其所  C. 舍己为人  D. 舍生取义",
-      "type": "choice",
-      "difficulty": "easy",
-      "options": [
-        "A. 死不足惜",
-        "B. 死得其所",
-        "C. 舍己为人",
-        "D. 舍生取义"
-      ],
-      "answer": "C",
-      "explanation": "「舍己为人」指放弃自己的利益帮助别人，契合「白衣天使守护他人健康」。",
-      "group_id": "qm_nanshan_001_q14",
-      "group_order": 8,
-      "round": 3,
-      "_round_meta": {
-        "anchor_used": "chinese_r2_anchor_2",
-        "rubric_signals": [],
-        "reasoning": "R2：理解层级 2（成语释义匹配），陷阱密度 0.55，KP 跨度 1，数据复杂度 0.4。"
-      },
-      "_round_before_group_unify": 2
-    },
-    {
-      "chapter": "课文与名著",
-      "knowledge_point": "句式与标点/关联词运用",
-      "content": "阅读《为人民服务》（节选），回答问题。\nㅤㅤ人总是要死的，但死的意义有不同。中国古时候有个文学家叫作司马迁的说过：「人固有一死，或重于泰山，或轻于鸿毛。」为人民利益而死，就比泰山还重；替法西斯卖力，替剥削人民和压迫人民的人去死，就比鸿毛还轻。张思德同志是为人民利益而死的，他的死是比泰山还要重的。\nㅤㅤ①______我们是为人民服务的，②______，我们③______有缺点，④______不怕别人批评指出。⑤______是什么人，谁向我们指出，⑥______行。⑦______你说得对，我们⑧______改正。你说的办法对人民有好处，我们就照你的办。\n\n9. 在文中横线①~⑧上填合适的关联词。请按 ①②③④⑤⑥⑦⑧ 顺序填，逗号分隔。",
-      "type": "fill",
-      "difficulty": "easy",
-      "answer": "因为,所以,如果,就,不管,都,只要,就",
-      "explanation": "原文为「因为我们是为人民服务的，所以，我们如果有缺点，就不怕别人批评指出。不管是什么人，谁向我们指出都行。只要你说的对，我们就改正。」",
-      "group_id": "qm_nanshan_001_q14",
-      "group_order": 9,
-      "round": 3,
-      "_round_meta": {
-        "anchor_used": "chinese_r3_anchor_3",
-        "rubric_signals": [],
-        "reasoning": "R3：理解层级 3（多重关联词背诵+逻辑还原），陷阱密度 0.65（8 空，需对原文熟悉），KP 跨度 2（关联词+课文背诵），数据复杂度 0.5。"
-      },
-      "_round_before_group_unify": 3
-    },
-    {
-      "chapter": "现代文阅读",
-      "knowledge_point": "字词/形近字辨析",
-      "content": "阅读《天上飘下来的礼物》（节选），回答问题。\nㅤㅤ一楼的林老太太，人有点①______，不太好说话。林老太太唯一的儿子在美国，老伴去世得早，一直一个人生活。退休后，生活更②______了，跟外面的联系越来越少，人也变得更少言寡语了。奇怪的是，儿子跟她挺投缘。\nㅤㅤ有一天刮大风，一件衣服掉到一楼院子里了。【A】儿子拿了根竹（竿  杆）______下去，趴在院子的栅栏边，想把衣服挑出来，林老太太突然走进了院子，儿子吓得不知所（错  措）______。【B】我站在阳台上，隐隐约约听见她说：「下次衣服再掉下来，你就进来拿，好不好？」儿子点点头。就这样，衣服再被风刮到楼下时，都是儿子去捡。\nㅤㅤ日子平淡地过去，风偶尔会将我们家阳台的衣服刮到楼下去。儿子噔噔噔地下楼，又噔噔噔地上楼，他快乐得像一阵风。【C】一次，儿子下去捡衣服，回来的时候，手上多了一把花花绿绿的糖果。儿子说是林奶奶给的，还自豪地说：「我还帮林奶奶念了信呢，是美国的叔叔写给林奶奶的。」儿子手上拿的衣服，叠得方方正正，儿子说，我们家的衣服掉下去，林奶奶捡起来后，帮我们又洗了下，晾干了。\nㅤㅤ春节，我们一家回老家去了。回来时，听说林老太太突然去世了，据说是无疾而终。我们注意到，儿子的眼圈红了。\nㅤㅤ人们在整理老人的遗物时，看到了一个日记本。老人在日记里多次提到，从楼上刮下来的衣服。老人的日记里，反复出现这样一句话：那是从天上飘下来的礼物。我明白老人的话。那也许是老人③______的生活里，唯一的一点期盼。\n\n1. 划去文中括号里不正确的字（按 竹（竿/杆）、不知所（错/措） 顺序填正确字，逗号分隔）。",
-      "type": "fill",
-      "difficulty": "easy",
-      "answer": "竿,措",
-      "explanation": "「竹竿」是细长的竹子棒（应用「竿」非「杆」）；「不知所措」是固定成语（不知所「措」非「错」）。",
-      "group_id": "qm_nanshan_001_q15",
-      "group_order": 1,
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
       "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r1_anchor_3 (字音字形识记)",
-        "rubric_signals": [
-          "§2.1 课内必修常识"
-        ],
-        "reasoning": "R1：理解层级 1（形近字辨析），陷阱密度 0.1，KP 跨度 1，数据复杂度 0.3。"
-      },
-      "_round_before_group_unify": 1
-    },
-    {
-      "chapter": "现代文阅读",
-      "knowledge_point": "字词/词语理解",
-      "content": "阅读《天上飘下来的礼物》（节选），回答问题。\nㅤㅤ一楼的林老太太，人有点①______，不太好说话。林老太太唯一的儿子在美国，老伴去世得早，一直一个人生活。退休后，生活更②______了，跟外面的联系越来越少，人也变得更少言寡语了。奇怪的是，儿子跟她挺投缘。\nㅤㅤ有一天刮大风，一件衣服掉到一楼院子里了。【A】儿子拿了根竹（竿  杆）______下去，趴在院子的栅栏边，想把衣服挑出来，林老太太突然走进了院子，儿子吓得不知所（错  措）______。【B】我站在阳台上，隐隐约约听见她说：「下次衣服再掉下来，你就进来拿，好不好？」儿子点点头。就这样，衣服再被风刮到楼下时，都是儿子去捡。\nㅤㅤ日子平淡地过去，风偶尔会将我们家阳台的衣服刮到楼下去。儿子噔噔噔地下楼，又噔噔噔地上楼，他快乐得像一阵风。【C】一次，儿子下去捡衣服，回来的时候，手上多了一把花花绿绿的糖果。儿子说是林奶奶给的，还自豪地说：「我还帮林奶奶念了信呢，是美国的叔叔写给林奶奶的。」儿子手上拿的衣服，叠得方方正正，儿子说，我们家的衣服掉下去，林奶奶捡起来后，帮我们又洗了下，晾干了。\nㅤㅤ春节，我们一家回老家去了。回来时，听说林老太太突然去世了，据说是无疾而终。我们注意到，儿子的眼圈红了。\nㅤㅤ人们在整理老人的遗物时，看到了一个日记本。老人在日记里多次提到，从楼上刮下来的衣服。老人的日记里，反复出现这样一句话：那是从天上飘下来的礼物。我明白老人的话。那也许是老人③______的生活里，唯一的一点期盼。\n\n2. 选择合适的词语填在文中 ①②③ 横线上（请按 ①②③ 顺序填字母，逗号分隔）。\n候选：A. 孤单  B. 孤僻  C. 孤寂",
       "type": "fill",
-      "difficulty": "easy",
-      "answer": "B,A,C",
-      "explanation": "①处形容性格「不太好说话」用「孤僻」（B）；②处描述退休后「一个人闷在家里」用「孤单」（A）；③处描述老人内心生活强调寂寞，用「孤寂」（C）。",
-      "group_id": "qm_nanshan_001_q15",
-      "group_order": 2,
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r2_anchor_2 (近义词辨析)",
-        "rubric_signals": [],
-        "reasoning": "R2：理解层级 2（孤+单/僻/寂三个近义词搭配语境辨析），陷阱密度 0.6，KP 跨度 1，数据复杂度 0.4。引用 chinese_r2_anchor_2。"
-      },
-      "_round_before_group_unify": 2
-    },
-    {
       "chapter": "现代文阅读",
-      "knowledge_point": "现代文阅读/词句赏析",
-      "content": "阅读《天上飘下来的礼物》（节选），回答问题。\nㅤㅤ一楼的林老太太，人有点①______，不太好说话。林老太太唯一的儿子在美国，老伴去世得早，一直一个人生活。退休后，生活更②______了，跟外面的联系越来越少，人也变得更少言寡语了。奇怪的是，儿子跟她挺投缘。\nㅤㅤ有一天刮大风，一件衣服掉到一楼院子里了。【A】儿子拿了根竹（竿  杆）______下去，趴在院子的栅栏边，想把衣服挑出来，林老太太突然走进了院子，儿子吓得不知所（错  措）______。【B】我站在阳台上，隐隐约约听见她说：「下次衣服再掉下来，你就进来拿，好不好？」儿子点点头。就这样，衣服再被风刮到楼下时，都是儿子去捡。\nㅤㅤ日子平淡地过去，风偶尔会将我们家阳台的衣服刮到楼下去。儿子噔噔噔地下楼，又噔噔噔地上楼，他快乐得像一阵风。【C】一次，儿子下去捡衣服，回来的时候，手上多了一把花花绿绿的糖果。儿子说是林奶奶给的，还自豪地说：「我还帮林奶奶念了信呢，是美国的叔叔写给林奶奶的。」儿子手上拿的衣服，叠得方方正正，儿子说，我们家的衣服掉下去，林奶奶捡起来后，帮我们又洗了下，晾干了。\nㅤㅤ春节，我们一家回老家去了。回来时，听说林老太太突然去世了，据说是无疾而终。我们注意到，儿子的眼圈红了。\nㅤㅤ人们在整理老人的遗物时，看到了一个日记本。老人在日记里多次提到，从楼上刮下来的衣服。老人的日记里，反复出现这样一句话：那是从天上飘下来的礼物。我明白老人的话。那也许是老人③______的生活里，唯一的一点期盼。\n\n3. 「投缘」是有缘分、合得来的意思。文中划线的【A】【B】【C】三处中，哪两句最能写出儿子与林老太太很投缘？请按字母顺序填，逗号分隔。",
-      "type": "fill",
-      "difficulty": "easy",
-      "answer": "B,C",
-      "explanation": "【B】句林奶奶主动同意儿子进院，「好不好」语气委婉慈祥，体现喜欢；【C】句林奶奶给儿子从美国寄来的糖果且把衣服叠整齐，体现亲近。",
-      "group_id": "qm_nanshan_001_q15",
-      "group_order": 3,
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r3_anchor_3 (主旨概括)",
-        "rubric_signals": [],
-        "reasoning": "R3：理解层级 3（细节品读 + 选 2 句从 3 句中），陷阱密度 0.65，KP 跨度 1，数据复杂度 0.55（整篇散文）。"
-      },
-      "_round_before_group_unify": 3
-    },
-    {
-      "chapter": "现代文阅读",
-      "knowledge_point": "综合性学习/材料概括",
-      "content": "阅读非连续性文本《ChatGPT》，回答问题。\n【材料一：资料卡】\n软件名称：ChatGPT\n别名：聊天生成预训练转换器\n发布时间：2022年11月30日\n开发商：OpenAI\n【材料二：社会应用】ChatGPT的应用场景包括用来开发聊天机器人，编写和调试计算机程序，进行文学、媒体相关领域的创作，①______，②______等。在某些测试情境下，ChatGPT在教育、考试方面的表现甚至优于普通人类测试者。2023年2月，以色列总统发表了部分由人工智能撰写的演讲，成为首位公开使用ChatGPT的世界领导人。美国某游戏开发公司首席执行官表示，ChatGPT可以让团队更有效地做真正有趣的事情。截至2023年2月，这款人工智能软件已在全球范围狂揽1亿名用户，成为历史上增长最快的消费者应用程序。\n【材料三：相关争议】多家学术期刊发表声明，完全禁止或严格限制使用ChatGPT等人工智能机器人撰写学术论文，旨在防止学术欺诈和剽窃。鉴于可能造成的个人信息或机密数据泄露风险，意大利个人数据保护局暂时禁止使用ChatGPT，苹果已限制在公司内使用ChatGPT和其他外部AI工具。\n【材料四：官方回应】使用ChatGPT完成作业和写论文是不道德和不健康的学习方式，它并不能提高学生的学习能力和知识水平。\n\n1. ChatGPT 是一款由______开发的______（按 开发商,别名 顺序填，逗号分隔）。",
-      "type": "fill",
-      "difficulty": "easy",
-      "answer": "OpenAI,聊天生成预训练转换器",
-      "explanation": "材料一明示：开发商「OpenAI」，别名「聊天生成预训练转换器」。",
+      "knowledge_point": "现代文阅读/材料阅读",
       "group_id": "qm_nanshan_001_q16",
       "group_order": 1,
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r1_anchor_2 (信息提取)",
-        "rubric_signals": [
-          "§2.1 信息直白"
-        ],
-        "reasoning": "R1：理解层级 1（材料原文信息提取），陷阱密度 0，KP 跨度 1，数据复杂度 0.4。"
-      },
-      "_round_before_group_unify": 1
+      "content": "非连续性文本《ChatGPT》（含 4 段材料：资料卡 / 社会应用 / 相关争议 / 官方回应）：\n\n材料一【资料卡】：\n软件名称：ChatGPT；别名：聊天生成预训练转换器；发布时间：2022 年 11 月 30 日；开发商：OpenAI。\n\n1. ChatGPT 是一款由 ____ 开发的 ____。（按顺序两空，用「|||」分隔）",
+      "answer": "OpenAI|||聊天生成预训练转换器",
+      "explanation": "材料一直接给出「开发商：OpenAI」「别名：聊天生成预训练转换器」。",
+      "_round_reasoning": "R1 因为：直接信息提取，rubric §2.1 段意直白对应 R1。"
     },
     {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
+      "round": 2,
+      "type": "fill",
       "chapter": "现代文阅读",
-      "knowledge_point": "综合性学习/材料探究",
-      "content": "阅读非连续性文本《ChatGPT》，回答问题。\n【材料一：资料卡】\n软件名称：ChatGPT\n别名：聊天生成预训练转换器\n发布时间：2022年11月30日\n开发商：OpenAI\n【材料二：社会应用】ChatGPT的应用场景包括用来开发聊天机器人，编写和调试计算机程序，进行文学、媒体相关领域的创作，①______，②______等。在某些测试情境下，ChatGPT在教育、考试方面的表现甚至优于普通人类测试者。2023年2月，以色列总统发表了部分由人工智能撰写的演讲，成为首位公开使用ChatGPT的世界领导人。美国某游戏开发公司首席执行官表示，ChatGPT可以让团队更有效地做真正有趣的事情。截至2023年2月，这款人工智能软件已在全球范围狂揽1亿名用户，成为历史上增长最快的消费者应用程序。\n【材料三：相关争议】多家学术期刊发表声明，完全禁止或严格限制使用ChatGPT等人工智能机器人撰写学术论文，旨在防止学术欺诈和剽窃。鉴于可能造成的个人信息或机密数据泄露风险，意大利个人数据保护局暂时禁止使用ChatGPT，苹果已限制在公司内使用ChatGPT和其他外部AI工具。\n【材料四：官方回应】使用ChatGPT完成作业和写论文是不道德和不健康的学习方式，它并不能提高学生的学习能力和知识水平。\n\n2. 根据材料判断说法是否正确：目前，社会上**全面禁止**使用 ChatGPT。",
-      "type": "judgment",
-      "difficulty": "easy",
-      "answer": "×",
-      "explanation": "材料三说「学术期刊禁止」「意大利暂时禁止」「苹果限制」——这些都是部分禁止，不是「全面禁止」。",
+      "knowledge_point": "现代文阅读/材料阅读",
       "group_id": "qm_nanshan_001_q16",
       "group_order": 2,
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r3_anchor_3 — 降档",
-        "rubric_signals": [
-          "§2.1 段意直白"
-        ],
-        "reasoning": "R2：理解层级 2（材料综合判断），陷阱密度 0.4，KP 跨度 1，数据复杂度 0.4。"
-      },
-      "_round_before_group_unify": 2
-    },
-    {
-      "chapter": "现代文阅读",
-      "knowledge_point": "综合性学习/材料探究",
-      "content": "阅读非连续性文本《ChatGPT》，回答问题。\n【材料一：资料卡】\n软件名称：ChatGPT\n别名：聊天生成预训练转换器\n发布时间：2022年11月30日\n开发商：OpenAI\n【材料二：社会应用】ChatGPT的应用场景包括用来开发聊天机器人，编写和调试计算机程序，进行文学、媒体相关领域的创作，①______，②______等。在某些测试情境下，ChatGPT在教育、考试方面的表现甚至优于普通人类测试者。2023年2月，以色列总统发表了部分由人工智能撰写的演讲，成为首位公开使用ChatGPT的世界领导人。美国某游戏开发公司首席执行官表示，ChatGPT可以让团队更有效地做真正有趣的事情。截至2023年2月，这款人工智能软件已在全球范围狂揽1亿名用户，成为历史上增长最快的消费者应用程序。\n【材料三：相关争议】多家学术期刊发表声明，完全禁止或严格限制使用ChatGPT等人工智能机器人撰写学术论文，旨在防止学术欺诈和剽窃。鉴于可能造成的个人信息或机密数据泄露风险，意大利个人数据保护局暂时禁止使用ChatGPT，苹果已限制在公司内使用ChatGPT和其他外部AI工具。\n【材料四：官方回应】使用ChatGPT完成作业和写论文是不道德和不健康的学习方式，它并不能提高学生的学习能力和知识水平。\n\n3. 根据材料判断说法是否正确：ChatGPT 在**各个方面**的表现都优于普通人类。",
-      "type": "judgment",
-      "difficulty": "easy",
-      "answer": "×",
-      "explanation": "材料二说「在某些测试情境下」表现优于人类——是「某些」不是「各个方面」。",
-      "group_id": "qm_nanshan_001_q16",
-      "group_order": 3,
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r3_anchor_3 — 降档",
-        "rubric_signals": [
-          "§2.1 段意直白"
-        ],
-        "reasoning": "R2：理解层级 2（材料局部 vs 整体辨析），陷阱密度 0.4，KP 跨度 1，数据复杂度 0.4。"
-      },
-      "_round_before_group_unify": 2
-    },
-    {
-      "chapter": "现代文阅读",
-      "knowledge_point": "综合性学习/材料探究",
-      "content": "阅读非连续性文本《ChatGPT》，回答问题。\n【材料一：资料卡】\n软件名称：ChatGPT\n别名：聊天生成预训练转换器\n发布时间：2022年11月30日\n开发商：OpenAI\n【材料二：社会应用】ChatGPT的应用场景包括用来开发聊天机器人，编写和调试计算机程序，进行文学、媒体相关领域的创作，①______，②______等。在某些测试情境下，ChatGPT在教育、考试方面的表现甚至优于普通人类测试者。2023年2月，以色列总统发表了部分由人工智能撰写的演讲，成为首位公开使用ChatGPT的世界领导人。美国某游戏开发公司首席执行官表示，ChatGPT可以让团队更有效地做真正有趣的事情。截至2023年2月，这款人工智能软件已在全球范围狂揽1亿名用户，成为历史上增长最快的消费者应用程序。\n【材料三：相关争议】多家学术期刊发表声明，完全禁止或严格限制使用ChatGPT等人工智能机器人撰写学术论文，旨在防止学术欺诈和剽窃。鉴于可能造成的个人信息或机密数据泄露风险，意大利个人数据保护局暂时禁止使用ChatGPT，苹果已限制在公司内使用ChatGPT和其他外部AI工具。\n【材料四：官方回应】使用ChatGPT完成作业和写论文是不道德和不健康的学习方式，它并不能提高学生的学习能力和知识水平。\n\n4. 根据材料判断说法是否正确：用 ChatGPT 做作业可以提高学习效率和学习能力。",
-      "type": "judgment",
-      "difficulty": "easy",
-      "answer": "×",
-      "explanation": "材料四明确说：「使用 ChatGPT 完成作业……并不能提高学生的学习能力和知识水平」。",
-      "group_id": "qm_nanshan_001_q16",
-      "group_order": 4,
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r1_anchor_2 (信息识记) — 降档",
-        "rubric_signals": [
-          "§2.1 段意直白（材料明示反对）"
-        ],
-        "reasoning": "R1：理解层级 1（材料明示），陷阱密度 0.1，KP 跨度 1，数据复杂度 0.4。"
-      },
-      "_round_before_group_unify": 1
-    },
-    {
-      "chapter": "现代文阅读",
-      "knowledge_point": "综合性学习/材料探究",
-      "content": "阅读非连续性文本《ChatGPT》，回答问题。\n【材料一：资料卡】\n软件名称：ChatGPT\n别名：聊天生成预训练转换器\n发布时间：2022年11月30日\n开发商：OpenAI\n【材料二：社会应用】ChatGPT的应用场景包括用来开发聊天机器人，编写和调试计算机程序，进行文学、媒体相关领域的创作，①______，②______等。在某些测试情境下，ChatGPT在教育、考试方面的表现甚至优于普通人类测试者。2023年2月，以色列总统发表了部分由人工智能撰写的演讲，成为首位公开使用ChatGPT的世界领导人。美国某游戏开发公司首席执行官表示，ChatGPT可以让团队更有效地做真正有趣的事情。截至2023年2月，这款人工智能软件已在全球范围狂揽1亿名用户，成为历史上增长最快的消费者应用程序。\n【材料三：相关争议】多家学术期刊发表声明，完全禁止或严格限制使用ChatGPT等人工智能机器人撰写学术论文，旨在防止学术欺诈和剽窃。鉴于可能造成的个人信息或机密数据泄露风险，意大利个人数据保护局暂时禁止使用ChatGPT，苹果已限制在公司内使用ChatGPT和其他外部AI工具。\n【材料四：官方回应】使用ChatGPT完成作业和写论文是不道德和不健康的学习方式，它并不能提高学生的学习能力和知识水平。\n\n5. 根据材料判断说法是否正确：ChatGPT 在某种程度上可以提高团队合作的有效性。",
-      "type": "judgment",
-      "difficulty": "easy",
-      "answer": "√",
-      "explanation": "材料二明示：「ChatGPT 可以让团队更有效地做真正有趣的事情」——可推得对团队合作有积极作用。",
-      "group_id": "qm_nanshan_001_q16",
-      "group_order": 5,
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r1_anchor_2 — 降档",
-        "rubric_signals": [
-          "§2.1 段意直白"
-        ],
-        "reasoning": "R1：理解层级 1（材料明示），陷阱密度 0.1，KP 跨度 1，数据复杂度 0.4。"
-      },
-      "_round_before_group_unify": 1
-    },
-    {
-      "chapter": "现代文阅读",
-      "knowledge_point": "综合性学习/材料探究",
-      "content": "阅读非连续性文本《ChatGPT》，回答问题。\n【材料一：资料卡】\n软件名称：ChatGPT\n别名：聊天生成预训练转换器\n发布时间：2022年11月30日\n开发商：OpenAI\n【材料二：社会应用】ChatGPT的应用场景包括用来开发聊天机器人，编写和调试计算机程序，进行文学、媒体相关领域的创作，①______，②______等。在某些测试情境下，ChatGPT在教育、考试方面的表现甚至优于普通人类测试者。2023年2月，以色列总统发表了部分由人工智能撰写的演讲，成为首位公开使用ChatGPT的世界领导人。美国某游戏开发公司首席执行官表示，ChatGPT可以让团队更有效地做真正有趣的事情。截至2023年2月，这款人工智能软件已在全球范围狂揽1亿名用户，成为历史上增长最快的消费者应用程序。\n【材料三：相关争议】多家学术期刊发表声明，完全禁止或严格限制使用ChatGPT等人工智能机器人撰写学术论文，旨在防止学术欺诈和剽窃。鉴于可能造成的个人信息或机密数据泄露风险，意大利个人数据保护局暂时禁止使用ChatGPT，苹果已限制在公司内使用ChatGPT和其他外部AI工具。\n【材料四：官方回应】使用ChatGPT完成作业和写论文是不道德和不健康的学习方式，它并不能提高学生的学习能力和知识水平。\n\n6. ChatGPT 还可以应用于哪些场景？请按 ①② 顺序选择两项填入材料二的横线处，逗号分隔。\n候选：A. 独立完成外科手术  B. 智能辅助教育  C. 语音控制智能家居  D. 自动驾驶车辆",
-      "type": "fill",
-      "difficulty": "easy",
-      "answer": "B,C",
-      "explanation": "ChatGPT 是聊天/文本类 AI，能做的是教育辅助和语音控制；外科手术（A）和自动驾驶（D）需要物理操控/精密机械，不适合。",
-      "group_id": "qm_nanshan_001_q16",
-      "group_order": 6,
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r2_anchor_1",
-        "rubric_signals": [],
-        "reasoning": "R2：理解层级 2（材料推理+常识结合），陷阱密度 0.5（4 选 2），KP 跨度 2，数据复杂度 0.5。"
-      },
-      "_round_before_group_unify": 2
+      "content": "非连续性文本《ChatGPT》：\n\n2. 根据材料判断下列说法是否正确，对的写「√」，错的写「×」。按顺序四空，用「|||」分隔。\n\n①目前，社会上全面禁止使用 ChatGPT。\n②ChatGPT 在各个方面的表现都优于普通人类。\n③用 ChatGPT 做作业可以提高学习效率和学习能力。\n④ChatGPT 在某种程度上可以提高团队合作的有效性。",
+      "answer": "×|||×|||×|||√",
+      "explanation": "①材料显示部分禁止 ≠ 全面禁止 → ×；②材料只提到「某些测试情境下」表现优于 ≠ 各方面都优于 → ×；③材料四明示不能提高学习能力 → ×；④材料二「ChatGPT 可以让团队更有效」→ √。",
+      "_round_reasoning": "R2 因为：4 个判断需细致对照材料，参考 chinese_r2_anchor_3 R2 同档（综合阅读判别）。"
     }
   ]
 }

@@ -2,342 +2,303 @@
   "source": "realpaper_g6_chinese_bubian_qm_shenzhen_001",
   "subject": "chinese",
   "grade": 6,
-  "knowledge_points_added": [],
+  "knowledge_points_added": [
+    "字词/拼音字形",
+    "字词/字音",
+    "字词/词语运用",
+    "古诗文/古诗词背诵默写",
+    "课文与名著/课文内容理解",
+    "课文与名著/名著阅读",
+    "阅读理解/阅读理解"
+  ],
+  "_quality_meta": {
+    "source_file": "广东省深圳市2022-2023学年六年级下学期期末考试语文试题.docx",
+    "sha1": "36cac853aee4a95d",
+    "paper_type": "final",
+    "chapter_default": "综合",
+    "omath_total_formulas": 0,
+    "images_used": 1,
+    "questions_total_paper": 11,
+    "questions_imported": 17,
+    "questions_skipped": 3
+  },
+  "_skipped_for_future": [
+    {
+      "qnum": "1",
+      "reason": "listening_question",
+      "raw_excerpt": "听录音《启示》，完成填空 + 判断（依赖音频材料）"
+    },
+    {
+      "qnum": "8",
+      "reason": "subjective_short",
+      "raw_excerpt": "名著主人公连线 + 介绍（开放式人物介绍长答）"
+    },
+    {
+      "qnum": "11",
+      "reason": "subjective_essay",
+      "raw_excerpt": "作文：欣喜/愧疚/感动/难过/盼望任选一词写事 400 字"
+    }
+  ],
   "questions": [
     {
-      "chapter": "小升初综合",
-      "knowledge_point": "字词/字形",
-      "content": "读拼音，写词语。\nㅤㅤ一个天真yòu zhì的儿童变得日渐懂事，离不开老师的xīn qín培育，虽然六年时光不可wǎn huí，但老师的恩情，我永远铭记。",
-      "type": "fill",
-      "difficulty": "easy",
-      "answer": "幼稚,辛勤,挽回",
-      "explanation": "拼音 yòu zhì → 幼稚（年纪小不懂事），xīn qín → 辛勤（勤勉认真），wǎn huí → 挽回（扭转不利局面）。",
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_shenzhen_001",
       "round": 1,
-      "_round_meta": {
-        "anchor_used": "chinese_r1_anchor_3 (字音同档基础识记)",
-        "rubric_signals": [
-          "§2.1 课内必修常识"
-        ],
-        "reasoning": "R1：理解层级 1（拼音→字形识记），陷阱密度 0（fill 答案唯一），KP 跨度 1（字形），数据复杂度 0.2（短句 + 3 词）。引用 chinese_r1_anchor_3：字音字形识记 R1 锚点。"
-      }
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/拼音字形",
+      "group_id": "qm_shenzhen_001_q2",
+      "group_order": 1,
+      "content": "读拼音，写词语：「一个天真 yòu zhì 的儿童变得日渐懂事，离不开老师的 xīn qín 培育，虽然六年时光不可 wǎn huí，但老师的恩情，我永远铭记。」\n\n1. yòu zhì = ？",
+      "answer": "幼稚",
+      "explanation": "「幼稚」指年纪小、不成熟，与「天真」搭配形容儿童。"
     },
     {
-      "chapter": "小升初综合",
-      "knowledge_point": "字词/多音字辨析",
-      "content": "用「√」给加粗字选择正确的读音。\n1. 可**恶**(è wù)的蝎子是多么丑**恶**(è wù)而恐怖的东西呀！",
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_shenzhen_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/拼音字形",
+      "group_id": "qm_shenzhen_001_q2",
+      "group_order": 2,
+      "content": "读拼音，写词语：「一个天真 yòu zhì 的儿童变得日渐懂事，离不开老师的 xīn qín 培育，虽然六年时光不可 wǎn huí，但老师的恩情，我永远铭记。」\n\n2. xīn qín = ？",
+      "answer": "辛勤",
+      "explanation": "「辛勤」指勤劳、辛苦劳作，搭配「培育」用以形容老师付出。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_shenzhen_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/拼音字形",
+      "group_id": "qm_shenzhen_001_q2",
+      "group_order": 3,
+      "content": "读拼音，写词语：「一个天真 yòu zhì 的儿童变得日渐懂事，离不开老师的 xīn qín 培育，虽然六年时光不可 wǎn huí，但老师的恩情，我永远铭记。」\n\n3. wǎn huí = ？",
+      "answer": "挽回",
+      "explanation": "「挽回」指扭转、找回（不能挽回 = 已逝不可追）。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_shenzhen_001",
+      "round": 2,
       "type": "choice",
-      "difficulty": "easy",
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "group_id": "qm_shenzhen_001_q3",
+      "group_order": 1,
+      "content": "用「√」给加粗字选择正确的读音。\n\n1. 「可**恶**（è / wù）的蝎子是多么丑**恶**（è / wù）而恐怖的东西呀！」两个加粗字「恶」依次正确读音是？",
       "options": [
-        "A. wù è",
-        "B. è wù",
-        "C. wù wù",
-        "D. è è"
+        "A. wù，è",
+        "B. è，wù",
+        "C. wù，wù",
+        "D. è，è"
       ],
       "answer": "A",
-      "explanation": "「可恶」中「恶」表示「讨厌、憎恨」，读 wù；「丑恶」中「恶」表示「不好的品质」，读 è。",
-      "group_id": "qm_shenzhen_001_q3",
-      "group_order": 1,
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r2_anchor_2 (近义/多音辨析需结合搭配)",
-        "rubric_signals": [
-          "§2.1 候选池窄"
-        ],
-        "reasoning": "R2：理解层级 2（同字异音辨析需结合词义），陷阱密度 0.5（4 选项排列差异点），KP 跨度 1（多音字），数据复杂度 0.3（双句）。"
-      },
-      "_round_before_group_unify": 2
+      "explanation": "「可恶」（讨厌、令人厌恶）读 wù；「丑恶」（丑陋邪恶，形容词）读 è。",
+      "_round_reasoning": "R2 因为：理解层级 2（多音字辨义需结合语境判断），陷阱密度 0.5（4 选项干扰中等，AB 是常见混淆），KP 跨度 1（仅字音），数据复杂度 0.3。比 chinese_r1_anchor_3「薄」单字音稍难（双字+双语境），低于 chinese_r2_anchor_2 近义词辨析。rubric §2.1 候选池窄不适用（4 选）。"
     },
     {
-      "chapter": "小升初综合",
-      "knowledge_point": "字词/多音字辨析",
-      "content": "用「√」给加粗字选择正确的读音。\n2. **倔强**(qiáng jiàng)的小明意志很坚**强**(qiáng jiàng)。",
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_shenzhen_001",
+      "round": 2,
       "type": "choice",
-      "difficulty": "easy",
-      "options": [
-        "A. qiáng qiáng",
-        "B. jiàng jiàng",
-        "C. jiàng qiáng",
-        "D. qiáng jiàng"
-      ],
-      "answer": "C",
-      "explanation": "「倔强」中「强」读 jiàng，意为固执；「坚强」中「强」读 qiáng，意为坚定有力。",
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
       "group_id": "qm_shenzhen_001_q3",
       "group_order": 2,
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r2_anchor_2",
-        "rubric_signals": [
-          "§2.1 候选池窄"
-        ],
-        "reasoning": "R2：理解层级 2（同字异音辨析需结合词义），陷阱密度 0.5（4 选项），KP 跨度 1（多音字），数据复杂度 0.3。"
-      },
-      "_round_before_group_unify": 2
-    },
-    {
-      "chapter": "小升初综合",
-      "knowledge_point": "字词/词语理解",
-      "content": "下列句子中加粗词语使用不恰当的是（    ）\nA. 雷声、雨声、风声**搅和**在一起，真是太可怕了！\nB. 经过全体同学的辛勤劳动，教室里**万象更新**。\nC. 数九寒天，大雪纷飞，人们穿上厚厚的棉衣，以**抵御**寒流的侵袭。",
-      "type": "choice",
-      "difficulty": "easy",
+      "content": "用「√」给加粗字选择正确的读音。\n\n2. 「**倔强**（qiáng / jiàng）的小明意志很**坚强**（qiáng / jiàng）。」两个加粗字「强」依次正确读音是？",
       "options": [
-        "A. A",
-        "B. B",
-        "C. C"
+        "A. qiáng，jiàng",
+        "B. jiàng，qiáng",
+        "C. qiáng，qiáng",
+        "D. jiàng，jiàng"
       ],
       "answer": "B",
-      "explanation": "「万象更新」形容自然景象焕然一新（多用于春节、岁末等大场合），用于「教室里」搭配不当，属于范围错配。A 项「搅和」(混合)、C 项「抵御」(抵抗)使用恰当。",
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r2_anchor_2 (词语搭配辨析)",
-        "rubric_signals": [
-          "§2.1 课内必修常识"
-        ],
-        "reasoning": "R2：理解层级 2（成语+实词搭配辨析），陷阱密度 0.5（3 选项均含语境干扰），KP 跨度 1（词语理解），数据复杂度 0.4。"
-      }
+      "explanation": "「倔强」中「强」读 jiàng（固执不屈）；「坚强」中「强」读 qiáng（强大、有力）。",
+      "_round_reasoning": "R2 因为：与 q3(1) 同型，多音字辨义。参考 chinese_r2_anchor_2 近义词辨析水准。rubric 无降档信号适用。"
     },
     {
-      "chapter": "小升初综合",
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_shenzhen_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/词语运用",
+      "content": "下列句子中加粗词语使用不恰当的是（　　）。",
+      "options": [
+        "A. 雷声、雨声、风声**搅和**在一起，真是太可怕了！",
+        "B. 经过全体同学的辛勤劳动，教室里**万象更新**。",
+        "C. 数九寒天，大雪纷飞，人们穿上厚厚的棉衣，以抵御**寒流**的侵袭。"
+      ],
+      "answer": "B",
+      "explanation": "「万象更新」形容自然界或社会一切焕然一新（多用于春天/新年），不能用来形容教室经过劳动后整洁。A「搅和」与雷雨声混杂搭配恰当；C「寒流」与冬天侵袭搭配恰当。",
+      "_round_reasoning": "R2 因为：理解层级 2（成语适用语境判别），陷阱密度 0.4（仅 3 选项；B「万象更新」教室搭配语境错位明显），KP 跨度 1（成语运用）。参考 chinese_r2_anchor_3 病句识别水准。rubric §2.1 选项干扰偏低，但课内必修常识不足以全降至 R1。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_shenzhen_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
       "knowledge_point": "古诗文/古诗词背诵默写",
-      "content": "按要求填写诗句。\nA. ______________，要留清白在人间。\nB. 今夜月明人尽望，______________。\nC. 当我们在外地过节时，常引用王维写的诗句「独在异乡为异客，______________」。",
-      "type": "fill",
-      "difficulty": "easy",
-      "answer": "粉骨碎身浑不怕,不知秋思落谁家,每逢佳节倍思亲",
-      "explanation": "A 出自于谦《石灰吟》上句；B 出自王建《十五夜望月》下句；C 出自王维《九月九日忆山东兄弟》下句。",
-      "round": 1,
-      "_round_meta": {
-        "anchor_used": "chinese_r1_anchor_1 (古诗背诵默写 R1 标杆)",
-        "rubric_signals": [
-          "§2.1 课内必修常识"
-        ],
-        "reasoning": "R1：理解层级 1（直接背诵默写），陷阱密度 0（fill 唯一），KP 跨度 1（古诗背诵），数据复杂度 0.2（3 句课内古诗）。引用 chinese_r1_anchor_1：背诵默写 R1。"
-      }
-    },
-    {
-      "chapter": "小升初综合",
-      "knowledge_point": "句式与标点/句式转换",
-      "content": "句子练习。\n1. 把句子改成陈述句：院子里各个角落和暗洞你不是都很熟悉吗？",
-      "type": "fill",
-      "difficulty": "easy",
-      "answer": "院子里各个角落和暗洞你都很熟悉。",
-      "explanation": "反问句改陈述句：去除反问标志「不是……吗？」，并把否定改为肯定。",
-      "group_id": "qm_shenzhen_001_q6",
+      "group_id": "qm_shenzhen_001_q5",
       "group_order": 1,
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r2_anchor_4 (句式转换规则套用)",
-        "rubric_signals": [],
-        "reasoning": "R2：理解层级 2（反问→陈述规则应用），陷阱密度 0.4，KP 跨度 1，数据复杂度 0.3。"
-      },
-      "_round_before_group_unify": 2
+      "content": "按要求填写诗句。\n\n1. 「________，要留清白在人间。」横线处应填的诗句是？",
+      "answer": "粉骨碎身浑不怕",
+      "explanation": "于谦《石灰吟》「粉骨碎身浑不怕，要留清白在人间」。",
+      "_round_reasoning": "R1 因为：理解层级 1（直接背诵默写），陷阱密度 0.0（fill 无选项），KP 跨度 1，数据复杂度 0.2（7 字）。同 chinese_r1_anchor_1 类型。"
     },
     {
-      "chapter": "小升初综合",
-      "knowledge_point": "句式与标点/病句修改",
-      "content": "句子练习。\n2. 用修改符号改病句：他知道自己错了，心情很繁重。",
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_shenzhen_001",
+      "round": 1,
       "type": "fill",
-      "difficulty": "easy",
-      "answer": "他知道自己错了，心情很沉重。",
-      "explanation": "搭配不当：「繁重」修饰任务/工作；形容心情应用「沉重」。",
-      "group_id": "qm_shenzhen_001_q6",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "qm_shenzhen_001_q5",
       "group_order": 2,
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r2_anchor_3 (病句搭配辨析)",
-        "rubric_signals": [],
-        "reasoning": "R2：理解层级 2（搭配辨析），陷阱密度 0.4，KP 跨度 1，数据复杂度 0.3。引用 chinese_r2_anchor_3。"
-      },
-      "_round_before_group_unify": 2
+      "content": "按要求填写诗句。\n\n2. 「今夜月明人尽望，________。」横线处应填的诗句是？",
+      "answer": "不知秋思落谁家",
+      "explanation": "王建《十五夜望月》。",
+      "_round_reasoning": "R1 因为：理解层级 1（背诵默写），同 chinese_r1_anchor_1 类型。rubric §2.1 课内必修一律 R1。"
     },
     {
-      "chapter": "小升初综合",
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_shenzhen_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "qm_shenzhen_001_q5",
+      "group_order": 3,
+      "content": "按要求填写诗句。\n\n3. 「当我们在外地过节时，常引用王维写的诗句『独在异乡为异客，________。』」横线处应填的诗句是？",
+      "answer": "每逢佳节倍思亲",
+      "explanation": "王维《九月九日忆山东兄弟》。",
+      "_round_reasoning": "R1 因为：理解层级 1（背诵默写），同 chinese_r1_anchor_1 类型。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_shenzhen_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "课文与名著",
       "knowledge_point": "课文与名著/课文内容理解",
-      "content": "判断下列说法是否正确，正确的写「√」，错的写「×」。\n1. 《马诗》《石灰吟》《竹石》都是托物言志的诗，表达了诗人的志向。",
-      "type": "judgment",
-      "difficulty": "easy",
-      "answer": "√",
-      "explanation": "《马诗》（李贺）借马言志，《石灰吟》（于谦）以石灰自喻，《竹石》（郑燮）以竹自喻——都是托物言志诗。",
       "group_id": "qm_shenzhen_001_q7",
       "group_order": 1,
-      "round": 1,
-      "_round_meta": {
-        "anchor_used": "chinese_r1_anchor_1 (课内诗歌识记)",
-        "rubric_signals": [
-          "§2.1 课内必修常识"
-        ],
-        "reasoning": "R1：理解层级 1（课内常识判断），陷阱密度 0（明显正确），KP 跨度 1，数据复杂度 0.2。"
-      },
-      "_round_before_group_unify": 1
+      "content": "判断下列说法是否正确，正确的写「√」，错的写「×」。\n\n1. 《马诗》《石灰吟》《竹石》都是托物言志的诗，表达了诗人的志向。",
+      "answer": "√",
+      "explanation": "三首诗都借物（马、石灰、竹）表达诗人志向，属典型托物言志。",
+      "_round_reasoning": "R1 因为：理解层级 1（课内常识判断），陷阱密度 0.0（√/× 二元），课内必修。rubric §2.1 课内必修一律 R1。"
     },
     {
-      "chapter": "小升初综合",
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_shenzhen_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "课文与名著",
       "knowledge_point": "课文与名著/课文内容理解",
-      "content": "判断下列说法是否正确，正确的写「√」，错的写「×」。\n2. 如果我们向别人介绍一本书，可用梗概的形式，用简练的语言进行介绍。",
-      "type": "judgment",
-      "difficulty": "easy",
-      "answer": "√",
-      "explanation": "向人介绍一本书，常用「梗概」的形式高度概括主要内容。",
       "group_id": "qm_shenzhen_001_q7",
       "group_order": 2,
-      "round": 1,
-      "_round_meta": {
-        "anchor_used": "chinese_r1_anchor_2 (课内常识)",
-        "rubric_signals": [
-          "§2.1 课内必修常识"
-        ],
-        "reasoning": "R1：理解层级 1（课内常识），陷阱密度 0，KP 跨度 1，数据复杂度 0.2。"
-      },
-      "_round_before_group_unify": 1
+      "content": "判断下列说法是否正确，正确的写「√」，错的写「×」。\n\n2. 如果我们向别人介绍一本书，可用梗概的形式，用简练的语言进行介绍。",
+      "answer": "√",
+      "explanation": "梗概是介绍书籍内容的常用形式，特点是简练。",
+      "_round_reasoning": "R1 因为：课内常识判断，同 q7(1)。"
     },
     {
-      "chapter": "小升初综合",
-      "knowledge_point": "文学常识/中国现代作家作品",
-      "content": "判断下列说法是否正确，正确的写「√」，错的写「×」。\n3. 《北京的春节》是著名语言大师，有「人民艺术家」称号的巴金的一篇散文。",
-      "type": "judgment",
-      "difficulty": "easy",
-      "answer": "×",
-      "explanation": "《北京的春节》是老舍的散文。「人民艺术家」称号是新中国授予老舍的（不是巴金）。",
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_shenzhen_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "课文与名著",
+      "knowledge_point": "课文与名著/课文内容理解",
       "group_id": "qm_shenzhen_001_q7",
       "group_order": 3,
-      "round": 1,
-      "_round_meta": {
-        "anchor_used": "chinese_r1_anchor_2 (文学常识 R1)",
-        "rubric_signals": [
-          "§2.1 课内必修常识 / 褒贬明显"
-        ],
-        "reasoning": "R1：理解层级 1（作家作品对应识记），陷阱密度 0.1（巴金/老舍混淆陷阱明显），KP 跨度 1。"
-      },
-      "_round_before_group_unify": 1
+      "content": "判断下列说法是否正确，正确的写「√」，错的写「×」。\n\n3. 《北京的春节》是著名语言大师，有「人民艺术家」称号的巴金的一篇散文。",
+      "answer": "×",
+      "explanation": "《北京的春节》作者是老舍（原名舒庆春），他被称为「人民艺术家」；巴金著有《家》《春》《秋》。",
+      "_round_reasoning": "R1 因为：课内必修作家作品对位（参考 chinese_r1_anchor_2/4 国别/作家匹配 R1 同档），常识识记。rubric §2.1 课内必修一律 R1。"
     },
     {
-      "chapter": "课文与名著",
-      "knowledge_point": "课文与名著/名著情节人物",
-      "content": "下列人物分别是哪部名著中的主人公，请把人物与名著一一对应（按 阿廖沙、诸葛亮、尼尔斯 顺序填名著名）。",
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_shenzhen_001",
+      "round": 2,
       "type": "fill",
-      "difficulty": "easy",
-      "answer": "《童年》,《三国演义》,《骑鹅旅行记》",
-      "explanation": "阿廖沙是高尔基《童年》主人公；诸葛亮是罗贯中《三国演义》中蜀汉丞相；尼尔斯是塞尔玛·拉格洛芙《骑鹅旅行记》主人公。",
-      "round": 1,
-      "_round_meta": {
-        "anchor_used": "chinese_r1_anchor_4 (作家作品对应)",
-        "rubric_signals": [
-          "§2.1 课内必修常识"
-        ],
-        "reasoning": "R1：理解层级 1（人物-名著直接匹配），陷阱密度 0.2（3 项均课内必修），KP 跨度 1（中外名著），数据复杂度 0.3。引用 chinese_r1_anchor_4。"
-      }
-    },
-    {
-      "chapter": "现代文阅读",
-      "knowledge_point": "综合性学习/材料概括",
-      "content": "阅读下面的材料，完成练习。\n\n【材料一】减少青少年近视最有效的方法就是增加户外活动。近视研究专家伊恩•摩根基于流行病学研究发现：孩子们需要每天在至少10000勒克斯的光照下待上约3个小时才能避免近视。前几年，广州中山眼科中心开展了一项为期三年的实验：随机挑选6所学校，每天放学前增加一节40分钟的户外课；另外挑选6所学校，课程表不变。在参与了户外课的900多名孩子中，9岁-10岁开始近视的比例是30%，而对照学校近视的比例是40%。\n\n【材料二】（统计图见下方）\n\n1. 材料一提出了什么观点？为了证明这个观点，列举了几个事例？请填写观点（前空填观点，后空填事例数）。\n请按「观点,事例数」格式填写，逗号分隔。",
-      "type": "fill",
-      "difficulty": "easy",
-      "answer": "减少青少年近视最有效的方法就是增加户外活动,2",
-      "explanation": "观点是材料首句：「减少青少年近视最有效的方法就是增加户外活动」。事例两个：一是伊恩·摩根的流行病学研究，二是广州中山眼科中心三年实验。",
-      "image_data": "data:image/png;base64,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",
-      "group_id": "qm_shenzhen_001_q9",
-      "group_order": 1,
-      "round": 3,
-      "_round_meta": {
-        "anchor_used": "chinese_r3_anchor_3 (主旨概括)",
-        "rubric_signals": [],
-        "reasoning": "R3：理解层级 3（材料观点+事例提炼），陷阱密度 0.5（事例计数易出错），KP 跨度 2（材料分析+图文结合），数据复杂度 0.6（含统计图+整段材料）。引用 chinese_r3_anchor_3 主旨概括 R3。"
-      }
-    },
-    {
-      "chapter": "现代文阅读",
-      "knowledge_point": "现代文阅读/标题含义",
-      "content": "阅读短文，回答问题。\n\nㅤㅤ①茂密的森林，辽阔的草原，都栖息着各种各样的动物。 （哪  那）里的植物种类丰富多彩，那（哪  那）里的动物就成群出没。\n\nㅤㅤ②生物学家达尔文在英国乡村曾经观察到这样一个有趣的事实：凡是猫养得多的地方，（哪  那）里的红三叶草就长得茂盛。原来，红三叶草是专门靠土蜂来传粉的；而土蜂酿的蜜，常常被田鼠偷吃，还破坏了蜂巢。这样，田鼠多了，土蜂就少了，三叶草传粉的机会也少了。田鼠的天敌是猫，猫多了，鼠少了，土蜂就多了；红三叶草传粉多了，自然就长得繁茂了。\n\nㅤㅤ③猫和红三叶草之间，似乎毫不相干，可是加上土蜂和田鼠两个环节，就连成了一根相互连接的链条——食物链。\n\nㅤㅤ④自然界存在着数不清的食物链，各个环节纵横交错，复杂多样，草被羊吃，羊被虎吞；鼠吃禾谷，猫头鹰捕鼠……一种植物往往被多种动物所吃：羊吃草，牛、马也吃草；一种动物往往吃几种食物：麻雀吃禾谷，也吃虫子；一种动物常常被多种动物吃；狼和豹也像虎那样，吃牛、羊。\n\nㅤㅤ⑤俗话说：「大鱼吃小鱼，小鱼吃虾米，虾米吃水藻。」江湖河海里这些更是常见的事儿。在自然界，各种生物之间，就这样组成了一条条「食物链」。动植物之间这样相互依存、彼此制约的关系，组成了一个错综复杂的网——生命之网。\n（有删改）\n\n1. 给短文加上合适的题目。",
-      "type": "fill",
-      "difficulty": "easy",
-      "answer": "生命之网",
-      "explanation": "文末点题：「组成了一个错综复杂的网——生命之网」。",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
       "group_id": "qm_shenzhen_001_q10",
       "group_order": 1,
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r3_anchor_3 (主旨概括) — 降档至 R2",
-        "rubric_signals": [
-          "§2.1 段意直白（文末点题，迷惑性低）"
-        ],
-        "reasoning": "R2：理解层级 2（短文标题就在文末点题），陷阱密度 0.3，KP 跨度 1，数据复杂度 0.5（整篇短文）。降档信号：文末已点题，类比 chinese_r3_anchor_3。"
-      },
-      "_round_before_group_unify": 2
+      "content": "阅读《食物链》短文，回答问题。\n\n短文（节选）：\n①茂密的森林，辽阔的草原，都栖息着各种各样的动物。 （哪/那）里的植物种类丰富多彩，那（哪/那）里的动物就成群出没。\n②生物学家达尔文在英国乡村曾经观察到这样一个有趣的事实：凡是猫养得多的地方，（哪/那）里的红三叶草就长得茂盛……\n（全文阐述食物链概念，达尔文猫-田鼠-土蜂-红三叶草关系，最后归纳「食物链」概念）\n\n1. 请按顺序选择短文括号中合适的字（在「哪」「那」之间选）：第一处、第二处、第三处分别填什么？请按顺序用顿号分隔写出。",
+      "answer": "哪、那、那",
+      "explanation": "①第一处「（哪/那）里的植物种类丰富多彩」表疑问承接，对应后文「那里」 → 填「哪」；②第二处「那（哪/那）里的动物」补完整 → 填「那」；③第二段「凡是猫养得多的地方，（哪/那）里的红三叶草」承接「凡是」表示泛指 → 填「那」。",
+      "_round_reasoning": "R2 因为：理解层级 2（疑问代词「哪」与指示代词「那」语境辨析），陷阱密度 0.4（3 空 fill 互不可换），KP 跨度 1。比 chinese_r1_anchor_3 单字音难（多空），低于 chinese_r2_anchor_2 近义辨析。rubric §2.1 候选池窄不适用（3 空独立判定）。"
     },
     {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_shenzhen_001",
+      "round": 2,
+      "type": "choice",
       "chapter": "现代文阅读",
-      "knowledge_point": "字词/形近字辨析",
-      "content": "阅读短文，回答问题。\n\nㅤㅤ①茂密的森林，辽阔的草原，都栖息着各种各样的动物。 （哪  那）里的植物种类丰富多彩，那（哪  那）里的动物就成群出没。\n\nㅤㅤ②生物学家达尔文在英国乡村曾经观察到这样一个有趣的事实：凡是猫养得多的地方，（哪  那）里的红三叶草就长得茂盛。原来，红三叶草是专门靠土蜂来传粉的；而土蜂酿的蜜，常常被田鼠偷吃，还破坏了蜂巢。这样，田鼠多了，土蜂就少了，三叶草传粉的机会也少了。田鼠的天敌是猫，猫多了，鼠少了，土蜂就多了；红三叶草传粉多了，自然就长得繁茂了。\n\nㅤㅤ③猫和红三叶草之间，似乎毫不相干，可是加上土蜂和田鼠两个环节，就连成了一根相互连接的链条——食物链。\n\nㅤㅤ④自然界存在着数不清的食物链，各个环节纵横交错，复杂多样，草被羊吃，羊被虎吞；鼠吃禾谷，猫头鹰捕鼠……一种植物往往被多种动物所吃：羊吃草，牛、马也吃草；一种动物往往吃几种食物：麻雀吃禾谷，也吃虫子；一种动物常常被多种动物吃；狼和豹也像虎那样，吃牛、羊。\n\nㅤㅤ⑤俗话说：「大鱼吃小鱼，小鱼吃虾米，虾米吃水藻。」江湖河海里这些更是常见的事儿。在自然界，各种生物之间，就这样组成了一条条「食物链」。动植物之间这样相互依存、彼此制约的关系，组成了一个错综复杂的网——生命之网。\n（有删改）\n\n2. 请在短文括号中选择合适的字（按 ①「哪/那」② ②「哪/那」③ ③「哪/那」 顺序填）。",
-      "type": "fill",
-      "difficulty": "easy",
-      "answer": "哪,那,那",
-      "explanation": "①处「(哪/那)里的植物种类丰富多彩」表泛指条件，应填「哪」（哪里）；②③处「那里的动物」「那里的红三叶草」承接前句，特指前面提到的地方，应填「那」。",
+      "knowledge_point": "现代文阅读/词句赏析",
       "group_id": "qm_shenzhen_001_q10",
       "group_order": 2,
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r2_anchor_2 (近义辨析)",
-        "rubric_signals": [],
-        "reasoning": "R2：理解层级 2（近义虚词「哪/那」语境辨析），陷阱密度 0.5（3 空交错），KP 跨度 1，数据复杂度 0.4。"
-      },
-      "_round_before_group_unify": 2
-    },
-    {
-      "chapter": "现代文阅读",
-      "knowledge_point": "现代文阅读/说明文阅读",
-      "content": "阅读短文，回答问题。\n\nㅤㅤ①茂密的森林，辽阔的草原，都栖息着各种各样的动物。 （哪  那）里的植物种类丰富多彩，那（哪  那）里的动物就成群出没。\n\nㅤㅤ②生物学家达尔文在英国乡村曾经观察到这样一个有趣的事实：凡是猫养得多的地方，（哪  那）里的红三叶草就长得茂盛。原来，红三叶草是专门靠土蜂来传粉的；而土蜂酿的蜜，常常被田鼠偷吃，还破坏了蜂巢。这样，田鼠多了，土蜂就少了，三叶草传粉的机会也少了。田鼠的天敌是猫，猫多了，鼠少了，土蜂就多了；红三叶草传粉多了，自然就长得繁茂了。\n\nㅤㅤ③猫和红三叶草之间，似乎毫不相干，可是加上土蜂和田鼠两个环节，就连成了一根相互连接的链条——食物链。\n\nㅤㅤ④自然界存在着数不清的食物链，各个环节纵横交错，复杂多样，草被羊吃，羊被虎吞；鼠吃禾谷，猫头鹰捕鼠……一种植物往往被多种动物所吃：羊吃草，牛、马也吃草；一种动物往往吃几种食物：麻雀吃禾谷，也吃虫子；一种动物常常被多种动物吃；狼和豹也像虎那样，吃牛、羊。\n\nㅤㅤ⑤俗话说：「大鱼吃小鱼，小鱼吃虾米，虾米吃水藻。」江湖河海里这些更是常见的事儿。在自然界，各种生物之间，就这样组成了一条条「食物链」。动植物之间这样相互依存、彼此制约的关系，组成了一个错综复杂的网——生命之网。\n（有删改）\n\n3. 不能说明动植物之间的关系十分密切的事例是哪一个？",
-      "type": "choice",
-      "difficulty": "easy",
+      "content": "阅读《食物链》短文，回答问题。\n\n2. 不能说明动植物之间的关系十分密切的事例是哪一个？",
       "options": [
         "A. 茂密的森林，栖息着各种各样的动物。",
         "B. 动物会帮植物传授花粉，播撒种子，啄除害虫。",
         "C. 一种动物常常被多种动物所吃。",
         "D. 一种植物往往被多种动物所吃。"
       ],
-      "answer": "A",
-      "explanation": "A 项只描述「森林里有动物栖息」是单方面陈述，没有体现动植物之间的密切关系；B/C/D 都体现了动植物或动物间的相互作用关系。",
-      "group_id": "qm_shenzhen_001_q10",
-      "group_order": 3,
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r3_anchor_3 (说明文细节判定) — 降档",
-        "rubric_signals": [
-          "§2.1 选项较直白"
-        ],
-        "reasoning": "R2：理解层级 2（区分关系陈述 vs 单方面陈述），陷阱密度 0.45（A 易与 B/C/D 混淆但仔细辨可判），KP 跨度 1，数据复杂度 0.5。"
-      },
-      "_round_before_group_unify": 2
+      "answer": "C",
+      "explanation": "C 项「一种动物被多种动物所吃」描述的是动物之间的关系，不涉及植物，所以不能说明动植物关系。其余 A/B/D 都涉及动物 + 植物相互关联。",
+      "_round_reasoning": "R2 因为：理解层级 2（识别「动植物关系」对位），陷阱密度 0.5（4 选项均合理表述，需精确判别 C 只涉动物），KP 跨度 1。参考 chinese_r2_anchor_3 同 R2。rubric 无降档。"
     },
     {
-      "chapter": "现代文阅读",
-      "knowledge_point": "现代文阅读/说明文阅读",
-      "content": "阅读短文，回答问题。\n\nㅤㅤ①茂密的森林，辽阔的草原，都栖息着各种各样的动物。 （哪  那）里的植物种类丰富多彩，那（哪  那）里的动物就成群出没。\n\nㅤㅤ②生物学家达尔文在英国乡村曾经观察到这样一个有趣的事实：凡是猫养得多的地方，（哪  那）里的红三叶草就长得茂盛。原来，红三叶草是专门靠土蜂来传粉的；而土蜂酿的蜜，常常被田鼠偷吃，还破坏了蜂巢。这样，田鼠多了，土蜂就少了，三叶草传粉的机会也少了。田鼠的天敌是猫，猫多了，鼠少了，土蜂就多了；红三叶草传粉多了，自然就长得繁茂了。\n\nㅤㅤ③猫和红三叶草之间，似乎毫不相干，可是加上土蜂和田鼠两个环节，就连成了一根相互连接的链条——食物链。\n\nㅤㅤ④自然界存在着数不清的食物链，各个环节纵横交错，复杂多样，草被羊吃，羊被虎吞；鼠吃禾谷，猫头鹰捕鼠……一种植物往往被多种动物所吃：羊吃草，牛、马也吃草；一种动物往往吃几种食物：麻雀吃禾谷，也吃虫子；一种动物常常被多种动物吃；狼和豹也像虎那样，吃牛、羊。\n\nㅤㅤ⑤俗话说：「大鱼吃小鱼，小鱼吃虾米，虾米吃水藻。」江湖河海里这些更是常见的事儿。在自然界，各种生物之间，就这样组成了一条条「食物链」。动植物之间这样相互依存、彼此制约的关系，组成了一个错综复杂的网——生命之网。\n（有删改）\n\n4. 生物学家达尔文发现的猫和红三叶草之间的秘密是什么？",
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_shenzhen_001",
+      "round": 2,
       "type": "choice",
-      "difficulty": "easy",
+      "chapter": "现代文阅读",
+      "knowledge_point": "现代文阅读/词句赏析",
+      "group_id": "qm_shenzhen_001_q10",
+      "group_order": 3,
+      "content": "阅读《食物链》短文，回答问题。\n\n3. 生物学家达尔文发现的猫和红三叶草之间的秘密是什么？",
       "options": [
         "A. 猫多了——田鼠多了——土蜂少了——红三叶草长得茂盛",
         "B. 猫多了——田鼠少了——土蜂多了——红三叶草长得茂盛",
         "C. 猫少了——田鼠少了——土蜂多了——红三叶草长得茂盛"
       ],
       "answer": "B",
-      "explanation": "原文第②段说明：田鼠的天敌是猫，猫多了→田鼠少了→土蜂多了→红三叶草传粉多→长得茂盛。",
-      "group_id": "qm_shenzhen_001_q10",
-      "group_order": 4,
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r3_anchor_3 (说明文阅读) — 降档",
-        "rubric_signals": [
-          "§2.1 段意直白（文中已明示）"
-        ],
-        "reasoning": "R2：理解层级 2（食物链顺序还原），陷阱密度 0.5（A C 各错一处，B D 在选项中），KP 跨度 1，数据复杂度 0.5。"
-      },
-      "_round_before_group_unify": 2
+      "explanation": "原文：「田鼠的天敌是猫，猫多了，鼠少了，土蜂就多了；红三叶草传粉多了，自然就长得繁茂了」。猫多→田鼠少→土蜂多→红三叶草茂盛，对应 B。",
+      "_round_reasoning": "R2 因为：理解层级 2（食物链链条因果推断），陷阱密度 0.5（A 错首项「田鼠多」、C 错首项「猫少」均与原文矛盾），KP 跨度 1。比 chinese_r1_anchor_5 修辞识别难（链条多层），低于 chinese_r3 主旨抽象。"
     },
     {
-      "chapter": "现代文阅读",
-      "knowledge_point": "现代文阅读/说明方法判断",
-      "content": "阅读短文，回答问题。\n\nㅤㅤ①茂密的森林，辽阔的草原，都栖息着各种各样的动物。 （哪  那）里的植物种类丰富多彩，那（哪  那）里的动物就成群出没。\n\nㅤㅤ②生物学家达尔文在英国乡村曾经观察到这样一个有趣的事实：凡是猫养得多的地方，（哪  那）里的红三叶草就长得茂盛。原来，红三叶草是专门靠土蜂来传粉的；而土蜂酿的蜜，常常被田鼠偷吃，还破坏了蜂巢。这样，田鼠多了，土蜂就少了，三叶草传粉的机会也少了。田鼠的天敌是猫，猫多了，鼠少了，土蜂就多了；红三叶草传粉多了，自然就长得繁茂了。\n\nㅤㅤ③猫和红三叶草之间，似乎毫不相干，可是加上土蜂和田鼠两个环节，就连成了一根相互连接的链条——食物链。\n\nㅤㅤ④自然界存在着数不清的食物链，各个环节纵横交错，复杂多样，草被羊吃，羊被虎吞；鼠吃禾谷，猫头鹰捕鼠……一种植物往往被多种动物所吃：羊吃草，牛、马也吃草；一种动物往往吃几种食物：麻雀吃禾谷，也吃虫子；一种动物常常被多种动物吃；狼和豹也像虎那样，吃牛、羊。\n\nㅤㅤ⑤俗话说：「大鱼吃小鱼，小鱼吃虾米，虾米吃水藻。」江湖河海里这些更是常见的事儿。在自然界，各种生物之间，就这样组成了一条条「食物链」。动植物之间这样相互依存、彼此制约的关系，组成了一个错综复杂的网——生命之网。\n（有删改）\n\n5. 这篇文章的主要说明方法是什么？",
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_shenzhen_001",
+      "round": 2,
       "type": "choice",
-      "difficulty": "easy",
+      "chapter": "现代文阅读",
+      "knowledge_point": "现代文阅读/说明方法",
+      "group_id": "qm_shenzhen_001_q10",
+      "group_order": 4,
+      "content": "阅读《食物链》短文，回答问题。\n\n4. 这篇文章的主要说明方法是什么？",
       "options": [
         "A. 列数字",
         "B. 举例子",
@@ -345,18 +306,27 @@
         "D. 打比方"
       ],
       "answer": "B",
-      "explanation": "文中用红三叶草、草羊虎链等多个具体事例说明食物链原理，主要采用举例子的方法。",
+      "explanation": "全文以达尔文观察猫-田鼠-土蜂-红三叶草、草-羊-虎、鼠-禾谷-猫头鹰等具体事例说明食物链，是典型「举例子」说明方法。",
+      "_round_reasoning": "R2 因为：理解层级 2（说明文方法识别），陷阱密度 0.5（4 选项均常见说明方法，需通读判主），KP 跨度 1。参考 chinese_r2_anchor_3 R2 同档。rubric 无降档。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_shenzhen_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "现代文阅读",
+      "knowledge_point": "现代文阅读/标题概括",
       "group_id": "qm_shenzhen_001_q10",
       "group_order": 5,
-      "round": 2,
-      "_round_meta": {
-        "anchor_used": "chinese_r3_anchor_5 (跨说明方法判定) — 降档",
-        "rubric_signals": [
-          "§2.1 选项无嵌套"
-        ],
-        "reasoning": "R2：理解层级 2（说明方法识别），陷阱密度 0.4（4 选项中 D「打比方」可能干扰，「生命之网」似比喻），KP 跨度 1，数据复杂度 0.5。"
-      },
-      "_round_before_group_unify": 2
+      "content": "阅读《食物链》短文，回答问题。\n\n5. 给短文加上合适的题目（参考短文末尾「在自然界，各种生物之间，就这样组成了一条条『食物链』。动植物之间这样相互依存、彼此制约的关系，组成了一个错综复杂的网——生命之网。」）。最贴切的题目是？",
+      "answer": "生命之网",
+      "alt_answers": [
+        "食物链",
+        "生命之网与食物链"
+      ],
+      "explanation": "参考答案为「生命之网」（取自结尾点题），「食物链」也可接受为标题。",
+      "_round_reasoning": "R1 因为：理解层级 1（结尾点题直取关键词），陷阱密度 0.0（fill），KP 跨度 1。比 chinese_r1_anchor_1 简单（直接抄词）。rubric §2.1 段意直白对应 R1。"
     }
   ]
 }

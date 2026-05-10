@@ -1,0 +1,263 @@
+{
+  "source": "realpaper_g6_chinese_bubian_qm_longhua_001",
+  "subject": "chinese",
+  "grade": 6,
+  "knowledge_points_added": [
+    "字词/字形",
+    "字词/成语运用",
+    "古诗文/古诗词背诵默写",
+    "古诗文/文言文阅读",
+    "课文与名著/课文内容理解",
+    "现代文阅读/词句赏析"
+  ],
+  "_quality_meta": {
+    "source_file": "广东省深圳龙华区2022-2023学年六年级下学期期末语文试卷.docx",
+    "sha1": "0c137d8c929d91f0",
+    "paper_type": "final",
+    "chapter_default": "综合",
+    "omath_total_formulas": 0,
+    "images_used": 0,
+    "questions_total_paper": 10,
+    "questions_imported": 14,
+    "questions_skipped": 5
+  },
+  "_skipped_for_future": [
+    {
+      "qnum": "4",
+      "reason": "subjective_short",
+      "raw_excerpt": "改拟人句 + 仿写句"
+    },
+    {
+      "qnum": "5",
+      "reason": "subjective_short",
+      "raw_excerpt": "校园图书节宣传语 + 名著推荐 + 阅读妙招"
+    },
+    {
+      "qnum": "6(2)+(3)+(4)",
+      "reason": "subjective_short",
+      "raw_excerpt": "拟标题 + 一时多用例 + 学习态度 vs 方法辩论"
+    },
+    {
+      "qnum": "8(1)+(4)+(5)",
+      "reason": "subjective_short",
+      "raw_excerpt": "时间怎样行走：写作目的 + 仿句 + 标题理解"
+    },
+    {
+      "qnum": "9-10",
+      "reason": "subjective_essay",
+      "raw_excerpt": "习作：「____伴我成长」 / 「未来的____」"
+    }
+  ],
+  "questions": [
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "区分汉字「宵」（夜晚）和「霄」（云、天空），在句子中依次填入正确的字：「通 ____ 达旦的研究」「响彻云 ____」「之前所有的担心、不安早就抛到九 ____ 云外」。",
+      "options": [
+        "A. 霄 霄 宵",
+        "B. 霄 宵 宵",
+        "C. 宵 宵 霄",
+        "D. 宵 霄 霄"
+      ],
+      "answer": "D",
+      "explanation": "「通宵达旦」=整夜（宵=夜）；「响彻云霄」=声音穿过天空（霄=云/天空）；「九霄云外」=很远的天空（霄）。",
+      "_round_reasoning": "R2 因为：3 处同音字辨义+依次填入，参考 chinese_r2 字词辨析水准。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/成语运用",
+      "group_id": "qm_longhua_001_q2",
+      "group_order": 1,
+      "content": "补充成语。\n\n1. 司空见 ____",
+      "answer": "惯",
+      "explanation": "司空见惯：常见之事，不足为奇。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/成语运用",
+      "group_id": "qm_longhua_001_q2",
+      "group_order": 2,
+      "content": "补充成语。\n\n2. 不可思 ____",
+      "answer": "议",
+      "explanation": "不可思议：无法想象或难以理解。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/成语运用",
+      "group_id": "qm_longhua_001_q2",
+      "group_order": 3,
+      "content": "补充成语。\n\n3. 万不得 ____",
+      "answer": "已",
+      "explanation": "万不得已：实在不得已。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/成语运用",
+      "group_id": "qm_longhua_001_q2",
+      "group_order": 4,
+      "content": "补充成语。\n\n4. ____ 重心长",
+      "answer": "语",
+      "explanation": "语重心长：话语恳切，用心良苦。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/成语运用",
+      "group_id": "qm_longhua_001_q2",
+      "group_order": 5,
+      "content": "选词填空（候选成语：司空见惯/不可思议/见微知著/万不得已/语重心长/五湖四海）。\n\n5. 平时一向不露声色的他，演讲水平竟然这样高，真是 ____。",
+      "answer": "不可思议",
+      "explanation": "「不可思议」形容无法想象或难以理解，与「演讲水平竟然这样高」语境对位。",
+      "_round_reasoning": "R2 因为：成语理解+语境匹配。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "qm_longhua_001_q3",
+      "group_order": 1,
+      "content": "送别诗默写。\n\n1. 李白送孟浩然：「孤帆远影碧空尽，________」。",
+      "answer": "唯见长江天际流",
+      "explanation": "出自李白《黄鹤楼送孟浩然之广陵》。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "qm_longhua_001_q3",
+      "group_order": 2,
+      "content": "送别诗默写。\n\n2. 李白送汪伦：「________，________」。请按顺序填两句话，用「|||」分隔。",
+      "answer": "桃花潭水深千尺|||不及汪伦送我情",
+      "explanation": "出自李白《赠汪伦》。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "qm_longhua_001_q3",
+      "group_order": 3,
+      "content": "送别诗默写。\n\n3. 高适别董大：「莫愁前路无知己，________？」。",
+      "answer": "天下谁人不识君",
+      "explanation": "出自高适《别董大》。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言文阅读",
+      "group_id": "qm_longhua_001_q6",
+      "group_order": 1,
+      "content": "《学弈》原文填空。\n\n弈秋，通国之善弈者也。使弈秋诲二人弈，其一人 ____，惟弈秋之为听；一人虽听之，一心以为 ____，思援弓缴而射之。\n\n1. 第一空（描写第一个人）应填？",
+      "answer": "专心致志",
+      "explanation": "原文「专心致志」（专心一意）。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言文阅读",
+      "group_id": "qm_longhua_001_q6",
+      "group_order": 2,
+      "content": "《学弈》原文填空。\n\n2. 第二空（描写第二个人的想法）应填？",
+      "answer": "有鸿鹄将至",
+      "explanation": "原文「一心以为有鸿鹄将至，思援弓缴而射之」。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "课文与名著",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "group_id": "qm_longhua_001_q7",
+      "group_order": 1,
+      "content": "阅读《北京的春节》节选（除夕真热闹...正月初一的光景与除夕截然不同）。\n\n1. 选文出自课文《________》，作者是________，他被誉为「________」。请按顺序填三空，用「|||」分隔。",
+      "answer": "北京的春节|||老舍|||人民艺术家",
+      "explanation": "课文《北京的春节》作者老舍，被誉为「人民艺术家」。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/词语理解",
+      "group_id": "qm_longhua_001_q7",
+      "group_order": 2,
+      "content": "《北京的春节》节选阅读。\n\n2. 「元旦的光景与除夕截然不同」中「光景」一词的意思是？",
+      "options": [
+        "A. 时光",
+        "B. 景物",
+        "C. 估计",
+        "D. 情景"
+      ],
+      "answer": "D",
+      "explanation": "结合后文「铺户都上着板子，门前堆着昨夜燃放的爆竹纸皮，全城都在休息」描述场景，「光景」=情景。",
+      "_round_reasoning": "R2 因为：一词多义+语境判断，rubric §2.1 不适用降档。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "现代文阅读",
+      "knowledge_point": "现代文阅读/词句赏析",
+      "group_id": "qm_longhua_001_q7",
+      "group_order": 3,
+      "content": "阅读后判断节日寓意（候选：A. 团团圆圆 / B. 风调雨顺 / C. 心灵手巧）。\n\n3. 端午节赛龙舟，寓意 ____；乞巧节女子望月穿针，寓意 ____；中秋节吃月饼，寓意 ____。请按顺序填三个字母，用「|||」分隔。",
+      "answer": "B|||C|||A",
+      "explanation": "端午节赛龙舟祈求风调雨顺；乞巧节穿针寓意心灵手巧；中秋节吃月饼寓意团团圆圆。",
+      "_round_reasoning": "R2 因为：节日民俗常识对应，3 空互不可换。"
+    }
+  ]
+}

@@ -1,0 +1,436 @@
+{
+  "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+  "subject": "math",
+  "grade": 6,
+  "knowledge_points_added": [],
+  "_quality_meta": {
+    "source_file": "2023年广东省深圳市罗湖区小升初数学试卷.docx",
+    "sha1": "caa3c5eaee3e6b53",
+    "paper_type": "xsc",
+    "chapter_default": "小升初综合",
+    "omath_total_formulas": 0,
+    "omath_para_count": 0,
+    "images_used": 0,
+    "questions_total_paper": 29,
+    "questions_imported": 25,
+    "questions_skipped": 4
+  },
+  "_skipped_for_future": [
+    {
+      "qnum": "9",
+      "reason": "unclear_image",
+      "raw_excerpt": "阴影部分与整图比例 (图判 + 多空互化)"
+    },
+    {
+      "qnum": "14",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "时针 24 小时针尖路径（数据 + 半圆面积复合，文字层缺）"
+    },
+    {
+      "qnum": "17",
+      "reason": "unclear_image",
+      "raw_excerpt": "长方形纸剪三角形剩余面积（图判三角形位置）"
+    },
+    {
+      "qnum": "19",
+      "reason": "unclear_image",
+      "raw_excerpt": "扑克牌摸到红桃 A 概率（图判牌面）"
+    },
+    {
+      "qnum": "20",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "直接写得数（位图算式）"
+    },
+    {
+      "qnum": "21",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "简便计算（位图算式）"
+    },
+    {
+      "qnum": "22",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "解方程或比例（位图算式）"
+    },
+    {
+      "qnum": "23",
+      "reason": "open_drawing_question",
+      "raw_excerpt": "画图（4 步：平移/旋转/放大/对称）"
+    },
+    {
+      "qnum": "24",
+      "reason": "open_drawing_question",
+      "raw_excerpt": "画分数表示"
+    },
+    {
+      "qnum": "29",
+      "reason": "unclear_image",
+      "raw_excerpt": "AB 组测试统计图（含画图）"
+    }
+  ],
+  "questions": [
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "$12$ 时 $15$ 分，分针与时针的夹角是（　　）。",
+      "options": [
+        "A. 锐角",
+        "B. 平角",
+        "C. 直角",
+        "D. 钝角"
+      ],
+      "answer": "A",
+      "explanation": "$12:15$ 时分针指向 $3$（$90°$ 位置），时针在 $12$ 与 $1$ 之间偏离 $12$ 一点。夹角约 $90° - 7.5° = 82.5°$（小于 $90°$），是锐角。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "哥德巴赫猜想：每一个大于 $2$ 的偶数都可以写成两个质数的和。下面选项中的算式符合以上猜想的是（　　）。",
+      "options": [
+        "A. $94 = 91 + 3$",
+        "B. $45 = 2 + 43$",
+        "C. $40 = 11 + 29$",
+        "D. $38 = 13 + 25$"
+      ],
+      "answer": "C",
+      "explanation": "A. $91 = 7\\times 13$ 是合数 ✗。B. $45$ 不是偶数 ✗。C. $40$ 偶数，$11,29$ 都是质数 ✓。D. $25 = 5\\times 5$ 是合数 ✗。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "在含糖率为 $20\\%$ 的糖水中加入 $20$ 克糖与 $100$ 克水后，糖水的含糖率和以前比（　　）。",
+      "options": [
+        "A. 变高了",
+        "B. 变低了",
+        "C. 不变",
+        "D. 无法比较"
+      ],
+      "answer": "B",
+      "explanation": "加入物的含糖率 $= 20\\div(20+100) = 20/120 \\approx 16.7\\% < 20\\%$，混合后整体浓度变低。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "王老师要买 $190$ 本《数学小故事》，每本 $3.80$ 元，她带了 $800$ 元，够吗？要解决这个问题，选择（　　）方法更为合适。",
+      "options": [
+        "A. 口算",
+        "B. 用竖式计算",
+        "C. 用计算器计算",
+        "D. 用估算判断"
+      ],
+      "answer": "D",
+      "explanation": "够不够型问题用估算 $\\approx 4\\times 190 = 760 < 800$（且 $3.8 < 4$ 实际更小）→ 估算最合适。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+      "content": "一个圆柱和一个圆锥等底等高，它们的体积相差 $28$ 立方厘米。圆锥的体积是（　　）立方厘米。",
+      "options": [
+        "A. $14$",
+        "B. $28$",
+        "C. $42$",
+        "D. $84$"
+      ],
+      "answer": "A",
+      "explanation": "等底等高时圆柱 $= 3$ 倍圆锥，差 $= 2$ 倍圆锥。$28\\div 2 = 14\\,\\text{cm}^3$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "五（$1$）班的人数在 $40\\sim 50$ 之间，男生人数是女生人数的 $\\dfrac{5}{6}$。五（$1$）班有（　　）人。",
+      "options": [
+        "A. $42$",
+        "B. $44$",
+        "C. $45$",
+        "D. $48$"
+      ],
+      "answer": "B",
+      "explanation": "男 $:$ 女 $= 5:6$，总人数为 $11$ 的倍数。$40\\sim 50$ 间是 $11$ 倍数 $= 44$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "统计一个宝宝从出生到 $5$ 岁体重的变化，选择（　　）比较合适。",
+      "options": [
+        "A. 统计表",
+        "B. 条形统计图",
+        "C. 折线统计图",
+        "D. 扇形统计图"
+      ],
+      "answer": "C",
+      "explanation": "反映数量随时间变化趋势 → 折线统计图最合适。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "group_id": "xsc_luohu_001_q8",
+      "group_order": 1,
+      "content": "全国人口为「十四亿四千三百四十九万七千三百七十八」人。\n\n1. 这个数写作（　　）人。",
+      "answer": "1443497378",
+      "explanation": "按位写：$14$ 亿 $4349$ 万 $7378$ → $1443497378$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "group_id": "xsc_luohu_001_q8",
+      "group_order": 2,
+      "content": "全国人口 $1443497378$ 人。\n\n2. 四舍五入到亿位约是（　　）亿人。",
+      "answer": "14",
+      "explanation": "千万位是 $4 < 5$，舍去 → 约 $14$ 亿。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/图形与几何综合",
+      "group_id": "xsc_luohu_001_q10",
+      "group_order": 1,
+      "content": "两个正方体的棱长比为 $1:2$。\n\n1. 这两个正方体的表面积比是（　　）。（写成 $a:b$ 形式）",
+      "answer": "1:4",
+      "explanation": "表面积比 $=$ 棱长比的平方 $= 1^2:2^2 = 1:4$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/图形与几何综合",
+      "group_id": "xsc_luohu_001_q10",
+      "group_order": 2,
+      "content": "两个正方体的棱长比为 $1:2$。\n\n2. 这两个正方体的体积比是（　　）。（写成 $a:b$ 形式）",
+      "answer": "1:8",
+      "explanation": "体积比 $=$ 棱长比的立方 $= 1^3:2^3 = 1:8$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "$100$ 张纸叠起来厚大约 $1$ 厘米。\n\n$1$ 万张这样的纸叠起来大约有（　　）米。",
+      "answer": "1",
+      "explanation": "$10000\\div 100 = 100$ 倍 → $100$ 厘米 $= 1$ 米。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "小方在某次考试中，语文、数学、英语三科的平均分 $89$ 分，其中语文是 $86$ 分，英语是 $90$ 分。\n\n小方的数学成绩是（　　）分。",
+      "answer": "91",
+      "explanation": "三科总 $= 89\\times 3 = 267$ 分；数学 $= 267-86-90 = 91$ 分。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "小明为全校每名学生都编了一个号码，例如 $20170332$ 表示 $2017$ 年入学、$3$ 班、学号 $32$ 的同学（前 $4$ 位年份、第 $5\\sim 6$ 位班级、最后 $2$ 位学号）。\n\n根据这个规则，$2020$ 年入学 $6$ 班学号 $9$ 的同学编号是（　　）。",
+      "answer": "20200609",
+      "explanation": "年份 $2020$、班级 $06$、学号 $09$ → $20200609$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "group_id": "xsc_luohu_001_q15",
+      "group_order": 1,
+      "content": "两根木料长 $12$ m 和 $18$ m。要把它们截成长度相等的若干小段，每段不能有剩余。\n\n1. 每小段最长（　　）米。",
+      "answer": "6",
+      "explanation": "$\\gcd(12,18) = 6$，每段最长 $6$ 米。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "group_id": "xsc_luohu_001_q15",
+      "group_order": 2,
+      "content": "两根木料长 $12$ m 和 $18$ m，每小段最长 $6$ 米。\n\n2. 两根木料一共可以截成（　　）段。",
+      "answer": "5",
+      "explanation": "$12\\div 6 + 18\\div 6 = 2 + 3 = 5$ 段。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "比例",
+      "knowledge_point": "正反比例/比例尺",
+      "group_id": "xsc_luohu_001_q16",
+      "group_order": 1,
+      "content": "小亮手绘一幅地图，用图上 $4$ 厘米的长度表示从家到公园 $800$ 米。\n\n1. 这幅地图的比例尺是（　　）。（写成 $1:N$ 形式）",
+      "answer": "1:20000",
+      "explanation": "$800$ m $= 80000$ cm。比例尺 $= 4:80000 = 1:20000$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "比例",
+      "knowledge_point": "正反比例/比例尺",
+      "group_id": "xsc_luohu_001_q16",
+      "group_order": 2,
+      "content": "地图比例尺 $1:20000$。如果小亮从家到学校的实际距离是 $1500$ 米。\n\n2. 在这幅地图上要画（　　）厘米。",
+      "answer": "7.5",
+      "explanation": "$1500$ m $= 150000$ cm；图上 $= 150000\\div 20000 = 7.5$ cm。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "正反比例/正反比例的判断",
+      "content": "随着年龄的变化，人的身高也在变化。人的年龄与身高（　　）。（填「成正比例」「成反比例」或「不成比例」）",
+      "answer": "不成比例",
+      "explanation": "身高随年龄不是固定比值或乘积关系（人会停止长高、不同年龄段增速不同），所以不成比例。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "新村果园里有苹果树 $270$ 棵，比桃树的 $\\dfrac{4}{5}$ 多 $30$ 棵。\n\n新村果园里有桃树（　　）棵。（用方程解，仅填桃树数）",
+      "answer": "300",
+      "explanation": "设桃树 $x$，则 $\\dfrac{4}{5}x + 30 = 270$，$\\dfrac{4}{5}x = 240$，$x = 300$ 棵。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "一个长方体容器，底面长 $2$ 分米，宽 $1.5$ 分米，放入一个土豆后水面上升了 $2$ 厘米。\n\n这个土豆的体积是（　　）立方分米。",
+      "answer": "0.6",
+      "explanation": "水面上升 $2$ cm $= 0.2$ dm。体积 $= 2\\times 1.5\\times 0.2 = 0.6\\,\\text{dm}^3$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "小亮玩抛硬币游戏。规则：硬币正面朝上向前走 $5$ 步，反面朝上向前走 $3$ 步。一共抛了 $20$ 次，结果向前走了 $76$ 步。\n\n硬币正面朝上的有（　　）次。",
+      "answer": "8",
+      "explanation": "设正面 $x$ 次，反面 $20-x$ 次。$5x + 3(20-x) = 76$，$2x + 60 = 76$，$x = 8$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "比和比例/化简比",
+      "group_id": "xsc_luohu_001_q28",
+      "group_order": 1,
+      "content": "大丰收果园里桃树、梨树与苹果树的棵数比是 $3:5:7$。已知梨树比苹果树少 $180$ 棵。\n\n1. 桃树有（　　）棵。",
+      "answer": "270",
+      "explanation": "梨 $:$ 苹 $= 5:7$，差 $=$ 苹 $-$ 梨 $= 2$ 份 $= 180$，每份 $= 90$。桃 $= 3\\times 90 = 270$ 棵。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "比和比例/化简比",
+      "group_id": "xsc_luohu_001_q28",
+      "group_order": 2,
+      "content": "大丰收果园里桃树、梨树与苹果树的棵数比是 $3:5:7$。已知梨树比苹果树少 $180$ 棵（每份 $= 90$）。\n\n2. 梨树有（　　）棵。",
+      "answer": "450",
+      "explanation": "梨 $= 5\\times 90 = 450$ 棵。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "比和比例/化简比",
+      "group_id": "xsc_luohu_001_q28",
+      "group_order": 3,
+      "content": "大丰收果园里桃树、梨树与苹果树的棵数比是 $3:5:7$。已知梨树比苹果树少 $180$ 棵（每份 $= 90$）。\n\n3. 苹果树有（　　）棵。",
+      "answer": "630",
+      "explanation": "苹 $= 7\\times 90 = 630$ 棵。"
+    }
+  ]
+}

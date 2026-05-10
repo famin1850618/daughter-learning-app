@@ -1,0 +1,324 @@
+{
+  "source": "realpaper_g6_chinese_bubian_qm_longgang_001",
+  "subject": "chinese",
+  "grade": 6,
+  "knowledge_points_added": [
+    "字词/字音",
+    "字词/字形",
+    "字词/词语理解",
+    "字词/成语运用",
+    "古诗文/古诗词背诵默写",
+    "课文与名著/课文内容理解",
+    "现代文阅读/词句赏析"
+  ],
+  "_quality_meta": {
+    "source_file": "广东省深圳市龙岗区2022-2023学年六年级语文下学期期末试卷.docx",
+    "sha1": "e5c574ddfcd91967",
+    "paper_type": "final",
+    "chapter_default": "综合",
+    "omath_total_formulas": 0,
+    "images_used": 0,
+    "questions_total_paper": 16,
+    "questions_imported": 17,
+    "questions_skipped": 4
+  },
+  "_skipped_for_future": [
+    {
+      "qnum": "13(2)",
+      "reason": "subjective_short",
+      "raw_excerpt": "抄写《春晴泛舟》中关于美景的诗句"
+    },
+    {
+      "qnum": "14(2)+(3)",
+      "reason": "subjective_short",
+      "raw_excerpt": "围绕「尴尬」一词揣摩父亲心理 + 写感受"
+    },
+    {
+      "qnum": "15",
+      "reason": "subjective_short",
+      "raw_excerpt": "练习书法的益处（分点说明）"
+    },
+    {
+      "qnum": "16",
+      "reason": "subjective_essay",
+      "raw_excerpt": "习作：「遇见你，真好！」"
+    }
+  ],
+  "questions": [
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "下列带点字的读音完全正确的一组是（　　）。",
+      "options": [
+        "A. **呐**喊（là） **颓**然（tū） 瘦**削**（xuē）",
+        "B. **懦**弱（nuò ruò） **恢**复（fuī fù） **橱**窗（chú cāng）",
+        "C. **钉**钉子（dìng dīng zi） **扇**扇子（shān shàn zi） **弹**弹珠（tán dàn zhū）"
+      ],
+      "answer": "C",
+      "explanation": "A 错（「呐」应读 nà、「颓」应读 tuí）；B 错（「恢」应读 huī、「橱窗」「窗」应读 chuāng）；C 正确（多音字精准读对）。",
+      "_round_reasoning": "R2 因为：多字音 + 多音字综合判别。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "下列**没有错别字**的一组是（　　）。",
+      "options": [
+        "A. 重整旗鼓 妨备 繁锁",
+        "B. 不可记数 荡漾 迷檬",
+        "C. 出谋划策 耽搁 惊惶"
+      ],
+      "answer": "C",
+      "explanation": "A 错（「妨备」应为「妨碍」、「繁锁」应为「繁琐」）；B 错（「不可记数」应为「不可计数」、「迷檬」应为「迷蒙」）；C 正确。",
+      "_round_reasoning": "R2 因为：错别字辨析。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/词语理解",
+      "content": "下列用来形容人的精神品质的一组词语是（　　）。",
+      "options": [
+        "A. 志存高远 铁面无私 英勇无畏",
+        "B. 面容清秀 焦躁不安 一知半解",
+        "C. 悠然自得 望眼欲穿 粉墨登场"
+      ],
+      "answer": "A",
+      "explanation": "A 三词都形容人的精神品质（志向/正直/勇敢）；B「面容清秀」是外貌；C 是状态/动作。",
+      "_round_reasoning": "R2 因为：词语类别辨析。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "句式与标点",
+      "knowledge_point": "句式与标点/病句修改",
+      "content": "下面**有错误**的一个句子是（　　）。",
+      "options": [
+        "A. 我看到了他那乱蓬蓬的长头发下面的平静而慈祥的脸。",
+        "B. 一大滴松脂从树上滴下来，刚好落在树干上，被蜘蛛和苍蝇一齐包在里头。",
+        "C. 因为我们是为人民服务的，所以我们有缺点，就不怕别人批评指出。"
+      ],
+      "answer": "B",
+      "explanation": "B 错。「松脂从树上滴下来」应该「落在树叶/小虫」上等而非「落在树干上」（落在树干上不会包住虫子，且原文应为「掉在地上」）。原文应为：松脂滴下来包住蜘蛛和苍蝇形成琥珀。",
+      "_round_reasoning": "R2 因为：原文复述/病句辨析。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "修辞",
+      "knowledge_point": "修辞/拟人",
+      "content": "下面与例句**写法相同**的一个句子是（　　）。\n\n例句：不再胆怯的小白菊，慢慢地抬起它们的头。",
+      "options": [
+        "A. 雨来像小鸭子一样抖着头上的水，用手抹了一下眼睛和鼻子，望着妈妈笑了。",
+        "B. 太阳见了，不慌不忙地把头从云里探出来，笑眯眯地看着路上的行人。",
+        "C. 夕阳西沉，夜幕降临，那风声、虫鸣，听起来也愈发叫人心旷神怡。"
+      ],
+      "answer": "B",
+      "explanation": "例句把小白菊拟人化（抬起它们的头）。A 是比喻（雨来像小鸭子）；B 是拟人（太阳「不慌不忙」「探出来」「笑眯眯」）；C 无修辞。",
+      "_round_reasoning": "R2 因为：修辞辨析，参考 chinese_r1_anchor_5 修辞 R1 但本题需排除比喻干扰升 R2。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "下面形容**美好春光**的诗句是（　　）。",
+      "options": [
+        "A. 接天莲叶无穷碧，映日荷花别样红。",
+        "B. 千里莺啼绿映红，水村山郭酒旗风。",
+        "C. 月落乌啼霜满天，江枫渔火对愁眠。"
+      ],
+      "answer": "B",
+      "explanation": "A 描写夏景（莲叶/荷花）；B 描写春景（莺啼/绿映红/酒旗风）；C 描写秋景（霜满天/江枫渔火）。",
+      "_round_reasoning": "R1 因为：rubric §2.1 课内必修一律 R1。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "下面句子中，与**为人处世有关**的一个句子是（　　）。",
+      "options": [
+        "A. 与人善言，暖于布帛；伤人以言，深于矛戟。",
+        "B. 长将有日思无日，莫把无时当有时。",
+        "C. 敏而好学，不耻下问。"
+      ],
+      "answer": "A",
+      "explanation": "A 谈与人交往（说话方式），是为人处世；B 谈节俭；C 谈学习。",
+      "_round_reasoning": "R2 因为：名言主题分类。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "课文与名著",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "content": "关于中国传统节日的风俗，下面**有错误**的一组是（　　）。",
+      "options": [
+        "A. 「元宵节」的风俗：赏花灯、吃汤圆、猜灯谜……",
+        "B. 「重阳节」的风俗：登高、赏菊、挂艾叶菖蒲榕枝……",
+        "C. 「除夕」的风俗：贴春联、吃团圆饭、发压岁钱……"
+      ],
+      "answer": "B",
+      "explanation": "B 错。「挂艾叶菖蒲榕枝」是端午节风俗，不是重阳节。重阳节风俗为登高、赏菊、佩茱萸。",
+      "_round_reasoning": "R2 因为：节日民俗辨析。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_001",
+      "round": 3,
+      "type": "choice",
+      "chapter": "现代文阅读",
+      "knowledge_point": "现代文阅读/词句赏析",
+      "content": "下列说法**不正确**的一项是（　　）。",
+      "options": [
+        "A. 「他曲解了长辈的意思，嘴里不满地**嘀咕**了几句」「他手中握着一把扇子，嘴里**嘟囔**着不清不楚的话。」两个加粗词意思相近。",
+        "B. 「父亲坚决地对母亲说：『你要知道现在是什么时候，这里的工作多么重要。我哪能离开呢？』」与「父亲坚决地对母亲说，他要母亲知道现在这个时候，这里的工作非常重要。他不能离开这里。」表达的意思一样。",
+        "C. 「我的心紧缩着，我担心这个年轻的战士会实在忍耐不住突然跳起来，或者突然叫起来。他的脸憋得通红，双眉拧成疙瘩，连胳膊上的青筋都看得清清楚楚。」两个句子都属于心理活动描写。"
+      ],
+      "answer": "C",
+      "explanation": "C 错。后半句「他的脸憋得通红，双眉拧成疙瘩，连胳膊上的青筋都看得清清楚楚」是**神态描写**，不是心理活动描写。",
+      "_round_reasoning": "R3 因为：理解层级 3（描写方法辨析+多句对比），陷阱密度 0.6（C 前半句是心理后半句是神态，需细致辨析），KP 跨度 2。参考 chinese_r3_anchor_2 段意综合 R3 同档。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "qm_longgang_001_q11",
+      "group_order": 1,
+      "content": "古诗默写。\n\n1. 《示儿》（陆游）「________，但悲不见九州同。________，家祭无忘告乃翁。」请按顺序填两句话，用「|||」分隔。",
+      "answer": "死去元知万事空|||王师北定中原日",
+      "explanation": "陆游《示儿》。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "qm_longgang_001_q11",
+      "group_order": 2,
+      "content": "古诗默写。\n\n2. 「明月别枝惊鹊，清风半夜鸣蝉。________，________。」请按顺序填两句话，用「|||」分隔。",
+      "answer": "稻花香里说丰年|||听取蛙声一片",
+      "explanation": "辛弃疾《西江月·夜行黄沙道中》。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "qm_longgang_001_q11",
+      "group_order": 3,
+      "content": "名言警句填空。\n\n3. 「________，一字值千金。」",
+      "answer": "读书须用意",
+      "explanation": "「读书须用意，一字值千金」（《增广贤文》），强调读书要专心。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "qm_longgang_001_q11",
+      "group_order": 4,
+      "content": "名言警句填空。\n\n4. 「树欲静而风不止，________。」",
+      "answer": "子欲养而亲不待",
+      "explanation": "出自《孔子家语》，劝人及时孝敬父母。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "课文与名著",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "group_id": "qm_longgang_001_q12",
+      "group_order": 1,
+      "content": "《为人民服务》节选阅读：\n\n①人总是要死的，但死的意义有不同。\n②中国古时候有个文学家叫做司马迁的说过：「人固有一死，或重于泰山，或轻于鸿毛。」\n③为人民利益而死，就比泰山还重；替法西斯卖力，替剥削人民和压迫人民的人去死，就比鸿毛还轻。\n④张思德同志是为人民利益而死的，他的死是比泰山还要重的。\n\n1. 哪一句是作者**提出的观点**？（填序号 ①/②/③/④）",
+      "answer": "①",
+      "explanation": "①「人总是要死的，但死的意义有不同」是作者提出的观点。",
+      "_round_reasoning": "R2 因为：议论文结构辨识。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "课文与名著",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "group_id": "qm_longgang_001_q12",
+      "group_order": 2,
+      "content": "《为人民服务》节选阅读。\n\n2. 哪一句作者**引用名人名言**论证观点？（填序号 ①/②/③/④）",
+      "answer": "②",
+      "explanation": "②引用司马迁名言「人固有一死，或重于泰山，或轻于鸿毛」论证观点。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "课文与名著",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "group_id": "qm_longgang_001_q12",
+      "group_order": 3,
+      "content": "《为人民服务》节选阅读。\n\n3. 哪一句作者**用正反对比**论证观点？（填序号 ①/②/③/④）",
+      "answer": "③",
+      "explanation": "③对比「为人民利益而死，比泰山重」与「替法西斯卖力，比鸿毛轻」。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "课文与名著",
+      "knowledge_point": "课文与名著/课文内容理解",
+      "group_id": "qm_longgang_001_q12",
+      "group_order": 4,
+      "content": "《为人民服务》节选阅读。\n\n4. 哪一句作者**列举事例**论证观点？（填序号 ①/②/③/④）",
+      "answer": "④",
+      "explanation": "④举张思德同志为人民利益而死的事例。"
+    }
+  ]
+}
