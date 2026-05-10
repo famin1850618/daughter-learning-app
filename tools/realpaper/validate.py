@@ -150,7 +150,7 @@ def check_double_write(batch_path: Path) -> str:
 
 
 def check_image_indicator(q: dict, idx: int) -> str:
-    """2. 题面提"如图..."必须有 image_data 或 SVG / 或显式 _image_skip_reason"""
+    """2. 题面提"如图..."必须有 image_data 或 SVG / option_images / 或显式 _image_skip_reason"""
     content = q.get('content', '') or ''
     has_indicator = any(kw in content for kw in IMAGE_INDICATORS)
     if not has_indicator:
@@ -160,10 +160,17 @@ def check_image_indicator(q: dict, idx: int) -> str:
         return None
     if '<svg' in content:
         return None
+    # V3.12.22 Issue 1 (Famin 决策 A)：option_images 字段（A3 schema）也算合法图源
+    opt_imgs = q.get('option_images') or []
+    if isinstance(opt_imgs, list) and any(
+        oi and (oi.lstrip().startswith('<svg') or oi.startswith('data:image/'))
+        for oi in opt_imgs
+    ):
+        return None
     # V3.12.17 加：合法例外（"示意图"为描述用语等）需明示 _image_skip_reason
     if q.get('_image_skip_reason'):
         return None
-    return f'#{idx}: 题面提图但无 image_data / SVG（合法例外需加 _image_skip_reason）'
+    return f'#{idx}: 题面提图但无 image_data / SVG / option_images（合法例外需加 _image_skip_reason）'
 
 
 def check_source_naming(batch: dict) -> str:
