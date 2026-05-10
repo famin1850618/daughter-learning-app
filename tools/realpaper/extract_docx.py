@@ -257,7 +257,226 @@ NS = {
     'r': 'http://schemas.openxmlformats.org/officeDocument/2006/relationships',
     'a': 'http://schemas.openxmlformats.org/drawingml/2006/main',
     'pic': 'http://schemas.openxmlformats.org/drawingml/2006/picture',
+    'm': 'http://schemas.openxmlformats.org/officeDocument/2006/math',
 }
+
+M_NS = '{http://schemas.openxmlformats.org/officeDocument/2006/math}'
+
+
+# ----------------------------------------------------------------------
+# OMath → LaTeX (V3.12.22 Issue 1: Famin 决策升级工具救公式段)
+# ----------------------------------------------------------------------
+
+# 常见运算符映射（OMath 文本 → LaTeX）
+OMATH_OPERATOR_MAP = {
+    '×': r'\times ',
+    '÷': r'\div ',
+    '·': r'\cdot ',
+    '−': '-', '–': '-', '—': '-',  # 各种 dash 统一 -
+    '≤': r'\le ', '≥': r'\ge ',
+    '≠': r'\ne ', '≈': r'\approx ',
+    '∞': r'\infty ',
+    'π': r'\pi ',
+    '°': r'^{\circ}',
+}
+
+
+def _omath_text_escape(s: str) -> str:
+    """OMath 文本节点转 LaTeX 安全字符（运算符替换）"""
+    if not s:
+        return ''
+    out = []
+    for ch in s:
+        if ch in OMATH_OPERATOR_MAP:
+            out.append(OMATH_OPERATOR_MAP[ch])
+        elif ch in '%&_#$^{}~\\':
+            out.append('\\' + ch)
+        else:
+            out.append(ch)
+    return ''.join(out)
+
+
+def _omath_child_text(elem, tag_local: str) -> str:
+    """递归获取子节点 m:tag 的 LaTeX 内容（无该子节点返回空串）"""
+    child = elem.find(M_NS + tag_local)
+    if child is None:
+        return ''
+    return _omath_to_latex_recursive(child)
+
+
+def _omath_to_latex_recursive(elem) -> str:
+    """递归转 OMath XML 元素 → LaTeX 字符串"""
+    if elem is None:
+        return ''
+    # 提取 namespace 后的 local tag
+    tag = elem.tag
+    if tag.startswith(M_NS):
+        local = tag[len(M_NS):]
+    else:
+        local = tag.rsplit('}', 1)[-1] if '}' in tag else tag
+
+    # 1. 文本节点 m:t → 直接输出 escape 后文字
+    if local == 't':
+        return _omath_text_escape(elem.text or '')
+
+    # 2. m:r run → 递归子节点 m:t
+    if local == 'r':
+        parts = []
+        for child in elem:
+            if child.tag == M_NS + 't':
+                parts.append(_omath_text_escape(child.text or ''))
+        return ''.join(parts)
+
+    # 3. m:f 分数 → \frac{num}{den}
+    if local == 'f':
+        num = _omath_child_text(elem, 'num')
+        den = _omath_child_text(elem, 'den')
+        return f'\\frac{{{num}}}{{{den}}}'
+
+    # 4. m:sSup 上标 → {base}^{sup}
+    if local == 'sSup':
+        base = _omath_child_text(elem, 'e')
+        sup = _omath_child_text(elem, 'sup')
+        return f'{{{base}}}^{{{sup}}}'
+
+    # 5. m:sSub 下标 → {base}_{sub}
+    if local == 'sSub':
+        base = _omath_child_text(elem, 'e')
+        sub = _omath_child_text(elem, 'sub')
+        return f'{{{base}}}_{{{sub}}}'
+
+    # 6. m:sSubSup 上下标 → {base}_{sub}^{sup}
+    if local == 'sSubSup':
+        base = _omath_child_text(elem, 'e')
+        sub = _omath_child_text(elem, 'sub')
+        sup = _omath_child_text(elem, 'sup')
+        return f'{{{base}}}_{{{sub}}}^{{{sup}}}'
+
+    # 7. m:rad 根号
+    if local == 'rad':
+        deg = _omath_child_text(elem, 'deg')
+        e = _omath_child_text(elem, 'e')
+        if deg:
+            return f'\\sqrt[{deg}]{{{e}}}'
+        return f'\\sqrt{{{e}}}'
+
+    # 8. m:nary n 元运算（求和/积分）
+    if local == 'nary':
+        # 找 m:naryPr/m:chr 取运算符（默认 \int）
+        naryPr = elem.find(M_NS + 'naryPr')
+        op = '\\int '
+        if naryPr is not None:
+            chr_elem = naryPr.find(M_NS + 'chr')
+            if chr_elem is not None:
+                v = chr_elem.get(M_NS.replace('{','').replace('}','') and '{http://schemas.openxmlformats.org/officeDocument/2006/math}val', '')
+                # 上面 v 取法不对，简化：直接 attrib 取
+                v = chr_elem.attrib.get('{http://schemas.openxmlformats.org/officeDocument/2006/math}val', '')
+                if v == '∑':
+                    op = '\\sum '
+                elif v == '∏':
+                    op = '\\prod '
+                elif v == '∫':
+                    op = '\\int '
+                elif v:
+                    op = _omath_text_escape(v)
+        sub = _omath_child_text(elem, 'sub')
+        sup = _omath_child_text(elem, 'sup')
+        e = _omath_child_text(elem, 'e')
+        out = op
+        if sub:
+            out += f'_{{{sub}}}'
+        if sup:
+            out += f'^{{{sup}}}'
+        out += f'{{{e}}}'
+        return out
+
+    # 9. m:d 括号
+    if local == 'd':
+        # 默认圆括号；m:dPr/m:begChr / m:endChr 改括号
+        dPr = elem.find(M_NS + 'dPr')
+        beg, end = '(', ')'
+        if dPr is not None:
+            begChr = dPr.find(M_NS + 'begChr')
+            endChr = dPr.find(M_NS + 'endChr')
+            if begChr is not None:
+                v = begChr.attrib.get('{http://schemas.openxmlformats.org/officeDocument/2006/math}val', '(')
+                beg = v
+            if endChr is not None:
+                v = endChr.attrib.get('{http://schemas.openxmlformats.org/officeDocument/2006/math}val', ')')
+                end = v
+        # m:e 可能多个（逗号分隔）
+        es = [_omath_to_latex_recursive(e) for e in elem.findall(M_NS + 'e')]
+        body = ','.join(es)
+        # LaTeX 中 { } 需 \{ \}
+        if beg == '{':
+            beg = r'\{'
+        if end == '}':
+            end = r'\}'
+        return f'{beg}{body}{end}'
+
+    # 10. m:func 函数
+    if local == 'func':
+        fname = _omath_child_text(elem, 'fName')
+        e = _omath_child_text(elem, 'e')
+        return f'{fname}({e})'
+
+    # 11. m:bar 上下划线
+    if local == 'bar':
+        e = _omath_child_text(elem, 'e')
+        return f'\\overline{{{e}}}'
+
+    # 12. m:m 矩阵 → 用 pmatrix
+    if local == 'm':
+        rows = []
+        for mr in elem.findall(M_NS + 'mr'):
+            cells = [_omath_to_latex_recursive(e) for e in mr.findall(M_NS + 'e')]
+            rows.append(' & '.join(cells))
+        return '\\begin{pmatrix}' + ' \\\\ '.join(rows) + '\\end{pmatrix}'
+
+    # 默认：递归子节点拼接（覆盖 m:e, m:num, m:den, m:sub, m:sup 等容器）
+    parts = []
+    for child in elem:
+        parts.append(_omath_to_latex_recursive(child))
+    return ''.join(parts)
+
+
+def omath_to_latex(omath_elem) -> str:
+    """OMath XML 节点 → LaTeX 字符串（顶层包裹 $...$）"""
+    body = _omath_to_latex_recursive(omath_elem)
+    return f'${body}$' if body else ''
+
+
+def extract_omath_per_paragraph(docx_path: Path) -> dict:
+    """解析 word/document.xml 找每个段落里的 OMath 公式 → LaTeX。
+    返回 {paragraph_index: [latex_str, ...]}（每段可能多个公式）
+
+    V3.12.22 Issue 1 (Famin 决策 D)：升级工具救 OMath 段，避免整题跳。
+    """
+    import xml.etree.ElementTree as ET
+
+    para_to_latex = {}
+    try:
+        with zipfile.ZipFile(docx_path) as z:
+            doc_xml = z.read('word/document.xml')
+        root = ET.fromstring(doc_xml)
+        body = root.find('w:body', NS)
+        if body is None:
+            return para_to_latex
+
+        for idx, p in enumerate(body.findall('w:p', NS)):
+            latex_list = []
+            # 找该段所有 oMath 节点（含 oMathPara 包裹的）
+            for omath in p.iter(M_NS + 'oMath'):
+                tex = omath_to_latex(omath)
+                if tex:
+                    latex_list.append(tex)
+            if latex_list:
+                # 统一用 str key（cached JSON load 时 key 自然是 str，新生成时也用 str）
+                para_to_latex[str(idx)] = latex_list
+    except Exception as e:
+        print(f'  ⚠ parse omath failed: {e}', file=sys.stderr)
+
+    return para_to_latex
 
 
 def parse_paragraph_image_map(docx_path: Path) -> dict:
@@ -412,6 +631,37 @@ def process_docx(docx_path: Path, force: bool = False) -> dict:
         pmap_path.write_text(json.dumps(para_image_map, ensure_ascii=False, indent=2), encoding='utf-8')
         print(f'  · pmap 解析 {len(para_image_map)} 段含图')
 
+    # 3.5. V3.12.22 Issue 1: OMath 公式段 → LaTeX
+    # docx 用 Word OMath 嵌入数学公式（XML 结构化，非位图），libreoffice 转 txt 时丢失。
+    # 本步骤直接解析 word/document.xml 的 m:oMath 节点 → LaTeX，输出 omath_map.json。
+    # annotate worker 用 omath_map[段索引] 替换 raw_aligned 对应段的空白为 LaTeX 公式。
+    omath_path = out_dir / 'omath_map.json'
+    if omath_path.exists() and not force:
+        omath_map = json.loads(omath_path.read_text(encoding='utf-8'))
+        print(f'  · omath 已缓存 ({len(omath_map)} 段含公式)')
+    else:
+        omath_map = extract_omath_per_paragraph(docx_path)
+        omath_path.write_text(json.dumps(omath_map, ensure_ascii=False, indent=2), encoding='utf-8')
+        total_formulas = sum(len(v) for v in omath_map.values())
+        print(f'  · omath 解析 {len(omath_map)} 段含公式（共 {total_formulas} 个 OMath → LaTeX）')
+
+    # 3.6. V3.12.22 Issue 1: 合成 raw_with_omath.txt
+    # 在 raw_aligned 基础上，每段后面（如有公式）追加 [OMATH: $latex$] 标记。
+    # annotate worker 读这个文件可直接复制 LaTeX 入 content，无需另查 omath_map。
+    aligned_omath_path = out_dir / 'raw_with_omath.txt'
+    if aligned_omath_path.exists() and not force:
+        print(f'  · raw_with_omath 已缓存')
+    elif aligned_path.exists():
+        aligned_lines = aligned_path.read_text(encoding='utf-8').split('\n')
+        merged = []
+        for idx, line in enumerate(aligned_lines):
+            merged.append(line)
+            formulas = omath_map.get(str(idx), [])
+            if formulas:
+                merged.append(f'  [OMATH: {" | ".join(formulas)}]')
+        aligned_omath_path.write_text('\n'.join(merged), encoding='utf-8')
+        print(f'  · raw_with_omath 输出（{len(omath_map)} 段注入 OMath LaTeX 标记）')
+
     # 4. question anchors
     anchors = detect_question_anchors(text)
     print(f'  · 识别 {len(anchors)} 个题号锚点')
@@ -423,6 +673,8 @@ def process_docx(docx_path: Path, force: bool = False) -> dict:
         'text_length': len(text),
         'media_count': len(media_metas) if isinstance(media_metas, list) else 0,
         'para_with_images': len(para_image_map),
+        'para_with_omath': len(omath_map),
+        'omath_total_formulas': sum(len(v) for v in omath_map.values()),
         'qnum_anchors': anchors,
         'media_summary': [
             {
