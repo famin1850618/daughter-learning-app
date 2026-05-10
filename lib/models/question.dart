@@ -80,6 +80,11 @@ class Question {
   /// 系列题分组 ID（V3.8.2）：同 groupId 的题一起抽 + 按 groupOrder 排序展示
   final String? groupId;
   final int? groupOrder;
+  /// V3.13 新增 AI 争议元数据。worker 入库时若发现答案算法冲突写此字段。
+  /// 含 type/reason/alt_answer/confidence/raised_by 等键。
+  /// 小孩做这道题时 banner 提示，答完自动 INSERT review_request (type=aiDispute)。
+  /// 学情**冻结**直到家长审核后回写。
+  final Map<String, dynamic>? aiDispute;
   final String source;
 
   const Question({
@@ -101,6 +106,7 @@ class Question {
     this.round,
     this.groupId,
     this.groupOrder,
+    this.aiDispute,
     this.source = 'pregenerated',
   });
 
@@ -141,6 +147,8 @@ class Question {
       'round': round,
       'group_id': groupId,
       'group_order': groupOrder,
+      // V3.13: ai_dispute_json 存 JSON 字符串
+      'ai_dispute_json': aiDispute == null ? null : jsonEncode(aiDispute),
       'source': source,
     };
   }
@@ -182,6 +190,15 @@ class Question {
       round: map['round'] as int?,
       groupId: map['group_id'] as String?,
       groupOrder: map['group_order'] as int?,
+      aiDispute: () {
+        final raw = map['ai_dispute_json'] as String?;
+        if (raw == null || raw.isEmpty) return null;
+        try {
+          return (jsonDecode(raw) as Map).cast<String, dynamic>();
+        } catch (_) {
+          return null;
+        }
+      }(),
       source: (map['source'] as String?) ?? 'pregenerated',
     );
   }

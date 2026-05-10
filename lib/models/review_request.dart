@@ -1,8 +1,12 @@
-/// V3.8.3 申诉与主观题评分共用模型。
-/// 一张表承载两类需家长介入的请求：
+/// V3.8.3 申诉与主观题评分共用模型。V3.13 扩展加 aiDispute。
+/// 一张表承载三类需家长介入的请求：
 ///   - appeal：小孩对错题判定不服，请家长复核（windowing：2h 内可发起）
 ///   - subjective_grading：主观题没有标准答案，提交后自动入家长打分队列
-enum ReviewRequestType { appeal, subjectiveGrading }
+///   - ai_dispute（V3.13 新增）：worker 入库时发现答案算法冲突，做这道题后自动入家长审核
+///     - 数据：Question.aiDispute 元数据描述差异点 + AI 推荐的 alt_answer
+///     - 不影响奖励/任务（学情冻结）
+///     - 家长决策后：approve 改 answer / reject 不动
+enum ReviewRequestType { appeal, subjectiveGrading, aiDispute }
 
 enum ReviewRequestStatus { pending, approved, rejected }
 
@@ -14,6 +18,7 @@ extension ReviewRequestTypeExt on ReviewRequestType {
     switch (this) {
       case ReviewRequestType.appeal: return 'appeal';
       case ReviewRequestType.subjectiveGrading: return 'subjective_grading';
+      case ReviewRequestType.aiDispute: return 'ai_dispute';
     }
   }
 
@@ -21,13 +26,16 @@ extension ReviewRequestTypeExt on ReviewRequestType {
     switch (this) {
       case ReviewRequestType.appeal: return '判错申诉';
       case ReviewRequestType.subjectiveGrading: return '主观题待批';
+      case ReviewRequestType.aiDispute: return 'AI 标注争议';
     }
   }
 
   static ReviewRequestType fromKey(String s) {
-    return s == 'subjective_grading'
-        ? ReviewRequestType.subjectiveGrading
-        : ReviewRequestType.appeal;
+    switch (s) {
+      case 'subjective_grading': return ReviewRequestType.subjectiveGrading;
+      case 'ai_dispute': return ReviewRequestType.aiDispute;
+      default: return ReviewRequestType.appeal;
+    }
   }
 }
 

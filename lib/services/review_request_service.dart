@@ -148,6 +148,39 @@ class ReviewRequestService extends ChangeNotifier {
     return id;
   }
 
+  /// V3.13: AI 争议题答完后由 PracticeService 调用，自动入审核队列。
+  /// 不要求是错题（争议题学情冻结，家长决策后再回写）。
+  /// childNote 字段借用存 AI 争议原因摘要（type/reason/alt_answer 等）。
+  Future<int?> submitAiDispute({
+    required int practiceRecordId,
+    required Map<String, dynamic> aiDisputeMeta,
+  }) async {
+    final existing = await _dao.findByPracticeRecordId(practiceRecordId);
+    if (existing != null) return null;
+    final record = await _qDao.findPracticeRecord(practiceRecordId);
+    if (record == null) return null;
+    final question = await _qDao.findById(record.questionId);
+    if (question == null) return null;
+
+    final reason = aiDisputeMeta['reason'] as String? ?? 'AI 标注答案有疑问';
+    final alt = aiDisputeMeta['alt_answer'] as String? ?? '';
+    final summary = alt.isEmpty ? reason : '$reason\nAI 推荐答案: $alt';
+
+    final id = await _dao.insert(ReviewRequest(
+      requestType: ReviewRequestType.aiDispute,
+      questionId: record.questionId,
+      practiceRecordId: practiceRecordId,
+      sessionId: record.sessionId,
+      userAnswer: record.userAnswer,
+      standardAnswer: question.answer,
+      status: ReviewRequestStatus.pending,
+      childNote: summary, // 借 child_note 存 AI 争议元数据摘要
+      createdAt: DateTime.now(),
+    ));
+    await refresh();
+    return id;
+  }
+
   // ── 审核 ──────────────────────────────────────────
 
   /// 审核通过 - 副作用全套
@@ -174,6 +207,14 @@ class ReviewRequestService extends ChangeNotifier {
       rewardStars = 0.5;
       rewardSource = 'appeal_approved';
       rewardNote = '申诉通过补发';
+    } else if (req.requestType == ReviewRequestType.aiDispute) {
+      // V3.13: AI 争议-家长认"AI 推荐答案对" → 翻转 record.isCorrect 重判
+      // (原 record.is_correct 按原 question.answer 算，approve = AI 对 = 翻转)
+      final record = await _qDao.findPracticeRecord(req.practiceRecordId);
+      nowCorrect = record == null ? true : !record.isCorrect;
+      rewardStars = nowCorrect ? 0.5 : 0.0;
+      rewardSource = 'ai_dispute_approved';
+      rewardNote = nowCorrect ? 'AI 争议通过-小孩答对补发' : 'AI 争议通过-小孩答错';
     } else {
       // subjective_grading
       final s = score!;

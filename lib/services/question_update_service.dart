@@ -238,6 +238,8 @@ class QuestionUpdateService extends ChangeNotifier {
         round: m['round'] as int?,
         groupId: m['group_id'] as String?,
         groupOrder: m['group_order'] as int?,
+        // V3.13: 解析 _ai_dispute 元数据（worker 入库时若发现答案算法冲突写）
+        aiDispute: (m['_ai_dispute'] as Map?)?.cast<String, dynamic>(),
         source: source,
       );
     }).toList();

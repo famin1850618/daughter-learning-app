@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 21,
+      version: 22,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
@@ -469,6 +469,14 @@ class DatabaseHelper {
       } catch (_) {/* 已加过则跳 */}
     }
 
+    if (oldVersion < 22) {
+      // v22: V3.13 加 ai_dispute_json 列。worker 入库时若发现答案算法冲突写此字段。
+      // 小孩做这道题时 banner 提示 + 答完冻结学情 + 自动 INSERT review_request (type=ai_dispute)
+      try {
+        await db.execute('ALTER TABLE questions ADD COLUMN ai_dispute_json TEXT');
+      } catch (_) {/* 已加过则跳 */}
+    }
+
     if (oldVersion < 20) {
       // v20: V3.12.8 兜底——再次强制清掉所有 realpaper_g6 题（含可能漏的英语）
       // V3.12.7 实测：用户装 final.apk 后题数仍接近旧值，说明 v18→v19 升级在某些设备没正确执行。
@@ -547,6 +555,7 @@ class DatabaseHelper {
         round INTEGER,
         group_id TEXT,
         group_order INTEGER,
+        ai_dispute_json TEXT,
         source TEXT DEFAULT 'pregenerated',
         batch_hash TEXT,
         user_id TEXT DEFAULT 'local'

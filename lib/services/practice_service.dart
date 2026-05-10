@@ -381,9 +381,18 @@ class PracticeService extends ChangeNotifier {
         : DateTime.now().difference(_questionStartTime!).inSeconds;
 
     // V3.8.3: 主观题答完不立即判定，is_correct=false（待批），自动入家长审核队列
+    // V3.13: AI 争议题（q.aiDispute != null）答完正常算对错但**不计 score**（学情冻结），自动入审核
     final bool correct;
     if (q.type == QuestionType.subjective) {
       correct = false; // 待家长评分（fail/pass/good/perfect）
+    } else if (q.aiDispute != null) {
+      // V3.13: 按当前 answer 正常判对错（供未来回放/重判），但不增加 _score（学情冻结）
+      correct = AnswerMatcher.isCorrect(
+        userAns: answer,
+        correctAnswerField: q.answer,
+        type: q.type,
+      );
+      // _score++ 不调用 → 不影响该 session 通过率/奖励
     } else {
       correct = AnswerMatcher.isCorrect(
         userAns: answer,
@@ -408,6 +417,13 @@ class PracticeService extends ChangeNotifier {
     // V3.8.3: 主观题自动入家长审核
     if (q.type == QuestionType.subjective) {
       await _reviewService.submitSubjectiveGrading(practiceRecordId: recordId);
+    }
+    // V3.13: AI 争议题自动入家长审核
+    if (q.aiDispute != null) {
+      await _reviewService.submitAiDispute(
+        practiceRecordId: recordId,
+        aiDisputeMeta: q.aiDispute!,
+      );
     }
 
     notifyListeners();

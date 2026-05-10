@@ -165,6 +165,8 @@ class _ReviewCardState extends State<_ReviewCard> {
     final req = widget.request;
     final dateStr = DateFormat('M月d日 HH:mm').format(req.createdAt);
     final isAppeal = req.requestType == ReviewRequestType.appeal;
+    final isAiDispute = req.requestType == ReviewRequestType.aiDispute;
+    final isAppealLike = isAppeal || isAiDispute; // V3.13: AI 争议 UI 与申诉同（approve/reject 双按钮）
 
     return Card(
       margin: const EdgeInsets.only(bottom: 10),
@@ -180,13 +182,19 @@ class _ReviewCardState extends State<_ReviewCard> {
                 decoration: BoxDecoration(
                   color: isAppeal
                       ? Colors.orange.withOpacity(0.15)
-                      : Colors.purple.withOpacity(0.15),
+                      : isAiDispute
+                          ? Colors.amber.withOpacity(0.20)
+                          : Colors.purple.withOpacity(0.15),
                   borderRadius: BorderRadius.circular(4),
                 ),
                 child: Text(req.requestType.label,
                     style: TextStyle(
                       fontSize: 11,
-                      color: isAppeal ? Colors.orange.shade800 : Colors.purple,
+                      color: isAppeal
+                          ? Colors.orange.shade800
+                          : isAiDispute
+                              ? Colors.amber.shade900
+                              : Colors.purple,
                       fontWeight: FontWeight.bold,
                     )),
               ),
@@ -216,6 +224,8 @@ class _ReviewCardState extends State<_ReviewCard> {
   Widget _detailContent(Question q) {
     final req = widget.request;
     final isAppeal = req.requestType == ReviewRequestType.appeal;
+    final isAiDispute = req.requestType == ReviewRequestType.aiDispute;
+    final isAppealLike = isAppeal || isAiDispute; // V3.13: AI 争议 UI 与申诉同（approve/reject 双按钮）
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -240,8 +250,8 @@ class _ReviewCardState extends State<_ReviewCard> {
         ],
         const SizedBox(height: 10),
         _kvRow('小孩答的：', req.userAnswer, Colors.blue.shade700),
-        if (isAppeal && req.standardAnswer != null)
-          _kvRow('标准答案：', req.standardAnswer!.split('|||').first,
+        if (isAppealLike && req.standardAnswer != null)
+          _kvRow('当前答案：', req.standardAnswer!.split('|||').first,
               Colors.green.shade700),
         if (q.explanation != null) ...[
           const SizedBox(height: 8),
@@ -297,7 +307,7 @@ class _ReviewCardState extends State<_ReviewCard> {
         const SizedBox(height: 12),
         // 操作区域（仅 pending 时显示）
         if (req.status == ReviewRequestStatus.pending) ...[
-          if (isAppeal)
+          if (isAppealLike)
             _appealActions(context, req)
           else
             _subjectiveActions(context, req),
