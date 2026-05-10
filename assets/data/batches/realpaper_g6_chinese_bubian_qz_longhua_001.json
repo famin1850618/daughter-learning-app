@@ -335,7 +335,7 @@
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_qz_longhua_001",
       "round": 2,
-      "type": "fill",
+      "type": "judgment",
       "chapter": "阅读理解",
       "knowledge_point": "阅读理解/课文内容理解",
       "group_id": "realpaper_g6_chinese_bubian_qz_longhua_001_q4",
@@ -343,7 +343,7 @@
       "_raw_excerpt": "4. 建筑上雕刻蝙蝠寓意万事如意年年高。（      ）",
       "_common_prefix_raw": "判断下列说法的对错，对的打“√”，错的打“×”。",
       "content": "判断下列说法的对错，对的打「√」，错的打「×」。\n\n1. 建筑上雕刻蝙蝠寓意万事如意年年高。",
-      "answer": "×",
+      "answer": "错",
       "explanation": "「蝙蝠」与「福」谐音，寓意是「福气」「吉祥幸福」，不是「年年高」（「年糕」才寓意年年高）。"
     },
     {
@@ -351,7 +351,7 @@
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_qz_longhua_001",
       "round": 1,
-      "type": "fill",
+      "type": "judgment",
       "chapter": "阅读理解",
       "knowledge_point": "阅读理解/课文内容理解",
       "group_id": "realpaper_g6_chinese_bubian_qz_longhua_001_q4",
@@ -359,7 +359,7 @@
       "_raw_excerpt": "5. 《北京春节》重点写了腊八、腊月二十三、除夕、正月初一、正月十五这几天，其他的日子则一笔带过。（      ）",
       "_common_prefix_raw": "判断下列说法的对错，对的打“√”，错的打“×”。",
       "content": "判断下列说法的对错，对的打「√」，错的打「×」。\n\n2. 《北京春节》重点写了腊八、腊月二十三、除夕、正月初一、正月十五这几天，其他的日子则一笔带过。",
-      "answer": "√",
+      "answer": "对",
       "explanation": "正确，老舍《北京的春节》重点描写这几个关键时间节点，形成详略得当的结构。"
     },
     {
@@ -367,7 +367,7 @@
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_qz_longhua_001",
       "round": 1,
-      "type": "fill",
+      "type": "judgment",
       "chapter": "阅读理解",
       "knowledge_point": "阅读理解/课文内容理解",
       "group_id": "realpaper_g6_chinese_bubian_qz_longhua_001_q4",
@@ -375,7 +375,7 @@
       "_raw_excerpt": "6. 一个好的开头，可以激发读者阅读的兴趣；一个好的结尾，可以增强文章的感染力。（      ）",
       "_common_prefix_raw": "判断下列说法的对错，对的打“√”，错的打“×”。",
       "content": "判断下列说法的对错，对的打「√」，错的打「×」。\n\n3. 一个好的开头，可以激发读者阅读的兴趣；一个好的结尾，可以增强文章的感染力。",
-      "answer": "√",
+      "answer": "对",
       "explanation": "正确，这是文章首尾段功能的常识。"
     },
     {

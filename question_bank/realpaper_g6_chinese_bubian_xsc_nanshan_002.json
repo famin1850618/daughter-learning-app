@@ -971,7 +971,7 @@
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 2,
-      "type": "fill",
+      "type": "judgment",
       "chapter": "阅读理解",
       "knowledge_point": "阅读理解/材料阅读",
       "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_002_q29",
@@ -979,7 +979,7 @@
       "_raw_excerpt": "（1）目前，社会上全面禁止使用ChatGPT。（    ）",
       "_common_prefix_raw": "29. 根据材料判断下列说法是否正确，对的打\"√\"，错的打\"×\"。",
       "content": "阅读 ChatGPT 相关材料。\n\n根据材料判断下列说法是否正确，对的打「√」，错的打「×」。\n\n1. 目前，社会上全面禁止使用 ChatGPT。",
-      "answer": "×",
+      "answer": "错",
       "explanation": "材料二「截至 2023 年 2 月，这款人工智能软件已在全球范围狂揽 1 亿名用户」+ 材料三「意大利、苹果暂时禁止/限制」表明只是部分限制，社会上未全面禁止。"
     },
     {
@@ -987,7 +987,7 @@
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 2,
-      "type": "fill",
+      "type": "judgment",
       "chapter": "阅读理解",
       "knowledge_point": "阅读理解/材料阅读",
       "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_002_q29",
@@ -995,7 +995,7 @@
       "_raw_excerpt": "（2）ChatGPT在各个方面的表现都优于普通人类。（    ）",
       "_common_prefix_raw": "29. 根据材料判断下列说法是否正确，对的打\"√\"，错的打\"×\"。",
       "content": "阅读 ChatGPT 相关材料。\n\n根据材料判断下列说法是否正确，对的打「√」，错的打「×」。\n\n2. ChatGPT 在各个方面的表现都优于普通人类。",
-      "answer": "×",
+      "answer": "错",
       "explanation": "材料二原文「在某些测试情境下，ChatGPT 在教育、考试方面的表现甚至优于普通人类测试者」——「某些」「教育、考试方面」≠「各个方面都优于」。"
     },
     {
@@ -1003,7 +1003,7 @@
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 2,
-      "type": "fill",
+      "type": "judgment",
       "chapter": "阅读理解",
       "knowledge_point": "阅读理解/材料阅读",
       "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_002_q29",
@@ -1011,7 +1011,7 @@
       "_raw_excerpt": "（3）用ChatGPT做作业可以提高学习效率和学习能力。（    ）",
       "_common_prefix_raw": "29. 根据材料判断下列说法是否正确，对的打\"√\"，错的打\"×\"。",
       "content": "阅读 ChatGPT 相关材料。\n\n根据材料判断下列说法是否正确，对的打「√」，错的打「×」。\n\n3. 用 ChatGPT 做作业可以提高学习效率和学习能力。",
-      "answer": "×",
+      "answer": "错",
       "explanation": "材料四原文「使用 ChatGPT 完成作业和写论文是不道德和不健康的学习方式，它并不能提高学生的学习能力和知识水平」。"
     },
     {
@@ -1019,7 +1019,7 @@
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
       "round": 2,
-      "type": "fill",
+      "type": "judgment",
       "chapter": "阅读理解",
       "knowledge_point": "阅读理解/材料阅读",
       "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_002_q29",
@@ -1027,7 +1027,7 @@
       "_raw_excerpt": "（4）ChatGPT在某种程度上可以提高团队合作的有效性。（    ）",
       "_common_prefix_raw": "29. 根据材料判断下列说法是否正确，对的打\"√\"，错的打\"×\"。",
       "content": "阅读 ChatGPT 相关材料。\n\n根据材料判断下列说法是否正确，对的打「√」，错的打「×」。\n\n4. ChatGPT 在某种程度上可以提高团队合作的有效性。",
-      "answer": "√",
+      "answer": "对",
       "explanation": "材料二原文「ChatGPT 可以让团队更有效地做真正有趣的事情」表明 ChatGPT 在某种程度上可以提高团队合作有效性。"
     },
     {
