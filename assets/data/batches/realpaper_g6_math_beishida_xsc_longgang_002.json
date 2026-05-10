@@ -1,0 +1,402 @@
+{
+  "source": "realpaper_g6_math_beishida_xsc_longgang_002",
+  "_source_docx_sha1": "2849ada9dd25a967",
+  "subject": "math",
+  "grade": 6,
+  "knowledge_points_added": [
+    "图形的运动/图形放大缩小",
+    "总复习/图形与几何综合",
+    "总复习/数与代数综合",
+    "总复习/统计与可能性",
+    "总复习/解决问题策略",
+    "正反比例/正反比例的判断",
+    "正反比例/比例尺"
+  ],
+  "_quality_meta": {
+    "source_file": "精品解析：广东省深圳市龙岗区2022年北师大版小升初素养测试数学试卷（原卷版）.docx",
+    "sha1": "2849ada9dd25a967",
+    "paper_type": "xsc",
+    "chapter_default": "总复习",
+    "omath_total_formulas": 0,
+    "images_used": 0,
+    "questions_total_paper": 32,
+    "questions_imported": 17,
+    "questions_skipped": 15
+  },
+  "_skipped_for_future": [
+    {
+      "qnum": "2",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "第一次用去 ___ 米、第二次用去 ___（wmf 缺）",
+      "source_para": 4
+    },
+    {
+      "qnum": "4",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "算式表示女生人数（wmf 缺）+ 选项分数缺",
+      "source_para": 8
+    },
+    {
+      "qnum": "5",
+      "reason": "unclear_image",
+      "raw_excerpt": "如图圆柱切拼长方体（图）",
+      "source_para": 11
+    },
+    {
+      "qnum": "7",
+      "reason": "unclear_image",
+      "raw_excerpt": "如图 OA=AB=BC（图依赖）",
+      "source_para": 17
+    },
+    {
+      "qnum": "8",
+      "reason": "unclear_image",
+      "raw_excerpt": "正方体展开图（图）",
+      "source_para": 21
+    },
+    {
+      "qnum": "20",
+      "reason": "unclear_image",
+      "raw_excerpt": "正方形纸片规律拼图（图）",
+      "source_para": 55
+    },
+    {
+      "qnum": "21",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "由 8 千万、4 十万、8 千、3 百、7 十组成的数四舍五入到万位（数据完整但保守跳）",
+      "source_para": 59
+    },
+    {
+      "qnum": "23",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "___:0.75 化最简整数比（wmf 缺）",
+      "source_para": 61
+    },
+    {
+      "qnum": "26",
+      "reason": "open_drawing_question",
+      "raw_excerpt": "方格纸画图（数对/旋转/扩大）",
+      "source_para": 65
+    },
+    {
+      "qnum": "27",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "递等式计算（位图算式）",
+      "source_para": 71
+    },
+    {
+      "qnum": "28",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "解方程（位图算式）",
+      "source_para": 74
+    },
+    {
+      "qnum": "29",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "五年级比六年级多交了 ___（wmf 缺）；已尝试 ±3 段窗口拼接，wmf 仍无法读",
+      "source_para": 77
+    },
+    {
+      "qnum": "31",
+      "reason": "unclear_image",
+      "raw_excerpt": "如图长方形铁皮做盒子（图+尺寸缺）",
+      "source_para": 79
+    },
+    {
+      "qnum": "32",
+      "reason": "unclear_image",
+      "raw_excerpt": "如图酒瓶倒置求容积（图依赖）",
+      "source_para": 81
+    },
+    {
+      "qnum": "12",
+      "reason": "format_unsupported",
+      "raw_excerpt": "对称轴最多的图形（5 选项 ABCDE，validator 仅支持 ABCD/Z）",
+      "source_para": 33
+    }
+  ],
+  "questions": [
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "请你估计一下，（　　）最接近你自己的年龄。",
+      "options": [
+        "A. $600$ 分",
+        "B. $600$ 周",
+        "C. $600$ 时",
+        "D. $600$ 月"
+      ],
+      "answer": "B",
+      "explanation": "小学六年级学生约 $11$~$13$ 岁。$600$ 周 $\\div 52\\approx 11.5$ 年，最接近实际年龄。$600$ 分 $\\approx 10$ 小时（不够），$600$ 时 $=25$ 天（不够），$600$ 月 $=50$ 年（过大）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "一个鞋柜高度是 $1.1$ 米，画在图纸上的高是 $5.5$ 厘米，这幅图纸的比例尺是（　　）。",
+      "options": [
+        "A. $1:5$",
+        "B. $5:1$",
+        "C. $1:20$",
+        "D. $1:50$"
+      ],
+      "answer": "C",
+      "explanation": "$1.1$ 米 $=110$ 厘米，比例尺 $=$ 图上 $:$ 实际 $=5.5:110=1:20$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "乐乐爸爸每月工资 $7800$ 元，按照《个人所得税法》规定，$5000$ 元以内不用交税，每月收入超过 $5000$ 元的部分按照 $3\\%$ 交税，乐乐爸爸每月应交税多少元？下面的算式正确的是（　　）。",
+      "options": [
+        "A. $(7800-5000)\\times 3\\%$",
+        "B. $7800\\times 3\\%$",
+        "C. $5000\\times 3\\%$",
+        "D. $(7800-5000)\\times(1-3\\%)$"
+      ],
+      "answer": "A",
+      "explanation": "应纳税额 $=$ 超过 $5000$ 部分 $\\times$ 税率 $=(7800-5000)\\times 3\\%$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "把一个木条钉成的长方形捏住对角，拉成一个平行四边形，它的面积比原来的面积（　　）。",
+      "options": [
+        "A. 大",
+        "B. 小",
+        "C. 相等",
+        "D. 无法确定"
+      ],
+      "answer": "B",
+      "explanation": "长方形→平行四边形周长不变，但底不变高变小，故面积变小。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正反比例的判断",
+      "content": "上坡路程和下坡路程相等，一辆汽车上坡速度与下坡速度比是 $3:5$，这辆汽车上坡与下坡用的时间比应是（　　）。",
+      "options": [
+        "A. $5:8$",
+        "B. $5:3$",
+        "C. $3:5$",
+        "D. $3:8$"
+      ],
+      "answer": "B",
+      "explanation": "路程一定时，速度与时间成反比例。速度比 $3:5$ → 时间比 $5:3$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_002",
+      "round": 1,
+      "type": "choice",
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正反比例的判断",
+      "content": "下面说法正确的是（　　）。",
+      "options": [
+        "A. 圆锥的侧面展开图是一个等腰三角形。",
+        "B. 小华身高 $1.2$ 米，她在平均水深是 $1$ 米的水池中游泳是绝对安全的。",
+        "C. 圆的面积和半径成正比例。",
+        "D. 如果 $ab=cd$（$a$、$b$、$c$、$d$ 均不为 $0$），那么 $a:c=d:b$。"
+      ],
+      "answer": "D",
+      "explanation": "A 错（圆锥侧面展开是扇形）；B 错（平均水深 $1$ 米，最深可能 $>1.2$ 米）；C 错（圆的面积 $=\\pi r^{2}$，与半径平方成正比例）；D 对（$ab=cd \\Leftrightarrow a:c=d:b$）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "有 $6$ 个人参加会议，两两都要握手一次，共要握手（　　）次。",
+      "options": [
+        "A. $5$",
+        "B. $10$",
+        "C. $15$",
+        "D. $30$"
+      ],
+      "answer": "C",
+      "explanation": "两两组合 $=\\frac{6\\times 5}{2}=15$ 次。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "规定 $10$ 吨记为 $0$ 吨，$11$ 吨记为 $+1$ 吨，则下列说法错误的是（　　）。",
+      "options": [
+        "A. $8$ 吨记 $8$ 吨",
+        "B. $15$ 吨记为 $+5$ 吨",
+        "C. $6$ 吨记为 $-4$ 吨",
+        "D. $+3$ 吨表示 $13$ 吨"
+      ],
+      "answer": "A",
+      "explanation": "以 $10$ 吨为基准 $0$，$8$ 吨比基准少 $2$ 吨，应记 $-2$ 吨，A 错。$15-10=+5$（B 对），$6-10=-4$（C 对），$+3+10=13$（D 对）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_002",
+      "round": 1,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "大于 $0$ 而小于 $1$ 的数有（　　）。",
+      "options": [
+        "A. 一个也没有",
+        "B. 无数个",
+        "C. 有 $10$ 个",
+        "D. 以上都不是"
+      ],
+      "answer": "B",
+      "explanation": "在 $0$ 和 $1$ 之间存在无数个分数 / 小数（如 $0.1, 0.2, \\ldots, 0.99, \\ldots$），所以有无数个。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "$13.6\\%$ 去掉百分号后，这个数就（　　）。",
+      "options": [
+        "A. 扩大为原来的 $100$ 倍",
+        "B. 缩小为原来的 $\\frac{1}{100}$",
+        "C. 大小不变",
+        "D. 无法确定"
+      ],
+      "answer": "A",
+      "explanation": "$13.6\\%=0.136$，去掉百分号变成 $13.6$，扩大了 $100$ 倍。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "妙想做抛硬币的游戏（硬币是均匀的）。下列说法正确的是（　　）。",
+      "options": [
+        "A. 妙想抛 $20$ 次硬币，一定是 $10$ 次正面朝上，$10$ 次反面朝上。",
+        "B. 妙想前 $4$ 次抛的结果都是反面朝上，第 $5$ 次一定会正面朝上。",
+        "C. 妙想做了 $1000$ 次抛硬币的游戏，正面朝上的次数和反面朝上的次数的比值接近或等于 $1$。",
+        "D. 妙想抛了 $10$ 次硬币，不可能 $8$ 次正面朝上。"
+      ],
+      "answer": "C",
+      "explanation": "概率是大量重复试验的稳定值。$1000$ 次时正反次数比接近 $1$（C 对）。其他选项混淆概率与必然。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "把 $2$ 个棱长 $3$ 厘米的正方体拼成一个长方体，表面积比原来两个正方体的表面积之和减少（　　）平方厘米。",
+      "options": [
+        "A. $3$",
+        "B. $6$",
+        "C. $9$",
+        "D. $18$"
+      ],
+      "answer": "D",
+      "explanation": "拼合处重合 $2$ 个面，每个面 $3\\times 3=9$ 平方厘米，减少 $2\\times 9=18$ 平方厘米。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "已知三角形一个角是 $30°$，另外两个内角的度数比是 $1:4$，那么这个三角形是（　　）。",
+      "options": [
+        "A. 锐角三角形",
+        "B. 直角三角形",
+        "C. 等腰直角三角形",
+        "D. 钝角三角形"
+      ],
+      "answer": "D",
+      "explanation": "另外两个角共 $180°-30°=150°$，按 $1:4$ 分 $30°$ 与 $120°$。$120°$ 是钝角，所以是钝角三角形。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_002",
+      "round": 1,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "在一次期末考试中，李华前四门功课的平均成绩是 $92$ 分，当数学成绩公布后，她的平均成绩下降了 $2$ 分，李华的数学考了（　　）分。",
+      "answer": "82",
+      "explanation": "五门平均 $=92-2=90$ 分，五门总分 $=90\\times 5=450$。前四门总分 $=92\\times 4=368$。数学 $=450-368=82$ 分。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/图形放大缩小",
+      "content": "把边长是 $5$ 厘米的正方形按 $4:1$ 扩大后，扩大前后图形之间的面积比是（　　）。",
+      "answer": "1:16",
+      "explanation": "边长 $4:1$ 扩大 → 新边长 $20$ 厘米。原面积 $25$，新面积 $400$。面积比 $25:400=1:16$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_002",
+      "round": 3,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "把一根木料锯成 $4$ 段要用 $12$ 分钟，照这样，如果锯成 $8$ 段，一共需要（　　）分钟。",
+      "answer": "28",
+      "explanation": "锯 $4$ 段需 $3$ 刀，每刀 $12\\div 3=4$ 分钟。锯 $8$ 段需 $7$ 刀，共 $7\\times 4=28$ 分钟。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "一桶汽油，第一次用去了 $20\\%$，第二次用去了余下的 $40\\%$，还剩下 $12$ 升，这桶汽油共重多少升？",
+      "answer": "25",
+      "explanation": "第一次用去 $20\\%$，余下 $80\\%$。第二次用余下的 $40\\%$，再余下 $80\\%\\times(1-40\\%)=80\\%\\times 60\\%=48\\%$。即 $48\\%=12$ 升，全桶 $=12\\div 48\\%=25$ 升。"
+    }
+  ]
+}

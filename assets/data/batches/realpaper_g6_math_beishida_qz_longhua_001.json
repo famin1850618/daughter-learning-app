@@ -1,0 +1,207 @@
+{
+  "source": "realpaper_g6_math_beishida_qz_longhua_001",
+  "_source_docx_sha1": "5d10cf74d1cdefd3",
+  "subject": "math",
+  "grade": 6,
+  "knowledge_points_added": [
+    "圆柱与圆锥/圆柱的表面积",
+    "圆柱与圆锥/圆锥的体积",
+    "正反比例/正反比例的判断",
+    "正反比例/比例尺"
+  ],
+  "_quality_meta": {
+    "source_file": "精品解析：2024-2025学年广东省深圳市龙华区北师大版六年级下册期中测试数学试卷（原卷版）.docx",
+    "sha1": "5d10cf74d1cdefd3",
+    "paper_type": "qizhong",
+    "chapter_default": "圆柱与圆锥",
+    "omath_total_formulas": 0,
+    "images_used": 0,
+    "questions_total_paper": 21,
+    "questions_imported": 6,
+    "questions_skipped": 14
+  },
+  "_skipped_for_future": [
+    {
+      "qnum": "1",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "解方程或比例（位图算式）",
+      "source_para": 3
+    },
+    {
+      "qnum": "2",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "用喜欢的方法计算（位图算式）",
+      "source_para": 5
+    },
+    {
+      "qnum": "5",
+      "reason": "unclear_image",
+      "raw_excerpt": "如图三角形 M 旋转 90° 选哪个（4 选项位图）",
+      "source_para": 14
+    },
+    {
+      "qnum": "7",
+      "reason": "answer_ambiguous",
+      "raw_excerpt": "四圆柱拼大圆柱减面 72，原参考答案 D=720 但常见解法得 120 / 480，需 Famin 复核",
+      "source_para": 23
+    },
+    {
+      "qnum": "8",
+      "reason": "unclear_image",
+      "raw_excerpt": "如图时针/分针旋转角度（图依赖）",
+      "source_para": 26
+    },
+    {
+      "qnum": "9",
+      "reason": "unclear_image",
+      "raw_excerpt": "四种铁皮选材料做水桶（图依赖）",
+      "source_para": 28
+    },
+    {
+      "qnum": "10",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "核桃质量与箱数表（表格 wmf 含变量名缺）",
+      "source_para": 32
+    },
+    {
+      "qnum": "13",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "如果 ___，那么 ___:___（wmf 缺）",
+      "source_para": 38
+    },
+    {
+      "qnum": "14",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "比例尺 ___（wmf 缺）",
+      "source_para": 39
+    },
+    {
+      "qnum": "15",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "比例外项 ___ 和 ___（wmf 缺）",
+      "source_para": 40
+    },
+    {
+      "qnum": "16",
+      "reason": "open_drawing_question",
+      "raw_excerpt": "画对称/旋转/放大图",
+      "source_para": 42
+    },
+    {
+      "qnum": "17",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "油耗与二氧化碳表/连线（图+表缺）",
+      "source_para": 47
+    },
+    {
+      "qnum": "18",
+      "reason": "unclear_image",
+      "raw_excerpt": "出租车路线图（图依赖距离）",
+      "source_para": 52
+    },
+    {
+      "qnum": "20",
+      "reason": "unclear_image",
+      "raw_excerpt": "漏斗（圆柱+圆锥）含图",
+      "source_para": 56
+    },
+    {
+      "qnum": "21",
+      "reason": "unclear_image",
+      "raw_excerpt": "礼品盒+三层蛋糕（图依赖尺寸）",
+      "source_para": 58
+    }
+  ],
+  "questions": [
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qz_longhua_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "马拉松比赛全程约为 $42$ 千米，已知地图上量得某地马拉松全程距离为 $2.1$ 厘米，这张地图比例尺为（　　）。",
+      "options": [
+        "A. $1:20000$",
+        "B. $1:200000$",
+        "C. $1:2000000$",
+        "D. $1:20000000$"
+      ],
+      "answer": "C",
+      "explanation": "$42$ 千米 $=4200000$ 厘米，比例尺 $=2.1:4200000=1:2000000$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qz_longhua_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的表面积",
+      "content": "一个长方形的长是 $4$ 厘米，宽是 $3$ 厘米，分别以长和宽为轴旋转一周后形成两个圆柱，关于这两个圆柱的说法正确的是（　　）。",
+      "options": [
+        "A. 两个圆柱底面积相等",
+        "B. 两个圆柱的体积相等",
+        "C. 两个圆柱的表面积相等",
+        "D. 两个圆柱的侧面积相等"
+      ],
+      "answer": "D",
+      "explanation": "以长 $4$ 为轴：圆柱 $1$ 半径 $=3$，高 $=4$；以宽 $3$ 为轴：圆柱 $2$ 半径 $=4$，高 $=3$。底面积 $\\pi\\times 9$ 与 $\\pi\\times 16$ 不等，体积 $\\pi\\times 9\\times 4=36\\pi$ 与 $\\pi\\times 16\\times 3=48\\pi$ 不等，表面积也不等。但侧面积 $=2\\pi rh$：圆柱 $1$ 侧 $=2\\pi\\times 3\\times 4=24\\pi$，圆柱 $2$ 侧 $=2\\pi\\times 4\\times 3=24\\pi$，相等。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qz_longhua_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正反比例的判断",
+      "content": "下面是四位同学关于「两个量是否成正比例」的说法：\n笑笑：「路程与时间的比值一定，路程与时间成正比例。」\n奇思：「长方形的面积一定，长方形的长与宽成正比例。」\n淘气：「小明的年龄会随爸爸年龄的变化而变化，爸爸的年龄与小明的年龄成正比例。」\n妙想：「书的单价一定，买书应付金额与所买书的数量成正比例。」\n正确的是（　　）。",
+      "options": [
+        "A. 只有笑笑",
+        "B. 有笑笑和淘气",
+        "C. 有笑笑和妙想",
+        "D. 有笑笑、妙想和奇思"
+      ],
+      "answer": "C",
+      "explanation": "笑笑对（比值一定 → 正比例）；奇思错（积一定 → 反比例）；淘气错（差一定，不成比例）；妙想对（比值一定）。所以笑笑和妙想正确。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qz_longhua_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆锥的体积",
+      "content": "一个棱长是 $4\\text{cm}$ 的正方体容器，装满水后把水倒入一个深为 $6\\text{cm}$ 的圆锥形容器中，刚好倒满，没有溢出，这个圆锥形容器的底面积是（　　）平方厘米。",
+      "answer": "32",
+      "explanation": "正方体水量 $=4^{3}=64$ 立方厘米。圆锥体积 $=\\frac{1}{3}\\times$ 底面积 $\\times$ 高 $=64$，底面积 $=\\frac{64\\times 3}{6}=32$ 平方厘米。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qz_longhua_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的表面积",
+      "content": "一个圆柱的底面直径是 $4$ 分米，高是 $6$ 分米，侧面积是（　　）平方分米。（取 $\\pi=3.14$）",
+      "answer": "75.36",
+      "explanation": "侧面积 $=\\pi d h=3.14\\times 4\\times 6=75.36$ 平方分米。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qz_longhua_001",
+      "round": 4,
+      "type": "fill",
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正反比例的判断",
+      "content": "赴九天，问苍穹！这是独属于中国人的宇宙级浪漫。我国载人空间站「天宫」飞行 $76.8$ 千米仅需 $10$ 秒，每天可绕地球约 $16$ 圈，「天宫」内的航天员们大约每 $1.5$ 小时就要经历一次日出与日落。「天宫」飞行 $192$ 千米需要多久？（用比例解，单位：秒）",
+      "answer": "25",
+      "explanation": "路程与时间成正比例。设需 $x$ 秒，$76.8:10=192:x$，$76.8x=192\\times 10=1920$，$x=25$ 秒。"
+    }
+  ]
+}
