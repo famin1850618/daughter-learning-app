@@ -315,7 +315,13 @@
         "1/10,1/100,1/100"
       ],
       "explanation": "$5.68$ 的 $6$ 在十分位：$6 \\times 0.1$。$0.06$ 的 $6$ 在百分位：$6 \\times 0.01$。$26.5\\%=0.265$，$6$ 在百分位：$6 \\times 0.01$。",
-      "_ai_dispute": "原题第二空中位图丢失（参考答案显示 $0.01$，按典型题型推测原题为 $0.06$ 或 $0.026$）。worker 推断为 $0.06$，可能与原题略有不同，须 Famin 复核。"
+      "_ai_dispute": {
+        "type": "answer_ambiguous",
+        "reason": "原题第二空中位图丢失（参考答案显示 $0.01$，按典型题型推测原题为 $0.06$ 或 $0.026$）。worker 推断为 $0.06$，可能与原题略有不同，须 Famin 复核。",
+        "alt_answer": "",
+        "confidence": "low",
+        "raised_by": "worker_a8361fea_v3_14_phase3_b6"
+      }
     },
     {
       "subject": "math",
@@ -462,7 +468,13 @@
         "3万千米,10万千米"
       ],
       "explanation": "高速占普通的 $\\frac{3}{10}$，则总长占普通的 $1+\\frac{3}{10}=\\frac{13}{10}$。普通 $= 13 \\div \\frac{13}{10} = 10$ 万千米；高速 $= 10 \\times \\frac{3}{10} = 3$ 万千米。",
-      "_ai_dispute": "原题位图丢失「高速占普通的 X」具体分数，参考答案表明分数为 $\\frac{3}{10}$，worker 据此推断。如果原题分数不同，结果会不同。"
+      "_ai_dispute": {
+        "type": "answer_ambiguous",
+        "reason": "原题位图丢失「高速占普通的 X」具体分数，参考答案表明分数为 $\\frac{3}{10}$，worker 据此推断。如果原题分数不同，结果会不同。",
+        "alt_answer": "",
+        "confidence": "low",
+        "raised_by": "worker_a8361fea_v3_14_phase3_b6"
+      }
     },
     {
       "subject": "math",
@@ -498,7 +510,13 @@
         "三（1）班和三（4）班一样多"
       ],
       "explanation": "三（$1$）班 $= 16 \\times \\frac{1}{4}=4$ 个。剩余 $16-4=12$ 个。三（$4$）班 $= 12 \\times \\frac{1}{3}=4$ 个。两班分得相同。",
-      "_ai_dispute": "原题位图丢失两个分数，参考答案表明结果「同样多」（4=4）。worker 推断为「三（$1$）班 $\\frac{1}{4}$、三（$4$）班 $\\frac{1}{3}$」常见命题。如果原题分数不同，结果会不同。"
+      "_ai_dispute": {
+        "type": "answer_ambiguous",
+        "reason": "原题位图丢失两个分数，参考答案表明结果「同样多」（4=4）。worker 推断为「三（$1$）班 $\\frac{1}{4}$、三（$4$）班 $\\frac{1}{3}$」常见命题。如果原题分数不同，结果会不同。",
+        "alt_answer": "",
+        "confidence": "low",
+        "raised_by": "worker_a8361fea_v3_14_phase3_b6"
+      }
     }
   ]
 }
