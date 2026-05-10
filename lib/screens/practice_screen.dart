@@ -354,6 +354,7 @@ class _QuestionScreenState extends State<_QuestionScreen> {
       setState(() => _seconds++);
     });
     _maybeLoadAttemptCount();
+    _prefillPendingAnswer();
   }
 
   @override
@@ -366,6 +367,21 @@ class _QuestionScreenState extends State<_QuestionScreen> {
       _seconds = 0;
       _paused = false;
       _maybeLoadAttemptCount();
+      _prefillPendingAnswer();
+    }
+  }
+
+  /// V3.14: 组合题里如果当前题已暂存过答案，预填回去（让用户能修改）
+  void _prefillPendingAnswer() {
+    final q = widget.question;
+    if (q.groupId == null) return;
+    final service = context.read<PracticeService>();
+    final stashed = service.pendingAnswerFor(q);
+    if (stashed == null || stashed.isEmpty) return;
+    if (q.type == QuestionType.multipleChoice || q.type == QuestionType.judgment) {
+      _selectedOption = stashed;
+    } else {
+      _answerCtrl.text = stashed;
     }
   }
 
@@ -409,9 +425,226 @@ class _QuestionScreenState extends State<_QuestionScreen> {
         ? (_selectedOption ?? '')
         : _answerCtrl.text.trim();
     if (answer.isEmpty) return;
-    final correct = await context.read<PracticeService>().submitAnswer(answer);
+    final service = context.read<PracticeService>();
+    // V3.14: 组合题分支处理
+    if (q.groupId != null) {
+      if (service.isLastInGroup) {
+        // 组内最后一题：暂存当前 + 整组判分（弹结果页由 build watcher 处理）
+        await service.submitGroup(answer);
+        _timer?.cancel();
+      } else {
+        // 组内非末位：暂存 + 跳到组内下一题（不显示对错）
+        service.stashGroupAnswer(answer);
+        service.goToNextInGroup();
+      }
+      return;
+    }
+    final correct = await service.submitAnswer(answer);
     setState(() => _result = correct);
     _timer?.cancel();
+  }
+
+  /// V3.14: 组合题里"上一题"按钮回调（暂存当前答案 + 跳上一题）
+  void _prevInGroup() {
+    final q = widget.question;
+    if (q.groupId == null) return;
+    final service = context.read<PracticeService>();
+    // 暂存当前答案（如有）
+    final answer = (q.type == QuestionType.multipleChoice ||
+            q.type == QuestionType.judgment)
+        ? (_selectedOption ?? '')
+        : _answerCtrl.text.trim();
+    if (answer.isNotEmpty) service.stashGroupAnswer(answer);
+    service.goToPrevInGroup();
+  }
+
+  /// V3.14: 整组结果展示视图（替代普通答题区）
+  Widget _buildGroupResultView(BuildContext context, PracticeService service) {
+    final results = service.lastGroupResult ?? [];
+    final allCorrect = results.isNotEmpty && results.every((r) => r.isCorrect);
+    final hasSubj = results.any((r) =>
+        r.question.type == QuestionType.subjective || r.question.aiDispute != null);
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // 整组判定 banner
+        Container(
+          width: double.infinity,
+          padding: const EdgeInsets.all(14),
+          decoration: BoxDecoration(
+            color: hasSubj
+                ? Colors.amber.shade50
+                : (allCorrect ? Colors.green.shade50 : Colors.red.shade50),
+            border: Border.all(
+              color: hasSubj
+                  ? Colors.amber.shade400
+                  : (allCorrect ? Colors.green.shade400 : Colors.red.shade300),
+              width: 1.5,
+            ),
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: Row(
+            children: [
+              Icon(
+                hasSubj
+                    ? Icons.hourglass_top
+                    : (allCorrect ? Icons.check_circle : Icons.cancel),
+                size: 28,
+                color: hasSubj
+                    ? Colors.amber.shade800
+                    : (allCorrect ? Colors.green.shade700 : Colors.red.shade700),
+              ),
+              const SizedBox(width: 10),
+              Expanded(
+                child: Text(
+                  hasSubj
+                      ? '整组含主观题或 AI 争议题，等爸爸审核后定结果'
+                      : (allCorrect ? '整组全对！🎉' : '整组未全对（任一错就算错）'),
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    color: hasSubj
+                        ? Colors.amber.shade900
+                        : (allCorrect ? Colors.green.shade900 : Colors.red.shade900),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        const SizedBox(height: 12),
+        // 各子题答案对照
+        ...results.asMap().entries.map((entry) {
+          final i = entry.key;
+          final r = entry.value;
+          return Container(
+            margin: const EdgeInsets.only(bottom: 10),
+            padding: const EdgeInsets.all(12),
+            decoration: BoxDecoration(
+              color: r.isCorrect ? Colors.green.shade50 : Colors.red.shade50,
+              borderRadius: BorderRadius.circular(8),
+              border: Border.all(
+                color: r.isCorrect ? Colors.green.shade300 : Colors.red.shade300,
+              ),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Icon(
+                      r.isCorrect ? Icons.check : Icons.close,
+                      color: r.isCorrect ? Colors.green : Colors.red,
+                      size: 18,
+                    ),
+                    const SizedBox(width: 6),
+                    Text(
+                      '小题 ${i + 1}',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: r.isCorrect ? Colors.green.shade800 : Colors.red.shade800,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 6),
+                MathText(r.question.content, style: const TextStyle(fontSize: 14)),
+                const SizedBox(height: 6),
+                Row(children: [
+                  Text('你答：', style: TextStyle(fontSize: 13, color: Colors.grey[700])),
+                  Expanded(
+                    child: MathText(r.userAnswer.isEmpty ? '（未填）' : r.userAnswer,
+                        style: TextStyle(
+                            fontSize: 13,
+                            color: r.isCorrect ? Colors.green.shade700 : Colors.red.shade700)),
+                  ),
+                ]),
+                if (!r.isCorrect && r.question.type != QuestionType.subjective) ...[
+                  const SizedBox(height: 4),
+                  Row(children: [
+                    Text('正解：', style: TextStyle(fontSize: 13, color: Colors.grey[700])),
+                    Expanded(
+                      child: MathText(r.question.displayAnswer,
+                          style: TextStyle(fontSize: 13, color: Colors.green.shade700)),
+                    ),
+                  ]),
+                ],
+                if (r.question.explanation != null && r.question.explanation!.isNotEmpty) ...[
+                  const SizedBox(height: 6),
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                      color: Colors.amber.shade50,
+                      borderRadius: BorderRadius.circular(6),
+                    ),
+                    child: MathText('💡 ${r.question.explanation}',
+                        style: const TextStyle(fontSize: 12.5, height: 1.5)),
+                  ),
+                ],
+              ],
+            ),
+          );
+        }),
+        const SizedBox(height: 12),
+        // 下一题按钮
+        SizedBox(
+          width: double.infinity,
+          height: 46,
+          child: ElevatedButton.icon(
+            icon: const Icon(Icons.arrow_forward, size: 18),
+            label: const Text('下一题', style: TextStyle(fontSize: 16)),
+            onPressed: () {
+              service.clearLastGroupResult();
+              service.nextQuestion();
+            },
+          ),
+        ),
+      ],
+    );
+  }
+
+  /// V3.14: 组合题导航栏（上一题 / 下一题或完成整组）
+  Widget _buildGroupNavBar(BuildContext context, Question q, PracticeService service) {
+    final isLast = service.isLastInGroup;
+    final isFirst = service.isFirstInGroup;
+    final groupSize = service.currentGroupIndices().length;
+    final pos = service.currentGroupIndices().indexOf(service.currentIndex) + 1;
+
+    return Row(
+      children: [
+        // 上一题（组内非首位才可点）
+        Expanded(
+          child: OutlinedButton.icon(
+            icon: const Icon(Icons.arrow_back, size: 18),
+            label: const Text('上一题'),
+            onPressed: isFirst ? null : _prevInGroup,
+          ),
+        ),
+        const SizedBox(width: 8),
+        // 进度提示
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+          decoration: BoxDecoration(
+            color: Colors.deepPurple.withOpacity(0.10),
+            borderRadius: BorderRadius.circular(6),
+          ),
+          child: Text(
+            '$pos / $groupSize',
+            style: const TextStyle(fontSize: 13, color: Colors.deepPurple, fontWeight: FontWeight.bold),
+          ),
+        ),
+        const SizedBox(width: 8),
+        // 下一题（非末位）/ 完成整组（末位）
+        Expanded(
+          child: ElevatedButton.icon(
+            icon: Icon(isLast ? Icons.check_circle : Icons.arrow_forward, size: 18),
+            label: Text(isLast ? '完成整组' : '下一题'),
+            onPressed: _canSubmit(q) ? _submit : null,
+          ),
+        ),
+      ],
+    );
   }
 
   @override
@@ -569,18 +802,46 @@ class _QuestionScreenState extends State<_QuestionScreen> {
             ),
             const SizedBox(height: 16),
 
+            // V3.14: 组合题整组判分后显示整组结果（覆盖普通答题区）
+            if (q.groupId != null && service.lastGroupResult != null) ...[
+              _buildGroupResultView(context, service),
+            ]
             // 答题区域（V3.8.3：废弃"查看提示"——explanation 是答题推导，相当于给答案）
-            if (_result == null) ...[
+            else if (_result == null) ...[
               _buildInputArea(q),
               const SizedBox(height: 16),
-              SizedBox(
-                width: double.infinity,
-                height: 46,
-                child: ElevatedButton(
-                  onPressed: _canSubmit(q) ? _submit : null,
-                  child: const Text('提交答案', style: TextStyle(fontSize: 16)),
+              // V3.14: 组合题里有"上一题/下一题"双按钮；非组合题单"提交"按钮
+              if (q.groupId != null) ...[
+                _buildGroupNavBar(context, q, service),
+                const SizedBox(height: 8),
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: Colors.blue.shade50,
+                    borderRadius: BorderRadius.circular(6),
+                  ),
+                  child: Row(
+                    children: [
+                      Icon(Icons.info_outline, size: 16, color: Colors.blue.shade700),
+                      const SizedBox(width: 6),
+                      Expanded(
+                        child: Text(
+                          '组合题：做完所有小题统一判分（全对才算对）。可上下翻页修改答案。',
+                          style: TextStyle(color: Colors.blue.shade700, fontSize: 12),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-              ),
+              ] else
+                SizedBox(
+                  width: double.infinity,
+                  height: 46,
+                  child: ElevatedButton(
+                    onPressed: _canSubmit(q) ? _submit : null,
+                    child: const Text('提交答案', style: TextStyle(fontSize: 16)),
+                  ),
+                ),
             ],
 
             // 结果反馈（V3.8.2：选择题答完保留选项可见，标正解 + 用户错选）

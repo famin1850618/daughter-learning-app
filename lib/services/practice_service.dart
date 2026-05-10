@@ -9,6 +9,18 @@ import 'reward_service.dart';
 import 'difficulty_settings_service.dart';
 import 'review_request_service.dart';
 
+/// V3.14: 组合题整组结果一项
+class GroupResultEntry {
+  final Question question;
+  final String userAnswer;
+  final bool isCorrect;
+  const GroupResultEntry({
+    required this.question,
+    required this.userAnswer,
+    required this.isCorrect,
+  });
+}
+
 class PracticeService extends ChangeNotifier {
   final QuestionDao _dao = QuestionDao();
   final PracticeSessionDao _sessionDao = PracticeSessionDao();
@@ -141,6 +153,15 @@ class PracticeService extends ChangeNotifier {
   int? _lastSubmittedRecordId;
   String? _lastSubmittedAnswer;
 
+  /// V3.14: 组合题暂存答案（questionId → user answer）
+  /// 组合题子题答完不立即判分/INSERT record，先暂存到这里。
+  /// 组内最后一题确认后，一次性 INSERT 全组 record + 计 _score（全对才 +1）+ 弹整组结果。
+  /// Map 在整组判分后被清空。
+  final Map<int, String> _pendingGroupAnswers = {};
+  /// V3.14: 上一组刚提交的整组结果（用于整组结果页展示）
+  /// 格式 [{question, userAnswer, isCorrect}, ...]
+  List<GroupResultEntry>? _lastGroupResult;
+
   SessionKind _kind = SessionKind.normal;
   String? _sessionId;
   bool _rewardClaimed = false;
@@ -164,6 +185,87 @@ class PracticeService extends ChangeNotifier {
 
   int get elapsedSeconds =>
       _questionStartTime == null ? 0 : DateTime.now().difference(_questionStartTime!).inSeconds;
+
+  // ─── V3.14 组合题整体单元化 helpers ─────────────────────────────
+
+  /// 当前题所在组的所有索引（按 group_order 升序）；非组合题返回 [_currentIndex]
+  List<int> currentGroupIndices() {
+    final q = currentQuestion;
+    if (q == null || q.groupId == null) return [_currentIndex];
+    final indices = <int>[];
+    for (int i = 0; i < _currentQuestions.length; i++) {
+      if (_currentQuestions[i].groupId == q.groupId) indices.add(i);
+    }
+    return indices;
+  }
+
+  /// 当前题是否在组合题里
+  bool get isInGroup => currentQuestion?.groupId != null;
+
+  /// 当前题是否组内最后一题（按列表顺序，假设 batch JSON 已按 group_order 排好）
+  bool get isLastInGroup {
+    if (!isInGroup) return false;
+    final group = currentGroupIndices();
+    return group.last == _currentIndex;
+  }
+
+  /// 当前题是否组内第一题
+  bool get isFirstInGroup {
+    if (!isInGroup) return false;
+    final group = currentGroupIndices();
+    return group.first == _currentIndex;
+  }
+
+  /// 暂存的答案（如果组内当前题已回答过）
+  String? pendingAnswerFor(Question q) =>
+      q.id == null ? null : _pendingGroupAnswers[q.id];
+
+  /// 上一组结果（整组完成时弹结果页用）
+  List<GroupResultEntry>? get lastGroupResult => _lastGroupResult;
+
+  /// 清掉上一组结果（结果页关闭后调用）
+  void clearLastGroupResult() {
+    _lastGroupResult = null;
+    notifyListeners();
+  }
+
+  /// V3.14: 跳到组内上一题（仅组合题里有效）
+  void goToPrevInGroup() {
+    if (!isInGroup || isFirstInGroup) return;
+    final group = currentGroupIndices();
+    final pos = group.indexOf(_currentIndex);
+    if (pos > 0) {
+      _currentIndex = group[pos - 1];
+      _hintShown = false;
+      _questionStartTime = DateTime.now();
+      notifyListeners();
+      _persist();
+    }
+  }
+
+  /// V3.14: 跳到组内下一题（仅组合题里有效；非末位时使用，末位走 submitGroup）
+  void goToNextInGroup() {
+    if (!isInGroup || isLastInGroup) return;
+    final group = currentGroupIndices();
+    final pos = group.indexOf(_currentIndex);
+    if (pos >= 0 && pos < group.length - 1) {
+      _currentIndex = group[pos + 1];
+      _hintShown = false;
+      _questionStartTime = DateTime.now();
+      notifyListeners();
+      _persist();
+    }
+  }
+
+  /// V3.14: 暂存当前组合题子题答案（不计 score / 不 INSERT record）
+  /// 组内非末位题用此方法；末位题走 submitGroup 一次性结算。
+  void stashGroupAnswer(String answer) {
+    final q = currentQuestion;
+    if (q == null || q.id == null || q.groupId == null) return;
+    _pendingGroupAnswers[q.id!] = answer;
+    notifyListeners();
+    _persist();
+  }
 
   Future<void> _restoreOnStart() async {
     _restoring = true;
@@ -371,6 +473,69 @@ class PracticeService extends ChangeNotifier {
     _hintShown = true;
     notifyListeners();
     _persist();
+  }
+
+  /// V3.14: 提交整组组合题答案（组内最后一题确认后调用）
+  /// 一次性 INSERT 所有子题 record + 全对才计 _score+1 + 填充 _lastGroupResult。
+  /// UI 用 _lastGroupResult 弹整组结果页。
+  /// 调用前 stashGroupAnswer 已暂存所有子题答案到 _pendingGroupAnswers。
+  Future<void> submitGroup(String lastAnswer) async {
+    final q = currentQuestion;
+    if (q == null || q.groupId == null) return;
+    // 暂存当前最后一题答案
+    if (q.id != null) _pendingGroupAnswers[q.id!] = lastAnswer;
+
+    final group = currentGroupIndices();
+    final results = <GroupResultEntry>[];
+    bool allCorrect = true;
+    for (final idx in group) {
+      final gq = _currentQuestions[idx];
+      final ans = gq.id == null ? '' : (_pendingGroupAnswers[gq.id] ?? '');
+      bool correct;
+      if (gq.type == QuestionType.subjective) {
+        correct = false; // 主观题待批，整组不算全对
+      } else if (gq.aiDispute != null) {
+        // V3.13: AI 争议题学情冻结，正常算对错供未来回放
+        correct = AnswerMatcher.isCorrect(
+          userAns: ans, correctAnswerField: gq.answer, type: gq.type);
+      } else {
+        correct = AnswerMatcher.isCorrect(
+          userAns: ans, correctAnswerField: gq.answer, type: gq.type);
+      }
+      if (!correct) allCorrect = false;
+      // INSERT 单个子题 record
+      final recordId = await _dao.insertRecord(PracticeRecord(
+        questionId: gq.id!,
+        userAnswer: ans,
+        isCorrect: correct,
+        practicedAt: DateTime.now(),
+        timeSpent: 0, // V3.14 整组不细记单题耗时
+        usedHint: false,
+        sessionId: _sessionId,
+      ));
+      // 主观题/AI争议题入审核
+      if (gq.type == QuestionType.subjective) {
+        await _reviewService.submitSubjectiveGrading(practiceRecordId: recordId);
+      }
+      if (gq.aiDispute != null) {
+        await _reviewService.submitAiDispute(
+          practiceRecordId: recordId, aiDisputeMeta: gq.aiDispute!);
+      }
+      results.add(GroupResultEntry(
+        question: gq, userAnswer: ans, isCorrect: correct));
+    }
+
+    // 整组全对 → _score+1（除非含主观/AI 争议题，则不计学情，等家长审）
+    final hasSubjOrDispute = group.any((i) {
+      final gq = _currentQuestions[i];
+      return gq.type == QuestionType.subjective || gq.aiDispute != null;
+    });
+    if (allCorrect && !hasSubjOrDispute) _score++;
+
+    _lastGroupResult = results;
+    _pendingGroupAnswers.clear();
+    notifyListeners();
+    await _persist();
   }
 
   Future<bool> submitAnswer(String answer) async {
