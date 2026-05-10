@@ -1,5 +1,5 @@
 {
-  "version": 57,
+  "version": 58,
   "updated_at": "2026-05-10",
   "batches": [
     {
@@ -35,62 +35,6 @@
       "batch_hash": "1454a0d4fa38d122b8868e694fb4a50b612a9445"
     },
     {
-      "source": "realpaper_g6_math_beishida_qm_guangming_001",
-      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_guangming_001.json",
-      "subject": "math",
-      "grade": 6,
-      "count": 12,
-      "batch_hash": "c42dac41652009bff605784cf84bc32b584cb4be"
-    },
-    {
-      "source": "realpaper_g6_math_beishida_qm_nanshan_001",
-      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_nanshan_001.json",
-      "subject": "math",
-      "grade": 6,
-      "count": 13,
-      "batch_hash": "ac2d9902d799c86eca9ec2eee8140cb8dbf4abac"
-    },
-    {
-      "source": "realpaper_g6_math_beishida_qm_futian_001",
-      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_futian_001.json",
-      "subject": "math",
-      "grade": 6,
-      "count": 16,
-      "batch_hash": "c337c9935d66922d3ed9e7cad20c5381efa176cf"
-    },
-    {
-      "source": "realpaper_g6_math_beishida_qm_pingshan_001",
-      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_pingshan_001.json",
-      "subject": "math",
-      "grade": 6,
-      "count": 20,
-      "batch_hash": "843a4921075c9d0e2a010b2fd794ff373ec709a6"
-    },
-    {
-      "source": "realpaper_g6_math_beishida_xsc_baoan_001",
-      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_xsc_baoan_001.json",
-      "subject": "math",
-      "grade": 6,
-      "count": 17,
-      "batch_hash": "32741f3537ea159ad8b7b0842886ce2d1a34f22d"
-    },
-    {
-      "source": "realpaper_g6_chinese_bubian_qm_shenzhen_001",
-      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_shenzhen_001.json",
-      "subject": "chinese",
-      "grade": 6,
-      "count": 17,
-      "batch_hash": "9b3233425a01885be446a3a49dbefeb06e9f24ae"
-    },
-    {
-      "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
-      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_nanshan_001.json",
-      "subject": "chinese",
-      "grade": 6,
-      "count": 40,
-      "batch_hash": "56de6af8b6ee4b4c6ed90ee93c4d463e02ca6e22"
-    },
-    {
       "source": "realpaper_g6_chinese_bubian_qm_futian_001",
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_futian_001.json",
       "subject": "chinese",
@@ -105,6 +49,22 @@
       "grade": 6,
       "count": 14,
       "batch_hash": "282e98045d3c3e9de334768ed2b8acc5785f1d0e"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_nanshan_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 40,
+      "batch_hash": "56de6af8b6ee4b4c6ed90ee93c4d463e02ca6e22"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qm_shenzhen_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_shenzhen_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 17,
+      "batch_hash": "9b3233425a01885be446a3a49dbefeb06e9f24ae"
     },
     {
       "source": "realpaper_g6_chinese_bubian_xsc_baoan_001",
@@ -124,44 +84,124 @@
       "description": "V3.12.22 主观题保留区（_subj_held 后缀，QuestionDao 自动过滤）"
     },
     {
-      "source": "realpaper_g6_math_beishida_qz_longhua_002",
-      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qz_longhua_002.json",
+      "source": "realpaper_g6_math_beishida_qm_futian_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_futian_001.json",
       "subject": "math",
       "grade": 6,
-      "count": 23,
-      "batch_hash": "7f83a7e1be583fbd878ec3ce149939904a51574b"
+      "count": 16,
+      "batch_hash": "c337c9935d66922d3ed9e7cad20c5381efa176cf"
     },
     {
-      "source": "realpaper_g6_math_beishida_xsc_yantian_001",
-      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_xsc_yantian_001.json",
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_futian_002.json",
       "subject": "math",
       "grade": 6,
-      "count": 23,
-      "batch_hash": "8d27b531c6216a19ccf66d22ef07e0bc1b44a6e1"
+      "count": 31,
+      "batch_hash": "8279720eaec97c297148e080007760c63c443fc0"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qm_guangming_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_guangming_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 12,
+      "batch_hash": "c42dac41652009bff605784cf84bc32b584cb4be"
     },
     {
       "source": "realpaper_g6_math_beishida_qm_longgang_001",
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_longgang_001.json",
       "subject": "math",
       "grade": 6,
-      "count": 29,
-      "batch_hash": "cdf4b41894382e53cdcb759580a8da95ef26bec4"
-    },
-    {
-      "source": "realpaper_g6_math_beishida_qm_luohu_001",
-      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_luohu_001.json",
-      "subject": "math",
-      "grade": 6,
-      "count": 20,
-      "batch_hash": "76ae80dde6a5982b40511b0df978f89fbe4070a4"
+      "count": 33,
+      "batch_hash": "b59587d8ef7829d83a3fbba1d132b5b5631f5d39"
     },
     {
       "source": "realpaper_g6_math_beishida_qm_longhua_001",
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_longhua_001.json",
       "subject": "math",
       "grade": 6,
+      "count": 33,
+      "batch_hash": "0c016a001707f77b588a966e54170f952a9b6bb0"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qm_luohu_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_luohu_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 28,
+      "batch_hash": "ee48c3ecaf9e1dbf51d24e2251432dc3a5658638"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qm_nanshan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_nanshan_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 13,
+      "batch_hash": "ac2d9902d799c86eca9ec2eee8140cb8dbf4abac"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qm_pingshan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_pingshan_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 20,
+      "batch_hash": "843a4921075c9d0e2a010b2fd794ff373ec709a6"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qz_longhua_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qz_longhua_002.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 30,
+      "batch_hash": "efc6ee1624989adafcf31a857b6f415c949057ea"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_xsc_baoan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_xsc_baoan_001.json",
+      "subject": "math",
+      "grade": 6,
       "count": 17,
-      "batch_hash": "2236f5ae9489e461e1b24e0fad3b2a624232aa6e"
+      "batch_hash": "32741f3537ea159ad8b7b0842886ce2d1a34f22d"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_xsc_baoan_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_xsc_baoan_002.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 19,
+      "batch_hash": "acf1b38bef854d89cff2d31049807dfedbefe939"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_xsc_longgang_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 27,
+      "batch_hash": "abf666542b278b30cf2c44f6d12aac591592cc88"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_xsc_shenzhen_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 25,
+      "batch_hash": "23d9daa4a837e22129c80708b3a1b3c306fbc889"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_xsc_yantian_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_xsc_yantian_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 27,
+      "batch_hash": "5a19671bd0fe9de5e8f113e42d0d6fb52c520d92"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 33,
+      "batch_hash": "cc653caccd7b9ee61c16fdf06a1276d77dcd3cba"
     }
   ],
   "_changelog": [

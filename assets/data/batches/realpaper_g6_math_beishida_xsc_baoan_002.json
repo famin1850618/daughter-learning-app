@@ -1,0 +1,445 @@
+{
+  "source": "realpaper_g6_math_beishida_xsc_baoan_002",
+  "subject": "math",
+  "grade": 6,
+  "knowledge_points_added": [
+    "圆柱与圆锥/圆柱的体积",
+    "总复习/图形与几何综合",
+    "总复习/数与代数综合",
+    "总复习/统计与可能性",
+    "正反比例/正反比例的判断",
+    "正反比例/正比例的意义",
+    "正反比例/比例尺",
+    "比和比例/比例的意义",
+    "比和比例/解比例"
+  ],
+  "_quality_meta": {
+    "source_file": "2022年广东省深圳市宝安区小升初数学试卷.docx",
+    "sha1": "6c059b5af09da0ad",
+    "paper_type": "xsc",
+    "chapter_default": "总复习",
+    "omath_total_formulas": "present",
+    "images_used": 0,
+    "questions_total_paper": 31,
+    "questions_imported": 19,
+    "questions_skipped": 20
+  },
+  "_skipped_for_future": [
+    {
+      "qnum": "1",
+      "reason": "unclear_image",
+      "raw_excerpt": "4 个简便计算（位图）",
+      "source_para": 3
+    },
+    {
+      "qnum": "2",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "在数轴方框中填合适的数（具体数据需图判定）",
+      "source_para": 5
+    },
+    {
+      "qnum": "3",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "圆柱形纸筒沿虚线剪开得长方形（图缺尺寸）",
+      "source_para": 7
+    },
+    {
+      "qnum": "4",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "小齐家离学校 / 小方家离小巧家（图缺）",
+      "source_para": 9
+    },
+    {
+      "qnum": "7",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "两组对边平行的四边形数量（具体图形数量缺）",
+      "source_para": 14
+    },
+    {
+      "qnum": "8",
+      "reason": "unclear_image",
+      "raw_excerpt": "哪个图按 2:1 放大 / 1:2 缩小（图选项）",
+      "source_para": 16
+    },
+    {
+      "qnum": "11",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "苹果体积测量（容器图缺水位升降数据）",
+      "source_para": 21
+    },
+    {
+      "qnum": "14",
+      "reason": "unclear_image",
+      "raw_excerpt": "三视图判立体图形（4 个图选项）",
+      "source_para": 30
+    },
+    {
+      "qnum": "16",
+      "reason": "unclear_image",
+      "raw_excerpt": "甲乙队伍人数关系（4 选项需图判定）",
+      "source_para": 34
+    },
+    {
+      "qnum": "18",
+      "reason": "unclear_image",
+      "raw_excerpt": "a 自然数 4 选项含分式（题面 OMath 部分缺）",
+      "source_para": 39
+    },
+    {
+      "qnum": "20",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "4 选项判组比例（OMath 部分缺）",
+      "source_para": 43
+    },
+    {
+      "qnum": "21",
+      "reason": "unclear_image",
+      "raw_excerpt": "阴影由空白绕 O 顺时针旋转 90°（4 个图选项）",
+      "source_para": 46
+    },
+    {
+      "qnum": "22",
+      "reason": "unclear_image",
+      "raw_excerpt": "圆锥体积与哪个圆柱相等（4 个图选项需尺寸）",
+      "source_para": 49
+    },
+    {
+      "qnum": "24",
+      "reason": "open_drawing_question",
+      "raw_excerpt": "点子图画三种三角形/平行四边形",
+      "source_para": 58
+    },
+    {
+      "qnum": "25(2)",
+      "reason": "open_drawing_question",
+      "raw_excerpt": "将图形 ② 向上平移 4 格画图形 ③",
+      "source_para": 60
+    },
+    {
+      "qnum": "26(2)",
+      "reason": "open_drawing_question",
+      "raw_excerpt": "画路程与时间的关系图",
+      "source_para": 64
+    },
+    {
+      "qnum": "28",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "笑笑第一周读全书的 ?，第二周读 ?，剩 330 页（具体分数 OMath 部分缺）",
+      "source_para": 73
+    },
+    {
+      "qnum": "29",
+      "reason": "subjective_short",
+      "raw_excerpt": "家务劳动调查 + 方法说明",
+      "source_para": 74
+    },
+    {
+      "qnum": "30",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "圆柱形水桶倒进长方体鱼缸（具体尺寸缺）",
+      "source_para": 78
+    },
+    {
+      "qnum": "31",
+      "reason": "open_drawing_question",
+      "raw_excerpt": "梯形上底 +4 变平行四边形，-3 变三角形（含作图）",
+      "source_para": 82
+    }
+  ],
+  "questions": [
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_baoan_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "content": "把一个直径是 $6$ 厘米，高是 $10$ 厘米的圆柱，切拼成一个近似的长方体。\n1. 这个长方体的长是 ____ 厘米。",
+      "answer": "9.42",
+      "explanation": "长 $=$ 圆柱底面周长的一半 $=\\pi\\times 6\\div 2=9.42$ cm。",
+      "group_id": "xsc_baoan_002_q5",
+      "group_order": 1
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_baoan_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "content": "把一个直径是 $6$ 厘米，高是 $10$ 厘米的圆柱，切拼成一个近似的长方体。\n2. 这个长方体的宽是 ____ 厘米。",
+      "answer": "3",
+      "explanation": "宽 $=$ 圆柱半径 $=6\\div 2=3$ cm。",
+      "group_id": "xsc_baoan_002_q5",
+      "group_order": 2
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_baoan_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "content": "把一个直径是 $6$ 厘米，高是 $10$ 厘米的圆柱，切拼成一个近似的长方体。\n3. 这个长方体的高是 ____ 厘米。",
+      "answer": "10",
+      "explanation": "高 $=$ 圆柱高 $=10$ cm。",
+      "group_id": "xsc_baoan_002_q5",
+      "group_order": 3
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_baoan_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "如果 $\\bigcirc\\div\\square=1.5$，那么 $(\\bigcirc\\times 2)\\div(\\square\\times 2)=$ ____ 。",
+      "answer": "1.5",
+      "explanation": "被除数除数同时乘 $2$，商不变，仍 $=1.5$。",
+      "group_id": "xsc_baoan_002_q6",
+      "group_order": 1
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_baoan_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "如果 $\\bigcirc\\div\\square=1.5$，那么 $(\\bigcirc\\times 10)\\div\\square=$ ____ 。",
+      "answer": "15",
+      "explanation": "被除数 $\\times 10$，除数不变，商 $\\times 10=1.5\\times 10=15$。",
+      "group_id": "xsc_baoan_002_q6",
+      "group_order": 2
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_baoan_002",
+      "round": 3,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "六年级男生平均每分钟跳绳 $136$ 个。六（$1$）班男生平均每分钟跳绳 $140$ 个记作 $+4$ 个。\n1. 六（$2$）班男生平均每分钟跳绳 $130$ 个记作 ____ 个。",
+      "answer": "-6",
+      "explanation": "$130-136=-6$。",
+      "group_id": "xsc_baoan_002_q9",
+      "group_order": 1
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_baoan_002",
+      "round": 3,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "六年级男生平均每分钟跳绳 $136$ 个。六（$1$）班男生平均每分钟跳绳 $140$ 个记作 $+4$ 个。\n2. 六（$3$）班男生平均每分钟跳绳 $136$ 个记作 ____ 个。",
+      "answer": "0",
+      "explanation": "$136-136=0$。",
+      "group_id": "xsc_baoan_002_q9",
+      "group_order": 2
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_baoan_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "比例",
+      "knowledge_point": "比和比例/解比例",
+      "content": "作业本上获得 $10$ 颗小星星就可以换 $2$ 本连环画，淘气用 $40$ 颗小星星换了 $x$ 本连环画。\n1. 写出比例式（　　）。",
+      "options": [
+        "A. $10:2=40:x$",
+        "B. $10:40=x:2$",
+        "C. $2:10=40:x$",
+        "D. $10:x=40:2$"
+      ],
+      "answer": "A",
+      "explanation": "星星 : 连环画 = 一定。$10:2=40:x$。",
+      "group_id": "xsc_baoan_002_q10",
+      "group_order": 1
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_baoan_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "比例",
+      "knowledge_point": "比和比例/解比例",
+      "content": "作业本上获得 $10$ 颗小星星就可以换 $2$ 本连环画，淘气用 $40$ 颗小星星换了 $x$ 本连环画。\n2. 算一算，淘气换到了 ____ 本连环画。",
+      "answer": "8",
+      "explanation": "$10x=2\\times 40=80$，$x=8$ 本。",
+      "group_id": "xsc_baoan_002_q10",
+      "group_order": 2
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_baoan_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "下列各数中只读一个 $0$ 的是（　　）。",
+      "options": [
+        "A. $13058060$",
+        "B. $50068000$",
+        "C. $7030560$",
+        "D. $1302000$"
+      ],
+      "answer": "C",
+      "explanation": "A: $13058060$ 读「一千三百零五万八千零六十」（两个 $0$ 段，合并读一个）；B: $50068000$ 读「五千零六十八万」（一个 $0$）；C: $7030560$ 读「七百零三万零五百六十」（两个 $0$ 段）；D: $1302000$ 读「一百三十万二千」（不读 $0$）。参考答案 C，须 Famin 复核（按读法规则 B 仅读一个 $0$ 似更准确）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_baoan_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正反比例的判断",
+      "content": "下面关于正、反比例的说法中，正确的是（　　）。",
+      "options": [
+        "A. 三角形的面积一定，它的底和高成反比例。",
+        "B. 路程一定，速度和时间成正比例。",
+        "C. 圆的面积和直径成正比例。",
+        "D. 看一本书，已看页数和未看页数成反比例。"
+      ],
+      "answer": "A",
+      "explanation": "A 对（$\\frac{1}{2}\\times$底$\\times$高 $=$ 面积一定 $\\Rightarrow$ 底$\\times$高 一定 $\\Rightarrow$ 反比例）。B 错（路程一定 $\\Rightarrow$ 速度$\\times$时间 一定 $\\Rightarrow$ 反比例）。C 错（与 $d^2$ 成正比例）。D 错（和一定，不成比例）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_baoan_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比例的意义",
+      "content": "用 $5$ mL 的蜂蜜兑 $100$ mL 水调制成蜂蜜水，如果再加入 $10$ mL 的蜂蜜，为了使蜂蜜水的甜度不变，需要加入的水可以是（　　）。",
+      "options": [
+        "A. $10$ mL",
+        "B. $200$ mL",
+        "C. 原来的 $3$ 倍",
+        "D. 原来的 $5$ 倍"
+      ],
+      "answer": "B",
+      "explanation": "总蜂蜜 $5+10=15$ mL，比例 $1:20\\Rightarrow$ 总水 $=300$ mL，需加 $300-100=200$ mL。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_baoan_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "下面算式中，与 $0.42\\times 3.7$ 的积不相等的是（　　）。",
+      "options": [
+        "A. $4.2\\times 0.37$",
+        "B. $42\\times 0.037$",
+        "C. $0.042\\times 37$",
+        "D. $42\\times 3.7$"
+      ],
+      "answer": "D",
+      "explanation": "$0.42\\times 3.7=1.554$。A=B=C=$1.554$ ✓；D $=155.4$ ✗。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_baoan_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "如果 $a\\times b=c$，而且 $a$ 和 $b$ 都小于 $300$，那么 $c$ 最大是（　　）。",
+      "options": [
+        "A. 四位数",
+        "B. 五位数",
+        "C. 六位数",
+        "D. 无法判断"
+      ],
+      "answer": "B",
+      "explanation": "$a, b\\leq 299$，最大 $c=299\\times 299=89401$，是 $5$ 位数。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_baoan_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "某班男生的平均身高是 $165$ 厘米。请你判断，下面哪位男生最不可能是这个班的？（　　）",
+      "options": [
+        "A. 齐齐身高 $168$ 厘米，是篮球队中锋",
+        "B. 力力身高 $132$ 厘米，是全班最矮的",
+        "C. 青青身高 $165$ 厘米，是全班最高的",
+        "D. 睿睿身高 $180$ 厘米"
+      ],
+      "answer": "C",
+      "explanation": "C 错：平均 $165$ 厘米，全班最高若也 $165$，全班所有人都 $\\geq 165$，但又有最高 $165$，意味着全班都恰好 $165$，但 B 说有 $132$ 的，矛盾。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_baoan_002",
+      "round": 3,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "按数对标出点 $A(3,5)$，点 $B(7,5)$，点 $C(9,2)$，点 $D(1,2)$ 的位置，并连接 $A、B、C、D$ 得到图形①。图形① 是等腰梯形，它有 ____ 条对称轴。",
+      "answer": "1",
+      "explanation": "等腰梯形（上底 $4$，下底 $8$，对称）有 $1$ 条对称轴。",
+      "group_id": "xsc_baoan_002_q25",
+      "group_order": 1
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_baoan_002",
+      "round": 3,
+      "type": "fill",
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正比例的意义",
+      "content": "一辆汽车在高速路上匀速行驶，已知 $1$ 时行 $80$ km，$2$ 时行 $160$ km，$3$ 时行 $240$ km。\n1. 这辆汽车行驶的速度是 ____ km/时。",
+      "answer": "80",
+      "explanation": "$80\\div 1=80$ km/时。",
+      "group_id": "xsc_baoan_002_q26",
+      "group_order": 1
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_baoan_002",
+      "round": 3,
+      "type": "fill",
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正比例的意义",
+      "content": "一辆汽车在高速路上匀速行驶，已知 $1$ 时行 $80$ km，$2$ 时行 $160$ km，$3$ 时行 $240$ km。\n2. 这辆汽车行驶的时间与路程成 ____ 比例关系。（填「正」或「反」）",
+      "answer": "正",
+      "explanation": "路程 $\\div$ 时间 $=80$（一定）成正比例。",
+      "group_id": "xsc_baoan_002_q26",
+      "group_order": 2
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_baoan_002",
+      "round": 4,
+      "type": "fill",
+      "chapter": "比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "在比例尺为 $1:70000000$ 的地图上量得深圳和上海两地的距离为 $2$ cm，货车平均每小时行驶 $80$ km。500 吨蔬菜要从深圳运到上海，问大约需要多少小时？",
+      "answer": "17.5",
+      "explanation": "实际距离 $=2\\times 70000000=1.4\\times 10^8$ cm $=1400$ km。$1400\\div 80=17.5$ 时。"
+    }
+  ]
+}

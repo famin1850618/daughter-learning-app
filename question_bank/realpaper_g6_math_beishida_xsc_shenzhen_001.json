@@ -1,0 +1,463 @@
+{
+  "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+  "subject": "math",
+  "grade": 6,
+  "knowledge_points_added": [
+    "图形的运动/轴对称",
+    "圆柱与圆锥/圆柱圆锥综合应用",
+    "圆柱与圆锥/圆柱的体积",
+    "总复习/图形与几何综合",
+    "总复习/数与代数综合",
+    "总复习/统计与可能性",
+    "总复习/解决问题策略",
+    "正反比例/正反比例的判断",
+    "正反比例/比例尺",
+    "比和比例/化简比",
+    "比和比例/比例的意义",
+    "比和比例/比的意义",
+    "比和比例/解比例"
+  ],
+  "_quality_meta": {
+    "source_file": "2022年广东省深圳市小升初数学试卷.docx",
+    "sha1": "61eb0a5e4a246ad7",
+    "paper_type": "xsc",
+    "chapter_default": "总复习",
+    "omath_total_formulas": "present",
+    "images_used": 0,
+    "questions_total_paper": 26,
+    "questions_imported": 25,
+    "questions_skipped": 10
+  },
+  "_skipped_for_future": [
+    {
+      "qnum": "10",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "精密零件实际 0.3 mm，比例尺 = ?（图上长度未文字化）",
+      "source_para": 14
+    },
+    {
+      "qnum": "13",
+      "reason": "unclear_image",
+      "raw_excerpt": "4 个图判断不可表示分式（图选项）",
+      "source_para": 20
+    },
+    {
+      "qnum": "15",
+      "reason": "unclear_image",
+      "raw_excerpt": "4 个关系图选错误的（图选项）",
+      "source_para": 27
+    },
+    {
+      "qnum": "17",
+      "reason": "unclear_image",
+      "raw_excerpt": "添加正方体使前面/左面观察一致（图选项）",
+      "source_para": 33
+    },
+    {
+      "qnum": "18",
+      "reason": "unclear_image",
+      "raw_excerpt": "骑车 + 走路图（4 选项均图）",
+      "source_para": 36
+    },
+    {
+      "qnum": "19",
+      "reason": "unclear_image",
+      "raw_excerpt": "直接写得数（题面位图）",
+      "source_para": 40
+    },
+    {
+      "qnum": "20",
+      "reason": "unclear_image",
+      "raw_excerpt": "用喜欢方法计算（位图）",
+      "source_para": 41
+    },
+    {
+      "qnum": "22",
+      "reason": "open_drawing_question",
+      "raw_excerpt": "画旋转 + 放大",
+      "source_para": 47
+    },
+    {
+      "qnum": "24",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "冰墩墩包装盒展开图表面积 + 体积（图缺尺寸）",
+      "source_para": 54
+    },
+    {
+      "qnum": "26(3)",
+      "reason": "open_drawing_question",
+      "raw_excerpt": "把条形统计图补充完整",
+      "source_para": 60
+    }
+  ],
+  "questions": [
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "$2021$ 年深圳市地区生产总值为 $3066485000000$ 元，把这个数改写成用「亿」作单位的数是 ____ 亿。",
+      "answer": "30664.85",
+      "explanation": "$3066485000000\\div 10^8=30664.85$ 亿。",
+      "group_id": "xsc_shenzhen_001_q1",
+      "group_order": 1
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "第二产业增加值为 $11338.59$ 亿元。$11338.59$ 这个数中「$9$」表示 $9$ 个 ____ 。（如「百分之一」「十分之一」「个」等）",
+      "answer": "百分之一",
+      "explanation": "$9$ 在百分位，表示 $9$ 个百分之一。",
+      "group_id": "xsc_shenzhen_001_q1",
+      "group_order": 2
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "比例",
+      "knowledge_point": "比和比例/化简比",
+      "content": "$6\\div$ ____ $=18:$ ____ $=$ 七五折 $=$ ____ $\\%$",
+      "answer": "8,24,75",
+      "explanation": "七五折 $=75\\%=\\frac{3}{4}$。$6\\div 8=\\frac{3}{4}$；$18:24=\\frac{3}{4}$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "$3$ 吨 $52$ 千克 $=$ ____ 吨",
+      "answer": "3.052",
+      "explanation": "$52\\div 1000=0.052$，$3+0.052=3.052$ 吨。",
+      "group_id": "xsc_shenzhen_001_q3",
+      "group_order": 1
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "$6.08$ dm³ $=$ ____ mL",
+      "answer": "6080",
+      "explanation": "$1$ dm³ $=1000$ mL，$6.08\\times 1000=6080$ mL。",
+      "group_id": "xsc_shenzhen_001_q3",
+      "group_order": 2
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "按规律填数：$4, 9, 16, $ ____ $, 36, 49, $ ____。\n第一空填什么？",
+      "answer": "25",
+      "explanation": "规律 $n^2$。$5^2=25$。",
+      "group_id": "xsc_shenzhen_001_q4",
+      "group_order": 1
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "按规律填数：$4, 9, 16, 25, 36, 49, $ ____。\n第二空填什么？",
+      "answer": "64",
+      "explanation": "$8^2=64$。",
+      "group_id": "xsc_shenzhen_001_q4",
+      "group_order": 2
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "一个直角三角形的一个锐角是 $30°$，另一个锐角是 ____ 度。",
+      "answer": "60",
+      "explanation": "直角三角形两锐角和 $=90°$，$90°-30°=60°$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/轴对称",
+      "content": "把一张圆形纸片对折 $2$ 次，用针在上面扎刺出「中」字，展开后会看到 ____ 个「中」字。",
+      "answer": "4",
+      "explanation": "对折两次形成 $4$ 个对称区域，每区一个 → $4$ 个。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "把 $3$ m 长的铁丝平均截成 $5$ 段，每段长（　　）m。",
+      "options": [
+        "A. $\\frac{1}{5}$",
+        "B. $\\frac{3}{5}$",
+        "C. $\\frac{1}{3}$",
+        "D. $\\frac{5}{3}$"
+      ],
+      "answer": "B",
+      "explanation": "$3\\div 5=\\frac{3}{5}$ m。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "把 $3$ m 长的铁丝平均截成 $5$ 段，每段是全长的（　　）。",
+      "options": [
+        "A. $\\frac{1}{5}$",
+        "B. $\\frac{1}{3}$",
+        "C. $\\frac{3}{5}$",
+        "D. $\\frac{5}{3}$"
+      ],
+      "answer": "A",
+      "explanation": "平均 5 段，每段是 $\\frac{1}{5}$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "端午节奶奶裹了 $30$ 个粽子（外表一样），其中 $15$ 个是咸肉粽，$5$ 个是蜜枣粽。淘气任意拿出一个粽子。\n1. 有 ____ 种不同的结果。",
+      "answer": "3",
+      "explanation": "$30-15-5=10$ 个第三种粽子。共 $3$ 种结果（咸肉/蜜枣/第三种）。",
+      "group_id": "xsc_shenzhen_001_q8",
+      "group_order": 1
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "端午节奶奶裹了 $30$ 个粽子（外表一样），其中 $15$ 个是咸肉粽，$5$ 个是蜜枣粽。淘气任意拿出一个粽子。\n2. 拿到咸肉粽的可能性是（　　）。",
+      "options": [
+        "A. $\\frac{1}{3}$",
+        "B. $\\frac{1}{2}$",
+        "C. $\\frac{1}{6}$",
+        "D. $\\frac{15}{30}$"
+      ],
+      "answer": "B",
+      "explanation": "$15\\div 30=\\frac{1}{2}$。",
+      "group_id": "xsc_shenzhen_001_q8",
+      "group_order": 2
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "$2022$ 年光明区小学生篮球锦标赛采取单循环赛，男子甲组有 $10$ 支球队，每两个队之间都要进行一场比赛，共要赛 ____ 场。",
+      "answer": "45",
+      "explanation": "$C_{10}^{2}=\\frac{10\\times 9}{2}=45$ 场。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比例的意义",
+      "content": "能与 $4:5$ 组成比例的是（　　）。",
+      "options": [
+        "A. $5:4$",
+        "B. $0.4:\\frac{1}{2}$",
+        "C. $\\frac{1}{2}:\\frac{1}{4}$",
+        "D. $10:8$"
+      ],
+      "answer": "B",
+      "explanation": "$4:5=0.8$。A: $5:4=1.25$ ✗；B: $0.4:0.5=0.8$ ✓；C: $2$ ✗；D: $1.25$ ✗。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正反比例的判断",
+      "content": "李叔叔开车从公司到福田站接人，已行路程和未行路程（　　）比例。",
+      "options": [
+        "A. 成正",
+        "B. 成反",
+        "C. 不成",
+        "D. 无法确定"
+      ],
+      "answer": "C",
+      "explanation": "已行 $+$ 未行 $=$ 总路程（一定），和一定不成比例。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+      "content": "一个圆柱与圆锥体的体积相等，圆柱的底面积是圆锥体的底面积的 $3$ 倍，圆锥体的高与圆柱的高的比为（　　）。",
+      "options": [
+        "A. $3:1$",
+        "B. $1:3$",
+        "C. $9:1$",
+        "D. $1:9$"
+      ],
+      "answer": "C",
+      "explanation": "设圆锥底面积 $S$，高 $h_1$；圆柱底面积 $3S$，高 $h_2$。体积相等：$\\frac{1}{3}S h_1=3S h_2 \\Rightarrow h_1:h_2=9:1$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "content": "雪糕厂制作了底面积相同的三种模具：正方体、长方体（高 $=$ 边长 $\\times 2$）、圆柱（高 $=$ 圆柱直径 $\\times 2$）。倒入同一种雪糕原浆，哪个模具装的原浆多？（　　）",
+      "options": [
+        "A. 正方体",
+        "B. 长方体",
+        "C. 圆柱",
+        "D. 一样多"
+      ],
+      "answer": "B",
+      "explanation": "底面积相同的情况下，体积 $=$ 底面积 $\\times$ 高，谁高谁体积大。本题长方体最高，所以装得最多。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "解方程：$5x+18=43$",
+      "answer": "5",
+      "explanation": "$5x=43-18=25$，$x=5$。",
+      "group_id": "xsc_shenzhen_001_q21",
+      "group_order": 1
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "比例",
+      "knowledge_point": "比和比例/解比例",
+      "content": "解比例：$1.2:x=5:1.5$",
+      "answer": "0.36",
+      "explanation": "$5x=1.2\\times 1.5=1.8$，$x=0.36$。",
+      "group_id": "xsc_shenzhen_001_q21",
+      "group_order": 2
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "光明某小学午餐有 A、B 餐可供选择，选择 A 餐的同学有 $1550$ 人，选 A 餐同学人数与选 B 餐同学人数的比是 $5:4$。选 B 餐的同学有多少人？",
+      "answer": "1240",
+      "explanation": "$\\frac{1550}{B}=\\frac{5}{4}\\Rightarrow B=1550\\times\\frac{4}{5}=1240$ 人。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+      "round": 4,
+      "type": "fill",
+      "chapter": "比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "在比例尺是 $1:2000000$ 的交通地图上，量得深圳光明城站到广州南站的长度约 $5$ 厘米。从光明城站开往广州南站的 G6258 动车每小时约行 $217$ 千米，G6258 动车从光明城运行到广州南站大约需要多少小时？（保留两位小数）",
+      "answer": "0.46",
+      "explanation": "实际距离 $=5\\times 2000000=10^7$ cm $=100$ km。$100\\div 217\\approx 0.46$ 小时。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "某学校六年级数学测试结果以等级呈现（A/B/C/D 四个等级）。已知 A 占 $25\\%$，C 占 $40\\%$，D 占 $5\\%$；A 等级有 $50$ 人。\n1. 这次调查共抽取了 ____ 名学生的数学成绩。",
+      "answer": "200",
+      "explanation": "A 占 $25\\%=50$ 人 $\\Rightarrow$ 总数 $=200$ 人。",
+      "group_id": "xsc_shenzhen_001_q26",
+      "group_order": 1
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "某学校六年级数学测试结果以等级呈现（A/B/C/D 四个等级）。已知 A 占 $25\\%$，C 占 $40\\%$，D 占 $5\\%$；A 等级有 $50$ 人。\n2. B 等级的学生人数占抽样学生人数的 ____ 。（用百分数表示）",
+      "answer": "30%",
+      "explanation": "$100\\%-25\\%-40\\%-5\\%=30\\%$。",
+      "group_id": "xsc_shenzhen_001_q26",
+      "group_order": 2
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "某学校六年级数学测试结果以等级呈现（A/B/C/D 四个等级）。已知 A 占 $25\\%$，C 占 $40\\%$，D 占 $5\\%$；A 等级有 $50$ 人。\n3. 如果该校六年级有 $900$ 名学生，这次模拟测试大约有 ____ 名学生的数学成绩为 D 等。",
+      "answer": "45",
+      "explanation": "$900\\times 5\\%=45$ 人。",
+      "group_id": "xsc_shenzhen_001_q26",
+      "group_order": 3
+    }
+  ]
+}

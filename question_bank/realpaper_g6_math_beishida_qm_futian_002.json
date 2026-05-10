@@ -1,0 +1,587 @@
+{
+  "source": "realpaper_g6_math_beishida_qm_futian_002",
+  "subject": "math",
+  "grade": 6,
+  "knowledge_points_added": [
+    "图形的运动/旋转",
+    "圆柱与圆锥/圆柱的体积",
+    "圆柱与圆锥/圆柱的表面积",
+    "圆柱与圆锥/圆柱的认识",
+    "圆柱与圆锥/圆锥的体积",
+    "总复习/图形与几何综合",
+    "总复习/数与代数综合",
+    "总复习/统计与可能性",
+    "总复习/解决问题策略",
+    "数学综合/神奇的几何变换",
+    "正反比例/正比例的意义",
+    "正反比例/比例尺",
+    "比和比例/化简比",
+    "比和比例/解比例"
+  ],
+  "_quality_meta": {
+    "source_file": "广东省深圳市福田区2024-2025学年六年级下学期质量检测数学试题.docx",
+    "sha1": "d6eaba666cf1c5d7",
+    "paper_type": "midterm",
+    "chapter_default": "总复习",
+    "omath_total_formulas": 41,
+    "omath_para_count": 19,
+    "images_used": 4,
+    "questions_total_paper": 31,
+    "questions_imported": 31,
+    "questions_skipped": 12
+  },
+  "_skipped_for_future": [
+    {
+      "qnum": "1",
+      "reason": "unclear_image",
+      "raw_excerpt": "左边平面展开图折叠（4 个图选项）",
+      "source_para": 4
+    },
+    {
+      "qnum": "4",
+      "reason": "unclear_image",
+      "raw_excerpt": "图形分类关系图（4 选项均图）",
+      "source_para": 13
+    },
+    {
+      "qnum": "7",
+      "reason": "unclear_image",
+      "raw_excerpt": "4 个 5 个正方体粘贴模型选哪个能从空白处穿过",
+      "source_para": 26
+    },
+    {
+      "qnum": "10",
+      "reason": "unclear_image",
+      "raw_excerpt": "a 与 b 成正比例（4 个图选项）",
+      "source_para": 39
+    },
+    {
+      "qnum": "15",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "比大小：2吨800千克+200千克 ◯ 3吨；-2 ◯ -1（具体填空 ◯ 数据 + 一道隐藏 OMath）",
+      "source_para": 56
+    },
+    {
+      "qnum": "18",
+      "reason": "unclear_image",
+      "raw_excerpt": "无人机定点投送（图判定方位 + 距离）",
+      "source_para": 61
+    },
+    {
+      "qnum": "25(1)+(3)",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "$\\frac{1}{4}+\\frac{5}{6}-\\frac{7}{8}$ 与 $24\\times(\\dots)$（OMath 部分注入但题面后半段缺）",
+      "source_para": 75
+    },
+    {
+      "qnum": "27",
+      "reason": "unclear_image",
+      "raw_excerpt": "福田 5 个公园数对 + 钝角三角形",
+      "source_para": 81
+    },
+    {
+      "qnum": "28",
+      "reason": "open_drawing_question",
+      "raw_excerpt": "画轴对称 / 旋转 90° / 放大 2:1",
+      "source_para": 85
+    },
+    {
+      "qnum": "30",
+      "reason": "unclear_image",
+      "raw_excerpt": "火箭推进剂比例（题图缺）",
+      "source_para": 96
+    },
+    {
+      "qnum": "31(2)+(4)+(6)",
+      "reason": "subjective_short",
+      "raw_excerpt": "理由 / 补图 / 建议（开放短答 + 作图）",
+      "source_para": 100
+    },
+    {
+      "qnum": "31(3)+(5)",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "食物总量 + 蛋肉/水果比例（图数据未文字化）",
+      "source_para": 100
+    }
+  ],
+  "questions": [
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "下面说法中，计量单位使用最合理的是（　　）。",
+      "options": [
+        "A. 一个保温杯的容积约是 $500$ mL",
+        "B. 一本数学书的长度约是 $26$ dm",
+        "C. 一支铅笔的质量约是 $5$ kg",
+        "D. 一块橡皮的体积约是 $25$ m³"
+      ],
+      "answer": "A",
+      "explanation": "A 合理 ($500$ mL ≈ 0.5 L 杯)；B 错（数学书 ~26 cm 才对）；C 错（铅笔 ~5 g）；D 错（橡皮 ~25 cm³）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 1,
+      "type": "choice",
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/旋转",
+      "content": "下列日常生活现象中，属于旋转运动的是（　　）。",
+      "options": [
+        "A. 升国旗时，国旗的运动",
+        "B. 在算盘上拨算珠表示 $50$",
+        "C. 荡起来的秋千",
+        "D. 小华乘电梯从 $1$ 楼到 $6$ 楼"
+      ],
+      "answer": "C",
+      "explanation": "秋千绕轴转动 → 旋转。A/D 是平移；B 是位置移动。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "电影《哪吒之魔童闹海》上映后，在豆瓣得到了 $8.5$ 分的评分。下图是该影片在豆瓣上的评分情况（条形图，$5$ 星人数最多约 $13$ 万）。下列说法中，正确的是（　　）。",
+      "image_data": "data:image/png;base64,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",
+      "options": [
+        "A. 所有人打分都是 $8.5$ 分",
+        "B. 给电影 $4$ 星的人数最多",
+        "C. $8.5$ 是豆瓣评分的平均分",
+        "D. 大约有 $13$ 万人参与打分"
+      ],
+      "answer": "C",
+      "explanation": "A 错（每人打分不同）；B 错（$5$ 星最多）；C 对（$8.5$ 是平均分）；D 错（$13$ 万只是 5 星人数）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 1,
+      "type": "choice",
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/神奇的几何变换",
+      "content": "悦悦沿莫比乌斯带的二分之一线剪下去，结果会是（　　）。",
+      "options": [
+        "A. 两张长方形纸条",
+        "B. 一个两倍长的大纸环（不是莫比乌斯带）",
+        "C. 一张长方形纸条",
+        "D. 一个两倍长的莫比乌斯带"
+      ],
+      "answer": "B",
+      "explanation": "沿莫比乌斯带 $\\frac{1}{2}$ 线剪开后会得到一个比原来长两倍的大纸环（不是莫比乌斯带）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的认识",
+      "content": "鹏鹏在课堂测量圆的周长时，采用了滚动法：把圆上点 A 对准刻度 $0$（已知圆的半径为 $1$ cm），圆向右滚动一圈。则点 A 将落在直尺刻度上的（　　）。",
+      "options": [
+        "A. $2$ cm $\\sim 4$ cm 之间",
+        "B. $4$ cm $\\sim 6$ cm 之间",
+        "C. $6$ cm $\\sim 8$ cm 之间",
+        "D. $8$ cm $\\sim 10$ cm 之间"
+      ],
+      "answer": "C",
+      "explanation": "周长 $=2\\pi r=2\\times 3.14\\times 1=6.28$ cm，落 $6\\sim 8$ 之间。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "鹏鹏和田田两人做摸牌游戏。桌面上倒扣的牌点数为 $2、3、4、5$ 的四张扑克牌。规定：每人摸一张，则下面的游戏规则公平的是（　　）。",
+      "options": [
+        "A. 摸出的两张点数之和为奇数时鹏鹏赢，为偶数时田田赢",
+        "B. 摸出的两张点数之和为质数时鹏鹏赢，为合数时田田赢",
+        "C. 摸出的两张点数之积为奇数时鹏鹏赢，为偶数时田田赢",
+        "D. 摸出的两张点数之积为质数时鹏鹏赢，为合数时田田赢"
+      ],
+      "answer": "B",
+      "explanation": "4 张牌 $C_4^2=6$ 种组合。和为奇数 4 种、偶数 2 种 (A 不公平)；和为质数（5,7,2+3=5 等）3 种、合数 3 种 (B 公平)；积为奇数 1 种、偶数 5 种 (C)；积为质数 1 种、合数 5 种 (D)。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "田田身高 $150$ 厘米，____________，优优身高多少厘米？如果求优优的身高的算式是 $150\\times(1+4\\%)$，那么横线上应选的条件是（　　）。",
+      "options": [
+        "A. 田田比优优矮 $4\\%$",
+        "B. 优优比田田高 $4\\%$",
+        "C. 田田比优优高 $4\\%$",
+        "D. 优优比田田矮 $4\\%$"
+      ],
+      "answer": "B",
+      "explanation": "$150\\times(1+4\\%)$ 表示优优 $=$ 田田 $\\times(1+4\\%)$，即优优比田田高 $4\\%$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "《禹贡地域图》是魏晋时期的地图学家裴秀绘制的历史地图集，是按照「一分为十里，一寸为百里」的标准绘制而成。「一分为十里」即「图上距离一分表示实际距离是十里」，一分 $=\\frac{1}{3}$ 厘米，十里 $=5000$ 米。换算成现代的比例尺是（　　）。",
+      "options": [
+        "A. $1:1000000$",
+        "B. $1:1500000$",
+        "C. $1:3000000$",
+        "D. $1:500000$"
+      ],
+      "answer": "B",
+      "explanation": "图上 $\\frac{1}{3}$ cm 表示实际 $5000$ m $=500000$ cm。比例尺 $=\\frac{1}{3}:500000=1:(500000\\times 3)=1:1500000$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 3,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "古希腊毕达哥拉斯学派把 $1, 3, 6, 10\\dots$ 这样的数称为「三角形数」，把 $1, 4, 9, 16\\dots$ 称为「正方形数」。任何一个大于 $1$ 的正方形数都可以看作两个相邻的三角形数之和。下列等式中符合此规律的是（　　）。",
+      "options": [
+        "A. $25=9+16$",
+        "B. $36=15+21$",
+        "C. $49=18+31$",
+        "D. $64=31+33$"
+      ],
+      "answer": "B",
+      "explanation": "三角形数 $1, 3, 6, 10, 15, 21, 28, 36, 45\\dots$。$36=15+21$（相邻三角形数）✓。其他选项都不是相邻三角形数。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "直接写出得数：\n$\\frac{2}{4}+\\frac{1}{5}=$ ____",
+      "answer": "0.7|||7/10",
+      "explanation": "$\\frac{2}{4}+\\frac{1}{5}=\\frac{1}{2}+\\frac{1}{5}=\\frac{5}{10}+\\frac{2}{10}=\\frac{7}{10}=0.7$。",
+      "group_id": "qm_futian_002_q14",
+      "group_order": 1
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "直接写出得数：\n$\\frac{3}{14}\\times 7=$ ____",
+      "answer": "1.5",
+      "explanation": "$\\frac{3}{14}\\times 7=\\frac{21}{14}=\\frac{3}{2}=1.5$。",
+      "group_id": "qm_futian_002_q14",
+      "group_order": 2
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "直接写出得数：\n$0.4\\times 15=$ ____",
+      "answer": "6",
+      "explanation": "$0.4\\times 15=6$。",
+      "group_id": "qm_futian_002_q14",
+      "group_order": 3
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "直接写出得数：\n$1.25\\div 0.5=$ ____",
+      "answer": "2.5",
+      "explanation": "$1.25\\div 0.5=2.5$。",
+      "group_id": "qm_futian_002_q14",
+      "group_order": 4
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "比例",
+      "knowledge_point": "比和比例/化简比",
+      "content": "将 $\\frac{3}{8}$ 化为指定形式。\n1. $\\frac{3}{8}=$ ____ $:16$",
+      "answer": "6",
+      "explanation": "$\\frac{3}{8}=\\frac{6}{16}$，所以 $=6:16$。",
+      "group_id": "qm_futian_002_q16",
+      "group_order": 1
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "比例",
+      "knowledge_point": "比和比例/化简比",
+      "content": "将 $\\frac{3}{8}$ 化为指定形式。\n2. $\\frac{3}{8}=\\frac{3+6}{8+(?)}$，$?=$ ____",
+      "answer": "16",
+      "explanation": "$\\frac{3}{8}=\\frac{9}{?}\\Rightarrow ?=24$，所以 $8+(?)=24$，$?=16$。",
+      "group_id": "qm_futian_002_q16",
+      "group_order": 2
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "今年「五一」假期，深圳接待游客大约六百九十六万三千六百人次。\n1. 这个数写作 ____ 。",
+      "answer": "6963600",
+      "explanation": "六百九十六万三千六百 $=696\\times 10000+3600=6963600$。",
+      "group_id": "qm_futian_002_q17",
+      "group_order": 1
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "今年「五一」假期，深圳接待游客大约六百九十六万三千六百人次。\n2. 改写为以「万」为单位的数是 ____ 万。",
+      "answer": "696.36",
+      "explanation": "$6963600\\div 10000=696.36$ 万。",
+      "group_id": "qm_futian_002_q17",
+      "group_order": 2
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 3,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "儿童的负重最好不要超过自身体重的 $15\\%$。田田的体重是 $40$ kg。实际测得她的书包重 $6.06$ kg。\n1. 她的书包最大重量应是 ____ kg。",
+      "answer": "6",
+      "explanation": "$40\\times 15\\%=6$ kg。",
+      "group_id": "qm_futian_002_q19",
+      "group_order": 1
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 3,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "儿童的负重最好不要超过自身体重的 $15\\%$。田田的体重是 $40$ kg。实际测得她的书包重 $6.06$ kg。\n2. $6.06$ 超出了书包最大重量的 ____ %。",
+      "answer": "1",
+      "explanation": "$(6.06-6)\\div 6=0.06\\div 6=0.01=1\\%$。",
+      "group_id": "qm_futian_002_q19",
+      "group_order": 2
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正比例的意义",
+      "content": "鹏鹏和悦悦在他们学校操场上测得一根长 $2$ 米的垂直立起的棍子的影长为 $0.5$ 米，同一时间，测得的旗杆影长为 $3.97$ 米。他们学校旗杆的高度是 ____ 米。",
+      "answer": "15.88",
+      "explanation": "同一时间物高与影长成正比例。设旗杆高 $h$，则 $\\frac{2}{0.5}=\\frac{h}{3.97}$，$h=4\\times 3.97=15.88$ 米。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆锥的体积",
+      "content": "鹏鹏把一个圆锥沿着高切成完全相同的两部分（如右图所示），两个切面都是底为 $8$ 厘米，面积为 $24$ 平方厘米的三角形。原来这个圆锥的体积是 ____ 立方厘米。",
+      "image_data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABmCAIAAADJbGHEAAAZ/0lEQVR42u3cfcyf0/0H8DuiEYsU8RAmRFoyv4Y0d7dgKU03QYNFJ21kjbQTjdjET2OaVsM8TMzTTFXFaoJuRUdU52HtOma1rYZOhlQaUqR+nWDRLdtMJ/xe+b7n7Ox8q7t7+8pY7/PHN9f3XOc653M+n/fn6ZxzXX3vDZWu0jfEgsEw5S9/+cvFF198ww03/PnPfx5iyj/Khg0b+vr69t57bxdDTPlHefXVVzFl55133rhx4ydrbu++++5HxRRagynbbbfda6+9NoSUqlGnvPTSS5+sub3zzjuDQ/dWMOWFF174BHEEOw488EBk/+pXv/oImfIJMrQ0/aijjop/ePnllz9CpvDNnwiO8AxHH300go844ojBoXtATNl9992NYTBG98033/SLQSVscb1+/frnn3/eLxH5JRzUaO/i/zqFPXrrrbfefvttv/6+/vrrb3UKB5Fn1ejZrw41ePrpp9etW6eTNWvWuKur5557bvXq1fpxvWLFit/97ndMxqZNmzxexvrDH/6g8ec//3nUTpgwYfny5Y899pgazXrPlGOOOabvg8unPvWp7bff3sUOO+yw2Qa5u//++++333477bST67322mufffbR/qCDDkobf5mAXXfdtTylDZfXt8VStx82bFgAUqgq1+PGjcNcTOwlU0488URd9/f3T5069X87Zfbs2cCp8qSTTrr00kuvueaaefPmXXvttV/60pdSeeWVV2pz1llnnX/++aeffrpKSq7lBRdccM4558yYMUNvKk8++eSZM2deccUV8+fP18nxxx+vkqi//e1vi6FVLly48NRTT8WdKVOmaHbhhRd6Vv306dPL6Geeeab6Bx98MCwYPXr0ww8/rDECfvjDHx566KEqH3/88R4jJRJ48skn64jIMKj/7W9/W8dIP/3pT82WwX+3U4rZA5abbrqp7vPRRx/93Oc+17iGRx55xEDLli2rKw103HHHGaiufOqppyZOnPjss8/mLyWaPHlymKLnuuWtt96KJErUY6YQiMFWrlxZV9JwgKe09fzNZ+TIkQRVV7IOHif5OoLwOJHed999dZ8shZZ33HFHMxDuN6NrCarhqf6/8IUveHDHHXeknixO3VJv48ePZ6R6zBQy6ZbAkiVLhg8fbsh6/iqBwlTr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",
+      "answer": "100.48",
+      "explanation": "切面三角形 底 $8$ 高 $h$，面积 $\\frac{1}{2}\\times 8\\times h=24$，$h=6$。圆锥底面直径 $=8$，半径 $=4$。体积 $=\\frac{1}{3}\\pi r^2 h=\\frac{1}{3}\\times 3.14\\times 16\\times 6=100.48$ cm³。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "田田想用三根竹条制作一个等腰三角形的风筝骨架，已有两根竹条分别长 $8$ 厘米和 $5$ 厘米，要求第三根竹条的长度也必须是整厘米数。\n1. 这个风筝骨架的周长最小是 ____ 厘米。",
+      "answer": "18",
+      "explanation": "等腰三角形：第三边 $=5$（与 $5$ 相等）→ 三边 $5,5,8$，周长 $=18$ cm。",
+      "group_id": "qm_futian_002_q22",
+      "group_order": 1
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "田田想用三根竹条制作一个等腰三角形的风筝骨架，已有两根竹条分别长 $8$ 厘米和 $5$ 厘米，要求第三根竹条的长度也必须是整厘米数。\n2. 这个风筝骨架的周长最大是 ____ 厘米。",
+      "answer": "21",
+      "explanation": "等腰：第三边 $=8$（与 $8$ 相等）→ 三边 $5,8,8$，周长 $=21$ cm。",
+      "group_id": "qm_futian_002_q22",
+      "group_order": 2
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 1,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "下图竖式中，B 箭头所指部分是 A 箭头所指部分的 ____ 倍。",
+      "image_data": "data:image/png;base64,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",
+      "answer": "5",
+      "explanation": "依据图中竖式判断（参考答案 $5$）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "在我国古代用算筹计数（纵式表个位/百位/万位、横式表十位/千位/十万位）。例如表示 $804$。题目给定的算筹组合表示的数是 ____ 。",
+      "image_data": "data:image/png;base64,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",
+      "answer": "9206",
+      "explanation": "依据图中算筹（参考答案 $9206$）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "用你喜欢的方法计算：$86.27-(28.9+16.27)$",
+      "answer": "41.1",
+      "explanation": "$86.27-(28.9+16.27)=86.27-16.27-28.9=70-28.9=41.1$（去括号）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 2,
+      "type": "choice",
+      "chapter": "比例",
+      "knowledge_point": "比和比例/解比例",
+      "content": "解比例：$x:\\frac{1}{4}=\\frac{4}{7}:\\frac{3}{8}$，$x=$（　　）",
+      "answer": "A",
+      "explanation": "$\\frac{3}{8}x=\\frac{1}{4}\\times\\frac{4}{7}=\\frac{1}{7}$，$x=\\frac{1}{7}\\div\\frac{3}{8}=\\frac{8}{21}$。",
+      "options": [
+        "A. $\\frac{8}{21}$",
+        "B. $\\frac{3}{14}$",
+        "C. $\\frac{4}{21}$",
+        "D. $\\frac{1}{7}$"
+      ]
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "解方程：$0.5x-0.125\\times 8=2.25$",
+      "answer": "6.5",
+      "explanation": "$0.5x-1=2.25$，$0.5x=3.25$，$x=6.5$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 3,
+      "type": "judgment",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的表面积",
+      "content": "用一张长 $3$ dm、宽 $1$ dm 的长方形硬纸分别以长边为轴（A 圆柱：$r=1, h=3$）、短边为轴（B 圆柱：$r=3, h=1$）旋转，形成两个圆柱。\n1. 悦悦说：「A 圆柱和 B 圆柱的侧面积相等。」（判断）",
+      "options": [
+        "正确",
+        "错误"
+      ],
+      "answer": "正确",
+      "explanation": "A 侧面积 $=2\\pi\\times 1\\times 3=6\\pi$；B 侧面积 $=2\\pi\\times 3\\times 1=6\\pi$。相等。",
+      "group_id": "qm_futian_002_q29",
+      "group_order": 1
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 3,
+      "type": "judgment",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "content": "用一张长 $3$ dm、宽 $1$ dm 的长方形硬纸分别以长边为轴（A 圆柱：$r=1, h=3$）、短边为轴（B 圆柱：$r=3, h=1$）旋转，形成两个圆柱。\n2. 朗朗说：「A 圆柱和 B 圆柱的体积相等。」（判断）",
+      "options": [
+        "正确",
+        "错误"
+      ],
+      "answer": "错误",
+      "explanation": "A 体积 $=\\pi\\times 1^2\\times 3=3\\pi$；B 体积 $=\\pi\\times 3^2\\times 1=9\\pi$。不相等。",
+      "group_id": "qm_futian_002_q29",
+      "group_order": 2
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "round": 3,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "为了响应国家「体重管理年」的号召，鹏鹏坚持每天跳绳。一周跳绳次数：$345, 350, 340, 343, 342, 346, 348$。能反映鹏鹏这一周每天跳绳水平的次数是（　　）。",
+      "options": [
+        "A. $343$",
+        "B. $346$",
+        "C. $342$",
+        "D. $345$"
+      ],
+      "answer": "D",
+      "explanation": "平均数（$345$）反映整周水平。$(345+350+340+343+342+346+348)\\div 7=2414\\div 7\\approx 344.86\\approx 345$（保留整数）。"
+    }
+  ]
+}

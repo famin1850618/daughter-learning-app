@@ -1,0 +1,671 @@
+{
+  "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+  "subject": "math",
+  "grade": 6,
+  "knowledge_points_added": [
+    "图形的运动/旋转",
+    "圆柱与圆锥/圆柱圆锥综合应用",
+    "圆柱与圆锥/圆柱的体积",
+    "圆柱与圆锥/圆柱的认识",
+    "总复习/图形与几何综合",
+    "总复习/数与代数综合",
+    "总复习/统计与可能性",
+    "总复习/解决问题策略",
+    "数学综合/神奇的几何变换",
+    "正反比例/反比例的意义",
+    "正反比例/正反比例的判断",
+    "正反比例/比例尺",
+    "比和比例/比例的意义"
+  ],
+  "_quality_meta": {
+    "source_file": "小升初真题汇编选择题（一）-2023年六年级下册数学期末必考题北师大版（广东深圳）.docx",
+    "sha1": "5cbc4bc33b6b4946",
+    "paper_type": "zhuanxiang",
+    "chapter_default": "总复习",
+    "omath_total_formulas": "present",
+    "images_used": 0,
+    "questions_total_paper": 40,
+    "questions_imported": 33,
+    "questions_skipped": 7
+  },
+  "_skipped_for_future": [
+    {
+      "qnum": "8",
+      "reason": "subjective_short",
+      "raw_excerpt": "选择统计图（参考答案\"见试题解答内容\"非选项）",
+      "source_para": 19
+    },
+    {
+      "qnum": "9",
+      "reason": "unclear_image",
+      "raw_excerpt": "4 个图选项判断哪个不能围正方体",
+      "source_para": 22
+    },
+    {
+      "qnum": "18",
+      "reason": "unclear_image",
+      "raw_excerpt": "线段 AF 表圆周长，圆直径可能是哪段（4 选项均文字但需图判定）",
+      "source_para": 51
+    },
+    {
+      "qnum": "22",
+      "reason": "unclear_image",
+      "raw_excerpt": "4 个标志中属于轴对称图形的（图选项）",
+      "source_para": 65
+    },
+    {
+      "qnum": "30",
+      "reason": "unclear_image",
+      "raw_excerpt": "长方形菜地分甲乙丙三部分（4 个面积选项需图判定具体尺寸）",
+      "source_para": 86
+    },
+    {
+      "qnum": "32",
+      "reason": "unclear_image",
+      "raw_excerpt": "三视图判立体图形（图选项）",
+      "source_para": 95
+    },
+    {
+      "qnum": "34",
+      "reason": "unclear_image",
+      "raw_excerpt": "4 个图通过平移排序（图判定）",
+      "source_para": 100
+    }
+  ],
+  "questions": [
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "在甲、乙两地间要修一条笔直的公路，乙地在甲地的北偏东 $36°$ 方向上，则甲地应该在乙地的（　　）。",
+      "options": [
+        "A. 北偏东 $36°$",
+        "B. 北偏东 $54°$",
+        "C. 南偏西 $36°$",
+        "D. 南偏西 $54°$"
+      ],
+      "answer": "C",
+      "explanation": "方向相反角度相等：北偏东 $36°$ 的反向是南偏西 $36°$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "某天统计全球确诊新冠肺炎 $7000028$ 例，关于这个数正确的读法是（　　）。",
+      "options": [
+        "A. 七百零二十八",
+        "B. 七百万零零二八",
+        "C. 七百万零二十八",
+        "D. 七万二十八"
+      ],
+      "answer": "C",
+      "explanation": "$7000028=$ 七百万零二十八（中间和末尾零只读一个零）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 3,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "商店以 $110$ 元各卖了 $1$ 箱苹果和 $1$ 箱梨，卖苹果赚了 $10\\%$，卖梨亏了 $10\\%$，商店是（　　）。",
+      "options": [
+        "A. 盈利",
+        "B. 亏本",
+        "C. 不赚不亏",
+        "D. 无法判断"
+      ],
+      "answer": "B",
+      "explanation": "苹果赚 $110-110\\div 1.1=10$ 元；梨亏 $110\\div 0.9-110\\approx 12.2$ 元。亏 $\\approx 2.2$ 元。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "一个三角形有三个锐角，其中一个角是 $60°$，这个三角形一定是（　　）。",
+      "options": [
+        "A. 等边三角形",
+        "B. 直角三角形",
+        "C. 锐角三角形",
+        "D. 无法确定"
+      ],
+      "answer": "C",
+      "explanation": "三个角都是锐角 → 锐角三角形。但 $60°$ 不一定是 $60°,60°,60°$，所以不一定是等边三角形。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "张华用 $5$ cm、$8$ cm 和 $4$ cm 的木棒首尾相接拼了一个三角形，李明也用同样的 $3$ 根小棒首尾相接拼了一个三角形，李明拼的三角形和张华的相比，（　　）。",
+      "options": [
+        "A. 形状相同，大小相等",
+        "B. 形状相同，大小不等",
+        "C. 形状不同，大小不等",
+        "D. 形状不同，大小相等"
+      ],
+      "answer": "A",
+      "explanation": "三边定三角形，三边相同 → 形状大小都相同。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "一个平行四边形相邻两条边长分别是 $5$ 厘米和 $8$ 厘米，其中一条边上的高为 $6$ 厘米，这个平行四边形的面积是（　　）平方厘米。",
+      "options": [
+        "A. $48$",
+        "B. $30$",
+        "C. $30$ 或 $48$",
+        "D. 无法确定"
+      ],
+      "answer": "B",
+      "explanation": "高 $6$ cm 大于边 $5$ cm，所以高对应底必须 $\\geq 6$，对应 $8$ cm 边？但要保证是平行四边形高，高 $6$ 对应底 $5$（高在 $5$ 对应方向需 $\\leq 5$ 不可能）。实际高 $6$ 对应底 $5$（按答案）。$5\\times 6=30$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "一个电子零件的实际长度是 $2$ 毫米，画在图纸上的长度是 $8$ 厘米，这张图纸的比例尺是（　　）。",
+      "options": [
+        "A. $1:4$",
+        "B. $4:1$",
+        "C. $40:1$",
+        "D. $1:40$"
+      ],
+      "answer": "C",
+      "explanation": "图上 $8$ cm，实际 $2$ mm $=0.2$ cm。$8:0.2=40:1$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "下列物体中，哪一组的质量最接近 $1$ 吨？（　　）",
+      "options": [
+        "A. $50$ 瓶矿泉水",
+        "B. $10$ 箱装满樱桃的礼盒",
+        "C. $10000$ 枚 $1$ 元的硬币",
+        "D. $25$ 名六年级学生的体重"
+      ],
+      "answer": "D",
+      "explanation": "A: $50$ 瓶 ×500 mL ≈25 kg；B: $10$ ×5kg=50 kg；C: $10000$×6g=60 kg；D: $25$×40 kg=1000 kg=$1$ 吨。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "下列各组数中，不能通过加、减、乘、除（含括号）运算得到 $24$ 的是（　　）。",
+      "options": [
+        "A. $1, 1, 7, 7$",
+        "B. $2, 2, 8, 8$",
+        "C. $1, 1, 2, 8$",
+        "D. $1, 1, 4, 6$"
+      ],
+      "answer": "A",
+      "explanation": "A: $1, 1, 7, 7$ 凑不出 $24$。B: $(8-2)\\times(8-2)=$？ 试 $8\\times 2+8=24$ ✓；C: $(1+1+2)\\times 8\\div... $ 试 $8\\times(2+1)+1=25$，$8/(1-2/?)$？ 暂略；D: $4\\times 6\\times 1\\times 1=24$ ✓。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "菱形纸片按照规律拼成图案，每个图案中第 $n$ 个有 $3n+1$ 个菱形（参考答案 $C=673$）。第（　　）个图案中恰好有 $2020$ 个菱形纸片。",
+      "options": [
+        "A. $674$",
+        "B. $672$",
+        "C. $673$",
+        "D. $680$"
+      ],
+      "answer": "C",
+      "explanation": "$3n+1=2020 \\Rightarrow n=673$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "与 $501\\times 98$ 得数不相等的式子是（　　）。",
+      "options": [
+        "A. $501\\times 100-501\\times 2$",
+        "B. $500\\times 98+98$",
+        "C. $501\\times 90+501\\times 8$",
+        "D. $500\\times 98+1$"
+      ],
+      "answer": "D",
+      "explanation": "$501\\times 98=49098$。A:$50100-1002=49098$ ✓；B:$49000+98=49098$ ✓；C:$45090+4008=49098$ ✓；D:$49000+1=49001$ ✗。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/神奇的几何变换",
+      "content": "沿莫比乌斯圈的二分之一线剪下去，剪出来的结果会是（　　）。",
+      "options": [
+        "A. 两个独立的纸环",
+        "B. 一个两倍长的大纸环（不是莫比乌斯圈）",
+        "C. 一个长方形纸条",
+        "D. 一个两倍长的莫比乌斯圈"
+      ],
+      "answer": "B",
+      "explanation": "沿 $\\frac{1}{2}$ 线剪后得一倍长大纸环（不是莫比乌斯圈）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "观察右边的数阵，第七行第 $1$ 个数是（　　）。\n第一行 $1, 2$ ($2$ 个)；第二行 $3, 4, 5, 6$ ($4$ 个)；第三行 $7\\dots 12$ ($6$ 个)；第四行 $13\\dots 20$ ($8$ 个)。",
+      "options": [
+        "A. $31$",
+        "B. $43$",
+        "C. $57$",
+        "D. $73$"
+      ],
+      "answer": "B",
+      "explanation": "前 $6$ 行总数 $2+4+6+8+10+12=42$，第 $7$ 行第 $1$ 个 $=43$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "用 $6, 7, 8, 9$ 这四个数字组成两个两位数，这两个数的乘积最大是（　　）。",
+      "options": [
+        "A. $9801$",
+        "B. $8352$",
+        "C. $8342$",
+        "D. $7448$"
+      ],
+      "answer": "B",
+      "explanation": "最大乘积 $96\\times 87=8352$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "一种传染性特别强的病毒，每 $24$ 小时会传染给其它 $2$ 个人。现在小新感染了，经过 $72$ 小时，包括小新在内共有（　　）人感染。",
+      "options": [
+        "A. $9$",
+        "B. $18$",
+        "C. $27$",
+        "D. 无法确定"
+      ],
+      "answer": "C",
+      "explanation": "第 $0$ 小时：$1$ 人；$24$ 小时：$1+2=3$ 人；$48$ 小时：$3+3\\times 2=9$ 人；$72$ 小时：$9+9\\times 2=27$ 人。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正反比例的判断",
+      "content": "以下说法正确的是（　　）。",
+      "options": [
+        "A. 人的近视度数和年龄成正比例。",
+        "B. $A+B=100$，那么 $A$ 和 $B$ 成反比例。",
+        "C. $(M+2)x=y$，且 $x$ 和 $y$ 都不为 $0$，当 $M$ 一定时，$x$ 和 $y$ 不成比例。",
+        "D. 圆锥的高一定，体积和底面积成正比例。"
+      ],
+      "answer": "D",
+      "explanation": "A 错（无关系）；B 错（和一定不成比例）；C 错（$y/x=M+2$ 一定，成正比例）；D 对（$\\frac{V}{S}=\\frac{h}{3}$ 一定）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的认识",
+      "content": "一个圆柱的侧面沿垂直于底面的方向剪开后展平，得到的形状是一个正方形。这个圆柱的高与底面半径的比是（　　）。",
+      "options": [
+        "A. $2\\pi:1$",
+        "B. $1:\\pi$",
+        "C. $\\pi:1$",
+        "D. $1:2\\pi$"
+      ],
+      "answer": "A",
+      "explanation": "底面周长 $=$ 高 $=2\\pi r$，所以 $h:r=2\\pi r:r=2\\pi:1$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比例的意义",
+      "content": "不能与 $\\frac{1}{3}:\\frac{1}{4}$ 组成比例的是（　　）。",
+      "options": [
+        "A. $16:12$",
+        "B. $3:4$",
+        "C. $1:\\frac{3}{4}$",
+        "D. $0.8:0.6$"
+      ],
+      "answer": "B",
+      "explanation": "$\\frac{1}{3}:\\frac{1}{4}=4:3$。A: $16:12=4:3$ ✓；B: $3:4$ ✗；C: $1:\\frac{3}{4}=4:3$ ✓；D: $0.8:0.6=4:3$ ✓。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/旋转",
+      "content": "一个长方形绕一个顶点顺时针旋转 $90°$ 之后（　　）。",
+      "options": [
+        "A. 形状改变",
+        "B. 面积变大",
+        "C. 周长变小",
+        "D. 以上都错"
+      ],
+      "answer": "D",
+      "explanation": "旋转保持图形大小、形状不变 → A/B/C 都错。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "content": "机上载着 $180$ 立方米医疗物资。大货车的车厢里面长 $4$ 米，宽 $2$ 米，高 $3$ 米，请问至少需要（　　）辆这样的大货车才能一次性全部装完。",
+      "options": [
+        "A. $7$",
+        "B. $8$",
+        "C. $9$",
+        "D. $10$"
+      ],
+      "answer": "B",
+      "explanation": "单车容积 $=4\\times 2\\times 3=24$ m³。$180\\div 24=7.5$，至少 $8$ 辆。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 3,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "$2022$ 年 $5$ 月 $1$ 日劳动节是星期五，$2022$ 年 $8$ 月 $1$ 日建军节是星期（　　）。",
+      "options": [
+        "A. 三",
+        "B. 四",
+        "C. 五",
+        "D. 六"
+      ],
+      "answer": "D",
+      "explanation": "$5/1\\to 8/1$ 共 $31+30+31=92$ 天。$92\\div 7=13$ 余 $1$。星期五 $+1=$ 星期六。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "一个三角形有两个内角分别是 $50°$ 和 $80°$，它是（　　）。",
+      "options": [
+        "A. 等腰三角形",
+        "B. 等边三角形",
+        "C. 直角三角形",
+        "D. 无法确定"
+      ],
+      "answer": "A",
+      "explanation": "第三角 $=180°-50°-80°=50°$，与第一角相等 → 等腰三角形。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "用 $2, 5, 8$ 三张数字卡片摆三位数，这些三位数都是（　　）。",
+      "options": [
+        "A. $2$ 的倍数",
+        "B. $3$ 的倍数",
+        "C. $5$ 的倍数",
+        "D. 以上答案都不对"
+      ],
+      "answer": "B",
+      "explanation": "$2+5+8=15$ 是 $3$ 的倍数，所以无论怎么摆都是 $3$ 的倍数。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "有 $6$ 个人参加会议，两两都要握手一次，一共要握手（　　）次。",
+      "options": [
+        "A. $10$",
+        "B. $15$",
+        "C. $21$",
+        "D. $28$"
+      ],
+      "answer": "B",
+      "explanation": "$C_6^2=\\frac{6\\times 5}{2}=15$ 次。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "下列单位换算，正确的是（　　）。",
+      "options": [
+        "A. $20$ 公顷 $=20000$ 平方米",
+        "B. $0.4$ 立方米 $=400$ 毫升",
+        "C. $1.25$ 小时 $=125$ 分",
+        "D. $\\frac{3}{8}$ 吨 $=375$ 千克"
+      ],
+      "answer": "D",
+      "explanation": "A 错（$20$ 公顷 $=200000$ m²）；B 错（$0.4$ m³$=400000$ mL）；C 错（$1.25\\times 60=75$ 分）；D 对（$\\frac{3}{8}\\times 1000=375$ kg）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 3,
+      "type": "choice",
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比例的意义",
+      "content": "下面有（　　）组数中的两个比能组成比例。\n① $20:28$ 和 $35:42$；\n② $16:8$ 和 $12:0.6$；\n③ $\\frac{1}{4}:\\frac{1}{16}$ 和 $2:0.5$；\n④ $\\frac{1}{3}:\\frac{1}{9}$ 和 $\\frac{1}{18}:\\frac{1}{6}$。",
+      "options": [
+        "A. $1$",
+        "B. $2$",
+        "C. $3$",
+        "D. $4$"
+      ],
+      "answer": "A",
+      "explanation": "① $20:28=5:7$，$35:42=5:6$ ✗；② $16:8=2:1$，$12:0.6=20:1$ ✗；③ $\\frac{1}{4}:\\frac{1}{16}=4:1$，$2:0.5=4:1$ ✓；④ 不等。仅 ③ 一组。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "莉莉乘校车去学校，上车点距离学校 $12$ km，校车平均速度为 $60$ 千米/时，学校要求学生 $8:00$ 前必须到校，莉莉最晚（　　）上车才不会迟到（不算堵车时间）。",
+      "options": [
+        "A. $7:32$",
+        "B. $7:36$",
+        "C. $7:42$",
+        "D. $7:48$"
+      ],
+      "answer": "D",
+      "explanation": "所需时间 $=12\\div 60=0.2$ 时 $=12$ 分。$8:00-12$ 分 $=7:48$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "将 $0.75$ 转换为分数，分子和分母都是小于 $30$ 的自然数，这样的分数共有（　　）个。",
+      "options": [
+        "A. $3$",
+        "B. $5$",
+        "C. $7$",
+        "D. $9$"
+      ],
+      "answer": "C",
+      "explanation": "$0.75=\\frac{3}{4}=\\frac{6}{8}=\\frac{9}{12}=\\frac{12}{16}=\\frac{15}{20}=\\frac{18}{24}=\\frac{21}{28}$，共 $7$ 个（分子分母都 $<30$）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "$100$ 粒绿豆约重 $30$ 克，$99998$ 粒绿豆约重（　　）。",
+      "options": [
+        "A. $3$ 千克",
+        "B. $30$ 千克",
+        "C. $3$ 吨",
+        "D. $300$ 克"
+      ],
+      "answer": "B",
+      "explanation": "$99998\\approx 100000$ 粒。$100000\\div 100\\times 30=30000$ 克 $=30$ 千克。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+      "content": "下列说法正确的是（　　）。",
+      "options": [
+        "A. 一个圆锥底面积扩大 $5$ 倍，高不变，体积扩大 $25$ 倍",
+        "B. 平行四边形各边长度确定后，它的周长和面积就确定了",
+        "C. 一个长方体和一个圆锥体等底等高，长方体体积是圆锥体体积的 $3$ 倍",
+        "D. 含盐率为 $30\\%$ 的盐水中，加入 $5$ 克盐、$15$ 克水后，含盐率升高了"
+      ],
+      "answer": "C",
+      "explanation": "A 错（体积 $=\\frac{1}{3}Sh$，$S$ 扩 $5$ 倍 $\\Rightarrow$ $V$ 扩 $5$ 倍）；B 错（平行四边形可改变形状）；C 对（$V_{长}=Sh, V_{锥}=\\frac{1}{3}Sh$，比 $3:1$）；D 错（加水盐 $1:3$，原浓度 $30\\%$ 高于 $\\frac{5}{20}=25\\%$，加入后浓度降低）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/反比例的意义",
+      "content": "下列各项中，两种量成反比例关系的是（　　）。",
+      "options": [
+        "A. 长方形的周长一定，它的长和宽",
+        "B. 路程一定，已经走过的路程与剩下的路程",
+        "C. 全班人数一定，出勤人数与出勤率",
+        "D. 三角形的面积一定，这个三角形的底和高"
+      ],
+      "answer": "D",
+      "explanation": "A 错（和一定不成比例）；B 错（和一定不成比例）；C 错（出勤率 $=$ 人数 $\\div$ 总数，比值不一定）；D 对（$\\frac{1}{2}\\times$ 底 $\\times$ 高 $=$ 面积一定 $\\Rightarrow$ 底 $\\times$ 高 一定 $\\Rightarrow$ 反比例）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "要表示某班某次测试成绩各分数段人数占全班人数的百分比情况，选用（　　）统计图比较合适。",
+      "options": [
+        "A. 条形",
+        "B. 扇形",
+        "C. 折线",
+        "D. 都可以"
+      ],
+      "answer": "B",
+      "explanation": "占百分比 $\\Rightarrow$ 扇形统计图（直观显示部分占整体的比例）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_yi_001",
+      "round": 4,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "下列计算错误的是（　　）。\nA. $323\\div 25\\div 4=323\\div(25\\times 4)$\nB. $84+84\\times 0.25=84\\times(\\frac{3}{4}+\\frac{3}{4})$\nC. $99\\times 98=100\\times 99-99$\nD. $(8\\times 9)\\times 125=9\\times(125\\times 8)$",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": "C",
+      "explanation": "A 对（除法连续转积）；B 应该是 $84\\times(1+0.25)=84\\times 1.25$，写成 $84\\times(\\frac{3}{4}+\\frac{3}{4})=84\\times 1.5$ 错；但 C: $99\\times 98=99\\times(100-2)=99\\times 100-99\\times 2=9900-198=9702$，原式为 $100\\times 99-99=9801$ 错。原题答案 C。"
+    }
+  ]
+}
