@@ -14,7 +14,11 @@
     "images_used": 0,
     "questions_total_paper": 40,
     "questions_imported": 22,
-    "questions_skipped": 18
+    "questions_skipped": 18,
+    "_v2_workflow_version": "V3.17",
+    "_v2_redoing_v1_violations": true,
+    "questions_imported_total": 22,
+    "questions_skipped_groups": 18
   },
   "_skipped_for_future": [
     {
@@ -505,5 +509,6 @@
       "answer": "C",
       "explanation": "折线统计图反映「随时间变化趋势」 → 销售业绩增减变化最合适。A/B 用条形，D 用扇形。"
     }
-  ]
+  ],
+  "_v2_workflow_version": "V3.17"
 }

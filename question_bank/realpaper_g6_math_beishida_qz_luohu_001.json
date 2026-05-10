@@ -20,7 +20,11 @@
     "images_used": 0,
     "questions_total_paper": 27,
     "questions_imported": 12,
-    "questions_skipped": 16
+    "questions_skipped": 16,
+    "_v2_workflow_version": "V3.17",
+    "_v2_redoing_v1_violations": true,
+    "questions_imported_total": 8,
+    "questions_skipped_groups": 19
   },
   "_skipped_for_future": [
     {
@@ -124,6 +128,44 @@
       "reason": "unclear_image",
       "raw_excerpt": "小军家观测点（图依赖）",
       "source_para": 64
+    },
+    {
+      "qnum": "None",
+      "reason": "v317_violation_recheck",
+      "raw_excerpt": "20. 一根圆柱形木料长9m，横截面的半径是3dm，如果将这根木料按1∶2锯成两段，较短一段的体积是（        ）。\n三、解决问题",
+      "_violation_details": [
+        {
+          "order": null,
+          "issues": [
+            "V3.17-7: content 多出 raw 之外数字 ['3.14']"
+          ]
+        }
+      ]
+    },
+    {
+      "qnum": "27",
+      "reason": "v317_violation_recheck",
+      "raw_excerpt": "27. 一个圆柱形花坛，底面直径8米，高0.8米。\n\n（1）这个花坛的占地面积是多少平方米？\n（2）在花坛的外面抹上水泥（花坛厚度不计），抹水泥部分的面积是多少平方米？\n（3）如果在花坛的内部填满沙土，至少需要多少立方米的沙土？",
+      "_violation_details": [
+        {
+          "order": 1,
+          "issues": [
+            "V3.17-7: content 多出 raw 之外数字 ['3.14']"
+          ]
+        },
+        {
+          "order": 2,
+          "issues": [
+            "V3.17-7: content 多出 raw 之外数字 ['3.14']"
+          ]
+        },
+        {
+          "order": 3,
+          "issues": [
+            "V3.17-7: content 多出 raw 之外数字 ['3.14']"
+          ]
+        }
+      ]
     }
   ],
   "questions": [
@@ -143,7 +185,8 @@
         "D. 梯形"
       ],
       "answer": "D",
-      "explanation": "圆柱侧面沿垂直方向剪开是长方形（特殊时正方形），斜剪可得平行四边形。但侧面展开**不可能**是梯形。"
+      "explanation": "圆柱侧面沿垂直方向剪开是长方形（特殊时正方形），斜剪可得平行四边形。但侧面展开**不可能**是梯形。",
+      "_raw_excerpt": "3. 把一个圆柱的侧面展开，不可能是（    ）。\nA. 长方形\tB. 正方形\tC. 平行四边形\tD. 梯形"
     },
     {
       "subject": "math",
@@ -161,7 +204,8 @@
         "D. $10:1$"
       ],
       "answer": "A",
-      "explanation": "$5$ 米 $=500$ 厘米。$1:100$ 缩为 $5$ 厘米（练习本能放下），$1:10$ 缩为 $50$ 厘米（太大），$1:1000$ 缩为 $0.5$ 厘米（太小），$10:1$ 是放大。"
+      "explanation": "$5$ 米 $=500$ 厘米。$1:100$ 缩为 $5$ 厘米（练习本能放下），$1:10$ 缩为 $50$ 厘米（太大），$1:1000$ 缩为 $0.5$ 厘米（太小），$10:1$ 是放大。",
+      "_raw_excerpt": "5. 小优家客厅长5m，宽3.8m，画在练习本上，选比例尺（    ）比较合适。\nA. 1∶100\tB. 1∶10\tC. 1∶1000\tD. 10∶1"
     },
     {
       "subject": "math",
@@ -179,7 +223,8 @@
         "D. $243$"
       ],
       "answer": "B",
-      "explanation": "等底，圆锥体积 $=\\frac{1}{3}\\pi r^{2}\\times 3h=\\pi r^{2}h=$ 圆柱体积。所以圆柱体积 $=27$ 立方分米。"
+      "explanation": "等底，圆锥体积 $=\\frac{1}{3}\\pi r^{2}\\times 3h=\\pi r^{2}h=$ 圆柱体积。所以圆柱体积 $=27$ 立方分米。",
+      "_raw_excerpt": "9. 一个圆柱和一个圆锥的底面直径相等，圆锥的高是圆柱的3倍，圆锥的体积是27立方分米，圆柱的体积是（    ）立方分米。\nA. 81\tB. 27\tC. 9\tD. 243"
     },
     {
       "subject": "math",
@@ -197,7 +242,8 @@
         "D. 无法确定"
       ],
       "answer": "C",
-      "explanation": "图上长度同比例放大到实际，比值不变。甲乙图上直径 $2:3$ → 实际直径仍 $2:3$。"
+      "explanation": "图上长度同比例放大到实际，比值不变。甲乙图上直径 $2:3$ → 实际直径仍 $2:3$。",
+      "_raw_excerpt": "10. 在比例尺是1∶10的图纸上，甲、乙两个圆的直径比是2∶3，那么甲、乙两个圆实际的直径比是（  ）\nA 1∶10\tB. 4∶9\tC. 2∶3\tD. 无法确定"
     },
     {
       "subject": "math",
@@ -209,7 +255,8 @@
       "knowledge_point": "图形的运动/旋转",
       "content": "钟面上的分针从 $5$ 时 $30$ 分绕中心点顺时针旋转 $90°$ 后是（　　）时（　　）分。",
       "answer": "5,45",
-      "explanation": "分针每分钟转 $6°$，$90°$ 对应 $15$ 分钟。$5$ 时 $30$ 分 $+15$ 分 $=5$ 时 $45$ 分。"
+      "explanation": "分针每分钟转 $6°$，$90°$ 对应 $15$ 分钟。$5$ 时 $30$ 分 $+15$ 分 $=5$ 时 $45$ 分。",
+      "_raw_excerpt": "15. 钟面上的分针从5时30分绕中心点顺时针旋转90°后是（        ）时（        ）分。"
     },
     {
       "subject": "math",
@@ -221,7 +268,8 @@
       "knowledge_point": "图形的运动/图形放大缩小",
       "content": "把一个正方形按 $3:1$ 的比放大，放大后正方形的面积是原来的（　　）倍；把一个长方形按 $1:2$ 的比缩小后，缩小后的长方形与原来长方形面积的比是（　　）。",
       "answer": "9,1:4",
-      "explanation": "按 $3:1$ 放大 → 边长变 $3$ 倍 → 面积变 $9$ 倍。按 $1:2$ 缩小 → 边长变 $\\frac{1}{2}$ → 面积变 $\\frac{1}{4}$，比 $1:4$。"
+      "explanation": "按 $3:1$ 放大 → 边长变 $3$ 倍 → 面积变 $9$ 倍。按 $1:2$ 缩小 → 边长变 $\\frac{1}{2}$ → 面积变 $\\frac{1}{4}$，比 $1:4$。",
+      "_raw_excerpt": "17. 把一个正方形按3∶1的比放大，放大后正方形的面积是原来的（          ）倍；把一个长方形按1∶2的比缩小后，缩小后的长方形与原来长方形面积的比是（          ）。"
     },
     {
       "subject": "math",
@@ -234,19 +282,8 @@
       "content": "如图所示，将圆柱切拼成一个近似的长方体。长方体的长约为 $15.7$ 厘米，宽是 $5$ 厘米，高是 $8$ 厘米。那么圆柱的底面积等于（　　）平方厘米；圆柱的体积等于（　　）立方厘米。",
       "answer": "78.5,628",
       "explanation": "长方体的高 $=$ 圆柱的高 $=8$，长方体底面积 $=$ 圆柱底面积 $=15.7\\times 5=78.5$ 平方厘米。圆柱体积 $=78.5\\times 8=628$ 立方厘米。",
-      "_image_skip_reason": "text_self_contained_image_decorative"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_qz_luohu_001",
-      "round": 4,
-      "type": "fill",
-      "chapter": "圆柱与圆锥",
-      "knowledge_point": "圆柱与圆锥/圆柱的体积",
-      "content": "一根圆柱形木料长 $9\\text{m}$，横截面的半径是 $3\\text{dm}$，如果将这根木料按 $1:2$ 锯成两段，较短一段的体积是（　　）立方分米。（取 $\\pi=3.14$）",
-      "answer": "847.8",
-      "explanation": "较短段长 $=9\\times\\frac{1}{1+2}=3$ 米 $=30$ 分米。底面积 $=\\pi r^{2}=3.14\\times 3^{2}=28.26$ 平方分米。体积 $=28.26\\times 30=847.8$ 立方分米。"
+      "_image_skip_reason": "text_self_contained_image_decorative",
+      "_raw_excerpt": "19. 如图所示，将圆柱切拼成一个近似的长方体。长方体的长约为15.7厘米，宽是5厘米，高是8厘米。那么圆柱的底面积等于（        ）平方厘米；圆柱的体积等于（        ）立方厘米。"
     },
     {
       "subject": "math",
@@ -258,49 +295,9 @@
       "knowledge_point": "正反比例/比例尺",
       "content": "法国埃菲尔铁塔实际高度 $324$ 米，深圳世界之窗的模型按 $1:3$ 比例建造，深圳世界之窗的埃菲尔铁塔模型高度是多少米？（用比例解）",
       "answer": "108",
-      "explanation": "设模型高 $x$ 米，按比例 $x:324=1:3$，$3x=324$，$x=108$ 米。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_qz_luohu_001",
-      "round": 3,
-      "type": "fill",
-      "chapter": "圆柱与圆锥",
-      "knowledge_point": "圆柱与圆锥/圆柱的表面积",
-      "content": "一个圆柱形花坛，底面直径 $8$ 米，高 $0.8$ 米。（取 $\\pi=3.14$）\n1. （1）这个花坛的占地面积是多少平方米？",
-      "answer": "50.24",
-      "explanation": "占地面积 $=$ 底面积 $=\\pi r^{2}=3.14\\times 4^{2}=3.14\\times 16=50.24$ 平方米。",
-      "group_id": "qz_luohu_001_q27",
-      "group_order": 1
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_qz_luohu_001",
-      "round": 3,
-      "type": "fill",
-      "chapter": "圆柱与圆锥",
-      "knowledge_point": "圆柱与圆锥/圆柱的表面积",
-      "content": "一个圆柱形花坛，底面直径 $8$ 米，高 $0.8$ 米。（取 $\\pi=3.14$）\n2. （2）在花坛的外面抹上水泥（花坛厚度不计），抹水泥部分的面积是多少平方米？",
-      "answer": "20.096",
-      "explanation": "抹水泥部分 $=$ 圆柱侧面积 $=\\pi d h=3.14\\times 8\\times 0.8=20.096$ 平方米。",
-      "group_id": "qz_luohu_001_q27",
-      "group_order": 2
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_qz_luohu_001",
-      "round": 3,
-      "type": "fill",
-      "chapter": "圆柱与圆锥",
-      "knowledge_point": "圆柱与圆锥/圆柱的体积",
-      "content": "一个圆柱形花坛，底面直径 $8$ 米，高 $0.8$ 米。（取 $\\pi=3.14$）\n3. （3）如果在花坛的内部填满沙土，至少需要多少立方米的沙土？",
-      "answer": "40.192",
-      "explanation": "沙土体积 $=$ 圆柱体积 $=$ 底面积 $\\times$ 高 $=50.24\\times 0.8=40.192$ 立方米。",
-      "group_id": "qz_luohu_001_q27",
-      "group_order": 3
+      "explanation": "设模型高 $x$ 米，按比例 $x:324=1:3$，$3x=324$，$x=108$ 米。",
+      "_raw_excerpt": "26. 法国埃菲尔铁塔实际高度324米，深圳世界之窗的模型按1：3比例建造，深圳世界之窗的埃菲尔铁塔模型高度是多少米？（用比例解）"
     }
-  ]
+  ],
+  "_v2_workflow_version": "V3.17"
 }

@@ -23,7 +23,11 @@
     "images_used": 0,
     "questions_total_paper": 31,
     "questions_imported": 19,
-    "questions_skipped": 20
+    "questions_skipped": 20,
+    "_v2_workflow_version": "V3.17",
+    "_v2_redoing_v1_violations": true,
+    "questions_imported_total": 17,
+    "questions_skipped_groups": 21
   },
   "_skipped_for_future": [
     {
@@ -145,6 +149,25 @@
       "reason": "open_drawing_question",
       "raw_excerpt": "梯形上底 +4 变平行四边形，-3 变三角形（含作图）",
       "source_para": 82
+    },
+    {
+      "qnum": "26",
+      "reason": "v317_violation_recheck",
+      "raw_excerpt": "26．（6分）一辆汽车在高速路上匀速行驶，它行驶的时间与路程如表。\n（1）这辆汽车行驶的速度是 　   　。\n（2）在如图中画出汽车行驶路程与时间的关系。\n（3）这辆汽车行驶的时间与路程成 　   　比例关系。\n\n五、问题解决。(每题6分，共30分。)",
+      "_violation_details": [
+        {
+          "order": 1,
+          "issues": [
+            "V3.17-7: content 多出 raw 之外数字 ['160', '240', '80'] [+图丢失]"
+          ]
+        },
+        {
+          "order": 2,
+          "issues": [
+            "V3.17-7: content 多出 raw 之外数字 ['160', '240', '80'] [+图丢失]"
+          ]
+        }
+      ]
     }
   ],
   "questions": [
@@ -160,7 +183,8 @@
       "answer": "9.42",
       "explanation": "长 $=$ 圆柱底面周长的一半 $=\\pi\\times 6\\div 2=9.42$ cm。",
       "group_id": "xsc_baoan_002_q5",
-      "group_order": 1
+      "group_order": 1,
+      "_raw_excerpt": "5．（2分）把一个直径是6厘米，高是10厘米的圆柱，切拼成一个近似的长方体（如图），那么这个长方体的长是 　   　厘米，宽是 　   　厘米，高是 　   　厘米。"
     },
     {
       "subject": "math",
@@ -174,7 +198,8 @@
       "answer": "3",
       "explanation": "宽 $=$ 圆柱半径 $=6\\div 2=3$ cm。",
       "group_id": "xsc_baoan_002_q5",
-      "group_order": 2
+      "group_order": 2,
+      "_raw_excerpt": "5．（2分）把一个直径是6厘米，高是10厘米的圆柱，切拼成一个近似的长方体（如图），那么这个长方体的长是 　   　厘米，宽是 　   　厘米，高是 　   　厘米。"
     },
     {
       "subject": "math",
@@ -188,7 +213,8 @@
       "answer": "10",
       "explanation": "高 $=$ 圆柱高 $=10$ cm。",
       "group_id": "xsc_baoan_002_q5",
-      "group_order": 3
+      "group_order": 3,
+      "_raw_excerpt": "5．（2分）把一个直径是6厘米，高是10厘米的圆柱，切拼成一个近似的长方体（如图），那么这个长方体的长是 　   　厘米，宽是 　   　厘米，高是 　   　厘米。"
     },
     {
       "subject": "math",
@@ -202,7 +228,8 @@
       "answer": "1.5",
       "explanation": "被除数除数同时乘 $2$，商不变，仍 $=1.5$。",
       "group_id": "xsc_baoan_002_q6",
-      "group_order": 1
+      "group_order": 1,
+      "_raw_excerpt": "6．（2分）如果〇÷□＝1.5，那么（〇×2）÷（□×2）＝　   　，（〇×10）÷□＝　   　。"
     },
     {
       "subject": "math",
@@ -216,7 +243,8 @@
       "answer": "15",
       "explanation": "被除数 $\\times 10$，除数不变，商 $\\times 10=1.5\\times 10=15$。",
       "group_id": "xsc_baoan_002_q6",
-      "group_order": 2
+      "group_order": 2,
+      "_raw_excerpt": "6．（2分）如果〇÷□＝1.5，那么（〇×2）÷（□×2）＝　   　，（〇×10）÷□＝　   　。"
     },
     {
       "subject": "math",
@@ -230,7 +258,8 @@
       "answer": "-6",
       "explanation": "$130-136=-6$。",
       "group_id": "xsc_baoan_002_q9",
-      "group_order": 1
+      "group_order": 1,
+      "_raw_excerpt": "9．（2分）跳绳比赛。六年级男生平均每分钟跳绳136个。六（1）班男生平均每分钟跳绳140个记作+4个，六（2）班男生平均每分钟跳绳130个记作 　   　个，六（3）班男生平均每分钟跳绳136个记作 　   　个。"
     },
     {
       "subject": "math",
@@ -244,7 +273,8 @@
       "answer": "0",
       "explanation": "$136-136=0$。",
       "group_id": "xsc_baoan_002_q9",
-      "group_order": 2
+      "group_order": 2,
+      "_raw_excerpt": "9．（2分）跳绳比赛。六年级男生平均每分钟跳绳136个。六（1）班男生平均每分钟跳绳140个记作+4个，六（2）班男生平均每分钟跳绳130个记作 　   　个，六（3）班男生平均每分钟跳绳136个记作 　   　个。"
     },
     {
       "subject": "math",
@@ -264,7 +294,8 @@
       "answer": "A",
       "explanation": "星星 : 连环画 = 一定。$10:2=40:x$。",
       "group_id": "xsc_baoan_002_q10",
-      "group_order": 1
+      "group_order": 1,
+      "_raw_excerpt": "10．（2分）作业本上获得10颗小星星就可以换2本连环画，淘气用40颗小星星换了x本连环画，请根据信息写出比例 　   　：　   　＝　   　：　   　，算一算，淘气换到了 　   　本连环画。"
     },
     {
       "subject": "math",
@@ -278,7 +309,8 @@
       "answer": "8",
       "explanation": "$10x=2\\times 40=80$，$x=8$ 本。",
       "group_id": "xsc_baoan_002_q10",
-      "group_order": 2
+      "group_order": 2,
+      "_raw_excerpt": "10．（2分）作业本上获得10颗小星星就可以换2本连环画，淘气用40颗小星星换了x本连环画，请根据信息写出比例 　   　：　   　＝　   　：　   　，算一算，淘气换到了 　   　本连环画。"
     },
     {
       "subject": "math",
@@ -392,6 +424,18 @@
       "subject": "math",
       "grade": 6,
       "source": "realpaper_g6_math_beishida_xsc_baoan_002",
+      "round": 4,
+      "type": "fill",
+      "chapter": "比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "在比例尺为 $1:70000000$ 的地图上量得深圳和上海两地的距离为 $2$ cm，货车平均每小时行驶 $80$ km。500 吨蔬菜要从深圳运到上海，问大约需要多少小时？",
+      "answer": "17.5",
+      "explanation": "实际距离 $=2\\times 70000000=1.4\\times 10^8$ cm $=1400$ km。$1400\\div 80=17.5$ 时。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_baoan_002",
       "round": 3,
       "type": "fill",
       "chapter": "总复习",
@@ -400,47 +444,9 @@
       "answer": "1",
       "explanation": "等腰梯形（上底 $4$，下底 $8$，对称）有 $1$ 条对称轴。",
       "group_id": "xsc_baoan_002_q25",
-      "group_order": 1
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_baoan_002",
-      "round": 3,
-      "type": "fill",
-      "chapter": "正比例和反比例",
-      "knowledge_point": "正反比例/正比例的意义",
-      "content": "一辆汽车在高速路上匀速行驶，已知 $1$ 时行 $80$ km，$2$ 时行 $160$ km，$3$ 时行 $240$ km。\n1. 这辆汽车行驶的速度是 ____ km/时。",
-      "answer": "80",
-      "explanation": "$80\\div 1=80$ km/时。",
-      "group_id": "xsc_baoan_002_q26",
-      "group_order": 1
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_baoan_002",
-      "round": 3,
-      "type": "fill",
-      "chapter": "正比例和反比例",
-      "knowledge_point": "正反比例/正比例的意义",
-      "content": "一辆汽车在高速路上匀速行驶，已知 $1$ 时行 $80$ km，$2$ 时行 $160$ km，$3$ 时行 $240$ km。\n2. 这辆汽车行驶的时间与路程成 ____ 比例关系。（填「正」或「反」）",
-      "answer": "正",
-      "explanation": "路程 $\\div$ 时间 $=80$（一定）成正比例。",
-      "group_id": "xsc_baoan_002_q26",
-      "group_order": 2
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_baoan_002",
-      "round": 4,
-      "type": "fill",
-      "chapter": "比例",
-      "knowledge_point": "正反比例/比例尺",
-      "content": "在比例尺为 $1:70000000$ 的地图上量得深圳和上海两地的距离为 $2$ cm，货车平均每小时行驶 $80$ km。500 吨蔬菜要从深圳运到上海，问大约需要多少小时？",
-      "answer": "17.5",
-      "explanation": "实际距离 $=2\\times 70000000=1.4\\times 10^8$ cm $=1400$ km。$1400\\div 80=17.5$ 时。"
+      "group_order": 1,
+      "_raw_excerpt": "25．（5分）按要求画图形。\n（1）在如图中按数对标出点A（3，5），点B （7，5），点C（9，2），点D（1，2）的位置，并连接点A、B、C、D得到图形①图形①有 　   　条对称轴。\n（2）将图形②向上平移4格得到图形③。"
     }
-  ]
+  ],
+  "_v2_workflow_version": "V3.17"
 }

@@ -21,7 +21,11 @@
     "images_used": 0,
     "questions_total_paper": 32,
     "questions_imported": 17,
-    "questions_skipped": 15
+    "questions_skipped": 15,
+    "_v2_workflow_version": "V3.17",
+    "_v2_redoing_v1_violations": true,
+    "questions_imported_total": 17,
+    "questions_skipped_groups": 15
   },
   "_skipped_for_future": [
     {
@@ -398,5 +402,6 @@
       "answer": "25",
       "explanation": "第一次用去 $20\\%$，余下 $80\\%$。第二次用余下的 $40\\%$，再余下 $80\\%\\times(1-40\\%)=80\\%\\times 60\\%=48\\%$。即 $48\\%=12$ 升，全桶 $=12\\div 48\\%=25$ 升。"
     }
-  ]
+  ],
+  "_v2_workflow_version": "V3.17"
 }

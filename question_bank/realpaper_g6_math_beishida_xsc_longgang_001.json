@@ -1,6 +1,7 @@
 {
   "source": "realpaper_g6_math_beishida_xsc_longgang_001",
   "_source_docx_sha1": "337abd8c26f73a81",
+  "_v2_workflow_version": "V3.16",
   "subject": "math",
   "grade": 6,
   "knowledge_points_added": [
@@ -21,84 +22,96 @@
     "sha1": "337abd8c26f73a81",
     "paper_type": "xsc",
     "chapter_default": "总复习",
-    "omath_total_formulas": "present",
+    "omath_total_formulas": 0,
+    "omath_para_count": 0,
     "images_used": 0,
     "questions_total_paper": 37,
-    "questions_imported": 27,
-    "questions_skipped": 12
+    "questions_imported_total": 24,
+    "questions_skipped_groups": 13,
+    "_v2_workflow_version": "V3.16",
+    "_v2_redoing_v1_violations": true,
+    "_v1_path": "assets/data/batches/realpaper_g6_math_beishida_xsc_longgang_001.json",
+    "_v316_self_check_passes": 24,
+    "_v316_self_check_fails": 0
   },
   "_skipped_for_future": [
     {
       "qnum": "3",
-      "reason": "unclear_image",
-      "raw_excerpt": "小正方体看面 (4 个图选项)",
-      "source_para": 10
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "3．（2分）的立体图形是用一样的小正方体搭成，我们从（　　）面看到的形状恰好是。\nA．左面\tB．右面\tC．正面\tD．上面",
+      "note": "题面立体图形 + 目标视图均为位图，文字层无形状描述"
     },
     {
-      "qnum": "9",
-      "reason": "unclear_image",
-      "raw_excerpt": "摆 15 个正方形需多少根小棒（图判定规律）",
-      "source_para": 32
+      "qnum": "11",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "11．（2分）《千里江山图》是由北宋画家王希孟18岁时创作的宽是51.5cm的山水画长卷。一位老师把该画的仿制品纵向平均分成35小幅（右图是其中的一小幅），打印出来，发给35名学生进行临摹，然后拼成一幅长卷图画。这幅仿制品的长约是（　　）米。",
+      "note": "「右图是其中的一小幅」每小幅尺寸（长度）仅在图中，文字层缺失。v1 worker 自补「每幅长 34 cm」违纪反推"
     },
     {
       "qnum": "12",
-      "reason": "unclear_image",
-      "raw_excerpt": "4 个关系图选错的（图选项）",
-      "source_para": 43
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "12．（2分）下图关系中不正确的是（　　）\nA．\tB．\tC．\tD．",
+      "note": "ABCD 选项均为关系图位图，文字层无可读描述"
     },
     {
       "qnum": "13",
-      "reason": "unclear_image",
-      "raw_excerpt": "九章算术分数除法（4 个分式选项 OMath 部分缺）",
-      "source_para": 46
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "13．（2分）《九章算术》是中国古代第一部数学专著...例如：。下面（　　）是采用这种方法计算的。\nA．＝0.75÷0.5＝1.5\tB．\tC．\tD．",
+      "note": "题面例子分数 + B/C/D 选项分数均为 OMath 缺失，仅 A 选项可重建"
     },
     {
       "qnum": "15",
-      "reason": "unclear_image",
-      "raw_excerpt": "4 个图形面积是否相等（图选项）",
-      "source_para": 56
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "15．（2分）下面图形中，面积与其它图形不相等的是（　　）\nA．\tB．\tC．\tD．",
+      "note": "ABCD 选项均为图形位图"
     },
     {
       "qnum": "16",
       "reason": "info_lost_irrecoverable",
-      "raw_excerpt": "某分数的倒数（OMath 部分缺）",
-      "source_para": 60
+      "raw_excerpt": "16．（2分）的倒数是 　                　。",
+      "note": "题面「___ 的倒数是」分数 OMath 缺失，无法判定"
+    },
+    {
+      "qnum": "22",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "22．（2分）在田字格没有棋子的交叉点上再放一颗棋子，这颗棋子要与图上已有的棋子组成轴对称图形，一共有 　   　种不同的放法。",
+      "note": "田字格中已有棋子位置仅在图中，文字层缺失，需图判定可放位置"
     },
     {
       "qnum": "26",
       "reason": "open_drawing_question",
-      "raw_excerpt": "梯形按 2:1 放大画图",
-      "source_para": 71
+      "raw_excerpt": "26．（3分）把梯形按照2：1放大，画出放大后的图形。",
+      "note": "画图题，app 暂不支持作图作答"
     },
     {
       "qnum": "27",
       "reason": "open_drawing_question",
-      "raw_excerpt": "过点 A 画垂线 + 平行线",
-      "source_para": 73
+      "raw_excerpt": "27．（4分）过点A，画直线m的垂线和平行线。",
+      "note": "画图题"
     },
     {
       "qnum": "28",
-      "reason": "unclear_image",
-      "raw_excerpt": "直接写得数（位图）",
-      "source_para": 76
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "28．（6分）直接写出得数",
+      "note": "口算式以位图嵌入文字层为空"
     },
     {
       "qnum": "32",
-      "reason": "unclear_image",
-      "raw_excerpt": "解比例（题面位图）",
-      "source_para": 82
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "32．（3分）解比例。",
+      "note": "比例式以位图嵌入文字层为空"
     },
     {
       "qnum": "36",
       "reason": "info_lost_irrecoverable",
-      "raw_excerpt": "充电问题（题面\"很快充了总电量的_\"，OMath 部分缺）",
-      "source_para": 88
+      "raw_excerpt": "36．（5分）笑笑为奶奶买了一部支持快充的手机。用完电从零开始充电，很快就充了总电量的，如图。接着又充了15分钟，就充满了电。假设充电的速度是均匀的。从零到充满电，一共用了多长时间？",
+      "note": "「很快就充了总电量的」分数 OMath 缺失，无法重建关键数据"
     },
     {
-      "qnum": "37(2)",
-      "reason": "open_drawing_question",
-      "raw_excerpt": "把条形统计图中的思维组补充完整",
-      "source_para": 91
+      "qnum": "37",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "37．（5分）五（1）班每位同学都参加了课后延时服务...统计如下：（1）全班共有 　     　人，阅读占 　     　%。（2）把条形统计图中的思维组补充完整。",
+      "note": "各兴趣组人数仅在统计图中，文字层缺失。v1 worker 用解析答案「阅读 17 / 思维 14 / 艺术 9 / 体育 10」反推违纪 + (2) 画图题"
     }
   ],
   "questions": [
@@ -106,7 +119,7 @@
       "subject": "math",
       "grade": 6,
       "source": "realpaper_g6_math_beishida_xsc_longgang_001",
-      "round": 2,
+      "round": 1,
       "type": "choice",
       "chapter": "总复习",
       "knowledge_point": "总复习/数与代数综合",
@@ -118,7 +131,8 @@
         "D. $2025$"
       ],
       "answer": "C",
-      "explanation": "年份是 $4$ 的倍数（百年要 $400$ 倍）是闰年。$2024\\div 4=506$ ✓。"
+      "explanation": "闰年判断：能被 $4$ 整除但不能被 $100$ 整除，或能被 $400$ 整除。$2024\\div 4=506$ 整除，且不是整百年；$2022, 2023, 2025$ 均不能被 $4$ 整除。故 $2024$ 年是闰年。",
+      "_raw_excerpt": "1．（2分）下面哪个年份是闰年（　　）\nA．2022\tB．2023\tC．2024\tD．2025"
     },
     {
       "subject": "math",
@@ -136,7 +150,8 @@
         "D. $6.05$ 吨 $=6050$ 千克"
       ],
       "answer": "B",
-      "explanation": "B 错：$30$ 元 $6$ 分 $=30.06$ 元（$6$ 分 $=0.06$ 元）。其他都对。"
+      "explanation": "A 对（$1$ dm² $=100$ cm²，$1.5\\times 100=150$）；B 错（$30$ 元 $6$ 分 $=30.06$ 元，不是 $30.6$ 元）；C 对（$1$ L $=1000$ mL，$550\\div 1000=0.55$）；D 对（$1$ 吨 $=1000$ kg，$6.05\\times 1000=6050$）。",
+      "_raw_excerpt": "2．（2分）下面单位换算，错误的是（　　）\nA．1.5平方分米＝150平方厘米\t\nB．30元6分＝30.6元\t\nC．550毫升＝0.55升\t\nD．6.05 吨＝6050千克"
     },
     {
       "subject": "math",
@@ -145,7 +160,7 @@
       "round": 2,
       "type": "choice",
       "chapter": "比例",
-      "knowledge_point": "比和比例/比的意义",
+      "knowledge_point": "比和比例/比例的意义",
       "content": "蓝色气球和红色气球共 $150$ 个，它们的比是 $2:3$，蓝色气球有（　　）个。",
       "options": [
         "A. $100$",
@@ -154,7 +169,8 @@
         "D. $60$"
       ],
       "answer": "D",
-      "explanation": "$\\frac{2}{2+3}=\\frac{2}{5}$，$150\\times\\frac{2}{5}=60$ 个。"
+      "explanation": "总份数 $=2+3=5$ 份。蓝色 $=150\\div 5\\times 2=30\\times 2=60$ 个。",
+      "_raw_excerpt": "4．（2分）蓝色气球和红色气球共150个，它们的比是2：3，蓝色气球有（　　）个。\nA．100\tB．90\tC．75\tD．60"
     },
     {
       "subject": "math",
@@ -172,7 +188,8 @@
         "D. $0.6$ m，$0.8$ m，$0.13$ m"
       ],
       "answer": "A",
-      "explanation": "三角形不等式：两边之和大于第三边。A: $2+3>4$ ✓；B: $1+2=3$ ✗；C: $4+6=10<11$ ✗；D: $0.13+0.6=0.73<0.8$ ✗。"
+      "explanation": "三角形两边之和大于第三边。A: $2+3=5>4$ ✓；B: $1+2=3$ 不大于 $3$ ✗；C: $4+6=10<11$ ✗；D: $0.6+0.13=0.73<0.8$ ✗。",
+      "_raw_excerpt": "5．（2分）下面三条线段首尾相连，能围成三角形的是（　　）\nA．2cm，3cm，4cm\tB．1cm，2cm，3cm\t\nC．4dm，11dm，6dm\tD．0.6m，0.8m，0.13m"
     },
     {
       "subject": "math",
@@ -190,13 +207,14 @@
         "D. 教室黑板的长度大约是 $4$ 米"
       ],
       "answer": "C",
-      "explanation": "C 错（保温杯 $500$ mL 才合理，$500$ L $=$ 半吨水）。其他合理。"
+      "explanation": "A 对（教室面积约 $50$ 平方米合理）；B 对（一个苹果约 $250$ 克合理）；C 错（保温杯容积约 $500$ 毫升合理，$500$ 升 $=$ 半立方米水量，远远过大）；D 对（黑板长 $4$ 米合理）。",
+      "_raw_excerpt": "6．（2分）下面描述与生活实际相差甚大的是（　　）\nA．一间教室的面积约50平方米\t\nB．一个苹果重约 250克\t\nC．笑笑保温杯的容积约是 500升\t\nD．教室黑板的长度大约是4米"
     },
     {
       "subject": "math",
       "grade": 6,
       "source": "realpaper_g6_math_beishida_xsc_longgang_001",
-      "round": 1,
+      "round": 2,
       "type": "choice",
       "chapter": "总复习",
       "knowledge_point": "总复习/统计与可能性",
@@ -208,16 +226,17 @@
         "D. 抛普通骰子，质数朝上甲赢，合数朝上乙赢，这个游戏规则是公平的"
       ],
       "answer": "B",
-      "explanation": "A 错（小可能 $\\neq$ 不可能）；B 对；C 错（独立事件）；D 错（骰子 $1\\sim 6$，质数 $2,3,5$ 共 $3$ 个；合数 $4,6$ 共 $2$；$1$ 既非质数也非合数 → 不公平）。"
+      "explanation": "A 错（可能性小不等于一定不发生）；B 对（均匀硬币正反面概率均为 $\\frac{1}{2}$）；C 错（前面投中是独立事件，不能保证下次必中）；D 错（骰子 $1\\sim 6$ 中质数 $2,3,5$ 共 $3$ 个，合数 $4,6$ 共 $2$ 个，概率不等）。",
+      "_raw_excerpt": "7．（2分）下面说法正确的是（　　）\nA．明天下雨的可能性很小，那么明天一定不会下雨\t\nB．抛一枚均匀的硬币，正面朝上与反面朝上的可能性是一样的\t\nC．淘气投篮 10投10中，第11次投篮一定会命中\t\nD．抛普通骰子，质数朝上甲赢，合数朝上乙赢，这个游戏规则是公平的"
     },
     {
       "subject": "math",
       "grade": 6,
       "source": "realpaper_g6_math_beishida_xsc_longgang_001",
-      "round": 2,
+      "round": 3,
       "type": "choice",
       "chapter": "正比例和反比例",
-      "knowledge_point": "正反比例/反比例的意义",
+      "knowledge_point": "正反比例/正反比例的判断",
       "content": "六（$2$）班举行 $50$ 米×$8$ 往返跑测试。折返点在起点的北偏东 $45°$ 方向。下面说法错误的是（　　）。",
       "options": [
         "A. 跑步速度与所用时间成正比例",
@@ -226,25 +245,8 @@
         "D. 向起点跑是南偏西 $45°$ 方向"
       ],
       "answer": "A",
-      "explanation": "路程 $400$ m 一定，速度 $\\times$ 时间 $=$ 路程一定 $\\Rightarrow$ 反比例。A 错。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
-      "round": 2,
-      "type": "choice",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/数与代数综合",
-      "content": "龙岗区 $2022$ 年 GDP 为 $475906000000$ 元。关于这个数，下面说法错误的是（　　）。",
-      "options": [
-        "A. 它是一个 $12$ 位数",
-        "B. 改写为「亿」作单位的数是 $4759.06$ 亿",
-        "C. 四舍五入到亿位约是 $4759$ 亿",
-        "D. 读作：四千七百五十九亿零六千万"
-      ],
-      "answer": "A",
-      "explanation": "$475906000000$ 数 $475906000000$ 实际是 $12$ 位 — 故 A 也对（依题判 A 错）。B: $\\div 10^8=4759.06$ 亿 ✓；C: $\\approx 4759$ 亿 ✓；D: 读作「四千七百五十九亿零六百万」。参考答案 A，须 Famin 复核。"
+      "explanation": "总路程 $50\\times 8=400$ 米一定，速度 $\\times$ 时间 $=$ 路程（一定）→ 积一定 → 速度与时间成反比例，A「成正比例」错。B 对（成反比例）。C 对（题给折返点北偏东 $45°$）。D 对（向起点跑是反方向：南偏西 $45°$）。",
+      "_raw_excerpt": "8．（2分）六（2）班举行50米×8往返跑测试。折返点在起点的北偏东45°方向。下面说法错误的是（　　）\nA．跑步速度与所用时间成正比例\t\nB．跑步速度与所用时间成反比例\t\nC．向折返点跑是北偏东45°方向\t\nD．向起点跑是南偏西45°方向"
     },
     {
       "subject": "math",
@@ -252,17 +254,38 @@
       "source": "realpaper_g6_math_beishida_xsc_longgang_001",
       "round": 3,
       "type": "choice",
-      "chapter": "比例",
-      "knowledge_point": "正反比例/比例尺",
-      "content": "《千里江山图》宽 $51.5$ cm。一位老师把仿制品纵向平均分成 $35$ 小幅（每幅 $51.5$ cm 宽），打印出来发给 $35$ 名学生临摹然后拼成一幅长卷。已知每幅长 $34$ cm，仿制品的总长约是（　　）米。",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "像如图这样，摆 $1$ 个正方形要 $4$ 根小棒，摆 $2$ 个正方形要 $7$ 根小棒，如果要摆 $15$ 个正方形，要用（　　）根小棒。",
       "options": [
-        "A. $9$",
-        "B. $12$",
-        "C. $13$",
-        "D. $18$"
+        "A. $45$",
+        "B. $46$",
+        "C. $59$",
+        "D. $60$"
       ],
       "answer": "B",
-      "explanation": "总长 $=34\\times 35=1190$ cm $\\approx 12$ m。"
+      "explanation": "规律：摆 $1$ 个 $4$ 根，每多摆一个增 $3$ 根。摆 $n$ 个需 $4+3(n-1)=3n+1$ 根。摆 $15$ 个 $=3\\times 15+1=46$ 根。",
+      "_raw_excerpt": "9．（2分）像如图这样，摆1个正方形要4根小棒，摆2个正方形要7根小棒，如果要摆15个正方形，要用（　　）根小棒。\n\nA．45\tB．46\tC．59\tD．60",
+      "_image_skip_reason": "text_self_contained_image_decorative"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 3,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "龙岗区 $2022$ 年 GDP 为 $475906000000$ 元。关于划横线的数，下面说法错误的是（　　）。",
+      "options": [
+        "A. 它是一个 $12$ 位数",
+        "B. 改写为「亿」作单位的数是 $4759.06$ 亿",
+        "C. 四舍五入到亿位约是 $4759$ 亿",
+        "D. 读作：四千七百五十九亿零六千万"
+      ],
+      "answer": "A",
+      "explanation": "$475\\,906\\,000\\,000$ 实为 $12$ 位数（$4-7-5-9-0-6-0-0-0-0-0-0$），但参考答案选 A「错误」。可能原命题人把 GDP 数当作 $11$ 位（$47\\,590\\,600\\,000$），或者题目设计 A 错处别有所指。B 对（$475906000000\\div 10^{8}=4759.06$ 亿）；C 对（$\\approx 4759$ 亿）；D 对（读法符合）。Famin 后续审阅。",
+      "_raw_excerpt": "10．（2分）龙岗区2022年GDP为475906000000元。关于划横线的数，下面说法错误的是（　　）\nA．它是一个12位数\t\nB．改写为“亿”作单位的数是 4759.06亿\t\nC．四舍五入到亿位约是4759亿\t\nD．读作：四千七百五十九亿零六千万"
     },
     {
       "subject": "math",
@@ -280,19 +303,8 @@
         "D. $20.1\\times 13=20\\times 13+0.1\\times 13$"
       ],
       "answer": "B",
-      "explanation": "A/C/D 均用分配律。B 用乘法结合律 + 拆分（$8.8=8\\times 1.1$）。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
-      "round": 3,
-      "type": "fill",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/解决问题策略",
-      "content": "按规律填数：$5, 8, 11, 14, $ ____ $, 20, \\dots$",
-      "answer": "17",
-      "explanation": "依次加 $3$。$14+3=17$。"
+      "explanation": "A 用了（$36=30+6$，分别 $\\times 4$）；B 没用（$8.8=8\\times 1.1$，是连乘结合律）；C 用了（$\\times 36+\\times 64=\\times 100$）；D 用了（$20.1=20+0.1$，分别 $\\times 13$）。",
+      "_raw_excerpt": "14．（2分）下面的计算没有用到乘法分配律的是（　　）\nA．36×4＝30×4+6×4\t\nB．12.5×8.8＝（12.5×8）×1.1\t\nC．47.9×36+47.9×64＝47.9×100\t\nD．20.1×13＝20×13+0.1×13"
     },
     {
       "subject": "math",
@@ -302,21 +314,11 @@
       "type": "fill",
       "chapter": "总复习",
       "knowledge_point": "总复习/数与代数综合",
-      "content": "妹妹今年 $m$ 岁，小刚比妹妹大 $6$ 岁，小刚今年 ____ 岁。（用含 $m$ 的式子）",
-      "answer": "m+6|||(m+6)|||m+6岁",
-      "explanation": "小刚 $=m+6$。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
-      "round": 3,
-      "type": "fill",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/统计与可能性",
-      "content": "$92, 98, 100, 94, 96$ 这 $5$ 个数的平均数是 ____ 。",
-      "answer": "96",
-      "explanation": "$(92+98+100+94+96)\\div 5=480\\div 5=96$。"
+      "content": "按规律填数：$5, 8, 11, 14, $ ____ $, 20, \\dots$ 。",
+      "options": [],
+      "answer": "17",
+      "explanation": "数列规律：相邻两项差均为 $3$ 的等差数列。$14+3=17$，验证 $17+3=20$ 与下一项匹配。",
+      "_raw_excerpt": "17．（2分）按规律填数：5，8，11，14，　     　，20，……。"
     },
     {
       "subject": "math",
@@ -324,11 +326,41 @@
       "source": "realpaper_g6_math_beishida_xsc_longgang_001",
       "round": 1,
       "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "妹妹今年 $m$ 岁，小刚比妹妹大 $6$ 岁，小刚今年 ____ 岁。",
+      "options": [],
+      "answer": "m+6",
+      "explanation": "小刚岁数 $=$ 妹妹岁数 $+6=m+6$ 岁。",
+      "_raw_excerpt": "18．（2分）妹妹今年m岁，小刚比妹妹大6岁，小刚今年 　        　岁。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "$92, 98, 100, 94, 96$ 这 $5$ 个数的平均数是 ____ 。",
+      "options": [],
+      "answer": "96",
+      "explanation": "$（92+98+100+94+96）\\div 5=480\\div 5=96$。",
+      "_raw_excerpt": "19．（2分）92、98、100、94、96这5个数的平均数是 　     　。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 2,
+      "type": "fill",
       "chapter": "圆柱与圆锥",
       "knowledge_point": "圆柱与圆锥/圆锥的体积",
       "content": "一个圆锥体的底面直径是 $2$ dm，高是 $3$ dm，它的体积是 ____ dm³。",
+      "options": [],
       "answer": "3.14",
-      "explanation": "半径 $r=1$，体积 $=\\frac{1}{3}\\pi r^2 h=\\frac{1}{3}\\times 3.14\\times 1\\times 3=3.14$ dm³。"
+      "explanation": "圆锥半径 $=2\\div 2=1$ dm，体积 $=\\frac{1}{3}\\pi r^{2}h=\\frac{1}{3}\\times 3.14\\times 1\\times 3=3.14$ dm³。",
+      "_raw_excerpt": "20．（2分）一个圆锥体的底面直径是2dm，高是3dm，它的体积是 　       　dm3。"
     },
     {
       "subject": "math",
@@ -339,21 +371,10 @@
       "chapter": "总复习",
       "knowledge_point": "总复习/图形与几何综合",
       "content": "一个三角形的两个内角分别 $45°$ 和 $55°$，它的第三个内角是 ____ 度。",
+      "options": [],
       "answer": "80",
-      "explanation": "$180-45-55=80°$。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
-      "round": 1,
-      "type": "fill",
-      "chapter": "图形的运动",
-      "knowledge_point": "图形的运动/轴对称",
-      "content": "在田字格没有棋子的交叉点上再放一颗棋子，这颗棋子要与图上已有的棋子组成轴对称图形，一共有 ____ 种不同的放法。（参考答案 4）",
-      "answer": "4",
-      "explanation": "依据图判断（参考答案 $4$）。",
-      "_image_skip_reason": "content_already_described"
+      "explanation": "三角形内角和 $=180°$，第三角 $=180°-45°-55°=80°$。",
+      "_raw_excerpt": "21．（2分）一个三角形的两个内角分别45°和55°，它的第三个内角是 　     　°"
     },
     {
       "subject": "math",
@@ -362,58 +383,40 @@
       "round": 2,
       "type": "fill",
       "chapter": "比例",
-      "knowledge_point": "正反比例/比例尺",
-      "content": "在地图上，$16$ 号地铁线龙城公园站到黄阁坑站的距离是 $2$ cm，它的实际距离是 $1.6$ km。这幅图的比例尺是 ____ 。（写成 $1:N$ 形式）",
-      "answer": "1:80000|||1：80000",
-      "explanation": "$1.6$ km $=160000$ cm。$2:160000=1:80000$。"
+      "knowledge_point": "比和比例/比例的意义",
+      "content": "在地图上，$16$ 号地铁线龙城公园站到黄阁坑站的距离是 $2$ cm，它的实际距离是 $1.6$ km。这幅图的比例尺是 ____ 。",
+      "options": [],
+      "answer": "1:80000",
+      "explanation": "$1.6$ km $=160\\,000$ cm。比例尺 $=$ 图上 : 实际 $=2:160\\,000=1:80\\,000$。",
+      "_raw_excerpt": "23．（2分）在地图上，16号地铁线龙城公园站到黄阁坑站的距离是2cm，它的实际距离是1.6km。这幅图的比例尺是 　          　。"
     },
     {
       "subject": "math",
       "grade": 6,
       "source": "realpaper_g6_math_beishida_xsc_longgang_001",
-      "round": 2,
+      "round": 4,
       "type": "fill",
       "chapter": "圆柱与圆锥",
       "knowledge_point": "圆柱与圆锥/圆柱的表面积",
       "content": "一盒计算器长、宽、高分别为 $15$ cm、$7$ cm、$4$ cm。淘气把 $2$ 盒这种规格的计算器包成一包，至少要 ____ cm² 包装纸。",
+      "options": [],
       "answer": "562",
-      "explanation": "最省方式：合并 $7\\times 4$ 面，新长方体 $15\\times 7\\times 8$。表面积 $=2\\times(15\\times 7+15\\times 8+7\\times 8)=2\\times(105+120+56)=562$ cm²。"
+      "explanation": "$2$ 盒最节省纸：把最大面（$15\\times 7=105$ cm²）合并叠起。新长方体 $15\\times 7\\times(4\\times 2)=15\\times 7\\times 8$。表面积 $=2\\times(15\\times 7+15\\times 8+7\\times 8)=2\\times(105+120+56)=2\\times 281=562$ cm²。",
+      "_raw_excerpt": "24．（2分）一盒计算器长、宽、高分别为15cm、7cm、4cm。淘气把2盒这种规格的计算器包成一包，至少要 　      　cm2包装纸。"
     },
     {
       "subject": "math",
       "grade": 6,
       "source": "realpaper_g6_math_beishida_xsc_longgang_001",
-      "round": 1,
+      "round": 4,
       "type": "fill",
       "chapter": "总复习",
       "knowledge_point": "总复习/数与代数综合",
       "content": "一个最简真分数，分子和分母是 $2$ 到 $7$ 六个整数中的一个，它共有 ____ 种可能。",
+      "options": [],
       "answer": "8",
-      "explanation": "最简真分数（分子<分母 + 互质）：$\\frac{2}{3}, \\frac{2}{5}, \\frac{2}{7}, \\frac{3}{4}, \\frac{3}{5}, \\frac{3}{7}, \\frac{4}{5}, \\frac{4}{7}, \\frac{5}{6}, \\frac{5}{7}, \\frac{6}{7}$。但若分子分母 $\\in\\{2,3,4,5,6,7\\}$ 且互质且分子<分母：$\\frac{2}{3}, \\frac{2}{5}, \\frac{2}{7}, \\frac{3}{4}, \\frac{3}{5}, \\frac{3}{7}, \\frac{4}{5}, \\frac{4}{7}, \\frac{5}{6}, \\frac{5}{7}, \\frac{6}{7}$ — 11 种。但参考答案 $8$，可能限制更严（去掉重复或类似条件）。Famin 复核。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
-      "round": 2,
-      "type": "fill",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/数与代数综合",
-      "content": "脱式计算：$42\\div[7\\times(51-48)]$",
-      "answer": "2",
-      "explanation": "$=42\\div[7\\times 3]=42\\div 21=2$。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
-      "round": 2,
-      "type": "fill",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/数与代数综合",
-      "content": "简便计算：$3.75\\times 65+3.75\\times 35$",
-      "answer": "375",
-      "explanation": "$=3.75\\times(65+35)=3.75\\times 100=375$。"
+      "explanation": "在 $2\\sim 7$ 中选两个不同整数 $a<b$ 组成 $\\frac{a}{b}$（真分数），且 $\\gcd(a,b)=1$（最简）。可能：$\\frac{2}{3},\\frac{2}{5},\\frac{2}{7},\\frac{3}{4},\\frac{3}{5},\\frac{3}{7},\\frac{4}{5},\\frac{4}{7},\\frac{5}{6},\\frac{5}{7},\\frac{6}{7}$ 共 $11$ 种。原参考答案 $8$，可能限定不同条件。Famin 后续审阅。",
+      "_raw_excerpt": "25．（2分）一个最简真分数，分子和分母是2到7六个整数中的一个，它共有 　   　种可能。\n三、画图题。（第1小题3分，第2小题4分，共7分）"
     },
     {
       "subject": "math",
@@ -423,9 +426,39 @@
       "type": "fill",
       "chapter": "总复习",
       "knowledge_point": "总复习/数与代数综合",
-      "content": "解方程：$2x+7x=27$",
+      "content": "脱式计算：$42\\div[7\\times(51-48)]$。",
+      "options": [],
+      "answer": "2",
+      "explanation": "$51-48=3$；$7\\times 3=21$；$42\\div 21=2$。",
+      "_raw_excerpt": "29．（3分）42÷[7×（51﹣48）]"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "简便计算：$3.75\\times 65+3.75\\times 35$。",
+      "options": [],
+      "answer": "375",
+      "explanation": "用乘法分配律：$3.75\\times 65+3.75\\times 35=3.75\\times(65+35)=3.75\\times 100=375$。",
+      "_raw_excerpt": "30．（3分）3.75×65+3.75×35"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "解方程：$2x+7x=27$。",
+      "options": [],
       "answer": "3",
-      "explanation": "$9x=27$，$x=3$。"
+      "explanation": "$2x+7x=9x=27\\Rightarrow x=3$。",
+      "_raw_excerpt": "31．（3分）解方程。\n2x+7x＝27"
     },
     {
       "subject": "math",
@@ -435,9 +468,11 @@
       "type": "fill",
       "chapter": "总复习",
       "knowledge_point": "总复习/数与代数综合",
-      "content": "ChatGPT 在一次测试中，有 $164$ 个从未见过的编程问题让 ChatGPT 解决，结果成功率达到了 $88\\%$。这次测试，它成功解决了多少道编程问题？（结果保留整数）",
+      "content": "ChatGPT 是 OpenAI 公司开发了一种 AI 机器人，它可以聊天、写作、考试、编程等等。在一次测试中，有 $164$ 个从未见过的编程问题让 ChatGPT 解决，结果成功率达到了 $88\\%$。这次测试，它成功解决了多少道编程问题？（结果保留整数）",
+      "options": [],
       "answer": "144",
-      "explanation": "$164\\times 88\\%=144.32\\approx 144$ 题。"
+      "explanation": "$164\\times 88\\%=164\\times 0.88=144.32$，保留整数为 $144$ 道。",
+      "_raw_excerpt": "33．（5分）ChatGPT是OpenAI公司开发了一种AI机器人，它可以聊天、写作、考试、编程等等。在一次测试中，有164个从未见过的编程问题让ChatGPT解决，结果成功率达到了88%。这次测试，它成功解决了多少道编程问题？（结果保留整数）"
     },
     {
       "subject": "math",
@@ -446,10 +481,12 @@
       "round": 2,
       "type": "fill",
       "chapter": "总复习",
-      "knowledge_point": "总复习/数与代数综合",
+      "knowledge_point": "总复习/解决问题策略",
       "content": "甲、乙两地相距 $800$ 千米，一辆客车和一辆货车分别从甲、乙两地同时开出，客车每小时行 $95$ 千米，货车每小时行 $65$ 千米。多少小时后两车相遇？",
+      "options": [],
       "answer": "5",
-      "explanation": "相遇时间 $=$ 总路程 $\\div$ 速度和 $=800\\div(95+65)=800\\div 160=5$ 小时。"
+      "explanation": "相遇时间 $=$ 总路程 $\\div$ 速度和 $=800\\div(95+65)=800\\div 160=5$ 小时。",
+      "_raw_excerpt": "34．（5分）甲、乙两地相距800千米，一辆客车和一辆货车分别从甲、乙两地同时开出，客车每小时行95千米，货车每小时行65千米。多少小时后两车相遇？"
     },
     {
       "subject": "math",
@@ -460,36 +497,10 @@
       "chapter": "圆柱与圆锥",
       "knowledge_point": "圆柱与圆锥/圆柱的体积",
       "content": "深圳大运中心游泳馆比赛池的长是 $50$ 米、宽是 $25$ 米、深是 $2$ 米。往池里加水至 $1.8$ 米深，按 $5$ 元/m³ 计算，这池水的水费是多少元？",
+      "options": [],
       "answer": "11250",
-      "explanation": "水量 $=50\\times 25\\times 1.8=2250$ m³。水费 $=2250\\times 5=11250$ 元。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
-      "round": 3,
-      "type": "fill",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/统计与可能性",
-      "content": "五（$1$）班每位同学都参加了课后延时服务，且只参加了其中一项。统计：阅读 $17$ 人、思维 $14$ 人、艺术 $9$ 人、体育 $10$ 人。\n1. 全班共有 ____ 人。",
-      "answer": "50",
-      "explanation": "$17+14+9+10=50$ 人。",
-      "group_id": "xsc_longgang_001_q37",
-      "group_order": 1
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
-      "round": 3,
-      "type": "fill",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/统计与可能性",
-      "content": "五（$1$）班每位同学都参加了课后延时服务，且只参加了其中一项。统计：阅读 $17$ 人、思维 $14$ 人、艺术 $9$ 人、体育 $10$ 人。\n2. 阅读占 ____ %。",
-      "answer": "34",
-      "explanation": "$17\\div 50=34\\%$。",
-      "group_id": "xsc_longgang_001_q37",
-      "group_order": 2
+      "explanation": "水的体积 $=50\\times 25\\times 1.8=2250$ m³。水费 $=2250\\times 5=11\\,250$ 元。（注：池深 $2$ 米仅为容量上限，加水高度为 $1.8$ 米。）",
+      "_raw_excerpt": "35．（5分）深圳大运中心游泳馆比赛池的长是50米、宽是25米、深是2米。往池里加水至1.8米深，按5元/m3计算，这池水的水费是多少元？"
     }
   ]
 }

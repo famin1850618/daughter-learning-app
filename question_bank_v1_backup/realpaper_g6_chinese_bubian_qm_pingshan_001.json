@@ -1,0 +1,305 @@
+{
+  "source": "realpaper_g6_chinese_bubian_qm_pingshan_001",
+  "_source_docx_sha1": "414d5387132694d5",
+  "subject": "chinese",
+  "grade": 6,
+  "knowledge_points_added": [
+    "字词/字音",
+    "字词/字形",
+    "字词/词语理解",
+    "字词/成语运用",
+    "古诗文/古诗词背诵默写",
+    "古诗文/文言文阅读",
+    "课文与名著/课文内容理解",
+    "课文与名著/名著阅读",
+    "现代文阅读/词句赏析"
+  ],
+  "_quality_meta": {
+    "source_file": "精品解析：2021-2022学年广东省深圳市坪山区部编版六年级下册期末考试语文试卷.docx",
+    "sha1": "414d5387132694d5",
+    "paper_type": "final",
+    "chapter_default": "综合",
+    "omath_total_formulas": 0,
+    "images_used": 0,
+    "questions_total_paper": 23,
+    "questions_imported": 14,
+    "questions_skipped": 9
+  },
+  "_skipped_for_future": [
+    {
+      "qnum": "8",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "拼音写词语 5 空（qīn xí/yán jùn/zé rèn/bì miǎn/tōng xiāo），仅入 2 空"
+    },
+    {
+      "qnum": "9(1)+(2)+(3)+(4)",
+      "reason": "subjective_short",
+      "raw_excerpt": "古诗背诵 + 飞花令 + 名言赠言（含部分客观但题干断章）"
+    },
+    {
+      "qnum": "10",
+      "reason": "subjective_short",
+      "raw_excerpt": "短语对应（边城/江南/大漠/名山）"
+    },
+    {
+      "qnum": "12",
+      "reason": "subjective_short",
+      "raw_excerpt": "《匆匆》节选阅读：作者头涔涔泪潸潸的原因"
+    },
+    {
+      "qnum": "13",
+      "reason": "subjective_short",
+      "raw_excerpt": "比喻仿写"
+    },
+    {
+      "qnum": "14-16",
+      "reason": "subjective_short",
+      "raw_excerpt": "《表里的生物》阅读：反义词 + 描写方法 + 解释为什么"
+    },
+    {
+      "qnum": "17-18",
+      "reason": "subjective_short",
+      "raw_excerpt": "神舟十三号材料：填空 + 不同点"
+    },
+    {
+      "qnum": "20+22",
+      "reason": "subjective_short",
+      "raw_excerpt": "劳动课程：目的 + 漫画感想"
+    },
+    {
+      "qnum": "23",
+      "reason": "subjective_essay",
+      "raw_excerpt": "习作：「这件事真让人____」"
+    }
+  ],
+  "questions": [
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_pingshan_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "在清明节「缅怀英烈」的云祭奠网页中，要将「李大钊、张思德、董存瑞、叶挺」这四位英烈，按姓氏音序进行排列，正确顺序是（　　）。",
+      "options": [
+        "A. 董存瑞   李大钊   叶挺   张思德",
+        "B. 李大钊   张思德   董存瑞   叶挺",
+        "C. 董存瑞   叶挺   李大钊   张思德",
+        "D. 李大钊   董存瑞   张思德   叶挺"
+      ],
+      "answer": "A",
+      "explanation": "音序：董(D) < 李(L) < 叶(Y) < 张(Z)。",
+      "_round_reasoning": "R1 因为：rubric §2.1「褒贬明显」+ 简单字母排序，候选池窄不适用但答案唯一明显，降到 R1。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_pingshan_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/成语运用",
+      "content": "下列选项中成语运用**错误**的一项是（　　）。",
+      "options": [
+        "A. 他们必须预备过年的物品，好在新年时显出**万象更新**的气象。",
+        "B. 那个卖国贼被依法处决，真是**死得其所**！",
+        "C. 那些在科学领域有所建树的人，都善于从细小的、**司空见惯**的现象中发现问题。",
+        "D. 如果不是**万不得已**，他是不会向你开口借钱的。"
+      ],
+      "answer": "B",
+      "explanation": "「死得其所」是褒义词，指死得有意义。卖国贼被处决不能用此词。A C D 均恰当。",
+      "_round_reasoning": "R2 因为：成语褒贬辨析（同盐田卷类型）。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_pingshan_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/词语理解",
+      "content": "「江山无墨画，花鸟有情诗。」这副对联**最有可能**贴在下列哪个地方？（　　）",
+      "options": [
+        "A. 理发店",
+        "B. 水果店",
+        "C. 功夫训练馆",
+        "D. 书房"
+      ],
+      "answer": "D",
+      "explanation": "对联意境优雅，描写山水花鸟与诗画，最适合贴在书房（文人雅士所处）。",
+      "_round_reasoning": "R2 因为：对联文化常识应用。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_pingshan_001",
+      "round": 3,
+      "type": "choice",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/词句赏析",
+      "content": "下列排序正确的一项是（　　）。\n\n①在唐五代时，一般称为「曲」「曲子词」。\n②词是在唐五代兴起的一种配乐歌唱的新诗体。\n③中唐以后逐渐有文人从事创作。晚唐五代趋于繁荣，而极盛于宋代。\n④它在隋唐之际已经产生。\n⑤后来才称为「词」，又称「乐府」「近体乐府」「诗余」「长短句」等。",
+      "options": [
+        "A. ①②④③⑤",
+        "B. ①②⑤④③",
+        "C. ②①⑤③④",
+        "D. ②④③①⑤"
+      ],
+      "answer": "D",
+      "explanation": "②（词的定义）→④（产生时间）→③（发展过程）→①（唐五代时叫「曲」）→⑤（后来叫「词」）。",
+      "_round_reasoning": "R3 因为：5 段语序综合 + 选项嵌套，参考 chinese_r3_anchor_2 段意综合 R3 同档。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_pingshan_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/词语理解",
+      "content": "几个身份不同的人围绕「世界上最宝贵的东西是什么」这一话题各自表达，说话**不符合**人物身份的一项是（　　）。",
+      "options": [
+        "A. 奄奄一息的病人说：「最宝贵的东西是美味无比的食物。」",
+        "B. 唯利是图的商人说：「最宝贵的东西是源源不断的利润。」",
+        "C. 富于激情的画家说：「最宝贵的东西是绚烂丰富的色彩。」",
+        "D. 敬业的足球队员说：「最宝贵的东西是激动人心的进球。」"
+      ],
+      "answer": "A",
+      "explanation": "奄奄一息的病人最宝贵的应当是「健康/生命/时间」，而非「美味食物」。B C D 均符合身份。",
+      "_round_reasoning": "R1 因为：rubric §2.1 褒贬明显——病人不需要美味食物（需要健康），可瞬间排除。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_pingshan_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "group_id": "qm_pingshan_001_q8",
+      "group_order": 1,
+      "content": "看拼音写词语。\n\n「2022 年春节前后，深圳再次遭受新型冠状病毒 qīn xí，形势 yán jùn」\n\n1. qīn xí = ？",
+      "answer": "侵袭",
+      "explanation": "「侵袭」指侵犯袭击。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_pingshan_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "group_id": "qm_pingshan_001_q8",
+      "group_order": 2,
+      "content": "看拼音写词语。\n\n2. yán jùn = ？",
+      "answer": "严峻",
+      "explanation": "「严峻」形容形势严肃艰难。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_pingshan_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/课文内容理解",
+      "group_id": "qm_pingshan_001_q7",
+      "group_order": 1,
+      "content": "判断对错（√/×）。\n\n1. 「鼎」字用部首查字法应该查「目」，「贺」用部首查字法应查「力」。",
+      "answer": "×",
+      "explanation": "「鼎」部首是「鼎」（自身为部首），「贺」部首是「贝」（不是「力」）。",
+      "_round_reasoning": "R2 因为：部首常识判别。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_pingshan_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/课文内容理解",
+      "group_id": "qm_pingshan_001_q7",
+      "group_order": 2,
+      "content": "判断对错（√/×）。\n\n2. 对名著中的人物进行评价时，应立体、多元，角度不能单一。",
+      "answer": "√",
+      "explanation": "评价名著人物应避免片面，立体多元更贴合人物真实。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_pingshan_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/课文内容理解",
+      "group_id": "qm_pingshan_001_q7",
+      "group_order": 3,
+      "content": "判断对错（√/×）。\n\n3. 「在校运动会上，王志在短跑比赛中**勇夺第一**，韦杰在跳高比赛中**摘得桂冠**，刘铭在游泳比赛中**拔得头筹**。」句子中，加粗词语所表达的意思**不一样**。",
+      "answer": "×",
+      "explanation": "「勇夺第一/摘得桂冠/拔得头筹」三个加粗词语都表达「获得第一名」之意。",
+      "_round_reasoning": "R2 因为：近义词辨析。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_pingshan_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言文阅读",
+      "group_id": "qm_pingshan_001_q7",
+      "group_order": 4,
+      "content": "判断对错（√/×）。\n\n4. 「为是其智弗若与」与「孰为汝多知乎」中的「为」，读音和含义都相同。",
+      "answer": "×",
+      "explanation": "前者「为」读 wèi（因为）；后者「为」读 wéi（认为）。读音和含义都不同。",
+      "_round_reasoning": "R3 因为：文言通假字+读音辨析双重判断，参考 chinese_r3 文言推断。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_pingshan_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "qm_pingshan_001_q9",
+      "group_order": 1,
+      "content": "古诗默写。\n\n1. 在《采薇》中描写柳树的诗句是：「________，________」。请按顺序填两句话，用「|||」分隔。",
+      "answer": "昔我往矣|||杨柳依依",
+      "explanation": "《诗经·采薇》「昔我往矣，杨柳依依」。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_pingshan_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "qm_pingshan_001_q9",
+      "group_order": 2,
+      "content": "古诗默写。\n\n2. 在王维的《送元二使安西》中描写柳树的诗句是：「________，________」。请按顺序填两句话，用「|||」分隔。",
+      "answer": "渭城朝雨浥轻尘|||客舍青青柳色新",
+      "explanation": "出自王维《送元二使安西》。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_pingshan_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/词句赏析",
+      "content": "《匆匆》节选：「我不知道他们给了我多少日子……我的日子滴在时间的流里，没有声音，也没有影子。我不禁头涔涔而泪潸潸了。」\n\n选文多处出现了叠词「渐渐」「默默」「涔涔」「潸潸」等，这样写对表达情感起到了什么效果？",
+      "options": [
+        "A. 强化句意的逻辑",
+        "B. 表示疑问，引发读者思考",
+        "C. 强化语感，表达更加形象、确切"
+      ],
+      "answer": "C",
+      "explanation": "叠词使语感更强、节奏更柔和，表达更形象生动。",
+      "_round_reasoning": "R2 因为：修辞效果辨析，参考 chinese_r2_anchor_5 R2 同档。"
+    }
+  ]
+}

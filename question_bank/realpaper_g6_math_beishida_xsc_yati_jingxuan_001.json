@@ -14,7 +14,11 @@
     "imported": 22,
     "skipped": 25,
     "option_images_used": 0,
-    "ai_dispute_count": 0
+    "ai_dispute_count": 0,
+    "_v2_workflow_version": "V3.17",
+    "_v2_redoing_v1_violations": true,
+    "questions_imported_total": 22,
+    "questions_skipped_groups": 25
   },
   "_skipped_for_future": [
     {
@@ -543,5 +547,6 @@
       "answer": "120",
       "explanation": "原方砖面积 $=2\\times 2=4$ 平方分米 $=0.04$ 平方米。\n总面积 $=270\\times 0.04=10.8$ 平方米。\n新方砖块数 $=10.8\\div 0.09=120$ 块。"
     }
-  ]
+  ],
+  "_v2_workflow_version": "V3.17"
 }

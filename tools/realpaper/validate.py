@@ -534,6 +534,57 @@ def run_full_check(batch: dict, batch_path: Path, kp_set: set, chapter_set: set)
                     kp_added_errs.append(f'#{i}: 类型 {type(item).__name__}（应 str 或 dict）')
     report['15_kp_added_schema'] = {'pass': not kp_added_errs, 'errors': kp_added_errs}
 
+    # 16. V3.15 强制对照：每题必须有 _raw_excerpt 字段（非空）
+    # （Phase 3 设计：worker 入库时必须先抄原 docx 段，然后从该段推导 content）
+    raw_missing_errs = []
+    for i, q in enumerate(questions):
+        re_field = q.get('_raw_excerpt')
+        if not re_field or not isinstance(re_field, str) or len(re_field.strip()) < 10:
+            raw_missing_errs.append(f'#{i+1}: _raw_excerpt 缺失或太短（要求 ≥10 字原 docx 段抄录）')
+    report['16_raw_excerpt_required'] = {'pass': not raw_missing_errs, 'errors': raw_missing_errs}
+
+    # 17. V3.15 强制对照：_raw_excerpt 必须出现在 cache/<sha1>/raw_with_omath.txt 中
+    # （worker 不许凭空捏造 _raw_excerpt 来过 check 16，必须真抄原段）
+    raw_match_errs = []
+    sha1 = batch.get('_source_docx_sha1', '')
+    if sha1:
+        from pathlib import Path
+        cache_path = Path.home() / 'daughter_learning_app' / '.cache' / 'docx' / sha1 / 'raw_with_omath.txt'
+        if cache_path.exists():
+            raw_full = cache_path.read_text(encoding='utf-8', errors='ignore')
+            # 移除空白便于 fuzzy 匹配
+            raw_full_normalized = ''.join(raw_full.split())
+            for i, q in enumerate(questions):
+                re_field = q.get('_raw_excerpt', '')
+                if not re_field: continue
+                # 取 raw_excerpt 头 20 字（去空白）+ 尾 20 字 都应在 raw_with_omath.txt 中
+                excerpt_norm = ''.join(re_field.split())
+                if len(excerpt_norm) < 30:
+                    head = tail = excerpt_norm
+                else:
+                    head = excerpt_norm[:20]
+                    tail = excerpt_norm[-20:]
+                if head not in raw_full_normalized or tail not in raw_full_normalized:
+                    raw_match_errs.append(f'#{i+1}: _raw_excerpt 头/尾 20 字未在 cache/<sha1>/raw_with_omath.txt 中找到（worker 凭空捏造嫌疑）')
+        else:
+            raw_match_errs.append(f'cache/{sha1}/raw_with_omath.txt 不存在，跳过 check 17')
+    else:
+        raw_match_errs.append('_source_docx_sha1 缺失，跳过 check 17')
+    report['17_raw_excerpt_in_cache'] = {'pass': not raw_match_errs, 'errors': raw_match_errs}
+
+    # 18. V3.18 _raw_excerpt 缺失率硬规则
+    # （audit 发现 worker 用脚本绕过 V3.17 → 整批 batch _raw_excerpt 缺失，但 _v2_workflow_version 标 V3.17）
+    # 缺失率 > 5% 拒绝 commit
+    if questions:
+        n_missing = sum(1 for q in questions if not q.get('_raw_excerpt') or len(str(q.get('_raw_excerpt','')).strip()) < 10)
+        miss_rate = n_missing / len(questions)
+        v18_errs = []
+        if miss_rate > 0.05:
+            v18_errs.append(f'_raw_excerpt 缺失率 {miss_rate*100:.1f}% > 5%（V3.18 拒绝阈值）— {n_missing}/{len(questions)} 题缺失')
+        report['18_raw_excerpt_coverage'] = {'pass': not v18_errs, 'errors': v18_errs}
+    else:
+        report['18_raw_excerpt_coverage'] = {'pass': True, 'errors': []}
+
     # M3/M4: docx 路径手动核查（替代 V3.12.20 SVG 4 步 + 标注一致）
     report['M3_image_owner'] = {'pass': None, 'errors': ['【需 LLM/人核查 docx 内嵌图归属（用 paragraph_image_map）】']}
     report['M4_image_content_match'] = {'pass': None, 'errors': ['【需 LLM/人核查 content 描述与 image_data 视觉一致】']}

@@ -1,0 +1,412 @@
+{
+  "source": "realpaper_g6_chinese_bubian_xsc_longgang_001",
+  "_source_docx_sha1": "db13952a32d8398a",
+  "subject": "chinese",
+  "grade": 6,
+  "knowledge_points_added": [
+    "字词/字音",
+    "字词/字形",
+    "字词/字义",
+    "字词/词语理解",
+    "字词/成语运用",
+    "古诗文/古诗词背诵默写",
+    "古诗文/古诗词意境理解",
+    "课文与名著/课文内容理解",
+    "课文与名著/名著情节人物",
+    "现代文阅读/词句赏析"
+  ],
+  "_quality_meta": {
+    "source_file": "精品解析：广东省深圳市龙岗区多校联考2024年统编版小升初考试语文试卷（解析版）.docx",
+    "sha1": "db13952a32d8398a",
+    "paper_type": "xsc",
+    "chapter_default": "小升初综合",
+    "omath_total_formulas": 0,
+    "images_used": 0,
+    "questions_total_paper": 17,
+    "questions_imported": 11,
+    "questions_skipped": 6
+  },
+  "_skipped_for_future": [
+    {
+      "qnum": "11",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "看拼音写句子（题面拼音以图嵌入，并要求楷书书写——不适合 app 输入）"
+    },
+    {
+      "qnum": "13(3)",
+      "reason": "subjective_short",
+      "raw_excerpt": "结合「专心致志」发挥想象具体写一写情景"
+    },
+    {
+      "qnum": "14(1)+(2)+(4)",
+      "reason": "subjective_short",
+      "raw_excerpt": "《孩子和书》：解释「赧然」 / 评价「凝视/注视」哪个好 / 为什么以「孩子和书」为题（开放）"
+    },
+    {
+      "qnum": "15",
+      "reason": "subjective_short",
+      "raw_excerpt": "庐山旅游主题选择 + 至少三条理由"
+    },
+    {
+      "qnum": "16",
+      "reason": "subjective_short",
+      "raw_excerpt": "对同桌选用《小英雄雨来》《桥》谈看法"
+    },
+    {
+      "qnum": "17",
+      "reason": "subjective_essay",
+      "raw_excerpt": "习作：生活中处处有 ____（半命题作文 400 字以上）"
+    }
+  ],
+  "questions": [
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_longgang_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "下列词语加粗字的读音完全正确的一组是（    ）。",
+      "options": [
+        "A. 执**拗**（niù）  **聒**噪（guō）  **鼎**沸（dǐn）",
+        "B. **憎**恶（zèng）  **曝**晒（pù）  **镌**刻（juān）",
+        "C. 各**奔**（bèn）前程  不**折**（zhé）不扣  **晕**（yūn）头转向"
+      ],
+      "answer": "C",
+      "explanation": "A 项「鼎沸（dǐn）」应读 dǐng；B 项「憎恶（zèng）」应读 zēng；C 项读音全对。",
+      "_round_reasoning": "R2 因为：理解层级 2（字音综合辨析），陷阱密度 0.4（3 选项 2 项各错处），KP 跨度 1，数据复杂度 0.3。属字音综合型 R2，参考 anchor chinese_r1_anchor_3 + rubric §2.2 多项需逐一核对升 R2。",
+      "_round_anchor_used": "chinese_r1_anchor_3",
+      "_round_rubric_signals": [
+        "§2.2 跨文化常识 4 选 1"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_longgang_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "下列词语中没有错别字的一组是（    ）。",
+      "options": [
+        "A. 愁绪  藤箩  船艄  苗圃",
+        "B. 犹如  膨胀  崭新  截然",
+        "C. 锻炼  嘶咬  践踏  拜访"
+      ],
+      "answer": "B",
+      "explanation": "A 项「藤箩」应为「藤萝」；C 项「嘶咬」应为「撕咬」；B 项书写正确。",
+      "_round_reasoning": "R1 因为：理解层级 1（字形辨析），陷阱密度 0.25（仅 3 选项），KP 跨度 1，数据复杂度 0.15。属字形识记型 R1。",
+      "_round_anchor_used": "chinese_r1_anchor_3",
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_longgang_001",
+      "round": 3,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/字义",
+      "content": "下列每组句子中加粗词语，意思一样的一组是（    ）。",
+      "options": [
+        "A. 蓝天白云下，青山绿水间，多样的生物**和谐**共处，构成了一幅令人心旷神怡的生态画卷。漫步生态之间，绿叶、花朵、飞鸟、昆虫，宛如一首**和谐**的交响乐。",
+        "B. 目前简直是归隐了，没有访问，没有通讯，我过着**平淡**而寂寞的日子。这是一杯**平淡**无味的咖啡。",
+        "C. 她把孩子**寄托**在老乡家里，便跟着队伍离开了。作者把自己的思想、情感**寄托**在剧中主人翁身上。"
+      ],
+      "answer": "A",
+      "explanation": "A 项两个「和谐」都是「协调一致」之意；B 项前「平淡」指「平凡，没有曲折」，后「平淡」指「味道平」；C 项前「寄托」指「托付」，后「寄托」指「心灵的某种依靠」。",
+      "_round_reasoning": "R3 因为：理解层级 3（多义词跨语境辨析），陷阱密度 0.65（3 选项每项含两次同词，需精确比较语境），KP 跨度 2（多义词 + 语境理解），数据复杂度 0.5。属多义词跨语境型 R3，参考 anchor chinese_r3_anchor_5（跨文化常识 R3）+ rubric §2.2 跨文化常识 4 选 1 升档。",
+      "_round_anchor_used": "chinese_r3_anchor_5",
+      "_round_rubric_signals": [
+        "§2.2 跨文化常识 4 选 1"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_longgang_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/成语运用",
+      "content": "三位同学为下面俗语填上表达效果一样的成语。填写完全正确的那位同学是（    ）。\n\n众人划桨开大船——____\n兵来将挡水来土掩——____\n叫天天不应，叫地地不灵——____\n三个臭皮匠，合成一个诸葛亮——____",
+      "options": [
+        "A. 齐心协力  随机应变  走投无路  集思广益",
+        "B. 力争上游  胸有成竹  走投无路  足智多谋",
+        "C. 劲头十足  针锋相对  叫苦连天  足智多谋"
+      ],
+      "answer": "A",
+      "explanation": "「众人划桨开大船」对应「齐心协力」（团结协作）；「兵来将挡水来土掩」对应「随机应变」（灵活应付）；「叫天天不应，叫地地不灵」对应「走投无路」（无路可走）；「三个臭皮匠，合成一个诸葛亮」对应「集思广益」（集中智慧）。故选 A。",
+      "_round_reasoning": "R2 因为：理解层级 2（俗语 → 成语等义对应），陷阱密度 0.5（3 选项每项 4 个成语，需逐一比较表达效果），KP 跨度 2（俗语 + 成语对应），数据复杂度 0.4。属释义对应型 R2，参考 anchor chinese_r2_anchor_1（成语释义反推 R2）。",
+      "_round_anchor_used": "chinese_r2_anchor_1",
+      "_round_rubric_signals": [
+        "§2.1 候选池窄"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_longgang_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词意境理解",
+      "content": "下面诗句中赋予了人的品格和志向的是（    ）。",
+      "options": [
+        "A. 咬定青山不放松，立根原在破岩中。千磨万击还坚劲，任尔东西南北风。（《竹石》清·郑燮）",
+        "B. 百川东到海，何时复西归？少壮不努力，老大徒伤悲。（《长歌行》汉乐府）",
+        "C. 问渠那得清如许？为有源头活水来。（《观书有感》宋·朱熹）"
+      ],
+      "answer": "A",
+      "explanation": "A 项《竹石》借竹子赋予人刚毅风骨和高尚节操，表现诗人正直、刚正不阿的品格；B 项是劝勉珍惜时光，无人格象征；C 项以活水比喻持续学习，无人格象征。故选 A。",
+      "_round_reasoning": "R2 因为：理解层级 2（诗歌表现手法识别——托物言志），陷阱密度 0.5（3 选项均是名诗，需理解托物言志特点），KP 跨度 2（古诗 + 表现手法），数据复杂度 0.5。属诗意理解型 R2，参考 anchor chinese_r3_anchor_3（主旨理解 R3）+ rubric §2.1 段意直白降至 R2。",
+      "_round_anchor_used": "chinese_r3_anchor_3",
+      "_round_rubric_signals": [
+        "§2.1 段意直白"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_longgang_001",
+      "round": 3,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/词语理解",
+      "content": "下面引用的名人名言不合适的一项是（    ）。",
+      "options": [
+        "A. 我和这位老爷爷交谈的时间虽然很短暂，但受益很大，真是「听君一席话，胜读十年书」呀。",
+        "B. 物理学实验往往会「有意栽花花不发，无心插柳柳成荫」，而新的发现可能和原来想象的完全不同，甚至一点关系也没有。",
+        "C. 「青，取之于蓝，而青于蓝。」让我们知道了帮助他人是一件极其有意义的事情。"
+      ],
+      "answer": "C",
+      "explanation": "「青，取之于蓝，而青于蓝」常用来比喻学生超过老师或后人胜过前人，与「帮助他人有意义」无关。A B 引用恰当。故选 C。",
+      "_round_reasoning": "R3 因为：理解层级 3（名言释义 + 语境合用判断），陷阱密度 0.6（3 选项均含名句，需精确理解每句含义），KP 跨度 2（名言 + 语境运用），数据复杂度 0.5。属名言运用型 R3，参考 anchor chinese_r3_anchor_5（跨文化常识 R3）。",
+      "_round_anchor_used": "chinese_r3_anchor_5",
+      "_round_rubric_signals": [
+        "§2.2 跨文化常识 4 选 1"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_longgang_001",
+      "round": 3,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/成语运用",
+      "content": "下面的情境表达与成语不一致的是（    ）。",
+      "options": [
+        "A. 梨园频道正在播放奶奶喜爱的戏曲。奶奶坐在沙发上，眼睛紧盯着电视，手不自觉地随着戏曲打起拍子，嘴上还跟着唱起来。（津津有味）",
+        "B. 颜体筋肉丰满，浑厚有力；柳体瘦硬挺拔，用笔方圆并施。但，颜体没有柳体好看。（相提并论）",
+        "C. 我的眼睛真有些看不过来了，看清楚了这只，又错过了那只，看见了那只，另一只又飞起来了。（眼花缭乱）"
+      ],
+      "answer": "B",
+      "explanation": "A 项「津津有味」形容兴味浓厚，与情境一致；C 项「眼花缭乱」形容看见复杂事物迷乱，一致；B 项情境是主观比较「好看与否」，「相提并论」指把不同事物放一起谈论，需要可比性，与「好看与否」简单比较不一致。故选 B。",
+      "_round_reasoning": "R3 因为：理解层级 3（成语适用性辨析），陷阱密度 0.65（3 选项每项含完整情境 + 成语），KP 跨度 2（成语 + 语境匹配），数据复杂度 0.5。属成语运用辨析型 R3，参考 anchor chinese_r3_anchor_5（跨文化常识 R3）。",
+      "_round_anchor_used": "chinese_r3_anchor_5",
+      "_round_rubric_signals": [
+        "§2.2 跨文化常识 4 选 1"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_longgang_001",
+      "round": 4,
+      "type": "choice",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/词句赏析",
+      "content": "下列描写的表达效果与例子中的描写表达效果不一样的是（    ）。\n\n【例】车船过后，一切又恢复了平静。最后一抹晚霞也渐渐消失了。整个天地都暗了下来。狗不叫了，圈里的牛也不再发出哞哞声，马也忘记了踢马房的挡板。",
+      "options": [
+        "A. 清晨，洞庭湖如同笼罩了一层轻盈的白纱，湖泊被烟雾淹没。远处，天地间连成一片，似玉绢般那么薄，那么淡，那么轻，仿佛一伸手触摸便会损坏它那原本的淡定。",
+        "B. 夜幕降临，月色朦胧，竹影婆娑。嫩叶载着旖旎的星光，唤着归根的影魂；露珠闪着晶莹的光束，飘着优美的音符。",
+        "C. 雨后的公园，孩子们兴奋地在水中嬉戏，脚踏着水花，让它们在空中溅落。他们欢声笑语，脸上洋溢着无尽的喜悦。"
+      ],
+      "answer": "C",
+      "explanation": "例子通过「狗不叫」「牛不发出哞哞声」等动物静默以动衬静，突出环境平静；A 描绘洞庭湖宁静淡雅，整体安静；B 描写夜幕静谧场景；C 描写孩子们欢快嬉戏的热闹场景，与例子的「以动衬静」表达效果不同。故选 C。",
+      "_round_reasoning": "R4 因为：理解层级 4（写作手法对比鉴赏 — 以动衬静），陷阱密度 0.75（3 选项均为景物描写，需识别隐性手法），KP 跨度 3（写作手法 + 动静关系 + 文段细读），数据复杂度 0.6（含 4 个长描写段）。属写作手法鉴赏型 R4，参考 anchor chinese_r4_anchor_1（多空虚词修辞 R4）+ rubric §2.2 修辞鉴赏升档。",
+      "_round_anchor_used": "chinese_r4_anchor_1",
+      "_round_rubric_signals": [
+        "§2.2 古诗对仗鉴赏"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_longgang_001",
+      "round": 3,
+      "type": "choice",
+      "chapter": "句子和语法",
+      "knowledge_point": "句子和语法/句式转换",
+      "content": "将下列内容排成一段意思连贯的话，最合理的排序是（    ）。\n\n①它们时而高飞，时而低飞，偶尔又像比赛，向高空飞去。\n②天寒地冻的冬季，太阳带着冷意射向大地，大自然的一切都被冰雪包裹起来，动物们躲起来冬眠了，人类更耐不住这样的寒冷，躲在家里很少出门。\n③大乌鸦的舞姿真是无法用言语形容！\n④它们轮番交替，有时候向低空俯冲，又马上凌空而起，自由地做着高难度动作。\n⑤这时，一群黑黝黝的大乌鸦出现了，这给寒冷的天气带来一丝活跃。他们在身着银装的冬日上空飞翔着，翅膀在冷风中发出嚓嚓的声音，丝毫不畏严寒。",
+      "options": [
+        "A. ④①③⑤②",
+        "B. ③①⑤④②",
+        "C. ④①⑤③②"
+      ],
+      "answer": "A",
+      "explanation": "原题 5 个空白处分别要填 ①-⑤ 句的序号。按段意理解：先背景（天寒地冻冬季）→ 引入大乌鸦出现 → 总评舞姿无法形容 → 具体描述飞翔动作。比较选项可知正确填空顺序为 A：④①③⑤②（按空位 1-5 填入对应句子序号），段落连贯。",
+      "_round_reasoning": "R3 因为：理解层级 3（语段排序综合），陷阱密度 0.6（5 句相互可衔接，需识别背景—总评—细化—结尾结构），KP 跨度 2（句式排序 + 段意结构），数据复杂度 0.5。属语段衔接型 R3，参考 anchor chinese_r3_anchor_2（段意综合 R3）+ rubric §2.1 段意直白。",
+      "_round_anchor_used": "chinese_r3_anchor_2",
+      "_round_rubric_signals": []
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_longgang_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "文学常识",
+      "knowledge_point": "文学常识/名著情节人物",
+      "content": "下面说法中错误的一项是（    ）。",
+      "options": [
+        "A. 《童年》中，最关心阿廖沙，对阿廖沙影响最大的是他的外祖父。",
+        "B. 《汤姆索亚历险记》写了汤姆的五次历险：墓地试胆，荒岛冒险，鬼屋寻宝，山洞迷路，回洞取宝。",
+        "C. 《三国演义》中，官渡之战是以少胜多、以弱胜强的著名战役。"
+      ],
+      "answer": "A",
+      "explanation": "《童年》中最关心阿廖沙、对其影响最大的是**外祖母**（不是外祖父）。外祖母慈祥善良、聪明能干，对阿廖沙起到积极引导作用。故 A 错误。",
+      "_round_reasoning": "R2 因为：理解层级 2（名著细节核对），陷阱密度 0.5（3 选项均含名著情节细节），KP 跨度 2（俄国 + 美国 + 中国名著），数据复杂度 0.4。属名著常识型 R2，参考 anchor chinese_r1_anchor_4（外国作家作品 R1）+ rubric §2.2 升档。",
+      "_round_anchor_used": "chinese_r1_anchor_4",
+      "_round_rubric_signals": [
+        "§2.2 跨文化常识 4 选 1"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_longgang_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "xsc_longgang_001_q12",
+      "group_order": 1,
+      "content": "读下面的内容，并补充相关诗、词句。\n\n1. 张志和「西塞山前白鹭飞，桃花流水鳜鱼肥。青箬笠，绿蓑衣，____」。",
+      "answer": "斜风细雨不须归",
+      "explanation": "出自唐代张志和《渔歌子》。",
+      "_round_reasoning": "R1 因为：理解层级 1（课内名句默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。参考 anchor chinese_r1_anchor_1。",
+      "_round_anchor_used": "chinese_r1_anchor_1",
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_longgang_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "xsc_longgang_001_q12",
+      "group_order": 2,
+      "content": "读下面的内容，并补充相关诗、词句。\n\n2. 李白「故人西辞黄鹤楼，烟花三月下扬州。____，____」。请按顺序填两句话，用「|||」分隔。",
+      "answer": "孤帆远影碧空尽|||唯见长江天际流",
+      "explanation": "出自唐代李白《黄鹤楼送孟浩然之广陵》。",
+      "_round_reasoning": "R1 因为：理解层级 1（课内名句默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。",
+      "_round_anchor_used": "chinese_r1_anchor_1",
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_longgang_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "xsc_longgang_001_q12",
+      "group_order": 3,
+      "content": "读下面的内容，并补充相关诗、词句。\n\n3. 龚自珍「九州生气恃风雷，万马齐喑究可哀。我劝天公重抖擞，____」。",
+      "answer": "不拘一格降人材",
+      "explanation": "出自清代龚自珍《己亥杂诗·其二百二十》。",
+      "_round_reasoning": "R1 因为：理解层级 1（课内名句默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。",
+      "_round_anchor_used": "chinese_r1_anchor_1",
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_longgang_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "xsc_longgang_001_q12",
+      "group_order": 4,
+      "content": "读下面的内容，并补充相关诗、词句。\n\n4. 孟浩然「移舟泊烟渚，____。野旷天低树，江清月近人」。",
+      "answer": "日暮客愁新",
+      "explanation": "出自唐代孟浩然《宿建德江》。",
+      "_round_reasoning": "R1 因为：理解层级 1（课内名句默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。",
+      "_round_anchor_used": "chinese_r1_anchor_1",
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_longgang_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "xsc_longgang_001_q12",
+      "group_order": 5,
+      "content": "读下面的内容，并补充相关诗、词句。\n\n5. 王冕「我家洗砚池头树，朵朵花开淡墨痕。____，只留清气满乾坤」。",
+      "answer": "不要人夸好颜色",
+      "explanation": "出自元代王冕《墨梅》。",
+      "_round_reasoning": "R1 因为：理解层级 1（课内名句默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。",
+      "_round_anchor_used": "chinese_r1_anchor_1",
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_longgang_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "xsc_longgang_001_q13",
+      "group_order": 1,
+      "content": "请阅读《学弈》：\n\n弈秋，通国之善弈者也。使弈秋**悔**二人弈，其一人 ____，惟弈秋之为听；一人虽听之，一心以为有鸿鹄将至，思援弓缴而射之。虽与之**具**学，弗若之矣。为是其智弗若与？曰：非然也。\n\n文中有 2 个错别字（加粗的字），请按出现顺序订正（用「|||」分隔），即「错字 1 → 正字 1 ||| 错字 2 → 正字 2」格式，请直接填两个正字。",
+      "answer": "诲|||俱",
+      "explanation": "「使弈秋悔二人弈」中的「悔」应为「诲」（教导）；「虽与之具学」中的「具」应为「俱」（一起）。",
+      "_round_reasoning": "R2 因为：理解层级 2（古文错别字辨析），陷阱密度 0.4（fill 唯一答案），KP 跨度 2（古文 + 字形辨析），数据复杂度 0.4（含完整文段）。属古文辨析型 R2。",
+      "_round_anchor_used": "chinese_r1_anchor_3",
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_longgang_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言虚词",
+      "group_id": "xsc_longgang_001_q13",
+      "group_order": 2,
+      "content": "请阅读《学弈》：\n\n弈秋，通国之善弈者也。使弈秋**悔**二人弈，其一人 ____，惟弈秋之为听；一人虽听之，一心以为有鸿鹄将至，思援弓缴而射之。虽与之**具**学，弗若之矣。为是其智弗若与？曰：非然也。\n\n「之」在文言文中常指某人、某事或某物。下面的说法正确的打「对」，错误的打「错」。请按 ①、②、③ 顺序填三项，用「|||」分隔（每项「对」或「错」）。\n\n①「惟弈秋之为听」中的「之」指某事。这里是指弈秋的教导。\n②「思援弓缴而射之」中的「之」指某物。这里是指鸿鹄。\n③「弗若之矣」中的「之」指某人。这里是指「一心以为有鸿鹄将至」的那个人。",
+      "answer": "对|||对|||错",
+      "explanation": "①「惟弈秋之为听」中「之」明确指向弈秋的教导，对；②「思援弓缴而射之」中「之」指鸿鹄，对；③「弗若之矣」中「之」指「专心致志听弈秋教导的那个人」（不是分心想鸿鹄的那个人），错。",
+      "_round_reasoning": "R2 因为：理解层级 2（文言虚词指代辨析），陷阱密度 0.5（3 项判断需逐一对照原文），KP 跨度 2（文言虚词 + 指代理解），数据复杂度 0.4。属文言虚词型 R2。",
+      "_round_anchor_used": "chinese_r3_anchor_4",
+      "_round_rubric_signals": []
+    }
+  ]
+}

@@ -26,7 +26,11 @@
     "questions_imported": 23,
     "questions_skipped": 13,
     "option_images_used": 0,
-    "ai_dispute_count": 3
+    "ai_dispute_count": 3,
+    "_v2_workflow_version": "V3.17",
+    "_v2_redoing_v1_violations": true,
+    "questions_imported_total": 23,
+    "questions_skipped_groups": 13
   },
   "_skipped_for_future": [
     {
@@ -106,6 +110,48 @@
       "reason": "open_drawing_question",
       "raw_excerpt": "方格纸上画图：旋转 / 平移 / 缩小（画图题）",
       "source_para": 82
+    },
+    {
+      "qnum": "idx8",
+      "reason": "v3_18_content_violation_audit",
+      "raw_excerpt": "",
+      "_violation": "audit_v2_final_content_violation_p0"
+    },
+    {
+      "qnum": "idx9",
+      "reason": "v3_18_content_violation_audit",
+      "raw_excerpt": "",
+      "_violation": "audit_v2_final_content_violation_p0"
+    },
+    {
+      "qnum": "idx10",
+      "reason": "v3_18_content_violation_audit",
+      "raw_excerpt": "",
+      "_violation": "audit_v2_final_content_violation_p0"
+    },
+    {
+      "qnum": "idx11",
+      "reason": "v3_18_content_violation_audit",
+      "raw_excerpt": "",
+      "_violation": "audit_v2_final_content_violation_p0"
+    },
+    {
+      "qnum": "idx20",
+      "reason": "v3_18_content_violation_audit",
+      "raw_excerpt": "",
+      "_violation": "audit_v2_final_content_violation_p0"
+    },
+    {
+      "qnum": "?",
+      "reason": "v3_18_residual_format_hint",
+      "raw_excerpt": "$5.68$ 中的 $6$ 表示 $6$ 个（　　），$0.06$ 中的 $6$ 表示 $6$ 个（　　），$26.5\\%$ 中的 $6$ 表示 $6$ 个（　　）。请按顺序写出 $3$ 个答案，用「，」分隔。",
+      "_violation": "audit_v3_18_keyword_用「，」分隔"
+    },
+    {
+      "qnum": "?",
+      "reason": "v3_18_residual_format_hint",
+      "raw_excerpt": "我国建成了世界上第二大铁路网和最发达的高速铁路网。$2018$ 年全国铁路（分为普通铁路和高速铁路）营业总里程约 $13$ 万千米。其中高速铁路营业里程占普通铁路的 $\\frac{3}{10}$。$2018$ 年高速铁路和普通铁路的营业里程",
+      "_violation": "audit_v3_18_keyword_用「，」分隔"
     }
   ],
   "questions": [
@@ -240,96 +286,6 @@
       "round": 2,
       "type": "choice",
       "chapter": "总复习",
-      "knowledge_point": "总复习/统计与可能性",
-      "content": "有编号为 $1$、$2$、$3$、$4$ 的四个人准备抽签决定谁参加公益活动，公证人制作了外表一样的四枚签，其中一枚刻着「去」，四人照字母顺序先后抽签，抽完不放回，谁抽到「去」字，即可以参加。那么这四人谁被抽中的概率最大？（　　）",
-      "options": [
-        "A. $1$ 号",
-        "B. $4$ 号",
-        "C. 一样大",
-        "D. 无法确定"
-      ],
-      "answer": "C",
-      "explanation": "每人抽到「去」的概率都是 $\\frac{1}{4}$（前提是先抽未中）。综合考虑顺序，每人最终被抽中的概率相同。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_zdzx_002",
-      "round": 2,
-      "type": "fill",
-      "chapter": "数学好玩",
-      "knowledge_point": "数学综合/生活中的数学",
-      "content": "盒子里有红、黑、黄、蓝四种颜色的球各 $5$ 个。\n想摸出的球一定有 $2$ 个是同色的，最少要摸出（　　）个球；\n摸出的球一定有 $2$ 个是不同色的，最少要摸出（　　）个球。\n请按顺序写出两个答案，用「，」分隔。",
-      "answer": "5,6",
-      "alt_answers": [
-        "5、6",
-        "5,6"
-      ],
-      "explanation": "(1) 同色：考虑最差，每种各摸 $1$ 个共 $4$ 个全不同色，再摸 $1$ 个必同色，共 $4+1=5$ 个。\n(2) 不同色：考虑最差，从一种颜色摸 $5$ 个全同色，再摸 $1$ 个必不同色，共 $5+1=6$ 个。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_zdzx_002",
-      "round": 3,
-      "type": "fill",
-      "chapter": "图形的运动",
-      "knowledge_point": "图形的运动/旋转",
-      "content": "时针从「$12$」开始，顺时针旋转（　　）$°$ 到「$3$」；分针从「$6$」开始，顺时针旋转 $150°$ 到「（　　）」。请按顺序写出两个答案，用「，」分隔。",
-      "answer": "90,11",
-      "alt_answers": [
-        "90、11",
-        "90,11"
-      ],
-      "explanation": "钟面 $12$ 数字均分 $360°$，每格 $30°$。时针从「$12$」到「$3$」走 $3$ 格 $= 90°$。分针 $150° \\div 30°=5$ 格，「$6$」+ $5$ = 「$11$」。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_zdzx_002",
-      "round": 2,
-      "type": "fill",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/图形与几何综合",
-      "content": "一只挂钟的分针长 $10$ 厘米，$15$ 分钟后，分针的尖端所走的路程是（　　）厘米，扫过的面积是（　　）平方厘米。请按顺序写出两个答案，用「，」分隔。",
-      "answer": "15.7,78.5",
-      "alt_answers": [
-        "15.7、78.5",
-        "15.7,78.5"
-      ],
-      "explanation": "$15$ 分钟分针转 $\\frac{1}{4}$ 圈。\n路程 $= 2\\pi r \\times \\frac{1}{4} = 2 \\times 3.14 \\times 10 \\times \\frac{1}{4} = 15.7$ 厘米。\n面积 $= \\pi r^2 \\times \\frac{1}{4} = 3.14 \\times 100 \\times \\frac{1}{4} = 78.5$ 平方厘米。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_zdzx_002",
-      "round": 3,
-      "type": "fill",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/数与代数综合",
-      "content": "$5.68$ 中的 $6$ 表示 $6$ 个（　　），$0.06$ 中的 $6$ 表示 $6$ 个（　　），$26.5\\%$ 中的 $6$ 表示 $6$ 个（　　）。请按顺序写出 $3$ 个答案，用「，」分隔。",
-      "answer": "0.1,0.01,0.01",
-      "alt_answers": [
-        "0.1、0.01、0.01",
-        "0.1,0.01,0.01",
-        "1/10,1/100,1/100"
-      ],
-      "explanation": "$5.68$ 的 $6$ 在十分位：$6 \\times 0.1$。$0.06$ 的 $6$ 在百分位：$6 \\times 0.01$。$26.5\\%=0.265$，$6$ 在百分位：$6 \\times 0.01$。",
-      "_ai_dispute": {
-        "type": "answer_ambiguous",
-        "reason": "原题第二空中位图丢失（参考答案显示 $0.01$，按典型题型推测原题为 $0.06$ 或 $0.026$）。worker 推断为 $0.06$，可能与原题略有不同，须 Famin 复核。",
-        "alt_answer": "",
-        "confidence": "low",
-        "raised_by": "worker_a8361fea_v3_14_phase3_b6"
-      }
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_zdzx_002",
-      "round": 2,
-      "type": "choice",
-      "chapter": "总复习",
       "knowledge_point": "总复习/数与代数综合",
       "content": "某商品先提价 $5\\%$，后又降价 $5\\%$，这件商品的现价与原价相等。（判断对错）",
       "options": [
@@ -439,47 +395,6 @@
       "subject": "math",
       "grade": 6,
       "source": "realpaper_g6_math_beishida_xsc_zdzx_002",
-      "round": 2,
-      "type": "fill",
-      "chapter": "正比例和反比例",
-      "knowledge_point": "正反比例/正比例的意义",
-      "content": "小明家买了新房子，用同样的木地板铺地，若铺 $5$ 平方米要 $60$ 块地板，照这样计算，再铺 $95$ 平方米，一共需要这种木地板多少块？（用比例知识解答）",
-      "answer": "1200",
-      "alt_answers": [
-        "1200块",
-        "1200 块"
-      ],
-      "explanation": "面积与块数成正比例。设共需 $x$ 块，$\\frac{x}{5+95}=\\frac{60}{5}$，$5x = 60 \\times 100 = 6000$，$x=1200$ 块。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_zdzx_002",
-      "round": 2,
-      "type": "fill",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/数与代数综合",
-      "content": "我国建成了世界上第二大铁路网和最发达的高速铁路网。$2018$ 年全国铁路（分为普通铁路和高速铁路）营业总里程约 $13$ 万千米。其中高速铁路营业里程占普通铁路的 $\\frac{3}{10}$。$2018$ 年高速铁路和普通铁路的营业里程分别约是多少万千米？请按顺序写出高速铁路、普通铁路的营业里程，用「，」分隔。",
-      "answer": "3,10",
-      "alt_answers": [
-        "3、10",
-        "3万,10万",
-        "3 万,10 万",
-        "3万千米,10万千米"
-      ],
-      "explanation": "高速占普通的 $\\frac{3}{10}$，则总长占普通的 $1+\\frac{3}{10}=\\frac{13}{10}$。普通 $= 13 \\div \\frac{13}{10} = 10$ 万千米；高速 $= 10 \\times \\frac{3}{10} = 3$ 万千米。",
-      "_ai_dispute": {
-        "type": "answer_ambiguous",
-        "reason": "原题位图丢失「高速占普通的 X」具体分数，参考答案表明分数为 $\\frac{3}{10}$，worker 据此推断。如果原题分数不同，结果会不同。",
-        "alt_answer": "",
-        "confidence": "low",
-        "raised_by": "worker_a8361fea_v3_14_phase3_b6"
-      }
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_zdzx_002",
       "round": 3,
       "type": "fill",
       "chapter": "总复习",
@@ -518,5 +433,6 @@
         "raised_by": "worker_a8361fea_v3_14_phase3_b6"
       }
     }
-  ]
+  ],
+  "_v2_workflow_version": "V3.17"
 }

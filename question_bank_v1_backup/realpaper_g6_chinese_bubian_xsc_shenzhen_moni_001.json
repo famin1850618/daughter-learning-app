@@ -1,0 +1,362 @@
+{
+  "source": "realpaper_g6_chinese_bubian_xsc_shenzhen_moni_001",
+  "_source_docx_sha1": "419fd8f10e7bf732",
+  "subject": "chinese",
+  "grade": 6,
+  "knowledge_points_added": [
+    "字词/字音",
+    "字词/字形",
+    "字词/词语理解",
+    "句式与标点/病句修改",
+    "句式与标点/句式转换",
+    "古诗文/古诗词背诵默写",
+    "课文与名著/课文内容理解",
+    "现代文阅读/词句赏析"
+  ],
+  "_quality_meta": {
+    "source_file": "精品解析：广东省深圳市2021年部编版小升初模拟考试语文试卷（解析版）.docx",
+    "sha1": "419fd8f10e7bf732",
+    "paper_type": "xsc_moni",
+    "chapter_default": "小升初综合",
+    "omath_total_formulas": 0,
+    "images_used": 0,
+    "questions_total_paper": 13,
+    "questions_imported": 16,
+    "questions_skipped": 2
+  },
+  "_skipped_for_future": [
+    {
+      "qnum": "7-8",
+      "reason": "subjective_short",
+      "raw_excerpt": "联系生活理解俗语 / 按要求改写句子（比喻句、双重否定、转述句——多空 fill 但答案是整句改写）"
+    },
+    {
+      "qnum": "13",
+      "reason": "subjective_essay",
+      "raw_excerpt": "习作：生活需要 ____（半命题作文 400 字以上）"
+    }
+  ],
+  "questions": [
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_shenzhen_moni_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "下列各组词语中，加粗字读音全部正确的一组是（    ）。",
+      "options": [
+        "A. **陡**峭（qiào）  **尊**严（zūn）  **善**良（shàn）  **仇**恨（cóu）",
+        "B. **呻**吟（shēn）  **聋**哑（lóng）  **誓**言（shì）  **蜿**蜒（wān）",
+        "C. 罪**恶**（wù）  愚**蠢**（chǔn）  **失**败（shī）  **毁**灭（huǐ）",
+        "D. 遭**殃**（yāng）  飞**驰**（chí）  水**缸**（gān）  习**惯**（guàn）"
+      ],
+      "answer": "B",
+      "explanation": "A 项「仇恨」应读 chóu hèn 不读 cóu；C 项「罪恶」应读 zuì è 不读 wù；D 项「水缸」应读 shuǐ gāng 不读 gān。",
+      "_round_reasoning": "R2 因为：理解层级 2（字音综合辨析），陷阱密度 0.5（4 选项每项含 4 词，3 项各有错处），KP 跨度 1（字音），数据复杂度 0.4。属字音综合型 R2，参考 anchor chinese_r1_anchor_3（字音识记 R1）+ rubric §2.2 多项需逐一核对升 R2。",
+      "_round_anchor_used": "chinese_r1_anchor_3",
+      "_round_rubric_signals": [
+        "§2.2 跨文化常识 4 选 1"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_shenzhen_moni_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "句子和语法",
+      "knowledge_point": "句子和语法/病句修改",
+      "content": "下列句子中没有语病的一项是（    ）。",
+      "options": [
+        "A. 在这次户外实践活动中，让我十分感动。",
+        "B. 因为我的语文成绩很好，所以我特别喜欢帮助同学们。",
+        "C. 我们要继承和发扬中华民族优秀传统文化。",
+        "D. 在老师帮助下，我们提高了学习习惯。"
+      ],
+      "answer": "C",
+      "explanation": "A 项成分残缺缺主语，应删去「让」；B 项关联词错误，前后是递进关系应用「不但……而且……」；D 项搭配不当，应是「提高了学习成绩」而非「学习习惯」。",
+      "_round_reasoning": "R2 因为：理解层级 2（病句辨析），陷阱密度 0.5（4 选项各类语病错误），KP 跨度 1（病句修改），数据复杂度 0.4。属语法甄别型 R2，参考 anchor chinese_r2_anchor_3（病句识别 R2）+ rubric §2.1 段意直白。",
+      "_round_anchor_used": "chinese_r2_anchor_3",
+      "_round_rubric_signals": [
+        "§2.1 段意直白"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_shenzhen_moni_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/词语理解",
+      "content": "但是，也许需要我们重新（    ）这些高等级遗传可能性的证据。",
+      "options": [
+        "A. 审查",
+        "B. 审问",
+        "C. 审视",
+        "D. 珍视"
+      ],
+      "answer": "C",
+      "explanation": "审查指检查、分析、核对；审问指详细询问；审视指仔细地看；珍视指珍爱重视。结合「重新____证据」的语境，「审视」（仔细地看）最合适。",
+      "_round_reasoning": "R2 因为：理解层级 2（近义词辨析），陷阱密度 0.6（4 候选词意相近，需结合搭配「证据」选最贴切），KP 跨度 1（近义词辨析），数据复杂度 0.3。属近义词搭配型 R2，参考 anchor chinese_r2_anchor_2（近义词辨析 R2）。",
+      "_round_anchor_used": "chinese_r2_anchor_2",
+      "_round_rubric_signals": []
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_shenzhen_moni_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/词语理解",
+      "content": "下面句子中没有反义词的一项是（    ）。",
+      "options": [
+        "A. 金字塔是人类智慧与劳动的结晶。",
+        "B. 簇拥在一起的小艇一会儿就散开了。",
+        "C. 大大小小的船都停泊在码头上。",
+        "D. 喧嚣的城市又恢复了寂静。"
+      ],
+      "answer": "A",
+      "explanation": "B 项「簇拥」与「散开」互为反义词；C 项「大」与「小」互为反义词；D 项「喧嚣」与「寂静」互为反义词；A 项无反义词。",
+      "_round_reasoning": "R2 因为：理解层级 2（反义词识别 + 排除），陷阱密度 0.5（4 选项 3 项均含反义词），KP 跨度 1，数据复杂度 0.3。属词语辨析型 R2，参考 anchor chinese_r2_anchor_2（近义词辨析 R2）+ rubric §2.1 段意直白。",
+      "_round_anchor_used": "chinese_r2_anchor_2",
+      "_round_rubric_signals": [
+        "§2.1 段意直白"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_shenzhen_moni_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "下列词语书写全部正确一组是（    ）。",
+      "options": [
+        "A. 资势  富饶  蝌蚪  一瞬间",
+        "B. 潮湿  钓鱼  疑视  一棵枣",
+        "C. 茫然  蜡烛  郊外  雾蒙蒙"
+      ],
+      "answer": "C",
+      "explanation": "A 项「资势」应为「姿势」；B 项「疑视」应为「凝视」、「一棵枣」应为「一颗枣」（数量词「颗」用于颗粒/小物）；C 项书写正确。",
+      "_round_reasoning": "R1 因为：理解层级 1（字形辨析），陷阱密度 0.25（仅 3 选项，错处明显），KP 跨度 1，数据复杂度 0.15。属字形识记型 R1。",
+      "_round_anchor_used": "chinese_r1_anchor_3",
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_shenzhen_moni_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "xsc_shenzhen_moni_001_q6",
+      "group_order": 1,
+      "content": "根据课文内容填空。\n\n1. 习主席引用《淮南子》中的一句话来说明变革创新的重要：「________，________；________，________」。请按顺序填四句话，用「|||」分隔。",
+      "answer": "苟利于民|||不必法古|||苟周于事|||不必循旧",
+      "explanation": "出自汉朝刘安《淮南子》「苟利于民，不必法古；苟周于事，不必循旧」。",
+      "_round_reasoning": "R1 因为：理解层级 1（课内名句默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.3（4 句长）。参考 anchor chinese_r1_anchor_1。",
+      "_round_anchor_used": "chinese_r1_anchor_1",
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_shenzhen_moni_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "xsc_shenzhen_moni_001_q6",
+      "group_order": 2,
+      "content": "根据课文内容填空。\n\n2. 《闻官军收河南河北》中，表达作者在听到失地收复时喜极而泣的诗句是：「________，________」。请按顺序填两句话，用「|||」分隔。",
+      "answer": "剑外忽传收蓟北|||初闻涕泪满衣裳",
+      "explanation": "出自唐代杜甫《闻官军收河南河北》。",
+      "_round_reasoning": "R1 因为：理解层级 1（课内名句默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。参考 anchor chinese_r1_anchor_1。",
+      "_round_anchor_used": "chinese_r1_anchor_1",
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_shenzhen_moni_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "xsc_shenzhen_moni_001_q6",
+      "group_order": 3,
+      "content": "根据课文内容填空。\n\n3. 用《竹石》中的一句话鼓励四川地震的小朋友坚强：「________，________」。请按顺序填两句话，用「|||」分隔。",
+      "answer": "千磨万击还坚劲|||任尔东西南北风",
+      "explanation": "出自清代郑燮《竹石》「咬定青山不放松，立根原在破岩中。千磨万击还坚劲，任尔东西南北风」。",
+      "_round_reasoning": "R2 因为：理解层级 2（语境反推诗句），陷阱密度 0.3（fill 唯一答案，但需理解「鼓励坚强」与诗句意境关联），KP 跨度 2（古诗 + 意境理解），数据复杂度 0.3。参考 anchor chinese_r2_anchor_1（释义反推 R2）。",
+      "_round_anchor_used": "chinese_r2_anchor_1",
+      "_round_rubric_signals": []
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_shenzhen_moni_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/课文内容理解",
+      "content": "课内阅读：\n\n更羸是古时候魏国有名的射箭能手。有一天，更羸跟魏王到郊外去打猎。一只大雁从远处慢慢地飞来，边飞边鸣。更羸指着大雁对魏王说：「大王，我不用箭，只要拉一下弓，就能把这只大雁射下来。」\n「是吗?」魏王疑惑地问道，「你有这样的本事?」\n更羸说：「我可以试一下。」\n更羸并不取箭，他左手拿弓，右手拉弦，只听得「嘣」的一声响，那只大雁直往上飞，拍了两下翅膀，忽然从半空里直掉下来。\n「啊!」魏王看了，大吃一惊说，「真有这样的本事!」\n更羸笑笑说：「不是我的本事大，是因为我知道，这是一只受过箭伤的鸟。」\n\n「射箭能手」的「手」意思是（    ）。",
+      "options": [
+        "A. 亲手",
+        "B. 擅长于某种技能的人",
+        "C. 拿着",
+        "D. 手段，手法"
+      ],
+      "answer": "B",
+      "explanation": "「射箭能手」指射箭非常厉害的人，「手」意思是擅长于某种技能的人。",
+      "_round_reasoning": "R1 因为：理解层级 1（字面词义直接对应），陷阱密度 0.25（选项明确），KP 跨度 1，数据复杂度 0.3。属字义识记型 R1，参考 anchor chinese_r1_anchor_3 + rubric §2.1 课内必修常识。",
+      "_round_anchor_used": "chinese_r1_anchor_3",
+      "_round_rubric_signals": [
+        "§2.1 课内必修常识"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_shenzhen_moni_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/成语运用",
+      "group_id": "xsc_shenzhen_moni_001_q10",
+      "group_order": 1,
+      "content": "课内阅读《惊弓之鸟》（更羸射箭故事）。\n\n根据解释写词语。\n\n1. 比喻经过惊吓的人碰到一点儿动静就非常害怕。____",
+      "answer": "惊弓之鸟",
+      "explanation": "「惊弓之鸟」比喻经过惊吓的人碰到一点儿动静就非常害怕，出自《战国策》更羸射雁故事。",
+      "_round_reasoning": "R2 因为：理解层级 2（释义反推成语），陷阱密度 0.4（fill 答案唯一），KP 跨度 1，数据复杂度 0.3。属释义反推型 R2，参考 anchor chinese_r2_anchor_1（成语释义反推 R2）。",
+      "_round_anchor_used": "chinese_r2_anchor_1",
+      "_round_rubric_signals": []
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_shenzhen_moni_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/成语运用",
+      "group_id": "xsc_shenzhen_moni_001_q10",
+      "group_order": 2,
+      "content": "课内阅读《惊弓之鸟》（更羸射箭故事）。\n\n根据解释写词语。\n\n2. 指离开了伙伴，孤独无依的样子。____",
+      "answer": "孤单失群",
+      "explanation": "「孤单失群」指离开了伙伴，孤独无依的样子。",
+      "_round_reasoning": "R2 因为：理解层级 2（释义反推成语），陷阱密度 0.4，KP 跨度 1，数据复杂度 0.3。属释义反推型 R2。",
+      "_round_anchor_used": "chinese_r2_anchor_1",
+      "_round_rubric_signals": []
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_shenzhen_moni_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/课文内容理解",
+      "content": "课内阅读《惊弓之鸟》：\n\n更羸是古时候魏国有名的射箭能手。有一天，更羸跟魏王到郊外去打猎。一只大雁从远处慢慢地飞来，边飞边鸣。更羸指着大雁对魏王说：「大王，我不用箭，只要拉一下弓，就能把这只大雁射下来。」\n「是吗?」魏王疑惑地问道，「你有这样的本事?」\n更羸说：「我可以试一下。」\n更羸并不取箭，他左手拿弓，右手拉弦，只听得「嘣」的一声响，那只大雁直往上飞，拍了两下翅膀，忽然从半空里直掉下来。\n「啊!」魏王看了，大吃一惊说，「真有这样的本事!」\n更羸笑笑说：「不是我的本事大，是因为我知道，这是一只受过箭伤的鸟。」\n魏王更加奇怪了，问：「你怎么知道的?」\n更羸说：「它飞得慢，叫的声音很悲惨。飞得慢，因为它受过箭伤，伤口没有愈合，还在作痛;叫得悲惨，因为它离开同伴，孤单失群，得不到帮助。它一听到弦响，心里很害怕，就拼命往高处飞。它一使劲，伤口又裂开了，就掉了下来。」\n\n「魏王看了，大吃一惊」，魏王大吃一惊的原因是（    ）。",
+      "options": [
+        "A. 更羸是神射手，能将空中飞行大雁射下来",
+        "B. 更羸能看出空中飞行的大雁受过箭伤",
+        "C. 更羸不用箭，只要拉一下弓，就把飞行的大雁射落",
+        "D. 更羸射箭本领超人"
+      ],
+      "answer": "C",
+      "explanation": "结合原文「他左手拿弓，右手拉弦，只听得『嘣』的一声响，那只大雁直往上飞……忽然从半空里直掉下来」可知，魏王惊讶的是更羸不用箭，只拉弓就把飞行的大雁射落。",
+      "_round_reasoning": "R2 因为：理解层级 2（语段细节理解），陷阱密度 0.6（A B D 都是对更羸能力的描述但不是「大吃一惊」的直接原因），KP 跨度 1，数据复杂度 0.4。属课内阅读型 R2，参考 anchor chinese_r3_anchor_2（段意综合 R3）+ rubric §2.1 段意直白降至 R2。",
+      "_round_anchor_used": "chinese_r3_anchor_2",
+      "_round_rubric_signals": [
+        "§2.1 段意直白"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_shenzhen_moni_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/课文内容理解",
+      "group_id": "xsc_shenzhen_moni_001_q12",
+      "group_order": 1,
+      "content": "课内阅读《惊弓之鸟》：\n\n更羸是古时候魏国有名的射箭能手。有一天，更羸跟魏王到郊外去打猎。一只大雁从远处慢慢地飞来，边飞边鸣。更羸指着大雁对魏王说：「大王，我不用箭，只要拉一下弓，就能把这只大雁射下来。」\n「是吗?」魏王疑惑地问道，「你有这样的本事?」\n更羸说：「我可以试一下。」\n更羸并不取箭，他左手拿弓，右手拉弦，只听得「嘣」的一声响，那只大雁直往上飞，拍了两下翅膀，忽然从半空里直掉下来。\n「啊!」魏王看了，大吃一惊说，「真有这样的本事!」\n更羸笑笑说：「不是我的本事大，是因为我知道，这是一只受过箭伤的鸟。」\n魏王更加奇怪了，问：「你怎么知道的?」\n更羸说：「它飞得慢，叫的声音很悲惨。飞得慢，因为它受过箭伤，伤口没有愈合，还在作痛;叫得悲惨，因为它离开同伴，孤单失群，得不到帮助。它一听到弦响，心里很害怕，就拼命往高处飞。它一使劲，伤口又裂开了，就掉了下来。」\n\n根据选文内容填空。\n\n1. 大雁飞得慢是因为 ____。",
+      "answer": "受过箭伤",
+      "explanation": "原文「飞得慢，因为它受过箭伤，伤口没有愈合，还在作痛」。",
+      "_round_reasoning": "R2 因为：理解层级 2（原文细节回填），陷阱密度 0.3（fill 答案需简洁），KP 跨度 1，数据复杂度 0.3。属课内阅读型 R2。",
+      "_round_anchor_used": "chinese_r3_anchor_2",
+      "_round_rubric_signals": [
+        "§2.1 段意直白"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_shenzhen_moni_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/课文内容理解",
+      "group_id": "xsc_shenzhen_moni_001_q12",
+      "group_order": 2,
+      "content": "课内阅读《惊弓之鸟》：\n\n更羸是古时候魏国有名的射箭能手。有一天，更羸跟魏王到郊外去打猎。一只大雁从远处慢慢地飞来，边飞边鸣。更羸指着大雁对魏王说：「大王，我不用箭，只要拉一下弓，就能把这只大雁射下来。」\n「是吗?」魏王疑惑地问道，「你有这样的本事?」\n更羸说：「我可以试一下。」\n更羸并不取箭，他左手拿弓，右手拉弦，只听得「嘣」的一声响，那只大雁直往上飞，拍了两下翅膀，忽然从半空里直掉下来。\n「啊!」魏王看了，大吃一惊说，「真有这样的本事!」\n更羸笑笑说：「不是我的本事大，是因为我知道，这是一只受过箭伤的鸟。」\n魏王更加奇怪了，问：「你怎么知道的?」\n更羸说：「它飞得慢，叫的声音很悲惨。飞得慢，因为它受过箭伤，伤口没有愈合，还在作痛;叫得悲惨，因为它离开同伴，孤单失群，得不到帮助。它一听到弦响，心里很害怕，就拼命往高处飞。它一使劲，伤口又裂开了，就掉了下来。」\n\n根据选文内容填空。\n\n2. 大雁叫得悲惨是因为 ____。",
+      "answer": "离开同伴",
+      "explanation": "原文「叫得悲惨，因为它离开同伴，孤单失群，得不到帮助」。",
+      "_round_reasoning": "R2 因为：理解层级 2（原文细节回填），陷阱密度 0.3，KP 跨度 1，数据复杂度 0.3。属课内阅读型 R2。",
+      "_round_anchor_used": "chinese_r3_anchor_2",
+      "_round_rubric_signals": [
+        "§2.1 段意直白"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_shenzhen_moni_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/课文内容理解",
+      "group_id": "xsc_shenzhen_moni_001_q12",
+      "group_order": 3,
+      "content": "课内阅读《惊弓之鸟》：\n\n更羸是古时候魏国有名的射箭能手。有一天，更羸跟魏王到郊外去打猎。一只大雁从远处慢慢地飞来，边飞边鸣。更羸指着大雁对魏王说：「大王，我不用箭，只要拉一下弓，就能把这只大雁射下来。」\n「是吗?」魏王疑惑地问道，「你有这样的本事?」\n更羸说：「我可以试一下。」\n更羸并不取箭，他左手拿弓，右手拉弦，只听得「嘣」的一声响，那只大雁直往上飞，拍了两下翅膀，忽然从半空里直掉下来。\n「啊!」魏王看了，大吃一惊说，「真有这样的本事!」\n更羸笑笑说：「不是我的本事大，是因为我知道，这是一只受过箭伤的鸟。」\n魏王更加奇怪了，问：「你怎么知道的?」\n更羸说：「它飞得慢，叫的声音很悲惨。飞得慢，因为它受过箭伤，伤口没有愈合，还在作痛;叫得悲惨，因为它离开同伴，孤单失群，得不到帮助。它一听到弦响，心里很害怕，就拼命往高处飞。它一使劲，伤口又裂开了，就掉了下来。」\n\n根据选文内容填空。\n\n3. 大雁拼命往高处飞是因为 ____。",
+      "answer": "心里害怕",
+      "explanation": "原文「它一听到弦响，心里很害怕，就拼命往高处飞」。",
+      "_round_reasoning": "R2 因为：理解层级 2（原文细节回填），陷阱密度 0.3，KP 跨度 1，数据复杂度 0.3。属课内阅读型 R2。",
+      "_round_anchor_used": "chinese_r3_anchor_2",
+      "_round_rubric_signals": [
+        "§2.1 段意直白"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_shenzhen_moni_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/课文内容理解",
+      "group_id": "xsc_shenzhen_moni_001_q12",
+      "group_order": 4,
+      "content": "课内阅读《惊弓之鸟》：\n\n更羸是古时候魏国有名的射箭能手。有一天，更羸跟魏王到郊外去打猎。一只大雁从远处慢慢地飞来，边飞边鸣。更羸指着大雁对魏王说：「大王，我不用箭，只要拉一下弓，就能把这只大雁射下来。」\n「是吗?」魏王疑惑地问道，「你有这样的本事?」\n更羸说：「我可以试一下。」\n更羸并不取箭，他左手拿弓，右手拉弦，只听得「嘣」的一声响，那只大雁直往上飞，拍了两下翅膀，忽然从半空里直掉下来。\n「啊!」魏王看了，大吃一惊说，「真有这样的本事!」\n更羸笑笑说：「不是我的本事大，是因为我知道，这是一只受过箭伤的鸟。」\n魏王更加奇怪了，问：「你怎么知道的?」\n更羸说：「它飞得慢，叫的声音很悲惨。飞得慢，因为它受过箭伤，伤口没有愈合，还在作痛;叫得悲惨，因为它离开同伴，孤单失群，得不到帮助。它一听到弦响，心里很害怕，就拼命往高处飞。它一使劲，伤口又裂开了，就掉了下来。」\n\n根据选文内容填空。\n\n4. 更羸不用箭只拉弓，那只大雁就从半空中掉下来，是因为 ____。",
+      "answer": "伤口又裂开了|||伤口裂开",
+      "explanation": "原文「它一使劲，伤口又裂开了，就掉了下来」。结合上下文：大雁听到弦响心里害怕，拼命往高飞，使劲时伤口裂开掉下。",
+      "_round_reasoning": "R3 因为：理解层级 3（原文多句因果链整合），陷阱密度 0.4（fill 含同义兜底），KP 跨度 2（细节 + 因果推理），数据复杂度 0.4。属课内阅读因果推理型 R3，参考 anchor chinese_r3_anchor_2（段意综合 R3）。",
+      "_round_anchor_used": "chinese_r3_anchor_2",
+      "_round_rubric_signals": []
+    }
+  ]
+}

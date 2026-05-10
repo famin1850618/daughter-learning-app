@@ -1,6 +1,7 @@
 {
   "source": "realpaper_g6_math_beishida_xsc_longhua_001",
   "_source_docx_sha1": "1b67bd3827a6032e",
+  "_v2_workflow_version": "V3.16",
   "subject": "math",
   "grade": 6,
   "knowledge_points_added": [],
@@ -8,84 +9,115 @@
     "source_file": "2023年广东省深圳市龙华区小升初数学试卷.docx",
     "sha1": "1b67bd3827a6032e",
     "paper_type": "xsc",
-    "chapter_default": "小升初综合",
+    "chapter_default": "总复习",
     "omath_total_formulas": 0,
     "omath_para_count": 0,
     "images_used": 0,
     "questions_total_paper": 21,
-    "questions_imported": 16,
-    "questions_skipped": 5
+    "questions_imported_total": 8,
+    "questions_skipped_groups": 16,
+    "_v2_workflow_version": "V3.16",
+    "_v2_redoing_v1_violations": true,
+    "_v1_path": "assets/data/batches/realpaper_g6_math_beishida_xsc_longhua_001.json",
+    "_v316_self_check_passes": 8,
+    "_v316_self_check_fails": 0
   },
   "_skipped_for_future": [
     {
       "qnum": "1",
       "reason": "info_lost_irrecoverable",
-      "raw_excerpt": "用喜欢方法计算（4 题位图算式）",
-      "source_para": 3
+      "raw_excerpt": "1．（10分）用你喜欢的方法计算，要写出计算过程。",
+      "note": "4 个子算式以位图嵌入文字层为空"
     },
     {
       "qnum": "2",
       "reason": "info_lost_irrecoverable",
-      "raw_excerpt": "解方程（2 题位图）",
-      "source_para": 4
+      "raw_excerpt": "2．（8分）解方程。",
+      "note": "方程以位图嵌入文字层为空"
+    },
+    {
+      "qnum": "3",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "3．（2分）下面算式中的「7」和「3」可以直接相加减的是（　　）\nA．174+2023\tB．\tC．\tD．3.7+2.63",
+      "note": "B、C 选项分数（OMath 缺失），仅 A、D 选项可重建，无法构成完整 4 选项题"
+    },
+    {
+      "qnum": "5",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "5．（2分）一个三角形被遮住了一部分（如图），下面说法正确的是（　　）\nA．另外两个角可能是50°、80°\tB．不可能是钝角三角形\tC．可能是等边三角形\tD．可能是等腰直角三角形",
+      "note": "题面「露出的角度数」在图中（v1 worker 自补「露出的角是 60°」违纪反推），仅靠选项无法确定哪个对"
+    },
+    {
+      "qnum": "7",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "7．（2分）...A5纸的面积是A2纸的（　　）\nA．\tB．\tC．\tD．",
+      "note": "ABCD 四选项分数（OMath 全部缺失），文字层无可读选项"
     },
     {
       "qnum": "8",
-      "reason": "unclear_image",
-      "raw_excerpt": "数轴 ABC 三点表示数（图判位置）",
-      "source_para": 26
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "8．（3分）如图，点A表示的数是 　     　，点B表示的数是 　      　，点C表示的数是 　                 　。",
+      "note": "数轴上 ABC 三点位置仅在图中，文字层无具体位置/数值"
+    },
+    {
+      "qnum": "9",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "9．（3分）六（1）班有男生22人，是女生人数的，女生有 　     　人。",
+      "note": "题面「是女生人数的」分数 OMath 缺失，v1 worker 用解析答案 11/10 反推违纪"
     },
     {
       "qnum": "12",
-      "reason": "unclear_image",
-      "raw_excerpt": "4 月天气统计图（图判 雨天 vs 阴天）",
-      "source_para": 31
-    },
-    {
-      "qnum": "14",
-      "reason": "unclear_image",
-      "raw_excerpt": "长方体截 3 段表面积（图判截法）",
-      "source_para": 36
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "12．（3分）如图，这是龙华区4月天气情况统计图，4月雨天比阴天多 　   　天。",
+      "note": "天气数据均在条形/扇形统计图，文字层缺失"
     },
     {
       "qnum": "15",
-      "reason": "unclear_image",
-      "raw_excerpt": "长方形折叠成梯形（图判折叠尺寸）",
-      "source_para": 39
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "15．（3分）如图，将一张长方形纸折叠形成一个梯形。这个梯形的面积是 　      　cm2。",
+      "note": "长方形原始尺寸 + 折叠方式仅在图中，文字层无具体尺寸"
     },
     {
       "qnum": "16",
       "reason": "open_drawing_question",
-      "raw_excerpt": "三角形 ABC 旋转 + 数对+扫过面积（含画图）"
+      "raw_excerpt": "16．（6分）（1）如图，点B用数对表示是（ 　   　，　   　），点C用数对表示是（ 　   　，　   　）。（2）画出三角形ABC绕点C逆时针方向旋转90°后的图形。（3）如果一个小方格的边长是1cm，那么线段AC由原来位置旋转到新位置所扫过的面积是 　        　cm²。",
+      "note": "(1) 点位置在图，(2) 画图，(3) 旋转半径在图，全题需图"
     },
     {
       "qnum": "17",
-      "reason": "unclear_image",
-      "raw_excerpt": "AB 手机出货量统计图（含画图）"
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "17．（6分）表是1月～7月A，B两品牌手机出货量统计表。（1）请把统计图补充完整。（2）　   　品牌手机的月平均出货量高一些。（3）你觉得哪个品牌手机的月出货量有可能还会提高？请说明理由。",
+      "note": "数据在统计表 + (1)画图 + (3)主观题"
     },
     {
-      "qnum": "21(2)",
-      "reason": "unclear_image",
-      "raw_excerpt": "3 盒牙膏包装最少包装纸（图判牙膏盒尺寸）"
-    },
-    {
-      "qnum": "21(4)",
-      "reason": "open_subjective",
-      "raw_excerpt": "扩大开口直径后体积/营业额分析（开放分析题）"
+      "qnum": "19",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "19．（5分）妙想妈妈在一块长20m、宽15m的长方形地上种植鲜花。今年她进行了扩建，宽不变，长增加了。如果每平方米土地的鲜花卖200元，今年这块地种植的鲜花可以卖多少元？",
+      "note": "题面「长增加了」分数 OMath 缺失，v1 worker 用解析答案 1/4 反推违纪"
     },
     {
       "qnum": "20",
       "reason": "info_lost_irrecoverable",
-      "raw_excerpt": "圆柱铁块容器水面上升题：原题面 OCR/位图丢失关键容器尺寸数据。worker 第三批擅改为圆锥体积题 → V3.13 主 session 撤回（违反 §1.5 原题保真）",
-      "source_para": null,
-      "_voilation": "worker_rewrote_question_to_match_answer"
+      "raw_excerpt": "20．（6分）一个底面半径为10cm的圆柱形容器，里面装有水。将等底等高的一个圆柱形铁块和一个圆锥形铁块同时放入这个容器中，水面上升到9cm（如图）。这个圆锥形铁块的体积是多少？",
+      "note": "「水面上升到 9 cm」中文歧义（是上升 9 cm 还是最终高度 9 cm），且铁块尺寸需图比对"
     },
     {
       "qnum": "21(1)",
-      "reason": "subjective_short",
-      "raw_excerpt": "牙膏题原题：哪家商城更优惠？请说明理由（主观论述）。worker 第三批改写为\"甲商城需付（）元（保留1位小数）\"客观计算 + 自加保留指引 + 答案与指引矛盾，⊥0 D-9 + D-7 双违纪 + ⊥1 简化大题，主 session 撤回",
-      "source_para": null,
-      "_violation": "worker_rewrote_subjective_to_objective_AND_added_fake_precision_instruction"
+      "reason": "subjective_open",
+      "raw_excerpt": "（1）A品牌牙膏原价是15.4元/支，「618」购物节优惠活动如下：甲商城：一律八折：乙商城：每满45元减10元。亮亮家想买3支这款牙膏，哪家商城更优惠？请说明理由。",
+      "note": "「哪家更优惠？请说明理由」⊥0 D-9 主观题，禁转 fill。v1 worker 改写为「乙商城需付 ___ 元」违纪"
+    },
+    {
+      "qnum": "21(2)",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "（2）牙膏盒形状如下图，如果要将3盒牙膏包装在一起，最少需要多大的包装纸？（接口处不算）",
+      "note": "牙膏盒尺寸仅在图中，文字层无具体长宽高"
+    },
+    {
+      "qnum": "21(4)",
+      "reason": "subjective_open",
+      "raw_excerpt": "（4）A品牌牙膏公司推出一款新包装，将旧牙膏管6mm的开口直径扩大1mm，牙膏管的容量不变。假设这款牙膏的用户群不变，刷牙习惯不变，每次都使用10mm长的牙膏，每次使用牙膏的体积增加了百分之几？牙膏的单价不变，公司发现营业额却增加了。为什么？请说明理由。",
+      "note": "(4) 后半部分「为什么营业额增加？请说明理由」主观题"
     }
   ],
   "questions": [
@@ -95,27 +127,9 @@
       "source": "realpaper_g6_math_beishida_xsc_longhua_001",
       "round": 2,
       "type": "choice",
-      "chapter": "小升初综合",
-      "knowledge_point": "总复习/数与代数综合",
-      "content": "下面算式中的「$7$」和「$3$」可以直接相加减的是（　　）。",
-      "options": [
-        "A. $174 + 2023$（不同位值）",
-        "B. $\\dfrac{7}{8} + \\dfrac{3}{8}$（同分母）",
-        "C. $\\dfrac{7}{8} + \\dfrac{3}{4}$（不同分母）",
-        "D. $3.7 + 2.63$（不同小数位）"
-      ],
-      "answer": "B",
-      "explanation": "$7$ 和 $3$ 计数单位相同（都是 $\\dfrac{1}{8}$），可以直接相加 $\\to 7+3=10$ 个 $\\dfrac{1}{8}$。其它选项 $7$ 和 $3$ 计数单位不同。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_longhua_001",
-      "round": 2,
-      "type": "choice",
-      "chapter": "小升初综合",
+      "chapter": "总复习",
       "knowledge_point": "总复习/统计与可能性",
-      "content": "小冬和小虎玩摸球游戏（袋中有黑白两种球，每次摸完放回）。下面说法正确的是（　　）。",
+      "content": "小冬和小虎玩摸球游戏（如图），每次摸完放回。下面说法正确的是（　　）。",
       "options": [
         "A. 第一次摸的是白球，第二次一定会摸到黑球",
         "B. 一共摸了 $60$ 次，一定摸了 $30$ 次白球、$30$ 次黑球",
@@ -123,34 +137,18 @@
         "D. 摸的次数越多，摸到白球的次数和黑球的次数就越接近"
       ],
       "answer": "D",
-      "explanation": "概率的统计意义：摸的次数越多，事件发生的频率越接近概率。A/B/C 都把随机事件当成确定事件，错误。"
+      "explanation": "袋中只有黑、白两种球，每次摸完放回，每次摸球结果独立随机。A 错（每次独立无必然结果）；B 错（$60$ 次不必然各 $30$）；C 错（$100$ 次有可能各 $50$）；D 对（次数越多，频率越接近概率，黑白次数差越接近）。",
+      "_raw_excerpt": "4．（2分）小冬和小虎玩摸球游戏（如图），每次摸完放回。下面说法正确的是（　　）\n​\n\nA．第一次摸的是白球，第二次一定会摸到黑球\t\nB．一共摸了60次，一定摸了30次白球、30次黑球\t\nC．如果摸100次，不可能摸到50次白球、50次黑球\t\nD．摸的次数越多，摸到白球的次数和黑球的次数就越接近",
+      "_image_skip_reason": "text_self_contained_image_decorative"
     },
     {
       "subject": "math",
       "grade": 6,
       "source": "realpaper_g6_math_beishida_xsc_longhua_001",
-      "round": 3,
-      "type": "choice",
-      "chapter": "小升初综合",
-      "knowledge_point": "总复习/图形与几何综合",
-      "content": "一个三角形被遮住了一部分，露出的角是 $60°$。下面说法正确的是（　　）。",
-      "options": [
-        "A. 另外两个角可能是 $50°$、$80°$",
-        "B. 不可能是钝角三角形",
-        "C. 可能是等边三角形",
-        "D. 可能是等腰直角三角形"
-      ],
-      "answer": "C",
-      "explanation": "已露 $60°$，另外两角和 $= 120°$。A. $50+80=130°$ ✗。B. 另两角可如 $110°+10°$ → 钝角三角形 ✓ 可能。C. 等边三角形三角都 $60°$ ✓ 可能。D. 等腰直角三角形含 $90°$，但已露 $60°$，余 $120°$ 含 $90°$ 时另一为 $30°$，不等腰；不可能。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_longhua_001",
-      "round": 1,
+      "round": 2,
       "type": "choice",
       "chapter": "比例",
-      "knowledge_point": "正反比例/比例尺",
+      "knowledge_point": "比和比例/比例的意义",
       "content": "「天宫」飞行器上用到一种精密零件，长 $5$ 毫米，画在图纸上它的长 $8$ 厘米。这张图纸的比例尺是（　　）。",
       "options": [
         "A. $5:8$",
@@ -159,25 +157,8 @@
         "D. $16:1$"
       ],
       "answer": "D",
-      "explanation": "$8$ cm $= 80$ mm。比例尺 $= 80:5 = 16:1$（放大）。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_longhua_001",
-      "round": 2,
-      "type": "choice",
-      "chapter": "小升初综合",
-      "knowledge_point": "总复习/数与代数综合",
-      "content": "$\\text{A}4$ 纸的面积是 $\\text{A}3$ 纸的一半，$\\text{A}3$ 纸的面积是 $\\text{A}2$ 纸的一半。按照这样的编号规则，$\\text{A}5$ 纸的面积是 $\\text{A}2$ 纸的（　　）。",
-      "options": [
-        "A. $\\dfrac{1}{2}$",
-        "B. $\\dfrac{1}{4}$",
-        "C. $\\dfrac{1}{8}$",
-        "D. $\\dfrac{1}{16}$"
-      ],
-      "answer": "C",
-      "explanation": "$\\text{A}5 = \\dfrac{1}{2}\\text{A}4 = \\dfrac{1}{4}\\text{A}3 = \\dfrac{1}{8}\\text{A}2$。"
+      "explanation": "图上 $8$ 厘米 $=80$ 毫米，实际 $5$ 毫米。比例尺 $=$ 图上 : 实际 $=80:5=16:1$（放大比例尺）。",
+      "_raw_excerpt": "6．（2分）“天宫”飞行器上用到一种精密零件，长5毫米，画在图纸上它的长8厘米，这张图纸的比例尺是（　　）\nA．5：8\tB．8：5\tC．1：16\tD．16：1"
     },
     {
       "subject": "math",
@@ -185,23 +166,13 @@
       "source": "realpaper_g6_math_beishida_xsc_longhua_001",
       "round": 2,
       "type": "fill",
-      "chapter": "小升初综合",
-      "knowledge_point": "总复习/解决问题策略",
-      "content": "六（$1$）班有男生 $22$ 人，是女生人数的 $\\dfrac{11}{10}$。\n\n女生有（　　）人。",
-      "answer": "20",
-      "explanation": "女生 $= 22\\div\\dfrac{11}{10} = 22\\times\\dfrac{10}{11} = 20$ 人。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_longhua_001",
-      "round": 1,
-      "type": "fill",
-      "chapter": "小升初综合",
+      "chapter": "总复习",
       "knowledge_point": "总复习/图形与几何综合",
-      "content": "用圆规画一个圆，圆规两脚尖之间的距离是 $3$ cm（即圆的半径）。$\\pi$ 取 $3.14$。\n\n这个圆的周长是（　　）cm。",
+      "content": "用圆规画一个圆，如果圆规两脚尖之间的距离是 $3$ cm，这个圆的周长是 ____ cm。",
+      "options": [],
       "answer": "18.84",
-      "explanation": "$C = 2\\pi r = 2\\times 3.14\\times 3 = 18.84$ cm。"
+      "explanation": "圆规两脚尖之间的距离 $=$ 圆的半径 $=3$ cm。周长 $C=2\\pi r=2\\times 3.14\\times 3=18.84$ cm（$\\pi$ 取 $3.14$）。",
+      "_raw_excerpt": "10．（3分）用圆规画一个圆，如果圆规两脚尖之间的距离是3cm，这个圆的周长是　        　cm．"
     },
     {
       "subject": "math",
@@ -209,45 +180,42 @@
       "source": "realpaper_g6_math_beishida_xsc_longhua_001",
       "round": 2,
       "type": "fill",
-      "chapter": "小升初综合",
+      "chapter": "总复习",
       "knowledge_point": "总复习/数与代数综合",
-      "content": "有一把玩具密码锁，密码是一个两位数，它既是 $9$ 的倍数，又是 $18$ 的因数。\n\n这把密码锁的密码是（　　）。",
+      "content": "有一把玩具密码锁，密码是一个两位数，它既是 $9$ 的倍数，又是 $18$ 的因数，这把密码锁的密码是 ____ 。",
+      "options": [],
       "answer": "18",
-      "explanation": "$18$ 的因数：$1,2,3,6,9,18$。其中两位数且是 $9$ 倍数 → 仅 $18$。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_longhua_001",
-      "round": 2,
-      "type": "fill",
-      "chapter": "小升初综合",
-      "knowledge_point": "总复习/数与代数综合",
-      "group_id": "xsc_longhua_001_q13",
-      "group_order": 1,
-      "content": "用小棒搭六边形（共边相连）：搭 $1$ 个用 $6$ 根，搭 $2$ 个用 $11$ 根 ……\n\n1. 搭 $7$ 个六边形需要（　　）根小棒。",
-      "answer": "36",
-      "explanation": "每多搭 $1$ 个增加 $5$ 根。$7$ 个 $= 6 + 5\\times 6 = 36$ 根。"
+      "explanation": "$18$ 的因数：$1, 2, 3, 6, 9, 18$。其中两位数只有 $18$。$18$ 是 $9$ 的倍数（$9\\times 2=18$）。所以密码是 $18$。",
+      "_raw_excerpt": "11．（3分）有一把玩具密码锁，密码是一个两位数，它既是9的倍数，又是18的因数，这把密码锁的密码是 　     　。"
     },
     {
       "subject": "math",
       "grade": 6,
       "source": "realpaper_g6_math_beishida_xsc_longhua_001",
       "round": 3,
-      "type": "choice",
-      "chapter": "小升初综合",
-      "knowledge_point": "总复习/数与代数综合",
-      "group_id": "xsc_longhua_001_q13",
-      "group_order": 2,
-      "content": "用小棒搭六边形（共边相连）：搭 $1$ 个用 $6$ 根，搭 $2$ 个用 $11$ 根 ……\n\n2. 搭 $n$ 个六边形需要（　　）根小棒。",
-      "options": [
-        "A. $5n+1$",
-        "B. $5n-1$",
-        "C. $6n$",
-        "D. $6n-1$"
-      ],
-      "answer": "A",
-      "explanation": "搭 $1$ 个 $= 6 = 5\\times 1 + 1$；搭 $n$ 个 $= 5n + 1$。"
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "数学实践课上，淘气用小棒搭六边形（如图），搭 $1$ 个六边形要用 $6$ 根小棒，搭 $2$ 个六边形要 $11$ 根小棒……像这样搭 $7$ 个六边形，需要 ____ 根小棒；搭 $n$ 个六边形需要 ____ 根小棒。",
+      "options": [],
+      "answer": "36|||5n+1",
+      "explanation": "规律：每多搭一个六边形（共边相接）增加 $5$ 根小棒。搭 $1$ 个 $6$ 根，搭 $2$ 个 $6+5=11$ 根，搭 $3$ 个 $6+5\\times 2=16$ 根。搭 $7$ 个 $=6+5\\times 6=36$ 根。搭 $n$ 个 $=6+5(n-1)=5n+1$ 根。",
+      "_raw_excerpt": "13．（3分）数学实践课上，淘气用小棒搭六边形（如图），搭1个六边形要用6根小棒，搭2个六边形要11根小棒……像这样搭7个六边形，需要 　     　根小棒；搭n个六边形需要 　         　根小棒。\n​",
+      "_image_skip_reason": "text_self_contained_image_decorative"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longhua_001",
+      "round": 4,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "一个长为 $10$ cm 的长方体截成 $3$ 段后，表面积增加了 $32$ cm²。原来长方体的体积是 ____ cm³。",
+      "options": [],
+      "answer": "80",
+      "explanation": "长方体长 $10$ cm，截 $3$ 段产生 $2$ 个截面，每截面增加 $2$ 个相同的面（一刀产生 $2$ 个新面）。共增加 $4$ 个底面，每个底面 $=32\\div 4=8$ cm²（即长方体的横截面积）。原体积 $=$ 横截面积 $\\times$ 长 $=8\\times 10=80$ cm³。",
+      "_raw_excerpt": "14．（3分）如图，一个长为10cm的长方体截成3段后表面积增加了32cm2。原来长方体的体积是 　     　cm3。\n​"
     },
     {
       "subject": "math",
@@ -255,35 +223,13 @@
       "source": "realpaper_g6_math_beishida_xsc_longhua_001",
       "round": 2,
       "type": "fill",
-      "chapter": "小升初综合",
+      "chapter": "总复习",
       "knowledge_point": "总复习/解决问题策略",
-      "content": "甲、乙两工程队铺一条长 $1800$ m 的公路，从两端同时施工。甲队每天铺 $70$ m，乙队每天铺 $80$ m。\n\n（　　）天后能够铺完这条公路。",
+      "content": "甲、乙两工程队铺一条长 $1800$ m 的公路，他们从两端同时施工，甲队每天铺 $70$ m，乙队每天铺 $80$ m，几天后能够铺完这条公路？",
+      "options": [],
       "answer": "12",
-      "explanation": "速度和 $= 70+80 = 150$ m/天；时间 $= 1800\\div 150 = 12$ 天。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_longhua_001",
-      "round": 3,
-      "type": "fill",
-      "chapter": "小升初综合",
-      "knowledge_point": "总复习/解决问题策略",
-      "content": "妙想妈妈在一块长 $20$ m、宽 $15$ m 的长方形地上种植鲜花。今年她进行了扩建，宽不变，长增加了 $\\dfrac{1}{4}$（即新长 $= 20\\times(1+\\dfrac{1}{4})=25$ m）。每平方米土地的鲜花卖 $200$ 元。\n\n今年这块地种植的鲜花可以卖（　　）元。",
-      "answer": "75000",
-      "explanation": "新面积 $= 25\\times 15 = 375\\,\\text{m}^2$；总收入 $= 375\\times 200 = 75000$ 元。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_longhua_001",
-      "round": 2,
-      "type": "fill",
-      "chapter": "小升初综合",
-      "knowledge_point": "总复习/解决问题策略",
-      "content": "$\\text{A}$ 品牌牙膏原价 $15.4$ 元/支。亮亮家想买 $3$ 支。\n\n乙商城每满 $45$ 元减 $10$ 元。\n\n乙商城需付（　　）元。",
-      "answer": "36.2",
-      "explanation": "$15.4\\times 3 = 46.2$ 元（满 $45$ 一档），$46.2-10 = 36.2$ 元。所以乙更便宜。"
+      "explanation": "两队合铺速度 $=70+80=150$ m/天。$1800\\div 150=12$ 天。",
+      "_raw_excerpt": "18．（5分）甲、乙两工程队铺一条长1800m的公路，他们从两端同时施工，甲队每天铺70m，乙队每天铺80m，几天后能够铺完这条公路？"
     },
     {
       "subject": "math",
@@ -293,9 +239,12 @@
       "type": "fill",
       "chapter": "圆柱与圆锥",
       "knowledge_point": "圆柱与圆锥/圆柱的体积",
-      "content": "$\\text{A}$ 品牌牙膏管开口为圆柱形，开口直径 $6$ mm。每次刷牙挤约 $10$ mm 长的牙膏。$\\pi$ 取 $3.14$。\n\n挤出的牙膏约（　　）立方毫米。",
+      "content": "$\\text{A}$ 品牌牙膏管开口一般为圆柱形。亮亮家经常用 $\\text{A}$ 品牌牙膏，开口直径是 $6$ mm（如图）。他每次刷牙都挤约 $10$ mm 长的牙膏，挤出的牙膏约多少立方毫米？",
+      "options": [],
       "answer": "282.6",
-      "explanation": "$V = \\pi r^2 h = 3.14\\times 3^2\\times 10 = 282.6\\,\\text{mm}^3$。"
+      "explanation": "牙膏挤出形状近似圆柱：底面半径 $r=6\\div 2=3$ mm，高 $h=10$ mm。体积 $V=\\pi r^{2}h=3.14\\times 9\\times 10=282.6$ 立方毫米（$\\pi$ 取 $3.14$）。",
+      "_raw_excerpt": "21．（20分）牙膏是我们必不可少的生活用品。\n（1）A品牌牙膏原价是15.4元/支，“618”购物节优惠活动如下：\n甲商城：一律八折：乙商城：每满45元减10元。亮亮家想买3支这款牙膏，哪家商城更优惠？请说明理由。\n（2）牙膏盒形状如下图，如果要将3盒牙膏包装在一起，最少需要多大的包装纸？（接口处不算）\n​\n（3）牙膏管开口一般为圆柱形。亮亮家经常用A品牌牙膏，开口直径是6mm（如图）。他每次刷牙都挤约10mm长的牙膏，挤出的牙膏约多少立方毫米？\n​\n（4）A品牌牙膏公司推出一款新包装，将旧牙膏管6mm的开口直径扩大1mm，牙膏管的容量不变。假设这款牙膏的用户群不变，刷牙习惯不变，每次都使用10mm长的牙膏，每次使用牙膏的体积增加了百分之几？牙膏的单价不变，公司发现营业额却增加了。为什么？请说明理由。（计算参考：3.14×12.25＝38.465 102.05÷282.6≈0.36）\n\n2023年广东省深圳市龙华区小升初数学试卷\n参考答案与试题解析",
+      "_image_skip_reason": "text_self_contained_image_decorative"
     }
   ]
 }

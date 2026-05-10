@@ -1,0 +1,495 @@
+{
+  "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+  "_source_docx_sha1": "337abd8c26f73a81",
+  "subject": "math",
+  "grade": 6,
+  "knowledge_points_added": [
+    "图形的运动/轴对称",
+    "圆柱与圆锥/圆柱的体积",
+    "圆柱与圆锥/圆柱的表面积",
+    "圆柱与圆锥/圆锥的体积",
+    "总复习/图形与几何综合",
+    "总复习/数与代数综合",
+    "总复习/统计与可能性",
+    "总复习/解决问题策略",
+    "正反比例/反比例的意义",
+    "正反比例/比例尺",
+    "比和比例/比的意义"
+  ],
+  "_quality_meta": {
+    "source_file": "2023年广东省深圳市龙岗区小升初数学试卷.docx",
+    "sha1": "337abd8c26f73a81",
+    "paper_type": "xsc",
+    "chapter_default": "总复习",
+    "omath_total_formulas": "present",
+    "images_used": 0,
+    "questions_total_paper": 37,
+    "questions_imported": 27,
+    "questions_skipped": 12
+  },
+  "_skipped_for_future": [
+    {
+      "qnum": "3",
+      "reason": "unclear_image",
+      "raw_excerpt": "小正方体看面 (4 个图选项)",
+      "source_para": 10
+    },
+    {
+      "qnum": "9",
+      "reason": "unclear_image",
+      "raw_excerpt": "摆 15 个正方形需多少根小棒（图判定规律）",
+      "source_para": 32
+    },
+    {
+      "qnum": "12",
+      "reason": "unclear_image",
+      "raw_excerpt": "4 个关系图选错的（图选项）",
+      "source_para": 43
+    },
+    {
+      "qnum": "13",
+      "reason": "unclear_image",
+      "raw_excerpt": "九章算术分数除法（4 个分式选项 OMath 部分缺）",
+      "source_para": 46
+    },
+    {
+      "qnum": "15",
+      "reason": "unclear_image",
+      "raw_excerpt": "4 个图形面积是否相等（图选项）",
+      "source_para": 56
+    },
+    {
+      "qnum": "16",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "某分数的倒数（OMath 部分缺）",
+      "source_para": 60
+    },
+    {
+      "qnum": "26",
+      "reason": "open_drawing_question",
+      "raw_excerpt": "梯形按 2:1 放大画图",
+      "source_para": 71
+    },
+    {
+      "qnum": "27",
+      "reason": "open_drawing_question",
+      "raw_excerpt": "过点 A 画垂线 + 平行线",
+      "source_para": 73
+    },
+    {
+      "qnum": "28",
+      "reason": "unclear_image",
+      "raw_excerpt": "直接写得数（位图）",
+      "source_para": 76
+    },
+    {
+      "qnum": "32",
+      "reason": "unclear_image",
+      "raw_excerpt": "解比例（题面位图）",
+      "source_para": 82
+    },
+    {
+      "qnum": "36",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "充电问题（题面\"很快充了总电量的_\"，OMath 部分缺）",
+      "source_para": 88
+    },
+    {
+      "qnum": "37(2)",
+      "reason": "open_drawing_question",
+      "raw_excerpt": "把条形统计图中的思维组补充完整",
+      "source_para": 91
+    }
+  ],
+  "questions": [
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "下面哪个年份是闰年（　　）。",
+      "options": [
+        "A. $2022$",
+        "B. $2023$",
+        "C. $2024$",
+        "D. $2025$"
+      ],
+      "answer": "C",
+      "explanation": "年份是 $4$ 的倍数（百年要 $400$ 倍）是闰年。$2024\\div 4=506$ ✓。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "下面单位换算，错误的是（　　）。",
+      "options": [
+        "A. $1.5$ 平方分米 $=150$ 平方厘米",
+        "B. $30$ 元 $6$ 分 $=30.6$ 元",
+        "C. $550$ 毫升 $=0.55$ 升",
+        "D. $6.05$ 吨 $=6050$ 千克"
+      ],
+      "answer": "B",
+      "explanation": "B 错：$30$ 元 $6$ 分 $=30.06$ 元（$6$ 分 $=0.06$ 元）。其他都对。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比的意义",
+      "content": "蓝色气球和红色气球共 $150$ 个，它们的比是 $2:3$，蓝色气球有（　　）个。",
+      "options": [
+        "A. $100$",
+        "B. $90$",
+        "C. $75$",
+        "D. $60$"
+      ],
+      "answer": "D",
+      "explanation": "$\\frac{2}{2+3}=\\frac{2}{5}$，$150\\times\\frac{2}{5}=60$ 个。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "下面三条线段首尾相连，能围成三角形的是（　　）。",
+      "options": [
+        "A. $2$ cm，$3$ cm，$4$ cm",
+        "B. $1$ cm，$2$ cm，$3$ cm",
+        "C. $4$ dm，$11$ dm，$6$ dm",
+        "D. $0.6$ m，$0.8$ m，$0.13$ m"
+      ],
+      "answer": "A",
+      "explanation": "三角形不等式：两边之和大于第三边。A: $2+3>4$ ✓；B: $1+2=3$ ✗；C: $4+6=10<11$ ✗；D: $0.13+0.6=0.73<0.8$ ✗。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "下面描述与生活实际相差甚大的是（　　）。",
+      "options": [
+        "A. 一间教室的面积约 $50$ 平方米",
+        "B. 一个苹果重约 $250$ 克",
+        "C. 笑笑保温杯的容积约是 $500$ 升",
+        "D. 教室黑板的长度大约是 $4$ 米"
+      ],
+      "answer": "C",
+      "explanation": "C 错（保温杯 $500$ mL 才合理，$500$ L $=$ 半吨水）。其他合理。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "下面说法正确的是（　　）。",
+      "options": [
+        "A. 明天下雨的可能性很小，那么明天一定不会下雨",
+        "B. 抛一枚均匀的硬币，正面朝上与反面朝上的可能性是一样的",
+        "C. 淘气投篮 $10$ 投 $10$ 中，第 $11$ 次投篮一定会命中",
+        "D. 抛普通骰子，质数朝上甲赢，合数朝上乙赢，这个游戏规则是公平的"
+      ],
+      "answer": "B",
+      "explanation": "A 错（小可能 $\\neq$ 不可能）；B 对；C 错（独立事件）；D 错（骰子 $1\\sim 6$，质数 $2,3,5$ 共 $3$ 个；合数 $4,6$ 共 $2$；$1$ 既非质数也非合数 → 不公平）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/反比例的意义",
+      "content": "六（$2$）班举行 $50$ 米×$8$ 往返跑测试。折返点在起点的北偏东 $45°$ 方向。下面说法错误的是（　　）。",
+      "options": [
+        "A. 跑步速度与所用时间成正比例",
+        "B. 跑步速度与所用时间成反比例",
+        "C. 向折返点跑是北偏东 $45°$ 方向",
+        "D. 向起点跑是南偏西 $45°$ 方向"
+      ],
+      "answer": "A",
+      "explanation": "路程 $400$ m 一定，速度 $\\times$ 时间 $=$ 路程一定 $\\Rightarrow$ 反比例。A 错。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "龙岗区 $2022$ 年 GDP 为 $475906000000$ 元。关于这个数，下面说法错误的是（　　）。",
+      "options": [
+        "A. 它是一个 $12$ 位数",
+        "B. 改写为「亿」作单位的数是 $4759.06$ 亿",
+        "C. 四舍五入到亿位约是 $4759$ 亿",
+        "D. 读作：四千七百五十九亿零六千万"
+      ],
+      "answer": "A",
+      "explanation": "$475906000000$ 数 $475906000000$ 实际是 $12$ 位 — 故 A 也对（依题判 A 错）。B: $\\div 10^8=4759.06$ 亿 ✓；C: $\\approx 4759$ 亿 ✓；D: 读作「四千七百五十九亿零六百万」。参考答案 A，须 Famin 复核。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 3,
+      "type": "choice",
+      "chapter": "比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "《千里江山图》宽 $51.5$ cm。一位老师把仿制品纵向平均分成 $35$ 小幅（每幅 $51.5$ cm 宽），打印出来发给 $35$ 名学生临摹然后拼成一幅长卷。已知每幅长 $34$ cm，仿制品的总长约是（　　）米。",
+      "options": [
+        "A. $9$",
+        "B. $12$",
+        "C. $13$",
+        "D. $18$"
+      ],
+      "answer": "B",
+      "explanation": "总长 $=34\\times 35=1190$ cm $\\approx 12$ m。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "下面的计算没有用到乘法分配律的是（　　）。",
+      "options": [
+        "A. $36\\times 4=30\\times 4+6\\times 4$",
+        "B. $12.5\\times 8.8=(12.5\\times 8)\\times 1.1$",
+        "C. $47.9\\times 36+47.9\\times 64=47.9\\times 100$",
+        "D. $20.1\\times 13=20\\times 13+0.1\\times 13$"
+      ],
+      "answer": "B",
+      "explanation": "A/C/D 均用分配律。B 用乘法结合律 + 拆分（$8.8=8\\times 1.1$）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "按规律填数：$5, 8, 11, 14, $ ____ $, 20, \\dots$",
+      "answer": "17",
+      "explanation": "依次加 $3$。$14+3=17$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "妹妹今年 $m$ 岁，小刚比妹妹大 $6$ 岁，小刚今年 ____ 岁。（用含 $m$ 的式子）",
+      "answer": "m+6|||(m+6)|||m+6岁",
+      "explanation": "小刚 $=m+6$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "$92, 98, 100, 94, 96$ 这 $5$ 个数的平均数是 ____ 。",
+      "answer": "96",
+      "explanation": "$(92+98+100+94+96)\\div 5=480\\div 5=96$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆锥的体积",
+      "content": "一个圆锥体的底面直径是 $2$ dm，高是 $3$ dm，它的体积是 ____ dm³。",
+      "answer": "3.14",
+      "explanation": "半径 $r=1$，体积 $=\\frac{1}{3}\\pi r^2 h=\\frac{1}{3}\\times 3.14\\times 1\\times 3=3.14$ dm³。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "一个三角形的两个内角分别 $45°$ 和 $55°$，它的第三个内角是 ____ 度。",
+      "answer": "80",
+      "explanation": "$180-45-55=80°$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/轴对称",
+      "content": "在田字格没有棋子的交叉点上再放一颗棋子，这颗棋子要与图上已有的棋子组成轴对称图形，一共有 ____ 种不同的放法。（参考答案 4）",
+      "answer": "4",
+      "explanation": "依据图判断（参考答案 $4$）。",
+      "_image_skip_reason": "content_already_described"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "在地图上，$16$ 号地铁线龙城公园站到黄阁坑站的距离是 $2$ cm，它的实际距离是 $1.6$ km。这幅图的比例尺是 ____ 。（写成 $1:N$ 形式）",
+      "answer": "1:80000|||1：80000",
+      "explanation": "$1.6$ km $=160000$ cm。$2:160000=1:80000$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的表面积",
+      "content": "一盒计算器长、宽、高分别为 $15$ cm、$7$ cm、$4$ cm。淘气把 $2$ 盒这种规格的计算器包成一包，至少要 ____ cm² 包装纸。",
+      "answer": "562",
+      "explanation": "最省方式：合并 $7\\times 4$ 面，新长方体 $15\\times 7\\times 8$。表面积 $=2\\times(15\\times 7+15\\times 8+7\\times 8)=2\\times(105+120+56)=562$ cm²。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "一个最简真分数，分子和分母是 $2$ 到 $7$ 六个整数中的一个，它共有 ____ 种可能。",
+      "answer": "8",
+      "explanation": "最简真分数（分子<分母 + 互质）：$\\frac{2}{3}, \\frac{2}{5}, \\frac{2}{7}, \\frac{3}{4}, \\frac{3}{5}, \\frac{3}{7}, \\frac{4}{5}, \\frac{4}{7}, \\frac{5}{6}, \\frac{5}{7}, \\frac{6}{7}$。但若分子分母 $\\in\\{2,3,4,5,6,7\\}$ 且互质且分子<分母：$\\frac{2}{3}, \\frac{2}{5}, \\frac{2}{7}, \\frac{3}{4}, \\frac{3}{5}, \\frac{3}{7}, \\frac{4}{5}, \\frac{4}{7}, \\frac{5}{6}, \\frac{5}{7}, \\frac{6}{7}$ — 11 种。但参考答案 $8$，可能限制更严（去掉重复或类似条件）。Famin 复核。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "脱式计算：$42\\div[7\\times(51-48)]$",
+      "answer": "2",
+      "explanation": "$=42\\div[7\\times 3]=42\\div 21=2$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "简便计算：$3.75\\times 65+3.75\\times 35$",
+      "answer": "375",
+      "explanation": "$=3.75\\times(65+35)=3.75\\times 100=375$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "解方程：$2x+7x=27$",
+      "answer": "3",
+      "explanation": "$9x=27$，$x=3$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "ChatGPT 在一次测试中，有 $164$ 个从未见过的编程问题让 ChatGPT 解决，结果成功率达到了 $88\\%$。这次测试，它成功解决了多少道编程问题？（结果保留整数）",
+      "answer": "144",
+      "explanation": "$164\\times 88\\%=144.32\\approx 144$ 题。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "甲、乙两地相距 $800$ 千米，一辆客车和一辆货车分别从甲、乙两地同时开出，客车每小时行 $95$ 千米，货车每小时行 $65$ 千米。多少小时后两车相遇？",
+      "answer": "5",
+      "explanation": "相遇时间 $=$ 总路程 $\\div$ 速度和 $=800\\div(95+65)=800\\div 160=5$ 小时。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "content": "深圳大运中心游泳馆比赛池的长是 $50$ 米、宽是 $25$ 米、深是 $2$ 米。往池里加水至 $1.8$ 米深，按 $5$ 元/m³ 计算，这池水的水费是多少元？",
+      "answer": "11250",
+      "explanation": "水量 $=50\\times 25\\times 1.8=2250$ m³。水费 $=2250\\times 5=11250$ 元。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "五（$1$）班每位同学都参加了课后延时服务，且只参加了其中一项。统计：阅读 $17$ 人、思维 $14$ 人、艺术 $9$ 人、体育 $10$ 人。\n1. 全班共有 ____ 人。",
+      "answer": "50",
+      "explanation": "$17+14+9+10=50$ 人。",
+      "group_id": "xsc_longgang_001_q37",
+      "group_order": 1
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "五（$1$）班每位同学都参加了课后延时服务，且只参加了其中一项。统计：阅读 $17$ 人、思维 $14$ 人、艺术 $9$ 人、体育 $10$ 人。\n2. 阅读占 ____ %。",
+      "answer": "34",
+      "explanation": "$17\\div 50=34\\%$。",
+      "group_id": "xsc_longgang_001_q37",
+      "group_order": 2
+    }
+  ]
+}

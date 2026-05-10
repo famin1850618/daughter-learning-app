@@ -1,0 +1,419 @@
+{
+  "source": "realpaper_g6_math_beishida_qm_futian_001",
+  "_source_docx_sha1": "26dbf270df417225",
+  "subject": "math",
+  "grade": 6,
+  "knowledge_points_added": [],
+  "_quality_meta": {
+    "source_file": "精品解析：2020-2021学年广东省深圳市福田区北师大版六年级下册期末测试数学试卷（解析版）.docx",
+    "sha1": "26dbf270df417225",
+    "paper_type": "midterm",
+    "chapter_default": "总复习",
+    "omath_total_formulas": 0,
+    "omath_para_count": 0,
+    "images_used": 0,
+    "questions_total_paper": 40,
+    "questions_imported": 21,
+    "questions_skipped": 19
+  },
+  "_skipped_for_future": [
+    {
+      "qnum": "3",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "涂色三角形比例互化（图形需看图判涂色面积）",
+      "source_para": 15
+    },
+    {
+      "qnum": "8",
+      "reason": "unclear_image",
+      "raw_excerpt": "7 个点连成两个长方形（图归属歧义）",
+      "source_para": 73
+    },
+    {
+      "qnum": "11",
+      "reason": "unclear_image",
+      "raw_excerpt": "4 组图形关系判断（4 选项均图）",
+      "source_para": 110
+    },
+    {
+      "qnum": "18",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "折线统计图（家到图书馆距离时间）需看图",
+      "source_para": 200
+    },
+    {
+      "qnum": "20",
+      "reason": "unclear_image",
+      "raw_excerpt": "小棒摆六边形规律图",
+      "source_para": 221
+    },
+    {
+      "qnum": "22",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "圆柱拼长方体表面积增加量（需看图判增加部分）",
+      "source_para": 245
+    },
+    {
+      "qnum": "23",
+      "reason": "unclear_image",
+      "raw_excerpt": "三视图选项均图",
+      "source_para": 254
+    },
+    {
+      "qnum": "25",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "直接写得数（4 题算式以位图嵌入）",
+      "source_para": 273
+    },
+    {
+      "qnum": "26-39",
+      "reason": "computation_visual_mix",
+      "raw_excerpt": "求未知数/递等式/递等式/解决问题等多含位图算式或图，部分可救但需逐题判图（本批跳）"
+    },
+    {
+      "qnum": "40",
+      "reason": "open_drawing_question",
+      "raw_excerpt": "操作题（含画图/补统计图）"
+    }
+  ],
+  "questions": [
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "group_id": "qm_futian_001_q1",
+      "group_order": 1,
+      "content": "$2021$ 年第七次全国人口普查显示：全国人口总量为 $1411780000$ 人。\n\n1. $1411780000$ 读作（　　）。",
+      "options": [
+        "A. 一十四亿一千一百七十八万",
+        "B. 一十四亿一千一百七十八",
+        "C. 一百四十一亿一千七百八十万",
+        "D. 一十四亿一千一百七十八千"
+      ],
+      "answer": "A",
+      "explanation": "$1411780000 = 14$ 亿 $1178$ 万，读作一十四亿一千一百七十八万。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "group_id": "qm_futian_001_q1",
+      "group_order": 2,
+      "content": "$2021$ 年第七次全国人口普查显示：男性人口 $723340000$ 人。\n\n2. $723340000$ 改写成用万作单位的数是（　　）万。",
+      "answer": "72334",
+      "explanation": "$723340000\\div 10000 = 72334$ 万。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "group_id": "qm_futian_001_q1",
+      "group_order": 3,
+      "content": "$2021$ 年第七次全国人口普查显示：女性人口 $688440000$ 人。\n\n3. $688440000$ 省略亿位后面的尾数约是（　　）亿。",
+      "answer": "7",
+      "explanation": "亿位后第一位（千万位）为 $8$，四舍五入向亿位进 $1$，约 $7$ 亿。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/旋转",
+      "group_id": "qm_futian_001_q2",
+      "group_order": 1,
+      "content": "将一条线段的一个端点不动，另一个端点旋转一周。\n\n1. 其轨迹所形成的图形是（　　）。",
+      "answer": "圆",
+      "explanation": "线段一端固定、另一端绕固定端旋转一周，轨迹是一个圆。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "图形的运动",
+      "knowledge_point": "图形的运动/旋转",
+      "group_id": "qm_futian_001_q2",
+      "group_order": 2,
+      "content": "将一个半圆形沿着它的直径旋转一周。\n\n2. 其轨迹所形成的图形是（　　）。",
+      "answer": "球体",
+      "explanation": "半圆面绕直径旋转一周形成球体。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比例的基本性质",
+      "content": "在一个比例里，两个外项互为倒数，其中一个内项是 $4$。\n\n另一个内项是（　　）。",
+      "options": [
+        "A. $\\dfrac{1}{4}$",
+        "B. $\\dfrac{1}{2}$",
+        "C. $4$",
+        "D. $0.4$"
+      ],
+      "answer": "A",
+      "explanation": "两外项互为倒数，乘积为 $1$。两内项积 $=$ 两外项积 $= 1$，所以另一个内项 $= 1\\div 4 = \\dfrac{1}{4}$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "一个电子零件的实际长度是 $2$ 毫米，画在图纸上的长度是 $8$ 厘米，这张图纸的比例尺是（　　）。（写成 $a:b$ 形式）",
+      "answer": "40:1",
+      "explanation": "$8$ cm $= 80$ mm，比例尺 $= 80:2 = 40:1$（放大）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "一个等腰三角形的两个角的度数比是 $2:3$，这个等腰三角形如果按角分是（　　）三角形。（填「锐角「「直角「或「钝角「）",
+      "answer": "锐角",
+      "explanation": "等腰三角形两腰对角相等，所以三角度数比可能是 $2:3:2$ 或 $2:3:3$。$2:3:2$ → 三角分别约 $51.4°,77.1°,51.4°$（全锐角）；$2:3:3$ → $45°,67.5°,67.5°$（全锐角）。两种都是锐角三角形。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "group_id": "qm_futian_001_q7",
+      "group_order": 1,
+      "content": "体育锻炼标准规定：六年级女生 $1$ 分钟跳绳达到 $152$ 个为优秀，超过 $152$ 用正数表示。田田班 $10$ 名女生成绩记作：$+3$，$+11$，$+3$，$+0$，$+5$，$+7$，$+13$，$-4$，$-2$，$0$。\n\n1. 这 $10$ 名女生 $1$ 分钟跳绳的平均成绩是（　　）个。",
+      "answer": "155.6",
+      "explanation": "总数 $= 152\\times 10 + (3+11+3+5+7+13-4-2) = 1520 + 36 = 1556$；平均 $= 1556\\div 10 = 155.6$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "group_id": "qm_futian_001_q7",
+      "group_order": 2,
+      "content": "体育锻炼标准规定：六年级女生 $1$ 分钟跳绳达到 $152$ 个为优秀。田田班 $10$ 名女生成绩相对 $152$ 记作：$+3$，$+11$，$+3$，$+0$，$+5$，$+7$，$+13$，$-4$，$-2$，$0$。\n\n2. 这 $10$ 名女生 $1$ 分钟跳绳的优秀率是（　　）%。",
+      "answer": "80",
+      "explanation": "达到优秀（$\\geq 152$）的有 $+3,+11,+3,+0,+5,+7,+13,0$ 共 $8$ 人。优秀率 $= 8\\div 10 = 80\\%$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "摄氏温度和华氏温度的关系是：$T\\,°\\text{F} = 1.8t\\,°\\text{C} + 32$（$t$ 为摄氏温度数，$T$ 为华氏温度数）。\n\n如果一个人的体温是 $37\\,°\\text{C}$，那么这个人的体温转化成华氏温度是（　　）$°\\text{F}$。",
+      "answer": "98.6",
+      "explanation": "$T = 1.8\\times 37 + 32 = 66.6 + 32 = 98.6\\,°\\text{F}$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "下列单位换算正确的是（　　）。",
+      "options": [
+        "A. $2$ 平方千米 $= 2000$ 公顷",
+        "B. $1$ 小时 $25$ 分 $= 1.25$ 小时",
+        "C. $0.64$ 立方米 $= 640$ 毫升",
+        "D. $\\dfrac{7}{8}$ 吨 $= 875$ 千克"
+      ],
+      "answer": "D",
+      "explanation": "A 错（$2$ 平方千米 $= 200$ 公顷）。B 错（$25$ 分 $\\approx 0.42$ 时，$1$ 时 $25$ 分 $\\approx 1.42$ 时）。C 错（$0.64$ 立方米 $= 640000$ 毫升）。D 正确（$\\dfrac{7}{8}\\times 1000 = 875$ 千克）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_001",
+      "round": 3,
+      "type": "choice",
+      "chapter": "数学好玩",
+      "knowledge_point": "数学综合/神奇的几何变换",
+      "content": "把一张已画三等分线的长方形纸条做成一个莫比乌斯圈，然后沿它的三等分线剪开。下面说法正确的是（　　）。",
+      "options": [
+        "A. 需要剪 $2$ 次（剪 $1$ 次指沿一条等分线剪一圈）",
+        "B. 可得到 $3$ 个大小一样的纸环",
+        "C. 可以得到 $2$ 个大小一样的纸环",
+        "D. 可以得到 $1$ 个大纸环和 $1$ 个小纸环（互相套连）"
+      ],
+      "answer": "D",
+      "explanation": "沿莫比乌斯圈的三等分线剪开，因纸圈在制作时一线尾接另一线头，最终形成一线一周（剪 $1$ 圈即可），结果是 $1$ 个大环 $+ 1$ 个小环互套连。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_001",
+      "round": 3,
+      "type": "choice",
+      "chapter": "数学好玩",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "下面各组数，通过「$24$ 点」规则（用加减乘除和括号）不能得到 $24$ 的是（　　）。",
+      "options": [
+        "A. $1, 1, 5, 5$",
+        "B. $1, 1, 6, 6$",
+        "C. $1, 1, 7, 7$",
+        "D. $1, 1, 8, 8$"
+      ],
+      "answer": "C",
+      "explanation": "A. $(5-1)\\times(5+1) = 4\\times 6 = 24$。B. $(6-1-1)\\times 6 = 4\\times 6 = 24$。C. 无法。D. $(1+1)\\times 8 + 8 = 24$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/反比例的意义",
+      "content": "下面两种量成反比例关系的是（　　）。",
+      "options": [
+        "A. 总路程一定，已行驶路程和剩下的路程",
+        "B. 圆锥的底面积一定，圆锥的体积与高",
+        "C. 全班人数一定，出勤人数与出勤率",
+        "D. 完成总时间一定，每个零件所需要时间与所做零件个数"
+      ],
+      "answer": "D",
+      "explanation": "A. 已行 $+$ 剩下 $=$ 总（和一定，不成比例）。B. $V/h = \\dfrac{1}{3}S$（一定）→ 正比例。C. 出勤人数 $\\div$ 出勤率 $=$ 全班（一定）→ 正比例。D. 每零件时间 $\\times$ 个数 $=$ 总时间（一定）→ 反比例 ✓。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "盒子里有黄、白两个材质、形状、大小完全一样的小球各 $1$ 个，闭上眼睛随意摸出 $1$ 个，再放回。结果连续 $5$ 次都摸到了白球。当第六次摸球时，摸到黄球的可能性是（　　）。",
+      "options": [
+        "A. $1$",
+        "B. $\\dfrac{1}{2}$",
+        "C. $\\dfrac{1}{6}$",
+        "D. $\\dfrac{5}{6}$"
+      ],
+      "answer": "B",
+      "explanation": "每次摸球独立，黄、白各 $1$ 个，每次摸到黄球的概率始终是 $\\dfrac{1}{2}$，与前几次结果无关。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比例的意义",
+      "content": "下面各组的两个比，能组成比例的有（　　）组：\n\n① $18:15$ 和 $0.6:0.5$\n② $\\dfrac{1}{4}:\\dfrac{1}{3}$ 和 $\\dfrac{1}{4}:2$\n③ $0.4:0.8$ 和 $0.5:0.2$\n④ $16:8$ 和 $1.2:0.6$",
+      "options": [
+        "A. $1$",
+        "B. $2$",
+        "C. $3$",
+        "D. $4$"
+      ],
+      "answer": "B",
+      "explanation": "① $18:15=1.2$，$0.6:0.5=1.2$ ✓。② 比值不同。③ $0.4:0.8=0.5$，$0.5:0.2=2.5$ ✗。④ $16:8=2$，$1.2:0.6=2$ ✓。共 $2$ 组。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_001",
+      "round": 3,
+      "type": "choice",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+      "content": "如果正方体、圆柱、圆锥的底面积相等，高也相等。下面说法正确的是（　　）。",
+      "options": [
+        "A. 圆柱的体积比正方体的体积小",
+        "B. 圆柱和正方体的表面积相同",
+        "C. 圆柱的体积是圆锥的 $\\dfrac{1}{3}$",
+        "D. 圆锥的体积是正方体的 $\\dfrac{1}{3}$"
+      ],
+      "answer": "D",
+      "explanation": "等底等高，圆柱体积 $=$ 正方体体积 $= Sh$ → A 错。表面积形状不同 → B 错。圆锥 $= \\dfrac{1}{3}$ 圆柱 → C 反了。圆锥 $= \\dfrac{1}{3}$ 正方体 → D ✓。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "卫健委要绘制一张能反映接种「新冠」疫苗与新增「新冠」病例人数变化的统计图，最好选用（　　）。",
+      "options": [
+        "A. 条形统计图",
+        "B. 复式条形统计图",
+        "C. 复式折线统计图",
+        "D. 扇形统计图"
+      ],
+      "answer": "C",
+      "explanation": "两个相关变量随时间变化趋势 → 复式折线统计图最合适（既比较两量、又显示变化趋势）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "田田用 $2$、$5$、$8$ 三张数字卡片摆成了许多三位数。她所摆成的三位数一定是（　　）的倍数。",
+      "options": [
+        "A. $2$",
+        "B. $3$",
+        "C. $5$",
+        "D. $8$"
+      ],
+      "answer": "B",
+      "explanation": "数字之和 $2+5+8=15$（$3$ 的倍数）→ 不论排列顺序，三位数都是 $3$ 的倍数。但个位/末尾不固定，无法保证 $2$、$5$、$8$ 的倍数。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_futian_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "鹏鹏用 $1$ 根 $40$ 厘米的铁丝围成了一个三角形，这个三角形的最长边可能是（　　）厘米。",
+      "options": [
+        "A. $13$",
+        "B. $18$",
+        "C. $20$",
+        "D. $22$"
+      ],
+      "answer": "B",
+      "explanation": "三角形两边和大于第三边 → 最长边小于剩余两边和 $=$ 总周长的 $\\dfrac{1}{2}=20$。所以最长边 $< 20$。$22 \\geq 20$ ✗，$20 \\geq 20$ ✗，$13$ 太小（剩 $27$ 不可能 $13$ 是最长），$18$ 合理。"
+    }
+  ]
+}

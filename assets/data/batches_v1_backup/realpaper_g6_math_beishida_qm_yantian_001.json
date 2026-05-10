@@ -1,0 +1,312 @@
+{
+  "source": "realpaper_g6_math_beishida_qm_yantian_001",
+  "_source_docx_sha1": "d96951574e757d70",
+  "subject": "math",
+  "grade": 6,
+  "knowledge_points_added": [],
+  "_quality_meta": {
+    "source_file": "精品解析：2020-2021学年广东省深圳市盐田区北师大版六年级下册期末测试数学试卷（解析版）.docx",
+    "sha1": "d96951574e757d70",
+    "paper_type": "midterm",
+    "chapter_default": "总复习",
+    "omath_total_formulas": 0,
+    "omath_para_count": 0,
+    "images_used": 0,
+    "questions_total_paper": 40,
+    "questions_imported": 17,
+    "questions_skipped": 23
+  },
+  "_skipped_for_future": [
+    {
+      "qnum": "3",
+      "reason": "unclear_image",
+      "raw_excerpt": "水果店台秤指针读数（图判刻度）"
+    },
+    {
+      "qnum": "5",
+      "reason": "unclear_image",
+      "raw_excerpt": "摄像头位置图判 ABC 哪点最高（图判）"
+    },
+    {
+      "qnum": "8",
+      "reason": "unclear_image",
+      "raw_excerpt": "正方体六面展开图判对面（图判 6 面位置）"
+    },
+    {
+      "qnum": "9",
+      "reason": "subjective_open",
+      "raw_excerpt": "哥德巴赫猜想任意写一例（开放主观）"
+    },
+    {
+      "qnum": "13",
+      "reason": "unclear_image",
+      "raw_excerpt": "圆柱切拼长方体（图判尺寸）"
+    },
+    {
+      "qnum": "14",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "五一抽奖（已入 q16）"
+    },
+    {
+      "qnum": "15",
+      "reason": "unclear_image",
+      "raw_excerpt": "四幅图排列规律 (图判规律)"
+    },
+    {
+      "qnum": "16-20",
+      "reason": "unclear_image_or_visual",
+      "raw_excerpt": "判断题 + 选择题部分含图选项"
+    },
+    {
+      "qnum": "21",
+      "reason": "open_drawing_question",
+      "raw_excerpt": "数对 + 画平行四边形 + 对称 + 缩小（含画图）"
+    },
+    {
+      "qnum": "22",
+      "reason": "unclear_image",
+      "raw_excerpt": "调查统计图 (含画图)"
+    },
+    {
+      "qnum": "23",
+      "reason": "unclear_image",
+      "raw_excerpt": "4 选项图（圆柱切拼）"
+    },
+    {
+      "qnum": "24-25",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "选择题部分文字层不全"
+    },
+    {
+      "qnum": "28",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "游戏卡分配问题（淘气把 1/3 给）"
+    },
+    {
+      "qnum": "29-40",
+      "reason": "computation_visual_mix",
+      "raw_excerpt": "计算+操作+解决问题（位图算式或开放题）"
+    },
+    {
+      "qnum": "5",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "铁丝平均截 10 段占比题：原 docx OMath 段缺铁丝长度数据。worker 第三批擅改\"1/2 米\" → V3.13 主 session 撤回（§1.5 §1.5）。即使数据等价亦不允许 worker 自行填补。",
+      "source_para": null,
+      "_violation": "worker_filled_missing_data_to_match_answer"
+    }
+  ],
+  "questions": [
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_yantian_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "group_id": "qm_yantian_001_q1",
+      "group_order": 1,
+      "content": "$2021$ 年第七次全国人口普查数据。\n\n1. 全国人口共 $1411780000$，把这个数改写成用「亿」作单位的数是（　　）亿。",
+      "answer": "14.1178",
+      "explanation": "$1411780000\\div 10^8 = 14.1178$ 亿。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_yantian_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "group_id": "qm_yantian_001_q1",
+      "group_order": 2,
+      "content": "$2021$ 年男性人口为 $7.2334$ 亿人。\n\n2. $7.2334$ 亿这个数中的数字「$2$」表示 $2$ 个（　　）。（一字回答位值，如「亿」「千万」「百万」等）",
+      "answer": "千万",
+      "explanation": "$7.2334$ 亿 $= 723340000$。$2$ 在千万位，表示 $2$ 个千万。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_yantian_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "group_id": "qm_yantian_001_q1",
+      "group_order": 3,
+      "content": "女性人口为 $68844$ 万人。\n\n3. $68844$ 万「四舍五入」到亿位约是（　　）亿。",
+      "answer": "7",
+      "explanation": "$68844$ 万 $= 6.8844$ 亿，亿位后第一位（千万位）$8\\geq 5$ 进位 → 约 $7$ 亿。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_yantian_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "第 $24$ 届冬奥会将于 $2022$ 年 $2$ 月在我国的北京和张家口举行。\n\n这一年的上半年（$1\\sim 6$ 月）有（　　）天。",
+      "answer": "181",
+      "explanation": "$2022\\div 4$ 余 $2$ → 平年。上半年 $= 31+28+31+30+31+30 = 181$ 天。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_yantian_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "比和比例/比例的意义",
+      "group_id": "qm_yantian_001_q4",
+      "group_order": 1,
+      "content": "已知 $\\dfrac{5}{16}$ 与一系列等价表达：$(\\ \\ )\\div 80 = 10:(\\ \\ ) = \\dfrac{5}{16} = (\\ \\ )$（小数）。\n\n1. 第一空 $(\\ \\ )\\div 80$ 应填（　　）。",
+      "answer": "25",
+      "explanation": "$\\dfrac{5}{16} = \\dfrac{25}{80}$，所以 $25\\div 80 = \\dfrac{5}{16}$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_yantian_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "比和比例/比例的意义",
+      "group_id": "qm_yantian_001_q4",
+      "group_order": 2,
+      "content": "$(\\ \\ )\\div 80 = 10:(\\ \\ ) = \\dfrac{5}{16} = (\\ \\ )$（小数）。\n\n2. 第二空 $10:(\\ \\ )$ 应填（　　）。",
+      "answer": "32",
+      "explanation": "$\\dfrac{5}{16} = \\dfrac{10}{32}$，所以 $10:32 = \\dfrac{5}{16}$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_yantian_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "比和比例/比例的意义",
+      "group_id": "qm_yantian_001_q4",
+      "group_order": 3,
+      "content": "$(\\ \\ )\\div 80 = 10:(\\ \\ ) = \\dfrac{5}{16} = (\\ \\ )$（小数）。\n\n3. 第三空（小数）应填（　　）。",
+      "answer": "0.3125",
+      "explanation": "$5\\div 16 = 0.3125$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_yantian_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "高铁 G$1004$ 从深圳北始发到终点站武汉，途经 $10$ 个站（包含起终站）。\n\n这趟列车单程一共需要准备（　　）种不同类型的车票。",
+      "answer": "45",
+      "explanation": "$10$ 站两两组合（有方向区别题但单程从起到终方向唯一） $= \\dfrac{10\\times 9}{2} = 45$ 种。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_yantian_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比例的基本性质",
+      "content": "把 $\\text{A}$ 长方形按比例缩小后得到 $\\text{B}$ 长方形。$\\text{A}$ 长方形长 $36$ cm、宽 $24$ cm，$\\text{B}$ 长方形宽 $16$ cm、长 $a$ cm。\n\n$a = $（　　）cm。",
+      "answer": "24",
+      "explanation": "缩小比 $= 16:24 = 2:3$。$a:36 = 2:3$，$3a = 72$，$a = 24$ cm。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_yantian_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/图形与几何综合",
+      "group_id": "qm_yantian_001_q11",
+      "group_order": 1,
+      "content": "笑笑用小棒围三角形，她先选了 $8$ 厘米、$5$ 厘米的小棒各一根。\n\n1. 第三根小棒的长度最长不能超过（　　）厘米。",
+      "answer": "13",
+      "explanation": "三角形：第三边 $< 8+5 = 13$。最长不能达到 $13$（严格小于）。这里题意「不能超过」即 $< 13$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_yantian_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/图形与几何综合",
+      "group_id": "qm_yantian_001_q11",
+      "group_order": 2,
+      "content": "笑笑用小棒围三角形，已选 $8$ 厘米、$5$ 厘米。\n\n2. 第三根小棒的长度最短不少于（　　）厘米。",
+      "answer": "3",
+      "explanation": "第三边 $> 8-5 = 3$。最短不少于 $3$（严格大于）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_yantian_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "妈妈做饭，用时如下：淘米 $2$ 分，电饭锅煮饭 $30$ 分，洗炒菜锅 $1$ 分，洗菜 $8$ 分，切菜 $9$ 分，炒菜 $15$ 分。\n\n（合理利用煮饭等待时间）妈妈至少要（　　）分才能把饭菜做好。",
+      "answer": "35",
+      "explanation": "先淘米 $2$ 分 → 煮饭 $30$ 分。煮饭期间洗锅 $1$ + 洗菜 $8$ + 切菜 $9$ = $18$ 分（包含在 $30$ 分内）。煮饭结束后炒菜 $15$ 分（无法和煮饭并行只能后炒）。但炒菜也可在煮饭最后 $15$ 分内完成（菜已切好）。所以总 $= 2+30+15-12=35$ 分（合理排程）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_yantian_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "商贸城购物抽奖：一等奖 $300$ 元，二等奖 $100$ 元，共设 $48$ 个中奖名额，奖金总额 $10000$ 元。\n\n一等奖设置（　　）个。",
+      "answer": "26",
+      "explanation": "设一等奖 $x$ 个，二等奖 $48-x$ 个。$300x + 100(48-x) = 10000$；$200x = 5200$，$x = 26$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_yantian_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆锥的体积",
+      "group_id": "qm_yantian_001_q26",
+      "group_order": 1,
+      "content": "一个圆锥形麦堆，量得地面周长为 $12.56$ 米，高 $1.8$ 米。$\\pi$ 取 $3.14$。\n\n1. 这堆小麦的体积是（　　）立方米。",
+      "answer": "7.536",
+      "explanation": "半径 $r = 12.56\\div 3.14\\div 2 = 2$ m。$V = \\dfrac{1}{3}\\pi r^2 h = \\dfrac{1}{3}\\times 3.14\\times 4\\times 1.8 = 7.536\\,\\text{m}^3$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_yantian_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "group_id": "qm_yantian_001_q26",
+      "group_order": 2,
+      "content": "一堆小麦体积 $7.536\\,\\text{m}^3$，把这些小麦装入一个圆柱形粮囤刚好装满，粮囤内底面直径 $2$ 米。$\\pi$ 取 $3.14$。\n\n2. 这个粮囤的高是（　　）米。",
+      "answer": "2.4",
+      "explanation": "$V_{\\text{圆柱}} = \\pi r^2 h = 3.14\\times 1\\times h = 3.14h$；$3.14h = 7.536$；$h = 2.4$ m。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qm_yantian_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "民航规定：每位经济舱旅客免费行李额 $20$ 千克（含），超出免费额每千克按经济舱全价票的 $1.5\\%$ 购买行李票。李文从深圳到北京，机票全价 $1200$ 元，他带了 $50$ 千克行李。\n\n他需要购买（　　）元的行李票。",
+      "answer": "540",
+      "explanation": "超重 $= 50-20 = 30$ kg。每千克 $= 1200\\times 1.5\\% = 18$ 元。总 $= 30\\times 18 = 540$ 元。"
+    }
+  ]
+}

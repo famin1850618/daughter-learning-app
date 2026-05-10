@@ -14,7 +14,11 @@
     "images_used": 0,
     "questions_total_paper": 27,
     "questions_imported": 28,
-    "questions_skipped": -1
+    "questions_skipped": -1,
+    "_v2_workflow_version": "V3.17",
+    "_v2_redoing_v1_violations": true,
+    "questions_imported_total": 22,
+    "questions_skipped_groups": 13
   },
   "_skipped_for_future": [
     {
@@ -71,6 +75,45 @@
       "qnum": "26",
       "reason": "open_drawing_question",
       "raw_excerpt": "长方体玻璃鱼缸尺寸+体积（含画图配玻璃）"
+    },
+    {
+      "qnum": "6",
+      "reason": "v317_violation_recheck",
+      "raw_excerpt": "6．（2分）一个三角形三个内角的度数比是1：2：6，这个三个表最大内角的度数是　       　，这是一个　     　三角形．",
+      "_violation_details": [
+        {
+          "order": 2,
+          "issues": [
+            "V3.17-7: content 多出 raw 之外数字 ['120']"
+          ]
+        }
+      ]
+    },
+    {
+      "qnum": "7",
+      "reason": "v317_violation_recheck",
+      "raw_excerpt": "7．（2分）一个正方体棱长总和是60dm，那么它的表面积是　      　dm2，体积是　      　dm3．",
+      "_violation_details": [
+        {
+          "order": 2,
+          "issues": [
+            "V3.17-7: content 多出 raw 之外数字 ['5']"
+          ]
+        }
+      ]
+    },
+    {
+      "qnum": "24",
+      "reason": "v317_violation_recheck",
+      "raw_excerpt": "24．（6分）3月12日是我国的植树节．育才小学的部分师生一起去栽种200棵树苗．老师们栽了20%，剩下的按3：5分给甲、乙两个班级，甲班和乙分别分到多少棵？",
+      "_violation_details": [
+        {
+          "order": 2,
+          "issues": [
+            "V3.17-7: content 多出 raw 之外数字 ['160']"
+          ]
+        }
+      ]
     }
   ],
   "questions": [
@@ -86,7 +129,8 @@
       "group_order": 1,
       "content": "某影院去年全年接待观众 $258600$ 人次。\n\n1. 改写成「万」为单位的数是（　　）万人次。",
       "answer": "25.86",
-      "explanation": "$258600\\div 10000=25.86$ 万。"
+      "explanation": "$258600\\div 10000=25.86$ 万。",
+      "_raw_excerpt": "1．（2分）某影院去年全年接待观众258600人次，改写成“万”为单位的数是　         　人次，一共收入票款6297000元，省略“万”后面的尾数约　       　元．"
     },
     {
       "subject": "math",
@@ -100,7 +144,8 @@
       "group_order": 2,
       "content": "某影院去年全年共收入票款 $6297000$ 元。\n\n2. 省略「万」后面的尾数，约（　　）万元。",
       "answer": "630",
-      "explanation": "千位是 $7$（$\\geq 5$），向万位进 $1$，$629\\to 630$ 万。"
+      "explanation": "千位是 $7$（$\\geq 5$），向万位进 $1$，$629\\to 630$ 万。",
+      "_raw_excerpt": "1．（2分）某影院去年全年接待观众258600人次，改写成“万”为单位的数是　         　人次，一共收入票款6297000元，省略“万”后面的尾数约　       　元．"
     },
     {
       "subject": "math",
@@ -114,7 +159,8 @@
       "group_order": 1,
       "content": "单位换算。\n\n1. $0.75$ 千克 $=$（　　）克。",
       "answer": "750",
-      "explanation": "$0.75\\times 1000 = 750$ 克。"
+      "explanation": "$0.75\\times 1000 = 750$ 克。",
+      "_raw_excerpt": "2．（2分）0.75千克＝　      　克；　　　　\n4.3时＝　      　分．"
     },
     {
       "subject": "math",
@@ -128,7 +174,8 @@
       "group_order": 2,
       "content": "单位换算。\n\n2. $4.3$ 时 $=$（　　）分。",
       "answer": "258",
-      "explanation": "$4.3\\times 60 = 258$ 分。"
+      "explanation": "$4.3\\times 60 = 258$ 分。",
+      "_raw_excerpt": "2．（2分）0.75千克＝　      　克；　　　　\n4.3时＝　      　分．"
     },
     {
       "subject": "math",
@@ -142,7 +189,8 @@
       "group_order": 1,
       "content": "已知 $37.5\\%$ 与一系列等价表达。$37.5\\% = (\\ \\ ):24 = 24\\div(\\ \\ ) = \\dfrac{(\\ \\ )}{(\\ \\ )} = (\\ \\ )$（小数）。\n\n1. 第一空 $(\\ \\ ):24$ 中前项应填（　　）。",
       "answer": "9",
-      "explanation": "$37.5\\% = \\dfrac{3}{8} = 9:24$（分子分母各乘 $3$）。"
+      "explanation": "$37.5\\% = \\dfrac{3}{8} = 9:24$（分子分母各乘 $3$）。",
+      "_raw_excerpt": "3．（2分）37.5%　   　：24＝24÷　     　＝　        　【填小数】\n  [OMATH: $=\\frac{()}{()}=$]"
     },
     {
       "subject": "math",
@@ -156,7 +204,8 @@
       "group_order": 2,
       "content": "$37.5\\% = (\\ \\ ):24 = 24\\div(\\ \\ ) = \\dfrac{(\\ \\ )}{(\\ \\ )} = (\\ \\ )$（小数）。\n\n2. 第二空 $24\\div(\\ \\ )$ 应填（　　）。",
       "answer": "64",
-      "explanation": "$\\dfrac{3}{8} = \\dfrac{24}{64}$，所以 $24\\div 64 = \\dfrac{3}{8} = 0.375$。"
+      "explanation": "$\\dfrac{3}{8} = \\dfrac{24}{64}$，所以 $24\\div 64 = \\dfrac{3}{8} = 0.375$。",
+      "_raw_excerpt": "3．（2分）37.5%　   　：24＝24÷　     　＝　        　【填小数】\n  [OMATH: $=\\frac{()}{()}=$]"
     },
     {
       "subject": "math",
@@ -170,7 +219,8 @@
       "group_order": 3,
       "content": "$37.5\\% = (\\ \\ ):24 = 24\\div(\\ \\ ) = \\dfrac{(\\ \\ )}{(\\ \\ )} = (\\ \\ )$（小数）。\n\n3. 最后一空（小数）应填（　　）。",
       "answer": "0.375",
-      "explanation": "$37.5\\% = 0.375$。"
+      "explanation": "$37.5\\% = 0.375$。",
+      "_raw_excerpt": "3．（2分）37.5%　   　：24＝24÷　     　＝　        　【填小数】\n  [OMATH: $=\\frac{()}{()}=$]"
     },
     {
       "subject": "math",
@@ -190,7 +240,8 @@
         "D. $320\\%$"
       ],
       "answer": "C",
-      "explanation": "$\\pi\\approx 3.1416$，$320\\%=3.2$，$\\dfrac{10}{3}\\approx 3.333$。最大 $\\dfrac{10}{3}$。"
+      "explanation": "$\\pi\\approx 3.1416$，$320\\%=3.2$，$\\dfrac{10}{3}\\approx 3.333$。最大 $\\dfrac{10}{3}$。",
+      "_raw_excerpt": "4.3时＝　      　分．\n3．（2分）37.5%　   　：24＝24÷　     　＝　        　【填小数】\n  [OMATH: $=\\frac{()}{()}=$]\n4．（2分）在π，3.142，，320%中，最大的数是　                 　，最小的数是　   　．\n  [OMATH: $\\frac{10}{3}$]"
     },
     {
       "subject": "math",
@@ -210,7 +261,8 @@
         "D. $320\\%$"
       ],
       "answer": "A",
-      "explanation": "$\\pi\\approx 3.1416 < 3.142 < 320\\%=3.2 < \\dfrac{10}{3}$。"
+      "explanation": "$\\pi\\approx 3.1416 < 3.142 < 320\\%=3.2 < \\dfrac{10}{3}$。",
+      "_raw_excerpt": "4.3时＝　      　分．\n3．（2分）37.5%　   　：24＝24÷　     　＝　        　【填小数】\n  [OMATH: $=\\frac{()}{()}=$]\n4．（2分）在π，3.142，，320%中，最大的数是　                 　，最小的数是　   　．\n  [OMATH: $\\frac{10}{3}$]"
     },
     {
       "subject": "math",
@@ -224,7 +276,8 @@
       "group_order": 1,
       "content": "一辆高速火车 $4$ 小时行驶了 $960$ km。\n\n1. 路程与时间的最简整数比是（　　）。（写成 $a:b$ 形式）",
       "answer": "240:1",
-      "explanation": "$960:4 = 240:1$。"
+      "explanation": "$960:4 = 240:1$。",
+      "_raw_excerpt": "5．（2分）一辆高速火车4小时行驶了960km，路程与时间的最简整数比是　        　，比值是　      　．"
     },
     {
       "subject": "math",
@@ -238,63 +291,8 @@
       "group_order": 2,
       "content": "一辆高速火车 $4$ 小时行驶了 $960$ km。\n\n2. 路程与时间的比值是（　　）。",
       "answer": "240",
-      "explanation": "$960\\div 4 = 240$（即每小时 $240$ km）。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_baoan_001",
-      "round": 2,
-      "type": "fill",
-      "chapter": "小升初综合",
-      "knowledge_point": "总复习/图形与几何综合",
-      "group_id": "xsc_baoan_001_q6",
-      "group_order": 1,
-      "content": "一个三角形三个内角的度数比是 $1:2:6$。\n\n1. 这个三角形最大内角的度数是（　　）（单位：度，只写数字）。",
-      "answer": "120",
-      "explanation": "$180\\times\\dfrac{6}{1+2+6} = 180\\times\\dfrac{6}{9} = 120°$。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_baoan_001",
-      "round": 2,
-      "type": "fill",
-      "chapter": "小升初综合",
-      "knowledge_point": "总复习/图形与几何综合",
-      "group_id": "xsc_baoan_001_q6",
-      "group_order": 2,
-      "content": "一个三角形三个内角的度数比是 $1:2:6$（最大内角 $120°$）。\n\n2. 按角分类，这是一个（　　）三角形。（填「锐角」「直角」或「钝角」）",
-      "answer": "钝角",
-      "explanation": "最大角 $120° > 90°$，是钝角三角形。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_baoan_001",
-      "round": 2,
-      "type": "fill",
-      "chapter": "小升初综合",
-      "knowledge_point": "总复习/图形与几何综合",
-      "group_id": "xsc_baoan_001_q7",
-      "group_order": 1,
-      "content": "一个正方体棱长总和是 $60$ dm。\n\n1. 它的表面积是（　　）$\\text{dm}^2$。",
-      "answer": "150",
-      "explanation": "棱长 $= 60\\div 12 = 5$ dm。表面积 $= 6\\times 5^2 = 150\\,\\text{dm}^2$。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_baoan_001",
-      "round": 2,
-      "type": "fill",
-      "chapter": "小升初综合",
-      "knowledge_point": "总复习/图形与几何综合",
-      "group_id": "xsc_baoan_001_q7",
-      "group_order": 2,
-      "content": "一个正方体棱长总和是 $60$ dm（棱长 $5$ dm）。\n\n2. 它的体积是（　　）$\\text{dm}^3$。",
-      "answer": "125",
-      "explanation": "$5^3 = 125\\,\\text{dm}^3$。"
+      "explanation": "$960\\div 4 = 240$（即每小时 $240$ km）。",
+      "_raw_excerpt": "5．（2分）一辆高速火车4小时行驶了960km，路程与时间的最简整数比是　        　，比值是　      　．"
     },
     {
       "subject": "math",
@@ -438,34 +436,6 @@
       "subject": "math",
       "grade": 6,
       "source": "realpaper_g6_math_beishida_xsc_baoan_001",
-      "round": 2,
-      "type": "fill",
-      "chapter": "小升初综合",
-      "knowledge_point": "总复习/解决问题策略",
-      "group_id": "xsc_baoan_001_q24",
-      "group_order": 1,
-      "content": "育才小学部分师生一起去栽种 $200$ 棵树苗。老师们栽了 $20\\%$，剩下的按 $3:5$ 分给甲、乙两个班级。\n\n1. 甲班分到（　　）棵。",
-      "answer": "60",
-      "explanation": "剩 $= 200\\times(1-20\\%) = 160$ 棵。甲 $= 160\\times\\dfrac{3}{8} = 60$ 棵。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_baoan_001",
-      "round": 2,
-      "type": "fill",
-      "chapter": "小升初综合",
-      "knowledge_point": "总复习/解决问题策略",
-      "group_id": "xsc_baoan_001_q24",
-      "group_order": 2,
-      "content": "育才小学部分师生一起去栽种 $200$ 棵树苗。老师们栽了 $20\\%$，剩下 $160$ 棵按 $3:5$ 分给甲、乙两个班级。\n\n2. 乙班分到（　　）棵。",
-      "answer": "100",
-      "explanation": "乙 $= 160\\times\\dfrac{5}{8} = 100$ 棵。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_baoan_001",
       "round": 4,
       "type": "fill",
       "chapter": "小升初综合",
@@ -474,5 +444,6 @@
       "answer": "70",
       "explanation": "成本 $\\times 1.2 = 840$，成本 $= 700$。原价 $=$ 成本 $\\times 1.3 = 910$。降价 $= 910 - 840 = 70$ 元。"
     }
-  ]
+  ],
+  "_v2_workflow_version": "V3.17"
 }

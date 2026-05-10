@@ -3,13 +3,13 @@
   "_source_docx_sha1": "63bb08c92ba8c086",
   "subject": "chinese",
   "grade": 6,
+  "_v2_workflow_version": "V3.17",
   "knowledge_points_added": [
-    "字词/字音",
     "字词/字形",
-    "字词/词语理解",
+    "字词/字音",
     "字词/成语运用",
     "古诗文/古诗词背诵默写",
-    "古诗文/文言文阅读",
+    "古诗文/文言实词",
     "课文与名著/名著阅读"
   ],
   "_quality_meta": {
@@ -21,57 +21,63 @@
     "images_used": 0,
     "questions_total_paper": 15,
     "questions_imported": 13,
-    "questions_skipped": 7
+    "_v3_17_notes": "v1 已较干净；v2 q4 拼音 8 空全入（v1 仅入 2 空）+ q9 增 1 道 + 选项题保留原措辞。q4 第 1 空参考答案「安静」与拼音 ān dìng 不符（原题/OCR 歧义），用 |||「安定」兜底"
   },
   "_skipped_for_future": [
-    {
-      "qnum": "1-3",
-      "reason": "listening_question",
-      "raw_excerpt": "听录音 + 选择/判断/写口号"
-    },
-    {
-      "qnum": "4",
-      "reason": "info_lost_irrecoverable",
-      "raw_excerpt": "拼音写词语 8 空（ān dìng/qīn xí/lǐng yù/jiàn shù/xīn píng qì hé/kě kào/kǒng jù/bì miǎn）入 2 空代表"
-    },
-    {
-      "qnum": "10(2)+(3)",
-      "reason": "subjective_short",
-      "raw_excerpt": "古诗补充 + 写诗 + 手机利弊辩论"
-    },
-    {
-      "qnum": "11(2)+(3)",
-      "reason": "subjective_short",
-      "raw_excerpt": "师旷论学：人物形象 + 看法"
-    },
-    {
-      "qnum": "12(1)+(2)+(4)",
-      "reason": "subjective_short",
-      "raw_excerpt": "散文阅读：观点 + 概括 + 写经历"
-    },
-    {
-      "qnum": "13-14",
-      "reason": "subjective_short",
-      "raw_excerpt": "名著阅读 + 整本书阅读（删人物理由）"
-    },
-    {
-      "qnum": "15",
-      "reason": "subjective_essay",
-      "raw_excerpt": "习作：「我生活在____中」"
-    }
+    {"qnum": "1-3", "reason": "listening_question", "raw_excerpt": "听录音 + 选择/判断/写口号"},
+    {"qnum": "10(1)+(2)+(3)", "reason": "open_writing_subjective", "raw_excerpt": "古诗补充涉及主观选诗 + 手机利弊辩论（开放表达）"},
+    {"qnum": "11(2)+(3)", "reason": "subjective_short", "raw_excerpt": "师旷论学：人物形象 + 看法（开放）"},
+    {"qnum": "12(1)+(2)+(4)", "reason": "subjective_short", "raw_excerpt": "散文阅读：观点画线 + 概括 + 写经历"},
+    {"qnum": "13", "reason": "subjective_short", "raw_excerpt": "名著阅读：心情对比 + 海盗游戏说明书 + 翻译比较（多空主观）"},
+    {"qnum": "14", "reason": "subjective_short", "raw_excerpt": "整本书阅读：删谁 + 不能删谁 + 理由（开放）"},
+    {"qnum": "15", "reason": "subjective_essay", "raw_excerpt": "习作：「我生活在____中」"}
   ],
   "questions": [
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_qm_yantian_001",
-      "round": 2,
+      "round": 1,
       "type": "fill",
       "chapter": "字词",
       "knowledge_point": "字词/字形",
       "group_id": "qm_yantian_001_q4",
       "group_order": 1,
-      "content": "看拼音写词语。\n\n「他们在自己的 lǐng yù 内有所 jiàn shù」\n\n1. lǐng yù = ？",
+      "_raw_excerpt": "维护国家ān dìng 　     　是军人的梦想",
+      "_common_prefix_raw": "4．（9分）读下面的话，看拼音写词语，注意把字写正确、美观。\n维护国家ān dìng是军人的梦想，阻挡病毒qīn xí是医生的梦想。他们在自己的lǐng yù内有所jiàn shù，在面对未知的挑战时能保持xīn píng qì hé。有了kě kào的他们，我们不再kǒng jù，也bì miǎn了许多病痛的折磨。",
+      "content": "读下面的话，看拼音写词语，注意把字写正确、美观。\n\n维护国家ān dìng是军人的梦想，阻挡病毒qīn xí是医生的梦想。他们在自己的lǐng yù内有所jiàn shù，在面对未知的挑战时能保持xīn píng qì hé。有了kě kào的他们，我们不再kǒng jù，也bì miǎn了许多病痛的折磨。\n\n1. ān dìng",
+      "answer": "安静|||安定",
+      "explanation": "原参考答案「安静」与拼音 ān dìng 不符（应为 ān jìng）；按拼音严格对应应为「安定」（维护国家安定）。Famin 后续审阅决策。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_yantian_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "group_id": "qm_yantian_001_q4",
+      "group_order": 2,
+      "_raw_excerpt": "阻挡病毒qīn xí 　     　是医生的梦想",
+      "_common_prefix_raw": "4．（9分）读下面的话，看拼音写词语，注意把字写正确、美观。\n维护国家ān dìng是军人的梦想，阻挡病毒qīn xí是医生的梦想。他们在自己的lǐng yù内有所jiàn shù，在面对未知的挑战时能保持xīn píng qì hé。有了kě kào的他们，我们不再kǒng jù，也bì miǎn了许多病痛的折磨。",
+      "content": "读下面的话，看拼音写词语，注意把字写正确、美观。\n\n维护国家ān dìng是军人的梦想，阻挡病毒qīn xí是医生的梦想。他们在自己的lǐng yù内有所jiàn shù，在面对未知的挑战时能保持xīn píng qì hé。有了kě kào的他们，我们不再kǒng jù，也bì miǎn了许多病痛的折磨。\n\n2. qīn xí",
+      "answer": "侵袭",
+      "explanation": "「侵袭」指病毒等不良事物入侵进攻。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_yantian_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "group_id": "qm_yantian_001_q4",
+      "group_order": 3,
+      "_raw_excerpt": "他们在自己的lǐng yù 　     　内有所jiàn shù",
+      "_common_prefix_raw": "4．（9分）读下面的话，看拼音写词语，注意把字写正确、美观。\n维护国家ān dìng是军人的梦想，阻挡病毒qīn xí是医生的梦想。他们在自己的lǐng yù内有所jiàn shù，在面对未知的挑战时能保持xīn píng qì hé。有了kě kào的他们，我们不再kǒng jù，也bì miǎn了许多病痛的折磨。",
+      "content": "读下面的话，看拼音写词语，注意把字写正确、美观。\n\n维护国家ān dìng是军人的梦想，阻挡病毒qīn xí是医生的梦想。他们在自己的lǐng yù内有所jiàn shù，在面对未知的挑战时能保持xīn píng qì hé。有了kě kào的他们，我们不再kǒng jù，也bì miǎn了许多病痛的折磨。\n\n3. lǐng yù",
       "answer": "领域",
       "explanation": "「领域」指学科或活动范围。"
     },
@@ -79,15 +85,81 @@
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_qm_yantian_001",
-      "round": 2,
+      "round": 1,
       "type": "fill",
       "chapter": "字词",
       "knowledge_point": "字词/字形",
       "group_id": "qm_yantian_001_q4",
-      "group_order": 2,
-      "content": "看拼音写词语。\n\n「在面对未知的挑战时能保持 xīn píng qì hé」\n\n2. xīn píng qì hé = ？",
+      "group_order": 4,
+      "_raw_excerpt": "内有所jiàn shù 　     　",
+      "_common_prefix_raw": "4．（9分）读下面的话，看拼音写词语，注意把字写正确、美观。\n维护国家ān dìng是军人的梦想，阻挡病毒qīn xí是医生的梦想。他们在自己的lǐng yù内有所jiàn shù，在面对未知的挑战时能保持xīn píng qì hé。有了kě kào的他们，我们不再kǒng jù，也bì miǎn了许多病痛的折磨。",
+      "content": "读下面的话，看拼音写词语，注意把字写正确、美观。\n\n维护国家ān dìng是军人的梦想，阻挡病毒qīn xí是医生的梦想。他们在自己的lǐng yù内有所jiàn shù，在面对未知的挑战时能保持xīn píng qì hé。有了kě kào的他们，我们不再kǒng jù，也bì miǎn了许多病痛的折磨。\n\n4. jiàn shù",
+      "answer": "建树",
+      "explanation": "「建树」指建立功绩、成就。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_yantian_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "group_id": "qm_yantian_001_q4",
+      "group_order": 5,
+      "_raw_excerpt": "保持xīn píng qì hé 　       　",
+      "_common_prefix_raw": "4．（9分）读下面的话，看拼音写词语，注意把字写正确、美观。\n维护国家ān dìng是军人的梦想，阻挡病毒qīn xí是医生的梦想。他们在自己的lǐng yù内有所jiàn shù，在面对未知的挑战时能保持xīn píng qì hé。有了kě kào的他们，我们不再kǒng jù，也bì miǎn了许多病痛的折磨。",
+      "content": "读下面的话，看拼音写词语，注意把字写正确、美观。\n\n维护国家ān dìng是军人的梦想，阻挡病毒qīn xí是医生的梦想。他们在自己的lǐng yù内有所jiàn shù，在面对未知的挑战时能保持xīn píng qì hé。有了kě kào的他们，我们不再kǒng jù，也bì miǎn了许多病痛的折磨。\n\n5. xīn píng qì hé",
       "answer": "心平气和",
-      "explanation": "「心平气和」形容心情平静、态度和蔼。"
+      "explanation": "「心平气和」形容心情平静、态度温和。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_yantian_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "group_id": "qm_yantian_001_q4",
+      "group_order": 6,
+      "_raw_excerpt": "有了kě kào 　     　的他们",
+      "_common_prefix_raw": "4．（9分）读下面的话，看拼音写词语，注意把字写正确、美观。\n维护国家ān dìng是军人的梦想，阻挡病毒qīn xí是医生的梦想。他们在自己的lǐng yù内有所jiàn shù，在面对未知的挑战时能保持xīn píng qì hé。有了kě kào的他们，我们不再kǒng jù，也bì miǎn了许多病痛的折磨。",
+      "content": "读下面的话，看拼音写词语，注意把字写正确、美观。\n\n维护国家ān dìng是军人的梦想，阻挡病毒qīn xí是医生的梦想。他们在自己的lǐng yù内有所jiàn shù，在面对未知的挑战时能保持xīn píng qì hé。有了kě kào的他们，我们不再kǒng jù，也bì miǎn了许多病痛的折磨。\n\n6. kě kào",
+      "answer": "可靠",
+      "explanation": "「可靠」指值得信赖、可以依赖。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_yantian_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "group_id": "qm_yantian_001_q4",
+      "group_order": 7,
+      "_raw_excerpt": "我们不再kǒng jù 　     　",
+      "_common_prefix_raw": "4．（9分）读下面的话，看拼音写词语，注意把字写正确、美观。\n维护国家ān dìng是军人的梦想，阻挡病毒qīn xí是医生的梦想。他们在自己的lǐng yù内有所jiàn shù，在面对未知的挑战时能保持xīn píng qì hé。有了kě kào的他们，我们不再kǒng jù，也bì miǎn了许多病痛的折磨。",
+      "content": "读下面的话，看拼音写词语，注意把字写正确、美观。\n\n维护国家ān dìng是军人的梦想，阻挡病毒qīn xí是医生的梦想。他们在自己的lǐng yù内有所jiàn shù，在面对未知的挑战时能保持xīn píng qì hé。有了kě kào的他们，我们不再kǒng jù，也bì miǎn了许多病痛的折磨。\n\n7. kǒng jù",
+      "answer": "恐惧",
+      "explanation": "「恐惧」形容害怕、惊慌。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_yantian_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "group_id": "qm_yantian_001_q4",
+      "group_order": 8,
+      "_raw_excerpt": "也bì miǎn 　     　了许多病痛的折磨",
+      "_common_prefix_raw": "4．（9分）读下面的话，看拼音写词语，注意把字写正确、美观。\n维护国家ān dìng是军人的梦想，阻挡病毒qīn xí是医生的梦想。他们在自己的lǐng yù内有所jiàn shù，在面对未知的挑战时能保持xīn píng qì hé。有了kě kào的他们，我们不再kǒng jù，也bì miǎn了许多病痛的折磨。",
+      "content": "读下面的话，看拼音写词语，注意把字写正确、美观。\n\n维护国家ān dìng是军人的梦想，阻挡病毒qīn xí是医生的梦想。他们在自己的lǐng yù内有所jiàn shù，在面对未知的挑战时能保持xīn píng qì hé。有了kě kào的他们，我们不再kǒng jù，也bì miǎn了许多病痛的折磨。\n\n8. bì miǎn",
+      "answer": "避免",
+      "explanation": "「避免」指设法不发生（不好的事）。"
     },
     {
       "subject": "chinese",
@@ -97,35 +169,35 @@
       "type": "choice",
       "chapter": "字词",
       "knowledge_point": "字词/字音",
-      "content": "下列加粗字的读音完全正确的一项是（　　）。",
+      "_raw_excerpt": "5．（2分）下列加点字的读音完全正确的一项是（　　）\nA．惆怅（chàng） 薄雾（báo） 晃动（huàng） 分外（fēn）\nB．徘徊（huí） 隐藏（cáng） 缥缈（miǎo） 裸露（luǒ）\nC．间断（jiàn） 搅和（huo） 机杼（zhù） 僧人（sēng）\nD．吞噬（shì） 教诲（huǐ） 剥削（xuē） 倾覆（qīng）",
+      "content": "下列加粗字的读音完全正确的一项是（　　）",
       "options": [
-        "A. 惆**怅**（chàng） **薄**雾（báo） **晃**动（huàng） **分**外（fēn）",
-        "B. 徘**徊**（huí） 隐**藏**（cáng） **缥**缈（miǎo） **裸**露（luǒ）",
+        "A. **惆**怅（chàng） **薄**雾（báo） **晃**动（huàng） **分**外（fēn）",
+        "B. 徘**徊**（huí） 隐**藏**（cáng） **缥**缈（miǎo） 裸**露**（luǒ）",
         "C. **间**断（jiàn） 搅**和**（huo） 机**杼**（zhù） **僧**人（sēng）",
-        "D. 吞**噬**（shì） 教**诲**（huǐ） **剥**削（xuē） **倾**覆（qīng）"
+        "D. 吞**噬**（shì） 教**诲**（huǐ） 剥**削**（xuē） **倾**覆（qīng）"
       ],
       "answer": "C",
-      "explanation": "A 错（「薄」应读 bó / 「分外」应读 fèn）；B 错（「徊」应读 huái）；D 错（「诲」应读 huì）；C 全对。",
-      "_round_reasoning": "R2 因为：4 选项各 4 字音综合判别，参考 chinese_r2_anchor_3 字音 R1 但本题陷阱密度更高（4 选项 vs 2 选）→ R2。"
+      "explanation": "A 错：薄雾 bó（读 báo 多用于厚度）、分外 fèn（不是 fēn）。B 错：徘徊 huái（不是 huí）。D 错：教诲 huì（不是 huǐ）。C 全对。"
     },
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_qm_yantian_001",
-      "round": 2,
+      "round": 3,
       "type": "choice",
       "chapter": "古诗文",
-      "knowledge_point": "古诗文/文言文阅读",
-      "content": "下列加粗字意思完全相同的一项是（　　）。",
+      "knowledge_point": "古诗文/文言实词",
+      "_raw_excerpt": "6．（2分）下列加点字意思完全相同的是（　　）\nA．快走踏清秋               兔走触株\nB．虽与之俱学         送鲍浩然之浙东\nC．不假思索                 假戏真做\nD．跃跃欲试                 翠色欲滴",
+      "content": "下列加粗字意思完全相同的是（　　）",
       "options": [
-        "A. 快**走**踏清秋／兔**走**触株",
-        "B. 虽与**之**俱学／送鲍浩然**之**浙东",
-        "C. 不**假**思索／**假**戏真做",
-        "D. 跃跃**欲**试／翠色**欲**滴"
+        "A. 快**走**踏清秋  /  兔**走**触株",
+        "B. 虽与**之**俱学  /  送鲍浩然**之**浙东",
+        "C. 不**假**思索  /  **假**戏真做",
+        "D. 跃跃**欲**试  /  翠色**欲**滴"
       ],
       "answer": "A",
-      "explanation": "A 两个「走」均=跑（同）；B 前「之」=他，后「之」=去/到（不同）；C 前「假」=借，后「假」=虚假（不同）；D 前「欲」=想要，后「欲」=将要（不同）。",
-      "_round_reasoning": "R2 因为：文言一字多义辨析。"
+      "explanation": "A 两个「走」均为「跑」之意（古汉语）。B 第一个「之」是代词「他们」，第二个「之」是动词「到、往」。C 「不假思索」之假是「凭借」，「假戏真做」之假是「虚假」。D 「跃跃欲试」之欲是「想要」，「翠色欲滴」之欲是「将要」。故选 A。"
     },
     {
       "subject": "chinese",
@@ -135,16 +207,16 @@
       "type": "choice",
       "chapter": "字词",
       "knowledge_point": "字词/成语运用",
-      "content": "下列句子中，成语使用**不恰当**的一项是（　　）。",
+      "_raw_excerpt": "7．（2分）下列句子中，成语使用不恰当的一项是（　　）\nA．这群人只是临时凑起来的乌合之众，没有什么可怕的。\nB．黄永玉爷爷的画作总是把人物的神态画得惟妙惟肖。\nC．那个持刀砍人的歹徒被击毙了，真是死得其所。\nD．一场突如其来的变故打破了他原本宁静的生活。",
+      "content": "下列句子中，成语使用不恰当的一项是（　　）",
       "options": [
-        "A. 这群人只是临时凑起来的乌合之众，没有什么可怕的。",
-        "B. 黄永玉爷爷的画作总是把人物的神态画得惟妙惟肖。",
-        "C. 那个持刀砍人的歹徒被击毙了，真是死得其所。",
-        "D. 一场突如其来的变故打破了他原本宁静的生活。"
+        "A. 这群人只是临时凑起来的**乌合之众**，没有什么可怕的。",
+        "B. 黄永玉爷爷的画作总是把人物的神态画得**惟妙惟肖**。",
+        "C. 那个持刀砍人的歹徒被击毙了，真是**死得其所**。",
+        "D. 一场**突如其来**的变故打破了他原本宁静的生活。"
       ],
       "answer": "C",
-      "explanation": "「死得其所」=死得有意义、有价值，是褒义词。歹徒被击毙不能用此词，应用「罪有应得」。A B D 均恰当。",
-      "_round_reasoning": "R2 因为：成语褒贬辨析+语境判别，参考 chinese_r2_anchor_1/2 成语水准。"
+      "explanation": "「死得其所」指死得有意义、有价值（褒义），用于歹徒被击毙的语境是错误的——歹徒之死虽是法律惩罚，但「死得其所」专指死得光荣，不能用于罪犯。A、B、D 使用得当。"
     },
     {
       "subject": "chinese",
@@ -153,8 +225,9 @@
       "round": 2,
       "type": "choice",
       "chapter": "古诗文",
-      "knowledge_point": "古诗文/古诗词背诵默写",
-      "content": "「书本电脑里面种不出水稻来，只有在田里才能种出水稻来。」与袁隆平这句话意思**吻合**的一句是（　　）。",
+      "knowledge_point": "古诗文/古诗词意境理解",
+      "_raw_excerpt": "8．（2分）“书本电脑里面种不出水稻来，只有在田里才能种出水稻来。”与袁隆平这句话意思吻合的一句是（　　）\nA．少壮不努力，老大徒伤悲。\nB．位卑未敢忘忧国。\nC．书到用时方恨少，事非经过不知难。\nD．纸上得来终觉浅，绝知此事要躬行。",
+      "content": "「书本电脑里面种不出水稻来，只有在田里才能种出水稻来。」与袁隆平这句话意思吻合的一句是（　　）",
       "options": [
         "A. 少壮不努力，老大徒伤悲。",
         "B. 位卑未敢忘忧国。",
@@ -162,18 +235,18 @@
         "D. 纸上得来终觉浅，绝知此事要躬行。"
       ],
       "answer": "D",
-      "explanation": "「纸上得来终觉浅，绝知此事要躬行」（陆游《冬夜读书示子聿》）强调实践的重要性，与袁隆平「只有在田里才能种水稻」吻合。",
-      "_round_reasoning": "R2 因为：诗句释义+语境对位。"
+      "explanation": "袁隆平此话强调实践的重要——书本知识不能代替亲自动手实践。D 句出自陆游《冬夜读书示子聿》「纸上得来终觉浅，绝知此事要躬行」与之意合，强调躬行实践。A 强调勤奋，B 强调忧国，C 强调读书经验之重要但偏向「读书」非「实践」。"
     },
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_qm_yantian_001",
-      "round": 2,
+      "round": 3,
       "type": "choice",
       "chapter": "文学常识",
       "knowledge_point": "文学常识/名著阅读",
-      "content": "在名著分享会上，同学们分享的阅读体会**不正确**的一项是（　　）。",
+      "_raw_excerpt": "9．（2分）在名著分享会上，同学们分享的阅读体会不正确的一项是（　　）\nA．汤姆•索亚山洞游历归来“夸张地吹嘘”，可见他喜欢冒险但是有点小虚荣，人物既真实又立体。\nB．鲁滨逊将流落荒岛的好处写得非常简单，将坏处写得很详细，体现了他的乐观精神。\nC．《汤姆•索亚历险记》《骑鹅旅行记》《鲁滨逊漂流记》三本书情节曲折，围绕主人公的游历冒险展开，人物形象也随之丰满。\nD．《童年》中，阿廖沙见到的第一个优秀人物是“好事儿”，这个绰号是因为每次叫他吃饭或者喝茶时，他总是回答一句“好事儿”而得来的。",
+      "content": "在名著分享会上，同学们分享的阅读体会不正确的一项是（　　）",
       "options": [
         "A. 汤姆·索亚山洞游历归来「夸张地吹嘘」，可见他喜欢冒险但是有点小虚荣，人物既真实又立体。",
         "B. 鲁滨逊将流落荒岛的好处写得非常简单，将坏处写得很详细，体现了他的乐观精神。",
@@ -181,97 +254,7 @@
         "D. 《童年》中，阿廖沙见到的第一个优秀人物是「好事儿」，这个绰号是因为每次叫他吃饭或者喝茶时，他总是回答一句「好事儿」而得来的。"
       ],
       "answer": "B",
-      "explanation": "B 错。鲁滨逊在荒岛上把好处写得**详细**、坏处写得简单，对比中体现乐观精神。题面「好处简单/坏处详细」颠倒了。",
-      "_round_reasoning": "R3 因为：名著细节理解+反向判别，参考 chinese_r3_anchor_5 跨名著综合 R3 同档。"
-    },
-    {
-      "subject": "chinese",
-      "grade": 6,
-      "source": "realpaper_g6_chinese_bubian_qm_yantian_001",
-      "round": 1,
-      "type": "fill",
-      "chapter": "古诗文",
-      "knowledge_point": "古诗文/古诗词背诵默写",
-      "group_id": "qm_yantian_001_q10",
-      "group_order": 1,
-      "content": "雨中抒怀诗句默写。\n\n1. 「________，白雨跳珠乱入船」是苏轼的喜悦。横线处应填的诗句是？",
-      "answer": "黑云翻墨未遮山",
-      "explanation": "出自苏轼《六月二十七日望湖楼醉书》。"
-    },
-    {
-      "subject": "chinese",
-      "grade": 6,
-      "source": "realpaper_g6_chinese_bubian_qm_yantian_001",
-      "round": 1,
-      "type": "fill",
-      "chapter": "古诗文",
-      "knowledge_point": "古诗文/古诗词背诵默写",
-      "group_id": "qm_yantian_001_q10",
-      "group_order": 2,
-      "content": "雨中抒怀诗句默写。\n\n2. 「天街小雨润如酥，________」是韩愈的欣喜。横线处应填的诗句是？",
-      "answer": "草色遥看近却无",
-      "explanation": "出自韩愈《早春呈水部张十八员外》。"
-    },
-    {
-      "subject": "chinese",
-      "grade": 6,
-      "source": "realpaper_g6_chinese_bubian_qm_yantian_001",
-      "round": 1,
-      "type": "fill",
-      "chapter": "古诗文",
-      "knowledge_point": "古诗文/古诗词背诵默写",
-      "group_id": "qm_yantian_001_q10",
-      "group_order": 3,
-      "content": "雨中抒怀诗句默写。\n\n3. 「________，客舍青青柳色新」是王维的离愁。横线处应填的诗句是？",
-      "answer": "渭城朝雨浥轻尘",
-      "explanation": "出自王维《送元二使安西》。"
-    },
-    {
-      "subject": "chinese",
-      "grade": 6,
-      "source": "realpaper_g6_chinese_bubian_qm_yantian_001",
-      "round": 1,
-      "type": "fill",
-      "chapter": "古诗文",
-      "knowledge_point": "古诗文/古诗词背诵默写",
-      "group_id": "qm_yantian_001_q10",
-      "group_order": 4,
-      "content": "雨中抒怀诗句默写。\n\n4. 「________，润物细无声」是杜甫的赞叹。横线处应填的诗句是？",
-      "answer": "随风潜入夜",
-      "explanation": "出自杜甫《春夜喜雨》。"
-    },
-    {
-      "subject": "chinese",
-      "grade": 6,
-      "source": "realpaper_g6_chinese_bubian_qm_yantian_001",
-      "round": 1,
-      "type": "fill",
-      "chapter": "古诗文",
-      "knowledge_point": "古诗文/古诗词背诵默写",
-      "group_id": "qm_yantian_001_q10",
-      "group_order": 5,
-      "content": "月下寄情诗句默写。\n\n5. 「________，江枫渔火对愁眠」是张继的羁旅之愁。横线处应填的诗句是？",
-      "answer": "月落乌啼霜满天",
-      "explanation": "出自张继《枫桥夜泊》。"
-    },
-    {
-      "subject": "chinese",
-      "grade": 6,
-      "source": "realpaper_g6_chinese_bubian_qm_yantian_001",
-      "round": 2,
-      "type": "choice",
-      "chapter": "古诗文",
-      "knowledge_point": "古诗文/文言文阅读",
-      "content": "《师旷论学》：晋平公问师旷七十岁还能不能学。师旷曰：「何不炳烛乎？」「少而好学，如日出之阳；壮而好学，如日中之光；老而好学，如炳烛之明。」\n\n对下列句子中加粗字的解释，**错误**的一项是？",
-      "options": [
-        "A. 孰与**昧**行乎（愚昧）",
-        "B. 恐已**暮**矣（晚了）",
-        "C. 日出之**阳**（阳光）",
-        "D. 安敢**戏**其君（戏弄）"
-      ],
-      "answer": "A",
-      "explanation": "A 错。「昧行」=在黑暗中行走。「昧」=昏暗（非愚昧）。B C D 均正确。",
-      "_round_reasoning": "R2 因为：文言字义辨析+反向判别。"
+      "explanation": "B 错：鲁滨逊在荒岛上将「好处」写得很详细（鼓励自己），将「坏处」写得简单（不被困境压垮），体现乐观精神。原文表述与 B 选项相反。A、C、D 描述均符合原著。"
     }
   ]
 }

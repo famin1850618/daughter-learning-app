@@ -3,5 +3,40 @@
   "schema": "v1",
   "created_at": "2026-05-08",
   "description": "KP 等候区。不在 491 KP 清单的题写到这里。每科每 10 卷 review。详见 .realpaper-spec.md §7.2",
-  "pending": []
+  "pending": [
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longhua_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "圆",
+      "knowledge_point": "圆/圆的周长",
+      "content": "用圆规画一个圆，如果圆规两脚尖之间的距离是 $3$ cm，这个圆的周长是 ____ cm。（$\\pi$ 取 $3.14$）",
+      "options": [],
+      "answer": "18.84",
+      "explanation": "圆规两脚尖之间的距离 $=$ 圆的半径 $=3$ cm。周长 $C=2\\pi r=2\\times 3.14\\times 3=18.84$ cm。",
+      "_raw_excerpt": "10．（3分）用圆规画一个圆，如果圆规两脚尖之间的距离是3cm，这个圆的周长是　        　cm．",
+      "_idx": 3,
+      "_subject": "数学",
+      "_grade": 6
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_longhua_001",
+      "round": 4,
+      "type": "fill",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "长方体与正方体/长方体的体积",
+      "content": "一个长为 $10$ cm 的长方体截成 $3$ 段后，表面积增加了 $32$ cm²。原来长方体的体积是 ____ cm³。",
+      "options": [],
+      "answer": "80",
+      "explanation": "长方体长 $10$ cm，截 $3$ 段产生 $2$ 个截面，每截面增加 $2$ 个相同的面（一刀产生 $2$ 个新面）。共增加 $4$ 个底面，每个底面 $=32\\div 4=8$ cm²（即长方体的横截面积）。原体积 $=$ 横截面积 $\\times$ 长 $=8\\times 10=80$ cm³。",
+      "_raw_excerpt": "14．（3分）如图，一个长为10cm的长方体截成3段后表面积增加了32cm2。原来长方体的体积是 　     　cm3。\n​",
+      "_idx": 6,
+      "_subject": "数学",
+      "_grade": 6
+    }
+  ]
 }

@@ -1,0 +1,461 @@
+{
+  "source": "realpaper_g6_chinese_bubian_xsc_fuyuan_001",
+  "_source_docx_sha1": "5b0b58a688b38dc3",
+  "subject": "chinese",
+  "grade": 6,
+  "knowledge_points_added": [
+    "修辞/比喻",
+    "古诗文/古诗词背诵默写",
+    "古诗文/文言实词",
+    "句式与标点/关联词运用",
+    "句式与标点/句子衔接",
+    "句式与标点/句式转换",
+    "句式与标点/标点符号",
+    "句式与标点/病句修改",
+    "字词/字形",
+    "字词/字音",
+    "字词/词语理解",
+    "文学常识/文化常识"
+  ],
+  "_quality_meta": {
+    "source_file": "广东省深圳市富源学校2021年语文小升初模拟试题.docx",
+    "sha1": "5b0b58a688b38dc3",
+    "paper_type": "xsc",
+    "chapter_default": "综合",
+    "omath_total_formulas": 0,
+    "images_used": 0,
+    "questions_total_paper": 24,
+    "questions_imported": 20,
+    "questions_skipped": 11
+  },
+  "_skipped_for_future": [
+    {
+      "qnum": "范仲淹-2",
+      "reason": "subjective_short",
+      "raw_excerpt": "翻译三句文言文（多种合理翻译）"
+    },
+    {
+      "qnum": "范仲淹-3",
+      "reason": "subjective_short",
+      "raw_excerpt": "「先天下之忧而忧」名句填空 + 分析作用（分析开放）"
+    },
+    {
+      "qnum": "冬天-②",
+      "reason": "subjective_short",
+      "raw_excerpt": "概述文章三件事（开放概括）"
+    },
+    {
+      "qnum": "冬天-③",
+      "reason": "subjective_short",
+      "raw_excerpt": "分析句子好在哪里（开放赏析）"
+    },
+    {
+      "qnum": "冬天-④",
+      "reason": "subjective_short",
+      "raw_excerpt": "分析画线句子作用（开放）"
+    },
+    {
+      "qnum": "冬天-⑤",
+      "reason": "subjective_short",
+      "raw_excerpt": "用现代语翻译诗句（开放翻译）"
+    },
+    {
+      "qnum": "冬天-⑥",
+      "reason": "subjective_short",
+      "raw_excerpt": "找主旨句 + 联系生活谈感受（开放）"
+    },
+    {
+      "qnum": "作文",
+      "reason": "subjective_essay",
+      "raw_excerpt": "习作：______给我的启示（500 字记叙文）"
+    }
+  ],
+  "questions": [
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_fuyuan_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "选出读音无误的一项（    ）。",
+      "options": [
+        "A. 星宿 xiù  字帖 tiè  倔强 juè  载歌载舞 zài",
+        "B. 哽咽 yè  解剖 pāo  角色 jué  大腹便便 pián",
+        "C. 模样 mú  口供 gòng  押解 jiè  惟妙惟肖 xiào",
+        "D. 湖泊 pō  祈祷 qí  贬谪 zhé  忍俊不禁 jìn"
+      ],
+      "answer": "C",
+      "explanation": "A 错：「倔强」读 jué jiàng，不读 juè。B 错：「解剖」读 jiě pōu，不读 pāo。D 错：「忍俊不禁」中「禁」读 jīn（忍住），不读 jìn。C 项全对。",
+      "_round_judge": {
+        "method": "llm_anchored",
+        "anchor_used": "chinese_r2_anchor_1",
+        "rubric_signals_applied": "字音综合辨识",
+        "reasoning": "R2: 字音 4 选 1（含倔强/解剖/禁/泊等多音字），需要综合判断（参 chinese_r2_anchor_1 R2）。"
+      }
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_fuyuan_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "下面四项中没有错别字的一项是（    ）。",
+      "options": [
+        "A. 红军主力度过了天险大渡河。",
+        "B. 道路在艰险，挡不住我们前进的脚步。",
+        "C. 他毫不迟疑地从座位上站了起来。",
+        "D. 晨雾弥漫，仿拂给大地披上了一层沙。"
+      ],
+      "answer": "C",
+      "explanation": "A 错：「度过」应为「渡过」（渡河）。B 错：「在艰险」应为「再艰险」。D 错：「仿拂」应为「仿佛」，「沙」应为「纱」。C 项无错别字。",
+      "_round_judge": {
+        "method": "llm_anchored",
+        "anchor_used": "chinese_r2_anchor_1",
+        "rubric_signals_applied": "错别字辨识",
+        "reasoning": "R2: 错别字 4 选 1（度过 vs 渡过/在艰险 vs 再艰险/仿拂 vs 仿佛），多项干扰 R2。"
+      }
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_fuyuan_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "查字典填空。「照耀」的「照」字用音序查字法应查大写字母（  ），再查音节（  ）。用部首查字法应查部首（  ），再查（  ）画。\n\n它在字典里的解释是：①光线射在物体上；②照相、摄影；③按照、依照；④对着、向着。\n\n在「照耀」这个词中应选第（  ）种解释。\n\n「照敌人开枪」中「照」应选第（  ）种解释。\n\n按 6 空顺序依次写出（用空格分隔）：音序大写字母、音节、部首、笔画数、解释序号 1、解释序号 2。",
+      "answer": "Z zhao 灬 9 ① ④|||Z zhào 灬 9 ① ④",
+      "explanation": "「照」音序 Z，音节 zhào，部首「灬」（火字底，4 画底部），「照」共 13 画，去除部首 4 画后再查 9 画。「照耀」即光线射物 → ①；「照敌人开枪」即对着敌人 → ④。",
+      "_round_judge": {
+        "method": "llm_anchored",
+        "anchor_used": "chinese_r2_anchor_2",
+        "rubric_signals_applied": "查字典综合 6 空",
+        "reasoning": "R2: 「照」字查字典综合（音序/音节/部首/笔画/2 解释），6 空综合中等 R2。"
+      }
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_fuyuan_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "「乃翁」中「乃」字用数笔画查字法应查（  ）画，第一笔是（  ）。\n\n按笔画数、第一笔顺序依次写出（用空格分隔）。",
+      "answer": "2 横折折折钩|||2 ㄋ|||2 横折钩",
+      "explanation": "「乃」字共 2 画，第一笔是「横折折折钩」（也写作「乃」的起笔）。",
+      "_round_judge": {
+        "method": "llm_anchored",
+        "anchor_used": "chinese_r1_anchor_3",
+        "rubric_signals_applied": "笔画识记",
+        "reasoning": "R1: 「乃」字笔画数 + 第一笔，字面识记 R1。"
+      }
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_fuyuan_001",
+      "round": 3,
+      "type": "choice",
+      "chapter": "句子和语法",
+      "knowledge_point": "句子和语法/关联词运用",
+      "content": "依次填入下列句中横线上的关联词语，最恰当的一组是（    ）。\n\n我们已经取得了抗洪抢险的决定性胜利，______洪水造成的损失是严重的，恢复生产、重建家园的工作十分艰巨，______是今年各项改革和经济发展的任务相当繁重，这就要求我们要加倍努力地工作。______要把洪水造成的损失夺回来，______要确保实现今年经济发展的目标。",
+      "options": [
+        "A. 不过 虽然 不但 更",
+        "B. 然而 尽管 既 也",
+        "C. 但是 特别 不仅 还",
+        "D. 虽然 尤其 既 就"
+      ],
+      "answer": "D",
+      "explanation": "第 1 空「虽然」（虽然胜利但损失严重）；第 2 空「尤其」（强调改革任务繁重）；第 3-4 空「既……（也）……」并列结构。D 项搭配合理。",
+      "_round_judge": {
+        "method": "llm_anchored",
+        "anchor_used": "chinese_r4_anchor_4",
+        "rubric_signals_applied": "关联词 4 空综合",
+        "reasoning": "R3: 关联词 4 空填空 4 选 1（虽然/尤其/既/就），需要复句关系综合判断（参 chinese_r4_anchor_4 修辞 R4 但本题候选明显降 R3）。"
+      }
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_fuyuan_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/词语理解",
+      "content": "下面四个词语的排列顺序，唯一正确的是（    ）组。",
+      "options": [
+        "A. 波涛起伏→汹涌澎湃→微波荡漾→水平如镜",
+        "B. 水平如镜→微波荡漾→汹涌澎湃→波涛起伏",
+        "C. 波涛起伏→汹涌澎湃→水平如镜→微波荡漾",
+        "D. 汹涌澎湃→波涛起伏→微波荡漾→水平如镜"
+      ],
+      "answer": "D",
+      "explanation": "按水势从大到小排：汹涌澎湃（最大）→ 波涛起伏 → 微波荡漾 → 水平如镜（最静）。或按从静到动：水平如镜→微波荡漾→波涛起伏→汹涌澎湃（B 选项却是水平如镜→微波荡漾→汹涌澎湃→波涛起伏，顺序乱）。仅 D 项从大到小完整有序。",
+      "_round_judge": {
+        "method": "llm_anchored",
+        "anchor_used": "chinese_r3_anchor_2",
+        "rubric_signals_applied": "词语排序",
+        "reasoning": "R2: 4 个水势词语排序 4 选 1，需要词语含义对比（汹涌→波涛→微波→水平）R2。"
+      }
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_fuyuan_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "句子和语法",
+      "knowledge_point": "句子和语法/比喻",
+      "content": "读下面的句子，哪些是打比方的话，在句后打「√」，否则打「×」。按 (1)-(6) 顺序依次写出 6 个判断（用空格分隔）。\n\n(1) 又是几千年过去了，那些松脂球成了化石。\n\n(2) 兔妈妈精心照料着自己的一双儿女。\n\n(3) 夜空的繁星，仿佛碧玉盘中撒满的宝石。\n\n(4) 打了败仗的敌人，成了没头苍蝇，到处乱撞。\n\n(5) 老虎张开大口，好像要一下子把山羊吞进肚里似的。\n\n(6) 马晓红是我们班的百灵鸟。",
+      "answer": "× × √ √ × √",
+      "explanation": "(1) 描述松脂球变化，无比喻 ×。(2) 平直叙述 ×。(3) 「繁星仿佛宝石」是比喻 √。(4) 「敌人成了没头苍蝇」是比喻 √。(5) 「好像要吞进肚里」是比拟夸张，但题给答案为 ×（视作非典型比喻）。(6) 「马晓红是百灵鸟」是比喻 √。",
+      "_round_judge": {
+        "method": "llm_anchored",
+        "anchor_used": "chinese_r2_anchor_1",
+        "rubric_signals_applied": "修辞辨识 6 句",
+        "reasoning": "R2: 6 句判是否打比方（√×综合），多句修辞识别 R2（参 chinese_r1_anchor_5 反问 R1 → 本题 6 题综合升 R2）。"
+      }
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_fuyuan_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "文学常识",
+      "knowledge_point": "文学常识/文化常识",
+      "content": "写出与这些成语相关的历史人物。按 6 个成语顺序依次写出（用空格分隔）。\n\n四面楚歌——（  ）  望梅止渴——（  ）  指鹿为马——（  ）\n\n入木三分——（  ）  图穷匕见——（  ）  卧薪尝胆——（  ）",
+      "answer": "项羽 曹操 赵高 王羲之 荆轲 勾践",
+      "explanation": "四面楚歌→项羽（楚汉相争）；望梅止渴→曹操（行军望梅典故）；指鹿为马→赵高（秦二世时权臣）；入木三分→王羲之（书法力透纸背）；图穷匕见→荆轲（刺秦王典故）；卧薪尝胆→勾践（越王复国）。",
+      "_round_judge": {
+        "method": "llm_anchored",
+        "anchor_used": "chinese_r3_anchor_5",
+        "rubric_signals_applied": "历史典故跨多人",
+        "reasoning": "R3: 6 个成语对应 6 个历史人物（项羽/曹操/赵高/王羲之/荆轲/勾践），跨多典故文化常识（参 chinese_r3_anchor_5 R3）。"
+      }
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_fuyuan_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "句子和语法",
+      "knowledge_point": "句子和语法/句子衔接",
+      "content": "调整下列排列错乱的句子，按原序号 ①-⑤ 给 5 句重排，依次写出新顺序的 5 个序号（用空格分隔）。\n\n① 现在的信件几乎都是信封里装着信纸，信纸上面写着寄信人要说的话。\n\n② 从信件的形式看。\n\n③ 对方收到信后，只要放在录音机或录相机内，就能听到寄信人的声音或看到寄信人的相貌。\n\n④ 未来的信件却可以用电子技术把要说的话录在录音带上或把形象录在录相带上，然后传到对方。\n\n⑤ 这比见字不见人的邮政通信方式要先进多了。",
+      "answer": "② ① ④ ③ ⑤",
+      "explanation": "正确顺序：先总起「从信件的形式看」（②），再现在的信（①），再未来的信（④），收到后可看可听（③），结尾比较先进（⑤）。",
+      "_round_judge": {
+        "method": "llm_anchored",
+        "anchor_used": "chinese_r3_anchor_4",
+        "rubric_signals_applied": "排序综合",
+        "reasoning": "R3: 5 句排错重排，需要逻辑链推理（总起-现在-未来-收信-比较）R3。"
+      }
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_fuyuan_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "句子和语法",
+      "knowledge_point": "句子和语法/病句修改",
+      "content": "修改病句。\n\n我现在基本上把不好的学习习惯完全改正了。",
+      "answer": "我现在把不好的学习习惯完全改正了。|||我现在基本上把不好的学习习惯改正了。|||我现在把不好的学习习惯完全改正了",
+      "explanation": "「基本上」与「完全」语义矛盾（基本上 = 大体上未完全；完全 = 彻底）。修改：去掉「基本上」或去掉「完全」二者保留其一。",
+      "_round_judge": {
+        "method": "llm_anchored",
+        "anchor_used": "chinese_r2_anchor_3",
+        "rubric_signals_applied": "病句修改",
+        "reasoning": "R2: 病句修改「基本上+完全」语义矛盾 R2（参 chinese_r2_anchor_3）。"
+      }
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_fuyuan_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "句子和语法",
+      "knowledge_point": "句子和语法/病句修改",
+      "content": "修改病句。\n\n讲话不礼貌的人是不文明的行为。",
+      "answer": "讲话不礼貌是不文明的行为。|||讲话不礼貌的人是不文明的人。|||讲话不礼貌是不文明的行为",
+      "explanation": "「人」与「行为」搭配不当（主宾不一致）。修改：①去掉「的人」→「讲话不礼貌是不文明的行为」；或②把「行为」改为「人」→「讲话不礼貌的人是不文明的人」。",
+      "_round_judge": {
+        "method": "llm_anchored",
+        "anchor_used": "chinese_r2_anchor_3",
+        "rubric_signals_applied": "病句修改主宾搭配",
+        "reasoning": "R2: 病句「人是行为」主宾搭配错 R2。"
+      }
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_fuyuan_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "句子和语法",
+      "knowledge_point": "句子和语法/句式转换",
+      "content": "今天依然屹立的石宝寨不正是忠县劳动人民的智慧结晶吗？\n\n按「缩句」「改陈述句」顺序依次写出（用斜杠 / 分隔）。\n\n缩句（缩到最短）：______\n\n改陈述句：______",
+      "answer": "石宝寨是智慧结晶。/今天依然屹立的石宝寨正是忠县劳动人民的智慧结晶。|||石宝寨是结晶。/今天依然屹立的石宝寨正是忠县劳动人民的智慧结晶。",
+      "explanation": "缩句保留主谓宾：石宝寨（主）+ 是（谓）+ 智慧结晶（宾）→「石宝寨是智慧结晶」。反问改陈述：去「不」「吗」，问号改句号 →「今天依然屹立的石宝寨正是忠县劳动人民的智慧结晶」。",
+      "_round_judge": {
+        "method": "llm_anchored",
+        "anchor_used": "chinese_r2_anchor_2",
+        "rubric_signals_applied": "缩句+反问改陈述",
+        "reasoning": "R2: 缩句到最短 + 反问改陈述，2 项句式转换综合 R2。"
+      }
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_fuyuan_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "句子和语法",
+      "knowledge_point": "句子和语法/标点符号",
+      "content": "某人外出做生意，给父母写了这样的一封信：「儿的生活好痛苦没有粮食多病少挣了很多钱。」父母接到信后，用了不同的标点符号来停顿，结果一个哭一个笑。\n\n读信后哭了，是因为这么读：______（添加标点使句意为悲惨情景）。",
+      "answer": "儿的生活好痛苦，没有粮食，多病，少挣了很多钱。|||儿的生活好痛苦，没有粮食，多病，少挣了很多钱",
+      "explanation": "断句为「生活好痛苦／没有粮食／多病／少挣了很多钱」——表达儿生活痛苦贫病不顺的悲惨情景，所以父母看了哭。",
+      "_round_judge": {
+        "method": "llm_anchored",
+        "anchor_used": "chinese_r3_anchor_3",
+        "rubric_signals_applied": "标点添加表达感情",
+        "reasoning": "R3: 添加标点使表达悲惨情景，需理解标点改变语意 + 创新断句 R3（语境分析）。"
+      }
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_fuyuan_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "句子和语法",
+      "knowledge_point": "句子和语法/标点符号",
+      "content": "某人外出做生意，给父母写了这样的一封信：「儿的生活好痛苦没有粮食多病少挣了很多钱。」父母接到信后，用了不同的标点符号来停顿，结果一个哭一个笑。\n\n读信后笑了，是因为这么读：______（添加标点使句意为顺利情景）。",
+      "answer": "儿的生活好，痛苦没有，粮食多，病少，挣了很多钱。|||儿的生活好，痛苦没有，粮食多，病少，挣了很多钱",
+      "explanation": "断句为「生活好／痛苦没有／粮食多／病少／挣了很多钱」——表达儿生活顺利，所以父母看了笑。",
+      "_round_judge": {
+        "method": "llm_anchored",
+        "anchor_used": "chinese_r3_anchor_3",
+        "rubric_signals_applied": "标点对比",
+        "reasoning": "R3: 添加标点使表达顺利情景，与悲惨断句对比理解 R3。"
+      }
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_fuyuan_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "写一句抒写思念故乡、怀念亲友的诗。",
+      "answer": "每逢佳节倍思亲|||独在异乡为异客，每逢佳节倍思亲|||举头望明月，低头思故乡|||春风又绿江南岸，明月何时照我还",
+      "explanation": "经典思乡诗如：王维「独在异乡为异客，每逢佳节倍思亲」、李白「举头望明月，低头思故乡」、王安石「春风又绿江南岸，明月何时照我还」等。",
+      "_round_judge": {
+        "method": "llm_anchored",
+        "anchor_used": "chinese_r1_anchor_1",
+        "rubric_signals_applied": "思乡诗默写",
+        "reasoning": "R1: 写一句思念故乡诗，课内必修默写 R1。"
+      }
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_fuyuan_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "写一句借月抒怀的诗。",
+      "answer": "举头望明月，低头思故乡|||举头望明月，低头思故乡。|||明月几时有，把酒问青天|||海上生明月，天涯共此时",
+      "explanation": "经典借月诗如：李白「举头望明月，低头思故乡」、苏轼「明月几时有，把酒问青天」、张九龄「海上生明月，天涯共此时」等。",
+      "_round_judge": {
+        "method": "llm_anchored",
+        "anchor_used": "chinese_r1_anchor_1",
+        "rubric_signals_applied": "借月诗默写",
+        "reasoning": "R1: 写一句借月抒怀诗，课内必修默写 R1。"
+      }
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_fuyuan_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "时间对每个人来说都是极其珍贵的，可是王强就不这么认为，每当看到他沉迷于各种游乐中的时候，你真想对他说：______（写一句珍惜时间的格言警句）。",
+      "answer": "少壮不努力，老大徒伤悲|||少壮不努力，老大徒伤悲。|||一寸光阴一寸金，寸金难买寸光阴",
+      "explanation": "经典珍惜时间格言：汉乐府《长歌行》「少壮不努力，老大徒伤悲」；俗谚「一寸光阴一寸金，寸金难买寸光阴」。",
+      "_round_judge": {
+        "method": "llm_anchored",
+        "anchor_used": "chinese_r1_anchor_1",
+        "rubric_signals_applied": "珍惜时间格言",
+        "reasoning": "R1: 写一句珍惜时间格言警句，课内必修默写 R1。"
+      }
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_fuyuan_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "都说「盛年不重来」，老了就不能回到年轻时代，苏轼却不这样认为，有诗为证：______，______。",
+      "answer": "谁道人生无再少 门前流水尚能西|||谁道人生无再少，门前流水尚能西|||谁道人生无再少／门前流水尚能西",
+      "explanation": "苏轼《浣溪沙·游蕲水清泉寺》：「谁道人生无再少？门前流水尚能西。」表达老年不必伤逝、人生可重启的乐观情怀。",
+      "_round_judge": {
+        "method": "llm_anchored",
+        "anchor_used": "chinese_r1_anchor_1",
+        "rubric_signals_applied": "苏轼诗补默写",
+        "reasoning": "R2: 苏轼《浣溪沙》「谁道人生无再少？门前流水尚能西」补默写，非常用必修升 R2。"
+      }
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_fuyuan_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言实词",
+      "group_id": "xsc_fuyuan_001_fanzhongyan",
+      "group_order": 1,
+      "content": "阅读《范仲淹有志于天下》。\n\n范仲淹二岁而孤，家贫无依。少有大志，每以天下为己任，发愤苦读，或夜昏怠，辄以水沃面；食不给，啖粥而读。既仕，每慷慨论天下事，奋不顾身。乃至被谗受贬，由参知政事谪守邓州。仲淹刻苦自励，食不重肉，妻子衣食仅自足而已。常自诵曰：「士当先天下之忧而忧，后天下之乐而乐也。」\n\n1. 给下列句中加粗的字注音并释义。按 4 字 8 空（每字「读音」「释义」）顺序依次写出（用斜杠 / 分隔）。\n\n①**啖**粥而读\n\n②辄以水**沃**面\n\n③食不**给**\n\n④乃至被**谗**受贬",
+      "answer": "dàn/吃/zhé/总是、往往/jǐ/供应、足够/chán/说别人坏话|||dàn/吃/zhé/往往，总是/jǐ/供应/chán/说别人坏话",
+      "explanation": "①「啖」dàn，吃。「啖粥而读」即喝粥读书。注：题面「啖粥而读」为正确，原 docx 字符显示「辄」处疑为表中第二项。②「沃」原文为「辄以水沃面」，「辄」zhé 总是。③「给」jǐ 供应、足够。④「谗」chán 说人坏话。",
+      "_round_judge": {
+        "method": "llm_anchored",
+        "anchor_used": "chinese_r3_anchor_5",
+        "rubric_signals_applied": "文言实词注音释义",
+        "reasoning": "R3: 4 个文言字（啖/沃/给/谗）注音+释义，8 空综合古汉语（参 chinese_r3_anchor_5 R3）。"
+      }
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_fuyuan_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "给下面词语注音，并解释词语意思。\n\n氤氲（  ）______\n\n按「拼音」「词义」顺序依次写出（用斜杠 / 分隔）。",
+      "answer": "yīn yūn/指湿热飘荡的云气，烟云弥漫的样子|||yīn yūn/烟云弥漫的样子|||yīnyūn/烟云弥漫，湿热飘荡的样子",
+      "explanation": "「氤氲」拼音 yīn yūn，意为烟云、湿气弥漫飘荡的样子（如「氤氲的热气」、「烟雾氤氲」）。",
+      "_round_judge": {
+        "method": "llm_anchored",
+        "anchor_used": "chinese_r2_anchor_2",
+        "rubric_signals_applied": "词语注音释义",
+        "reasoning": "R2: 「氤氲」注音 + 释义，词语理解 R2。"
+      }
+    }
+  ]
+}

@@ -29,7 +29,11 @@
     "images_used": 9,
     "questions_total_paper": 24,
     "questions_imported": 30,
-    "questions_skipped": 2
+    "questions_skipped": 2,
+    "_v2_workflow_version": "V3.17",
+    "_v2_redoing_v1_violations": true,
+    "questions_imported_total": 28,
+    "questions_skipped_groups": 3
   },
   "_skipped_for_future": [
     {
@@ -43,6 +47,25 @@
       "reason": "open_drawing_question",
       "raw_excerpt": "画出长方形绕点 A 逆时针旋转 90° 后的图形，旋转后点 B 的位置用数对表示是（　　）。",
       "source_para": 47
+    },
+    {
+      "qnum": "23",
+      "reason": "v317_violation_recheck",
+      "raw_excerpt": "23．电动汽车作为新型的环保交通工具，受到了消费者的喜爱。小丽的爸爸也买了某品牌的电动汽车带全家外出旅行，途中小丽记录了汽车仪表盘上显示的相关数据，整理结果如下表：\n（1）观察上表，汽车行驶路程与耗电量成　     　比例。\n（2）汽车电池充满后有45度电，行驶280千米够吗？（列比例解答）",
+      "_violation_details": [
+        {
+          "order": 1,
+          "issues": [
+            "V3.17-7: content 多出 raw 之外数字 ['100', '120', '130', '140', '15', '150', '18', '19.5', '21', '22.5']"
+          ]
+        },
+        {
+          "order": 2,
+          "issues": [
+            "V3.17-7: content 多出 raw 之外数字 ['100', '120', '130', '140', '15', '150', '18', '19.5', '21', '22.5']"
+          ]
+        }
+      ]
     }
   ],
   "questions": [
@@ -69,7 +92,8 @@
       ],
       "answer": "B",
       "explanation": "圆柱是由一个矩形以一条边为轴旋转一周形成的。B 选项是矩形（含一条直边），旋转后得到圆柱。",
-      "_image_skip_reason": "option_images_used"
+      "_image_skip_reason": "option_images_used",
+      "_raw_excerpt": "1．下图中，以直线为轴旋转一周，可以形成圆柱的是（　　）。  \nA．\tB．\tC．\tD．"
     },
     {
       "subject": "math",
@@ -87,7 +111,8 @@
         "D. 12"
       ],
       "answer": "C",
-      "explanation": "圆锥体积 $V=\\frac{1}{3}\\times$ 底面积 $\\times$ 高，所以高 $=12\\times 3\\div 4=9$ 厘米。"
+      "explanation": "圆锥体积 $V=\\frac{1}{3}\\times$ 底面积 $\\times$ 高，所以高 $=12\\times 3\\div 4=9$ 厘米。",
+      "_raw_excerpt": "2．一个圆锥的体积是12立方厘米，底面积是4平方厘米，高是（　　）厘米．\nA．3\tB．6\tC．9\tD．12"
     },
     {
       "subject": "math",
@@ -106,7 +131,8 @@
         "D. $1:4000000$"
       ],
       "answer": "D",
-      "explanation": "线段比例尺图上 $1$ 厘米表示实际 $40$ 千米。$40$ 千米 $=40\\times 100000=4000000$ 厘米，所以数值比例尺是 $1:4000000$。"
+      "explanation": "线段比例尺图上 $1$ 厘米表示实际 $40$ 千米。$40$ 千米 $=40\\times 100000=4000000$ 厘米，所以数值比例尺是 $1:4000000$。",
+      "_raw_excerpt": "3．将线段比例尺  改写成数值比例尺是（　　）。\nA．1：40\tB．1：4000\tC．1：400000\tD．1：4000000"
     },
     {
       "subject": "math",
@@ -124,7 +150,8 @@
         "D. $100$"
       ],
       "answer": "C",
-      "explanation": "比例尺 $20:1$ 表示图上是实际的 $20$ 倍。$5$ mm $\\times 20=100$ mm $=10$ cm，应画 $10$ cm。"
+      "explanation": "比例尺 $20:1$ 表示图上是实际的 $20$ 倍。$5$ mm $\\times 20=100$ mm $=10$ cm，应画 $10$ cm。",
+      "_raw_excerpt": "4．一个钟表零件是5mm，把它画在比例尺是20：1的图上，应画（　　） cm。\nA．0.1\tB．1\tC．10\tD．100"
     },
     {
       "subject": "math",
@@ -149,7 +176,8 @@
         "data:image/png;base64,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"
       ],
       "answer": "C",
-      "explanation": "将原图案绕中心点按顺时针方向旋转 $90°$，每个区域顺时针挪一格，得到 C 选项。"
+      "explanation": "将原图案绕中心点按顺时针方向旋转 $90°$，每个区域顺时针挪一格，得到 C 选项。",
+      "_raw_excerpt": "5．下面的图案绕中心点顺时针旋转90°后，得到的图形是（　　）。\n\nA．\tB．\tC．\tD．"
     },
     {
       "subject": "math",
@@ -167,7 +195,8 @@
         "D. $\\frac{3}{4}:\\frac{2}{4}$"
       ],
       "answer": "C",
-      "explanation": "$20:30=2:3$，比值相等可组成比例。A: $0.2:0.6=1:3$；B: $\\frac{1}{2}:\\frac{1}{3}=3:2$；D: $\\frac{3}{4}:\\frac{2}{4}=3:2$。"
+      "explanation": "$20:30=2:3$，比值相等可组成比例。A: $0.2:0.6=1:3$；B: $\\frac{1}{2}:\\frac{1}{3}=3:2$；D: $\\frac{3}{4}:\\frac{2}{4}=3:2$。",
+      "_raw_excerpt": "6．下面四个比，（　　）能与2：3组成比例。  \nA．0.2：0.6\tB． ： \tC．20：30\tD． ： \n  [OMATH: $\\frac{1}{2}$ | $\\frac{1}{3}$ | $\\frac{3}{4}$ | $\\frac{2}{4}$]"
     },
     {
       "subject": "math",
@@ -185,7 +214,8 @@
         "D. 书的页数一定，已读的页数和未读的页数"
       ],
       "answer": "A",
-      "explanation": "圆的周长 $\\div$ 直径 $=\\pi$（一定），比值一定，成正比例。B 是反比例（积一定）；C 是面积与半径平方成正比例，与半径不成正比例；D 是和一定，不成比例。"
+      "explanation": "圆的周长 $\\div$ 直径 $=\\pi$（一定），比值一定，成正比例。B 是反比例（积一定）；C 是面积与半径平方成正比例，与半径不成正比例；D 是和一定，不成比例。",
+      "_raw_excerpt": "7．下面成正比例的是（　　）。  \nA．圆的周长和直径\nB．长方形的面积一定，长和宽\nC．圆的面积和半径\nD．书的页数一定，已读的页数和未读的页数"
     },
     {
       "subject": "math",
@@ -203,7 +233,8 @@
         "D. 无法确定"
       ],
       "answer": "B",
-      "explanation": "$a\\times b=c$（一定），积一定时 $a$ 和 $b$ 成反比例。"
+      "explanation": "$a\\times b=c$（一定），积一定时 $a$ 和 $b$ 成反比例。",
+      "_raw_excerpt": "8．在等式a×b=c（a、b、c均不等于0）中，当c一定时，a和b（　　）。  \nA．成正比例\tB．成反比例\tC．不成比例\tD．无法确定"
     },
     {
       "subject": "math",
@@ -221,7 +252,8 @@
         "D. $10$"
       ],
       "answer": "B",
-      "explanation": "底面周长 $=31.4\\div 10=3.14$ 分米，半径 $=3.14\\div 3.14\\div 2=0.5$ 分米。$4$ 米 $=40$ 分米。体积 $=3.14\\times 0.5^2\\times 40=3.14\\times 0.25\\times 40=31.4$ 立方分米。"
+      "explanation": "底面周长 $=31.4\\div 10=3.14$ 分米，半径 $=3.14\\div 3.14\\div 2=0.5$ 分米。$4$ 米 $=40$ 分米。体积 $=3.14\\times 0.5^2\\times 40=3.14\\times 0.25\\times 40=31.4$ 立方分米。",
+      "_raw_excerpt": "9．在长4米的圆柱形钢柱上，用一根长31.4分米的铁丝正好沿钢柱绕10圈，这根钢柱的体积是（　　）立方分米。\nA．125.6\tB．31.4\tC．20\tD．10"
     },
     {
       "subject": "math",
@@ -239,7 +271,8 @@
         "D. $78.5$"
       ],
       "answer": "C",
-      "explanation": "侧面展开是正方形 $\\Rightarrow$ 底面周长 $=$ 高。底面周长 $=2\\pi r=2\\times 3.14\\times 5=31.4$ 厘米，所以高 $=31.4$ 厘米。"
+      "explanation": "侧面展开是正方形 $\\Rightarrow$ 底面周长 $=$ 高。底面周长 $=2\\pi r=2\\times 3.14\\times 5=31.4$ 厘米，所以高 $=31.4$ 厘米。",
+      "_raw_excerpt": "10．把一个圆柱形罐头盒的侧面包装纸展开，得到一个正方形，这个圆柱形罐头盒的底面半径是5厘米，高是（　　）厘米。  \nA．7.85\tB．15.7\tC．31.4\tD．78.5\n二、仔细审题，填一填（共18分）"
     },
     {
       "subject": "math",
@@ -251,7 +284,8 @@
       "knowledge_point": "比和比例/化简比",
       "content": "$\\frac{4}{5}=20:$ ____ $=$ ____ $\\%=$ ____ （填小数）",
       "answer": "25,80,0.8",
-      "explanation": "$\\frac{4}{5}=\\frac{4\\times 5}{5\\times 5}=\\frac{20}{25}$，所以第一空 $25$。$4\\div 5=0.8=80\\%$。"
+      "explanation": "$\\frac{4}{5}=\\frac{4\\times 5}{5\\times 5}=\\frac{20}{25}$，所以第一空 $25$。$4\\div 5=0.8=80\\%$。",
+      "_raw_excerpt": "11． =20：　     　=　     　%=　     　（填小数）\n  [OMATH: $\\frac{4}{5}$]"
     },
     {
       "subject": "math",
@@ -263,7 +297,8 @@
       "knowledge_point": "圆柱与圆锥/圆柱的表面积",
       "content": "一个圆柱，底面直径和高都是 $10$ 厘米，这个圆柱的侧面积是 ____ 平方厘米。",
       "answer": "314",
-      "explanation": "侧面积 $=\\pi d h=3.14\\times 10\\times 10=314$ 平方厘米。"
+      "explanation": "侧面积 $=\\pi d h=3.14\\times 10\\times 10=314$ 平方厘米。",
+      "_raw_excerpt": "12．一个圆柱，底面直径和高都是10厘米，这个圆柱的侧面积是　     　平方厘米。"
     },
     {
       "subject": "math",
@@ -281,7 +316,8 @@
         "D. $\\frac{1}{4}$"
       ],
       "answer": "B",
-      "explanation": "内项互为倒数 $\\Rightarrow$ 内项积 $=1$。又外项积 $=$ 内项积 $=1$，所以另一外项 $=1\\div 8=\\frac{1}{8}$。"
+      "explanation": "内项互为倒数 $\\Rightarrow$ 内项积 $=1$。又外项积 $=$ 内项积 $=1$，所以另一外项 $=1\\div 8=\\frac{1}{8}$。",
+      "_raw_excerpt": "13．两个内项互为倒数，其中一个外项是8，另一个外项是　     　。"
     },
     {
       "subject": "math",
@@ -293,7 +329,8 @@
       "knowledge_point": "圆柱与圆锥/圆锥的体积",
       "content": "把一个圆柱形木块削成一个最大的圆锥，削去部分的体积是 $24$ dm³，则这个圆锥的体积是 ____ dm³。",
       "answer": "12",
-      "explanation": "等底等高时圆锥体积是圆柱的 $\\frac{1}{3}$，削去部分是圆柱的 $\\frac{2}{3}$。圆锥体积 $=$ 削去部分 $\\div 2=24\\div 2=12$ dm³。"
+      "explanation": "等底等高时圆锥体积是圆柱的 $\\frac{1}{3}$，削去部分是圆柱的 $\\frac{2}{3}$。圆锥体积 $=$ 削去部分 $\\div 2=24\\div 2=12$ dm³。",
+      "_raw_excerpt": "14．把一个圆柱形木块削成一个最大的圆锥，削去部分的体积是24dm3，则这个圆锥的体积是　     　dm3。"
     },
     {
       "subject": "math",
@@ -305,7 +342,8 @@
       "knowledge_point": "正反比例/比例尺",
       "content": "在一幅比例尺是 $1:5000$ 的学校平面图上，量得校门口到高年级教学楼的距离是 $4.5$ 厘米，则校门口到高年级教学楼的实际距离是 ____ 米。",
       "answer": "225",
-      "explanation": "实际距离 $=$ 图上距离 $\\div$ 比例尺 $=4.5\\div\\frac{1}{5000}=22500$ 厘米 $=225$ 米。"
+      "explanation": "实际距离 $=$ 图上距离 $\\div$ 比例尺 $=4.5\\div\\frac{1}{5000}=22500$ 厘米 $=225$ 米。",
+      "_raw_excerpt": "15．在一幅比例尺是1：5000的学校平面图上，量得校门口到高年级教学楼的距离是4.5厘米，则校门口到高年级教学楼的实际距离是　     　米。"
     },
     {
       "subject": "math",
@@ -317,7 +355,34 @@
       "knowledge_point": "正反比例/正比例的意义",
       "content": "在一个阳光明媚的下午，笑笑在同一时间、同一地点测得芸芸的身高和影长分别是 $1.5$ m 和 $2.4$ m，这时一棵树的影长为 $12$ m，则这棵树高为 ____ m。",
       "answer": "7.5",
-      "explanation": "同一时间地点，物高与影长成正比例。设树高为 $x$，则 $\\frac{1.5}{2.4}=\\frac{x}{12}$，$x=\\frac{1.5\\times 12}{2.4}=7.5$ m。"
+      "explanation": "同一时间地点，物高与影长成正比例。设树高为 $x$，则 $\\frac{1.5}{2.4}=\\frac{x}{12}$，$x=\\frac{1.5\\times 12}{2.4}=7.5$ m。",
+      "_raw_excerpt": "16．在一个阳光明媚的下午，笑笑在同一时间、同一地点测得芸芸的身高和影长分别是1.5m和2.4m，这时一棵树的影长为12m，则这棵树高为　     　m。   \n三、计算与操作题（共25分）"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qz_longhua_002",
+      "round": 2,
+      "type": "fill",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的体积",
+      "content": "将一个土豆放进装满水的圆柱形杯子中，水溢出了一些，然后又将土豆拿出，水面下降了 $8$ 厘米。已知圆柱形杯子底面半径是 $5$ 厘米，这个土豆的体积是多少？",
+      "answer": "628",
+      "explanation": "土豆体积 $=$ 下降水柱体积 $=\\pi r^2 h=3.14\\times 25\\times 8=628$ cm³。",
+      "_raw_excerpt": "21．将一个土豆放进装满水的圆柱形杯子中，水溢出了一些，然后又将土豆拿出，水面下降了8厘米。已知圆柱形杯子底面半径是5厘米，这个土豆的体积是多少?"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_qz_longhua_002",
+      "round": 4,
+      "type": "fill",
+      "chapter": "比例",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "在比例尺是 $1:17000000$ 的地图上，量得 A 地到 B 地的图上距离是 $6$ 厘米。甲、乙两列火车同时从两地相向开出，$5$ 时后相遇。已知甲车每时行 $85$ 千米，乙车每时行多少千米？",
+      "answer": "119",
+      "explanation": "实际距离 $=6\\times 17000000=1.02\\times 10^8$ cm $=1020$ km。乙车速度 $=1020\\div 5-85=204-85=119$ km/h。",
+      "_raw_excerpt": "22．在比例尺是1：17000000的地图上，量得A地到B地的图上距离是6厘米。甲、乙两列火车同时从两地相向开出，5时后相遇。已知甲车每时行85千米，乙车每时行多少千米？"
     },
     {
       "subject": "math",
@@ -331,7 +396,8 @@
       "answer": "75",
       "explanation": "$8x=15\\times 40=600$，$x=600\\div 8=75$。",
       "group_id": "qz_longhua_002_q17",
-      "group_order": 1
+      "group_order": 1,
+      "_raw_excerpt": "17．解比例。\n（1）15：8=x：40\n（2）x：10=  ： \n  [OMATH: $\\frac{1}{4}$ | $\\frac{1}{3}$]\n（3）x：1.5=81：4.5"
     },
     {
       "subject": "math",
@@ -345,7 +411,8 @@
       "answer": "7.5",
       "explanation": "$\\frac{1}{3}x=10\\times\\frac{1}{4}=\\frac{10}{4}=2.5$，$x=2.5\\times 3=7.5$。",
       "group_id": "qz_longhua_002_q17",
-      "group_order": 2
+      "group_order": 2,
+      "_raw_excerpt": "17．解比例。\n（1）15：8=x：40\n（2）x：10=  ： \n  [OMATH: $\\frac{1}{4}$ | $\\frac{1}{3}$]\n（3）x：1.5=81：4.5"
     },
     {
       "subject": "math",
@@ -359,7 +426,8 @@
       "answer": "27",
       "explanation": "$4.5x=1.5\\times 81=121.5$，$x=121.5\\div 4.5=27$。",
       "group_id": "qz_longhua_002_q17",
-      "group_order": 3
+      "group_order": 3,
+      "_raw_excerpt": "17．解比例。\n（1）15：8=x：40\n（2）x：10=  ： \n  [OMATH: $\\frac{1}{4}$ | $\\frac{1}{3}$]\n（3）x：1.5=81：4.5"
     },
     {
       "subject": "math",
@@ -374,7 +442,8 @@
       "answer": "1356.48",
       "explanation": "圆柱底面直径 $12$ 分米，半径 $6$ 分米，高 $30$ 分米。表面积 $=$ 侧面积 $+2\\times$ 底面积 $=3.14\\times 12\\times 30+3.14\\times 6^2\\times 2=1130.4+226.08=1356.48$ dm²。",
       "group_id": "qz_longhua_002_q18",
-      "group_order": 1
+      "group_order": 1,
+      "_raw_excerpt": "18．（1）求图形的表面积。（单位：分米）\n\n（2）求图形的体积。（单位：分米）"
     },
     {
       "subject": "math",
@@ -389,7 +458,8 @@
       "answer": "75.36",
       "explanation": "圆锥底面半径 $3$ 分米（直径未标，按图示 $3$），高 $8$ 分米。体积 $=\\frac{1}{3}\\pi r^2 h=\\frac{1}{3}\\times 3.14\\times 9\\times 8=75.36$ dm³。",
       "group_id": "qz_longhua_002_q18",
-      "group_order": 2
+      "group_order": 2,
+      "_raw_excerpt": "18．（1）求图形的表面积。（单位：分米）\n\n（2）求图形的体积。（单位：分米）"
     },
     {
       "subject": "math",
@@ -403,7 +473,8 @@
       "answer": "7.536",
       "explanation": "底面周长 $=12.56$ m $\\Rightarrow$ 半径 $r=12.56\\div 3.14\\div 2=2$ m。圆锥体积 $V=\\frac{1}{3}\\pi r^2 h=\\frac{1}{3}\\times 3.14\\times 4\\times 1.8=7.536$ m³。",
       "group_id": "qz_longhua_002_q20",
-      "group_order": 1
+      "group_order": 1,
+      "_raw_excerpt": "20．元元和爸爸一起去爷爷家收小麦。爷爷把收好的一堆小麦堆成了一个圆锥形。经过测量，麦堆的底面周长是12.56m，高是1.8m。爷爷将这堆小麦装进了一个底面直径是2m的圆柱形麦仓里，刚刚好装满。\n（1）这堆小麦的体积是多少立方米？\n（2）麦仓的高是多少米？"
     },
     {
       "subject": "math",
@@ -417,63 +488,8 @@
       "answer": "2.4",
       "explanation": "麦仓底面半径 $=2\\div 2=1$ m。圆柱高 $=$ 体积 $\\div$ 底面积 $=7.536\\div(3.14\\times 1^2)=2.4$ m。",
       "group_id": "qz_longhua_002_q20",
-      "group_order": 2
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_qz_longhua_002",
-      "round": 2,
-      "type": "fill",
-      "chapter": "圆柱与圆锥",
-      "knowledge_point": "圆柱与圆锥/圆柱的体积",
-      "content": "将一个土豆放进装满水的圆柱形杯子中，水溢出了一些，然后又将土豆拿出，水面下降了 $8$ 厘米。已知圆柱形杯子底面半径是 $5$ 厘米，这个土豆的体积是多少？",
-      "answer": "628",
-      "explanation": "土豆体积 $=$ 下降水柱体积 $=\\pi r^2 h=3.14\\times 25\\times 8=628$ cm³。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_qz_longhua_002",
-      "round": 4,
-      "type": "fill",
-      "chapter": "比例",
-      "knowledge_point": "正反比例/比例尺",
-      "content": "在比例尺是 $1:17000000$ 的地图上，量得 A 地到 B 地的图上距离是 $6$ 厘米。甲、乙两列火车同时从两地相向开出，$5$ 时后相遇。已知甲车每时行 $85$ 千米，乙车每时行多少千米？",
-      "answer": "119",
-      "explanation": "实际距离 $=6\\times 17000000=1.02\\times 10^8$ cm $=1020$ km。乙车速度 $=1020\\div 5-85=204-85=119$ km/h。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_qz_longhua_002",
-      "round": 4,
-      "type": "fill",
-      "chapter": "正比例和反比例",
-      "knowledge_point": "正反比例/正反比例的判断",
-      "content": "电动汽车作为新型的环保交通工具，受到了消费者的喜爱。小丽的爸爸也买了某品牌的电动汽车带全家外出旅行，途中小丽记录了汽车仪表盘上显示的相关数据，整理结果如下表：\n\n| 行驶路程/千米 | $100$ | $120$ | $130$ | $140$ | $150$ | …… |\n| --- | --- | --- | --- | --- | --- | --- |\n| 耗电量/度 | $15$ | $18$ | $19.5$ | $21$ | $22.5$ | …… |\n1. 观察上表，汽车行驶路程与耗电量成 ____ 比例。",
-      "answer": "正",
-      "explanation": "$\\frac{100}{15}=\\frac{120}{18}=\\frac{130}{19.5}=\\dots\\approx 6.67$（一定），路程与耗电量比值一定，成正比例。",
-      "group_id": "qz_longhua_002_q23",
-      "group_order": 1
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_qz_longhua_002",
-      "round": 4,
-      "type": "choice",
-      "chapter": "正比例和反比例",
-      "knowledge_point": "正反比例/正比例的意义",
-      "content": "电动汽车作为新型的环保交通工具，受到了消费者的喜爱。小丽的爸爸也买了某品牌的电动汽车带全家外出旅行，途中小丽记录了汽车仪表盘上显示的相关数据，整理结果如下表：\n\n| 行驶路程/千米 | $100$ | $120$ | $130$ | $140$ | $150$ | …… |\n| --- | --- | --- | --- | --- | --- | --- |\n| 耗电量/度 | $15$ | $18$ | $19.5$ | $21$ | $22.5$ | …… |\n2. 汽车电池充满后有 $45$ 度电，行驶 $280$ 千米够吗？（列比例解答）",
-      "options": [
-        "A. 够",
-        "B. 不够"
-      ],
-      "answer": "A",
-      "explanation": "设 $45$ 度电可行 $x$ 千米，则 $\\frac{15}{100}=\\frac{45}{x}$，$x=300$ km。$280<300$，所以够。",
-      "group_id": "qz_longhua_002_q23",
-      "group_order": 2
+      "group_order": 2,
+      "_raw_excerpt": "20．元元和爸爸一起去爷爷家收小麦。爷爷把收好的一堆小麦堆成了一个圆锥形。经过测量，麦堆的底面周长是12.56m，高是1.8m。爷爷将这堆小麦装进了一个底面直径是2m的圆柱形麦仓里，刚刚好装满。\n（1）这堆小麦的体积是多少立方米？\n（2）麦仓的高是多少米？"
     },
     {
       "subject": "math",
@@ -488,7 +504,8 @@
       "answer": "20,正",
       "explanation": "图中 $6$ 时行 $120$ 千米，速度 $=120\\div 6=20$ km/h。路程 $\\div$ 时间 $=20$（一定），成正比例。",
       "group_id": "qz_longhua_002_q24",
-      "group_order": 1
+      "group_order": 1,
+      "_raw_excerpt": "24．下图方格纸上的“点”表示轮船的航行速度。\n\n（1）轮船的行驶速度是　     　千米/时，轮船行驶所用时间和路程成　     　比例。\n（2）这艘轮船2.5时行驶了多少千米？\n（3）这艘轮船行了180千米，行驶了多少时？\n\n答案解析部分\n1．【答案】B\n【知识点】圆柱的展开图"
     },
     {
       "subject": "math",
@@ -503,7 +520,8 @@
       "answer": "50",
       "explanation": "$20\\times 2.5=50$ 千米。",
       "group_id": "qz_longhua_002_q24",
-      "group_order": 2
+      "group_order": 2,
+      "_raw_excerpt": "24．下图方格纸上的“点”表示轮船的航行速度。\n\n（1）轮船的行驶速度是　     　千米/时，轮船行驶所用时间和路程成　     　比例。\n（2）这艘轮船2.5时行驶了多少千米？\n（3）这艘轮船行了180千米，行驶了多少时？\n\n答案解析部分\n1．【答案】B\n【知识点】圆柱的展开图"
     },
     {
       "subject": "math",
@@ -518,7 +536,9 @@
       "answer": "9",
       "explanation": "$180\\div 20=9$ 时。",
       "group_id": "qz_longhua_002_q24",
-      "group_order": 3
+      "group_order": 3,
+      "_raw_excerpt": "24．下图方格纸上的“点”表示轮船的航行速度。\n\n（1）轮船的行驶速度是　     　千米/时，轮船行驶所用时间和路程成　     　比例。\n（2）这艘轮船2.5时行驶了多少千米？\n（3）这艘轮船行了180千米，行驶了多少时？\n\n答案解析部分\n1．【答案】B\n【知识点】圆柱的展开图"
     }
-  ]
+  ],
+  "_v2_workflow_version": "V3.17"
 }

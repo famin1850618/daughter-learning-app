@@ -1,0 +1,509 @@
+{
+  "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
+  "_source_docx_sha1": "1c6e0e07b796ff44",
+  "subject": "math",
+  "grade": 6,
+  "knowledge_points_added": [],
+  "_quality_meta": {
+    "source_file": "小升初真题汇编选择题（二）-2023年六年级下册数学期末必考题北师大版（广东深圳）.docx",
+    "sha1": "1c6e0e07b796ff44",
+    "paper_type": "zhuanxiang",
+    "chapter_default": "小升初综合",
+    "omath_total_formulas": 36,
+    "omath_para_count": 24,
+    "images_used": 0,
+    "questions_total_paper": 40,
+    "questions_imported": 22,
+    "questions_skipped": 18
+  },
+  "_skipped_for_future": [
+    {
+      "qnum": "4",
+      "reason": "unclear_image",
+      "raw_excerpt": "图形旋转 90° 4 选项均图"
+    },
+    {
+      "qnum": "5",
+      "reason": "unclear_image",
+      "raw_excerpt": "三角形被纸板遮（含图）"
+    },
+    {
+      "qnum": "9",
+      "reason": "unclear_image",
+      "raw_excerpt": "OA=AB=BC=1cm 数轴图判方位距离"
+    },
+    {
+      "qnum": "10",
+      "reason": "unclear_image",
+      "raw_excerpt": "圆柱切拼长方体表面积增加（图判尺寸）"
+    },
+    {
+      "qnum": "11",
+      "reason": "unclear_image",
+      "raw_excerpt": "图按 1:2 缩小（4 选项均图）"
+    },
+    {
+      "qnum": "12",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "5:6 比例 (OMath 救出但选项 ABC 仍含分数)"
+    },
+    {
+      "qnum": "13",
+      "reason": "unclear_image",
+      "raw_excerpt": "正方形纸片规律拼图"
+    },
+    {
+      "qnum": "17",
+      "reason": "unclear_image",
+      "raw_excerpt": "3/4×1/2 图示选择"
+    },
+    {
+      "qnum": "18",
+      "reason": "unclear_image",
+      "raw_excerpt": "长方形阴影部分小数表示"
+    },
+    {
+      "qnum": "19",
+      "reason": "unclear_image",
+      "raw_excerpt": "圆形+三角形窟窿艺术墙塞窟"
+    },
+    {
+      "qnum": "21",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "6/24 男女比 OMath 算式 + 选项分数"
+    },
+    {
+      "qnum": "23",
+      "reason": "unclear_image",
+      "raw_excerpt": "刘明回家取手机折线图"
+    },
+    {
+      "qnum": "24",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "绳子用 3/7 米 + 用 3/7 比较 OMath 复杂"
+    },
+    {
+      "qnum": "25",
+      "reason": "unclear_image",
+      "raw_excerpt": "小学平面图植物园方向"
+    },
+    {
+      "qnum": "30",
+      "reason": "unclear_image",
+      "raw_excerpt": "正方体展开图判⑤号面对面"
+    },
+    {
+      "qnum": "31",
+      "reason": "unclear_image",
+      "raw_excerpt": "圆柱沿阴影切两块（图判）"
+    },
+    {
+      "qnum": "37",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "酒精蒸发 1/3+2/3 嵌套（OMath 题面歧义）"
+    },
+    {
+      "qnum": "38",
+      "reason": "unclear_image",
+      "raw_excerpt": "摸球游戏 ABCD 球袋图"
+    }
+  ],
+  "questions": [
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "小升初综合",
+      "knowledge_point": "正反比例/比例尺",
+      "content": "（$2022$ 年龙岗）一个鞋柜的高度是 $1.1$ 米，画在图纸上的高是 $5.5$ 厘米。这幅图纸的比例尺是（　　）。",
+      "options": [
+        "A. $1:5$",
+        "B. $5:1$",
+        "C. $1:20$",
+        "D. $1:50$"
+      ],
+      "answer": "C",
+      "explanation": "$1.1$ m $= 110$ cm。比例尺 $= 5.5:110 = 1:20$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "（$2022$ 年龙岗）估计一下，下面最接近 $12$ 岁（六年级）自己年龄的是（　　）。",
+      "options": [
+        "A. $600$ 分",
+        "B. $600$ 时",
+        "C. $600$ 周",
+        "D. $600$ 月"
+      ],
+      "answer": "C",
+      "explanation": "$600$ 分 $= 10$ 时；$600$ 时 $= 25$ 日；$600$ 周 $\\approx 11.5$ 年（最接近 12 岁）；$600$ 月 $= 50$ 年。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "（$2022$ 年盐田）一辆小汽车行驶 $12$ 千米消耗 $0.8$ L 汽油。$1$ L 汽油能行驶多少千米？这个问题用算式（　　）解答。",
+      "options": [
+        "A. $0.8\\div 12$",
+        "B. $12\\div 0.8$",
+        "C. $12\\times 0.8$",
+        "D. $12\\times 1$"
+      ],
+      "answer": "B",
+      "explanation": "$1$ L 行驶 $= $ 总路程 $\\div$ 总油量 $= 12\\div 0.8 = 15$ km。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "（$2022$ 年龙岗）有 $6$ 个人参加会议，两两都要握手一次，共要握手（　　）次。",
+      "options": [
+        "A. $5$",
+        "B. $10$",
+        "C. $15$",
+        "D. $30$"
+      ],
+      "answer": "C",
+      "explanation": "$\\dfrac{6\\times 5}{2} = 15$ 次。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
+      "round": 3,
+      "type": "choice",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "（$2022$ 年龙岗）下面说法正确的是（　　）。",
+      "options": [
+        "A. 圆锥的侧面展开图是一个等腰三角形",
+        "B. 小华身高 $1.2$ 米，她在平均水深是 $1$ 米的水池中游泳是绝对安全的",
+        "C. 圆的面积和半径成正比例",
+        "D. 如果 $ab = cd$（$a,b,c,d$ 均不为 $0$），那么 $a:c = d:b$"
+      ],
+      "answer": "D",
+      "explanation": "A 错（圆锥侧面展开是扇形）。B 错（平均不代表局部每个地方）。C 错（面积 $= \\pi r^2$，与 $r^2$ 成正比例，不与 $r$）。D 对：$ab=cd$ 等价于 $\\dfrac{a}{c}=\\dfrac{d}{b}$ 即 $a:c=d:b$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "（$2022$ 年龙岗）把一个用木条钉成的长方形，拉成一个平行四边形。它的面积与原来的面积相比（　　）。",
+      "options": [
+        "A. 比原来大",
+        "B. 比原来小",
+        "C. 和原来相等",
+        "D. 无法确定"
+      ],
+      "answer": "B",
+      "explanation": "四边长不变（周长不变），但拉斜后高变小。$S = 底\\times 高$，高减小所以面积变小。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "（$2022$ 年龙岗）把 $2$ 个棱长为 $3$ 厘米的正方体拼成一个长方体。它的表面积比原来两个正方体的表面积之和减少（　　）平方厘米。",
+      "options": [
+        "A. $3$",
+        "B. $6$",
+        "C. $9$",
+        "D. $18$"
+      ],
+      "answer": "D",
+      "explanation": "拼合时合并 $2$ 个面（每个 $3\\times 3=9$），共减少 $2\\times 9 = 18\\,\\text{cm}^2$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "（$2022$ 年龙岗）$13.6\\%$ 去掉百分号后，这个数就（　　）。",
+      "options": [
+        "A. 扩大为原来的 $100$ 倍",
+        "B. 缩小为原来的 $\\dfrac{1}{100}$",
+        "C. 大小不变",
+        "D. 无法确定"
+      ],
+      "answer": "A",
+      "explanation": "$13.6\\% = 0.136$；去掉百分号后变成 $13.6$，是 $0.136$ 的 $100$ 倍 → 扩大为原来的 $100$ 倍。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "（$2022$ 年龙华）地球与太阳的平均距离为 $149600000$ 千米。$149600000$ 中的「$9$」表示（　　）。",
+      "options": [
+        "A. $90$ 万千米",
+        "B. $900$ 万千米",
+        "C. $900$ 万米",
+        "D. $9$ 千万千米"
+      ],
+      "answer": "B",
+      "explanation": "$149,600,000$ 中 $9$ 在百万位 $\\to 9\\times 10^6 = 900$ 万千米。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "（$2022$ 年坪山）$2.34\\times 65 + 35\\times 2.34 = 2.34\\times(65+35)$，这里运用的是（　　）。",
+      "options": [
+        "A. 乘法分配律",
+        "B. 乘法结合律",
+        "C. 乘法交换律",
+        "D. 加法结合律"
+      ],
+      "answer": "A",
+      "explanation": "$ab + ac = a(b+c)$ → 乘法分配律。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "（$2022$ 年盐田）妈妈去超市买酸奶「买四赠一」。妈妈准备买 $14$ 盒酸奶，销售员建议妈妈买 $15$ 盒酸奶。你认为（　　）。",
+      "options": [
+        "A. $15$ 盒需要的钱多",
+        "B. $14$ 盒需要的钱多",
+        "C. $14$ 盒和 $15$ 盒需要的钱一样多",
+        "D. 无法判断"
+      ],
+      "answer": "B",
+      "explanation": "$14$ 盒：付 $14$ 盒钱（不够买 4+1 套档，按原价）。$15$ 盒（恰好 $5$ 套买 4 赠 1）：付 $4\\times 3 = 12$ 盒钱。所以 $15$ 盒比 $14$ 盒还便宜 → $14$ 盒钱多。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "（$2022$ 年龙岗）规定 $10$ t 记作 $0$ t，$11$ t 记作 $+1$ t。则下列说法错误的是（　　）。",
+      "options": [
+        "A. $8$ t 记作 $-8$ t",
+        "B. $15$ t 记作 $+5$ t",
+        "C. $6$ t 记作 $-4$ t",
+        "D. $+3$ t 表示 $13$ t"
+      ],
+      "answer": "A",
+      "explanation": "以 $10$ 为 $0$。$8$ t $= 8-10 = -2$ t（不是 $-8$） → A 错。$15$ t $\\to +5$ ✓。$6$ t $\\to -4$ ✓。$+3$ t $\\to 13$ t ✓。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/反比例的意义",
+      "content": "（$2022$ 年龙岗）上坡路程和下坡路程相等，一辆汽车上坡速度与下坡速度比是 $3:5$。这辆汽车上坡与下坡用的时间比是（　　）。",
+      "options": [
+        "A. $5:8$",
+        "B. $5:3$",
+        "C. $3:5$",
+        "D. $3:8$"
+      ],
+      "answer": "B",
+      "explanation": "路程一定时，速度与时间反比 → 时间比 $= $ 速度比的反比 $= 5:3$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "（$2022$ 年龙岗）下列图形中，对称轴最多的是（　　）。",
+      "options": [
+        "A. 正方形",
+        "B. 长方形",
+        "C. 等边三角形",
+        "D. 圆"
+      ],
+      "answer": "D",
+      "explanation": "正方形 $4$ 条；长方形 $2$ 条；等边三角形 $3$ 条；圆 $\\infty$ 条（无数）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "（$2022$ 年龙岗）乐乐爸爸每月工资 $7800$ 元。$5000$ 元以内不交税，超过 $5000$ 元的部分按 $3\\%$ 交税。乐乐爸爸每月应交税多少元？正确算式是（　　）。",
+      "options": [
+        "A. $(7800-5000)\\times 3\\%$",
+        "B. $7800\\times 3\\%$",
+        "C. $5000\\times 3\\%$",
+        "D. $(7800-5000)\\times(1-3\\%)$"
+      ],
+      "answer": "A",
+      "explanation": "应税部分 $= 7800-5000 = 2800$ 元；税 $= 2800\\times 3\\% = 84$ 元。算式 $(7800-5000)\\times 3\\%$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
+      "round": 3,
+      "type": "choice",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "（$2022$ 年龙岗）已知三角形一个角是 $30°$，另外两个内角的度数比是 $1:4$。这个三角形是（　　）。",
+      "options": [
+        "A. 锐角三角形",
+        "B. 直角三角形",
+        "C. 等腰直角三角形",
+        "D. 钝角三角形"
+      ],
+      "answer": "D",
+      "explanation": "另两角和 $= 150°$，按 $1:4$ 分 → $30°$ 和 $120°$。最大角 $120° > 90°$ → 钝角三角形。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "（$2022$ 年坪山）吸烟既有害健康又费钱。如果一位吸烟者每天吸一包 $50$ 元的香烟，那么他 $7$ 月一个月花在吸烟上的钱是（　　）元。",
+      "options": [
+        "A. $155$",
+        "B. $355$",
+        "C. $1500$",
+        "D. $1550$"
+      ],
+      "answer": "D",
+      "explanation": "$7$ 月有 $31$ 天。$31\\times 50 = 1550$ 元。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "（$2022$ 年龙岗）大于 $0$ 而小于 $1$ 的数（　　）。",
+      "options": [
+        "A. 一个也没有",
+        "B. 无数个",
+        "C. 有 $10$ 个",
+        "D. 以上都不是"
+      ],
+      "answer": "B",
+      "explanation": "$0$ 与 $1$ 之间小数（如 $0.1, 0.01, \\dfrac{1}{2}\\ldots$）有无数个。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "（$2022$ 年龙岗）妙想做抛硬币的游戏（硬币是均匀的）。下列说法正确的是（　　）。",
+      "options": [
+        "A. 妙想抛 $20$ 次硬币，一定是 $10$ 次正面朝上，$10$ 次反面朝上",
+        "B. 妙想前 $4$ 次抛的结果都是反面朝上，第 $5$ 次一定会正面朝上",
+        "C. 妙想做了 $1000$ 次抛硬币的游戏，正面朝上的次数和反面朝上的次数的比值接近或等于 $1$",
+        "D. 妙想抛了 $10$ 次硬币，不可能 $8$ 次正面朝上"
+      ],
+      "answer": "C",
+      "explanation": "概率 $1/2$ 的事件，长期实验频率接近概率（大数定律）。A/B 把随机事件当确定，错。D「不可能 $8$ 次」错（$8/10$ 是有可能的随机结果）。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/图形与几何综合",
+      "content": "（$2022$ 年龙华）如果一个三角形的两条边的长分别是 $6$ cm 和 $9$ cm，那么第三条边的长可能是（　　）cm。",
+      "options": [
+        "A. $1$",
+        "B. $2$",
+        "C. $3$",
+        "D. $4$"
+      ],
+      "answer": "D",
+      "explanation": "三角形第三边 $> |9-6| = 3$ 且 $< 9+6 = 15$。$3 < $ 第三边 $< 15$。$4$ 满足。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正比例的意义",
+      "content": "（$2022$ 年坪山）果树的成活率一定，栽种的棵数和成活的棵数（　　）。",
+      "options": [
+        "A. 成反比例",
+        "B. 成正比例",
+        "C. 不成比例",
+        "D. 以上都不是"
+      ],
+      "answer": "B",
+      "explanation": "成活的棵数 $\\div$ 栽种的棵数 $=$ 成活率（一定）→ 比值一定 → 正比例。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/统计与可能性",
+      "content": "（$2022$ 年坪山）以下几种情况，最适合用折线统计图的是（　　）。",
+      "options": [
+        "A. 图书馆各类图书本数",
+        "B. 六年级各班人数",
+        "C. 某公司销售业绩增减变化情况",
+        "D. 家庭各类支出占总支出的百分比"
+      ],
+      "answer": "C",
+      "explanation": "折线统计图反映「随时间变化趋势」 → 销售业绩增减变化最合适。A/B 用条形，D 用扇形。"
+    }
+  ]
+}

@@ -1,0 +1,370 @@
+{
+  "source": "realpaper_g6_chinese_bubian_qm_futian_001",
+  "_source_docx_sha1": "dc2669a9e5263b06",
+  "subject": "chinese",
+  "grade": 6,
+  "knowledge_points_added": [
+    "字词/字音",
+    "字词/字形",
+    "字词/词语理解",
+    "古诗文/古诗词背诵默写",
+    "古诗文/文言文阅读",
+    "句式与标点/关联词",
+    "课文与名著/课文内容理解",
+    "现代文阅读/词句赏析",
+    "现代文阅读/写作手法"
+  ],
+  "_quality_meta": {
+    "source_file": "广东省深圳市福田区2022—2023学年六年级语文下学期期末试卷.docx",
+    "sha1": "dc2669a9e5263b06",
+    "paper_type": "final",
+    "chapter_default": "综合",
+    "omath_total_formulas": 0,
+    "images_used": 0,
+    "questions_total_paper": 20,
+    "questions_imported": 19,
+    "questions_skipped": 6
+  },
+  "_skipped_for_future": [
+    {
+      "qnum": "1-2",
+      "reason": "listening_question",
+      "raw_excerpt": "听录音填空 + 听录音判断（依赖音频材料）"
+    },
+    {
+      "qnum": "5(部分)",
+      "reason": "scope_reduced",
+      "raw_excerpt": "看拼音写词语共 11 空（jì tuō / zhì dù / jí / fěi tú / jiǎo / tōng xiāo / làng màn / bō nòng / qiū yǐn / chǐ lún / zhēng róng），仅入 3 空作为代表（jì tuō / zhì dù / zhēng róng），其余 8 空待批量入"
+    },
+    {
+      "qnum": "15",
+      "reason": "subjective_short",
+      "raw_excerpt": "口语交际：小满节气母子对话填空"
+    },
+    {
+      "qnum": "18",
+      "reason": "subjective_short",
+      "raw_excerpt": "整本书阅读：《鲁滨逊漂流记》读书沙龙开放讨论"
+    },
+    {
+      "qnum": "19-20",
+      "reason": "subjective_essay",
+      "raw_excerpt": "习作：「这里有我的天地」 / 「特别的____」"
+    }
+  ],
+  "questions": [
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_futian_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "group_id": "qm_futian_001_q5",
+      "group_order": 1,
+      "content": "根据情境，看拼音写词语。\n\n小学的课本里，jì tuō 着童年的快乐与期盼。\n\n1. jì tuō = ？",
+      "answer": "寄托",
+      "explanation": "「寄托」指把理想/感情放在某人/某物上。",
+      "_round_reasoning": "R2 因为：拼音写词语 R2，参考 chinese_r2_anchor_2 字词辨析水准；非课内必修常识。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_futian_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "group_id": "qm_futian_001_q5",
+      "group_order": 2,
+      "content": "根据情境，看拼音写词语。\n\n多彩的课堂里，我们讨论过 zhì dù 的优劣与书 jí 的选择。\n\n2. zhì dù = ？",
+      "answer": "制度",
+      "explanation": "「制度」指法律/规则。",
+      "_round_reasoning": "R2 因为：拼音写词语，同 q5(1)。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_futian_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "group_id": "qm_futian_001_q5",
+      "group_order": 3,
+      "content": "根据情境，看拼音写词语。\n\n童年如薄雾，终将被岁月的阳光 zhēng róng。\n\n3. zhēng róng = ？",
+      "answer": "蒸融",
+      "explanation": "「蒸融」（出自《匆匆》）指被蒸气融化掉。",
+      "_round_reasoning": "R2 因为：拼音写词语+课内积累。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_futian_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "下列词语中，加粗字注音完全正确的一组是（　　）。",
+      "options": [
+        "A. **挪**移（luó） **汤匙**（shí） **侵袭**（xí） **浓稠**（chóu）",
+        "B. **苦刑**（xíng） **惊惶**（huāng） **锤炼**（chuí） **剔**除（tì）",
+        "C. **不禁**（jīn） **炊**烟（chuī） **石蕊**（ruǐ） **间**断（jiàn）"
+      ],
+      "answer": "C",
+      "explanation": "A 错（「挪」应读 nuó、「匙」应读 chí）；B 错（「惶」应读 huáng、「剔」应读 tī）；C 全对。",
+      "_round_reasoning": "R2 因为：理解层级 2（多字音综合判别），陷阱密度 0.5（3 选项每项 4 字音组合，A B 各错 2 处），KP 跨度 1。同 chinese_r2 系字词辨析。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_futian_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/字形",
+      "content": "下列选项中，没有错别字的一项是（　　）。",
+      "options": [
+        "A. 健树  觉察  提取  万不得以",
+        "B. 唯恐  避免  挽回  赴汤蹈火",
+        "C. 严峻  防御  沉郁  心平气合"
+      ],
+      "answer": "B",
+      "explanation": "A 错（「健」应为「建」、「以」应为「已」）；C 错（「合」应为「和」）；B 全对。",
+      "_round_reasoning": "R2 因为：错别字辨析综合判别。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_futian_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言文阅读",
+      "content": "下列选项中，加粗字意思**不同**的一项是（　　）。",
+      "options": [
+        "A. 万事**俱**备／野径云**俱**黑",
+        "B. 过犹不**及**／**及**其日中如探汤",
+        "C. 深以为**然**／非**然**也"
+      ],
+      "answer": "B",
+      "explanation": "A「俱」=都/全（同）；C「然」=这样（同）；B 前者「及」=赶上，后者「及」=到了（不同）。",
+      "_round_reasoning": "R2 因为：文言一字多义辨析，参考 chinese_r2_anchor_2 R2 同档。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_futian_001",
+      "round": 3,
+      "type": "choice",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言文阅读",
+      "content": "请选出文言朗诵断句**有误**的一项（　　）。",
+      "options": [
+        "A. 此不为/远者小而/近者大乎？",
+        "B. 两小儿笑曰：「孰为汝/多知乎？」",
+        "C. 一儿以日初/出远，而日中时近也。"
+      ],
+      "answer": "C",
+      "explanation": "C 错。句意「一个小朋友认为太阳刚出来时距离人远」，应断为「一儿以/日初出远」（「日初出」是连动短语不能拆）。A B 断句正确。",
+      "_round_reasoning": "R3 因为：理解层级 3（文言句意+语法结构双重判断），陷阱密度 0.6（A B C 三句都看似合理；C「日初/出远」拆错连动需句法功底），KP 跨度 2（文言+断句）。参考 chinese_r3_anchor_1 文言推断 R3 同档。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_futian_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/词句赏析",
+      "content": "下列句子中，表达情感的方式与其他两项**不同**的是（　　）。",
+      "options": [
+        "A. 路上的花儿耷拉着脑袋，一副无精打采的样子。",
+        "B. 这个消息真是振奋人心，我想高歌一曲，表示满心的愉快。",
+        "C. 我依偎在母亲怀里，闭上眼睛不再看太阳，光线正无可挽回地消逝，一派荒凉。"
+      ],
+      "answer": "B",
+      "explanation": "A C 是借景抒情（间接表达）；B 是直接抒情（「振奋人心」「满心的愉快」直白表达）。",
+      "_round_reasoning": "R2 因为：表达方式辨析（直接 vs 间接抒情），参考 chinese_r2 修辞 R2 同档。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_futian_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "句子和语法",
+      "knowledge_point": "句子和语法/关联词",
+      "content": "下面这段毕业赠言中，关联词语填写正确的一项是（　　）。\n\n亲爱的同学们，小学即将毕业，你们将踏上新的征程。① 未来面临怎样的困难和挑战，② 你们的理想之路必然风雨兼程。③ 你们坚持不懈，奋力前行，不负韶华！",
+      "options": [
+        "A. 无论……都……虽然……但是……只有……才……",
+        "B. 因为……所以……不管……都……如果……就……",
+        "C. 不管……都……因为……所以……只有……才……"
+      ],
+      "answer": "C",
+      "explanation": "①假设关系「不管……都……」；②因果关系「因为……所以……」；③条件关系「只有……才……」。仅 C 三组关系都对应。",
+      "_round_reasoning": "R2 因为：关联词搭配判别，参考 chinese_r2_anchor_3 病句关联词搭配 R2 同档。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_futian_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "qm_futian_001_q12",
+      "group_order": 1,
+      "content": "[情以物迁] 古诗默写。\n\n1. 《迢迢牵牛星》中「盈盈一水间，________」两句描写了牵牛与织女一水相隔的情境。横线处应填的诗句是？",
+      "answer": "脉脉不得语",
+      "explanation": "出自两汉佚名《迢迢牵牛星》。",
+      "_round_reasoning": "R1 因为：课内古诗默写，rubric §2.1 课内必修一律 R1。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_futian_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "qm_futian_001_q12",
+      "group_order": 2,
+      "content": "[情以物迁] 古诗默写。\n\n2. 《十五夜望月》中「中庭地白树栖鸦，________」明写中秋节赏月环境，暗写人物思乡的情态。横线处应填的诗句是？",
+      "answer": "冷露无声湿桂花",
+      "explanation": "出自唐代王建《十五夜望月》。",
+      "_round_reasoning": "R1 因为：课内古诗默写。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_futian_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "qm_futian_001_q12",
+      "group_order": 3,
+      "content": "[情以物迁] 古诗默写。\n\n3. 《长歌行》中「________，焜黄华叶衰」借草木凋零的自然现象感慨时光稍纵即逝。横线处应填的诗句是？",
+      "answer": "常恐秋节至",
+      "explanation": "出自汉乐府《长歌行》。",
+      "_round_reasoning": "R1 因为：课内古诗默写。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_futian_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "qm_futian_001_q13",
+      "group_order": 1,
+      "content": "[诗以咏志] 古诗默写。\n\n1. 郑燮《竹石》「咬定青山不放松，________」借竹子坚韧的特点，表达自己刚正不阿的气节。横线处应填的诗句是？",
+      "answer": "立根原在破岩中",
+      "explanation": "出自清代郑燮《竹石》。",
+      "_round_reasoning": "R1 因为：课内古诗默写。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_futian_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "qm_futian_001_q13",
+      "group_order": 2,
+      "content": "[诗以咏志] 古诗默写。\n\n2. 于谦《石灰吟》「粉骨碎身浑不怕，________」表达不畏艰难、坚贞不屈的精神。横线处应填的诗句是？",
+      "answer": "要留清白在人间",
+      "explanation": "出自明代于谦《石灰吟》。",
+      "_round_reasoning": "R1 因为：课内古诗默写，同 chinese_r1_anchor_1 类型。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_futian_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "qm_futian_001_q14",
+      "group_order": 1,
+      "content": "[文以载道] 名言默写。\n\n1. 《大学》中「________，日日新，________」强调不断更新自我。请按顺序填两句话，用「|||」分隔。",
+      "answer": "苟日新|||又日新",
+      "explanation": "出自《礼记·大学》「苟日新，日日新，又日新」。",
+      "_round_reasoning": "R1 因为：经典名句默写。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_futian_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "qm_futian_001_q14",
+      "group_order": 2,
+      "content": "[文以载道] 名言默写。\n\n2. 「近水知鱼性，________」告诉我们近距离地观察研究，才能了解事物的本质。横线处应填的诗句是？",
+      "answer": "近山识鸟音",
+      "explanation": "出自《增广贤文》「近水知鱼性，近山识鸟音」。",
+      "_round_reasoning": "R2 因为：课外名言默写（非课内必修），rubric §2.1 不适用一律 R1，定 R2。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_futian_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "qm_futian_001_q14",
+      "group_order": 3,
+      "content": "[文以载道] 名言默写。\n\n3. 「________，莫把无时当有时」告诉我们要践行勤俭节约。横线处应填的诗句是？",
+      "answer": "常将有日思无日",
+      "explanation": "出自《增广贤文》「常将有日思无日，莫把无时当有时」。",
+      "_round_reasoning": "R2 因为：课外名言默写。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_futian_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/词句赏析",
+      "group_id": "qm_futian_001_q16",
+      "group_order": 1,
+      "content": "课内阅读《表里的生物》节选（描述「我」要求父亲打开表盖、好奇表里有蝎子的童年回忆，最后段写「我」逢人就说「父亲有一个小蝎子在表里」）。\n\n1. 下列选项中，对第⑨自然段（「我有蟋蟀在钵子里，蝈蝈儿在葫芦里，鸟儿在笼子里，父亲却有一个小蝎子在表里」）理解**不正确**的一项是？",
+      "options": [
+        "A. 这是「我」心中美妙而奇特的想法，充满了童真童趣。",
+        "B. 以前「我」认为能发出声音的都是活的生物，听到父亲表里的「嘀嗒」响，我推测表里一定有生物。",
+        "C. 后来「我」证实了自己的猜测是错的，父亲的表里没有蝎子，说明「我」之前的推理过程是毫无道理的。"
+      ],
+      "answer": "C",
+      "explanation": "C 错。「我」的推理虽然天真但有自己的逻辑（声音 → 活物），不是「毫无道理」。A B 都正确。",
+      "_round_reasoning": "R2 因为：课文段落理解+选项辨析，参考 chinese_r2_anchor_3 R2 同档。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_futian_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/词句赏析",
+      "group_id": "qm_futian_001_q16",
+      "group_order": 2,
+      "content": "课内阅读《表里的生物》节选。\n\n2. 下列词语中，哪个**最不适合**用来形容文中的「我」？",
+      "options": [
+        "A. 刨根问底",
+        "B. 奇思妙想",
+        "C. 见微知著"
+      ],
+      "answer": "C",
+      "explanation": "「见微知著」指见到事情苗头能知实质，含「以小见大、智慧」之意。文中「我」是天真好奇的孩子，并未达到见微知著的智慧；「刨根问底」「奇思妙想」更贴合。",
+      "_round_reasoning": "R2 因为：词语含义+人物形象匹配，rubric §2.1 不适用降档（C 不显著「反义」）。"
+    }
+  ]
+}

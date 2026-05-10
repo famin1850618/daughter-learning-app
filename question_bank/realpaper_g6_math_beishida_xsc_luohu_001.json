@@ -14,7 +14,11 @@
     "images_used": 0,
     "questions_total_paper": 29,
     "questions_imported": 25,
-    "questions_skipped": 4
+    "questions_skipped": 4,
+    "_v2_workflow_version": "V3.17",
+    "_v2_redoing_v1_violations": true,
+    "questions_imported_total": 19,
+    "questions_skipped_groups": 13
   },
   "_skipped_for_future": [
     {
@@ -66,6 +70,45 @@
       "qnum": "29",
       "reason": "unclear_image",
       "raw_excerpt": "AB 组测试统计图（含画图）"
+    },
+    {
+      "qnum": "8",
+      "reason": "v317_violation_recheck",
+      "raw_excerpt": "8．（2分）第七次全国人口普查结果公布，全国人口为十四亿四千三百四十九万七千三百七十八人，这个数写作 　             　人，四舍五入到亿位约是 　     　亿人。",
+      "_violation_details": [
+        {
+          "order": 2,
+          "issues": [
+            "V3.17-7: content 多出 raw 之外数字 ['1443497378']"
+          ]
+        }
+      ]
+    },
+    {
+      "qnum": "15",
+      "reason": "v317_violation_recheck",
+      "raw_excerpt": "15．（2分）有两根木料，一根长12m，另一根长18m，现在要把它们截成长度相等的若干小段，每段不能有剩余，每小段最长 　   　米，两根木料一共可以截成 　   　段。",
+      "_violation_details": [
+        {
+          "order": 2,
+          "issues": [
+            "V3.17-7: content 多出 raw 之外数字 ['6']"
+          ]
+        }
+      ]
+    },
+    {
+      "qnum": "16",
+      "reason": "v317_violation_recheck",
+      "raw_excerpt": "16．（2分）小亮手绘一幅地图，用图上4厘米的长度表示从家到公园800米的长度，这幅地图的比例尺是 　          　，如果小亮从家到学校的实际距离是1500米，在这幅地图上要画 　      　厘米。",
+      "_violation_details": [
+        {
+          "order": 2,
+          "issues": [
+            "V3.17-7: content 多出 raw 之外数字 ['1:20000']"
+          ]
+        }
+      ]
     }
   ],
   "questions": [
@@ -203,62 +246,6 @@
       "type": "fill",
       "chapter": "小升初综合",
       "knowledge_point": "总复习/数与代数综合",
-      "group_id": "xsc_luohu_001_q8",
-      "group_order": 1,
-      "content": "全国人口为「十四亿四千三百四十九万七千三百七十八」人。\n\n1. 这个数写作（　　）人。",
-      "answer": "1443497378",
-      "explanation": "按位写：$14$ 亿 $4349$ 万 $7378$ → $1443497378$。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
-      "round": 1,
-      "type": "fill",
-      "chapter": "小升初综合",
-      "knowledge_point": "总复习/数与代数综合",
-      "group_id": "xsc_luohu_001_q8",
-      "group_order": 2,
-      "content": "全国人口 $1443497378$ 人。\n\n2. 四舍五入到亿位约是（　　）亿人。",
-      "answer": "14",
-      "explanation": "千万位是 $4 < 5$，舍去 → 约 $14$ 亿。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
-      "round": 2,
-      "type": "fill",
-      "chapter": "小升初综合",
-      "knowledge_point": "总复习/图形与几何综合",
-      "group_id": "xsc_luohu_001_q10",
-      "group_order": 1,
-      "content": "两个正方体的棱长比为 $1:2$。\n\n1. 这两个正方体的表面积比是（　　）。（写成 $a:b$ 形式）",
-      "answer": "1:4",
-      "explanation": "表面积比 $=$ 棱长比的平方 $= 1^2:2^2 = 1:4$。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
-      "round": 2,
-      "type": "fill",
-      "chapter": "小升初综合",
-      "knowledge_point": "总复习/图形与几何综合",
-      "group_id": "xsc_luohu_001_q10",
-      "group_order": 2,
-      "content": "两个正方体的棱长比为 $1:2$。\n\n2. 这两个正方体的体积比是（　　）。（写成 $a:b$ 形式）",
-      "answer": "1:8",
-      "explanation": "体积比 $=$ 棱长比的立方 $= 1^3:2^3 = 1:8$。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
-      "round": 1,
-      "type": "fill",
-      "chapter": "小升初综合",
-      "knowledge_point": "总复习/数与代数综合",
       "content": "$100$ 张纸叠起来厚大约 $1$ 厘米。\n\n$1$ 万张这样的纸叠起来大约有（　　）米。",
       "answer": "1",
       "explanation": "$10000\\div 100 = 100$ 倍 → $100$ 厘米 $= 1$ 米。"
@@ -286,62 +273,6 @@
       "content": "小明为全校每名学生都编了一个号码，例如 $20170332$ 表示 $2017$ 年入学、$3$ 班、学号 $32$ 的同学（前 $4$ 位年份、第 $5\\sim 6$ 位班级、最后 $2$ 位学号）。\n\n根据这个规则，$2020$ 年入学 $6$ 班学号 $9$ 的同学编号是（　　）。",
       "answer": "20200609",
       "explanation": "年份 $2020$、班级 $06$、学号 $09$ → $20200609$。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
-      "round": 2,
-      "type": "fill",
-      "chapter": "小升初综合",
-      "knowledge_point": "总复习/数与代数综合",
-      "group_id": "xsc_luohu_001_q15",
-      "group_order": 1,
-      "content": "两根木料长 $12$ m 和 $18$ m。要把它们截成长度相等的若干小段，每段不能有剩余。\n\n1. 每小段最长（　　）米。",
-      "answer": "6",
-      "explanation": "$\\gcd(12,18) = 6$，每段最长 $6$ 米。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
-      "round": 2,
-      "type": "fill",
-      "chapter": "小升初综合",
-      "knowledge_point": "总复习/数与代数综合",
-      "group_id": "xsc_luohu_001_q15",
-      "group_order": 2,
-      "content": "两根木料长 $12$ m 和 $18$ m，每小段最长 $6$ 米。\n\n2. 两根木料一共可以截成（　　）段。",
-      "answer": "5",
-      "explanation": "$12\\div 6 + 18\\div 6 = 2 + 3 = 5$ 段。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
-      "round": 2,
-      "type": "fill",
-      "chapter": "比例",
-      "knowledge_point": "正反比例/比例尺",
-      "group_id": "xsc_luohu_001_q16",
-      "group_order": 1,
-      "content": "小亮手绘一幅地图，用图上 $4$ 厘米的长度表示从家到公园 $800$ 米。\n\n1. 这幅地图的比例尺是（　　）。（写成 $1:N$ 形式）",
-      "answer": "1:20000",
-      "explanation": "$800$ m $= 80000$ cm。比例尺 $= 4:80000 = 1:20000$。"
-    },
-    {
-      "subject": "math",
-      "grade": 6,
-      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
-      "round": 2,
-      "type": "fill",
-      "chapter": "比例",
-      "knowledge_point": "正反比例/比例尺",
-      "group_id": "xsc_luohu_001_q16",
-      "group_order": 2,
-      "content": "地图比例尺 $1:20000$。如果小亮从家到学校的实际距离是 $1500$ 米。\n\n2. 在这幅地图上要画（　　）厘米。",
-      "answer": "7.5",
-      "explanation": "$1500$ m $= 150000$ cm；图上 $= 150000\\div 20000 = 7.5$ cm。"
     },
     {
       "subject": "math",
@@ -398,12 +329,43 @@
       "round": 2,
       "type": "fill",
       "chapter": "小升初综合",
+      "knowledge_point": "总复习/图形与几何综合",
+      "group_id": "xsc_luohu_001_q10",
+      "group_order": 1,
+      "content": "两个正方体的棱长比为 $1:2$。\n\n1. 这两个正方体的表面积比是（　　）。（写成 $a:b$ 形式）",
+      "answer": "1:4",
+      "explanation": "表面积比 $=$ 棱长比的平方 $= 1^2:2^2 = 1:4$。",
+      "_raw_excerpt": "10．（2分）两个正方体的棱长比为1：2，这两个正方体的表面积比是　      　，体积比是　      　．"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "小升初综合",
+      "knowledge_point": "总复习/图形与几何综合",
+      "group_id": "xsc_luohu_001_q10",
+      "group_order": 2,
+      "content": "两个正方体的棱长比为 $1:2$。\n\n2. 这两个正方体的体积比是（　　）。（写成 $a:b$ 形式）",
+      "answer": "1:8",
+      "explanation": "体积比 $=$ 棱长比的立方 $= 1^3:2^3 = 1:8$。",
+      "_raw_excerpt": "10．（2分）两个正方体的棱长比为1：2，这两个正方体的表面积比是　      　，体积比是　      　．"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "小升初综合",
       "knowledge_point": "比和比例/化简比",
       "group_id": "xsc_luohu_001_q28",
       "group_order": 1,
       "content": "大丰收果园里桃树、梨树与苹果树的棵数比是 $3:5:7$。已知梨树比苹果树少 $180$ 棵。\n\n1. 桃树有（　　）棵。",
       "answer": "270",
-      "explanation": "梨 $:$ 苹 $= 5:7$，差 $=$ 苹 $-$ 梨 $= 2$ 份 $= 180$，每份 $= 90$。桃 $= 3\\times 90 = 270$ 棵。"
+      "explanation": "梨 $:$ 苹 $= 5:7$，差 $=$ 苹 $-$ 梨 $= 2$ 份 $= 180$，每份 $= 90$。桃 $= 3\\times 90 = 270$ 棵。",
+      "_raw_excerpt": "28．（5分）大丰收果园里桃树、梨树与苹果树的棵数比是3：5：7。已知梨树比苹果树少180棵，这个果园里桃树、梨树、苹果树各有多少棵？"
     },
     {
       "subject": "math",
@@ -417,7 +379,8 @@
       "group_order": 2,
       "content": "大丰收果园里桃树、梨树与苹果树的棵数比是 $3:5:7$。已知梨树比苹果树少 $180$ 棵。\n\n2. 梨树有（　　）棵。",
       "answer": "450",
-      "explanation": "梨 $= 5\\times 90 = 450$ 棵。"
+      "explanation": "梨 $= 5\\times 90 = 450$ 棵。",
+      "_raw_excerpt": "28．（5分）大丰收果园里桃树、梨树与苹果树的棵数比是3：5：7。已知梨树比苹果树少180棵，这个果园里桃树、梨树、苹果树各有多少棵？"
     },
     {
       "subject": "math",
@@ -431,7 +394,9 @@
       "group_order": 3,
       "content": "大丰收果园里桃树、梨树与苹果树的棵数比是 $3:5:7$。已知梨树比苹果树少 $180$ 棵。\n\n3. 苹果树有（　　）棵。",
       "answer": "630",
-      "explanation": "苹 $= 7\\times 90 = 630$ 棵。"
+      "explanation": "苹 $= 7\\times 90 = 630$ 棵。",
+      "_raw_excerpt": "28．（5分）大丰收果园里桃树、梨树与苹果树的棵数比是3：5：7。已知梨树比苹果树少180棵，这个果园里桃树、梨树、苹果树各有多少棵？"
     }
-  ]
+  ],
+  "_v2_workflow_version": "V3.17"
 }

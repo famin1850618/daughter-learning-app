@@ -14,7 +14,11 @@
     "images_used": 0,
     "questions_total_paper": 40,
     "questions_imported": 12,
-    "questions_skipped": 28
+    "questions_skipped": 28,
+    "_v2_workflow_version": "V3.17",
+    "_v2_redoing_v1_violations": true,
+    "questions_imported_total": 12,
+    "questions_skipped_groups": 21
   },
   "_skipped_for_future": [
     {
@@ -340,5 +344,6 @@
       "answer": "A",
       "explanation": "花生仁 $\\times$ 出油率 $=$ 油。所以 花生仁 $= $ 油 $\\div$ 出油率 $= 1500\\div 40\\%$。"
     }
-  ]
+  ],
+  "_v2_workflow_version": "V3.17"
 }

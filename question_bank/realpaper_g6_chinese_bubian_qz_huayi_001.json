@@ -3,47 +3,36 @@
   "_source_docx_sha1": "3031d5c91925a1ea",
   "subject": "chinese",
   "grade": 6,
+  "_v2_workflow_version": "V3.17",
   "knowledge_points_added": [
     "字词/字音",
-    "字词/字形",
     "字词/成语运用",
     "字词/词语理解",
     "古诗文/古诗词背诵默写",
-    "课文与名著/课文内容理解",
-    "句式与标点/标点符号"
+    "阅读理解/课文内容理解",
+    "文学常识/中国现代作家作品"
   ],
   "_quality_meta": {
-    "source_file": "精品解析：2022-2023学年广东省深圳市华一实验学校部编版六年级下册期中考试语文试卷（解析版）.docx",
+    "source_file": "广东省深圳市花育实验学校2022-2023学年六年级下学期期中检测语文试题.docx",
     "sha1": "3031d5c91925a1ea",
-    "paper_type": "qz",
-    "chapter_default": "(按 KP 一级 category)",
+    "paper_type": "midterm",
+    "chapter_default": "综合",
     "omath_total_formulas": 0,
-    "images_used": 0,
     "questions_total_paper": 17,
-    "questions_imported": 18,
-    "questions_skipped": 4
+    "questions_imported": 19,
+    "_v3_17_notes": "v1 q3 #10「按顺序填两句话，用「|||」分隔」+ q18 同款违纪。v2 拆为两子题各自 fill。"
   },
   "_skipped_for_future": [
-    {
-      "qnum": "7",
-      "reason": "subjective_short",
-      "raw_excerpt": "情境写心情好/不好两种状态 / 朱自清《匆匆》问句感受 / 推荐外国文学名著理由"
-    },
-    {
-      "qnum": "10-12",
-      "reason": "subjective_short",
-      "raw_excerpt": "诗句翻译 / 节日相关诗句积累 / 两首寒食诗选材立意比较"
-    },
-    {
-      "qnum": "16",
-      "reason": "subjective_short",
-      "raw_excerpt": "想象爱丽丝最后是怎样进入小门中的"
-    },
-    {
-      "qnum": "17",
-      "reason": "subjective_essay",
-      "raw_excerpt": "习作：无法抹去的记忆 / 追赶时间"
-    }
+    {"qnum": "5", "reason": "open_writing_subjective", "raw_excerpt": "文学常识填空：（1）《北京的春节》作者+写作方法（开放概括）（2）《那个星期天》出处（已 v2 入库简易版）"},
+    {"qnum": "6", "reason": "subjective_short", "raw_excerpt": "标点符号作用（破折号/冒号/引号/省略号）开放表达"},
+    {"qnum": "7", "reason": "open_writing_subjective", "raw_excerpt": "综合阅读：心情好/不好状态、《匆匆》问句感受、推荐外国名著（开放）"},
+    {"qnum": "10", "reason": "subjective_short", "raw_excerpt": "翻译诗句开放表达"},
+    {"qnum": "11", "reason": "open_writing_subjective", "raw_excerpt": "传统节日相关诗句填空（自由发挥）"},
+    {"qnum": "12", "reason": "subjective_short", "raw_excerpt": "比较两诗选材立意"},
+    {"qnum": "13", "reason": "info_lost_irrecoverable", "raw_excerpt": "近义词找词（爱丽丝原文略，归入 14）"},
+    {"qnum": "14", "reason": "subjective_short", "raw_excerpt": "片段+描写类型分析（开放）"},
+    {"qnum": "16", "reason": "open_writing_subjective", "raw_excerpt": "想象爱丽丝最后是怎样进入小门"},
+    {"qnum": "17", "reason": "subjective_essay", "raw_excerpt": "习作"}
   ],
   "questions": [
     {
@@ -56,14 +45,11 @@
       "knowledge_point": "字词/成语运用",
       "group_id": "qz_huayi_001_q1",
       "group_order": 1,
-      "content": "补充成语。\n\n1. 万 ____ 更新",
+      "_raw_excerpt": "万（      ）更新",
+      "_common_prefix_raw": "1. 补充下面成语。",
+      "content": "补充下面成语。\n\n1. 万（  ）更新",
       "answer": "象",
-      "explanation": "万象更新：宇宙间的一切事物或景象改换了样子，出现了一番新气象。",
-      "_round_reasoning": "R1 因为：理解层级 1（成语补字），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.1。属字面识记型 R1，参考 anchor chinese_r1_anchor_3 + rubric §2.1 课内必修常识。",
-      "_round_anchor_used": "chinese_r1_anchor_3",
-      "_round_rubric_signals": [
-        "§2.1 课内必修常识"
-      ]
+      "explanation": "「万象更新」指事物或景象焕然一新。"
     },
     {
       "subject": "chinese",
@@ -75,14 +61,11 @@
       "knowledge_point": "字词/成语运用",
       "group_id": "qz_huayi_001_q1",
       "group_order": 2,
-      "content": "补充成语。\n\n2. 独出心 ____",
+      "_raw_excerpt": "独出心（      ）",
+      "_common_prefix_raw": "1. 补充下面成语。",
+      "content": "补充下面成语。\n\n2. 独出心（  ）",
       "answer": "裁",
-      "explanation": "独出心裁：想出的办法与众不同。",
-      "_round_reasoning": "R1 因为：理解层级 1（成语补字），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.1。属字面识记型 R1，参考 anchor chinese_r1_anchor_3。",
-      "_round_anchor_used": "chinese_r1_anchor_3",
-      "_round_rubric_signals": [
-        "§2.1 课内必修常识"
-      ]
+      "explanation": "「独出心裁」形容想出来的办法与众不同。"
     },
     {
       "subject": "chinese",
@@ -94,14 +77,11 @@
       "knowledge_point": "字词/成语运用",
       "group_id": "qz_huayi_001_q1",
       "group_order": 3,
-      "content": "补充成语。\n\n3. 跃跃 ____ 试",
+      "_raw_excerpt": "跃跃（      ）试",
+      "_common_prefix_raw": "1. 补充下面成语。",
+      "content": "补充下面成语。\n\n3. 跃跃（  ）试",
       "answer": "欲",
-      "explanation": "跃跃欲试：形容心情激动，急于想试一试。",
-      "_round_reasoning": "R1 因为：理解层级 1（成语补字），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.1。属字面识记型 R1。",
-      "_round_anchor_used": "chinese_r1_anchor_3",
-      "_round_rubric_signals": [
-        "§2.1 课内必修常识"
-      ]
+      "explanation": "「跃跃欲试」形容心里急切地想试一试。"
     },
     {
       "subject": "chinese",
@@ -113,14 +93,11 @@
       "knowledge_point": "字词/成语运用",
       "group_id": "qz_huayi_001_q1",
       "group_order": 4,
-      "content": "补充成语。\n\n4. ____ 然不同",
+      "_raw_excerpt": "（      ）然不同",
+      "_common_prefix_raw": "1. 补充下面成语。",
+      "content": "补充下面成语。\n\n4. （  ）然不同",
       "answer": "截",
-      "explanation": "截然不同：事物之间，界限分明，全然不一样。",
-      "_round_reasoning": "R1 因为：理解层级 1（成语补字），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.1。",
-      "_round_anchor_used": "chinese_r1_anchor_3",
-      "_round_rubric_signals": [
-        "§2.1 课内必修常识"
-      ]
+      "explanation": "「截然不同」形容两件事物毫无共同之处。"
     },
     {
       "subject": "chinese",
@@ -132,14 +109,11 @@
       "knowledge_point": "字词/成语运用",
       "group_id": "qz_huayi_001_q1",
       "group_order": 5,
-      "content": "补充成语。\n\n5. 无 ____ 于事",
+      "_raw_excerpt": "无（      ）于事",
+      "_common_prefix_raw": "1. 补充下面成语。",
+      "content": "补充下面成语。\n\n5. 无（  ）于事",
       "answer": "济",
-      "explanation": "无济于事：对事情没有什么帮助或益处，比喻解决不了问题。",
-      "_round_reasoning": "R1 因为：理解层级 1（成语补字），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.1。",
-      "_round_anchor_used": "chinese_r1_anchor_3",
-      "_round_rubric_signals": [
-        "§2.1 课内必修常识"
-      ]
+      "explanation": "「无济于事」形容对事情没有帮助或益处。"
     },
     {
       "subject": "chinese",
@@ -151,14 +125,11 @@
       "knowledge_point": "字词/成语运用",
       "group_id": "qz_huayi_001_q1",
       "group_order": 6,
-      "content": "补充成语。\n\n6. 一声不 ____",
+      "_raw_excerpt": "一声不（      ）",
+      "_common_prefix_raw": "1. 补充下面成语。",
+      "content": "补充下面成语。\n\n6. 一声不（  ）",
       "answer": "吭",
-      "explanation": "一声不吭：指一直沉默不语，一句话也没有说过。",
-      "_round_reasoning": "R1 因为：理解层级 1（成语补字），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.1。",
-      "_round_anchor_used": "chinese_r1_anchor_3",
-      "_round_rubric_signals": [
-        "§2.1 课内必修常识"
-      ]
+      "explanation": "「一声不吭」形容沉默不语，一句话也不说。"
     },
     {
       "subject": "chinese",
@@ -168,20 +139,16 @@
       "type": "choice",
       "chapter": "字词",
       "knowledge_point": "字词/字音",
-      "content": "下列各项中，字形和加粗字读音全部正确的一项是（    ）。",
+      "_raw_excerpt": "2. 下列各项中，字形和加点字读音全部正确的一项是（    ）\nA. 翡翠（fěi cuì）        密饯（jiàn）     挪移（nuó）    销逝（shì）\nB. 掺和（chǎn huo）     僧人（sēng）    栅栏（shān）   急遽（jǜ）\nC. 嘟囔（dū nang）      担搁（gē）      揉动（róu）    抽噎（yè）\nD. 惊惶（huáng）        防御（yù）      吞噬（shì）     依偎（wěi）",
+      "content": "下列各项中，字形和加粗字读音全部正确的一项是（    ）",
       "options": [
-        "A. **翡翠**（fěi cuì）  密**饯**（jiàn）  **挪**移（nuó）  销**逝**（shì）",
-        "B. **掺和**（chǎn huo）  **僧**人（sēng）  **栅**栏（shān）  急**遽**（jǜ）",
-        "C. **嘟囔**（dū nang）  **担**搁（gē）  **揉**动（róu）  抽**噎**（yè）",
+        "A. **翡**翠（fěi cuì）  密**饯**（jiàn）  **挪**移（nuó）  销**逝**（shì）",
+        "B. **掺**和（chǎn huo）  **僧**人（sēng）  **栅**栏（shān）  急**遽**（jǜ）",
+        "C. 嘟**囔**（dū nang）  担**搁**（gē）  **揉**动（róu）  抽**噎**（yè）",
         "D. 惊**惶**（huáng）  防**御**（yù）  吞**噬**（shì）  依**偎**（wěi）"
       ],
       "answer": "D",
-      "explanation": "A 项「密饯」应为「蜜饯」，「销逝」应为「消逝」；B 项「掺和」读 chān huo，「急遽」读 jù；C 项「担搁」中「担」读 dān 不读 dū，「抽噎」读 yē 不读 yè。",
-      "_round_reasoning": "R2 因为：理解层级 2（字音字形综合辨析），陷阱密度 0.5（4 选项每项含 4 词，3 项各错处需逐一识别），KP 跨度 2（字音 + 字形），数据复杂度 0.4。属字音字形综合型 R2，参考 anchor chinese_r1_anchor_3（字音识记 R1）+ rubric §2.2 多项需逐一核对升 R2。",
-      "_round_anchor_used": "chinese_r1_anchor_3",
-      "_round_rubric_signals": [
-        "§2.2 跨文化常识 4 选 1"
-      ]
+      "explanation": "A 错：「密饯」字形错，应为「蜜饯」；「销逝」应为「消逝」。B 错：「掺和」读 chān（不是 chǎn）；「栅栏」读 zhà（不是 shān）；「急遽」读 jù（不是 jǜ，普通话无 ü 韵母与 j 拼）。C 错：「担搁」字形错，应为「耽搁」。D 字形和读音全对。"
     },
     {
       "subject": "chinese",
@@ -193,14 +160,11 @@
       "knowledge_point": "古诗文/古诗词背诵默写",
       "group_id": "qz_huayi_001_q3",
       "group_order": 1,
-      "content": "古诗文积累。\n\n1. 「盈盈一水间，________」。",
+      "_raw_excerpt": "（1）盈盈一水间，__________。",
+      "_common_prefix_raw": "3. 古诗文积累。",
+      "content": "古诗文积累。\n\n1. 盈盈一水间，________。",
       "answer": "脉脉不得语",
-      "explanation": "出自汉乐府《迢迢牵牛星》。",
-      "_round_reasoning": "R1 因为：理解层级 1（课内名句直接默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。参考 anchor chinese_r1_anchor_1。",
-      "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": [
-        "§2.1 课内必修常识"
-      ]
+      "explanation": "出自《迢迢牵牛星》「盈盈一水间，脉脉不得语」。"
     },
     {
       "subject": "chinese",
@@ -212,14 +176,11 @@
       "knowledge_point": "古诗文/古诗词背诵默写",
       "group_id": "qz_huayi_001_q3",
       "group_order": 2,
-      "content": "古诗文积累。\n\n2. 「________，日久见人心」。",
+      "_raw_excerpt": "（2）_______，日久见人心。",
+      "_common_prefix_raw": "3. 古诗文积累。",
+      "content": "古诗文积累。\n\n2. ________，日久见人心。",
       "answer": "路遥知马力",
-      "explanation": "出自宋·陈元靓《事林广记》「路遥知马力，日久见人心」。",
-      "_round_reasoning": "R1 因为：理解层级 1（俗语谚语直接默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。",
-      "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": [
-        "§2.1 课内必修常识"
-      ]
+      "explanation": "「路遥知马力，日久见人心」是俗语，意为时间会检验人和事。"
     },
     {
       "subject": "chinese",
@@ -231,14 +192,11 @@
       "knowledge_point": "古诗文/古诗词背诵默写",
       "group_id": "qz_huayi_001_q3",
       "group_order": 3,
-      "content": "古诗文积累。\n\n3. 《长歌行》中表示珍惜时间的名句是：「________，________」。请按顺序填两句话，用「|||」分隔。",
-      "answer": "少壮不努力|||老大徒伤悲",
-      "explanation": "出自汉乐府《长歌行》。",
-      "_round_reasoning": "R1 因为：理解层级 1（课内名句直接默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。",
-      "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": [
-        "§2.1 课内必修常识"
-      ]
+      "_raw_excerpt": "（3）《长歌行》中表示珍惜时间的名句是：_____________，____________。",
+      "_common_prefix_raw": "3. 古诗文积累。",
+      "content": "古诗文积累。\n\n3. 《长歌行》中表示珍惜时间的名句的上句是：________。",
+      "answer": "少壮不努力",
+      "explanation": "汉乐府《长歌行》「少壮不努力，老大徒伤悲」是珍惜时间的名句。"
     },
     {
       "subject": "chinese",
@@ -250,14 +208,11 @@
       "knowledge_point": "古诗文/古诗词背诵默写",
       "group_id": "qz_huayi_001_q3",
       "group_order": 4,
-      "content": "古诗文积累。\n\n4. 「树欲静而风不止，________」。这句话提醒我们面对父母，要常怀感恩之心。",
-      "answer": "子欲养而亲不待",
-      "explanation": "出自《孔子家语》「树欲静而风不止，子欲养而亲不待」。",
-      "_round_reasoning": "R1 因为：理解层级 1（古文名句直接默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。",
-      "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": [
-        "§2.1 课内必修常识"
-      ]
+      "_raw_excerpt": "（3）《长歌行》中表示珍惜时间的名句是：_____________，____________。",
+      "_common_prefix_raw": "3. 古诗文积累。",
+      "content": "古诗文积累。\n\n4. 《长歌行》中表示珍惜时间的名句的下句是：少壮不努力，________。",
+      "answer": "老大徒伤悲",
+      "explanation": "汉乐府《长歌行》「少壮不努力，老大徒伤悲」是珍惜时间的名句。"
     },
     {
       "subject": "chinese",
@@ -269,33 +224,43 @@
       "knowledge_point": "古诗文/古诗词背诵默写",
       "group_id": "qz_huayi_001_q3",
       "group_order": 5,
-      "content": "古诗文积累。\n\n5. 「________，冷露无声湿桂花」。",
+      "_raw_excerpt": "（4）“树欲静而风不止，________”这句话提醒我们面对父母，要常怀感恩之心，好好孝顺父母，不要错过时机，将来后悔。",
+      "_common_prefix_raw": "3. 古诗文积累。",
+      "content": "古诗文积累。\n\n5. 「树欲静而风不止，________」这句话提醒我们面对父母，要常怀感恩之心，好好孝顺父母，不要错过时机，将来后悔。",
+      "answer": "子欲养而亲不待",
+      "explanation": "「树欲静而风不止，子欲养而亲不待」出自《孔子家语》，劝人及时行孝。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qz_huayi_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "group_id": "qz_huayi_001_q3",
+      "group_order": 6,
+      "_raw_excerpt": "（5）_________，冷露无声湿桂花。",
+      "_common_prefix_raw": "3. 古诗文积累。",
+      "content": "古诗文积累。\n\n6. ________，冷露无声湿桂花。",
       "answer": "中庭地白树栖鸦",
-      "explanation": "出自唐代王建《十五夜望月》。",
-      "_round_reasoning": "R1 因为：理解层级 1（课内名句默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。",
-      "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": [
-        "§2.1 课内必修常识"
-      ]
+      "explanation": "出自王建《十五夜望月》「中庭地白树栖鸦，冷露无声湿桂花」。"
     },
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_qz_huayi_001",
-      "round": 1,
+      "round": 2,
       "type": "fill",
       "chapter": "字词",
       "knowledge_point": "字词/词语理解",
       "group_id": "qz_huayi_001_q4",
       "group_order": 1,
-      "content": "写出下面事物的寓意。\n\n1. 过年吃年糕：____。",
-      "answer": "万事如意年年高|||年年高",
-      "explanation": "「年糕」与「年年高」谐音，寓意年年高、生活和工作一年比一年好。",
-      "_round_reasoning": "R2 因为：理解层级 2（民俗谐音寓意推断），陷阱密度 0.4（fill 含同义兜底），KP 跨度 1，数据复杂度 0.3。属习俗推断型 R2。",
-      "_round_anchor_used": "chinese_r2_anchor_2",
-      "_round_rubric_signals": [
-        "§2.1 候选池窄"
-      ]
+      "_raw_excerpt": "（1）过年吃年糕：________________ 。",
+      "_common_prefix_raw": "4. 写出下面事物的寓意。",
+      "content": "写出下面事物的寓意。\n\n1. 过年吃年糕：________。",
+      "answer": "万事如意年年高|||年年高|||年年高升",
+      "explanation": "「年糕」与「年高」谐音，寓意一年比一年高（事业、学业、生活步步高）。"
     },
     {
       "subject": "chinese",
@@ -307,14 +272,11 @@
       "knowledge_point": "字词/词语理解",
       "group_id": "qz_huayi_001_q4",
       "group_order": 2,
-      "content": "写出下面事物的寓意。\n\n2. 建筑上雕刻蝙蝠：____。",
-      "answer": "福气满满|||吉祥幸福|||福",
-      "explanation": "「蝠」与「福」同音，蝙蝠纹寓意福气、幸福。",
-      "_round_reasoning": "R2 因为：理解层级 2（民俗谐音寓意推断），陷阱密度 0.4，KP 跨度 1，数据复杂度 0.3。属习俗推断型 R2。",
-      "_round_anchor_used": "chinese_r2_anchor_2",
-      "_round_rubric_signals": [
-        "§2.1 候选池窄"
-      ]
+      "_raw_excerpt": "（2）建筑上雕刻蝙蝠：_________________ 。",
+      "_common_prefix_raw": "4. 写出下面事物的寓意。",
+      "content": "写出下面事物的寓意。\n\n2. 建筑上雕刻蝙蝠：________。",
+      "answer": "福气满满|||福|||吉祥幸福",
+      "explanation": "「蝙蝠」的「蝠」与「福」谐音，建筑上雕刻蝙蝠寓意吉祥幸福、福气盈门。"
     },
     {
       "subject": "chinese",
@@ -322,18 +284,15 @@
       "source": "realpaper_g6_chinese_bubian_qz_huayi_001",
       "round": 1,
       "type": "fill",
-      "chapter": "阅读理解",
-      "knowledge_point": "阅读理解/课文内容理解",
+      "chapter": "文学常识",
+      "knowledge_point": "文学常识/中国现代作家作品",
       "group_id": "qz_huayi_001_q5",
       "group_order": 1,
-      "content": "文学常识填空。\n\n1. 《北京的春节》作者是 ____。",
+      "_raw_excerpt": "（1）《北京的春节》作者是___________，",
+      "_common_prefix_raw": "5. 文常识填空。",
+      "content": "文学常识填空。\n\n1. 《北京的春节》作者是________。",
       "answer": "老舍",
-      "explanation": "《北京的春节》是著名作家老舍的散文。",
-      "_round_reasoning": "R1 因为：理解层级 1（作品-作家直接对应），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.1。参考 anchor chinese_r1_anchor_2（外国作家国别 R1）。",
-      "_round_anchor_used": "chinese_r1_anchor_2",
-      "_round_rubric_signals": [
-        "§2.1 课内必修常识"
-      ]
+      "explanation": "《北京的春节》作者是老舍，被称为「人民艺术家」。"
     },
     {
       "subject": "chinese",
@@ -341,18 +300,15 @@
       "source": "realpaper_g6_chinese_bubian_qz_huayi_001",
       "round": 1,
       "type": "fill",
-      "chapter": "阅读理解",
-      "knowledge_point": "阅读理解/课文内容理解",
+      "chapter": "文学常识",
+      "knowledge_point": "文学常识/中国现代作家作品",
       "group_id": "qz_huayi_001_q5",
       "group_order": 2,
-      "content": "文学常识填空。\n\n2. 《那个星期天》的作者是 ____。",
+      "_raw_excerpt": "（2）《那个星期天》选自的___________的《___________》。",
+      "_common_prefix_raw": "5. 文常识填空。",
+      "content": "文学常识填空。\n\n2. 《那个星期天》的作者是________。",
       "answer": "史铁生",
-      "explanation": "《那个星期天》选自史铁生的《务虚笔记》，是其首部长篇小说，也是半自传式作品。",
-      "_round_reasoning": "R1 因为：理解层级 1（作品-作家直接对应），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.1。",
-      "_round_anchor_used": "chinese_r1_anchor_2",
-      "_round_rubric_signals": [
-        "§2.1 课内必修常识"
-      ]
+      "explanation": "《那个星期天》选自史铁生的《务虚笔记》。"
     },
     {
       "subject": "chinese",
@@ -362,31 +318,10 @@
       "type": "fill",
       "chapter": "古诗文",
       "knowledge_point": "古诗文/古诗词背诵默写",
-      "content": "补充韩翃《寒食》诗句：「春城无处不飞花，________。日暮汉宫传蜡烛，轻烟散入五侯家。」",
+      "_raw_excerpt": "【材料一】寒食  韩翃\n春城无处不飞花，__________。\n日暮汉宫传蜡烛，轻烟散入五侯家。",
+      "content": "补充韩翃《寒食》诗句：\n\n春城无处不飞花，________。\n\n日暮汉宫传蜡烛，轻烟散入五侯家。",
       "answer": "寒食东风御柳斜",
-      "explanation": "出自唐代韩翃《寒食》。",
-      "_round_reasoning": "R1 因为：理解层级 1（古诗默写），陷阱密度 0.0，KP 跨度 1，数据复杂度 0.2。参考 anchor chinese_r1_anchor_1。",
-      "_round_anchor_used": "chinese_r1_anchor_1",
-      "_round_rubric_signals": [
-        "§2.1 课内必修常识"
-      ]
-    },
-    {
-      "subject": "chinese",
-      "grade": 6,
-      "source": "realpaper_g6_chinese_bubian_qz_huayi_001",
-      "round": 2,
-      "type": "fill",
-      "chapter": "古诗文",
-      "knowledge_point": "古诗文/古诗词背诵默写",
-      "content": "材料一：寒食 韩翃\n春城无处不飞花，寒食东风御柳斜。\n日暮汉宫传蜡烛，轻烟散入五侯家。\n\n材料一中《寒食》一诗中的「________，________」表明了「只许州官放火，不许百姓点灯」这一点。请按顺序填两句话，用「|||」分隔。",
-      "answer": "日暮汉宫传蜡烛|||轻烟散入五侯家",
-      "explanation": "「日暮汉宫传蜡烛，轻烟散入五侯家」反映寒食节这天家家不能生火点灯，但皇宫例外，宫里忙着分送蜡烛给皇族和宠臣，体现统治者特权——即「只许州官放火，不许百姓点灯」。",
-      "_round_reasoning": "R3 因为：理解层级 3（需联系俗语含义反推诗句），陷阱密度 0.5（fill 唯一答案，但需把文化俗语映射到诗句），KP 跨度 2（古诗 + 文化常识），数据复杂度 0.4（4 行古诗背景）。属诗文意境理解型 R3，参考 anchor chinese_r3_anchor_3（主旨概括 R3）+ rubric §2.2 跨主题升档。",
-      "_round_anchor_used": "chinese_r3_anchor_3",
-      "_round_rubric_signals": [
-        "§2.2 跨文化常识 4 选 1"
-      ]
+      "explanation": "韩翃《寒食》「春城无处不飞花，寒食东风御柳斜」是千古名句。"
     }
   ]
 }

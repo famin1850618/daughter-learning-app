@@ -1,0 +1,248 @@
+{
+  "source": "realpaper_g6_chinese_bubian_qm_longhua_wanan_001",
+  "_source_docx_sha1": "acca7d2f5aaa3611",
+  "subject": "chinese",
+  "grade": 6,
+  "_skipped_for_future": [
+    {
+      "qnum": "3(2)",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "类似含反义词的词语还有（至少写3个，开放仿写）"
+    },
+    {
+      "qnum": "4(2)",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "用诗句赞扬老师（开放替代答案多）"
+    },
+    {
+      "qnum": "4(3)",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "用诗句表达对母校的思念（开放替代答案多）"
+    },
+    {
+      "qnum": "5",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "口语表达：策划板块 + 拟开场白"
+    },
+    {
+      "qnum": "7",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "另一个战国时期的成语故事（答案不唯一）"
+    },
+    {
+      "qnum": "9",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "谈谈对民贵君轻思想的认识"
+    },
+    {
+      "qnum": "13",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "概括短文主要内容"
+    },
+    {
+      "qnum": "14",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "学着给大鱼写一段独白"
+    },
+    {
+      "qnum": "15",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "战胜困难的经历及启示"
+    },
+    {
+      "qnum": "16",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "「道理」具体指（开放概括，答案不唯一字数）"
+    },
+    {
+      "qnum": "17",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "概括两个具体事例（开放概括）"
+    },
+    {
+      "qnum": "18",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "造成桃花开花时间不同的原因（开放回答）"
+    },
+    {
+      "qnum": "21",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "如何才能真正成为学习的主人（开放写作）"
+    },
+    {
+      "qnum": "22",
+      "reason": "open_writing_subjective",
+      "raw_excerpt": "作文：感动 / 我终于明白了______"
+    }
+  ],
+  "questions": [
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_wanan_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/字音",
+      "content": "下面各组词语中加粗字的读音完全正确的一项是？",
+      "options": [
+        "A. **栅**栏（zhà）  **处**境（chǔ）  **间**断（jiān）",
+        "B. 防**御**（yù）  搅**和**（huo）  剥**削**（xuē）",
+        "C. **诞**生（dàn）  苦**闷**（mēn）  **拘**留（jū）",
+        "D. **僻**静（qì）  元**宵**（xiāo）  水**浒**（hǔ）"
+      ],
+      "answer": "B",
+      "explanation": "A 错（间断 jiàn 不是 jiān）；C 错（苦闷 mèn 不是 mēn）；D 错（僻静 pì 不是 qì）；B 全对。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_wanan_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "文学常识",
+      "knowledge_point": "文学常识/文化常识",
+      "content": "中国古代楷书四大家指的是？",
+      "options": [
+        "A. 王羲之  欧阳询  颜真卿  柳公权",
+        "B. 颜真卿  柳公权  苏轼  赵孟頫",
+        "C. 欧阳询  颜真卿  柳公权  赵孟頫",
+        "D. 王羲之  颜真卿  柳公权  张旭"
+      ],
+      "answer": "C",
+      "explanation": "中国古代楷书四大家：欧阳询、颜真卿、柳公权、赵孟頫。王羲之是「书圣」（行书），张旭是草书代表，苏轼是宋四家之一（行书）。故选 C。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_wanan_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/成语运用",
+      "content": "将成语补充完整（按顺序填 14 空，用逗号分隔，每空填 1 字）：\n\n随①___所②___；跃跃③___④___；乌⑤___之⑥___；⑦___知非⑧___；⑨___不⑩___待；⑪___⑫___其境；惊⑬___动⑭___",
+      "answer": "心,欲,欲,试,合,众,焉,福,急,可,身,临,天,地",
+      "explanation": "随心所欲；跃跃欲试；乌合之众；焉知非福；急不可待；身临其境；惊天动地。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_wanan_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/成语运用",
+      "content": "成语「花甲之年」指人多少岁？「而立之年」指多少岁？按顺序填两个数字，用逗号分隔。",
+      "answer": "60,30",
+      "explanation": "花甲之年指六十岁（天干地支六十年一甲）；而立之年指三十岁（学有所成可以自立）。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_wanan_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "按所学知识填空（按顺序填 6 空，用逗号分隔）：\n\n吟「劝君更尽一杯酒，①___」；诵「②___，一枝红杏出墙来」；咏「③___，任尔东西南北风」；读《礼记》中的「④___，日日新，又日新」；忆「过去的日子如⑤___，被微风吹散了，如薄雾，被初阳⑥___ 了」。",
+      "answer": "西出阳关无故人,满园春色关不住,千磨万击还坚劲,苟日新,轻烟,蒸融",
+      "explanation": "①王维《送元二使安西》；②叶绍翁《游园不值》；③郑燮《竹石》；④《大学》；⑤⑥朱自清《匆匆》。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_wanan_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词意境理解",
+      "content": "阅读《漫步古今》。\n\n【材料一】《孟子·离娄上》：齐王使使者问赵威后。书未发，威后问使者曰：「岁亦无恙耶？民亦无恙耶？王亦无恙耶？」使者不悦，曰：「臣奉使使威后，今不问王而先问岁与民，岂先贱而后尊贵者乎？」威后曰：「不然。苟无岁，何以有民？苟无民，何以有君？故有舍本而问末者耶？」\n\n【材料二】（白话译文）……威后说：「这你就错了！如果没有年成，百姓凭什么繁衍生息？如果没有百姓，大王又怎能南面称尊？岂有舍本问末的道理？这不是贵贱之分，而是本末之别啊！」\n\n问：这个故事包含的成语是「___」（4 字成语），现在用来比喻 ___（按顺序填两空，用逗号分隔）。",
+      "answer": "舍本逐末,做事不抓住主要问题，专顾细枝末节|||舍本逐末,做事不抓住根本问题，只顾枝节小事",
+      "explanation": "原文「舍本而问末」即成语「舍本逐末」。现在用来比喻做事不抓主要问题、只顾细枝末节。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_wanan_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言句子翻译",
+      "content": "阅读《漫步古今》（同上文）。\n\n问：在材料一中找到与材料二中加粗的句子「如果没有年成，百姓凭什么繁衍生息？如果没有百姓，大王又怎能南面称尊？岂有舍本问末的道理？」相对应的文言句子，原文写出。",
+      "answer": "苟无岁，何以有民？苟无民，何以有君？故有舍本而问末者耶？",
+      "explanation": "画线白话句子由材料一文言原文「苟无岁，何以有民？苟无民，何以有君？故有舍本而问末者耶？」直译而来。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_wanan_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "文学常识",
+      "knowledge_point": "文学常识/名著情节人物",
+      "content": "阅读《老人与海》节选：「一个人并不是生来要打败的，___，___。」（海明威名言）按顺序填两句，用逗号分隔。",
+      "answer": "你尽可以消灭他,可就是打不败他",
+      "explanation": "《老人与海》核心名言：「一个人并不是生来要打败的，你尽可以消灭他，可就是打不败他。」体现「硬汉子」精神。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_wanan_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/多音字辨析",
+      "content": "《老人与海》节选中，给加粗字选择正确的读音（按顺序填 4 个读音，用逗号分隔）：\n\n①他的那**盏**（zhǎn / zǎn）哈瓦那鱼灯也不像从前那么亮了。\n②我跟你**磨**（mó / mò）了三天。\n③老人将鱼叉**扎**（zhā / zhá / zā）入大鱼胸鳍后。\n④大鱼生机勃勃地做了一次最后挣**扎**（zhā / zhá / zā）。",
+      "answer": "zhǎn,mò,zhā,zhá",
+      "explanation": "①「一盏」读 zhǎn；②「磨了三天」（消耗时间）读 mò；③「扎入」读 zhā（刺入）；④「挣扎」读 zhá。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_wanan_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "字词",
+      "knowledge_point": "字词/近义词反义词",
+      "content": "写出下列词语的反义词（按顺序填 3 空，用逗号分隔）：\n\n疲惫不堪—（①___）；无所畏惧—（②___）；生机勃勃—（③___）",
+      "answer": "活力十足,不寒而栗,奄奄一息|||精神抖擞,胆小如鼠,死气沉沉|||生龙活虎,胆战心惊,死气沉沉",
+      "explanation": "①疲惫不堪（极度疲劳）反义→活力十足/精神抖擞；②无所畏惧（毫不畏惧）反义→不寒而栗/胆小如鼠；③生机勃勃（生命力旺盛）反义→奄奄一息/死气沉沉。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_wanan_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "阅读《学与问》：\n\n「有了问题，可随时随地请教别人。你可以请教父母和老师，也可以请教同学和朋友。只要他确实能给你启发，给你帮助，不管他年长年幼，地位高低，都可以成为你的老师，都应该向他请教。古人说的『___』就是这个道理。」\n\n问：填入横线上最合适的一项是？",
+      "options": [
+        "A. 温故而知新，可以为师矣",
+        "B. 三人行必有我师焉",
+        "C. 读书须用意，一字值千金",
+        "D. 读万卷书，行万里路"
+      ],
+      "answer": "B",
+      "explanation": "上下文强调「不管年长年幼、地位高低都可以成为你的老师」与「三人行必有我师焉」（出自《论语》）含义一致——任何人皆可为师。A 强调温习；C 强调读书细致；D 强调实践。故选 B。"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_wanan_001",
+      "round": 3,
+      "type": "choice",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/主旨理解",
+      "content": "阅读《学与问》（议论文，主张学问相辅相成）：\n\n问：下列对文章的理解不正确的一项是？",
+      "options": [
+        "A. 只有通过问别人，才能解决问题",
+        "B. 知识既要靠学，也要靠问",
+        "C. 要充满好奇心，多问几个「为什么」",
+        "D. 不仅要勤学好问，还要多观察思考"
+      ],
+      "answer": "A",
+      "explanation": "A 错：原文「学与问相辅相成」，并非「只有问才能解决问题」（也要学+观察思考）。B、C、D 均符合文章主旨。"
+    }
+  ]
+}

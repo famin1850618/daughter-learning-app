@@ -1,0 +1,412 @@
+{
+  "source": "realpaper_g6_math_beishida_xsc_nanshan_001",
+  "_source_docx_sha1": "3aa28609cd33deaf",
+  "subject": "math",
+  "grade": 6,
+  "knowledge_points_added": [
+    "总复习/数与代数综合",
+    "总复习/解决问题策略",
+    "正反比例/正反比例的判断"
+  ],
+  "_quality_meta": {
+    "source_file": "精品解析：广东省深圳市南山区2022年北师大版小升初考试数学试卷（原卷版）.docx",
+    "sha1": "3aa28609cd33deaf",
+    "paper_type": "xsc",
+    "chapter_default": "总复习",
+    "omath_total_formulas": 0,
+    "images_used": 0,
+    "questions_total_paper": 46,
+    "questions_imported": 13,
+    "questions_skipped": 33
+  },
+  "_skipped_for_future": [
+    {
+      "qnum": "1",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "___ ＝ 4:5 ＝ ___ ＝ ___% ＝ ___折（多个分数空位 wmf 缺）",
+      "source_para": 2
+    },
+    {
+      "qnum": "4",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "圆柱底面积、高 wmf 缺",
+      "source_para": 5
+    },
+    {
+      "qnum": "5",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "把 ___ 改写成乘法算式（wmf 缺）",
+      "source_para": 6
+    },
+    {
+      "qnum": "6",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "比例尺、距离、速度多空 wmf 缺",
+      "source_para": 7
+    },
+    {
+      "qnum": "7",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "圆柱钢材切削的圆锥体积 wmf 缺",
+      "source_para": 8
+    },
+    {
+      "qnum": "9",
+      "reason": "open_text_question",
+      "raw_excerpt": "摸球理由（开放主观）",
+      "source_para": 10
+    },
+    {
+      "qnum": "11",
+      "reason": "unclear_image",
+      "raw_excerpt": "如图三角形按比例缩小求 x（图缺尺寸）",
+      "source_para": 12
+    },
+    {
+      "qnum": "12",
+      "reason": "unclear_image",
+      "raw_excerpt": "如图老狼捉小羊方位题（图缺）",
+      "source_para": 14
+    },
+    {
+      "qnum": "18",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "用 ___、___、___ 长的三根小棒（wmf 缺）",
+      "source_para": 22
+    },
+    {
+      "qnum": "19",
+      "reason": "unclear_image",
+      "raw_excerpt": "对称轴最多的图形（4 选项位图）",
+      "source_para": 24
+    },
+    {
+      "qnum": "20",
+      "reason": "unclear_image",
+      "raw_excerpt": "计算器程序（题面+选项位图）",
+      "source_para": 26
+    },
+    {
+      "qnum": "22",
+      "reason": "unclear_image",
+      "raw_excerpt": "图形关系图（4 选项位图）",
+      "source_para": 31
+    },
+    {
+      "qnum": "24",
+      "reason": "unclear_image",
+      "raw_excerpt": "从上面看下面物体（4 选项位图）",
+      "source_para": 36
+    },
+    {
+      "qnum": "25",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "4 个分数算式 wmf 缺",
+      "source_para": 38
+    },
+    {
+      "qnum": "26",
+      "reason": "unclear_image",
+      "raw_excerpt": "年利率本利和（4 选项位图）",
+      "source_para": 41
+    },
+    {
+      "qnum": "27",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "甲数比乙数多 ___（wmf 缺）",
+      "source_para": 43
+    },
+    {
+      "qnum": "28",
+      "reason": "unclear_image",
+      "raw_excerpt": "转化策略（4 选项含位图）",
+      "source_para": 47
+    },
+    {
+      "qnum": "29",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "直接写得数 8+ 算式 wmf 缺",
+      "source_para": 53
+    },
+    {
+      "qnum": "30",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "用喜欢方法计算 wmf 缺",
+      "source_para": 56
+    },
+    {
+      "qnum": "31",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "解方程 wmf 缺",
+      "source_para": 60
+    },
+    {
+      "qnum": "32",
+      "reason": "open_drawing_question",
+      "raw_excerpt": "在点子图上画梯形",
+      "source_para": 62
+    },
+    {
+      "qnum": "33",
+      "reason": "open_drawing_question",
+      "raw_excerpt": "按要求方格画图（平移、旋转、对称）",
+      "source_para": 64
+    },
+    {
+      "qnum": "34",
+      "reason": "unclear_image",
+      "raw_excerpt": "三艘轮船海面航行方位题（图缺）",
+      "source_para": 71
+    },
+    {
+      "qnum": "35",
+      "reason": "open_drawing_question",
+      "raw_excerpt": "直角三角形面积/旋转圆锥/规律拼图（含画图与图依赖）",
+      "source_para": 75
+    },
+    {
+      "qnum": "36",
+      "reason": "unclear_image",
+      "raw_excerpt": "扇形统计图选条形（图依赖）",
+      "source_para": 82
+    },
+    {
+      "qnum": "39",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "圆柱蛋糕盒打结彩带题（图+尺寸缺）",
+      "source_para": 88
+    },
+    {
+      "qnum": "40",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "圆锥沙堆铺路（高与底面比 wmf 缺）",
+      "source_para": 93
+    },
+    {
+      "qnum": "41",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "乙队每天是甲队的 ___（wmf 缺）",
+      "source_para": 94
+    },
+    {
+      "qnum": "42",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "互质的可能性（4 选项分数 wmf 缺）",
+      "source_para": 96
+    },
+    {
+      "qnum": "43",
+      "reason": "unclear_image",
+      "raw_excerpt": "4 图判断 a 和 b 比例关系（图依赖）",
+      "source_para": 99
+    },
+    {
+      "qnum": "44",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "长方形 ab 围立体图（wmf 缺）",
+      "source_para": 101
+    },
+    {
+      "qnum": "45",
+      "reason": "unclear_image",
+      "raw_excerpt": "阴影面积之和（图依赖）",
+      "source_para": 103
+    },
+    {
+      "qnum": "46",
+      "reason": "open_text_question",
+      "raw_excerpt": "购十二生肖玩具利润率题（题面有信息但已尝试，wmf 关键百分比缺）",
+      "source_para": 105
+    }
+  ],
+  "questions": [
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_nanshan_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "根据世卫组织最新实时统计数据，截至欧洲中部夏令时间 $6$ 月 $14$ 日 $18$ 时 $13$ 分，全球累计新冠肺炎确诊病例 $533816957$ 例。$533816957$ 改写成以「万」为单位的数是（　　）万。",
+      "answer": "53381.6957",
+      "explanation": "$533816957\\div 10000=53381.6957$ 万。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_nanshan_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "$18$ 的因数有（　　）。",
+      "answer": "1,2,3,6,9,18",
+      "explanation": "$18=1\\times 18=2\\times 9=3\\times 6$，所以因数为 $1$、$2$、$3$、$6$、$9$、$18$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_nanshan_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "超市运来 $30$ 箱苹果，每箱 $a$ 千克，卖掉了 $b$ 千克，还剩下（　　）千克。",
+      "answer": "30a-b",
+      "explanation": "总质量 $=30\\times a=30a$ 千克，剩下 $=30a-b$ 千克。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_nanshan_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "六（$1$）班师生 $46$ 人去野营，一共租了 $10$ 顶帐篷，正好住满。每顶大帐篷住 $5$ 人，每顶小帐篷住 $3$ 人。大帐篷有（　　）顶，小帐篷有（　　）顶。",
+      "answer": "8,2",
+      "explanation": "假设全租大帐篷可住 $50$ 人，比实际多 $50-46=4$ 人。每把 $1$ 顶大换小少 $5-3=2$ 人，所以小帐篷 $=4\\div 2=2$ 顶，大帐篷 $=10-2=8$ 顶。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_nanshan_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/正反比例的判断",
+      "content": "判断对错：教室的面积一定，所需方砖的块数与每块方砖的面积成正比例。（　　）",
+      "options": [
+        "A. 对",
+        "B. 错"
+      ],
+      "answer": "B",
+      "explanation": "块数 $\\times$ 每块面积 $=$ 教室面积（一定），积一定 $\\Rightarrow$ 成反比例，不是正比例。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_nanshan_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "判断对错：一次捐款救灾活动中，某班人均捐款 $16$ 元，这个班不可能出现捐款 $50$ 元的人。（　　）",
+      "options": [
+        "A. 对",
+        "B. 错"
+      ],
+      "answer": "B",
+      "explanation": "平均数是总额除以人数。某些人捐 $50$ 元、其他人捐少一些，仍可能平均 $16$ 元。所以不一定不可能。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_nanshan_001",
+      "round": 1,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "判断对错：六年级 $5$ 个班进行篮球比赛，每两个班都要赛一场，一共要赛 $10$ 场。（　　）",
+      "options": [
+        "A. 对",
+        "B. 错"
+      ],
+      "answer": "A",
+      "explanation": "$5$ 个班两两组合 $=\\frac{5\\times 4}{2}=10$ 场。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_nanshan_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "判断对错：气温 $-17°\\text{C}$ ~$10°\\text{C}$ 是冬奥会的最理想温度，最低温度与最高温度相差 $7°\\text{C}$。（　　）",
+      "options": [
+        "A. 对",
+        "B. 错"
+      ],
+      "answer": "B",
+      "explanation": "温差 $=10-(-17)=27°\\text{C}$，不是 $7°\\text{C}$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_nanshan_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "content": "判断对错：$100$ 个零件中有 $5$ 个不合格，合格率为 $95\\%$。（　　）",
+      "options": [
+        "A. 对",
+        "B. 错"
+      ],
+      "answer": "A",
+      "explanation": "合格率 $=$ 合格 $\\div$ 总数 $\\times 100\\%=(100-5)\\div 100\\times 100\\%=95\\%$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_nanshan_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "一种药品，先打八折，再打九折后是 $7.2$ 元。这种药品的原价是（　　）元。",
+      "options": [
+        "A. $360$",
+        "B. $90$",
+        "C. $60$",
+        "D. $10$"
+      ],
+      "answer": "D",
+      "explanation": "原价 $\\times 80\\%\\times 90\\%=7.2$，原价 $\\times 0.72=7.2$，原价 $=10$ 元。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_nanshan_001",
+      "round": 2,
+      "type": "choice",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "某年三只绿海龟在我国香港的南丫岛深湾产下约 $900$ 只海龟蛋，孵化率在 $40\\%$~$60\\%$ 之间，这些海龟蛋可能孵化出（　　）只小绿海龟。",
+      "options": [
+        "A. $300$",
+        "B. $500$",
+        "C. $700$",
+        "D. $900$"
+      ],
+      "answer": "B",
+      "explanation": "$900\\times 40\\%=360$，$900\\times 60\\%=540$。可能孵化数在 $360$~$540$ 之间。$500$ 在范围内。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_nanshan_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "神舟十三号女性舱外航天服重约 $90$ 千克，男性舱外航天服重约 $120$ 千克，女性舱外航天服比男性舱外航天服轻百分之几？",
+      "answer": "25%",
+      "explanation": "$（120-90）\\div 120=\\frac{30}{120}=25\\%$。"
+    },
+    {
+      "subject": "math",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_xsc_nanshan_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "content": "淘气和爸爸、妈妈一起去看了场电影，电影票原价 $90$ 元/张（成人和儿童的票价相同），电影院推出优惠方案为：上午场六折，下午场八折，其他时段不优惠。他们三张票总共节省了 $108$ 元，他们看电影是哪个时段？",
+      "answer": "上午场",
+      "explanation": "原价共 $3\\times 90=270$ 元，实付 $270-108=162$ 元，折扣率 $=162\\div 270=60\\%=$ 六折，所以是上午场。"
+    }
+  ]
+}

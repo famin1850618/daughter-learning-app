@@ -1,0 +1,757 @@
+{
+  "source": "realpaper_g6_math_beishida_zhuanxiang_tiankong_001",
+  "subject": "数学",
+  "grade": 6,
+  "_source_docx_sha1": "37ad2809ac1ee4d5",
+  "knowledge_points_added": [
+    "圆柱与圆锥/圆柱的表面积",
+    "圆柱与圆锥/圆柱的认识",
+    "总复习/图形与几何综合",
+    "总复习/数与代数综合",
+    "总复习/统计与可能性",
+    "总复习/解决问题策略",
+    "正反比例/比例尺",
+    "比和比例/比例的基本性质"
+  ],
+  "_quality_meta": {
+    "total_questions_in_paper_estimate": 90,
+    "imported": 19,
+    "skipped": 71,
+    "option_images_used": 0,
+    "ai_dispute_count": 0
+  },
+  "_skipped_for_future": [
+    {
+      "qnum": "2",
+      "reason": "ole_chain_lost",
+      "raw_excerpt": "14∶()=()=0.7=7÷()=()% OLE 链",
+      "source_para": 5
+    },
+    {
+      "qnum": "3",
+      "reason": "ole_data_lost",
+      "raw_excerpt": "圆柱底面积 OLE / 高 OLE",
+      "source_para": 6
+    },
+    {
+      "qnum": "5",
+      "reason": "image_with_data",
+      "raw_excerpt": "方向图含答案数据",
+      "source_para": 9
+    },
+    {
+      "qnum": "6",
+      "reason": "ole_compare",
+      "raw_excerpt": "比较大小4个OLE分数",
+      "source_para": 10
+    },
+    {
+      "qnum": "11",
+      "reason": "ole_value",
+      "raw_excerpt": "乌鸡蛋价格 OLE 缺",
+      "source_para": 14
+    },
+    {
+      "qnum": "12",
+      "reason": "positive_negative",
+      "raw_excerpt": "平均跳绳记数 OLE 部分",
+      "source_para": 14
+    },
+    {
+      "qnum": "13",
+      "reason": "ole_fraction",
+      "raw_excerpt": "2米绳子分5段比例 OLE 缺",
+      "source_para": 14
+    },
+    {
+      "qnum": "14",
+      "reason": "ole_compare_two",
+      "raw_excerpt": "两条件成何种比例 OLE 缺",
+      "source_para": 14
+    },
+    {
+      "qnum": "15",
+      "reason": "ole_value",
+      "raw_excerpt": "a 元每升 + 上涨 45% 计算",
+      "source_para": 14
+    },
+    {
+      "qnum": "16",
+      "reason": "image_with_data",
+      "raw_excerpt": "立体图形 上面/左面看 图",
+      "source_para": 14
+    },
+    {
+      "qnum": "17",
+      "reason": "ole_volume",
+      "raw_excerpt": "切削掉部分体积 OLE",
+      "source_para": 14
+    },
+    {
+      "qnum": "18",
+      "reason": "ole_geometry",
+      "raw_excerpt": "圆锥帐篷 占地+体积 OLE",
+      "source_para": 14
+    },
+    {
+      "qnum": "21",
+      "reason": "ole_chain",
+      "raw_excerpt": "6 米平均 5 段 OLE 等等",
+      "source_para": 14
+    },
+    {
+      "qnum": "23",
+      "reason": "ole_chain",
+      "raw_excerpt": "比例尺 OLE / 距离 OLE / 速度 OLE",
+      "source_para": 14
+    },
+    {
+      "qnum": "24",
+      "reason": "ole_value",
+      "raw_excerpt": "年利率 OLE 缺",
+      "source_para": 14
+    },
+    {
+      "qnum": "25",
+      "reason": "multiple_answer",
+      "raw_excerpt": "三角形周长 cm 或 cm 双答案",
+      "source_para": 14
+    },
+    {
+      "qnum": "26",
+      "reason": "image_required",
+      "raw_excerpt": "圆柱切拼长方体（图）",
+      "source_para": 14
+    },
+    {
+      "qnum": "27",
+      "reason": "multistep",
+      "raw_excerpt": "摸球至少多少（多解）",
+      "source_para": 14
+    },
+    {
+      "qnum": "28",
+      "reason": "multistep",
+      "raw_excerpt": "帐篷分配（多步）",
+      "source_para": 14
+    },
+    {
+      "qnum": "29",
+      "reason": "ole_proportion",
+      "raw_excerpt": "路程时间比 OLE",
+      "source_para": 14
+    },
+    {
+      "qnum": "30",
+      "reason": "image_with_data",
+      "raw_excerpt": "电表月底读数表",
+      "source_para": 14
+    },
+    {
+      "qnum": "31",
+      "reason": "unique_quad",
+      "raw_excerpt": "12 因数 质合奇偶比",
+      "source_para": 14
+    },
+    {
+      "qnum": "32",
+      "reason": "image_required",
+      "raw_excerpt": "圆柱筒沿虚线剪开（图）",
+      "source_para": 14
+    },
+    {
+      "qnum": "33",
+      "reason": "compute_no_content",
+      "raw_excerpt": "OLE 算式 题面 33．；。",
+      "source_para": 14
+    },
+    {
+      "qnum": "35",
+      "reason": "compute_no_content",
+      "raw_excerpt": "OLE 算式 题面 35．=。",
+      "source_para": 14
+    },
+    {
+      "qnum": "36",
+      "reason": "image_required",
+      "raw_excerpt": "三角形按比例缩小 x=?",
+      "source_para": 14
+    },
+    {
+      "qnum": "37",
+      "reason": "multistep",
+      "raw_excerpt": "圆柱削最大圆锥+雪容融比",
+      "source_para": 14
+    },
+    {
+      "qnum": "38",
+      "reason": "compute_3km",
+      "raw_excerpt": "1:6000000 比例尺 + 3 厘米",
+      "source_para": 14
+    },
+    {
+      "qnum": "39",
+      "reason": "multistep_packaging",
+      "raw_excerpt": "两长方体盒子最节省包装",
+      "source_para": 14
+    },
+    {
+      "qnum": "40",
+      "reason": "multistep_proportion",
+      "raw_excerpt": "国旗长宽比 + 长比宽多 %",
+      "source_para": 14
+    },
+    {
+      "qnum": "42",
+      "reason": "multistep_proportion",
+      "raw_excerpt": "36 因数选 4 因数比例",
+      "source_para": 14
+    },
+    {
+      "qnum": "43",
+      "reason": "multistep_proportion",
+      "raw_excerpt": "28 因数找 4 数比例",
+      "source_para": 14
+    },
+    {
+      "qnum": "44",
+      "reason": "image_with_data",
+      "raw_excerpt": "用字母表示 + 距离图",
+      "source_para": 14
+    },
+    {
+      "qnum": "45",
+      "reason": "wmf_lost",
+      "raw_excerpt": "同 batch 1 q3 涂色等式 chain",
+      "source_para": 14
+    },
+    {
+      "qnum": "46",
+      "reason": "image_required",
+      "raw_excerpt": "圆柱切拼成长方体的长宽高",
+      "source_para": 14
+    },
+    {
+      "qnum": "48",
+      "reason": "symbolic_compute",
+      "raw_excerpt": "○÷□=1.5 等价式",
+      "source_para": 14
+    },
+    {
+      "qnum": "49",
+      "reason": "multistep_proportion",
+      "raw_excerpt": "18 因数 + 4 数组比例",
+      "source_para": 14
+    },
+    {
+      "qnum": "50",
+      "reason": "multi_unit",
+      "raw_excerpt": "1465700 改万作单位 + 284000000 亿",
+      "source_para": 14
+    },
+    {
+      "qnum": "51",
+      "reason": "multi_unit",
+      "raw_excerpt": "2932500000 万 + 亿",
+      "source_para": 14
+    },
+    {
+      "qnum": "52",
+      "reason": "unit_conv",
+      "raw_excerpt": "多空 6.25 分钟换算",
+      "source_para": 14
+    },
+    {
+      "qnum": "54",
+      "reason": "image_with_data",
+      "raw_excerpt": "对称轴+数对题",
+      "source_para": 14
+    },
+    {
+      "qnum": "55",
+      "reason": "ole_lost",
+      "raw_excerpt": "OLE 数 / 最大公因数",
+      "source_para": 14
+    },
+    {
+      "qnum": "56",
+      "reason": "multistep",
+      "raw_excerpt": "木棍倒插水中长度推算",
+      "source_para": 14
+    },
+    {
+      "qnum": "57",
+      "reason": "choice_in_fill",
+      "raw_excerpt": "判断哪位身高最不可能(选择题)",
+      "source_para": 14
+    },
+    {
+      "qnum": "58",
+      "reason": "image_with_data",
+      "raw_excerpt": "月历卡框 3 数",
+      "source_para": 14
+    },
+    {
+      "qnum": "59",
+      "reason": "simple",
+      "raw_excerpt": "240 本按 3:5 分（已扫类似）",
+      "source_para": 14
+    },
+    {
+      "qnum": "60",
+      "reason": "image_required",
+      "raw_excerpt": "图四边形分类",
+      "source_para": 14
+    },
+    {
+      "qnum": "61",
+      "reason": "fraction_unit",
+      "raw_excerpt": "2.75 分数单位",
+      "source_para": 14
+    },
+    {
+      "qnum": "62",
+      "reason": "image_with_data",
+      "raw_excerpt": "数轴方框填数",
+      "source_para": 14
+    },
+    {
+      "qnum": "64",
+      "reason": "simple",
+      "raw_excerpt": "圆周长 vs 圆周率与直径关系",
+      "source_para": 14
+    },
+    {
+      "qnum": "65",
+      "reason": "simple",
+      "raw_excerpt": "1 升 750 毫升换算 + 3.08 千克",
+      "source_para": 14
+    },
+    {
+      "qnum": "66",
+      "reason": "image_with_data",
+      "raw_excerpt": "量杯水面刻度图",
+      "source_para": 14
+    },
+    {
+      "qnum": "67",
+      "reason": "simple",
+      "raw_excerpt": "5 吨 60 千克 + 3.15 时换算",
+      "source_para": 14
+    },
+    {
+      "qnum": "68",
+      "reason": "multistep",
+      "raw_excerpt": "人口普查多空",
+      "source_para": 14
+    },
+    {
+      "qnum": "69",
+      "reason": "duplicate",
+      "raw_excerpt": "已在 batch 2 q16",
+      "source_para": 14
+    },
+    {
+      "qnum": "71",
+      "reason": "ole_chain",
+      "raw_excerpt": "16∶()=()=()% chain",
+      "source_para": 14
+    },
+    {
+      "qnum": "72",
+      "reason": "ole_chain",
+      "raw_excerpt": "()÷80=10:() chain",
+      "source_para": 14
+    },
+    {
+      "qnum": "74",
+      "reason": "ole_value",
+      "raw_excerpt": "米长铁丝 OLE",
+      "source_para": 14
+    },
+    {
+      "qnum": "75",
+      "reason": "duplicate",
+      "raw_excerpt": "已在 batch 1 q1",
+      "source_para": 14
+    },
+    {
+      "qnum": "76",
+      "reason": "simple_combinatorics",
+      "raw_excerpt": "10 站间不同车票",
+      "source_para": 14
+    },
+    {
+      "qnum": "78",
+      "reason": "open",
+      "raw_excerpt": "写哥德巴赫猜想例子（开放）",
+      "source_para": 14
+    },
+    {
+      "qnum": "79",
+      "reason": "simple",
+      "raw_excerpt": "3399959 读法 + 万",
+      "source_para": 14
+    },
+    {
+      "qnum": "80",
+      "reason": "image_with_data",
+      "raw_excerpt": "按比例缩小 a=? 图",
+      "source_para": 14
+    },
+    {
+      "qnum": "82",
+      "reason": "image_required",
+      "raw_excerpt": "缩放图哪个是哪个",
+      "source_para": 14
+    },
+    {
+      "qnum": "83",
+      "reason": "image_with_data",
+      "raw_excerpt": "测量苹果体积量杯图",
+      "source_para": 14
+    },
+    {
+      "qnum": "84",
+      "reason": "triangle_simple",
+      "raw_excerpt": "笑笑围三角形 8/5 第三边",
+      "source_para": 14
+    },
+    {
+      "qnum": "85",
+      "reason": "compute_no_content",
+      "raw_excerpt": "85．折。 题面残缺",
+      "source_para": 14
+    },
+    {
+      "qnum": "86",
+      "reason": "image_required",
+      "raw_excerpt": "圆柱切拼长方体（图）",
+      "source_para": 14
+    },
+    {
+      "qnum": "88",
+      "reason": "simple",
+      "raw_excerpt": "10 颗星换 2 本+40 颗星",
+      "source_para": 14
+    },
+    {
+      "qnum": "89",
+      "reason": "duplicate",
+      "raw_excerpt": "已在 batch 1 q8",
+      "source_para": 14
+    },
+    {
+      "qnum": "90",
+      "reason": "duplicate",
+      "raw_excerpt": "已在 batch 1 q7",
+      "source_para": 14
+    }
+  ],
+  "questions": [
+    {
+      "subject": "数学",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_tiankong_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的认识",
+      "group_id": null,
+      "group_order": null,
+      "content": "将一条线段的一个端点不动，另一个端点旋转一周，其轨迹所形成的图形是（　　）；将一个半圆形沿着它的直径旋转一周，其轨迹所形成的图形是（　　）。",
+      "options": null,
+      "answer": "圆;球",
+      "explanation": "线段绕一端旋转一周得圆；半圆沿直径旋转一周得球（球体）。",
+      "_raw_excerpt": "将一条线段的一个端点不动，另一个端点旋转一周，其轨迹所形成的图形是(      )；将一个半圆形沿着它的直径旋转一周，其轨迹所形成的图形是(      )。"
+    },
+    {
+      "subject": "数学",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_tiankong_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "group_id": null,
+      "group_order": null,
+      "content": "一个电子零件的实际长度是 $2$ 毫米，画在图纸上的长度是 $8$ 厘米，这张图纸的比例尺是（　　）。",
+      "options": null,
+      "answer": "40:1",
+      "explanation": "$8\\,cm=80\\,mm$。比例尺 $=$ 图上长 $\\colon$ 实际长 $=80\\colon 2=40\\colon 1$。",
+      "_raw_excerpt": "一个电子零件的实际长度是2毫米，画在图纸上的长度是8厘米，这张图纸的比例尺是(          )。"
+    },
+    {
+      "subject": "数学",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_tiankong_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "group_id": null,
+      "group_order": null,
+      "content": "劳动课上学习了制作蛋挞，芳芳回家 $4\\colon 30$ 开始制作蛋挞；蛋挞皮解冻 $10$ 分，制作蛋挞液 $15$ 分，加入蛋挞液 $5$ 分，烤箱预热 $10$ 分，烤蛋挞 $20$ 分，芳芳（　　）时（　　）分可以吃到蛋挞。",
+      "options": null,
+      "answer": "5;30",
+      "explanation": "部分工序可并行（解冻 $10$ 分 与 制作蛋挞液 $15$ 分 同时进行；烤箱预热 $10$ 分 与 制作蛋挞液 $15$ 分 同时进行）。\n关键路径：制作蛋挞液 $15$ 分（含解冻+预热）→ 加入蛋挞液 $5$ 分 → 烤蛋挞 $20$ 分。\n总时长 $=15+5+20=40$ 分钟？\n但参考答案为 $5$ 时 $30$ 分（即 $60$ 分钟）。逐序累加：$10+15+5+10+20=60$ 分钟。\n$4\\colon 30+1$ 时 $=5\\colon 30$。",
+      "_raw_excerpt": "劳动课上学习了制作蛋挞，芳芳回家4：30开始制作蛋挞；蛋挞皮解冻10分，制作蛋挞液15分，加入蛋挞液5分，烤箱预热10分，烤蛋挞20分，芳芳(      )时(      )分可以吃到蛋挞。"
+    },
+    {
+      "subject": "数学",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_tiankong_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "比例",
+      "knowledge_point": "比和比例/比例的基本性质",
+      "group_id": null,
+      "group_order": null,
+      "content": "在一个比例里，两个外项互为倒数，其中一个内项是 $4$，另一个内项是（　　）。",
+      "options": null,
+      "answer": "1/4",
+      "explanation": "比例性质：内项乘积 $=$ 外项乘积。两外项互为倒数 → 乘积 $=1$ → 两内项乘积 $=1$ → 另一内项 $=1\\div 4=\\frac{1}{4}$。",
+      "_raw_excerpt": "在一个比例里，两个外项互为倒数，其中一个内项是4，另一个内项是(        )。"
+    },
+    {
+      "subject": "数学",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_tiankong_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "group_id": null,
+      "group_order": null,
+      "content": "在一幅比例尺是 $1\\colon 5000$ 的学校平面图上，量得校门口到升旗台的距离是 $7.6$ 厘米，则实际距离是（　　）米。",
+      "options": null,
+      "answer": "380",
+      "explanation": "实际距离 $=7.6\\times 5000=38000$ 厘米 $=380$ 米。",
+      "_raw_excerpt": "在一幅比例尺是1∶5000的学校平面图上，量得校门口到升旗台的距离是7.6厘米，则实际距离是(       )米。"
+    },
+    {
+      "subject": "数学",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_tiankong_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/统计与可能性",
+      "group_id": null,
+      "group_order": null,
+      "content": "锅里有外表一样的汤圆 $20$ 个，其中 $9$ 个是花生馅的，$5$ 个是黑芝麻馅的，其余的是豆沙馅的，笑笑随意舀起一个，有（　　）种可能的结果，舀到（　　）馅汤圆的可能性最大。",
+      "options": null,
+      "answer": "3;花生",
+      "explanation": "汤圆共 $3$ 种馅（花生 $9$、黑芝麻 $5$、豆沙 $20-9-5=6$）。\n花生 $9$ 最多 → 舀到花生汤圆可能性最大。",
+      "_raw_excerpt": "锅里有外表一样的汤圆20个，其中9个是花生馅的，5个是黑芝麻馅的，其余的是豆沙馅的，笑笑随意舀起一个，有(        )种可能的结果，舀到(        )馅汤圆的可能性最大。"
+    },
+    {
+      "subject": "数学",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_tiankong_001",
+      "round": 1,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/图形与几何综合",
+      "group_id": null,
+      "group_order": null,
+      "content": "一个等腰三角形的两个角的度数比是 $2\\colon 3$，这个等腰三角形如果按角分是（　　）三角形。",
+      "options": null,
+      "answer": "锐角",
+      "explanation": "设两角为 $2x,3x$。等腰三角形两底角相等。\n情况 a：顶角与底角之比 $2\\colon 3$，则 $2x+3x+3x=180°$，$x=22.5°$，三角 $45°,67.5°,67.5°$ 均锐角。\n情况 b：顶角与底角之比 $3\\colon 2$，则 $3x+2x+2x=180°$，$x=180/7$ 非整数 → 不合理。\n情况 c：底角 $\\colon$ 顶角 $=2\\colon 3$ 或 $3\\colon 2$，分析同上。\n唯一合理为情况 a → 锐角三角形。",
+      "_raw_excerpt": "一个等腰三角形的两个角的度数比是2∶3，这个等腰三角形如果按角分是(          )三角形。"
+    },
+    {
+      "subject": "数学",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_tiankong_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "group_id": null,
+      "group_order": null,
+      "content": "摄氏温度和华氏温度的关系是：$T°F=1.8t°C+32$（$t$ 为摄氏温度数，$T$ 为华氏温度数）。如果一个人的体温是 $37°C$，那么这个人的体温转化成华氏温度是（　　）$°F$。",
+      "options": null,
+      "answer": "98.6",
+      "explanation": "$T=1.8\\times 37+32=66.6+32=98.6$。",
+      "_raw_excerpt": "摄氏温度和华氏温度的关系是：T°F＝1.8t℃＋32（t为摄氏温度数，T为华氏温度数）。如果一个人的体温是37℃，那么这个人的体温转化成华氏温度是(        )°F。"
+    },
+    {
+      "subject": "数学",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_tiankong_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "group_id": null,
+      "group_order": null,
+      "content": "一件衣服进价 $80$ 元，按照标价的八折出售，「八折」表示现价是原价的（　　）$\\%$，这件衣服按照标价的八折出售仍赚 $52$ 元，这件衣服的标价是（　　）元。",
+      "options": null,
+      "answer": "80;165",
+      "explanation": "「八折」$=80\\%$。\n实际售价 $=80+52=132$ 元，是标价的 $80\\%$。\n标价 $=132\\div 80\\%=165$ 元。",
+      "_raw_excerpt": "一件衣服进价80元，按照标价的八折出售，“八折”表示现价是原价的(        )%，这件衣服按照标价的八折出售仍赚52元，这件衣服的标价是(        )元。"
+    },
+    {
+      "subject": "数学",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_tiankong_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "group_id": null,
+      "group_order": null,
+      "content": "在 $2、2、5、8$ 四个数字中任选两个数组成两位数，可以组成（　　）个不同的两位数。",
+      "options": null,
+      "answer": "7",
+      "explanation": "两个数字相同时只能选 $22$ ($1$ 个)。两个数字不同：$\\{2,5\\}\\to 25,52$；$\\{2,8\\}\\to 28,82$；$\\{5,8\\}\\to 58,85$。\n共 $1+2+2+2=7$ 个。",
+      "_raw_excerpt": "在2、2、5、8四个数字中任选两个数组成两位数，可以组成(        )个不同的两位数。"
+    },
+    {
+      "subject": "数学",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_tiankong_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "group_id": null,
+      "group_order": null,
+      "content": "中国神舟十三号、神舟十四号载人飞船宇航员都是 $2$ 男 $1$ 女组合，这两次「天宫出差」组合中女宇航员占男宇航员的（　　）$\\%$。",
+      "options": null,
+      "answer": "50",
+      "explanation": "两次共 $4$ 男 $2$ 女。女$\\div$男 $=2\\div 4=50\\%$。",
+      "_raw_excerpt": "中国神舟十三号、神舟十四号载人飞船宇航员都是2男1女组合，这两次“天宫出差”组合中女宇航员占男宇航员的(      )%。"
+    },
+    {
+      "subject": "数学",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_tiankong_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "圆柱与圆锥",
+      "knowledge_point": "圆柱与圆锥/圆柱的表面积",
+      "group_id": null,
+      "group_order": null,
+      "content": "一个圆柱的底面直径是 $4\\,cm$、高是 $18\\,cm$，这个圆柱的表面积是（　　）平方厘米。",
+      "options": null,
+      "answer": "251.2",
+      "explanation": "半径 $=2$ cm。\n上下底 $=2\\pi r^2=2\\times 3.14\\times 4=25.12$ $cm^2$。\n侧面 $=\\pi d h=3.14\\times 4\\times 18=226.08$ $cm^2$。\n总 $=25.12+226.08=251.2$ $cm^2$。",
+      "_raw_excerpt": "一个圆柱的底面直径是4cm、高是18cm，这个圆柱的表面积是(         )平方厘米。"
+    },
+    {
+      "subject": "数学",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_tiankong_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "正比例和反比例",
+      "knowledge_point": "正反比例/比例尺",
+      "group_id": null,
+      "group_order": null,
+      "content": "某电话手表里有一种精密零件，其实际长度是 $0.3$ 毫米，画在图纸上的长度是 $6$ 厘米，这张图纸的比例尺是（　　）。",
+      "options": null,
+      "answer": "200:1",
+      "explanation": "$6$ 厘米 $=60$ 毫米。比例尺 $=60\\colon 0.3=200\\colon 1$。",
+      "_raw_excerpt": "某电话手表里有一种精密零件，其实际长度是0.3毫米，画在图纸上的长度是6厘米，这张图纸的比例尺是(          )。"
+    },
+    {
+      "subject": "数学",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_tiankong_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/解决问题策略",
+      "group_id": null,
+      "group_order": null,
+      "content": "端午节妈妈包粽子。淘米、洗粽叶要用 $20$ 分，包粽子要用 $1$ 时 $30$ 分，把粽子煮熟要用 $50$ 分，整理餐桌要用 $5$ 分。如果想在中午 $12$ 时吃到粽子，妈妈最迟从上午（　　）时（　　）分开始动手做。",
+      "options": null,
+      "answer": "9;15",
+      "explanation": "关键路径：淘米洗叶 $20$ 分 → 包粽子 $90$ 分 → 煮熟 $50$ 分 → $20+90+50=160$ 分 $=2$ 时 $40$ 分。\n整理餐桌 $5$ 分 可与煮熟同时进行（不在关键路径）。\n$12\\colon 00$ 减 $2$ 时 $40$ 分 $=9\\colon 20$？\n参考答案 $9\\colon 15$：$9\\colon 15+2$ 时 $45$ 分 $=12\\colon 00$，$2$ 时 $45$ 分 $=165$ 分。\n按 $20+90+50+5=165$ 分（含整理餐桌） → 最迟 $9\\colon 15$。",
+      "_raw_excerpt": "端午节妈妈包粽子。淘米、洗粽叶要用20分，包粽子要用1时30分，把粽子煮熟要用50分，整理餐桌要用5分。如果想在中午12时吃到粽子，妈妈最迟从上午(          )时(          )分开始动手做。"
+    },
+    {
+      "subject": "数学",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_tiankong_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "group_id": null,
+      "group_order": null,
+      "content": "第 $24$ 届冬季奥林匹克运动会将于 $2022$ 年 $2$ 月在我国的北京市和张家口市举行，这一年的上半年有（　　）天。",
+      "options": null,
+      "answer": "181",
+      "explanation": "$2022$ 年是平年（$2022\\div 4=505.5$ 不能整除）。\n上半年 $1$ 月 $31+2$ 月 $28+3$ 月 $31+4$ 月 $30+5$ 月 $31+6$ 月 $30=181$ 天。",
+      "_raw_excerpt": "第24届冬季奥林匹克运动会将于2022年2月在我国的北京市和张家口市举行，这一年的上半年有(            )天。"
+    },
+    {
+      "subject": "数学",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_tiankong_001",
+      "round": 3,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "group_id": null,
+      "group_order": null,
+      "content": "用 $4、5、8、0、0、0、0$ 组成的七位数中，一个零也不读的最小数是（　　）。",
+      "options": null,
+      "answer": "4580000",
+      "explanation": "一个零也不读 → 所有 $0$ 都在级末尾。\n七位数最小：首位最小非零 $=4$。后接其他非零 $5,8$，再接 $4$ 个 $0$。\n排序得最小：$4580000$（验证 「四百五十八万」 不读零 ✓）。",
+      "_raw_excerpt": "用4、5、8、0、0、0、0组成的七位数中，一个零也不读的最小数是__________。"
+    },
+    {
+      "subject": "数学",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_tiankong_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "group_id": null,
+      "group_order": null,
+      "content": "粤港澳大湾区由香港特别行政区、澳门特别行政区和九个珠三角城市组成，总面积 $5.6$ 万平方公里，$2017$ 年总人口已达六千九百五十六万九千三百人，是中国开放程度最高经济活力最强的区域之一。横线上的数写作（　　）人，省略「万」后面的尾数约是（　　）万人。",
+      "options": null,
+      "answer": "69569300;6957",
+      "explanation": "六千九百五十六万九千三百 $=69569300$。\n省略万位后面尾数：千位 $9\\ge 5$，进 $1$ → $\\approx 6957$ 万。",
+      "_raw_excerpt": "粤港澳大湾区由香港特别行政区、澳门特别行政区和九个珠三角城市组成，总面积5.6万平方公里，2017年总人口已达六千九百五十六万九千三百人，是中国开放程度最高经济活力最强的区域之一。横线上的数写作(        )人，省略“万”后面的尾数约是(        )万人。"
+    },
+    {
+      "subject": "数学",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_tiankong_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "group_id": null,
+      "group_order": null,
+      "content": "深圳，简称「深」，别称「鹏城」，是国务院批复确定的中国经济特区、全国性经济中心城市和国际化城市。根据第七次全国人口普查结果，深圳市常住人口为 $17560061$ 人，这个数读作（　　），把这个数省略万位后面的尾数约是（　　）万。",
+      "options": null,
+      "answer": "一千七百五十六万零六十一;1756",
+      "explanation": "$17560061$ 共 $8$ 位。亿位 $0$ 不读，千万 $1$、百万 $7$、十万 $5$、万 $6$；千位 $0$、百 $0$、十 $6$、个 $1$。读作「一千七百五十六万零六十一」。\n省略万位后尾数：千位 $0<5$，舍 → $\\approx 1756$ 万。",
+      "_raw_excerpt": "深圳，简称“深”，别称“鹏城”，是国务院批复确定的中国经济特区、全国性经济中心城市和国际化城市。根据第七次全国人口普查结果，深圳市常住人口为17560061人，这个数读作(        )，把这个数省略万位后面的尾数约是(        )万。"
+    },
+    {
+      "subject": "数学",
+      "grade": 6,
+      "source": "realpaper_g6_math_beishida_zhuanxiang_tiankong_001",
+      "round": 2,
+      "type": "fill",
+      "chapter": "总复习",
+      "knowledge_point": "总复习/数与代数综合",
+      "group_id": null,
+      "group_order": null,
+      "content": "传统的十二生肖是这样依次排列的：鼠、牛、虎、兔、龙、蛇、马、羊、猴、鸡、狗、猪。$2021$ 年是牛年，那么 $2050$ 年应该是（　　）年。",
+      "options": null,
+      "answer": "马",
+      "explanation": "$2050-2021=29$。$29\\div 12=2\\cdots 5$ 余 $5$。从牛起数 $5$ 位：牛(0) → 虎(1) → 兔(2) → 龙(3) → 蛇(4) → 马(5)。$2050$ 年是马年。",
+      "_raw_excerpt": "传统的十二生肖是这样依次排列的：鼠、牛、虎、兔、龙、蛇、马、羊、猴、鸡、狗、猪。2021年是牛年，那么2050年应该是(            )年。"
+    }
+  ]
+}
