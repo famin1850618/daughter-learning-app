@@ -1,0 +1,845 @@
+{
+  "version": 1,
+  "chapters": [
+    {
+      "subject": "数学",
+      "grade": 6,
+      "chapter_name": "圆柱与圆锥",
+      "order_index": 1
+    },
+    {
+      "subject": "数学",
+      "grade": 6,
+      "chapter_name": "比例",
+      "order_index": 2
+    },
+    {
+      "subject": "数学",
+      "grade": 6,
+      "chapter_name": "图形的运动",
+      "order_index": 3
+    },
+    {
+      "subject": "数学",
+      "grade": 6,
+      "chapter_name": "正比例和反比例",
+      "order_index": 4
+    },
+    {
+      "subject": "数学",
+      "grade": 6,
+      "chapter_name": "数学好玩",
+      "order_index": 5
+    },
+    {
+      "subject": "数学",
+      "grade": 6,
+      "chapter_name": "总复习",
+      "order_index": 6
+    },
+    {
+      "subject": "数学",
+      "grade": 7,
+      "chapter_name": "丰富的图形世界",
+      "order_index": 1
+    },
+    {
+      "subject": "数学",
+      "grade": 7,
+      "chapter_name": "有理数及其运算",
+      "order_index": 2
+    },
+    {
+      "subject": "数学",
+      "grade": 7,
+      "chapter_name": "整式及其加减",
+      "order_index": 3
+    },
+    {
+      "subject": "数学",
+      "grade": 7,
+      "chapter_name": "基本平面图形",
+      "order_index": 4
+    },
+    {
+      "subject": "数学",
+      "grade": 7,
+      "chapter_name": "一元一次方程",
+      "order_index": 5
+    },
+    {
+      "subject": "数学",
+      "grade": 7,
+      "chapter_name": "数据的收集与整理",
+      "order_index": 6
+    },
+    {
+      "subject": "数学",
+      "grade": 7,
+      "chapter_name": "整式的乘除",
+      "order_index": 7
+    },
+    {
+      "subject": "数学",
+      "grade": 7,
+      "chapter_name": "相交线与平行线",
+      "order_index": 8
+    },
+    {
+      "subject": "数学",
+      "grade": 7,
+      "chapter_name": "变量间的关系",
+      "order_index": 9
+    },
+    {
+      "subject": "数学",
+      "grade": 7,
+      "chapter_name": "三角形",
+      "order_index": 10
+    },
+    {
+      "subject": "数学",
+      "grade": 7,
+      "chapter_name": "生活中的轴对称",
+      "order_index": 11
+    },
+    {
+      "subject": "数学",
+      "grade": 7,
+      "chapter_name": "概率初步",
+      "order_index": 12
+    },
+    {
+      "subject": "数学",
+      "grade": 8,
+      "chapter_name": "勾股定理",
+      "order_index": 1
+    },
+    {
+      "subject": "数学",
+      "grade": 8,
+      "chapter_name": "实数",
+      "order_index": 2
+    },
+    {
+      "subject": "数学",
+      "grade": 8,
+      "chapter_name": "位置与坐标",
+      "order_index": 3
+    },
+    {
+      "subject": "数学",
+      "grade": 8,
+      "chapter_name": "一次函数",
+      "order_index": 4
+    },
+    {
+      "subject": "数学",
+      "grade": 8,
+      "chapter_name": "二元一次方程组",
+      "order_index": 5
+    },
+    {
+      "subject": "数学",
+      "grade": 8,
+      "chapter_name": "数据的分析",
+      "order_index": 6
+    },
+    {
+      "subject": "数学",
+      "grade": 8,
+      "chapter_name": "平行线的证明",
+      "order_index": 7
+    },
+    {
+      "subject": "数学",
+      "grade": 8,
+      "chapter_name": "三角形的证明",
+      "order_index": 8
+    },
+    {
+      "subject": "数学",
+      "grade": 8,
+      "chapter_name": "一元一次不等式与不等式组",
+      "order_index": 9
+    },
+    {
+      "subject": "数学",
+      "grade": 8,
+      "chapter_name": "图形的平移与旋转",
+      "order_index": 10
+    },
+    {
+      "subject": "数学",
+      "grade": 8,
+      "chapter_name": "因式分解",
+      "order_index": 11
+    },
+    {
+      "subject": "数学",
+      "grade": 8,
+      "chapter_name": "分式与分式方程",
+      "order_index": 12
+    },
+    {
+      "subject": "数学",
+      "grade": 8,
+      "chapter_name": "平行四边形",
+      "order_index": 13
+    },
+    {
+      "subject": "数学",
+      "grade": 9,
+      "chapter_name": "特殊平行四边形",
+      "order_index": 1
+    },
+    {
+      "subject": "数学",
+      "grade": 9,
+      "chapter_name": "一元二次方程",
+      "order_index": 2
+    },
+    {
+      "subject": "数学",
+      "grade": 9,
+      "chapter_name": "概率的进一步认识",
+      "order_index": 3
+    },
+    {
+      "subject": "数学",
+      "grade": 9,
+      "chapter_name": "图形的相似",
+      "order_index": 4
+    },
+    {
+      "subject": "数学",
+      "grade": 9,
+      "chapter_name": "投影与视图",
+      "order_index": 5
+    },
+    {
+      "subject": "数学",
+      "grade": 9,
+      "chapter_name": "反比例函数",
+      "order_index": 6
+    },
+    {
+      "subject": "数学",
+      "grade": 9,
+      "chapter_name": "直角三角形的边角关系",
+      "order_index": 7
+    },
+    {
+      "subject": "数学",
+      "grade": 9,
+      "chapter_name": "二次函数",
+      "order_index": 8
+    },
+    {
+      "subject": "数学",
+      "grade": 9,
+      "chapter_name": "圆",
+      "order_index": 9
+    },
+    {
+      "subject": "物理",
+      "grade": 8,
+      "chapter_name": "机械运动",
+      "order_index": 1
+    },
+    {
+      "subject": "物理",
+      "grade": 8,
+      "chapter_name": "声现象",
+      "order_index": 2
+    },
+    {
+      "subject": "物理",
+      "grade": 8,
+      "chapter_name": "物态变化",
+      "order_index": 3
+    },
+    {
+      "subject": "物理",
+      "grade": 8,
+      "chapter_name": "光现象",
+      "order_index": 4
+    },
+    {
+      "subject": "物理",
+      "grade": 8,
+      "chapter_name": "透镜及其应用",
+      "order_index": 5
+    },
+    {
+      "subject": "物理",
+      "grade": 8,
+      "chapter_name": "质量与密度",
+      "order_index": 6
+    },
+    {
+      "subject": "物理",
+      "grade": 8,
+      "chapter_name": "力",
+      "order_index": 7
+    },
+    {
+      "subject": "物理",
+      "grade": 8,
+      "chapter_name": "运动和力",
+      "order_index": 8
+    },
+    {
+      "subject": "物理",
+      "grade": 8,
+      "chapter_name": "压强",
+      "order_index": 9
+    },
+    {
+      "subject": "物理",
+      "grade": 8,
+      "chapter_name": "浮力",
+      "order_index": 10
+    },
+    {
+      "subject": "物理",
+      "grade": 8,
+      "chapter_name": "功和机械能",
+      "order_index": 11
+    },
+    {
+      "subject": "物理",
+      "grade": 8,
+      "chapter_name": "简单机械",
+      "order_index": 12
+    },
+    {
+      "subject": "物理",
+      "grade": 9,
+      "chapter_name": "内能",
+      "order_index": 1
+    },
+    {
+      "subject": "物理",
+      "grade": 9,
+      "chapter_name": "热机",
+      "order_index": 2
+    },
+    {
+      "subject": "物理",
+      "grade": 9,
+      "chapter_name": "电流和电路",
+      "order_index": 3
+    },
+    {
+      "subject": "物理",
+      "grade": 9,
+      "chapter_name": "电压和电阻",
+      "order_index": 4
+    },
+    {
+      "subject": "物理",
+      "grade": 9,
+      "chapter_name": "欧姆定律",
+      "order_index": 5
+    },
+    {
+      "subject": "物理",
+      "grade": 9,
+      "chapter_name": "电功和电热",
+      "order_index": 6
+    },
+    {
+      "subject": "物理",
+      "grade": 9,
+      "chapter_name": "安全用电",
+      "order_index": 7
+    },
+    {
+      "subject": "物理",
+      "grade": 9,
+      "chapter_name": "电与磁",
+      "order_index": 8
+    },
+    {
+      "subject": "物理",
+      "grade": 9,
+      "chapter_name": "信息的传输",
+      "order_index": 9
+    },
+    {
+      "subject": "物理",
+      "grade": 9,
+      "chapter_name": "能源",
+      "order_index": 10
+    },
+    {
+      "subject": "化学",
+      "grade": 9,
+      "chapter_name": "走进化学世界",
+      "order_index": 1
+    },
+    {
+      "subject": "化学",
+      "grade": 9,
+      "chapter_name": "空气和氧气",
+      "order_index": 2
+    },
+    {
+      "subject": "化学",
+      "grade": 9,
+      "chapter_name": "物质构成的奥秘",
+      "order_index": 3
+    },
+    {
+      "subject": "化学",
+      "grade": 9,
+      "chapter_name": "自然界的水",
+      "order_index": 4
+    },
+    {
+      "subject": "化学",
+      "grade": 9,
+      "chapter_name": "化学反应的定量关系",
+      "order_index": 5
+    },
+    {
+      "subject": "化学",
+      "grade": 9,
+      "chapter_name": "碳和碳的氧化物",
+      "order_index": 6
+    },
+    {
+      "subject": "化学",
+      "grade": 9,
+      "chapter_name": "能源的合理利用与开发",
+      "order_index": 7
+    },
+    {
+      "subject": "化学",
+      "grade": 9,
+      "chapter_name": "金属和金属材料",
+      "order_index": 8
+    },
+    {
+      "subject": "化学",
+      "grade": 9,
+      "chapter_name": "溶液",
+      "order_index": 9
+    },
+    {
+      "subject": "化学",
+      "grade": 9,
+      "chapter_name": "酸、碱、盐",
+      "order_index": 10
+    },
+    {
+      "subject": "化学",
+      "grade": 9,
+      "chapter_name": "化学与社会发展",
+      "order_index": 11
+    },
+    {
+      "subject": "AI",
+      "grade": 6,
+      "chapter_name": "Scratch编程基础",
+      "order_index": 1
+    },
+    {
+      "subject": "AI",
+      "grade": 6,
+      "chapter_name": "条件判断与循环",
+      "order_index": 2
+    },
+    {
+      "subject": "AI",
+      "grade": 6,
+      "chapter_name": "Scratch动画与游戏制作",
+      "order_index": 3
+    },
+    {
+      "subject": "AI",
+      "grade": 6,
+      "chapter_name": "什么是人工智能",
+      "order_index": 4
+    },
+    {
+      "subject": "AI",
+      "grade": 7,
+      "chapter_name": "Python入门与环境搭建",
+      "order_index": 1
+    },
+    {
+      "subject": "AI",
+      "grade": 7,
+      "chapter_name": "Python变量与数据类型",
+      "order_index": 2
+    },
+    {
+      "subject": "AI",
+      "grade": 7,
+      "chapter_name": "Python条件与循环",
+      "order_index": 3
+    },
+    {
+      "subject": "AI",
+      "grade": 7,
+      "chapter_name": "Python函数与模块",
+      "order_index": 4
+    },
+    {
+      "subject": "AI",
+      "grade": 7,
+      "chapter_name": "AI应用体验：图像识别与语音",
+      "order_index": 5
+    },
+    {
+      "subject": "AI",
+      "grade": 8,
+      "chapter_name": "Python列表与字典",
+      "order_index": 1
+    },
+    {
+      "subject": "AI",
+      "grade": 8,
+      "chapter_name": "数据处理与可视化（matplotlib）",
+      "order_index": 2
+    },
+    {
+      "subject": "AI",
+      "grade": 8,
+      "chapter_name": "机器学习基本概念",
+      "order_index": 3
+    },
+    {
+      "subject": "AI",
+      "grade": 8,
+      "chapter_name": "分类与预测：决策树入门",
+      "order_index": 4
+    },
+    {
+      "subject": "AI",
+      "grade": 8,
+      "chapter_name": "AI伦理与数据隐私",
+      "order_index": 5
+    },
+    {
+      "subject": "AI",
+      "grade": 9,
+      "chapter_name": "神经网络基础概念",
+      "order_index": 1
+    },
+    {
+      "subject": "AI",
+      "grade": 9,
+      "chapter_name": "自然语言处理入门",
+      "order_index": 2
+    },
+    {
+      "subject": "AI",
+      "grade": 9,
+      "chapter_name": "计算机视觉基础",
+      "order_index": 3
+    },
+    {
+      "subject": "AI",
+      "grade": 9,
+      "chapter_name": "AI项目实战：制作智能小程序",
+      "order_index": 4
+    },
+    {
+      "subject": "AI",
+      "grade": 9,
+      "chapter_name": "AI与未来社会",
+      "order_index": 5
+    },
+    {
+      "subject": "数学",
+      "grade": 6,
+      "chapter_name": "小升初综合",
+      "order_index": 99
+    },
+    {
+      "subject": "数学",
+      "grade": 9,
+      "chapter_name": "中考综合",
+      "order_index": 99
+    },
+    {
+      "subject": "语文",
+      "grade": 6,
+      "chapter_name": "字词",
+      "order_index": 21
+    },
+    {
+      "subject": "语文",
+      "grade": 6,
+      "chapter_name": "句子和语法",
+      "order_index": 22
+    },
+    {
+      "subject": "语文",
+      "grade": 6,
+      "chapter_name": "阅读理解",
+      "order_index": 23
+    },
+    {
+      "subject": "语文",
+      "grade": 6,
+      "chapter_name": "古诗文",
+      "order_index": 24
+    },
+    {
+      "subject": "语文",
+      "grade": 6,
+      "chapter_name": "文学常识",
+      "order_index": 25
+    },
+    {
+      "subject": "语文",
+      "grade": 6,
+      "chapter_name": "综合性学习",
+      "order_index": 26
+    },
+    {
+      "subject": "语文",
+      "grade": 6,
+      "chapter_name": "写作",
+      "order_index": 27
+    },
+    {
+      "subject": "语文",
+      "grade": 7,
+      "chapter_name": "字词",
+      "order_index": 21
+    },
+    {
+      "subject": "语文",
+      "grade": 7,
+      "chapter_name": "句子和语法",
+      "order_index": 22
+    },
+    {
+      "subject": "语文",
+      "grade": 7,
+      "chapter_name": "阅读理解",
+      "order_index": 23
+    },
+    {
+      "subject": "语文",
+      "grade": 7,
+      "chapter_name": "古诗文",
+      "order_index": 24
+    },
+    {
+      "subject": "语文",
+      "grade": 7,
+      "chapter_name": "文学常识",
+      "order_index": 25
+    },
+    {
+      "subject": "语文",
+      "grade": 7,
+      "chapter_name": "综合性学习",
+      "order_index": 26
+    },
+    {
+      "subject": "语文",
+      "grade": 7,
+      "chapter_name": "写作",
+      "order_index": 27
+    },
+    {
+      "subject": "语文",
+      "grade": 8,
+      "chapter_name": "字词",
+      "order_index": 21
+    },
+    {
+      "subject": "语文",
+      "grade": 8,
+      "chapter_name": "句子和语法",
+      "order_index": 22
+    },
+    {
+      "subject": "语文",
+      "grade": 8,
+      "chapter_name": "阅读理解",
+      "order_index": 23
+    },
+    {
+      "subject": "语文",
+      "grade": 8,
+      "chapter_name": "古诗文",
+      "order_index": 24
+    },
+    {
+      "subject": "语文",
+      "grade": 8,
+      "chapter_name": "文学常识",
+      "order_index": 25
+    },
+    {
+      "subject": "语文",
+      "grade": 8,
+      "chapter_name": "综合性学习",
+      "order_index": 26
+    },
+    {
+      "subject": "语文",
+      "grade": 8,
+      "chapter_name": "写作",
+      "order_index": 27
+    },
+    {
+      "subject": "语文",
+      "grade": 9,
+      "chapter_name": "字词",
+      "order_index": 21
+    },
+    {
+      "subject": "语文",
+      "grade": 9,
+      "chapter_name": "句子和语法",
+      "order_index": 22
+    },
+    {
+      "subject": "语文",
+      "grade": 9,
+      "chapter_name": "阅读理解",
+      "order_index": 23
+    },
+    {
+      "subject": "语文",
+      "grade": 9,
+      "chapter_name": "古诗文",
+      "order_index": 24
+    },
+    {
+      "subject": "语文",
+      "grade": 9,
+      "chapter_name": "文学常识",
+      "order_index": 25
+    },
+    {
+      "subject": "语文",
+      "grade": 9,
+      "chapter_name": "综合性学习",
+      "order_index": 26
+    },
+    {
+      "subject": "语文",
+      "grade": 9,
+      "chapter_name": "写作",
+      "order_index": 27
+    },
+    {
+      "subject": "物理",
+      "grade": 9,
+      "chapter_name": "中考综合",
+      "order_index": 99
+    },
+    {
+      "subject": "化学",
+      "grade": 9,
+      "chapter_name": "中考综合",
+      "order_index": 99
+    },
+    {
+      "subject": "英语",
+      "grade": 6,
+      "chapter_name": "Vocabulary",
+      "order_index": 200
+    },
+    {
+      "subject": "英语",
+      "grade": 6,
+      "chapter_name": "Grammar",
+      "order_index": 201
+    },
+    {
+      "subject": "英语",
+      "grade": 6,
+      "chapter_name": "Reading",
+      "order_index": 202
+    },
+    {
+      "subject": "英语",
+      "grade": 6,
+      "chapter_name": "Listening",
+      "order_index": 203
+    },
+    {
+      "subject": "英语",
+      "grade": 7,
+      "chapter_name": "Vocabulary",
+      "order_index": 200
+    },
+    {
+      "subject": "英语",
+      "grade": 7,
+      "chapter_name": "Grammar",
+      "order_index": 201
+    },
+    {
+      "subject": "英语",
+      "grade": 7,
+      "chapter_name": "Reading",
+      "order_index": 202
+    },
+    {
+      "subject": "英语",
+      "grade": 7,
+      "chapter_name": "Listening",
+      "order_index": 203
+    },
+    {
+      "subject": "英语",
+      "grade": 8,
+      "chapter_name": "Vocabulary",
+      "order_index": 200
+    },
+    {
+      "subject": "英语",
+      "grade": 8,
+      "chapter_name": "Grammar",
+      "order_index": 201
+    },
+    {
+      "subject": "英语",
+      "grade": 8,
+      "chapter_name": "Reading",
+      "order_index": 202
+    },
+    {
+      "subject": "英语",
+      "grade": 8,
+      "chapter_name": "Listening",
+      "order_index": 203
+    },
+    {
+      "subject": "英语",
+      "grade": 9,
+      "chapter_name": "Vocabulary",
+      "order_index": 200
+    },
+    {
+      "subject": "英语",
+      "grade": 9,
+      "chapter_name": "Grammar",
+      "order_index": 201
+    },
+    {
+      "subject": "英语",
+      "grade": 9,
+      "chapter_name": "Reading",
+      "order_index": 202
+    },
+    {
+      "subject": "英语",
+      "grade": 9,
+      "chapter_name": "Listening",
+      "order_index": 203
+    }
+  ]
+}

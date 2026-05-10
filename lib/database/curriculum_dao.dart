@@ -115,6 +115,44 @@ class CurriculumDao {
     await batch.commit(noResult: true);
   }
 
+  /// V3.19: 与远端 chapter 列表增量同步（CDN 拉取后调用）。
+  /// 行为: INSERT 缺失 + DELETE 多余 + UPDATE order_index。
+  /// 不影响题数据。chapter 是题分类层，与 questions 表 chapter 字段同名串联。
+  Future<({int added, int removed, int updated})> syncFromRemote(List<Chapter> remote) async {
+    final db = await _db.database;
+    final localRows = await db.query('curriculum');
+    final remoteKeys = <String>{};
+    int added = 0, removed = 0, updated = 0;
+    // INSERT / UPDATE
+    for (final c in remote) {
+      final key = '${c.subject}|${c.grade}|${c.chapterName}';
+      remoteKeys.add(key);
+      final existing = await db.query('curriculum',
+          where: 'subject=? AND grade=? AND chapter_name=?',
+          whereArgs: [c.subject, c.grade, c.chapterName], limit: 1);
+      if (existing.isEmpty) {
+        await db.insert('curriculum', c.toMap());
+        added++;
+      } else {
+        final localOrder = existing.first['order_index'] as int?;
+        if (localOrder != c.orderIndex) {
+          await db.update('curriculum', {'order_index': c.orderIndex},
+              where: 'id = ?', whereArgs: [existing.first['id']]);
+          updated++;
+        }
+      }
+    }
+    // DELETE 多余的（CDN 没有但本地有）
+    for (final row in localRows) {
+      final key = '${row['subject']}|${row['grade']}|${row['chapter_name']}';
+      if (!remoteKeys.contains(key)) {
+        await db.delete('curriculum', where: 'id = ?', whereArgs: [row['id']]);
+        removed++;
+      }
+    }
+    return (added: added, removed: removed, updated: updated);
+  }
+
   Future<void> resetToDefault(String subject, int grade) async {
     final db = await _db.database;
     await db.delete('curriculum',

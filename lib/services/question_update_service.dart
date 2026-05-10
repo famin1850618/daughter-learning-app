@@ -8,7 +8,9 @@ import '../models/question.dart';
 import '../models/speaker_profile.dart';
 import '../models/subject.dart';
 import '../models/knowledge_point.dart';
+import '../models/curriculum.dart';
 import '../database/database_helper.dart';
+import '../database/curriculum_dao.dart';
 import '../database/question_dao.dart';
 import '../database/knowledge_point_dao.dart';
 
@@ -28,12 +30,19 @@ class QuestionUpdateService extends ChangeNotifier {
     'https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/',
   ];
 
+  /// V3.19: chapter 也走 CDN（避免每次改章节都 build APK）
+  static const _curriculumUrls = [
+    'https://raw.githubusercontent.com/famin1850618/daughter-learning-app/main/question_bank/curriculum.json',
+    'https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/curriculum.json',
+  ];
+
   static const _keyLastSync = 'q_last_sync';
   static const _keyAutoCheck = 'q_auto_check';
 
   final _qDao = QuestionDao();
   final _kpDao = KnowledgePointDao();
   final _dbHelper = DatabaseHelper();
+  final _curriculumDao = CurriculumDao();
 
   String _status = '待同步';
   bool _syncing = false;
@@ -87,6 +96,26 @@ class QuestionUpdateService extends ChangeNotifier {
       final manifestJson = await _fetchWithFallback(_manifestUrls);
       if (manifestJson == null) {
         throw SyncException('manifest', '无法拉取 CDN manifest（jsDelivr + GitHub raw 都失败，请检查网络）');
+      }
+
+      // Step 1.5: V3.19 拉 curriculum.json + 增量同步 chapter 表（与 manifest 同周期）
+      // 失败不阻塞 → 用本地 seed 兜底（main.dart 启动已 insertIfMissing）
+      try {
+        final curriculumJson = await _fetchWithFallback(_curriculumUrls);
+        if (curriculumJson != null) {
+          final cd = jsonDecode(curriculumJson) as Map<String, dynamic>;
+          final remoteList = (cd['chapters'] as List).cast<Map<String, dynamic>>();
+          final chapters = remoteList.map((m) => Chapter(
+                subject: m['subject'] as String,
+                grade: m['grade'] as int,
+                chapterName: m['chapter_name'] as String,
+                orderIndex: m['order_index'] as int,
+              )).toList();
+          final delta = await _curriculumDao.syncFromRemote(chapters);
+          debugPrint('curriculum 同步: +${delta.added} -${delta.removed} ~${delta.updated}');
+        }
+      } catch (e) {
+        debugPrint('curriculum 同步失败（不阻塞 batch 同步）: $e');
       }
       final manifest = jsonDecode(manifestJson) as Map<String, dynamic>;
       final remoteBatches = (manifest['batches'] as List? ?? [])
