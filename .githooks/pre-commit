@@ -21,5 +21,21 @@ if ! python3 tools/realpaper/validate.py --cross-batch; then
     echo "   群组 ID 必须以完整 batch source 为前缀（§9.3.3 V3.19.2）。"
     exit 1
 fi
-echo "[pre-commit] ✅ cross-batch 0 冲突，放行"
+echo "[pre-commit] ✅ cross-batch 0 冲突"
+
+# 只有 chinese batch 改动时跑 material-coverage 检查（V3.19.7）
+chinese_staged=$(git diff --cached --name-only --diff-filter=ACM | grep -E '^(assets/data/batches|question_bank)/realpaper_g6_chinese_.*\.json$' || true)
+if [ -n "$chinese_staged" ]; then
+    echo "[pre-commit] 检测到 chinese batch 改动，跑 material-coverage 检查（V3.19.7）..."
+    if ! python3 tools/realpaper/validate.py --material-coverage; then
+        echo ""
+        echo "❌ commit 被拦：组合题阅读理解子题原文材料覆盖率 < 30%（§⊥0a V3.19.7）。"
+        echo "   修法：组合题子题 content 必须含 _raw_excerpt 的完整材料文字（≥30% 25-char n-gram 覆盖）。"
+        echo "   禁用 \"（同上）\" / \"见上文\" / 简化 \"《XX》节选阅读\" 跳过材料正文。"
+        exit 1
+    fi
+    echo "[pre-commit] ✅ material-coverage 通过"
+fi
+
+echo "[pre-commit] ✅ 全部检查放行"
 exit 0

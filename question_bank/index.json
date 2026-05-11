@@ -1,5 +1,5 @@
 {
-  "version": 79,
+  "version": 80,
   "updated_at": "2026-05-11",
   "batches": [
     {
@@ -216,7 +216,7 @@
       "subject": "chinese",
       "grade": 6,
       "count": 17,
-      "batch_hash": "148bd3df32a2fb7362cdf779078c1970160a1b9d"
+      "batch_hash": "91d8bc64eae998b4c3db84716a9667e5d99a1ec5"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qm_futian_001",
@@ -224,7 +224,7 @@
       "subject": "chinese",
       "grade": 6,
       "count": 19,
-      "batch_hash": "98bde1faa29b614db1b521b06521199ec121bcf1"
+      "batch_hash": "c39908bd2531ca17109f247b5f18a01f0ef8bff8"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qm_luohu_001",
@@ -248,7 +248,7 @@
       "subject": "chinese",
       "grade": 6,
       "count": 14,
-      "batch_hash": "293247438be6cfbb7cd3f2c7b89cc8fefd4e8c93"
+      "batch_hash": "2a1d464fc147ef789eda2489491a215dab85fb26"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qm_longgang_001",
@@ -256,7 +256,7 @@
       "subject": "chinese",
       "grade": 6,
       "count": 17,
-      "batch_hash": "931047a96d0d1d741e8643808bb489b63ee195ec"
+      "batch_hash": "2fd24733c0c6f305bc03f84a1fe30da1e5c92e55"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qm_pingshan_001",
@@ -272,7 +272,7 @@
       "subject": "chinese",
       "grade": 6,
       "count": 13,
-      "batch_hash": "247eb01367626806b8bd066f827b03cd3bb54963"
+      "batch_hash": "62c1971fa1e685d8797e740b90dd6e3eaeeeacb3"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qm_guangming_001",
@@ -280,7 +280,7 @@
       "subject": "chinese",
       "grade": 6,
       "count": 14,
-      "batch_hash": "f50845666d5da86f211428898d6645456a3b997d"
+      "batch_hash": "8f2ccc7cd07b3598ecdef82db8d3a01ef3751196"
     },
     {
       "source": "realpaper_g6_math_beishida_qm_futian_003",
@@ -336,7 +336,7 @@
       "subject": "chinese",
       "grade": 6,
       "count": 13,
-      "batch_hash": "e058a52b1de01b176a534c43dcd2201dfbbbe89d"
+      "batch_hash": "45ad6536676f21c96e7fe7971508df2575f11ac2"
     },
     {
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_001",
@@ -416,7 +416,7 @@
       "subject": "chinese",
       "grade": 6,
       "count": 17,
-      "batch_hash": "1ca4d23cdb97711eff74435ce8aeaa6d1cee14d4"
+      "batch_hash": "0d87e16762601c30a06a2b9f02c094364ea99624"
     },
     {
       "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
@@ -424,7 +424,7 @@
       "subject": "chinese",
       "grade": 6,
       "count": 52,
-      "batch_hash": "56a777dcff2494127fa325bf9ff2f30a255e8728"
+      "batch_hash": "83ceb8a5531b9225e86efaf1f59404be8c89a728"
     },
     {
       "source": "realpaper_g6_chinese_bubian_xsc_longgang_001",
@@ -440,7 +440,7 @@
       "subject": "chinese",
       "grade": 6,
       "count": 22,
-      "batch_hash": "931eac786d4b0c5069952cc7e371a448e360e78b"
+      "batch_hash": "ed67c59d0dc6e356cb58aa0ec9a435fca8a2a175"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qm_guangming_002",
@@ -448,7 +448,7 @@
       "subject": "chinese",
       "grade": 6,
       "count": 10,
-      "batch_hash": "34d60701350c990368e145aaf27a4d7616977470"
+      "batch_hash": "4380912ebfb33d498921c1827ca215ee408c6535"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qm_longhua_002",
@@ -456,7 +456,7 @@
       "subject": "chinese",
       "grade": 6,
       "count": 6,
-      "batch_hash": "0969c0156816a0e27e989caf7cda6a63d661fd98"
+      "batch_hash": "b9411ed5df27ac7c61f76765564e3a391c3e2744"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qm_pingshan_002",
@@ -464,7 +464,7 @@
       "subject": "chinese",
       "grade": 6,
       "count": 17,
-      "batch_hash": "ba3c3b55e275b2dd97416dbb734bf2870e68ae83"
+      "batch_hash": "8cbbd81bf07b2da36753dde845e77115e4ac9ebf"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qm_longgang_002",

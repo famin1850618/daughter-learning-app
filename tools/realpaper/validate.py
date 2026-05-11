@@ -607,6 +607,48 @@ def run_full_check(batch: dict, batch_path: Path, kp_set: set, chapter_set: set)
     else:
         report['18_raw_excerpt_coverage'] = {'pass': True, 'errors': []}
 
+    # 19. V3.19.7 组合题原文材料覆盖检查（Famin 2026-05-11 实测发现 18 道"惊弓之鸟（同上）"违纪）
+    # 组合题阅读理解类子题 content 必须含 _raw 拼接的 ≥30% 25-char n-gram（机械化原文覆盖）
+    # 防 worker 写"（同上）" 或 简化"《XX》节选阅读" 跳过材料正文
+    READING_KW = ('阅读', '节选', '选文', '短文', '材料', '文段', '非连续性文本', '课文')
+
+    def _ngrams(s: str, n: int = 25) -> set:
+        s = ''.join(s.split())  # 去空白
+        return {s[i:i+n] for i in range(len(s) - n + 1)} if len(s) >= n else set()
+
+    # 按 group_id 取 _common_prefix_raw（同 group 共享）
+    common_by_gid = {}
+    for q in questions:
+        gid = q.get('group_id')
+        if not gid: continue
+        if q.get('_common_prefix_raw') and gid not in common_by_gid:
+            common_by_gid[gid] = q['_common_prefix_raw']
+    coverage_errs = []
+    for i, q in enumerate(questions):
+        # V3.19.7: 带 _supervisor_note 的题是已知违纪暂存待 V3.20，validate 不拦
+        if q.get('_supervisor_note'):
+            continue
+        gid = q.get('group_id')
+        c = q.get('content','') or ''
+        # 单子题 content 必含: _common_prefix_raw（共享材料）+ 自身 _raw_excerpt（本子题题面）
+        full_raw = common_by_gid.get(gid, '') + (q.get('_raw_excerpt','') or '')
+        # 字面违纪："（同上）"/"见上文"/"同上文" → 无视 raw 长度，直接 fail
+        if re.search(r'[（(]同上[）)]|见上文|同上文|参考第[一二三四五六七八九十1-9]+题', c):
+            coverage_errs.append(f'#{i+1} (gid={gid or "single"}): 字面违纪 "（同上）/见上文" 等省略表述')
+            continue
+        # 触发条件：题面含阅读关键词 + raw 累计 ≥150 字
+        if len(full_raw) < 150: continue
+        if not any(kw in c for kw in READING_KW): continue
+        # n-gram 覆盖
+        raw_ng = _ngrams(full_raw)
+        if not raw_ng: continue
+        content_ng = _ngrams(c)
+        # raw n-gram 在 content 中出现的比例
+        hit = len(raw_ng & content_ng) / len(raw_ng)
+        if hit < 0.20:
+            coverage_errs.append(f'#{i+1} (gid={gid or "single"}): 原文材料覆盖率 {hit*100:.1f}% < 20%（raw {len(full_raw)}字 / content {len(c)}字）')
+    report['19_material_coverage'] = {'pass': not coverage_errs, 'errors': coverage_errs}
+
     # M3/M4: docx 路径手动核查（替代 V3.12.20 SVG 4 步 + 标注一致）
     report['M3_image_owner'] = {'pass': None, 'errors': ['【需 LLM/人核查 docx 内嵌图归属（用 paragraph_image_map）】']}
     report['M4_image_content_match'] = {'pass': None, 'errors': ['【需 LLM/人核查 content 描述与 image_data 视觉一致】']}
@@ -661,6 +703,8 @@ def main():
                     help='V3.12.17 16 项自检完整报告（D 方案脚本化）')
     ap.add_argument('--cross-batch', action='store_true',
                     help='V3.19.1 跨 batch group_id 冲突检查（扫 assets/data/batches/realpaper_*.json）')
+    ap.add_argument('--material-coverage', action='store_true',
+                    help='V3.19.7 阅读理解组合题原文材料覆盖检查（扫 assets/data/batches/realpaper_*.json，仅 chinese batch）')
     args = ap.parse_args()
 
     if args.cross_batch:
@@ -676,6 +720,26 @@ def main():
             sys.exit(1)
         print('  ✅ 0 冲突')
         sys.exit(0)
+
+    if args.material_coverage:
+        import glob
+        repo = Path(__file__).resolve().parents[2]
+        files = sorted(glob.glob(str(repo / 'assets/data/batches/realpaper_g6_chinese_*.json')))
+        total_fail = 0
+        for f in files:
+            batch = json.loads(Path(f).read_text(encoding='utf-8'))
+            # 复用 check 19 逻辑：跑完整 report 提取 check 19
+            kp_set = parse_kp_seed()
+            chapter_set = parse_chapter_seed()
+            report = run_full_check(batch, Path(f), kp_set, chapter_set)
+            errs = report.get('19_material_coverage', {}).get('errors', [])
+            if errs:
+                total_fail += len(errs)
+                print(f'❌ {Path(f).name}: {len(errs)} 题违纪')
+                for e in errs[:3]:
+                    print(f'    {e}')
+        print(f'\n=== material-coverage 总违纪 {total_fail} 题')
+        sys.exit(1 if total_fail else 0)
 
     kp_set = parse_kp_seed()
     chapter_set = parse_chapter_seed()
