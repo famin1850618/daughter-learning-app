@@ -85,6 +85,11 @@ class Question {
   /// 小孩做这道题时 banner 提示，答完自动 INSERT review_request (type=aiDispute)。
   /// 学情**冻结**直到家长审核后回写。
   final Map<String, dynamic>? aiDispute;
+  /// V3.19.16: fill 多空题各空答案（按空顺序）。worker 历史用 `answer="B|||C|||A"` 误把
+  /// `|||` 当多空分隔，但 `|||` 系统语义是"同空多种等价"（如"老舍|||舒庆春"），导致
+  /// displayAnswer 取 first 只显第 1 段。新字段明确表多空。
+  /// null = 单空题（用 answer 即可），非 null = 多空题（UI 按 " / " 拼显示）。
+  final List<String>? answerBlanks;
   final String source;
 
   const Question({
@@ -107,12 +112,19 @@ class Question {
     this.groupId,
     this.groupOrder,
     this.aiDispute,
+    this.answerBlanks,
     this.source = 'pregenerated',
   });
 
-  /// 用户可见的"正确答案"（answer 字段可用 ||| 分隔多种等价写法供判定，
-  /// 这里仅取第一种用于 UI 显示）
-  String get displayAnswer => answer.split('|||').first;
+  /// 用户可见的"正确答案"。
+  /// V3.19.16: 优先用 answerBlanks（多空题），按 " / " 拼显示。
+  /// 兜底用 answer.split('|||').first（同空多种等价写法只显第 1 种）。
+  String get displayAnswer {
+    if (answerBlanks != null && answerBlanks!.isNotEmpty) {
+      return answerBlanks!.join(' / ');
+    }
+    return answer.split('|||').first;
+  }
 
   /// V3.12.14: 多选题判定（隐式：answer 含 ≥ 2 个字母 A/B/C/D/Z）
   /// 例 answer='AC' / 'A,C' / 'A、C' / 'ABD' → 多选；'A' / 'B' → 单选
@@ -150,6 +162,8 @@ class Question {
       // V3.13: ai_dispute_json 存 JSON 字符串
       'ai_dispute_json': aiDispute == null ? null : jsonEncode(aiDispute),
       'source': source,
+      // V3.19.16: answer_blanks 存 JSON List<String>
+      'answer_blanks': answerBlanks == null ? null : jsonEncode(answerBlanks),
     };
   }
 
@@ -200,6 +214,16 @@ class Question {
         }
       }(),
       source: (map['source'] as String?) ?? 'pregenerated',
+      // V3.19.16: answer_blanks 解析（兼容 DB 老库无该列 → null）
+      answerBlanks: () {
+        final raw = map['answer_blanks'] as String?;
+        if (raw == null || raw.isEmpty) return null;
+        try {
+          return (jsonDecode(raw) as List).cast<String>();
+        } catch (_) {
+          return null;
+        }
+      }(),
     );
   }
 }

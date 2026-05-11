@@ -218,7 +218,11 @@
       "answer": "36|||5n+1",
       "explanation": "规律：每多搭一个六边形（共边相接）增加 $5$ 根小棒。搭 $1$ 个 $6$ 根，搭 $2$ 个 $6+5=11$ 根，搭 $3$ 个 $6+5\\times 2=16$ 根。搭 $7$ 个 $=6+5\\times 6=36$ 根。搭 $n$ 个 $=6+5(n-1)=5n+1$ 根。",
       "_raw_excerpt": "13．（3分）数学实践课上，淘气用小棒搭六边形（如图），搭1个六边形要用6根小棒，搭2个六边形要11根小棒……像这样搭7个六边形，需要 　     　根小棒；搭n个六边形需要 　         　根小棒。\n​",
-      "_image_skip_reason": "text_self_contained_image_decorative"
+      "_image_skip_reason": "text_self_contained_image_decorative",
+      "answer_blanks": [
+        "36",
+        "5n+1"
+      ]
     },
     {
       "subject": "math",

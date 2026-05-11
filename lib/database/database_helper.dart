@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 24,
+      version: 25,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
@@ -476,6 +476,15 @@ class DatabaseHelper {
       } catch (_) {/* 已加过则跳 */}
     }
 
+    if (oldVersion < 25) {
+      // v25: V3.19.16 fill 多空答案 schema 加固
+      // 修 worker 误用 `|||`（同空多种等价写法）做多空分隔 → app displayAnswer 取 first
+      // 只显第 1 段的 bug。新增 answer_blanks 列存 JSON List<String>，多空题各自给。
+      try {
+        await db.execute('ALTER TABLE questions ADD COLUMN answer_blanks TEXT');
+      } catch (_) {/* 已存在则跳 */}
+    }
+
     if (oldVersion < 24) {
       // v24: V3.18 章节体系简化（Famin 7 chapter 决策）—— 老 chapter 表残留清理
       // 问题: curriculum_dao.insertIfMissing 用 INSERT OR IGNORE 只加新的不删老的。
@@ -625,7 +634,8 @@ class DatabaseHelper {
         ai_dispute_json TEXT,
         source TEXT DEFAULT 'pregenerated',
         batch_hash TEXT,
-        user_id TEXT DEFAULT 'local'
+        user_id TEXT DEFAULT 'local',
+        answer_blanks TEXT
       )
     ''');
 

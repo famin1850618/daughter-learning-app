@@ -292,6 +292,8 @@ class QuestionUpdateService extends ChangeNotifier {
         // V3.13: 解析 _ai_dispute 元数据（worker 入库时若发现答案算法冲突写）
         aiDispute: (m['_ai_dispute'] as Map?)?.cast<String, dynamic>(),
         source: source,
+        // V3.19.16: fill 多空答案
+        answerBlanks: (m['answer_blanks'] as List?)?.cast<String>(),
       );
     }).toList();
 

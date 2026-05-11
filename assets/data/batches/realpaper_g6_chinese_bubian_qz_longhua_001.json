@@ -120,7 +120,11 @@
       "_common_prefix_raw": "2. 请将词语补充完整。",
       "content": "请将词语补充完整。\n\n1. 万象（  ）（  ）",
       "answer": "更新|||万象更新",
-      "explanation": "「万象更新」指事物焕然一新。"
+      "explanation": "「万象更新」指事物焕然一新。",
+      "answer_blanks": [
+        "更新",
+        "万象更新"
+      ]
     },
     {
       "subject": "chinese",
@@ -152,7 +156,11 @@
       "_common_prefix_raw": "2. 请将词语补充完整。",
       "content": "请将词语补充完整。\n\n3. 心（  ）气（  ）",
       "answer": "平和|||心平气和",
-      "explanation": "「心平气和」形容心情平静、态度温和。"
+      "explanation": "「心平气和」形容心情平静、态度温和。",
+      "answer_blanks": [
+        "平和",
+        "心平气和"
+      ]
     },
     {
       "subject": "chinese",
@@ -168,7 +176,11 @@
       "_common_prefix_raw": "2. 请将词语补充完整。",
       "content": "请将词语补充完整。\n\n4. 焉知（  ）（  ）",
       "answer": "非福|||焉知非福",
-      "explanation": "「塞翁失马，焉知非福」比喻坏事可能变好事。"
+      "explanation": "「塞翁失马，焉知非福」比喻坏事可能变好事。",
+      "answer_blanks": [
+        "非福",
+        "焉知非福"
+      ]
     },
     {
       "subject": "chinese",
@@ -184,7 +196,11 @@
       "_common_prefix_raw": "2. 请将词语补充完整。",
       "content": "请将词语补充完整。\n\n5. 五（  ）四（  ）",
       "answer": "湖海|||五湖四海",
-      "explanation": "「五湖四海」泛指全国各地或世界各地。"
+      "explanation": "「五湖四海」泛指全国各地或世界各地。",
+      "answer_blanks": [
+        "湖海",
+        "五湖四海"
+      ]
     },
     {
       "subject": "chinese",
@@ -200,7 +216,11 @@
       "_common_prefix_raw": "2. 请将词语补充完整。",
       "content": "请将词语补充完整。\n\n6. 重（  ）天（  ）",
       "answer": "见日|||重见天日",
-      "explanation": "「重见天日」比喻摆脱黑暗困境，重见光明。"
+      "explanation": "「重见天日」比喻摆脱黑暗困境，重见光明。",
+      "answer_blanks": [
+        "见日",
+        "重见天日"
+      ]
     },
     {
       "subject": "chinese",

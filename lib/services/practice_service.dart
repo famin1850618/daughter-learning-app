@@ -497,7 +497,8 @@ class PracticeService extends ChangeNotifier {
       } else {
         // V3.13 修正: aiDispute 已在抽题阶段过滤，组合题里也不会出现
         correct = AnswerMatcher.isCorrect(
-          userAns: ans, correctAnswerField: gq.answer, type: gq.type);
+          userAns: ans, correctAnswerField: gq.answer, type: gq.type,
+          answerBlanks: gq.answerBlanks);
       }
       if (!correct) allCorrect = false;
       // INSERT 单个子题 record
@@ -548,6 +549,7 @@ class PracticeService extends ChangeNotifier {
         userAns: answer,
         correctAnswerField: q.answer,
         type: q.type,
+        answerBlanks: q.answerBlanks,
       );
       if (correct) _score++;
     }

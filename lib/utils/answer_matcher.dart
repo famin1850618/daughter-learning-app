@@ -75,11 +75,43 @@ class AnswerMatcher {
   }
 
   /// 判定答题是否正确
+  /// V3.19.16: 加 answerBlanks 多空答案数组。fill/judgment 类多空题用户输入按
+  /// 分隔符（,/、/空格/|||/换行）切分 → 逐空 normalize 比对，全对才算对。
   static bool isCorrect({
     required String userAns,
     required String correctAnswerField,
     required QuestionType type,
+    List<String>? answerBlanks,
   }) {
+    // V3.19.16: 多空题（answerBlanks 非空且 ≥ 2）专门判定
+    if (answerBlanks != null && answerBlanks.length >= 2 &&
+        type != QuestionType.multipleChoice) {
+      // 用户输入按多种分隔符切分（,/、/空格/换行/|||）
+      final userBlanks = userAns
+          .split(RegExp(r'[,、\s]+|\|\|\|'))
+          .map((s) => s.trim())
+          .where((s) => s.isNotEmpty)
+          .toList();
+      if (userBlanks.length != answerBlanks.length) return false;
+      // 逐空比对
+      for (int i = 0; i < answerBlanks.length; i++) {
+        final ua = userBlanks[i];
+        final ca = answerBlanks[i];
+        if (type == QuestionType.judgment) {
+          String norm(String s) {
+            final t = s.trim().toLowerCase();
+            if (['对','正确','√','t','true','yes','y'].contains(t)) return '对';
+            if (['错','错误','×','f','false','no','n','x','✗','✘'].contains(t)) return '错';
+            return t;
+          }
+          if (norm(ua) != norm(ca)) return false;
+        } else {
+          if (normalize(ua) != normalize(ca)) return false;
+        }
+      }
+      return true;
+    }
+
     final accepts = correctAnswerField
         .split(altSeparator)
         .map((a) => a.trim())
