@@ -1,5 +1,5 @@
 {
-  "version": 94,
+  "version": 95,
   "updated_at": "2026-05-11",
   "batches": [
     {
@@ -289,6 +289,86 @@
       "grade": 6,
       "count": 16,
       "batch_hash": "3f2b453696a68d861ec764035281de16ffca620d"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qm_futian_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_futian_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 22,
+      "batch_hash": "e08c62537fbf1854ce758b501972372a684b517d"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qm_guangming_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_guangming_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 15,
+      "batch_hash": "e4c3e437543512af27867d9c9c9d0d47018abd16"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_longhua_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 12,
+      "batch_hash": "523f14e7d6113af51faa89c4659144f1a64e78d2"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_nanshan_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 32,
+      "batch_hash": "033dd79a619124cda4d05a1b147b137bc3c324b6"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_xsc_baoan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_xsc_baoan_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 10,
+      "batch_hash": "24284ba963ae43e7f34c1eac48c31497ce71dd5a"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_xsc_luohu_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_xsc_luohu_002.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 21,
+      "batch_hash": "f4899b18d9b753ffcee5517d75511ef4845eefaa"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_xsc_nanshan_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 5,
+      "batch_hash": "f66f87063d5a7f3a3e59af64da5721d1c004abe0"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_xsc_nanshan_002.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 49,
+      "batch_hash": "b810f1d77ab0afde9710c08487c459eba33be480"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_003",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_xsc_nanshan_003.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 36,
+      "batch_hash": "a6ad8f0cf33a13b989790ea6ff3a96716a855d43"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_xsc_shenzhen_moni_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_xsc_shenzhen_moni_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 16,
+      "batch_hash": "9c2aebcbe3a6a08a03b0801218d8098d00afb4ee"
     }
   ],
   "_changelog": [

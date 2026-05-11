@@ -1,0 +1,213 @@
+{
+  "source": "realpaper_g6_chinese_bubian_xsc_nanshan_001",
+  "_source_docx_sha1": "eab21ee0a7382cde",
+  "subject": "chinese",
+  "grade": 6,
+  "knowledge_points_added": [
+    "古诗文/古诗词背诵默写",
+    "古诗文/文言实词"
+  ],
+  "_quality_meta": {
+    "source_file": "精品解析：广东省深圳市南山区2024年统编版小升初考试语文试卷（原卷版）.docx",
+    "sha1": "eab21ee0a7382cde",
+    "paper_type": "xsc",
+    "chapter_default": "古诗文",
+    "omath_total_formulas": 0,
+    "images_used": 0,
+    "questions_total_paper": 19,
+    "questions_imported": 5,
+    "questions_skipped_groups": 14,
+    "_v2_workflow_version": "V3.20",
+    "_source_is_blank_paper": true,
+    "_note": "2024 卷为原卷版，docx 无【答案】【解析】块。仅入文言文加点字字义（教材课文）+ 课文按内容填空（教材背诵）。其他题待补解析版后重做"
+  },
+  "_skipped_for_future": [
+    {
+      "qnum": "1",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "读拼音，写词语。（拼音位图 image3.png，无文字层）",
+      "source_para": 3
+    },
+    {
+      "qnum": "6",
+      "reason": "info_lost_irrecoverable",
+      "raw_excerpt": "根据词语提示，给“肖”字加上不同的偏旁组成新字，填在横线上。【肖】（段 50 image5.wmf 占位，候选/横线缺失）",
+      "source_para": 18
+    },
+    {
+      "qnum": "7",
+      "reason": "open_text_question",
+      "raw_excerpt": "给下列句中加点的词语换一种说法，保持句子意思不变。（1）腊月和正月，在农村正是大家最闲在的时候。（2）但不能平的，为什么偏要白白走这一遭啊？（3）全校运动会上，宁宁在游泳比赛中拔得头筹。（4）这段时光不好挨。（开放词语替换，无标准答案）",
+      "source_para": 21
+    },
+    {
+      "qnum": "8",
+      "reason": "source_no_answer_key",
+      "raw_excerpt": "选择下列叠词所描绘的画面，写序号。①雨雪纷飞的样子 ②柳丝摇曳的样子 ③相视无言的样子 ④洁白明亮的样子（原卷版无候选块和答案）",
+      "source_para": 26
+    },
+    {
+      "qnum": "9",
+      "reason": "source_no_answer_key",
+      "raw_excerpt": "在横线上将四字词语补充完整，再根据语意选填入语段中。A.见微__ B.锲而__ C.司空__ D.追根__ 那些在科学领域有所建树的人……（原卷版无答案）",
+      "source_para": 31
+    },
+    {
+      "qnum": "11",
+      "reason": "source_no_answer_key",
+      "raw_excerpt": "读句子，体会人物未说出的话里传递的情感，选词填空。《迢迢牵牛星》/《十六年前的回忆》/《桥》（候选未给，原卷版无答案）",
+      "source_para": 41
+    },
+    {
+      "qnum": "12",
+      "reason": "source_no_answer_key",
+      "raw_excerpt": "根据语境，将短语选填到语段中。A.轻轻地为你拂去心中的愁云 B.默默地为你驱散心灵的阴霾 C.尽情地为你弹奏生活的愉悦 D.热情地将你引向阳光的地带 朋友是快乐日子里的一把吉他……（原卷版无答案）",
+      "source_para": 46
+    },
+    {
+      "qnum": "13",
+      "reason": "source_no_answer_key",
+      "raw_excerpt": "选择下列事物所蕴含寓意。①子规啼 ②鸿鹄志 ③唱黄鸡 ④树栖鸦 / A.雄心勃勃 B.悲伤衷切 C.寂寞孤独 D.时光易逝（原卷版无答案）",
+      "source_para": 52
+    },
+    {
+      "qnum": "14",
+      "reason": "source_no_answer_key",
+      "raw_excerpt": "托物言志古诗默写（《马诗》《石灰吟》《竹石》），含 2 空开放空“还有“___，___”也是托物言志的名句”（最后 2 空开放无定解，原卷版无答案）",
+      "source_para": 60
+    },
+    {
+      "qnum": "15",
+      "reason": "open_text_question",
+      "raw_excerpt": "推荐一本印象深刻的经典名著，说说推荐的理由，并分享一种你喜欢的读书方法。（开放主观）",
+      "source_para": 61
+    },
+    {
+      "qnum": "16",
+      "reason": "source_no_answer_key",
+      "raw_excerpt": "阅读《师旷论学》6 子题（读音/字义/选词/反问/类比/寓意）。原卷版无答案",
+      "source_para": 67
+    },
+    {
+      "qnum": "17",
+      "reason": "source_no_answer_key",
+      "raw_excerpt": "阅读《那个星期天（节选）》6 子题（反义词/词描述心情/原文摘抄/人物描写分析/选项判断/仿写）。原卷版无答案",
+      "source_para": 89
+    },
+    {
+      "qnum": "18",
+      "reason": "source_no_answer_key",
+      "raw_excerpt": "非连续性文本（深圳非遗 4 材料）5 子题（判断√×/拟标题/写广告/选项/反驳）。原卷版无答案，且材料 4 表格依赖位图",
+      "source_para": 107
+    },
+    {
+      "qnum": "19",
+      "reason": "writing_pending_ai_grader",
+      "raw_excerpt": "表达与交流：以“滋味”为题写一篇文章。（写作主观，等 AI 评分接入）",
+      "source_para": 129
+    }
+  ],
+  "questions": [
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_001",
+      "round": null,
+      "type": "choice",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言实词",
+      "content": "选择与文言文中加粗字意思相同的词语，写序号。\n1. 因释其未而守株（　　）",
+      "options": [
+        "A. 手不释卷",
+        "B. 冰释前嫌"
+      ],
+      "answer": "A",
+      "explanation": "“因释其未而守株”（守株待兔典故）中“释”意为放下；“手不释卷”意为不放下书卷，“释”意为放下，意思相同。“冰释前嫌”意为消除前嫌，“释”意为消除。故选 A。",
+      "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_001_q2",
+      "group_order": 1,
+      "_common_prefix_raw": "选择与文言文中加点字意思相同的词语，写序号。\n2. 因释其未而守株\nA. 手不释卷\nB. 冰释前嫌\n3. 通国之善弈者也\nA. 乐善好施\nB. 循循善诱\n4. 及其日中如探汤\nA. 固若金汤\nB. 赴汤蹈火\n5. 我以日始出时去人近\nA. 扬长而去\nB. 相去甚远",
+      "_raw_excerpt": "2. 因释其未而守株 　   　\nA. 手不释卷\nB. 冰释前嫌"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_001",
+      "round": null,
+      "type": "choice",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言实词",
+      "content": "选择与文言文中加粗字意思相同的词语，写序号。\n2. 通国之善弈者也（　　）",
+      "options": [
+        "A. 乐善好施",
+        "B. 循循善诱"
+      ],
+      "answer": "B",
+      "explanation": "“通国之善弈者也”（《学弈》）中“善”意为擅长；“循循善诱”意为擅长引导，“善”意为擅长。“乐善好施”中“善”意为善行、慈善。故选 B。",
+      "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_001_q2",
+      "group_order": 2,
+      "_common_prefix_raw": "选择与文言文中加点字意思相同的词语，写序号。\n2. 因释其未而守株\nA. 手不释卷\nB. 冰释前嫌\n3. 通国之善弈者也\nA. 乐善好施\nB. 循循善诱\n4. 及其日中如探汤\nA. 固若金汤\nB. 赴汤蹈火\n5. 我以日始出时去人近\nA. 扬长而去\nB. 相去甚远",
+      "_raw_excerpt": "3. 通国之善弈者也 　   　\nA. 乐善好施\nB. 循循善诱"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_001",
+      "round": null,
+      "type": "choice",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言实词",
+      "content": "选择与文言文中加粗字意思相同的词语，写序号。\n3. 及其日中如探汤（　　）",
+      "options": [
+        "A. 固若金汤",
+        "B. 赴汤蹈火"
+      ],
+      "answer": "B",
+      "explanation": "“及其日中如探汤”（《两小儿辩日》）中“汤”意为热水；“赴汤蹈火”意为踩烈火、走热水，“汤”意为热水。“固若金汤”中“汤”指护城河的滚烫之水，是引申用法。故选 B。",
+      "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_001_q2",
+      "group_order": 3,
+      "_common_prefix_raw": "选择与文言文中加点字意思相同的词语，写序号。\n2. 因释其未而守株\nA. 手不释卷\nB. 冰释前嫌\n3. 通国之善弈者也\nA. 乐善好施\nB. 循循善诱\n4. 及其日中如探汤\nA. 固若金汤\nB. 赴汤蹈火\n5. 我以日始出时去人近\nA. 扬长而去\nB. 相去甚远",
+      "_raw_excerpt": "4. 及其日中如探汤 　   　\nA. 固若金汤\nB. 赴汤蹈火"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_001",
+      "round": null,
+      "type": "choice",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言实词",
+      "content": "选择与文言文中加粗字意思相同的词语，写序号。\n4. 我以日始出时去人近（　　）",
+      "options": [
+        "A. 扬长而去",
+        "B. 相去甚远"
+      ],
+      "answer": "B",
+      "explanation": "“我以日始出时去人近”（《两小儿辩日》）中“去”意为距离；“相去甚远”意为距离非常远，“去”意为距离。“扬长而去”中“去”意为离开。故选 B。",
+      "group_id": "realpaper_g6_chinese_bubian_xsc_nanshan_001_q2",
+      "group_order": 4,
+      "_common_prefix_raw": "选择与文言文中加点字意思相同的词语，写序号。\n2. 因释其未而守株\nA. 手不释卷\nB. 冰释前嫌\n3. 通国之善弈者也\nA. 乐善好施\nB. 循循善诱\n4. 及其日中如探汤\nA. 固若金汤\nB. 赴汤蹈火\n5. 我以日始出时去人近\nA. 扬长而去\nB. 相去甚远",
+      "_raw_excerpt": "5. 我以日始出时去人近 　   　\nA. 扬长而去\nB. 相去甚远"
+    },
+    {
+      "subject": "chinese",
+      "grade": 6,
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_001",
+      "round": null,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词背诵默写",
+      "content": "按课文内容填空。\n①中国古时候有个文学家叫做（　　）的说过：“人（　　），或（　　），或轻于鸿毛。”《为人民服务》\n②太阳他有脚啊，（　　），我也（　　）跟着旋转。《匆匆》\n③读书须用意，（　　）。《增广贤文》",
+      "answer": "司马迁,固有一死,重于泰山,轻轻悄悄地挪移了,茫茫然,一字值千金",
+      "answer_blanks": [
+        "司马迁",
+        "固有一死",
+        "重于泰山",
+        "轻轻悄悄地挪移了",
+        "茫茫然",
+        "一字值千金"
+      ],
+      "explanation": "①《为人民服务》引司马迁《报任安书》“人固有一死，或重于泰山，或轻于鸿毛”。②《匆匆》原文“太阳他有脚啊，轻轻悄悄地挪移了，我也茫茫然跟着旋转”。③《增广贤文》格言“读书须用意，一字值千金”。",
+      "_raw_excerpt": "10. 按课文内容填空\n①中国古时候有个文学家叫做 ________的说过：“人 _________，或 _________，或轻于鸿毛。”《为人民服务》\n②太阳他有脚啊，_____________，我也 ________跟着旋转。《匆匆》\n③读书须用意，__________。《增广贤文》"
+    }
+  ]
+}
