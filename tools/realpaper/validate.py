@@ -649,6 +649,38 @@ def run_full_check(batch: dict, batch_path: Path, kp_set: set, chapter_set: set)
             coverage_errs.append(f'#{i+1} (gid={gid or "single"}): 原文材料覆盖率 {hit*100:.1f}% < 20%（raw {len(full_raw)}字 / content {len(c)}字）')
     report['19_material_coverage'] = {'pass': not coverage_errs, 'errors': coverage_errs}
 
+    # 20. V3.19.14 worker 加提示文字检测（Famin 2026-05-11 实测"三空，。"/"三个字母，。"等）
+    # 防 worker 在 content 末尾加"N 空"/"N 个字母"/"按顺序"等提示文字，或不规范标点 "，。"
+    hint_errs = []
+    HINT_PATTERNS = [
+        # "三空，" / "3空。" / "六空" 等 — 题型空位数提示
+        (r'[一二三四五六七八九十两\d]+\s*空[，,。.、\s]*$', '题型提示"N 空"'),
+        # "三个字母" / "3 个字母" 等
+        (r'[一二三四五六七八九十两\d]+\s*个字母[，,。.、\s]*$', '题型提示"N 个字母"'),
+        # 连续标点 "，。" / ",。"
+        (r'[，,][。.]\s*$', '不规范连续标点"，。"'),
+        # "按顺序" + "依次填" + 末尾
+        (r'按顺序[一-鿿]*$', '可疑"按顺序…"末尾'),
+        # "（填字母）" / "(填字母)"  — 这个可能原题有，先标但不报 fail
+        # 暂不抓
+    ]
+    for i, q in enumerate(questions):
+        c = q.get('content','') or ''
+        if not c: continue
+        # 单子题 content 末尾 50 字（去除 trailing whitespace）
+        tail = c.rstrip()[-50:]
+        raw = (q.get('_raw_excerpt') or '') + (q.get('_common_prefix_raw') or '')
+        for pat, label in HINT_PATTERNS:
+            m = re.search(pat, tail)
+            if not m: continue
+            matched = m.group(0).strip()
+            # 排除：raw 里也有相同文字 → 原题就有
+            if matched and matched in raw:
+                continue
+            hint_errs.append(f'#{i+1} (gid={q.get("group_id") or "single"}): {label} 「{matched}」（raw 无）')
+            break  # 一题报一次
+    report['20_worker_hint'] = {'pass': not hint_errs, 'errors': hint_errs}
+
     # M3/M4: docx 路径手动核查（替代 V3.12.20 SVG 4 步 + 标注一致）
     report['M3_image_owner'] = {'pass': None, 'errors': ['【需 LLM/人核查 docx 内嵌图归属（用 paragraph_image_map）】']}
     report['M4_image_content_match'] = {'pass': None, 'errors': ['【需 LLM/人核查 content 描述与 image_data 视觉一致】']}
@@ -705,6 +737,8 @@ def main():
                     help='V3.19.1 跨 batch group_id 冲突检查（扫 assets/data/batches/realpaper_*.json）')
     ap.add_argument('--material-coverage', action='store_true',
                     help='V3.19.7 阅读理解组合题原文材料覆盖检查（扫 assets/data/batches/realpaper_*.json，仅 chinese batch）')
+    ap.add_argument('--worker-hint', action='store_true',
+                    help='V3.19.14 worker 加提示文字检测（"N 空"/"N 个字母"/"，。" 等）')
     args = ap.parse_args()
 
     if args.cross_batch:
@@ -739,6 +773,25 @@ def main():
                 for e in errs[:3]:
                     print(f'    {e}')
         print(f'\n=== material-coverage 总违纪 {total_fail} 题')
+        sys.exit(1 if total_fail else 0)
+
+    if args.worker_hint:
+        import glob
+        repo = Path(__file__).resolve().parents[2]
+        files = sorted(glob.glob(str(repo / 'assets/data/batches/realpaper_g6_*.json')))
+        total_fail = 0
+        kp_set = parse_kp_seed()
+        chapter_set = parse_chapter_seed()
+        for f in files:
+            batch = json.loads(Path(f).read_text(encoding='utf-8'))
+            report = run_full_check(batch, Path(f), kp_set, chapter_set)
+            errs = report.get('20_worker_hint', {}).get('errors', [])
+            if errs:
+                total_fail += len(errs)
+                print(f'❌ {Path(f).name}: {len(errs)} 题违纪')
+                for e in errs:
+                    print(f'    {e}')
+        print(f'\n=== worker-hint 总违纪 {total_fail} 题')
         sys.exit(1 if total_fail else 0)
 
     kp_set = parse_kp_seed()

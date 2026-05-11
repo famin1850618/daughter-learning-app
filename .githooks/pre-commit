@@ -37,5 +37,16 @@ if [ -n "$chinese_staged" ]; then
     echo "[pre-commit] ✅ material-coverage 通过"
 fi
 
+# realpaper batch 改动时也跑 worker-hint 检查（V3.19.14）
+echo "[pre-commit] 跑 worker-hint 检查（V3.19.14）..."
+if ! python3 tools/realpaper/validate.py --worker-hint; then
+    echo ""
+    echo "❌ commit 被拦：worker 加题型提示文字违纪（§1.5 不改题）。"
+    echo "   修法：删除 \"N 空\" / \"N 个字母\" / \"按顺序填入\" / \"，。\" 等 worker 加的提示文字。"
+    echo "   原题原文逐字保留，禁止脑补题型说明。"
+    exit 1
+fi
+echo "[pre-commit] ✅ worker-hint 通过"
+
 echo "[pre-commit] ✅ 全部检查放行"
 exit 0
