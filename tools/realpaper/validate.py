@@ -649,6 +649,34 @@ def run_full_check(batch: dict, batch_path: Path, kp_set: set, chapter_set: set)
             coverage_errs.append(f'#{i+1} (gid={gid or "single"}): 原文材料覆盖率 {hit*100:.1f}% < 20%（raw {len(full_raw)}字 / content {len(c)}字）')
     report['19_material_coverage'] = {'pass': not coverage_errs, 'errors': coverage_errs}
 
+    # 21. V3.19.17b 组合题阅读子题缺 _common_prefix_raw 检测（Famin 2026-05-11《见识》q7 实测盲区）
+    # 防 worker 偷懒不填 _common_prefix_raw，导致 check 19 算 raw 只用子题独立 _raw_excerpt
+    # 不达 150 字阈值 → check 19 失效。
+    cpr_errs = []
+    READING_KW21 = ('阅读', '节选', '选文', '短文', '材料', '文段', '非连续性文本', '课文')
+    # 收集每个 group_id 是否任一子题填了 _common_prefix_raw
+    group_cpr = {}
+    for q in questions:
+        gid = q.get('group_id')
+        if not gid: continue
+        group_cpr.setdefault(gid, False)
+        if (q.get('_common_prefix_raw') or '').strip():
+            group_cpr[gid] = True
+    # 阅读类组合题（form B ≥ 2 子题 + 题面含 reading kw）必须有 _common_prefix_raw
+    group_subs = {}
+    for q in questions:
+        gid = q.get('group_id')
+        if gid:
+            group_subs.setdefault(gid, []).append(q)
+    for gid, subs in group_subs.items():
+        if len(subs) < 2: continue
+        any_reading = any(any(kw in (q.get('content','') or '') for kw in READING_KW21) for q in subs)
+        if any_reading and not group_cpr.get(gid):
+            # 也排除带 _supervisor_note 的题
+            if any(q.get('_supervisor_note') for q in subs): continue
+            cpr_errs.append(f'gid={gid}: 阅读类 form B 组合题缺 _common_prefix_raw（{len(subs)} 子题）')
+    report['21_common_prefix_required'] = {'pass': not cpr_errs, 'errors': cpr_errs}
+
     # 20. V3.19.14 worker 加提示文字检测（Famin 2026-05-11 实测"三空，。"/"三个字母，。"等）
     # 防 worker 在 content 末尾加"N 空"/"N 个字母"/"按顺序"等提示文字，或不规范标点 "，。"
     hint_errs = []
@@ -739,6 +767,8 @@ def main():
                     help='V3.19.7 阅读理解组合题原文材料覆盖检查（扫 assets/data/batches/realpaper_*.json，仅 chinese batch）')
     ap.add_argument('--worker-hint', action='store_true',
                     help='V3.19.14 worker 加提示文字检测（"N 空"/"N 个字母"/"，。" 等）')
+    ap.add_argument('--common-prefix', action='store_true',
+                    help='V3.19.17b 阅读类组合题缺 _common_prefix_raw 检测（chinese batch）')
     args = ap.parse_args()
 
     if args.cross_batch:
@@ -792,6 +822,25 @@ def main():
                 for e in errs:
                     print(f'    {e}')
         print(f'\n=== worker-hint 总违纪 {total_fail} 题')
+        sys.exit(1 if total_fail else 0)
+
+    if args.common_prefix:
+        import glob
+        repo = Path(__file__).resolve().parents[2]
+        files = sorted(glob.glob(str(repo / 'assets/data/batches/realpaper_g6_chinese_*.json')))
+        total_fail = 0
+        kp_set = parse_kp_seed()
+        chapter_set = parse_chapter_seed()
+        for f in files:
+            batch = json.loads(Path(f).read_text(encoding='utf-8'))
+            report = run_full_check(batch, Path(f), kp_set, chapter_set)
+            errs = report.get('21_common_prefix_required', {}).get('errors', [])
+            if errs:
+                total_fail += len(errs)
+                print(f'❌ {Path(f).name}: {len(errs)} group 违纪')
+                for e in errs:
+                    print(f'    {e}')
+        print(f'\n=== common-prefix 总违纪 {total_fail} group')
         sys.exit(1 if total_fail else 0)
 
     kp_set = parse_kp_seed()

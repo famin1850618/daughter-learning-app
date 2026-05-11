@@ -119,7 +119,7 @@
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_qm_shenzhen_002",
       "round": 1,
-      "type": "fill",
+      "type": "choice",
       "chapter": "字词",
       "knowledge_point": "字词/多音字辨析",
       "group_id": "realpaper_g6_chinese_bubian_qm_shenzhen_002_q3",
@@ -127,15 +127,19 @@
       "_raw_excerpt": "3．（4分）用“√”给加点字选择正确的读音。\n（1）可恶（è wù）的蝎子是多么丑恶（è wù）而恐怖的东西呀！",
       "_common_prefix_raw": "3．（4分）用“√”给加点字选择正确的读音。",
       "content": "用「√」给加粗字选择正确的读音。\n\n可**恶**（è / wù）的蝎子是多么丑恶而恐怖的东西呀！\n\n1. 「可**恶**」中的「恶」读：",
-      "answer": "wù",
-      "explanation": "「可恶」读 wù，意为令人厌恶。"
+      "answer": "B",
+      "explanation": "「可恶」读 wù，意为令人厌恶。",
+      "options": [
+        "A. è",
+        "B. wù"
+      ]
     },
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_qm_shenzhen_002",
       "round": 1,
-      "type": "fill",
+      "type": "choice",
       "chapter": "字词",
       "knowledge_point": "字词/多音字辨析",
       "group_id": "realpaper_g6_chinese_bubian_qm_shenzhen_002_q3",
@@ -143,15 +147,19 @@
       "_raw_excerpt": "3．（4分）用“√”给加点字选择正确的读音。\n（1）可恶（è wù）的蝎子是多么丑恶（è wù）而恐怖的东西呀！",
       "_common_prefix_raw": "3．（4分）用“√”给加点字选择正确的读音。",
       "content": "用「√」给加粗字选择正确的读音。\n\n可恶的蝎子是多么丑**恶**（è / wù）而恐怖的东西呀！\n\n2. 「丑**恶**」中的「恶」读：",
-      "answer": "è",
-      "explanation": "「丑恶」读 è，意为丑陋邪恶。"
+      "answer": "A",
+      "explanation": "「丑恶」读 è，意为丑陋邪恶。",
+      "options": [
+        "A. è",
+        "B. wù"
+      ]
     },
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_qm_shenzhen_002",
       "round": 1,
-      "type": "fill",
+      "type": "choice",
       "chapter": "字词",
       "knowledge_point": "字词/多音字辨析",
       "group_id": "realpaper_g6_chinese_bubian_qm_shenzhen_002_q3",
@@ -159,15 +167,19 @@
       "_raw_excerpt": "（2）倔强（qiáng jiàng）的小明意志很坚强（qiáng jiàng）。",
       "_common_prefix_raw": "3．（4分）用“√”给加点字选择正确的读音。",
       "content": "用「√」给加粗字选择正确的读音。\n\n倔**强**（qiáng / jiàng）的小明意志很坚强。\n\n3. 「倔**强**」中的「强」读：",
-      "answer": "jiàng",
-      "explanation": "「倔强」读 jiàng，形容性格刚硬、固执。"
+      "answer": "B",
+      "explanation": "「倔强」读 jiàng，形容性格刚硬、固执。",
+      "options": [
+        "A. qiáng",
+        "B. jiàng"
+      ]
     },
     {
       "subject": "chinese",
       "grade": 6,
       "source": "realpaper_g6_chinese_bubian_qm_shenzhen_002",
       "round": 1,
-      "type": "fill",
+      "type": "choice",
       "chapter": "字词",
       "knowledge_point": "字词/多音字辨析",
       "group_id": "realpaper_g6_chinese_bubian_qm_shenzhen_002_q3",
@@ -175,8 +187,12 @@
       "_raw_excerpt": "（2）倔强（qiáng jiàng）的小明意志很坚强（qiáng jiàng）。",
       "_common_prefix_raw": "3．（4分）用“√”给加点字选择正确的读音。",
       "content": "用「√」给加粗字选择正确的读音。\n\n倔强的小明意志很坚**强**（qiáng / jiàng）。\n\n4. 「坚**强**」中的「强」读：",
-      "answer": "qiáng",
-      "explanation": "「坚强」读 qiáng，意为意志坚定。"
+      "answer": "A",
+      "explanation": "「坚强」读 qiáng，意为意志坚定。",
+      "options": [
+        "A. qiáng",
+        "B. jiàng"
+      ]
     },
     {
       "subject": "chinese",
