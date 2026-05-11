@@ -1,5 +1,5 @@
 {
-  "version": 83,
+  "version": 84,
   "updated_at": "2026-05-11",
   "batches": [
     {
@@ -472,7 +472,7 @@
       "subject": "chinese",
       "grade": 6,
       "count": 9,
-      "batch_hash": "71214a3a455e38dd7cc0319105ea917a2d274cff"
+      "batch_hash": "d2e24bc08c816a2782e0fa55e320a001b7bee08f"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qm_longhua_wanan_001",
