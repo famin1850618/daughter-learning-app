@@ -552,12 +552,12 @@ class _KpDetailScreen extends StatefulWidget {
 
 class _KpDetailScreenState extends State<_KpDetailScreen> {
   final _dao = QuestionDao();
-  late Future<List<WrongQuestionRecord>> _future;
+  late Future<List<WrongQuestionBundle>> _future;
 
   @override
   void initState() {
     super.initState();
-    _future = _dao.getWrongHistoryForKnowledgePoint(widget.summary.fullPath);
+    _future = _dao.getWrongHistoryBundledByKp(widget.summary.fullPath);
   }
 
   Future<void> _practiceSimilar() async {
@@ -614,25 +614,109 @@ class _KpDetailScreenState extends State<_KpDetailScreen> {
             ),
           ),
           Expanded(
-            child: FutureBuilder<List<WrongQuestionRecord>>(
+            child: FutureBuilder<List<WrongQuestionBundle>>(
               future: _future,
               builder: (context, snapshot) {
                 if (snapshot.connectionState != ConnectionState.done) {
                   return const Center(child: CircularProgressIndicator());
                 }
-                final list = snapshot.data ?? [];
-                if (list.isEmpty) {
+                final bundles = snapshot.data ?? [];
+                if (bundles.isEmpty) {
                   return const Center(child: Text('暂无错题记录'));
                 }
                 return ListView.builder(
                   padding: const EdgeInsets.fromLTRB(12, 0, 12, 24),
-                  itemCount: list.length,
-                  itemBuilder: (_, i) => _WrongRecordCard(record: list[i]),
+                  itemCount: bundles.length,
+                  itemBuilder: (_, i) {
+                    final b = bundles[i];
+                    if (!b.isGroup) {
+                      // 单题：直接渲染唯一一条 record
+                      return _WrongRecordCard(record: b.records.first);
+                    }
+                    // 组合题：1 张卡含 N 子题（折叠展开）
+                    return _WrongGroupBundleCard(bundle: b);
+                  },
                 );
               },
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+/// V3.21.6 组合题错题 bundle 卡片：1 张卡聚合整组子题错答
+/// 默认折叠 → 显示组共同前缀（材料）+ N 子题错答统计；
+/// 展开后子题级 _WrongRecordCard 列表（按 group_order 排序）
+class _WrongGroupBundleCard extends StatelessWidget {
+  final WrongQuestionBundle bundle;
+  const _WrongGroupBundleCard({required this.bundle});
+
+  @override
+  Widget build(BuildContext context) {
+    final records = bundle.records;
+    final firstQ = records.first.question;
+    final dateStr = DateFormat('M月d日 HH:mm').format(bundle.latestWrongAt);
+    final subCount = records.length;
+    // 取组共同前缀作为卡片标题预览（前 80 字）
+    final commonText = firstQ.content.length > 80
+        ? '${firstQ.content.substring(0, 80)}…'
+        : firstQ.content;
+
+    return Card(
+      margin: const EdgeInsets.only(bottom: 10),
+      child: Theme(
+        data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+        child: ExpansionTile(
+          tilePadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+          childrenPadding: const EdgeInsets.fromLTRB(8, 0, 8, 8),
+          title: Row(
+            children: [
+              _Tag('组合题',
+                  AppTheme.primary.withOpacity(0.15), AppTheme.primary),
+              const SizedBox(width: 6),
+              _Tag('$subCount 题错',
+                  Colors.red.shade50, Colors.red.shade700),
+              const Spacer(),
+              Text(dateStr,
+                  style: TextStyle(fontSize: 11, color: Colors.grey[500])),
+            ],
+          ),
+          subtitle: Padding(
+            padding: const EdgeInsets.only(top: 6),
+            child: Text(
+              commonText,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              style: const TextStyle(fontSize: 12.5, height: 1.4),
+            ),
+          ),
+          children: [
+            // 展开后：每子题一张子卡
+            for (int i = 0; i < records.length; i++) ...[
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      margin: const EdgeInsets.only(top: 12, right: 6),
+                      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                      decoration: BoxDecoration(
+                        color: Colors.grey.shade200,
+                        borderRadius: BorderRadius.circular(4),
+                      ),
+                      child: Text('(${i + 1})',
+                          style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w600)),
+                    ),
+                    Expanded(child: _WrongRecordCard(record: records[i])),
+                  ],
+                ),
+              ),
+            ],
+          ],
+        ),
       ),
     );
   }

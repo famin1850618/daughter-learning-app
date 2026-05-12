@@ -42,6 +42,25 @@ class WrongQuestionRecord {
   });
 }
 
+/// V3.21.6 错题 bundle：组合题作 1 卡聚合显示
+/// - 单题：records 长度 1
+/// - 组合题：records 含整组所有错答事件（按子题 group_order 排序）
+class WrongQuestionBundle {
+  /// 单题：'q' + question_id；组合题：group_id
+  final String bundleKey;
+  final bool isGroup;
+  final List<WrongQuestionRecord> records;
+  /// 组内最近错答时间（用作 bundle 列表排序）
+  final DateTime latestWrongAt;
+
+  const WrongQuestionBundle({
+    required this.bundleKey,
+    required this.isGroup,
+    required this.records,
+    required this.latestWrongAt,
+  });
+}
+
 class QuestionDao {
   final DatabaseHelper _db = DatabaseHelper();
 
@@ -437,6 +456,40 @@ class QuestionDao {
         sessionId: row['r_session_id'] as String?,
       );
     }).toList();
+  }
+
+  /// V3.21.6 错题 group_id 聚合版：组合题作 1 个 bundle 返回
+  /// 同 group_id 的所有错答 records 归 1 bundle（子题按 group_order 排）；
+  /// 单题各自 1 bundle。bundle 按"组内最近错答时间"倒序排。
+  Future<List<WrongQuestionBundle>> getWrongHistoryBundledByKp(String kpPath) async {
+    final flat = await getWrongHistoryForKnowledgePoint(kpPath);
+    // 按 group_id 或 'q'+id 聚合
+    final byKey = <String, List<WrongQuestionRecord>>{};
+    for (final r in flat) {
+      final gid = r.question.groupId;
+      final key = (gid != null && gid.isNotEmpty) ? gid : 'q${r.question.id}';
+      byKey.putIfAbsent(key, () => []).add(r);
+    }
+    final bundles = <WrongQuestionBundle>[];
+    byKey.forEach((key, records) {
+      // 组内按 group_order 升序（保题面顺序）；单题就是单条
+      records.sort((a, b) {
+        final ao = a.question.groupOrder ?? 0;
+        final bo = b.question.groupOrder ?? 0;
+        return ao.compareTo(bo);
+      });
+      final latest = records.map((r) => r.practicedAt).reduce(
+          (a, b) => a.isAfter(b) ? a : b);
+      bundles.add(WrongQuestionBundle(
+        bundleKey: key,
+        isGroup: !key.startsWith('q'),
+        records: records,
+        latestWrongAt: latest,
+      ));
+    });
+    // bundle 按最近错答时间倒序
+    bundles.sort((a, b) => b.latestWrongAt.compareTo(a.latestWrongAt));
+    return bundles;
   }
 
   /// 举一反三抽题：同 KP 同难度未做过优先；回退到做过但最久未练的；都用尽返回空。
