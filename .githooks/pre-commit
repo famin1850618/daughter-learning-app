@@ -48,5 +48,29 @@ if ! python3 tools/realpaper/validate.py --worker-hint; then
 fi
 echo "[pre-commit] ✅ worker-hint 通过"
 
-echo "[pre-commit] ✅ 全部检查放行"
+# common-prefix 检查（V3.19.17b）：组合题阅读子题需 _common_prefix_raw（chinese only）
+if [ -n "$chinese_staged" ]; then
+    echo "[pre-commit] 跑 common-prefix 检查（V3.19.17b）..."
+    if ! python3 tools/realpaper/validate.py --common-prefix; then
+        echo ""
+        echo "❌ commit 被拦：阅读类组合题缺 _common_prefix_raw（R17）。"
+        echo "   修法：组合题任一子题必须填 _common_prefix_raw（整组共同材料原文）。"
+        exit 1
+    fi
+    echo "[pre-commit] ✅ common-prefix 通过"
+fi
+
+# group-kp 检查（V3.21 R31）：同 group_id 子题 KP 必须一致
+echo "[pre-commit] 跑 group-kp 检查（V3.21 R31）..."
+if ! python3 tools/realpaper/validate.py --group-kp; then
+    echo ""
+    echo "❌ commit 被拦：组合题子题 KP 异质（R31）。"
+    echo "   修法：同 group_id 子题 knowledge_point 必须完全相同；按归约表选单 KP（见 SKILL.md R31）。"
+    echo "   - 数学异质/跨章 → 综合练习 单段"
+    echo "   - 语文：现代文→现代文阅读，文言文→文言文阅读，古诗→古诗词鉴赏，资料卡→材料阅读，字词类→词语理解"
+    exit 1
+fi
+echo "[pre-commit] ✅ group-kp 通过"
+
+echo "[pre-commit] ✅ 全部检查放行（5 层防线）"
 exit 0
