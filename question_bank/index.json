@@ -1,5 +1,5 @@
 {
-  "version": 100,
+  "version": 101,
   "updated_at": "2026-05-12",
   "batches": [
     {
@@ -328,7 +328,7 @@
       "subject": "chinese",
       "grade": 6,
       "count": 10,
-      "batch_hash": "24284ba963ae43e7f34c1eac48c31497ce71dd5a"
+      "batch_hash": "87e949db931652c2ba17bd69c1f267ef02d8c96e"
     },
     {
       "source": "realpaper_g6_chinese_bubian_xsc_luohu_002",
