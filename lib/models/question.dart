@@ -90,6 +90,13 @@ class Question {
   /// displayAnswer 取 first 只显第 1 段。新字段明确表多空。
   /// null = 单空题（用 answer 即可），非 null = 多空题（UI 按 " / " 拼显示）。
   final List<String>? answerBlanks;
+  /// V3.20.3 (阶段一): 半主观题标记。
+  /// 词义解释/句子翻译/概括主旨/赏析等——答案有"参考方向"但允许表述变化。
+  /// worker 入库时 ans 列多个等价 alt（用 ||| 分隔），运行时:
+  /// - 命中 alt → 自动判对 ✓
+  /// - 未命中 → 显示"❌ 答错。本题为半主观题，如有异议可申诉给家长"
+  /// 默认 false。
+  final bool isSemiSubjective;
   final String source;
 
   const Question({
@@ -113,6 +120,7 @@ class Question {
     this.groupOrder,
     this.aiDispute,
     this.answerBlanks,
+    this.isSemiSubjective = false,
     this.source = 'pregenerated',
   });
 
@@ -164,6 +172,8 @@ class Question {
       'source': source,
       // V3.19.16: answer_blanks 存 JSON List<String>
       'answer_blanks': answerBlanks == null ? null : jsonEncode(answerBlanks),
+      // V3.20.3 (阶段一): 半主观题标记 0/1
+      'is_semi_subjective': isSemiSubjective ? 1 : 0,
     };
   }
 
@@ -224,6 +234,8 @@ class Question {
           return null;
         }
       }(),
+      // V3.20.3 (阶段一): 半主观标记（默认 false）
+      isSemiSubjective: ((map['is_semi_subjective'] as int?) ?? 0) == 1,
     );
   }
 }
@@ -239,6 +251,11 @@ class PracticeRecord {
   /// V3.8.3：写入时绑定的 session id；普通练习/章节练习/KP review/测评都生成 ID。
   /// 申诉/主观题评分批改后用于反查 session 重判通过状态。
   final String? sessionId;
+  /// V3.20.3 (阶段一): 部分得分 0.0-1.0
+  /// - 单空题: 与 isCorrect 一致（0.0 或 1.0）
+  /// - 多空题: 对的空数 / 总空数（如 4 空对 3 = 0.75）
+  /// - 组合题 group 总分由调用方按 1/n 累加各子题 partial_score
+  final double partialScore;
 
   const PracticeRecord({
     this.id,
@@ -249,6 +266,7 @@ class PracticeRecord {
     this.timeSpent = 0,
     this.usedHint = false,
     this.sessionId,
+    this.partialScore = 0.0,
   });
 
   Map<String, dynamic> toMap() => {
@@ -260,6 +278,7 @@ class PracticeRecord {
     'time_spent': timeSpent,
     'used_hint': usedHint ? 1 : 0,
     'session_id': sessionId,
+    'partial_score': partialScore,
   };
 
   factory PracticeRecord.fromMap(Map<String, dynamic> map) => PracticeRecord(
@@ -271,5 +290,7 @@ class PracticeRecord {
     timeSpent: (map['time_spent'] as int?) ?? 0,
     usedHint: ((map['used_hint'] as int?) ?? 0) == 1,
     sessionId: map['session_id'] as String?,
+    partialScore: (map['partial_score'] as num?)?.toDouble() ??
+        ((map['is_correct'] as int) == 1 ? 1.0 : 0.0),
   );
 }

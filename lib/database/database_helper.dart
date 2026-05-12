@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 25,
+      version: 26,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
@@ -476,6 +476,21 @@ class DatabaseHelper {
       } catch (_) {/* 已加过则跳 */}
     }
 
+    if (oldVersion < 26) {
+      // v26: 阶段一 V3.20.3 部分得分 + 半主观 schema
+      // - questions.is_semi_subjective: worker 入库标记的半主观题（词义解释/概括/赏析等）
+      // - practice_records.partial_score: 多空题部分得分（0.0-1.0），单空题与 is_correct 一致
+      // 旧 record 用 CASE 推断 partial_score：is_correct=1 → 1.0, =0 → 0.0
+      try {
+        await db.execute('ALTER TABLE questions ADD COLUMN is_semi_subjective INTEGER NOT NULL DEFAULT 0');
+      } catch (_) {/* 已存在则跳 */}
+      try {
+        await db.execute('ALTER TABLE practice_records ADD COLUMN partial_score REAL');
+        // 老 record 默认按 is_correct 转
+        await db.execute('UPDATE practice_records SET partial_score = CASE WHEN is_correct=1 THEN 1.0 ELSE 0.0 END WHERE partial_score IS NULL');
+      } catch (_) {/* 已存在则跳 */}
+    }
+
     if (oldVersion < 25) {
       // v25: V3.19.16 fill 多空答案 schema 加固
       // 修 worker 误用 `|||`（同空多种等价写法）做多空分隔 → app displayAnswer 取 first
@@ -635,7 +650,8 @@ class DatabaseHelper {
         source TEXT DEFAULT 'pregenerated',
         batch_hash TEXT,
         user_id TEXT DEFAULT 'local',
-        answer_blanks TEXT
+        answer_blanks TEXT,
+        is_semi_subjective INTEGER NOT NULL DEFAULT 0
       )
     ''');
 
@@ -650,6 +666,7 @@ class DatabaseHelper {
         used_hint INTEGER DEFAULT 0,
         session_id TEXT,
         user_id TEXT DEFAULT 'local',
+        partial_score REAL,
         FOREIGN KEY (question_id) REFERENCES questions (id)
       )
     ''');

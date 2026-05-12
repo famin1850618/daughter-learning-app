@@ -1179,6 +1179,22 @@ class _QuestionScreenState extends State<_QuestionScreen> {
             const SizedBox(height: 4),
             Text('正确答案：${q.displayAnswer}',
                 style: TextStyle(color: Colors.green.shade700, fontWeight: FontWeight.w600)),
+            // V3.20.3 (阶段一): 半主观题答错主动提示申诉路径
+            if (q.isSemiSubjective) ...[
+              const SizedBox(height: 8),
+              Container(
+                padding: const EdgeInsets.all(8),
+                decoration: BoxDecoration(
+                  color: Colors.orange.shade50,
+                  borderRadius: BorderRadius.circular(6),
+                  border: Border.all(color: Colors.orange.shade300),
+                ),
+                child: Text(
+                  '💡 本题为半主观题，标准答案表述方式较灵活。如果你觉得自己答得对，可点击下方"申诉"按钮交家长复审。',
+                  style: TextStyle(color: Colors.orange.shade900, fontSize: 13),
+                ),
+              ),
+            ],
           ],
           if (q.explanation != null) ...[
             const SizedBox(height: 8),

@@ -294,6 +294,8 @@ class QuestionUpdateService extends ChangeNotifier {
         source: source,
         // V3.19.16: fill 多空答案
         answerBlanks: (m['answer_blanks'] as List?)?.cast<String>(),
+        // V3.20.3 (阶段一): 半主观题标记（batch JSON 字段 is_semi_subjective）
+        isSemiSubjective: (m['is_semi_subjective'] as bool?) ?? false,
       );
     }).toList();
 

@@ -87,16 +87,18 @@ class RewardService extends ChangeNotifier {
 
   /// session 结束结算：写每题 0.5 ⭐ + 通过/满分加成
   /// 通过线 80%；满分（100%）仅给 perfect 加成（不再叠加 pass）
+  /// V3.20.3 (阶段一): score 改 num（可接 int 或 double partial 累加值）。
+  /// perQ 仍按 score * 0.5（部分对题给部分⭐）；perfect 判用浮点容差。
   Future<SessionRewardSummary> recordSession({
     required SessionKind kind,
-    required int score,
+    required num score,
     required int total,
     String? sessionId,
   }) async {
     final perQ = score * 0.5;
     final pct = total > 0 ? score / total : 0.0;
     final passed = pct >= 0.80;
-    final perfect = total > 0 && score == total;
+    final perfect = total > 0 && (total - score).abs() < 0.001;
 
     final bonus = _bonusTable[kind]!;
     double bonusStars = 0;
@@ -110,12 +112,14 @@ class RewardService extends ChangeNotifier {
     final now = DateTime.now();
 
     if (perQ > 0) {
+      // score 可能是 double（partial 累加），note 显示 1 位小数
+      final scoreDisp = score is int ? score.toString() : score.toStringAsFixed(1);
       await _dao.insert(Reward(
         source: source,
-        stars: perQ,
+        stars: perQ.toDouble(),
         earnedAt: now,
         sessionId: sessionId,
-        note: '$score 题答对（每题 0.5⭐）',
+        note: '$scoreDisp 题答对（每题 0.5⭐）',
       ));
     }
     if (bonusStars > 0) {
@@ -131,7 +135,7 @@ class RewardService extends ChangeNotifier {
     await refresh();
 
     return SessionRewardSummary(
-      perQuestionStars: perQ,
+      perQuestionStars: perQ.toDouble(),
       bonusStars: bonusStars,
       passed: passed,
       perfect: perfect,

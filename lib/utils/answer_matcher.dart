@@ -74,9 +74,62 @@ class AnswerMatcher {
     return userAns;
   }
 
+  /// V3.20.3 (阶段一): 部分得分判定
+  /// 返回 (isCorrect, partialScore)：单空题 score 是 0.0/1.0；多空题 score = 对的空数/总空数
+  /// 用 evaluatePartial() 调用，向后兼容 isCorrect()
+  static ({bool isCorrect, double partialScore}) evaluatePartial({
+    required String userAns,
+    required String correctAnswerField,
+    required QuestionType type,
+    List<String>? answerBlanks,
+  }) {
+    // 多空题（answerBlanks 非空且 ≥ 2）：算对的空数
+    if (answerBlanks != null && answerBlanks.length >= 2 &&
+        type != QuestionType.multipleChoice) {
+      // V3.20.3: 加全角逗号 ， 作合法分隔符（Famin 实测要求）
+      final userBlanks = userAns
+          .split(RegExp(r'[,，、\s]+|\|\|\|'))
+          .map((s) => s.trim())
+          .where((s) => s.isNotEmpty)
+          .toList();
+      // 空数对不上不算"部分对"——直接 0 分（避免少填/多填混淆）
+      if (userBlanks.length != answerBlanks.length) {
+        return (isCorrect: false, partialScore: 0.0);
+      }
+      int correctCount = 0;
+      for (int i = 0; i < answerBlanks.length; i++) {
+        final ua = userBlanks[i];
+        final ca = answerBlanks[i];
+        bool spotCorrect;
+        if (type == QuestionType.judgment) {
+          String norm(String s) {
+            final t = s.trim().toLowerCase();
+            if (['对','正确','√','t','true','yes','y'].contains(t)) return '对';
+            if (['错','错误','×','f','false','no','n','x','✗','✘'].contains(t)) return '错';
+            return t;
+          }
+          spotCorrect = norm(ua) == norm(ca);
+        } else {
+          spotCorrect = normalize(ua) == normalize(ca);
+        }
+        if (spotCorrect) correctCount++;
+      }
+      final score = correctCount / answerBlanks.length;
+      return (isCorrect: score == 1.0, partialScore: score);
+    }
+    // 单空题或非多空：复用旧 isCorrect 逻辑（0/1 计分）
+    final ok = isCorrect(
+      userAns: userAns,
+      correctAnswerField: correctAnswerField,
+      type: type,
+      answerBlanks: answerBlanks,
+    );
+    return (isCorrect: ok, partialScore: ok ? 1.0 : 0.0);
+  }
+
   /// 判定答题是否正确
   /// V3.19.16: 加 answerBlanks 多空答案数组。fill/judgment 类多空题用户输入按
-  /// 分隔符（,/、/空格/|||/换行）切分 → 逐空 normalize 比对，全对才算对。
+  /// 分隔符（,/、/空格/|||/换行/全角逗号）切分 → 逐空 normalize 比对，全对才算对。
   static bool isCorrect({
     required String userAns,
     required String correctAnswerField,
@@ -86,9 +139,9 @@ class AnswerMatcher {
     // V3.19.16: 多空题（answerBlanks 非空且 ≥ 2）专门判定
     if (answerBlanks != null && answerBlanks.length >= 2 &&
         type != QuestionType.multipleChoice) {
-      // 用户输入按多种分隔符切分（,/、/空格/换行/|||）
+      // V3.20.3: 加全角逗号 ， 作合法分隔符
       final userBlanks = userAns
-          .split(RegExp(r'[,、\s]+|\|\|\|'))
+          .split(RegExp(r'[,，、\s]+|\|\|\|'))
           .map((s) => s.trim())
           .where((s) => s.isNotEmpty)
           .toList();

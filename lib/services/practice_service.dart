@@ -146,6 +146,9 @@ class PracticeService extends ChangeNotifier {
   List<Question> _currentQuestions = [];
   int _currentIndex = 0;
   int _score = 0;
+  /// V3.20.3 (阶段一): 部分得分累加。session 通过/满分判定用此（_score 仍保留兼容 UI int 显示"X/N 题"）
+  /// 单题 partial=1.0 计 1.0；多空对 3/4 = 0.75；组合题各子题独立累加。
+  double _partialScore = 0.0;
   bool _sessionActive = false;
   bool _hintShown = false;
   DateTime? _questionStartTime;
@@ -279,6 +282,9 @@ class PracticeService extends ChangeNotifier {
       _currentQuestions = list.map(Question.fromMap).toList();
       _currentIndex = (row['current_index'] as int?) ?? 0;
       _score = (row['score'] as int?) ?? 0;
+      // V3.20.3 (阶段一): _partialScore 持久化粒度暂等于 _score（恢复 session 时近似），
+      // 等阶段二 practice_sessions 表加 partial_score 列再精确
+      _partialScore = _score.toDouble();
       _kind = SessionKind.values[(row['kind'] as int?) ?? 0];
       _sessionActive = ((row['session_active'] as int?) ?? 0) == 1;
       _sessionId = row['session_id'] as String?;
@@ -461,6 +467,7 @@ class PracticeService extends ChangeNotifier {
   void _resetSessionState() {
     _currentIndex = 0;
     _score = 0;
+    _partialScore = 0.0;
     _sessionActive = _currentQuestions.isNotEmpty;
     _hintShown = false;
     _questionStartTime = DateTime.now();
@@ -492,13 +499,17 @@ class PracticeService extends ChangeNotifier {
       final gq = _currentQuestions[idx];
       final ans = gq.id == null ? '' : (_pendingGroupAnswers[gq.id] ?? '');
       bool correct;
+      double partial;
       if (gq.type == QuestionType.subjective) {
         correct = false; // 主观题待批，整组不算全对
+        partial = 0.0;
       } else {
-        // V3.13 修正: aiDispute 已在抽题阶段过滤，组合题里也不会出现
-        correct = AnswerMatcher.isCorrect(
+        // V3.20.3 (阶段一): 用 evaluatePartial 得 (isCorrect, partialScore)
+        final result = AnswerMatcher.evaluatePartial(
           userAns: ans, correctAnswerField: gq.answer, type: gq.type,
           answerBlanks: gq.answerBlanks);
+        correct = result.isCorrect;
+        partial = result.partialScore;
       }
       if (!correct) allCorrect = false;
       // INSERT 单个子题 record
@@ -510,7 +521,10 @@ class PracticeService extends ChangeNotifier {
         timeSpent: 0, // V3.14 整组不细记单题耗时
         usedHint: false,
         sessionId: _sessionId,
+        partialScore: partial,
       ));
+      // V3.20.3 (阶段一): 累加 partial 用于 session 通过判定
+      _partialScore += partial;
       // 主观题/AI争议题入审核
       if (gq.type == QuestionType.subjective) {
         await _reviewService.submitSubjectiveGrading(practiceRecordId: recordId);
@@ -524,6 +538,7 @@ class PracticeService extends ChangeNotifier {
     final hasSubj = group.any((i) =>
         _currentQuestions[i].type == QuestionType.subjective);
     if (allCorrect && !hasSubj) _score++;
+    // V3.20.3 (阶段一): _partialScore 按每子题 partial 累加（见上方 loop 中 partial 已计算）
 
     _lastGroupResult = results;
     _pendingGroupAnswers.clear();
@@ -542,16 +557,22 @@ class PracticeService extends ChangeNotifier {
     // V3.13 修正（Famin 反馈）: AI dispute 题在抽题阶段已被过滤（小孩根本抽不到），
     //   家长审核由启动 seedAiDisputes 直接 INSERT review_request，不走做题流程。
     final bool correct;
+    final double partial;
     if (q.type == QuestionType.subjective) {
       correct = false; // 待家长评分（fail/pass/good/perfect）
+      partial = 0.0;
     } else {
-      correct = AnswerMatcher.isCorrect(
+      final result = AnswerMatcher.evaluatePartial(
         userAns: answer,
         correctAnswerField: q.answer,
         type: q.type,
         answerBlanks: q.answerBlanks,
       );
+      correct = result.isCorrect;
+      partial = result.partialScore;
       if (correct) _score++;
+      // V3.20.3 (阶段一): 单题路径也累加 partial
+      _partialScore += partial;
     }
 
     final recordId = await _dao.insertRecord(PracticeRecord(
@@ -562,6 +583,7 @@ class PracticeService extends ChangeNotifier {
       timeSpent: spent,
       usedHint: false, // V3.8.3: hint 已废弃，恒 false
       sessionId: _sessionId,
+      partialScore: partial,
     ));
     _lastSubmittedRecordId = recordId;
     _lastSubmittedAnswer = answer;
@@ -602,9 +624,10 @@ class PracticeService extends ChangeNotifier {
       return;
     }
     _rewardClaimed = true;
+    // V3.20.3 (阶段一): 通过/满分判定用 partial 累加（4 空对 3 算 0.75 分）
     _lastReward = await _rewardService.recordSession(
       kind: _kind,
-      score: _score,
+      score: _partialScore,
       total: _currentQuestions.length,
       sessionId: _sessionId,
     );
@@ -624,6 +647,7 @@ class PracticeService extends ChangeNotifier {
     _currentQuestions = [];
     _currentIndex = 0;
     _score = 0;
+    _partialScore = 0.0;
     _kind = SessionKind.normal;
     _sessionId = null;
     _rewardClaimed = false;
