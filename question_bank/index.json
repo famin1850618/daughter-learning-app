@@ -1,6 +1,6 @@
 {
-  "version": 95,
-  "updated_at": "2026-05-11",
+  "version": 96,
+  "updated_at": "2026-05-12",
   "batches": [
     {
       "source": "batch_2026_05_07_g6_english_pet_r1",
@@ -296,7 +296,7 @@
       "subject": "chinese",
       "grade": 6,
       "count": 22,
-      "batch_hash": "e08c62537fbf1854ce758b501972372a684b517d"
+      "batch_hash": "11b41fec7dcbc6b1c87eb2fb08a957fc792457c1"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qm_guangming_001",
