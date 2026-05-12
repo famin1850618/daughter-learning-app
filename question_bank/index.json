@@ -1,5 +1,5 @@
 {
-  "version": 98,
+  "version": 99,
   "updated_at": "2026-05-12",
   "batches": [
     {
@@ -368,7 +368,7 @@
       "subject": "chinese",
       "grade": 6,
       "count": 16,
-      "batch_hash": "9c2aebcbe3a6a08a03b0801218d8098d00afb4ee"
+      "batch_hash": "d4a478431b64dcfa77d5223d42327fef9834d5a6"
     }
   ],
   "_changelog": [
