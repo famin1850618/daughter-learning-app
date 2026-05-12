@@ -311,7 +311,7 @@
       "round": 3,
       "type": "fill",
       "chapter": "数学好玩",
-      "knowledge_point": "数学综合/生活中的数学",
+      "knowledge_point": "数学好玩/生活中的数学",
       "content": "如下图，拼 $1$ 个三角形用 $3$ 根小棒，拼 $2$ 个三角形用 $5$ 根小棒，拼 $3$ 个三角形用 $7$ 根小棒，拼 $4$ 个三角形用（　　）根小棒，拼 $10$ 个三角形用（　　）根小棒。",
       "answer": "9、21",
       "alt_answers": [
@@ -362,7 +362,7 @@
       "round": 1,
       "type": "choice",
       "chapter": "比例",
-      "knowledge_point": "比和比例/比的意义",
+      "knowledge_point": "比例/比的意义",
       "content": "比的前项、后项可以是任意数。（判断对错）",
       "options": [
         "A. 正确",
@@ -379,7 +379,7 @@
       "round": 2,
       "type": "choice",
       "chapter": "比例",
-      "knowledge_point": "比和比例/比的意义",
+      "knowledge_point": "比例/比的意义",
       "content": "男生人数比女生人数少 $\\frac{1}{6}$，男生人数与女生人数的比是 $5:6$。（判断对错）",
       "options": [
         "A. 正确",
@@ -396,7 +396,7 @@
       "round": 2,
       "type": "choice",
       "chapter": "数学好玩",
-      "knowledge_point": "数学综合/生活中的数学",
+      "knowledge_point": "数学好玩/生活中的数学",
       "content": "$10$ 个保温瓶中有 $2$ 个是次品，要保证取出的瓶中至少有一个是次品，则至少应取出 $3$ 个。（判断对错）",
       "options": [
         "A. 正确",
@@ -413,7 +413,7 @@
       "round": 1,
       "type": "choice",
       "chapter": "数学好玩",
-      "knowledge_point": "数学综合/生活中的数学",
+      "knowledge_point": "数学好玩/生活中的数学",
       "content": "任意给出 $3$ 个不同的自然数，其中一定有 $2$ 个数的和是奇数。（判断对错）",
       "options": [
         "A. 正确",
@@ -464,7 +464,7 @@
       "round": 2,
       "type": "choice",
       "chapter": "正比例和反比例",
-      "knowledge_point": "正反比例/比例尺",
+      "knowledge_point": "正比例和反比例/比例尺",
       "content": "比例尺 $5:1$ 表示图上距离 $1$ cm 相当于实际距离 $5$ cm。（判断对错）",
       "options": [
         "A. 正确",
@@ -540,7 +540,7 @@
       "round": 2,
       "type": "choice",
       "chapter": "正比例和反比例",
-      "knowledge_point": "正反比例/正比例的意义",
+      "knowledge_point": "正比例和反比例/正比例的意义",
       "content": "超市里的酸奶，$6$ 元钱可以买 $4$ 袋，照这样计算，$8$ 元钱够买 $6$ 袋酸奶吗？（用比例知识解答）",
       "options": [
         "A. 够",

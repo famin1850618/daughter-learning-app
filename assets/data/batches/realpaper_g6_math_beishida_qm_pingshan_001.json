@@ -150,7 +150,7 @@
       "round": 2,
       "type": "choice",
       "chapter": "比例",
-      "knowledge_point": "比和比例/比例的意义",
+      "knowledge_point": "比例/比例的意义",
       "content": "$2024$ 年 $5$ 月，深圳不下雨的天数与下雨天的天数比是 $12:19$。\n\n能与它组成比例的是（　　）。",
       "options": [
         "A. $19:12$",
@@ -188,7 +188,7 @@
       "round": 2,
       "type": "choice",
       "chapter": "正比例和反比例",
-      "knowledge_point": "正反比例/正反比例的判断",
+      "knowledge_point": "正比例和反比例/正反比例的判断",
       "content": "下面选项中的两种量不成比例关系的是（　　）。",
       "options": [
         "A. 苹果的单价一定，购买苹果的数量和总价",

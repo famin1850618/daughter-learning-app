@@ -169,7 +169,7 @@
       "round": 2,
       "type": "choice",
       "chapter": "比例",
-      "knowledge_point": "比和比例/比例的基本性质",
+      "knowledge_point": "比例/比例的基本性质",
       "content": "在一个比例里，两个外项互为倒数，其中一个内项是 $4$。\n\n另一个内项是（　　）。",
       "options": [
         "A. $\\dfrac{1}{4}$",
@@ -188,7 +188,7 @@
       "round": 1,
       "type": "fill",
       "chapter": "比例",
-      "knowledge_point": "正反比例/比例尺",
+      "knowledge_point": "正比例和反比例/比例尺",
       "content": "一个电子零件的实际长度是 $2$ 毫米，画在图纸上的长度是 $8$ 厘米，这张图纸的比例尺是（　　）。（写成 $a:b$ 形式）",
       "answer": "40:1",
       "explanation": "$8$ cm $= 80$ mm，比例尺 $= 80:2 = 40:1$（放大）。",
@@ -246,7 +246,7 @@
       "round": 3,
       "type": "choice",
       "chapter": "数学好玩",
-      "knowledge_point": "数学综合/神奇的几何变换",
+      "knowledge_point": "数学好玩/神奇的几何变换",
       "content": "把一张已画三等分线的长方形纸条做成一个莫比乌斯圈，然后沿它的三等分线剪开。下面说法正确的是（　　）。",
       "options": [
         "A. 需要剪 $2$ 次（剪 $1$ 次指沿一条等分线剪一圈）",
@@ -284,7 +284,7 @@
       "round": 2,
       "type": "choice",
       "chapter": "正比例和反比例",
-      "knowledge_point": "正反比例/反比例的意义",
+      "knowledge_point": "正比例和反比例/反比例的意义",
       "content": "下面两种量成反比例关系的是（　　）。",
       "options": [
         "A. 总路程一定，已行驶路程和剩下的路程",
@@ -322,7 +322,7 @@
       "round": 2,
       "type": "choice",
       "chapter": "比例",
-      "knowledge_point": "比和比例/比例的意义",
+      "knowledge_point": "比例/比例的意义",
       "content": "下面各组的两个比，能组成比例的有（　　）组：\n\n① $18:15$ 和 $0.6:0.5$\n② $\\dfrac{1}{4}:\\dfrac{1}{3}$ 和 $\\dfrac{1}{4}:2$\n③ $0.4:0.8$ 和 $0.5:0.2$\n④ $16:8$ 和 $1.2:0.6$",
       "options": [
         "A. $1$",

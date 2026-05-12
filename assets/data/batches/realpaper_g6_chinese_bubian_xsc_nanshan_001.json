@@ -4,8 +4,8 @@
   "subject": "chinese",
   "grade": 6,
   "knowledge_points_added": [
-    "古诗文/古诗词背诵默写",
-    "古诗文/文言实词"
+    "古诗文/文言实词",
+    "古诗文/古诗词鉴赏"
   ],
   "_quality_meta": {
     "source_file": "精品解析：广东省深圳市南山区2024年统编版小升初考试语文试卷（原卷版）.docx",
@@ -17,9 +17,10 @@
     "questions_total_paper": 19,
     "questions_imported": 5,
     "questions_skipped_groups": 14,
-    "_v2_workflow_version": "V3.20",
+    "_v2_workflow_version": "V3.21.4",
     "_source_is_blank_paper": true,
-    "_note": "2024 卷为原卷版，docx 无【答案】【解析】块。仅入文言文加点字字义（教材课文）+ 课文按内容填空（教材背诵）。其他题待补解析版后重做"
+    "_note": "2024 卷为原卷版，docx 无【答案】【解析】块。仅入文言文加点字字义（教材课文）+ 课文按内容填空（教材背诵）。其他题待补解析版后重做",
+    "_v321_rescan_note": "2026-05-12 V3.21.4 重扫：KP 按新清单重映射；q10 古诗词背诵默写 → 古诗词鉴赏（V3.21 合并）。q2-q5 文言实词组合保持单 KP，R31 OK。"
   },
   "_skipped_for_future": [
     {
@@ -195,7 +196,7 @@
       "round": null,
       "type": "fill",
       "chapter": "古诗文",
-      "knowledge_point": "古诗文/古诗词背诵默写",
+      "knowledge_point": "古诗文/古诗词鉴赏",
       "content": "按课文内容填空。\n①中国古时候有个文学家叫做（　　）的说过：“人（　　），或（　　），或轻于鸿毛。”《为人民服务》\n②太阳他有脚啊，（　　），我也（　　）跟着旋转。《匆匆》\n③读书须用意，（　　）。《增广贤文》",
       "answer": "司马迁,固有一死,重于泰山,轻轻悄悄地挪移了,茫茫然,一字值千金",
       "answer_blanks": [

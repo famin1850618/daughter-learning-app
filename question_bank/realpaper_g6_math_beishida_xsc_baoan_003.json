@@ -242,7 +242,7 @@
       "round": 1,
       "type": "choice",
       "chapter": "圆柱与圆锥",
-      "knowledge_point": "圆柱与圆锥/圆柱的认识",
+      "knowledge_point": "圆柱与圆锥/圆柱圆锥的认识",
       "content": "一个长方形的长是 $8$ 厘米，宽是 $5$ 厘米。以它的长为轴旋转一周，能够形成（　　）。",
       "options": [
         "A. 长方体",
@@ -261,7 +261,7 @@
       "round": 2,
       "type": "choice",
       "chapter": "比例",
-      "knowledge_point": "比和比例/比的意义",
+      "knowledge_point": "比例/比的意义",
       "content": "把 $5$ 克盐放入 $45$ 克的水中，盐与盐水的比是（　　）。",
       "options": [
         "A. $1:9$",
@@ -305,7 +305,7 @@
       "round": 2,
       "type": "choice",
       "chapter": "比例",
-      "knowledge_point": "比和比例/比例的基本性质",
+      "knowledge_point": "比例/比例的基本性质",
       "content": "在 $3:4$ 中，如果比的前项加上 $6$，要使比值不变，后项应该（　　）。",
       "options": [
         "A. 加 $6$",
@@ -400,7 +400,7 @@
       "round": 1,
       "type": "choice",
       "chapter": "正比例和反比例",
-      "knowledge_point": "正反比例/正反比例的判断",
+      "knowledge_point": "正比例和反比例/正反比例的判断",
       "content": "三角形的面积一定，它的底和高（　　）。",
       "options": [
         "A. 成正比例",

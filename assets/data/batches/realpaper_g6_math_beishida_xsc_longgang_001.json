@@ -160,7 +160,7 @@
       "round": 2,
       "type": "choice",
       "chapter": "比例",
-      "knowledge_point": "比和比例/比例的意义",
+      "knowledge_point": "比例/比例的意义",
       "content": "蓝色气球和红色气球共 $150$ 个，它们的比是 $2:3$，蓝色气球有（　　）个。",
       "options": [
         "A. $100$",
@@ -236,7 +236,7 @@
       "round": 3,
       "type": "choice",
       "chapter": "正比例和反比例",
-      "knowledge_point": "正反比例/正反比例的判断",
+      "knowledge_point": "正比例和反比例/正反比例的判断",
       "content": "六（$2$）班举行 $50$ 米×$8$ 往返跑测试。折返点在起点的北偏东 $45°$ 方向。下面说法错误的是（　　）。",
       "options": [
         "A. 跑步速度与所用时间成正比例",
@@ -383,7 +383,7 @@
       "round": 2,
       "type": "fill",
       "chapter": "比例",
-      "knowledge_point": "比和比例/比例的意义",
+      "knowledge_point": "比例/比例的意义",
       "content": "在地图上，$16$ 号地铁线龙城公园站到黄阁坑站的距离是 $2$ cm，它的实际距离是 $1.6$ km。这幅图的比例尺是 ____ 。",
       "options": [],
       "answer": "1:80000",

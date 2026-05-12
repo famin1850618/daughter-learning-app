@@ -364,8 +364,10 @@ class QuestionDao {
       progress AS (
         SELECT lw.kp, lw.subject,
                lw.t AS last_wrong_at,
+               -- V3.21 阶段二：按 group_id 算"做对几题"（组合题作 1 题）
+               -- 同 group_id 的多子题做对都算同 1 题；单题用 'q' || id 独立计数
                COUNT(DISTINCT CASE WHEN r2.is_correct = 1 AND r2.practiced_at > lw.t
-                                   THEN r2.question_id END) AS correct_after_last
+                                   THEN COALESCE(q2.group_id, 'q' || q2.id) END) AS correct_after_last
         FROM last_wrong lw
         JOIN questions q2 ON q2.knowledge_point = lw.kp AND q2.subject = lw.subject
         LEFT JOIN practice_records r2 ON r2.question_id = q2.id

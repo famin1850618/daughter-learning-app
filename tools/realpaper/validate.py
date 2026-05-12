@@ -40,6 +40,7 @@ def parse_kp_seed() -> Set[Tuple[str, str]]:
         text = path.read_text(encoding='utf-8')
         # 匹配 KnowledgePoint(subject: 'X', category: 'C', name: 'N', ...)
         # 实际生成 fullPath = 'C/N'
+        # V3.21: name 可为空（数理化"综合练习"一级 KP，fullPath 单段）
         pattern = re.compile(
             r"KnowledgePoint\(\s*"
             r"(?:[a-z_]+:\s*[^,]+,\s*)*?"
@@ -47,12 +48,12 @@ def parse_kp_seed() -> Set[Tuple[str, str]]:
             r"[^)]*?"
             r"category:\s*'([^']+)'"
             r"[^)]*?"
-            r"name:\s*'([^']+)'",
+            r"name:\s*'([^']*)'",
             re.DOTALL,
         )
         for m in pattern.finditer(text):
             subject, category, name = m.group(1), m.group(2), m.group(3)
-            full_path = f'{category}/{name}'
+            full_path = category if not name else f'{category}/{name}'
             kps.add((subject, full_path))
     return kps
 
@@ -677,6 +678,22 @@ def run_full_check(batch: dict, batch_path: Path, kp_set: set, chapter_set: set)
             cpr_errs.append(f'gid={gid}: 阅读类 form B 组合题缺 _common_prefix_raw（{len(subs)} 子题）')
     report['21_common_prefix_required'] = {'pass': not cpr_errs, 'errors': cpr_errs}
 
+    # 22. V3.21 组合题单一 KP 检测（R31）
+    # 同 group_id 子题 knowledge_point 必须完全相同；否则 fail。
+    # 规则：数学跨章 → 综合练习单段；语文按共同材料类型归核心 KP；物理化学跨章 → 综合练习。
+    gkp_errs = []
+    group_kps = {}
+    for q in questions:
+        gid = q.get('group_id')
+        if not gid: continue
+        kp = q.get('knowledge_point', '')
+        group_kps.setdefault(gid, []).append(kp)
+    for gid, kps in group_kps.items():
+        if len(set(kps)) > 1:
+            kp_summary = ', '.join(sorted(set(kps)))
+            gkp_errs.append(f'gid={gid}: 子题 KP 异质 [{kp_summary}] — R31 要求整组单一 KP')
+    report['22_group_kp_consistent'] = {'pass': not gkp_errs, 'errors': gkp_errs}
+
     # 20. V3.19.14 worker 加提示文字检测（Famin 2026-05-11 实测"三空，。"/"三个字母，。"等）
     # 防 worker 在 content 末尾加"N 空"/"N 个字母"/"按顺序"等提示文字，或不规范标点 "，。"
     hint_errs = []
@@ -769,6 +786,8 @@ def main():
                     help='V3.19.14 worker 加提示文字检测（"N 空"/"N 个字母"/"，。" 等）')
     ap.add_argument('--common-prefix', action='store_true',
                     help='V3.19.17b 阅读类组合题缺 _common_prefix_raw 检测（chinese batch）')
+    ap.add_argument('--group-kp', action='store_true',
+                    help='V3.21 R31 组合题单一 KP 检测（同 group_id 子题 KP 必一致）')
     args = ap.parse_args()
 
     if args.cross_batch:
@@ -841,6 +860,25 @@ def main():
                 for e in errs:
                     print(f'    {e}')
         print(f'\n=== common-prefix 总违纪 {total_fail} group')
+        sys.exit(1 if total_fail else 0)
+
+    if args.group_kp:
+        import glob
+        repo = Path(__file__).resolve().parents[2]
+        files = sorted(glob.glob(str(repo / 'assets/data/batches/realpaper_*.json')))
+        total_fail = 0
+        kp_set = parse_kp_seed()
+        chapter_set = parse_chapter_seed()
+        for f in files:
+            batch = json.loads(Path(f).read_text(encoding='utf-8'))
+            report = run_full_check(batch, Path(f), kp_set, chapter_set)
+            errs = report.get('22_group_kp_consistent', {}).get('errors', [])
+            if errs:
+                total_fail += len(errs)
+                print(f'❌ {Path(f).name}: {len(errs)} group 违纪')
+                for e in errs:
+                    print(f'    {e}')
+        print(f'\n=== group-kp 总违纪 {total_fail} group')
         sys.exit(1 if total_fail else 0)
 
     kp_set = parse_kp_seed()

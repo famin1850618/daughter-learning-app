@@ -191,6 +191,33 @@ class PracticeService extends ChangeNotifier {
 
   // ─── V3.14 组合题整体单元化 helpers ─────────────────────────────
 
+  /// V3.21 阶段二：按 group 算"题数"的 UI 计数
+  /// 组合题作 1 题、单题作 1 题
+  /// 返回 (position, total)：position 是当前题在"按 group 计数"中的位置（1-based），
+  /// total 是总数（unique group + non-group questions）
+  ({int position, int total}) groupAwareCounter() {
+    final seen = <String>{};
+    int total = 0;
+    int position = 0;
+    for (int i = 0; i < _currentQuestions.length; i++) {
+      final q = _currentQuestions[i];
+      final gid = q.groupId;
+      bool counted = false;
+      if (gid != null && gid.isNotEmpty) {
+        if (!seen.contains(gid)) {
+          seen.add(gid);
+          total++;
+          counted = true;
+        }
+      } else {
+        total++;
+        counted = true;
+      }
+      if (i <= _currentIndex && counted) position++;
+    }
+    return (position: position, total: total);
+  }
+
   /// 当前题所在组的所有索引（按 group_order 升序）；非组合题返回 [_currentIndex]
   List<int> currentGroupIndices() {
     final q = currentQuestion;

@@ -127,11 +127,13 @@ List<Chapter> get curriculumChapters => [
   Chapter(subject: 'AI', grade: 9, orderIndex: 5,  chapterName: 'AI与未来社会'),
 
   // ══════════════════════════════════════════
-  // V3.10 新增：真题综合 chapter（小升初/中考）
-  // 数理化语：教材章节体系下补"综合卷"chapter，收纳跨多 chapter 的小升初/中考真题
+  // V3.21 综合练习 chapter：跨章节组合题与不属任一教材章的真题归此
+  // 数学 g6 / g9，物理 g8 / g9，化学 g9 各一。chapter 名统一 `综合练习`，
+  // 对应 KP 也是一级单段字符串 `综合练习`（fullPath 无斜杠）。
+  // V3.10 旧 `小升初综合` `中考综合` chapter 删除（DB v27 migration 中迁移）。
   // ══════════════════════════════════════════
-  Chapter(subject: '数学', grade: 6, orderIndex: 99, chapterName: '小升初综合'),
-  Chapter(subject: '数学', grade: 9, orderIndex: 99, chapterName: '中考综合'),
+  Chapter(subject: '数学', grade: 6, orderIndex: 99, chapterName: '综合练习'),
+  Chapter(subject: '数学', grade: 9, orderIndex: 99, chapterName: '综合练习'),
 
   // V3.14 简化（Famin 决策）：语文 chapter 收敛到 7 个
   // 删 句式与标点/修辞（→ 句子和语法）/ 现代文阅读/课文与名著（→ 阅读理解）
@@ -165,8 +167,9 @@ List<Chapter> get curriculumChapters => [
   Chapter(subject: '语文', grade: 9, orderIndex: 25, chapterName: '文学常识'),
   Chapter(subject: '语文', grade: 9, orderIndex: 26, chapterName: '综合性学习'),
   Chapter(subject: '语文', grade: 9, orderIndex: 27, chapterName: '写作'),
-  Chapter(subject: '物理', grade: 9, orderIndex: 99, chapterName: '中考综合'),
-  Chapter(subject: '化学', grade: 9, orderIndex: 99, chapterName: '中考综合'),
+  Chapter(subject: '物理', grade: 8, orderIndex: 99, chapterName: '综合练习'),
+  Chapter(subject: '物理', grade: 9, orderIndex: 99, chapterName: '综合练习'),
+  Chapter(subject: '化学', grade: 9, orderIndex: 99, chapterName: '综合练习'),
 
   // ══════════════════════════════════════════
   // V3.10 新增：英语 Cambridge 体系 chapter（按 KP 一级 category 4 类）

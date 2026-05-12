@@ -193,7 +193,7 @@
       "round": 2,
       "type": "choice",
       "chapter": "正比例和反比例",
-      "knowledge_point": "正反比例/比例尺",
+      "knowledge_point": "正比例和反比例/比例尺",
       "content": "一张图纸长 $30$ 厘米，王技术员打算把一个实际长度是 $2.1$ 毫米的零件画到这张图纸上，可选用适当的比例尺是（　　）。",
       "options": [
         "A. $150:1$",
@@ -249,7 +249,7 @@
       "round": 2,
       "type": "choice",
       "chapter": "比例",
-      "knowledge_point": "比和比例/求比值",
+      "knowledge_point": "比例/化简比与求比值",
       "content": "甲与乙的比是 $3:4$，甲是乙的（　　）。",
       "options": [
         "A. $\\frac{3}{4}$",
@@ -372,7 +372,7 @@
       "round": 3,
       "type": "choice",
       "chapter": "正比例和反比例",
-      "knowledge_point": "正反比例/反比例的意义",
+      "knowledge_point": "正比例和反比例/反比例的意义",
       "content": "走同一段路，甲用了 $4$ 分钟，乙用了 $5$ 分钟，甲的速度是乙的 $80\\%$。（判断对错）",
       "options": [
         "A. 正确",
@@ -389,7 +389,7 @@
       "round": 2,
       "type": "fill",
       "chapter": "正比例和反比例",
-      "knowledge_point": "正反比例/正比例的意义",
+      "knowledge_point": "正比例和反比例/正比例的意义",
       "content": "小明家买了新房子，用同样的木地板铺地，若铺 $5$ 平方米要 $60$ 块地板，照这样计算，再铺 $95$ 平方米，一共需要这种木地板多少块？（用比例知识解答）",
       "answer": "1200",
       "alt_answers": [

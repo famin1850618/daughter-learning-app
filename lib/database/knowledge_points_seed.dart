@@ -7,145 +7,121 @@ import '../models/knowledge_point.dart';
 /// AI 科目待独立设计（不走选择填空模板），不在此清单中。
 List<KnowledgePoint> get knowledgePointsSeed => [
       // ════════════════════════════════════
-      // 数学（北师大版六下）— 27 个
+      // 数学（北师大版六下）— V3.21 极简化：每章 5 KP + 1 其它 = 6 × 6 + 综合练习 1 = 37
       // ════════════════════════════════════
 
       // 圆柱与圆锥
-      KnowledgePoint(
-          subject: '数学', category: '圆柱与圆锥', name: '圆柱的认识', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '数学', category: '圆柱与圆锥', name: '圆柱的表面积', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '数学', category: '圆柱与圆锥', name: '圆柱的体积', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '数学', category: '圆柱与圆锥', name: '圆锥的认识', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '数学', category: '圆柱与圆锥', name: '圆锥的体积', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '数学',
-          category: '圆柱与圆锥',
-          name: '圆柱圆锥综合应用',
-          introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '圆柱与圆锥', name: '圆柱圆锥的认识', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '圆柱与圆锥', name: '圆柱的表面积', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '圆柱与圆锥', name: '圆柱的体积', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '圆柱与圆锥', name: '圆锥的体积', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '圆柱与圆锥', name: '圆柱圆锥综合应用', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '圆柱与圆锥', name: '其它', introducedGrade: 6),
 
-      // 比和比例
-      KnowledgePoint(
-          subject: '数学', category: '比和比例', name: '比的意义', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '数学', category: '比和比例', name: '求比值', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '数学', category: '比和比例', name: '化简比', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '数学', category: '比和比例', name: '比例的意义', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '数学', category: '比和比例', name: '比例的基本性质', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '数学', category: '比和比例', name: '解比例', introducedGrade: 6),
+      // 比例
+      KnowledgePoint(subject: '数学', category: '比例', name: '比的意义', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '比例', name: '比例的意义', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '比例', name: '比例的基本性质', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '比例', name: '化简比与求比值', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '比例', name: '解比例', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '比例', name: '其它', introducedGrade: 6),
 
       // 图形的运动
-      KnowledgePoint(
-          subject: '数学', category: '图形的运动', name: '平移', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '数学', category: '图形的运动', name: '旋转', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '数学', category: '图形的运动', name: '轴对称', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '数学', category: '图形的运动', name: '图形放大缩小', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '图形的运动', name: '轴对称', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '图形的运动', name: '平移', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '图形的运动', name: '旋转', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '图形的运动', name: '图形放大缩小', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '图形的运动', name: '设计图案', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '图形的运动', name: '其它', introducedGrade: 6),
 
-      // 正反比例
-      KnowledgePoint(
-          subject: '数学', category: '正反比例', name: '正比例的意义', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '数学', category: '正反比例', name: '反比例的意义', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '数学', category: '正反比例', name: '正反比例的判断', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '数学', category: '正反比例', name: '正反比例图象', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '数学', category: '正反比例', name: '比例尺', introducedGrade: 6),
+      // 正比例和反比例
+      KnowledgePoint(subject: '数学', category: '正比例和反比例', name: '正比例的意义', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '正比例和反比例', name: '反比例的意义', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '正比例和反比例', name: '正反比例的判断', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '正比例和反比例', name: '比例尺', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '正比例和反比例', name: '比例应用题', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '正比例和反比例', name: '其它', introducedGrade: 6),
 
-      // 数学综合
-      KnowledgePoint(
-          subject: '数学', category: '数学综合', name: '生活中的数学', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '数学', category: '数学综合', name: '神奇的几何变换', introducedGrade: 6),
+      // 数学好玩
+      KnowledgePoint(subject: '数学', category: '数学好玩', name: '神奇的几何变换', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '数学好玩', name: '生活中的数学', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '数学好玩', name: '自行车里的数学', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '数学好玩', name: '探索图形规律', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '数学好玩', name: '数学实践', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '数学好玩', name: '其它', introducedGrade: 6),
 
-      // 总复习（小学整体回顾）
-      KnowledgePoint(
-          subject: '数学', category: '总复习', name: '数与代数综合', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '数学', category: '总复习', name: '图形与几何综合', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '数学', category: '总复习', name: '统计与可能性', introducedGrade: 6),
-      KnowledgePoint(
-          subject: '数学', category: '总复习', name: '解决问题策略', introducedGrade: 6),
+      // 总复习
+      KnowledgePoint(subject: '数学', category: '总复习', name: '数与代数综合', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '总复习', name: '图形与几何综合', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '总复习', name: '统计与可能性', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '总复习', name: '解决问题策略', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '总复习', name: '数学应用', introducedGrade: 6),
+      KnowledgePoint(subject: '数学', category: '总复习', name: '其它', introducedGrade: 6),
+
+      // 综合练习（一级 KP，单段，无斜杠）：跨章组合题 / 旧"小升初综合"题
+      KnowledgePoint(subject: '数学', category: '综合练习', name: '', introducedGrade: 6),
 
       // ════════════════════════════════════
-      // 语文（V3.14 Famin 简化 7 chapter，2026-05-10）
-      // 字词 / 句子和语法 / 阅读理解 / 古诗文 / 文学常识 / 综合性学习 / 写作
+      // 语文（V3.21 Famin 极简化：每章 5 KP + 1 其它，2026-05-12）
+      // 字词 / 句子和语法 / 阅读理解 / 古诗文 / 文学常识 / 综合性学习 / 写作 — 7 章 × 6 = 42
       // ════════════════════════════════════
 
       // 字词
-      KnowledgePoint(subject: '语文', category: '字词', name: '字音', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '字词', name: '字形', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '字词', name: '字义', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '字词', name: '字音字形', introducedGrade: 6),
       KnowledgePoint(subject: '语文', category: '字词', name: '词语理解', introducedGrade: 6),
       KnowledgePoint(subject: '语文', category: '字词', name: '近义词反义词', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '字词', name: '词语搭配', introducedGrade: 6),
       KnowledgePoint(subject: '语文', category: '字词', name: '成语运用', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '字词', name: '词语感情色彩', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '字词', name: '多音字辨析', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '字词', name: '字词积累', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '字词', name: '其它', introducedGrade: 6),
 
-      // 句子和语法（合并旧 句式与标点 + 修辞）
-      KnowledgePoint(subject: '语文', category: '句子和语法', name: '病句修改', introducedGrade: 6),
+      // 句子和语法
+      KnowledgePoint(subject: '语文', category: '句子和语法', name: '修辞', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '句子和语法', name: '句子衔接', introducedGrade: 6),
       KnowledgePoint(subject: '语文', category: '句子和语法', name: '句式转换', introducedGrade: 6),
       KnowledgePoint(subject: '语文', category: '句子和语法', name: '关联词运用', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '句子和语法', name: '句子衔接', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '句子和语法', name: '标点符号', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '句子和语法', name: '比喻', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '句子和语法', name: '拟人', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '句子和语法', name: '排比', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '句子和语法', name: '夸张', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '句子和语法', name: '反问', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '句子和语法', name: '设问', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '句子和语法', name: '病句与标点', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '句子和语法', name: '其它', introducedGrade: 6),
 
-      // 阅读理解（合并旧 现代文阅读 + 课文与名著课文部分）
-      KnowledgePoint(subject: '语文', category: '阅读理解', name: '阅读理解', introducedGrade: 6),
+      // 阅读理解
+      KnowledgePoint(subject: '语文', category: '阅读理解', name: '现代文阅读', introducedGrade: 6),
       KnowledgePoint(subject: '语文', category: '阅读理解', name: '材料阅读', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '阅读理解', name: '标题概括', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '阅读理解', name: '说明方法', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '阅读理解', name: '段意概括', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '阅读理解', name: '主旨段意', introducedGrade: 6),
       KnowledgePoint(subject: '语文', category: '阅读理解', name: '人物形象分析', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '阅读理解', name: '主旨理解', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '阅读理解', name: '词句赏析', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '阅读理解', name: '课文内容理解', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '阅读理解', name: '说明方法', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '阅读理解', name: '其它', introducedGrade: 6),
 
       // 古诗文
-      KnowledgePoint(subject: '语文', category: '古诗文', name: '古诗词背诵默写', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '古诗文', name: '古诗词意境理解', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '古诗文', name: '古诗词作者风格', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '古诗文', name: '文言实词', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '古诗文', name: '文言虚词', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '古诗文', name: '文言句子翻译', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '古诗文', name: '古诗词鉴赏', introducedGrade: 6),
       KnowledgePoint(subject: '语文', category: '古诗文', name: '文言文阅读', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '古诗文', name: '文言文比较阅读', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '古诗文', name: '文言实词', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '古诗文', name: '文言句子翻译', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '古诗文', name: '其它', introducedGrade: 6),
 
-      // 文学常识（合并旧 课文与名著名著部分 + 古诗文文学常识）
+      // 文学常识
       KnowledgePoint(subject: '语文', category: '文学常识', name: '中国古代作家作品', introducedGrade: 6),
       KnowledgePoint(subject: '语文', category: '文学常识', name: '中国现代作家作品', introducedGrade: 6),
       KnowledgePoint(subject: '语文', category: '文学常识', name: '外国作家作品', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '文学常识', name: '文体常识', introducedGrade: 6),
       KnowledgePoint(subject: '语文', category: '文学常识', name: '文化常识', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '文学常识', name: '名著阅读', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '文学常识', name: '名著情节人物', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '文学常识', name: '古代文学常识', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '文学常识', name: '名著与作品', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '文学常识', name: '其它', introducedGrade: 6),
 
       // 综合性学习
+      KnowledgePoint(subject: '语文', category: '综合性学习', name: '综合实践', introducedGrade: 6),
       KnowledgePoint(subject: '语文', category: '综合性学习', name: '生活常识', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '综合性学习', name: '信息提取', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '综合性学习', name: '口语交际', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '综合性学习', name: '实践活动设计', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '综合性学习', name: '其它', introducedGrade: 6),
 
       // 写作（V3.14 Famin 决策：100% 主观题，应转 _subj_held 不入主抽题池）
       // KP 保留供未来 AI 评分接入后启用
+      KnowledgePoint(subject: '语文', category: '写作', name: '应用文写作', introducedGrade: 6),
       KnowledgePoint(subject: '语文', category: '写作', name: '记叙文写作', introducedGrade: 6),
       KnowledgePoint(subject: '语文', category: '写作', name: '说明文写作', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '写作', name: '应用文写作', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '写作', name: '议论文写作', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '写作', name: '半命题写作', introducedGrade: 6),
+      KnowledgePoint(subject: '语文', category: '写作', name: '其它', introducedGrade: 6),
 
       // ════════════════════════════════════
       // 英语（外研社六下，KP 跨章节）— 23 个
@@ -1373,4 +1349,14 @@ List<KnowledgePoint> get knowledgePointsSeed => [
           category: '化学与生活',
           name: '化学元素与人体健康',
           introducedGrade: 9),
+
+      // ════════════════════════════════════
+      // V3.21 综合练习（一级 KP，单段，无斜杠）
+      // 数学 g6 已在数学 g6 section 加；这里给物理 g8 / 化学 g9。
+      // UNIQUE(subject, full_path) 约束下每科目只一条 entry（introducedGrade 取最早 grade）。
+      // chapter 表里同名 chapter 在多 grade 都有，但 KP 一条即可。
+      // KnowledgePoint.fullPath 在 name 为空时返单段 → fullPath='综合练习'
+      // ════════════════════════════════════
+      KnowledgePoint(subject: '物理', category: '综合练习', name: '', introducedGrade: 8),
+      KnowledgePoint(subject: '化学', category: '综合练习', name: '', introducedGrade: 9),
     ];

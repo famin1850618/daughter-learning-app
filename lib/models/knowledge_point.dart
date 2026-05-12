@@ -17,7 +17,8 @@ class KnowledgePoint {
     this.introducedGrade,
   });
 
-  String get fullPath => '$category/$name';
+  /// V3.21: name 为空时输出单段 fullPath（如数理化 `综合练习` 一级 KP，无斜杠）。
+  String get fullPath => name.isEmpty ? category : '$category/$name';
 
   Map<String, dynamic> toMap() => {
     if (id != null) 'id': id,

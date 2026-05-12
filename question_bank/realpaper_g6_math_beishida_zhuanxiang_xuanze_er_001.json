@@ -119,8 +119,8 @@
       "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
       "round": 1,
       "type": "choice",
-      "chapter": "小升初综合",
-      "knowledge_point": "正反比例/比例尺",
+      "chapter": "综合练习",
+      "knowledge_point": "正比例和反比例/比例尺",
       "content": "（$2022$ 年龙岗）一个鞋柜的高度是 $1.1$ 米，画在图纸上的高是 $5.5$ 厘米。这幅图纸的比例尺是（　　）。",
       "options": [
         "A. $1:5$",
@@ -138,7 +138,7 @@
       "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
       "round": 2,
       "type": "choice",
-      "chapter": "小升初综合",
+      "chapter": "综合练习",
       "knowledge_point": "总复习/数与代数综合",
       "content": "（$2022$ 年龙岗）估计一下，下面最接近 $12$ 岁（六年级）自己年龄的是（　　）。",
       "options": [
@@ -157,7 +157,7 @@
       "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
       "round": 1,
       "type": "choice",
-      "chapter": "小升初综合",
+      "chapter": "综合练习",
       "knowledge_point": "总复习/数与代数综合",
       "content": "（$2022$ 年盐田）一辆小汽车行驶 $12$ 千米消耗 $0.8$ L 汽油。$1$ L 汽油能行驶多少千米？这个问题用算式（　　）解答。",
       "options": [
@@ -176,7 +176,7 @@
       "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
       "round": 2,
       "type": "choice",
-      "chapter": "小升初综合",
+      "chapter": "综合练习",
       "knowledge_point": "总复习/数与代数综合",
       "content": "（$2022$ 年龙岗）有 $6$ 个人参加会议，两两都要握手一次，共要握手（　　）次。",
       "options": [
@@ -195,7 +195,7 @@
       "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
       "round": 3,
       "type": "choice",
-      "chapter": "小升初综合",
+      "chapter": "综合练习",
       "knowledge_point": "总复习/图形与几何综合",
       "content": "（$2022$ 年龙岗）下面说法正确的是（　　）。",
       "options": [
@@ -214,7 +214,7 @@
       "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
       "round": 2,
       "type": "choice",
-      "chapter": "小升初综合",
+      "chapter": "综合练习",
       "knowledge_point": "总复习/图形与几何综合",
       "content": "（$2022$ 年龙岗）把一个用木条钉成的长方形，拉成一个平行四边形。它的面积与原来的面积相比（　　）。",
       "options": [
@@ -233,7 +233,7 @@
       "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
       "round": 2,
       "type": "choice",
-      "chapter": "小升初综合",
+      "chapter": "综合练习",
       "knowledge_point": "总复习/图形与几何综合",
       "content": "（$2022$ 年龙岗）把 $2$ 个棱长为 $3$ 厘米的正方体拼成一个长方体。它的表面积比原来两个正方体的表面积之和减少（　　）平方厘米。",
       "options": [
@@ -252,7 +252,7 @@
       "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
       "round": 1,
       "type": "choice",
-      "chapter": "小升初综合",
+      "chapter": "综合练习",
       "knowledge_point": "总复习/数与代数综合",
       "content": "（$2022$ 年龙岗）$13.6\\%$ 去掉百分号后，这个数就（　　）。",
       "options": [
@@ -271,7 +271,7 @@
       "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
       "round": 1,
       "type": "choice",
-      "chapter": "小升初综合",
+      "chapter": "综合练习",
       "knowledge_point": "总复习/数与代数综合",
       "content": "（$2022$ 年龙华）地球与太阳的平均距离为 $149600000$ 千米。$149600000$ 中的「$9$」表示（　　）。",
       "options": [
@@ -290,7 +290,7 @@
       "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
       "round": 1,
       "type": "choice",
-      "chapter": "小升初综合",
+      "chapter": "综合练习",
       "knowledge_point": "总复习/解决问题策略",
       "content": "（$2022$ 年龙岗）乐乐爸爸每月工资 $7800$ 元。$5000$ 元以内不交税，超过 $5000$ 元的部分按 $3\\%$ 交税。乐乐爸爸每月应交税多少元？正确算式是（　　）。",
       "options": [
@@ -309,7 +309,7 @@
       "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
       "round": 1,
       "type": "choice",
-      "chapter": "小升初综合",
+      "chapter": "综合练习",
       "knowledge_point": "总复习/数与代数综合",
       "content": "（$2022$ 年坪山）$2.34\\times 65 + 35\\times 2.34 = 2.34\\times(65+35)$，这里运用的是（　　）。",
       "options": [
@@ -328,7 +328,7 @@
       "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
       "round": 2,
       "type": "choice",
-      "chapter": "小升初综合",
+      "chapter": "综合练习",
       "knowledge_point": "总复习/解决问题策略",
       "content": "（$2022$ 年盐田）妈妈去超市买酸奶「买四赠一」。妈妈准备买 $14$ 盒酸奶，销售员建议妈妈买 $15$ 盒酸奶。你认为（　　）。",
       "options": [
@@ -347,7 +347,7 @@
       "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
       "round": 1,
       "type": "choice",
-      "chapter": "小升初综合",
+      "chapter": "综合练习",
       "knowledge_point": "总复习/数与代数综合",
       "content": "（$2022$ 年龙岗）规定 $10$ t 记作 $0$ t，$11$ t 记作 $+1$ t。则下列说法错误的是（　　）。",
       "options": [
@@ -367,7 +367,7 @@
       "round": 2,
       "type": "choice",
       "chapter": "正比例和反比例",
-      "knowledge_point": "正反比例/反比例的意义",
+      "knowledge_point": "正比例和反比例/反比例的意义",
       "content": "（$2022$ 年龙岗）上坡路程和下坡路程相等，一辆汽车上坡速度与下坡速度比是 $3:5$。这辆汽车上坡与下坡用的时间比是（　　）。",
       "options": [
         "A. $5:8$",
@@ -385,7 +385,7 @@
       "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
       "round": 3,
       "type": "choice",
-      "chapter": "小升初综合",
+      "chapter": "综合练习",
       "knowledge_point": "总复习/图形与几何综合",
       "content": "（$2022$ 年龙岗）已知三角形一个角是 $30°$，另外两个内角的度数比是 $1:4$。这个三角形是（　　）。",
       "options": [
@@ -404,7 +404,7 @@
       "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
       "round": 1,
       "type": "choice",
-      "chapter": "小升初综合",
+      "chapter": "综合练习",
       "knowledge_point": "总复习/数与代数综合",
       "content": "（$2022$ 年坪山）吸烟既有害健康又费钱。如果一位吸烟者每天吸一包 $50$ 元的香烟，那么他 $7$ 月一个月花在吸烟上的钱是（　　）元。",
       "options": [
@@ -423,7 +423,7 @@
       "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
       "round": 1,
       "type": "choice",
-      "chapter": "小升初综合",
+      "chapter": "综合练习",
       "knowledge_point": "总复习/数与代数综合",
       "content": "（$2022$ 年龙岗）大于 $0$ 而小于 $1$ 的数（　　）。",
       "options": [
@@ -442,7 +442,7 @@
       "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
       "round": 2,
       "type": "choice",
-      "chapter": "小升初综合",
+      "chapter": "综合练习",
       "knowledge_point": "总复习/统计与可能性",
       "content": "（$2022$ 年龙岗）妙想做抛硬币的游戏（硬币是均匀的）。下列说法正确的是（　　）。",
       "options": [
@@ -461,7 +461,7 @@
       "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
       "round": 2,
       "type": "choice",
-      "chapter": "小升初综合",
+      "chapter": "综合练习",
       "knowledge_point": "总复习/图形与几何综合",
       "content": "（$2022$ 年龙华）如果一个三角形的两条边的长分别是 $6$ cm 和 $9$ cm，那么第三条边的长可能是（　　）cm。",
       "options": [
@@ -481,7 +481,7 @@
       "round": 1,
       "type": "choice",
       "chapter": "正比例和反比例",
-      "knowledge_point": "正反比例/正比例的意义",
+      "knowledge_point": "正比例和反比例/正比例的意义",
       "content": "（$2022$ 年坪山）果树的成活率一定，栽种的棵数和成活的棵数（　　）。",
       "options": [
         "A. 成反比例",
@@ -499,7 +499,7 @@
       "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
       "round": 1,
       "type": "choice",
-      "chapter": "小升初综合",
+      "chapter": "综合练习",
       "knowledge_point": "总复习/统计与可能性",
       "content": "（$2022$ 年坪山）以下几种情况，最适合用折线统计图的是（　　）。",
       "options": [
@@ -518,7 +518,7 @@
       "source": "realpaper_g6_math_beishida_zhuanxiang_xuanze_er_001",
       "round": 1,
       "type": "choice",
-      "chapter": "小升初综合",
+      "chapter": "综合练习",
       "knowledge_point": "总复习/图形与几何综合",
       "content": "（$2022$•龙岗区）下列图形中，对称轴最多的是（　　）。",
       "options": [

@@ -651,12 +651,12 @@ class _QuestionScreenState extends State<_QuestionScreen> {
   Widget build(BuildContext context) {
     final q = widget.question;
     final service = context.watch<PracticeService>();
-    final total = service.currentQuestions.length;
-    final index = service.currentIndex;
+    // V3.21 阶段二：组合题作 1 题计数，单题作 1 题
+    final counter = service.groupAwareCounter();
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('第 ${index + 1} / $total 题'),
+        title: Text('第 ${counter.position} / ${counter.total} 题'),
         actions: [
           settingsAction(context),
           // V3.8.3: 暂停按钮（仅未答完时可点）
@@ -707,7 +707,7 @@ class _QuestionScreenState extends State<_QuestionScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             LinearProgressIndicator(
-              value: (index + 1) / total,
+              value: counter.total > 0 ? counter.position / counter.total : 0,
               backgroundColor: Colors.grey[200],
               color: AppTheme.primary,
             ),
@@ -818,7 +818,7 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                 height: 46,
                 child: ElevatedButton(
                   onPressed: () => context.read<PracticeService>().nextQuestion(),
-                  child: Text(index < total - 1 ? '下一题' : '查看结果'),
+                  child: Text(service.currentIndex < service.currentQuestions.length - 1 ? '下一题' : '查看结果'),
                 ),
               ),
             ],

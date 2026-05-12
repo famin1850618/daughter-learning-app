@@ -199,7 +199,7 @@
       "round": 2,
       "type": "choice",
       "chapter": "比例",
-      "knowledge_point": "正反比例/比例尺",
+      "knowledge_point": "正比例和反比例/比例尺",
       "content": "一个电子零件的实际长度是 $2$ 毫米，画在图纸上的长度是 $8$ 厘米，这张图纸的比例尺是（　　）。",
       "options": [
         "A. $1:4$",
@@ -294,7 +294,7 @@
       "round": 1,
       "type": "choice",
       "chapter": "数学好玩",
-      "knowledge_point": "数学综合/神奇的几何变换",
+      "knowledge_point": "数学好玩/神奇的几何变换",
       "content": "沿莫比乌斯圈的二分之一线剪下去，剪出来的结果会是（　　）。",
       "options": [
         "A. 两个独立的纸环",
@@ -370,7 +370,7 @@
       "round": 1,
       "type": "choice",
       "chapter": "正比例和反比例",
-      "knowledge_point": "正反比例/正反比例的判断",
+      "knowledge_point": "正比例和反比例/正反比例的判断",
       "content": "以下说法正确的是（　　）。",
       "options": [
         "A. 人的近视度数和年龄成正比例",
@@ -389,7 +389,7 @@
       "round": 2,
       "type": "choice",
       "chapter": "圆柱与圆锥",
-      "knowledge_point": "圆柱与圆锥/圆柱的认识",
+      "knowledge_point": "圆柱与圆锥/圆柱圆锥的认识",
       "content": "一个圆柱的侧面沿垂直于底面的方向剪开后展平，得到的形状是一个正方形。这个圆柱的高与底面半径的比是（　　）。",
       "options": [
         "A. $2\\pi:1$",
@@ -408,7 +408,7 @@
       "round": 2,
       "type": "choice",
       "chapter": "比例",
-      "knowledge_point": "比和比例/比例的意义",
+      "knowledge_point": "比例/比例的意义",
       "content": "不能与 $\\frac{1}{3}:\\frac{1}{4}$ 组成比例的是（　　）。",
       "options": [
         "A. $16:12$",
@@ -560,7 +560,7 @@
       "round": 3,
       "type": "choice",
       "chapter": "比例",
-      "knowledge_point": "比和比例/比例的意义",
+      "knowledge_point": "比例/比例的意义",
       "content": "下面有（　　）组数中的两个比能组成比例。\n① $20:28$ 和 $35:42$；\n② $16:8$ 和 $12:0.6$；\n③ $\\frac{1}{4}:\\frac{1}{16}$ 和 $2:0.5$；\n④ $\\frac{1}{3}:\\frac{1}{9}$ 和 $\\frac{1}{18}:\\frac{1}{6}$。",
       "options": [
         "A. $1$",
@@ -655,7 +655,7 @@
       "round": 2,
       "type": "choice",
       "chapter": "正比例和反比例",
-      "knowledge_point": "正反比例/反比例的意义",
+      "knowledge_point": "正比例和反比例/反比例的意义",
       "content": "下列各项中，两种量成反比例关系的是（　　）。",
       "options": [
         "A. 长方形的周长一定，它的长和宽",

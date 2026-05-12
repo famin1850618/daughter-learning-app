@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 26,
+      version: 27,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
@@ -489,6 +489,69 @@ class DatabaseHelper {
         // 老 record 默认按 is_correct 转
         await db.execute('UPDATE practice_records SET partial_score = CASE WHEN is_correct=1 THEN 1.0 ELSE 0.0 END WHERE partial_score IS NULL');
       } catch (_) {/* 已存在则跳 */}
+    }
+
+    if (oldVersion < 27) {
+      // v27: V3.21 KP 极简化（每章 ≤5 KP + 其它）+ 综合练习 一级 KP（单段）
+      // 1. chapter 表：旧 `小升初综合` `中考综合` → `综合练习`（数学 g6/g9, 物理 g9, 化学 g9）
+      //    + 新建物理 g8 `综合练习`
+      // 2. KP 表：删旧不在 V3.21 清单的 KP；新 KP 由 _seedReferenceData() insertIfMissing 补
+      //    旧"综合练习/小升初综合" "综合练习/中考综合" → 删（保留新一级 `综合练习` name=''）
+      // 3. questions 表：chapter='小升初综合'/'中考综合' → '综合练习'
+      //    knowledge_point 跨章组合题统一 → 数据层后续 V3.21.3 脚本处理 batch JSON 后重导
+      //    DB 层只做 chapter rename
+      try {
+        // 1. chapter 表 rename
+        await db.execute('''
+          UPDATE curriculum
+          SET chapter_name = '综合练习'
+          WHERE chapter_name IN ('小升初综合', '中考综合')
+        ''');
+        // 2. questions 表 chapter rename（数据层 batch JSON V3.21.3 同步改）
+        await db.execute('''
+          UPDATE questions
+          SET chapter = '综合练习'
+          WHERE chapter IN ('小升初综合', '中考综合')
+        ''');
+        // 3. questions 表 knowledge_point 旧 综合练习/X → 综合练习（单段）
+        await db.execute('''
+          UPDATE questions
+          SET knowledge_point = '综合练习'
+          WHERE knowledge_point IN ('综合练习/小升初综合', '综合练习/中考综合')
+        ''');
+        // 4. KP 表残留清理：删旧"综合练习/小升初综合"等子 KP
+        await db.execute('''
+          DELETE FROM knowledge_points
+          WHERE category = '综合练习' AND name != ''
+        ''');
+        // 5. 语文 KP 表残留：删不在 V3.21 6×7 新清单的语文 KP
+        //    新清单见 knowledge_points_seed.dart V3.21 section。这里用 NOT IN 白名单删旧 KP。
+        await db.execute('''
+          DELETE FROM knowledge_points
+          WHERE subject = '语文' AND full_path NOT IN (
+            '字词/字音字形','字词/词语理解','字词/近义词反义词','字词/成语运用','字词/字词积累','字词/其它',
+            '句子和语法/修辞','句子和语法/句子衔接','句子和语法/句式转换','句子和语法/关联词运用','句子和语法/病句与标点','句子和语法/其它',
+            '阅读理解/现代文阅读','阅读理解/材料阅读','阅读理解/主旨段意','阅读理解/人物形象分析','阅读理解/说明方法','阅读理解/其它',
+            '古诗文/古诗词鉴赏','古诗文/文言文阅读','古诗文/文言文比较阅读','古诗文/文言实词','古诗文/文言句子翻译','古诗文/其它',
+            '文学常识/中国古代作家作品','文学常识/中国现代作家作品','文学常识/外国作家作品','文学常识/文化常识','文学常识/名著与作品','文学常识/其它',
+            '综合性学习/综合实践','综合性学习/生活常识','综合性学习/信息提取','综合性学习/口语交际','综合性学习/实践活动设计','综合性学习/其它',
+            '写作/应用文写作','写作/记叙文写作','写作/说明文写作','写作/议论文写作','写作/半命题写作','写作/其它'
+          )
+        ''');
+        // 6. 数学 g6 KP 残留：删旧 category（比和比例 / 正反比例 / 数学综合）旧 KP
+        //    新 V3.21 category 名：比例 / 正比例和反比例 / 数学好玩
+        await db.execute('''
+          DELETE FROM knowledge_points
+          WHERE subject = '数学' AND category IN ('比和比例','正反比例','数学综合')
+        ''');
+        // 7. 数学 g6 KP：删旧名（圆柱的认识 / 圆锥的认识 / 化简比 / 求比值 等已被合并）
+        await db.execute('''
+          DELETE FROM knowledge_points
+          WHERE subject = '数学' AND full_path IN (
+            '圆柱与圆锥/圆柱的认识','圆柱与圆锥/圆锥的认识'
+          )
+        ''');
+      } catch (_) {/* 已迁过则跳 */}
     }
 
     if (oldVersion < 25) {

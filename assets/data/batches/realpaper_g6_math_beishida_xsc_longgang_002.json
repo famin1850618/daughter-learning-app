@@ -146,7 +146,7 @@
       "round": 2,
       "type": "choice",
       "chapter": "正比例和反比例",
-      "knowledge_point": "正反比例/比例尺",
+      "knowledge_point": "正比例和反比例/比例尺",
       "content": "一个鞋柜高度是 $1.1$ 米，画在图纸上的高是 $5.5$ 厘米，这幅图纸的比例尺是（　　）。",
       "options": [
         "A. $1:5$",
@@ -203,7 +203,7 @@
       "round": 2,
       "type": "choice",
       "chapter": "正比例和反比例",
-      "knowledge_point": "正反比例/正反比例的判断",
+      "knowledge_point": "正比例和反比例/正反比例的判断",
       "content": "上坡路程和下坡路程相等，一辆汽车上坡速度与下坡速度比是 $3:5$，这辆汽车上坡与下坡用的时间比应是（　　）。",
       "options": [
         "A. $5:8$",
@@ -222,7 +222,7 @@
       "round": 1,
       "type": "choice",
       "chapter": "正比例和反比例",
-      "knowledge_point": "正反比例/正反比例的判断",
+      "knowledge_point": "正比例和反比例/正反比例的判断",
       "content": "下面说法正确的是（　　）。",
       "options": [
         "A. 圆锥的侧面展开图是一个等腰三角形",

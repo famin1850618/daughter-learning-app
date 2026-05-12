@@ -300,7 +300,7 @@
       "round": 2,
       "type": "choice",
       "chapter": "比例",
-      "knowledge_point": "比和比例/解比例",
+      "knowledge_point": "比例/解比例",
       "content": "作业本上获得 $10$ 颗小星星就可以换 $2$ 本连环画，淘气用 $40$ 颗小星星换了 $x$ 本连环画。\n1. 写出比例式（　　）。",
       "options": [
         "A. $10:2=40:x$",
@@ -321,7 +321,7 @@
       "round": 2,
       "type": "fill",
       "chapter": "比例",
-      "knowledge_point": "比和比例/解比例",
+      "knowledge_point": "比例/解比例",
       "content": "作业本上获得 $10$ 颗小星星就可以换 $2$ 本连环画，淘气用 $40$ 颗小星星换了 $x$ 本连环画。\n2. 算一算，淘气换到了 ____ 本连环画。",
       "answer": "8",
       "explanation": "$10x=2\\times 40=80$，$x=8$ 本。",
@@ -355,7 +355,7 @@
       "round": 2,
       "type": "choice",
       "chapter": "正比例和反比例",
-      "knowledge_point": "正反比例/正反比例的判断",
+      "knowledge_point": "正比例和反比例/正反比例的判断",
       "content": "下面关于正、反比例的说法中，正确的是（　　）。",
       "options": [
         "A. 三角形的面积一定，它的底和高成反比例",
@@ -374,7 +374,7 @@
       "round": 2,
       "type": "choice",
       "chapter": "比例",
-      "knowledge_point": "比和比例/比例的意义",
+      "knowledge_point": "比例/比例的意义",
       "content": "用 $5$ mL 的蜂蜜兑 $100$ mL 水调制成蜂蜜水，如果再加入 $10$ mL 的蜂蜜，为了使蜂蜜水的甜度不变，需要加入的水可以是（　　）。",
       "options": [
         "A. $10$ mL",
