@@ -1,6 +1,6 @@
 {
-  "version": 103,
-  "updated_at": "2026-05-13T05:00:30.607778Z",
+  "version": 104,
+  "updated_at": "2026-05-13T05:22:21.229267Z",
   "batches": [
     {
       "source": "batch_2026_05_07_g6_english_pet_r1",
@@ -33,9 +33,93 @@
       "grade": 6,
       "count": 200,
       "batch_hash": "50c68a223214cfb94eb8f449d60d74d075f0b91d"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qm_futian_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_futian_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 16,
+      "batch_hash": "1ffe44d8f61c28f4c0b13d1699c6a2aa1da7516a"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_nanshan_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 47,
+      "batch_hash": "c9880657f198cda15e0fd950ac4cd423aed20c50"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_xsc_baoan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_xsc_baoan_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 28,
+      "batch_hash": "d28996fef772c29fc8128d6f54358c3a39216df3"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_xsc_luohu_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_xsc_luohu_002.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 21,
+      "batch_hash": "2c7c41a2e1f1ca21926750584fa0710935f45a3c"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_xsc_shenzhen_moni_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_xsc_shenzhen_moni_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 10,
+      "batch_hash": "5af7af8ff1ab30fbc3ec0910b73d1961e6f2e133"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qm_futian_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_futian_002.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 25,
+      "batch_hash": "f04c5783d44fb5b725c5127a48c593c227013d87"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qm_longhua_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_longhua_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 24,
+      "batch_hash": "2f1447b06c7ff08f78b48008553f026ac0b2a2b0"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_xsc_baoan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_xsc_baoan_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 27,
+      "batch_hash": "55eb872064e97a3deec8c91bde287d40dacaf81b"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_xsc_shenzhen_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 29,
+      "batch_hash": "5b089d355670ed7b8c493c830497fa7407d8188a"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_zhuanxiang_jieda_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_zhuanxiang_jieda_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 76,
+      "batch_hash": "14e89f5e08babdfa73397bdd07afe822947d7a00"
     }
   ],
   "_changelog": [
+    {
+      "version": 104,
+      "note": "V3.22 5+5 pilot 入库：10 套 g6 batch（5 语文 + 5 数学）按新 R31 重扫"
+    },
     {
       "version": 103,
       "note": "V3.22 全清 g6 数学+语文 batch，准备 5+5 重扫"
