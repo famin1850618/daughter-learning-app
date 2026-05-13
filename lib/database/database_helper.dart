@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 27,
+      version: 28,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
@@ -29,6 +29,60 @@ class DatabaseHelper {
   }
 
   Future<void> _onUpgrade(Database db, int oldVersion, int newVersion) async {
+    if (oldVersion < 28) {
+      // v28: V3.22 章节/KP 重构（Famin 2026-05-13 决策，spec md = ~/AI_Workspace/Planning/v3_22_chapter_kp_rules.md）
+      // 1. 语文阅读理解 6→2 KP（删主旨段意/人物形象分析/说明方法/其它），保留现代文阅读/材料阅读
+      // 2. 语文删综合性学习章 + 6 KP
+      // 3. 语文加综合练习章（与数理化对齐，KP 单段无斜杠）
+      // 4. questions 表 chapter rename：综合性学习 → 综合练习
+      // 5. questions 表 KP 兜底：阅读理解 4 个废弃 KP → 阅读理解/现代文阅读；综合性学习/X → 综合练习
+      // 6. KP 表残留清理 + curriculum 表残留清理
+      // 备注：V3.22 走全清重扫路径，questions 表数据会被 worker 重扫覆盖。本 migration 只是 fallback。
+      try {
+        // 1. curriculum 表：语文综合性学习 chapter → 综合练习（orderIndex 同步改 99）
+        await db.execute('''
+          UPDATE curriculum
+          SET chapter_name = '综合练习', order_index = 99
+          WHERE subject = '语文' AND chapter_name = '综合性学习'
+        ''');
+        // 2. questions 表 chapter rename：综合性学习 → 综合练习（语文）
+        await db.execute('''
+          UPDATE questions
+          SET chapter = '综合练习'
+          WHERE chapter = '综合性学习'
+        ''');
+        // 3. questions 表 KP 兜底：阅读理解 4 个废弃 KP → 阅读理解/现代文阅读
+        await db.execute('''
+          UPDATE questions
+          SET knowledge_point = '阅读理解/现代文阅读'
+          WHERE knowledge_point IN (
+            '阅读理解/主旨段意',
+            '阅读理解/人物形象分析',
+            '阅读理解/说明方法',
+            '阅读理解/其它'
+          )
+        ''');
+        // 4. questions 表 KP 兜底：综合性学习/X → 综合练习
+        await db.execute('''
+          UPDATE questions
+          SET knowledge_point = '综合练习'
+          WHERE knowledge_point LIKE '综合性学习/%'
+        ''');
+        // 5. knowledge_points 表残留清理：删综合性学习 category
+        await db.execute('''
+          DELETE FROM knowledge_points
+          WHERE subject = '语文' AND category = '综合性学习'
+        ''');
+        // 6. knowledge_points 表残留清理：删阅读理解 4 个废弃 KP
+        await db.execute('''
+          DELETE FROM knowledge_points
+          WHERE subject = '语文' AND category = '阅读理解' AND name IN (
+            '主旨段意', '人物形象分析', '说明方法', '其它'
+          )
+        ''');
+      } catch (_) {/* 已迁过则跳 */}
+    }
+
     if (oldVersion < 3) {
       // 迁移到 v3：用 plan_groups + plan_items 替换 study_plans
       await db.execute('DROP TABLE IF EXISTS study_plans');

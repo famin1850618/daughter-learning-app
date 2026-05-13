@@ -514,9 +514,14 @@ class _KpCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(summary.name,
-                        style: const TextStyle(
-                            fontSize: 15, fontWeight: FontWeight.w600)),
+                    // V3.22: 组合题升 chapter 显示，单题保留子 KP
+                    Text(
+                      summary.isCombo
+                          ? '${summary.category} · 综合（多 KP）'
+                          : summary.name,
+                      style: const TextStyle(
+                          fontSize: 15, fontWeight: FontWeight.w600),
+                    ),
                     const SizedBox(height: 4),
                     Text(
                       '累计错 ${summary.totalErrors} 次 · 最近 ${_formatDate(summary.lastWrongAt)}',
@@ -578,7 +583,11 @@ class _KpDetailScreenState extends State<_KpDetailScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(widget.summary.name)),
+      appBar: AppBar(
+        title: Text(widget.summary.isCombo
+            ? '${widget.summary.category} · 组合题'
+            : widget.summary.name),
+      ),
       body: Column(
         children: [
           Container(

@@ -678,21 +678,22 @@ def run_full_check(batch: dict, batch_path: Path, kp_set: set, chapter_set: set)
             cpr_errs.append(f'gid={gid}: 阅读类 form B 组合题缺 _common_prefix_raw（{len(subs)} 子题）')
     report['21_common_prefix_required'] = {'pass': not cpr_errs, 'errors': cpr_errs}
 
-    # 22. V3.21 组合题单一 KP 检测（R31）
-    # 同 group_id 子题 knowledge_point 必须完全相同；否则 fail。
-    # 规则：数学跨章 → 综合练习单段；语文按共同材料类型归核心 KP；物理化学跨章 → 综合练习。
-    gkp_errs = []
-    group_kps = {}
+    # 22. V3.22 组合题同 chapter 检测（R31 替换旧 V3.21 R31）
+    # 同 group_id 子题 chapter 必须完全相同；子题 KP 可异（同章节内）；否则 fail。
+    # V3.22 规则：跨章节散题 → 整组归"综合练习" chapter，KP=综合练习；不再拆为 N single。
+    # 详见 ~/AI_Workspace/Planning/v3_22_chapter_kp_rules.md
+    gchapter_errs = []
+    group_chapters = {}
     for q in questions:
         gid = q.get('group_id')
         if not gid: continue
-        kp = q.get('knowledge_point', '')
-        group_kps.setdefault(gid, []).append(kp)
-    for gid, kps in group_kps.items():
-        if len(set(kps)) > 1:
-            kp_summary = ', '.join(sorted(set(kps)))
-            gkp_errs.append(f'gid={gid}: 子题 KP 异质 [{kp_summary}] — R31 要求整组单一 KP')
-    report['22_group_kp_consistent'] = {'pass': not gkp_errs, 'errors': gkp_errs}
+        ch = q.get('chapter', '')
+        group_chapters.setdefault(gid, []).append(ch)
+    for gid, chs in group_chapters.items():
+        if len(set(chs)) > 1:
+            ch_summary = ', '.join(sorted(set(chs)))
+            gchapter_errs.append(f'gid={gid}: 子题 chapter 跨章 [{ch_summary}] — R31 V3.22 要求整组同 chapter（跨章应整组归"综合练习"）')
+    report['22_group_chapter_consistent'] = {'pass': not gchapter_errs, 'errors': gchapter_errs}
 
     # 20. V3.19.14 worker 加提示文字检测（Famin 2026-05-11 实测"三空，。"/"三个字母，。"等）
     # 防 worker 在 content 末尾加"N 空"/"N 个字母"/"按顺序"等提示文字，或不规范标点 "，。"
@@ -786,8 +787,10 @@ def main():
                     help='V3.19.14 worker 加提示文字检测（"N 空"/"N 个字母"/"，。" 等）')
     ap.add_argument('--common-prefix', action='store_true',
                     help='V3.19.17b 阅读类组合题缺 _common_prefix_raw 检测（chinese batch）')
+    ap.add_argument('--group-chapter', action='store_true',
+                    help='V3.22 R31 组合题同 chapter 检测（同 group_id 子题 chapter 必一致；KP 可异）')
     ap.add_argument('--group-kp', action='store_true',
-                    help='V3.21 R31 组合题单一 KP 检测（同 group_id 子题 KP 必一致）')
+                    help='[DEPRECATED, alias for --group-chapter] 旧 V3.21 R31 名，向后兼容保留')
     args = ap.parse_args()
 
     if args.cross_batch:
@@ -862,7 +865,7 @@ def main():
         print(f'\n=== common-prefix 总违纪 {total_fail} group')
         sys.exit(1 if total_fail else 0)
 
-    if args.group_kp:
+    if args.group_chapter or args.group_kp:
         import glob
         repo = Path(__file__).resolve().parents[2]
         files = sorted(glob.glob(str(repo / 'assets/data/batches/realpaper_*.json')))
@@ -872,13 +875,13 @@ def main():
         for f in files:
             batch = json.loads(Path(f).read_text(encoding='utf-8'))
             report = run_full_check(batch, Path(f), kp_set, chapter_set)
-            errs = report.get('22_group_kp_consistent', {}).get('errors', [])
+            errs = report.get('22_group_chapter_consistent', {}).get('errors', [])
             if errs:
                 total_fail += len(errs)
                 print(f'❌ {Path(f).name}: {len(errs)} group 违纪')
                 for e in errs:
                     print(f'    {e}')
-        print(f'\n=== group-kp 总违纪 {total_fail} group')
+        print(f'\n=== group-chapter 总违纪 {total_fail} group')
         sys.exit(1 if total_fail else 0)
 
     kp_set = parse_kp_seed()

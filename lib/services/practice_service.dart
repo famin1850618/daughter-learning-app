@@ -409,6 +409,30 @@ class PracticeService extends ChangeNotifier {
     int count = 10,
     bool applyDifficulty = true,
   }) async {
+    // V3.22：错题集 review key 带 |combo 后缀 = 组合题级，按 chapter 整体抽题（不限子 KP）
+    if (kpPath.endsWith('|combo')) {
+      final chapter = kpPath.substring(0, kpPath.length - '|combo'.length);
+      List<int>? rounds;
+      if (applyDifficulty) {
+        // 组合题先按 chapter 内已有题的主导 subject 推 profile
+        final subject = await _dao.getSubjectForChapter(chapter);
+        final profile = _difficultySettings.profileFor(subject ?? '');
+        final f = _profileToFilter(profile);
+        rounds = f.rounds;
+      }
+      _currentQuestions = await _dao.getQuestionsForChapterByRound(
+        chapter: chapter,
+        rounds: rounds,
+        limit: count,
+      );
+      _kind = SessionKind.normal;
+      _sessionId = _newSessionId('chapter');
+      _resetSessionState();
+      await _persist();
+      return;
+    }
+
+    // 单题维度抽题（原 V3.8 逻辑）
     if (applyDifficulty) {
       // 取该 KP 所属科目的 profile（从已知该 KP 任意题反查 subject）
       final subject = await _dao.getSubjectForKp(kpPath);
@@ -448,7 +472,21 @@ class PracticeService extends ChangeNotifier {
     for (final s in summaries) {
       if (result.length >= totalLimit) break;
       List<Question> qs;
-      if (applyDifficulty) {
+      // V3.22：组合题级 review summary（isCombo）走 chapter 抽题
+      if (s.isCombo) {
+        List<int>? rounds;
+        if (applyDifficulty) {
+          final subject = await _dao.getSubjectForChapter(s.category);
+          final profile = _difficultySettings.profileFor(subject ?? '');
+          final f = _profileToFilter(profile);
+          rounds = f.rounds;
+        }
+        qs = await _dao.getQuestionsForChapterByRound(
+          chapter: s.category,
+          rounds: rounds,
+          limit: perKp,
+        );
+      } else if (applyDifficulty) {
         final subject = await _dao.getSubjectForKp(s.fullPath);
         final profile = _difficultySettings.profileFor(subject ?? '');
         final f = _profileToFilter(profile);

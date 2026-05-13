@@ -62,8 +62,9 @@ List<KnowledgePoint> get knowledgePointsSeed => [
       KnowledgePoint(subject: '数学', category: '综合练习', name: '', introducedGrade: 6),
 
       // ════════════════════════════════════
-      // 语文（V3.21 Famin 极简化：每章 5 KP + 1 其它，2026-05-12）
-      // 字词 / 句子和语法 / 阅读理解 / 古诗文 / 文学常识 / 综合性学习 / 写作 — 7 章 × 6 = 42
+      // 语文（V3.22 Famin 决策，2026-05-13）
+      // 字词 / 句子和语法 / 阅读理解(2 KP) / 古诗文 / 文学常识 / 写作 / 综合练习(1 KP)
+      // V3.22 改动：阅读理解 6→2 KP（按材料特点）；删综合性学习章；加综合练习章
       // ════════════════════════════════════
 
       // 字词
@@ -82,13 +83,9 @@ List<KnowledgePoint> get knowledgePointsSeed => [
       KnowledgePoint(subject: '语文', category: '句子和语法', name: '病句与标点', introducedGrade: 6),
       KnowledgePoint(subject: '语文', category: '句子和语法', name: '其它', introducedGrade: 6),
 
-      // 阅读理解
+      // 阅读理解（V3.22：6→2 KP，按材料特点划分；无"其它"兜底）
       KnowledgePoint(subject: '语文', category: '阅读理解', name: '现代文阅读', introducedGrade: 6),
       KnowledgePoint(subject: '语文', category: '阅读理解', name: '材料阅读', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '阅读理解', name: '主旨段意', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '阅读理解', name: '人物形象分析', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '阅读理解', name: '说明方法', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '阅读理解', name: '其它', introducedGrade: 6),
 
       // 古诗文
       KnowledgePoint(subject: '语文', category: '古诗文', name: '古诗词鉴赏', introducedGrade: 6),
@@ -106,13 +103,9 @@ List<KnowledgePoint> get knowledgePointsSeed => [
       KnowledgePoint(subject: '语文', category: '文学常识', name: '名著与作品', introducedGrade: 6),
       KnowledgePoint(subject: '语文', category: '文学常识', name: '其它', introducedGrade: 6),
 
-      // 综合性学习
-      KnowledgePoint(subject: '语文', category: '综合性学习', name: '综合实践', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '综合性学习', name: '生活常识', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '综合性学习', name: '信息提取', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '综合性学习', name: '口语交际', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '综合性学习', name: '实践活动设计', introducedGrade: 6),
-      KnowledgePoint(subject: '语文', category: '综合性学习', name: '其它', introducedGrade: 6),
+      // V3.22 删除综合性学习章（Famin 2026-05-13 决策）
+      // 原 6 KP（综合实践 / 生活常识 / 信息提取 / 口语交际 / 实践活动设计 / 其它）全删
+      // 原下题：散题归综合练习；有材料的归阅读理解（按材料类型）
 
       // 写作（V3.14 Famin 决策：100% 主观题，应转 _subj_held 不入主抽题池）
       // KP 保留供未来 AI 评分接入后启用
@@ -122,6 +115,9 @@ List<KnowledgePoint> get knowledgePointsSeed => [
       KnowledgePoint(subject: '语文', category: '写作', name: '议论文写作', introducedGrade: 6),
       KnowledgePoint(subject: '语文', category: '写作', name: '半命题写作', introducedGrade: 6),
       KnowledgePoint(subject: '语文', category: '写作', name: '其它', introducedGrade: 6),
+
+      // 综合练习（一级 KP，单段无斜杠；V3.22 新增，与数理化对齐）：跨章节散题 / 多 KP 综合判断题
+      KnowledgePoint(subject: '语文', category: '综合练习', name: '', introducedGrade: 6),
 
       // ════════════════════════════════════
       // 英语（外研社六下，KP 跨章节）— 23 个

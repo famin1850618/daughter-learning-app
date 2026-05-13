@@ -135,38 +135,38 @@ List<Chapter> get curriculumChapters => [
   Chapter(subject: '数学', grade: 6, orderIndex: 99, chapterName: '综合练习'),
   Chapter(subject: '数学', grade: 9, orderIndex: 99, chapterName: '综合练习'),
 
-  // V3.14 简化（Famin 决策）：语文 chapter 收敛到 7 个
-  // 删 句式与标点/修辞（→ 句子和语法）/ 现代文阅读/课文与名著（→ 阅读理解）
-  // 删 0 题章节：小升初综合/中考综合/名著阅读/语法/语法与句式
+  // V3.22 简化（Famin 2026-05-13 决策）：语文 chapter 收敛到 7 个
+  // V3.14: 删旧"句式与标点/修辞"→ 句子和语法 / 旧"现代文阅读/课文与名著"→ 阅读理解
+  // V3.22: 删"综合性学习"章；加"综合练习"章（orderIndex 99，与数理化对齐）
   // 写作 chapter 保留但实际题应转 _subj_held（100% 主观题不入抽题池）
   Chapter(subject: '语文', grade: 6, orderIndex: 21, chapterName: '字词'),
   Chapter(subject: '语文', grade: 6, orderIndex: 22, chapterName: '句子和语法'),
   Chapter(subject: '语文', grade: 6, orderIndex: 23, chapterName: '阅读理解'),
   Chapter(subject: '语文', grade: 6, orderIndex: 24, chapterName: '古诗文'),
   Chapter(subject: '语文', grade: 6, orderIndex: 25, chapterName: '文学常识'),
-  Chapter(subject: '语文', grade: 6, orderIndex: 26, chapterName: '综合性学习'),
   Chapter(subject: '语文', grade: 6, orderIndex: 27, chapterName: '写作'),
+  Chapter(subject: '语文', grade: 6, orderIndex: 99, chapterName: '综合练习'),
   Chapter(subject: '语文', grade: 7, orderIndex: 21, chapterName: '字词'),
   Chapter(subject: '语文', grade: 7, orderIndex: 22, chapterName: '句子和语法'),
   Chapter(subject: '语文', grade: 7, orderIndex: 23, chapterName: '阅读理解'),
   Chapter(subject: '语文', grade: 7, orderIndex: 24, chapterName: '古诗文'),
   Chapter(subject: '语文', grade: 7, orderIndex: 25, chapterName: '文学常识'),
-  Chapter(subject: '语文', grade: 7, orderIndex: 26, chapterName: '综合性学习'),
   Chapter(subject: '语文', grade: 7, orderIndex: 27, chapterName: '写作'),
+  Chapter(subject: '语文', grade: 7, orderIndex: 99, chapterName: '综合练习'),
   Chapter(subject: '语文', grade: 8, orderIndex: 21, chapterName: '字词'),
   Chapter(subject: '语文', grade: 8, orderIndex: 22, chapterName: '句子和语法'),
   Chapter(subject: '语文', grade: 8, orderIndex: 23, chapterName: '阅读理解'),
   Chapter(subject: '语文', grade: 8, orderIndex: 24, chapterName: '古诗文'),
   Chapter(subject: '语文', grade: 8, orderIndex: 25, chapterName: '文学常识'),
-  Chapter(subject: '语文', grade: 8, orderIndex: 26, chapterName: '综合性学习'),
   Chapter(subject: '语文', grade: 8, orderIndex: 27, chapterName: '写作'),
+  Chapter(subject: '语文', grade: 8, orderIndex: 99, chapterName: '综合练习'),
   Chapter(subject: '语文', grade: 9, orderIndex: 21, chapterName: '字词'),
   Chapter(subject: '语文', grade: 9, orderIndex: 22, chapterName: '句子和语法'),
   Chapter(subject: '语文', grade: 9, orderIndex: 23, chapterName: '阅读理解'),
   Chapter(subject: '语文', grade: 9, orderIndex: 24, chapterName: '古诗文'),
   Chapter(subject: '语文', grade: 9, orderIndex: 25, chapterName: '文学常识'),
-  Chapter(subject: '语文', grade: 9, orderIndex: 26, chapterName: '综合性学习'),
   Chapter(subject: '语文', grade: 9, orderIndex: 27, chapterName: '写作'),
+  Chapter(subject: '语文', grade: 9, orderIndex: 99, chapterName: '综合练习'),
   Chapter(subject: '物理', grade: 8, orderIndex: 99, chapterName: '综合练习'),
   Chapter(subject: '物理', grade: 9, orderIndex: 99, chapterName: '综合练习'),
   Chapter(subject: '化学', grade: 9, orderIndex: 99, chapterName: '综合练习'),

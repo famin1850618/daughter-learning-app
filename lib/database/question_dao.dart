@@ -2,14 +2,16 @@ import '../models/question.dart';
 import '../models/subject.dart';
 import 'database_helper.dart';
 
-/// 待掌握 KP 摘要（错题集卡片用）
+/// 待掌握错题摘要（错题集卡片用）
+/// V3.22：组合题项 isCombo=true，name=''，fullPath=chapter；单题保留具体 KP。
 class ReviewKpSummary {
-  final String fullPath;       // "category/name"
-  final String category;
-  final String name;
-  final int totalErrors;       // 历史累计错次（颜色梯度用）
+  final String fullPath;       // 单题："category/name"；组合题：chapter（单段）
+  final String category;       // chapter
+  final String name;           // 单题=子 KP；组合题=''
+  final int totalErrors;       // 历史累计错次（颜色梯度用，按 group_unit 聚合，组合题作 1 unit）
   final DateTime lastWrongAt;  // 最近一次错的时间
   final int subjectIndex;      // Subject 枚举 index（V3.7.8：成效页按科目一级分类）
+  final bool isCombo;          // V3.22：true 表示该条目是"组合题级"（按 chapter），false 为单题（按 KP）
 
   const ReviewKpSummary({
     required this.fullPath,
@@ -18,6 +20,7 @@ class ReviewKpSummary {
     required this.totalErrors,
     required this.lastWrongAt,
     required this.subjectIndex,
+    this.isCombo = false,
   });
 
   Subject get subject => Subject.values[subjectIndex];
@@ -368,54 +371,91 @@ class QuestionDao {
 
   // ── 错题集（KP 维度 / 举一反三）─────────────────────
 
-  /// 待掌握 KP 列表：以"最近一次错"为锚点，之后答对的不同题数 < 2 即视为待掌握。
-  /// 一旦该 KP 再错，锚点更新到最新时间，自动重新进入待掌握。
+  /// 待掌握错题列表（V3.22 重构：单位 = group_unit = 组合题→group_id / 单题→'q'+id）
+  ///
+  /// **聚合维度（rkey）**：
+  /// - 组合题（group_id 非空）：`chapter || '|combo'`（错题集首页每 chapter 仅 1 张组合题汇总卡）
+  /// - 单题：原 `knowledge_point`（保留具体 KP 显示）
+  ///
+  /// **"待掌握"判定**：以该 rkey 下"最近一次错答时间"为锚点，
+  /// 之后答对的不同 group_unit 数 < 2 即视为待掌握。
+  /// （组合题作 1 个 group_unit，与 V3.21 阶段二一致）
   Future<List<ReviewKpSummary>> getReviewKnowledgePoints() async {
     final db = await _db.database;
     final rows = await db.rawQuery('''
-      WITH last_wrong AS (
-        SELECT q.knowledge_point AS kp, q.subject AS subject, MAX(r.practiced_at) AS t
+      WITH unit_keys AS (
+        -- 每道题对应一个 review key：组合题 → chapter|combo；单题 → knowledge_point
+        SELECT q.id AS qid, q.subject AS subject,
+               CASE WHEN q.group_id IS NOT NULL AND q.group_id != ''
+                    THEN q.chapter || '|combo'
+                    ELSE q.knowledge_point END AS rkey,
+               q.chapter AS chapter,
+               q.knowledge_point AS kp,
+               q.group_id AS gid
+        FROM questions q
+        WHERE q.chapter IS NOT NULL
+          AND (q.group_id IS NOT NULL OR q.knowledge_point IS NOT NULL)
+      ),
+      last_wrong AS (
+        SELECT u.rkey, u.subject, MAX(r.practiced_at) AS t
         FROM practice_records r
-        JOIN questions q ON q.id = r.question_id
-        WHERE r.is_correct = 0 AND q.knowledge_point IS NOT NULL
-        GROUP BY q.knowledge_point, q.subject
+        JOIN unit_keys u ON u.qid = r.question_id
+        WHERE r.is_correct = 0
+        GROUP BY u.rkey, u.subject
       ),
       progress AS (
-        SELECT lw.kp, lw.subject,
+        SELECT lw.rkey, lw.subject,
                lw.t AS last_wrong_at,
-               -- V3.21 阶段二：按 group_id 算"做对几题"（组合题作 1 题）
-               -- 同 group_id 的多子题做对都算同 1 题；单题用 'q' || id 独立计数
+               -- 按 group_unit 算"做对几题"（组合题作 1 unit）
                COUNT(DISTINCT CASE WHEN r2.is_correct = 1 AND r2.practiced_at > lw.t
-                                   THEN COALESCE(q2.group_id, 'q' || q2.id) END) AS correct_after_last
+                                   THEN COALESCE(u2.gid, 'q' || u2.qid) END) AS correct_after_last
         FROM last_wrong lw
-        JOIN questions q2 ON q2.knowledge_point = lw.kp AND q2.subject = lw.subject
-        LEFT JOIN practice_records r2 ON r2.question_id = q2.id
-        GROUP BY lw.kp, lw.subject, lw.t
+        JOIN unit_keys u2 ON u2.rkey = lw.rkey AND u2.subject = lw.subject
+        LEFT JOIN practice_records r2 ON r2.question_id = u2.qid
+        GROUP BY lw.rkey, lw.subject, lw.t
       ),
       total_err AS (
-        SELECT q.knowledge_point AS kp, q.subject AS subject, COUNT(*) AS total_errors
+        SELECT u.rkey, u.subject,
+               -- 错次也按 group_unit 算（同 group 多次错只累加 unit 错次数）
+               COUNT(DISTINCT (CAST(r.id AS TEXT) || '|' || COALESCE(u.gid, 'q' || u.qid))) AS total_errors
         FROM practice_records r
-        JOIN questions q ON q.id = r.question_id
-        WHERE r.is_correct = 0 AND q.knowledge_point IS NOT NULL
-        GROUP BY q.knowledge_point, q.subject
+        JOIN unit_keys u ON u.qid = r.question_id
+        WHERE r.is_correct = 0
+        GROUP BY u.rkey, u.subject
       )
-      SELECT p.kp, p.subject, p.last_wrong_at, te.total_errors
+      SELECT p.rkey, p.subject, p.last_wrong_at, te.total_errors
       FROM progress p
-      JOIN total_err te ON te.kp = p.kp AND te.subject = p.subject
+      JOIN total_err te ON te.rkey = p.rkey AND te.subject = p.subject
       WHERE p.correct_after_last < 2
       ORDER BY te.total_errors DESC, p.last_wrong_at DESC
     ''');
 
     return rows.map((row) {
-      final kp = row['kp'] as String;
-      final parts = kp.split('/');
+      final rkey = row['rkey'] as String;
+      // V3.22：rkey 带 |combo 后缀 = 组合题级（按 chapter）；否则单题（按 KP）
+      // fullPath 保留 rkey 原样作 unique key；展示用 category/name 字段
+      final isCombo = rkey.endsWith('|combo');
+      if (isCombo) {
+        final chapter = rkey.substring(0, rkey.length - '|combo'.length);
+        return ReviewKpSummary(
+          fullPath: rkey,
+          category: chapter,
+          name: '',
+          totalErrors: (row['total_errors'] as int?) ?? 0,
+          lastWrongAt: DateTime.parse(row['last_wrong_at'] as String),
+          subjectIndex: (row['subject'] as int?) ?? 0,
+          isCombo: true,
+        );
+      }
+      final parts = rkey.split('/');
       return ReviewKpSummary(
-        fullPath: kp,
-        category: parts.isNotEmpty ? parts.first : kp,
-        name: parts.length > 1 ? parts.sublist(1).join('/') : kp,
+        fullPath: rkey,
+        category: parts.isNotEmpty ? parts.first : rkey,
+        name: parts.length > 1 ? parts.sublist(1).join('/') : rkey,
         totalErrors: (row['total_errors'] as int?) ?? 0,
         lastWrongAt: DateTime.parse(row['last_wrong_at'] as String),
         subjectIndex: (row['subject'] as int?) ?? 0,
+        isCombo: false,
       );
     }).toList();
   }
@@ -432,9 +472,19 @@ class QuestionDao {
     return !list.any((r) => r.fullPath == kpPath);
   }
 
-  /// 某 KP 的错题历史（每条 = 一次错答事件，按时间倒序）
+  /// 某 review key 的错题历史（每条 = 一次错答事件，按时间倒序）
+  ///
+  /// V3.22：rkey 带 `|combo` 后缀 = 组合题级（按 chapter + group_id 非空查）；
+  /// 否则按 knowledge_point 查（单题）。
   Future<List<WrongQuestionRecord>> getWrongHistoryForKnowledgePoint(String kpPath) async {
     final db = await _db.database;
+    final isCombo = kpPath.endsWith('|combo');
+    final whereClause = isCombo
+        ? 'r.is_correct = 0 AND q.chapter = ? AND q.group_id IS NOT NULL AND q.group_id != ""'
+        : 'r.is_correct = 0 AND q.knowledge_point = ?';
+    final whereArg = isCombo
+        ? kpPath.substring(0, kpPath.length - '|combo'.length)
+        : kpPath;
     final rows = await db.rawQuery('''
       SELECT q.*, r.id AS r_id,
              r.user_answer AS r_user_answer,
@@ -442,9 +492,9 @@ class QuestionDao {
              r.session_id AS r_session_id
       FROM practice_records r
       JOIN questions q ON q.id = r.question_id
-      WHERE r.is_correct = 0 AND q.knowledge_point = ?
+      WHERE $whereClause
       ORDER BY r.practiced_at DESC
-    ''', [kpPath]);
+    ''', [whereArg]);
 
     return rows.map((row) {
       final q = Question.fromMap(row);
@@ -673,6 +723,9 @@ class QuestionDao {
   }
 
   /// 一段时间内 unit 维度的累计错次（用于错题加权）
+  ///
+  /// V3.22：按 group_unit 聚合（组合题 group_id 作 1 unit；单题用 q+id），
+  /// 同一组合题多子题错只算 1 unit 错 1 次。同 unit 多次错累加。
   Future<int> countWrongInRange({
     required DateTime start,
     required DateTime end,
@@ -688,8 +741,9 @@ class QuestionDao {
       where += ' AND q.knowledge_point = ?';
       args.add(knowledgePoint);
     }
+    // V3.22：按 (record_id, group_unit) 去重，避免同组合题一次错被多子题重复计数
     final rows = await db.rawQuery('''
-      SELECT COUNT(*) AS c
+      SELECT COUNT(DISTINCT (CAST(r.id AS TEXT) || '|' || COALESCE(q.group_id, 'q' || q.id))) AS c
       FROM practice_records r
       JOIN questions q ON q.id = r.question_id
       WHERE $where
@@ -762,6 +816,99 @@ class QuestionDao {
     return await _expandGroups(combined);
   }
 
+  /// V3.22：按 chapter 整体抽题（错题集组合题"练相似题"用）
+  /// 先抽该 chapter 内 fresh 题（未做过），再 fallback stale（做过但未错过）
+  /// 章节内题不够时最后 fallback 该 chapter 内原错题（满足"防记忆优先 / 原题兜底"）
+  Future<List<Question>> getQuestionsForChapterByRound({
+    required String chapter,
+    int? subjectIndex,
+    List<int>? rounds,
+    required int limit,
+  }) async {
+    if (limit <= 0) return [];
+    final db = await _db.database;
+    String roundFilter = '';
+    List<dynamic> roundArgs = [];
+    if (rounds != null && rounds.length == 1) {
+      roundFilter = ' AND round = ?';
+      roundArgs = [rounds.first];
+    } else if (rounds != null && rounds.length > 1) {
+      final ph = List.filled(rounds.length, '?').join(',');
+      roundFilter = ' AND round IN ($ph)';
+      roundArgs = [...rounds];
+    }
+    String subjFilter = '';
+    List<dynamic> subjArgs = [];
+    if (subjectIndex != null) {
+      subjFilter = ' AND subject = ?';
+      subjArgs = [subjectIndex];
+    }
+
+    // Tier 1: 同 chapter + 未做过 + 未掌握 + active source
+    final fresh = await db.rawQuery('''
+      SELECT * FROM questions
+      WHERE chapter = ?$subjFilter$roundFilter
+        AND id NOT IN (SELECT DISTINCT question_id FROM practice_records)
+        AND id NOT IN ($_masteredSubquery)
+        AND $_activeSourceFilter
+      ORDER BY RANDOM()
+      LIMIT ?
+    ''', [chapter, ...subjArgs, ...roundArgs, limit]);
+    if (fresh.length >= limit) {
+      return await _expandGroups(fresh.map(Question.fromMap).toList());
+    }
+
+    // Tier 2: 做过但未错过 + 未掌握 + 最久未练
+    final remaining = limit - fresh.length;
+    final pickedIds = fresh.map((m) => m['id']).toList();
+    final ph2 = pickedIds.isEmpty ? '0' : List.filled(pickedIds.length, '?').join(',');
+    final stale = await db.rawQuery('''
+      SELECT q.*
+      FROM questions q
+      LEFT JOIN (
+        SELECT question_id, MAX(practiced_at) AS last_practiced
+        FROM practice_records
+        GROUP BY question_id
+      ) lr ON lr.question_id = q.id
+      WHERE q.chapter = ?${subjectIndex != null ? ' AND q.subject = ?' : ''}$roundFilter
+        AND q.id NOT IN ($ph2)
+        AND q.id NOT IN (
+          SELECT DISTINCT question_id FROM practice_records WHERE is_correct = 0
+        )
+        AND q.id NOT IN ($_masteredSubquery)
+        AND ${_activeSourceFilter.replaceAll("source", "q.source")}
+      ORDER BY lr.last_practiced ASC
+      LIMIT ?
+    ''', [chapter, ...subjArgs, ...roundArgs, ...pickedIds, remaining]);
+
+    final combined = [
+      ...fresh.map(Question.fromMap),
+      ...stale.map(Question.fromMap),
+    ];
+    if (combined.length >= limit) {
+      return await _expandGroups(combined);
+    }
+
+    // Tier 3 (V3.22 fallback)：章节内题不够，抽该 chapter 错题做过的（含原错题）
+    final stillNeed = limit - combined.length;
+    final picked2 = combined.map((q) => q.id).whereType<int>().toList();
+    final ph3 = picked2.isEmpty ? '0' : List.filled(picked2.length, '?').join(',');
+    final fallback = await db.rawQuery('''
+      SELECT q.* FROM questions q
+      WHERE q.chapter = ?${subjectIndex != null ? ' AND q.subject = ?' : ''}$roundFilter
+        AND q.id NOT IN ($ph3)
+        AND $_activeSourceFilter
+      ORDER BY RANDOM()
+      LIMIT ?
+    '''.replaceAll(' AND source IN ', ' AND q.source IN '),
+        [chapter, ...subjArgs, ...roundArgs, ...picked2, stillNeed]);
+
+    return await _expandGroups([
+      ...combined,
+      ...fallback.map(Question.fromMap),
+    ]);
+  }
+
   /// 薄弱点练习抽题：排除曾做错过的"原题"，仅取未做过 + 答对过最久未练的题
   /// 用于 startAggregatedReviewSession，避免重复出现用户做错过的同一道题
   Future<List<Question>> getQuestionsForKpExcludingWrong({
@@ -823,6 +970,18 @@ class QuestionDao {
     final db = await _db.database;
     final r = await db.rawQuery(
         'SELECT subject FROM questions WHERE knowledge_point = ? LIMIT 1', [kpPath]);
+    if (r.isEmpty) return null;
+    final idx = r.first['subject'] as int?;
+    if (idx == null) return null;
+    return Subject.values[idx].displayName;
+  }
+
+  /// V3.22：根据 chapter 反查主导科目（用 chapter 抽题时取 subject profile）
+  Future<String?> getSubjectForChapter(String chapter) async {
+    final db = await _db.database;
+    final r = await db.rawQuery(
+        'SELECT subject, COUNT(*) as c FROM questions WHERE chapter = ? GROUP BY subject ORDER BY c DESC LIMIT 1',
+        [chapter]);
     if (r.isEmpty) return null;
     final idx = r.first['subject'] as int?;
     if (idx == null) return null;
