@@ -72,5 +72,18 @@ if ! python3 tools/realpaper/validate.py --group-kp; then
 fi
 echo "[pre-commit] ✅ group-kp 通过"
 
-echo "[pre-commit] ✅ 全部检查放行（5 层防线）"
+# curriculum.json vs seed 一致性（V3.23）：仅在 seed 或 curriculum.json 改动时跑
+cur_staged=$(git diff --cached --name-only --diff-filter=ACM | grep -E '^(lib/database/curriculum_seed\.dart|question_bank/curriculum\.json)$' || true)
+if [ -n "$cur_staged" ]; then
+    echo "[pre-commit] 跑 curriculum-consistency 检查（V3.23）..."
+    if ! python3 tools/check_curriculum_consistency.py; then
+        echo ""
+        echo "❌ commit 被拦：curriculum.json 与 curriculum_seed.dart 不一致（V3.23 防漂移）。"
+        echo "   修法：python3 tools/sync_curriculum_json.py && git add question_bank/curriculum.json"
+        exit 1
+    fi
+    echo "[pre-commit] ✅ curriculum-consistency 通过"
+fi
+
+echo "[pre-commit] ✅ 全部检查放行（6 层防线）"
 exit 0
