@@ -1,5 +1,5 @@
 {
-  "version": 104,
+  "version": 105,
   "updated_at": "2026-05-13T05:22:21.229267Z",
   "batches": [
     {
@@ -80,7 +80,7 @@
       "subject": "math",
       "grade": 6,
       "count": 25,
-      "batch_hash": "f04c5783d44fb5b725c5127a48c593c227013d87"
+      "batch_hash": "8966bed4696fb8c9e01b66207d0aefdf5621a05a"
     },
     {
       "source": "realpaper_g6_math_beishida_qm_longhua_001",
@@ -88,7 +88,7 @@
       "subject": "math",
       "grade": 6,
       "count": 24,
-      "batch_hash": "2f1447b06c7ff08f78b48008553f026ac0b2a2b0"
+      "batch_hash": "939744737964b5c69a3cec93fdb9a894cb1f26a9"
     },
     {
       "source": "realpaper_g6_math_beishida_xsc_baoan_001",
@@ -96,7 +96,7 @@
       "subject": "math",
       "grade": 6,
       "count": 27,
-      "batch_hash": "55eb872064e97a3deec8c91bde287d40dacaf81b"
+      "batch_hash": "9c65d6b83a39176c68cd86769c3b34ec6ea92cc1"
     },
     {
       "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
@@ -104,7 +104,7 @@
       "subject": "math",
       "grade": 6,
       "count": 29,
-      "batch_hash": "5b089d355670ed7b8c493c830497fa7407d8188a"
+      "batch_hash": "6b929a08294630028625554c739895f3f04d6ae1"
     },
     {
       "source": "realpaper_g6_math_beishida_zhuanxiang_jieda_001",
@@ -112,7 +112,7 @@
       "subject": "math",
       "grade": 6,
       "count": 76,
-      "batch_hash": "14e89f5e08babdfa73397bdd07afe822947d7a00"
+      "batch_hash": "585f8dabff5b44feb6059d04bf0d5bc48b36de79"
     }
   ],
   "_changelog": [

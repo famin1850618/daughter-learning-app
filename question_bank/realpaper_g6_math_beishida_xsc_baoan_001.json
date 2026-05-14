@@ -50,8 +50,8 @@
   "questions": [
     {
       "local_id": "q1",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/数与代数综合",
+      "chapter": "综合练习",
+      "knowledge_point": "综合练习",
       "type": "fill",
       "content": "某影院去年全年接待观众258600人次，改写成「万」为单位的数是______人次，一共收入票款6297000元，省略「万」后面的尾数约______元。",
       "answer": "25.86万|||630万",
@@ -61,8 +61,8 @@
     },
     {
       "local_id": "q2",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/数与代数综合",
+      "chapter": "综合练习",
+      "knowledge_point": "综合练习",
       "type": "fill",
       "content": "0.75千克 = ______克；4.3时 = ______分。",
       "answer": "750|||258",
@@ -85,8 +85,8 @@
       "local_id": "q4_q1",
       "group_id": "realpaper_g6_math_beishida_xsc_baoan_001_q4",
       "group_order": 1,
-      "chapter": "总复习",
-      "knowledge_point": "总复习/数与代数综合",
+      "chapter": "综合练习",
+      "knowledge_point": "综合练习",
       "type": "choice",
       "content": "在 π，3.142，$\\dfrac{10}{3}$，320% 中，最大的数是（  ）。\n1. 最大的数",
       "options": [
@@ -105,8 +105,8 @@
       "local_id": "q4_q2",
       "group_id": "realpaper_g6_math_beishida_xsc_baoan_001_q4",
       "group_order": 2,
-      "chapter": "总复习",
-      "knowledge_point": "总复习/数与代数综合",
+      "chapter": "综合练习",
+      "knowledge_point": "综合练习",
       "type": "choice",
       "content": "在 π，3.142，$\\dfrac{10}{3}$，320% 中，最小的数是（  ）。\n2. 最小的数",
       "options": [
@@ -145,8 +145,8 @@
     },
     {
       "local_id": "q7",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/图形与几何综合",
+      "chapter": "综合练习",
+      "knowledge_point": "综合练习",
       "type": "fill",
       "content": "一个正方体棱长总和是60dm，那么它的表面积是______dm²，体积是______dm³。",
       "answer": "150|||125",
@@ -156,8 +156,8 @@
     },
     {
       "local_id": "q8",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/图形与几何综合",
+      "chapter": "综合练习",
+      "knowledge_point": "综合练习",
       "type": "fill",
       "content": "如图，把圆分成若干等份，拼成一个近似的长方形。已知宽为5cm，那么长是______cm。（π≈3）",
       "answer": "15",
@@ -168,8 +168,8 @@
     },
     {
       "local_id": "q9",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/解决问题策略",
+      "chapter": "综合练习",
+      "knowledge_point": "综合练习",
       "type": "fill",
       "content": "一串珠子，按5个红色、3个白色、5个红色、3个白色……规律排列，第100个珠子的颜色是______色。",
       "answer": "红",
@@ -179,8 +179,8 @@
     },
     {
       "local_id": "q10",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/数与代数综合",
+      "chapter": "综合练习",
+      "knowledge_point": "综合练习",
       "type": "fill",
       "content": "笑笑要用20克糖给妈妈调制一杯浓度为10%的糖水，需要加水______克。",
       "answer": "180",
@@ -190,8 +190,8 @@
     },
     {
       "local_id": "q11",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/数与代数综合",
+      "chapter": "综合练习",
+      "knowledge_point": "综合练习",
       "type": "choice",
       "content": "下面的数中，每个零都要读出的数是（  ）",
       "options": [
@@ -207,8 +207,8 @@
     },
     {
       "local_id": "q12",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/数与代数综合",
+      "chapter": "综合练习",
+      "knowledge_point": "综合练习",
       "type": "choice",
       "content": "下面物体中，哪一组的质量最接近一吨？（  ）",
       "options": [
@@ -224,8 +224,8 @@
     },
     {
       "local_id": "q13",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/数与代数综合",
+      "chapter": "综合练习",
+      "knowledge_point": "综合练习",
       "type": "choice",
       "content": "如图：点P表示的数可能是（  ）",
       "options": [
@@ -242,8 +242,8 @@
     },
     {
       "local_id": "q14",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/图形与几何综合",
+      "chapter": "综合练习",
+      "knowledge_point": "综合练习",
       "type": "choice",
       "content": "一个立体图形，从右面看到的形状是（如图1），从正面看到的形状是（如图2），这个立体图最少是由______个小正方体组成，最多是由______个小正方体组成的。（  ）",
       "options": [
@@ -320,8 +320,8 @@
     },
     {
       "local_id": "q21",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/统计与可能性",
+      "chapter": "综合练习",
+      "knowledge_point": "综合练习",
       "type": "fill",
       "content": "小军完成数学作业后，不小心将统计图弄得残缺不全了（如图，仅不合格人数2清晰可见）。请根据图中清晰部分和下列信息进行有关计算：\n（1）良好人数是不合格人数的11倍。\n（2）不合格人数占总人数的4%。\n（3）优秀人数和总人数的比是2:5。\n求：良好人数______人，总人数______人，优秀人数______人，合格人数______人。",
       "answer": "22|||50|||20|||6",
@@ -332,8 +332,8 @@
     },
     {
       "local_id": "q22",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/解决问题策略",
+      "chapter": "综合练习",
+      "knowledge_point": "综合练习",
       "type": "fill",
       "content": "市政部门修一条路，已经修了 $\\dfrac{2}{5}$，比没修的少 1020 米。这条路一共长多少米？（用方程解答，只需填写答案，单位米）\n答：______米。",
       "answer": "5100",
@@ -354,8 +354,8 @@
     },
     {
       "local_id": "q24",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/数与代数综合",
+      "chapter": "综合练习",
+      "knowledge_point": "综合练习",
       "type": "fill",
       "content": "3月12日是我国的植树节。育才小学的部分师生一起去栽种200棵树苗。老师们栽了20%，剩下的按3:5分给甲、乙两个班级，甲班和乙班分别分到多少棵？\n甲班______棵，乙班______棵。",
       "answer": "60|||100",
@@ -395,8 +395,8 @@
     },
     {
       "local_id": "q26",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/图形与几何综合",
+      "chapter": "综合练习",
+      "knowledge_point": "综合练习",
       "type": "fill",
       "content": "小新家装修完新居，爸爸发现剩余两块长5分米、宽3分米的玻璃和两块长4分米、宽3分米的玻璃，就想做一个长方体的玻璃鱼缸（无盖），还需要配一块长______分米、宽______分米的玻璃，做成的鱼缸最多能装水______升。",
       "answer": "5|||4|||60",
@@ -406,8 +406,8 @@
     },
     {
       "local_id": "q27",
-      "chapter": "总复习",
-      "knowledge_point": "总复习/数与代数综合",
+      "chapter": "综合练习",
+      "knowledge_point": "综合练习",
       "type": "fill",
       "content": "商场举行促销活动，某种手机如果按每台840元售出，可获得利润20%，如果按原价售出，则可获利30%，这种手机在促销活动中降价多少元？（只填数字）\n答：______元。",
       "answer": "70",

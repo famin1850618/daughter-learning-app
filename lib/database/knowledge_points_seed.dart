@@ -50,15 +50,10 @@ List<KnowledgePoint> get knowledgePointsSeed => [
       KnowledgePoint(subject: '数学', category: '数学好玩', name: '数学实践', introducedGrade: 6),
       KnowledgePoint(subject: '数学', category: '数学好玩', name: '其它', introducedGrade: 6),
 
-      // 总复习
-      KnowledgePoint(subject: '数学', category: '总复习', name: '数与代数综合', introducedGrade: 6),
-      KnowledgePoint(subject: '数学', category: '总复习', name: '图形与几何综合', introducedGrade: 6),
-      KnowledgePoint(subject: '数学', category: '总复习', name: '统计与可能性', introducedGrade: 6),
-      KnowledgePoint(subject: '数学', category: '总复习', name: '解决问题策略', introducedGrade: 6),
-      KnowledgePoint(subject: '数学', category: '总复习', name: '数学应用', introducedGrade: 6),
-      KnowledgePoint(subject: '数学', category: '总复习', name: '其它', introducedGrade: 6),
+      // V3.23: 删"总复习" 6 KP（数与代数综合/图形与几何综合/统计与可能性/解决问题策略/数学应用/其它）
+      // 原下题：chapter+KP 全部并入"综合练习"（DB v29 migration 自动 rename）
 
-      // 综合练习（一级 KP，单段，无斜杠）：跨章组合题 / 旧"小升初综合"题
+      // 综合练习（一级 KP，单段，无斜杠）：跨章组合题 / 旧"小升初综合" / 旧"总复习" 题
       KnowledgePoint(subject: '数学', category: '综合练习', name: '', introducedGrade: 6),
 
       // ════════════════════════════════════
@@ -742,13 +737,8 @@ List<KnowledgePoint> get knowledgePointsSeed => [
       KnowledgePoint(
           subject: '语文', category: '写作', name: '应用文格式', introducedGrade: 8),
 
-      // 综合性学习
-      KnowledgePoint(
-          subject: '语文', category: '综合性学习', name: '材料概括', introducedGrade: 8),
-      KnowledgePoint(
-          subject: '语文', category: '综合性学习', name: '图表分析', introducedGrade: 8),
-      KnowledgePoint(
-          subject: '语文', category: '综合性学习', name: '口语交际', introducedGrade: 8),
+      // V3.23: 删 g8"综合性学习" 3 KP（材料概括/图表分析/口语交际）
+      // 原下题：散题归"综合练习"；有材料的归"阅读理解/材料阅读"（DB v29 migration 兜底）
 
       // ════════════════════════════════════
       // === 九年级语文（人教）===
@@ -836,11 +826,8 @@ List<KnowledgePoint> get knowledgePointsSeed => [
       KnowledgePoint(
           subject: '语文', category: '写作', name: '记叙文升格', introducedGrade: 9),
 
-      // 综合性学习
-      KnowledgePoint(
-          subject: '语文', category: '综合性学习', name: '材料探究', introducedGrade: 9),
-      KnowledgePoint(
-          subject: '语文', category: '综合性学习', name: '语言得体', introducedGrade: 9),
+      // V3.23: 删 g9"综合性学习" 2 KP（材料探究/语言得体）
+      // 原下题：散题归"综合练习"；有材料的归"阅读理解/材料阅读"（DB v29 migration 兜底）
 
       // ════════════════════════════════════
       // === 七年级英语（外研社）===

@@ -12,7 +12,7 @@ List<Chapter> get curriculumChapters => [
   Chapter(subject: '数学', grade: 6, orderIndex: 3,  chapterName: '图形的运动'),
   Chapter(subject: '数学', grade: 6, orderIndex: 4,  chapterName: '正比例和反比例'),
   Chapter(subject: '数学', grade: 6, orderIndex: 5,  chapterName: '数学好玩'),
-  Chapter(subject: '数学', grade: 6, orderIndex: 6,  chapterName: '总复习'),
+  // V3.23: 删"总复习"章，并入"综合练习"（orderIndex 99，见末尾）
 
   Chapter(subject: '数学', grade: 7, orderIndex: 1,  chapterName: '丰富的图形世界'),
   Chapter(subject: '数学', grade: 7, orderIndex: 2,  chapterName: '有理数及其运算'),

@@ -9,21 +9,19 @@ import '../models/question.dart';
 import '../utils/plan_date_utils.dart';
 import 'reward_service.dart';
 
-/// 测评单元：按 (chapter[+KP]) 维度抽题
+/// V3.23: 测评单元改为按 chapter 维度（spec V3.22 § 3.3）。
+/// 同 chapter 内不同 KP 的错题合并加权；组合题作 1 unit 计错次由 question_dao.countWrongInRange 内 group_id 去重保证。
 class _Unit {
   final String chapterName;
-  final String? knowledgePoint;
   final String subjectName;
   final int grade;
   _Unit({
     required this.chapterName,
-    required this.knowledgePoint,
     required this.subjectName,
     required this.grade,
   });
-  String get key => '$subjectName|$grade|$chapterName|${knowledgePoint ?? ''}';
-  String get label =>
-      knowledgePoint != null ? '$chapterName · $knowledgePoint' : chapterName;
+  String get key => '$subjectName|$grade|$chapterName';
+  String get label => chapterName;
 }
 
 class AssessmentBuildResult {
@@ -138,14 +136,12 @@ class AssessmentService extends ChangeNotifier {
     }
   }
 
+  /// V3.23: plan_items 可能按 (chapter, kp) 细分多条，但加权抽题统一按 chapter 折叠。
   List<_Unit> _collectUnits(List<PlanItem> items) {
     final seen = <String, _Unit>{};
     for (final i in items) {
       final u = _Unit(
         chapterName: i.chapterName,
-        knowledgePoint: (i.knowledgePoint == null || i.knowledgePoint!.isEmpty)
-            ? null
-            : i.knowledgePoint,
         subjectName: i.subjectName,
         grade: i.grade,
       );
@@ -233,13 +229,13 @@ class AssessmentService extends ChangeNotifier {
     final periodStart = PlanDateUtils.dateOnly(group.startDate);
     final periodEnd = group.endDate.add(const Duration(days: 1));
 
+    // V3.23: errCount 按 chapter 维度，不传 knowledgePoint（同 chapter 内多 KP 错次合并）
     final errCount = <String, int>{};
     for (final u in units) {
       errCount[u.key] = await _questionDao.countWrongInRange(
         start: periodStart,
         end: periodEnd,
         chapterName: u.chapterName,
-        knowledgePoint: u.knowledgePoint,
       );
     }
 
@@ -251,19 +247,18 @@ class AssessmentService extends ChangeNotifier {
       final wantN = alloc[u]!;
       if (wantN <= 0) continue;
 
-      // 排除当期错题原题
+      // 排除当期错题原题（chapter 内整体排除）
       final excluded = await _questionDao.getWrongQuestionIdsInRange(
         start: periodStart,
         end: periodEnd,
         chapterName: u.chapterName,
-        knowledgePoint: u.knowledgePoint,
       );
 
+      // V3.23: 抽题按 chapter（不指定 KP），让 question_dao Tier 2/3 走 chapter-only 抽
       final qs = await _questionDao.getQuestionsForAssessmentUnit(
         subjectName: u.subjectName,
         grade: u.grade,
         chapterName: u.chapterName,
-        knowledgePoint: u.knowledgePoint,
         difficulty: null,
         excludeIds: excluded,
         limit: wantN,

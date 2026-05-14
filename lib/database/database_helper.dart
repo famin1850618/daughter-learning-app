@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 28,
+      version: 29,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
@@ -29,6 +29,39 @@ class DatabaseHelper {
   }
 
   Future<void> _onUpgrade(Database db, int oldVersion, int newVersion) async {
+    if (oldVersion < 29) {
+      // v29: V3.23 总复习章并入综合练习（Famin 2026-05-13 决策："总复习没什么边界，都放综合练习"）
+      // 1. curriculum 表：删数学 g6 总复习章（如还在）
+      // 2. questions 表 chapter rename：总复习 → 综合练习
+      // 3. questions 表 KP 兜底：总复习/X → 综合练习（单段）
+      // 4. knowledge_points 表残留清理：删数学总复习 6 KP + 删语文 g8/g9 综合性学习 5 KP（v28 兜底未删 g8/g9 grade 时残留）
+      try {
+        await db.execute('''
+          DELETE FROM curriculum
+          WHERE subject = '数学' AND chapter_name = '总复习'
+        ''');
+        await db.execute('''
+          UPDATE questions
+          SET chapter = '综合练习'
+          WHERE chapter = '总复习'
+        ''');
+        await db.execute('''
+          UPDATE questions
+          SET knowledge_point = '综合练习'
+          WHERE knowledge_point LIKE '总复习/%'
+        ''');
+        await db.execute('''
+          DELETE FROM knowledge_points
+          WHERE category = '总复习'
+        ''');
+        // 兜底 v28 未清的 g8/g9 综合性学习 KP（v28 只做 subject='语文' AND category='综合性学习'，本无 grade 限定，但保险重做）
+        await db.execute('''
+          DELETE FROM knowledge_points
+          WHERE subject = '语文' AND category = '综合性学习'
+        ''');
+      } catch (_) {/* 已迁过则跳 */}
+    }
+
     if (oldVersion < 28) {
       // v28: V3.22 章节/KP 重构（Famin 2026-05-13 决策，spec md = ~/AI_Workspace/Planning/v3_22_chapter_kp_rules.md）
       // 1. 语文阅读理解 6→2 KP（删主旨段意/人物形象分析/说明方法/其它），保留现代文阅读/材料阅读
