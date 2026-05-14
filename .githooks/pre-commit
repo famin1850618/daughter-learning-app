@@ -72,6 +72,28 @@ if ! python3 tools/realpaper/validate.py --group-kp; then
 fi
 echo "[pre-commit] ✅ group-kp 通过"
 
+# image-content-match 检查（V3.23 R33）：仅在 realpaper batch staged 时跑
+echo "[pre-commit] 跑 image-content-match 检查（V3.23 R33）..."
+if ! python3 tools/realpaper/validate.py --image-content-match; then
+    echo ""
+    echo "❌ commit 被拦：含 image_data 的题未 worker self-verify（R33）。"
+    echo "   修法：worker 必 Read 图原文 + 比对题面线索后写 _image_verified=true 字段。"
+    echo "   严禁 paragraph_image_map 推断完不 verify 直接绑——参 q48 圆柱图错绑前车之鉴。"
+    exit 1
+fi
+echo "[pre-commit] ✅ image-content-match 通过"
+
+# docx-sha1-real 检查（V3.23 R34）：仅在 realpaper batch staged 时跑
+echo "[pre-commit] 跑 docx-sha1-real 检查（V3.23 R34）..."
+if ! python3 tools/realpaper/validate.py --docx-sha1-real; then
+    echo ""
+    echo "❌ commit 被拦：_source_docx_sha1 / _source_docx_path 不真实（R34）。"
+    echo "   修法：worker 入库前必 assert hashlib.sha1(open(path,'rb').read()).hexdigest()[:16] == _source_docx_sha1。"
+    echo "   batch JSON 必含 _source_docx_path（绝对路径或 ~/...）+ _source_docx_sha1（16 字符）。"
+    exit 1
+fi
+echo "[pre-commit] ✅ docx-sha1-real 通过"
+
 # curriculum.json vs seed 一致性（V3.23）：仅在 seed 或 curriculum.json 改动时跑
 cur_staged=$(git diff --cached --name-only --diff-filter=ACM | grep -E '^(lib/database/curriculum_seed\.dart|question_bank/curriculum\.json)$' || true)
 if [ -n "$cur_staged" ]; then
@@ -85,5 +107,5 @@ if [ -n "$cur_staged" ]; then
     echo "[pre-commit] ✅ curriculum-consistency 通过"
 fi
 
-echo "[pre-commit] ✅ 全部检查放行（6 层防线）"
+echo "[pre-commit] ✅ 全部检查放行（8 层防线）"
 exit 0

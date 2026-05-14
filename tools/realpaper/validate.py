@@ -791,6 +791,10 @@ def main():
                     help='V3.22 R31 组合题同 chapter 检测（同 group_id 子题 chapter 必一致；KP 可异）')
     ap.add_argument('--group-kp', action='store_true',
                     help='[DEPRECATED, alias for --group-chapter] 旧 V3.21 R31 名，向后兼容保留')
+    ap.add_argument('--image-content-match', action='store_true',
+                    help='V3.23 R33 检查：含 image_data 的题必须有 _image_verified=true 标记（worker self-verify 后写）')
+    ap.add_argument('--docx-sha1-real', action='store_true',
+                    help='V3.23 R34 检查：batch._source_docx_sha1 必须等于实际 docx sha1（worker 写入前 assert）')
     args = ap.parse_args()
 
     if args.cross_batch:
@@ -863,6 +867,55 @@ def main():
                 for e in errs:
                     print(f'    {e}')
         print(f'\n=== common-prefix 总违纪 {total_fail} group')
+        sys.exit(1 if total_fail else 0)
+
+    if args.image_content_match:
+        import glob
+        repo = Path(__file__).resolve().parents[2]
+        files = sorted(glob.glob(str(repo / 'assets/data/batches/realpaper_*.json')))
+        total_fail = 0
+        for f in files:
+            batch = json.loads(Path(f).read_text(encoding='utf-8'))
+            for i, q in enumerate(batch.get('questions', [])):
+                img = q.get('image_data')
+                if img and not q.get('_image_verified'):
+                    total_fail += 1
+                    src_id = batch.get('source', Path(f).stem)
+                    print(f'❌ {src_id} q[{i}] group_id={q.get("group_id","-")} 含 image_data 但未 _image_verified=true (R33)')
+        print(f'\n=== image-content-match 总违纪 {total_fail} 题（R33 worker 必 Read 图自验后写 _image_verified=true）')
+        sys.exit(1 if total_fail else 0)
+
+    if args.docx_sha1_real:
+        import glob, hashlib
+        repo = Path(__file__).resolve().parents[2]
+        files = sorted(glob.glob(str(repo / 'assets/data/batches/realpaper_*.json')))
+        total_fail = 0
+        for f in files:
+            batch = json.loads(Path(f).read_text(encoding='utf-8'))
+            src_id = batch.get('source', Path(f).stem)
+            declared = batch.get('_source_docx_sha1')
+            if not declared:
+                # PET/英语 batch 不来自 docx，跳过
+                if 'english' in src_id or 'pet' in src_id:
+                    continue
+                total_fail += 1
+                print(f'❌ {src_id}: 缺 _source_docx_sha1 字段 (R34)')
+                continue
+            real_path = batch.get('_source_docx_path')
+            if not real_path:
+                total_fail += 1
+                print(f'❌ {src_id}: 缺 _source_docx_path 字段（hook 无法重算 sha1 验真）(R34)')
+                continue
+            p = Path(real_path).expanduser()
+            if not p.exists():
+                total_fail += 1
+                print(f'❌ {src_id}: _source_docx_path 文件不存在 {p} (R34)')
+                continue
+            real = hashlib.sha1(p.read_bytes()).hexdigest()[:16]
+            if real != declared:
+                total_fail += 1
+                print(f'❌ {src_id}: sha1 mismatch declared={declared} real={real} path={p} (R34)')
+        print(f'\n=== docx-sha1-real 总违纪 {total_fail} batch（R34 worker 入库前 assert real sha1 == declared）')
         sys.exit(1 if total_fail else 0)
 
     if args.group_chapter or args.group_kp:
