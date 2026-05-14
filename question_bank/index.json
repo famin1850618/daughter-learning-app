@@ -1,5 +1,5 @@
 {
-  "version": 106,
+  "version": 107,
   "updated_at": "2026-05-13T05:22:21.229267Z",
   "batches": [
     {
@@ -112,7 +112,7 @@
       "subject": "math",
       "grade": 6,
       "count": 76,
-      "batch_hash": "d35db1ca85d37683410e3bd7e763d11f7cd19703"
+      "batch_hash": "83e00704e3e8c5cb638ef8ddedc3bd9c7ba3506f"
     }
   ],
   "_changelog": [
