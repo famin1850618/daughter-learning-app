@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
+import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -1560,34 +1561,107 @@ class _RewardSummaryCard extends StatelessWidget {
   }
 }
 
-// V3.12.22 A3: 选项图渲染 helper（比题目图小，限制 100px 高度）
-Widget _renderOptionImage(String data) {
-  Widget child;
-  if (data.trimLeft().startsWith('<svg')) {
-    child = SvgPicture.string(data, height: 100, fit: BoxFit.contain,
-      placeholderBuilder: (_) => const SizedBox(height: 100,
-        child: Center(child: CircularProgressIndicator(strokeWidth: 2))),
-    );
-  } else if (data.startsWith('data:image/')) {
-    try {
-      final base64Str = data.split(',').last;
-      child = Image.memory(base64Decode(base64Str), height: 100, fit: BoxFit.contain);
-    } catch (_) {
-      child = const Text('（选项图加载失败）', style: TextStyle(color: Colors.grey, fontSize: 12));
-    }
-  } else {
-    child = const SizedBox.shrink();
-  }
-  return Align(alignment: Alignment.centerLeft, child: child);
+// V3.24.1 修图闪烁：StatelessWidget 每 build 重 base64Decode → MemoryImage 对象引用变 → Flutter 重画 → 闪。
+// 改 StatefulWidget initState 解码一次缓存 Uint8List + didUpdateWidget 仅 data 变才 re-decode + Image.memory gaplessPlayback。
+// SVG 路径走 SvgPicture.string 内部有缓存，不闪；只 base64 image 路径需要本修。
+
+class _OptionImage extends StatefulWidget {
+  final String data;
+  const _OptionImage({required this.data});
+
+  @override
+  State<_OptionImage> createState() => _OptionImageState();
 }
 
-// ── 题目附图（SVG 或 base64 image）───────────────
-class _QuestionImage extends StatelessWidget {
+class _OptionImageState extends State<_OptionImage> {
+  Uint8List? _bytes;
+
+  @override
+  void initState() {
+    super.initState();
+    _decode();
+  }
+
+  @override
+  void didUpdateWidget(_OptionImage old) {
+    super.didUpdateWidget(old);
+    if (old.data != widget.data) _decode();
+  }
+
+  void _decode() {
+    final d = widget.data;
+    if (d.startsWith('data:image/')) {
+      try {
+        _bytes = base64Decode(d.split(',').last);
+      } catch (_) {
+        _bytes = null;
+      }
+    } else {
+      _bytes = null;
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    Widget child;
+    if (widget.data.trimLeft().startsWith('<svg')) {
+      child = SvgPicture.string(widget.data, height: 100, fit: BoxFit.contain,
+        placeholderBuilder: (_) => const SizedBox(height: 100,
+          child: Center(child: CircularProgressIndicator(strokeWidth: 2))),
+      );
+    } else if (_bytes != null) {
+      child = Image.memory(_bytes!, height: 100, fit: BoxFit.contain, gaplessPlayback: true);
+    } else if (widget.data.startsWith('data:image/')) {
+      child = const Text('（选项图加载失败）', style: TextStyle(color: Colors.grey, fontSize: 12));
+    } else {
+      child = const SizedBox.shrink();
+    }
+    return Align(alignment: Alignment.centerLeft, child: child);
+  }
+}
+
+Widget _renderOptionImage(String data) => _OptionImage(data: data);
+
+// ── 题目附图（SVG 或 base64 image）─────────────── V3.24.1 修闪烁同上
+class _QuestionImage extends StatefulWidget {
   final String data;
   const _QuestionImage({required this.data});
 
   @override
+  State<_QuestionImage> createState() => _QuestionImageState();
+}
+
+class _QuestionImageState extends State<_QuestionImage> {
+  Uint8List? _bytes;
+
+  @override
+  void initState() {
+    super.initState();
+    _decode();
+  }
+
+  @override
+  void didUpdateWidget(_QuestionImage old) {
+    super.didUpdateWidget(old);
+    if (old.data != widget.data) _decode();
+  }
+
+  void _decode() {
+    final d = widget.data;
+    if (d.startsWith('data:image/')) {
+      try {
+        _bytes = base64Decode(d.split(',').last);
+      } catch (_) {
+        _bytes = null;
+      }
+    } else {
+      _bytes = null;
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
+    final data = widget.data;
     Widget child;
     if (data.trimLeft().startsWith('<svg')) {
       child = SvgPicture.string(
@@ -1598,13 +1672,10 @@ class _QuestionImage extends StatelessWidget {
             height: 180,
             child: Center(child: CircularProgressIndicator(strokeWidth: 2))),
       );
+    } else if (_bytes != null) {
+      child = Image.memory(_bytes!, height: 180, fit: BoxFit.contain, gaplessPlayback: true);
     } else if (data.startsWith('data:image/')) {
-      try {
-        final base64Str = data.split(',').last;
-        child = Image.memory(base64Decode(base64Str), height: 180, fit: BoxFit.contain);
-      } catch (_) {
-        child = const Text('图片加载失败', style: TextStyle(color: Colors.grey));
-      }
+      child = const Text('图片加载失败', style: TextStyle(color: Colors.grey));
     } else {
       child = const Text('（无法识别的图片格式）', style: TextStyle(color: Colors.grey));
     }
