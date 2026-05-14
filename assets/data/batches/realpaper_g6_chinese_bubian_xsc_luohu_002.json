@@ -1,10 +1,11 @@
 {
   "source": "realpaper_g6_chinese_bubian_xsc_luohu_002",
-  "_source_docx_sha1": "121df90c0b7d3e4d",
+  "_source_docx_sha1": "55b73377720c4abf",
+  "_source_docx_path": "/home/faminwsl/AI_Workspace/Planning/深圳真题/(真题)深圳6下语文/深圳语文小升初模拟押题真题卷/广东省深圳市罗湖区2021年六年级下册小升初语文检测考试卷（七）含答案部编版.docx",
   "_source_paper_title": "广东省深圳市罗湖区2021年小升初语文检测考试卷（七）",
   "subject": "chinese",
   "grade": 6,
-  "_workflow_version": "V3.22",
+  "_workflow_version": "V3.23.1",
   "knowledge_points_added": [
     "字词/字音字形",
     "古诗文/古诗词鉴赏",
@@ -15,9 +16,14 @@
     }
   ],
   "_quality_meta": {
-    "_v2_workflow_version": "V3.22",
-    "_note": "V3.22 R31 pilot 重扫：q4 4 子判断题（字音排序/修辞/描写/文常 跨 4 章节）→ 整组 chapter=综合练习, kp=综合练习, 恢复 group_id（旧 V3.21 错拆为 4 single）。q5/q6/q7 阅读组合 → chapter=阅读理解, kp=现代文阅读（共同材料，整组统一 KP，不对子题分细分 KP）。q2/q5(2)/q7(5)/q8/q9/q11/q12 跳过（图丢失/写作/标点空/开放题/输入法限制）。"
+    "_v2_workflow_version": "V3.23.1",
+    "_note": "V3.22 R31 pilot 重扫：q4 4 子判断题（字音排序/修辞/描写/文常 跨 4 章节）→ 整组 chapter=综合练习, kp=综合练习, 恢复 group_id（旧 V3.21 错拆为 4 single）。q5/q6/q7 阅读组合 → chapter=阅读理解, kp=现代文阅读（共同材料，整组统一 KP，不对子题分细分 KP）。q2/q5(2)/q7(5)/q8/q9/q11/q12 跳过（图丢失/写作/标点空/开放题/输入法限制）。",
+    "v3_23_rescan": true,
+    "rescan_date": "2026-05-15",
+    "rescan_changes": "更新 _source_docx_sha1 到 R34 全文件 sha1=55b73377720c4abf（旧值 121df90c0b7d3e4d 为 extract_docx 算法）；新增 _source_docx_path；新增 _random_sample_verified（空，本卷 0 含 image_data 题）。题目内容/round/group_id/chapter/KP 全部保持 V3.22 R31 pilot 结果（q4 跨章节判断组整组归 综合练习 已对，R31 关键测试题保留）。"
   },
+  "_random_sample_verified": [],
+  "_random_sample_verified_note": "本卷文字层完整，无题图依赖（extract_docx 仅识别 1 张 192-byte 装饰小图 image1.png，paragraph_image_map 为空，未绑任何题）。0 道含 image_data → R35 抽样验证空，R33 不触发。",
   "_skipped_for_future": [
     {
       "qnum": "2",

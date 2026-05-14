@@ -1,10 +1,11 @@
 {
   "source": "realpaper_g6_chinese_bubian_xsc_shenzhen_moni_001",
-  "_source_docx_sha1": "419fd8f10e7bf732",
+  "_source_docx_sha1": "b01c37cf991e06ac",
+  "_source_docx_path": "/home/faminwsl/AI_Workspace/Planning/深圳真题/(真题)深圳6下语文/深圳语文小升初模拟押题真题卷/精品解析：广东省深圳市2021年部编版小升初模拟考试语文试卷/精品解析：广东省深圳市2021年部编版小升初模拟考试语文试卷（原卷版）.docx",
   "_source_paper_title": "广东省深圳市2021年部编版小升初模拟考试语文试卷",
   "subject": "chinese",
   "grade": 6,
-  "_workflow_version": "V3.22",
+  "_workflow_version": "V3.23.1",
   "knowledge_points_added": [
     "字词/字音字形",
     "字词/词语理解",
@@ -14,15 +15,19 @@
     "阅读理解/现代文阅读"
   ],
   "_quality_meta": {
-    "_v2_workflow_version": "V3.22",
-    "_note": "V3.22 R31 入库：q1/q5 字词字音字形（choice）；q2 病句（choice）；q3 选词填空（choice）；q4 反义词（choice）；q6 古诗默写 form A 8 空 fill；q9-12 阅读理解《惊弓之鸟》form B 4 子题（共同材料 → chapter=阅读理解, kp=现代文阅读, 整组同 KP）。q7/q8/q13 跳过（开放主观/半命题作文）。docx 内嵌 4 张图均为装饰图标（标题段 / 题号锚点装饰），不归属任何题面，未入 image_data。",
-    "sha1": "419fd8f10e7bf732",
+    "_v2_workflow_version": "V3.23.1",
+    "_note": "V3.23.1 重扫（基于 V3.22 入库）：q1/q5 字词字音字形（choice）；q2 病句（choice）；q3 选词填空（choice）；q4 反义词（choice）；q6 古诗默写 form A 8 空 fill；q9-12 阅读理解《惊弓之鸟》form B 4 子题（共同材料 → chapter=阅读理解, kp=现代文阅读, 整组同 KP）。q7/q8/q13 跳过（开放主观/半命题作文）。docx 内嵌 5 张图：image1=学科网 logo 装饰、image2=200B 微型空白、image3/4/5=WMF 转 PNG 后空白页（hash 显示 image3 与 image5 重复），均为模板/页眉装饰，不归属任何题面，未入 image_data。R34 sha1 验真 PASS（real=b01c37cf991e06ac == declared）。R33/R35 vacuous（0 题含 image_data）。",
+    "sha1": "b01c37cf991e06ac",
     "paper_type": "xsc_moni",
     "questions_total_paper": 13,
     "questions_imported": 10,
     "questions_skipped": 3,
-    "groups_count": 2
+    "groups_count": 2,
+    "images_in_docx": 5,
+    "images_bound_to_questions": 0,
+    "images_verified": 5
   },
+  "_random_sample_verified": [],
   "_skipped_for_future": [
     {
       "qnum": "7",
@@ -133,7 +138,7 @@
       ],
       "answer": "C",
       "explanation": "A．「资势」应为「姿势」；B．「疑视」应为「凝视」，「一棵枣」应为「一颗枣」（量词「颗」用于颗粒状物体）。仅 C 项全部正确。",
-      "_raw_excerpt": "5. 下列词语书写全部正确一组是（   ）\nA. 资势           富饶               蝌蚪                 一瞬间\nB. 潮湿           钓鱼               疑视                 一棵枣\nC. 茫然           蜡烛               郊外                 雾蒙蒙"
+      "_raw_excerpt": "5. 下列词语书写全部正确一组是（   ）\nA 资势           富饶               蝌蚪                 一瞬间\nB. 潮湿           钓鱼               疑视                 一棵枣\nC. 茫然           蜡烛               郊外                 雾蒙蒙"
     },
     {
       "subject": "chinese",
@@ -157,7 +162,7 @@
         "任尔东西南北风"
       ],
       "explanation": "①-④ 出自《淮南子》：「苟利于民，不必法古；苟周于事，不必循旧」（只要对人民有好处，就不必效法古人；只要有助于事情成功，就不必沿袭旧制）。⑤-⑥ 出自杜甫《闻官军收河南河北》开篇：「剑外忽传收蓟北，初闻涕泪满衣裳」。⑦-⑧ 出自郑燮（郑板桥）《竹石》：「千磨万击还坚劲，任尔东西南北风」。",
-      "_raw_excerpt": "6. 根据课文内容填空\n习主席在出席2018年博鳌亚洲论坛开幕会，讲到变革创新时，他引用《淮南子》中的一句话：_____，_____；____，___。来说明变革创新是推动人类社会向前发展的动力；《闻官军收河南河北》中，表达作者在听到失地收复时喜极而泣的诗句是：______，______；四川地震让很多小朋友失去了家园，请你用《竹石》中的一句话鼓励他们坚强吧：____，______。"
+      "_raw_excerpt": "6. 根据课文内容填空。\n习主席在出席2018年博鳌亚洲论坛开幕会，讲到变革创新时，他引用《淮南子》中的一句话：_____，_____；____，___。来说明变革创新是推动人类社会向前发展的动力；《闻官军收河南河北》中，表达作者在听到失地收复时喜极而泣的诗句是：______，______；四川地震让很多小朋友失去了家园，请你用《竹石》中的一句话鼓励他们坚强吧：____，______。"
     },
     {
       "subject": "chinese",
