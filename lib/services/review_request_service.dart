@@ -1,4 +1,6 @@
+import 'dart:convert';
 import 'package:flutter/foundation.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../database/question_dao.dart';
 import '../database/review_request_dao.dart';
 import '../models/question.dart';
@@ -219,10 +221,12 @@ class ReviewRequestService extends ChangeNotifier {
 
   /// 审核通过 - 副作用全套
   /// [score]：主观题必传；申诉类传 null
+  /// [issueType]：V3.24 家长选问题类型（题目有误/答案有误/半主观题/none），写 audit_feedback log 让 agent 处理
   Future<void> approve({
     required int requestId,
     String? parentNote,
     SubjectiveScore? score,
+    ReviewIssueType issueType = ReviewIssueType.none,
   }) async {
     final req = await _dao.findById(requestId);
     if (req == null || req.status != ReviewRequestStatus.pending) return;
@@ -263,8 +267,18 @@ class ReviewRequestService extends ChangeNotifier {
       status: ReviewRequestStatus.approved,
       parentNote: parentNote,
       parentScore: score,
+      issueType: issueType,
       reviewedAt: DateTime.now(),
     );
+
+    // 2.5) V3.24: issue_type != none → 写 audit feedback log（agent 后续处理）
+    if (issueType != ReviewIssueType.none) {
+      await _appendAuditFeedback(
+        req: req,
+        issueType: issueType,
+        parentNote: parentNote,
+      );
+    }
 
     // 3) UPDATE practice_records.is_correct（subjective 默认 false，approve 后视评分调整）
     // V3.13 修正：aiDispute 无关联 record，跳过
@@ -293,6 +307,58 @@ class ReviewRequestService extends ChangeNotifier {
     ));
 
     await refresh();
+  }
+
+  // ── V3.24 audit feedback log（本地累积，"现在处理审核反馈"按钮导出给 agent）──
+
+  static const _kAuditFeedbackLog = 'audit_feedback_log_jsonl';
+
+  Future<void> _appendAuditFeedback({
+    required ReviewRequest req,
+    required ReviewIssueType issueType,
+    String? parentNote,
+  }) async {
+    final question = await _qDao.findById(req.questionId);
+    final entry = {
+      'ts': DateTime.now().toIso8601String(),
+      'request_id': req.id,
+      'question_id': req.questionId,
+      'source': question?.source,
+      'chapter': question?.chapter,
+      'kp': question?.knowledgePoint,
+      'issue_type': issueType.key,
+      'issue_label': issueType.label,
+      'parent_note': parentNote,
+      'standard_answer': req.standardAnswer,
+      'user_answer': req.userAnswer,
+      'q_content_snippet': question?.content.substring(
+          0, question.content.length > 200 ? 200 : question.content.length),
+    };
+    final prefs = await SharedPreferences.getInstance();
+    final existing = prefs.getString(_kAuditFeedbackLog) ?? '';
+    final updated = existing.isEmpty
+        ? jsonEncode(entry)
+        : '$existing\n${jsonEncode(entry)}';
+    await prefs.setString(_kAuditFeedbackLog, updated);
+  }
+
+  /// V3.24 设置页"现在处理审核反馈"按钮调：导出全部待处理条目（JSONL 字符串）
+  Future<String> exportAuditFeedbackLog() async {
+    final prefs = await SharedPreferences.getInstance();
+    return prefs.getString(_kAuditFeedbackLog) ?? '';
+  }
+
+  /// V3.24 清空 audit log（agent 处理完成后由用户在设置页确认清空）
+  Future<void> clearAuditFeedbackLog() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.remove(_kAuditFeedbackLog);
+  }
+
+  /// V3.24 audit log 待处理条数（设置页 badge 用）
+  Future<int> auditFeedbackPendingCount() async {
+    final log = await exportAuditFeedbackLog();
+    if (log.isEmpty) return 0;
+    return log.split('\n').length;
   }
 
   /// 审核驳回 - 仅状态更新（subjective fail 等价于 reject 也可以，但这里保留 reject 让家长直接驳回 = 不打分）

@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 29,
+      version: 30,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
@@ -29,6 +29,14 @@ class DatabaseHelper {
   }
 
   Future<void> _onUpgrade(Database db, int oldVersion, int newVersion) async {
+    if (oldVersion < 30) {
+      // v30: V3.24 家长审核加 issue_type 字段（题目有误/答案有误/半主观题/无问题）
+      // approve 后写 audit feedback log 让 agent 处理（题库修订工作流）
+      try {
+        await db.execute('ALTER TABLE review_requests ADD COLUMN issue_type TEXT');
+      } catch (_) {/* 已有则跳 */}
+    }
+
     if (oldVersion < 29) {
       // v29: V3.23 总复习章并入综合练习（Famin 2026-05-13 决策："总复习没什么边界，都放综合练习"）
       // 1. curriculum 表：删数学 g6 总复习章（如还在）
@@ -899,6 +907,7 @@ class DatabaseHelper {
         child_note TEXT,
         parent_note TEXT,
         parent_score TEXT,
+        issue_type TEXT,
         created_at TEXT NOT NULL,
         reviewed_at TEXT,
         user_id TEXT DEFAULT 'local'

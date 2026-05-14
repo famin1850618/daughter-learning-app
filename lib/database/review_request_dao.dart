@@ -99,6 +99,7 @@ class ReviewRequestDao {
     required ReviewRequestStatus status,
     String? parentNote,
     SubjectiveScore? parentScore,
+    ReviewIssueType? issueType,
     required DateTime reviewedAt,
   }) async {
     final db = await _helper.database;
@@ -108,6 +109,7 @@ class ReviewRequestDao {
     };
     if (parentNote != null) values['parent_note'] = parentNote;
     if (parentScore != null) values['parent_score'] = parentScore.key;
+    if (issueType != null) values['issue_type'] = issueType.key;
     await db.update(
       'review_requests',
       values,

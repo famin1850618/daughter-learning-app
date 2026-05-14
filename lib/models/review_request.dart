@@ -13,6 +13,12 @@ enum ReviewRequestStatus { pending, approved, rejected }
 /// 主观题家长评分档位（appeal 类型为 null）
 enum SubjectiveScore { perfect, good, pass, fail }
 
+/// V3.24 审核通过时家长选问题类型，approve 后写 audit feedback log 让 agent 处理。
+/// - questionWrong：题目本身有误（题面缺信息/印刷错/选项数与空数不匹配等）→ agent 查 docx 修 content
+/// - answerWrong：参考答案错（standard_answer 与正解不符）→ agent 重做验证 answer
+/// - semiSubjective：半主观题（答案表述灵活）→ agent 仅打 is_semi_subjective=true 标记，不动答案
+enum ReviewIssueType { none, questionWrong, answerWrong, semiSubjective }
+
 extension ReviewRequestTypeExt on ReviewRequestType {
   String get key {
     switch (this) {
@@ -61,6 +67,35 @@ extension ReviewRequestStatusExt on ReviewRequestStatus {
       case 'approved': return ReviewRequestStatus.approved;
       case 'rejected': return ReviewRequestStatus.rejected;
       default: return ReviewRequestStatus.pending;
+    }
+  }
+}
+
+extension ReviewIssueTypeExt on ReviewIssueType {
+  String get key {
+    switch (this) {
+      case ReviewIssueType.none: return 'none';
+      case ReviewIssueType.questionWrong: return 'question_wrong';
+      case ReviewIssueType.answerWrong: return 'answer_wrong';
+      case ReviewIssueType.semiSubjective: return 'semi_subjective';
+    }
+  }
+
+  String get label {
+    switch (this) {
+      case ReviewIssueType.none: return '无问题';
+      case ReviewIssueType.questionWrong: return '题目有误';
+      case ReviewIssueType.answerWrong: return '答案有误';
+      case ReviewIssueType.semiSubjective: return '半主观题';
+    }
+  }
+
+  static ReviewIssueType fromKey(String? s) {
+    switch (s) {
+      case 'question_wrong': return ReviewIssueType.questionWrong;
+      case 'answer_wrong': return ReviewIssueType.answerWrong;
+      case 'semi_subjective': return ReviewIssueType.semiSubjective;
+      default: return ReviewIssueType.none;
     }
   }
 }
@@ -125,6 +160,8 @@ class ReviewRequest {
   final String? parentNote;
   /// 主观题评分（appeal 类型为 null）
   final SubjectiveScore? parentScore;
+  /// V3.24 审核通过时家长选的问题类型（rejected 时为 none；appeal/aiDispute approve 必选；subjectiveGrading 不用）
+  final ReviewIssueType issueType;
   final DateTime createdAt;
   final DateTime? reviewedAt;
 
@@ -140,6 +177,7 @@ class ReviewRequest {
     this.childNote,
     this.parentNote,
     this.parentScore,
+    this.issueType = ReviewIssueType.none,
     required this.createdAt,
     this.reviewedAt,
   });
@@ -156,6 +194,7 @@ class ReviewRequest {
         'child_note': childNote,
         'parent_note': parentNote,
         'parent_score': parentScore?.key,
+        'issue_type': issueType.key,
         'created_at': createdAt.toIso8601String(),
         'reviewed_at': reviewedAt?.toIso8601String(),
       };
@@ -173,6 +212,7 @@ class ReviewRequest {
         childNote: m['child_note'] as String?,
         parentNote: m['parent_note'] as String?,
         parentScore: SubjectiveScoreExt.fromKey(m['parent_score'] as String?),
+        issueType: ReviewIssueTypeExt.fromKey(m['issue_type'] as String?),
         createdAt: DateTime.parse(m['created_at'] as String),
         reviewedAt: m['reviewed_at'] == null
             ? null
@@ -183,6 +223,7 @@ class ReviewRequest {
     ReviewRequestStatus? status,
     String? parentNote,
     SubjectiveScore? parentScore,
+    ReviewIssueType? issueType,
     DateTime? reviewedAt,
   }) =>
       ReviewRequest(
@@ -197,6 +238,7 @@ class ReviewRequest {
         childNote: childNote,
         parentNote: parentNote ?? this.parentNote,
         parentScore: parentScore ?? this.parentScore,
+        issueType: issueType ?? this.issueType,
         createdAt: createdAt,
         reviewedAt: reviewedAt ?? this.reviewedAt,
       );

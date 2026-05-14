@@ -460,39 +460,73 @@ class _ReviewCardState extends State<_ReviewCard> {
   Future<void> _confirm(BuildContext context, ReviewRequest req,
       {required bool approve}) async {
     final ctrl = TextEditingController();
+    ReviewIssueType selectedIssue = ReviewIssueType.none;
     final ok = await showDialog<bool>(
       context: context,
-      builder: (ctx) => AlertDialog(
-        title: Text(approve ? '审核通过？' : '驳回申诉？'),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(approve
-                ? '通过后，小孩的这道题改为对的，并补 0.5⭐。'
-                : '驳回后，错题状态保持，小孩看到驳回结果。'),
-            const SizedBox(height: 12),
-            TextField(
-              controller: ctrl,
-              maxLines: 3,
-              decoration: const InputDecoration(
-                hintText: '备注（可空，会展示给小孩看）',
-                border: OutlineInputBorder(),
-              ),
+      builder: (ctx) => StatefulBuilder(
+        builder: (ctx, setSt) => AlertDialog(
+          title: Text(approve ? '审核通过？' : '驳回申诉？'),
+          content: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(approve
+                    ? '通过后，小孩的这道题改为对的，并补 0.5⭐。'
+                    : '驳回后，错题状态保持，小孩看到驳回结果。'),
+                if (approve) ...[
+                  const SizedBox(height: 14),
+                  const Text('问题类型（V3.24）：',
+                      style: TextStyle(fontSize: 13, color: Colors.grey)),
+                  const SizedBox(height: 4),
+                  DropdownButtonFormField<ReviewIssueType>(
+                    value: selectedIssue,
+                    isExpanded: true,
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                    ),
+                    items: const [
+                      DropdownMenuItem(value: ReviewIssueType.none, child: Text('无问题（仅判错申诉通过）')),
+                      DropdownMenuItem(value: ReviewIssueType.questionWrong, child: Text('题目有误（题面缺信息/印刷错）')),
+                      DropdownMenuItem(value: ReviewIssueType.answerWrong, child: Text('答案有误（标准答案错）')),
+                      DropdownMenuItem(value: ReviewIssueType.semiSubjective, child: Text('半主观题（答案表述灵活）')),
+                    ],
+                    onChanged: (v) => setSt(() => selectedIssue = v ?? ReviewIssueType.none),
+                  ),
+                  if (selectedIssue != ReviewIssueType.none) ...[
+                    const SizedBox(height: 6),
+                    Text(
+                      '→ 选择后将写入 audit feedback，下次"现在处理审核反馈"时 agent 会${selectedIssue == ReviewIssueType.semiSubjective ? "给本题打半主观题标记" : "查原 docx 修题库"}',
+                      style: const TextStyle(fontSize: 12, color: Colors.orange),
+                    ),
+                  ],
+                ],
+                const SizedBox(height: 12),
+                TextField(
+                  controller: ctrl,
+                  maxLines: 3,
+                  decoration: const InputDecoration(
+                    hintText: '备注（可空，会展示给小孩看）',
+                    border: OutlineInputBorder(),
+                  ),
+                ),
+              ],
             ),
+          ),
+          actions: [
+            TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text('取消')),
+            TextButton(onPressed: () => Navigator.pop(ctx, true), child: const Text('确认')),
           ],
         ),
-        actions: [
-          TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text('取消')),
-          TextButton(onPressed: () => Navigator.pop(ctx, true), child: const Text('确认')),
-        ],
       ),
     );
     if (ok != true || !context.mounted) return;
     final note = ctrl.text.trim().isEmpty ? null : ctrl.text.trim();
     final svc = context.read<ReviewRequestService>();
     if (approve) {
-      await svc.approve(requestId: req.id!, parentNote: note);
+      await svc.approve(
+          requestId: req.id!, parentNote: note, issueType: selectedIssue);
     } else {
       await svc.reject(requestId: req.id!, parentNote: note);
     }

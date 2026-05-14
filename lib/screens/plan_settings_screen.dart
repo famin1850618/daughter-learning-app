@@ -104,6 +104,14 @@ class _PlanSettingsScreenState extends State<PlanSettingsScreen> {
           const _SyncSection(),
           const SizedBox(height: 16),
 
+          // ── V3.24 家长审核反馈 audit log ────────────
+          _SectionHeader(
+            title: '家长审核反馈',
+            subtitle: '审核通过时选了"题目有误/答案有误/半主观题"的条目会累积在这里，复制 prompt 给 Claude 派 agent 修题库。',
+          ),
+          const _AuditFeedbackSection(),
+          const SizedBox(height: 16),
+
           // ── 数据导出与备份 ────────────────────
           _SectionHeader(
             title: '数据导出与备份',
@@ -586,6 +594,162 @@ class _SyncSectionState extends State<_SyncSection> {
             ],
           ],
         ),
+      ),
+    );
+  }
+}
+
+/// V3.24 家长审核反馈 audit log section
+class _AuditFeedbackSection extends StatefulWidget {
+  const _AuditFeedbackSection();
+
+  @override
+  State<_AuditFeedbackSection> createState() => _AuditFeedbackSectionState();
+}
+
+class _AuditFeedbackSectionState extends State<_AuditFeedbackSection> {
+  int _count = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    _refresh();
+  }
+
+  Future<void> _refresh() async {
+    final svc = context.read<ReviewRequestService>();
+    final c = await svc.auditFeedbackPendingCount();
+    if (mounted) setState(() => _count = c);
+  }
+
+  Future<void> _showProcessDialog() async {
+    final svc = context.read<ReviewRequestService>();
+    final log = await svc.exportAuditFeedbackLog();
+    if (!mounted) return;
+    if (log.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('暂无待处理审核反馈')),
+      );
+      return;
+    }
+    // 构造 prompt
+    final prompt = '''你是 daughter_learning_app 的 audit-feedback-processor agent。
+
+请按 audit feedback log 分类处理三类问题（题目有误/答案有误/半主观题），完整流程见 ~/.claude/skills/audit-feedback-processor/SKILL.md。
+
+【Audit Feedback Log（${log.split('\n').length} 条）】
+$log
+
+【处理方针】
+- 能直接修题库的（半主观题打标记、答案明确错的）→ patch batch JSON + commit
+- 不能确认的（题目有误需查原 docx 但无可读源 / 答案有误但争议大）→ 写 ~/AI_Workspace/Planning/audit_pending_famin.md 等 Famin 决策
+- 完成后报告 done/pending 分布
+
+工作 repo: /home/faminwsl/daughter_learning_app''';
+
+    await showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('处理审核反馈'),
+        content: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Text('1. 复制下方 prompt'),
+              const Text('2. 粘贴到 Claude Code 主对话'),
+              const Text('3. Claude 派 agent 处理并报告'),
+              const Text('4. 确认无误后回来点"清空已处理"'),
+              const SizedBox(height: 12),
+              Container(
+                padding: const EdgeInsets.all(8),
+                decoration: BoxDecoration(
+                  color: Colors.grey.shade100,
+                  borderRadius: BorderRadius.circular(6),
+                ),
+                child: SelectableText(
+                  prompt,
+                  style: const TextStyle(fontFamily: 'monospace', fontSize: 11),
+                ),
+              ),
+            ],
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () async {
+              await Clipboard.setData(ClipboardData(text: prompt));
+              if (ctx.mounted) {
+                ScaffoldMessenger.of(ctx).showSnackBar(
+                  const SnackBar(content: Text('Prompt 已复制到剪贴板')),
+                );
+              }
+            },
+            child: const Text('复制 Prompt'),
+          ),
+          TextButton(
+            onPressed: () async {
+              final confirm = await showDialog<bool>(
+                context: ctx,
+                builder: (c) => AlertDialog(
+                  title: const Text('清空已处理？'),
+                  content: const Text('确认 agent 已处理完毕？清空后无法恢复。'),
+                  actions: [
+                    TextButton(onPressed: () => Navigator.pop(c, false), child: const Text('取消')),
+                    TextButton(onPressed: () => Navigator.pop(c, true), child: const Text('清空')),
+                  ],
+                ),
+              );
+              if (confirm == true) {
+                await svc.clearAuditFeedbackLog();
+                if (ctx.mounted) Navigator.pop(ctx);
+                await _refresh();
+                if (mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('audit log 已清空')),
+                  );
+                }
+              }
+            },
+            child: const Text('清空已处理'),
+          ),
+          TextButton(onPressed: () => Navigator.pop(ctx), child: const Text('关闭')),
+        ],
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: ListTile(
+        leading: Stack(
+          children: [
+            const Icon(Icons.fact_check, color: AppTheme.primary),
+            if (_count > 0)
+              Positioned(
+                right: 0,
+                top: 0,
+                child: Container(
+                  padding: const EdgeInsets.all(2),
+                  decoration: const BoxDecoration(
+                    color: Colors.red,
+                    shape: BoxShape.circle,
+                  ),
+                  constraints: const BoxConstraints(minWidth: 14, minHeight: 14),
+                  child: Text(
+                    '$_count',
+                    style: const TextStyle(color: Colors.white, fontSize: 9),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
+          ],
+        ),
+        title: const Text('现在处理审核反馈'),
+        subtitle: Text(_count == 0 ? '暂无待处理' : '$_count 条等候 agent 处理'),
+        trailing: const Icon(Icons.arrow_forward_ios, size: 14),
+        onTap: _showProcessDialog,
       ),
     );
   }
