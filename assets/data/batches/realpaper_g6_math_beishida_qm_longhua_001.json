@@ -125,7 +125,7 @@
       "subject": "math",
       "grade": 6,
       "source": "realpaper_g6_math_beishida_qm_longhua_001",
-      "round": null,
+      "round": 1,
       "type": "fill",
       "chapter": "综合练习",
       "knowledge_point": "综合练习",
@@ -135,7 +135,8 @@
       "answer": "240",
       "explanation": "两边同时加 $14.2$：$\\frac{x}{12}=20$；再两边同时乘 $12$：$x=240$。",
       "_common_prefix_raw": "2．（9分）解方程。",
-      "_raw_excerpt": "2．（9分）解方程。\n（1）14.2＝5.8\n  [OMATH: $\\frac{x}{12}-$]\n（2）1.2x﹣50%x＝35\n（3）1.8：x\n  [OMATH: $=\\frac{1}{2}：\\frac{5}{6}$]"
+      "_raw_excerpt": "2．（9分）解方程。\n（1）14.2＝5.8\n  [OMATH: $\\frac{x}{12}-$]\n（2）1.2x﹣50%x＝35\n（3）1.8：x\n  [OMATH: $=\\frac{1}{2}：\\frac{5}{6}$]",
+      "_round_source": "d2_math_fallback_v1"
     },
     {
       "subject": "math",
@@ -258,14 +259,15 @@
       "subject": "math",
       "grade": 6,
       "source": "realpaper_g6_math_beishida_qm_longhua_001",
-      "round": null,
+      "round": 1,
       "type": "fill",
       "chapter": "综合练习",
       "knowledge_point": "综合练习",
       "content": "据报道，$2025$ 年“五一”假期前三天（$5$ 月 $1$～$3$ 日），大梅沙海滨公园入园约达 $467420$ 人次，把横线上的数改写成以“万”为单位的数是（    ）。仅 $5$ 月 $2$ 日这一天，游客数量就约达二十一万二千四百二十人次，横线上的数写作（    ）。",
       "answer": "46.742万,212420",
       "explanation": "$467420=46.742\\times 10000$，故 $467420$ 人改写成以“万”为单位的数是 $46.742$ 万。二十一万二千四百二十按从高位到低位写作 $212420$。",
-      "_raw_excerpt": "8．（3分）据报道，2025年“五一”假期前三天（5月1～3日），大梅沙海滨公园入园约达467420人次，把横线上的数改写成以“万”为单位的数是 　          　 。仅5月2日这一天，游客数量就约达二十一万二千四百二十人次，横线上的数写作 　         　 。"
+      "_raw_excerpt": "8．（3分）据报道，2025年“五一”假期前三天（5月1～3日），大梅沙海滨公园入园约达467420人次，把横线上的数改写成以“万”为单位的数是 　          　 。仅5月2日这一天，游客数量就约达二十一万二千四百二十人次，横线上的数写作 　         　 。",
+      "_round_source": "d2_math_fallback_v1"
     },
     {
       "subject": "math",
@@ -332,7 +334,7 @@
       "subject": "math",
       "grade": 6,
       "source": "realpaper_g6_math_beishida_qm_longhua_001",
-      "round": null,
+      "round": 1,
       "type": "fill",
       "chapter": "圆柱与圆锥",
       "knowledge_point": "圆柱与圆锥/圆锥的体积",
@@ -340,7 +342,8 @@
       "answer": "1",
       "explanation": "圆锥沙堆底面半径 $r=12.56\\div 3.14\\div 2=2$ 米。体积 $V=\\frac{1}{3}\\pi r^2 h=\\frac{1}{3}\\times 3.14\\times 4\\times 3=12.56$ 立方米。铺在长方形沙坑里：厚度 $=$ 体积 $\\div$ 底面积 $=12.56\\div (4\\times 3.14)=12.56\\div 12.56=1$ 米。",
       "_image_skip_reason": "text_self_contained_image_decorative",
-      "_raw_excerpt": "14．（3分）某游乐场有一个圆锥形的沙堆，它的高是3米，底面周长是12.56米。现在要把这些沙子铺在长4米，宽是3.14米的长方形沙坑里面，这些沙可以铺的厚度是 　   　 米。（π取3.14计算）"
+      "_raw_excerpt": "14．（3分）某游乐场有一个圆锥形的沙堆，它的高是3米，底面周长是12.56米。现在要把这些沙子铺在长4米，宽是3.14米的长方形沙坑里面，这些沙可以铺的厚度是 　   　 米。（π取3.14计算）",
+      "_round_source": "d2_math_fallback_v1"
     },
     {
       "subject": "math",

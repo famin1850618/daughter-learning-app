@@ -90,7 +90,7 @@
       "subject": "math",
       "grade": 6,
       "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
-      "round": null,
+      "round": 1,
       "type": "fill",
       "chapter": "综合练习",
       "knowledge_point": "综合练习",
@@ -99,7 +99,8 @@
       "content": "阅读下面信息，按要求填写。\n\n第二产业增加值为 $11338.59$ 亿元。\n\n2. $11338.59$ 这个数中「$9$」表示 $9$ 个（　　）。",
       "answer": "百分之一",
       "explanation": "$11338.59$ 中小数点后第二位（百分位）上的数字 $9$，表示 $9$ 个百分之一。",
-      "_raw_excerpt": "（2）第二产业增加值为11338.59亿元。11338.59这个数中“9”表示9个 　       　。"
+      "_raw_excerpt": "（2）第二产业增加值为11338.59亿元。11338.59这个数中“9”表示9个 　       　。",
+      "_round_source": "d2_math_fallback_v1"
     },
     {
       "subject": "math",
@@ -136,14 +137,15 @@
       "subject": "math",
       "grade": 6,
       "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
-      "round": null,
+      "round": 1,
       "type": "fill",
       "chapter": "数学好玩",
       "knowledge_point": "数学好玩/探索图形规律",
       "content": "按规律填数：$4$，$9$，$16$，（　　），$36$，$49$，（　　）。",
       "answer": "25,64",
       "explanation": "此为平方数列：$2^2,3^2,4^2,5^2,6^2,7^2,8^2$。空格分别填 $5^2=25$ 与 $8^2=64$。",
-      "_raw_excerpt": "4．（2分）按规律填数：4，9，16，　     　，36，49，　     　。"
+      "_raw_excerpt": "4．（2分）按规律填数：4，9，16，　     　，36，49，　     　。",
+      "_round_source": "d2_math_fallback_v1"
     },
     {
       "subject": "math",
@@ -270,7 +272,7 @@
       "subject": "math",
       "grade": 6,
       "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
-      "round": null,
+      "round": 4,
       "type": "choice",
       "chapter": "圆柱与圆锥",
       "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
@@ -283,7 +285,8 @@
       ],
       "answer": "C",
       "explanation": "设圆锥底面积 $s$、高 $h_1$；圆柱底面积 $3s$、高 $h_2$。体积相等：$\\dfrac{1}{3}\\cdot s\\cdot h_1=3s\\cdot h_2$。化简：$h_1=9h_2$，故 $h_1:h_2=9:1$。选 C。",
-      "_raw_excerpt": "14．（2分）一个圆柱与圆锥体的体积相等，圆柱的底面积是圆锥体的底面积的3倍，圆锥体的高与圆柱的高的比为（　　）\nA．3：1\tB．1：3\tC．9：1\tD．1：9"
+      "_raw_excerpt": "14．（2分）一个圆柱与圆锥体的体积相等，圆柱的底面积是圆锥体的底面积的3倍，圆锥体的高与圆柱的高的比为（　　）\nA．3：1\tB．1：3\tC．9：1\tD．1：9",
+      "_round_source": "d2_math_fallback_v1"
     },
     {
       "subject": "math",
@@ -458,7 +461,7 @@
       "subject": "math",
       "grade": 6,
       "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
-      "round": null,
+      "round": 1,
       "type": "fill",
       "chapter": "图形的运动",
       "knowledge_point": "图形的运动/图形放大缩小",
@@ -470,7 +473,8 @@
       "explanation": "若边长按 $2:1$ 放大，则面积按 $2^2:1^2=4:1$ 放大。故面积比 $C:B=4:1$。",
       "_raw_excerpt": "（3）放大后的三角形C与原来三角形B的面积比是 　   　：　   　。",
       "_image_verified": true,
-      "_image_verified_note": "图内容='方格纸 + 三角形 A + 旋转中心 O'（与 q22 子题 1 共用），与题面'三角形 A 绕 O 点旋转'相符"
+      "_image_verified_note": "图内容='方格纸 + 三角形 A + 旋转中心 O'（与 q22 子题 1 共用），与题面'三角形 A 绕 O 点旋转'相符",
+      "_round_source": "d2_math_fallback_v1"
     },
     {
       "subject": "math",
@@ -513,20 +517,21 @@
       "subject": "math",
       "grade": 6,
       "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
-      "round": null,
+      "round": 2,
       "type": "fill",
       "chapter": "正比例和反比例",
       "knowledge_point": "正比例和反比例/比例尺",
       "content": "在比例尺是 $1:2000000$ 的交通地图上，量得深圳光明城站到广州南站的长度约 $5$ 厘米。从光明城站开往广州南站的 $G6258$ 动车每小时约行 $217$ 千米。$G6258$ 动车从光明城运行到广州南站大约需要（　　）小时。（列车途中不停留，得数保留两位小数）",
       "answer": "0.46",
       "explanation": "实际距离 $=$ 图上距离 $\\div$ 比例尺 $=5\\div\\dfrac{1}{2000000}=10000000$ 厘米 $=100$ 千米。所需时间 $=100\\div 217\\approx 0.46$ 小时。",
-      "_raw_excerpt": "25．（6分）在比例尺是1：2000000的交通地图上，量得深圳光明城站到广州南站的长度约5厘米。从光明城站开往广州南站的G6258动车每小时约行217千米，G6258动车从光明城运行到广州南站大约需要多少小时？（列车途中不停留，得数保留两位小数）"
+      "_raw_excerpt": "25．（6分）在比例尺是1：2000000的交通地图上，量得深圳光明城站到广州南站的长度约5厘米。从光明城站开往广州南站的G6258动车每小时约行217千米，G6258动车从光明城运行到广州南站大约需要多少小时？（列车途中不停留，得数保留两位小数）",
+      "_round_source": "d2_math_fallback_v1"
     },
     {
       "subject": "math",
       "grade": 6,
       "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
-      "round": null,
+      "round": 1,
       "type": "fill",
       "chapter": "综合练习",
       "knowledge_point": "综合练习",
@@ -539,13 +544,14 @@
       "_raw_excerpt": "26．（10分）某学校六年级数学测试结果以等级呈现，分A、B、C、D四个等级，在一次模拟测试后，绘制成如两幅不完整的统计图。\n（1）这次调查共抽取了 　     　名学生的数学成绩。",
       "_common_prefix_raw": "26．（10分）某学校六年级数学测试结果分A、B、C、D四个等级。统计图：条形图 A=9, B=27, C=4；扇形图 A 占 20%。共四问：(1)抽样人数、(2)B 占百分比、(3)补条形图、(4)估计 900 人中 D 等学生数。",
       "_image_verified": true,
-      "_image_verified_note": "图内容='条形图（A=9,B=27,C=4）+ 扇形图（A 占 20%）'，与题面'两幅不完整的统计图'相符"
+      "_image_verified_note": "图内容='条形图（A=9,B=27,C=4）+ 扇形图（A 占 20%）'，与题面'两幅不完整的统计图'相符",
+      "_round_source": "d2_math_fallback_v1"
     },
     {
       "subject": "math",
       "grade": 6,
       "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
-      "round": null,
+      "round": 1,
       "type": "fill",
       "chapter": "综合练习",
       "knowledge_point": "综合练习",
@@ -557,13 +563,14 @@
       "explanation": "$\\dfrac{27}{45}\\times 100\\%=60\\%$。",
       "_raw_excerpt": "（2）B等级的学生人数占抽样学生人数的 　      　。（填百分数）",
       "_image_verified": true,
-      "_image_verified_note": "图内容='条形图 + 扇形图'（与 q26 子题 1 共用），与题面相符"
+      "_image_verified_note": "图内容='条形图 + 扇形图'（与 q26 子题 1 共用），与题面相符",
+      "_round_source": "d2_math_fallback_v1"
     },
     {
       "subject": "math",
       "grade": 6,
       "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
-      "round": null,
+      "round": 1,
       "type": "fill",
       "chapter": "综合练习",
       "knowledge_point": "综合练习",
@@ -575,7 +582,8 @@
       "explanation": "$D$ 等级人数 $=45-9-27-4=5$ 人，占 $\\dfrac{5}{45}=\\dfrac{1}{9}$。估计 $900\\times\\dfrac{1}{9}=100$ 名学生。",
       "_raw_excerpt": "（4）如果该校六年级有900名学生，这次模拟测试大约有 　      　名学生的数学成绩为D等。",
       "_image_verified": true,
-      "_image_verified_note": "图内容='条形图 + 扇形图'（与 q26 子题 1 共用），与题面相符"
+      "_image_verified_note": "图内容='条形图 + 扇形图'（与 q26 子题 1 共用），与题面相符",
+      "_round_source": "d2_math_fallback_v1"
     }
   ],
   "_v2_workflow_version": "V3.23.1",
