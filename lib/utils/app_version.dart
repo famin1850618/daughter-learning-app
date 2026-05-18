@@ -6,5 +6,5 @@
 ///
 /// 两处不一致时以本文件为准（UI 显示），但发 APK 时 pubspec 也要 bump 否则
 /// versionCode 不递增、用户系统升级提示失效。
-const String kAppVersion = 'V3.24.5';
+const String kAppVersion = 'V3.24.8';
 const String kAppBuildDate = '2026-05-18';

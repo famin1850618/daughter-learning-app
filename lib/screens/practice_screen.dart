@@ -580,6 +580,11 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                         style: const TextStyle(fontSize: 12.5, height: 1.5)),
                   ),
                 ],
+                // V3.24.8: 组合题每个错子题独立申诉入口（修盲区）
+                if (!r.isCorrect && r.question.type != QuestionType.subjective) ...[
+                  const SizedBox(height: 8),
+                  _InlineAppealButton(recordIdOverride: r.practiceRecordId),
+                ],
               ],
             ),
           );
@@ -1255,12 +1260,16 @@ class _QuestionScreenState extends State<_QuestionScreen> {
 }
 
 /// V3.8.3：答题完成页错题旁的"申诉"快捷按钮（练习中实时申诉）
+/// V3.24.8: 组合题汇总屏每个错子题独立申诉，传 recordIdOverride
 class _InlineAppealButton extends StatelessWidget {
+  final int? recordIdOverride;
+  const _InlineAppealButton({this.recordIdOverride});
+
   @override
   Widget build(BuildContext context) {
     final practice = context.watch<PracticeService>();
     final review = context.watch<ReviewRequestService>();
-    final recordId = practice.lastSubmittedRecordId;
+    final recordId = recordIdOverride ?? practice.lastSubmittedRecordId;
     if (recordId == null) return const SizedBox.shrink();
     final existing = review.requestForRecord(recordId);
 

@@ -14,10 +14,13 @@ class GroupResultEntry {
   final Question question;
   final String userAnswer;
   final bool isCorrect;
+  /// V3.24.8: 组合题每个子题独立 practice_record_id，供汇总屏申诉按钮用
+  final int? practiceRecordId;
   const GroupResultEntry({
     required this.question,
     required this.userAnswer,
     required this.isCorrect,
+    this.practiceRecordId,
   });
 }
 
@@ -595,8 +598,10 @@ class PracticeService extends ChangeNotifier {
         await _reviewService.submitSubjectiveGrading(practiceRecordId: recordId);
       }
       // V3.13 修正：组合题里 aiDispute 已过滤
+      // V3.24.8: 塞 practiceRecordId 让汇总屏申诉按钮可用
       results.add(GroupResultEntry(
-        question: gq, userAnswer: ans, isCorrect: correct));
+        question: gq, userAnswer: ans, isCorrect: correct,
+        practiceRecordId: recordId));
     }
 
     // 整组全对 → _score+1（除非含主观题，则不计学情，等家长审）

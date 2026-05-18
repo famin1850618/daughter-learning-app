@@ -1,5 +1,5 @@
 {
-  "version": 110,
+  "version": 111,
   "updated_at": "2026-05-13T05:22:21.229267Z",
   "batches": [
     {
@@ -88,7 +88,7 @@
       "subject": "math",
       "grade": 6,
       "count": 24,
-      "batch_hash": "2eacd19d4cb9e6eed31076d8f59111c0b34ccad4"
+      "batch_hash": "9567ce08e8ea7a0f49f4a7d1d9cb073c4b56846a"
     },
     {
       "source": "realpaper_g6_math_beishida_xsc_baoan_001",
@@ -104,7 +104,7 @@
       "subject": "math",
       "grade": 6,
       "count": 29,
-      "batch_hash": "192c53138bc1e9cf63e1a318e799961ecb8ce1f4"
+      "batch_hash": "0abb1ddb527d1d5610c8be48bba42fa27da5e9ae"
     },
     {
       "source": "realpaper_g6_math_beishida_zhuanxiang_jieda_001",
@@ -112,7 +112,7 @@
       "subject": "math",
       "grade": 6,
       "count": 76,
-      "batch_hash": "2048c50b0de8c1f25b3598b4d71609026238f276"
+      "batch_hash": "a6b61c77ebcb10007fc16ecf058c03a31e8344cd"
     }
   ],
   "_changelog": [
