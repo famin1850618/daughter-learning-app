@@ -58,6 +58,7 @@ def main(patch: bool = False):
     by_round = Counter()
     by_reason = Counter()
     decisions = []
+    patched_sources = set()
 
     for fp in files:
         bd = json.load(open(fp))
@@ -92,6 +93,7 @@ def main(patch: bool = False):
             if os.path.exists(qb_fp):
                 with open(qb_fp, 'w') as f:
                     json.dump(bd, f, ensure_ascii=False, indent=2)
+            patched_sources.add(bd.get('source', ''))
             print(f'  patched {fname}')
 
     print()
@@ -101,6 +103,25 @@ def main(patch: bool = False):
     print(f'  规则分布: {dict(by_reason.most_common())}')
     if patch:
         print(f'已 patched {n_patched} 道（assets + question_bank 双写）')
+        # V3.24.6 修 manifest batch_hash 同步 bug
+        if patched_sources:
+            import hashlib
+            idx_path = os.path.join(ROOT, 'question_bank/index.json')
+            with open(idx_path) as f: idx = json.load(f)
+            n_fixed = 0
+            for b in idx['batches']:
+                src = b.get('source', '')
+                if src not in patched_sources: continue
+                path = os.path.join(ROOT, f'question_bank/{src}.json')
+                with open(path, 'rb') as f:
+                    actual = hashlib.sha1(f.read()).hexdigest()
+                if b.get('batch_hash') != actual:
+                    b['batch_hash'] = actual
+                    n_fixed += 1
+            idx['version'] = idx.get('version', 0) + 1
+            with open(idx_path, 'w') as f:
+                json.dump(idx, f, ensure_ascii=False, indent=2)
+            print(f'index.json: 更新 {n_fixed} batch_hash, version → {idx["version"]}')
     else:
         print('Dry run: 没有 patch。加 --patch 实际写入。')
 

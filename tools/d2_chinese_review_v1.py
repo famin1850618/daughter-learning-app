@@ -466,7 +466,9 @@ def main(patch: bool = False):
 
     # patch 模式：仅当 original_round=null 且 flag=confident 才写
     # V3.22 双写：assets/data/batches 和 question_bank 两份都要同步
+    # V3.24.6 修：必须同步更新 index.json 的 batch_hash，否则 app sync 看 hash 相同会跳过 import
     n_patched = 0
+    patched_sources = set()
     for fp, recs in file_to_records.items():
         bd = json.load(open(fp))
         qs = bd.get('questions', [])
@@ -482,14 +484,41 @@ def main(patch: bool = False):
         if changed:
             with open(fp, 'w') as f:
                 json.dump(bd, f, ensure_ascii=False, indent=2)
-            # 双写 question_bank
             qb_fp = fp.replace('/assets/data/batches/', '/question_bank/')
             if os.path.exists(qb_fp):
                 with open(qb_fp, 'w') as f:
                     json.dump(bd, f, ensure_ascii=False, indent=2)
+            patched_sources.add(bd.get('source', ''))
             n_changed_this = sum(1 for r in recs if r["original_round"] is None and r["flag"] == "confident")
             print(f'  patched {os.path.basename(fp)}: {n_changed_this} 题（assets+question_bank 双写）')
     print(f'共 patch {n_patched} 题（仅 confident + original_round=null）')
+
+    # V3.24.6: 同步 index.json batch_hash + bump version
+    if patched_sources:
+        update_index_hash(patched_sources)
+
+
+def update_index_hash(patched_sources: set):
+    """重算 patched source 的 batch_hash，bump index.json version"""
+    import hashlib
+    idx_path = os.path.join(ROOT, 'question_bank/index.json')
+    with open(idx_path) as f:
+        idx = json.load(f)
+    n_fixed = 0
+    for b in idx['batches']:
+        src = b.get('source', '')
+        if src not in patched_sources:
+            continue
+        path = os.path.join(ROOT, f'question_bank/{src}.json')
+        with open(path, 'rb') as f:
+            actual = hashlib.sha1(f.read()).hexdigest()
+        if b.get('batch_hash') != actual:
+            b['batch_hash'] = actual
+            n_fixed += 1
+    idx['version'] = idx.get('version', 0) + 1
+    with open(idx_path, 'w') as f:
+        json.dump(idx, f, ensure_ascii=False, indent=2)
+    print(f'index.json: 更新 {n_fixed} batch_hash, version → {idx["version"]}')
 
 
 if __name__ == '__main__':
