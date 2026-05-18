@@ -30,7 +30,10 @@ class DiagnosticService extends ChangeNotifier {
   /// 错误数量（UI 红点用）
   int get errorCount => _errorLogs.where((e) => e.level == 'error').length;
 
-  /// 启动时跑（main.dart 调）
+  /// V3.24.5: alias for runStartupSelfCheck, 让 sync 完成 / 用户主动刷新都能调
+  Future<void> refreshReport() => runStartupSelfCheck();
+
+  /// 启动时跑（main.dart 调）。V3.24.5 后也由 sync 完成 + 刷新按钮调。
   Future<void> runStartupSelfCheck() async {
     _startupReport.clear();
     final db = await DatabaseHelper().database;

@@ -14,6 +14,7 @@ import '../services/difficulty_settings_service.dart';
 import '../services/review_request_service.dart';
 import '../services/data_reset_service.dart';
 import '../services/diagnostic_service.dart';
+import '../utils/app_version.dart';
 import '../services/practice_service.dart';
 import '../services/reward_service.dart';
 import '../services/assessment_service.dart';
@@ -1405,6 +1406,34 @@ class _DiagnosticSection extends StatelessWidget {
     return Card(
       child: Column(
         children: [
+          // V3.24.3: 应用版本（诊断 bug 时必看，避免代码版本与安装版本错位）
+          ListTile(
+            dense: true,
+            leading: const Icon(Icons.info_outline, color: Colors.blueGrey, size: 20),
+            title: const Text('应用版本', style: TextStyle(fontSize: 13)),
+            trailing: Text(
+              '$kAppVersion · $kAppBuildDate',
+              style: const TextStyle(fontSize: 13, color: Colors.black87),
+            ),
+          ),
+          const Divider(height: 1),
+          // V3.24.5: 刷新诊断按钮，让 self-check 重跑实时 SQL（不再是启动一刻快照）
+          ListTile(
+            dense: true,
+            leading: const Icon(Icons.refresh, color: Colors.blue, size: 20),
+            title: const Text('刷新诊断', style: TextStyle(fontSize: 13)),
+            subtitle: const Text('重跑 self-check 看当前题库状态', style: TextStyle(fontSize: 11)),
+            trailing: const Icon(Icons.chevron_right, size: 18, color: Colors.grey),
+            onTap: () async {
+              await svc.refreshReport();
+              if (context.mounted) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('诊断已刷新'), duration: Duration(seconds: 1)),
+                );
+              }
+            },
+          ),
+          const Divider(height: 1),
           // self-check 报告
           ExpansionTile(
             leading: Icon(

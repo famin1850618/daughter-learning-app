@@ -132,34 +132,31 @@ class _SelectionScreenState extends State<_SelectionScreen> {
 
   Future<void> _refreshCount() async {
     if (_subject == null) { setState(() => _totalAvailable = 0); return; }
-    // V3.8.1: 应用全局 round 筛选，让 UI 显示真正能抽到的题数
+    // V3.24.5: 改用 SELECT COUNT(*) 替代 RANDOM() LIMIT 999 + .length
+    // 修跳变 bug：之前每次切 chip 都跑随机抽样导致 ±3 浮动；新法稳定。
     final settings = context.read<DifficultySettingsService>();
     final profile = settings.profileFor(_subject!.displayName);
     List<int>? rounds;
-    List<int>? weights;
     if (profile.type == DifficultyType.precise) {
       rounds = profile.preciseRound == null ? null : [profile.preciseRound!];
     } else {
+      // fuzzy 模式：weights > 0 的 round 都参与
       rounds = [];
-      weights = [];
       for (int i = 0; i < 4; i++) {
-        if (profile.fuzzyWeights[i] > 0) {
-          rounds.add(i + 1);
-          weights.add(profile.fuzzyWeights[i]);
-        }
+        if (profile.fuzzyWeights[i] > 0) rounds.add(i + 1);
       }
+      // 全 0 weight = 不限 round（含 NULL）
+      if (rounds.isEmpty) rounds = null;
     }
-    final qs = await _questionDao.getRandomByRound(
+    final n = await _questionDao.countAvailableForFilters(
       subject: _subject!,
       grade: _grade,
       chapter: _chapter,
+      type: _type,
       rounds: rounds,
-      weights: weights,
-      limit: 999,
     );
-    // type 筛选在前端 dart 侧过滤，避免 DB 复合 query 复杂度
-    final filtered = _type == null ? qs : qs.where((q) => q.type == _type).toList();
-    setState(() => _totalAvailable = filtered.length);
+    if (!mounted) return;
+    setState(() => _totalAvailable = n);
   }
 
   Future<void> _start() async {

@@ -13,6 +13,7 @@ import '../database/database_helper.dart';
 import '../database/curriculum_dao.dart';
 import '../database/question_dao.dart';
 import '../database/knowledge_point_dao.dart';
+import 'diagnostic_service.dart';
 
 /// 通过 GitHub + jsDelivr CDN 拉取静态题包做增量更新。
 /// 不是 API（没有后端代码）—— 本质就是下载 JSON 文件 + 按 source 幂等导入。
@@ -188,6 +189,13 @@ class QuestionUpdateService extends ChangeNotifier {
       _status = result.errors.isEmpty
           ? '同步完成 (+${result.added} ~${result.updated} -${result.removed})'
           : '同步完成 (+${result.added} ~${result.updated} -${result.removed}; ${result.errors.length} 错)';
+      // V3.24.5: sync 完成后重跑 self-check，让诊断面板显示真实当前状态
+      // 修复 "诊断显示 questions=0 但实际 181" 的设计缺陷
+      try {
+        await DiagnosticService().refreshReport();
+      } catch (_) {
+        // refresh 失败不影响 sync result
+      }
     } catch (e, stack) {
       if (e is SyncException) rethrow;
       throw SyncException('unknown', e.toString(), stack: stack.toString());
@@ -290,7 +298,9 @@ class QuestionUpdateService extends ChangeNotifier {
         groupId: m['group_id'] as String?,
         groupOrder: m['group_order'] as int?,
         // V3.13: 解析 _ai_dispute 元数据（worker 入库时若发现答案算法冲突写）
-        aiDispute: (m['_ai_dispute'] as Map?)?.cast<String, dynamic>(),
+        // V3.24.4: 兼容 String 形态（worker 偶尔写成简短文字而非 Map）
+        // 反例：xsc_shenzhen_001 q[21] 写成 String → 触发 cast 异常 → 整批 29 题被吞
+        aiDispute: _parseAiDispute(m['_ai_dispute']),
         source: source,
         // V3.19.16: fill 多空答案
         answerBlanks: (m['answer_blanks'] as List?)?.cast<String>(),
@@ -305,16 +315,38 @@ class QuestionUpdateService extends ChangeNotifier {
     return await _qDao.upsertBatchByHash(source, batchHash, questions);
   }
 
+  /// V3.24.4 兼容 _ai_dispute 字段两种形态：
+  /// - Map（V3.13 规范，含 issue/severity/note 等键）
+  /// - String（worker 偶尔写成简短文字 → 包装成 {note: ...}）
+  /// 返回 null 不影响 import；不为 null 时存到 questions.ai_dispute_json 列。
+  Map<String, dynamic>? _parseAiDispute(dynamic v) {
+    if (v == null) return null;
+    if (v is Map) return v.cast<String, dynamic>();
+    if (v is String && v.isNotEmpty) return {'note': v};
+    return null;
+  }
+
+  /// V3.24.3 修 silent catch：每个 URL 失败的具体原因（HTTP 状态码 / timeout / DNS / 其他）
+  /// 都记录下来，所有 URL 都失败时写 warn 级 ErrorLog 让用户在诊断面板看到。
   Future<String?> _fetchWithFallback(List<String> urls) async {
+    final failures = <String>[];
     for (final url in urls) {
       try {
         final resp = await http
             .get(Uri.parse(url))
             .timeout(const Duration(seconds: 12));
         if (resp.statusCode == 200) return utf8.decode(resp.bodyBytes);
-      } catch (_) {
-        continue;
+        failures.add('$url → HTTP ${resp.statusCode}');
+      } catch (e) {
+        failures.add('$url → $e');
       }
+    }
+    if (failures.isNotEmpty) {
+      await DiagnosticService().logError(
+        level: 'warn',
+        context: 'fetch_with_fallback',
+        error: '所有 URL 失败:\n${failures.join("\n")}',
+      );
     }
     return null;
   }

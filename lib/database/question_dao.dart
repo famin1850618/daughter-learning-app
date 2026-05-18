@@ -213,6 +213,32 @@ class QuestionDao {
     return (r.first['c'] as int?) ?? 0;
   }
 
+  /// V3.24.5: 模拟练习页"可用题量"用，稳定 COUNT 替代之前的 RANDOM() LIMIT 999 + .length
+  /// 包含 mastered + active source filter 排除（与 getRandomByRound 的 baseWhere 一致）
+  Future<int> countAvailableForFilters({
+    required Subject subject,
+    required int grade,
+    String? chapter,
+    QuestionType? type,
+    List<int>? rounds,
+  }) async {
+    final db = await _db.database;
+    String where = 'subject = ? AND grade = ?';
+    final args = <dynamic>[subject.index, grade];
+    if (chapter != null) { where += ' AND chapter = ?'; args.add(chapter); }
+    if (type != null) { where += ' AND type = ?'; args.add(type.index); }
+    if (rounds != null && rounds.isNotEmpty) {
+      final ph = List.filled(rounds.length, '?').join(',');
+      where += ' AND round IN ($ph)';
+      args.addAll(rounds);
+    }
+    where += ' AND id NOT IN ($_masteredSubquery)';
+    where += ' AND $_activeSourceFilter';
+    final r = await db.rawQuery(
+      'SELECT COUNT(*) AS c FROM questions WHERE $where', args);
+    return (r.first['c'] as int?) ?? 0;
+  }
+
   Future<List<Question>> getRandom({
     required Subject subject,
     required int grade,

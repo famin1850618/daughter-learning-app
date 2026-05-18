@@ -131,12 +131,42 @@ class _LearningAppState extends State<LearningApp> {
     // session 状态变化监听：snapshot 当前数据 + 完成时触发自动完成 + 学情同步
     _practiceService.addListener(_onPracticeChanged);
 
-    // 启动后异步触发一次更新检查 + 学情同步（不阻塞 UI；离线静默失败）
+    // 启动后异步触发一次更新检查 + 学情同步（不阻塞 UI）
+    // V3.24.3: 不再 silent 吞错——任何 sync 错误必写 ErrorLog，
+    // 修复"questions=153 应该 182 但错误日志 0 条"的 silent failure 问题。
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       if (_updateService.autoCheck) {
-        await _updateService.checkAndImport(silent: true);
+        try {
+          final result = await _updateService.checkAndImport(silent: true);
+          if (result.errors.isNotEmpty) {
+            for (final err in result.errors) {
+              await DiagnosticService().logError(
+                level: 'error',
+                context: 'silent_sync_${err.phase}',
+                error: '${err.source}: ${err.error}'
+                    '${err.stack != null ? "\n${err.stack}" : ""}',
+              );
+            }
+          }
+        } catch (e, stack) {
+          await DiagnosticService().logError(
+            level: 'error',
+            context: 'silent_sync_top',
+            error: e,
+            stack: stack,
+          );
+        }
       }
-      await _syncService.syncIfDue();
+      try {
+        await _syncService.syncIfDue();
+      } catch (e, stack) {
+        await DiagnosticService().logError(
+          level: 'warn',
+          context: 'learning_sync_due',
+          error: e,
+          stack: stack,
+        );
+      }
     });
   }
 
