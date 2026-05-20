@@ -317,7 +317,8 @@
       "answer": "奇思136元,妙想36元",
       "explanation": "设妙想 x 元，奇思 (3x＋28) 元。由“奇思比妙想多100元”得 $3x+28=x+100$，$2x=72$，$x=36$。奇思 3×36＋28＝136（元）。",
       "round": 2,
-      "_raw_excerpt": "13．（2021春·广东深圳·六年级统考期末）奇思和妙想一起去购物，奇思带的钱比妙想多100元。并且奇思带的钱比妙想的3倍多28元，原来两人各带了多少钱？"
+      "_raw_excerpt": "13．（2021春·广东深圳·六年级统考期末）奇思和妙想一起去购物，奇思带的钱比妙想多100元。并且奇思带的钱比妙想的3倍多28元，原来两人各带了多少钱？",
+      "is_semi_subjective": true
     },
     {
       "chapter": "比例",
@@ -328,7 +329,8 @@
       "answer": "生姜10克,红糖25克",
       "explanation": "总份数 2＋5＋75＝82 份。生姜 $410\\times\\frac{2}{82}=10$（克），红糖 $410\\times\\frac{5}{82}=25$（克）。",
       "round": 2,
-      "_raw_excerpt": "14．（2021春·广东深圳·六年级统考期末）在寒冷的天气，为预防伤寒感冒，我国民间常用生姜、红糖和水按2∶5∶75的质量配比煮成“姜汤”服用，如果要煮一碗410克的“姜汤”，需要准备生姜、红糖各多少克？"
+      "_raw_excerpt": "14．（2021春·广东深圳·六年级统考期末）在寒冷的天气，为预防伤寒感冒，我国民间常用生姜、红糖和水按2∶5∶75的质量配比煮成“姜汤”服用，如果要煮一碗410克的“姜汤”，需要准备生姜、红糖各多少克？",
+      "is_semi_subjective": true
     },
     {
       "chapter": "正比例和反比例",
@@ -759,7 +761,8 @@
       "group_order": 2,
       "_image_verified": true,
       "_image_verified_note": "条形+扇形(文学/科普/习题/其他) 与题面\"我最喜欢的书问卷调查\"相符",
-      "_round_source": "d2_math_fallback_v1"
+      "_round_source": "d2_math_fallback_v1",
+      "is_semi_subjective": true
     },
     {
       "chapter": "综合练习",
@@ -832,7 +835,8 @@
       "group_order": 1,
       "_image_verified": true,
       "_image_verified_note": "小旗标记 + 甲乙地连线（地图）与题面\"在图中用△标出\"+\"比例尺1:5000000地图\"相符",
-      "_round_source": "d2_math_fallback_v1"
+      "_round_source": "d2_math_fallback_v1",
+      "alt_answers": "6厘米;6;6 厘米;6厘米处"
     },
     {
       "chapter": "正比例和反比例",
@@ -864,7 +868,8 @@
       "group_id": "realpaper_g6_math_beishida_zhuanxiang_jieda_001_q43",
       "group_order": 3,
       "_image_verified": true,
-      "_image_verified_note": "小旗标记 + 甲乙地连线（地图）与题面\"在图中用△标出\"+\"比例尺1:5000000地图\"相符"
+      "_image_verified_note": "小旗标记 + 甲乙地连线（地图）与题面\"在图中用△标出\"+\"比例尺1:5000000地图\"相符",
+      "alt_answers": "12:40;40分;40"
     },
     {
       "chapter": "综合练习",
