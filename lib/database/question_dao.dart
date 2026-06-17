@@ -1141,6 +1141,23 @@ class QuestionDao {
     );
   }
 
+  /// V3.26: AI 复判为"可接受"时，把学生答案补进该题答案集（本地 DB）。
+  /// 用 `|||` 追加为等价写法；已存在则跳过。下次同样答法直接判对。
+  Future<void> appendAnswerAlias(int questionId, String alias) async {
+    final a = alias.trim();
+    if (a.isEmpty) return;
+    final db = await _db.database;
+    final rows = await db.query('questions',
+        columns: ['answer'], where: 'id = ?', whereArgs: [questionId], limit: 1);
+    if (rows.isEmpty) return;
+    final cur = (rows.first['answer'] as String?) ?? '';
+    final parts = cur.split('|||').map((s) => s.trim()).toList();
+    if (parts.contains(a)) return; // 已有此别名
+    final updated = cur.isEmpty ? a : '$cur|||$a';
+    await db.update('questions', {'answer': updated},
+        where: 'id = ?', whereArgs: [questionId]);
+  }
+
   /// 算 session 当前 (score, total)，用于审核通过后重判 session 是否新进入"通过"区间
   Future<({int score, int total})> getSessionScore(String sessionId) async {
     final db = await _db.database;

@@ -342,6 +342,8 @@ class _QuestionScreenState extends State<_QuestionScreen> {
   int _seconds = 0;
   /// V3.8.3: 计时暂停（小孩走神/被打断时按）。仅 UI 层实现，重启后默认 resume
   bool _paused = false;
+  /// V3.26: 提交中（AI 判分有 2-3s 延迟，期间禁重复提交 + 显示 loading）
+  bool _submitting = false;
   /// V3.8.3: 该题在小孩历史中累计做过的次数（替代选项随机的"做过 N 次"标签）
   int _attemptCount = 0;
   int? _attemptCountForQid;
@@ -455,6 +457,7 @@ class _QuestionScreenState extends State<_QuestionScreen> {
   }
 
   Future<void> _submit() async {
+    if (_submitting) return;
     final q = widget.question;
     final answer = (q.type == QuestionType.multipleChoice ||
             q.type == QuestionType.judgment)
@@ -462,22 +465,27 @@ class _QuestionScreenState extends State<_QuestionScreen> {
         : _currentTextAnswer();
     if (answer.isEmpty) return;
     final service = context.read<PracticeService>();
-    // V3.14: 组合题分支处理
-    if (q.groupId != null) {
-      if (service.isLastInGroup) {
-        // 组内最后一题：暂存当前 + 整组判分（弹结果页由 build watcher 处理）
-        await service.submitGroup(answer);
-        _timer?.cancel();
-      } else {
-        // 组内非末位：暂存 + 跳到组内下一题（不显示对错）
-        service.stashGroupAnswer(answer);
-        service.goToNextInGroup();
+    setState(() => _submitting = true);
+    try {
+      // V3.14: 组合题分支处理
+      if (q.groupId != null) {
+        if (service.isLastInGroup) {
+          // 组内最后一题：暂存当前 + 整组判分（弹结果页由 build watcher 处理）
+          await service.submitGroup(answer);
+          _timer?.cancel();
+        } else {
+          // 组内非末位：暂存 + 跳到组内下一题（不显示对错）
+          service.stashGroupAnswer(answer);
+          service.goToNextInGroup();
+        }
+        return;
       }
-      return;
+      final correct = await service.submitAnswer(answer);
+      if (mounted) setState(() => _result = correct);
+      _timer?.cancel();
+    } finally {
+      if (mounted) setState(() => _submitting = false);
     }
-    final correct = await service.submitAnswer(answer);
-    setState(() => _result = correct);
-    _timer?.cancel();
   }
 
   /// V3.14: 组合题里"上一题"按钮回调（暂存当前答案 + 跳上一题）
@@ -684,7 +692,7 @@ class _QuestionScreenState extends State<_QuestionScreen> {
           child: ElevatedButton.icon(
             icon: Icon(isLast ? Icons.check_circle : Icons.arrow_forward, size: 18),
             label: Text(isLast ? '完成整组' : '下一题'),
-            onPressed: _canSubmit(q) ? _submit : null,
+            onPressed: _canSubmit(q) && !_submitting ? _submit : null,
           ),
         ),
       ],
@@ -843,8 +851,14 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                   width: double.infinity,
                   height: 46,
                   child: ElevatedButton(
-                    onPressed: _canSubmit(q) ? _submit : null,
-                    child: const Text('提交答案', style: TextStyle(fontSize: 16)),
+                    onPressed: _canSubmit(q) && !_submitting ? _submit : null,
+                    child: _submitting
+                        ? const SizedBox(
+                            height: 18,
+                            width: 18,
+                            child: CircularProgressIndicator(
+                                strokeWidth: 2, color: Colors.white))
+                        : const Text('提交答案', style: TextStyle(fontSize: 16)),
                   ),
                 ),
             ],
@@ -1247,21 +1261,38 @@ class _QuestionScreenState extends State<_QuestionScreen> {
   }
 
   Widget _buildResult(Question q, bool correct) {
-    // V3.8.3: 主观题答完显示"等家长批改"，不判对错
+    final svc = context.read<PracticeService>();
+    final aiFb = svc.lastAiFeedback;
+    final aiResolved = svc.lastAiResolved;
+    // V3.8.3/V3.26: 主观题——AI 判了就显判定+评语；没判（未启用/失败）才"等家长批改"
     if (q.type == QuestionType.subjective) {
+      final headColor = !aiResolved
+          ? Colors.purple
+          : (correct ? AppTheme.success : AppTheme.secondary);
       return Container(
         padding: const EdgeInsets.all(14),
         decoration: BoxDecoration(
-          color: Colors.purple.withOpacity(0.06),
+          color: headColor.withOpacity(0.06),
           borderRadius: BorderRadius.circular(10),
-          border: Border.all(color: Colors.purple.withOpacity(0.4)),
+          border: Border.all(color: headColor.withOpacity(0.4)),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text('📝 已提交，等家长批改',
+            Text(
+                !aiResolved
+                    ? '📝 已提交，等家长批改'
+                    : (correct ? '✅ AI 判定：答得不错！' : '➖ AI 判定：还可以更好'),
                 style: TextStyle(
-                    fontWeight: FontWeight.bold, color: Colors.purple, fontSize: 15)),
+                    fontWeight: FontWeight.bold, color: headColor, fontSize: 15)),
+            if (aiResolved && aiFb != null && aiFb.isNotEmpty) ...[
+              const SizedBox(height: 6),
+              Text('AI 评语：$aiFb',
+                  style: TextStyle(fontSize: 13, color: Colors.grey.shade800)),
+              const SizedBox(height: 2),
+              Text('（如不认同可在下方申诉转人工）',
+                  style: TextStyle(fontSize: 11, color: Colors.grey.shade500)),
+            ],
             const SizedBox(height: 8),
             Text('我的答案：',
                 style: TextStyle(fontSize: 12, color: Colors.grey.shade700)),
@@ -1300,6 +1331,14 @@ class _QuestionScreenState extends State<_QuestionScreen> {
         children: [
           Text(correct ? '✅ 回答正确！' : '❌ 回答错误',
               style: TextStyle(fontWeight: FontWeight.bold, color: color, fontSize: 15)),
+          // V3.26: 字符串判错但 AI 复判可接受 → 标对并已补入答案集
+          if (correct && aiResolved && aiFb != null && aiFb.isNotEmpty) ...[
+            const SizedBox(height: 6),
+            Text('🤖 AI 复判可接受：$aiFb',
+                style: TextStyle(fontSize: 13, color: Colors.green.shade800)),
+            Text('（已补入答案集，下次同样答法直接判对）',
+                style: TextStyle(fontSize: 11, color: Colors.grey.shade500)),
+          ],
           if (!correct) ...[
             // V3.8.3: 显式展示我填的 vs 正解，方便小孩判断是否申诉
             const SizedBox(height: 8),

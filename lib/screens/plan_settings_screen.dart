@@ -1,7 +1,9 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show Clipboard, ClipboardData;
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:provider/provider.dart';
+import '../services/ai_grading_service.dart';
 import 'package:intl/intl.dart';
 import '../utils/app_theme.dart';
 import '../models/plan_settings.dart';
@@ -111,6 +113,14 @@ class _PlanSettingsScreenState extends State<PlanSettingsScreen> {
             subtitle: '审核通过时选了"题目有误/答案有误/半主观题"的条目会累积在这里，复制 prompt 给 Claude 派 agent 修题库。',
           ),
           const _AuditFeedbackSection(),
+          const SizedBox(height: 16),
+
+          // ── V3.26 AI 判分（DeepSeek）────────────
+          _SectionHeader(
+            title: 'AI 判分（DeepSeek）',
+            subtitle: '主观题由 AI 即时判分；填空被判错时先让 AI 复判，判对则自动补进答案集。家长审核仍可改判兜底。',
+          ),
+          const _AiGradingSection(),
           const SizedBox(height: 16),
 
           // ── 数据导出与备份 ────────────────────
@@ -453,6 +463,154 @@ class _UpdateSection extends StatelessWidget {
             onChanged: (v) => svc.setAutoCheck(v),
           ),
         ],
+      ),
+    );
+  }
+}
+
+/// V3.26: DeepSeek AI 判分配置（key / 模型 / 开关 / 测试连接）。
+/// 直接读写 SharedPreferences（AiGradingService 用同样的 pref key）。
+class _AiGradingSection extends StatefulWidget {
+  const _AiGradingSection();
+  @override
+  State<_AiGradingSection> createState() => _AiGradingSectionState();
+}
+
+class _AiGradingSectionState extends State<_AiGradingSection> {
+  final _keyCtrl = TextEditingController();
+  final _modelCtrl = TextEditingController();
+  bool _enabled = false;
+  bool _keyVisible = false;
+  bool _testing = false;
+  String? _testResult;
+
+  @override
+  void initState() {
+    super.initState();
+    SharedPreferences.getInstance().then((p) {
+      if (!mounted) return;
+      setState(() {
+        _enabled = p.getBool(AiGradingService.prefEnabled) ?? false;
+        _keyCtrl.text = p.getString(AiGradingService.prefKey) ?? '';
+        _modelCtrl.text =
+            p.getString(AiGradingService.prefModel) ?? 'deepseek-chat';
+      });
+    });
+  }
+
+  @override
+  void dispose() {
+    _keyCtrl.dispose();
+    _modelCtrl.dispose();
+    super.dispose();
+  }
+
+  Future<void> _setBool(String k, bool v) async {
+    final p = await SharedPreferences.getInstance();
+    await p.setBool(k, v);
+  }
+
+  Future<void> _setStr(String k, String v) async {
+    final p = await SharedPreferences.getInstance();
+    await p.setString(k, v.trim());
+  }
+
+  Future<void> _test() async {
+    setState(() {
+      _testing = true;
+      _testResult = null;
+    });
+    // 测试前先落盘当前输入
+    await _setStr(AiGradingService.prefKey, _keyCtrl.text);
+    await _setStr(AiGradingService.prefModel, _modelCtrl.text);
+    final msg = await AiGradingService().testConnection();
+    if (!mounted) return;
+    setState(() {
+      _testing = false;
+      _testResult = msg;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(16, 8, 16, 12),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            SwitchListTile(
+              contentPadding: EdgeInsets.zero,
+              title: const Text('启用 AI 判分'),
+              subtitle: const Text('需填入 DeepSeek API Key'),
+              value: _enabled,
+              activeColor: AppTheme.primary,
+              onChanged: (v) {
+                setState(() => _enabled = v);
+                _setBool(AiGradingService.prefEnabled, v);
+              },
+            ),
+            if (_enabled) ...[
+              const SizedBox(height: 4),
+              TextField(
+                controller: _keyCtrl,
+                obscureText: !_keyVisible,
+                decoration: InputDecoration(
+                  labelText: 'DeepSeek API Key',
+                  hintText: 'sk-xxxxxx',
+                  helperText: '在 platform.deepseek.com 申请；仅存本机，不上传不提交',
+                  helperMaxLines: 2,
+                  suffixIcon: IconButton(
+                    icon: Icon(_keyVisible
+                        ? Icons.visibility_off
+                        : Icons.visibility),
+                    onPressed: () =>
+                        setState(() => _keyVisible = !_keyVisible),
+                  ),
+                ),
+                onChanged: (v) => _setStr(AiGradingService.prefKey, v),
+              ),
+              const SizedBox(height: 8),
+              TextField(
+                controller: _modelCtrl,
+                decoration: const InputDecoration(
+                  labelText: '模型名',
+                  hintText: 'deepseek-chat',
+                  helperText: '默认 deepseek-chat；官方更名后可改',
+                ),
+                onChanged: (v) => _setStr(AiGradingService.prefModel, v),
+              ),
+              const SizedBox(height: 12),
+              Row(
+                children: [
+                  ElevatedButton.icon(
+                    onPressed: _testing ? null : _test,
+                    icon: _testing
+                        ? const SizedBox(
+                            width: 16,
+                            height: 16,
+                            child: CircularProgressIndicator(strokeWidth: 2))
+                        : const Icon(Icons.wifi_tethering, size: 18),
+                    label: const Text('测试连接'),
+                  ),
+                  const SizedBox(width: 12),
+                  if (_testResult != null)
+                    Expanded(
+                      child: Text(
+                        _testResult!,
+                        style: TextStyle(
+                          fontSize: 13,
+                          color: _testResult!.contains('成功')
+                              ? Colors.green.shade700
+                              : Colors.red.shade700,
+                        ),
+                      ),
+                    ),
+                ],
+              ),
+            ],
+          ],
+        ),
       ),
     );
   }

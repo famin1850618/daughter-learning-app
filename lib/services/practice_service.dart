@@ -8,6 +8,7 @@ import '../utils/answer_matcher.dart';
 import 'reward_service.dart';
 import 'difficulty_settings_service.dart';
 import 'review_request_service.dart';
+import 'ai_grading_service.dart';
 
 /// V3.14: 组合题整组结果一项
 class GroupResultEntry {
@@ -158,6 +159,9 @@ class PracticeService extends ChangeNotifier {
   /// V3.8.3：最近一次 submitAnswer 写入的 practice_records.id（申诉/主观题快捷入口用）
   int? _lastSubmittedRecordId;
   String? _lastSubmittedAnswer;
+  /// V3.26: 最近一次提交的 AI 判分反馈（主观题评语 / 填空复判理由），null=未用 AI
+  String? _lastAiFeedback;
+  bool _lastAiResolved = false;
 
   /// V3.14: 组合题暂存答案（questionId → user answer）
   /// 组合题子题答完不立即判分/INSERT record，先暂存到这里。
@@ -182,6 +186,8 @@ class PracticeService extends ChangeNotifier {
   bool get hintShown => _hintShown;
   int? get lastSubmittedRecordId => _lastSubmittedRecordId;
   String? get lastSubmittedAnswer => _lastSubmittedAnswer;
+  String? get lastAiFeedback => _lastAiFeedback;
+  bool get lastAiResolved => _lastAiResolved;
   SessionKind get kind => _kind;
   SessionRewardSummary? get lastReward => _lastReward;
   bool get isRestoring => _restoring;
@@ -626,11 +632,27 @@ class PracticeService extends ChangeNotifier {
     // V3.8.3: 主观题答完不立即判定，is_correct=false（待批），自动入家长审核队列
     // V3.13 修正（Famin 反馈）: AI dispute 题在抽题阶段已被过滤（小孩根本抽不到），
     //   家长审核由启动 seedAiDisputes 直接 INSERT review_request，不走做题流程。
-    final bool correct;
-    final double partial;
+    bool correct;
+    double partial;
+    _lastAiFeedback = null;
+    _lastAiResolved = false;
+    bool queueParentReview = false;
+
     if (q.type == QuestionType.subjective) {
-      correct = false; // 待家长评分（fail/pass/good/perfect）
+      correct = false; // 默认待家长评分
       partial = 0.0;
+      queueParentReview = true;
+      // V3.26: AI 判主观题。判了就不自动入家长队列（孩子有异议可申诉再转人工）。
+      if (await AiGradingService.isEnabled()) {
+        final v = await AiGradingService().gradeSubjective(q, answer);
+        if (v.available) {
+          correct = v.ok;
+          partial = v.score;
+          _lastAiFeedback = v.feedback;
+          _lastAiResolved = true;
+          queueParentReview = false;
+        }
+      }
     } else {
       final result = AnswerMatcher.evaluatePartial(
         userAns: answer,
@@ -640,10 +662,29 @@ class PracticeService extends ChangeNotifier {
       );
       correct = result.isCorrect;
       partial = result.partialScore;
-      if (correct) _score++;
-      // V3.20.3 (阶段一): 单题路径也累加 partial
-      _partialScore += partial;
+      // V3.26: 填空/计算被字符串判错 → AI 复判；判可接受则标对 + 补别名 + 上报全局
+      if (!correct &&
+          (q.type == QuestionType.fillBlank ||
+              q.type == QuestionType.calculation) &&
+          await AiGradingService.isEnabled()) {
+        final v = await AiGradingService().recheckFill(q, answer);
+        if (v.available && v.ok) {
+          correct = true;
+          partial = 1.0;
+          _lastAiFeedback = v.feedback;
+          _lastAiResolved = true;
+          await _dao.appendAnswerAlias(q.id!, answer); // 本地立即生效
+          await _reviewService.logAiAlias(
+            questionId: q.id!,
+            standardAnswer: q.answer,
+            acceptedAnswer: answer,
+            aiReason: v.feedback,
+          ); // 上报供全局折进 batch JSON
+        }
+      }
     }
+    if (correct) _score++;
+    _partialScore += partial;
 
     final recordId = await _dao.insertRecord(PracticeRecord(
       questionId: q.id!,
@@ -658,8 +699,8 @@ class PracticeService extends ChangeNotifier {
     _lastSubmittedRecordId = recordId;
     _lastSubmittedAnswer = answer;
 
-    // V3.8.3: 主观题自动入家长审核
-    if (q.type == QuestionType.subjective) {
+    // V3.8.3/V3.26: 主观题在 AI 未判（未启用/失败）时入家长审核兜底
+    if (queueParentReview) {
       await _reviewService.submitSubjectiveGrading(practiceRecordId: recordId);
     }
     // V3.13 修正：AI 争议题不走做题路径（启动 seedAiDisputes 已入审核）

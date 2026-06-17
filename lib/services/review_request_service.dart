@@ -342,6 +342,37 @@ class ReviewRequestService extends ChangeNotifier {
     await prefs.setString(_kAuditFeedbackLog, updated);
   }
 
+  /// V3.26: AI 复判把学生答案判为可接受 → 记一条 audit log，供"处理审核反馈"
+  /// 时把别名折进源 batch JSON（全局生效）。本地 DB 已即时加别名（QuestionDao）。
+  Future<void> logAiAlias({
+    required int questionId,
+    required String standardAnswer,
+    required String acceptedAnswer,
+    required String aiReason,
+  }) async {
+    final question = await _qDao.findById(questionId);
+    final content = question?.content ?? '';
+    final snippet = content.length > 200 ? content.substring(0, 200) : content;
+    final entry = {
+      'ts': DateTime.now().toIso8601String(),
+      'question_id': questionId,
+      'source': question?.source,
+      'chapter': question?.chapter,
+      'kp': question?.knowledgePoint,
+      'issue_type': 'ai_answer_alias',
+      'issue_label': 'AI 复判可接受，补别名',
+      'standard_answer': standardAnswer,
+      'accepted_answer': acceptedAnswer,
+      'ai_reason': aiReason,
+      'q_content_snippet': snippet,
+    };
+    final prefs = await SharedPreferences.getInstance();
+    final existing = prefs.getString(_kAuditFeedbackLog) ?? '';
+    final updated =
+        existing.isEmpty ? jsonEncode(entry) : '$existing\n${jsonEncode(entry)}';
+    await prefs.setString(_kAuditFeedbackLog, updated);
+  }
+
   /// V3.24 设置页"现在处理审核反馈"按钮调：导出全部待处理条目（JSONL 字符串）
   Future<String> exportAuditFeedbackLog() async {
     final prefs = await SharedPreferences.getInstance();
