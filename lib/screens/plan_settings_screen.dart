@@ -493,7 +493,7 @@ class _AiGradingSectionState extends State<_AiGradingSection> {
         _enabled = p.getBool(AiGradingService.prefEnabled) ?? false;
         _keyCtrl.text = p.getString(AiGradingService.prefKey) ?? '';
         _modelCtrl.text =
-            p.getString(AiGradingService.prefModel) ?? 'deepseek-chat';
+            p.getString(AiGradingService.prefModel) ?? 'deepseek-v4-flash';
       });
     });
   }
@@ -575,8 +575,8 @@ class _AiGradingSectionState extends State<_AiGradingSection> {
                 controller: _modelCtrl,
                 decoration: const InputDecoration(
                   labelText: '模型名',
-                  hintText: 'deepseek-chat',
-                  helperText: '默认 deepseek-chat；官方更名后可改',
+                  hintText: 'deepseek-v4-flash',
+                  helperText: '默认 deepseek-v4-flash；官方更名后可改',
                 ),
                 onChanged: (v) => _setStr(AiGradingService.prefModel, v),
               ),
