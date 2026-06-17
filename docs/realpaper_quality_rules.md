@@ -155,6 +155,14 @@
 - `SpeakerProfile`:
   - `gender`: `"male" | "female"`
   - `age`: `"child" | "teen" | "adult"`
+  - `voice`（V3.27 起）：**命题时按场景选角并定住**的具名 en-GB 音色（见下"听力音频"）
+
+### 听力音频：服务端预渲染 + 按场景选角（V3.27 起，权威）
+- **口音锁 en-GB**（题库是 Cambridge PET/FCE，官方听力英音）。
+- **选音色按场景选角、命题时定住**（feedback-listening-voice-casting）：不是 `{gender,age}→单一音色`死映射；每个角色按对话场景/人物（老师/妈妈/店员/同学/旁白…）从 en-GB 调色板挑一个具名音色写进 `speakers[role].voice`，渲染端只照读。同一对话内尽量用不同音色。
+- **可用 en-GB 神经音（仅 5 个）**：Sonia(F 正式) · Libby(F 温暖) · Maisie(F 童/少年) · Ryan(M) · Thomas(M 偏少年/男童兜底)。child/teen 女=Maisie、男=Thomas（无神经男童音=短板）。
+- **渲染**：`tools/audio/render_listening.py`（Edge-TTS，-10% 语速，逐 turn 合成 + ffmpeg 拼整题一个 mp3）→ 内容哈希命名 `question_bank/audio/<hash>.mp3`（CDN-only，不入 assets）→ 回写题目 `audio_hash`。新入库听力题须跑此脚本（Phase 2）。
+- 客户端：`audio_hash` 非空→just_audio 播 CDN mp3（设备无关）；为空→回退 flutter_tts（下方旧路径，仅兜底）。
 
 ### audio_text 格式约定
 - **多角色**：每行一个 turn，`角色名:` 开头，冒号后空格再接文本
