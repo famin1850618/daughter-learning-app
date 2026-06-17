@@ -71,6 +71,9 @@ class Question {
   /// 听力题朗读原文（设备 TTS 朗读，仅英语题用）。null 表示无听力。
   /// 多角色对话格式：每行一个 turn，`角色名:` 开头，与 [speakers] map 的 key 对齐。
   final String? audioText;
+  /// V3.27: 服务端预渲染听力 mp3 的内容哈希。非空 → 播放 CDN audio/<hash>.mp3
+  /// （just_audio，设备无关）；为空 → 回退 flutter_tts 设备端合成。
+  final String? audioHash;
   /// V3.12: 多角色 TTS 元数据。key 是 audioText 中的角色名，value 是 SpeakerProfile。
   /// audioText 是单角色独白时此字段可省略，TTS 端用 SpeakerProfile.defaultProfile。
   final Map<String, SpeakerProfile>? speakers;
@@ -114,6 +117,7 @@ class Question {
     this.explanation,
     this.imageData,
     this.audioText,
+    this.audioHash,
     this.speakers,
     this.round,
     this.groupId,
@@ -161,6 +165,7 @@ class Question {
       'explanation': explanation,
       'image_data': imageData,
       'audio_text': audioText,
+      'audio_hash': audioHash,
       'speakers_json': speakers == null
           ? null
           : jsonEncode(speakers!.map((k, v) => MapEntry(k, v.toMap()))),
@@ -210,6 +215,7 @@ class Question {
       explanation: map['explanation'] as String?,
       imageData: map['image_data'] as String?,
       audioText: map['audio_text'] as String?,
+      audioHash: map['audio_hash'] as String?,
       speakers: speakersMap,
       round: map['round'] as int?,
       groupId: map['group_id'] as String?,

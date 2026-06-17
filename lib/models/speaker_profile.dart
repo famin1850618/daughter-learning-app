@@ -8,13 +8,19 @@ class SpeakerProfile {
   /// 'child' | 'teen' | 'adult'
   final String age;
 
-  const SpeakerProfile({required this.gender, required this.age});
+  /// V3.27: 命题/渲染时按场景定住的具名 en-GB 音色（如 'en-GB-SoniaNeural'）。
+  /// 仅服务端预渲染用；客户端播放走预渲染 mp3（audio_hash），不读此字段。
+  final String? voice;
 
-  Map<String, dynamic> toMap() => {'gender': gender, 'age': age};
+  const SpeakerProfile({required this.gender, required this.age, this.voice});
+
+  Map<String, dynamic> toMap() =>
+      {'gender': gender, 'age': age, if (voice != null) 'voice': voice};
 
   factory SpeakerProfile.fromMap(Map<String, dynamic> m) => SpeakerProfile(
         gender: (m['gender'] as String?) ?? 'female',
         age: (m['age'] as String?) ?? 'adult',
+        voice: m['voice'] as String?,
       );
 
   /// fallback pitch（在没有匹配 voice 时用）：

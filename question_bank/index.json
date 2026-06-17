@@ -1,5 +1,5 @@
 {
-  "version": 112,
+  "version": 113,
   "updated_at": "2026-05-13T05:22:21.229267Z",
   "batches": [
     {
@@ -8,7 +8,7 @@
       "subject": "english",
       "grade": 6,
       "count": 200,
-      "batch_hash": "77448d674949d92dfdf9fffc5dd9cb05440b26a6"
+      "batch_hash": "3ac6563ac357c926be6a0a7adfec912d297b183d"
     },
     {
       "source": "batch_2026_05_08_g6_english_pet_r2",
@@ -16,7 +16,7 @@
       "subject": "english",
       "grade": 6,
       "count": 200,
-      "batch_hash": "95c2023b6926b51e70b68e3d529df84bcaa71036"
+      "batch_hash": "d51e7c8e5113ba6b54a70ad878d1c0044402b1a3"
     },
     {
       "source": "batch_2026_05_08_g6_english_pet_r3",
@@ -24,7 +24,7 @@
       "subject": "english",
       "grade": 6,
       "count": 200,
-      "batch_hash": "b1b660b52773813ed74680d5a09ba474ce151bbd"
+      "batch_hash": "422354ee02dde836da8fe140ae33521748619298"
     },
     {
       "source": "batch_2026_05_08_g6_english_pet_r4",
@@ -32,7 +32,7 @@
       "subject": "english",
       "grade": 6,
       "count": 200,
-      "batch_hash": "50c68a223214cfb94eb8f449d60d74d075f0b91d"
+      "batch_hash": "d8ef88a6befa516fe4967f41c03c45dcdfd2b3fd"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qm_futian_001",

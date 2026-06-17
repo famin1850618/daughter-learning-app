@@ -1,10 +1,14 @@
 import 'dart:async';
 import 'dart:convert';
+import 'dart:io';
 import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_tts/flutter_tts.dart';
+import 'package:just_audio/just_audio.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 import '../utils/app_theme.dart';
 import '../utils/math_text.dart';
@@ -822,6 +826,7 @@ class _QuestionScreenState extends State<_QuestionScreen> {
               _ListenButton(
                 audioText: q.audioText!,
                 speakers: q.speakers,
+                audioHash: q.audioHash,
               ),
 
             // 题目附图
@@ -1906,7 +1911,11 @@ class _QuestionImageState extends State<_QuestionImage> {
 class _ListenButton extends StatefulWidget {
   final String audioText;
   final Map<String, SpeakerProfile>? speakers;
-  const _ListenButton({required this.audioText, this.speakers});
+  /// V3.27: 非空 → 播放服务端预渲染的 CDN mp3（just_audio，设备无关）；
+  /// 为空 → 回退 flutter_tts 设备端合成（旧题/未渲染题）。
+  final String? audioHash;
+  const _ListenButton(
+      {required this.audioText, this.speakers, this.audioHash});
 
   @override
   State<_ListenButton> createState() => _ListenButtonState();
@@ -1917,13 +1926,35 @@ class _ListenButtonState extends State<_ListenButton> {
   bool _speaking = false;
   bool _ready = false;
 
+  // V3.27: 预渲染音频走 just_audio
+  AudioPlayer? _player;
+  bool _loadingAudio = false;
+  // CDN 基址（与 question_update_service 一致）：raw 优先 + jsDelivr 兜底
+  static const _audioBases = [
+    'https://raw.githubusercontent.com/famin1850618/daughter-learning-app/main/question_bank/audio/',
+    'https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/audio/',
+  ];
+
+  bool get _usePrerendered =>
+      widget.audioHash != null && widget.audioHash!.isNotEmpty;
+
   // 单字母 / 短描述前缀：A: / B: / Boy: / Girl: / Man: / Woman: 等
   static final _turnPattern = RegExp(r'^([A-Za-z][A-Za-z]{0,9}):\s*(.*)$');
 
   @override
   void initState() {
     super.initState();
-    _initTts();
+    if (_usePrerendered) {
+      _player = AudioPlayer();
+      _player!.playerStateStream.listen((s) {
+        if (s.processingState == ProcessingState.completed && mounted) {
+          setState(() => _speaking = false);
+        }
+      });
+      _ready = true;
+    } else {
+      _initTts();
+    }
   }
 
   Future<void> _initTts() async {
@@ -1936,7 +1967,57 @@ class _ListenButtonState extends State<_ListenButton> {
   @override
   void dispose() {
     _tts.stop();
+    _player?.dispose();
     super.dispose();
+  }
+
+  /// 取（必要时下载）预渲染 mp3 的本地缓存路径。失败返回 null。
+  Future<String?> _ensureAudioFile() async {
+    final hash = widget.audioHash!;
+    final dir = await getApplicationSupportDirectory();
+    final adir = Directory('${dir.path}/audio');
+    if (!await adir.exists()) await adir.create(recursive: true);
+    final f = File('${adir.path}/$hash.mp3');
+    if (await f.exists() && await f.length() > 0) return f.path;
+    for (final base in _audioBases) {
+      try {
+        final resp = await http
+            .get(Uri.parse('$base$hash.mp3'))
+            .timeout(const Duration(seconds: 20));
+        if (resp.statusCode == 200 && resp.bodyBytes.isNotEmpty) {
+          await f.writeAsBytes(resp.bodyBytes);
+          return f.path;
+        }
+      } catch (_) {/* 试下一个源 */}
+    }
+    return null;
+  }
+
+  Future<void> _togglePrerendered() async {
+    final p = _player!;
+    if (_speaking) {
+      await p.stop();
+      if (mounted) setState(() => _speaking = false);
+      return;
+    }
+    setState(() => _loadingAudio = true);
+    final path = await _ensureAudioFile();
+    if (!mounted) return;
+    setState(() => _loadingAudio = false);
+    if (path == null) {
+      // 下载失败（离线且未缓存）→ 回退 flutter_tts 兜底
+      await _initTts();
+      await _toggleTts();
+      return;
+    }
+    try {
+      await p.setFilePath(path);
+      await p.seek(Duration.zero);
+      setState(() => _speaking = true);
+      await p.play();
+    } catch (_) {
+      if (mounted) setState(() => _speaking = false);
+    }
   }
 
   /// 把 audioText 切成 turns。多角色：每行 `角色:文本`；纯独白：单 turn 角色 '_'。
@@ -1965,7 +2046,7 @@ class _ListenButtonState extends State<_ListenButton> {
     return turns.where((t) => t.text.isNotEmpty).toList();
   }
 
-  Future<void> _toggle() async {
+  Future<void> _toggleTts() async {
     if (!_ready) return;
     if (_speaking) {
       await _tts.stop();
@@ -1994,19 +2075,27 @@ class _ListenButtonState extends State<_ListenButton> {
   Widget build(BuildContext context) {
     final hasMultipleSpeakers =
         widget.speakers != null && widget.speakers!.length > 1;
+    final label = _loadingAudio
+        ? '加载中…'
+        : (_speaking ? '停止' : (hasMultipleSpeakers ? '🔊 播放对话' : '🔊 播放听力'));
     return Align(
       alignment: Alignment.centerLeft,
       child: ElevatedButton.icon(
-        icon: Icon(_speaking ? Icons.stop : Icons.volume_up, size: 18),
-        label: Text(_speaking
-            ? '停止'
-            : (hasMultipleSpeakers ? '🔊 播放对话' : '🔊 播放听力')),
+        icon: _loadingAudio
+            ? const SizedBox(
+                width: 16,
+                height: 16,
+                child: CircularProgressIndicator(strokeWidth: 2))
+            : Icon(_speaking ? Icons.stop : Icons.volume_up, size: 18),
+        label: Text(label),
         style: ElevatedButton.styleFrom(
           backgroundColor: AppTheme.primary.withOpacity(0.1),
           foregroundColor: AppTheme.primary,
           elevation: 0,
         ),
-        onPressed: _ready ? _toggle : null,
+        onPressed: (!_ready || _loadingAudio)
+            ? null
+            : (_usePrerendered ? _togglePrerendered : _toggleTts),
       ),
     );
   }

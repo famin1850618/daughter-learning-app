@@ -293,6 +293,7 @@ class QuestionUpdateService extends ChangeNotifier {
         explanation: m['explanation'] as String?,
         imageData: (m['image'] as String?) ?? (m['image_data'] as String?),
         audioText: m['audio_text'] as String?,
+        audioHash: m['audio_hash'] as String?,
         speakers: speakers,
         round: m['round'] as int?,
         groupId: m['group_id'] as String?,

@@ -2643,13 +2643,16 @@
       "speakers": {
         "A": {
           "gender": "female",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Libby"
         },
         "B": {
           "gender": "male",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Ryan"
         }
-      }
+      },
+      "audio_hash": "7c0a86d060de6ff7"
     },
     {
       "chapter": "Listening",
@@ -2670,9 +2673,11 @@
       "speakers": {
         "_": {
           "gender": "female",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Sonia"
         }
-      }
+      },
+      "audio_hash": "4efcd42503da87e3"
     },
     {
       "chapter": "Listening",
@@ -2693,13 +2698,16 @@
       "speakers": {
         "A": {
           "gender": "female",
-          "age": "teen"
+          "age": "teen",
+          "voice": "Maisie"
         },
         "B": {
           "gender": "male",
-          "age": "teen"
+          "age": "teen",
+          "voice": "Thomas"
         }
-      }
+      },
+      "audio_hash": "8b3b588d65eac549"
     },
     {
       "chapter": "Listening",
@@ -2720,9 +2728,11 @@
       "speakers": {
         "_": {
           "gender": "male",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Ryan"
         }
-      }
+      },
+      "audio_hash": "2e2f28b2a0946545"
     },
     {
       "chapter": "Listening",
@@ -2743,13 +2753,16 @@
       "speakers": {
         "A": {
           "gender": "female",
-          "age": "teen"
+          "age": "teen",
+          "voice": "Maisie"
         },
         "B": {
           "gender": "male",
-          "age": "teen"
+          "age": "teen",
+          "voice": "Thomas"
         }
-      }
+      },
+      "audio_hash": "5c18cae9b363796a"
     },
     {
       "chapter": "Listening",
@@ -2770,13 +2783,16 @@
       "speakers": {
         "A": {
           "gender": "female",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Libby"
         },
         "B": {
           "gender": "male",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Ryan"
         }
-      }
+      },
+      "audio_hash": "a2de54b2f38b334f"
     },
     {
       "chapter": "Listening",
@@ -2797,13 +2813,16 @@
       "speakers": {
         "A": {
           "gender": "female",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Libby"
         },
         "B": {
           "gender": "male",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Ryan"
         }
-      }
+      },
+      "audio_hash": "3d525ff6b1ae512a"
     },
     {
       "chapter": "Listening",
@@ -2824,13 +2843,16 @@
       "speakers": {
         "A": {
           "gender": "female",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Libby"
         },
         "B": {
           "gender": "male",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Ryan"
         }
-      }
+      },
+      "audio_hash": "d7eddf86f4668d37"
     },
     {
       "chapter": "Listening",
@@ -2851,13 +2873,16 @@
       "speakers": {
         "A": {
           "gender": "female",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Libby"
         },
         "B": {
           "gender": "male",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Ryan"
         }
-      }
+      },
+      "audio_hash": "4226df204d3b6d73"
     },
     {
       "chapter": "Listening",
@@ -2878,13 +2903,16 @@
       "speakers": {
         "A": {
           "gender": "female",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Libby"
         },
         "B": {
           "gender": "male",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Ryan"
         }
-      }
+      },
+      "audio_hash": "0df77938fa2ed729"
     },
     {
       "chapter": "Listening",
@@ -2905,9 +2933,11 @@
       "speakers": {
         "_": {
           "gender": "female",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Sonia"
         }
-      }
+      },
+      "audio_hash": "f89c21b8f816831e"
     },
     {
       "chapter": "Listening",
@@ -2928,13 +2958,16 @@
       "speakers": {
         "A": {
           "gender": "female",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Libby"
         },
         "B": {
           "gender": "male",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Ryan"
         }
-      }
+      },
+      "audio_hash": "4205690d6eb55cc5"
     },
     {
       "chapter": "Listening",
@@ -2955,9 +2988,11 @@
       "speakers": {
         "_": {
           "gender": "female",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Sonia"
         }
-      }
+      },
+      "audio_hash": "18c7ba04a5c0e387"
     },
     {
       "chapter": "Listening",
@@ -2978,13 +3013,16 @@
       "speakers": {
         "A": {
           "gender": "female",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Libby"
         },
         "B": {
           "gender": "male",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Ryan"
         }
-      }
+      },
+      "audio_hash": "371d9a972434a291"
     },
     {
       "chapter": "Listening",
@@ -3005,9 +3043,11 @@
       "speakers": {
         "_": {
           "gender": "male",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Ryan"
         }
-      }
+      },
+      "audio_hash": "2dbd5401ab5b7445"
     },
     {
       "chapter": "Listening",
@@ -3028,17 +3068,21 @@
       "speakers": {
         "A": {
           "gender": "female",
-          "age": "teen"
+          "age": "teen",
+          "voice": "Maisie"
         },
         "B": {
           "gender": "male",
-          "age": "teen"
+          "age": "teen",
+          "voice": "Thomas"
         },
         "C": {
           "gender": "female",
-          "age": "teen"
+          "age": "teen",
+          "voice": "Maisie"
         }
-      }
+      },
+      "audio_hash": "8bc21cfb47884acf"
     },
     {
       "chapter": "Listening",
@@ -3059,17 +3103,21 @@
       "speakers": {
         "A": {
           "gender": "female",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Sonia"
         },
         "B": {
           "gender": "male",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Ryan"
         },
         "C": {
           "gender": "female",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Libby"
         }
-      }
+      },
+      "audio_hash": "46b1ea10ee93e6dc"
     },
     {
       "chapter": "Listening",
@@ -3090,17 +3138,21 @@
       "speakers": {
         "A": {
           "gender": "male",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Ryan"
         },
         "B": {
           "gender": "female",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Libby"
         },
         "C": {
           "gender": "female",
-          "age": "teen"
+          "age": "teen",
+          "voice": "Maisie"
         }
-      }
+      },
+      "audio_hash": "2bbbc44a1e1d2eef"
     },
     {
       "chapter": "Listening",
@@ -3121,17 +3173,21 @@
       "speakers": {
         "A": {
           "gender": "female",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Sonia"
         },
         "B": {
           "gender": "male",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Ryan"
         },
         "C": {
           "gender": "female",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Libby"
         }
-      }
+      },
+      "audio_hash": "103a471c2c261f27"
     },
     {
       "chapter": "Listening",
@@ -3152,17 +3208,21 @@
       "speakers": {
         "A": {
           "gender": "male",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Ryan"
         },
         "B": {
           "gender": "female",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Sonia"
         },
         "C": {
           "gender": "male",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Thomas"
         }
-      }
+      },
+      "audio_hash": "b82bd48020f108a5"
     },
     {
       "chapter": "Listening",
@@ -3183,17 +3243,21 @@
       "speakers": {
         "A": {
           "gender": "female",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Sonia"
         },
         "B": {
           "gender": "male",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Ryan"
         },
         "C": {
           "gender": "female",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Libby"
         }
-      }
+      },
+      "audio_hash": "c0f6fdfcee9251bc"
     },
     {
       "chapter": "Listening",
@@ -3214,13 +3278,16 @@
       "speakers": {
         "A": {
           "gender": "female",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Sonia"
         },
         "B": {
           "gender": "male",
-          "age": "teen"
+          "age": "teen",
+          "voice": "Thomas"
         }
-      }
+      },
+      "audio_hash": "39f3e83503ca2d26"
     },
     {
       "chapter": "Listening",
@@ -3241,13 +3308,16 @@
       "speakers": {
         "A": {
           "gender": "female",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Libby"
         },
         "B": {
           "gender": "male",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Ryan"
         }
-      }
+      },
+      "audio_hash": "c595d7a9ed887902"
     },
     {
       "chapter": "Listening",
@@ -3268,13 +3338,16 @@
       "speakers": {
         "A": {
           "gender": "male",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Ryan"
         },
         "B": {
           "gender": "female",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Libby"
         }
-      }
+      },
+      "audio_hash": "fc79564e85d2e94f"
     },
     {
       "chapter": "Listening",
@@ -3295,13 +3368,16 @@
       "speakers": {
         "A": {
           "gender": "male",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Ryan"
         },
         "B": {
           "gender": "female",
-          "age": "adult"
+          "age": "adult",
+          "voice": "Libby"
         }
-      }
+      },
+      "audio_hash": "8d7f368507e39858"
     },
     {
       "chapter": "Functional",

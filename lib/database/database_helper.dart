@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 30,
+      version: 31,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
@@ -29,6 +29,12 @@ class DatabaseHelper {
   }
 
   Future<void> _onUpgrade(Database db, int oldVersion, int newVersion) async {
+    if (oldVersion < 31) {
+      // v31: V3.27 听力服务端预渲染音频。questions 加 audio_hash 列存 CDN mp3 哈希。
+      try {
+        await db.execute('ALTER TABLE questions ADD COLUMN audio_hash TEXT');
+      } catch (_) {/* 已有则跳 */}
+    }
     if (oldVersion < 30) {
       // v30: V3.24 家长审核加 issue_type 字段（题目有误/答案有误/半主观题/无问题）
       // approve 后写 audit feedback log 让 agent 处理（题库修订工作流）
@@ -801,6 +807,7 @@ class DatabaseHelper {
         image_data TEXT,
         audio_text TEXT,
         speakers_json TEXT,
+        audio_hash TEXT,
         round INTEGER,
         group_id TEXT,
         group_order INTEGER,

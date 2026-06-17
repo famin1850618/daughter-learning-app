@@ -1,7 +1,7 @@
 name: daughter_learning_app
 description: 为女儿量身定制的学习助手App
 publish_to: 'none'
-version: 3.26.1+52
+version: 3.27.0+53
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -26,6 +26,7 @@ dependencies:
   flutter_svg: ^2.0.10
   flutter_tts: ^4.0.2
   flutter_math_fork: ^0.7.2
+  just_audio: ^0.9.42  # V3.27 听力预渲染 mp3 播放（ExoPlayer，设备无关）
 
 dev_dependencies:
   flutter_test:
