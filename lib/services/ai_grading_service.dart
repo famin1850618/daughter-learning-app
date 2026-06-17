@@ -34,12 +34,13 @@ class AiGradingService {
   static Future<bool> isEnabled() async {
     final p = await SharedPreferences.getInstance();
     return (p.getBool(prefEnabled) ?? false) &&
-        ((p.getString(prefKey)?.isNotEmpty) ?? false);
+        ((p.getString(prefKey) ?? '').trim().isNotEmpty);
   }
 
   Future<AiVerdict> _call(String systemPrompt, String userPrompt) async {
     final p = await SharedPreferences.getInstance();
-    final key = p.getString(prefKey) ?? '';
+    // V3.27.1: trim — 粘贴的 key 带尾随空格/换行会让 Authorization 头失效(401)
+    final key = (p.getString(prefKey) ?? '').trim();
     final model = (p.getString(prefModel)?.trim().isNotEmpty ?? false)
         ? p.getString(prefModel)!.trim()
         : _defaultModel;

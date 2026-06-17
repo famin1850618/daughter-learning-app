@@ -626,6 +626,10 @@ class PracticeService extends ChangeNotifier {
               acceptedAnswer: ans,
               aiReason: v.feedback,
             ); // 上报供全局折进 batch JSON
+          } else if (v.available) {
+            aiFb = 'AI 判定仍不正确：${v.feedback}'; // V3.27.1 显式
+          } else {
+            aiFb = 'AI 复判失败：${v.feedback}'; // V3.27.1 显式暴露原因
           }
         }
       }
@@ -723,6 +727,12 @@ class PracticeService extends ChangeNotifier {
             acceptedAnswer: answer,
             aiReason: v.feedback,
           ); // 上报供全局折进 batch JSON
+        } else if (v.available) {
+          // V3.27.1: AI 跑了但判"不可接受" → 显式告知（之前静默 → 无法诊断）
+          _lastAiFeedback = 'AI 判定仍不正确：${v.feedback}';
+        } else {
+          // V3.27.1: AI 调用失败（未配置/网络/模型）→ 显式暴露原因，别再静默
+          _lastAiFeedback = 'AI 复判失败：${v.feedback}';
         }
       }
     }

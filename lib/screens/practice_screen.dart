@@ -1374,6 +1374,12 @@ class _QuestionScreenState extends State<_QuestionScreen> {
             Text('（已补入答案集，下次同样答法直接判对）',
                 style: TextStyle(fontSize: 11, color: Colors.grey.shade500)),
           ],
+          // V3.27.1: AI 跑了但判错 / 调用失败 → 显式展示（消除静默，便于诊断）
+          if (!correct && aiFb != null && aiFb.isNotEmpty) ...[
+            const SizedBox(height: 6),
+            Text('🤖 $aiFb',
+                style: TextStyle(fontSize: 13, color: Colors.orange.shade900)),
+          ],
           if (!correct) ...[
             // V3.8.3: 显式展示我填的 vs 正解，方便小孩判断是否申诉
             const SizedBox(height: 8),
