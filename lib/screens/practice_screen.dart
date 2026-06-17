@@ -506,8 +506,11 @@ class _QuestionScreenState extends State<_QuestionScreen> {
   Widget _buildGroupResultView(BuildContext context, PracticeService service) {
     final results = service.lastGroupResult ?? [];
     final allCorrect = results.isNotEmpty && results.every((r) => r.isCorrect);
+    // V3.26.1: 只有"未被 AI 终判的主观/争议题"才算等家长；AI 判了的不再 pending
     final hasSubj = results.any((r) =>
-        r.question.type == QuestionType.subjective || r.question.aiDispute != null);
+        (r.question.type == QuestionType.subjective ||
+            r.question.aiDispute != null) &&
+        !r.aiResolved);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -617,6 +620,21 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                     ),
                   ]),
                 ],
+                // V3.26.1: AI 复判/评语（组合题路径也接 AI 后展示）
+                if (r.aiFeedback != null && r.aiFeedback!.isNotEmpty) ...[
+                  const SizedBox(height: 6),
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                      color: Colors.teal.shade50,
+                      borderRadius: BorderRadius.circular(6),
+                      border: Border.all(color: Colors.teal.shade200),
+                    ),
+                    child: MathText(
+                        '${r.question.type == QuestionType.subjective ? '🤖 AI 评语' : '🤖 AI 复判'}：${r.aiFeedback}',
+                        style: const TextStyle(fontSize: 12.5, height: 1.5)),
+                  ),
+                ],
                 if (r.question.explanation != null && r.question.explanation!.isNotEmpty) ...[
                   const SizedBox(height: 6),
                   Container(
@@ -689,11 +707,23 @@ class _QuestionScreenState extends State<_QuestionScreen> {
         const SizedBox(width: 8),
         // 下一题（非末位）/ 完成整组（末位）
         Expanded(
-          child: ElevatedButton.icon(
-            icon: Icon(isLast ? Icons.check_circle : Icons.arrow_forward, size: 18),
-            label: Text(isLast ? '完成整组' : '下一题'),
-            onPressed: _canSubmit(q) && !_submitting ? _submit : null,
-          ),
+          child: (isLast && _submitting)
+              // V3.26.1: 整组判分含 AI 调用（每子题 2-3s），显示 loading
+              ? ElevatedButton.icon(
+                  icon: const SizedBox(
+                      height: 16,
+                      width: 16,
+                      child: CircularProgressIndicator(
+                          strokeWidth: 2, color: Colors.white)),
+                  label: const Text('AI 判分中…'),
+                  onPressed: null,
+                )
+              : ElevatedButton.icon(
+                  icon: Icon(isLast ? Icons.check_circle : Icons.arrow_forward,
+                      size: 18),
+                  label: Text(isLast ? '完成整组' : '下一题'),
+                  onPressed: _canSubmit(q) && !_submitting ? _submit : null,
+                ),
         ),
       ],
     );

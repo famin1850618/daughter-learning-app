@@ -17,11 +17,17 @@ class GroupResultEntry {
   final bool isCorrect;
   /// V3.24.8: 组合题每个子题独立 practice_record_id，供汇总屏申诉按钮用
   final int? practiceRecordId;
+  /// V3.26.1: AI 对该子题的判定结果（填空复判/主观题判分）。null = 未经 AI。
+  final String? aiFeedback;
+  /// V3.26.1: 该子题是否已被 AI 终判（主观题被 AI 判定即不再等家长）。
+  final bool aiResolved;
   const GroupResultEntry({
     required this.question,
     required this.userAnswer,
     required this.isCorrect,
     this.practiceRecordId,
+    this.aiFeedback,
+    this.aiResolved = false,
   });
 }
 
@@ -569,14 +575,32 @@ class PracticeService extends ChangeNotifier {
     final group = currentGroupIndices();
     final results = <GroupResultEntry>[];
     bool allCorrect = true;
+    // V3.26.1: 主观题被 AI 判了 → 不再等家长；任一未判主观题 → 整组进家长审、不计学情
+    bool anyPendingParent = false;
+    // V3.26.1: 组合题路径也接 AI（与 submitAnswer 一致）。只查一次开关。
+    final aiOn = await AiGradingService.isEnabled();
     for (final idx in group) {
       final gq = _currentQuestions[idx];
       final ans = gq.id == null ? '' : (_pendingGroupAnswers[gq.id] ?? '');
       bool correct;
       double partial;
+      String? aiFb;
+      bool aiResolved = false;
+      bool pendingParent = false;
       if (gq.type == QuestionType.subjective) {
-        correct = false; // 主观题待批，整组不算全对
+        correct = false; // 默认待家长评分
         partial = 0.0;
+        // V3.26.1: AI 判主观题；判了就不入家长队列
+        if (aiOn) {
+          final v = await AiGradingService().gradeSubjective(gq, ans);
+          if (v.available) {
+            correct = v.ok;
+            partial = v.score;
+            aiFb = v.feedback;
+            aiResolved = true;
+          }
+        }
+        if (!aiResolved) pendingParent = true;
       } else {
         // V3.20.3 (阶段一): 用 evaluatePartial 得 (isCorrect, partialScore)
         final result = AnswerMatcher.evaluatePartial(
@@ -584,8 +608,29 @@ class PracticeService extends ChangeNotifier {
           answerBlanks: gq.answerBlanks);
         correct = result.isCorrect;
         partial = result.partialScore;
+        // V3.26.1: 子题填空/计算被字符串判错 → AI 复判（与 submitAnswer 一致）
+        if (!correct &&
+            (gq.type == QuestionType.fillBlank ||
+                gq.type == QuestionType.calculation) &&
+            aiOn) {
+          final v = await AiGradingService().recheckFill(gq, ans);
+          if (v.available && v.ok) {
+            correct = true;
+            partial = 1.0;
+            aiFb = v.feedback;
+            aiResolved = true;
+            await _dao.appendAnswerAlias(gq.id!, ans); // 本地立即生效
+            await _reviewService.logAiAlias(
+              questionId: gq.id!,
+              standardAnswer: gq.answer,
+              acceptedAnswer: ans,
+              aiReason: v.feedback,
+            ); // 上报供全局折进 batch JSON
+          }
+        }
       }
       if (!correct) allCorrect = false;
+      if (pendingParent) anyPendingParent = true;
       // INSERT 单个子题 record
       final recordId = await _dao.insertRecord(PracticeRecord(
         questionId: gq.id!,
@@ -599,21 +644,19 @@ class PracticeService extends ChangeNotifier {
       ));
       // V3.20.3 (阶段一): 累加 partial 用于 session 通过判定
       _partialScore += partial;
-      // 主观题/AI争议题入审核
-      if (gq.type == QuestionType.subjective) {
+      // 主观题在 AI 未判（未启用/失败）时入家长审核兜底
+      if (pendingParent) {
         await _reviewService.submitSubjectiveGrading(practiceRecordId: recordId);
       }
       // V3.13 修正：组合题里 aiDispute 已过滤
       // V3.24.8: 塞 practiceRecordId 让汇总屏申诉按钮可用
       results.add(GroupResultEntry(
         question: gq, userAnswer: ans, isCorrect: correct,
-        practiceRecordId: recordId));
+        practiceRecordId: recordId, aiFeedback: aiFb, aiResolved: aiResolved));
     }
 
-    // 整组全对 → _score+1（除非含主观题，则不计学情，等家长审）
-    final hasSubj = group.any((i) =>
-        _currentQuestions[i].type == QuestionType.subjective);
-    if (allCorrect && !hasSubj) _score++;
+    // 整组全对 → _score+1（除非有未判主观题等家长，则不计学情）
+    if (allCorrect && !anyPendingParent) _score++;
     // V3.20.3 (阶段一): _partialScore 按每子题 partial 累加（见上方 loop 中 partial 已计算）
 
     _lastGroupResult = results;

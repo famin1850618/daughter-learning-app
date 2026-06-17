@@ -79,7 +79,8 @@ class AiGradingService {
       final fb = (j['feedback'] ?? j['reason'] ?? '').toString();
       return AiVerdict(ok: ok, score: score, feedback: fb);
     } catch (e) {
-      return AiVerdict.unavailable('调用失败');
+      // V3.26.1: 透出真实错误（silent catch 是头号杀手），便于设置页"测试连接"排查
+      return AiVerdict.unavailable('调用失败：$e');
     }
   }
 
