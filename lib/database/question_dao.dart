@@ -64,6 +64,27 @@ class WrongQuestionBundle {
   });
 }
 
+/// V3.28 学习留痕：一次练习 session 的汇总（按 session_id 聚合 practice_records）。
+class SessionSummary {
+  final String sessionId;
+  final DateTime startedAt;
+  final int count; // 答题数
+  final int correctCount; // is_correct=1 的数
+  final double partialSum; // partial_score 累加（无则按 is_correct 计）
+  final List<int> subjectIdx; // 涉及的科目（Subject.index）
+  final List<String> chapters; // 涉及的章节
+  SessionSummary({
+    required this.sessionId,
+    required this.startedAt,
+    required this.count,
+    required this.correctCount,
+    required this.partialSum,
+    required this.subjectIdx,
+    required this.chapters,
+  });
+  double get accuracy => count > 0 ? partialSum / count : 0;
+}
+
 class QuestionDao {
   final DatabaseHelper _db = DatabaseHelper();
 
@@ -1159,6 +1180,78 @@ class QuestionDao {
   }
 
   /// 算 session 当前 (score, total)，用于审核通过后重判 session 是否新进入"通过"区间
+  // ── V3.28 学习留痕 ─────────────────────────────────────────
+  /// 历史 session 汇总（按 session_id 聚合 practice_records，最近优先）。
+  Future<List<SessionSummary>> getSessionSummaries({int limit = 100}) async {
+    final db = await _db.database;
+    final rows = await db.rawQuery('''
+      SELECT r.session_id AS sid,
+             MIN(r.practiced_at) AS started,
+             COUNT(*) AS cnt,
+             SUM(CASE WHEN r.is_correct = 1 THEN 1 ELSE 0 END) AS correct,
+             SUM(COALESCE(r.partial_score, r.is_correct)) AS partial,
+             GROUP_CONCAT(DISTINCT q.subject) AS subjects,
+             GROUP_CONCAT(DISTINCT q.chapter) AS chapters
+      FROM practice_records r
+      LEFT JOIN questions q ON q.id = r.question_id
+      WHERE r.session_id IS NOT NULL AND r.session_id != ''
+      GROUP BY r.session_id
+      ORDER BY started DESC
+      LIMIT ?
+    ''', [limit]);
+    return rows.map((row) {
+      final subs = (row['subjects'] as String?)
+              ?.split(',')
+              .where((s) => s.trim().isNotEmpty)
+              .map((s) => int.tryParse(s.trim()) ?? -1)
+              .where((i) => i >= 0)
+              .toSet()
+              .toList() ??
+          <int>[];
+      final chs = (row['chapters'] as String?)
+              ?.split(',')
+              .where((s) => s.trim().isNotEmpty)
+              .toSet()
+              .toList() ??
+          <String>[];
+      return SessionSummary(
+        sessionId: row['sid'] as String,
+        startedAt: DateTime.parse(row['started'] as String),
+        count: (row['cnt'] as int?) ?? 0,
+        correctCount: (row['correct'] as int?) ?? 0,
+        partialSum: ((row['partial'] as num?) ?? 0).toDouble(),
+        subjectIdx: subs,
+        chapters: chs,
+      );
+    }).toList();
+  }
+
+  /// 某次 session 的每道题作答记录（join 题目内容），按时间升序。
+  Future<List<Map<String, Object?>>> getRecordsForSession(String sessionId) async {
+    final db = await _db.database;
+    return db.rawQuery('''
+      SELECT r.id AS r_id, r.user_answer, r.is_correct, r.partial_score,
+             r.practiced_at, r.time_spent, r.question_id,
+             q.content, q.type, q.answer, q.chapter, q.knowledge_point,
+             q.subject, q.grade
+      FROM practice_records r
+      LEFT JOIN questions q ON q.id = r.question_id
+      WHERE r.session_id = ?
+      ORDER BY r.practiced_at ASC, r.id ASC
+    ''', [sessionId]);
+  }
+
+  /// 单题历次作答（看是否在进步/何时掌握），按时间升序。
+  Future<List<Map<String, Object?>>> getAttemptsForQuestion(int questionId) async {
+    final db = await _db.database;
+    return db.rawQuery('''
+      SELECT user_answer, is_correct, partial_score, practiced_at, time_spent, session_id
+      FROM practice_records
+      WHERE question_id = ?
+      ORDER BY practiced_at ASC, id ASC
+    ''', [questionId]);
+  }
+
   Future<({int score, int total})> getSessionScore(String sessionId) async {
     final db = await _db.database;
     final r = await db.rawQuery('''

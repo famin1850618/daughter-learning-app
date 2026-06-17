@@ -29,6 +29,17 @@ class PlanItemDao {
     }, where: 'id = ?', whereArgs: [id]);
   }
 
+  /// V3.28: 所有 pending plan items（任意日期）。用于练习自动完成——
+  /// 计划允许提前完成，故不应只看今天（Famin 2026-06-18）。
+  Future<List<PlanItem>> getAllPending() async {
+    final db = await _db.database;
+    final rows = await db.query('plan_items',
+        where: 'status = ?',
+        whereArgs: [PlanItemStatus.pending.index],
+        orderBy: 'id ASC');
+    return rows.map(PlanItem.fromMap).toList();
+  }
+
   Future<List<PlanItem>> getByDayPlanId(int dayPlanId) async {
     final db = await _db.database;
     final rows = await db.query('plan_items',

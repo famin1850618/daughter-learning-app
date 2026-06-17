@@ -13,6 +13,7 @@ import '../services/practice_service.dart';
 import '../services/navigation_service.dart';
 import '../services/assessment_service.dart';
 import '../services/reward_service.dart';
+import 'history_screen.dart';
 import '../services/difficulty_settings_service.dart';
 import '../services/review_request_service.dart';
 import '../services/data_reset_service.dart';
@@ -119,7 +120,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
       _lastReadResetVersion = resetVersion;
     }
     return DefaultTabController(
-      length: 2,
+      length: 3,
       child: Scaffold(
         appBar: AppBar(
           title: const Text('成效'),
@@ -138,6 +139,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
             tabs: [
               Tab(icon: Icon(Icons.report_outlined), text: '错题集'),
               Tab(icon: Icon(Icons.assignment_outlined), text: '测试'),
+              Tab(icon: Icon(Icons.history), text: '留痕'),
             ],
           ),
         ),
@@ -145,6 +147,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
           children: [
             _wrongQuestionsTab(),
             _testTab(context),
+            const HistoryTimeline(),
           ],
         ),
       ),

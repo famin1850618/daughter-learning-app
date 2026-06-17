@@ -273,11 +273,14 @@ class PlanService extends ChangeNotifier {
     await loadDate(_selectedDate);
   }
 
-  /// V3.7.9：练习自动判定计划完成
+  /// V3.7.9 / V3.28：练习自动判定计划完成
   ///
-  /// 当一组练习正确率 ≥ 80% 时，扫描今日所有 pending PlanItem：
+  /// 当一组练习正确率 ≥ 80% 时，扫描**所有 pending PlanItem（不限日期）**：
   /// - 有 knowledgePoint 的 PlanItem：要求 (subjectName, grade, chapter, kp) 全匹配
   /// - 无 knowledgePoint 的 PlanItem：仅 (subjectName, grade, chapter) 匹配即可
+  ///
+  /// V3.28（Famin 2026-06-18）：去掉"只看今天"——计划本就允许提前完成，
+  /// 只扫今天会让提前做的任务漏标。改为扫全部 pending。
   ///
   /// 返回标记完成的 item 数。
   Future<int> autoCompleteFromPractice({
@@ -289,12 +292,8 @@ class PlanService extends ChangeNotifier {
     if (score / total < 0.8) return 0;
     if (coveredTuples.isEmpty) return 0;
 
-    final today = PlanDateUtils.dateOnly(DateTime.now());
-    final dayGroups = await _groupDao.getDayPlansForDate(today);
-    if (dayGroups.isEmpty) return 0;
-    final ids = dayGroups.map((g) => g.id!).toList();
-    final itemMap = await _itemDao.getByDayPlanIds(ids);
-    final allItems = itemMap.values.expand((x) => x).toList();
+    final allItems = await _itemDao.getAllPending();
+    if (allItems.isEmpty) return 0;
 
     int marked = 0;
     for (final item in allItems) {
@@ -322,6 +321,23 @@ class PlanService extends ChangeNotifier {
   Future<void> markItemPending(int itemId) async {
     await _itemDao.markPending(itemId);
     await loadDate(_selectedDate);
+  }
+
+  /// V3.28 留痕：给定一次练习覆盖的知识点元组，返回**所有 pending 且匹配**的
+  /// 计划项（与 autoCompleteFromPractice 同一匹配口径，但不卡 80%，仅用于展示）。
+  Future<List<PlanItem>> pendingItemsMatching(
+      List<PracticeKpTuple> covered) async {
+    if (covered.isEmpty) return [];
+    final items = await _itemDao.getAllPending();
+    return items.where((item) {
+      final hasKp =
+          item.knowledgePoint != null && item.knowledgePoint!.isNotEmpty;
+      return covered.any((t) =>
+          t.subjectName == item.subjectName &&
+          t.grade == item.grade &&
+          t.chapter == item.chapterName &&
+          (!hasKp || t.knowledgePoint == item.knowledgePoint));
+    }).toList();
   }
 
   // ── Item-level adjustment ────────────────────
