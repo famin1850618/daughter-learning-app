@@ -13,6 +13,7 @@ import '../services/difficulty_settings_service.dart';
 import '../models/subject.dart';
 import '../models/question.dart';
 import '../models/speaker_profile.dart';
+import '../utils/answer_matcher.dart';
 import '../models/curriculum.dart';
 import '../database/curriculum_dao.dart';
 import '../database/question_dao.dart';
@@ -335,6 +336,8 @@ class _QuestionScreenState extends State<_QuestionScreen> {
   String? _selectedOption;
   bool? _result;
   final _answerCtrl = TextEditingController();
+  /// V3.25: 多空题逐空输入框（answer_blanks≥2 时一空一框），消灭"单框多空数量对不上即判0"
+  final List<TextEditingController> _blankCtrls = [];
   Timer? _timer;
   int _seconds = 0;
   /// V3.8.3: 计时暂停（小孩走神/被打断时按）。仅 UI 层实现，重启后默认 resume
@@ -351,6 +354,7 @@ class _QuestionScreenState extends State<_QuestionScreen> {
       if (_paused) return; // V3.8.3: 暂停时不累加
       setState(() => _seconds++);
     });
+    _setupBlankCtrls();
     _maybeLoadAttemptCount();
     _prefillPendingAnswer();
   }
@@ -362,12 +366,38 @@ class _QuestionScreenState extends State<_QuestionScreen> {
       _selectedOption = null;
       _result = null;
       _answerCtrl.clear();
+      _setupBlankCtrls();
       _seconds = 0;
       _paused = false;
       _maybeLoadAttemptCount();
       _prefillPendingAnswer();
     }
   }
+
+  /// V3.25: 当前题是否多空（answer_blanks≥2 的填空题）
+  bool get _isMultiBlank {
+    final q = widget.question;
+    return q.type == QuestionType.fillBlank &&
+        (q.answerBlanks?.length ?? 0) >= 2;
+  }
+
+  /// V3.25: 按 answer_blanks 数量重建逐空输入框控制器
+  void _setupBlankCtrls() {
+    for (final c in _blankCtrls) {
+      c.dispose();
+    }
+    _blankCtrls.clear();
+    if (_isMultiBlank) {
+      for (int i = 0; i < widget.question.answerBlanks!.length; i++) {
+        _blankCtrls.add(TextEditingController());
+      }
+    }
+  }
+
+  /// V3.25: 取当前文本类答案。多空题用 ‖ 拼接各空（AnswerMatcher 按位置切、保留空段）。
+  String _currentTextAnswer() => _isMultiBlank
+      ? _blankCtrls.map((c) => c.text.trim()).join(AnswerMatcher.blankSep)
+      : _answerCtrl.text.trim();
 
   /// V3.14: 组合题里如果当前题已暂存过答案，预填回去（让用户能修改）
   void _prefillPendingAnswer() {
@@ -378,6 +408,11 @@ class _QuestionScreenState extends State<_QuestionScreen> {
     if (stashed == null || stashed.isEmpty) return;
     if (q.type == QuestionType.multipleChoice || q.type == QuestionType.judgment) {
       _selectedOption = stashed;
+    } else if (_isMultiBlank) {
+      final parts = stashed.split(AnswerMatcher.blankSep);
+      for (int i = 0; i < _blankCtrls.length && i < parts.length; i++) {
+        _blankCtrls[i].text = parts[i];
+      }
     } else {
       _answerCtrl.text = stashed;
     }
@@ -387,6 +422,9 @@ class _QuestionScreenState extends State<_QuestionScreen> {
   void dispose() {
     _timer?.cancel();
     _answerCtrl.dispose();
+    for (final c in _blankCtrls) {
+      c.dispose();
+    }
     super.dispose();
   }
 
@@ -421,7 +459,7 @@ class _QuestionScreenState extends State<_QuestionScreen> {
     final answer = (q.type == QuestionType.multipleChoice ||
             q.type == QuestionType.judgment)
         ? (_selectedOption ?? '')
-        : _answerCtrl.text.trim();
+        : _currentTextAnswer();
     if (answer.isEmpty) return;
     final service = context.read<PracticeService>();
     // V3.14: 组合题分支处理
@@ -451,7 +489,7 @@ class _QuestionScreenState extends State<_QuestionScreen> {
     final answer = (q.type == QuestionType.multipleChoice ||
             q.type == QuestionType.judgment)
         ? (_selectedOption ?? '')
-        : _answerCtrl.text.trim();
+        : _currentTextAnswer();
     if (answer.isNotEmpty) service.stashGroupAnswer(answer);
     service.goToPrevInGroup();
   }
@@ -552,7 +590,10 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                 Row(children: [
                   Text('你答：', style: TextStyle(fontSize: 13, color: Colors.grey[700])),
                   Expanded(
-                    child: MathText(r.userAnswer.isEmpty ? '（未填）' : r.userAnswer,
+                    child: MathText(
+                        r.userAnswer.isEmpty
+                            ? '（未填）'
+                            : r.userAnswer.replaceAll(AnswerMatcher.blankSep, '、'),
                         style: TextStyle(
                             fontSize: 13,
                             color: r.isCorrect ? Colors.green.shade700 : Colors.red.shade700)),
@@ -862,6 +903,9 @@ class _QuestionScreenState extends State<_QuestionScreen> {
         q.type == QuestionType.judgment) {
       return _selectedOption != null;
     }
+    if (_isMultiBlank) {
+      return _blankCtrls.any((c) => c.text.trim().isNotEmpty);
+    }
     return _answerCtrl.text.trim().isNotEmpty;
   }
 
@@ -983,6 +1027,50 @@ class _QuestionScreenState extends State<_QuestionScreen> {
         );
 
       case QuestionType.fillBlank:
+        // V3.25: 多空题逐空输入框（一空一框，标号对位）
+        if (_isMultiBlank) {
+          final n = _blankCtrls.length;
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(bottom: 6),
+                child: Text('共 $n 空，按顺序逐空填写',
+                    style: TextStyle(fontSize: 12, color: Colors.grey[600])),
+              ),
+              ...List.generate(n, (i) => Padding(
+                    padding: const EdgeInsets.only(bottom: 8),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        SizedBox(
+                          width: 34,
+                          child: Text('${i + 1}.',
+                              style: const TextStyle(
+                                  fontSize: 15, fontWeight: FontWeight.bold)),
+                        ),
+                        Expanded(
+                          child: TextField(
+                            controller: _blankCtrls[i],
+                            onChanged: (_) => setState(() {}),
+                            textInputAction: i == n - 1
+                                ? TextInputAction.done
+                                : TextInputAction.next,
+                            decoration: InputDecoration(
+                              isDense: true,
+                              hintText: '第 ${i + 1} 空',
+                              border: const OutlineInputBorder(),
+                              contentPadding: const EdgeInsets.symmetric(
+                                  horizontal: 10, vertical: 10),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  )),
+            ],
+          );
+        }
         return TextField(
           controller: _answerCtrl,
           onChanged: (_) => setState(() {}),
@@ -1120,6 +1208,44 @@ class _QuestionScreenState extends State<_QuestionScreen> {
     );
   }
 
+  /// V3.25: 多空题逐空对错明细（我填 vs 正解，逐空 ✓/✗）
+  Widget _buildPerBlankBreakdown(Question q) {
+    final blanks = q.answerBlanks ?? [];
+    final userBlanks = _blankCtrls.map((c) => c.text.trim()).toList();
+    final res = AnswerMatcher.perBlankResults(
+        userBlanks: userBlanks, answerBlanks: blanks, type: q.type);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: List.generate(blanks.length, (i) {
+        final ok = res[i];
+        final mine =
+            (i < userBlanks.length && userBlanks[i].isNotEmpty) ? userBlanks[i] : '（空）';
+        return Padding(
+          padding: const EdgeInsets.only(bottom: 4),
+          child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            Icon(ok ? Icons.check_circle : Icons.cancel,
+                size: 16, color: ok ? Colors.green : Colors.red),
+            const SizedBox(width: 6),
+            Expanded(
+              child: Text.rich(TextSpan(children: [
+                TextSpan(
+                    text: '${i + 1}. 我填：$mine',
+                    style: TextStyle(
+                        color: ok ? Colors.green.shade700 : Colors.red.shade700)),
+                if (!ok)
+                  TextSpan(
+                      text: '   正确：${blanks[i]}',
+                      style: TextStyle(
+                          color: Colors.green.shade800,
+                          fontWeight: FontWeight.w600)),
+              ])),
+            ),
+          ]),
+        );
+      }),
+    );
+  }
+
   Widget _buildResult(Question q, bool correct) {
     // V3.8.3: 主观题答完显示"等家长批改"，不判对错
     if (q.type == QuestionType.subjective) {
@@ -1161,7 +1287,7 @@ class _QuestionScreenState extends State<_QuestionScreen> {
     final color = correct ? AppTheme.success : AppTheme.secondary;
     final userAnswer = q.type == QuestionType.multipleChoice
         ? (_selectedOption ?? '')
-        : _answerCtrl.text.trim();
+        : _currentTextAnswer();
     return Container(
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
@@ -1177,11 +1303,16 @@ class _QuestionScreenState extends State<_QuestionScreen> {
           if (!correct) ...[
             // V3.8.3: 显式展示我填的 vs 正解，方便小孩判断是否申诉
             const SizedBox(height: 8),
-            Text('我填的：$userAnswer',
-                style: TextStyle(color: Colors.red.shade700, fontWeight: FontWeight.w600)),
-            const SizedBox(height: 4),
-            Text('正确答案：${q.displayAnswer}',
-                style: TextStyle(color: Colors.green.shade700, fontWeight: FontWeight.w600)),
+            // V3.25: 多空题逐空显示对错（让小孩看到是哪一空、是否只错一个）
+            if (_isMultiBlank)
+              _buildPerBlankBreakdown(q)
+            else ...[
+              Text('我填的：$userAnswer',
+                  style: TextStyle(color: Colors.red.shade700, fontWeight: FontWeight.w600)),
+              const SizedBox(height: 4),
+              Text('正确答案：${q.displayAnswer}',
+                  style: TextStyle(color: Colors.green.shade700, fontWeight: FontWeight.w600)),
+            ],
             // V3.20.3 (阶段一): 半主观题答错主动提示申诉路径
             if (q.isSemiSubjective) ...[
               const SizedBox(height: 8),
