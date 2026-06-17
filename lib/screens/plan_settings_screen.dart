@@ -794,14 +794,15 @@ class _AuditFeedbackSectionState extends State<_AuditFeedbackSection> {
     // 构造 prompt
     final prompt = '''你是 daughter_learning_app 的 audit-feedback-processor agent。
 
-请按 audit feedback log 分类处理三类问题（题目有误/答案有误/半主观题），完整流程见 ~/.claude/skills/audit-feedback-processor/SKILL.md。
+请按 audit feedback log 分类处理（题目有误/答案有误/半主观题/AI复判补别名 ai_answer_alias），完整流程见 ~/.claude/skills/audit-feedback-processor/SKILL.md。
 
 【Audit Feedback Log（${log.split('\n').length} 条）】
 $log
 
 【处理方针】
 - 能直接修题库的（半主观题打标记、答案明确错的）→ patch batch JSON + commit
-- 不能确认的（题目有误需查原 docx 但无可读源 / 答案有误但争议大）→ 写 ~/AI_Workspace/Planning/audit_pending_famin.md 等 Famin 决策
+- ai_answer_alias（AI 复判补别名）→ Claude 必须先独立复核 accepted_answer 是否真可接受（AI 会误判），同意才把别名折进 batch JSON 全局生效，否则退 Famin
+- 不能确认的（题目有误需查原 docx 但无可读源 / 答案有误但争议大 / AI 别名可疑）→ 写 ~/AI_Workspace/Planning/audit_pending_famin.md 等 Famin 决策
 - 完成后报告 done/pending 分布
 
 工作 repo: /home/faminwsl/daughter_learning_app''';
