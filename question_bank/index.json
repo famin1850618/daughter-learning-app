@@ -1,5 +1,5 @@
 {
-  "version": 118,
+  "version": 119,
   "updated_at": "2026-06-18",
   "batches": [
     {
@@ -169,9 +169,29 @@
       "grade": 6,
       "count": 21,
       "batch_hash": "da61f998b81faead3fc6f73de0fa19da9005e7a8"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qm_guangming_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_guangming_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 23,
+      "batch_hash": "c587ace35afc99a2bca58a97827a4d55ea4e1308"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_longhua_002.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 28,
+      "batch_hash": "c5f1cb9eb9f91a521c60039a4b7c63c15cb115b0"
     }
   ],
   "_changelog": [
+    {
+      "version": 119,
+      "note": "v119: 归档 6-19 自动扫 pair1 — realpaper_g6_chinese_bubian_qm_guangming_001(23), realpaper_g6_chinese_bubian_qm_longhua_002(28)"
+    },
     {
       "version": 104,
       "note": "V3.22 5+5 pilot 入库：10 套 g6 batch（5 语文 + 5 数学）按新 R31 重扫"
