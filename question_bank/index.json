@@ -1,5 +1,5 @@
 {
-  "version": 117,
+  "version": 118,
   "updated_at": "2026-06-18",
   "batches": [
     {
@@ -80,7 +80,7 @@
       "subject": "math",
       "grade": 6,
       "count": 26,
-      "batch_hash": "d9141ab81ecbfab43610f68d2ea1e7edf3df05f0"
+      "batch_hash": "03897285d8013a0ce5bc230268a021e0c6a216fe"
     },
     {
       "source": "realpaper_g6_math_beishida_qm_longhua_001",
@@ -88,7 +88,7 @@
       "subject": "math",
       "grade": 6,
       "count": 24,
-      "batch_hash": "0380dfc169aac9f007299c9d5457bab7ebf93ba8"
+      "batch_hash": "a65dae6d50ff1b7c19da03a7310284b4e0d31c5e"
     },
     {
       "source": "realpaper_g6_math_beishida_xsc_baoan_001",
@@ -96,7 +96,7 @@
       "subject": "math",
       "grade": 6,
       "count": 27,
-      "batch_hash": "a73c2623972e00acb49d91faf9832c06c3bba444"
+      "batch_hash": "92e6f74d3e6ef9a0f6e2092e79025851b63a4e5b"
     },
     {
       "source": "realpaper_g6_math_beishida_xsc_shenzhen_001",
@@ -104,15 +104,15 @@
       "subject": "math",
       "grade": 6,
       "count": 29,
-      "batch_hash": "0abb1ddb527d1d5610c8be48bba42fa27da5e9ae"
+      "batch_hash": "e2ab6c7f99804347e23a04ef899336d8a8d28ed4"
     },
     {
       "source": "realpaper_g6_math_beishida_zhuanxiang_jieda_001",
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_zhuanxiang_jieda_001.json",
       "subject": "math",
       "grade": 6,
-      "count": 76,
-      "batch_hash": "d5719fd782f05d1b523f8e5d9c2bcb96622e18fa"
+      "count": 92,
+      "batch_hash": "2680d8f4cfc50d4142119677253afff5dcf2e454"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qm_luohu_001",
@@ -128,7 +128,7 @@
       "subject": "math",
       "grade": 6,
       "count": 24,
-      "batch_hash": "c9574a8d29a3b8239a4e251cbfc7da67e1cb797c"
+      "batch_hash": "fc0e4d47344a5767cf0954906171252481c32c93"
     },
     {
       "source": "realpaper_g6_math_beishida_xsc_longgang_001",
@@ -136,7 +136,7 @@
       "subject": "math",
       "grade": 6,
       "count": 37,
-      "batch_hash": "2979be850ed20c60caf3c96ca81e707670b4e8c9"
+      "batch_hash": "67137925751ac7684caedb1ce66c4c214f14dd54"
     },
     {
       "source": "realpaper_g6_math_beishida_xsc_yantian_001",
@@ -144,7 +144,7 @@
       "subject": "math",
       "grade": 6,
       "count": 43,
-      "batch_hash": "a2b16494aa6640f9fe948dd5bfd02df7934a738a"
+      "batch_hash": "1cd615fa2a3921de72826341abd51c800fb7c977"
     },
     {
       "source": "realpaper_g6_math_beishida_qm_guangming_001",
@@ -152,7 +152,7 @@
       "subject": "math",
       "grade": 6,
       "count": 28,
-      "batch_hash": "bbf2b05cbb8ac45f517ea6e8001c00dcfbe1c097"
+      "batch_hash": "23ab2c932dae48e3aee95525b2ca5abd2cc4e575"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qm_longhua_001",
@@ -319,6 +319,11 @@
       "version": 117,
       "date": "2026-06-18",
       "note": "8 份语文重扫(--force)：补下划线<u>+加点字**、修选项重复(check25)、修旧扫过度加粗/位错；答案口径不变"
+    },
+    {
+      "version": 118,
+      "date": "2026-06-18",
+      "note": "9 份数学重扫(--force)：补划线数<u>+修旧扫多空|||误用/全角括号占位、解答题专项找回13题(76→92)、修选项重复;答案存疑沿用"
     }
   ]
 }
