@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 import '../database/question_dao.dart';
 import '../services/plan_service.dart';
 import '../models/subject.dart';
-import '../utils/app_theme.dart';
 import '../utils/math_text.dart';
 
 /// V3.28 学习留痕：练习历史（时间线 → session 详情 + 计划对账 → 单题历次作答）。
@@ -13,6 +12,8 @@ String _fmtTime(DateTime t) {
   String two(int n) => n.toString().padLeft(2, '0');
   return '${t.month}/${t.day} ${two(t.hour)}:${two(t.minute)}';
 }
+
+String _fmtDate(DateTime t) => '${t.year}/${t.month}/${t.day}';
 
 String _clip(String s, [int n = 60]) =>
     s.replaceAll('\n', ' ').length > n
@@ -28,61 +29,155 @@ class HistoryTimeline extends StatefulWidget {
 
 class _HistoryTimelineState extends State<HistoryTimeline> {
   final _dao = QuestionDao();
+  bool _rangeMode = false; // false=按自然月分组, true=自定义日期区间
+  DateTimeRange? _range;
   late Future<List<SessionSummary>> _future;
 
   @override
   void initState() {
     super.initState();
-    _future = _dao.getSessionSummaries();
+    _future = _load();
   }
 
-  void _reload() => setState(() => _future = _dao.getSessionSummaries());
+  Future<List<SessionSummary>> _load() {
+    if (_rangeMode && _range != null) {
+      final start = DateTime(
+          _range!.start.year, _range!.start.month, _range!.start.day);
+      final endExclusive = DateTime(
+              _range!.end.year, _range!.end.month, _range!.end.day)
+          .add(const Duration(days: 1));
+      return _dao.getSessionSummaries(
+          start: start, end: endExclusive, limit: 2000);
+    }
+    return _dao.getSessionSummaries();
+  }
+
+  void _reload() => setState(() => _future = _load());
+
+  Future<void> _pickRange() async {
+    final now = DateTime.now();
+    final picked = await showDateRangePicker(
+      context: context,
+      firstDate: DateTime(now.year - 3),
+      lastDate: now,
+      initialDateRange: _range ??
+          DateTimeRange(
+              start: now.subtract(const Duration(days: 29)), end: now),
+      helpText: '选择日期区间',
+    );
+    if (picked != null) {
+      setState(() {
+        _rangeMode = true;
+        _range = picked;
+        _future = _load();
+      });
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder<List<SessionSummary>>(
-      future: _future,
-      builder: (context, snap) {
-        if (!snap.hasData) {
-          return const Center(child: CircularProgressIndicator());
-        }
-        final all = snap.data!;
-        if (all.isEmpty) {
-          return const Center(child: Text('还没有练习记录'));
-        }
-        // 本周汇总
-        final now = DateTime.now();
-        final weekStart = DateTime(now.year, now.month, now.day)
-            .subtract(Duration(days: now.weekday - 1));
-        final week = all.where((s) => s.startedAt.isAfter(weekStart)).toList();
-        final wQ = week.fold<int>(0, (a, s) => a + s.count);
-        final wP = week.fold<double>(0, (a, s) => a + s.partialSum);
-        final wAcc = wQ > 0 ? (wP / wQ * 100).round() : 0;
-        return ListView(
-          padding: const EdgeInsets.all(12),
-          children: [
-            Card(
-              color: AppTheme.primary.withOpacity(0.06),
-              child: Padding(
-                padding: const EdgeInsets.all(14),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Text('本周回顾',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 15)),
-                    const SizedBox(height: 6),
-                    Text('练习 ${week.length} 次 · 做题 $wQ 道 · 正确率 $wAcc%',
-                        style: const TextStyle(fontSize: 13)),
-                  ],
-                ),
-              ),
+    return Column(
+      children: [
+        _filterBar(),
+        Expanded(
+          child: FutureBuilder<List<SessionSummary>>(
+            future: _future,
+            builder: (context, snap) {
+              if (!snap.hasData) {
+                return const Center(child: CircularProgressIndicator());
+              }
+              final all = snap.data!;
+              if (all.isEmpty) {
+                return const Center(child: Text('该范围内没有练习记录'));
+              }
+              return _groupedList(all);
+            },
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _filterBar() {
+    final rangeLabel = _range == null
+        ? '选择区间'
+        : '${_fmtDate(_range!.start)} – ${_fmtDate(_range!.end)}';
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(12, 10, 12, 2),
+      child: Row(
+        children: [
+          ChoiceChip(
+            label: const Text('按月'),
+            selected: !_rangeMode,
+            onSelected: (_) => setState(() {
+              _rangeMode = false;
+              _future = _load();
+            }),
+          ),
+          const SizedBox(width: 8),
+          ChoiceChip(
+            label: const Text('自定义区间'),
+            selected: _rangeMode,
+            onSelected: (_) {
+              if (_range == null) {
+                _pickRange();
+              } else {
+                setState(() {
+                  _rangeMode = true;
+                  _future = _load();
+                });
+              }
+            },
+          ),
+          const Spacer(),
+          if (_rangeMode)
+            TextButton.icon(
+              icon: const Icon(Icons.date_range, size: 18),
+              label: Text(rangeLabel),
+              onPressed: _pickRange,
             ),
-            const SizedBox(height: 8),
-            ...all.map((s) => _sessionCard(context, s)),
-          ],
+        ],
+      ),
+    );
+  }
+
+  Widget _groupedList(List<SessionSummary> all) {
+    // 按自然月分组（all 已按时间倒序）
+    final groups = <String, List<SessionSummary>>{};
+    for (final s in all) {
+      final key =
+          '${s.startedAt.year}-${s.startedAt.month.toString().padLeft(2, '0')}';
+      groups.putIfAbsent(key, () => []).add(s);
+    }
+    final now = DateTime.now();
+    final curKey = '${now.year}-${now.month.toString().padLeft(2, '0')}';
+    final prev = DateTime(now.year, now.month - 1, 1);
+    final prevKey = '${prev.year}-${prev.month.toString().padLeft(2, '0')}';
+    final keys = groups.keys.toList()..sort((a, b) => b.compareTo(a));
+    return ListView(
+      padding: const EdgeInsets.fromLTRB(12, 2, 12, 16),
+      children: keys.map((k) {
+        final list = groups[k]!;
+        final q = list.fold<int>(0, (a, s) => a + s.count);
+        final p = list.fold<double>(0, (a, s) => a + s.partialSum);
+        final acc = q > 0 ? (p / q * 100).round() : 0;
+        final parts = k.split('-');
+        final title = '${parts[0]}年${int.parse(parts[1])}月';
+        // 按月模式：默认展开本月+上月；区间模式：全展开
+        final expanded = _rangeMode || k == curKey || k == prevKey;
+        return Card(
+          child: ExpansionTile(
+            key: PageStorageKey(k),
+            initiallyExpanded: expanded,
+            title: Text(title,
+                style: const TextStyle(fontWeight: FontWeight.bold)),
+            subtitle: Text('练习 ${list.length} 次 · 做题 $q 道 · 正确率 $acc%',
+                style: const TextStyle(fontSize: 12)),
+            childrenPadding: const EdgeInsets.only(bottom: 6),
+            children: list.map((s) => _sessionCard(context, s)).toList(),
+          ),
         );
-      },
+      }).toList(),
     );
   }
 

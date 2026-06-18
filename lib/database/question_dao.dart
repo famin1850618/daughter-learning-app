@@ -1182,8 +1182,21 @@ class QuestionDao {
   /// 算 session 当前 (score, total)，用于审核通过后重判 session 是否新进入"通过"区间
   // ── V3.28 学习留痕 ─────────────────────────────────────────
   /// 历史 session 汇总（按 session_id 聚合 practice_records，最近优先）。
-  Future<List<SessionSummary>> getSessionSummaries({int limit = 100}) async {
+  /// V3.28.1: 可选 [start,end) 日期区间过滤（留痕"自定义区间"用）。
+  Future<List<SessionSummary>> getSessionSummaries(
+      {int limit = 300, DateTime? start, DateTime? end}) async {
     final db = await _db.database;
+    final where = StringBuffer("r.session_id IS NOT NULL AND r.session_id != ''");
+    final args = <Object?>[];
+    if (start != null) {
+      where.write(' AND r.practiced_at >= ?');
+      args.add(start.toIso8601String());
+    }
+    if (end != null) {
+      where.write(' AND r.practiced_at < ?');
+      args.add(end.toIso8601String());
+    }
+    args.add(limit);
     final rows = await db.rawQuery('''
       SELECT r.session_id AS sid,
              MIN(r.practiced_at) AS started,
@@ -1194,11 +1207,11 @@ class QuestionDao {
              GROUP_CONCAT(DISTINCT q.chapter) AS chapters
       FROM practice_records r
       LEFT JOIN questions q ON q.id = r.question_id
-      WHERE r.session_id IS NOT NULL AND r.session_id != ''
+      WHERE $where
       GROUP BY r.session_id
       ORDER BY started DESC
       LIMIT ?
-    ''', [limit]);
+    ''', args);
     return rows.map((row) {
       final subs = (row['subjects'] as String?)
               ?.split(',')
