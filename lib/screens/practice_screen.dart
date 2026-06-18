@@ -364,6 +364,9 @@ class _QuestionScreenState extends State<_QuestionScreen> {
   bool _handwriting = false;
   bool _padHasStrokes = false;
   bool _proofSubmitted = false; // V3.35: 证明题已交后台批改（结果页显"批改中"）
+  bool _selfEval = false; // V3.35: 画图题自评面板
+  Uint8List? _drawBytes; // 自评时展示的手写图
+  String? _drawDataUrl;
   final _padCtrl = HandwritingController();
   final _padKey = GlobalKey<HandwritingPadState>();
 
@@ -373,6 +376,9 @@ class _QuestionScreenState extends State<_QuestionScreen> {
     return q.type == QuestionType.subjective &&
         (q.content.contains('求证') || q.content.contains('证明'));
   }
+
+  /// V3.35: 纯画图题（作图类主观，但不是证明）→ 自评（AI 判图不可靠）。
+  bool get _isPureDrawing => _isDrawingQuestion && !_isProof;
 
   void _onPadChanged() {
     final has = !_padCtrl.isEmpty;
@@ -398,7 +404,7 @@ class _QuestionScreenState extends State<_QuestionScreen> {
       if (!mounted) return;
       setState(() {
         _visionEnabled = v;
-        if (v && _isDrawingQuestion) _handwriting = true; // 作图题默认手写
+        if (_canHandwrite && _isDrawingQuestion) _handwriting = true; // 作图题默认手写
       });
     });
   }
@@ -415,7 +421,10 @@ class _QuestionScreenState extends State<_QuestionScreen> {
       _paused = false;
       _padCtrl.clear();
       _proofSubmitted = false;
-      _handwriting = _visionEnabled && _isDrawingQuestion; // 作图题默认手写
+      _selfEval = false;
+      _drawBytes = null;
+      _drawDataUrl = null;
+      _handwriting = _canHandwrite && _isDrawingQuestion; // 作图题默认手写
       _maybeLoadAttemptCount();
       _prefillPendingAnswer();
     }
@@ -424,12 +433,14 @@ class _QuestionScreenState extends State<_QuestionScreen> {
   /// V3.34.3: 当前题能否手写作答 = 非选择/判断的文字答案题（填空/计算/主观，含作图）
   /// + 已开启手写识别。**作图/画图这类主观题最该手写**（之前漏了，逻辑反，Famin）。
   /// 多空填空（逐空小框）暂不支持手写。
-  bool get _canHandwrite =>
-      _visionEnabled &&
-      !_isMultiBlank &&
-      (widget.question.type == QuestionType.fillBlank ||
-          widget.question.type == QuestionType.calculation ||
-          widget.question.type == QuestionType.subjective);
+  bool get _canHandwrite {
+    if (_isMultiBlank) return false;
+    if (_isPureDrawing) return true; // 画图自评不需 API，画板始终可用
+    return _visionEnabled &&
+        (widget.question.type == QuestionType.fillBlank ||
+            widget.question.type == QuestionType.calculation ||
+            widget.question.type == QuestionType.subjective);
+  }
 
   /// V3.34.3/V3.35: 作图/证明类主观题默认就切到手写（键盘画不了图、也写不动证明）。
   /// 孩子手写整个推理+图 → qwen 识别 → 判分（证明走思考模式）。
@@ -555,7 +566,7 @@ class _QuestionScreenState extends State<_QuestionScreen> {
       }
       // V3.35: 证明题(非组合) → 后台异步批改，不阻塞孩子，可直接下一题
       if (_isProof && q.groupId == null) {
-        final dataUrl = 'data:image/png;base64,${base64Encode(png)}';
+        final dataUrl = 'data:image/png;base64,${base64Encode(png!)}';
         await service.submitProofAsync(dataUrl);
         _timer?.cancel();
         if (mounted) {
@@ -563,6 +574,19 @@ class _QuestionScreenState extends State<_QuestionScreen> {
             _submitting = false;
             _proofSubmitted = true;
             _result = true; // 触发结果面板（显"批改中"）
+          });
+        }
+        return;
+      }
+      // V3.35: 纯画图题(非组合) → 自评（AI 判图不可靠）：展示参考答案让孩子自己判
+      if (_isPureDrawing && q.groupId == null) {
+        _timer?.cancel();
+        if (mounted) {
+          setState(() {
+            _submitting = false;
+            _selfEval = true;
+            _drawBytes = png;
+            _drawDataUrl = 'data:image/png;base64,${base64Encode(png!)}';
           });
         }
         return;
@@ -971,6 +995,10 @@ class _QuestionScreenState extends State<_QuestionScreen> {
             if (q.groupId != null && service.lastGroupResult != null) ...[
               _buildGroupResultView(context, service),
             ]
+            // V3.35: 画图题自评面板（对照参考答案自己判）
+            else if (_selfEval) ...[
+              _buildSelfEvalPanel(q),
+            ]
             // 答题区域（V3.8.3：废弃"查看提示"——explanation 是答题推导，相当于给答案）
             else if (_result == null) ...[
               _buildInputArea(q),
@@ -1139,6 +1167,74 @@ class _QuestionScreenState extends State<_QuestionScreen> {
           keyboardField,
       ],
     );
+  }
+
+  /// V3.35: 画图题自评面板——展示手写作答 + 参考答案，孩子自己判对错。
+  Widget _buildSelfEvalPanel(Question q) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        if (_drawBytes != null) ...[
+          const Text('你的作答：',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13)),
+          const SizedBox(height: 6),
+          Container(
+            decoration: BoxDecoration(border: Border.all(color: Colors.grey.shade300)),
+            child: Image.memory(_drawBytes!,
+                height: 200, width: double.infinity, fit: BoxFit.contain),
+          ),
+          const SizedBox(height: 14),
+        ],
+        Container(
+          width: double.infinity,
+          padding: const EdgeInsets.all(12),
+          decoration: BoxDecoration(
+              color: Colors.green.shade50, borderRadius: BorderRadius.circular(8)),
+          child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            const Text('📖 参考答案',
+                style: TextStyle(fontWeight: FontWeight.bold, color: Colors.green)),
+            const SizedBox(height: 6),
+            MathText(q.answer, style: const TextStyle(fontSize: 15)),
+            if (q.explanation != null && q.explanation!.isNotEmpty) ...[
+              const SizedBox(height: 8),
+              MathText(q.explanation!,
+                  style: TextStyle(fontSize: 13, color: Colors.grey.shade700)),
+            ],
+          ]),
+        ),
+        const SizedBox(height: 14),
+        const Text('对照参考答案，你画对了吗？',
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
+        const SizedBox(height: 10),
+        Row(children: [
+          Expanded(
+              child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
+                  onPressed: () => _doSelfEval(1.0, '对'),
+                  child: const Text('✅ 对了', style: TextStyle(fontSize: 13)))),
+          const SizedBox(width: 8),
+          Expanded(
+              child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.orange),
+                  onPressed: () => _doSelfEval(0.5, '部分'),
+                  child: const Text('🟡 部分', style: TextStyle(fontSize: 13)))),
+          const SizedBox(width: 8),
+          Expanded(
+              child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+                  onPressed: () => _doSelfEval(0.0, '没对'),
+                  child: const Text('❌ 没对', style: TextStyle(fontSize: 13)))),
+        ]),
+      ],
+    );
+  }
+
+  Future<void> _doSelfEval(double score, String label) async {
+    final service = context.read<PracticeService>();
+    await service.submitSelfEval(score, imageDataUrl: _drawDataUrl, label: label);
+    if (!mounted) return;
+    setState(() => _selfEval = false);
+    service.nextQuestion();
   }
 
   bool _canSubmit(Question q) {

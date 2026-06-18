@@ -417,6 +417,32 @@ class PracticeService extends ChangeNotifier {
     GradingQueueService.processAll();
   }
 
+  /// V3.35: 通用自评提交（孩子对照参考答案自己判：对/部分/错）。
+  /// 画图等 AI 判不可靠的题用；以后其它题型也可复用。[score] 1.0=对 / 0.5=部分 / 0.0=错。
+  /// 存手写图供留痕。返回是否算对（score≥0.8）。
+  Future<bool> submitSelfEval(double score, {String? imageDataUrl, String? label}) async {
+    final q = currentQuestion;
+    if (q == null || q.id == null) return false;
+    final spent = _questionStartTime == null
+        ? 0
+        : DateTime.now().difference(_questionStartTime!).inSeconds;
+    final correct = score >= 0.8;
+    if (correct) _score++;
+    _partialScore += score;
+    await _dao.insertRecord(PracticeRecord(
+      questionId: q.id!,
+      userAnswer: '[手写作答 · 自评${label != null ? '：$label' : ''}]',
+      isCorrect: correct,
+      practicedAt: DateTime.now(),
+      timeSpent: spent,
+      sessionId: _sessionId,
+      partialScore: score,
+      answerImage: imageDataUrl,
+    ));
+    await _persist();
+    return correct;
+  }
+
   /// V3.34.1: 抽题后整组化 + 按"组数"截到 maxUnits（**组合题算 1 题**，Famin 铁律）。
   /// 修"卡片显示 N 题、点进去 ≠ N"——根因是 limit 截原始行而非组数。
   Future<List<Question>> _expandAndCap(List<Question> qs, int maxUnits) async {
