@@ -1,5 +1,5 @@
 {
-  "version": 113,
+  "version": 114,
   "updated_at": "2026-05-13T05:22:21.229267Z",
   "batches": [
     {
@@ -113,6 +113,14 @@
       "grade": 6,
       "count": 76,
       "batch_hash": "d5719fd782f05d1b523f8e5d9c2bcb96622e18fa"
+    },
+    {
+      "source": "realpaper_g6_math_xsc_luohu_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_xsc_luohu_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 24,
+      "batch_hash": "05aa18943a47206a198fc03947e3bcd1c5aa5f17"
     }
   ],
   "_changelog": [

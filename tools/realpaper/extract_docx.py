@@ -570,7 +570,7 @@ def process_docx(docx_path: Path, force: bool = False) -> dict:
     """主流程"""
     if not docx_path.exists():
         return {'error': f'file not found: {docx_path}'}
-    sha1 = hashlib.sha1(docx_path.read_bytes()[:65536] + str(docx_path.stat().st_size).encode()).hexdigest()[:16]
+    sha1 = hashlib.sha1(docx_path.read_bytes()).hexdigest()[:16]  # V3.28: 整文件 sha1，与 R34 一致
     out_dir = CACHE_ROOT / sha1
     out_dir.mkdir(exist_ok=True, parents=True)
 
@@ -700,7 +700,7 @@ def main():
 
     docx_path = Path(args.docx_path).expanduser()
     if args.summary:
-        sha1 = hashlib.sha1(docx_path.read_bytes()[:65536] + str(docx_path.stat().st_size).encode()).hexdigest()[:16]
+        sha1 = hashlib.sha1(docx_path.read_bytes()).hexdigest()[:16]  # V3.28: 整文件 sha1，与 R34 一致
         out_dir = CACHE_ROOT / sha1
         sp = out_dir / 'structure.json'
         if sp.exists():
