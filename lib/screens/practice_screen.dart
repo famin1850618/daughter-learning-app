@@ -40,7 +40,9 @@ class PracticeScreen extends StatelessWidget {
           ? const _SelectionScreen()
           : _ResultScreen(
               score: service.score,
-              total: service.currentQuestions.length,
+              // V3.32: 组合题算 1 题（与 score 口径一致），否则组合题子题数进分母
+              // → 正确率虚低（Famin 实测 3/7 应为 3/4）
+              total: service.groupAwareCounter().total,
               questions: service.currentQuestions,
               reward: service.lastReward,
               kind: service.kind,
@@ -49,7 +51,7 @@ class PracticeScreen extends StatelessWidget {
     if (service.currentQuestion == null) {
       return _ResultScreen(
         score: service.score,
-        total: service.currentQuestions.length,
+        total: service.groupAwareCounter().total,
         questions: service.currentQuestions,
         reward: service.lastReward,
         kind: service.kind,
