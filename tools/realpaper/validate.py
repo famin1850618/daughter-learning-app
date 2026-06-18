@@ -455,6 +455,28 @@ def check_choice_letter_prefix(q: dict, idx: int) -> str:
     return None
 
 
+def check_choice_option_dup(q: dict, idx: int) -> str:
+    """25. choice 选项块不得重复出现在 content（题干重复选项 → 渲染两遍，Famin 实测）。
+    选项文本只能在 options[]；候选池/选项块不再重列进 content/题干。
+    单选：把 A.…B.…C.… 块从 content 删掉，只留题干 + （  ）。
+    form-B 选序号：候选不进共用题干，全文进每子题 options[]（带 A. 前缀）。
+    例外：图选项题（options 裸字母 A/B/C/D）无文本可重复，跳过。
+    """
+    if q.get('type') != 'choice':
+        return None
+    content = q.get('content') or ''
+    opts = [str(o) for o in (q.get('options') or [])]
+    if not opts:
+        return None
+    if all(o.strip().upper() in ('A', 'B', 'C', 'D', 'E', 'F', 'Z') for o in opts):
+        return None  # 图选项题
+    dup = sum(1 for o in opts if len(o.strip()) >= 4 and o.strip() in content)
+    if dup >= 2:
+        return (f'#{idx}: 题干 content 重复了 {dup} 个完整选项块'
+                f'（选项只应在 options[]，不进 content）')
+    return None
+
+
 def run_full_check(batch: dict, batch_path: Path, kp_set: set, chapter_set: set) -> dict:
     """跑全 16 项自检（D 方案：可脚本化的 12 项）。
 
@@ -526,6 +548,11 @@ def run_full_check(batch: dict, batch_path: Path, kp_set: set, chapter_set: set)
     errs = [check_choice_letter_prefix(q, i+1) for i, q in enumerate(questions)]
     errs = [e for e in errs if e]
     report['13_choice_letter_prefix'] = {'pass': not errs, 'errors': errs}
+
+    # 25. choice 选项块不得重复进 content（V3.33 Famin：选择题题干重复选项）
+    errs = [check_choice_option_dup(q, i+1) for i, q in enumerate(questions)]
+    errs = [e for e in errs if e]
+    report['25_choice_option_dup'] = {'pass': not errs, 'errors': errs}
 
     # 14. image_data MIME 不含 WMF/EMF（V3.12.21 docx 路径专）
     # docx 路径必须把 WMF/EMF 转 PNG/JPEG 后入库，Flutter 不支持渲染 WMF
