@@ -79,6 +79,12 @@ class MathText extends StatelessWidget {
                 text: s.content,
                 style: const TextStyle(fontWeight: FontWeight.bold),
               );
+            case _Kind.underline:
+              // V3.31: 语文"划线句/划线词"下划线（原题 <w:u> → content <u>...</u>）
+              return TextSpan(
+                text: s.content,
+                style: const TextStyle(decoration: TextDecoration.underline),
+              );
             case _Kind.plain:
               return TextSpan(text: s.content);
           }
@@ -195,17 +201,27 @@ class MathText extends StatelessWidget {
     );
   }
 
-  /// 两阶段解析：先按 `$...$` 切 math 段，再对非 math 段按 `**...**` 切 bold 段。
+  /// 三阶段解析：先按 `$...$` 切 math 段，再对非 math 段按 `**...**` 切 bold 段，
+  /// 最后对剩余 plain 段按 `<u>...</u>` 切 underline 段（V3.31 语文划线）。
   static List<_Segment> _parse(String text) {
     // 阶段 1: 切 math
     final mathSegments = _splitByPair(text, r'$', r'$', _Kind.math);
     // 阶段 2: 对非 math 段切 bold
-    final result = <_Segment>[];
+    final afterBold = <_Segment>[];
     for (final seg in mathSegments) {
       if (seg.kind == _Kind.math) {
-        result.add(seg);
+        afterBold.add(seg);
       } else {
-        result.addAll(_splitByPair(seg.content, '**', '**', _Kind.bold));
+        afterBold.addAll(_splitByPair(seg.content, '**', '**', _Kind.bold));
+      }
+    }
+    // 阶段 3: 对 plain 段切 underline（`<u>` / `</u>` 开闭标签不同）
+    final result = <_Segment>[];
+    for (final seg in afterBold) {
+      if (seg.kind == _Kind.plain) {
+        result.addAll(_splitByPair(seg.content, '<u>', '</u>', _Kind.underline));
+      } else {
+        result.add(seg);
       }
     }
     return result;
@@ -252,7 +268,7 @@ class MathText extends StatelessWidget {
   }
 }
 
-enum _Kind { plain, math, bold }
+enum _Kind { plain, math, bold, underline }
 
 class _Segment {
   final String content;

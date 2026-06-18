@@ -112,8 +112,26 @@ def extract_text_paragraph_aligned(docx_path: Path) -> Optional[str]:
         # python-docx 的 d.paragraphs 是 body level 段落（不含 table 内部）
         # paragraph_image_map 解析的也是 body 段落（同源），所以索引天然对齐
         for p in d.paragraphs:
-            t = p.text  # 保留空段（不 strip 整行）
-            lines.append(t)
+            # V3.31: 遍历 run 保留下划线（语文"划线句/划线词"）→ 包 <u>...</u>。
+            # 只包"含实际文字"的下划线 run；纯空格/空白下划线（填空横线）不包。
+            runs = p.runs
+            if not runs:
+                lines.append(p.text)  # 无 run（超链接等）回退 p.text
+                continue
+            buf = []
+            for r in runs:
+                txt = r.text or ''
+                u = None
+                try:
+                    u = r.font.underline
+                except Exception:
+                    u = None
+                if txt.strip() and bool(u) and u is not False:
+                    buf.append(f'<u>{txt}</u>')
+                else:
+                    buf.append(txt)
+            line = ''.join(buf).replace('</u><u>', '')  # 合并相邻下划线 run
+            lines.append(line)
         return '\n'.join(lines)
     except Exception as e:
         print(f'  ⚠ paragraph-aligned extract failed: {e}', file=sys.stderr)
