@@ -387,7 +387,11 @@ class _QuestionScreenState extends State<_QuestionScreen> {
     _prefillPendingAnswer();
     _padCtrl.addListener(_onPadChanged);
     VisionOcrService.isEnabled().then((v) {
-      if (mounted) setState(() => _visionEnabled = v);
+      if (!mounted) return;
+      setState(() {
+        _visionEnabled = v;
+        if (v && _isDrawingQuestion) _handwriting = true; // 作图题默认手写
+      });
     });
   }
 
@@ -401,19 +405,31 @@ class _QuestionScreenState extends State<_QuestionScreen> {
       _setupBlankCtrls();
       _seconds = 0;
       _paused = false;
-      _handwriting = false;
       _padCtrl.clear();
+      _handwriting = _visionEnabled && _isDrawingQuestion; // 作图题默认手写
       _maybeLoadAttemptCount();
       _prefillPendingAnswer();
     }
   }
 
-  /// V3.34: 当前题能否手写作答（单空填空 / 计算题 + 已开启手写识别）
+  /// V3.34.3: 当前题能否手写作答 = 非选择/判断的文字答案题（填空/计算/主观，含作图）
+  /// + 已开启手写识别。**作图/画图这类主观题最该手写**（之前漏了，逻辑反，Famin）。
+  /// 多空填空（逐空小框）暂不支持手写。
   bool get _canHandwrite =>
       _visionEnabled &&
       !_isMultiBlank &&
       (widget.question.type == QuestionType.fillBlank ||
-          widget.question.type == QuestionType.calculation);
+          widget.question.type == QuestionType.calculation ||
+          widget.question.type == QuestionType.subjective);
+
+  /// V3.34.3: 作图/画图类主观题默认就切到手写（键盘画不了图）
+  bool get _isDrawingQuestion {
+    final c = widget.question.content;
+    return widget.question.type == QuestionType.subjective &&
+        (c.contains('画') || c.contains('作图') || c.contains('画出') ||
+            c.contains('画一') || c.contains('图形') && c.contains('放大') ||
+            c.contains('对称') || c.contains('平移') || c.contains('旋转'));
+  }
 
   /// V3.25: 当前题是否多空（answer_blanks≥2 的填空题）
   bool get _isMultiBlank {
@@ -1261,8 +1277,8 @@ class _QuestionScreenState extends State<_QuestionScreen> {
         ));
 
       case QuestionType.subjective:
-        // V3.8.3: 主观题用大文本框；提交后自动入家长审核队列
-        return TextField(
+        // V3.8.3: 主观题用大文本框；V3.34.3: 作图/解答可切手写（作图题默认手写）
+        return _withHandwriting(TextField(
           controller: _answerCtrl,
           onChanged: (_) => setState(() {}),
           minLines: 5,
@@ -1274,7 +1290,7 @@ class _QuestionScreenState extends State<_QuestionScreen> {
             border: OutlineInputBorder(),
             helperText: '提交后由家长批改打分',
           ),
-        );
+        ));
 
       case QuestionType.judgment:
         // V3.10: 判断题用 对/错 两个大按钮
