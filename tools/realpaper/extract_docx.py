@@ -112,8 +112,10 @@ def extract_text_paragraph_aligned(docx_path: Path) -> Optional[str]:
         # python-docx 的 d.paragraphs 是 body level 段落（不含 table 内部）
         # paragraph_image_map 解析的也是 body 段落（同源），所以索引天然对齐
         for p in d.paragraphs:
-            # V3.31: 遍历 run 保留下划线（语文"划线句/划线词"）→ 包 <u>...</u>。
-            # 只包"含实际文字"的下划线 run；纯空格/空白下划线（填空横线）不包。
+            # V3.31: 遍历 run 保留 run 级格式（语文/数学真题都会丢）：
+            #   下划线 <w:u> → <u>...</u>（划线句/划线词）
+            #   着重号 <w:em>（加点字）/ 粗体 <w:b> → **...**（按 R6 加点字=加粗约定）
+            # 只标"含实际文字"的 run；纯空格/空白下划线（填空横线 ____）不标。
             runs = p.runs
             if not runs:
                 lines.append(p.text)  # 无 run（超链接等）回退 p.text
@@ -121,16 +123,38 @@ def extract_text_paragraph_aligned(docx_path: Path) -> Optional[str]:
             buf = []
             for r in runs:
                 txt = r.text or ''
-                u = None
+                if not txt.strip():
+                    buf.append(txt)
+                    continue
+                # 下划线
                 try:
                     u = r.font.underline
                 except Exception:
                     u = None
-                if txt.strip() and bool(u) and u is not False:
+                is_u = bool(u) and u is not False
+                # 粗体
+                is_b = bool(r.bold)
+                # 着重号 <w:em>（python-docx 不暴露，查 rPr XML）
+                is_em = False
+                try:
+                    rpr = r._element.rPr
+                    if rpr is not None:
+                        for ch in rpr:
+                            if ch.tag.endswith('}em'):
+                                val = ch.get(
+                                    '{http://schemas.openxmlformats.org/'
+                                    'wordprocessingml/2006/main}val')
+                                is_em = (val != 'none')
+                                break
+                except Exception:
+                    is_em = False
+                if is_u:
                     buf.append(f'<u>{txt}</u>')
+                elif is_em or is_b:
+                    buf.append(f'**{txt}**')
                 else:
                     buf.append(txt)
-            line = ''.join(buf).replace('</u><u>', '')  # 合并相邻下划线 run
+            line = ''.join(buf).replace('</u><u>', '').replace('****', '')
             lines.append(line)
         return '\n'.join(lines)
     except Exception as e:
