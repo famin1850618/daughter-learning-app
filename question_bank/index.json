@@ -1,6 +1,6 @@
 {
-  "version": 115,
-  "updated_at": "2026-05-13T05:22:21.229267Z",
+  "version": 116,
+  "updated_at": "2026-06-18",
   "batches": [
     {
       "source": "batch_2026_05_07_g6_english_pet_r1",
@@ -129,6 +129,46 @@
       "grade": 6,
       "count": 24,
       "batch_hash": "c9574a8d29a3b8239a4e251cbfc7da67e1cb797c"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_xsc_longgang_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_xsc_longgang_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 37,
+      "batch_hash": "2979be850ed20c60caf3c96ca81e707670b4e8c9"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_xsc_yantian_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_xsc_yantian_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 43,
+      "batch_hash": "a2b16494aa6640f9fe948dd5bfd02df7934a738a"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qm_guangming_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_guangming_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 28,
+      "batch_hash": "bbf2b05cbb8ac45f517ea6e8001c00dcfbe1c097"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_longhua_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 25,
+      "batch_hash": "3f6b400ec4e04985757bf108cacdc78393cb442e"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_longgang_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 21,
+      "batch_hash": "0a403cf6a9d6e0cb75c67a806930a87147b5a4ef"
     }
   ],
   "_changelog": [
@@ -269,6 +309,11 @@
       "version": 57,
       "date": "2026-05-10",
       "change": "V3.12.22 入库深圳数学 龙华 2024-2025 期末（qm_longhua） 17 题（docx-only 路径，13/13 自检 PASS）"
+    },
+    {
+      "version": 116,
+      "date": "2026-06-18",
+      "note": "扫题第二波5份(3数学+2语文):龙岗/盐田小升初数学+光明期末数学+龙华/龙岗期末语文,共154题"
     }
   ]
 }
