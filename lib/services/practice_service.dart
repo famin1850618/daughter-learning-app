@@ -497,8 +497,12 @@ class PracticeService extends ChangeNotifier {
     int perKp = 2,
     int totalLimit = 20,
     bool applyDifficulty = true,
+    Subject? subject, // V3.33: 限定科目（Famin：薄弱点练习按当前科目分开，不混科）
   }) async {
-    final summaries = await _dao.getReviewKnowledgePoints();
+    var summaries = await _dao.getReviewKnowledgePoints();
+    if (subject != null) {
+      summaries = summaries.where((s) => s.subjectIndex == subject.index).toList();
+    }
     final result = <Question>[];
     for (final s in summaries) {
       if (result.length >= totalLimit) break;

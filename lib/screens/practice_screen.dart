@@ -226,11 +226,15 @@ class _SelectionScreenState extends State<_SelectionScreen> {
             label: const Text('针对薄弱点练习'),
             onPressed: () async {
               final applyDiff = context.read<DifficultySettingsService>().applyToReviewSimilar;
-              await context.read<PracticeService>().startAggregatedReviewSession(applyDifficulty: applyDiff);
+              // V3.33: 按当前选定科目（未选则全科兜底）
+              await context.read<PracticeService>().startAggregatedReviewSession(
+                  applyDifficulty: applyDiff, subject: _subject);
               if (!context.mounted) return;
               if (context.read<PracticeService>().currentQuestions.isEmpty) {
                 ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('暂无薄弱知识点（继续保持！）')),
+                  SnackBar(content: Text(_subject == null
+                      ? '暂无薄弱知识点（继续保持！）'
+                      : '${_subject!.displayName}暂无薄弱知识点（继续保持！）')),
                 );
               }
             },
@@ -1692,7 +1696,12 @@ class _ResultScreenState extends State<_ResultScreen> {
                 label: const Text('针对薄弱点练习'),
                 onPressed: () async {
                   final applyDiff = context.read<DifficultySettingsService>().applyToReviewSimilar;
-              await context.read<PracticeService>().startAggregatedReviewSession(applyDifficulty: applyDiff);
+                  // V3.33: 沿用刚做完这组的科目，不混科
+                  final subj = widget.questions.isNotEmpty
+                      ? widget.questions.first.subject
+                      : null;
+                  await context.read<PracticeService>().startAggregatedReviewSession(
+                      applyDifficulty: applyDiff, subject: subj);
                   if (!context.mounted) return;
                   if (context.read<PracticeService>().currentQuestions.isEmpty) {
                     ScaffoldMessenger.of(context).showSnackBar(
