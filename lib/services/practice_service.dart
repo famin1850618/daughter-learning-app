@@ -624,10 +624,9 @@ class PracticeService extends ChangeNotifier {
           answerBlanks: gq.answerBlanks);
         correct = result.isCorrect;
         partial = result.partialScore;
-        // V3.26.1: 子题填空/计算被字符串判错 → AI 复判（与 submitAnswer 一致）
+        // V3.29: 除选择题外所有题型（填空/计算/判断）被判错 → AI 复判（Famin）
         if (!correct &&
-            (gq.type == QuestionType.fillBlank ||
-                gq.type == QuestionType.calculation) &&
+            gq.type != QuestionType.multipleChoice &&
             aiOn) {
           final v = await AiGradingService().recheckFill(gq, ans);
           if (v.available && v.ok) {
@@ -725,10 +724,9 @@ class PracticeService extends ChangeNotifier {
       );
       correct = result.isCorrect;
       partial = result.partialScore;
-      // V3.26: 填空/计算被字符串判错 → AI 复判；判可接受则标对 + 补别名 + 上报全局
+      // V3.29: 除选择题外所有题型（填空/计算/判断）被判错 → AI 复判（Famin）
       if (!correct &&
-          (q.type == QuestionType.fillBlank ||
-              q.type == QuestionType.calculation) &&
+          q.type != QuestionType.multipleChoice &&
           await AiGradingService.isEnabled()) {
         final v = await AiGradingService().recheckFill(q, answer);
         if (v.available && v.ok) {
