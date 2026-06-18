@@ -1,5 +1,5 @@
 {
-  "version": 114,
+  "version": 115,
   "updated_at": "2026-05-13T05:22:21.229267Z",
   "batches": [
     {
@@ -39,16 +39,16 @@
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_futian_001.json",
       "subject": "chinese",
       "grade": 6,
-      "count": 16,
-      "batch_hash": "8b41f87e678b2fa202d58258607510d3c81979a2"
+      "count": 24,
+      "batch_hash": "0c9a7b38ccab153d5bba4e32d3c07773954e0e3c"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_nanshan_001.json",
       "subject": "chinese",
       "grade": 6,
-      "count": 47,
-      "batch_hash": "7f0c5386aff3d0ed5ba83604534aa7a0d02c6b10"
+      "count": 34,
+      "batch_hash": "0314d26c373fb93595903e5352c3fa1fdec89e4b"
     },
     {
       "source": "realpaper_g6_chinese_bubian_xsc_baoan_001",
@@ -79,7 +79,7 @@
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_futian_002.json",
       "subject": "math",
       "grade": 6,
-      "count": 25,
+      "count": 26,
       "batch_hash": "d9141ab81ecbfab43610f68d2ea1e7edf3df05f0"
     },
     {
@@ -115,12 +115,20 @@
       "batch_hash": "d5719fd782f05d1b523f8e5d9c2bcb96622e18fa"
     },
     {
-      "source": "realpaper_g6_math_xsc_luohu_001",
-      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_xsc_luohu_001.json",
+      "source": "realpaper_g6_chinese_bubian_qm_luohu_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_luohu_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 26,
+      "batch_hash": "1eea1cb95252754fbb0c54ab5de76b0124338e9e"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_xsc_luohu_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_xsc_luohu_001.json",
       "subject": "math",
       "grade": 6,
       "count": 24,
-      "batch_hash": "05aa18943a47206a198fc03947e3bcd1c5aa5f17"
+      "batch_hash": "c9574a8d29a3b8239a4e251cbfc7da67e1cb797c"
     }
   ],
   "_changelog": [
