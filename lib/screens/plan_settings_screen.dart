@@ -1392,13 +1392,13 @@ class _DataResetSectionState extends State<_DataResetSection> {
   /// 三段确认重置流程：警告弹窗 → 输入"重置"二字 → 最终确认
   ///
   /// [wipePlans] 决定是否一并清空 plan_groups + plan_items（V3.12 新增）
-  Future<void> _confirmReset({required bool wipePlans}) async {
+  Future<void> _confirmReset({required bool wipePlans, bool keepRewards = false}) async {
     // Step 1: 警告
     final clearedItems = StringBuffer()
       ..writeln('• 所有错题记录')
-      ..writeln('• 所有奖励星星')
+      ..writeln(keepRewards ? '• 奖励星星：✅ 保留不动' : '• 所有奖励星星')
       ..writeln('• 所有测评成绩')
-      ..writeln('• 所有练习记录与进行中的会话')
+      ..writeln('• 所有练习记录与进行中的会话（含留痕）')
       ..writeln('• 所有家长审核记录');
     if (wipePlans) {
       clearedItems.writeln('• 所有月/周/日计划及其完成度（整张计划清空）');
@@ -1417,7 +1417,9 @@ class _DataResetSectionState extends State<_DataResetSection> {
               size: 24,
             ),
             const SizedBox(width: 8),
-            Text(wipePlans ? '重置全部（含计划）' : '重置学习进度'),
+            Text(wipePlans
+                ? '重置全部（含计划）'
+                : (keepRewards ? '清学情（保留星星）' : '重置学习进度')),
           ],
         ),
         content: Text(
@@ -1499,10 +1501,13 @@ class _DataResetSectionState extends State<_DataResetSection> {
 
     // 执行重置
     final timestamp = DateFormat('yyyy-MM-dd HH:mm').format(DateTime.now());
-    final reason = wipePlans ? '手动重置（含计划）$timestamp' : '手动重置 $timestamp';
+    final reason = wipePlans
+        ? '手动重置（含计划）$timestamp'
+        : (keepRewards ? '清学情·保留星星 $timestamp' : '手动重置 $timestamp');
     final batchId = await DataResetService().resetAllProgress(
       reason: reason,
       wipePlans: wipePlans,
+      keepRewards: keepRewards,
     );
 
     if (!mounted) return;
@@ -1590,6 +1595,18 @@ class _DataResetSectionState extends State<_DataResetSection> {
     return Card(
       child: Column(
         children: [
+          // V3.36.2: 只清学情、保留星星（换版后老错题多为旧逻辑误判，清掉重建干净基线，星星不丢）
+          ListTile(
+            leading: const Icon(Icons.cleaning_services, color: Colors.green),
+            title: const Text('清学情 · 保留星星 ⭐'),
+            subtitle: const Text('清错题/练习记录/留痕/测评/计划完成度，重建干净基线；星星不动'),
+            trailing: TextButton(
+              onPressed: () => _confirmReset(wipePlans: false, keepRewards: true),
+              style: TextButton.styleFrom(foregroundColor: Colors.green),
+              child: const Text('清学情'),
+            ),
+          ),
+          const Divider(height: 1, indent: 56),
           ListTile(
             leading: const Icon(Icons.delete_sweep, color: Colors.orange),
             title: const Text('重置学习数据'),

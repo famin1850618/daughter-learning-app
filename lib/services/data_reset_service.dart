@@ -53,15 +53,20 @@ class DataResetService extends ChangeNotifier {
   Future<String?> resetAllProgress({
     required String reason,
     bool wipePlans = false,
+    bool keepRewards = false, // V3.36.2: 只清学情、保留星星（rewards 表不动）
   }) async {
     final db = await DatabaseHelper().database;
     final batchId = 'reset_${DateTime.now().millisecondsSinceEpoch}';
     final stats = <String, int>{};
+    // keepRewards 时把 rewards（星星）排除出清空范围
+    final tables = keepRewards
+        ? _resetTables.where((t) => t != 'rewards').toList()
+        : _resetTables;
 
     try {
       await db.transaction((txn) async {
-        // 归档 5 个进度表
-        for (final t in _resetTables) {
+        // 归档进度表
+        for (final t in tables) {
           final rows = await txn.query(t);
           stats[t] = rows.length;
           for (final r in rows) {
