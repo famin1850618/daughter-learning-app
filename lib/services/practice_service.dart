@@ -388,6 +388,30 @@ class PracticeService extends ChangeNotifier {
     return others;
   }
 
+  /// V3.34.1: 抽题后整组化 + 按"组数"截到 maxUnits（**组合题算 1 题**，Famin 铁律）。
+  /// 修"卡片显示 N 题、点进去 ≠ N"——根因是 limit 截原始行而非组数。
+  Future<List<Question>> _expandAndCap(List<Question> qs, int maxUnits) async {
+    final expanded = await _dao.expandGroups(qs);
+    return _capUnits(expanded, maxUnits);
+  }
+
+  /// 按组数截断：组合题（同 group_id）算 1 单元，单题各算 1；保留前 maxUnits 个单元的整组所有行。
+  List<Question> _capUnits(List<Question> qs, int maxUnits) {
+    final keep = <String>{};
+    final out = <Question>[];
+    for (final q in qs) {
+      final u = (q.groupId != null && q.groupId!.isNotEmpty) ? q.groupId! : 'q${q.id}';
+      if (keep.contains(u)) {
+        out.add(q);
+        continue;
+      }
+      if (keep.length >= maxUnits) continue;
+      keep.add(u);
+      out.add(q);
+    }
+    return out;
+  }
+
   Future<void> startSession({
     required Subject subject,
     required int grade,
@@ -399,6 +423,7 @@ class PracticeService extends ChangeNotifier {
     // V3.8: 应用难度档设置（普通练习/章节/计划项 强制应用）
     final profile = _difficultySettings.profileFor(subject.displayName);
     final f = _profileToFilter(profile);
+    // V3.34.1: 多抽原始行（count*8），再整组化 + 按组数截到 count（组合题算 1 题）
     if (type != null || difficulty != null) {
       // 用户在 UI 选了 type/difficulty 时走老路径（精细筛选优先于 round）
       _currentQuestions = await _dao.getRandom(
@@ -407,7 +432,7 @@ class PracticeService extends ChangeNotifier {
         chapter: chapter,
         type: type,
         difficulty: difficulty,
-        limit: count,
+        limit: count * 8,
       );
     } else {
       _currentQuestions = await _dao.getRandomByRound(
@@ -416,9 +441,10 @@ class PracticeService extends ChangeNotifier {
         chapter: chapter,
         rounds: f.rounds,
         weights: f.weights,
-        limit: count,
+        limit: count * 8,
       );
     }
+    _currentQuestions = await _expandAndCap(_currentQuestions, count);
     _currentQuestions = _capEssay(_currentQuestions, chapter == '写作');
     // V3.8.3: 放弃选项随机；用「做过 N 次」标签 + 已掌握≥3 排除 替代
     _kind = SessionKind.normal;
@@ -452,8 +478,9 @@ class PracticeService extends ChangeNotifier {
       _currentQuestions = await _dao.getQuestionsForChapterByRound(
         chapter: chapter,
         rounds: rounds,
-        limit: count,
+        limit: count * 8,
       );
+      _currentQuestions = await _expandAndCap(_currentQuestions, count);
       _currentQuestions = _capEssay(_currentQuestions, chapter == '写作');
       _kind = SessionKind.normal;
       _sessionId = _newSessionId('chapter');
@@ -472,7 +499,7 @@ class PracticeService extends ChangeNotifier {
         kpPath: kpPath,
         rounds: f.rounds,
         weights: f.weights,
-        limit: count,
+        limit: count * 8,
       );
     } else {
       // 关闭难度档时回退原有"匹配最近错难度"逻辑
@@ -480,9 +507,10 @@ class PracticeService extends ChangeNotifier {
       _currentQuestions = await _dao.getQuestionsForKnowledgePoint(
         kpPath: kpPath,
         difficulty: difficulty,
-        limit: count,
+        limit: count * 8,
       );
     }
+    _currentQuestions = await _expandAndCap(_currentQuestions, count);
     _currentQuestions = _capEssay(_currentQuestions, kpPath.startsWith('写作'));
     // V3.8.3: 放弃选项随机；用「做过 N 次」标签 + 已掌握≥3 排除 替代
     _kind = SessionKind.normal;
@@ -504,8 +532,9 @@ class PracticeService extends ChangeNotifier {
       summaries = summaries.where((s) => s.subjectIndex == subject.index).toList();
     }
     final result = <Question>[];
+    int units = 0; // V3.34.1: 按组数累计（组合题算 1）
     for (final s in summaries) {
-      if (result.length >= totalLimit) break;
+      if (units >= totalLimit) break;
       List<Question> qs;
       // V3.22：组合题级 review summary（isCombo）走 chapter 抽题
       if (s.isCombo) {
@@ -519,7 +548,7 @@ class PracticeService extends ChangeNotifier {
         qs = await _dao.getQuestionsForChapterByRound(
           chapter: s.category,
           rounds: rounds,
-          limit: perKp,
+          limit: perKp * 8,
         );
       } else if (applyDifficulty) {
         final subject = await _dao.getSubjectForKp(s.fullPath);
@@ -529,7 +558,7 @@ class PracticeService extends ChangeNotifier {
           kpPath: s.fullPath,
           rounds: f.rounds,
           weights: f.weights,
-          limit: perKp,
+          limit: perKp * 8,
         );
       } else {
         final difficulty =
@@ -537,12 +566,16 @@ class PracticeService extends ChangeNotifier {
         qs = await _dao.getQuestionsForKpExcludingWrong(
           kpPath: s.fullPath,
           difficulty: difficulty,
-          limit: perKp,
+          limit: perKp * 8,
         );
       }
+      // 每个 KP 按组数截到 perKp（组合题算 1 题）
+      qs = await _expandAndCap(qs, perKp);
       result.addAll(qs);
+      units += perKp; // 近似：实际可能少于 perKp（该 KP 题不够），不影响 totalLimit 上限
     }
-    _currentQuestions = _capEssay(result.take(totalLimit).toList(), false);
+    // 最终按组数截到 totalLimit（组合题算 1，不切断整组）
+    _currentQuestions = _capEssay(_capUnits(result, totalLimit), false);
     // V3.8.3: 放弃选项随机；用「做过 N 次」标签 + 已掌握≥3 排除 替代
     _kind = SessionKind.normal;
     _sessionId = _newSessionId('agg');

@@ -379,6 +379,9 @@ class QuestionDao {
 
   /// V3.8.2: 展开 group 系列题
   /// 抽中含 group_id 的题 → 把同 group_id 全部题拉出来 + 按 group_order 排序 + 替换原位置
+  /// 公开：把 seed 里的组合题补全为整组（V3.34.1 供 PracticeService 抽题后整组化 + 按组数截断）
+  Future<List<Question>> expandGroups(List<Question> seed) => _expandGroups(seed);
+
   Future<List<Question>> _expandGroups(List<Question> seed) async {
     final groupIds = seed
         .where((q) => q.groupId != null && q.groupId!.isNotEmpty)

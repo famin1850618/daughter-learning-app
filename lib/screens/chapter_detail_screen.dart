@@ -10,6 +10,9 @@ import '../models/plan_group.dart';
 import '../services/practice_service.dart';
 import '../services/navigation_service.dart';
 
+/// V3.34.1: 章节练习单次题数上限（组合题算 1）。显示与实练共用此值，保证一致。
+const int kChapterSessionCount = 10;
+
 class ChapterDetailScreen extends StatefulWidget {
   final Subject subject;
   final int grade;
@@ -162,8 +165,9 @@ class _ChapterTileState extends State<_ChapterTile> {
                                 fontWeight: FontWeight.w600, fontSize: 15)),
                       ),
                       Text(
+                        // V3.34.1: 显示=本次实练数（组合题算 1，截到单次上限），与点进去一致
                         widget.activeQuestionCount > 0
-                            ? '${widget.activeQuestionCount} 道题'
+                            ? '${widget.activeQuestionCount.clamp(0, kChapterSessionCount)} 道题'
                             : '暂无题',
                         style: TextStyle(
                           fontSize: 11,
@@ -207,7 +211,7 @@ class _ChapterTileState extends State<_ChapterTile> {
       subject: widget.subject,
       grade: widget.chapter.grade,
       chapter: widget.chapter.chapterName,
-      count: 10,
+      count: kChapterSessionCount,
     );
     if (!context.mounted) return;
     final qs = context.read<PracticeService>().currentQuestions;
