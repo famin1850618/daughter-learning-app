@@ -435,7 +435,7 @@ class PracticeService extends ChangeNotifier {
   ///   - 错题集"练相似题" → settings.applyToReviewSimilar
   Future<void> startKpReviewSession(
     String kpPath, {
-    int count = 10,
+    int count = 3, // V3.30: 错题相似练习只给 3 题（Famin：太多了，3 题全对即过关）
     bool applyDifficulty = true,
   }) async {
     // V3.22：错题集 review key 带 |combo 后缀 = 组合题级，按 chapter 整体抽题（不限子 KP）

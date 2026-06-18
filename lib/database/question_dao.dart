@@ -432,8 +432,10 @@ class QuestionDao {
     final rows = await db.rawQuery('''
       WITH unit_keys AS (
         -- 每道题对应一个 review key：组合题 → chapter|combo；单题 → knowledge_point
+        -- V3.30: 综合练习 统一归一个 entry，不分单题/组合题（Famin）
         SELECT q.id AS qid, q.subject AS subject,
-               CASE WHEN q.group_id IS NOT NULL AND q.group_id != ''
+               CASE WHEN q.chapter = '综合练习' THEN '综合练习'
+                    WHEN q.group_id IS NOT NULL AND q.group_id != ''
                     THEN q.chapter || '|combo'
                     ELSE q.knowledge_point END AS rkey,
                q.chapter AS chapter,
@@ -473,7 +475,7 @@ class QuestionDao {
       SELECT p.rkey, p.subject, p.last_wrong_at, te.total_errors
       FROM progress p
       JOIN total_err te ON te.rkey = p.rkey AND te.subject = p.subject
-      WHERE p.correct_after_last < 2
+      WHERE p.correct_after_last < 3
       ORDER BY te.total_errors DESC, p.last_wrong_at DESC
     ''');
 
@@ -513,7 +515,7 @@ class QuestionDao {
     return all.take(n).toList();
   }
 
-  /// 某 KP 是否已掌握（错过 + 之后答对 ≥2 道不同 question_id 的题）
+  /// 某 KP 是否已掌握（错过 + 之后答对 ≥3 道不同 unit = 三题全对过关，V3.30 Famin）
   Future<bool> isKnowledgePointMastered(String kpPath) async {
     final list = await getReviewKnowledgePoints();
     return !list.any((r) => r.fullPath == kpPath);
