@@ -22,6 +22,7 @@ import 'services/difficulty_settings_service.dart';
 import 'services/review_request_service.dart';
 import 'services/data_reset_service.dart';
 import 'services/diagnostic_service.dart';
+import 'services/grading_queue_service.dart';
 import 'database/question_dao.dart';
 import 'models/question.dart';
 import 'models/subject.dart';
@@ -40,6 +41,7 @@ void main() async {
   await initializeDateFormatting('zh_CN');
   await _seedDatabase();
   await _preloadDevKeys();
+  GradingQueueService.processAll(); // V3.35: 续跑上次没批完的证明题（不 await）
   // V3.12.11 CDN-first：题库 0 题（首次装 / 强制刷新后）→ 走 InitialSyncScreen
   // 阻塞拉云端最新；失败显示重试。否则正常进 LearningApp（后台 silent sync）。
   final qCount = await QuestionDao().count();

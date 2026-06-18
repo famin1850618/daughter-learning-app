@@ -17,7 +17,7 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     return openDatabase(
       join(dbPath, 'learning_app.db'),
-      version: 31,
+      version: 32,
       onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
@@ -29,6 +29,19 @@ class DatabaseHelper {
   }
 
   Future<void> _onUpgrade(Database db, int oldVersion, int newVersion) async {
+    if (oldVersion < 32) {
+      // v32: V3.35 证明题后台批改。practice_records 加 3 列：
+      // grading_pending(1=AI 批改中)、ai_feedback(评语)、answer_image(手写PNG base64，供OCR/留痕)
+      for (final col in [
+        'grading_pending INTEGER DEFAULT 0',
+        'ai_feedback TEXT',
+        'answer_image TEXT',
+      ]) {
+        try {
+          await db.execute('ALTER TABLE practice_records ADD COLUMN $col');
+        } catch (_) {/* 已有则跳 */}
+      }
+    }
     if (oldVersion < 31) {
       // v31: V3.27 听力服务端预渲染音频。questions 加 audio_hash 列存 CDN mp3 哈希。
       try {
@@ -832,6 +845,9 @@ class DatabaseHelper {
         session_id TEXT,
         user_id TEXT DEFAULT 'local',
         partial_score REAL,
+        grading_pending INTEGER DEFAULT 0,
+        ai_feedback TEXT,
+        answer_image TEXT,
         FOREIGN KEY (question_id) REFERENCES questions (id)
       )
     ''');

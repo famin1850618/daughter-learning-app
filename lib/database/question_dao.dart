@@ -424,6 +424,44 @@ class QuestionDao {
     return db.insert('practice_records', record.toMap());
   }
 
+  /// V3.35: 按 id 取单题（后台批改用）
+  Future<Question?> getQuestionById(int id) async {
+    final db = await _db.database;
+    final rows = await db.query('questions', where: 'id = ?', whereArgs: [id], limit: 1);
+    if (rows.isEmpty) return null;
+    return Question.fromMap(rows.first);
+  }
+
+  /// V3.35: 取所有待后台批改的记录（证明题，含手写图）
+  Future<List<PracticeRecord>> getPendingGradingRecords() async {
+    final db = await _db.database;
+    final rows = await db.query('practice_records',
+        where: 'grading_pending = 1', orderBy: 'practiced_at ASC');
+    return rows.map(PracticeRecord.fromMap).toList();
+  }
+
+  /// V3.35: 后台批改完成 → 回填判定 + 评语 + 转写文字，清 pending
+  Future<void> finalizeGrade(int recordId,
+      {required bool isCorrect,
+      required double partial,
+      String? feedback,
+      String? transcription}) async {
+    final db = await _db.database;
+    await db.update(
+      'practice_records',
+      {
+        'is_correct': isCorrect ? 1 : 0,
+        'partial_score': partial,
+        'grading_pending': 0,
+        if (feedback != null) 'ai_feedback': feedback,
+        if (transcription != null && transcription.isNotEmpty)
+          'user_answer': transcription,
+      },
+      where: 'id = ?',
+      whereArgs: [recordId],
+    );
+  }
+
   // ── 错题集（KP 维度 / 举一反三）─────────────────────
 
   /// 待掌握错题列表（V3.22 重构：单位 = group_unit = 组合题→group_id / 单题→'q'+id）
@@ -457,7 +495,7 @@ class QuestionDao {
         SELECT u.rkey, u.subject, MAX(r.practiced_at) AS t
         FROM practice_records r
         JOIN unit_keys u ON u.qid = r.question_id
-        WHERE r.is_correct = 0
+        WHERE r.is_correct = 0 AND COALESCE(r.grading_pending, 0) = 0
         GROUP BY u.rkey, u.subject
       ),
       progress AS (
@@ -477,7 +515,7 @@ class QuestionDao {
                COUNT(DISTINCT (CAST(r.id AS TEXT) || '|' || COALESCE(u.gid, 'q' || u.qid))) AS total_errors
         FROM practice_records r
         JOIN unit_keys u ON u.qid = r.question_id
-        WHERE r.is_correct = 0
+        WHERE r.is_correct = 0 AND COALESCE(r.grading_pending, 0) = 0
         GROUP BY u.rkey, u.subject
       )
       SELECT p.rkey, p.subject, p.last_wrong_at, te.total_errors
@@ -1255,6 +1293,7 @@ class QuestionDao {
     return db.rawQuery('''
       SELECT r.id AS r_id, r.user_answer, r.is_correct, r.partial_score,
              r.practiced_at, r.time_spent, r.question_id,
+             r.grading_pending, r.ai_feedback,
              q.content, q.type, q.answer, q.chapter, q.knowledge_point,
              q.subject, q.grade
       FROM practice_records r

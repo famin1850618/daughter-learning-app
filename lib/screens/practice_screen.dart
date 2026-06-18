@@ -363,8 +363,16 @@ class _QuestionScreenState extends State<_QuestionScreen> {
   bool _visionEnabled = false;
   bool _handwriting = false;
   bool _padHasStrokes = false;
+  bool _proofSubmitted = false; // V3.35: 证明题已交后台批改（结果页显"批改中"）
   final _padCtrl = HandwritingController();
   final _padKey = GlobalKey<HandwritingPadState>();
+
+  /// V3.35: 证明题（主观 + 求证/证明）。非组合 + 手写时走后台异步批改。
+  bool get _isProof {
+    final q = widget.question;
+    return q.type == QuestionType.subjective &&
+        (q.content.contains('求证') || q.content.contains('证明'));
+  }
 
   void _onPadChanged() {
     final has = !_padCtrl.isEmpty;
@@ -406,6 +414,7 @@ class _QuestionScreenState extends State<_QuestionScreen> {
       _seconds = 0;
       _paused = false;
       _padCtrl.clear();
+      _proofSubmitted = false;
       _handwriting = _visionEnabled && _isDrawingQuestion; // 作图题默认手写
       _maybeLoadAttemptCount();
       _prefillPendingAnswer();
@@ -537,10 +546,29 @@ class _QuestionScreenState extends State<_QuestionScreen> {
       } catch (_) {
         png = null;
       }
-      String? recognized;
-      if (png != null) {
-        recognized = await VisionOcrService().recognize(png, hint: q.content);
+      if (!mounted) return;
+      if (png == null) {
+        setState(() => _submitting = false);
+        ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('手写导出失败，请重写')));
+        return;
       }
+      // V3.35: 证明题(非组合) → 后台异步批改，不阻塞孩子，可直接下一题
+      if (_isProof && q.groupId == null) {
+        final dataUrl = 'data:image/png;base64,${base64Encode(png)}';
+        await service.submitProofAsync(dataUrl);
+        _timer?.cancel();
+        if (mounted) {
+          setState(() {
+            _submitting = false;
+            _proofSubmitted = true;
+            _result = true; // 触发结果面板（显"批改中"）
+          });
+        }
+        return;
+      }
+      // 其余手写(填空/计算/非证明主观) → 同步 OCR → 文字判分
+      final recognized = await VisionOcrService().recognize(png, hint: q.content);
       if (!mounted) return;
       if (recognized == null || recognized.trim().isEmpty) {
         setState(() => _submitting = false);
@@ -987,8 +1015,35 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                 ),
             ],
 
+            // V3.35: 证明题已交后台批改 → 显"批改中"，不显对错
+            if (_proofSubmitted) ...[
+              Container(
+                padding: const EdgeInsets.all(14),
+                decoration: BoxDecoration(
+                  color: Colors.blue.shade50,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Row(children: [
+                  const Icon(Icons.hourglass_top, color: Colors.blue),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: Text('已提交，AI 正在后台批改证明（约半分钟）。\n可直接做下一题，结果稍后在「留痕」里看。',
+                        style: TextStyle(fontSize: 14, color: Colors.blue.shade900)),
+                  ),
+                ]),
+              ),
+              const SizedBox(height: 16),
+              SizedBox(
+                width: double.infinity,
+                height: 46,
+                child: ElevatedButton(
+                  onPressed: () => context.read<PracticeService>().nextQuestion(),
+                  child: Text(service.currentIndex < service.currentQuestions.length - 1 ? '下一题' : '查看结果'),
+                ),
+              ),
+            ]
             // 结果反馈（V3.8.2：选择题答完保留选项可见，标正解 + 用户错选）
-            if (_result != null) ...[
+            else if (_result != null) ...[
               if (q.type == QuestionType.multipleChoice && q.options != null) ...[
                 _buildAnsweredOptions(q),
                 const SizedBox(height: 12),

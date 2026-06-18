@@ -9,6 +9,7 @@ import 'reward_service.dart';
 import 'difficulty_settings_service.dart';
 import 'review_request_service.dart';
 import 'ai_grading_service.dart';
+import 'grading_queue_service.dart';
 
 /// V3.14: 组合题整组结果一项
 class GroupResultEntry {
@@ -392,6 +393,29 @@ class PracticeService extends ChangeNotifier {
   bool _isProofQuestion(Question q) =>
       q.type == QuestionType.subjective &&
       (q.content.contains('求证') || q.content.contains('证明'));
+
+  /// V3.35: 证明题手写提交 → **不阻塞孩子**。插 pending 记录（含手写图），
+  /// 后台 GradingQueueService 跑 OCR + 思考判定后回填。孩子可直接下一题。
+  Future<void> submitProofAsync(String imageDataUrl) async {
+    final q = currentQuestion;
+    if (q == null || q.id == null) return;
+    final spent = _questionStartTime == null
+        ? 0
+        : DateTime.now().difference(_questionStartTime!).inSeconds;
+    await _dao.insertRecord(PracticeRecord(
+      questionId: q.id!,
+      userAnswer: '[手写作答 · AI 批改中]',
+      isCorrect: false,
+      practicedAt: DateTime.now(),
+      timeSpent: spent,
+      sessionId: _sessionId,
+      partialScore: 0.0,
+      gradingPending: true,
+      answerImage: imageDataUrl,
+    ));
+    // 后台批改（不 await，孩子不等待）
+    GradingQueueService.processAll();
+  }
 
   /// V3.34.1: 抽题后整组化 + 按"组数"截到 maxUnits（**组合题算 1 题**，Famin 铁律）。
   /// 修"卡片显示 N 题、点进去 ≠ N"——根因是 limit 截原始行而非组数。

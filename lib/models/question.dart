@@ -262,6 +262,12 @@ class PracticeRecord {
   /// - 多空题: 对的空数 / 总空数（如 4 空对 3 = 0.75）
   /// - 组合题 group 总分由调用方按 1/n 累加各子题 partial_score
   final double partialScore;
+  /// V3.35: 证明题后台批改中（1=AI 还在判，UI 显"批改中"，学情查询排除）
+  final bool gradingPending;
+  /// V3.35: AI 评语（证明/主观批改完回填）
+  final String? aiFeedback;
+  /// V3.35: 手写作答 PNG（data:image/png;base64,...），供后台 OCR + 留痕展示
+  final String? answerImage;
 
   const PracticeRecord({
     this.id,
@@ -273,6 +279,9 @@ class PracticeRecord {
     this.usedHint = false,
     this.sessionId,
     this.partialScore = 0.0,
+    this.gradingPending = false,
+    this.aiFeedback,
+    this.answerImage,
   });
 
   Map<String, dynamic> toMap() => {
@@ -285,6 +294,9 @@ class PracticeRecord {
     'used_hint': usedHint ? 1 : 0,
     'session_id': sessionId,
     'partial_score': partialScore,
+    'grading_pending': gradingPending ? 1 : 0,
+    'ai_feedback': aiFeedback,
+    'answer_image': answerImage,
   };
 
   factory PracticeRecord.fromMap(Map<String, dynamic> map) => PracticeRecord(
@@ -298,5 +310,8 @@ class PracticeRecord {
     sessionId: map['session_id'] as String?,
     partialScore: (map['partial_score'] as num?)?.toDouble() ??
         ((map['is_correct'] as int) == 1 ? 1.0 : 0.0),
+    gradingPending: ((map['grading_pending'] as int?) ?? 0) == 1,
+    aiFeedback: map['ai_feedback'] as String?,
+    answerImage: map['answer_image'] as String?,
   );
 }

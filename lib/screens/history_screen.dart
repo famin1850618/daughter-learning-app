@@ -361,24 +361,37 @@ class _SessionDetailScreenState extends State<SessionDetailScreen> {
   }
 
   Widget _recordTile(Map<String, Object?> r) {
+    final pending = ((r['grading_pending'] as int?) ?? 0) == 1; // V3.35 证明题批改中
     final correct = ((r['is_correct'] as int?) ?? 0) == 1;
     final partial = (r['partial_score'] as num?)?.toDouble();
     final ans = (r['user_answer'] as String?) ?? '';
+    final fb = (r['ai_feedback'] as String?) ?? '';
     final ts = (r['time_spent'] as int?) ?? 0;
     final qid = r['question_id'] as int?;
     final partialNote = (!correct && partial != null && partial > 0)
         ? '（部分 ${(partial * 100).round()}%）'
         : '';
+    final cardColor = pending
+        ? Colors.blue.shade50
+        : (correct ? Colors.green.shade50 : Colors.red.shade50);
     return Card(
-      color: correct ? Colors.green.shade50 : Colors.red.shade50,
+      color: cardColor,
       child: ListTile(
         dense: true,
-        leading: Icon(correct ? Icons.check_circle : Icons.cancel,
-            color: correct ? Colors.green : Colors.red),
+        leading: Icon(
+            pending
+                ? Icons.hourglass_top
+                : (correct ? Icons.check_circle : Icons.cancel),
+            color: pending
+                ? Colors.blue
+                : (correct ? Colors.green : Colors.red)),
         title: MathText(_clip((r['content'] as String?) ?? '', 70),
             style: const TextStyle(fontSize: 13)),
-        subtitle: Text('你答：${ans.isEmpty ? '（空）' : _clip(ans, 40)}'
-            '$partialNote · ${ts}s'),
+        subtitle: Text(pending
+            ? '✍️ 手写已交，AI 批改中…'
+            : '你答：${ans.isEmpty ? '（空）' : _clip(ans, 40)}'
+                '$partialNote · ${ts}s${fb.isNotEmpty ? '\n🤖 $fb' : ''}'),
+        isThreeLine: !pending && fb.isNotEmpty,
         trailing: const Icon(Icons.history, size: 18),
         onTap: qid == null
             ? null
