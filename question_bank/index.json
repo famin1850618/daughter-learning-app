@@ -1,5 +1,5 @@
 {
-  "version": 120,
+  "version": 121,
   "updated_at": "2026-06-18",
   "batches": [
     {
@@ -201,9 +201,29 @@
       "grade": 6,
       "count": 29,
       "batch_hash": "7c917349f40ca1a57507b18ea61c0fcd670e0d00"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qm_pingshan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_pingshan_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 26,
+      "batch_hash": "c8c816c81f8d5c6a7b3f6f218dbd602b707065e5"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qm_nanshan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_nanshan_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 46,
+      "batch_hash": "374a44c7ccab3c6a09892fb98cdafa244cbd61d7"
     }
   ],
   "_changelog": [
+    {
+      "version": 121,
+      "note": "v121: 归档 6-19 自动扫 pair3 — realpaper_g6_chinese_bubian_qm_pingshan_001(26), realpaper_g6_math_beishida_qm_nanshan_001(46)"
+    },
     {
       "version": 120,
       "note": "v120: 归档 6-19 自动扫 pair2 — realpaper_g6_chinese_bubian_xsc_nanshan_001(62), realpaper_g6_chinese_bubian_xsc_shenzhen_001(29)"
