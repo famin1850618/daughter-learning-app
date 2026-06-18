@@ -39,12 +39,31 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await initializeDateFormatting('zh_CN');
   await _seedDatabase();
+  await _preloadDevKeys();
   // V3.12.11 CDN-first：题库 0 题（首次装 / 强制刷新后）→ 走 InitialSyncScreen
   // 阻塞拉云端最新；失败显示重试。否则正常进 LearningApp（后台 silent sync）。
   final qCount = await QuestionDao().count();
   // 注册回调让 InitialSyncScreen 完成后切到 LearningApp
   launchMainAppCallback = () => runApp(const LearningApp());
   runApp(qCount == 0 ? const InitialSyncApp() : const LearningApp());
+}
+
+/// V3.34.1: 调试期反复重装会清掉 SharedPreferences（API key 没了）。
+/// debug 构建时用 --dart-define=DEEPSEEK_KEY=.. --dart-define=QWEN_KEY=.. 把 key 编进 APK，
+/// 首次启动若本机未设过则自动填入并启用 → 重装零复制。release 不传 define = 空 = 不预填。
+Future<void> _preloadDevKeys() async {
+  const dsKey = String.fromEnvironment('DEEPSEEK_KEY');
+  const qwenKey = String.fromEnvironment('QWEN_KEY');
+  if (dsKey.isEmpty && qwenKey.isEmpty) return;
+  final p = await SharedPreferences.getInstance();
+  if (dsKey.isNotEmpty && (p.getString('deepseek_api_key') ?? '').trim().isEmpty) {
+    await p.setString('deepseek_api_key', dsKey);
+    await p.setBool('ai_grading_enabled', true);
+  }
+  if (qwenKey.isNotEmpty && (p.getString('qwen_vl_api_key') ?? '').trim().isEmpty) {
+    await p.setString('qwen_vl_api_key', qwenKey);
+    await p.setBool('vision_ocr_enabled', true);
+  }
 }
 
 Future<void> _seedDatabase() async {
