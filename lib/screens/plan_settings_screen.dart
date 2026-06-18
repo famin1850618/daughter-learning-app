@@ -4,6 +4,7 @@ import 'package:flutter/services.dart' show Clipboard, ClipboardData;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:provider/provider.dart';
 import '../services/ai_grading_service.dart';
+import '../services/vision_ocr_service.dart';
 import 'package:intl/intl.dart';
 import '../utils/app_theme.dart';
 import '../models/plan_settings.dart';
@@ -121,6 +122,14 @@ class _PlanSettingsScreenState extends State<PlanSettingsScreen> {
             subtitle: '主观题由 AI 即时判分；填空被判错时先让 AI 复判，判对则自动补进答案集。家长审核仍可改判兜底。',
           ),
           const _AiGradingSection(),
+          const SizedBox(height: 16),
+
+          // ── V3.34 手写识别（视觉模型 qwen-vl）────────
+          _SectionHeader(
+            title: '手写识别（视觉模型）',
+            subtitle: '填空/计算题可切到手写作答；用通义千问视觉模型把手写识别成文字，再走上面的 AI 判分。',
+          ),
+          const _VisionOcrSection(),
           const SizedBox(height: 16),
 
           // ── 数据导出与备份 ────────────────────
@@ -579,6 +588,153 @@ class _AiGradingSectionState extends State<_AiGradingSection> {
                   helperText: '默认 deepseek-v4-flash；官方更名后可改',
                 ),
                 onChanged: (v) => _setStr(AiGradingService.prefModel, v),
+              ),
+              const SizedBox(height: 12),
+              Row(
+                children: [
+                  ElevatedButton.icon(
+                    onPressed: _testing ? null : _test,
+                    icon: _testing
+                        ? const SizedBox(
+                            width: 16,
+                            height: 16,
+                            child: CircularProgressIndicator(strokeWidth: 2))
+                        : const Icon(Icons.wifi_tethering, size: 18),
+                    label: const Text('测试连接'),
+                  ),
+                  const SizedBox(width: 12),
+                  if (_testResult != null)
+                    Expanded(
+                      child: Text(
+                        _testResult!,
+                        style: TextStyle(
+                          fontSize: 13,
+                          color: _testResult!.contains('成功')
+                              ? Colors.green.shade700
+                              : Colors.red.shade700,
+                        ),
+                      ),
+                    ),
+                ],
+              ),
+            ],
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+// V3.34 手写识别设置（qwen-vl 视觉模型），结构同 _AiGradingSection
+class _VisionOcrSection extends StatefulWidget {
+  const _VisionOcrSection();
+  @override
+  State<_VisionOcrSection> createState() => _VisionOcrSectionState();
+}
+
+class _VisionOcrSectionState extends State<_VisionOcrSection> {
+  bool _enabled = false;
+  bool _keyVisible = false;
+  bool _testing = false;
+  String? _testResult;
+  final _keyCtrl = TextEditingController();
+  final _modelCtrl = TextEditingController();
+
+  @override
+  void initState() {
+    super.initState();
+    SharedPreferences.getInstance().then((p) {
+      if (!mounted) return;
+      setState(() {
+        _enabled = p.getBool(VisionOcrService.prefEnabled) ?? false;
+        _keyCtrl.text = p.getString(VisionOcrService.prefKey) ?? '';
+        _modelCtrl.text =
+            p.getString(VisionOcrService.prefModel) ?? 'qwen3.6-flash';
+      });
+    });
+  }
+
+  @override
+  void dispose() {
+    _keyCtrl.dispose();
+    _modelCtrl.dispose();
+    super.dispose();
+  }
+
+  Future<void> _setBool(String k, bool v) async {
+    final p = await SharedPreferences.getInstance();
+    await p.setBool(k, v);
+  }
+
+  Future<void> _setStr(String k, String v) async {
+    final p = await SharedPreferences.getInstance();
+    await p.setString(k, v.trim());
+  }
+
+  Future<void> _test() async {
+    setState(() {
+      _testing = true;
+      _testResult = null;
+    });
+    await _setStr(VisionOcrService.prefKey, _keyCtrl.text);
+    await _setStr(VisionOcrService.prefModel, _modelCtrl.text);
+    final msg = await VisionOcrService().testConnection();
+    if (!mounted) return;
+    setState(() {
+      _testing = false;
+      _testResult = msg;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(16, 8, 16, 12),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            SwitchListTile(
+              contentPadding: EdgeInsets.zero,
+              title: const Text('启用手写识别'),
+              subtitle: const Text('需填入通义千问（DashScope）API Key'),
+              value: _enabled,
+              activeColor: AppTheme.primary,
+              onChanged: (v) {
+                setState(() => _enabled = v);
+                _setBool(VisionOcrService.prefEnabled, v);
+              },
+            ),
+            if (_enabled) ...[
+              const SizedBox(height: 4),
+              TextField(
+                controller: _keyCtrl,
+                obscureText: !_keyVisible,
+                decoration: InputDecoration(
+                  labelText: '通义千问 API Key',
+                  hintText: 'sk-xxxxxx',
+                  helperText:
+                      '在 dashscope（阿里云百炼）申请；仅存本机，不上传不提交',
+                  helperMaxLines: 2,
+                  suffixIcon: IconButton(
+                    icon: Icon(_keyVisible
+                        ? Icons.visibility_off
+                        : Icons.visibility),
+                    onPressed: () =>
+                        setState(() => _keyVisible = !_keyVisible),
+                  ),
+                ),
+                onChanged: (v) => _setStr(VisionOcrService.prefKey, v),
+              ),
+              const SizedBox(height: 8),
+              TextField(
+                controller: _modelCtrl,
+                decoration: const InputDecoration(
+                  labelText: '模型名',
+                  hintText: 'qwen3.6-flash',
+                  helperText: '默认 qwen3.6-flash（视觉，便宜；也可用 qwen-vl-max）',
+                ),
+                onChanged: (v) => _setStr(VisionOcrService.prefModel, v),
               ),
               const SizedBox(height: 12),
               Row(

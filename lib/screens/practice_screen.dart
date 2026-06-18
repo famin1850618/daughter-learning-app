@@ -18,6 +18,8 @@ import '../models/subject.dart';
 import '../models/question.dart';
 import '../models/speaker_profile.dart';
 import '../utils/answer_matcher.dart';
+import '../services/vision_ocr_service.dart';
+import '../widgets/handwriting_pad.dart';
 import '../models/curriculum.dart';
 import '../database/curriculum_dao.dart';
 import '../database/question_dao.dart';
@@ -357,6 +359,20 @@ class _QuestionScreenState extends State<_QuestionScreen> {
   /// V3.8.3: 该题在小孩历史中累计做过的次数（替代选项随机的"做过 N 次"标签）
   int _attemptCount = 0;
   int? _attemptCountForQid;
+  /// V3.34: 手写作答（仅单空填空/计算题；需在设置开启手写识别）
+  bool _visionEnabled = false;
+  bool _handwriting = false;
+  bool _padHasStrokes = false;
+  final _padCtrl = HandwritingController();
+  final _padKey = GlobalKey<HandwritingPadState>();
+
+  void _onPadChanged() {
+    final has = !_padCtrl.isEmpty;
+    if (has != _padHasStrokes) {
+      _padHasStrokes = has;
+      if (mounted) setState(() {});
+    }
+  }
 
   @override
   void initState() {
@@ -369,6 +385,10 @@ class _QuestionScreenState extends State<_QuestionScreen> {
     _setupBlankCtrls();
     _maybeLoadAttemptCount();
     _prefillPendingAnswer();
+    _padCtrl.addListener(_onPadChanged);
+    VisionOcrService.isEnabled().then((v) {
+      if (mounted) setState(() => _visionEnabled = v);
+    });
   }
 
   @override
@@ -381,10 +401,19 @@ class _QuestionScreenState extends State<_QuestionScreen> {
       _setupBlankCtrls();
       _seconds = 0;
       _paused = false;
+      _handwriting = false;
+      _padCtrl.clear();
       _maybeLoadAttemptCount();
       _prefillPendingAnswer();
     }
   }
+
+  /// V3.34: 当前题能否手写作答（单空填空 / 计算题 + 已开启手写识别）
+  bool get _canHandwrite =>
+      _visionEnabled &&
+      !_isMultiBlank &&
+      (widget.question.type == QuestionType.fillBlank ||
+          widget.question.type == QuestionType.calculation);
 
   /// V3.25: 当前题是否多空（answer_blanks≥2 的填空题）
   bool get _isMultiBlank {
@@ -437,6 +466,8 @@ class _QuestionScreenState extends State<_QuestionScreen> {
     for (final c in _blankCtrls) {
       c.dispose();
     }
+    _padCtrl.removeListener(_onPadChanged);
+    _padCtrl.dispose();
     super.dispose();
   }
 
@@ -469,13 +500,40 @@ class _QuestionScreenState extends State<_QuestionScreen> {
   Future<void> _submit() async {
     if (_submitting) return;
     final q = widget.question;
-    final answer = (q.type == QuestionType.multipleChoice ||
-            q.type == QuestionType.judgment)
-        ? (_selectedOption ?? '')
-        : _currentTextAnswer();
-    if (answer.isEmpty) return;
     final service = context.read<PracticeService>();
-    setState(() => _submitting = true);
+    String answer;
+    // V3.34: 手写作答 → 先用视觉模型识别成文字，识别结果回填 _answerCtrl（可见、可改判）
+    if (_handwriting && _canHandwrite) {
+      if (_padCtrl.isEmpty) return;
+      setState(() => _submitting = true);
+      Uint8List? png;
+      try {
+        png = await _padKey.currentState?.exportPng();
+      } catch (_) {
+        png = null;
+      }
+      String? recognized;
+      if (png != null) {
+        recognized = await VisionOcrService().recognize(png, hint: q.content);
+      }
+      if (!mounted) return;
+      if (recognized == null || recognized.trim().isEmpty) {
+        setState(() => _submitting = false);
+        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+            content: Text('手写识别失败，请重写或切回键盘输入')));
+        return;
+      }
+      answer = recognized.trim();
+      _answerCtrl.text = answer; // 回填，结果页/记录显示识别到的答案（透明，不静默）
+      // 已置 _submitting=true，继续走判分（不再重复置位）
+    } else {
+      answer = (q.type == QuestionType.multipleChoice ||
+              q.type == QuestionType.judgment)
+          ? (_selectedOption ?? '')
+          : _currentTextAnswer();
+      if (answer.isEmpty) return;
+      setState(() => _submitting = true);
+    }
     try {
       // V3.14: 组合题分支处理
       if (q.groupId != null) {
@@ -953,6 +1011,56 @@ class _QuestionScreenState extends State<_QuestionScreen> {
     );
   }
 
+  /// V3.34: 给单空填空/计算题套上"键盘/手写"切换；手写模式显示画布 + 撤销/清空。
+  Widget _withHandwriting(Widget keyboardField) {
+    if (!_canHandwrite) return keyboardField;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Row(
+          children: [
+            ChoiceChip(
+              label: const Text('⌨️ 键盘'),
+              selected: !_handwriting,
+              selectedColor: AppTheme.primary.withOpacity(0.18),
+              onSelected: (_) => setState(() => _handwriting = false),
+            ),
+            const SizedBox(width: 8),
+            ChoiceChip(
+              label: const Text('✏️ 手写'),
+              selected: _handwriting,
+              selectedColor: AppTheme.primary.withOpacity(0.18),
+              onSelected: (_) => setState(() => _handwriting = true),
+            ),
+          ],
+        ),
+        const SizedBox(height: 8),
+        if (_handwriting) ...[
+          HandwritingPad(key: _padKey, controller: _padCtrl),
+          const SizedBox(height: 4),
+          Row(
+            children: [
+              TextButton.icon(
+                onPressed: () => _padCtrl.undo(),
+                icon: const Icon(Icons.undo, size: 18),
+                label: const Text('撤销'),
+              ),
+              TextButton.icon(
+                onPressed: () => _padCtrl.clear(),
+                icon: const Icon(Icons.delete_outline, size: 18),
+                label: const Text('清空'),
+              ),
+              const Spacer(),
+              const Text('写完点"提交"自动识别',
+                  style: TextStyle(fontSize: 12, color: Colors.grey)),
+            ],
+          ),
+        ] else
+          keyboardField,
+      ],
+    );
+  }
+
   bool _canSubmit(Question q) {
     if (q.type == QuestionType.multipleChoice ||
         q.type == QuestionType.judgment) {
@@ -960,6 +1068,9 @@ class _QuestionScreenState extends State<_QuestionScreen> {
     }
     if (_isMultiBlank) {
       return _blankCtrls.any((c) => c.text.trim().isNotEmpty);
+    }
+    if (_handwriting && _canHandwrite) {
+      return !_padCtrl.isEmpty;
     }
     return _answerCtrl.text.trim().isNotEmpty;
   }
@@ -1126,17 +1237,17 @@ class _QuestionScreenState extends State<_QuestionScreen> {
             ],
           );
         }
-        return TextField(
+        return _withHandwriting(TextField(
           controller: _answerCtrl,
           onChanged: (_) => setState(() {}),
           decoration: const InputDecoration(
             labelText: '填入答案',
             border: OutlineInputBorder(),
           ),
-        );
+        ));
 
       case QuestionType.calculation:
-        return TextField(
+        return _withHandwriting(TextField(
           controller: _answerCtrl,
           onChanged: (_) => setState(() {}),
           minLines: 3,
@@ -1147,7 +1258,7 @@ class _QuestionScreenState extends State<_QuestionScreen> {
             alignLabelWithHint: true,
             border: OutlineInputBorder(),
           ),
-        );
+        ));
 
       case QuestionType.subjective:
         // V3.8.3: 主观题用大文本框；提交后自动入家长审核队列
