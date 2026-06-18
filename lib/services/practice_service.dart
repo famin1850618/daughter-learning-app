@@ -375,6 +375,19 @@ class PracticeService extends ChangeNotifier {
     }
   }
 
+  /// V3.28: 作文（写作 subjective）每篇当成一整套题（Famin）。
+  /// - 写作目标(essayTargeted) 或全是作文 → 只留 1 篇（单题一套）
+  /// - 混合的普通 session → 移除作文（作文只在写作练习/计划任务里单独出，不掺进 10 题里）
+  List<Question> _capEssay(List<Question> qs, bool essayTargeted) {
+    bool isEssay(Question q) =>
+        q.type == QuestionType.subjective && q.chapter == '写作';
+    final essays = qs.where(isEssay).toList();
+    if (essays.isEmpty) return qs;
+    final others = qs.where((q) => !isEssay(q)).toList();
+    if (essayTargeted || others.isEmpty) return [essays.first];
+    return others;
+  }
+
   Future<void> startSession({
     required Subject subject,
     required int grade,
@@ -406,6 +419,7 @@ class PracticeService extends ChangeNotifier {
         limit: count,
       );
     }
+    _currentQuestions = _capEssay(_currentQuestions, chapter == '写作');
     // V3.8.3: 放弃选项随机；用「做过 N 次」标签 + 已掌握≥3 排除 替代
     _kind = SessionKind.normal;
     _sessionId = _newSessionId('practice');
@@ -440,6 +454,7 @@ class PracticeService extends ChangeNotifier {
         rounds: rounds,
         limit: count,
       );
+      _currentQuestions = _capEssay(_currentQuestions, chapter == '写作');
       _kind = SessionKind.normal;
       _sessionId = _newSessionId('chapter');
       _resetSessionState();
@@ -468,6 +483,7 @@ class PracticeService extends ChangeNotifier {
         limit: count,
       );
     }
+    _currentQuestions = _capEssay(_currentQuestions, kpPath.startsWith('写作'));
     // V3.8.3: 放弃选项随机；用「做过 N 次」标签 + 已掌握≥3 排除 替代
     _kind = SessionKind.normal;
     _sessionId = _newSessionId('kp');
@@ -522,7 +538,7 @@ class PracticeService extends ChangeNotifier {
       }
       result.addAll(qs);
     }
-    _currentQuestions = result.take(totalLimit).toList();
+    _currentQuestions = _capEssay(result.take(totalLimit).toList(), false);
     // V3.8.3: 放弃选项随机；用「做过 N 次」标签 + 已掌握≥3 排除 替代
     _kind = SessionKind.normal;
     _sessionId = _newSessionId('agg');
@@ -594,7 +610,7 @@ class PracticeService extends ChangeNotifier {
         if (aiOn) {
           final v = await AiGradingService().gradeSubjective(gq, ans);
           if (v.available) {
-            correct = v.ok;
+            correct = v.score >= 0.8; // V3.28: AI 判分≥80 算完成（Famin）
             partial = v.score;
             aiFb = v.feedback;
             aiResolved = true;
@@ -693,7 +709,7 @@ class PracticeService extends ChangeNotifier {
       if (await AiGradingService.isEnabled()) {
         final v = await AiGradingService().gradeSubjective(q, answer);
         if (v.available) {
-          correct = v.ok;
+          correct = v.score >= 0.8; // V3.28: AI 判分≥80 算完成（Famin，尤其作文）
           partial = v.score;
           _lastAiFeedback = v.feedback;
           _lastAiResolved = true;
