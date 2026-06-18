@@ -422,13 +422,22 @@ class _QuestionScreenState extends State<_QuestionScreen> {
           widget.question.type == QuestionType.calculation ||
           widget.question.type == QuestionType.subjective);
 
-  /// V3.34.3: 作图/画图类主观题默认就切到手写（键盘画不了图）
+  /// V3.34.3/V3.35: 作图/证明类主观题默认就切到手写（键盘画不了图、也写不动证明）。
+  /// 孩子手写整个推理+图 → qwen 识别 → 判分（证明走思考模式）。
   bool get _isDrawingQuestion {
     final c = widget.question.content;
-    return widget.question.type == QuestionType.subjective &&
-        (c.contains('画') || c.contains('作图') || c.contains('画出') ||
-            c.contains('画一') || c.contains('图形') && c.contains('放大') ||
-            c.contains('对称') || c.contains('平移') || c.contains('旋转'));
+    if (widget.question.type != QuestionType.subjective) return false;
+    return c.contains('画') ||
+        c.contains('作图') ||
+        c.contains('画出') ||
+        c.contains('画一') ||
+        (c.contains('图形') && c.contains('放大')) ||
+        c.contains('对称') ||
+        c.contains('平移') ||
+        c.contains('旋转') ||
+        c.contains('求证') ||
+        c.contains('证明') ||
+        c.contains('辅助线');
   }
 
   /// V3.25: 当前题是否多空（answer_blanks≥2 的填空题）

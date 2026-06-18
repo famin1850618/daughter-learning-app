@@ -37,7 +37,10 @@ class AiGradingService {
         ((p.getString(prefKey) ?? '').trim().isNotEmpty);
   }
 
-  Future<AiVerdict> _call(String systemPrompt, String userPrompt) async {
+  /// [thinking]=true 启用 v4-flash 深度思考模式（判证明等多步推理）：
+  /// 加 thinking/reasoning_effort，**不能带 temperature**（思考模式不支持），超时放宽。
+  Future<AiVerdict> _call(String systemPrompt, String userPrompt,
+      {bool thinking = false}) async {
     final p = await SharedPreferences.getInstance();
     // V3.27.1: trim — 粘贴的 key 带尾随空格/换行会让 Authorization 头失效(401)
     final key = (p.getString(prefKey) ?? '').trim();
@@ -46,6 +49,22 @@ class AiGradingService {
         : _defaultModel;
     if (key.isEmpty) return AiVerdict.unavailable('未配置 API Key');
     try {
+      final body = <String, dynamic>{
+        'model': model,
+        'messages': [
+          {'role': 'system', 'content': systemPrompt},
+          {'role': 'user', 'content': userPrompt},
+        ],
+        'response_format': {'type': 'json_object'},
+        'max_tokens': thinking ? 4000 : 500,
+      };
+      if (thinking) {
+        // V3.35: 思考模式（deepseek-v4-flash），判证明用；不支持 temperature
+        body['thinking'] = {'type': 'enabled'};
+        body['reasoning_effort'] = 'high';
+      } else {
+        body['temperature'] = 0;
+      }
       final resp = await http
           .post(
             Uri.parse(_endpoint),
@@ -53,18 +72,9 @@ class AiGradingService {
               'Content-Type': 'application/json',
               'Authorization': 'Bearer $key',
             },
-            body: jsonEncode({
-              'model': model,
-              'messages': [
-                {'role': 'system', 'content': systemPrompt},
-                {'role': 'user', 'content': userPrompt},
-              ],
-              'temperature': 0,
-              'response_format': {'type': 'json_object'},
-              'max_tokens': 500,
-            }),
+            body: jsonEncode(body),
           )
-          .timeout(const Duration(seconds: 25));
+          .timeout(Duration(seconds: thinking ? 120 : 25));
       if (resp.statusCode != 200) {
         return AiVerdict.unavailable('HTTP ${resp.statusCode}');
       }
@@ -107,6 +117,25 @@ class AiGradingService {
         '学生答案：$studentAnswer\n'
         '请按此 json 输出：{"acceptable": true 或 false, "score": 0到1的小数, "reason": "一句话理由"}';
     return _call(sys, user);
+  }
+
+  /// V3.35: 证明题判分——v4-flash 思考模式 + 强 prompt（逐项核对判定要素/查跳步）。
+  /// studentProof = qwen 识别出的手写证明文字（推理 + 辅助线文字 + 图描述）。
+  /// 实测能抓"缺公共边/全等要素不全"等跳步；非 100%，调用方保留申诉/家长兜底。
+  Future<AiVerdict> gradeProof(Question q, String studentProof) {
+    const sys = '你是严格的中学数学老师，批改学生**手写后被识别成文字**的证明（可能有识别误差，'
+        '遇明显笔误按上下文善意理解，不要因小识别错就判错）。逐步检查：'
+        '①每用一次全等/相似判定(SSS/SAS/ASA/AAS/HL/相似)必须核对它要求的要素是否都已给出或可推出；'
+        '②有无跳步、缺依据、循环论证、用到未证结论；③是否真正推到要证的结论。'
+        '只输出 json：{"correct": true 或 false, "score": 0到1, "feedback": "面向学生的简短点评，指出关键问题或确认思路对"}';
+    final expl = q.explanation != null && q.explanation!.isNotEmpty
+        ? '\n参考证法/要点：${q.explanation}'
+        : '';
+    final user = '题目：${q.content}\n'
+        '参考答案：${q.answer}$expl\n'
+        '学生证明（手写识别）：$studentProof\n'
+        '请判定并按上面 json 输出。';
+    return _call(sys, user, thinking: true);
   }
 
   /// 主观题判分：依据参考答案/要点给判定 + 面向小学生的简短评语。

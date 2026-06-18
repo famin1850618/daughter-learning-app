@@ -388,6 +388,11 @@ class PracticeService extends ChangeNotifier {
     return others;
   }
 
+  /// V3.35: 证明题判定（主观题 + 题面含"求证/证明"）→ 走 gradeProof 思考模式。
+  bool _isProofQuestion(Question q) =>
+      q.type == QuestionType.subjective &&
+      (q.content.contains('求证') || q.content.contains('证明'));
+
   /// V3.34.1: 抽题后整组化 + 按"组数"截到 maxUnits（**组合题算 1 题**，Famin 铁律）。
   /// 修"卡片显示 N 题、点进去 ≠ N"——根因是 limit 截原始行而非组数。
   Future<List<Question>> _expandAndCap(List<Question> qs, int maxUnits) async {
@@ -643,9 +648,11 @@ class PracticeService extends ChangeNotifier {
       if (gq.type == QuestionType.subjective) {
         correct = false; // 默认待家长评分
         partial = 0.0;
-        // V3.26.1: AI 判主观题；判了就不入家长队列
+        // V3.26.1: AI 判主观题；判了就不入家长队列。V3.35: 证明题走思考模式。
         if (aiOn) {
-          final v = await AiGradingService().gradeSubjective(gq, ans);
+          final v = _isProofQuestion(gq)
+              ? await AiGradingService().gradeProof(gq, ans)
+              : await AiGradingService().gradeSubjective(gq, ans);
           if (v.available) {
             correct = v.score >= 0.8; // V3.28: AI 判分≥80 算完成（Famin）
             partial = v.score;
@@ -742,8 +749,11 @@ class PracticeService extends ChangeNotifier {
       partial = 0.0;
       queueParentReview = true;
       // V3.26: AI 判主观题。判了就不自动入家长队列（孩子有异议可申诉再转人工）。
+      // V3.35: 证明题走思考模式 gradeProof；其余主观/作文走 gradeSubjective。
       if (await AiGradingService.isEnabled()) {
-        final v = await AiGradingService().gradeSubjective(q, answer);
+        final v = _isProofQuestion(q)
+            ? await AiGradingService().gradeProof(q, answer)
+            : await AiGradingService().gradeSubjective(q, answer);
         if (v.available) {
           correct = v.score >= 0.8; // V3.28: AI 判分≥80 算完成（Famin，尤其作文）
           partial = v.score;
