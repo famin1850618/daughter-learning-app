@@ -1,5 +1,5 @@
 {
-  "version": 116,
+  "version": 117,
   "updated_at": "2026-06-18",
   "batches": [
     {
@@ -40,7 +40,7 @@
       "subject": "chinese",
       "grade": 6,
       "count": 24,
-      "batch_hash": "0c9a7b38ccab153d5bba4e32d3c07773954e0e3c"
+      "batch_hash": "6da36d9224a3aace9ca3d9e4c4912453e469b1d7"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qm_nanshan_001",
@@ -48,7 +48,7 @@
       "subject": "chinese",
       "grade": 6,
       "count": 34,
-      "batch_hash": "0314d26c373fb93595903e5352c3fa1fdec89e4b"
+      "batch_hash": "adad353783f0a3b6a17f208cbbd92b9687d5f3af"
     },
     {
       "source": "realpaper_g6_chinese_bubian_xsc_baoan_001",
@@ -56,7 +56,7 @@
       "subject": "chinese",
       "grade": 6,
       "count": 28,
-      "batch_hash": "86b6a5bbd6f94e6aa5c4e8c1ed77253ccdabaec3"
+      "batch_hash": "3ee9673e93dfd3dfae8794fd0a13224550ebed40"
     },
     {
       "source": "realpaper_g6_chinese_bubian_xsc_luohu_002",
@@ -64,7 +64,7 @@
       "subject": "chinese",
       "grade": 6,
       "count": 21,
-      "batch_hash": "d6b1bc31dbe12b93e33cd85f328fb0b4363df028"
+      "batch_hash": "a3059f7a36ca76e0d5cab3899bc4ee4d3f2eb643"
     },
     {
       "source": "realpaper_g6_chinese_bubian_xsc_shenzhen_moni_001",
@@ -72,7 +72,7 @@
       "subject": "chinese",
       "grade": 6,
       "count": 10,
-      "batch_hash": "fcf7289ef93e7ef659c6c44d54d5809970a6e71d"
+      "batch_hash": "96ade334fd66a6681cdc3c51a30e77b4a17a4722"
     },
     {
       "source": "realpaper_g6_math_beishida_qm_futian_002",
@@ -120,7 +120,7 @@
       "subject": "chinese",
       "grade": 6,
       "count": 26,
-      "batch_hash": "1eea1cb95252754fbb0c54ab5de76b0124338e9e"
+      "batch_hash": "8103dbf3ffa63f6ff51c2e9bb019b6a15e789b76"
     },
     {
       "source": "realpaper_g6_math_beishida_xsc_luohu_001",
@@ -160,7 +160,7 @@
       "subject": "chinese",
       "grade": 6,
       "count": 25,
-      "batch_hash": "3f6b400ec4e04985757bf108cacdc78393cb442e"
+      "batch_hash": "987a7632771d827a11cdab37c6a42ed11711089c"
     },
     {
       "source": "realpaper_g6_chinese_bubian_qm_longgang_001",
@@ -168,7 +168,7 @@
       "subject": "chinese",
       "grade": 6,
       "count": 21,
-      "batch_hash": "0a403cf6a9d6e0cb75c67a806930a87147b5a4ef"
+      "batch_hash": "da61f998b81faead3fc6f73de0fa19da9005e7a8"
     }
   ],
   "_changelog": [
@@ -314,6 +314,11 @@
       "version": 116,
       "date": "2026-06-18",
       "note": "扫题第二波5份(3数学+2语文):龙岗/盐田小升初数学+光明期末数学+龙华/龙岗期末语文,共154题"
+    },
+    {
+      "version": 117,
+      "date": "2026-06-18",
+      "note": "8 份语文重扫(--force)：补下划线<u>+加点字**、修选项重复(check25)、修旧扫过度加粗/位错；答案口径不变"
     }
   ]
 }

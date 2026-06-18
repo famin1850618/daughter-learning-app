@@ -278,13 +278,26 @@ def check_cross_batch_collision(batches: list) -> list:
     return errors
 
 
+UNDERLINE_PHRASES = ['画线句子', '划线句子', '画线的句子', '划线的句子',
+                     '画波浪线的句子', '波浪线的句子']
+
+
 def check_emphasis_phrasing(q: dict, idx: int) -> str:
-    """16. 题面/解析无"加点字/画波浪线/画线"等旧措辞（§5.6.7 V3.12.17）"""
-    text = (q.get('content') or '') + (q.get('explanation') or '')
+    """16. 题面/解析无"加点字/画波浪线/画线"等旧措辞（§5.6.7 V3.12.17）
+
+    V3.31 例外：若 content 含真实 <u>...</u> 下划线标记（run 级格式保真），
+    则"画线/划线句子"措辞合法（指代被 <u> 标出的句子），不再强制改"加粗"。
+    """
+    content = q.get('content') or ''
+    text = content + (q.get('explanation') or '')
     # 在 explanation 中保留"为原题加点字"自我说明
     text = text.replace('为原题加点字', '').replace('原题加点字', '')
+    has_underline = '<u>' in content
     for phrase in EMPHASIS_OLD_PHRASES:
         if phrase in text:
+            # V3.31: 含真实下划线标记时，划线类措辞为忠实原题，豁免
+            if has_underline and phrase in UNDERLINE_PHRASES:
+                continue
             return f'#{idx}: 仍含旧措辞 {phrase!r}（应改"加粗字/加粗的句子"）'
     return None
 
