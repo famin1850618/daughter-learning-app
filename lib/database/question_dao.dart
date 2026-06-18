@@ -210,8 +210,11 @@ class QuestionDao {
     required int grade,
   }) async {
     final db = await _db.database;
+    // V3.32: 组合题算 1 题（与练习/结果页 groupAwareCounter 口径一致），
+    // 否则显示"11题"但实际只 8 个可练单元（Famin 实测困惑）。
     final rows = await db.rawQuery('''
-      SELECT chapter, COUNT(*) AS c
+      SELECT chapter,
+             COUNT(DISTINCT COALESCE(NULLIF(group_id, ''), 'q' || id)) AS c
       FROM questions
       WHERE subject = ? AND grade = ? AND $_activeSourceFilter
       GROUP BY chapter
@@ -227,8 +230,10 @@ class QuestionDao {
     required int grade,
   }) async {
     final db = await _db.database;
+    // V3.32: 组合题算 1 题（与章节计数/练习口径一致）
     final r = await db.rawQuery('''
-      SELECT COUNT(*) AS c FROM questions
+      SELECT COUNT(DISTINCT COALESCE(NULLIF(group_id, ''), 'q' || id)) AS c
+      FROM questions
       WHERE subject = ? AND grade = ? AND $_activeSourceFilter
     ''', [subject.index, grade]);
     return (r.first['c'] as int?) ?? 0;
