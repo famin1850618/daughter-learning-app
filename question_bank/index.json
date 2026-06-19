@@ -1,5 +1,5 @@
 {
-  "version": 127,
+  "version": 128,
   "updated_at": "2026-06-20",
   "batches": [
     {
@@ -337,6 +337,30 @@
       "grade": 6,
       "count": 21,
       "batch_hash": "7c5d4debcfbda492a0a8c3b520fba63db6568d18"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qz_longhua_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qz_longhua_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 24,
+      "batch_hash": "d5eb3aaf5a45e332c467197cbc2951fc6f7df015"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qz_longhua_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qz_longhua_002.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 27,
+      "batch_hash": "0e960cb17dfe6ffd0948e36449c4abd301439089"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qz_longgang_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qz_longgang_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 20,
+      "batch_hash": "fb4d584ae06d3d2f25e09f5a3d7adb05a55900dc"
     }
   ],
   "_changelog": [
@@ -531,6 +555,11 @@
       "version": 127,
       "date": "2026-06-20",
       "note": "扫题6-20自动单轮(3份6下期末):realpaper_g6_math_beishida_qm_nanshan_003(38,数学南山23-24期末,带官方答案卡)+realpaper_g6_chinese_bubian_qm_guangming_002(22,语文光明22-23期末)+realpaper_g6_chinese_bubian_qm_yantian_001(21,语文盐田22-23期末),共81题;数学q6蚂蚁路线图位图/语文听力q1-3音频/光明仿写候选词缺失等记_skipped_for_future;答案存疑见scan_decisions"
+    },
+    {
+      "version": 128,
+      "date": "2026-06-20",
+      "note": "扫题6-20自动单轮(3份6下语文期中,新增papertype码qz=期中):realpaper_g6_chinese_bubian_qz_longhua_001(24,龙华21-22期中素质测评)+realpaper_g6_chinese_bubian_qz_longhua_002(27,龙华22-23期中练习)+realpaper_g6_chinese_bubian_qz_longgang_001(20,龙岗22-23期中素养形成),共71题;三卷docx均自带官方答案故无答案存疑;龙岗听力Q1-5(音频缺)+Q22(表格info_lost)、龙华002 q10(阅读卡材料缺)记_skipped_for_future"
     }
   ]
 }
