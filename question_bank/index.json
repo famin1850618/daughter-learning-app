@@ -1,5 +1,5 @@
 {
-  "version": 125,
+  "version": 126,
   "updated_at": "2026-06-19",
   "batches": [
     {
@@ -289,6 +289,30 @@
       "grade": 6,
       "count": 31,
       "batch_hash": "74187938b1d32e37977918d0476886da09079225"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qm_shenzhen_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_shenzhen_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 22,
+      "batch_hash": "4e1104a6cd47c9a7ddf97a275e9ca189b99478d6"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_xsc_nanshan_002.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 42,
+      "batch_hash": "4c309d103fc89caabada834e50448af92d468679"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qm_luohu_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_luohu_002.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 20,
+      "batch_hash": "e5a6a4642ce3530b24eff2f515c28441ed3a9d1e"
     }
   ],
   "_changelog": [
@@ -473,6 +497,11 @@
     {
       "version": 125,
       "note": "v125: 归档 6-19 自动扫 pair7 — realpaper_g6_chinese_bubian_xsc_yantian_001(20,语文盐田小升初2022) + realpaper_g6_math_beishida_qm_nanshan_002(54,数学南山期末21-22) + realpaper_g6_math_beishida_qm_baoan_002(31,数学宝安期末21-22)"
+    },
+    {
+      "version": 126,
+      "date": "2026-06-19",
+      "note": "扫题6-19自动 pair8(3份语文期末/小升初):realpaper_g6_chinese_bubian_qm_shenzhen_001(22,深圳22-23期末)+realpaper_g6_chinese_bubian_xsc_nanshan_002(42,南山小升初,文件名误标期末)+realpaper_g6_chinese_bubian_qm_luohu_002(20,罗湖21-22期末),共84题;听力/连线题记_skipped_for_future;无答案存疑"
     }
   ]
 }
