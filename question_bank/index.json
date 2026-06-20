@@ -1,5 +1,5 @@
 {
-  "version": 129,
+  "version": 130,
   "updated_at": "2026-06-20",
   "batches": [
     {
@@ -385,6 +385,30 @@
       "grade": 6,
       "count": 44,
       "batch_hash": "e732e1e7a3ec6f582f71f5cf93b4bf223ed28501"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_003",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_longhua_003.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 24,
+      "batch_hash": "6301debb27f300ca324585847704e3ec640819a4"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qm_longgang_003",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_longgang_003.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 18,
+      "batch_hash": "096370ff81759f18c33fdb309604387e73e23cac"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qm_luohu_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_luohu_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 29,
+      "batch_hash": "65fcd0d0b8a2ad45330e701aadb92bda9f4ca6a1"
     }
   ],
   "_changelog": [
@@ -589,6 +613,10 @@
       "version": 129,
       "date": "2026-06-20",
       "note": "扫题6-20自动单轮(3份6下,共87题):realpaper_g6_chinese_bubian_qz_longhua_003(25,语文龙华20-21期中)+realpaper_g6_chinese_bubian_qz_luohu_001(18,语文罗湖22-23期中)+realpaper_g6_math_beishida_qm_yantian_001(44,数学盐田20-21期末);罗湖语文听力Q1-4(音频缺)+Q11(表格info_lost)记_skipped_for_future;数学盐田R35抽样纠正q35/q36图错绑;龙华语文q10原题'共'为'其'形误已注explanation;答案存疑见scan_decisions"
+    },
+    {
+      "version": 130,
+      "note": "v130: 归档 6-20 自动单轮扫题（3份6下期末，共71题）：realpaper_g6_chinese_bubian_qm_longhua_003(24,语文龙华万安21-22期末)+realpaper_g6_chinese_bubian_qm_longgang_003(18,语文龙岗学科素养21-22期末)+realpaper_g6_math_beishida_qm_luohu_001(29,数学罗湖20-21期末)；语文龙华Q11划读音/龙岗Q1-5听力·Q5世界杯表·Q8拼音田字格·Q20画线指代 记_skipped_for_future；数学罗湖q20/q22部分空官方答案区WMF丢失由worker推理补全(见scan_decisions)；首轮坪山/龙岗部分片区因解析版sha1与pingshan_001/longgang_002重复跳过"
     }
   ]
 }
