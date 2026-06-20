@@ -1,5 +1,5 @@
 {
-  "version": 130,
+  "version": 131,
   "updated_at": "2026-06-20",
   "batches": [
     {
@@ -409,6 +409,30 @@
       "grade": 6,
       "count": 29,
       "batch_hash": "65fcd0d0b8a2ad45330e701aadb92bda9f4ca6a1"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qz_baoan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qz_baoan_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 19,
+      "batch_hash": "de4075c85fd238b6953a7d403a9604120a598c49"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qz_shenzhen_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qz_shenzhen_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 22,
+      "batch_hash": "fa169e09da3dd3bc75c1f8b2de4016d48399c68f"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qm_longhua_004",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qm_longhua_004.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 26,
+      "batch_hash": "6d2fd2fbc43fcf7003d3e7649f904f83b77ed414"
     }
   ],
   "_changelog": [
@@ -617,6 +641,11 @@
     {
       "version": 130,
       "note": "v130: 归档 6-20 自动单轮扫题（3份6下期末，共71题）：realpaper_g6_chinese_bubian_qm_longhua_003(24,语文龙华万安21-22期末)+realpaper_g6_chinese_bubian_qm_longgang_003(18,语文龙岗学科素养21-22期末)+realpaper_g6_math_beishida_qm_luohu_001(29,数学罗湖20-21期末)；语文龙华Q11划读音/龙岗Q1-5听力·Q5世界杯表·Q8拼音田字格·Q20画线指代 记_skipped_for_future；数学罗湖q20/q22部分空官方答案区WMF丢失由worker推理补全(见scan_decisions)；首轮坪山/龙岗部分片区因解析版sha1与pingshan_001/longgang_002重复跳过"
+    },
+    {
+      "version": 131,
+      "date": "2026-06-20",
+      "note": "v131: 归档 6-20 自动单轮扫题（3份6下语文，共67题）：realpaper_g6_chinese_bubian_qz_baoan_001(19,语文华一实验22-23期中)+realpaper_g6_chinese_bubian_qz_shenzhen_001(22,语文深圳部分学校22-23期中)+realpaper_g6_chinese_bubian_qm_longhua_004(26,语文龙华23-24期末)；三卷均解析版自带官方答案，无实质答案存疑；深圳部分学校卷 听力倾听思考1-5(音频缺)·填空8看拼音写词(拼音图)·阅读17填表(表结构丢失) 记_skipped_for_future；华一实验/龙华期末无跳过题；华一实验Q4/Q14·龙华q8_2(偏皎洁vs官方皎洁) 轻微口径差异已注explanation（见scan_decisions）"
     }
   ]
 }
