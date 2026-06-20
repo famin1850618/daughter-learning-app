@@ -1,5 +1,5 @@
 {
-  "version": 128,
+  "version": 129,
   "updated_at": "2026-06-20",
   "batches": [
     {
@@ -361,6 +361,30 @@
       "grade": 6,
       "count": 20,
       "batch_hash": "fb4d584ae06d3d2f25e09f5a3d7adb05a55900dc"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qz_longhua_003",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qz_longhua_003.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 25,
+      "batch_hash": "3eec2383d70fd13cb8401f0707a9ca8631fb73e7"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_qz_luohu_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_qz_luohu_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 18,
+      "batch_hash": "3540ef05981056ce12439e8b4640b28ce658fe4c"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qm_yantian_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_yantian_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 44,
+      "batch_hash": "e732e1e7a3ec6f582f71f5cf93b4bf223ed28501"
     }
   ],
   "_changelog": [
@@ -560,6 +584,11 @@
       "version": 128,
       "date": "2026-06-20",
       "note": "扫题6-20自动单轮(3份6下语文期中,新增papertype码qz=期中):realpaper_g6_chinese_bubian_qz_longhua_001(24,龙华21-22期中素质测评)+realpaper_g6_chinese_bubian_qz_longhua_002(27,龙华22-23期中练习)+realpaper_g6_chinese_bubian_qz_longgang_001(20,龙岗22-23期中素养形成),共71题;三卷docx均自带官方答案故无答案存疑;龙岗听力Q1-5(音频缺)+Q22(表格info_lost)、龙华002 q10(阅读卡材料缺)记_skipped_for_future"
+    },
+    {
+      "version": 129,
+      "date": "2026-06-20",
+      "note": "扫题6-20自动单轮(3份6下,共87题):realpaper_g6_chinese_bubian_qz_longhua_003(25,语文龙华20-21期中)+realpaper_g6_chinese_bubian_qz_luohu_001(18,语文罗湖22-23期中)+realpaper_g6_math_beishida_qm_yantian_001(44,数学盐田20-21期末);罗湖语文听力Q1-4(音频缺)+Q11(表格info_lost)记_skipped_for_future;数学盐田R35抽样纠正q35/q36图错绑;龙华语文q10原题'共'为'其'形误已注explanation;答案存疑见scan_decisions"
     }
   ]
 }
