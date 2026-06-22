@@ -1,6 +1,6 @@
 {
-  "version": 131,
-  "updated_at": "2026-06-20",
+  "version": 132,
+  "updated_at": "2026-06-22",
   "batches": [
     {
       "source": "batch_2026_05_07_g6_english_pet_r1",
@@ -433,6 +433,30 @@
       "grade": 6,
       "count": 26,
       "batch_hash": "6d2fd2fbc43fcf7003d3e7649f904f83b77ed414"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_xsc_longhua_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_xsc_longhua_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 27,
+      "batch_hash": "292b42dd2365c723765ae13eaf151202f8bef031"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_xsc_longhua_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_xsc_longhua_002.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 21,
+      "batch_hash": "62ece8b527e70e2ded9d5725070ce1c855a8ce25"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_xsc_fuyuan_moni_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_xsc_fuyuan_moni_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 22,
+      "batch_hash": "c45f19d6e99f515cb3460f86171889398b10c686"
     }
   ],
   "_changelog": [
@@ -646,6 +670,11 @@
       "version": 131,
       "date": "2026-06-20",
       "note": "v131: 归档 6-20 自动单轮扫题（3份6下语文，共67题）：realpaper_g6_chinese_bubian_qz_baoan_001(19,语文华一实验22-23期中)+realpaper_g6_chinese_bubian_qz_shenzhen_001(22,语文深圳部分学校22-23期中)+realpaper_g6_chinese_bubian_qm_longhua_004(26,语文龙华23-24期末)；三卷均解析版自带官方答案，无实质答案存疑；深圳部分学校卷 听力倾听思考1-5(音频缺)·填空8看拼音写词(拼音图)·阅读17填表(表结构丢失) 记_skipped_for_future；华一实验/龙华期末无跳过题；华一实验Q4/Q14·龙华q8_2(偏皎洁vs官方皎洁) 轻微口径差异已注explanation（见scan_decisions）"
+    },
+    {
+      "version": 132,
+      "date": "2026-06-22",
+      "note": "v132: 归档 6-22 自动单轮扫题（3份6下语文小升初，共70题）：realpaper_g6_chinese_bubian_xsc_longhua_001(27,语文龙华2021小升初)+realpaper_g6_chinese_bubian_xsc_longhua_002(21,语文龙华2022小升初)+realpaper_g6_chinese_bubian_xsc_fuyuan_moni_001(22,语文富源学校2021小升初模拟)；三卷文字层完整无跳过题(各卷仅含学科网logo/空白装饰图,无题目配图)；答案存疑：longhua_001 Q2查字典释义『官方故答案C②』与其解答文字『①渗透义』自相矛盾(采信①/选A,explanation注明)、Q4默写④官方作『出于蓝而胜于蓝』非《劝学》通行本(依卷面录入并注版本差异)；fuyuan_moni_001 Q10缩句题面印刷误『早县』据官方答案区订正为『忠县』（详见scan_decisions_2026-06-18.md）"
     }
   ]
 }
