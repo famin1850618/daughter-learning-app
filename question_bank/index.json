@@ -1,6 +1,6 @@
 {
-  "version": 132,
-  "updated_at": "2026-06-22",
+  "version": 133,
+  "updated_at": "2026-06-23",
   "batches": [
     {
       "source": "batch_2026_05_07_g6_english_pet_r1",
@@ -457,6 +457,30 @@
       "grade": 6,
       "count": 22,
       "batch_hash": "c45f19d6e99f515cb3460f86171889398b10c686"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_xsc_shenzhen_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_xsc_shenzhen_002.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 17,
+      "batch_hash": "a1d59e9e79040e45f1f6170462bc65bf1102b88a"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_xsc_nanshan_003",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_xsc_nanshan_003.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 64,
+      "batch_hash": "abeadf44f5246c3f4d605b2341495b17b2314b39"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_xsc_longgang_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_xsc_longgang_001.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 22,
+      "batch_hash": "ca423477c8ee836f996bacf4d6c3edec290f55dc"
     }
   ],
   "_changelog": [
@@ -675,6 +699,11 @@
       "version": 132,
       "date": "2026-06-22",
       "note": "v132: 归档 6-22 自动单轮扫题（3份6下语文小升初，共70题）：realpaper_g6_chinese_bubian_xsc_longhua_001(27,语文龙华2021小升初)+realpaper_g6_chinese_bubian_xsc_longhua_002(21,语文龙华2022小升初)+realpaper_g6_chinese_bubian_xsc_fuyuan_moni_001(22,语文富源学校2021小升初模拟)；三卷文字层完整无跳过题(各卷仅含学科网logo/空白装饰图,无题目配图)；答案存疑：longhua_001 Q2查字典释义『官方故答案C②』与其解答文字『①渗透义』自相矛盾(采信①/选A,explanation注明)、Q4默写④官方作『出于蓝而胜于蓝』非《劝学》通行本(依卷面录入并注版本差异)；fuyuan_moni_001 Q10缩句题面印刷误『早县』据官方答案区订正为『忠县』（详见scan_decisions_2026-06-18.md）"
+    },
+    {
+      "version": 133,
+      "date": "2026-06-23",
+      "note": "v133: 归档 6-23 自动单轮扫题（3份6下语文小升初，共103题）：realpaper_g6_chinese_bubian_xsc_shenzhen_002(17,语文深圳2020小升初三)+realpaper_g6_chinese_bubian_xsc_nanshan_003(64,语文南山2024小升初)+realpaper_g6_chinese_bubian_xsc_longgang_001(22,语文龙岗多校联考2024小升初)；三卷均解析版自带官方答案；答案存疑：shenzhen_002 综合默写第8空《鸟的天堂》作者(官方解析正文误作老舍/答案区作巴金,采信巴金)、longgang_001 第9题排序(三选项印刷标号均≠官方详解推导顺序,采信官方A并_ai_dispute暴露)；nanshan_003 无存疑(q2『耒』OCR正字矫正)；nanshan_003 q1读拼音写词语拼音仅存于图已嵌image R33双验通过,其余各卷仅学科网logo/空白装饰图无题目配图,无_skipped_for_future（详见scan_decisions_2026-06-18.md）"
     }
   ]
 }
