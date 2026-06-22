@@ -1,0 +1,513 @@
+{
+ "source": "realpaper_g6_math_beishida_qz_luohu_001",
+ "_source_docx_sha1": "8c50f25d3ee6c00e",
+ "_source_docx_path": "/home/faminwsl/AI_Workspace/Planning/深圳真题/(真题)深圳6下数学/深圳期中期末真题试卷/精品解析：2020-2021学年广东省深圳市罗湖区北师大版六年级下册期中测试数学试卷/精品解析：2020-2021学年广东省深圳市罗湖区北师大版六年级下册期中测试数学试卷（解析版）.docx",
+ "subject": "math",
+ "grade": 6,
+ "knowledge_points_added": [],
+ "_quality_meta": {
+  "extractor": "extract_docx.py V3.20",
+  "omath_formulas": 0,
+  "note": "试卷大量算式为 OLE/WMF 嵌入图（OMath=0），Q13/Q18部分/Q19部分 文字层丢失已跳过；图形题(Q2/6/7/20/21/22/26)用 Vision 还原并嵌图。"
+ },
+ "_skipped_for_future": [
+  {
+   "qnum": "18(部分)",
+   "reason": "info_lost_irrecoverable",
+   "raw_excerpt": "直接写得数6题中有3题为 OLE 算式图，文字层完全丢失（答案区残留 ；；25），R8 禁止从答案反推算式，跳过这3道。已入库其余3道文字可读算式。"
+  },
+  {
+   "qnum": "19(部分)",
+   "reason": "info_lost_irrecoverable",
+   "raw_excerpt": "解方程3题中第1题(0.75∶x＝3∶2类)与第3题为 OLE 算式图，文字层完全丢失，R8 禁止从解析反推题面方程，跳过这2道。已入库中间1道(x－60%x＝48)。"
+  },
+  {
+   "qnum": "13",
+   "reason": "info_lost_irrecoverable",
+   "raw_excerpt": "13. 已知x，y（均不为0）能满足____，那么x∶y＝（  ）。其中'能满足'后的条件等式是 OLE 算式图，文字层完全丢失（仅在答案解析里出现 x＝...y 片段），R8 禁止从解析反推题面条件，整题跳过。"
+  }
+ ],
+ "questions": [
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qz_luohu_001",
+   "round": 2,
+   "local_id": "q1",
+   "chapter": "圆柱与圆锥",
+   "knowledge_point": "圆柱与圆锥/圆柱的表面积",
+   "type": "fill",
+   "content": "圆柱的侧面沿高展开后是一个（____）形；一个圆柱的底面周长是6.28cm，高是10cm，它的侧面积是（____）$cm^2$。",
+   "answer": "长方,62.8",
+   "explanation": "圆柱的侧面沿高展开后是长方形。圆柱的侧面积＝底面周长×高＝$6.28\\times10=62.8$（$cm^2$）。",
+   "_raw_excerpt": "1. 圆柱的侧面沿高展开后是一个（        ）形；一个圆柱的底面周长是6.28cm，高是10cm，它的侧面积是（        ）cm2。\n【答案】    ①. 长方    ②. 62.8",
+   "answer_blanks": [
+    "长方",
+    "62.8"
+   ]
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qz_luohu_001",
+   "round": 2,
+   "local_id": "q2",
+   "chapter": "圆柱与圆锥",
+   "knowledge_point": "圆柱与圆锥/圆柱圆锥的认识",
+   "type": "fill",
+   "content": "如图，以a边为轴旋转一周，可以得到一个（____），a是它的（____），b是它的（____）。",
+   "answer": "圆锥,高,底面半径",
+   "explanation": "图中是一个直角三角形，两条直角边分别为a、b。以a为轴旋转一周，得到一个圆锥：a是这个圆锥的高，b是这个圆锥的底面半径。",
+   "_raw_excerpt": "2. 如图，以a边为轴旋转一周，可以得到一个（    ），a是它的（    ），b是它的（    ）。\n【答案】    ①. 圆锥    ②. 高    ③. 底面半径",
+   "answer_blanks": [
+    "圆锥",
+    "高",
+    "底面半径"
+   ],
+   "image_data": "data:image/png;base64,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",
+   "_image_verified": true,
+   "_image_verified_note": "图内容=直角三角形，标注两直角边 a（竖）、b（横），与题面'以a边为轴旋转'相符"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qz_luohu_001",
+   "round": 3,
+   "local_id": "q3",
+   "chapter": "比例",
+   "knowledge_point": "比例/比例的意义",
+   "type": "fill",
+   "content": "像15∶5＝A∶6这样表示两个比相等的式子叫（____），其中15和6是它的（____）项，这里的A＝（____）。",
+   "answer": "比例,外,18",
+   "explanation": "表示两个比相等的式子叫做比例。组成比例两端的两项叫做外项，15和6是外项。由比例基本性质（外项积＝内项积）：$A=15\\times6\\div5=18$。",
+   "_raw_excerpt": "3. 像15∶5＝A∶6这样表示两个比相等的式子叫（        ），其中15和6是它的（        ）项，这里的A＝（        ）。\n【答案】    ①. 比例    ②. 外    ③. 18",
+   "answer_blanks": [
+    "比例",
+    "外",
+    "18"
+   ]
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qz_luohu_001",
+   "round": 2,
+   "local_id": "q4",
+   "chapter": "图形的运动",
+   "knowledge_point": "图形的运动/旋转",
+   "type": "fill",
+   "content": "一个三角形绕着一个顶点旋转270°后，只有三角形的（____）改变了，三角形的（____）和（____）都没有变。",
+   "answer": "位置,形状,大小",
+   "explanation": "图形旋转的特征：旋转前后图形的位置（和方向）改变，但形状和大小不变。所以旋转后只有位置改变了，形状和大小都没有变。",
+   "_raw_excerpt": "4. 一个三角形绕着一个顶点旋转270°后，只有三角形的（        ）改变了，三角形的（        ）和（        ）都没有变。\n【答案】    ①. 位置    ②. 形状    ③. 大小",
+   "answer_blanks": [
+    "位置",
+    "形状",
+    "大小"
+   ]
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qz_luohu_001",
+   "round": 2,
+   "local_id": "q5",
+   "chapter": "正比例和反比例",
+   "knowledge_point": "正比例和反比例/正反比例的判断",
+   "type": "fill",
+   "content": "六年级同学排队做广播操，每行人数和排成的行数成（____）比例；出油率一定，花生油的质量和花生的质量，成（____）比例；$3x＝y$（其中x，y均不为0），x和y成（____）比例。",
+   "answer": "反,正,正",
+   "explanation": "每行人数×行数＝总人数（一定，乘积一定）→成反比例。花生油质量÷花生质量＝出油率（一定，比值一定）→成正比例。$3x=y$即$y\\div x=3$（一定，比值一定）→x和y成正比例。",
+   "_raw_excerpt": "5. 六年级同学排队做广播操，每行人数和排成的行数成（        ）比例；出油率一定，花生油的质量和花生的质量，成（        ）比例；3x＝y，（其中x，y均不为0），x和y成（        ）比例。\n【答案】    ①. 反    ②. 正    ③. 正",
+   "answer_blanks": [
+    "反",
+    "正",
+    "正"
+   ]
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qz_luohu_001",
+   "round": 2,
+   "local_id": "q6",
+   "chapter": "圆柱与圆锥",
+   "knowledge_point": "圆柱与圆锥/圆锥的体积",
+   "type": "fill",
+   "content": "下图是棱长为6dm的正方体木块，把它削成一个最大的圆锥，圆锥的体积是（____）$dm^3$。",
+   "answer": "56.52",
+   "explanation": "削成的最大圆锥，底面直径和高都等于正方体棱长6dm，即底面半径3dm、高6dm。圆锥体积$=\\dfrac{1}{3}\\times3.14\\times3^2\\times6=\\dfrac{1}{3}\\times3.14\\times9\\times6=56.52$（$dm^3$）。",
+   "_raw_excerpt": "6. 下图是棱长为6dm的正方体木块，把它削成一个最大的圆锥，圆锥的体积是（        ）dm3。\n【答案】56.52",
+   "image_data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFIAAABtCAYAAAAyADbjAAAC0klEQVR42u3dQY6yMBiAYVaude3GC2jcmWBiPIJHcNVreAS9gTuPwNYTeIJZeARvMP2nYGcKf0GQopW+X9KoQE150vYDEmsk0/iW+Vfbtu+KIgvv/4/tdiujKOplmc/nMpIvCIV4PB5l3+J2u8nVapWBgtgO8XQ6dQ8ZAuLlcukWMhTETiFDQuwMMjTETiBDRHQOGSqiU8iQEZ1Bho7oBBJEB5AgOoAE0QEkiA4gQXQACaIDSBAdQCrE4XAo1+t178psNmuNWBtSHXQ+n3tX9vu9XCwWrREbQfYxFCaQQAIJJJBAAgkkkEACCSSQQAIJJJBAAgkkkEACCSSQQAIJJJBAAgkkkEACCSSQQAIJJJBAAgkkkEA2KepXEdPpFMi2iMvlMv29DpAOEFMnINsjAvkEpA0RyIaQZYhANoCsQgSyJuQjRCBrQNZBBPIBZF1EICsgmyACWQLZFBFIC+QziEAWIJ9FBNKAbIMI5B2yLSKQP5AuEIOHHI/HThBrQQ4Gg96uaD8ajZwgBt0jXZ8bkED2DPJ6vXoLpea/ykdfPkCq1fsmk4nc7XZeZ2a1QJ5qo/Wp9jshNaDOfL5D6nbaQN8CWQT8NEgb6MshbYCfXhToyyFVQin7qym13ec1Im1tVotw6t76ljnSBvpJQ1sDepO1TdBPgCwCencdqUBtDfQlHrXvc+9svg4yTodZLA9fZfuFTLhFrDKMywFzyECWRyLqAdEjK3XkIY6kEOI3e4qcVCJF7vJEQ2bbRZLVT/elFf+Oj0u7t4eQm83GwbwofkASY4hrrDtyIgv7DDw9HRSHvurl8UG2oWx9bk0gnQzr3AnrnmbZlxvaeeSsnjHHvnga8BDyDyjtgUA2G9pJDjIDAfKJZBNpEbOH3ue936SRmweBtI1vIzMXTj4RhYcKGVYizM9m8lH1je8TSUiQ/Q8ggQQSSAJIIIEEkgASSCCJe/wDbaHXg1VdF2QAAAAASUVORK5CYIIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+   "_image_verified": true,
+   "_image_verified_note": "图内容=正方体木块，底边标注'6dm'，与题面'棱长为6dm的正方体'相符"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qz_luohu_001",
+   "round": 3,
+   "local_id": "q7",
+   "chapter": "正比例和反比例",
+   "knowledge_point": "正比例和反比例/比例尺",
+   "type": "fill",
+   "content": "比例尺＝（____）∶（____）；下面线段比例尺对应的数值比例尺是（____），在这幅地图上量得甲、乙两地的距离是3.5cm，一辆汽车以每时50km的速度从甲地开往乙地，需要（____）时。",
+   "answer": "图上距离,实际距离,1:4000000,2.8",
+   "explanation": "比例尺＝图上距离∶实际距离。线段比例尺图上1cm代表40km，40km＝4000000cm，故数值比例尺为$1:4000000$。实际距离$=3.5\\times4000000=14000000$cm$=140$km，时间$=140\\div50=2.8$（时）。",
+   "_raw_excerpt": "7. 比例尺＝（        ）∶（        ）；线段比例尺对应的数值比例尺是（        ），在这幅地图上量得甲、乙两地的距离是3.5cm，一辆汽车以每时50km的速度从甲地开往乙地，需要（        ）时。\n（线段比例尺图：0 40 80 120km）\n【答案】    ①. 图上距离    ②. 实际距离    ③. 1∶4000000    ④. 2.8",
+   "answer_blanks": [
+    "图上距离",
+    "实际距离",
+    "1:4000000",
+    "2.8"
+   ],
+   "image_data": "data:image/png;base64,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",
+   "_image_verified": true,
+   "_image_verified_note": "图内容=线段比例尺，刻度'0 40 80 120km'，与题面'线段比例尺对应的数值比例尺'相符"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qz_luohu_001",
+   "round": 1,
+   "local_id": "q8",
+   "chapter": "圆柱与圆锥",
+   "knowledge_point": "圆柱与圆锥/圆柱的体积",
+   "type": "fill",
+   "content": "把一个圆柱体平均切成若干份，拼成一个近似的长方体，这个长方体的底面积是7平方分米，高是8分米，圆柱体的体积是____立方分米。",
+   "answer": "56",
+   "explanation": "圆柱切拼成近似长方体后体积不变，且与原圆柱等底等高。长方体体积＝底面积×高＝$7\\times8=56$（立方分米），所以圆柱体的体积是56立方分米。",
+   "_raw_excerpt": "8. 把一个圆柱体平均切成若干份，拼成一个近似的长方体，这个长方体的底面积是7平方分米，高是8分米，圆柱体的体积是____立方分米。\n【答案】56"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qz_luohu_001",
+   "round": 2,
+   "local_id": "q9",
+   "chapter": "图形的运动",
+   "knowledge_point": "图形的运动/图形放大缩小",
+   "type": "fill",
+   "content": "一个长3cm、宽2cm的长方形按5∶1放大，得到的图形面积是（____）$cm^2$。",
+   "answer": "150",
+   "explanation": "按5∶1放大，长和宽都扩大到原来的5倍：长$3\\times5=15$cm，宽$2\\times5=10$cm。放大后面积$=15\\times10=150$（$cm^2$）。",
+   "_raw_excerpt": "9. 一个长3cm、宽2cm的长方形按5∶1放大，得到的图形面积是（          ）cm2。\n【答案】150"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qz_luohu_001",
+   "round": 3,
+   "local_id": "q10",
+   "chapter": "比例",
+   "knowledge_point": "比例/比例的意义",
+   "type": "fill",
+   "content": "从2、5、6、15、18五个数中选出4个数可以组成比例（____）。",
+   "answer": "2:5=6:15",
+   "explanation": "组成比例需两个比相等。$2:5=0.4$，$6:15=0.4$，故$2:5=6:15$可组成比例（答案不唯一）。",
+   "_raw_excerpt": "10. 从2、5、6、15、18五个数中选出4个数可以组成比例（        ）。\n【答案】2∶5＝6∶15",
+   "_ai_dispute": "本题答案不唯一（如 6∶15＝2∶5、5∶2＝15∶6 等均可），官方给出 2∶5＝6∶15 为示例答案之一。"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qz_luohu_001",
+   "round": 2,
+   "local_id": "q11",
+   "chapter": "圆柱与圆锥",
+   "knowledge_point": "圆柱与圆锥/圆锥的体积",
+   "type": "choice",
+   "content": "一个圆锥与一个圆柱的底面积与体积分别相等，圆柱的高是9厘米，圆锥的高是（　　）。",
+   "answer": "B",
+   "explanation": "等底等积时，圆锥高是圆柱高的3倍。因为$V_{锥}=\\dfrac{1}{3}Sh_{锥}$，$V_{柱}=Sh_{柱}$，底面积相等、体积相等，则$\\dfrac{1}{3}h_{锥}=h_{柱}$，$h_{锥}=3h_{柱}=3\\times9=27$（厘米）。",
+   "_raw_excerpt": "11. 一个圆锥与一个圆柱的底面积与体积分别相等，圆柱的高是9厘米，圆锥的高是（    ）。\nA. 3厘米\tB. 27厘米\tC. 18厘米\tD. 9厘米\n【答案】B",
+   "options": [
+    "A. 3厘米",
+    "B. 27厘米",
+    "C. 18厘米",
+    "D. 9厘米"
+   ]
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qz_luohu_001",
+   "round": 2,
+   "local_id": "q12",
+   "chapter": "圆柱与圆锥",
+   "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+   "type": "choice",
+   "content": "一个圆柱的高是2dm，沿直径切开，横截面是一个正方形，下面说法错误的是（　　）。",
+   "answer": "D",
+   "explanation": "横截面是正方形说明底面直径＝高＝2dm，半径1dm。A：半径$2\\div2=1$dm，正确；B：底面积$3.14\\times1^2=3.14$$dm^2$，正确；C：体积$3.14\\times1^2\\times2=6.28$$dm^3$，正确；D：沿直径切开增加2个切面（长×宽＝直径×高＝2×2），增加面积$2\\times2\\times2=8$$dm^2$，而非4，所以D错误。",
+   "_raw_excerpt": "12. 一个圆柱的高是2dm，沿直径切开，横截面是一个正方形，下面说法错误的是（    ）。\nA. 这个圆柱的底面半径是1dm\nB. 这个圆柱的底面面积是3.14dm2\nC. 这个圆柱的体积是6.28dm3\nD. 这个圆柱切开后表面积增加4dm2\n【答案】D",
+   "options": [
+    "A. 这个圆柱的底面半径是1dm",
+    "B. 这个圆柱的底面面积是$3.14dm^2$",
+    "C. 这个圆柱的体积是$6.28dm^3$",
+    "D. 这个圆柱切开后表面积增加$4dm^2$"
+   ]
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qz_luohu_001",
+   "round": 2,
+   "local_id": "q14",
+   "chapter": "比例",
+   "knowledge_point": "比例/比例的基本性质",
+   "type": "choice",
+   "content": "根据$a\\times15＝8\\times c$写出比例，下面比例正确的是（　　）。",
+   "answer": "C",
+   "explanation": "由比例基本性质，乘积式$a\\times15=8\\times c$可写成比例，需保证外项积＝内项积。$a:c=8:15$时，外项积$a\\times15$，内项积$c\\times8=8\\times c$，相等，正确。其余选项不满足。",
+   "_raw_excerpt": "14. 根据a×15＝8×c写出比例，下面比例正确的是（    ）。\nA. a∶15＝8∶c\tB. a∶15＝c∶8\tC. a∶c＝8∶15\tD. a∶c＝15∶8\n【答案】C",
+   "options": [
+    "A. $a∶15＝8∶c$",
+    "B. $a∶15＝c∶8$",
+    "C. $a∶c＝8∶15$",
+    "D. $a∶c＝15∶8$"
+   ]
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qz_luohu_001",
+   "round": 2,
+   "local_id": "q15",
+   "chapter": "圆柱与圆锥",
+   "knowledge_point": "圆柱与圆锥/圆锥的体积",
+   "type": "choice",
+   "content": "一个圆柱形木料削成一个最大的圆锥，削去部分的体积与圆锥的体积比是（　　）。",
+   "answer": "B",
+   "explanation": "最大圆锥与原圆柱等底等高，圆锥体积是圆柱的$\\dfrac{1}{3}$，削去部分是圆柱的$1-\\dfrac{1}{3}=\\dfrac{2}{3}$。削去部分∶圆锥$=\\dfrac{2}{3}:\\dfrac{1}{3}=2:1$。",
+   "_raw_excerpt": "15. 一个圆柱形木料削成一个最大的圆锥，削去部分的体积与圆锥的体积比是（    ）。\nA. 3∶1\tB. 2∶1\tC. 2∶3\tD. 3∶2\n【答案】B",
+   "options": [
+    "A. 3∶1",
+    "B. 2∶1",
+    "C. 2∶3",
+    "D. 3∶2"
+   ]
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qz_luohu_001",
+   "round": 2,
+   "local_id": "q16",
+   "chapter": "正比例和反比例",
+   "knowledge_point": "正比例和反比例/比例尺",
+   "type": "choice",
+   "content": "一个机器零件长8毫米，画在比例尺是10∶1的图纸上的长度是（　　）。",
+   "answer": "C",
+   "explanation": "图上距离＝实际距离×比例尺$=8\\times10=80$（毫米）$=8$厘米。这是放大比例尺（10∶1），图上比实际大。",
+   "_raw_excerpt": "16. 一个机器零件长8毫米，画在比例尺是10∶1的图纸上的长度是（    ）。\nA. 8分米\tB. 8毫米\tC. 8厘米\tD. 8米\n【答案】C",
+   "options": [
+    "A. 8分米",
+    "B. 8毫米",
+    "C. 8厘米",
+    "D. 8米"
+   ]
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qz_luohu_001",
+   "round": 2,
+   "local_id": "q17",
+   "chapter": "正比例和反比例",
+   "knowledge_point": "正比例和反比例/比例尺",
+   "type": "choice",
+   "content": "把一个长28m，宽15m的长方形篮球场画在作业本上，选择（　　）比例尺比较合适。",
+   "answer": "B",
+   "explanation": "$28m=2800cm$，$15m=1500cm$。用1∶200：长$2800\\div200=14$cm，宽$1500\\div200=7.5$cm，正好画在作业本上，最合适。1∶20太大，1∶2000太小，200∶1是放大不合理。",
+   "_raw_excerpt": "17. 把一个长28m，宽15m的长方形篮球场画在作业本上，选择（    ）比例尺比较合适。\nA. 1∶20\tB. 1∶200\tC. 1∶2000\tD. 200∶1\n【答案】B",
+   "options": [
+    "A. 1∶20",
+    "B. 1∶200",
+    "C. 1∶2000",
+    "D. 200∶1"
+   ]
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qz_luohu_001",
+   "round": 2,
+   "local_id": "q18",
+   "chapter": "综合练习",
+   "knowledge_point": "综合练习",
+   "type": "fill",
+   "content": "直接写出得数。\n$7.05-1.6=$（____）　　$510\\div30=$（____）　　$0.2^2=$（____）",
+   "answer": "5.45,17,0.04",
+   "explanation": "$7.05-1.6=5.45$；$510\\div30=17$；$0.2^2=0.2\\times0.2=0.04$。",
+   "_raw_excerpt": "18. 直接写出得数。 \n7.05－1.6＝                 510÷30＝                0.22＝\n＝                    ＝              ＝\n【答案】5.45；17；0.04\n；；25",
+   "answer_blanks": [
+    "5.45",
+    "17",
+    "0.04"
+   ],
+   "_ole_formula_partial_loss": "原题为6道'直接写得数'，其中3道为 OLE 算式图，文字层完全丢失（答案区显示 ；；25 三空），无法从答案反推算式（R8），仅入库3道文字可读的算式。"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qz_luohu_001",
+   "round": 2,
+   "local_id": "q19",
+   "chapter": "综合练习",
+   "knowledge_point": "综合练习",
+   "type": "subjective",
+   "content": "解方程。\n$x-60\\%x=48$",
+   "answer": "x=120",
+   "explanation": "$x-60\\%x=48$，合并同类项得$40\\%x=48$，两边同除以$40\\%$：$x=48\\div40\\%=120$。",
+   "_raw_excerpt": "19. 解方程。\n              x－60%x＝48              \n【答案】x＝05；x＝120；x＝",
+   "_ole_formula_partial_loss": "原题为3道解方程，第1道(0.75∶x＝3∶2类)与第3道为 OLE 算式图，文字层完全丢失，无法从解析反推题面方程（R8），仅入库中间这道文字可读的方程。"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qz_luohu_001",
+   "round": 2,
+   "local_id": "q20",
+   "chapter": "圆柱与圆锥",
+   "knowledge_point": "圆柱与圆锥/圆柱的表面积",
+   "type": "subjective",
+   "content": "计算下面立体图形的表面积。（如图，圆柱底面周长$C=18.84dm$，高$10dm$）",
+   "answer": "244.92平方分米",
+   "explanation": "底面周长$C=18.84dm$，半径$r=18.84\\div3.14\\div2=3$dm。侧面积$=Ch=18.84\\times10=188.4$（$dm^2$）。两个底面积$=3.14\\times3^2\\times2=56.52$（$dm^2$）。表面积$=188.4+56.52=244.92$（平方分米）。",
+   "_raw_excerpt": "20. 计算下面立体图形的表面积。\n\n【答案】244.92平方分米",
+   "image_data": "data:image/png;base64,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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+   "_image_verified": true,
+   "_image_verified_note": "图内容=横放圆柱，标注'C＝18.84dm'(底面周长)和'10dm'(高/长)，与题面'计算立体图形表面积'相符"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qz_luohu_001",
+   "round": 4,
+   "local_id": "q21",
+   "chapter": "图形的运动",
+   "knowledge_point": "图形的运动/其它",
+   "type": "subjective",
+   "content": "操作。（在下面的方格图中按要求作图）\n（1）画出图中三角形按3∶1放大后得到的图形。\n（2）将上面的长方形绕点O逆时针方向旋转90°。",
+   "answer": "见解析。(1)将三角形三条边对应放大到原来的3倍，连接得到放大后的三角形；(2)以点O为旋转中心，将长方形绕O逆时针旋转90°，各顶点绕O按逆时针方向转90°后连接。",
+   "explanation": "(1)图形放大：按3∶1放大，即各边长扩大到原来的3倍，形状不变，画出放大后的三角形。(2)旋转：绕点O逆时针旋转90°，点O位置不动，长方形其余各点绕O按逆时针方向转动90°，画出旋转后的长方形。学生需在方格纸上准确作图。",
+   "_raw_excerpt": "21. 操作。\n\n（1）画出图中三角形按3∶1放大后得到的图形。\n（2）将上面的长方形绕点O逆时针方向旋转90°。\n【答案】见详解",
+   "image_data": "data:image/png;base64,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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+   "_image_verified": true,
+   "_image_verified_note": "图内容=方格纸，左侧一个直角三角形、右侧一个长方形及旋转中心标记'O'，与题面'三角形按3∶1放大''长方形绕点O旋转'相符"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qz_luohu_001",
+   "round": 2,
+   "local_id": "q22",
+   "chapter": "圆柱与圆锥",
+   "knowledge_point": "圆柱与圆锥/圆柱的体积",
+   "type": "subjective",
+   "content": "如图：这个杯子（圆柱形，底面直径14cm，高20cm）能装下3000ml牛奶吗？",
+   "answer": "能装下。杯子容积约3077.2ml＞3000ml。",
+   "explanation": "杯子是圆柱形，底面半径$14\\div2=7$cm，高20cm。容积$=3.14\\times7^2\\times20=3.14\\times49\\times20=3077.2$（立方厘米）$=3077.2$ml。因为$3077.2$ml$>3000$ml，所以这个杯子能装下3000ml牛奶。",
+   "_raw_excerpt": "22. 如图：这个杯子能装下3000ml牛奶吗？\n\n【答案】3000ml牛奶",
+   "image_data": "data:image/png;base64,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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+   "_image_verified": true,
+   "_image_verified_note": "图内容=圆柱形杯子（旁有牛奶盒），标注'20cm'(高)和'14cm'(底面直径)，与题面'杯子能装下3000ml牛奶吗'相符"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qz_luohu_001",
+   "round": 2,
+   "local_id": "q23",
+   "chapter": "圆柱与圆锥",
+   "knowledge_point": "圆柱与圆锥/圆锥的体积",
+   "type": "subjective",
+   "content": "一个圆锥形谷堆底面周长6.28米，高0.9米，每立方米稻谷约重700千克，这堆稻谷约重多少千克？",
+   "answer": "约659.4千克",
+   "explanation": "底面半径$=6.28\\div3.14\\div2=1$（米）。谷堆体积$=\\dfrac{1}{3}\\times3.14\\times1^2\\times0.9=0.942$（立方米）。稻谷重量$=0.942\\times700=659.4$（千克）。答：这堆稻谷约重659.4千克。",
+   "_raw_excerpt": "23. 一个圆锥形谷堆底面周长6.28米，高0.9米，每立方米稻谷约重700千克，这堆稻谷约重多少千克?\n【答案】6594千克.\n【详解】底面半径：6.28÷3.14÷2=1(米)\n=0.942×700\n=659.4(千克)\n答：这堆稻谷约重659.4千克.",
+   "_ai_dispute": "官方答案区首行标注为'6594千克'，但其详解过程与最终答句均为'659.4千克'（$0.942\\times700=659.4$）。官方首行'6594'系笔误漏小数点，正确答案为659.4千克。"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qz_luohu_001",
+   "round": 3,
+   "local_id": "q24a",
+   "chapter": "正比例和反比例",
+   "knowledge_point": "正比例和反比例/比例尺",
+   "type": "subjective",
+   "content": "在比例尺是1∶9000000的地图上，A、B两地间的距离是6厘米。\n1. A、B两地间的实际距离是多少千米？",
+   "answer": "540千米",
+   "explanation": "实际距离＝图上距离÷比例尺$=6\\div\\dfrac{1}{9000000}=6\\times9000000=54000000$（厘米）$=540$千米。答：A、B两地间的实际距离是540千米。",
+   "_raw_excerpt": "24. 在比例尺是1∶9000000的地图上，A、B两地间的距离是6厘米。\n（1）A、B两地间的实际距离是多少千米？\n（2）一列火车由A地到B地用了3小时，火车平均每小时行多少千米？\n【答案】（1）540千米\n（2）180千米",
+   "group_id": "realpaper_g6_math_beishida_qz_luohu_001_q24",
+   "group_order": 1
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qz_luohu_001",
+   "round": 3,
+   "local_id": "q24b",
+   "chapter": "正比例和反比例",
+   "knowledge_point": "正比例和反比例/比例应用题",
+   "type": "subjective",
+   "content": "在比例尺是1∶9000000的地图上，A、B两地间的距离是6厘米。\n2. 一列火车由A地到B地用了3小时，火车平均每小时行多少千米？",
+   "answer": "180千米",
+   "explanation": "A、B两地实际距离540千米（由第1问求得：$6\\times9000000=54000000$厘米$=540$千米）。火车平均速度＝路程÷时间$=540\\div3=180$（千米）。答：火车平均每小时行180千米。",
+   "_raw_excerpt": "24. 在比例尺是1∶9000000的地图上，A、B两地间的距离是6厘米。\n（1）A、B两地间的实际距离是多少千米？\n（2）一列火车由A地到B地用了3小时，火车平均每小时行多少千米？\n【答案】（1）540千米\n（2）180千米",
+   "group_id": "realpaper_g6_math_beishida_qz_luohu_001_q24",
+   "group_order": 2
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qz_luohu_001",
+   "round": 2,
+   "local_id": "q25",
+   "chapter": "正比例和反比例",
+   "knowledge_point": "正比例和反比例/比例应用题",
+   "type": "subjective",
+   "content": "淘气买6本同样的练习本用了9元，18元可以买多少本这样的练习本？（用比例解）",
+   "answer": "12本",
+   "explanation": "练习本单价一定，总价与数量成正比例。设18元可买x本，则$9:6=18:x$，由比例基本性质$9x=6\\times18=108$，$x=108\\div9=12$。答：18元可以买12本这样的练习本。",
+   "_raw_excerpt": "25. 淘气买6本同样的练习本用了9元，18元可以买多少本这样的练习本？（用比例解）\n【答案】12本"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qz_luohu_001",
+   "round": 3,
+   "local_id": "q26",
+   "chapter": "正比例和反比例",
+   "knowledge_point": "正比例和反比例/正比例的意义",
+   "type": "subjective",
+   "content": "乘车人数和所需车费如下表：\n| 乘车人数 | 0 | 1 | 2 | 3 | 4 | 5 | … |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| 所需车费/元 | 0 | 5 | 10 | ? | ? | ? | … |\n（1）将表格补充完整，根据表中的数据，在图中描点再顺次连接。\n（2）由图表可知，（____）没变；乘车人数和所需车费之间成（____）比例。\n（3）点（10，50）在这条线上吗？这个点表示什么含义？",
+   "answer": "（1）补全表格：3人15元、4人20元、5人25元，描点连线为过原点的直线；（2）单价（每人车费）没变；正比例；（3）点（10，50）在这条线上；表示10个人所付的车费是50元。",
+   "explanation": "（1）由已知5÷1＝5（元/人），单价不变。补全：3人$5\\times3=15$元，4人$5\\times4=20$元，5人$5\\times5=25$元；描点(0,0)(1,5)(2,10)(3,15)(4,20)(5,25)后顺次连接，得过原点的直线。（2）总价÷人数＝单价（5元）一定，是比值一定，故每人车费（单价）没变，乘车人数和所需车费成正比例。（3）$50\\div10=5$（元），与单价5元相符，所以点(10,50)在这条直线上；它表示10个人所付的车费是50元。",
+   "_raw_excerpt": "26. 乘车人数和所需车费如下表：\n（1）将表格补充完整，根据表中的数据，在图中描点再顺次连接。\n（2）由图表可知，（    ）没变；乘车人数和所需车费之间成（    ）比例。\n（3）点（10，50）在这条线上吗？这个点表示什么含义？\n【答案】（1）见详解\n（2）车费；正\n（3））点（10，50）在这条线上；这个点表示10个人所付的车费是50元。",
+   "image_data": "data:image/png;base64,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",
+   "_image_verified": true,
+   "_image_verified_note": "图内容=空白坐标方格图，纵轴'车费/元'(刻度5,10,15,20,25)，横轴'人数/人'(1~6)，供学生描点连线，与题面'在图中描点再顺次连接'相符"
+  }
+ ],
+ "_random_sample_verified": [
+  {
+   "qid": "q7",
+   "result": "match",
+   "note": "线段比例尺图，刻度0/40/80/120km"
+  },
+  {
+   "qid": "q6",
+   "result": "match",
+   "note": "正方体6dm，圆锥体积题"
+  },
+  {
+   "qid": "q20",
+   "result": "match",
+   "note": "圆柱C=18.84dm/10dm，表面积题"
+  }
+ ]
+}

@@ -1,5 +1,5 @@
 {
-  "version": 133,
+  "version": 134,
   "updated_at": "2026-06-23",
   "batches": [
     {
@@ -481,6 +481,30 @@
       "grade": 6,
       "count": 22,
       "batch_hash": "ca423477c8ee836f996bacf4d6c3edec290f55dc"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qz_luohu_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qz_luohu_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 26,
+      "batch_hash": "2788711d129e5c9adab77ec5e5092882404b029c"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qm_longhua_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_longhua_002.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 33,
+      "batch_hash": "83b45f93657525b82017600b6439c404a5b48570"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qm_longgang_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_longgang_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 40,
+      "batch_hash": "1128142ac099df6dce7107481fe30777ca6a77fd"
     }
   ],
   "_changelog": [
@@ -704,6 +728,11 @@
       "version": 133,
       "date": "2026-06-23",
       "note": "v133: 归档 6-23 自动单轮扫题（3份6下语文小升初，共103题）：realpaper_g6_chinese_bubian_xsc_shenzhen_002(17,语文深圳2020小升初三)+realpaper_g6_chinese_bubian_xsc_nanshan_003(64,语文南山2024小升初)+realpaper_g6_chinese_bubian_xsc_longgang_001(22,语文龙岗多校联考2024小升初)；三卷均解析版自带官方答案；答案存疑：shenzhen_002 综合默写第8空《鸟的天堂》作者(官方解析正文误作老舍/答案区作巴金,采信巴金)、longgang_001 第9题排序(三选项印刷标号均≠官方详解推导顺序,采信官方A并_ai_dispute暴露)；nanshan_003 无存疑(q2『耒』OCR正字矫正)；nanshan_003 q1读拼音写词语拼音仅存于图已嵌image R33双验通过,其余各卷仅学科网logo/空白装饰图无题目配图,无_skipped_for_future（详见scan_decisions_2026-06-18.md）"
+    },
+    {
+      "version": 134,
+      "date": "2026-06-23",
+      "note": "v134: 归档 6-23 自动单轮扫题（3份6下数学，共99题）：realpaper_g6_math_beishida_qz_luohu_001(26,数学罗湖20-21期中)+realpaper_g6_math_beishida_qm_longhua_002(33,数学龙华20-21期末学业质量检测)+realpaper_g6_math_beishida_qm_longgang_001(40,数学龙岗20-21期末质量监测)；三卷均北师大解析版自带官方答案。答案存疑：luohu_001 Q23官方答案区首行『6594千克』系漏小数点笔误(其详解0.942×700=659.4及答句均659.4,采信659.4并_ai_dispute);longgang_001 Q26官方解析步骤『50×(1-2/3)』系笔误(应1/3得33.4,采信1/3,答案C不受影响);longhua_002无存疑。跳过：luohu_001 Q13/Q18部分/Q19部分(OLE算式图文字层丢失,R8不反推)、longgang_001 Q36(画轴对称图作答题无法判分);longhua_002无跳过(WMF算式经libreoffice转PNG+Vision全还原)。数学内嵌WMF/OLE公式图均Vision Read还原LaTeX,R33图绑定双验/R34 sha1实算/R35抽样均通过（详见scan_decisions_2026-06-18.md）"
     }
   ]
 }
