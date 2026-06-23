@@ -1,5 +1,5 @@
 {
-  "version": 137,
+  "version": 138,
   "updated_at": "2026-06-24",
   "batches": [
     {
@@ -577,6 +577,30 @@
       "grade": 6,
       "count": 26,
       "batch_hash": "a084c2d6beaacd402228c5920ce134c1ad62ecfc"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qm_luohu_003",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_luohu_003.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 26,
+      "batch_hash": "7c06fbf646c1036f21a4ec2e81b5d22fbc41204a"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qz_longgang_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qz_longgang_002.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 34,
+      "batch_hash": "95a3c5a62d7c49b181b6fd58b5afd21e312a30c3"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qz_longhua_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qz_longhua_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 26,
+      "batch_hash": "dab33046eb4035337e5fc23e4ab8af67458c8d3f"
     }
   ],
   "_changelog": [
@@ -814,6 +838,7 @@
   ],
   "changelog": [
     "v136 (2026-06-23): +3 6下数学期中真题 nanshan_001(38)+pingshan_001(32)+longgang_001(29)=99题",
-    "v137 (2026-06-24): +3 6下数学真题 guangming_003期末(32)+shenzhen_qz期中(23)+luohu_002期末复习(26)=81题"
+    "v137 (2026-06-24): +3 6下数学真题 guangming_003期末(32)+shenzhen_qz期中(23)+luohu_002期末复习(26)=81题",
+    "v138 (2026-06-24): +3 6下数学真题 luohu_003期末(26)+longgang_002期中(34)+longhua_001期中(26)=86题；均解析版/答案docx自带官方答案；答案存疑1（luohu填空第2题官方答案与题面/内嵌图三方矛盾、信息不可救已_skipped_for_future）"
   ]
 }
