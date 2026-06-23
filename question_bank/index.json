@@ -1,5 +1,5 @@
 {
-  "version": 135,
+  "version": 136,
   "updated_at": "2026-06-23",
   "batches": [
     {
@@ -529,6 +529,30 @@
       "grade": 6,
       "count": 43,
       "batch_hash": "3de70898839ada1166a8610a3e60ee1afcad3e87"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qz_nanshan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qz_nanshan_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 38,
+      "batch_hash": "ff8618278a1b6fb4e6b5d98cc5c021a8bd3e90a7"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qz_pingshan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qz_pingshan_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 32,
+      "batch_hash": "af769818f05499a91d15d4e11a9e0de399b1b22e"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qz_longgang_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qz_longgang_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 29,
+      "batch_hash": "febfb2469bed7dcf1f8c7e7e185f2ba0f88659cc"
     }
   ],
   "_changelog": [
@@ -763,5 +787,8 @@
       "date": "2026-06-23",
       "note": "v135: 归档 6-23 自动单轮扫题（3份6下，语文1+数学2，共86题）：realpaper_g6_chinese_bubian_xsc_shenzhen_moni_002(21,语文深圳2021小升初模拟卷三)+realpaper_g6_math_beishida_qm_longhua_003(22,数学龙华21-22期末测试)+realpaper_g6_math_beishida_qm_longgang_002(43,数学龙岗21-22期末测试)；三卷均解析版自带官方答案，答案存疑0。跳过：chinese moni_002 第1题(翘舌声母图缺失)/第2题(看拼音写词语拼音文字层缺失)=info_lost_irrecoverable；math longgang_002 Q19/Q21(正方体展开图/左视图判别,题干+选项全为位图,空间题无法文字化,参futian_001先例整题跳)；longhua_003无跳过。数学WMF算式图首轮批量转PNG有失败,经libreoffice单张重试+Vision全还原LaTeX;longhua_003 Q20销量统计表经word/document.xml<w:tbl>直接还原(libreoffice文本层丢表);R33图绑定双验/R34 sha1实算/R35抽样均通过。cross-batch 0冲突,双写字节一致,full自检各22/22+check25 PASS。已知improvement建议(非阻断):extract_docx.py对失败WMF加单张重试兜底、把<w:tbl>文本注入raw、check19对无group_id单题记忆默写豁免误判（详见scan_decisions_2026-06-18.md）"
     }
+  ],
+  "changelog": [
+    "v136 (2026-06-23): +3 6下数学期中真题 nanshan_001(38)+pingshan_001(32)+longgang_001(29)=99题"
   ]
 }
