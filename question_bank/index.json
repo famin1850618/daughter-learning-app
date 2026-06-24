@@ -1,5 +1,5 @@
 {
-  "version": 138,
+  "version": 139,
   "updated_at": "2026-06-24",
   "batches": [
     {
@@ -601,6 +601,22 @@
       "grade": 6,
       "count": 26,
       "batch_hash": "dab33046eb4035337e5fc23e4ab8af67458c8d3f"
+    },
+    {
+      "source": "realpaper_g6_chinese_bubian_xsc_shenzhen_003",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_chinese_bubian_xsc_shenzhen_003.json",
+      "subject": "chinese",
+      "grade": 6,
+      "count": 29,
+      "batch_hash": "061959b1752ad82adfe9df287637df0cf6fbbfc5"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qz_luohu_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qz_luohu_002.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 27,
+      "batch_hash": "940e9c803f264838b9225167183bdcfdb107f909"
     }
   ],
   "_changelog": [
@@ -839,6 +855,7 @@
   "changelog": [
     "v136 (2026-06-23): +3 6下数学期中真题 nanshan_001(38)+pingshan_001(32)+longgang_001(29)=99题",
     "v137 (2026-06-24): +3 6下数学真题 guangming_003期末(32)+shenzhen_qz期中(23)+luohu_002期末复习(26)=81题",
-    "v138 (2026-06-24): +3 6下数学真题 luohu_003期末(26)+longgang_002期中(34)+longhua_001期中(26)=86题；均解析版/答案docx自带官方答案；答案存疑1（luohu填空第2题官方答案与题面/内嵌图三方矛盾、信息不可救已_skipped_for_future）"
+    "v138 (2026-06-24): +3 6下数学真题 luohu_003期末(26)+longgang_002期中(34)+longhua_001期中(26)=86题；均解析版/答案docx自带官方答案；答案存疑1（luohu填空第2题官方答案与题面/内嵌图三方矛盾、信息不可救已_skipped_for_future）",
+    "v139 (2026-06-24): +2 6下真题（语文1+数学1，共56题）：chinese_xsc_shenzhen_003(深圳2021小升初语文,29)+math_qz_luohu_002(罗湖23-24期中数学,27)；本波第3份qz_baoan_002经查与已入库qz_baoan_001系同一套华一实验22-23期中卷重复印件(16/19题面字节级一致)，判重丢弃未入库；数学luohu_002存疑3处(Q19第5空5/6-1/3=1/2官方标1/5疑印误；Q20①②原卷版与解析版印刷数字本身冲突，信worker推算)"
   ]
 }
