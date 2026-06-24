@@ -1,5 +1,5 @@
 {
-  "version": 143,
+  "version": 144,
   "updated_at": "2026-06-25",
   "batches": [
     {
@@ -681,6 +681,30 @@
       "grade": 6,
       "count": 29,
       "batch_hash": "9a9dd9689fb26df6d6248c27ad92bb7e1ca7ba80"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_xsc_yantian_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_xsc_yantian_002.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 40,
+      "batch_hash": "6feaa9579c231c1d20c583b7559b54e6b1858b2b"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_xsc_longgang_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_xsc_longgang_002.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 32,
+      "batch_hash": "d10d60cd65d9034e25dba841bc230e539b0be1d9"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qz_baoan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qz_baoan_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 30,
+      "batch_hash": "d4a6b8894155f63c4db7d9887d84de591edaff19"
     }
   ],
   "_changelog": [
@@ -919,6 +943,11 @@
       "version": 143,
       "date": "2026-06-25",
       "note": "v143: 归档 6-25 自动单轮扫题（3份6下数学期末真题，共82题）：realpaper_g6_math_beishida_qm_luohu_005(27,数学罗湖21-22期末模拟测试·北师大)+realpaper_g6_math_beishida_qm_luohu_006(26,数学罗湖21-22期末综合素养阳光评价·北师大)+realpaper_g6_math_beishida_qm_longhua_004(29,数学龙华万安学校21-22期末命题比赛·人教版)；三卷均精品解析版自带官方答案，全卷分数/算式为WMF内嵌图(文字层false占位)，extract首轮批量转PNG多有失败、经libreoffice逐张重转+Vision Read全还原LaTeX。答案存疑1条：luohu_006 q19(1) 23.7×180%−23.7×4/5=23.7×(1.8−0.8)=23.7，官方给238且其解析自写『23.8×1＝23.8』自相矛盾，采信23.7并_ai_dispute。跳过4条(均画图/信息不可救)：luohu_006 21(2)旋转90°画图/21(3)按1:3缩小画图/21(4)轴对称画图(app无作图输入,21(1)数对填空已入库)；longhua_004 Q14(2) 9×__÷(9÷__) 两分数操作数文字层全丢且解析图段错乱不可对应(R8不反推,info_lost_irrecoverable)。luohu_005 27题0跳过0存疑。校验：3卷各 validate --full 自动检22/22+check25 PASS、cross-batch 0冲突(81→对81 batch校验)、双写字节一致；R33图绑定双验/R34 sha1实算/R35抽样均通过（详见scan_decisions_2026-06-18.md）。已知非阻断改进建议：extract_docx.py 对失败WMF加单张重试兜底。"
+    },
+    {
+      "version": 144,
+      "date": "2026-06-25",
+      "note": "v144 (2026-06-25): +3 6下数学真题（共102题）：math_xsc_yantian_002(盐田2022北师大小升初,40)+math_xsc_longgang_002(龙岗2022北师大小升初素养,32)+math_qz_baoan_001(宝安松岗二小22-23期中,30)，index v144；存疑：qz_baoan_001 q22①官方答案3疑漏算首项3/8（worker采3⅜，已在explanation注明）、q24锚点提示不一致(round仍取2)；跳过：qz_baoan_001 q23方格纸平移/对称/旋转作图题(app无作图输入)。语文6下已全部扫完：剩余6份docx均为答案-only(题面为PDF,docx-only管线不可入)或重复印件(华一实验22-23期中=已入qz_baoan_001语文、深圳2021小升初=已入xsc_shenzhen_001)，无可入库新docx。"
     }
   ],
   "changelog": [
@@ -929,6 +958,7 @@
     "v140 (2026-06-24): 撤回 v139 误入的 chinese_xsc_shenzhen_003——经查与已入库 xsc_shenzhen_001（深圳2021小升初语文）系同一场考试的原卷版/解析版重复印件（22/29题面字节级一致），dir级去重漏判（同卷散落多文件夹、001的_source_docx_path仅指向其中一份）。删除其双写文件并移出index。本波净入库仅数学 luohu_002（27题）。教训：选卷去重须按 paper-identity（剥原卷/解析/版本标记的归一卷名），不可仅按目录/路径比对。",
     "v141 (2026-06-24): +3 6下数学期末真题（共109题）：math_qm_nanshan_004(南山24-25期末,44)+math_qm_pingshan_002(坪山23-24期末,31)+math_qm_baoan_003(宝安23-24期末检测,34)，index v141；nanshan_004 Q4选项配图经Vision复核绑定正确(条形图/对照表/椭圆/大括号，非孤儿图17-20)；存疑：nanshan Q18化简比官方3:2疑漏项(worker采12:3:2)、nanshan Q27/pingshan Q24脚本判R4偏高存档、pingshan Q9官方B判定理由存疑(结论D不变)、baoan Q21分率vs具体量口径分歧(结论×不变)；pingshan跳过Q12/21/22/23、baoan跳过Q2/28/29/30(题面段无图映射或算式仅在答案区,R8/R9禁反推)",
     "v142 (2026-06-24): +3 6下数学期末真题（共94题）：math_qm_baoan_004(宝安24-25期末,24)+math_qm_luohu_004(罗湖24-25期末抽样质量检测,30)+math_qm_longgang_003(龙岗24-25学业质量监测,40)，index v142；存疑：baoan Q16(5)官方答案4疑笔误(worker采4.4，11/5+2又1/5=22/5)、longgang Q17折线图近7天平均步数官方判\"不能\"但读数估算≈5071>5000(折线图读数精度不足，保留官方)；跳过：baoan Q4三视图含上/左两张视图不可无损嵌图、Q19(2)(3)(4)方格旋转/对称/放大画图不可文字判分；longgang Q6产品说明书关键尺寸数据图未归属本题且不可救、Q27直接写得数算式全丢失；luohu_004 30题0跳过0存疑。校验：3卷各 validate --full 22/22+check25 PASS、cross-batch 0冲突、双写字节一致。",
-    "v143 (2026-06-25): +3 6下数学期末真题（共82题）：math_qm_luohu_005(罗湖21-22期末模拟测试,27)+math_qm_luohu_006(罗湖21-22期末综合素养阳光评价,26)+math_qm_longhua_004(龙华万安学校21-22期末命题比赛·人教版,29)，index v143；存疑：luohu_006 q19(1)官方238疑笔误(worker采23.7,23.7×(1.8−0.8)=23.7,官方解析自相矛盾)；跳过：luohu_006 21(2)(3)(4)画图操作题(app无作图输入)、longhua_004 Q14(2)两分数操作数文字层全丢不可救。校验：3卷各 validate --full 22/22+check25 PASS、cross-batch 0冲突、双写字节一致。"
+    "v143 (2026-06-25): +3 6下数学期末真题（共82题）：math_qm_luohu_005(罗湖21-22期末模拟测试,27)+math_qm_luohu_006(罗湖21-22期末综合素养阳光评价,26)+math_qm_longhua_004(龙华万安学校21-22期末命题比赛·人教版,29)，index v143；存疑：luohu_006 q19(1)官方238疑笔误(worker采23.7,23.7×(1.8−0.8)=23.7,官方解析自相矛盾)；跳过：luohu_006 21(2)(3)(4)画图操作题(app无作图输入)、longhua_004 Q14(2)两分数操作数文字层全丢不可救。校验：3卷各 validate --full 22/22+check25 PASS、cross-batch 0冲突、双写字节一致。",
+    "v144 (2026-06-25): +3 6下数学真题（共102题）：math_xsc_yantian_002(盐田2022北师大小升初,40)+math_xsc_longgang_002(龙岗2022北师大小升初素养,32)+math_qz_baoan_001(宝安松岗二小22-23期中,30)，index v144；存疑：qz_baoan_001 q22①官方答案3疑漏算首项3/8（worker采3⅜，已在explanation注明）、q24锚点提示不一致(round仍取2)；跳过：qz_baoan_001 q23方格纸平移/对称/旋转作图题(app无作图输入)。语文6下已全部扫完：剩余6份docx均为答案-only(题面为PDF,docx-only管线不可入)或重复印件(华一实验22-23期中=已入qz_baoan_001语文、深圳2021小升初=已入xsc_shenzhen_001)，无可入库新docx。"
   ]
 }
