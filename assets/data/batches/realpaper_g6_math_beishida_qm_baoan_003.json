@@ -1,0 +1,645 @@
+{
+ "source": "realpaper_g6_math_beishida_qm_baoan_003",
+ "_source_docx_sha1": "da28a43eaa4500ca",
+ "_source_docx_path": "/home/faminwsl/AI_Workspace/Planning/深圳真题/(真题)深圳6下数学/深圳期中期末真题试卷/广东省深圳市宝安区2023-2024学年六年级下学期期末检测数学试题.docx",
+ "subject": "math",
+ "grade": 6,
+ "knowledge_points_added": [],
+ "_skipped_for_future": [
+  {
+   "qnum": "2",
+   "reason": "info_lost_irrecoverable",
+   "raw_excerpt": "2．（5分）\n【解答】解：\n故答案为：3；45000；5，700；0.064。",
+   "source_para": 3,
+   "note": "数的改写/单位换算填空题，题干在题目区(line3)与答案区(line69)均为空，仅答案行有 image25 与文字“故答案为：3；45000；5，700；0.064”，无法在不从解析答案反推的前提下还原题面（R8/R1/R7#3）"
+  },
+  {
+   "qnum": "28",
+   "reason": "info_lost_irrecoverable",
+   "raw_excerpt": "28．（5分）直接写得数。\n【解答】解：",
+   "source_para": 41,
+   "note": "口算‘直接写得数’各小题算式以内嵌对象存在，提取后题目区为空且答案解答区亦空，无法还原"
+  },
+  {
+   "qnum": "29",
+   "reason": "info_lost_irrecoverable",
+   "raw_excerpt": "29．（9分）计算，能简算的要简算。\n【解答】解：\n＝×20+×20+\n＝15+8+\n＝23\n\n\n＝×[0.02+0.01]\n＝×0.03\n＝0.015\n\n0.25×1.25×32\n＝0.25×1.25×4×8\n＝（0.25×4）×（1.25×8）\n＝1×10\n＝10",
+   "source_para": 42,
+   "note": "原题算式只出现在答案解答区（image57=$(3/4+2/5)*20+5/12$、image61=$1/2*[0.02+(2.1-2.09)]$、0.25×1.25×32），题目区无算式；按 R7#3/R1 不得从解析反推题面，整题跳过"
+  },
+  {
+   "qnum": "30",
+   "reason": "info_lost_irrecoverable",
+   "raw_excerpt": "30．（9分）解方程。\n【解答】解：5x﹣0.8×10＝3.19\n5x﹣8＝3.19\n5x＝3.19+8\n5x＝11.19\nx＝11.19÷5\nx＝2.238\nx﹣60%x＝6\nx＝6\nx＝6÷\nx＝90\n2：x＝\nx＝1\nx＝1÷\nx＝",
+   "source_para": 43,
+   "note": "原方程只出现在答案解答区（5x﹣0.8×10＝3.19、x﹣60%x＝6、2：x＝$3/4:1/2$），题目区无方程；按 R7#3/R1 不得从解析反推题面，整题跳过"
+  }
+ ],
+ "questions": [
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 2,
+   "type": "fill",
+   "chapter": "综合练习",
+   "knowledge_point": "综合练习",
+   "content": "据信息产业部资料，我国手机用户总数达十三亿五千七百六十九万五千户，这个数写作 ____ ，这个数改写成以“亿”作单位的数是 ____ 。",
+   "answer": "1357695000,13.57695亿",
+   "answer_blanks": [
+    "1357695000",
+    "13.57695亿"
+   ],
+   "explanation": "十三亿五千七百六十九万五千按数位写作：$1357695000$；$1357695000=13.57695$ 亿。 [KP=综合练习]",
+   "_raw_excerpt": "1．（2分）据信息产业部资料，我国手机用户总数达十三亿五千七百六十九万五千户，这个数写作 <u>　1357695000　</u>，这个数改写成以“亿”作单位的数是 <u>　13.57695亿　</u>。\n【解答】解：十三亿五千七百六十九万五千写作：1357695000，1357695000＝13.57695亿。\n故答案为：1357695000，13.57695亿。",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 2,
+   "type": "fill",
+   "chapter": "综合练习",
+   "knowledge_point": "综合练习",
+   "content": "$2\\frac{2}{7}$ 的分数单位是 ____ ，再添上 ____ 个这样的单位就是最小的合数。",
+   "answer": "1/7,12",
+   "answer_blanks": [
+    "1/7",
+    "12"
+   ],
+   "explanation": "$2\\frac{2}{7}$ 的分数单位是 $\\frac{1}{7}$。最小的合数是 $4$，$4-2\\frac{2}{7}=\\frac{12}{7}$，即再添上 $12$ 个 $\\frac{1}{7}$ 就是 $4$。（原题分数 $2\\frac{2}{7}$ 来自题面内嵌算式图，已用 Vision 还原。） [KP=综合练习]",
+   "_raw_excerpt": "3．（2分）的分数单位是　　，再添上<u>　12　</u>个这样的单位就是最小的合数。\n【解答】解：根据分数单位的意义，的分数单位是，4﹣＝，所以再添上12个这样的分数单位就是最小的合数。\n故答案为：，12。",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 2,
+   "type": "fill",
+   "chapter": "综合练习",
+   "knowledge_point": "综合练习",
+   "content": "把 $3$ 米长的绳子平均截成 $7$ 段，每段占全长的 ____ ，每段长 ____ 米。",
+   "answer": "1/7,3/7",
+   "answer_blanks": [
+    "1/7",
+    "3/7"
+   ],
+   "explanation": "每段占全长的 $1\\div 7=\\frac{1}{7}$；每段长 $3\\div 7=\\frac{3}{7}$ 米。 [KP=综合练习]",
+   "_raw_excerpt": "4．（2分）把3米长的绳子平均截成7段，每段占全长的 　　，每段长 　　米．\n【解答】解：1÷7＝；\n3÷7＝（米）．\n答：每段占全长的，每段长米．\n故答案为：；．",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 2,
+   "type": "fill",
+   "chapter": "综合练习",
+   "knowledge_point": "综合练习",
+   "content": "电脑公司5月份计划组装1200台电脑，实际完成1500台，这个月超产 ____ %。",
+   "answer": "25",
+   "answer_blanks": [
+    "25"
+   ],
+   "explanation": "$(1500-1200)\\div 1200=300\\div 1200=25\\%$。 [KP=综合练习]",
+   "_raw_excerpt": "【解答】解：（1500﹣1200）÷1200\n＝300÷1200\n＝25%\n答：这个月超产25%。\n故答案为：25。\n6．（2分）有8名同学进行乒乓球比赛，如果每两名同学之间都进行一场比赛，一共要比赛 <u>　28　</u>场。",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 1,
+   "type": "fill",
+   "chapter": "数学好玩",
+   "knowledge_point": "数学好玩/生活中的数学",
+   "content": "有8名同学进行乒乓球比赛，如果每两名同学之间都进行一场比赛，一共要比赛 ____ 场。",
+   "answer": "28",
+   "answer_blanks": [
+    "28"
+   ],
+   "explanation": "$8\\times(8-1)\\div 2=56\\div 2=28$（场）。 [KP=生活中的数学]",
+   "_raw_excerpt": "【解答】解：8×（8﹣1）÷2\n＝56÷2\n＝28（场）\n答：一共要比赛28场。\n故答案为：28。\n7．（2分）甲数的等于乙数的50%，那么甲数与乙数的比是 <u>　2：3　</u>，乙比甲多 <u>　50　</u>%。",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 2,
+   "type": "fill",
+   "chapter": "比例",
+   "knowledge_point": "比例/比的意义",
+   "content": "甲数的 $\\frac{3}{4}$ 等于乙数的 $50\\%$，那么甲数与乙数的比是 ____ ，乙比甲多 ____ %。",
+   "answer": "2:3,50",
+   "answer_blanks": [
+    "2:3",
+    "50"
+   ],
+   "explanation": "甲数 $\\times\\frac{3}{4}=$ 乙数 $\\times 50\\%$，则甲数 : 乙数 $=50\\%:\\frac{3}{4}=2:3$；乙比甲多 $(3-2)\\div 2=50\\%$。（题面分数 $\\frac{3}{4}$ 来自内嵌算式图，已用 Vision 还原。） [KP=比的意义]",
+   "_raw_excerpt": "【解答】解：甲数×＝乙数×50%\n甲数：乙数＝50%：＝2：3\n（3﹣2）÷2\n＝1÷2\n＝50%\n答：甲数与乙数的比是2：3，乙比甲多50%。\n故答案为：2：3；50。\n8．（2分）如果，则m和n成 <u>　正　</u>比例，如果，则a和b成 <u>　反　</u>比例。",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 2,
+   "type": "fill",
+   "chapter": "正比例和反比例",
+   "knowledge_point": "正比例和反比例/正反比例的判断",
+   "content": "如果 $\\frac{m}{7}=n$，则 $m$ 和 $n$ 成 ____ 比例，如果 $\\frac{5}{a}=b$，则 $a$ 和 $b$ 成 ____ 比例。",
+   "answer": "正,反",
+   "answer_blanks": [
+    "正",
+    "反"
+   ],
+   "explanation": "由 $\\frac{m}{7}=n$ 得 $\\frac{m}{n}=7$（一定），$m$ 和 $n$ 成正比例；由 $\\frac{5}{a}=b$ 得 $ab=5$（一定），$a$ 和 $b$ 成反比例。（两条件 $\\frac{m}{7}=n$、$\\frac{5}{a}=b$ 来自题面内嵌算式图，已用 Vision 还原。） [KP=正反比例的判断]",
+   "_raw_excerpt": "【解答】解：由＝n，可得：＝7（一定），所以m和n成正比例。\n由＝b，可得：ab＝5（一定），所以a和b成反比例。\n故答案为：正；反。\n9．（1分）在边长为4厘米的正方形中画一个最大的圆，圆的面积是正方形面积的 <u>　78.5　</u>%。",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 2,
+   "type": "fill",
+   "chapter": "综合练习",
+   "knowledge_point": "综合练习",
+   "content": "在边长为4厘米的正方形中画一个最大的圆，圆的面积是正方形面积的 ____ %。",
+   "answer": "78.5",
+   "answer_blanks": [
+    "78.5"
+   ],
+   "explanation": "最大圆直径等于边长 $4$ 厘米，半径 $2$ 厘米。$3.14\\times 2^{2}\\div(4\\times 4)=12.56\\div 16=0.785=78.5\\%$。 [KP=综合练习]",
+   "_raw_excerpt": "【解答】解：3.14×（4÷2）2÷（4×4）\n＝3.14×4÷16\n＝12.56÷16\n＝0.785\n＝78.5%\n答：圆的面积是正方形面积的78.5%。\n故答案为：78.5。\n10．（2分）把棱长为6厘米的正方体削成一个最大的圆柱，则削去部分的体积是 <u>　46.44　</u>立方厘米。再把这个圆柱削成一个最大的圆锥，这时削去部分的体积是 <u>　113.04　</u>立方厘米。",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 2,
+   "type": "fill",
+   "chapter": "圆柱与圆锥",
+   "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+   "content": "把棱长为6厘米的正方体削成一个最大的圆柱，则削去部分的体积是 ____ 立方厘米。再把这个圆柱削成一个最大的圆锥，这时削去部分的体积是 ____ 立方厘米。",
+   "answer": "46.44,113.04",
+   "answer_blanks": [
+    "46.44",
+    "113.04"
+   ],
+   "explanation": "最大圆柱底面直径等于棱长 $6$，半径 $3$，高 $6$。削去 $=6^{3}-3.14\\times 3^{2}\\times 6=216-169.56=46.44$ 立方厘米。圆柱削成最大圆锥，圆锥体积是圆柱的 $\\frac{1}{3}$，削去 $\\frac{2}{3}$：$169.56\\times\\frac{2}{3}=113.04$ 立方厘米。 [KP=圆柱圆锥综合应用]",
+   "_raw_excerpt": "【解答】解：6×6×6﹣3.14×（6÷2）2×6\n＝216﹣3.14×9×6\n＝216﹣169.56\n＝46.44（立方厘米）\n3.14×（6÷2）2×6×（1﹣）\n＝3.14×9×6×\n＝169.56×\n＝113.04（立方厘米）\n答：把棱长为6厘米的正方体削成一个最大的圆柱，则削去部分的体积是46.44立方厘米，再把这个圆柱削成一个最大的圆锥，这时削去部分的体积是113.04立方厘米。\n故答案为：46.44，113.04。\n11．（2分）鸡兔同笼，有头15个，有腿44条，则兔有 <u>　7　</u>只，鸡有 <u>　8　</u>只。",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 2,
+   "type": "fill",
+   "chapter": "数学好玩",
+   "knowledge_point": "数学好玩/生活中的数学",
+   "content": "鸡兔同笼，有头15个，有腿44条，则兔有 ____ 只，鸡有 ____ 只。",
+   "answer": "7,8",
+   "answer_blanks": [
+    "7",
+    "8"
+   ],
+   "explanation": "假设全是鸡：鸡 $=(15\\times 4-44)\\div(4-2)=16\\div 2=8$（只）；兔 $=15-8=7$（只）。 [KP=生活中的数学]",
+   "_raw_excerpt": "【解答】解：鸡：（15×4﹣44）÷（4﹣2）\n＝（60﹣44）÷2\n＝16÷2\n＝8（只）\n兔：15﹣8＝7（只）\n答：兔有7只，鸡有8只。\n故答案为：7；8。\n12．（2分）一时钟，分针长8厘米，时针长6厘米，一昼夜时针扫过的面积是 <u>　226.08　</u>平方厘米，从下午1时到下午1：30，分针走过的路程是 <u>　25.12　</u>厘米。",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 4,
+   "type": "fill",
+   "chapter": "综合练习",
+   "knowledge_point": "综合练习",
+   "content": "一时钟，分针长8厘米，时针长6厘米，一昼夜时针扫过的面积是 ____ 平方厘米，从下午1时到下午1:30，分针走过的路程是 ____ 厘米。",
+   "answer": "226.08,25.12",
+   "answer_blanks": [
+    "226.08",
+    "25.12"
+   ],
+   "explanation": "一昼夜时针转 $2$ 圈，扫过面积 $=3.14\\times 6^{2}\\times 2=226.08$ 平方厘米。1时到1:30分针走半圈，路程 $=2\\times 3.14\\times 8\\div 2=25.12$ 厘米。 [KP=综合练习]",
+   "_raw_excerpt": "【解答】解：3.14×62×2\n＝3.14×36×2\n＝113.04×2\n＝226.08（平方厘米）\n2×3.14×8÷2\n＝50.14÷2\n＝25.12（厘米）\n答：一昼夜时针扫过的面积是226.08平方厘米，从下午1时到下午1：30，分针走过的路程是25.12厘米。\n故答案为：226.08，25.12。\n13．（1分）把25克盐溶入100克水中，盐水的浓度是 <u>　20　</u>%。",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 2,
+   "type": "fill",
+   "chapter": "综合练习",
+   "knowledge_point": "综合练习",
+   "content": "把25克盐溶入100克水中，盐水的浓度是 ____ %。",
+   "answer": "20",
+   "answer_blanks": [
+    "20"
+   ],
+   "explanation": "$25\\div(100+25)\\times 100\\%=25\\div 125\\times 100\\%=20\\%$。 [KP=综合练习]",
+   "_raw_excerpt": "【解答】解：25÷（100+25）×100%\n＝25÷125×100%\n＝20%\n故答案为：20。\n14．（2分）加工一批零件，甲要时，乙要时，甲乙工效比是 <u>　2：3　</u>，时间比是 <u>　3：2　</u>。",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 2,
+   "type": "fill",
+   "chapter": "比例",
+   "knowledge_point": "比例/比的意义",
+   "content": "加工一批零件，甲要 $\\frac{1}{4}$ 时，乙要 $\\frac{1}{6}$ 时，甲乙工效比是 ____ ，时间比是 ____ 。",
+   "answer": "2:3,3:2",
+   "answer_blanks": [
+    "2:3",
+    "3:2"
+   ],
+   "explanation": "工效是时间的倒数：甲乙工效比 $=(1\\div\\frac{1}{4}):(1\\div\\frac{1}{6})=4:6=2:3$；时间比 $=\\frac{1}{4}:\\frac{1}{6}=3:2$。（题面 $\\frac{1}{4}$、$\\frac{1}{6}$ 来自内嵌算式图，已用 Vision 还原。） [KP=比的意义]",
+   "_raw_excerpt": "【解答】解：（1÷）：（1÷）\n＝4：6\n＝2：3\n\n：\n＝（×12）：（×12）\n＝3：2\n答：甲乙工效比是2：3，时间比是3：2。\n故答案为：2：3；3：2。\n15．（3分）把一个长12厘米，宽6厘米的长方形围成一个圆柱，圆柱侧面积是 <u>　72　</u>平方厘米，如果给这个圆柱配上一个底面，底面半径最大是 <u>　2　</u>厘米，体积最大是 <u>　72　</u>立方厘米。（π取3）",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 2,
+   "type": "fill",
+   "chapter": "圆柱与圆锥",
+   "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+   "content": "把一个长12厘米，宽6厘米的长方形围成一个圆柱，圆柱侧面积是 ____ 平方厘米，如果给这个圆柱配上一个底面，底面半径最大是 ____ 厘米，体积最大是 ____ 立方厘米。（π取3）",
+   "answer": "72,2,72",
+   "answer_blanks": [
+    "72",
+    "2",
+    "72"
+   ],
+   "explanation": "无论怎么围，侧面积都等于长方形面积 $12\\times 6=72$ 平方厘米。要体积最大用较长边 $12$ 作底面周长：半径 $=12\\div 3\\div 2=2$ 厘米，高 $6$，体积 $=3\\times 2^{2}\\times 6=72$ 立方厘米（用宽 $6$ 作周长时体积仅 $36$，取最大 $72$）。 [KP=圆柱圆锥综合应用]",
+   "_raw_excerpt": "【解答】解：12×6＝72（平方厘米）\n12÷3÷2\n＝4÷2\n＝2（厘米）\n3×22×6\n＝3×4×6\n＝12×6\n＝72（立方厘米）\n6÷3÷2\n＝2÷2\n＝1（厘米）\n3×12×12\n＝3×1×12\n＝3×12\n＝36（立方厘米）\n72＞36\n答：圆柱侧面积是72平方厘米，如果给这个圆柱配上一个底面，底面半径最大是2厘米，体积最大是72立方厘米。\n故答案为：72；2；72。\n**二、判断。（每题1分，共6分）**",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 2,
+   "type": "judgment",
+   "chapter": "综合练习",
+   "knowledge_point": "综合练习",
+   "content": "如果两个圆柱的侧面积相等，则体积也相等。（判断对错）",
+   "answer": "错",
+   "explanation": "侧面积 $=$ 底面周长 $\\times$ 高，体积 $=$ 底面积 $\\times$ 高。侧面积相等只说明半径与高之积相等，但半径与高不一定分别相等，故体积不一定相等。 [KP=综合练习]",
+   "_raw_excerpt": "【解答】解：因为圆柱的体积＝底面积×高，圆柱的侧面积＝底面周长×高，\n因为它们的侧面面积相等，仅仅说明半径和高的积相等，但底面半径和高不一定相等，\n所以体积也不一定相等，\n故答案为：×．\n17．（1分）3米的与1米的长度相等．　<u>√</u>　．（判断对错）",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 2,
+   "type": "judgment",
+   "chapter": "综合练习",
+   "knowledge_point": "综合练习",
+   "content": "$3$ 米的 $\\frac{1}{5}$ 与 $1$ 米的 $\\frac{3}{5}$ 的长度相等。（判断对错）",
+   "answer": "对",
+   "explanation": "$3\\times\\frac{1}{5}=0.6$ 米，$1\\times\\frac{3}{5}=0.6$ 米，两者相等。（题面 $\\frac{1}{5}$、$\\frac{3}{5}$ 来自内嵌算式图，已用 Vision 还原。） [KP=综合练习]",
+   "_raw_excerpt": "【解答】解：3×＝0.6（米）\n1×＝0.6（米）\n因为0.6＝0.6，所以3米的与1米的长度相等．\n故答案为：√．\n18．（1分）当一个正方形、长方形、圆的周长相等时，圆的面积最大。 　<u>√</u>　（判断对错）",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 1,
+   "type": "judgment",
+   "chapter": "综合练习",
+   "knowledge_point": "综合练习",
+   "content": "当一个正方形、长方形、圆的周长相等时，圆的面积最大。（判断对错）",
+   "answer": "对",
+   "explanation": "周长相等时圆所围面积最大。如周长均取 $12.56$ 厘米，圆面积约 $12.56$ 平方厘米，大于正方形（约 $9.86$）和长方形面积。 [KP=综合练习]",
+   "_raw_excerpt": "【解答】解：假设长方形、正方形和圆的周长为12.56厘米；\n长方形的长宽可以为3.13厘米、3.15厘米，\n长方形的面积＝3.13×3.15＝9.8595（平方厘米）；\n正方形的边长为3.14厘米，\n正方形的面积＝3.14×3.14＝9.8596（平方厘米）；\n圆的面积＝3.14×（12.56÷3.14÷2）2＝12.56（平方厘米）；\n12.56＞9.8596＞9.8595\n所以圆的面积最大。\n因此，题干中的结论是正确的。\n故答案为：√。\n19．去掉小数点后面的0，小数的大小不变。 　<u>×</u>　（判断对错）",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 1,
+   "type": "judgment",
+   "chapter": "综合练习",
+   "knowledge_point": "综合练习",
+   "content": "去掉小数点后面的0，小数的大小不变。（判断对错）",
+   "answer": "错",
+   "explanation": "小数的性质是“小数末尾添上或去掉0，大小不变”，而本题说“小数点后面的0”，如 $3.05$ 去掉小数点后的 $0$ 变成 $3.5$，大小改变，故错误。 [KP=综合练习]",
+   "_raw_excerpt": "【解答】解：根据小数的性质：小数的末尾添上“0”或去掉“0”，小数的大小不变，所以本题说法错误。\n故答案为：×。\n20．（1分）假分数的倒数比原数小．　<u>×</u>　．（判断对错）",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 1,
+   "type": "judgment",
+   "chapter": "综合练习",
+   "knowledge_point": "综合练习",
+   "content": "假分数的倒数比原数小。（判断对错）",
+   "answer": "错",
+   "explanation": "假分数的倒数不一定比原数小：当假分数等于 $1$（如 $\\frac{2}{2}$）时，其倒数仍等于 $1$，并不比原数小，故错误。 [KP=综合练习]",
+   "_raw_excerpt": "【解答】解：假分数的倒数有的比原数小，有的则等于原数，如的倒数仍是．\n故答案为：×．\n21．（1分）从甲地到乙地，已行，还剩千米未行，则已行的比未行的多。 　<u>×</u>　（判断对错）",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 2,
+   "type": "judgment",
+   "chapter": "综合练习",
+   "knowledge_point": "综合练习",
+   "content": "从甲地到乙地，已行 $\\frac{1}{4}$，还剩 $\\frac{1}{4}$ 千米未行，则已行的比未行的多。（判断对错）",
+   "answer": "错",
+   "explanation": "按全程分率：已行 $\\frac{1}{4}$，未行 $1-\\frac{1}{4}=\\frac{3}{4}$，$\\frac{1}{4}<\\frac{3}{4}$，所以已行的比未行的少，故说法错误。（注：原题“还剩 $\\frac{1}{4}$ 千米”为具体长度，与官方解析按分率 $\\frac{3}{4}$ 计算口径略有不一致，但结论判错一致；题面 $\\frac{1}{4}$ 来自内嵌算式图，已用 Vision 还原。） [KP=综合练习]",
+   "_raw_excerpt": "【解答】解：1﹣＝\n＜，所以已行的比未行的少。故原题说法错误。\n故答案为：×。",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 2,
+   "type": "choice",
+   "chapter": "正比例和反比例",
+   "knowledge_point": "正比例和反比例/比例尺",
+   "content": "有一种手表零件长5毫米，在设计图纸上的长度是10厘米，图纸的比例尺是（　　）",
+   "options": [
+    "A. $1:20$",
+    "B. $2:1$",
+    "C. $20:1$"
+   ],
+   "answer": "C",
+   "explanation": "$10$ 厘米 $=100$ 毫米，图上 : 实际 $=100:5=20:1$。 [KP=比例尺]",
+   "_raw_excerpt": "22．（2分）有一种手表零件长5毫米，在设计图纸上的长度是10厘米，图纸的比例尺是（　　）\nA．1：20\tB．2：1\tC．20：1\n【解答】解：10厘米＝100毫米\n100：5＝20：1\n答：图纸的比例尺是20：1。\n故选：C。\n23．（2分）把一个长方形框架拉成一个平行四边形，（　　）",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 1,
+   "type": "choice",
+   "chapter": "综合练习",
+   "knowledge_point": "综合练习",
+   "content": "把一个长方形框架拉成一个平行四边形，（　　）",
+   "options": [
+    "A. 周长不变，面积变大。",
+    "B. 周长不变，面积变小。",
+    "C. 周长不变，面积不变。"
+   ],
+   "answer": "B",
+   "explanation": "四条边长度不变，周长不变；拉成平行四边形后高变小，面积 $=$ 底 $\\times$ 高 变小。 [KP=综合练习]",
+   "_raw_excerpt": "A．周长不变，面积变大。\tB．周长不变，面积变小。\t\nC．周长不变，面积不变。\n【解答】解：把一个长方形框架拉成一个平行四边形，四条边的长度不变，所以周长不变。\n长方形的长＝平行四边形的底\n长方形的宽＞平行四边形的高\n长方形的面积＝长×宽\n平行四边形的面积＝底×高\n长方形的面积＞平行四边形的面积\n答：把一个长方形框架拉成一个平行四边形，周长不变，面积变小。\n故选：B。\n24．（2分）某种商品，先提价15%，后又降价15%，（　　）",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 2,
+   "type": "choice",
+   "chapter": "综合练习",
+   "knowledge_point": "综合练习",
+   "content": "某种商品，先提价15%，后又降价15%，（　　）",
+   "options": [
+    "A. 现价比原价便宜。",
+    "B. 现价比原价贵。",
+    "C. 现价和原价一样。"
+   ],
+   "answer": "A",
+   "explanation": "设原价 $100$ 元，现价 $=100\\times(1+15\\%)\\times(1-15\\%)=97.75$ 元 $<100$ 元，故现价比原价便宜。 [KP=综合练习]",
+   "_raw_excerpt": "A．现价比原价便宜。\tB．现价比原价贵。\t\nC．现价和原价一样。\n【解答】解：假设原价是100元，则现价：\n100×（1+15%）×（1﹣15%）\n＝100×1.15×0.85\n＝115×0.85\n＝97.75（元）\n答：现价比原价便宜。\n故选：A。\n25．（2分）要反映小红六年级数学成绩变化情况，应选择（　　）",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 1,
+   "type": "choice",
+   "chapter": "综合练习",
+   "knowledge_point": "综合练习",
+   "content": "要反映小红六年级数学成绩变化情况，应选择（　　）",
+   "options": [
+    "A. 条形统计图",
+    "B. 折线统计图",
+    "C. 扇形统计图"
+   ],
+   "answer": "B",
+   "explanation": "折线统计图能清楚反映数量随时间的变化情况，故选折线统计图。 [KP=综合练习]",
+   "_raw_excerpt": "A．条形统计图\tB．折线统计图\t\nC．扇形统计图\n【解答】解：根据折线统计图的特点可知：要求反映小红六年级数学成绩变化情况，结合统计图各自的特点，应选择折线统计图．\n故选：B．\n26．（2分）甲乙两袋粮食，从甲袋粮食取出放入乙袋，这时甲乙两袋粮食重量相等，原来甲乙两袋粮食重量比是（　　）",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 4,
+   "type": "choice",
+   "chapter": "比例",
+   "knowledge_point": "比例/比的意义",
+   "content": "甲乙两袋粮食，从甲袋粮食取出 $\\frac{1}{5}$ 放入乙袋，这时甲乙两袋粮食重量相等，原来甲乙两袋粮食重量比是（　　）",
+   "options": [
+    "A. $3:5$",
+    "B. $1:4$",
+    "C. $5:3$"
+   ],
+   "answer": "C",
+   "explanation": "设甲原有 $5$ 份，取出 $\\frac{1}{5}$（即 $1$ 份）后甲剩 $4$ 份；此时两袋相等，乙也是 $4$ 份，故乙原有 $4-1=3$ 份，原来甲乙比 $=5:3$。（题面 $\\frac{1}{5}$ 来自内嵌算式图，已用 Vision 还原。） [KP=比的意义]",
+   "_raw_excerpt": "A．3：5\tB．1：4\tC．5：3\n【解答】解：由“甲袋粮食中取出放入乙袋，这时两袋粮食质量相等”可知，甲原有5份，乙原有5﹣2＝3份，原来甲乙两袋粮食重量比是5：3。\n故选：C。\n27．（2分）投掷3次硬币，有2次正面朝上，1次反面朝上，那么，投掷第4次硬币正面朝上的可能性是（　　）",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 2,
+   "type": "choice",
+   "chapter": "综合练习",
+   "knowledge_point": "综合练习",
+   "content": "投掷3次硬币，有2次正面朝上，1次反面朝上，那么，投掷第4次硬币正面朝上的可能性是（　　）",
+   "options": [
+    "A. $\\frac{1}{4}$",
+    "B. $\\frac{1}{2}$",
+    "C. $\\frac{2}{3}$"
+   ],
+   "answer": "B",
+   "explanation": "硬币正反两面，每次正面朝上的可能性都是 $1\\div 2=\\frac{1}{2}$，与前几次无关，故第4次为 $\\frac{1}{2}$。（选项分数来自内嵌算式图，已用 Vision 还原。） [KP=综合练习]",
+   "_raw_excerpt": "A．\tB．\tC．\n【解答】解：硬币有两面，每一面出现的可能性都是：1÷2＝，\n所以投掷第4次硬币正面朝上的可能性也是；\n故选：B。\n**四、计算。（23分）**",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 2,
+   "type": "fill",
+   "chapter": "圆柱与圆锥",
+   "knowledge_point": "圆柱与圆锥/圆柱圆锥综合应用",
+   "content": "按要求计算图形的面积（单位：厘米）。如图，长方形内画一个最大的半圆，长方形的长（底边）为 $8$ 厘米。\n1. 求阴影部分的面积。",
+   "image_data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABLCAYAAADu66CPAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwQAADsEBuJFr7QAABgBJREFUeF7tm1tMFFcYx3nk0ZcmJBpEoVyEIqBYbnKXOwoIcqlQbgJyv4m7Cm4FKohVpK1CbdraxIbWtJiUVNKmljZpkz6Y8NCmD20TEvtA7Av1Cd6+7v9jF9bdWXZnmV0G5vySL7tz2Z2d3zlzznfOzHrdfNRLAuUQQhVGCFUYIVRhhFCFEUIVRghVGCFUYYRQhRFCFYaF/vH7b1SSn7vtUZCVQdnJiZR07AglHIngiIsIp8igAI6Y8LD19QjseyojXfK7PB2//vLzhtCJG2NUXlRA4+/c8GjoerrpbEkxpcYeI3+fVygy0N8o6Tg111VTX3srh0F/kT65N8XxtmFgfT0C+0aHBvFnE6OjqPRUPvV2tEkey50Bd3D4ktCWc/U0Ozvr9hgbuUaVZ4opxHcvncxIo7HhwfXS3QoLT5/S5LsTXFsguORkLl0d6KeZmRnJ36FkwJ1HhT58+AU1VFfR0UNBdLa4iL78fJpWV1f5B7iL7+YeU0t9LR8TBfjZgweSv02J8JhQ1I72pkZjO/gaffTBJP37/Dkf1JO8ePEfF2B8ZDgXKgpX6rduJTwiVH+hl0WOXx/lk9pucEWgUPGbulpbFG0K3Cr02tAgJR6NIn1357bUSEegcEcH32KxA3qd5DnIDbcIxaVUmJ1J9ZUV9Pdff/KXqxkUdnfLecpMSthy+6q40E/v36fslET68cn3/KU7CWQHJ47H0fsTE5Ln5kwoKhR5WEZi/I6olfZAbS3Oy6EhwxXJc3QUigm9fLGP3jhdqIpOZ6ug02quq6HGmjclz3WzUEQoDqzr6nB7PulpPpy8w4MCOenVloXigDjwbuXbx99QlnFY62xqtSWhrQ319N6tm/zh3QykouJIObAOl4Wi0UY7oxVQcVCBpFxYhktCkVagJ9xtbaYjUIEc9f6yhSLPzE1LVuXIx92gAuWfSKWpu3ck3SBkCUXDjAYak9Ba5Z9nzygnNcnuiEqW0Apjnvn1zFe8s5bBiArDVClHTgtFNceXCNbAPAUmf6w9OS0U93h++uEJ7yggbvak8lOnhKIkUCKCl7l6WU8XjCNES1dOCU2Ne13THZE9kOlgLtWyljoUqrUEXi6YoMasv1NCYR4loMWc01mQm+IelTmN2lSorreHLvV08UaBfe5O3Kbm+lrHQvPSUxW5T77bQbIfezhsc6EYYqIqC5wDD1XgjoVdoa0N5+j22HXeIHAM7vfjIQq7QkWqJA/c+gkPOCAtFLc0Dr96kFcKnAdD86rSEluhJfl5YmTkAoP9lyg3LcVWaHp8LH18b4pXCpwHD6XhWVUboXiwVUyEyAfPI0QGBtgKDTvgK0ZHLhK414dujY7wexY6NjxEIb77eIVAPtGhITTQt/ZfBRaq7+7irF/gGpmJCdRSV8vvWWhfexslREXwCoF8clOSqKm6it+zUCxgpcA1KgoLOIAQqgA2QhuqKyns4H6qKDJuECE7IoP86XRO9oZQ9PJd5xt52k6E/OhpbabhK/0bQpGHmhNTa5Cb4v8/5g9oEcwqIS3CHKgUlv7sCsWN/b6ONv4TFULLs1CYVTq0fx97qCkv5eGmJXaF4l4JSiMjIW5dJCIvPYV31jKooZZOkqKj+MqFbEmh1eVn+A+qlh8S4ThQc9HD2whFWF/m5miqWUtatQz8WHvB5Y8JJbM/INmGmjsiVGvzh7U8cYKmMCY8lD3gKkYHbdlBORRqyeyjGS4JLffy6ITQr9j7068soWa0XEMdnbuNUKRESFAFrmHpj4WqmeXlZZqfnzctqR/VCl1ZWaGsrCwaHx+nhYUFfjUYDKat6kW1QiEvOTnZtLRGTEwMLS4umpbUiaqFBgcHm5bWgNClpSXTkjpRrVDUxD179nAtxfuRkREqKyszbVUvqu6U0HZ6e3uTl5cX+fn5cQeldlRdQ1E75+bmOHx8fLgJEJe8i+h0Ou7ZzUAkmgDLdWpEtULRAVnnnwUFBdTU1GRaUieqFYpevrOz07S0lpeiPcXlr2ZU3SmhZ4dUvKIJmJ6eNm1RL6oWuhPxMr0KFEIIVRSi/wGKbWZQeO75dQAAAABJRU5ErkJgguiPgeS8mOe9kQAAAGt7aHN0AAAAADU0ODgzNTA5AAAAa3toc3QAAAAA",
+   "_image_verified": true,
+   "_image_verified_note": "图为一个长方形内画一个最大的半圆（半圆直径=长方形长边=8），底边标注尺寸“8”，阴影为长方形减去半圆的部分，与题面“求阴影部分的面积”相符。",
+   "group_id": "realpaper_g6_math_beishida_qm_baoan_003_q31",
+   "group_order": 1,
+   "_common_prefix_raw": "31．（6分）（1）求阴影部分的面积。（2）求图形的体积。",
+   "answer": "6.88",
+   "answer_blanks": [
+    "6.88"
+   ],
+   "explanation": "半圆直径 $8$，半径 $4$，长方形高等于半径 $4$。阴影面积 $=$ 长方形面积 $-$ 半圆面积 $=8\\times 4-3.14\\times 4^{2}\\div 2=32-25.12=6.88$ 平方厘米。 [KP=圆柱圆锥综合应用]",
+   "_raw_excerpt": "31．（6分）（1）求阴影部分的面积。\n\n（2）求图形的体积。\n\n【解答】解：（1）8×（8÷2）﹣3.14×（8÷2）2÷2\n＝32﹣25.12\n＝6.88\n答：阴影部分的面积是6.88。",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 2,
+   "type": "fill",
+   "chapter": "圆柱与圆锥",
+   "knowledge_point": "圆柱与圆锥/圆锥的体积",
+   "content": "按要求计算图形的面积（单位：厘米）。如图，是一个圆锥，底面直径为 $10$ 厘米，高为 $12$ 厘米。\n2. 求图形的体积。",
+   "image_data": "data:image/png;base64,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",
+   "_image_verified": true,
+   "_image_verified_note": "图为一个倒置圆锥，顶部圆面标注直径“10”，右侧标注高“12”，与题面“求图形（圆锥）的体积”相符。",
+   "group_id": "realpaper_g6_math_beishida_qm_baoan_003_q31",
+   "group_order": 2,
+   "_common_prefix_raw": "31．（6分）（1）求阴影部分的面积。（2）求图形的体积。",
+   "answer": "314",
+   "answer_blanks": [
+    "314"
+   ],
+   "explanation": "圆锥底面直径 $10$，半径 $5$，高 $12$。体积 $=\\frac{1}{3}\\times 3.14\\times 5^{2}\\times 12=\\frac{1}{3}\\times 942=314$ 立方厘米。 [KP=圆锥的体积]",
+   "_raw_excerpt": "（2）求图形的体积。\n\n【解答】解：（1）8×（8÷2）﹣3.14×（8÷2）2÷2\n＝32﹣25.12\n＝6.88\n答：阴影部分的面积是6.88。\n （2）3.14×（10÷2）2×12×\n＝942×\n＝314\n答：求图形的体积是314。",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 2,
+   "type": "fill",
+   "chapter": "综合练习",
+   "knowledge_point": "综合练习",
+   "content": "排版一部书稿，如果每页排640个字，要200页；如果每页排800个字，可排多少页？",
+   "answer": "160",
+   "answer_blanks": [
+    "160"
+   ],
+   "explanation": "总字数一定，页数与每页字数成反比。设可排 $x$ 页，$640\\times 200=800x$，$x=160$ 页。 [KP=综合练习]",
+   "_raw_excerpt": "【解答】解：设可排x页，\n640×200＝800x，\n800x＝128000，\nx＝160；\n答：可排160页．\n33．（3分）一块长方形地，量得它的周长是48米，长和宽的比是5：3．这块长方形地的面积是多少平方米？",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 2,
+   "type": "fill",
+   "chapter": "综合练习",
+   "knowledge_point": "综合练习",
+   "content": "一块长方形地，量得它的周长是48米，长和宽的比是 $5:3$。这块长方形地的面积是多少平方米？",
+   "answer": "135",
+   "answer_blanks": [
+    "135"
+   ],
+   "explanation": "长 $+$ 宽 $=48\\div 2=24$ 米。长 $=24\\times\\frac{5}{8}=15$ 米，宽 $=24\\times\\frac{3}{8}=9$ 米，面积 $=15\\times 9=135$ 平方米。 [KP=综合练习]",
+   "_raw_excerpt": "【解答】解：长+宽为：48÷2＝24（米）；\n长为：24×＝15（米）；\n宽为：24×＝9（米）；\n面积为：15×9＝135（平方米）；\n答：这块长方形地的面积是135平方米．\n34．（4分）某工厂有女工36人，比男工的40%多4人，工厂共有员工多少人？（用方程解）",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 3,
+   "type": "fill",
+   "chapter": "综合练习",
+   "knowledge_point": "综合练习",
+   "content": "某工厂有女工36人，比男工的40%多4人，工厂共有员工多少人？（用方程解）",
+   "answer": "116",
+   "answer_blanks": [
+    "116"
+   ],
+   "explanation": "设男工 $x$ 人，$40\\%x+4=36$，$40\\%x=32$，$x=80$。共有 $80+36=116$ 人。 [KP=综合练习]",
+   "_raw_excerpt": "【解答】解：设工厂有男工x人。\n40%x+4＝36\n40%x＝32\nx＝80\n80+36＝116（人）\n答：工厂共有员工116人。\n35．（4分）一圆锥形沙堆，底面周长12.56米，高1.2米，把这堆沙子铺在宽5米，厚4厘米的路面上，能铺多长？",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 2,
+   "type": "fill",
+   "chapter": "圆柱与圆锥",
+   "knowledge_point": "圆柱与圆锥/圆锥的体积",
+   "content": "一圆锥形沙堆，底面周长12.56米，高1.2米，把这堆沙子铺在宽5米，厚4厘米的路面上，能铺多长？",
+   "answer": "25.12",
+   "answer_blanks": [
+    "25.12"
+   ],
+   "explanation": "$4$ 厘米 $=0.04$ 米。底面半径 $=12.56\\div 3.14\\div 2=2$ 米。沙堆体积 $=\\frac{1}{3}\\times 3.14\\times 2^{2}\\times 1.2=5.024$ 立方米。长度 $=5.024\\div 5\\div 0.04=25.12$ 米。 [KP=圆锥的体积]",
+   "_raw_excerpt": "【解答】解：4厘米＝0.04米\n12.56÷3.14÷2＝2（米）\n×3.14×22×1.2÷5÷0.04\n＝5.024÷5÷0.04\n＝25.12（米）\n答：能铺25.12米长。\n36．（4分）甲、乙两地相距350千米，小王与小李同时从甲、乙两地开车相向而行．小王的车速是每小时80千米，小李的车速是每小时60千米．几小时后两车相遇？",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 2,
+   "type": "fill",
+   "chapter": "综合练习",
+   "knowledge_point": "综合练习",
+   "content": "甲、乙两地相距350千米，小王与小李同时从甲、乙两地开车相向而行。小王的车速是每小时80千米，小李的车速是每小时60千米。几小时后两车相遇？",
+   "answer": "2.5",
+   "answer_blanks": [
+    "2.5"
+   ],
+   "explanation": "相遇时间 $=$ 总路程 $\\div$ 速度和 $=350\\div(80+60)=350\\div 140=2.5$ 小时。 [KP=综合练习]",
+   "_raw_excerpt": "【解答】解：350÷（80+60），\n＝350÷140，\n＝2.5（小时）；\n答：2.5小时后两车相遇．\n37．（5分）为鼓励居民节约用水，自来水公司规定：每户每月用水15吨以内（含15吨）按每吨1.2元收费，超过15吨的超出的吨数按每吨3元收费，小刚家上月共交水费30元，小刚家上月用水多少吨？",
+   "_round_source": "d2_math_review_v4"
+  },
+  {
+   "subject": "math",
+   "grade": 6,
+   "source": "realpaper_g6_math_beishida_qm_baoan_003",
+   "round": 3,
+   "type": "fill",
+   "chapter": "综合练习",
+   "knowledge_point": "综合练习",
+   "content": "为鼓励居民节约用水，自来水公司规定：每户每月用水15吨以内（含15吨）按每吨1.2元收费，超过15吨的超出的吨数按每吨3元收费，小刚家上月共交水费30元，小刚家上月用水多少吨？",
+   "answer": "19",
+   "answer_blanks": [
+    "19"
+   ],
+   "explanation": "前 $15$ 吨费用 $=1.2\\times 15=18$ 元，剩余 $30-18=12$ 元按每吨 $3$ 元计 $12\\div 3=4$ 吨。共用水 $15+4=19$ 吨。 [KP=综合练习]",
+   "_raw_excerpt": "【解答】解：15+（30﹣1.2×15）÷3\n＝15+（30﹣18）÷3\n＝15+12÷3\n＝15+4\n＝19（吨）\n答：小刚家上月用水19吨。",
+   "_round_source": "d2_math_review_v4"
+  }
+ ],
+ "_random_sample_verified": [
+  {
+   "qid": "31-1",
+   "result": "match"
+  },
+  {
+   "qid": "31-2",
+   "result": "match"
+  }
+ ]
+}

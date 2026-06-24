@@ -1,5 +1,5 @@
 {
-  "version": 140,
+  "version": 141,
   "updated_at": "2026-06-24",
   "batches": [
     {
@@ -609,6 +609,30 @@
       "grade": 6,
       "count": 27,
       "batch_hash": "940e9c803f264838b9225167183bdcfdb107f909"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qm_nanshan_004",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_nanshan_004.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 44,
+      "batch_hash": "07adbefaab4f0229894aea412dabb62c3976b577"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qm_pingshan_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_pingshan_002.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 31,
+      "batch_hash": "75acb773651208eab7db5a7b8eb8a9d5a2016415"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qm_baoan_003",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qm_baoan_003.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 34,
+      "batch_hash": "3baf3450747e126d47e5c152af46efae2079ee8f"
     }
   ],
   "_changelog": [
@@ -849,6 +873,7 @@
     "v137 (2026-06-24): +3 6下数学真题 guangming_003期末(32)+shenzhen_qz期中(23)+luohu_002期末复习(26)=81题",
     "v138 (2026-06-24): +3 6下数学真题 luohu_003期末(26)+longgang_002期中(34)+longhua_001期中(26)=86题；均解析版/答案docx自带官方答案；答案存疑1（luohu填空第2题官方答案与题面/内嵌图三方矛盾、信息不可救已_skipped_for_future）",
     "v139 (2026-06-24): +2 6下真题（语文1+数学1，共56题）：chinese_xsc_shenzhen_003(深圳2021小升初语文,29)+math_qz_luohu_002(罗湖23-24期中数学,27)；本波第3份qz_baoan_002经查与已入库qz_baoan_001系同一套华一实验22-23期中卷重复印件(16/19题面字节级一致)，判重丢弃未入库；数学luohu_002存疑3处(Q19第5空5/6-1/3=1/2官方标1/5疑印误；Q20①②原卷版与解析版印刷数字本身冲突，信worker推算)",
-    "v140 (2026-06-24): 撤回 v139 误入的 chinese_xsc_shenzhen_003——经查与已入库 xsc_shenzhen_001（深圳2021小升初语文）系同一场考试的原卷版/解析版重复印件（22/29题面字节级一致），dir级去重漏判（同卷散落多文件夹、001的_source_docx_path仅指向其中一份）。删除其双写文件并移出index。本波净入库仅数学 luohu_002（27题）。教训：选卷去重须按 paper-identity（剥原卷/解析/版本标记的归一卷名），不可仅按目录/路径比对。"
+    "v140 (2026-06-24): 撤回 v139 误入的 chinese_xsc_shenzhen_003——经查与已入库 xsc_shenzhen_001（深圳2021小升初语文）系同一场考试的原卷版/解析版重复印件（22/29题面字节级一致），dir级去重漏判（同卷散落多文件夹、001的_source_docx_path仅指向其中一份）。删除其双写文件并移出index。本波净入库仅数学 luohu_002（27题）。教训：选卷去重须按 paper-identity（剥原卷/解析/版本标记的归一卷名），不可仅按目录/路径比对。",
+    "v141 (2026-06-24): +3 6下数学期末真题（共109题）：math_qm_nanshan_004(南山24-25期末,44)+math_qm_pingshan_002(坪山23-24期末,31)+math_qm_baoan_003(宝安23-24期末检测,34)，index v141；nanshan_004 Q4选项配图经Vision复核绑定正确(条形图/对照表/椭圆/大括号，非孤儿图17-20)；存疑：nanshan Q18化简比官方3:2疑漏项(worker采12:3:2)、nanshan Q27/pingshan Q24脚本判R4偏高存档、pingshan Q9官方B判定理由存疑(结论D不变)、baoan Q21分率vs具体量口径分歧(结论×不变)；pingshan跳过Q12/21/22/23、baoan跳过Q2/28/29/30(题面段无图映射或算式仅在答案区,R8/R9禁反推)"
   ]
 }
