@@ -1,5 +1,5 @@
 {
-  "version": 144,
+  "version": 145,
   "updated_at": "2026-06-25",
   "batches": [
     {
@@ -705,6 +705,30 @@
       "grade": 6,
       "count": 30,
       "batch_hash": "d4a6b8894155f63c4db7d9887d84de591edaff19"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_xsc_baoan_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_xsc_baoan_002.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 29,
+      "batch_hash": "198a1071a9847298d182a2f15066cd7f7777c3fe"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_xsc_pingshan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_xsc_pingshan_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 32,
+      "batch_hash": "99f99cd77fff7ad76ee087f54a36d7a619553c36"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_xsc_longhua_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_xsc_longhua_001.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 26,
+      "batch_hash": "9ea32b003a36f8d46b8f53572bfc5a22dc9f284e"
     }
   ],
   "_changelog": [
@@ -948,7 +972,8 @@
       "version": 144,
       "date": "2026-06-25",
       "note": "v144 (2026-06-25): +3 6下数学真题（共102题）：math_xsc_yantian_002(盐田2022北师大小升初,40)+math_xsc_longgang_002(龙岗2022北师大小升初素养,32)+math_qz_baoan_001(宝安松岗二小22-23期中,30)，index v144；存疑：qz_baoan_001 q22①官方答案3疑漏算首项3/8（worker采3⅜，已在explanation注明）、q24锚点提示不一致(round仍取2)；跳过：qz_baoan_001 q23方格纸平移/对称/旋转作图题(app无作图输入)。语文6下已全部扫完：剩余6份docx均为答案-only(题面为PDF,docx-only管线不可入)或重复印件(华一实验22-23期中=已入qz_baoan_001语文、深圳2021小升初=已入xsc_shenzhen_001)，无可入库新docx。"
-    }
+    },
+    "v145 (2026-06-25): +3 6下数学小升初真题（共87题）：math_xsc_baoan_002(宝安2020北师大小升初,29)+math_xsc_pingshan_001(坪山2022北师大小升初,32)+math_xsc_longhua_001(龙华2023北师大小升初,26)，index v145。存疑：baoan_002 q27官方答案末行「加水200克」与解题过程「100克」自相矛盾(worker采100克,explanation注明,系官方笔误)、q21第3空官方分析「13」与统计图16人矛盾(采20%不变)。跳过：baoan_002 q16口算/q26用电量表(题面信息丢失,禁反推)、q19/q20作图题；pingshan_001 q22/q28/q29/q30(题面算式仅位图丢失,禁反推)、q31作图/q32连线；longhua_001 q1计算/q2解方程(题面算式题目区缺失,禁反推)。更正v144记录：6下语文并未扫完——尚余7套「小升初分题型分层汇编(01/02/03/07/08/10)」+「现代文阅读特训卷(二)」，均含完整题面+答案可入库(此前漏统计,非答案-only/重复印件)。"
   ],
   "changelog": [
     "v136 (2026-06-23): +3 6下数学期中真题 nanshan_001(38)+pingshan_001(32)+longgang_001(29)=99题",
@@ -959,6 +984,7 @@
     "v141 (2026-06-24): +3 6下数学期末真题（共109题）：math_qm_nanshan_004(南山24-25期末,44)+math_qm_pingshan_002(坪山23-24期末,31)+math_qm_baoan_003(宝安23-24期末检测,34)，index v141；nanshan_004 Q4选项配图经Vision复核绑定正确(条形图/对照表/椭圆/大括号，非孤儿图17-20)；存疑：nanshan Q18化简比官方3:2疑漏项(worker采12:3:2)、nanshan Q27/pingshan Q24脚本判R4偏高存档、pingshan Q9官方B判定理由存疑(结论D不变)、baoan Q21分率vs具体量口径分歧(结论×不变)；pingshan跳过Q12/21/22/23、baoan跳过Q2/28/29/30(题面段无图映射或算式仅在答案区,R8/R9禁反推)",
     "v142 (2026-06-24): +3 6下数学期末真题（共94题）：math_qm_baoan_004(宝安24-25期末,24)+math_qm_luohu_004(罗湖24-25期末抽样质量检测,30)+math_qm_longgang_003(龙岗24-25学业质量监测,40)，index v142；存疑：baoan Q16(5)官方答案4疑笔误(worker采4.4，11/5+2又1/5=22/5)、longgang Q17折线图近7天平均步数官方判\"不能\"但读数估算≈5071>5000(折线图读数精度不足，保留官方)；跳过：baoan Q4三视图含上/左两张视图不可无损嵌图、Q19(2)(3)(4)方格旋转/对称/放大画图不可文字判分；longgang Q6产品说明书关键尺寸数据图未归属本题且不可救、Q27直接写得数算式全丢失；luohu_004 30题0跳过0存疑。校验：3卷各 validate --full 22/22+check25 PASS、cross-batch 0冲突、双写字节一致。",
     "v143 (2026-06-25): +3 6下数学期末真题（共82题）：math_qm_luohu_005(罗湖21-22期末模拟测试,27)+math_qm_luohu_006(罗湖21-22期末综合素养阳光评价,26)+math_qm_longhua_004(龙华万安学校21-22期末命题比赛·人教版,29)，index v143；存疑：luohu_006 q19(1)官方238疑笔误(worker采23.7,23.7×(1.8−0.8)=23.7,官方解析自相矛盾)；跳过：luohu_006 21(2)(3)(4)画图操作题(app无作图输入)、longhua_004 Q14(2)两分数操作数文字层全丢不可救。校验：3卷各 validate --full 22/22+check25 PASS、cross-batch 0冲突、双写字节一致。",
-    "v144 (2026-06-25): +3 6下数学真题（共102题）：math_xsc_yantian_002(盐田2022北师大小升初,40)+math_xsc_longgang_002(龙岗2022北师大小升初素养,32)+math_qz_baoan_001(宝安松岗二小22-23期中,30)，index v144；存疑：qz_baoan_001 q22①官方答案3疑漏算首项3/8（worker采3⅜，已在explanation注明）、q24锚点提示不一致(round仍取2)；跳过：qz_baoan_001 q23方格纸平移/对称/旋转作图题(app无作图输入)。语文6下已全部扫完：剩余6份docx均为答案-only(题面为PDF,docx-only管线不可入)或重复印件(华一实验22-23期中=已入qz_baoan_001语文、深圳2021小升初=已入xsc_shenzhen_001)，无可入库新docx。"
+    "v144 (2026-06-25): +3 6下数学真题（共102题）：math_xsc_yantian_002(盐田2022北师大小升初,40)+math_xsc_longgang_002(龙岗2022北师大小升初素养,32)+math_qz_baoan_001(宝安松岗二小22-23期中,30)，index v144；存疑：qz_baoan_001 q22①官方答案3疑漏算首项3/8（worker采3⅜，已在explanation注明）、q24锚点提示不一致(round仍取2)；跳过：qz_baoan_001 q23方格纸平移/对称/旋转作图题(app无作图输入)。语文6下已全部扫完：剩余6份docx均为答案-only(题面为PDF,docx-only管线不可入)或重复印件(华一实验22-23期中=已入qz_baoan_001语文、深圳2021小升初=已入xsc_shenzhen_001)，无可入库新docx。",
+    "v145 (2026-06-25): +3 6下数学小升初真题（共87题）：math_xsc_baoan_002(宝安2020北师大小升初,29)+math_xsc_pingshan_001(坪山2022北师大小升初,32)+math_xsc_longhua_001(龙华2023北师大小升初,26)，index v145。存疑：baoan_002 q27官方答案末行「加水200克」与解题过程「100克」自相矛盾(worker采100克,explanation注明,系官方笔误)、q21第3空官方分析「13」与统计图16人矛盾(采20%不变)。跳过：baoan_002 q16口算/q26用电量表(题面信息丢失,禁反推)、q19/q20作图题；pingshan_001 q22/q28/q29/q30(题面算式仅位图丢失,禁反推)、q31作图/q32连线；longhua_001 q1计算/q2解方程(题面算式题目区缺失,禁反推)。更正v144记录：6下语文并未扫完——尚余7套「小升初分题型分层汇编(01/02/03/07/08/10)」+「现代文阅读特训卷(二)」，均含完整题面+答案可入库(此前漏统计,非答案-only/重复印件)。"
   ]
 }
