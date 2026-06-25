@@ -1,5 +1,5 @@
 {
-  "version": 146,
+  "version": 147,
   "updated_at": "2026-06-25",
   "batches": [
     {
@@ -753,6 +753,30 @@
       "grade": 6,
       "count": 28,
       "batch_hash": "eab6a5b853b41afdb5a7ca0e81aeb58996956805"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qz_baoan_003",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qz_baoan_003.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 27,
+      "batch_hash": "25588e461e55ba3a8e656debe9da9d499ceb216f"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qz_luohu_003",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qz_luohu_003.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 29,
+      "batch_hash": "1132ad025aeda14b346af23ae8502cf751c0234f"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_xsc_baoan_003",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_xsc_baoan_003.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 41,
+      "batch_hash": "838ae772614c65a879a3e22f19640d8222411ecf"
     }
   ],
   "_changelog": [
@@ -1015,6 +1039,7 @@
     "v143 (2026-06-25): +3 6下数学期末真题（共82题）：math_qm_luohu_005(罗湖21-22期末模拟测试,27)+math_qm_luohu_006(罗湖21-22期末综合素养阳光评价,26)+math_qm_longhua_004(龙华万安学校21-22期末命题比赛·人教版,29)，index v143；存疑：luohu_006 q19(1)官方238疑笔误(worker采23.7,23.7×(1.8−0.8)=23.7,官方解析自相矛盾)；跳过：luohu_006 21(2)(3)(4)画图操作题(app无作图输入)、longhua_004 Q14(2)两分数操作数文字层全丢不可救。校验：3卷各 validate --full 22/22+check25 PASS、cross-batch 0冲突、双写字节一致。",
     "v144 (2026-06-25): +3 6下数学真题（共102题）：math_xsc_yantian_002(盐田2022北师大小升初,40)+math_xsc_longgang_002(龙岗2022北师大小升初素养,32)+math_qz_baoan_001(宝安松岗二小22-23期中,30)，index v144；存疑：qz_baoan_001 q22①官方答案3疑漏算首项3/8（worker采3⅜，已在explanation注明）、q24锚点提示不一致(round仍取2)；跳过：qz_baoan_001 q23方格纸平移/对称/旋转作图题(app无作图输入)。语文6下已全部扫完：剩余6份docx均为答案-only(题面为PDF,docx-only管线不可入)或重复印件(华一实验22-23期中=已入qz_baoan_001语文、深圳2021小升初=已入xsc_shenzhen_001)，无可入库新docx。",
     "v145 (2026-06-25): +3 6下数学小升初真题（共87题）：math_xsc_baoan_002(宝安2020北师大小升初,29)+math_xsc_pingshan_001(坪山2022北师大小升初,32)+math_xsc_longhua_001(龙华2023北师大小升初,26)，index v145。存疑：baoan_002 q27官方答案末行「加水200克」与解题过程「100克」自相矛盾(worker采100克,explanation注明,系官方笔误)、q21第3空官方分析「13」与统计图16人矛盾(采20%不变)。跳过：baoan_002 q16口算/q26用电量表(题面信息丢失,禁反推)、q19/q20作图题；pingshan_001 q22/q28/q29/q30(题面算式仅位图丢失,禁反推)、q31作图/q32连线；longhua_001 q1计算/q2解方程(题面算式题目区缺失,禁反推)。更正v144记录：6下语文并未扫完——尚余7套「小升初分题型分层汇编(01/02/03/07/08/10)」+「现代文阅读特训卷(二)」，均含完整题面+答案可入库(此前漏统计,非答案-only/重复印件)。",
-    "v146 (2026-06-25): +3 6下数学期中真题（共82题）：math_qz_baoan_002(宝安华一实验22-23期中,27)+math_qz_longhua_002(龙华中心小学21-22学科素养期中,27)+math_qz_longhua_003(龙华万科双语23-24期中,28)，index v146。存疑：longhua_002 Q8比例尺官方『1∶20』系笔误(图上8cm∶实际0.4cm=20∶1放大比例尺，官方解析末行自己也算出20∶1，采20∶1)、Q24(3)圆锥倒水官方把底面直径3分米误当半径(采半径1.5，水深0.9375分米而非官方3.75)；baoan_002 q16(8)等多处分数答案官方区为WMF图丢失(非分歧，按worker推理补全，如q16(8)=9/64)、q21官方仅给速度已补全实际距离。跳过3条：baoan_002 q20平移/旋转/轴对称作图、longhua_002 Q23鸵鸟距离-时间表(题面表格文字层与图均缺失,禁反推,info_lost_irrecoverable)；longhua_003 0跳过0存疑。三卷均精品解析版自带官方答案，题面分数/算式多为WMF内嵌图(文字层空白)，extract首轮并发转PNG部分失败、经soffice逐张重转+Vision Read全还原LaTeX。校验：3卷各 validate --full 自动检22/22+check25 PASS、cross-batch 0冲突(90 batch)、双写字节一致；R33图绑定双验/R34 sha1实算/R35抽样均通过。已知非阻断改进建议：extract_docx.py 对失败WMF加单张重试兜底；位图算式短题面的 _raw_excerpt 口径待 skill 明确。"
+    "v146 (2026-06-25): +3 6下数学期中真题（共82题）：math_qz_baoan_002(宝安华一实验22-23期中,27)+math_qz_longhua_002(龙华中心小学21-22学科素养期中,27)+math_qz_longhua_003(龙华万科双语23-24期中,28)，index v146。存疑：longhua_002 Q8比例尺官方『1∶20』系笔误(图上8cm∶实际0.4cm=20∶1放大比例尺，官方解析末行自己也算出20∶1，采20∶1)、Q24(3)圆锥倒水官方把底面直径3分米误当半径(采半径1.5，水深0.9375分米而非官方3.75)；baoan_002 q16(8)等多处分数答案官方区为WMF图丢失(非分歧，按worker推理补全，如q16(8)=9/64)、q21官方仅给速度已补全实际距离。跳过3条：baoan_002 q20平移/旋转/轴对称作图、longhua_002 Q23鸵鸟距离-时间表(题面表格文字层与图均缺失,禁反推,info_lost_irrecoverable)；longhua_003 0跳过0存疑。三卷均精品解析版自带官方答案，题面分数/算式多为WMF内嵌图(文字层空白)，extract首轮并发转PNG部分失败、经soffice逐张重转+Vision Read全还原LaTeX。校验：3卷各 validate --full 自动检22/22+check25 PASS、cross-batch 0冲突(90 batch)、双写字节一致；R33图绑定双验/R34 sha1实算/R35抽样均通过。已知非阻断改进建议：extract_docx.py 对失败WMF加单张重试兜底；位图算式短题面的 _raw_excerpt 口径待 skill 明确。",
+    "v147 (2026-06-25): +3 6下数学真题（共97题）：math_qz_baoan_003(宝安振兴学校22-23期中素养练习,27)+math_qz_luohu_003(罗湖2024-2025期中测试,29)+math_xsc_baoan_003(宝安海旺学校等2025小升初模拟,41)，index v147。存疑：qz_baoan_003 q1(15:x=0.11:11/3还原疑失真,采官方6.05)、q7(官方B,worker推C更合反比例)、q22_3(陀螺628÷πr²官方似漏乘⅓,采官方8cm)；qz_luohu_003 q21(1)比例式WMF还原方向不确定(按解析自洽还原x=8/3)；均已在explanation注明。跳过：qz_baoan_003 四.1(2)(3)旋转/缩小作图(app无作图输入)、qz_luohu_003 q18正反比例填表(WMF表格不可还原)。语文6下已全部扫完(剩余均为PDF题面或重复印件)；数学剩余约8份均为押题/模拟/汇编类。"
   ]
 }
