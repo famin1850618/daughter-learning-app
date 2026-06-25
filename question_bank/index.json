@@ -1,5 +1,5 @@
 {
-  "version": 148,
+  "version": 149,
   "updated_at": "2026-06-26",
   "batches": [
     {
@@ -785,9 +785,29 @@
       "grade": 6,
       "count": 26,
       "batch_hash": "7246d7cc4a6237792ada13aa4b838e6f1abf3e84"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_qz_longhua_005",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_qz_longhua_005.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 30,
+      "batch_hash": "273a379f9a80ae803410596d080e76dfc49e59d9"
+    },
+    {
+      "source": "realpaper_g6_math_beishida_xsc_baoan_004",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g6_math_beishida_xsc_baoan_004.json",
+      "subject": "math",
+      "grade": 6,
+      "count": 31,
+      "batch_hash": "533b0a784408670a08391e4032395f014a85c7c1"
     }
   ],
   "_changelog": [
+    {
+      "version": 149,
+      "note": "v149 (2026-06-26): +2 6下数学真题（共61题）：qz_longhua_005(龙华区2020-2021期中,30)+xsc_baoan_004(2022宝安区小升初,31)。两份均为单场真实考试(区期中/小升初真题),经核为既有batch未覆盖之新卷(已扫龙华期中仅21-22/23-24/24-25;已扫宝安小升初仅2020/2023/2025)。validate --full 各22/22+check25 PASS+cross-batch 0(96batch)+双写字节一致+sha1真实。跳过纯作图题:longhua_005 Q19(缩小+旋转作图)、baoan_004 q24/q25(2)/q26(2)/q31(1)。答案存疑(采worker推理+explanation注明):baoan_004 q30(官方疑直径当半径误算,采半径10cm→长15.7容积12.56)、q28(分数位图丢失据方程结构反推1/4·1/5,最终600与官方一致)。本轮经exam-identity复核确认:语文6下已扫尽;数学剩余仅押题/模拟/预测/冲刺/分班/汇编类publisher合成卷+答案-only/重复印件,待Famin定是否纳入。"
+    },
     {
       "version": 148,
       "note": "v148 (2026-06-26): +1 6下数学真题（26题）：math_qz_longhua_004(龙华2024-2025期中学科素养测试,26)。本轮3份worker入库后去重：xsc_shenzhen_003(深圳2021小升初语文)=既有xsc_shenzhen_001逐字重复、qz_luohu_004(罗湖2023-2024期中)=既有qz_luohu_002同卷(68%逐字重合)，两份判为跨文件夹/跨版本重复已丢弃，仅留龙华学科素养1份真新卷。跳过：q17/q18纯作图题(app无作图输入)。无答案存疑。campaign状态：6下语文已全扫完；数学真实单场考试卷已基本扫尽，剩余均为押题/模拟/汇编类(待Famin决定)或仅答案PDF件(不可扫)。"
@@ -1041,6 +1061,7 @@
     }
   ],
   "changelog": [
+    "v149 (2026-06-26): +2 6下数学真题 qz_longhua_005(龙华20-21期中,30)+xsc_baoan_004(2022宝安小升初,31)=61题",
     "v136 (2026-06-23): +3 6下数学期中真题 nanshan_001(38)+pingshan_001(32)+longgang_001(29)=99题",
     "v137 (2026-06-24): +3 6下数学真题 guangming_003期末(32)+shenzhen_qz期中(23)+luohu_002期末复习(26)=81题",
     "v138 (2026-06-24): +3 6下数学真题 luohu_003期末(26)+longgang_002期中(34)+longhua_001期中(26)=86题；均解析版/答案docx自带官方答案；答案存疑1（luohu填空第2题官方答案与题面/内嵌图三方矛盾、信息不可救已_skipped_for_future）",
