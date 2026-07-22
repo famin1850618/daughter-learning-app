@@ -8,6 +8,7 @@ plugins {
 android {
     namespace = "com.famin.daughter_learning_app"
     compileSdk = flutter.compileSdkVersion
+    ndkVersion = "28.2.13676358"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17

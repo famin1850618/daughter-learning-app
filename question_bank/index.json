@@ -1,6 +1,6 @@
 {
-  "version": 152,
-  "updated_at": "2026-07-22",
+  "version": 153,
+  "updated_at": "2026-07-23",
   "batches": [
     {
       "source": "batch_2026_05_07_g6_english_pet_r1",
@@ -807,35 +807,40 @@
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_chinese_renjiao_qm_luohu_001.json",
       "subject": "chinese",
       "grade": 7,
-      "count": 8,
-      "batch_hash": "7ccc5c9d3fa95481d0592e002d31f16bb62ea371"
+      "count": 22,
+      "batch_hash": "cd7af91b4834780cbb82b4da1cb5ab3bc33d4981"
     },
     {
       "source": "realpaper_g7_chinese_renjiao_qz_shenzhen48_001",
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_chinese_renjiao_qz_shenzhen48_001.json",
       "subject": "chinese",
       "grade": 7,
-      "count": 17,
-      "batch_hash": "07a0e8abd72c723d428bf6f33f31b22c18fa9f82"
+      "count": 24,
+      "batch_hash": "3c3d0d64f78e27d46af81ecb69fee4b671cafcb9"
     },
     {
       "source": "realpaper_g7_math_beishida_qm_shenzhong_001",
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_shenzhong_001.json",
       "subject": "math",
       "grade": 7,
-      "count": 4,
-      "batch_hash": "9729833d581036f9b1e2c95adfc20ee0d86d4f33"
+      "count": 23,
+      "batch_hash": "139a66a0264d7a9d416474bf765b137dfd98b9ca"
     },
     {
       "source": "realpaper_g7_math_beishida_qz_yantian_001",
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qz_yantian_001.json",
       "subject": "math",
       "grade": 7,
-      "count": 6,
-      "batch_hash": "c009e573c8c264670a7f4f8ece944d3eef4a5db2"
+      "count": 20,
+      "batch_hash": "2982a341162c9119d900c294ece9bd528883ab3a"
     }
   ],
   "_changelog": [
+    {
+      "version": 153,
+      "date": "2026-07-23",
+      "note": "v153 (2026-07-23): 完整补齐 4 套七年级深圳真题至 89 题：realpaper_g7_math_beishida_qz_yantian_001(盐田七上期中,20)+realpaper_g7_math_beishida_qm_shenzhong_001(深圳中学七下期末,23)+realpaper_g7_chinese_renjiao_qz_shenzhen48_001(深圳48校七上期中,24)+realpaper_g7_chinese_renjiao_qm_luohu_001(罗湖七下期末,22)。数学公式统一 TeX 化，几何/三视图等图形题使用原卷嵌图 image_data；语文阅读组题补共同材料追溯。四批 validate --full 自动项 22/22 PASS，cross-batch/group-chapter/image-content-match PASS。"
+    },
     {
       "version": 152,
       "date": "2026-07-22",
@@ -1098,6 +1103,7 @@
     }
   ],
   "changelog": [
+    "v153 (2026-07-23): 完整补齐4套七年级深圳真题共89题：盐田七上期中数学20、深圳中学七下期末数学23、深圳48校七上期中语文24、罗湖七下期末语文22；数学公式TeX化，几何图形保留原卷嵌图。",
     "v152 (2026-07-22): +4 七年级真题试入库（共35题）：math_qz_yantian_001(6)+math_qm_shenzhong_001(4)+chinese_qz_shenzhen48_001(17)+chinese_qm_luohu_001(8)；盐田数学 q12/q16/q18 使用 docx 内嵌原图 image_data，公式解释用 TeX。",
     "v149 (2026-06-26): +2 6下数学真题 qz_longhua_005(龙华20-21期中,30)+xsc_baoan_004(2022宝安小升初,31)=61题",
     "v136 (2026-06-23): +3 6下数学期中真题 nanshan_001(38)+pingshan_001(32)+longgang_001(29)=99题",

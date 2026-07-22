@@ -1,6 +1,6 @@
 # Daughter Learning App Status
 
-Last updated: 2026-07-22
+Last updated: 2026-07-23
 
 ## Rollback Origin
 
@@ -17,10 +17,10 @@ Do not modify the rollback origin. Future app iterations should keep the newest 
 
 ## Current Iteration
 
-- Version: `3.37.0+73`
-- Main change: in-app overdue-plan reminder and rollover into today's best-fit plan container.
-- Debug APK: `/mnt/d/AI_Workspace/Planning/planning_v3_37_0_debug.apk`
-- APK SHA256: `db0dad2f282ef84b63b7747c09027f10ac70184a6f309f4a3e6b31bca32e12c2`
+- Version: `3.38.0+74`
+- Main change: in-app question/option images can be opened full-screen and pinch-zoomed; overdue-plan reminder/rollover and embedded AI keys are retained.
+- Debug APK: `/mnt/d/AI_Workspace/Planning/planning_v3_38_0_debug.apk`
+- APK SHA256: `36d80fcfa6f7dfdd63ee37034d5ec7409ee42059a860f319dd4b4063938135d6`
 - API keys: this APK embeds the DeepSeek grading key and Qwen handwriting/OCR key from the Planning key files.
 - Keyed build command: `tools/build_debug_with_embedded_keys.sh`
 
@@ -51,25 +51,27 @@ For future debug APKs, use `tools/build_debug_with_embedded_keys.sh` rather than
 
 ## Question Bank
 
-Current `question_bank/index.json` version: 152.
+Current `question_bank/index.json` version: 153.
 
 - Batch entries: 104
-- Total questions: 3730
-- By subject from index: math 1962, chinese 968, english 800
-- By type from parsed question JSON: choice 1710, fill 1210, subjective 708, judgment 102
-- With images: 704
+- Total questions: 3784
+- By subject from index: math 1995, chinese 989, english 800
+- By type from parsed question JSON: choice 1724, fill 1231, subjective 727, judgment 102
+- With images: 727
 - With audio: 95
 
 Real-paper scanning for grade 6 Chinese and math is effectively complete for the selected true-exam campaign. Remaining source docs in `scan_skip.txt` are mainly duplicates, answer-only files, topical compilations, or mock/prediction papers held out by decision.
 
-Grade 7 Shenzhen wave 1 was imported on 2026-07-21:
+Grade 7 Shenzhen wave 1 is complete as of 2026-07-23:
 
-- `realpaper_g7_math_beishida_qz_yantian_001`: 盐田区 2024-2025 七上期中数学, 6 questions. Questions 12, 16, and 18 are geometry/original-image trials using docx embedded images as `image_data`, `_image_verified=true`; formulas in explanations are written in TeX. Question 16 is a pure drawing `subjective` item. Question 18 imports only subquestion (1); subquestion (2) remains skipped because key known conditions and numeric answers are missing in the text layer.
-- `realpaper_g7_math_beishida_qm_shenzhong_001`: 深圳中学 2024-2025 七下期末数学, 4 conservative text-only questions.
-- `realpaper_g7_chinese_renjiao_qz_shenzhen48_001`: 深圳48校联考 2023-2024 七上期中语文, 17 questions.
-- `realpaper_g7_chinese_renjiao_qm_luohu_001`: 罗湖区 2024-2025 七下期末语文, 8 questions.
+- `realpaper_g7_math_beishida_qz_yantian_001`: 盐田区 2024-2025 七上期中数学, 20 questions.
+- `realpaper_g7_math_beishida_qm_shenzhong_001`: 深圳中学 2024-2025 七下期末数学, 23 questions.
+- `realpaper_g7_chinese_renjiao_qz_shenzhen48_001`: 深圳48校联考 2023-2024 七上期中语文, 24 questions.
+- `realpaper_g7_chinese_renjiao_qm_luohu_001`: 罗湖区 2024-2025 七下期末语文, 22 questions.
 
-The four G7 batches are double-written to `question_bank/` and `assets/data/batches/`, registered in `question_bank/index.json`, and pass the realpaper full validator plus cross-batch/material/common-prefix/group-chapter checks. Formula and geometry image handling is standardized in `docs/realpaper_formula_geometry_image_policy.md`. The two math papers have many formulas, options, tables, and figures stored as WMF/PNG with missing text layer; skipped math questions should be revisited only after formula/image recognition and visual verification.
+The four G7 batches are double-written to `question_bank/` and `assets/data/batches/`, registered in `question_bank/index.json`, and pass `validate.py --full` automatic checks 22/22 for each batch plus cross-batch, group-chapter, and image-content-match checks. Formula and geometry image handling is standardized in `docs/realpaper_formula_geometry_image_policy.md`: formulas are stored as TeX, while geometry/figure-heavy questions use original docx images as `image_data` after visual verification.
+
+The new G7 batches pass the focused app-import schema check. The full historical schema check still fails on older G6 batches where `_ai_dispute` is stored as a string instead of a dict/null; that is pre-existing metadata debt and not caused by this G7 import.
 
 ## Known Risks
 

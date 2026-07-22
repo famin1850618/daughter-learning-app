@@ -109,7 +109,8 @@ class _SelectionScreenState extends State<_SelectionScreen> {
       });
     }
     if (_subject != null) {
-      final chapters = await _currDao.getChapters(_subject!.displayName, _grade);
+      final chapters =
+          await _currDao.getChapters(_subject!.displayName, _grade);
       if (mounted) setState(() => _chapters = chapters);
     }
     _refreshCount();
@@ -124,13 +125,22 @@ class _SelectionScreenState extends State<_SelectionScreen> {
   }
 
   Future<void> _onGradeChanged(int g) async {
-    setState(() { _grade = g; _subject = null; _chapter = null; _chapters = []; });
+    setState(() {
+      _grade = g;
+      _subject = null;
+      _chapter = null;
+      _chapters = [];
+    });
     _saveSelection();
     _refreshCount();
   }
 
   Future<void> _onSubjectChanged(Subject? s) async {
-    setState(() { _subject = s; _chapter = null; _chapters = []; });
+    setState(() {
+      _subject = s;
+      _chapter = null;
+      _chapters = [];
+    });
     if (s != null) {
       final chapters = await _currDao.getChapters(s.displayName, _grade);
       setState(() => _chapters = chapters);
@@ -140,7 +150,10 @@ class _SelectionScreenState extends State<_SelectionScreen> {
   }
 
   Future<void> _refreshCount() async {
-    if (_subject == null) { setState(() => _totalAvailable = 0); return; }
+    if (_subject == null) {
+      setState(() => _totalAvailable = 0);
+      return;
+    }
     // V3.24.5: 改用 SELECT COUNT(*) 替代 RANDOM() LIMIT 999 + .length
     // 修跳变 bug：之前每次切 chip 都跑随机抽样导致 ±3 浮动；新法稳定。
     final settings = context.read<DifficultySettingsService>();
@@ -171,12 +184,12 @@ class _SelectionScreenState extends State<_SelectionScreen> {
   Future<void> _start() async {
     if (_subject == null) return;
     await context.read<PracticeService>().startSession(
-      subject: _subject!,
-      grade: _grade,
-      chapter: _chapter,
-      type: _type,
-      count: _count,
-    );
+          subject: _subject!,
+          grade: _grade,
+          chapter: _chapter,
+          type: _type,
+          count: _count,
+        );
   }
 
   Widget _chips<T>({
@@ -188,7 +201,9 @@ class _SelectionScreenState extends State<_SelectionScreen> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(label, style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 13, color: Colors.grey)),
+        Text(label,
+            style: const TextStyle(
+                fontWeight: FontWeight.w600, fontSize: 13, color: Colors.grey)),
         const SizedBox(height: 6),
         Wrap(
           spacing: 8,
@@ -197,7 +212,10 @@ class _SelectionScreenState extends State<_SelectionScreen> {
             return ChoiceChip(
               label: Text(o.$2),
               selected: isSelected,
-              onSelected: (_) { onSelect(o.$1); _refreshCount(); },
+              onSelected: (_) {
+                onSelect(o.$1);
+                _refreshCount();
+              },
               selectedColor: AppTheme.primary,
               labelStyle: TextStyle(
                 color: isSelected ? Colors.white : Colors.black87,
@@ -213,7 +231,8 @@ class _SelectionScreenState extends State<_SelectionScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final availableSubjects = Subject.values.where((s) => s.isAvailableForGrade(_grade)).toList();
+    final availableSubjects =
+        Subject.values.where((s) => s.isAvailableForGrade(_grade)).toList();
     return Scaffold(
       appBar: AppBar(
         title: const Text('模拟练习'),
@@ -227,16 +246,21 @@ class _SelectionScreenState extends State<_SelectionScreen> {
             icon: const Icon(Icons.refresh, size: 18),
             label: const Text('针对薄弱点练习'),
             onPressed: () async {
-              final applyDiff = context.read<DifficultySettingsService>().applyToReviewSimilar;
+              final applyDiff = context
+                  .read<DifficultySettingsService>()
+                  .applyToReviewSimilar;
               // V3.33: 按当前选定科目（未选则全科兜底）
-              await context.read<PracticeService>().startAggregatedReviewSession(
-                  applyDifficulty: applyDiff, subject: _subject);
+              await context
+                  .read<PracticeService>()
+                  .startAggregatedReviewSession(
+                      applyDifficulty: applyDiff, subject: _subject);
               if (!context.mounted) return;
               if (context.read<PracticeService>().currentQuestions.isEmpty) {
                 ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(content: Text(_subject == null
-                      ? '暂无薄弱知识点（继续保持！）'
-                      : '${_subject!.displayName}暂无薄弱知识点（继续保持！）')),
+                  SnackBar(
+                      content: Text(_subject == null
+                          ? '暂无薄弱知识点（继续保持！）'
+                          : '${_subject!.displayName}暂无薄弱知识点（继续保持！）')),
                 );
               }
             },
@@ -254,7 +278,10 @@ class _SelectionScreenState extends State<_SelectionScreen> {
           // 科目
           _chips<Subject>(
             label: '科目',
-            options: [(null, '全部'), ...availableSubjects.map((s) => (s, s.displayName))],
+            options: [
+              (null, '全部'),
+              ...availableSubjects.map((s) => (s, s.displayName))
+            ],
             selected: _subject,
             onSelect: _onSubjectChanged,
           ),
@@ -264,23 +291,32 @@ class _SelectionScreenState extends State<_SelectionScreen> {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text('章节', style: TextStyle(fontWeight: FontWeight.w600, fontSize: 13, color: Colors.grey)),
+                const Text('章节',
+                    style: TextStyle(
+                        fontWeight: FontWeight.w600,
+                        fontSize: 13,
+                        color: Colors.grey)),
                 const SizedBox(height: 6),
                 DropdownButtonFormField<String>(
                   value: _chapter,
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
-                    contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                    contentPadding:
+                        EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                     hintText: '全部章节',
                   ),
                   items: [
                     const DropdownMenuItem(value: null, child: Text('全部章节')),
                     ..._chapters.map((c) => DropdownMenuItem(
                           value: c.chapterName,
-                          child: Text(c.chapterName, overflow: TextOverflow.ellipsis),
+                          child: Text(c.chapterName,
+                              overflow: TextOverflow.ellipsis),
                         )),
                   ],
-                  onChanged: (v) { setState(() => _chapter = v); _refreshCount(); },
+                  onChanged: (v) {
+                    setState(() => _chapter = v);
+                    _refreshCount();
+                  },
                 ),
                 const SizedBox(height: 12),
               ],
@@ -289,7 +325,10 @@ class _SelectionScreenState extends State<_SelectionScreen> {
           // 题型
           _chips<QuestionType>(
             label: '题型',
-            options: [(null, '全部'), ...QuestionType.values.map((t) => (t, t.label))],
+            options: [
+              (null, '全部'),
+              ...QuestionType.values.map((t) => (t, t.label))
+            ],
             selected: _type,
             onSelect: (t) => setState(() => _type = t),
           ),
@@ -327,7 +366,8 @@ class _SelectionScreenState extends State<_SelectionScreen> {
             child: ElevatedButton.icon(
               icon: const Icon(Icons.play_arrow),
               label: const Text('开始练习', style: TextStyle(fontSize: 16)),
-              onPressed: (_subject != null && _totalAvailable > 0) ? _start : null,
+              onPressed:
+                  (_subject != null && _totalAvailable > 0) ? _start : null,
             ),
           ),
         ],
@@ -348,17 +388,22 @@ class _QuestionScreenState extends State<_QuestionScreen> {
   String? _selectedOption;
   bool? _result;
   final _answerCtrl = TextEditingController();
+
   /// V3.25: 多空题逐空输入框（answer_blanks≥2 时一空一框），消灭"单框多空数量对不上即判0"
   final List<TextEditingController> _blankCtrls = [];
   Timer? _timer;
   int _seconds = 0;
+
   /// V3.8.3: 计时暂停（小孩走神/被打断时按）。仅 UI 层实现，重启后默认 resume
   bool _paused = false;
+
   /// V3.26: 提交中（AI 判分有 2-3s 延迟，期间禁重复提交 + 显示 loading）
   bool _submitting = false;
+
   /// V3.8.3: 该题在小孩历史中累计做过的次数（替代选项随机的"做过 N 次"标签）
   int _attemptCount = 0;
   int? _attemptCountForQid;
+
   /// V3.34: 手写作答（仅单空填空/计算题；需在设置开启手写识别）
   bool _visionEnabled = false;
   bool _handwriting = false;
@@ -492,7 +537,8 @@ class _QuestionScreenState extends State<_QuestionScreen> {
     final service = context.read<PracticeService>();
     final stashed = service.pendingAnswerFor(q);
     if (stashed == null || stashed.isEmpty) return;
-    if (q.type == QuestionType.multipleChoice || q.type == QuestionType.judgment) {
+    if (q.type == QuestionType.multipleChoice ||
+        q.type == QuestionType.judgment) {
       _selectedOption = stashed;
     } else if (_isMultiBlank) {
       final parts = stashed.split(AnswerMatcher.blankSep);
@@ -560,8 +606,8 @@ class _QuestionScreenState extends State<_QuestionScreen> {
       if (!mounted) return;
       if (png == null) {
         setState(() => _submitting = false);
-        ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('手写导出失败，请重写')));
+        ScaffoldMessenger.of(context)
+            .showSnackBar(const SnackBar(content: Text('手写导出失败，请重写')));
         return;
       }
       // V3.35: 证明题(非组合) → 后台异步批改，不阻塞孩子，可直接下一题
@@ -592,12 +638,13 @@ class _QuestionScreenState extends State<_QuestionScreen> {
         return;
       }
       // 其余手写(填空/计算/非证明主观) → 同步 OCR → 文字判分
-      final recognized = await VisionOcrService().recognize(png, hint: q.content);
+      final recognized =
+          await VisionOcrService().recognize(png, hint: q.content);
       if (!mounted) return;
       if (recognized == null || recognized.trim().isEmpty) {
         setState(() => _submitting = false);
-        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-            content: Text('手写识别失败，请重写或切回键盘输入')));
+        ScaffoldMessenger.of(context)
+            .showSnackBar(const SnackBar(content: Text('手写识别失败，请重写或切回键盘输入')));
         return;
       }
       answer = recognized.trim();
@@ -685,7 +732,9 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                 size: 28,
                 color: hasSubj
                     ? Colors.amber.shade800
-                    : (allCorrect ? Colors.green.shade700 : Colors.red.shade700),
+                    : (allCorrect
+                        ? Colors.green.shade700
+                        : Colors.red.shade700),
               ),
               const SizedBox(width: 10),
               Expanded(
@@ -698,7 +747,9 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                     fontWeight: FontWeight.bold,
                     color: hasSubj
                         ? Colors.amber.shade900
-                        : (allCorrect ? Colors.green.shade900 : Colors.red.shade900),
+                        : (allCorrect
+                            ? Colors.green.shade900
+                            : Colors.red.shade900),
                   ),
                 ),
               ),
@@ -717,7 +768,8 @@ class _QuestionScreenState extends State<_QuestionScreen> {
               color: r.isCorrect ? Colors.green.shade50 : Colors.red.shade50,
               borderRadius: BorderRadius.circular(8),
               border: Border.all(
-                color: r.isCorrect ? Colors.green.shade300 : Colors.red.shade300,
+                color:
+                    r.isCorrect ? Colors.green.shade300 : Colors.red.shade300,
               ),
             ),
             child: Column(
@@ -735,33 +787,44 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                       '小题 ${i + 1}',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        color: r.isCorrect ? Colors.green.shade800 : Colors.red.shade800,
+                        color: r.isCorrect
+                            ? Colors.green.shade800
+                            : Colors.red.shade800,
                       ),
                     ),
                   ],
                 ),
                 const SizedBox(height: 6),
-                MathText(r.question.content, style: const TextStyle(fontSize: 14)),
+                MathText(r.question.content,
+                    style: const TextStyle(fontSize: 14)),
                 const SizedBox(height: 6),
                 Row(children: [
-                  Text('你答：', style: TextStyle(fontSize: 13, color: Colors.grey[700])),
+                  Text('你答：',
+                      style: TextStyle(fontSize: 13, color: Colors.grey[700])),
                   Expanded(
                     child: MathText(
                         r.userAnswer.isEmpty
                             ? '（未填）'
-                            : r.userAnswer.replaceAll(AnswerMatcher.blankSep, '、'),
+                            : r.userAnswer
+                                .replaceAll(AnswerMatcher.blankSep, '、'),
                         style: TextStyle(
                             fontSize: 13,
-                            color: r.isCorrect ? Colors.green.shade700 : Colors.red.shade700)),
+                            color: r.isCorrect
+                                ? Colors.green.shade700
+                                : Colors.red.shade700)),
                   ),
                 ]),
-                if (!r.isCorrect && r.question.type != QuestionType.subjective) ...[
+                if (!r.isCorrect &&
+                    r.question.type != QuestionType.subjective) ...[
                   const SizedBox(height: 4),
                   Row(children: [
-                    Text('正解：', style: TextStyle(fontSize: 13, color: Colors.grey[700])),
+                    Text('正解：',
+                        style:
+                            TextStyle(fontSize: 13, color: Colors.grey[700])),
                     Expanded(
                       child: MathText(r.question.displayAnswer,
-                          style: TextStyle(fontSize: 13, color: Colors.green.shade700)),
+                          style: TextStyle(
+                              fontSize: 13, color: Colors.green.shade700)),
                     ),
                   ]),
                 ],
@@ -780,7 +843,8 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                         style: const TextStyle(fontSize: 12.5, height: 1.5)),
                   ),
                 ],
-                if (r.question.explanation != null && r.question.explanation!.isNotEmpty) ...[
+                if (r.question.explanation != null &&
+                    r.question.explanation!.isNotEmpty) ...[
                   const SizedBox(height: 6),
                   Container(
                     padding: const EdgeInsets.all(8),
@@ -793,7 +857,8 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                   ),
                 ],
                 // V3.24.8: 组合题每个错子题独立申诉入口（修盲区）
-                if (!r.isCorrect && r.question.type != QuestionType.subjective) ...[
+                if (!r.isCorrect &&
+                    r.question.type != QuestionType.subjective) ...[
                   const SizedBox(height: 8),
                   _InlineAppealButton(recordIdOverride: r.practiceRecordId),
                 ],
@@ -820,7 +885,8 @@ class _QuestionScreenState extends State<_QuestionScreen> {
   }
 
   /// V3.14: 组合题导航栏（上一题 / 下一题或完成整组）
-  Widget _buildGroupNavBar(BuildContext context, Question q, PracticeService service) {
+  Widget _buildGroupNavBar(
+      BuildContext context, Question q, PracticeService service) {
     final isLast = service.isLastInGroup;
     final isFirst = service.isFirstInGroup;
     final groupSize = service.currentGroupIndices().length;
@@ -846,7 +912,10 @@ class _QuestionScreenState extends State<_QuestionScreen> {
           ),
           child: Text(
             '$pos / $groupSize',
-            style: const TextStyle(fontSize: 13, color: Colors.deepPurple, fontWeight: FontWeight.bold),
+            style: const TextStyle(
+                fontSize: 13,
+                color: Colors.deepPurple,
+                fontWeight: FontWeight.bold),
           ),
         ),
         const SizedBox(width: 8),
@@ -889,7 +958,9 @@ class _QuestionScreenState extends State<_QuestionScreen> {
           // V3.8.3: 暂停按钮（仅未答完时可点）
           if (_result == null)
             IconButton(
-              icon: Icon(_paused ? Icons.play_circle_outline : Icons.pause_circle_outline),
+              icon: Icon(_paused
+                  ? Icons.play_circle_outline
+                  : Icons.pause_circle_outline),
               tooltip: _paused ? '恢复' : '暂停',
               onPressed: _togglePause,
             ),
@@ -907,7 +978,8 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                         onPressed: () => Navigator.pop(ctx, false),
                         child: const Text('继续')),
                     TextButton(
-                        style: TextButton.styleFrom(foregroundColor: Colors.red),
+                        style:
+                            TextButton.styleFrom(foregroundColor: Colors.red),
                         onPressed: () => Navigator.pop(ctx, true),
                         child: const Text('中止')),
                   ],
@@ -929,167 +1001,186 @@ class _QuestionScreenState extends State<_QuestionScreen> {
       ),
       body: Stack(children: [
         SingleChildScrollView(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            LinearProgressIndicator(
-              value: counter.total > 0 ? counter.position / counter.total : 0,
-              backgroundColor: Colors.grey[200],
-              color: AppTheme.primary,
-            ),
-            const SizedBox(height: 12),
-
-            // 元信息（V3.8.3: 不显示 KP 标签——KP 是答题后复盘维度，做题中暴露相当于给提示）
-            // V3.12.17: 加组合题进度标签（同 groupId 题数 ≥ 2 时显示），让用户感知"这是连续 N 题"
-            Row(children: [
-              _Tag(q.type.label, AppTheme.primary.withOpacity(0.15), AppTheme.primary),
-              if (q.round != null) ...[
-                const SizedBox(width: 6),
-                _Tag(_roundLabel(q.round!),
-                    _roundColor(q.round!).withOpacity(0.15), _roundColor(q.round!)),
-              ],
-              if (_attemptCount >= 2) ...[
-                const SizedBox(width: 6),
-                _Tag('📚 第 $_attemptCount 次',
-                    Colors.deepPurple.withOpacity(0.10), Colors.deepPurple),
-              ],
-              ..._groupTags(service.currentQuestions, q),
-            ]),
-
-            // V3.13 修正（Famin 反馈）: AI 争议题在抽题阶段已过滤（小孩抽不到），banner 删除
-
-            const SizedBox(height: 12),
-
-            // 听力题播放按钮（V3.12 多角色：按 audioText 中 "角色:文本" 行切 turn，
-            // 配合 question.speakers 切 voice/pitch；单角色独白走默认 profile）
-            if (q.audioText != null && q.audioText!.isNotEmpty)
-              _ListenButton(
-                audioText: q.audioText!,
-                speakers: q.speakers,
-                audioHash: q.audioHash,
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              LinearProgressIndicator(
+                value: counter.total > 0 ? counter.position / counter.total : 0,
+                backgroundColor: Colors.grey[200],
+                color: AppTheme.primary,
               ),
+              const SizedBox(height: 12),
 
-            // 题目附图
-            if (q.imageData != null && q.imageData!.isNotEmpty) ...[
-              const SizedBox(height: 8),
-              _QuestionImage(data: q.imageData!),
-              const SizedBox(height: 8),
-            ],
+              // 元信息（V3.8.3: 不显示 KP 标签——KP 是答题后复盘维度，做题中暴露相当于给提示）
+              // V3.12.17: 加组合题进度标签（同 groupId 题数 ≥ 2 时显示），让用户感知"这是连续 N 题"
+              Row(children: [
+                _Tag(q.type.label, AppTheme.primary.withOpacity(0.15),
+                    AppTheme.primary),
+                if (q.round != null) ...[
+                  const SizedBox(width: 6),
+                  _Tag(
+                      _roundLabel(q.round!),
+                      _roundColor(q.round!).withOpacity(0.15),
+                      _roundColor(q.round!)),
+                ],
+                if (_attemptCount >= 2) ...[
+                  const SizedBox(width: 6),
+                  _Tag('📚 第 $_attemptCount 次',
+                      Colors.deepPurple.withOpacity(0.10), Colors.deepPurple),
+                ],
+                ..._groupTags(service.currentQuestions, q),
+              ]),
 
-            // 题目内容
-            Container(
-              width: double.infinity,
-              padding: const EdgeInsets.all(14),
-              decoration: BoxDecoration(
-                color: Colors.grey[50],
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Colors.grey[200]!),
-              ),
-              child: MathText(q.content,
-                  style: const TextStyle(fontSize: 17, height: 1.6, fontWeight: FontWeight.w500)),
-            ),
-            const SizedBox(height: 16),
+              // V3.13 修正（Famin 反馈）: AI 争议题在抽题阶段已过滤（小孩抽不到），banner 删除
 
-            // V3.14: 组合题整组判分后显示整组结果（覆盖普通答题区）
-            if (q.groupId != null && service.lastGroupResult != null) ...[
-              _buildGroupResultView(context, service),
-            ]
-            // V3.35: 画图题自评面板（对照参考答案自己判）
-            else if (_selfEval) ...[
-              _buildSelfEvalPanel(q),
-            ]
-            // 答题区域（V3.8.3：废弃"查看提示"——explanation 是答题推导，相当于给答案）
-            else if (_result == null) ...[
-              _buildInputArea(q),
-              const SizedBox(height: 16),
-              // V3.14: 组合题里有"上一题/下一题"双按钮；非组合题单"提交"按钮
-              if (q.groupId != null) ...[
-                _buildGroupNavBar(context, q, service),
+              const SizedBox(height: 12),
+
+              // 听力题播放按钮（V3.12 多角色：按 audioText 中 "角色:文本" 行切 turn，
+              // 配合 question.speakers 切 voice/pitch；单角色独白走默认 profile）
+              if (q.audioText != null && q.audioText!.isNotEmpty)
+                _ListenButton(
+                  audioText: q.audioText!,
+                  speakers: q.speakers,
+                  audioHash: q.audioHash,
+                ),
+
+              // 题目附图
+              if (q.imageData != null && q.imageData!.isNotEmpty) ...[
                 const SizedBox(height: 8),
+                _QuestionImage(data: q.imageData!),
+                const SizedBox(height: 8),
+              ],
+
+              // 题目内容
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.all(14),
+                decoration: BoxDecoration(
+                  color: Colors.grey[50],
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.grey[200]!),
+                ),
+                child: MathText(q.content,
+                    style: const TextStyle(
+                        fontSize: 17,
+                        height: 1.6,
+                        fontWeight: FontWeight.w500)),
+              ),
+              const SizedBox(height: 16),
+
+              // V3.14: 组合题整组判分后显示整组结果（覆盖普通答题区）
+              if (q.groupId != null && service.lastGroupResult != null) ...[
+                _buildGroupResultView(context, service),
+              ]
+              // V3.35: 画图题自评面板（对照参考答案自己判）
+              else if (_selfEval) ...[
+                _buildSelfEvalPanel(q),
+              ]
+              // 答题区域（V3.8.3：废弃"查看提示"——explanation 是答题推导，相当于给答案）
+              else if (_result == null) ...[
+                _buildInputArea(q),
+                const SizedBox(height: 16),
+                // V3.14: 组合题里有"上一题/下一题"双按钮；非组合题单"提交"按钮
+                if (q.groupId != null) ...[
+                  _buildGroupNavBar(context, q, service),
+                  const SizedBox(height: 8),
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                      color: Colors.blue.shade50,
+                      borderRadius: BorderRadius.circular(6),
+                    ),
+                    child: Row(
+                      children: [
+                        Icon(Icons.info_outline,
+                            size: 16, color: Colors.blue.shade700),
+                        const SizedBox(width: 6),
+                        Expanded(
+                          child: Text(
+                            '组合题：做完所有小题统一判分（全对才算对）。可上下翻页修改答案。',
+                            style: TextStyle(
+                                color: Colors.blue.shade700, fontSize: 12),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ] else
+                  SizedBox(
+                    width: double.infinity,
+                    height: 46,
+                    child: ElevatedButton(
+                      onPressed: _canSubmit(q) && !_submitting ? _submit : null,
+                      child: _submitting
+                          ? const SizedBox(
+                              height: 18,
+                              width: 18,
+                              child: CircularProgressIndicator(
+                                  strokeWidth: 2, color: Colors.white))
+                          : const Text('提交答案', style: TextStyle(fontSize: 16)),
+                    ),
+                  ),
+              ],
+
+              // V3.35: 证明题已交后台批改 → 显"批改中"，不显对错
+              if (_proofSubmitted) ...[
                 Container(
-                  padding: const EdgeInsets.all(8),
+                  padding: const EdgeInsets.all(14),
                   decoration: BoxDecoration(
                     color: Colors.blue.shade50,
-                    borderRadius: BorderRadius.circular(6),
+                    borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Row(
-                    children: [
-                      Icon(Icons.info_outline, size: 16, color: Colors.blue.shade700),
-                      const SizedBox(width: 6),
-                      Expanded(
-                        child: Text(
-                          '组合题：做完所有小题统一判分（全对才算对）。可上下翻页修改答案。',
-                          style: TextStyle(color: Colors.blue.shade700, fontSize: 12),
-                        ),
-                      ),
-                    ],
-                  ),
+                  child: Row(children: [
+                    const Icon(Icons.hourglass_top, color: Colors.blue),
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: Text(
+                          '已提交，AI 正在后台批改证明（约半分钟）。\n可直接做下一题，结果稍后在「留痕」里看。',
+                          style: TextStyle(
+                              fontSize: 14, color: Colors.blue.shade900)),
+                    ),
+                  ]),
                 ),
-              ] else
+                const SizedBox(height: 16),
                 SizedBox(
                   width: double.infinity,
                   height: 46,
                   child: ElevatedButton(
-                    onPressed: _canSubmit(q) && !_submitting ? _submit : null,
-                    child: _submitting
-                        ? const SizedBox(
-                            height: 18,
-                            width: 18,
-                            child: CircularProgressIndicator(
-                                strokeWidth: 2, color: Colors.white))
-                        : const Text('提交答案', style: TextStyle(fontSize: 16)),
+                    onPressed: () =>
+                        context.read<PracticeService>().nextQuestion(),
+                    child: Text(service.currentIndex <
+                            service.currentQuestions.length - 1
+                        ? '下一题'
+                        : '查看结果'),
                   ),
                 ),
-            ],
-
-            // V3.35: 证明题已交后台批改 → 显"批改中"，不显对错
-            if (_proofSubmitted) ...[
-              Container(
-                padding: const EdgeInsets.all(14),
-                decoration: BoxDecoration(
-                  color: Colors.blue.shade50,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Row(children: [
-                  const Icon(Icons.hourglass_top, color: Colors.blue),
-                  const SizedBox(width: 10),
-                  Expanded(
-                    child: Text('已提交，AI 正在后台批改证明（约半分钟）。\n可直接做下一题，结果稍后在「留痕」里看。',
-                        style: TextStyle(fontSize: 14, color: Colors.blue.shade900)),
+              ]
+              // 结果反馈（V3.8.2：选择题答完保留选项可见，标正解 + 用户错选）
+              else if (_result != null) ...[
+                if (q.type == QuestionType.multipleChoice &&
+                    q.options != null) ...[
+                  _buildAnsweredOptions(q),
+                  const SizedBox(height: 12),
+                ],
+                _buildResult(q, _result!),
+                const SizedBox(height: 16),
+                SizedBox(
+                  width: double.infinity,
+                  height: 46,
+                  child: ElevatedButton(
+                    onPressed: () =>
+                        context.read<PracticeService>().nextQuestion(),
+                    child: Text(service.currentIndex <
+                            service.currentQuestions.length - 1
+                        ? '下一题'
+                        : '查看结果'),
                   ),
-                ]),
-              ),
-              const SizedBox(height: 16),
-              SizedBox(
-                width: double.infinity,
-                height: 46,
-                child: ElevatedButton(
-                  onPressed: () => context.read<PracticeService>().nextQuestion(),
-                  child: Text(service.currentIndex < service.currentQuestions.length - 1 ? '下一题' : '查看结果'),
                 ),
-              ),
-            ]
-            // 结果反馈（V3.8.2：选择题答完保留选项可见，标正解 + 用户错选）
-            else if (_result != null) ...[
-              if (q.type == QuestionType.multipleChoice && q.options != null) ...[
-                _buildAnsweredOptions(q),
-                const SizedBox(height: 12),
               ],
-              _buildResult(q, _result!),
-              const SizedBox(height: 16),
-              SizedBox(
-                width: double.infinity,
-                height: 46,
-                child: ElevatedButton(
-                  onPressed: () => context.read<PracticeService>().nextQuestion(),
-                  child: Text(service.currentIndex < service.currentQuestions.length - 1 ? '下一题' : '查看结果'),
-                ),
-              ),
             ],
-          ],
+          ),
         ),
-      ),
         // V3.8.3 暂停遮罩
         if (_paused)
           Positioned.fill(
@@ -1106,7 +1197,9 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                     SizedBox(height: 12),
                     Text('已暂停',
                         style: TextStyle(
-                            color: Colors.white, fontSize: 22, fontWeight: FontWeight.w600)),
+                            color: Colors.white,
+                            fontSize: 22,
+                            fontWeight: FontWeight.w600)),
                     SizedBox(height: 4),
                     Text('点击屏幕任意位置恢复',
                         style: TextStyle(color: Colors.white70, fontSize: 13)),
@@ -1179,7 +1272,8 @@ class _QuestionScreenState extends State<_QuestionScreen> {
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13)),
           const SizedBox(height: 6),
           Container(
-            decoration: BoxDecoration(border: Border.all(color: Colors.grey.shade300)),
+            decoration:
+                BoxDecoration(border: Border.all(color: Colors.grey.shade300)),
             child: Image.memory(_drawBytes!,
                 height: 200, width: double.infinity, fit: BoxFit.contain),
           ),
@@ -1189,10 +1283,13 @@ class _QuestionScreenState extends State<_QuestionScreen> {
           width: double.infinity,
           padding: const EdgeInsets.all(12),
           decoration: BoxDecoration(
-              color: Colors.green.shade50, borderRadius: BorderRadius.circular(8)),
-          child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              color: Colors.green.shade50,
+              borderRadius: BorderRadius.circular(8)),
+          child:
+              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             const Text('📖 参考答案',
-                style: TextStyle(fontWeight: FontWeight.bold, color: Colors.green)),
+                style: TextStyle(
+                    fontWeight: FontWeight.bold, color: Colors.green)),
             const SizedBox(height: 6),
             MathText(q.answer, style: const TextStyle(fontSize: 15)),
             if (q.explanation != null && q.explanation!.isNotEmpty) ...[
@@ -1209,13 +1306,15 @@ class _QuestionScreenState extends State<_QuestionScreen> {
         Row(children: [
           Expanded(
               child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
+                  style:
+                      ElevatedButton.styleFrom(backgroundColor: Colors.green),
                   onPressed: () => _doSelfEval(1.0, '对'),
                   child: const Text('✅ 对了', style: TextStyle(fontSize: 13)))),
           const SizedBox(width: 8),
           Expanded(
               child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(backgroundColor: Colors.orange),
+                  style:
+                      ElevatedButton.styleFrom(backgroundColor: Colors.orange),
                   onPressed: () => _doSelfEval(0.5, '部分'),
                   child: const Text('🟡 部分', style: TextStyle(fontSize: 13)))),
           const SizedBox(width: 8),
@@ -1231,7 +1330,8 @@ class _QuestionScreenState extends State<_QuestionScreen> {
 
   Future<void> _doSelfEval(double score, String label) async {
     final service = context.read<PracticeService>();
-    await service.submitSelfEval(score, imageDataUrl: _drawDataUrl, label: label);
+    await service.submitSelfEval(score,
+        imageDataUrl: _drawDataUrl, label: label);
     if (!mounted) return;
     setState(() => _selfEval = false);
     service.nextQuestion();
@@ -1275,7 +1375,8 @@ class _QuestionScreenState extends State<_QuestionScreen> {
             if (isMulti)
               Container(
                 margin: const EdgeInsets.only(bottom: 8),
-                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                 decoration: BoxDecoration(
                   color: Colors.orange.shade50,
                   borderRadius: BorderRadius.circular(6),
@@ -1284,7 +1385,8 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                   const Icon(Icons.check_box, size: 14, color: Colors.orange),
                   const SizedBox(width: 6),
                   Text('多选题（请勾选所有正确项）',
-                      style: TextStyle(fontSize: 12, color: Colors.orange.shade800)),
+                      style: TextStyle(
+                          fontSize: 12, color: Colors.orange.shade800)),
                 ]),
               ),
             ...q.options!.asMap().entries.map((e) {
@@ -1293,9 +1395,10 @@ class _QuestionScreenState extends State<_QuestionScreen> {
               final letter = opt.substring(0, 1);
               final isSelected = (_selectedOption ?? '').contains(letter);
               // V3.12.22 A3: 选项图（可选）
-              final optImage = (q.optionImages != null && idx < q.optionImages!.length)
-                  ? q.optionImages![idx]
-                  : null;
+              final optImage =
+                  (q.optionImages != null && idx < q.optionImages!.length)
+                      ? q.optionImages![idx]
+                      : null;
               return GestureDetector(
                 onTap: () {
                   if (isMulti) {
@@ -1306,9 +1409,12 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                 },
                 child: Container(
                   margin: const EdgeInsets.only(bottom: 8),
-                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
                   decoration: BoxDecoration(
-                    color: isSelected ? AppTheme.primary.withOpacity(0.08) : Colors.white,
+                    color: isSelected
+                        ? AppTheme.primary.withOpacity(0.08)
+                        : Colors.white,
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(
                       color: isSelected ? AppTheme.primary : Colors.grey[300]!,
@@ -1321,36 +1427,48 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                       Row(children: [
                         if (isMulti)
                           Container(
-                            width: 24, height: 24,
+                            width: 24,
+                            height: 24,
                             decoration: BoxDecoration(
-                              color: isSelected ? AppTheme.primary : Colors.white,
+                              color:
+                                  isSelected ? AppTheme.primary : Colors.white,
                               borderRadius: BorderRadius.circular(4),
                               border: Border.all(
-                                color: isSelected ? AppTheme.primary : Colors.grey[400]!,
+                                color: isSelected
+                                    ? AppTheme.primary
+                                    : Colors.grey[400]!,
                                 width: 2,
                               ),
                             ),
                             child: isSelected
-                                ? const Icon(Icons.check, size: 16, color: Colors.white)
+                                ? const Icon(Icons.check,
+                                    size: 16, color: Colors.white)
                                 : null,
                           )
                         else
                           CircleAvatar(
                             radius: 12,
-                            backgroundColor: isSelected ? AppTheme.primary : Colors.grey[200],
+                            backgroundColor: isSelected
+                                ? AppTheme.primary
+                                : Colors.grey[200],
                             child: Text(letter,
                                 style: TextStyle(
                                   fontSize: 12,
-                                  color: isSelected ? Colors.white : Colors.grey[600],
+                                  color: isSelected
+                                      ? Colors.white
+                                      : Colors.grey[600],
                                   fontWeight: FontWeight.bold,
                                 )),
                           ),
                         const SizedBox(width: 10),
                         if (isMulti)
                           Text('$letter. ',
-                              style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
-                        Expanded(child: MathText(opt.length > 2 ? opt.substring(2) : opt,
-                            style: const TextStyle(fontSize: 15))),
+                              style: const TextStyle(
+                                  fontSize: 15, fontWeight: FontWeight.bold)),
+                        Expanded(
+                            child: MathText(
+                                opt.length > 2 ? opt.substring(2) : opt,
+                                style: const TextStyle(fontSize: 15))),
                       ]),
                       // V3.12.22 A3: 选项图（PNG/JPEG base64 或 SVG）
                       if (optImage != null && optImage.isNotEmpty) ...[
@@ -1380,36 +1498,39 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                 child: Text('共 $n 空，按顺序逐空填写',
                     style: TextStyle(fontSize: 12, color: Colors.grey[600])),
               ),
-              ...List.generate(n, (i) => Padding(
-                    padding: const EdgeInsets.only(bottom: 8),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        SizedBox(
-                          width: 34,
-                          child: Text('${i + 1}.',
-                              style: const TextStyle(
-                                  fontSize: 15, fontWeight: FontWeight.bold)),
-                        ),
-                        Expanded(
-                          child: TextField(
-                            controller: _blankCtrls[i],
-                            onChanged: (_) => setState(() {}),
-                            textInputAction: i == n - 1
-                                ? TextInputAction.done
-                                : TextInputAction.next,
-                            decoration: InputDecoration(
-                              isDense: true,
-                              hintText: '第 ${i + 1} 空',
-                              border: const OutlineInputBorder(),
-                              contentPadding: const EdgeInsets.symmetric(
-                                  horizontal: 10, vertical: 10),
+              ...List.generate(
+                  n,
+                  (i) => Padding(
+                        padding: const EdgeInsets.only(bottom: 8),
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            SizedBox(
+                              width: 34,
+                              child: Text('${i + 1}.',
+                                  style: const TextStyle(
+                                      fontSize: 15,
+                                      fontWeight: FontWeight.bold)),
                             ),
-                          ),
+                            Expanded(
+                              child: TextField(
+                                controller: _blankCtrls[i],
+                                onChanged: (_) => setState(() {}),
+                                textInputAction: i == n - 1
+                                    ? TextInputAction.done
+                                    : TextInputAction.next,
+                                decoration: InputDecoration(
+                                  isDense: true,
+                                  hintText: '第 ${i + 1} 空',
+                                  border: const OutlineInputBorder(),
+                                  contentPadding: const EdgeInsets.symmetric(
+                                      horizontal: 10, vertical: 10),
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
-                      ],
-                    ),
-                  )),
+                      )),
             ],
           );
         }
@@ -1462,14 +1583,17 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                   onTap: () => setState(() => _selectedOption = v),
                   child: Container(
                     height: 64,
-                    margin: EdgeInsets.only(right: v == '对' ? 8 : 0, left: v == '错' ? 8 : 0),
+                    margin: EdgeInsets.only(
+                        right: v == '对' ? 8 : 0, left: v == '错' ? 8 : 0),
                     decoration: BoxDecoration(
                       color: _selectedOption == v
                           ? AppTheme.primary.withOpacity(0.08)
                           : Colors.white,
                       borderRadius: BorderRadius.circular(10),
                       border: Border.all(
-                        color: _selectedOption == v ? AppTheme.primary : Colors.grey[300]!,
+                        color: _selectedOption == v
+                            ? AppTheme.primary
+                            : Colors.grey[300]!,
                         width: _selectedOption == v ? 2 : 1,
                       ),
                     ),
@@ -1479,7 +1603,9 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
-                          color: _selectedOption == v ? AppTheme.primary : Colors.grey[700],
+                          color: _selectedOption == v
+                              ? AppTheme.primary
+                              : Colors.grey[700],
                         ),
                       ),
                     ),
@@ -1513,16 +1639,23 @@ class _QuestionScreenState extends State<_QuestionScreen> {
         IconData? icon;
         Color iconColor = Colors.grey;
         if (isCorrect) {
-          bg = Colors.green.shade50; border = Colors.green; icon = Icons.check_circle; iconColor = Colors.green;
+          bg = Colors.green.shade50;
+          border = Colors.green;
+          icon = Icons.check_circle;
+          iconColor = Colors.green;
         } else if (isUserChoice) {
-          bg = Colors.red.shade50; border = Colors.red; icon = Icons.cancel; iconColor = Colors.red;
+          bg = Colors.red.shade50;
+          border = Colors.red;
+          icon = Icons.cancel;
+          iconColor = Colors.red;
         }
         return Container(
           margin: const EdgeInsets.only(bottom: 6),
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
           decoration: BoxDecoration(
             color: bg ?? Colors.white,
-            border: Border.all(color: border, width: isCorrect || isUserChoice ? 2 : 1),
+            border: Border.all(
+                color: border, width: isCorrect || isUserChoice ? 2 : 1),
             borderRadius: BorderRadius.circular(10),
           ),
           child: Row(children: [
@@ -1534,7 +1667,9 @@ class _QuestionScreenState extends State<_QuestionScreen> {
               child: Text(letter,
                   style: TextStyle(
                     fontSize: 12,
-                    color: (isCorrect || isUserChoice) ? Colors.white : Colors.grey[600],
+                    color: (isCorrect || isUserChoice)
+                        ? Colors.white
+                        : Colors.grey[600],
                     fontWeight: FontWeight.bold,
                   )),
             ),
@@ -1560,8 +1695,9 @@ class _QuestionScreenState extends State<_QuestionScreen> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: List.generate(blanks.length, (i) {
         final ok = res[i];
-        final mine =
-            (i < userBlanks.length && userBlanks[i].isNotEmpty) ? userBlanks[i] : '（空）';
+        final mine = (i < userBlanks.length && userBlanks[i].isNotEmpty)
+            ? userBlanks[i]
+            : '（空）';
         return Padding(
           padding: const EdgeInsets.only(bottom: 4),
           child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -1573,7 +1709,8 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                 TextSpan(
                     text: '${i + 1}. 我填：$mine',
                     style: TextStyle(
-                        color: ok ? Colors.green.shade700 : Colors.red.shade700)),
+                        color:
+                            ok ? Colors.green.shade700 : Colors.red.shade700)),
                 if (!ok)
                   TextSpan(
                       text: '   正确：${blanks[i]}',
@@ -1612,7 +1749,9 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                     ? '📝 已提交，等家长批改'
                     : (correct ? '✅ AI 判定：答得不错！' : '➖ AI 判定：还可以更好'),
                 style: TextStyle(
-                    fontWeight: FontWeight.bold, color: headColor, fontSize: 15)),
+                    fontWeight: FontWeight.bold,
+                    color: headColor,
+                    fontSize: 15)),
             if (aiResolved && aiFb != null && aiFb.isNotEmpty) ...[
               const SizedBox(height: 6),
               Text('AI 评语：$aiFb',
@@ -1634,7 +1773,9 @@ class _QuestionScreenState extends State<_QuestionScreen> {
                 border: Border.all(color: Colors.grey.shade200),
               ),
               child: Text(
-                _answerCtrl.text.trim().isEmpty ? '（空）' : _answerCtrl.text.trim(),
+                _answerCtrl.text.trim().isEmpty
+                    ? '（空）'
+                    : _answerCtrl.text.trim(),
                 style: const TextStyle(fontSize: 14),
               ),
             ),
@@ -1658,7 +1799,8 @@ class _QuestionScreenState extends State<_QuestionScreen> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(correct ? '✅ 回答正确！' : '❌ 回答错误',
-              style: TextStyle(fontWeight: FontWeight.bold, color: color, fontSize: 15)),
+              style: TextStyle(
+                  fontWeight: FontWeight.bold, color: color, fontSize: 15)),
           // V3.26: 字符串判错但 AI 复判可接受 → 标对并已补入答案集
           if (correct && aiResolved && aiFb != null && aiFb.isNotEmpty) ...[
             const SizedBox(height: 6),
@@ -1681,10 +1823,13 @@ class _QuestionScreenState extends State<_QuestionScreen> {
               _buildPerBlankBreakdown(q)
             else ...[
               Text('我填的：$userAnswer',
-                  style: TextStyle(color: Colors.red.shade700, fontWeight: FontWeight.w600)),
+                  style: TextStyle(
+                      color: Colors.red.shade700, fontWeight: FontWeight.w600)),
               const SizedBox(height: 4),
               Text('正确答案：${q.displayAnswer}',
-                  style: TextStyle(color: Colors.green.shade700, fontWeight: FontWeight.w600)),
+                  style: TextStyle(
+                      color: Colors.green.shade700,
+                      fontWeight: FontWeight.w600)),
             ],
             // V3.20.3 (阶段一): 半主观题答错主动提示申诉路径
             if (q.isSemiSubjective) ...[
@@ -1706,7 +1851,8 @@ class _QuestionScreenState extends State<_QuestionScreen> {
           if (q.explanation != null) ...[
             const SizedBox(height: 8),
             MathText('解析：${q.explanation}',
-                style: TextStyle(color: Colors.grey[700], fontSize: 14, height: 1.5)),
+                style: TextStyle(
+                    color: Colors.grey[700], fontSize: 14, height: 1.5)),
           ],
           // V3.8.3: 申诉快捷入口（错题 + 非主观题）
           if (!correct) ...[
@@ -1720,9 +1866,12 @@ class _QuestionScreenState extends State<_QuestionScreen> {
 
   Color _diffColor(Difficulty d) {
     switch (d) {
-      case Difficulty.easy:   return Colors.green;
-      case Difficulty.medium: return Colors.orange;
-      case Difficulty.hard:   return Colors.red;
+      case Difficulty.easy:
+        return Colors.green;
+      case Difficulty.medium:
+        return Colors.orange;
+      case Difficulty.hard:
+        return Colors.red;
     }
   }
 
@@ -1737,28 +1886,38 @@ class _QuestionScreenState extends State<_QuestionScreen> {
     if (pos == 0) return const [];
     return [
       const SizedBox(width: 6),
-      _Tag('📑 组合题 $pos/${mates.length}',
-          Colors.teal.withOpacity(0.15), Colors.teal),
+      _Tag('📑 组合题 $pos/${mates.length}', Colors.teal.withOpacity(0.15),
+          Colors.teal),
     ];
   }
 
   String _roundLabel(int r) {
     switch (r) {
-      case 1: return '基础';
-      case 2: return '中等';
-      case 3: return '较难';
-      case 4: return '竞赛';
-      default: return 'R$r';
+      case 1:
+        return '基础';
+      case 2:
+        return '中等';
+      case 3:
+        return '较难';
+      case 4:
+        return '竞赛';
+      default:
+        return 'R$r';
     }
   }
 
   Color _roundColor(int r) {
     switch (r) {
-      case 1: return Colors.green;
-      case 2: return Colors.blue;
-      case 3: return Colors.orange;
-      case 4: return Colors.red;
-      default: return Colors.grey;
+      case 1:
+        return Colors.green;
+      case 2:
+        return Colors.blue;
+      case 3:
+        return Colors.orange;
+      case 4:
+        return Colors.red;
+      default:
+        return Colors.grey;
     }
   }
 }
@@ -1844,9 +2003,11 @@ class _InlineAppealButton extends StatelessWidget {
         ),
         actions: [
           TextButton(
-              onPressed: () => Navigator.pop(ctx, false), child: const Text('取消')),
+              onPressed: () => Navigator.pop(ctx, false),
+              child: const Text('取消')),
           TextButton(
-              onPressed: () => Navigator.pop(ctx, true), child: const Text('提交')),
+              onPressed: () => Navigator.pop(ctx, true),
+              child: const Text('提交')),
         ],
       ),
     );
@@ -1939,7 +2100,13 @@ class _ResultScreenState extends State<_ResultScreen> {
   @override
   Widget build(BuildContext context) {
     final pct = total > 0 ? (score / total * 100).round() : 0;
-    final emoji = pct >= 90 ? '🏆' : pct >= 70 ? '🎉' : pct >= 50 ? '😊' : '💪';
+    final emoji = pct >= 90
+        ? '🏆'
+        : pct >= 70
+            ? '🎉'
+            : pct >= 50
+                ? '😊'
+                : '💪';
 
     return Scaffold(
       appBar: AppBar(
@@ -1954,7 +2121,8 @@ class _ResultScreenState extends State<_ResultScreen> {
               Text(emoji, style: const TextStyle(fontSize: 72)),
               const SizedBox(height: 12),
               Text('$score / $total',
-                  style: const TextStyle(fontSize: 40, fontWeight: FontWeight.bold)),
+                  style: const TextStyle(
+                      fontSize: 40, fontWeight: FontWeight.bold)),
               Text('正确率 $pct%',
                   style: const TextStyle(fontSize: 18, color: Colors.grey)),
             ]),
@@ -1982,15 +2150,22 @@ class _ResultScreenState extends State<_ResultScreen> {
                 icon: const Icon(Icons.refresh),
                 label: const Text('针对薄弱点练习'),
                 onPressed: () async {
-                  final applyDiff = context.read<DifficultySettingsService>().applyToReviewSimilar;
+                  final applyDiff = context
+                      .read<DifficultySettingsService>()
+                      .applyToReviewSimilar;
                   // V3.33: 沿用刚做完这组的科目，不混科
                   final subj = widget.questions.isNotEmpty
                       ? widget.questions.first.subject
                       : null;
-                  await context.read<PracticeService>().startAggregatedReviewSession(
-                      applyDifficulty: applyDiff, subject: subj);
+                  await context
+                      .read<PracticeService>()
+                      .startAggregatedReviewSession(
+                          applyDifficulty: applyDiff, subject: subj);
                   if (!context.mounted) return;
-                  if (context.read<PracticeService>().currentQuestions.isEmpty) {
+                  if (context
+                      .read<PracticeService>()
+                      .currentQuestions
+                      .isEmpty) {
                     ScaffoldMessenger.of(context).showSnackBar(
                       const SnackBar(content: Text('暂无薄弱知识点')),
                     );
@@ -2058,7 +2233,8 @@ class _RewardSummaryCard extends StatelessWidget {
                   style: const TextStyle(color: Colors.grey, fontSize: 13)),
               const Spacer(),
               Text('+${_fmt(reward.bonusStars)} ⭐',
-                  style: TextStyle(fontSize: 14, color: color, fontWeight: FontWeight.w600)),
+                  style: TextStyle(
+                      fontSize: 14, color: color, fontWeight: FontWeight.w600)),
             ]),
           ],
           const Divider(),
@@ -2120,18 +2296,30 @@ class _OptionImageState extends State<_OptionImage> {
   Widget build(BuildContext context) {
     Widget child;
     if (widget.data.trimLeft().startsWith('<svg')) {
-      child = SvgPicture.string(widget.data, height: 100, fit: BoxFit.contain,
-        placeholderBuilder: (_) => const SizedBox(height: 100,
-          child: Center(child: CircularProgressIndicator(strokeWidth: 2))),
+      child = SvgPicture.string(
+        widget.data,
+        height: 100,
+        fit: BoxFit.contain,
+        placeholderBuilder: (_) => const SizedBox(
+            height: 100,
+            child: Center(child: CircularProgressIndicator(strokeWidth: 2))),
       );
     } else if (_bytes != null) {
-      child = Image.memory(_bytes!, height: 100, fit: BoxFit.contain, gaplessPlayback: true);
+      child = Image.memory(_bytes!,
+          height: 100, fit: BoxFit.contain, gaplessPlayback: true);
     } else if (widget.data.startsWith('data:image/')) {
-      child = const Text('（选项图加载失败）', style: TextStyle(color: Colors.grey, fontSize: 12));
+      child = const Text('（选项图加载失败）',
+          style: TextStyle(color: Colors.grey, fontSize: 12));
     } else {
       child = const SizedBox.shrink();
     }
-    return Align(alignment: Alignment.centerLeft, child: child);
+    return Align(
+      alignment: Alignment.centerLeft,
+      child: _ZoomableImagePreview(
+        data: widget.data,
+        child: child,
+      ),
+    );
   }
 }
 
@@ -2188,12 +2376,66 @@ class _QuestionImageState extends State<_QuestionImage> {
             child: Center(child: CircularProgressIndicator(strokeWidth: 2))),
       );
     } else if (_bytes != null) {
-      child = Image.memory(_bytes!, height: 180, fit: BoxFit.contain, gaplessPlayback: true);
+      child = Image.memory(_bytes!,
+          height: 180, fit: BoxFit.contain, gaplessPlayback: true);
     } else if (data.startsWith('data:image/')) {
       child = const Text('图片加载失败', style: TextStyle(color: Colors.grey));
     } else {
       child = const Text('（无法识别的图片格式）', style: TextStyle(color: Colors.grey));
     }
+    return _ZoomableImagePreview(
+      data: data,
+      frame: true,
+      child: child,
+    );
+  }
+}
+
+class _ZoomableImagePreview extends StatelessWidget {
+  final String data;
+  final Widget child;
+  final bool frame;
+
+  const _ZoomableImagePreview({
+    required this.data,
+    required this.child,
+    this.frame = false,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final image = Stack(
+      alignment: Alignment.topRight,
+      children: [
+        child,
+        Positioned(
+          top: 4,
+          right: 4,
+          child: DecoratedBox(
+            decoration: BoxDecoration(
+              color: Colors.black.withOpacity(0.45),
+              borderRadius: BorderRadius.circular(14),
+            ),
+            child: const Padding(
+              padding: EdgeInsets.all(4),
+              child: Icon(Icons.zoom_out_map, size: 16, color: Colors.white),
+            ),
+          ),
+        ),
+      ],
+    );
+
+    final preview = Semantics(
+      button: true,
+      label: '查看大图',
+      child: GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: () => _openZoomViewer(context),
+        child: image,
+      ),
+    );
+
+    if (!frame) return preview;
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.all(8),
@@ -2202,7 +2444,107 @@ class _QuestionImageState extends State<_QuestionImage> {
         borderRadius: BorderRadius.circular(8),
         border: Border.all(color: Colors.grey.shade200),
       ),
-      child: child,
+      child: preview,
+    );
+  }
+
+  void _openZoomViewer(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        fullscreenDialog: true,
+        builder: (_) => _ZoomableImagePage(data: data),
+      ),
+    );
+  }
+}
+
+class _ZoomableImagePage extends StatelessWidget {
+  final String data;
+  const _ZoomableImagePage({required this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    final body = LayoutBuilder(
+      builder: (context, constraints) {
+        return InteractiveViewer(
+          minScale: 0.8,
+          maxScale: 6,
+          boundaryMargin: const EdgeInsets.all(160),
+          child: Center(
+            child: SizedBox(
+              width: constraints.maxWidth,
+              height: constraints.maxHeight,
+              child: _ZoomableFullImage(data: data),
+            ),
+          ),
+        );
+      },
+    );
+
+    return Scaffold(
+      backgroundColor: Colors.black,
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        foregroundColor: Colors.white,
+        elevation: 0,
+      ),
+      body: SafeArea(child: body),
+    );
+  }
+}
+
+class _ZoomableFullImage extends StatefulWidget {
+  final String data;
+  const _ZoomableFullImage({required this.data});
+
+  @override
+  State<_ZoomableFullImage> createState() => _ZoomableFullImageState();
+}
+
+class _ZoomableFullImageState extends State<_ZoomableFullImage> {
+  Uint8List? _bytes;
+
+  @override
+  void initState() {
+    super.initState();
+    _decode();
+  }
+
+  @override
+  void didUpdateWidget(_ZoomableFullImage old) {
+    super.didUpdateWidget(old);
+    if (old.data != widget.data) _decode();
+  }
+
+  void _decode() {
+    final d = widget.data;
+    if (d.startsWith('data:image/')) {
+      try {
+        _bytes = base64Decode(d.split(',').last);
+      } catch (_) {
+        _bytes = null;
+      }
+    } else {
+      _bytes = null;
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final d = widget.data;
+    if (d.trimLeft().startsWith('<svg')) {
+      return SvgPicture.string(d, fit: BoxFit.contain);
+    }
+    if (_bytes != null) {
+      return Image.memory(_bytes!, fit: BoxFit.contain, gaplessPlayback: true);
+    }
+    if (d.startsWith('data:image/')) {
+      return const Center(
+        child: Text('图片加载失败', style: TextStyle(color: Colors.white70)),
+      );
+    }
+    return const Center(
+      child: Text('无法识别的图片格式', style: TextStyle(color: Colors.white70)),
     );
   }
 }
@@ -2215,11 +2557,11 @@ class _QuestionImageState extends State<_QuestionImage> {
 class _ListenButton extends StatefulWidget {
   final String audioText;
   final Map<String, SpeakerProfile>? speakers;
+
   /// V3.27: 非空 → 播放服务端预渲染的 CDN mp3（just_audio，设备无关）；
   /// 为空 → 回退 flutter_tts 设备端合成（旧题/未渲染题）。
   final String? audioHash;
-  const _ListenButton(
-      {required this.audioText, this.speakers, this.audioHash});
+  const _ListenButton({required this.audioText, this.speakers, this.audioHash});
 
   @override
   State<_ListenButton> createState() => _ListenButtonState();
@@ -2334,7 +2676,8 @@ class _ListenButtonState extends State<_ListenButton> {
     final turns = <({String role, String text})>[];
     for (final line in lines) {
       final match = _turnPattern.firstMatch(line);
-      if (match != null && (widget.speakers?.containsKey(match.group(1)) ?? false)) {
+      if (match != null &&
+          (widget.speakers?.containsKey(match.group(1)) ?? false)) {
         turns.add((role: match.group(1)!, text: match.group(2)!.trim()));
       } else if (turns.isNotEmpty) {
         // 续接上一 turn（独白被换行分段或角色名不在 speakers map 中的 fallback）
@@ -2363,7 +2706,8 @@ class _ListenButtonState extends State<_ListenButton> {
     for (var i = 0; i < turns.length; i++) {
       if (!mounted || !_speaking) break;
       final turn = turns[i];
-      final profile = widget.speakers?[turn.role] ?? SpeakerProfile.defaultProfile;
+      final profile =
+          widget.speakers?[turn.role] ?? SpeakerProfile.defaultProfile;
       try {
         await _tts.setPitch(profile.fallbackPitch);
         await _tts.speak(turn.text);
@@ -2416,8 +2760,11 @@ class _Tag extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-      decoration: BoxDecoration(color: bg, borderRadius: BorderRadius.circular(20)),
-      child: Text(text, style: TextStyle(color: fg, fontSize: 11, fontWeight: FontWeight.w600)),
+      decoration:
+          BoxDecoration(color: bg, borderRadius: BorderRadius.circular(20)),
+      child: Text(text,
+          style:
+              TextStyle(color: fg, fontSize: 11, fontWeight: FontWeight.w600)),
     );
   }
 }

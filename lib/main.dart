@@ -23,6 +23,7 @@ import 'services/review_request_service.dart';
 import 'services/data_reset_service.dart';
 import 'services/diagnostic_service.dart';
 import 'services/grading_queue_service.dart';
+import 'services/plan_rollover_service.dart';
 import 'database/question_dao.dart';
 import 'models/question.dart';
 import 'models/subject.dart';
@@ -51,18 +52,19 @@ void main() async {
 }
 
 /// V3.34.1: 调试期反复重装会清掉 SharedPreferences（API key 没了）。
-/// debug 构建时用 --dart-define=DEEPSEEK_KEY=.. --dart-define=QWEN_KEY=.. 把 key 编进 APK，
-/// 首次启动若本机未设过则自动填入并启用 → 重装零复制。release 不传 define = 空 = 不预填。
+/// debug 构建时用 dart-define 把 key 编进 APK。
+/// 只要构建传入 key，启动时就写入并启用对应开关，保证重装或误关后仍可用。
+/// release 不传 define = 空 = 不预填。
 Future<void> _preloadDevKeys() async {
   const dsKey = String.fromEnvironment('DEEPSEEK_KEY');
   const qwenKey = String.fromEnvironment('QWEN_KEY');
   if (dsKey.isEmpty && qwenKey.isEmpty) return;
   final p = await SharedPreferences.getInstance();
-  if (dsKey.isNotEmpty && (p.getString('deepseek_api_key') ?? '').trim().isEmpty) {
+  if (dsKey.isNotEmpty) {
     await p.setString('deepseek_api_key', dsKey);
     await p.setBool('ai_grading_enabled', true);
   }
-  if (qwenKey.isNotEmpty && (p.getString('qwen_vl_api_key') ?? '').trim().isEmpty) {
+  if (qwenKey.isNotEmpty) {
     await p.setString('qwen_vl_api_key', qwenKey);
     await p.setBool('vision_ocr_enabled', true);
   }
@@ -109,8 +111,10 @@ Future<void> _seedDatabase() async {
     await DiagnosticService().runStartupSelfCheck();
   } catch (e, stack) {
     await DiagnosticService().logError(
-      level: 'error', context: 'startup_self_check',
-      error: e, stack: stack,
+      level: 'error',
+      context: 'startup_self_check',
+      error: e,
+      stack: stack,
     );
   }
 }
@@ -129,6 +133,7 @@ class _LearningAppState extends State<LearningApp> {
   late final PracticeService _practiceService;
   late final AssessmentService _assessmentService;
   final _planService = PlanService();
+  late final PlanRolloverService _planRolloverService;
   final _syncService = LearningSyncService();
   final _difficultySettings = DifficultySettingsService();
   final _questionDao = QuestionDao();
@@ -146,8 +151,10 @@ class _LearningAppState extends State<LearningApp> {
     // V3.8.3: 审核通过后副作用编排（重判 session 通过 + 重打钩计划 + 测评刷新）
     _reviewService.onApproved = _handleReviewApproved;
     // 立即创建 PracticeService，触发 session 恢复（V3.8 注入 DifficultySettings、V3.8.3 注入 ReviewService）
-    _practiceService = PracticeService(_rewardService, _difficultySettings, _reviewService);
+    _practiceService =
+        PracticeService(_rewardService, _difficultySettings, _reviewService);
     _assessmentService = AssessmentService()..refresh();
+    _planRolloverService = PlanRolloverService(_planService);
 
     // session 状态变化监听：snapshot 当前数据 + 完成时触发自动完成 + 学情同步
     _practiceService.addListener(_onPracticeChanged);
@@ -271,11 +278,13 @@ class _LearningAppState extends State<LearningApp> {
                   knowledgePoint: q.knowledgePoint,
                 ))
             .toList();
-        _planService.autoCompleteFromPractice(
+        _planService
+            .autoCompleteFromPractice(
           score: score,
           total: total,
           coveredTuples: tuples,
-        ).then((marked) {
+        )
+            .then((marked) {
           if (marked > 0) {
             // 计划状态变更后立即重算测评解锁
             _assessmentService.refresh();
@@ -301,6 +310,7 @@ class _LearningAppState extends State<LearningApp> {
         ChangeNotifierProvider(create: (_) => NavigationService()),
         ChangeNotifierProvider(create: (_) => PlanSettingsService()),
         ChangeNotifierProvider.value(value: _planService),
+        ChangeNotifierProvider.value(value: _planRolloverService),
         ChangeNotifierProvider.value(value: _rewardService),
         ChangeNotifierProvider.value(value: _practiceService),
         ChangeNotifierProvider.value(value: _assessmentService),
@@ -309,7 +319,8 @@ class _LearningAppState extends State<LearningApp> {
         ChangeNotifierProvider.value(value: _difficultySettings),
         ChangeNotifierProvider.value(value: DiagnosticService()),
         ChangeNotifierProvider.value(value: _reviewService),
-        ChangeNotifierProvider<DataResetService>.value(value: DataResetService()),
+        ChangeNotifierProvider<DataResetService>.value(
+            value: DataResetService()),
       ],
       child: MaterialApp(
         title: '学习小助手',
@@ -322,8 +333,17 @@ class _LearningAppState extends State<LearningApp> {
   }
 }
 
-class MainNavigation extends StatelessWidget {
+enum _RolloverPromptAction { roll, manage }
+
+class MainNavigation extends StatefulWidget {
   const MainNavigation({super.key});
+
+  @override
+  State<MainNavigation> createState() => _MainNavigationState();
+}
+
+class _MainNavigationState extends State<MainNavigation> {
+  bool _promptChecked = false;
 
   static const List<Widget> _screens = [
     HomeScreen(),
@@ -332,6 +352,58 @@ class MainNavigation extends StatelessWidget {
     ReviewScreen(),
     RewardScreen(),
   ];
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) => _checkRolloverPrompt());
+  }
+
+  Future<void> _checkRolloverPrompt() async {
+    if (_promptChecked) return;
+    _promptChecked = true;
+    final rollover = context.read<PlanRolloverService>();
+    final summary = await rollover.check();
+    if (!mounted || summary == null || summary.count == 0) return;
+
+    final action = await showDialog<_RolloverPromptAction>(
+      context: context,
+      builder: (_) => AlertDialog(
+        title: const Text('有未完成计划'),
+        content: Text(
+          '${summary.dateRangeLabel} 还有 ${summary.count} 项任务未完成，'
+          '可以先转入今天的计划继续做。',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('稍后'),
+          ),
+          TextButton(
+            onPressed: () =>
+                Navigator.pop(context, _RolloverPromptAction.manage),
+            child: const Text('去计划页'),
+          ),
+          FilledButton(
+            onPressed: rollover.rolling
+                ? null
+                : () => Navigator.pop(context, _RolloverPromptAction.roll),
+            child: const Text('转入今天'),
+          ),
+        ],
+      ),
+    );
+    if (!mounted || action == null) return;
+    if (action == _RolloverPromptAction.manage) {
+      context.read<NavigationService>().goTo(1);
+      return;
+    }
+    final moved = await rollover.rollToToday();
+    if (!mounted) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text('已转入今天 $moved 项任务')),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -347,7 +419,8 @@ class MainNavigation extends StatelessWidget {
         },
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: '首页'),
-          BottomNavigationBarItem(icon: Icon(Icons.calendar_month), label: '计划'),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.calendar_month), label: '计划'),
           BottomNavigationBarItem(icon: Icon(Icons.edit_note), label: '练习'),
           BottomNavigationBarItem(icon: Icon(Icons.assessment), label: '成效'),
           BottomNavigationBarItem(icon: Icon(Icons.star), label: '奖励'),

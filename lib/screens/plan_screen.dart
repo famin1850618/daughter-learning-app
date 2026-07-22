@@ -10,6 +10,7 @@ import '../services/plan_service.dart';
 import '../services/plan_settings_service.dart';
 import '../services/navigation_service.dart';
 import '../services/practice_service.dart';
+import '../services/plan_rollover_service.dart';
 import '../models/plan_settings.dart';
 import 'chapter_picker_screen.dart';
 import 'plan_adjustment_screen.dart';
@@ -19,15 +20,16 @@ import '../utils/settings_action.dart';
 void _startPractice(BuildContext context, PlanItem item) {
   Subject? subject;
   try {
-    subject = Subject.values.firstWhere((s) => s.displayName == item.subjectName);
+    subject =
+        Subject.values.firstWhere((s) => s.displayName == item.subjectName);
   } catch (_) {}
   if (subject == null) return;
   context.read<PracticeService>().startSession(
-    subject: subject,
-    grade: item.grade,
-    chapter: item.chapterName,
-    count: 10,
-  );
+        subject: subject,
+        grade: item.grade,
+        chapter: item.chapterName,
+        count: 10,
+      );
   context.read<NavigationService>().goTo(2);
   Navigator.of(context).popUntil((r) => r.isFirst);
 }
@@ -48,6 +50,7 @@ class _PlanScreenState extends State<PlanScreen> {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       context.read<PlanService>().loadDate(_selectedDay);
+      context.read<PlanRolloverService>().check();
     });
   }
 
@@ -68,7 +71,9 @@ class _PlanScreenState extends State<PlanScreen> {
             focusedDay: _focusedDay,
             selectedDayPredicate: (day) => isSameDay(_selectedDay, day),
             eventLoader: (day) {
-              final key = PlanDateUtils.dateOnly(day).toIso8601String().substring(0, 10);
+              final key = PlanDateUtils.dateOnly(day)
+                  .toIso8601String()
+                  .substring(0, 10);
               return svc.markedDates.contains(key) ? [true] : [];
             },
             onDaySelected: (selected, focused) {
@@ -82,19 +87,22 @@ class _PlanScreenState extends State<PlanScreen> {
               selectedDecoration: const BoxDecoration(
                   color: AppTheme.primary, shape: BoxShape.circle),
               todayDecoration: BoxDecoration(
-                  color: AppTheme.primary.withOpacity(0.3), shape: BoxShape.circle),
+                  color: AppTheme.primary.withOpacity(0.3),
+                  shape: BoxShape.circle),
               markerDecoration: const BoxDecoration(
                   color: AppTheme.secondary, shape: BoxShape.circle),
             ),
             headerStyle: const HeaderStyle(formatButtonVisible: false),
           ),
+          _OverdueRolloverBanner(selectedDay: _selectedDay),
           const Divider(height: 1),
           Padding(
             padding: const EdgeInsets.fromLTRB(16, 8, 16, 4),
             child: Row(children: [
               Text(
                 DateFormat('M月d日 (EEEE)', 'zh_CN').format(_selectedDay),
-                style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                style:
+                    const TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
               ),
               const Spacer(),
               _CompactStats(svc: svc),
@@ -107,19 +115,81 @@ class _PlanScreenState extends State<PlanScreen> {
         backgroundColor: AppTheme.primary,
         tooltip: svc.selectedDateHasPlans ? '调整计划' : '新建计划',
         onPressed: () => _openManage(context, svc),
-        child: Icon(svc.selectedDateHasPlans ? Icons.tune : Icons.add, color: Colors.white),
+        child: Icon(svc.selectedDateHasPlans ? Icons.tune : Icons.add,
+            color: Colors.white),
       ),
     );
   }
 
   void _openManage(BuildContext context, PlanService svc) {
     final route = svc.selectedDateHasPlans
-        ? MaterialPageRoute(builder: (_) => PlanAdjustmentScreen(initialDate: _selectedDay))
+        ? MaterialPageRoute(
+            builder: (_) => PlanAdjustmentScreen(initialDate: _selectedDay))
         : MaterialPageRoute(
             builder: (_) => _CreatePlanFlow(initialDate: _selectedDay),
             fullscreenDialog: true);
     Navigator.push(context, route)
         .then((_) => context.read<PlanService>().loadDate(_selectedDay));
+  }
+}
+
+class _OverdueRolloverBanner extends StatelessWidget {
+  final DateTime selectedDay;
+  const _OverdueRolloverBanner({required this.selectedDay});
+
+  @override
+  Widget build(BuildContext context) {
+    final rollover = context.watch<PlanRolloverService>();
+    final summary = rollover.summary;
+    if (summary == null || summary.count == 0) return const SizedBox.shrink();
+
+    return Material(
+      color: Colors.amber.withOpacity(0.14),
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(12, 8, 8, 8),
+        child: Row(children: [
+          const Icon(Icons.notification_important_outlined,
+              size: 18, color: Colors.orange),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Text(
+              '${summary.dateRangeLabel} 还有 ${summary.count} 项未完成',
+              style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w600),
+            ),
+          ),
+          TextButton(
+            onPressed: rollover.rolling
+                ? null
+                : () async {
+                    final moved =
+                        await context.read<PlanRolloverService>().rollToToday();
+                    if (!context.mounted) return;
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(content: Text('已转入今天 $moved 项任务')),
+                    );
+                  },
+            child: Text(rollover.rolling ? '转入中' : '转入今天'),
+          ),
+          IconButton(
+            tooltip: '查看逾期计划',
+            icon: const Icon(Icons.tune, size: 18),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) =>
+                      PlanAdjustmentScreen(initialDate: summary.earliestDate),
+                ),
+              ).then((_) {
+                if (!context.mounted) return;
+                context.read<PlanRolloverService>().check();
+                context.read<PlanService>().loadDate(selectedDay);
+              });
+            },
+          ),
+        ]),
+      ),
+    );
   }
 }
 
@@ -132,11 +202,13 @@ class _CompactStats extends StatelessWidget {
   Widget build(BuildContext context) {
     final items = svc.dayPlans.expand((g) => g.items).toList();
     if (items.isEmpty) return const SizedBox.shrink();
-    final done = items.where((i) => i.status == PlanItemStatus.completed).length;
+    final done =
+        items.where((i) => i.status == PlanItemStatus.completed).length;
     return Text(
       '$done / ${items.length} 已完成',
       style: TextStyle(
-          color: done == items.length ? AppTheme.success : Colors.grey, fontSize: 13),
+          color: done == items.length ? AppTheme.success : Colors.grey,
+          fontSize: 13),
     );
   }
 }
@@ -157,7 +229,8 @@ class _PlanBody extends StatelessWidget {
         child: Column(mainAxisSize: MainAxisSize.min, children: [
           const Icon(Icons.event_note, size: 48, color: Colors.grey),
           const SizedBox(height: 8),
-          const Text('这天没有计划', style: TextStyle(color: Colors.grey, fontSize: 16)),
+          const Text('这天没有计划',
+              style: TextStyle(color: Colors.grey, fontSize: 16)),
           const SizedBox(height: 4),
           Text('点击右下角 + 创建计划',
               style: TextStyle(color: Colors.grey.shade400, fontSize: 13)),
@@ -208,7 +281,9 @@ class _DayGroupCard extends StatelessWidget {
               Text(
                 group.parentId == null ? '独立日计划' : '来自${group.typeLabel}计划',
                 style: const TextStyle(
-                    fontWeight: FontWeight.bold, fontSize: 13, color: AppTheme.primary),
+                    fontWeight: FontWeight.bold,
+                    fontSize: 13,
+                    color: AppTheme.primary),
               ),
               const Spacer(),
               Text('$done/${group.items.length}',
@@ -255,7 +330,9 @@ class _ItemTile extends StatelessWidget {
             activeColor: AppTheme.success,
             onChanged: (_) {
               final svc = context.read<PlanService>();
-              done ? svc.markItemPending(item.id!) : svc.markItemComplete(item.id!);
+              done
+                  ? svc.markItemPending(item.id!)
+                  : svc.markItemComplete(item.id!);
             },
           ),
         ],
@@ -272,7 +349,8 @@ class _WeekPlanCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final allItems = group.allItems;
-    final done = allItems.where((i) => i.status == PlanItemStatus.completed).length;
+    final done =
+        allItems.where((i) => i.status == PlanItemStatus.completed).length;
     final dayMap = {
       for (final c in group.children)
         c.startDate.toIso8601String().substring(0, 10): c
@@ -290,7 +368,8 @@ class _WeekPlanCard extends StatelessWidget {
               const SizedBox(width: 6),
               Text(
                 '周计划  ${PlanDateUtils.weekLabel(group.startDate, group.endDate)}',
-                style: const TextStyle(fontWeight: FontWeight.bold, color: AppTheme.secondary),
+                style: const TextStyle(
+                    fontWeight: FontWeight.bold, color: AppTheme.secondary),
               ),
               const Spacer(),
               Text('$done/${allItems.length}',
@@ -310,7 +389,8 @@ class _WeekPlanCard extends StatelessWidget {
           ...days.map((day) {
             final key = day.toIso8601String().substring(0, 10);
             final dayPlan = dayMap[key];
-            if (dayPlan == null || dayPlan.items.isEmpty) return const SizedBox.shrink();
+            if (dayPlan == null || dayPlan.items.isEmpty)
+              return const SizedBox.shrink();
             final label = PlanDateUtils.weekdayLabels[day.weekday];
             return Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -320,7 +400,9 @@ class _WeekPlanCard extends StatelessWidget {
                   child: Text(
                     '$label  ${day.month}/${day.day}',
                     style: TextStyle(
-                        fontSize: 12, fontWeight: FontWeight.w600, color: Colors.grey.shade600),
+                        fontSize: 12,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.grey.shade600),
                   ),
                 ),
                 ...dayPlan.items.map((item) => Padding(
@@ -345,7 +427,8 @@ class _MonthPlanCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final allItems = group.allItems;
-    final done = allItems.where((i) => i.status == PlanItemStatus.completed).length;
+    final done =
+        allItems.where((i) => i.status == PlanItemStatus.completed).length;
 
     return Card(
       child: Column(
@@ -354,11 +437,13 @@ class _MonthPlanCard extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.fromLTRB(12, 10, 12, 6),
             child: Row(children: [
-              const Icon(Icons.calendar_view_month, size: 16, color: Colors.deepPurple),
+              const Icon(Icons.calendar_view_month,
+                  size: 16, color: Colors.deepPurple),
               const SizedBox(width: 6),
               Text(
                 '月计划  ${DateFormat('M/d').format(group.startDate)} – ${DateFormat('M/d').format(group.endDate)}',
-                style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.deepPurple),
+                style: const TextStyle(
+                    fontWeight: FontWeight.bold, color: Colors.deepPurple),
               ),
               const Spacer(),
               Text('$done/${allItems.length}',
@@ -389,13 +474,15 @@ class _MonthWeekRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final wItems = weekGroup.allItems;
-    final wDone = wItems.where((i) => i.status == PlanItemStatus.completed).length;
+    final wDone =
+        wItems.where((i) => i.status == PlanItemStatus.completed).length;
     return InkWell(
       onTap: () => _showWeekPopup(context),
       child: Padding(
         padding: const EdgeInsets.fromLTRB(12, 8, 12, 4),
         child: Row(children: [
-          const Icon(Icons.calendar_view_week, size: 14, color: Colors.deepPurple),
+          const Icon(Icons.calendar_view_week,
+              size: 14, color: Colors.deepPurple),
           const SizedBox(width: 6),
           Expanded(
             child: Text(
@@ -403,7 +490,8 @@ class _MonthWeekRow extends StatelessWidget {
               style: const TextStyle(fontSize: 13),
             ),
           ),
-          Text('$wDone/${wItems.length}', style: const TextStyle(fontSize: 12, color: Colors.grey)),
+          Text('$wDone/${wItems.length}',
+              style: const TextStyle(fontSize: 12, color: Colors.grey)),
           const SizedBox(width: 6),
           SizedBox(
             width: 60,
@@ -440,7 +528,10 @@ class _MonthWeekRow extends StatelessWidget {
               width: double.infinity,
               child: Text(
                 PlanDateUtils.weekLabel(weekGroup.startDate, weekGroup.endDate),
-                style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16),
+                style: const TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16),
               ),
             ),
             Expanded(
@@ -448,19 +539,22 @@ class _MonthWeekRow extends StatelessWidget {
                   ? const Center(child: Text('本周暂无内容'))
                   : ListView(
                       controller: ctrl,
-                      children: allItems.map((item) => ListTile(
-                            leading: Text(item.subjectEmoji,
-                                style: const TextStyle(fontSize: 22)),
-                            title: Text(item.displayTitle),
-                            subtitle: Text('${item.gradeLabel} · ${item.subjectName}',
-                                style: const TextStyle(fontSize: 12)),
-                            trailing: const Icon(Icons.play_circle_outline,
-                                color: Colors.deepPurple),
-                            onTap: () {
-                              Navigator.pop(context);
-                              _startPractice(context, item);
-                            },
-                          )).toList(),
+                      children: allItems
+                          .map((item) => ListTile(
+                                leading: Text(item.subjectEmoji,
+                                    style: const TextStyle(fontSize: 22)),
+                                title: Text(item.displayTitle),
+                                subtitle: Text(
+                                    '${item.gradeLabel} · ${item.subjectName}',
+                                    style: const TextStyle(fontSize: 12)),
+                                trailing: const Icon(Icons.play_circle_outline,
+                                    color: Colors.deepPurple),
+                                onTap: () {
+                                  Navigator.pop(context);
+                                  _startPractice(context, item);
+                                },
+                              ))
+                          .toList(),
                     ),
             ),
           ],
@@ -549,11 +643,13 @@ class _CreatePlanFlowState extends State<_CreatePlanFlow> {
           const SizedBox(height: 8),
           Card(
             child: ListTile(
-              leading: const Icon(Icons.calendar_today, color: AppTheme.primary),
+              leading:
+                  const Icon(Icons.calendar_today, color: AppTheme.primary),
               title: Text(_rangeLabel),
               subtitle: _type != PlanGroupType.day
                   ? Text('计划覆盖上方所示日期范围',
-                      style: TextStyle(color: Colors.grey.shade500, fontSize: 12))
+                      style:
+                          TextStyle(color: Colors.grey.shade500, fontSize: 12))
                   : null,
               trailing: const Icon(Icons.edit, size: 16),
               onTap: () async {
@@ -573,8 +669,8 @@ class _CreatePlanFlowState extends State<_CreatePlanFlow> {
   }
 
   Future<void> _pickContent() async {
-    final drafts = await Navigator.push<List<PlanItemDraft>>(
-        context, MaterialPageRoute(builder: (_) => const ChapterPickerScreen()));
+    final drafts = await Navigator.push<List<PlanItemDraft>>(context,
+        MaterialPageRoute(builder: (_) => const ChapterPickerScreen()));
     if (drafts == null || drafts.isEmpty || !mounted) return;
     await _showPreviewAndConfirm(drafts);
   }
@@ -626,7 +722,8 @@ class _CreatePlanFlowState extends State<_CreatePlanFlow> {
     final ordered = settings.sortDrafts(drafts);
     switch (_type) {
       case PlanGroupType.day:
-        result[DateFormat('M月d日 (EEEE)', 'zh_CN').format(_date)] = drafts.toList();
+        result[DateFormat('M月d日 (EEEE)', 'zh_CN').format(_date)] =
+            drafts.toList();
       case PlanGroupType.week:
         final allDays = PlanDateUtils.daysInRange(
             PlanDateUtils.dateOnly(_date), PlanDateUtils.weekEnd(_date));
@@ -648,11 +745,12 @@ class _CreatePlanFlowState extends State<_CreatePlanFlow> {
           final (ws, we) = weeks[wi];
           final allDays = PlanDateUtils.daysInRange(ws, we);
           final activeDays = settings.filterDays(allDays);
-          final byDay = PlanDateUtils.autoDistribute(byWeek[wi], activeDays.length);
+          final byDay =
+              PlanDateUtils.autoDistribute(byWeek[wi], activeDays.length);
           for (var di = 0; di < activeDays.length; di++) {
             if (byDay[di].isNotEmpty) {
-              result[DateFormat('M月d日 (EEEE)', 'zh_CN').format(activeDays[di])] =
-                  byDay[di].cast<PlanItemDraft>();
+              result[DateFormat('M月d日 (EEEE)', 'zh_CN')
+                  .format(activeDays[di])] = byDay[di].cast<PlanItemDraft>();
             }
           }
         }
@@ -694,14 +792,18 @@ class _PreviewSheet extends StatelessWidget {
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                 Text(labels[type.index],
                     style: const TextStyle(
-                        color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16)),
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16)),
                 Text('共 ${drafts.length} 项，分配到 ${preview.length} 天',
-                    style: const TextStyle(color: Colors.white70, fontSize: 13)),
+                    style:
+                        const TextStyle(color: Colors.white70, fontSize: 13)),
               ]),
               const Spacer(),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white, foregroundColor: AppTheme.primary),
+                    backgroundColor: Colors.white,
+                    foregroundColor: AppTheme.primary),
                 onPressed: () => Navigator.pop(context, true),
                 child: const Text('确认创建'),
               ),
@@ -717,13 +819,17 @@ class _PreviewSheet extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(vertical: 6),
                     child: Text(entry.key,
                         style: const TextStyle(
-                            fontWeight: FontWeight.bold, color: AppTheme.primary)),
+                            fontWeight: FontWeight.bold,
+                            color: AppTheme.primary)),
                   ),
                   ...entry.value.map((d) => ListTile(
                         dense: true,
-                        leading: Text(d.subjectEmoji, style: const TextStyle(fontSize: 20)),
-                        title: Text(d.displayTitle, style: const TextStyle(fontSize: 14)),
-                        subtitle: Text(d.subjectName, style: const TextStyle(fontSize: 11)),
+                        leading: Text(d.subjectEmoji,
+                            style: const TextStyle(fontSize: 20)),
+                        title: Text(d.displayTitle,
+                            style: const TextStyle(fontSize: 14)),
+                        subtitle: Text(d.subjectName,
+                            style: const TextStyle(fontSize: 11)),
                       )),
                 ],
               ],
