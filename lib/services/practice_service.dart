@@ -16,10 +16,13 @@ class GroupResultEntry {
   final Question question;
   final String userAnswer;
   final bool isCorrect;
+
   /// V3.24.8: 组合题每个子题独立 practice_record_id，供汇总屏申诉按钮用
   final int? practiceRecordId;
+
   /// V3.26.1: AI 对该子题的判定结果（填空复判/主观题判分）。null = 未经 AI。
   final String? aiFeedback;
+
   /// V3.26.1: 该子题是否已被 AI 终判（主观题被 AI 判定即不再等家长）。
   final bool aiResolved;
   const GroupResultEntry({
@@ -135,12 +138,17 @@ class PracticeService extends ChangeNotifier {
   }
 
   // ignore: unused_element
-  List<Question> _shuffleAll(List<Question> qs) => qs.map(_shuffleOptions).toList();
+  List<Question> _shuffleAll(List<Question> qs) =>
+      qs.map(_shuffleOptions).toList();
 
   /// V3.8：把 profile 翻成 (rounds, weights) 给 QuestionDao
-  ({List<int>? rounds, List<int>? weights}) _profileToFilter(DifficultyProfile p) {
+  ({List<int>? rounds, List<int>? weights}) _profileToFilter(
+      DifficultyProfile p) {
     if (p.type == DifficultyType.precise) {
-      return (rounds: p.preciseRound == null ? null : [p.preciseRound!], weights: null);
+      return (
+        rounds: p.preciseRound == null ? null : [p.preciseRound!],
+        weights: null
+      );
     }
     // fuzzy: 4 档 + weights（去除 0 权重档）
     final allRounds = [1, 2, 3, 4];
@@ -157,15 +165,18 @@ class PracticeService extends ChangeNotifier {
   List<Question> _currentQuestions = [];
   int _currentIndex = 0;
   int _score = 0;
+
   /// V3.20.3 (阶段一): 部分得分累加。session 通过/满分判定用此（_score 仍保留兼容 UI int 显示"X/N 题"）
   /// 单题 partial=1.0 计 1.0；多空对 3/4 = 0.75；组合题各子题独立累加。
   double _partialScore = 0.0;
   bool _sessionActive = false;
   bool _hintShown = false;
   DateTime? _questionStartTime;
+
   /// V3.8.3：最近一次 submitAnswer 写入的 practice_records.id（申诉/主观题快捷入口用）
   int? _lastSubmittedRecordId;
   String? _lastSubmittedAnswer;
+
   /// V3.26: 最近一次提交的 AI 判分反馈（主观题评语 / 填空复判理由），null=未用 AI
   String? _lastAiFeedback;
   bool _lastAiResolved = false;
@@ -175,6 +186,7 @@ class PracticeService extends ChangeNotifier {
   /// 组内最后一题确认后，一次性 INSERT 全组 record + 计 _score（全对才 +1）+ 弹整组结果。
   /// Map 在整组判分后被清空。
   final Map<int, String> _pendingGroupAnswers = {};
+
   /// V3.14: 上一组刚提交的整组结果（用于整组结果页展示）
   /// 格式 [{question, userAnswer, isCorrect}, ...]
   List<GroupResultEntry>? _lastGroupResult;
@@ -196,14 +208,17 @@ class PracticeService extends ChangeNotifier {
   String? get lastAiFeedback => _lastAiFeedback;
   bool get lastAiResolved => _lastAiResolved;
   SessionKind get kind => _kind;
+  String? get sessionId => _sessionId;
   SessionRewardSummary? get lastReward => _lastReward;
   bool get isRestoring => _restoring;
   bool get isRestored => _restored;
-  Question? get currentQuestion =>
-      _currentIndex < _currentQuestions.length ? _currentQuestions[_currentIndex] : null;
+  Question? get currentQuestion => _currentIndex < _currentQuestions.length
+      ? _currentQuestions[_currentIndex]
+      : null;
 
-  int get elapsedSeconds =>
-      _questionStartTime == null ? 0 : DateTime.now().difference(_questionStartTime!).inSeconds;
+  int get elapsedSeconds => _questionStartTime == null
+      ? 0
+      : DateTime.now().difference(_questionStartTime!).inSeconds;
 
   // ─── V3.14 组合题整体单元化 helpers ─────────────────────────────
 
@@ -357,7 +372,8 @@ class PracticeService extends ChangeNotifier {
       return;
     }
     try {
-      final qsJson = jsonEncode(_currentQuestions.map((q) => q.toMap()).toList());
+      final qsJson =
+          jsonEncode(_currentQuestions.map((q) => q.toMap()).toList());
       final rewardJson =
           _lastReward == null ? null : jsonEncode(_lastReward!.toJson());
       await _sessionDao.save(
@@ -420,7 +436,8 @@ class PracticeService extends ChangeNotifier {
   /// V3.35: 通用自评提交（孩子对照参考答案自己判：对/部分/错）。
   /// 画图等 AI 判不可靠的题用；以后其它题型也可复用。[score] 1.0=对 / 0.5=部分 / 0.0=错。
   /// 存手写图供留痕。返回是否算对（score≥0.8）。
-  Future<bool> submitSelfEval(double score, {String? imageDataUrl, String? label}) async {
+  Future<bool> submitSelfEval(double score,
+      {String? imageDataUrl, String? label}) async {
     final q = currentQuestion;
     if (q == null || q.id == null) return false;
     final spent = _questionStartTime == null
@@ -455,7 +472,9 @@ class PracticeService extends ChangeNotifier {
     final keep = <String>{};
     final out = <Question>[];
     for (final q in qs) {
-      final u = (q.groupId != null && q.groupId!.isNotEmpty) ? q.groupId! : 'q${q.id}';
+      final u = (q.groupId != null && q.groupId!.isNotEmpty)
+          ? q.groupId!
+          : 'q${q.id}';
       if (keep.contains(u)) {
         out.add(q);
         continue;
@@ -558,7 +577,8 @@ class PracticeService extends ChangeNotifier {
       );
     } else {
       // 关闭难度档时回退原有"匹配最近错难度"逻辑
-      final difficulty = await _dao.getMostRecentErrorDifficulty(kpPath) ?? Difficulty.medium;
+      final difficulty =
+          await _dao.getMostRecentErrorDifficulty(kpPath) ?? Difficulty.medium;
       _currentQuestions = await _dao.getQuestionsForKnowledgePoint(
         kpPath: kpPath,
         difficulty: difficulty,
@@ -584,7 +604,8 @@ class PracticeService extends ChangeNotifier {
   }) async {
     var summaries = await _dao.getReviewKnowledgePoints();
     if (subject != null) {
-      summaries = summaries.where((s) => s.subjectIndex == subject.index).toList();
+      summaries =
+          summaries.where((s) => s.subjectIndex == subject.index).toList();
     }
     final result = <Question>[];
     int units = 0; // V3.34.1: 按组数累计（组合题算 1）
@@ -617,7 +638,8 @@ class PracticeService extends ChangeNotifier {
         );
       } else {
         final difficulty =
-            await _dao.getMostRecentErrorDifficulty(s.fullPath) ?? Difficulty.medium;
+            await _dao.getMostRecentErrorDifficulty(s.fullPath) ??
+                Difficulty.medium;
         qs = await _dao.getQuestionsForKpExcludingWrong(
           kpPath: s.fullPath,
           difficulty: difficulty,
@@ -714,14 +736,14 @@ class PracticeService extends ChangeNotifier {
       } else {
         // V3.20.3 (阶段一): 用 evaluatePartial 得 (isCorrect, partialScore)
         final result = AnswerMatcher.evaluatePartial(
-          userAns: ans, correctAnswerField: gq.answer, type: gq.type,
-          answerBlanks: gq.answerBlanks);
+            userAns: ans,
+            correctAnswerField: gq.answer,
+            type: gq.type,
+            answerBlanks: gq.answerBlanks);
         correct = result.isCorrect;
         partial = result.partialScore;
         // V3.29: 除选择题外所有题型（填空/计算/判断）被判错 → AI 复判（Famin）
-        if (!correct &&
-            gq.type != QuestionType.multipleChoice &&
-            aiOn) {
+        if (!correct && gq.type != QuestionType.multipleChoice && aiOn) {
           final v = await AiGradingService().recheckFill(gq, ans);
           if (v.available && v.ok) {
             correct = true;
@@ -759,13 +781,18 @@ class PracticeService extends ChangeNotifier {
       _partialScore += partial;
       // 主观题在 AI 未判（未启用/失败）时入家长审核兜底
       if (pendingParent) {
-        await _reviewService.submitSubjectiveGrading(practiceRecordId: recordId);
+        await _reviewService.submitSubjectiveGrading(
+            practiceRecordId: recordId);
       }
       // V3.13 修正：组合题里 aiDispute 已过滤
       // V3.24.8: 塞 practiceRecordId 让汇总屏申诉按钮可用
       results.add(GroupResultEntry(
-        question: gq, userAnswer: ans, isCorrect: correct,
-        practiceRecordId: recordId, aiFeedback: aiFb, aiResolved: aiResolved));
+          question: gq,
+          userAnswer: ans,
+          isCorrect: correct,
+          practiceRecordId: recordId,
+          aiFeedback: aiFb,
+          aiResolved: aiResolved));
     }
 
     // 整组全对 → _score+1（除非有未判主观题等家长，则不计学情）

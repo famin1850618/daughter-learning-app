@@ -147,6 +147,14 @@ class _SourceTile extends StatelessWidget {
         return Icons.calendar_month;
       case 'bonus':
         return Icons.workspace_premium;
+      case 'plan_completion':
+        return Icons.task_alt;
+      case 'appeal_approved':
+        return Icons.verified;
+      case 'subjective_perfect':
+      case 'subjective_good':
+      case 'subjective_pass':
+        return Icons.rate_review;
       default:
         return Icons.star_border;
     }

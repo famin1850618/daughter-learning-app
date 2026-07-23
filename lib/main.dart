@@ -141,6 +141,7 @@ class _LearningAppState extends State<LearningApp> {
   bool _wasPracticeActive = false;
   int _lastSessionScore = 0;
   int _lastSessionTotal = 0;
+  String? _lastSessionId;
   List<Question> _lastSessionQuestions = const [];
 
   @override
@@ -240,12 +241,17 @@ class _LearningAppState extends State<LearningApp> {
             knowledgePoint: row['knowledge_point'] as String?,
           );
         }).toList();
-        final marked = await _planService.autoCompleteFromPractice(
+        final completion = await _planService.autoCompleteFromPracticeDetailed(
           score: ss.score,
           total: ss.total,
           coveredTuples: coveredTuples,
         );
-        if (marked > 0) {
+        if (completion.marked > 0) {
+          await _rewardService.recordPlanCompletionRewards(
+            items: completion.markedItems,
+            sessionId: sessionId,
+            afterReview: true,
+          );
           await _assessmentService.refresh();
         }
       }
@@ -260,6 +266,7 @@ class _LearningAppState extends State<LearningApp> {
     if (_practiceService.sessionActive) {
       _lastSessionScore = _practiceService.score;
       _lastSessionTotal = _practiceService.currentQuestions.length;
+      _lastSessionId = _practiceService.sessionId;
       _lastSessionQuestions = List.of(_practiceService.currentQuestions);
     }
     final nowActive = _practiceService.sessionActive;
@@ -267,6 +274,7 @@ class _LearningAppState extends State<LearningApp> {
       // 用快照里的最终值（endSession 后这些被清空）
       final score = _lastSessionScore;
       final total = _lastSessionTotal;
+      final sessionId = _lastSessionId;
       final questions = _lastSessionQuestions;
       // 1. 计划自动完成（≥80% 通过）
       if (total > 0 && score / total >= 0.8 && questions.isNotEmpty) {
@@ -279,15 +287,19 @@ class _LearningAppState extends State<LearningApp> {
                 ))
             .toList();
         _planService
-            .autoCompleteFromPractice(
+            .autoCompleteFromPracticeDetailed(
           score: score,
           total: total,
           coveredTuples: tuples,
         )
-            .then((marked) {
-          if (marked > 0) {
+            .then((completion) async {
+          if (completion.marked > 0) {
+            await _rewardService.recordPlanCompletionRewards(
+              items: completion.markedItems,
+              sessionId: sessionId,
+            );
             // 计划状态变更后立即重算测评解锁
-            _assessmentService.refresh();
+            await _assessmentService.refresh();
           }
         });
       }

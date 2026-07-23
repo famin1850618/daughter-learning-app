@@ -1,7 +1,8 @@
 /// 奖励条目（V3.7 起持久化每次获得的星星）
 class Reward {
   final int? id;
-  final String source; // practice / weekly_test / monthly_test / bonus
+  // practice / weekly_test / monthly_test / bonus / plan_completion
+  final String source;
   final double stars;
   final DateTime earnedAt;
   final String? sessionId;
@@ -50,6 +51,14 @@ String rewardSourceLabel(String source) {
       return '月测';
     case 'bonus':
       return '满分加成';
+    case 'plan_completion':
+      return '计划完成';
+    case 'appeal_approved':
+      return '申诉补发';
+    case 'subjective_perfect':
+    case 'subjective_good':
+    case 'subjective_pass':
+      return '主观题评分';
     default:
       return source;
   }

@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import '../database/reward_dao.dart';
+import '../models/plan_group.dart';
 import '../models/reward.dart';
 
 /// 一次 session 的类型（决定通过/满分加成额度）
@@ -18,6 +19,8 @@ const Map<SessionKind, _Bonus> _bonusTable = {
   // V3.8.2: 月测奖励通过 +5 / 满分 +10（之前 +3 / +6）
   SessionKind.monthlyTest: _Bonus(5.0, 10.0),
 };
+
+const double _planCompletionStars = 1.0;
 
 String _sourceFor(SessionKind k) {
   switch (k) {
@@ -113,7 +116,8 @@ class RewardService extends ChangeNotifier {
 
     if (perQ > 0) {
       // score 可能是 double（partial 累加），note 显示 1 位小数
-      final scoreDisp = score is int ? score.toString() : score.toStringAsFixed(1);
+      final scoreDisp =
+          score is int ? score.toString() : score.toStringAsFixed(1);
       await _dao.insert(Reward(
         source: source,
         stars: perQ.toDouble(),
@@ -128,7 +132,9 @@ class RewardService extends ChangeNotifier {
         stars: bonusStars,
         earnedAt: now,
         sessionId: sessionId,
-        note: perfect ? '满分加成（${rewardSourceLabel(source)}）' : '通过加成（${rewardSourceLabel(source)}）',
+        note: perfect
+            ? '满分加成（${rewardSourceLabel(source)}）'
+            : '通过加成（${rewardSourceLabel(source)}）',
       ));
     }
 
@@ -161,6 +167,48 @@ class RewardService extends ChangeNotifier {
       note: note,
     ));
     await refresh();
+  }
+
+  Future<double> recordPlanCompletionRewards({
+    required List<PlanItem> items,
+    String? sessionId,
+    bool afterReview = false,
+  }) async {
+    double total = 0;
+    final now = DateTime.now();
+    for (final item in items) {
+      final itemId = item.id;
+      if (itemId == null) continue;
+      final rewardSessionId = _planCompletionSessionId(
+        itemId: itemId,
+        sessionId: sessionId,
+      );
+      final existing = await _dao.getBySessionId(rewardSessionId);
+      if (existing.any((r) => r.source == 'plan_completion')) continue;
+
+      final notePrefix = afterReview ? '申诉审核后完成计划' : '完成计划';
+      await _dao.insert(Reward(
+        source: 'plan_completion',
+        stars: _planCompletionStars,
+        earnedAt: now,
+        sessionId: rewardSessionId,
+        note:
+            '$notePrefix：${item.subjectName} ${item.gradeLabel} ${item.displayTitle}',
+      ));
+      total += _planCompletionStars;
+    }
+    if (total > 0) {
+      await refresh();
+    }
+    return total;
+  }
+
+  String _planCompletionSessionId({
+    required int itemId,
+    required String? sessionId,
+  }) {
+    final base = sessionId == null || sessionId.isEmpty ? 'manual' : sessionId;
+    return 'plan_completion:$itemId:$base';
   }
 
   /// 检查 session 是否已发过通过/满分加成（note 含"加成"判断）

@@ -17,14 +17,16 @@ Do not modify the rollback origin. Future app iterations should keep the newest 
 
 ## Current Iteration
 
-- Version: `3.38.0+74`
-- Main change: in-app question/option images can be opened full-screen and pinch-zoomed; overdue-plan reminder/rollover and embedded AI keys are retained.
-- Debug APK: `/mnt/d/AI_Workspace/Planning/planning_v3_38_0_debug.apk`
-- APK SHA256: `36d80fcfa6f7dfdd63ee37034d5ec7409ee42059a860f319dd4b4063938135d6`
+- Version: `3.39.0+75`
+- Main change: plan-completion rewards are now written to the reward log, including plans completed after appeal/subjective review approval; recent awards and source distribution show them as `计划完成`.
+- Debug APK: `/mnt/d/AI_Workspace/Planning/planning_v3_39_0_debug.apk`
+- APK SHA256: `c711c602eb90bc8a051e0fd1361f0f8836f4a9667d1df75c03724faef4b79c13`
 - API keys: this APK embeds the DeepSeek grading key and Qwen handwriting/OCR key from the Planning key files.
 - Keyed build command: `tools/build_debug_with_embedded_keys.sh`
 
 For future debug APKs, use `tools/build_debug_with_embedded_keys.sh` rather than plain `flutter build apk --debug`. The script reads `/mnt/d/AI_Workspace/Planning/deepseek.txt` and `/mnt/d/AI_Workspace/Planning/qwen.txt`, passes them through a temporary `--dart-define-from-file`, deletes the temporary define file, and copies the APK back to the Planning directory under the versioned `planning_v*_debug.apk` name.
+
+Generated APK retention: rollback-origin backup remains protected; the Planning root currently keeps `planning_v3_38_0_debug.apk` and `planning_v3_39_0_debug.apk`. Older non-origin root APKs were removed after the v3.39.0 build.
 
 ## Directory Map
 

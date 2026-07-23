@@ -20,6 +20,14 @@ class PracticeKpTuple {
   });
 }
 
+class PlanCompletionResult {
+  final List<PlanItem> markedItems;
+
+  const PlanCompletionResult(this.markedItems);
+
+  int get marked => markedItems.length;
+}
+
 // ── Snapshot used by the plan adjustment screen ──────────────────────────────
 class AdjustmentSnapshot {
   final DateTime date;
@@ -309,14 +317,28 @@ class PlanService extends ChangeNotifier {
     required int total,
     required List<PracticeKpTuple> coveredTuples,
   }) async {
-    if (total == 0) return 0;
-    if (score / total < 0.8) return 0;
-    if (coveredTuples.isEmpty) return 0;
+    final result = await autoCompleteFromPracticeDetailed(
+      score: score,
+      total: total,
+      coveredTuples: coveredTuples,
+    );
+    return result.marked;
+  }
+
+  /// 与 [autoCompleteFromPractice] 使用同一匹配口径，并保留刚完成的计划项明细。
+  Future<PlanCompletionResult> autoCompleteFromPracticeDetailed({
+    required int score,
+    required int total,
+    required List<PracticeKpTuple> coveredTuples,
+  }) async {
+    if (total == 0) return const PlanCompletionResult([]);
+    if (score / total < 0.8) return const PlanCompletionResult([]);
+    if (coveredTuples.isEmpty) return const PlanCompletionResult([]);
 
     final allItems = await _itemDao.getAllPending();
-    if (allItems.isEmpty) return 0;
+    if (allItems.isEmpty) return const PlanCompletionResult([]);
 
-    int marked = 0;
+    final markedItems = <PlanItem>[];
     for (final item in allItems) {
       if (item.status == PlanItemStatus.completed) continue;
       final hasKp =
@@ -330,14 +352,16 @@ class PlanService extends ChangeNotifier {
       });
       if (matched) {
         await _itemDao.markComplete(item.id!);
-        marked++;
+        item.status = PlanItemStatus.completed;
+        item.completedAt = DateTime.now();
+        markedItems.add(item);
       }
     }
 
-    if (marked > 0) {
+    if (markedItems.isNotEmpty) {
       await loadDate(_selectedDate);
     }
-    return marked;
+    return PlanCompletionResult(markedItems);
   }
 
   Future<void> markItemPending(int itemId) async {
@@ -411,11 +435,13 @@ class PlanService extends ChangeNotifier {
   Future<String?> addToDay(DateTime date, List<PlanItemDraft> drafts) async {
     final d = PlanDateUtils.dateOnly(date);
     final monthPlans = await _groupDao.getMonthPlansForDate(d);
-    if (monthPlans.isNotEmpty)
+    if (monthPlans.isNotEmpty) {
       return addToLevel(date, PlanGroupType.month, drafts);
+    }
     final weekPlans = await _groupDao.getWeekPlansForDate(d);
-    if (weekPlans.isNotEmpty)
+    if (weekPlans.isNotEmpty) {
       return addToLevel(date, PlanGroupType.week, drafts);
+    }
     return addToLevel(date, PlanGroupType.day, drafts);
   }
 
