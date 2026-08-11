@@ -1,5 +1,5 @@
 {
-  "version": 156,
+  "version": 157,
   "updated_at": "2026-08-11",
   "batches": [
     {
@@ -937,9 +937,22 @@
       "grade": 7,
       "count": 26,
       "batch_hash": "69a78e8f181abb5029eeb0e35d832ff47c34c045"
+    },
+    {
+      "source": "realpaper_g7_chinese_renjiao_qm_longgang_hongyang_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_chinese_renjiao_qm_longgang_hongyang_001.json",
+      "subject": "chinese",
+      "grade": 7,
+      "count": 23,
+      "batch_hash": "a9c23d2e55a239c295ed4982b7ac90957839a4e9"
     }
   ],
   "_changelog": [
+    {
+      "version": 157,
+      "date": "2026-08-11",
+      "note": "v157 (2026-08-11): 新增龙岗区宏扬学校2024-2025七上语文期末真题23题。独立supervisor复核21/23个高风险题，修复静默规范化措辞、两张名著表及官方答案标点；Q14统计图与DOCX原媒体字节一致，Q15严格保留源卷两空答案并透明说明，不擅自医卷。6个组合题按ceil(mean)统一；修后full 22/22、跨批次/材料/图文/来源SHA1/双写/App schema全部通过，R1=1/R2=10/R3=11/R4=1。"
+    },
     {
       "version": 156,
       "date": "2026-08-11",
@@ -1222,6 +1235,7 @@
     }
   ],
   "changelog": [
+    "v157 (2026-08-11): +1 龙岗区宏扬学校2024-2025七上语文期末真题23题；独立supervisor修复题面/表格保真问题后full 22/22，R1=1/R2=10/R3=11/R4=1。",
     "v156 (2026-08-11): +1 南山区2024-2025七上语文期末真题26题；独立supervisor修复源保真问题后full 22/22，R1=3/R2=6/R3=15/R4=2。",
     "v155 (2026-08-11): +2 七上语文期末真题（共47题）：罗湖区2024-2025期末22题+盐田外国语学校2024-2025期末25题；worker与交叉supervisor完成，G7专用rubric自主round，full各22/22。",
     "v154 (2026-08-11): 七上数学10套期末救急部分入库85题；其余114题按原题号保留待 series_combo 重构或G7难度校准，后续同source原位扩充。",
