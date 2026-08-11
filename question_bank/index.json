@@ -1,6 +1,6 @@
 {
-  "version": 153,
-  "updated_at": "2026-07-23",
+  "version": 154,
+  "updated_at": "2026-08-11",
   "batches": [
     {
       "source": "batch_2026_05_07_g6_english_pet_r1",
@@ -833,9 +833,94 @@
       "grade": 7,
       "count": 20,
       "batch_hash": "2982a341162c9119d900c294ece9bd528883ab3a"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qm_shenzhen_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_shenzhen_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 8,
+      "batch_hash": "35ac1e436fb703ba027567d2d2da295a38d7f244"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qm_nanshan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_nanshan_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 9,
+      "batch_hash": "9a1cf39722e6cbcb676038ad6f0936e6e99b465d"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qm_shenzhenwai_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_shenzhenwai_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 6,
+      "batch_hash": "be50b723fca0e918538e60f802dbd8a3f06d4bc7"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qm_shenzhenshiyan_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_shenzhenshiyan_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 10,
+      "batch_hash": "0538481fd75af9864b44a55e4c328d9dc1c8e96c"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qm_shenzhengaoji_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_shenzhengaoji_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 9,
+      "batch_hash": "97f5ea281cf6b1325b3688a2379bff0f72f963fd"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qm_futian_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_futian_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 9,
+      "batch_hash": "d766ad32e1c199e9bbdcd529e6b3732e0cd5c23a"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qm_luohu_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_luohu_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 8,
+      "batch_hash": "0442458153668540283ca804d2fb4d42e87ad6d2"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qm_longhua_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_longhua_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 8,
+      "batch_hash": "019505acebe5c29b1d27aa88a430f77ea2a80ac9"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qm_baihewaiyu_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_baihewaiyu_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 8,
+      "batch_hash": "7f09c06db303fc14e6c43fe490c35ea7ca6f9d2a"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qm_shenzhenwai_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_shenzhenwai_002.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 10,
+      "batch_hash": "f619c45f9b41a09a2664ebe71ca7ec1aa121eb00"
     }
   ],
   "_changelog": [
+    {
+      "version": 154,
+      "date": "2026-08-11",
+      "note": "v154 (2026-08-11): 七上数学救急部分入库：沿用10个期末考试 source_id，发布85道结构完整、官方答案已核且明显为R1的独立单题；各卷分别8/9/8/8/9/8/9/10/6/10题。其余114道以 _skipped_for_future 保留原题号与摘录，原因统一为 pending_full_reconstruction_or_g7_round_calibration；其中含多子题 series_combo 重构、G7专用难度校准、罗湖q9答案串错/q12矩阵公式丢失、罗湖q15及深圳实验q18 choice跨题边界。85题完成官方答案抽核、含图题全量M3/M4、option_images逐项视觉核对、R34来源SHA1验真；后续同source原位扩充，不建立重复考试batch。"
+    },
     {
       "version": 153,
       "date": "2026-07-23",
@@ -1103,6 +1188,7 @@
     }
   ],
   "changelog": [
+    "v154 (2026-08-11): 七上数学10套期末救急部分入库85题；其余114题按原题号保留待 series_combo 重构或G7难度校准，后续同source原位扩充。",
     "v153 (2026-07-23): 完整补齐4套七年级深圳真题共89题：盐田七上期中数学20、深圳中学七下期末数学23、深圳48校七上期中语文24、罗湖七下期末语文22；数学公式TeX化，几何图形保留原卷嵌图。",
     "v152 (2026-07-22): +4 七年级真题试入库（共35题）：math_qz_yantian_001(6)+math_qm_shenzhong_001(4)+chinese_qz_shenzhen48_001(17)+chinese_qm_luohu_001(8)；盐田数学 q12/q16/q18 使用 docx 内嵌原图 image_data，公式解释用 TeX。",
     "v149 (2026-06-26): +2 6下数学真题 qz_longhua_005(龙华20-21期中,30)+xsc_baoan_004(2022宝安小升初,31)=61题",
