@@ -1,5 +1,5 @@
 {
-  "version": 154,
+  "version": 155,
   "updated_at": "2026-08-11",
   "batches": [
     {
@@ -913,9 +913,30 @@
       "grade": 7,
       "count": 10,
       "batch_hash": "f619c45f9b41a09a2664ebe71ca7ec1aa121eb00"
+    },
+    {
+      "source": "realpaper_g7_chinese_renjiao_qm_luohu_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_chinese_renjiao_qm_luohu_002.json",
+      "subject": "chinese",
+      "grade": 7,
+      "count": 22,
+      "batch_hash": "655bdd9231a2f5f0fee48e095a19de5a9f8ecce8"
+    },
+    {
+      "source": "realpaper_g7_chinese_renjiao_qm_yantianwaiyu_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_chinese_renjiao_qm_yantianwaiyu_001.json",
+      "subject": "chinese",
+      "grade": 7,
+      "count": 25,
+      "batch_hash": "39d8d65f69c22c29a66b27afaa6588abb40cc0d2"
     }
   ],
   "_changelog": [
+    {
+      "version": 155,
+      "date": "2026-08-11",
+      "note": "v155 (2026-08-11): 新增两套七上语文期末真题共47题：罗湖区2024-2025期末22题、盐田外国语学校2024-2025期末25题。两卷均完成DOCX考试身份去重、worker M1-M4与交叉supervisor全量高风险复核；罗湖一题因官方答案与统计图矛盾暂缓，盐田一篇作文因源文关键要求破损暂缓。G7难度由Famin授权ScanFamin按专用rubric+nearest anchors自主判定并对组合题ceil(mean)统一；两批full 22/22、图文/材料/来源SHA1/双写/App schema全部通过。"
+    },
     {
       "version": 154,
       "date": "2026-08-11",
@@ -1188,6 +1209,7 @@
     }
   ],
   "changelog": [
+    "v155 (2026-08-11): +2 七上语文期末真题（共47题）：罗湖区2024-2025期末22题+盐田外国语学校2024-2025期末25题；worker与交叉supervisor完成，G7专用rubric自主round，full各22/22。",
     "v154 (2026-08-11): 七上数学10套期末救急部分入库85题；其余114题按原题号保留待 series_combo 重构或G7难度校准，后续同source原位扩充。",
     "v153 (2026-07-23): 完整补齐4套七年级深圳真题共89题：盐田七上期中数学20、深圳中学七下期末数学23、深圳48校七上期中语文24、罗湖七下期末语文22；数学公式TeX化，几何图形保留原卷嵌图。",
     "v152 (2026-07-22): +4 七年级真题试入库（共35题）：math_qz_yantian_001(6)+math_qm_shenzhong_001(4)+chinese_qz_shenzhen48_001(17)+chinese_qm_luohu_001(8)；盐田数学 q12/q16/q18 使用 docx 内嵌原图 image_data，公式解释用 TeX。",
