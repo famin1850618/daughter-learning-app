@@ -1,5 +1,5 @@
 {
-  "version": 157,
+  "version": 158,
   "updated_at": "2026-08-11",
   "batches": [
     {
@@ -945,9 +945,22 @@
       "grade": 7,
       "count": 23,
       "batch_hash": "a9c23d2e55a239c295ed4982b7ac90957839a4e9"
+    },
+    {
+      "source": "realpaper_g7_chinese_renjiao_qz_baoanzhongxue_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_chinese_renjiao_qz_baoanzhongxue_001.json",
+      "subject": "chinese",
+      "grade": 7,
+      "count": 25,
+      "batch_hash": "04c6195bd4b978e766edc1fe62fe17490fde50a2"
     }
   ],
   "_changelog": [
+    {
+      "version": 158,
+      "date": "2026-08-11",
+      "note": "v158 (2026-08-11): 新增宝安中学集团2024-2025七上语文期中真题25题。独立supervisor逐源复核25/25答案、7表、8媒体和6组合组，修复朗读表标签、藤野先生引文截断、《西游记》表格摘要化、完整范文缺失及5题课程映射过泛。两张有效图归属/内容通过，其余空白/头像/二维码正确排除；修后full 22/22、跨批次/材料/图文/来源SHA1/双写/App schema全部通过，R1=1/R2=6/R3=17/R4=1。"
+    },
     {
       "version": 157,
       "date": "2026-08-11",
@@ -1235,6 +1248,7 @@
     }
   ],
   "changelog": [
+    "v158 (2026-08-11): +1 宝安中学集团2024-2025七上语文期中真题25题；独立supervisor修复表格/引文/范文/课程映射后full 22/22，R1=1/R2=6/R3=17/R4=1。",
     "v157 (2026-08-11): +1 龙岗区宏扬学校2024-2025七上语文期末真题23题；独立supervisor修复题面/表格保真问题后full 22/22，R1=1/R2=10/R3=11/R4=1。",
     "v156 (2026-08-11): +1 南山区2024-2025七上语文期末真题26题；独立supervisor修复源保真问题后full 22/22，R1=3/R2=6/R3=15/R4=2。",
     "v155 (2026-08-11): +2 七上语文期末真题（共47题）：罗湖区2024-2025期末22题+盐田外国语学校2024-2025期末25题；worker与交叉supervisor完成，G7专用rubric自主round，full各22/22。",
