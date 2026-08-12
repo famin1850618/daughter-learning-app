@@ -1,5 +1,5 @@
 {
-  "version": 165,
+  "version": 166,
   "updated_at": "2026-08-12",
   "batches": [
     {
@@ -863,8 +863,8 @@
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_shenzhenshiyan_001.json",
       "subject": "math",
       "grade": 7,
-      "count": 10,
-      "batch_hash": "0538481fd75af9864b44a55e4c328d9dc1c8e96c"
+      "count": 32,
+      "batch_hash": "3896bd54df199230ec07e12ab0692abf7f8acce7"
     },
     {
       "source": "realpaper_g7_math_beishida_qm_shenzhengaoji_001",
@@ -980,6 +980,11 @@
     }
   ],
   "_changelog": [
+    {
+      "version": 166,
+      "date": "2026-08-12",
+      "note": "v166 (2026-08-12): 原位补全深圳实验学校2025-2026七上数学期末 batch：10条扩至32条，10/10个延期原题号全部重构，源20/20题号覆盖、0跳过。独立supervisor重提395个MathType公式并核验24页/23非公式媒体/32原子题，修复章节KP、源证据、LaTeX、组内题号、审核标准、图压缩与round审计；q20三处官方解析错误均独立复算并以官方|||严格答案透明保留。修后full 22/22、M1-M4、专项/双写/目标App schema全部通过。"
+    },
     {
       "version": 165,
       "date": "2026-08-12",
@@ -1307,6 +1312,7 @@
     }
   ],
   "changelog": [
+    "v166 (2026-08-12): 深圳实验学校2025-2026七上数学期末原位补全，10→32条；10/10欠账清零，独立supervisor全量复核后full 22/22。",
     "v165 (2026-08-12): 福田区2025-2026七上数学期末原位补全，9→32条；11/11欠账清零，独立supervisor全量复核后full 22/22。",
     "v164 (2026-08-12): 深圳外国语学校2025-2026七上数学期末原位补全，6→37条；14/14欠账清零，独立supervisor全量复核后full 22/22。",
     "v163 (2026-08-12): 南山区2025-2026七上数学期末原位补全，9→32条；11/11欠账清零，独立supervisor全量复核后full 22/22。",
