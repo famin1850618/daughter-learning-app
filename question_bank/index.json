@@ -1,5 +1,5 @@
 {
-  "version": 170,
+  "version": 171,
   "updated_at": "2026-08-12",
   "batches": [
     {
@@ -903,8 +903,8 @@
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_baihewaiyu_001.json",
       "subject": "math",
       "grade": 7,
-      "count": 8,
-      "batch_hash": "7f09c06db303fc14e6c43fe490c35ea7ca6f9d2a"
+      "count": 35,
+      "batch_hash": "6de52f70a98a7572e0b901f6efee02ae28e8e005"
     },
     {
       "source": "realpaper_g7_math_beishida_qm_shenzhenwai_002",
@@ -980,6 +980,11 @@
     }
   ],
   "_changelog": [
+    {
+      "version": 171,
+      "date": "2026-08-12",
+      "note": "v171 (2026-08-12): 原位补全百合外国语学校2025-2026七上数学期末 batch：8条扩至35条，12/12个延期原题号全部重构，源20/20题号覆盖、0跳过。独立supervisor全量核验21页/224媒体/35原子题，修复q12转义污染、q13双答案与q19字母表达式输入类型、15条内部[IMG:]占位泄漏及q16(3) P/M争议记录；q1原PNG、q16/q18空白题图和答案图排除均逐字节确认。修后full 22/22、M1-M4、专项/双写/目标App schema全部通过，R1=3/R2=23/R3=7/R4=2。"
+    },
     {
       "version": 170,
       "date": "2026-08-12",
@@ -1332,6 +1337,7 @@
     }
   ],
   "changelog": [
+    "v171 (2026-08-12): 百合外国语学校2025-2026七上数学期末原位补全，8→35条；12/12欠账清零，独立supervisor全量复核后full 22/22。",
     "v170 (2026-08-12): 深圳外国语学校2024-2025七上数学期末原位补全，10→31条；9/9欠账清零，独立supervisor全量复核后full 22/22。",
     "v169 (2026-08-12): 龙华区2025-2026七上数学期末原位补全，8→32条；12/12欠账清零，独立supervisor全量复核后full 22/22。",
     "v168 (2026-08-12): 罗湖区2025-2026七上数学期末原位补全，8→35条；12/12欠账清零，独立supervisor全量复核后full 22/22。",
