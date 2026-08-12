@@ -1,5 +1,5 @@
 {
-  "version": 162,
+  "version": 163,
   "updated_at": "2026-08-12",
   "batches": [
     {
@@ -847,8 +847,8 @@
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_nanshan_001.json",
       "subject": "math",
       "grade": 7,
-      "count": 9,
-      "batch_hash": "9a1cf39722e6cbcb676038ad6f0936e6e99b465d"
+      "count": 32,
+      "batch_hash": "e7857a878c6e6c7418fd9052b1a65a5fdaa15162"
     },
     {
       "source": "realpaper_g7_math_beishida_qm_shenzhenwai_001",
@@ -980,6 +980,11 @@
     }
   ],
   "_changelog": [
+    {
+      "version": 163,
+      "date": "2026-08-12",
+      "note": "v163 (2026-08-12): 原位补全南山区2025-2026七上数学期末 batch：9条扩至32条，11/11个延期原题号全部重构，源20/20题号覆盖、0跳过。独立supervisor全量核验21页与全部媒体，修复q1官方文字/源图符号冲突、q16算式笔误、q19漏图并以两张DOCX原图无损纵拼、q20中点公式歧义及21条非逐字源摘录；修后full 22/22、专项/双写/目标App schema全部通过，R1=6/R2=11/R3=15/R4=0。"
+    },
     {
       "version": 162,
       "date": "2026-08-12",
@@ -1292,6 +1297,7 @@
     }
   ],
   "changelog": [
+    "v163 (2026-08-12): 南山区2025-2026七上数学期末原位补全，9→32条；11/11欠账清零，独立supervisor全量复核后full 22/22。",
     "v162 (2026-08-12): 深圳市2025-2026七上数学期末原位补全，8→34条；12/12欠账清零，独立supervisor全量复核后full 22/22。",
     "v161 (2026-08-12): +1 深圳高级中学集团七校2023-2024七上语文期末23条；独立supervisor修复解析/答案/表格/审核标准后full 22/22。",
     "v160 (2026-08-12): +1 龙华区2023-2024七上语文期末真题25题；独立supervisor修复题数/媒体/着重号/round审计后full 22/22，R1=2/R2=8/R3=14/R4=1。",
