@@ -1,5 +1,5 @@
 {
-  "version": 169,
+  "version": 170,
   "updated_at": "2026-08-12",
   "batches": [
     {
@@ -911,8 +911,8 @@
       "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_shenzhenwai_002.json",
       "subject": "math",
       "grade": 7,
-      "count": 10,
-      "batch_hash": "f619c45f9b41a09a2664ebe71ca7ec1aa121eb00"
+      "count": 31,
+      "batch_hash": "b45f4984be191f2dc5f9731053e881d5a7d745a0"
     },
     {
       "source": "realpaper_g7_chinese_renjiao_qm_luohu_002",
@@ -980,6 +980,11 @@
     }
   ],
   "_changelog": [
+    {
+      "version": 170,
+      "date": "2026-08-12",
+      "note": "v170 (2026-08-12): 原位补全深圳外国语学校2024-2025七上数学期末 batch：10条扩至31条，9/9个延期原题号全部重构，源19/19题号覆盖、0跳过。独立supervisor全量核验22页/307公式/30 PNG/31原子题，恢复q1-q13多处压缩改写及q16-q19共同材料，补齐q18/q19输入适配留痕；独立确认q3官方中间数笔误、q16开放预测、q17空白作图底图及q19六原子/双解/复合图边界。修后full 22/22、M1-M4、专项/双写/目标App schema全部通过，R1=5/R2=12/R3=14/R4=0。"
+    },
     {
       "version": 169,
       "date": "2026-08-12",
@@ -1327,6 +1332,7 @@
     }
   ],
   "changelog": [
+    "v170 (2026-08-12): 深圳外国语学校2024-2025七上数学期末原位补全，10→31条；9/9欠账清零，独立supervisor全量复核后full 22/22。",
     "v169 (2026-08-12): 龙华区2025-2026七上数学期末原位补全，8→32条；12/12欠账清零，独立supervisor全量复核后full 22/22。",
     "v168 (2026-08-12): 罗湖区2025-2026七上数学期末原位补全，8→35条；12/12欠账清零，独立supervisor全量复核后full 22/22。",
     "v167 (2026-08-12): 深圳高级中学2025-2026七上数学期末原位补全，9→34条；11/11欠账清零，独立supervisor全量复核后full 22/22。",
