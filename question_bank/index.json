@@ -1,6 +1,6 @@
 {
-  "version": 158,
-  "updated_at": "2026-08-11",
+  "version": 159,
+  "updated_at": "2026-08-12",
   "batches": [
     {
       "source": "batch_2026_05_07_g6_english_pet_r1",
@@ -953,9 +953,22 @@
       "grade": 7,
       "count": 25,
       "batch_hash": "04c6195bd4b978e766edc1fe62fe17490fde50a2"
+    },
+    {
+      "source": "realpaper_g7_chinese_renjiao_qm_guangming_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_chinese_renjiao_qm_guangming_001.json",
+      "subject": "chinese",
+      "grade": 7,
+      "count": 25,
+      "batch_hash": "dd3a03c984afafef1cb8cfc11cf95d95079890d3"
     }
   ],
   "_changelog": [
+    {
+      "version": 159,
+      "date": "2026-08-12",
+      "note": "v159 (2026-08-12): 新增光明区2023-2024七上语文期末真题25题。独立supervisor逐源复核25/25题、4表、3媒体、4组合组和16主观题，修复组合子题序号、Form B元数据及不可复现审计记录，并披露但不擅改源卷段落编号/解析边界问题；3媒体均确认为空白占位。修后full 22/22、跨批次/材料/图文/来源SHA1/双写/App schema全部通过，R1=1/R2=9/R3=14/R4=1。"
+    },
     {
       "version": 158,
       "date": "2026-08-11",
@@ -1248,6 +1261,7 @@
     }
   ],
   "changelog": [
+    "v159 (2026-08-12): +1 光明区2023-2024七上语文期末真题25题；独立supervisor全量复核并修复结构/审计问题后full 22/22，R1=1/R2=9/R3=14/R4=1。",
     "v158 (2026-08-11): +1 宝安中学集团2024-2025七上语文期中真题25题；独立supervisor修复表格/引文/范文/课程映射后full 22/22，R1=1/R2=6/R3=17/R4=1。",
     "v157 (2026-08-11): +1 龙岗区宏扬学校2024-2025七上语文期末真题23题；独立supervisor修复题面/表格保真问题后full 22/22，R1=1/R2=10/R3=11/R4=1。",
     "v156 (2026-08-11): +1 南山区2024-2025七上语文期末真题26题；独立supervisor修复源保真问题后full 22/22，R1=3/R2=6/R3=15/R4=2。",
