@@ -1,6 +1,6 @@
 {
-  "version": 171,
-  "updated_at": "2026-08-12",
+  "version": 172,
+  "updated_at": "2026-08-13",
   "batches": [
     {
       "source": "batch_2026_05_07_g6_english_pet_r1",
@@ -977,9 +977,22 @@
       "grade": 7,
       "count": 23,
       "batch_hash": "f75812784a384d9447087c1dc6c5f320d8571164"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qm_baihe_foreign_2024_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_baihe_foreign_2024_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 34,
+      "batch_hash": "acf85116bfdc6d818b6b3050f12599cff9e34657"
     }
   ],
   "_changelog": [
+    {
+      "version": 172,
+      "date": "2026-08-13",
+      "note": "v172 (2026-08-13): 新增百合外国语学校2024-2025七上数学期末真题34条，20/20源题号覆盖、0跳过。独立supervisor全量复核24页、390个MathType对象、15张非公式媒体、16个题图绑定和7个Form-B组；full 22/22、M1-M4、专项/双写/目标App schema全部通过，R1=3/R2=18/R3=12/R4=1。"
+    },
     {
       "version": 171,
       "date": "2026-08-12",
@@ -1337,6 +1350,7 @@
     }
   ],
   "changelog": [
+    "v172 (2026-08-13): +1 百合外国语学校2024-2025七上数学期末34条；20/20源题覆盖、0跳过，独立supervisor全量复核后full 22/22及全部专项门禁通过。",
     "v171 (2026-08-12): 百合外国语学校2025-2026七上数学期末原位补全，8→35条；12/12欠账清零，独立supervisor全量复核后full 22/22。",
     "v170 (2026-08-12): 深圳外国语学校2024-2025七上数学期末原位补全，10→31条；9/9欠账清零，独立supervisor全量复核后full 22/22。",
     "v169 (2026-08-12): 龙华区2025-2026七上数学期末原位补全，8→32条；12/12欠账清零，独立supervisor全量复核后full 22/22。",
