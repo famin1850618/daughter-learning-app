@@ -1,5 +1,5 @@
 {
-  "version": 174,
+  "version": 175,
   "updated_at": "2026-08-14",
   "batches": [
     {
@@ -1001,9 +1001,22 @@
       "grade": 7,
       "count": 32,
       "batch_hash": "c548f7584de2e9843b0510b8143007bc2cbec9d1"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qm_longgang_2024_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_longgang_2024_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 32,
+      "batch_hash": "5a8ea79f844066b215e93984760f1d2c5eded284"
     }
   ],
   "_changelog": [
+    {
+      "version": 175,
+      "date": "2026-08-14",
+      "note": "v175 (2026-08-14): 新增龙岗区2024-2025七上数学期末真题32条，20/20源题号覆盖、0跳过。首轮二审因多题源文压缩、q9改题型、q16-q20共同材料及round证据不全判退；原worker全量返修后，新独立supervisor复核32条/22含图/18条Form-B/q19同卷companion，并再次恢复源文、补5条审核标准和纠正争议元数据。最终full 22/22、M1-M4、专项/双写/目标App schema通过，R1=4/R2=16/R3=8/R4=4。"
+    },
     {
       "version": 174,
       "date": "2026-08-14",
@@ -1376,6 +1389,7 @@
     }
   ],
   "changelog": [
+    "v175 (2026-08-14): +1 龙岗区2024-2025七上数学期末32条；首轮判退、返修并由新独立supervisor全源复审后，full 22/22及全部专项门禁通过。",
     "v174 (2026-08-14): +1 深圳高级中学2024-2025七上数学期末32条；独立supervisor修复q11题型与q13 LaTeX后，全源复核及full 22/22通过。",
     "v173 (2026-08-13): +1 宝安区2024-2025七上数学期末32条；首轮二审判退后完成q19/q20材料、图表和11条审核标准返修，独立复审及full 22/22通过。",
     "v172 (2026-08-13): +1 百合外国语学校2024-2025七上数学期末34条；20/20源题覆盖、0跳过，独立supervisor全量复核后full 22/22及全部专项门禁通过。",
