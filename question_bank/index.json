@@ -1,5 +1,5 @@
 {
-  "version": 175,
+  "version": 176,
   "updated_at": "2026-08-14",
   "batches": [
     {
@@ -1009,9 +1009,22 @@
       "grade": 7,
       "count": 32,
       "batch_hash": "5a8ea79f844066b215e93984760f1d2c5eded284"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qm_yantian_2024_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_yantian_2024_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 34,
+      "batch_hash": "f2b18b220960e3c057d72d377a0c44671b43ed0a"
     }
   ],
   "_changelog": [
+    {
+      "version": 176,
+      "date": "2026-08-14",
+      "note": "v176 (2026-08-14): 新增盐田区2024-2025七上数学期末真题34条，20/20源题号覆盖、0跳过。独立supervisor复核24页、450个Equation OLE实例、251个唯一WMF预览、25张PNG和全部20个图绑定；独立隔离LO再次重转119/119首轮失败对象并与worker恢复逐字节一致，修4条主观审核标准、q15源摘录和媒体审计口径。最终full 22/22、M1-M4、专项/双写/目标App schema通过，R1=7/R2=12/R3=15。"
+    },
     {
       "version": 175,
       "date": "2026-08-14",
@@ -1389,6 +1402,7 @@
     }
   ],
   "changelog": [
+    "v176 (2026-08-14): +1 盐田区2024-2025七上数学期末34条；119个失败WMF独立重转复现，修正4条审核标准与审计口径后全源复核、full 22/22通过。",
     "v175 (2026-08-14): +1 龙岗区2024-2025七上数学期末32条；首轮判退、返修并由新独立supervisor全源复审后，full 22/22及全部专项门禁通过。",
     "v174 (2026-08-14): +1 深圳高级中学2024-2025七上数学期末32条；独立supervisor修复q11题型与q13 LaTeX后，全源复核及full 22/22通过。",
     "v173 (2026-08-13): +1 宝安区2024-2025七上数学期末32条；首轮二审判退后完成q19/q20材料、图表和11条审核标准返修，独立复审及full 22/22通过。",
