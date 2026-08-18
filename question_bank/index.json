@@ -1,6 +1,6 @@
 {
-  "version": 177,
-  "updated_at": "2026-08-14",
+  "version": 178,
+  "updated_at": "2026-08-18",
   "batches": [
     {
       "source": "batch_2026_05_07_g6_english_pet_r1",
@@ -1025,9 +1025,22 @@
       "grade": 7,
       "count": 32,
       "batch_hash": "664ff4a4079303e0a69808e8c63e7620d14e833a"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qm_luohu_2024_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_luohu_2024_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 30,
+      "batch_hash": "c22a9a5fe04611a9c02b9ddbf11253ef6f83c804"
     }
   ],
   "_changelog": [
+    {
+      "version": 178,
+      "date": "2026-08-18",
+      "note": "v178 (2026-08-18): 新增罗湖区2024-2025七上数学期末真题30条，19/20源题号覆盖、1题隔离。独立supervisor复核20/20页、197/197 WMF、21/21 PNG，并隔离q7：题干为∠BCO=39°而官方解析按∠BOC=39°，按字面无法唯一作答且不得改题。其余30条答案、19条含图行、6个Form-B组、5道主观标准全部通过；最终full 22/22、M1-M4、专项/双写/目标App schema通过，R1=8/R2=13/R3=9。"
+    },
     {
       "version": 177,
       "date": "2026-08-14",
@@ -1415,6 +1428,7 @@
     }
   ],
   "changelog": [
+    "v178 (2026-08-18): +1 罗湖区2024-2025七上数学期末30条；独立supervisor全卷复核后隔离题干与官方解析冲突、无法唯一作答的q7，其余19/20母题通过全部门禁。",
     "v177 (2026-08-14): +1 深圳市第二实验学校2024-2025七上数学期末32条；独立supervisor核清公式、媒体、矩阵图和组合题，修正q14共同前缀证据后全源复核、full 22/22通过。",
     "v176 (2026-08-14): +1 盐田区2024-2025七上数学期末34条；119个失败WMF独立重转复现，修正4条审核标准与审计口径后全源复核、full 22/22通过。",
     "v175 (2026-08-14): +1 龙岗区2024-2025七上数学期末32条；首轮判退、返修并由新独立supervisor全源复审后，full 22/22及全部专项门禁通过。",
