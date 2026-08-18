@@ -1,5 +1,5 @@
 {
-  "version": 179,
+  "version": 180,
   "updated_at": "2026-08-18",
   "batches": [
     {
@@ -1041,9 +1041,22 @@
       "grade": 7,
       "count": 31,
       "batch_hash": "c914803738f262409c93e805adb5787931a20dd5"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qm_shenzhen_experimental_junior_2024_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_shenzhen_experimental_junior_2024_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 32,
+      "batch_hash": "c2db9ccd4c65a1a914d635a50174feffa13ff94a"
     }
   ],
   "_changelog": [
+    {
+      "version": 180,
+      "date": "2026-08-18",
+      "note": "v180 (2026-08-18): 新增深圳实验学校初中部2024-2025七上数学期末真题32条，20/20源题号覆盖、0跳过。独立supervisor复核8页原卷+25页解析、485个MathType、2个OMath、19张非公式PNG及6个Form-B组；修复4组共同材料压缩、q20答案泄漏、两题符号填空输入适配、q18双空、TeX/KP和q19有损组合图。最终full 22/22、M1-M4、专项/双写/目标App schema通过，R1=6/R2=12/R3=14。"
+    },
     {
       "version": 179,
       "date": "2026-08-18",
@@ -1441,6 +1454,7 @@
     }
   ],
   "changelog": [
+    "v180 (2026-08-18): +1 深圳实验学校初中部2024-2025七上数学期末32条；独立supervisor修复共同材料、答案泄漏、输入适配、TeX/KP及题图后通过全部门禁。",
     "v179 (2026-08-18): +1 龙华区2024-2025七上数学期末31条；独立supervisor核清全部公式、媒体、组合题和输入适配，修主观审核提示及q15(4)统计说明后通过全部门禁。",
     "v178 (2026-08-18): +1 罗湖区2024-2025七上数学期末30条；独立supervisor全卷复核后隔离题干与官方解析冲突、无法唯一作答的q7，其余19/20母题通过全部门禁。",
     "v177 (2026-08-14): +1 深圳市第二实验学校2024-2025七上数学期末32条；独立supervisor核清公式、媒体、矩阵图和组合题，修正q14共同前缀证据后全源复核、full 22/22通过。",
