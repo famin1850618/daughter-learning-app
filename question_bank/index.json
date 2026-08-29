@@ -1,5 +1,5 @@
 {
-  "version": 187,
+  "version": 188,
   "updated_at": "2026-08-29",
   "batches": [
     {
@@ -1105,9 +1105,22 @@
       "grade": 7,
       "count": 32,
       "batch_hash": "8c50d0581a94b24c441f5de8088fa48275da122e"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qm_luohu_2023_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_luohu_2023_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 31,
+      "batch_hash": "336379d50d23d5c7a2203c09e462d7eb9f04e6ee"
     }
   ],
   "_changelog": [
+    {
+      "version": 188,
+      "date": "2026-08-29",
+      "note": "v188 (2026-08-29): 新增罗湖区2023-2024七上数学期末真题31条，22/22母题覆盖、0跳过、0损坏、0争议。独立supervisor复核20/20新渲染页、200/200源媒体、181/181 MathType/WMF公式、10/10唯一题图、15/15含图行、31/31原子行和5/5 Form-B组，并独立复算q16、q19-q22一致。最终full 22/22、M1-M4、专项/双写/目标App schema通过，R1=6/R2=13/R3=12。"
+    },
     {
       "version": 187,
       "date": "2026-08-29",
@@ -1545,6 +1558,7 @@
     }
   ],
   "changelog": [
+    "v188 (2026-08-29): +1 罗湖区2023-2024七上数学期末31条；独立supervisor全源复核20页、200媒体、181公式、31条原子题并复算q16及q19-q22后通过全部门禁。",
     "v187 (2026-08-29): +1 红岭实验学校（新洲）2023-2024七上数学期末32条；独立supervisor全源复核18页、181媒体、166公式与32条原子题并重算q20-q22后通过全部门禁。",
     "v186 (2026-08-29): +1 龙岗区2023-2024七上数学期末30条；独立supervisor判退并恢复q20完整共同指令，透明保留q22官方840/严格820争议后通过全部门禁。",
     "v185 (2026-08-29): +1 深圳实验学校2023-2024七上数学期末31条；新独立supervisor全源复核并恢复q9被压缩的源卷问句后通过全部门禁。",
