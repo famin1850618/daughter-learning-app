@@ -1,5 +1,5 @@
 {
-  "version": 185,
+  "version": 186,
   "updated_at": "2026-08-29",
   "batches": [
     {
@@ -1089,9 +1089,22 @@
       "grade": 7,
       "count": 31,
       "batch_hash": "aac2cad30860484d80216fa87c450f83444aa4ac"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qm_longgang_2023_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_longgang_2023_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 30,
+      "batch_hash": "82fb3b10bbae22ff733bbb792c037d97aaefa5be"
     }
   ],
   "_changelog": [
+    {
+      "version": 186,
+      "date": "2026-08-29",
+      "note": "v186 (2026-08-29): 新增龙岗区2023-2024七上数学期末真题30条，22/22母题覆盖、0跳过。独立supervisor复核18/18新渲染页、170个源媒体、156个MathType/WMF公式、10个题面组件、11条含图行、30/30原子行和5/5 Form-B组；首轮二审判退并由原worker恢复q20三行被压缩的完整共同指令，修后复审通过。q22(3)②官方840与严格题面820冲突，以840|||820及争议元数据透明保留。最终full 22/22、M1-M4、专项/双写/目标App schema通过，R1=8/R2=14/R3=4/R4=4。"
+    },
     {
       "version": 185,
       "date": "2026-08-29",
@@ -1519,6 +1532,7 @@
     }
   ],
   "changelog": [
+    "v186 (2026-08-29): +1 龙岗区2023-2024七上数学期末30条；独立supervisor判退并恢复q20完整共同指令，透明保留q22官方840/严格820争议后通过全部门禁。",
     "v185 (2026-08-29): +1 深圳实验学校2023-2024七上数学期末31条；新独立supervisor全源复核并恢复q9被压缩的源卷问句后通过全部门禁。",
     "v184 (2026-08-29): +1 盐田区2023-2024七上数学期末33条；新独立supervisor全源复核并删除q22中源卷不存在的标题后通过全部门禁。",
     "v183 (2026-08-29): +1 南山区2023-2024七上数学期末34条；新独立supervisor全源复核通过，q20(2)源卷题面/官方答案冲突以双答案和争议元数据透明保留。",
