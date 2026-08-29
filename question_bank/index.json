@@ -1,5 +1,5 @@
 {
-  "version": 183,
+  "version": 184,
   "updated_at": "2026-08-29",
   "batches": [
     {
@@ -1073,9 +1073,22 @@
       "grade": 7,
       "count": 34,
       "batch_hash": "728bdda0db05627c511a3503531b2a4abff5b0d2"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qm_yantian_2023_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_yantian_2023_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 33,
+      "batch_hash": "d6a73094cde891a1b5f9fcf047a93942e414ee3a"
     }
   ],
   "_changelog": [
+    {
+      "version": 184,
+      "date": "2026-08-29",
+      "note": "v184 (2026-08-29): 新增盐田区2023-2024七上数学期末真题33条，22/22母题覆盖、0跳过。新独立supervisor复核20/20新渲染页、252个源媒体、10/10唯一题干图、17/17行图绑定、33/33原子行和7/7 Form-B组；返修删除q22四行及共同前缀中源卷不存在的标题。最终full 22/22、M1-M4、专项/双写/目标App schema通过，R1=8/R2=15/R3=10。"
+    },
     {
       "version": 183,
       "date": "2026-08-29",
@@ -1493,6 +1506,7 @@
     }
   ],
   "changelog": [
+    "v184 (2026-08-29): +1 盐田区2023-2024七上数学期末33条；新独立supervisor全源复核并删除q22中源卷不存在的标题后通过全部门禁。",
     "v183 (2026-08-29): +1 南山区2023-2024七上数学期末34条；新独立supervisor全源复核通过，q20(2)源卷题面/官方答案冲突以双答案和争议元数据透明保留。",
     "v182 (2026-08-29): +1 光明区2023-2024七上数学期末30条；独立supervisor修复q19-q22共同材料、q14如图提示、输入适配与矩阵转录后通过全部门禁。",
     "v181 (2026-08-20): +1 福田区2024-2025七上数学期末32条；独立supervisor修复共同材料、表格、原文证据、输入适配及图片哈希证据后通过全部门禁。",
