@@ -1,5 +1,5 @@
 {
-  "version": 190,
+  "version": 191,
   "updated_at": "2026-08-30",
   "batches": [
     {
@@ -1129,6 +1129,14 @@
       "grade": 7,
       "count": 33,
       "batch_hash": "b7a21c9d8e15614d7c3a1c0b21ed54922661eec5"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qm_shenzhenwai_2023_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_shenzhenwai_2023_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 33,
+      "batch_hash": "e7ae85bbe40116cb1b87a5bbc7e29acafa8d26ea"
     }
   ],
   "_changelog": [
