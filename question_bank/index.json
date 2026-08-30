@@ -1,6 +1,6 @@
 {
-  "version": 188,
-  "updated_at": "2026-08-29",
+  "version": 189,
+  "updated_at": "2026-08-30",
   "batches": [
     {
       "source": "batch_2026_05_07_g6_english_pet_r1",
@@ -1113,9 +1113,22 @@
       "grade": 7,
       "count": 31,
       "batch_hash": "336379d50d23d5c7a2203c09e462d7eb9f04e6ee"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qm_longhua_2023_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_longhua_2023_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 32,
+      "batch_hash": "adfadbf3505f7f0a054adc5e18d55268e6a9939f"
     }
   ],
   "_changelog": [
+    {
+      "version": 189,
+      "date": "2026-08-30",
+      "note": "v189 (2026-08-30): 新增龙华区2023-2024七上数学期末真题32条，22/22母题覆盖、0跳过、0损坏、0争议。独立supervisor复核19/19新渲染页、200/200源媒体、183/183 MathType/WMF公式、9/9唯一题图、13/13含图行、32/32原子行和7/7 Form-B组，并独立复算q7、q8、q10、q15-q19、q21-q22一致；q12源答案的两个等价式按|||保真。最终full 22/22、M1-M4、专项/双写/目标App schema通过，R1=7/R2=20/R3=5。"
+    },
     {
       "version": 188,
       "date": "2026-08-29",
@@ -1558,6 +1571,7 @@
     }
   ],
   "changelog": [
+    "v189 (2026-08-30): +1 龙华区2023-2024七上数学期末32条；独立supervisor全源复核19页、200媒体、183公式、32条原子题并复算q7/q8/q10/q15-q19/q21-q22后通过全部门禁。",
     "v188 (2026-08-29): +1 罗湖区2023-2024七上数学期末31条；独立supervisor全源复核20页、200媒体、181公式、31条原子题并复算q16及q19-q22后通过全部门禁。",
     "v187 (2026-08-29): +1 红岭实验学校（新洲）2023-2024七上数学期末32条；独立supervisor全源复核18页、181媒体、166公式与32条原子题并重算q20-q22后通过全部门禁。",
     "v186 (2026-08-29): +1 龙岗区2023-2024七上数学期末30条；独立supervisor判退并恢复q20完整共同指令，透明保留q22官方840/严格820争议后通过全部门禁。",
