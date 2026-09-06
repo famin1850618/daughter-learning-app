@@ -1,6 +1,6 @@
 {
-  "version": 191,
-  "updated_at": "2026-08-30",
+  "version": 192,
+  "updated_at": "2026-09-06",
   "batches": [
     {
       "source": "batch_2026_05_07_g6_english_pet_r1",
@@ -1137,9 +1137,22 @@
       "grade": 7,
       "count": 33,
       "batch_hash": "e7ae85bbe40116cb1b87a5bbc7e29acafa8d26ea"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qm_shenzhengaoji_2023_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_shenzhengaoji_2023_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 33,
+      "batch_hash": "3c4d323cb5ea24bc6e7854840f88886cc7b201b5"
     }
   ],
   "_changelog": [
+    {
+      "version": 192,
+      "date": "2026-09-06",
+      "note": "v192 (2026-09-06): 新增深圳高级中学（集团）2023-2024七上数学期末真题33条，22/22母题覆盖、0跳过、0损坏、0争议。独立supervisor全源复核22/22新渲染页、257/257源媒体、416/416 MathType公式、13/13含图行、q1四个图选项、33/33原子行和5/5 Form-B组；首轮判退q20表格空白表头及源文‘码’被擅改，原worker逐字恢复后由同一supervisor复审通过。最终full 22/22、M1-M4、专项/双写/目标App schema通过，R1=6/R2=11/R3=14/R4=2。"
+    },
     {
       "version": 190,
       "date": "2026-08-30",
@@ -1592,6 +1605,7 @@
     }
   ],
   "changelog": [
+    "v192 (2026-09-06): +1 深圳高级中学（集团）2023-2024七上数学期末33条；独立supervisor首轮判退q20空白表头及源文‘码’擅改，原worker逐字恢复后同一supervisor复审通过全部门禁。",
     "v190 (2026-08-30): +1 福田区耀华实验学校2023-2024七上数学期末33条；独立supervisor首轮判退q19/q22共同题面压缩，原worker逐字恢复后同一supervisor复审通过全部门禁。",
     "v189 (2026-08-30): +1 龙华区2023-2024七上数学期末32条；独立supervisor全源复核19页、200媒体、183公式、32条原子题并复算q7/q8/q10/q15-q19/q21-q22后通过全部门禁。",
     "v188 (2026-08-29): +1 罗湖区2023-2024七上数学期末31条；独立supervisor全源复核20页、200媒体、181公式、31条原子题并复算q16及q19-q22后通过全部门禁。",
