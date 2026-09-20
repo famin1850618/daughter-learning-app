@@ -1,5 +1,5 @@
 {
-  "version": 199,
+  "version": 200,
   "updated_at": "2026-09-20",
   "batches": [
     {
@@ -1201,9 +1201,22 @@
       "grade": 7,
       "count": 26,
       "batch_hash": "efc81c6a7b900b39bb1dfc87cfc025cc4fcd3e47"
+    },
+    {
+      "source": "realpaper_g7_chinese_renjiao_qm_luohu_003",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_chinese_renjiao_qm_luohu_003.json",
+      "subject": "chinese",
+      "grade": 7,
+      "count": 27,
+      "batch_hash": "549d3e0dd5c9796039aec665a62928b59c7efe33"
     }
   ],
   "_changelog": [
+    {
+      "version": 200,
+      "date": "2026-09-20",
+      "note": "v200 (2026-09-20): 新增luohu2023-2024七上语文期末真题27条，源题覆盖及跳过见逐卷DELIVERY；独立全源二审、full22/22、专项、目标schema和双写通过。"
+    },
     {
       "version": 199,
       "date": "2026-09-20",
@@ -1696,6 +1709,7 @@
     }
   ],
   "changelog": [
+    "v200 (2026-09-20): 新增luohu2023-2024七上语文期末真题27条，源题覆盖及跳过见逐卷DELIVERY；独立全源二审、full22/22、专项、目标schema和双写通过。",
     "v199 (2026-09-20): 新增futian2023-2024七上语文期末真题26条，源题覆盖及跳过见逐卷DELIVERY；独立全源二审、full22/22、专项、目标schema和双写通过。",
     "v198 (2026-09-20): 新增pingshan2023-2024七上语文期末真题26条，源题覆盖及跳过见逐卷DELIVERY；独立全源二审、full22/22、专项、目标schema和双写通过。",
     "v197 (2026-09-20): 新增nanshan2023-2024七上语文期末真题24条，完整母题覆盖，零跳过；独立全源二审、full22/22、专项、目标schema和双写通过。",
