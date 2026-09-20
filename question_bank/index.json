@@ -1,5 +1,5 @@
 {
-  "version": 194,
+  "version": 195,
   "updated_at": "2026-09-20",
   "batches": [
     {
@@ -1161,9 +1161,22 @@
       "grade": 7,
       "count": 33,
       "batch_hash": "af209d7c211d9891182736de67d5eaf45de0274d"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qm_mingde_2023_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_mingde_2023_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 31,
+      "batch_hash": "247c937e8919119efa8a567468d42c1bd8385fc8"
     }
   ],
   "_changelog": [
+    {
+      "version": 195,
+      "date": "2026-09-20",
+      "note": "v195 (2026-09-20): 新增mingde2023-2024七上数学期末真题31条，22/22母题，零跳过；独立全源二审、full22/22、专项、目标schema和双写通过。"
+    },
     {
       "version": 194,
       "date": "2026-09-20",
@@ -1631,6 +1644,7 @@
     }
   ],
   "changelog": [
+    "v195 (2026-09-20): 新增mingde2023-2024七上数学期末真题31条，22/22母题，零跳过；独立全源二审、full22/22、专项、目标schema和双写通过。",
     "v194 (2026-09-20): 新增pingshan2023-2024七上数学期末真题33条，22/22母题，零跳过；独立全源二审、full22/22、专项、目标schema和双写通过。",
     "v193 (2026-09-20): 新增shendafuzhong2023-2024七上数学期末真题33条，22/22母题，零跳过；独立全源二审、full22/22、专项、目标schema和双写通过。",
     "v192 (2026-09-06): +1 深圳高级中学（集团）2023-2024七上数学期末33条；独立supervisor首轮判退q20空白表头及源文‘码’擅改，原worker逐字恢复后同一supervisor复审通过全部门禁。",
