@@ -1,5 +1,5 @@
 {
-  "version": 196,
+  "version": 197,
   "updated_at": "2026-09-20",
   "batches": [
     {
@@ -1177,9 +1177,22 @@
       "grade": 7,
       "count": 34,
       "batch_hash": "6d1a968d92ae33cba27ae605bfc4861217b598a5"
+    },
+    {
+      "source": "realpaper_g7_chinese_renjiao_qm_nanshan_002",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_chinese_renjiao_qm_nanshan_002.json",
+      "subject": "chinese",
+      "grade": 7,
+      "count": 24,
+      "batch_hash": "f3bd052bd109ab629c83ccb28fe835f41268676d"
     }
   ],
   "_changelog": [
+    {
+      "version": 197,
+      "date": "2026-09-20",
+      "note": "v197 (2026-09-20): 新增nanshan2023-2024七上语文期末真题24条，完整母题覆盖，零跳过；独立全源二审、full22/22、专项、目标schema和双写通过。"
+    },
     {
       "version": 196,
       "date": "2026-09-20",
@@ -1657,6 +1670,7 @@
     }
   ],
   "changelog": [
+    "v197 (2026-09-20): 新增nanshan2023-2024七上语文期末真题24条，完整母题覆盖，零跳过；独立全源二审、full22/22、专项、目标schema和双写通过。",
     "v196 (2026-09-20): 新增hongling2023-2024七上数学期末真题34条，22/22母题，零跳过；独立全源二审、full22/22、专项、目标schema和双写通过。",
     "v195 (2026-09-20): 新增mingde2023-2024七上数学期末真题31条，22/22母题，零跳过；独立全源二审、full22/22、专项、目标schema和双写通过。",
     "v194 (2026-09-20): 新增pingshan2023-2024七上数学期末真题33条，22/22母题，零跳过；独立全源二审、full22/22、专项、目标schema和双写通过。",
