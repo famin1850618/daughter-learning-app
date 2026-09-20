@@ -1,5 +1,5 @@
 {
-  "version": 193,
+  "version": 194,
   "updated_at": "2026-09-20",
   "batches": [
     {
@@ -1153,9 +1153,22 @@
       "grade": 7,
       "count": 33,
       "batch_hash": "d1e19c9b13aeb5ef0817eaa89d1ded6bf689d5ef"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qm_pingshan_2023_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qm_pingshan_2023_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 33,
+      "batch_hash": "af209d7c211d9891182736de67d5eaf45de0274d"
     }
   ],
   "_changelog": [
+    {
+      "version": 194,
+      "date": "2026-09-20",
+      "note": "v194 (2026-09-20): 新增pingshan2023-2024七上数学期末真题33条，22/22母题，零跳过；独立全源二审、full22/22、专项、目标schema和双写通过。"
+    },
     {
       "version": 193,
       "date": "2026-09-20",
@@ -1618,6 +1631,7 @@
     }
   ],
   "changelog": [
+    "v194 (2026-09-20): 新增pingshan2023-2024七上数学期末真题33条，22/22母题，零跳过；独立全源二审、full22/22、专项、目标schema和双写通过。",
     "v193 (2026-09-20): 新增shendafuzhong2023-2024七上数学期末真题33条，22/22母题，零跳过；独立全源二审、full22/22、专项、目标schema和双写通过。",
     "v192 (2026-09-06): +1 深圳高级中学（集团）2023-2024七上数学期末33条；独立supervisor首轮判退q20空白表头及源文‘码’擅改，原worker逐字恢复后同一supervisor复审通过全部门禁。",
     "v190 (2026-08-30): +1 福田区耀华实验学校2023-2024七上数学期末33条；独立supervisor首轮判退q19/q22共同题面压缩，原worker逐字恢复后同一supervisor复审通过全部门禁。",
