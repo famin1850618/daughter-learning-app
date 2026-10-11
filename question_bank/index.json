@@ -1,6 +1,6 @@
 {
-  "version": 203,
-  "updated_at": "2026-10-11",
+  "version": 204,
+  "updated_at": "2026-10-12",
   "batches": [
     {
       "source": "batch_2026_05_07_g6_english_pet_r1",
@@ -1233,9 +1233,22 @@
       "grade": 7,
       "count": 28,
       "batch_hash": "e1c17cce794fc2c519dc99b7fdd13de8dfa7cc58"
+    },
+    {
+      "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_chinese_renjiao_qz_futian_2024_001.json",
+      "subject": "chinese",
+      "grade": 7,
+      "count": 26,
+      "batch_hash": "1fd40d74628bde3d480488f93efdb1746edf5320"
     }
   ],
   "_changelog": [
+    {
+      "version": 204,
+      "date": "2026-10-12",
+      "note": "v204 (2026-10-12): 福田2024–2025七上期中语文24母题完整覆盖为26行；独立全源二审及双份full22/22、专项/源SHA/图绑定/跨批/schema通过；保留1项原解析争议。"
+    },
     {
       "version": 203,
       "date": "2026-10-11",
@@ -1748,6 +1761,7 @@
     }
   ],
   "changelog": [
+    "v204 (2026-10-12): 福田2024–2025七上期中语文24母题完整覆盖为26行；独立全源二审及双份full22/22、专项/源SHA/图绑定/跨批/schema通过；保留1项原解析争议。",
     "v203 (2026-10-11): 新增longhua_lower_2024真实DOCX 28行；独立全源复核、双份full22/22、源SHA/图绑定/跨批/schema通过。",
     "v202 (2026-10-11): 新增futian_2023真实DOCX 30行；独立全源复核、双份full22/22、源SHA/图绑定/跨批/schema通过。",
     "v201 (2026-09-20): 新增baoan2023-2024七上语文期末真题22条，源题覆盖及跳过见逐卷DELIVERY；独立全源二审、full22/22、专项、目标schema和双写通过。",

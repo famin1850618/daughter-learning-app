@@ -1,0 +1,1123 @@
+{
+  "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+  "subject": "chinese",
+  "grade": 7,
+  "knowledge_points_added": [],
+  "_source_docx_path": "/mnt/d/AI_Workspace/Planning/深圳真题/(真题)深圳7上语文/2024-2025/深圳语文7上期中/精品解析：广东省深圳市福田区2024-2025学年七年级上学期期中语文试题/精品解析：广东省深圳市福田区2024-2025学年七年级上学期期中语文试题（解析版）.docx",
+  "_source_docx_sha1": "6f7678bea089938d",
+  "_source_docx_sha1_full": "6f7678bea089938de15912f5f99d6e321f5a328f",
+  "_source_cache_path": "/mnt/d/AI_Workspace/Planning/scan_daily_20261011/scan/futian_upper_midterm_2024/worker/cache/6f7678bea089938d",
+  "_original_docx_path": "/mnt/d/AI_Workspace/Planning/深圳真题/(真题)深圳7上语文/2024-2025/深圳语文7上期中/精品解析：广东省深圳市福田区2024-2025学年七年级上学期期中语文试题/精品解析：广东省深圳市福田区2024-2025学年七年级上学期期中语文试题（原卷版）.docx",
+  "_original_docx_sha1_full": "92bea43ea44225919735e5aaaf91b99eb4eece55",
+  "_answer_docx_path": "/mnt/d/AI_Workspace/Planning/深圳真题/(真题)深圳7上语文/2024-2025/深圳语文7上期中/精品解析：广东省深圳市福田区2024-2025学年七年级上学期期中语文试题/精品解析：广东省深圳市福田区2024-2025学年七年级上学期期中语文试题（解析版）.docx",
+  "_answer_docx_sha1_full": "6f7678bea089938de15912f5f99d6e321f5a328f",
+  "_skipped_for_future": [],
+  "_source_identity_audit": {
+    "identity_id": "g7_chinese_upper_8c67164db79b0c58",
+    "term": "upper",
+    "subject": "chinese",
+    "academic_year": "2024-2025",
+    "exam_type": "midterm",
+    "region_or_school": "福田区",
+    "identity_basis": "normalized_exam_title_plus_source_header_and_feature_stems",
+    "reserved_source_id": null,
+    "status": "eligible",
+    "reason": "Named dated exam candidate; canonical/answer and stem checks required before source lock.",
+    "canonical_path": "/mnt/d/AI_Workspace/Planning/深圳真题/(真题)深圳7上语文/2024-2025/深圳语文7上期中/精品解析：广东省深圳市福田区2024-2025学年七年级上学期期中语文试题/精品解析：广东省深圳市福田区2024-2025学年七年级上学期期中语文试题（解析版）.docx",
+    "canonical_sha1_full": "6f7678bea089938de15912f5f99d6e321f5a328f",
+    "published_source_ids": [],
+    "files": [
+      "/mnt/d/AI_Workspace/Planning/深圳真题/(真题)深圳7上语文/2024-2025/深圳语文7上期中/精品解析：广东省深圳市福田区2024-2025学年七年级上学期期中语文试题/精品解析：广东省深圳市福田区2024-2025学年七年级上学期期中语文试题（原卷版）.docx",
+      "/mnt/d/AI_Workspace/Planning/深圳真题/(真题)深圳7上语文/2024-2025/深圳语文7上期中/精品解析：广东省深圳市福田区2024-2025学年七年级上学期期中语文试题/精品解析：广东省深圳市福田区2024-2025学年七年级上学期期中语文试题（解析版）.docx"
+    ],
+    "feature_stems": [
+      "1. 根据拼音写出相应的汉字，为文中加点字注音。",
+      "2. 下列语句说法不正确的一项是（    ）",
+      "3. 小文在布置教室时，选挂了三条名句条幅。这些名句体现了古人的交友标准，请各用一个词语概括。"
+    ],
+    "source_review_required": true,
+    "registered_batches_checked": 154,
+    "identity_unique": true,
+    "feature_queries": [
+      "友谊的种子便已在彼此心间",
+      "那盏叫父亲的灯",
+      "黄琬①幼而慧",
+      "君子之交淡若水",
+      "就这样被感动"
+    ],
+    "registered_matches": [],
+    "classification": "true_exam",
+    "classification_evidence": "dated original/analysis matching pair; exam120min120points; named Futian academic year midterm; school wording Shenzhen Experimental Middle School Department, same identity alias not distinct paper"
+  },
+  "_source_question_mapping": {
+    "1": [
+      1
+    ],
+    "2": [
+      2
+    ],
+    "3": [
+      3
+    ],
+    "4": [
+      4
+    ],
+    "5": [
+      5
+    ],
+    "6": [
+      6
+    ],
+    "7": [
+      7
+    ],
+    "8": [
+      8
+    ],
+    "9": [
+      9
+    ],
+    "10": [
+      10
+    ],
+    "11": [
+      11
+    ],
+    "12": [
+      "12_1",
+      "12_2",
+      "12_3"
+    ],
+    "13": [
+      13
+    ],
+    "14": [
+      14
+    ],
+    "15": [
+      15
+    ],
+    "16": [
+      16
+    ],
+    "17": [
+      17
+    ],
+    "18": [
+      18
+    ],
+    "19": [
+      19
+    ],
+    "20": [
+      20
+    ],
+    "21": [
+      21
+    ],
+    "22": [
+      22
+    ],
+    "23": [
+      23
+    ],
+    "24": [
+      24
+    ]
+  },
+  "_completeness_audit": {
+    "mother_questions": 24,
+    "mother_questions_covered": 24,
+    "mother_questions_skipped": 0,
+    "coverage_percent": 100,
+    "retained_app_rows": 26,
+    "skipped_atomic_tasks": 0,
+    "all_source_material_retained": true
+  },
+  "_round_authorization": {
+    "authority": "SCAN_STATUS 2026-08-11 user delegated autonomous difficulty; candidate bootstrap used transparently; independent supervisor review required"
+  },
+  "_supervisor_review": {
+    "status": "pending",
+    "author": "/root/daily_scan_20261012/futian_upper_midterm_worker"
+  },
+  "questions": [
+    {
+      "subject": "chinese",
+      "grade": 7,
+      "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+      "local_id": 1,
+      "_source_question_number": 1,
+      "_source_subquestion": null,
+      "type": "subjective",
+      "chapter": "综合练习",
+      "knowledge_point": "综合练习",
+      "content": "**新学期，学习生活翻开了新的一页，你一定认识了不少新同学。请你参加“有朋自远方来”的综合性学习活动，并完成任务。**\n下面是主持人小语写的一段开场白，请按要求完成下面小题。\n九月金秋，我们满怀期待，踏入实验校园。在这里，我们遇到了许多新同学，虽然朝夕相伴仅仅两个月，但在某个不经意的瞬间，友谊的种子便已在彼此心间悄然生根。\n当我们漫步在校园，或许会发现，教室里，专注的眼神和“沙沙”的书写声，正编织着大家共同的梦想；走廊外，①xī lì的小雨正演奏着我们共同聆听的乐曲；操场上，奔跑的身影正交织成青春②làn màn的画卷。在这里，我们分享着彼此的故事，雕**镂**（③）着属于我们的青春记忆。\n今天，我们齐聚一堂，既是为了积累知识，修养品德，也是为了在这段成长的旅程中，找到那些志同道合的朋友。让我们以真诚和爱心，去结识每一位新朋友，让友谊之芽**绽**放（④）出最美丽的花朵。\n\n1. 根据拼音写出相应的汉字，为文中加粗字注音。\n①xī lì_________  ②làn màn________  ③雕**镂**（       ）  ④**绽**放（       ）",
+      "answer": "淅沥,烂漫,lòu,zhàn",
+      "explanation": "本题考查字音字形。\n淅沥（ xī lì）：形容轻微的风雨声、落叶声等。\n烂漫（làn màn）：形容颜色艳丽，也指坦率自然，毫不做作。\n雕镂（diāo lòu）：雕刻，刻镂\n绽放（ zhàn fàng ）：形容如花一样开放。\n家长审核要点：四空依次核对淅沥、烂漫、lòu、zhàn；拼音声调和指定加粗字读音准确。\n加粗字保留原题加点或强调标记。",
+      "round": 2,
+      "_raw_excerpt": "1. 根据拼音写出相应的汉字，为文中加点字注音。",
+      "_source_answer_evidence": "1.     ①. 淅沥    ②. 烂漫    ③. lòu    ④. zhàn    2. B",
+      "_source_stem_authority": "original DOCX; explicit analysis prompt variants reconciled in worker/variant_reconciliation.json",
+      "_common_prefix_raw": "**新学期，学习生活翻开了新的一页，你一定认识了不少新同学。请你参加“有朋自远方来”的综合性学习活动，并完成任务。**\n下面是主持人小语写的一段开场白，请按要求完成下面小题。\n九月金秋，我们满怀期待，踏入实验校园。在这里，我们遇到了许多新同学，虽然朝夕相伴仅仅两个月，但在某个不经意的瞬间，友谊的种子便已在彼此心间悄然生根。\n当我们漫步在校园，或许会发现，教室里，专注的眼神和“沙沙”的书写声，正编织着大家共同的梦想；走廊外，①xī lì的小雨正演奏着我们共同聆听的乐曲；操场上，奔跑的身影正交织成青春②làn màn的画卷。在这里，我们分享着彼此的故事，雕**镂**（③）着属于我们的青春记忆。\n今天，我们齐聚一堂，既是为了积累知识，修养品德，也是为了在这段成长的旅程中，找到那些志同道合的朋友。让我们以真诚和爱心，去结识每一位新朋友，让友谊之芽**绽**放（④）出最美丽的花朵。",
+      "group_id": "realpaper_g7_chinese_renjiao_qz_futian_2024_001_opening",
+      "group_order": 1,
+      "_prompt_before_number_normalization": "1. 根据拼音写出相应的汉字，为文中加点字注音。\n①xī lì_________  ②làn màn________  ③雕**镂**（       ）  ④**绽**放（       ）",
+      "answer_blanks": [
+        "淅沥",
+        "烂漫",
+        "lòu",
+        "zhàn"
+      ],
+      "_parent_review_required": true,
+      "_parent_review_criteria": "四空依次核对淅沥、烂漫、lòu、zhàn；拼音声调和指定加粗字读音准确。",
+      "_round_before_group_unify": 1,
+      "_round_judge_method": "g7_source_aware_bootstrap_user_authorized",
+      "_round_rubric": "docs/difficulty/g7_chinese_round_rubric_draft.md",
+      "_round_nearest_anchor": {
+        "candidate_id": "g7_chinese_r1_candidate_01",
+        "status": "candidate_unapproved"
+      },
+      "_round_routing_reasoning": [
+        "参照G7候选g7_chinese_r1_candidate_01；未声称已由Famin校准。",
+        "rubric §3.1：直接识记，不因多空提高档次。"
+      ],
+      "_round_group_unify_rule": "ceil(mean)",
+      "_specific_knowledge_point_before_group_unify": "字词/字音字形"
+    },
+    {
+      "subject": "chinese",
+      "grade": 7,
+      "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+      "local_id": 2,
+      "_source_question_number": 2,
+      "_source_subquestion": null,
+      "type": "choice",
+      "chapter": "综合练习",
+      "knowledge_point": "综合练习",
+      "content": "**新学期，学习生活翻开了新的一页，你一定认识了不少新同学。请你参加“有朋自远方来”的综合性学习活动，并完成任务。**\n下面是主持人小语写的一段开场白，请按要求完成下面小题。\n九月金秋，我们满怀期待，踏入实验校园。在这里，我们遇到了许多新同学，虽然朝夕相伴仅仅两个月，但在某个不经意的瞬间，友谊的种子便已在彼此心间悄然生根。\n当我们漫步在校园，或许会发现，教室里，专注的眼神和“沙沙”的书写声，正编织着大家共同的梦想；走廊外，①xī lì的小雨正演奏着我们共同聆听的乐曲；操场上，奔跑的身影正交织成青春②làn màn的画卷。在这里，我们分享着彼此的故事，雕**镂**（③）着属于我们的青春记忆。\n今天，我们齐聚一堂，既是为了积累知识，修养品德，也是为了在这段成长的旅程中，找到那些志同道合的朋友。让我们以真诚和爱心，去结识每一位新朋友，让友谊之芽**绽**放（④）出最美丽的花朵。\n\n2. 下列语句说法**不正确**的一项是（    ）",
+      "answer": "B",
+      "explanation": "本题考查基础知识。\nB.“里”“外”“上”都是方位名词；\n故选B。\n加粗字保留原题加点或强调标记。",
+      "round": 2,
+      "_raw_excerpt": "2. 下列语句说法**不正确**的一项是（    ）",
+      "_source_answer_evidence": "1.     ①. 淅沥    ②. 烂漫    ③. lòu    ④. zhàn    2. B",
+      "_source_stem_authority": "original DOCX; explicit analysis prompt variants reconciled in worker/variant_reconciliation.json",
+      "_common_prefix_raw": "**新学期，学习生活翻开了新的一页，你一定认识了不少新同学。请你参加“有朋自远方来”的综合性学习活动，并完成任务。**\n下面是主持人小语写的一段开场白，请按要求完成下面小题。\n九月金秋，我们满怀期待，踏入实验校园。在这里，我们遇到了许多新同学，虽然朝夕相伴仅仅两个月，但在某个不经意的瞬间，友谊的种子便已在彼此心间悄然生根。\n当我们漫步在校园，或许会发现，教室里，专注的眼神和“沙沙”的书写声，正编织着大家共同的梦想；走廊外，①xī lì的小雨正演奏着我们共同聆听的乐曲；操场上，奔跑的身影正交织成青春②làn màn的画卷。在这里，我们分享着彼此的故事，雕**镂**（③）着属于我们的青春记忆。\n今天，我们齐聚一堂，既是为了积累知识，修养品德，也是为了在这段成长的旅程中，找到那些志同道合的朋友。让我们以真诚和爱心，去结识每一位新朋友，让友谊之芽**绽**放（④）出最美丽的花朵。",
+      "group_id": "realpaper_g7_chinese_renjiao_qz_futian_2024_001_opening",
+      "group_order": 2,
+      "_prompt_before_number_normalization": "2. 下列语句说法**不正确**的一项是（    ）",
+      "options": [
+        "A. 九月金秋，我们满怀期待，踏入实验校园。（“九月”和“期待”都是名词）",
+        "B. “教室里”“走廊外”“操场上”（“里”“外”“上”都是动词）",
+        "C. 我们齐聚一堂，既是为了积累知识……（“是”表示判断，是动词）",
+        "D. 让我们以真诚和爱心，去结识每一位新朋友……（“结识”是动词）"
+      ],
+      "_round_before_group_unify": 2,
+      "_round_judge_method": "g7_source_aware_bootstrap_user_authorized",
+      "_round_rubric": "docs/difficulty/g7_chinese_round_rubric_draft.md",
+      "_round_nearest_anchor": {
+        "candidate_id": "g7_chinese_r2_candidate_01",
+        "status": "candidate_unapproved"
+      },
+      "_round_routing_reasoning": [
+        "参照G7候选g7_chinese_r2_candidate_01；未声称已由Famin校准。",
+        "rubric §2.1-2.3：局部规则应用、有限证据判断或概括。"
+      ],
+      "_round_group_unify_rule": "ceil(mean)",
+      "_specific_knowledge_point_before_group_unify": "语法/词性判断"
+    },
+    {
+      "subject": "chinese",
+      "grade": 7,
+      "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+      "local_id": 3,
+      "_source_question_number": 3,
+      "_source_subquestion": null,
+      "type": "subjective",
+      "chapter": "阅读理解",
+      "knowledge_point": "阅读理解/材料阅读",
+      "content": "**新学期，学习生活翻开了新的一页，你一定认识了不少新同学。请你参加“有朋自远方来”的综合性学习活动，并完成任务。**\n\n3. 小文在布置教室时，选挂了三条名句条幅。这些名句体现了古人的交友标准，请各用一个词语概括。\n①与朋友交而不信乎？——曾子\n②君子之交淡若水。——庄子\n③人生贵相知，何必金与钱。——李白\n交友标准：①___________    ②___________    ③___________",
+      "answer": "诚信（或讲诚信、真诚守信）,不重名利虚华（或淡利）,相知（或淡利、心灵契合、相互理解）",
+      "explanation": "本题考查提炼概括。\n①“与朋友交而不信乎？”强调的是诚信。在人际交往中，诚信是基石，朋友之间应该真诚相待，遵守承诺，相互信任，这样的友谊才能稳固持久。\n②“君子之交淡若水”体现的是淡泊。真正的君子之间的交往，像水一样清澈平淡，不为利益所驱动，不追求功名利禄等外在的东西，只是纯粹的精神交流和志同道合的相伴。\n③“人生贵相知，何必金与钱”所表达的是相知。朋友之间贵在互相理解、知心，重视的是心灵的契合，而不是金钱等物质方面的因素，将精神层面的相知看得高于一切。\n家长审核要点：三个词语分别概括诚信、淡泊名利、相知理解；可接受原答案所列近义表述，不要求逐字同一。",
+      "round": 2,
+      "_raw_excerpt": "3. 小文在布置教室时，选挂了三条名句条幅。这些名句体现了古人的交友标准，请各用一个词语概括。",
+      "_source_answer_evidence": "①. 诚信（或讲诚信、真诚守信）    ②. 不重名利虚华（或淡利）    ③. 相知（或淡利、心灵契合、相互理解）",
+      "_source_stem_authority": "original DOCX; explicit analysis prompt variants reconciled in worker/variant_reconciliation.json",
+      "_common_prefix_raw": "**新学期，学习生活翻开了新的一页，你一定认识了不少新同学。请你参加“有朋自远方来”的综合性学习活动，并完成任务。**",
+      "answer_blanks": [
+        "诚信|||讲诚信|||真诚守信",
+        "不重名利虚华|||淡利",
+        "相知|||淡利|||心灵契合|||相互理解"
+      ],
+      "_parent_review_required": true,
+      "_parent_review_criteria": "三个词语分别概括诚信、淡泊名利、相知理解；可接受原答案所列近义表述，不要求逐字同一。",
+      "_round_before_group_unify": 2,
+      "_round_judge_method": "g7_source_aware_bootstrap_user_authorized",
+      "_round_rubric": "docs/difficulty/g7_chinese_round_rubric_draft.md",
+      "_round_nearest_anchor": {
+        "candidate_id": "g7_chinese_r2_candidate_01",
+        "status": "candidate_unapproved"
+      },
+      "_round_routing_reasoning": [
+        "参照G7候选g7_chinese_r2_candidate_01；未声称已由Famin校准。",
+        "rubric §2.1-2.3：局部规则应用、有限证据判断或概括。"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 7,
+      "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+      "local_id": 4,
+      "_source_question_number": 4,
+      "_source_subquestion": null,
+      "type": "subjective",
+      "chapter": "写作",
+      "knowledge_point": "写作/应用文写作",
+      "content": "**新学期，学习生活翻开了新的一页，你一定认识了不少新同学。请你参加“有朋自远方来”的综合性学习活动，并完成任务。**\n\n4. 作为语文课代表，小文草拟了一则邀请函，邀请班主任张老师参加2024年10月30日下午3点在班级召开的“有朋自远方来”综合性学习活动。请你对小文的邀请函提出修改意见。\n邀请函\n尊敬的张老师：\n我代表全班同学，邀请您参加2024年10月30日下午3点举行的“有朋自远方来”综合性学习活动。同学们都特别希望聆听您的愚见，衷心期待您莅临指导！\n2024年10月29日\n小文",
+      "answer": "①在“下午3点”后补上活动地点“在班级”。②将“愚见”（谦辞）改为“高见”（敬辞）。③将“2024年10月29日”与“小文”互换位置。（邀请函落款，先写邀请单位或个人姓名，后写发函日期）",
+      "explanation": "本题考查拟写邀请函。\n正文处只有时间，没有地点。根据题干中的“2024年10月30日下午3点在班级召开”可在“下午3点”后补上活动地点“在班级”。\n“同学们都特别希望聆听您的愚见”中的“愚见”用词不当，“愚见”是对自己意见的谦称，此处应用“高见”。“高见”是敬辞，指对方的意见。\n落款处应人名在上，日期在下。\n家长审核要点：指出并改正三处：补活动地点在班级；愚见改高见等敬辞；署名与日期交换，署名在上日期在下。",
+      "round": 2,
+      "_raw_excerpt": "4. 作为语文课代表，小文草拟了一则邀请函，邀请班主任张老师参加2024年10月30日下午3点在班级召开的“有朋自远方来”综合性学习活动。请你对小文的邀请函提出修改意见。",
+      "_source_answer_evidence": "①在“下午3点”后补上活动地点“在班级”。②将“愚见”（谦辞）改为“高见”（敬辞）。③将“2024年10月29日”与“小文”互换位置。（邀请函落款，先写邀请单位或个人姓名，后写发函日期）",
+      "_source_stem_authority": "original DOCX; explicit analysis prompt variants reconciled in worker/variant_reconciliation.json",
+      "_common_prefix_raw": "**新学期，学习生活翻开了新的一页，你一定认识了不少新同学。请你参加“有朋自远方来”的综合性学习活动，并完成任务。**",
+      "_parent_review_required": true,
+      "_parent_review_criteria": "指出并改正三处：补活动地点在班级；愚见改高见等敬辞；署名与日期交换，署名在上日期在下。",
+      "_round_before_group_unify": 2,
+      "_round_judge_method": "g7_source_aware_bootstrap_user_authorized",
+      "_round_rubric": "docs/difficulty/g7_chinese_round_rubric_draft.md",
+      "_round_nearest_anchor": {
+        "candidate_id": "g7_chinese_r2_candidate_01",
+        "status": "candidate_unapproved"
+      },
+      "_round_routing_reasoning": [
+        "参照G7候选g7_chinese_r2_candidate_01；未声称已由Famin校准。",
+        "rubric §2.1-2.3：局部规则应用、有限证据判断或概括。"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 7,
+      "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+      "local_id": 5,
+      "_source_question_number": 5,
+      "_source_subquestion": null,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/词语理解",
+      "content": "5. 依次填入下面一段文字横线处的词语，最恰当的一项是（   ）\n欧阳修说：“立身以立学为先，立学以读书为本。”读书要学会选择。选择与自然有关的书，以丰富知识；选择与历史有关的书，以_______视野；选择与哲学有关的书，以_______智慧。读书还要善于思考。善于思考，才会有_______；善于思考，才会有取舍。读好书，善读书，才会读有所获。",
+      "answer": "C",
+      "explanation": "（1）开阔：指(面积或空间范围)宽广；(思想、心胸)开朗。\n开辟：开创、创立。\n结合语境，这里形容让眼睛看到的空间范围更宽广，故应填“开阔”。\n（2）吸收：物体把外界的某些物质吸到内部。\n汲取：意思是吸取、吸收有意义、有营养的部分。\n结合语境，这里形容要吸取更多的聪明才智，故应填“汲取”。\n（3）鉴定：鉴别和评定（人的优缺点）。\n鉴别：辨别（真假好坏）。\n结合语境，这里形容人要善于辨别真假好坏，故应填“鉴别”。\n故选C。",
+      "round": 2,
+      "_raw_excerpt": "5. 依次填入下面一段文字横线处的词语，最恰当的一项是（   ）",
+      "_source_answer_evidence": "C",
+      "_source_stem_authority": "original DOCX; explicit analysis prompt variants reconciled in worker/variant_reconciliation.json",
+      "options": [
+        "A. 开阔   吸收   鉴定",
+        "B. 开辟   吸收   鉴别",
+        "C. 开阔   汲取   鉴别",
+        "D. 开辟   汲取   鉴定"
+      ],
+      "_round_before_group_unify": 2,
+      "_round_judge_method": "g7_source_aware_bootstrap_user_authorized",
+      "_round_rubric": "docs/difficulty/g7_chinese_round_rubric_draft.md",
+      "_round_nearest_anchor": {
+        "candidate_id": "g7_chinese_r2_candidate_01",
+        "status": "candidate_unapproved"
+      },
+      "_round_routing_reasoning": [
+        "参照G7候选g7_chinese_r2_candidate_01；未声称已由Famin校准。",
+        "rubric §2.1-2.3：局部规则应用、有限证据判断或概括。"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 7,
+      "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+      "local_id": 6,
+      "_source_question_number": 6,
+      "_source_subquestion": null,
+      "type": "choice",
+      "chapter": "字词",
+      "knowledge_point": "字词/成语运用",
+      "content": "6. 下列加粗成语运用**不恰当**的一项是（    ）",
+      "answer": "D",
+      "explanation": "本题考查成语运用。\nA.喜出望外：指因遇到意外的喜事而特别高兴，这里写爸爸带我去看海，让我感到意外而高兴，使用恰当；\nB.人声鼎沸：形容人群的声音嘈杂，这里写火车站人声嘈杂，使用恰当；\nC.搜索枯肠：形容苦思苦想，这里写诗人冥思苦想创作诗歌，使用恰当；\nD.花枝招展：形容女子打扮得十分艳丽，不能用于男子，所以不能用于“深圳实验学校中学部的全体同学”，对象用错；\n故选D。\n加粗字保留原题加点或强调标记。",
+      "round": 2,
+      "_raw_excerpt": "6. 下列加点成语运用**不恰当**的一项是（    ）",
+      "_source_answer_evidence": "D",
+      "_source_stem_authority": "original DOCX; explicit analysis prompt variants reconciled in worker/variant_reconciliation.json",
+      "options": [
+        "A. 这周末，爸爸难得抽空带我去大梅沙看海，令我**喜出望外**。",
+        "B. 中秋的火车站，**人声鼎沸**，旅客们带着行李，怀揣着归家的渴望，盼望着列车的到来。",
+        "C. 在创作诗歌的过程中，诗人常常需要**搜索枯肠**，寻找那些能够准确表达情感的意象。",
+        "D. 运动会上，深圳实验学校中学部的全体同学**花枝招展**、英姿飒爽地走过主席台，接受校领导的检阅。"
+      ],
+      "_round_before_group_unify": 2,
+      "_round_judge_method": "g7_source_aware_bootstrap_user_authorized",
+      "_round_rubric": "docs/difficulty/g7_chinese_round_rubric_draft.md",
+      "_round_nearest_anchor": {
+        "candidate_id": "g7_chinese_r2_candidate_01",
+        "status": "candidate_unapproved"
+      },
+      "_round_routing_reasoning": [
+        "参照G7候选g7_chinese_r2_candidate_01；未声称已由Famin校准。",
+        "rubric §2.1-2.3：局部规则应用、有限证据判断或概括。"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 7,
+      "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+      "local_id": 7,
+      "_source_question_number": 7,
+      "_source_subquestion": null,
+      "type": "choice",
+      "chapter": "句子和语法",
+      "knowledge_point": "句子和语法/修辞",
+      "content": "7. 下列选项对各句的修辞使用判断**有误**的一项是（    ）",
+      "answer": "A",
+      "explanation": "本题考查修辞手法。\nA．借用“银盘”直接代替“月亮”，是借喻；\nB．把“油蛉”“蟋蟀们”当作人来写，赋予它们以人的动作行为，在这里“低唱”“弹琴”，是拟人；\nC．将三个“起来了”的语句排列起来，是排比。“太阳的脸红起来了”是拟人；\nD．在“小草”（本体）和“蚯蚓”（喻体）之间用“像……一样”连接，是明喻；\n故选A。\n加粗字保留原题加点或强调标记。",
+      "round": 2,
+      "_raw_excerpt": "7. 下列选项对各句的修辞使用判断**有误**的一项是（    ）",
+      "_source_answer_evidence": "A",
+      "_source_stem_authority": "original DOCX; explicit analysis prompt variants reconciled in worker/variant_reconciliation.json",
+      "options": [
+        "A. 夜空中银盘高挂，散发着清辉。（暗喻）",
+        "B. 油蛉在这里低唱，蟋蟀们在这里弹琴。（拟人）",
+        "C. 山朗润起来了，水涨起来了，太阳的脸红起来了。（排比、拟人）",
+        "D. 小草似乎像复苏的蚯蚓一样翻动，发出一种春天才能听到的沙沙声。（明喻）"
+      ],
+      "_round_before_group_unify": 2,
+      "_round_judge_method": "g7_source_aware_bootstrap_user_authorized",
+      "_round_rubric": "docs/difficulty/g7_chinese_round_rubric_draft.md",
+      "_round_nearest_anchor": {
+        "candidate_id": "g7_chinese_r2_candidate_01",
+        "status": "candidate_unapproved"
+      },
+      "_round_routing_reasoning": [
+        "参照G7候选g7_chinese_r2_candidate_01；未声称已由Famin校准。",
+        "rubric §2.1-2.3：局部规则应用、有限证据判断或概括。"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 7,
+      "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+      "local_id": 8,
+      "_source_question_number": 8,
+      "_source_subquestion": null,
+      "type": "choice",
+      "chapter": "文学常识",
+      "knowledge_point": "文学常识/中国古代作家作品",
+      "content": "8. 下列文学常识表述**正确**的一项是（    ）",
+      "answer": "C",
+      "explanation": "本题考查文学常识。\nA.曹操是东汉末年政治家、军事家、文学家。\nB.“天净沙”是曲牌名，“秋思”是题目。\nD.《论语》是由孔子的弟子及再传弟子编写的。\n故选C。\n加粗字保留原题加点或强调标记。",
+      "round": 1,
+      "_raw_excerpt": "8. 下列文学常识表述**正确**的一项是（    ）",
+      "_source_answer_evidence": "C",
+      "_source_stem_authority": "original DOCX; explicit analysis prompt variants reconciled in worker/variant_reconciliation.json",
+      "options": [
+        "A. 曹操（155-220），字孟德，东汉末年政治家、外交家、文学家。",
+        "B. 《天净沙·秋思》，“天净沙”是题目，作者马致远，元代戏曲作家、散曲家。",
+        "C. 《世说新语》是我国历史上的一部志人小说集，是南朝宋刘义庆组织编写的，主要记载汉末至东晋士大夫的言谈、逸事。",
+        "D. 《论语》是儒家经典著作之一，与《大学》《中庸》《孟子》并称为“四书”，由孔子编写，记录了孔子及其弟子的言行。"
+      ],
+      "_round_before_group_unify": 1,
+      "_round_judge_method": "g7_source_aware_bootstrap_user_authorized",
+      "_round_rubric": "docs/difficulty/g7_chinese_round_rubric_draft.md",
+      "_round_nearest_anchor": {
+        "candidate_id": "g7_chinese_r1_candidate_01",
+        "status": "candidate_unapproved"
+      },
+      "_round_routing_reasoning": [
+        "参照G7候选g7_chinese_r1_candidate_01；未声称已由Famin校准。",
+        "rubric §3.1：直接识记，不因多空提高档次。"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 7,
+      "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+      "local_id": 9,
+      "_source_question_number": 9,
+      "_source_subquestion": null,
+      "type": "fill",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/其它",
+      "content": "9. 请在下面的横线上填写相应的句子。\n（1）我寄愁心与明月，_____________________。（李白《闻王昌龄左迁龙标遥有此寄》）\n（2）夜发清溪向三峡，_____________________。（李白《峨眉山月歌》）\n（3）_____________________，崔九堂前几度闻。（杜甫《江南逢李龟年》）\n（4）遥怜故园菊，_________________。（岑参《行军九日思长安故园》）\n（5）_____________________，受降城外月如霜。（李益《夜上受降城闻笛》）\n（6）《观沧海》中，曹操以动静结合的手法，用“________________，_______________”两句描绘出了海水荡漾、峰峦矗立的景象。\n（7）马致远《天净沙·秋思》中，表明游子漂泊在外，点明主旨，直接道出天涯游子之悲的句子是：_____________________，_____________________。\n（8）《论语》中，阐述学习与思考关系的句子是：____________________，____________________。\n（9）不必说_____________，光滑的石井栏，高大的皂荚树，紫红的桑椹；也不必说鸣蝉在树叶里长吟，肥胖的黄蜂伏在菜花上，轻捷的叫天子（云雀）忽然从草间直窜向云霄里去了。",
+      "answer": "随君直到夜郎西,思君不见下渝州,岐王宅里寻常见,应傍战场开,回乐烽前沙似雪,水何澹澹,山岛竦峙,夕阳西下,断肠人在天涯,学而不思则罔,思而不学则殆,碧绿的菜畦",
+      "explanation": "本题考查名句默写。默写题作答时，一是要透彻理解诗文的内容；二是要认真审题，找出符合题意的诗文句子；三是答题内容要准确，做到不添字、不漏字、不写错字。本题中的“郎、渝州、岐、澹、罔”等字词容易写错。",
+      "round": 1,
+      "_raw_excerpt": "9. 请在下面的横线上填写相应的句子。",
+      "_source_answer_evidence": "①. 随君直到夜郎西    ②. 思君不见下渝州    ③. 岐王宅里寻常见    ④. 应傍战场开    ⑤. 回乐烽前沙似雪    ⑥. 水何澹澹    ⑦. 山岛竦峙    ⑧. 夕阳西下    ⑨. 断肠人在天涯    ⑩. 学而不思则罔    ⑪. 思而不学则殆    ⑫. 碧绿的菜畦",
+      "_source_stem_authority": "original DOCX; explicit analysis prompt variants reconciled in worker/variant_reconciliation.json",
+      "answer_blanks": [
+        "随君直到夜郎西",
+        "思君不见下渝州",
+        "岐王宅里寻常见",
+        "应傍战场开",
+        "回乐烽前沙似雪",
+        "水何澹澹",
+        "山岛竦峙",
+        "夕阳西下",
+        "断肠人在天涯",
+        "学而不思则罔",
+        "思而不学则殆",
+        "碧绿的菜畦"
+      ],
+      "_round_before_group_unify": 1,
+      "_round_judge_method": "g7_source_aware_bootstrap_user_authorized",
+      "_round_rubric": "docs/difficulty/g7_chinese_round_rubric_draft.md",
+      "_round_nearest_anchor": {
+        "candidate_id": "g7_chinese_r1_candidate_03",
+        "status": "candidate_unapproved"
+      },
+      "_round_routing_reasoning": [
+        "参照G7候选g7_chinese_r1_candidate_03；未声称已由Famin校准。",
+        "rubric §3.1：直接识记，不因多空提高档次。"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 7,
+      "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+      "local_id": 10,
+      "_source_question_number": 10,
+      "_source_subquestion": null,
+      "type": "subjective",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言实词",
+      "content": "阅读下面两篇文言文，完成下面小题。\n【甲】\n谢太傅寒雪日内集，与儿女讲论文义。俄而雪骤，公欣然曰：“白雪纷纷何所似？”兄子胡儿曰：“撒盐空中差可拟。”兄女曰：“<u>未若柳絮因风起。</u>”公大笑乐。即公大兄无奕女，左将军王凝之妻也。\n（《世说新语·言语》）\n【乙】\n黄琬①幼而慧。祖父琼，为魏郡太守。建和元年正月日食，京师不见②而琼以状闻。太后诏问所食多少。琼思其对而未知所况。琬年七岁，在旁，曰：“<u>何不言日食之余如月之初？</u>”琼大惊，即以其言应诏，而深奇爱之。\n（《后汉书·黄琬传》）\n【注释】①黄琬：字子琰，东汉江夏安陆（今湖北安陆南）人，尚书令黄香曾孙、太尉黄琼之孙。②京师不见：京城里看不到那次日食的情况。\n\n1. 解释下列加粗词语。\n（1）俄而雪**骤**  骤：____________     （2）撒盐空中**差**可拟  差：_____________\n（3）即以其言**应**诏 应：_________     （4）为人谋而不**忠**乎  忠：_____________",
+      "answer": "急,大体,回答（回应、应对亦可）,竭尽自己心力",
+      "explanation": "本题考查重点文言词语在文中的含义。\n（1）句意：便不一会，雪下得急了。骤：急。\n（2）句意：在空中撒盐差不多可以相比。差：大体。\n（3）句意：随即按照孙子的建议回应了太后的询问。应：回答（回应、应对亦可）。\n（4）句意：替人办事情是不是尽心竭力了呢?。忠：尽心竭力。\n家长审核要点：依序解释骤、差、应、忠；忠为尽心竭力，原答案的竭尽自己心力可接受。\n加粗字保留原题加点或强调标记。",
+      "round": 3,
+      "_raw_excerpt": "阅读下面两篇文言文，完成下面小题。\n【甲】\n谢太傅寒雪日内集，与儿女讲论文义。俄而雪骤，公欣然曰：“白雪纷纷何所似？”兄子胡儿曰：“撒盐空中差可拟。”兄女曰：“<u>未若柳絮因风起。</u>”公大笑乐。即公大兄无奕女，左将军王凝之妻也。\n（《世说新语·言语》）\n【乙】\n黄琬①幼而慧。祖父琼，为魏郡太守。建和元年正月日食，京师不见②而琼以状闻。太后诏问所食多少。琼思其对而未知所况。琬年七岁，在旁，曰：“<u>何不言日食之余如月之初？</u>”琼大惊，即以其言应诏，而深奇爱之。\n（《后汉书·黄琬传》）\n【注释】①黄琬：字子琰，东汉江夏安陆（今湖北安陆南）人，尚书令黄香曾孙、太尉黄琼之孙。②京师不见：京城里看不到那次日食的情况。",
+      "_source_answer_evidence": "10.     ①. 急。    ②. 大体    ③. 回答（回应、应对亦可）    ④. 竭尽自己心力    11. D    \n12. （1）不如（把它）比作柳絮乘风而起。\n（2）为什么不说日食剩下的样子像月初的新月？ \n（3）用不正当的手段得来的富贵，对于我来说就像浮云一样。    \n13. ①甲文通过写谢太傅大笑、非常高兴，从侧面烘托出谢道韫的才华出众。（文采出众、才华横溢、聪慧机敏等亦可）②乙文通过写黄琼大为惊叹、觉得黄琬特别与众不同并十分喜爱他，从侧面衬托出黄琬的机智过人。（聪慧机敏等亦可）",
+      "_source_stem_authority": "original DOCX; explicit analysis prompt variants reconciled in worker/variant_reconciliation.json",
+      "_common_prefix_raw": "阅读下面两篇文言文，完成下面小题。\n【甲】\n谢太傅寒雪日内集，与儿女讲论文义。俄而雪骤，公欣然曰：“白雪纷纷何所似？”兄子胡儿曰：“撒盐空中差可拟。”兄女曰：“<u>未若柳絮因风起。</u>”公大笑乐。即公大兄无奕女，左将军王凝之妻也。\n（《世说新语·言语》）\n【乙】\n黄琬①幼而慧。祖父琼，为魏郡太守。建和元年正月日食，京师不见②而琼以状闻。太后诏问所食多少。琼思其对而未知所况。琬年七岁，在旁，曰：“<u>何不言日食之余如月之初？</u>”琼大惊，即以其言应诏，而深奇爱之。\n（《后汉书·黄琬传》）\n【注释】①黄琬：字子琰，东汉江夏安陆（今湖北安陆南）人，尚书令黄香曾孙、太尉黄琼之孙。②京师不见：京城里看不到那次日食的情况。",
+      "group_id": "realpaper_g7_chinese_renjiao_qz_futian_2024_001_classical",
+      "group_order": 1,
+      "_prompt_before_number_normalization": "10. 解释下列加点词语。\n（1）俄而雪**骤**  骤：____________     （2）撒盐空中**差**可拟  差：_____________\n（3）即以其言**应**诏 应：_________     （4）为人谋而不**忠**乎  忠：_____________",
+      "answer_blanks": [
+        "急",
+        "大体",
+        "回答|||回应|||应对",
+        "竭尽自己心力|||尽心竭力"
+      ],
+      "_parent_review_required": true,
+      "_parent_review_criteria": "依序解释骤、差、应、忠；忠为尽心竭力，原答案的竭尽自己心力可接受。",
+      "_round_before_group_unify": 2,
+      "_round_judge_method": "g7_source_aware_bootstrap_user_authorized",
+      "_round_rubric": "docs/difficulty/g7_chinese_round_rubric_draft.md",
+      "_round_nearest_anchor": {
+        "candidate_id": "g7_chinese_r2_candidate_01",
+        "status": "candidate_unapproved"
+      },
+      "_round_routing_reasoning": [
+        "参照G7候选g7_chinese_r2_candidate_01；未声称已由Famin校准。",
+        "rubric §2.1-2.3：局部规则应用、有限证据判断或概括。"
+      ],
+      "_round_group_unify_rule": "ceil(mean)"
+    },
+    {
+      "subject": "chinese",
+      "grade": 7,
+      "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+      "local_id": 11,
+      "_source_question_number": 11,
+      "_source_subquestion": null,
+      "type": "choice",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言文比较阅读",
+      "content": "阅读下面两篇文言文，完成下面小题。\n【甲】\n谢太傅寒雪日内集，与儿女讲论文义。俄而雪骤，公欣然曰：“白雪纷纷何所似？”兄子胡儿曰：“撒盐空中差可拟。”兄女曰：“<u>未若柳絮因风起。</u>”公大笑乐。即公大兄无奕女，左将军王凝之妻也。\n（《世说新语·言语》）\n【乙】\n黄琬①幼而慧。祖父琼，为魏郡太守。建和元年正月日食，京师不见②而琼以状闻。太后诏问所食多少。琼思其对而未知所况。琬年七岁，在旁，曰：“<u>何不言日食之余如月之初？</u>”琼大惊，即以其言应诏，而深奇爱之。\n（《后汉书·黄琬传》）\n【注释】①黄琬：字子琰，东汉江夏安陆（今湖北安陆南）人，尚书令黄香曾孙、太尉黄琼之孙。②京师不见：京城里看不到那次日食的情况。\n\n2. 下列关于甲乙两文的分析理解，**错误**的一项是（    ）",
+      "answer": "D",
+      "explanation": "本题考查对文言文的理解。\nD.由“琬年七岁，在旁，曰：‘何不言日食之余如月之初？’琼大惊，即以其言应诏，而深奇爱之”可知，是黄琼按照黄琬所说回禀太后，且黄琼“深奇爱之”，即黄琼深深地认为黄琬与众不同十分喜爱他，并没有提到太后也非常喜爱黄琬；\n故选D。\n加粗字保留原题加点或强调标记。",
+      "round": 3,
+      "_raw_excerpt": "阅读下面两篇文言文，完成下面小题。\n【甲】\n谢太傅寒雪日内集，与儿女讲论文义。俄而雪骤，公欣然曰：“白雪纷纷何所似？”兄子胡儿曰：“撒盐空中差可拟。”兄女曰：“<u>未若柳絮因风起。</u>”公大笑乐。即公大兄无奕女，左将军王凝之妻也。\n（《世说新语·言语》）\n【乙】\n黄琬①幼而慧。祖父琼，为魏郡太守。建和元年正月日食，京师不见②而琼以状闻。太后诏问所食多少。琼思其对而未知所况。琬年七岁，在旁，曰：“<u>何不言日食之余如月之初？</u>”琼大惊，即以其言应诏，而深奇爱之。\n（《后汉书·黄琬传》）\n【注释】①黄琬：字子琰，东汉江夏安陆（今湖北安陆南）人，尚书令黄香曾孙、太尉黄琼之孙。②京师不见：京城里看不到那次日食的情况。",
+      "_source_answer_evidence": "10.     ①. 急。    ②. 大体    ③. 回答（回应、应对亦可）    ④. 竭尽自己心力    11. D    \n12. （1）不如（把它）比作柳絮乘风而起。\n（2）为什么不说日食剩下的样子像月初的新月？ \n（3）用不正当的手段得来的富贵，对于我来说就像浮云一样。    \n13. ①甲文通过写谢太傅大笑、非常高兴，从侧面烘托出谢道韫的才华出众。（文采出众、才华横溢、聪慧机敏等亦可）②乙文通过写黄琼大为惊叹、觉得黄琬特别与众不同并十分喜爱他，从侧面衬托出黄琬的机智过人。（聪慧机敏等亦可）",
+      "_source_stem_authority": "original DOCX; explicit analysis prompt variants reconciled in worker/variant_reconciliation.json",
+      "_common_prefix_raw": "阅读下面两篇文言文，完成下面小题。\n【甲】\n谢太傅寒雪日内集，与儿女讲论文义。俄而雪骤，公欣然曰：“白雪纷纷何所似？”兄子胡儿曰：“撒盐空中差可拟。”兄女曰：“<u>未若柳絮因风起。</u>”公大笑乐。即公大兄无奕女，左将军王凝之妻也。\n（《世说新语·言语》）\n【乙】\n黄琬①幼而慧。祖父琼，为魏郡太守。建和元年正月日食，京师不见②而琼以状闻。太后诏问所食多少。琼思其对而未知所况。琬年七岁，在旁，曰：“<u>何不言日食之余如月之初？</u>”琼大惊，即以其言应诏，而深奇爱之。\n（《后汉书·黄琬传》）\n【注释】①黄琬：字子琰，东汉江夏安陆（今湖北安陆南）人，尚书令黄香曾孙、太尉黄琼之孙。②京师不见：京城里看不到那次日食的情况。",
+      "group_id": "realpaper_g7_chinese_renjiao_qz_futian_2024_001_classical",
+      "group_order": 2,
+      "_prompt_before_number_normalization": "11. 下列关于甲乙两文的分析理解，**错误**的一项是（    ）",
+      "options": [
+        "A. 甲文中胡儿用“撒盐”的比喻描绘了“雪骤”的场景。",
+        "B. 甲文表现了谢道韫出色的文学才华。",
+        "C. 乙文中“琼思其对而未知所况”与《陈太丘与友期行》中的“对子骂父”，两句中的“对”的意思是不同的。",
+        "D. 乙文中黄琬的祖父黄琼按照黄琬所说回禀太后，太后也非常喜爱黄琬。"
+      ],
+      "_round_before_group_unify": 2,
+      "_round_judge_method": "g7_source_aware_bootstrap_user_authorized",
+      "_round_rubric": "docs/difficulty/g7_chinese_round_rubric_draft.md",
+      "_round_nearest_anchor": {
+        "candidate_id": "g7_chinese_r2_candidate_01",
+        "status": "candidate_unapproved"
+      },
+      "_round_routing_reasoning": [
+        "参照G7候选g7_chinese_r2_candidate_01；未声称已由Famin校准。",
+        "rubric §2.1-2.3：局部规则应用、有限证据判断或概括。"
+      ],
+      "_round_group_unify_rule": "ceil(mean)"
+    },
+    {
+      "subject": "chinese",
+      "grade": 7,
+      "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+      "local_id": "12_1",
+      "_source_question_number": 12,
+      "_source_subquestion": "1",
+      "type": "subjective",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言句子翻译",
+      "content": "阅读下面两篇文言文，完成下面小题。\n【甲】\n谢太傅寒雪日内集，与儿女讲论文义。俄而雪骤，公欣然曰：“白雪纷纷何所似？”兄子胡儿曰：“撒盐空中差可拟。”兄女曰：“<u>未若柳絮因风起。</u>”公大笑乐。即公大兄无奕女，左将军王凝之妻也。\n（《世说新语·言语》）\n【乙】\n黄琬①幼而慧。祖父琼，为魏郡太守。建和元年正月日食，京师不见②而琼以状闻。太后诏问所食多少。琼思其对而未知所况。琬年七岁，在旁，曰：“<u>何不言日食之余如月之初？</u>”琼大惊，即以其言应诏，而深奇爱之。\n（《后汉书·黄琬传》）\n【注释】①黄琬：字子琰，东汉江夏安陆（今湖北安陆南）人，尚书令黄香曾孙、太尉黄琼之孙。②京师不见：京城里看不到那次日食的情况。\n\n3. 用现代汉语翻译下面的句子。\n未若柳絮因风起。",
+      "answer": "不如（把它）比作柳絮乘风而起。",
+      "explanation": "本题考查学生对句子翻译能力。我们在翻译句子时要注意通假字、词类活用、一词多义、特殊句式等情况。重点词有：\n（1）未若，不如，不及；因，趁，乘。\n（2）何，为什么；言，说；如，像。\n（3）义，正当手段；于，对于。\n家长审核要点：未若译为不如，因译为乘，柳絮乘风而起的比喻意思完整。",
+      "round": 3,
+      "_raw_excerpt": "阅读下面两篇文言文，完成下面小题。\n【甲】\n谢太傅寒雪日内集，与儿女讲论文义。俄而雪骤，公欣然曰：“白雪纷纷何所似？”兄子胡儿曰：“撒盐空中差可拟。”兄女曰：“<u>未若柳絮因风起。</u>”公大笑乐。即公大兄无奕女，左将军王凝之妻也。\n（《世说新语·言语》）\n【乙】\n黄琬①幼而慧。祖父琼，为魏郡太守。建和元年正月日食，京师不见②而琼以状闻。太后诏问所食多少。琼思其对而未知所况。琬年七岁，在旁，曰：“<u>何不言日食之余如月之初？</u>”琼大惊，即以其言应诏，而深奇爱之。\n（《后汉书·黄琬传》）\n【注释】①黄琬：字子琰，东汉江夏安陆（今湖北安陆南）人，尚书令黄香曾孙、太尉黄琼之孙。②京师不见：京城里看不到那次日食的情况。",
+      "_source_answer_evidence": "10.     ①. 急。    ②. 大体    ③. 回答（回应、应对亦可）    ④. 竭尽自己心力    11. D    \n12. （1）不如（把它）比作柳絮乘风而起。\n（2）为什么不说日食剩下的样子像月初的新月？ \n（3）用不正当的手段得来的富贵，对于我来说就像浮云一样。    \n13. ①甲文通过写谢太傅大笑、非常高兴，从侧面烘托出谢道韫的才华出众。（文采出众、才华横溢、聪慧机敏等亦可）②乙文通过写黄琼大为惊叹、觉得黄琬特别与众不同并十分喜爱他，从侧面衬托出黄琬的机智过人。（聪慧机敏等亦可）",
+      "_source_stem_authority": "original DOCX; explicit analysis prompt variants reconciled in worker/variant_reconciliation.json",
+      "_common_prefix_raw": "阅读下面两篇文言文，完成下面小题。\n【甲】\n谢太傅寒雪日内集，与儿女讲论文义。俄而雪骤，公欣然曰：“白雪纷纷何所似？”兄子胡儿曰：“撒盐空中差可拟。”兄女曰：“<u>未若柳絮因风起。</u>”公大笑乐。即公大兄无奕女，左将军王凝之妻也。\n（《世说新语·言语》）\n【乙】\n黄琬①幼而慧。祖父琼，为魏郡太守。建和元年正月日食，京师不见②而琼以状闻。太后诏问所食多少。琼思其对而未知所况。琬年七岁，在旁，曰：“<u>何不言日食之余如月之初？</u>”琼大惊，即以其言应诏，而深奇爱之。\n（《后汉书·黄琬传》）\n【注释】①黄琬：字子琰，东汉江夏安陆（今湖北安陆南）人，尚书令黄香曾孙、太尉黄琼之孙。②京师不见：京城里看不到那次日食的情况。",
+      "group_id": "realpaper_g7_chinese_renjiao_qz_futian_2024_001_classical",
+      "group_order": 3,
+      "_prompt_before_number_normalization": "用现代汉语翻译下面的句子。\n未若柳絮因风起。",
+      "_parent_review_required": true,
+      "_parent_review_criteria": "未若译为不如，因译为乘，柳絮乘风而起的比喻意思完整。",
+      "_round_before_group_unify": 2,
+      "_round_judge_method": "g7_source_aware_bootstrap_user_authorized",
+      "_round_rubric": "docs/difficulty/g7_chinese_round_rubric_draft.md",
+      "_round_nearest_anchor": {
+        "candidate_id": "g7_chinese_r2_candidate_01",
+        "status": "candidate_unapproved"
+      },
+      "_round_routing_reasoning": [
+        "参照G7候选g7_chinese_r2_candidate_01；未声称已由Famin校准。",
+        "rubric §2.1-2.3：局部规则应用、有限证据判断或概括。"
+      ],
+      "_round_group_unify_rule": "ceil(mean)"
+    },
+    {
+      "subject": "chinese",
+      "grade": 7,
+      "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+      "local_id": "12_2",
+      "_source_question_number": 12,
+      "_source_subquestion": "2",
+      "type": "subjective",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言句子翻译",
+      "content": "阅读下面两篇文言文，完成下面小题。\n【甲】\n谢太傅寒雪日内集，与儿女讲论文义。俄而雪骤，公欣然曰：“白雪纷纷何所似？”兄子胡儿曰：“撒盐空中差可拟。”兄女曰：“<u>未若柳絮因风起。</u>”公大笑乐。即公大兄无奕女，左将军王凝之妻也。\n（《世说新语·言语》）\n【乙】\n黄琬①幼而慧。祖父琼，为魏郡太守。建和元年正月日食，京师不见②而琼以状闻。太后诏问所食多少。琼思其对而未知所况。琬年七岁，在旁，曰：“<u>何不言日食之余如月之初？</u>”琼大惊，即以其言应诏，而深奇爱之。\n（《后汉书·黄琬传》）\n【注释】①黄琬：字子琰，东汉江夏安陆（今湖北安陆南）人，尚书令黄香曾孙、太尉黄琼之孙。②京师不见：京城里看不到那次日食的情况。\n\n4. 用现代汉语翻译下面的句子。\n何不言日食之余如月之初？",
+      "answer": "为什么不说日食剩下的样子像月初的新月？",
+      "explanation": "本题考查学生对句子翻译能力。我们在翻译句子时要注意通假字、词类活用、一词多义、特殊句式等情况。重点词有：\n（1）未若，不如，不及；因，趁，乘。\n（2）何，为什么；言，说；如，像。\n（3）义，正当手段；于，对于。\n家长审核要点：保留何不的反问语气，日食后余下形状与月初新月的比喻完整。",
+      "round": 3,
+      "_raw_excerpt": "阅读下面两篇文言文，完成下面小题。\n【甲】\n谢太傅寒雪日内集，与儿女讲论文义。俄而雪骤，公欣然曰：“白雪纷纷何所似？”兄子胡儿曰：“撒盐空中差可拟。”兄女曰：“<u>未若柳絮因风起。</u>”公大笑乐。即公大兄无奕女，左将军王凝之妻也。\n（《世说新语·言语》）\n【乙】\n黄琬①幼而慧。祖父琼，为魏郡太守。建和元年正月日食，京师不见②而琼以状闻。太后诏问所食多少。琼思其对而未知所况。琬年七岁，在旁，曰：“<u>何不言日食之余如月之初？</u>”琼大惊，即以其言应诏，而深奇爱之。\n（《后汉书·黄琬传》）\n【注释】①黄琬：字子琰，东汉江夏安陆（今湖北安陆南）人，尚书令黄香曾孙、太尉黄琼之孙。②京师不见：京城里看不到那次日食的情况。",
+      "_source_answer_evidence": "10.     ①. 急。    ②. 大体    ③. 回答（回应、应对亦可）    ④. 竭尽自己心力    11. D    \n12. （1）不如（把它）比作柳絮乘风而起。\n（2）为什么不说日食剩下的样子像月初的新月？ \n（3）用不正当的手段得来的富贵，对于我来说就像浮云一样。    \n13. ①甲文通过写谢太傅大笑、非常高兴，从侧面烘托出谢道韫的才华出众。（文采出众、才华横溢、聪慧机敏等亦可）②乙文通过写黄琼大为惊叹、觉得黄琬特别与众不同并十分喜爱他，从侧面衬托出黄琬的机智过人。（聪慧机敏等亦可）",
+      "_source_stem_authority": "original DOCX; explicit analysis prompt variants reconciled in worker/variant_reconciliation.json",
+      "_common_prefix_raw": "阅读下面两篇文言文，完成下面小题。\n【甲】\n谢太傅寒雪日内集，与儿女讲论文义。俄而雪骤，公欣然曰：“白雪纷纷何所似？”兄子胡儿曰：“撒盐空中差可拟。”兄女曰：“<u>未若柳絮因风起。</u>”公大笑乐。即公大兄无奕女，左将军王凝之妻也。\n（《世说新语·言语》）\n【乙】\n黄琬①幼而慧。祖父琼，为魏郡太守。建和元年正月日食，京师不见②而琼以状闻。太后诏问所食多少。琼思其对而未知所况。琬年七岁，在旁，曰：“<u>何不言日食之余如月之初？</u>”琼大惊，即以其言应诏，而深奇爱之。\n（《后汉书·黄琬传》）\n【注释】①黄琬：字子琰，东汉江夏安陆（今湖北安陆南）人，尚书令黄香曾孙、太尉黄琼之孙。②京师不见：京城里看不到那次日食的情况。",
+      "group_id": "realpaper_g7_chinese_renjiao_qz_futian_2024_001_classical",
+      "group_order": 4,
+      "_prompt_before_number_normalization": "用现代汉语翻译下面的句子。\n何不言日食之余如月之初？",
+      "_parent_review_required": true,
+      "_parent_review_criteria": "保留何不的反问语气，日食后余下形状与月初新月的比喻完整。",
+      "_round_before_group_unify": 2,
+      "_round_judge_method": "g7_source_aware_bootstrap_user_authorized",
+      "_round_rubric": "docs/difficulty/g7_chinese_round_rubric_draft.md",
+      "_round_nearest_anchor": {
+        "candidate_id": "g7_chinese_r2_candidate_01",
+        "status": "candidate_unapproved"
+      },
+      "_round_routing_reasoning": [
+        "参照G7候选g7_chinese_r2_candidate_01；未声称已由Famin校准。",
+        "rubric §2.1-2.3：局部规则应用、有限证据判断或概括。"
+      ],
+      "_round_group_unify_rule": "ceil(mean)"
+    },
+    {
+      "subject": "chinese",
+      "grade": 7,
+      "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+      "local_id": "12_3",
+      "_source_question_number": 12,
+      "_source_subquestion": "3",
+      "type": "subjective",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言句子翻译",
+      "content": "阅读下面两篇文言文，完成下面小题。\n【甲】\n谢太傅寒雪日内集，与儿女讲论文义。俄而雪骤，公欣然曰：“白雪纷纷何所似？”兄子胡儿曰：“撒盐空中差可拟。”兄女曰：“<u>未若柳絮因风起。</u>”公大笑乐。即公大兄无奕女，左将军王凝之妻也。\n（《世说新语·言语》）\n【乙】\n黄琬①幼而慧。祖父琼，为魏郡太守。建和元年正月日食，京师不见②而琼以状闻。太后诏问所食多少。琼思其对而未知所况。琬年七岁，在旁，曰：“<u>何不言日食之余如月之初？</u>”琼大惊，即以其言应诏，而深奇爱之。\n（《后汉书·黄琬传》）\n【注释】①黄琬：字子琰，东汉江夏安陆（今湖北安陆南）人，尚书令黄香曾孙、太尉黄琼之孙。②京师不见：京城里看不到那次日食的情况。\n\n5. 用现代汉语翻译下面的句子。\n不义而富且贵，于我如浮云。",
+      "answer": "用不正当的手段得来的富贵，对于我来说就像浮云一样。",
+      "explanation": "本题考查学生对句子翻译能力。我们在翻译句子时要注意通假字、词类活用、一词多义、特殊句式等情况。重点词有：\n（1）未若，不如，不及；因，趁，乘。\n（2）何，为什么；言，说；如，像。\n（3）义，正当手段；于，对于。\n家长审核要点：说明不正当手段所得的富贵，对我如浮云；义、于含义和全句意思准确。",
+      "round": 3,
+      "_raw_excerpt": "阅读下面两篇文言文，完成下面小题。\n【甲】\n谢太傅寒雪日内集，与儿女讲论文义。俄而雪骤，公欣然曰：“白雪纷纷何所似？”兄子胡儿曰：“撒盐空中差可拟。”兄女曰：“<u>未若柳絮因风起。</u>”公大笑乐。即公大兄无奕女，左将军王凝之妻也。\n（《世说新语·言语》）\n【乙】\n黄琬①幼而慧。祖父琼，为魏郡太守。建和元年正月日食，京师不见②而琼以状闻。太后诏问所食多少。琼思其对而未知所况。琬年七岁，在旁，曰：“<u>何不言日食之余如月之初？</u>”琼大惊，即以其言应诏，而深奇爱之。\n（《后汉书·黄琬传》）\n【注释】①黄琬：字子琰，东汉江夏安陆（今湖北安陆南）人，尚书令黄香曾孙、太尉黄琼之孙。②京师不见：京城里看不到那次日食的情况。",
+      "_source_answer_evidence": "10.     ①. 急。    ②. 大体    ③. 回答（回应、应对亦可）    ④. 竭尽自己心力    11. D    \n12. （1）不如（把它）比作柳絮乘风而起。\n（2）为什么不说日食剩下的样子像月初的新月？ \n（3）用不正当的手段得来的富贵，对于我来说就像浮云一样。    \n13. ①甲文通过写谢太傅大笑、非常高兴，从侧面烘托出谢道韫的才华出众。（文采出众、才华横溢、聪慧机敏等亦可）②乙文通过写黄琼大为惊叹、觉得黄琬特别与众不同并十分喜爱他，从侧面衬托出黄琬的机智过人。（聪慧机敏等亦可）",
+      "_source_stem_authority": "original DOCX; explicit analysis prompt variants reconciled in worker/variant_reconciliation.json",
+      "_common_prefix_raw": "阅读下面两篇文言文，完成下面小题。\n【甲】\n谢太傅寒雪日内集，与儿女讲论文义。俄而雪骤，公欣然曰：“白雪纷纷何所似？”兄子胡儿曰：“撒盐空中差可拟。”兄女曰：“<u>未若柳絮因风起。</u>”公大笑乐。即公大兄无奕女，左将军王凝之妻也。\n（《世说新语·言语》）\n【乙】\n黄琬①幼而慧。祖父琼，为魏郡太守。建和元年正月日食，京师不见②而琼以状闻。太后诏问所食多少。琼思其对而未知所况。琬年七岁，在旁，曰：“<u>何不言日食之余如月之初？</u>”琼大惊，即以其言应诏，而深奇爱之。\n（《后汉书·黄琬传》）\n【注释】①黄琬：字子琰，东汉江夏安陆（今湖北安陆南）人，尚书令黄香曾孙、太尉黄琼之孙。②京师不见：京城里看不到那次日食的情况。",
+      "group_id": "realpaper_g7_chinese_renjiao_qz_futian_2024_001_classical",
+      "group_order": 5,
+      "_prompt_before_number_normalization": "用现代汉语翻译下面的句子。\n不义而富且贵，于我如浮云。",
+      "_parent_review_required": true,
+      "_parent_review_criteria": "说明不正当手段所得的富贵，对我如浮云；义、于含义和全句意思准确。",
+      "_round_before_group_unify": 2,
+      "_round_judge_method": "g7_source_aware_bootstrap_user_authorized",
+      "_round_rubric": "docs/difficulty/g7_chinese_round_rubric_draft.md",
+      "_round_nearest_anchor": {
+        "candidate_id": "g7_chinese_r2_candidate_01",
+        "status": "candidate_unapproved"
+      },
+      "_round_routing_reasoning": [
+        "参照G7候选g7_chinese_r2_candidate_01；未声称已由Famin校准。",
+        "rubric §2.1-2.3：局部规则应用、有限证据判断或概括。"
+      ],
+      "_round_group_unify_rule": "ceil(mean)"
+    },
+    {
+      "subject": "chinese",
+      "grade": 7,
+      "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+      "local_id": 13,
+      "_source_question_number": 13,
+      "_source_subquestion": null,
+      "type": "subjective",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/文言文比较阅读",
+      "content": "阅读下面两篇文言文，完成下面小题。\n【甲】\n谢太傅寒雪日内集，与儿女讲论文义。俄而雪骤，公欣然曰：“白雪纷纷何所似？”兄子胡儿曰：“撒盐空中差可拟。”兄女曰：“<u>未若柳絮因风起。</u>”公大笑乐。即公大兄无奕女，左将军王凝之妻也。\n（《世说新语·言语》）\n【乙】\n黄琬①幼而慧。祖父琼，为魏郡太守。建和元年正月日食，京师不见②而琼以状闻。太后诏问所食多少。琼思其对而未知所况。琬年七岁，在旁，曰：“<u>何不言日食之余如月之初？</u>”琼大惊，即以其言应诏，而深奇爱之。\n（《后汉书·黄琬传》）\n【注释】①黄琬：字子琰，东汉江夏安陆（今湖北安陆南）人，尚书令黄香曾孙、太尉黄琼之孙。②京师不见：京城里看不到那次日食的情况。\n\n6. 甲文中的“公大笑乐”和乙文中的“琼大惊，即以其言应诏，而深奇爱之”两句运用了同一种写作手法——侧面描写，请分别说说这两句话运用此手法在原文中起到怎样的作用。",
+      "answer": "①甲文通过写谢太傅大笑、非常高兴，从侧面烘托出谢道韫的才华出众。②乙文通过写黄琼大为惊叹、觉得黄琬特别与众不同并十分喜爱他，从侧面衬托出黄琬的机智过人。",
+      "explanation": "本题考查对文言文的理解。\n由甲文中“子胡儿曰：‘撒盐空中差可拟’”和“兄女曰：‘未若柳絮因风起。’”可知，在谢道韫将雪比作柳絮后大笑，从侧面突出了谢道韫的才华横溢。\n由乙文中“琼思其对而未知所况”可知，在黄琼不知道怎么给太后描述这次日食，十分苦恼的时候，黄婉告诉祖父可以用“日食之余如月之初”去形容，解决了祖父的燃眉之急。通过写黄琼大为惊叹、觉得黄琬特别与众不同并十分喜爱他，从侧面衬托出黄琬的机智过人。\n【点睛】参考译文：\n【甲】谢安在寒冷的雪天举行家庭聚会，给子侄辈的人讲解诗文。不一会，雪下得急了，太傅高兴地说：“这纷纷扬扬的白雪像什么呢？”他哥哥的长子谢朗说：“在空中撒盐差不多可以相比。”另一个哥哥的女儿说：“不如比作柳絮凭乘风飞舞。”太傅大笑起来。她就是谢奕的女儿谢道韫，左将军王凝之的妻子。\n乙】\n黄琬小时候聪明，祖父黄琼，做魏郡太守。建和元年正月发生日食，京城看不见那次日食情况黄琼把听见的情况告诉皇上。皇太后招他问日食遮了多少，黄琼思考该如何回答太后的询问但又不知怎样说清。黄婉当时七岁，在旁边，说：“为何不说日食之后剩下的部分如同新月一般呢？”黄琼听后大为震惊，随即按照黄琬的建议回应了太后的询问，觉得黄琬与众不同并十分喜爱他。\n家长审核要点：分别结合谢安大笑和黄琼惊叹喜爱，说明侧面烘托谢道韫才华及黄琬机智；两文均须答。",
+      "round": 3,
+      "_raw_excerpt": "阅读下面两篇文言文，完成下面小题。\n【甲】\n谢太傅寒雪日内集，与儿女讲论文义。俄而雪骤，公欣然曰：“白雪纷纷何所似？”兄子胡儿曰：“撒盐空中差可拟。”兄女曰：“<u>未若柳絮因风起。</u>”公大笑乐。即公大兄无奕女，左将军王凝之妻也。\n（《世说新语·言语》）\n【乙】\n黄琬①幼而慧。祖父琼，为魏郡太守。建和元年正月日食，京师不见②而琼以状闻。太后诏问所食多少。琼思其对而未知所况。琬年七岁，在旁，曰：“<u>何不言日食之余如月之初？</u>”琼大惊，即以其言应诏，而深奇爱之。\n（《后汉书·黄琬传》）\n【注释】①黄琬：字子琰，东汉江夏安陆（今湖北安陆南）人，尚书令黄香曾孙、太尉黄琼之孙。②京师不见：京城里看不到那次日食的情况。",
+      "_source_answer_evidence": "10.     ①. 急。    ②. 大体    ③. 回答（回应、应对亦可）    ④. 竭尽自己心力    11. D    \n12. （1）不如（把它）比作柳絮乘风而起。\n（2）为什么不说日食剩下的样子像月初的新月？ \n（3）用不正当的手段得来的富贵，对于我来说就像浮云一样。    \n13. ①甲文通过写谢太傅大笑、非常高兴，从侧面烘托出谢道韫的才华出众。（文采出众、才华横溢、聪慧机敏等亦可）②乙文通过写黄琼大为惊叹、觉得黄琬特别与众不同并十分喜爱他，从侧面衬托出黄琬的机智过人。（聪慧机敏等亦可）",
+      "_source_stem_authority": "original DOCX; explicit analysis prompt variants reconciled in worker/variant_reconciliation.json",
+      "_common_prefix_raw": "阅读下面两篇文言文，完成下面小题。\n【甲】\n谢太傅寒雪日内集，与儿女讲论文义。俄而雪骤，公欣然曰：“白雪纷纷何所似？”兄子胡儿曰：“撒盐空中差可拟。”兄女曰：“<u>未若柳絮因风起。</u>”公大笑乐。即公大兄无奕女，左将军王凝之妻也。\n（《世说新语·言语》）\n【乙】\n黄琬①幼而慧。祖父琼，为魏郡太守。建和元年正月日食，京师不见②而琼以状闻。太后诏问所食多少。琼思其对而未知所况。琬年七岁，在旁，曰：“<u>何不言日食之余如月之初？</u>”琼大惊，即以其言应诏，而深奇爱之。\n（《后汉书·黄琬传》）\n【注释】①黄琬：字子琰，东汉江夏安陆（今湖北安陆南）人，尚书令黄香曾孙、太尉黄琼之孙。②京师不见：京城里看不到那次日食的情况。",
+      "group_id": "realpaper_g7_chinese_renjiao_qz_futian_2024_001_classical",
+      "group_order": 6,
+      "_prompt_before_number_normalization": "13. 甲文中的“公大笑乐”和乙文中的“琼大惊，即以其言应诏，而深奇爱之”两句运用了同一种写作手法——侧面描写，请分别说说这两句话运用此手法在原文中起到怎样的作用。",
+      "_parent_review_required": true,
+      "_parent_review_criteria": "分别结合谢安大笑和黄琼惊叹喜爱，说明侧面烘托谢道韫才华及黄琬机智；两文均须答。",
+      "_round_before_group_unify": 3,
+      "_round_judge_method": "g7_source_aware_bootstrap_user_authorized",
+      "_round_rubric": "docs/difficulty/g7_chinese_round_rubric_draft.md",
+      "_round_nearest_anchor": {
+        "candidate_id": "g7_chinese_r3_candidate_02",
+        "status": "candidate_unapproved"
+      },
+      "_round_routing_reasoning": [
+        "参照G7候选g7_chinese_r3_candidate_02；未声称已由Famin校准。",
+        "rubric §3.2-3.3：跨段或跨文本整合证据、分析作用和人物。"
+      ],
+      "_round_group_unify_rule": "ceil(mean)"
+    },
+    {
+      "subject": "chinese",
+      "grade": 7,
+      "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+      "local_id": 14,
+      "_source_question_number": 14,
+      "_source_subquestion": null,
+      "type": "choice",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词鉴赏",
+      "content": "阅读下面古代诗歌，完成下面小题。\n次北固山下\n王湾\n客路青山外，行舟绿水前。\n潮平两岸阔，风正一帆悬。\n海日生残夜，江春入旧年。\n乡书何处达，归雁洛阳边。\n\n1. 对这首诗赏析**有误**的一项是（    ）",
+      "answer": "C",
+      "explanation": "本题考查理解诗歌。\n C.颔联“潮平两岸阔，风正一帆悬”句意是：潮水上涨，两岸之间更显宽阔；顺风吹来，一条白帆正好高悬。“风正一帆悬”的“正”字不仅表示风顺，还强调了风的和煦，只有这样，帆才能够“悬”而不鼓成弧形。这一句不仅表现了行船的顺畅，还寓含了诗人对旅途顺利、心境开阔的期待。选项中“江风怒号”与诗意不符；\n故选C。\n加粗字保留原题加点或强调标记。",
+      "round": 3,
+      "_raw_excerpt": "阅读下面古代诗歌，完成下面小题。\n次北固山下\n王湾\n客路青山外，行舟绿水前。\n潮平两岸阔，风正一帆悬。\n海日生残夜，江春入旧年。\n乡书何处达，归雁洛阳边。",
+      "_source_answer_evidence": "14. C    15. ①曹操通过描绘大海吞吐日月的景象，表达了他开阔的胸襟、统一中原的宏大抱负和建功立业的豪迈情怀。②王湾通过描绘海上残夜将去、旭日初升的景象，表达了他对时光流逝的感慨。（或蕴含着他对新事物代替旧事物的思考，表现了诗人乐观、积极、向上的情感。）",
+      "_source_stem_authority": "original DOCX; explicit analysis prompt variants reconciled in worker/variant_reconciliation.json",
+      "_common_prefix_raw": "阅读下面古代诗歌，完成下面小题。\n次北固山下\n王湾\n客路青山外，行舟绿水前。\n潮平两岸阔，风正一帆悬。\n海日生残夜，江春入旧年。\n乡书何处达，归雁洛阳边。",
+      "group_id": "realpaper_g7_chinese_renjiao_qz_futian_2024_001_poem",
+      "group_order": 1,
+      "_prompt_before_number_normalization": "14. 对这首诗赏析**有误**的一项是（    ）",
+      "options": [
+        "A. 这是一首五言律诗，除颔联和颈联外，第一联也是对仗的。",
+        "B. 首联点题，诗人途中路过北固山，停宿于此。这里不是目的地，他还要继续前行。",
+        "C. 颔联描绘了这样的画面：潮水涨满，江水与两岸齐平，江面开阔，江风怒号，船只顺风而行，一叶白帆高高悬挂。",
+        "D. 尾联写诗人希望北归的大雁能捎去他对洛阳老家亲人的思念。不直言乡愁，而乡愁自在其中。"
+      ],
+      "_round_before_group_unify": 2,
+      "_round_judge_method": "g7_source_aware_bootstrap_user_authorized",
+      "_round_rubric": "docs/difficulty/g7_chinese_round_rubric_draft.md",
+      "_round_nearest_anchor": {
+        "candidate_id": "g7_chinese_r2_candidate_01",
+        "status": "candidate_unapproved"
+      },
+      "_round_routing_reasoning": [
+        "参照G7候选g7_chinese_r2_candidate_01；未声称已由Famin校准。",
+        "rubric §2.1-2.3：局部规则应用、有限证据判断或概括。"
+      ],
+      "_round_group_unify_rule": "ceil(mean)"
+    },
+    {
+      "subject": "chinese",
+      "grade": 7,
+      "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+      "local_id": 15,
+      "_source_question_number": 15,
+      "_source_subquestion": null,
+      "type": "subjective",
+      "chapter": "古诗文",
+      "knowledge_point": "古诗文/古诗词鉴赏",
+      "content": "阅读下面古代诗歌，完成下面小题。\n次北固山下\n王湾\n客路青山外，行舟绿水前。\n潮平两岸阔，风正一帆悬。\n海日生残夜，江春入旧年。\n乡书何处达，归雁洛阳边。\n\n2. 曹操《观沧海》的“日月之行，若出其中”和王湾的“海日生残夜”，都描绘了太阳在海上运行的情景，请简要说说两位诗人各自表达了怎样不同的情感。",
+      "answer": "①曹操通过描绘大海吞吐日月的景象，表达了他开阔的胸襟、统一中原的宏大抱负和建功立业的豪迈情怀。②王湾通过描绘海上残夜将去、旭日初升的景象，表达了他对时光流逝的感慨。（或蕴含着他对新事物代替旧事物的思考，表现了诗人乐观、积极、向上的情感。）",
+      "explanation": "本题考查对比阅读和情感主旨。\n“日月之行，若出其中”句意是：太阳和月亮的运行，好像是从这浩瀚的海洋中发出的。这句诗是诗人的想象之景，通过描绘大海吞吐日月、包蕴万千的壮丽景象，展现了诗人宏伟的气魄和远大的抱负。‌‌ \n“海日生残夜”句意是：夜还未消尽，红日已从海上升起。‌这句诗描绘了夜还未消尽，红日已从江上升起的景象，象征着新生的美好事物在旧事物中孕育而生。这句诗不仅写景逼真，蕴含着一种自然的理趣，还蕴含着对光阴荏苒的感慨，以及身在他乡的游子对家乡的思念之情‌。\n曹操的诗句意境开阔、气势雄浑，将大海的气势和威力凸显在读者面前，在丰富的联想中表现出作者博大的胸怀、开阔的胸襟、宏大的抱负，表现出一种宏伟的气魄和对自然的敬畏，反映出他作为一代枭雄的壮志豪情；而王湾的诗句海日生于残夜，将驱尽黑暗，江春，那江上景物所表现的“春意”，闯入旧年，将赶走严冬；不仅写景逼真，叙事确切，而且表现出具有普遍意义的生活真理，给人以乐观、积极、向上的艺术鼓舞力量；蕴含着对故乡的思念和对新年的期盼，情感更为细腻柔和。\n家长审核要点：曹操：开阔胸襟、宏大抱负或建功豪情；王湾：时光流逝感慨或新事物替代旧事物的积极乐观；结合两处海日描写区分。",
+      "round": 3,
+      "_raw_excerpt": "阅读下面古代诗歌，完成下面小题。\n次北固山下\n王湾\n客路青山外，行舟绿水前。\n潮平两岸阔，风正一帆悬。\n海日生残夜，江春入旧年。\n乡书何处达，归雁洛阳边。",
+      "_source_answer_evidence": "14. C    15. ①曹操通过描绘大海吞吐日月的景象，表达了他开阔的胸襟、统一中原的宏大抱负和建功立业的豪迈情怀。②王湾通过描绘海上残夜将去、旭日初升的景象，表达了他对时光流逝的感慨。（或蕴含着他对新事物代替旧事物的思考，表现了诗人乐观、积极、向上的情感。）",
+      "_source_stem_authority": "original DOCX; explicit analysis prompt variants reconciled in worker/variant_reconciliation.json",
+      "_common_prefix_raw": "阅读下面古代诗歌，完成下面小题。\n次北固山下\n王湾\n客路青山外，行舟绿水前。\n潮平两岸阔，风正一帆悬。\n海日生残夜，江春入旧年。\n乡书何处达，归雁洛阳边。",
+      "group_id": "realpaper_g7_chinese_renjiao_qz_futian_2024_001_poem",
+      "group_order": 2,
+      "_prompt_before_number_normalization": "15. 曹操《观沧海》的“日月之行，若出其中”和王湾的“海日生残夜”，都描绘了太阳在海上运行的情景，请简要说说两位诗人各自表达了怎样不同的情感。",
+      "_parent_review_required": true,
+      "_parent_review_criteria": "曹操：开阔胸襟、宏大抱负或建功豪情；王湾：时光流逝感慨或新事物替代旧事物的积极乐观；结合两处海日描写区分。",
+      "_round_before_group_unify": 3,
+      "_round_judge_method": "g7_source_aware_bootstrap_user_authorized",
+      "_round_rubric": "docs/difficulty/g7_chinese_round_rubric_draft.md",
+      "_round_nearest_anchor": {
+        "candidate_id": "g7_chinese_r3_candidate_01",
+        "status": "candidate_unapproved"
+      },
+      "_round_routing_reasoning": [
+        "参照G7候选g7_chinese_r3_candidate_01；未声称已由Famin校准。",
+        "rubric §3.2-3.3：跨段或跨文本整合证据、分析作用和人物。"
+      ],
+      "_round_group_unify_rule": "ceil(mean)"
+    },
+    {
+      "subject": "chinese",
+      "grade": 7,
+      "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+      "local_id": 16,
+      "_source_question_number": 16,
+      "_source_subquestion": null,
+      "type": "subjective",
+      "chapter": "阅读理解",
+      "knowledge_point": "现代文阅读/散文阅读",
+      "content": "阅读文章，完成下面小题。\n那盏叫父亲的灯\n迟子建\n①父亲在世时，每逢过年我就会得到一盏灯。那不是寻常的灯。从门外的雪地上捡回一个罐头瓶，然后将一瓢开水倒进瓶里，啪的一声，瓶底均匀地落下来，灯罩便诞生了，再用废棉花将它擦得亮亮的。灯的底座是木制的，有花纹，从底座中心钉透一颗钉子，把半截红烛固定在上面，待到夜幕降临时，点燃蜡烛，再小心翼翼地落下灯罩。我提着这盏灯，觉得自己风光无限。\n②父亲给我做这盏灯总要花上很多工夫。就说做灯罩，总要捡回五六个瓶子才能做成一个。尽管如此，除夕夜父亲总能让我提上一盏称心如意的灯。没有月亮的除夕夜，这盏灯就是月亮了。我提着灯，怀揣一盒火柴东家走西家串，每到一家都将灯吹灭，听人家夸几句这灯有多好，然后再心满意足地点燃蜡烛去另一家。每每转回到家里时，蜡烛烧得只剩下一汪油了。那时父亲会笑吟吟地问：“把那些光全折腾没了吧?”\n③“全给丢在路上了。”我说，“剩下最亮的光赶紧提回家来了。”“咱女儿还真顾家啊。”父亲笑着说，便去看那汪蜡烛油上斜着的一束蓬勃芬芳的光。\n④父亲说过年要里里外外都是光明的，所以不仅我手中有灯，院子里也是有灯的。<u>高高挂起的是红灯，灯笼穗长长的，风一吹，刷刷响。低处的是冰灯，放在大门口的木墩上。无论是高出屋脊的红灯，还是安闲地坐在低处的冰灯，都让人觉得温暖。</u>但不管它们多么动人，也不如父亲送给我的灯美丽。因为有了年，就觉得日子是有盼头的；因为有了父亲，年也就显得有声有色；而如果又有了父亲送我的灯，年则妖娆迷人了。\n⑤我一年年地长大了，父亲不再送灯给我，我已经不是那个提着灯串来串去的小孩子了。我开始在灯下想心事。但每逢除夕，院子里照例要在高处挂起红灯，在低处摆上冰灯。\n⑥然而，父亲没能走到老年就去世了。父亲去世的当年我们没有点灯，别人家的院子里灯火辉煌，我们家却黑漆漆的。我坐在暗处想：点灯的时候父亲还不回来，看来他是迷路了。我多想提着父亲送我的灯到路上接他回来啊。爸爸，回家的路这么难找吗？从此之后，虽然照例要过年，但是我再也没有提着灯的福气了。\n⑦一进腊月，家里就忙年了。姐姐会来信说年忙到什么地步了，比如说被子拆洗完了，年馍蒸完了，各种吃食也准备得差不多了，然后催我早点儿回家过年。所以，不管我身在哈尔滨、西安，还是北京，总是千里迢迢地冒着严寒往家奔，当然今年也不例外。腊月廿六我赶回家中，母亲知道这个日子我会回去的，因为腊月廿七那天，我们姐弟要“请”父亲回家过年。\n⑧我们去看父亲了。给他献过烟和酒，又烧了些纸钱，已经成家立业的弟弟叩头对父亲说：“爸爸，我有自己的家了，今年过年去儿子家吧，我家住在……”弟弟把他家的住址门牌号重复了几遍，怕父亲记不住。我又补充说：“离综合商场很近。”父亲生前喜欢到综合商场买皮蛋来下酒，那地方想必他是不会忘的。\n⑨正月十五到了，多年前的这一天，在一个落雪的黄昏，我降临人世。那时天将要黑了，窗外还没有挂灯，父亲便送我一个乳名：迎灯。没想到我迎来了千盏万盏灯，却再也迎不来父亲送给我的那盏灯了。\n⑩在冷寂的大街上，忽然发现一个苍老的卖灯人。那灯是六角形的，用玻璃做成的，玻璃上还贴着“福”字。我立刻想到了父亲，正月十五这一天，父亲的院子该有一盏灯的。我买下了一盏灯。天将黑时，将它送到了父亲的墓地。“察”地划根火柴，周围的夜色就颤动了一下，父亲的房子在夜色中显得华丽醒目，凄切动人。\n⑪<u>这是我送给父亲的第一盏灯，那灯守着他，虽灭犹燃。</u>\n（选自《人民周刊》2020年11期，有删改）\n\n1. 阅读全文，根据表格中的示例，填写相关内容。\n| 梳理情节 | 父（1）_______ | “我”提灯访邻 | 父去世灯灭 | “我”买灯祭父 |\n| --- | --- | --- | --- | --- |\n| “我”情感变化 | 称心如意 | 炫耀自得 | 哀伤失落 | （2）_______ |",
+      "answer": "赠“我”年灯（或送“我”明灯、送“我”灯盏等）,无尽怀念",
+      "explanation": "本题考查内容理解和概括。\n第一空，结合②段中“父亲给我做这盏灯总要花上很多工夫。就说做灯罩，总要捡回五六个瓶子才能做成一个。尽管如此，除夕夜父亲总能让我提上一盏称心如意的灯。没有月亮的除夕夜，这盏灯就是月亮了。我提着灯，怀揣一盒火柴东家走西家串，每到一家都将灯吹灭，听人家夸几句这灯有多好，然后再心满意足地点燃蜡烛去另一家”可知，父亲为“我”做年灯，“我”提着灯去串门。可概括为：赠“我”年灯；\n第二空，结合⑩段中“在冷寂的大街上，忽然发现一个苍老的卖灯人。那灯是六角形的，用玻璃做成的，玻璃上还贴着‘福’字。我立刻想到了父亲，正月十五这一天，父亲的院子该有一盏灯的。我买下了一盏灯。天将黑时，将它送到了父亲的墓地。‘察’地划根火柴，周围的夜色就颤动了一下，父亲的房子在夜色中显得华丽醒目，凄切动人”可知，“我”买灯祭奠父亲，表现出“我”对父亲的无尽怀念之情。可概括为：无尽怀念。\n家长审核要点：按表中情节和情感对应：父送我灯盏；我买灯祭父表达无尽怀念；可用同义概括。",
+      "round": 3,
+      "_raw_excerpt": "阅读文章，完成下面小题。\n那盏叫父亲的灯\n迟子建\n①父亲在世时，每逢过年我就会得到一盏灯。那不是寻常的灯。从门外的雪地上捡回一个罐头瓶，然后将一瓢开水倒进瓶里，啪的一声，瓶底均匀地落下来，灯罩便诞生了，再用废棉花将它擦得亮亮的。灯的底座是木制的，有花纹，从底座中心钉透一颗钉子，把半截红烛固定在上面，待到夜幕降临时，点燃蜡烛，再小心翼翼地落下灯罩。我提着这盏灯，觉得自己风光无限。\n②父亲给我做这盏灯总要花上很多工夫。就说做灯罩，总要捡回五六个瓶子才能做成一个。尽管如此，除夕夜父亲总能让我提上一盏称心如意的灯。没有月亮的除夕夜，这盏灯就是月亮了。我提着灯，怀揣一盒火柴东家走西家串，每到一家都将灯吹灭，听人家夸几句这灯有多好，然后再心满意足地点燃蜡烛去另一家。每每转回到家里时，蜡烛烧得只剩下一汪油了。那时父亲会笑吟吟地问：“把那些光全折腾没了吧?”\n③“全给丢在路上了。”我说，“剩下最亮的光赶紧提回家来了。”“咱女儿还真顾家啊。”父亲笑着说，便去看那汪蜡烛油上斜着的一束蓬勃芬芳的光。\n④父亲说过年要里里外外都是光明的，所以不仅我手中有灯，院子里也是有灯的。<u>高高挂起的是红灯，灯笼穗长长的，风一吹，刷刷响。低处的是冰灯，放在大门口的木墩上。无论是高出屋脊的红灯，还是安闲地坐在低处的冰灯，都让人觉得温暖。</u>但不管它们多么动人，也不如父亲送给我的灯美丽。因为有了年，就觉得日子是有盼头的；因为有了父亲，年也就显得有声有色；而如果又有了父亲送我的灯，年则妖娆迷人了。\n⑤我一年年地长大了，父亲不再送灯给我，我已经不是那个提着灯串来串去的小孩子了。我开始在灯下想心事。但每逢除夕，院子里照例要在高处挂起红灯，在低处摆上冰灯。\n⑥然而，父亲没能走到老年就去世了。父亲去世的当年我们没有点灯，别人家的院子里灯火辉煌，我们家却黑漆漆的。我坐在暗处想：点灯的时候父亲还不回来，看来他是迷路了。我多想提着父亲送我的灯到路上接他回来啊。爸爸，回家的路这么难找吗？从此之后，虽然照例要过年，但是我再也没有提着灯的福气了。\n⑦一进腊月，家里就忙年了。姐姐会来信说年忙到什么地步了，比如说被子拆洗完了，年馍蒸完了，各种吃食也准备得差不多了，然后催我早点儿回家过年。所以，不管我身在哈尔滨、西安，还是北京，总是千里迢迢地冒着严寒往家奔，当然今年也不例外。腊月廿六我赶回家中，母亲知道这个日子我会回去的，因为腊月廿七那天，我们姐弟要“请”父亲回家过年。\n⑧我们去看父亲了。给他献过烟和酒，又烧了些纸钱，已经成家立业的弟弟叩头对父亲说：“爸爸，我有自己的家了，今年过年去儿子家吧，我家住在……”弟弟把他家的住址门牌号重复了几遍，怕父亲记不住。我又补充说：“离综合商场很近。”父亲生前喜欢到综合商场买皮蛋来下酒，那地方想必他是不会忘的。\n⑨正月十五到了，多年前的这一天，在一个落雪的黄昏，我降临人世。那时天将要黑了，窗外还没有挂灯，父亲便送我一个乳名：迎灯。没想到我迎来了千盏万盏灯，却再也迎不来父亲送给我的那盏灯了。\n⑩在冷寂的大街上，忽然发现一个苍老的卖灯人。那灯是六角形的，用玻璃做成的，玻璃上还贴着“福”字。我立刻想到了父亲，正月十五这一天，父亲的院子该有一盏灯的。我买下了一盏灯。天将黑时，将它送到了父亲的墓地。“察”地划根火柴，周围的夜色就颤动了一下，父亲的房子在夜色中显得华丽醒目，凄切动人。\n⑪<u>这是我送给父亲的第一盏灯，那灯守着他，虽灭犹燃。</u>\n（选自《人民周刊》2020年11期，有删改）",
+      "_source_answer_evidence": "16.     ①. 赠“我”年灯（或送“我”明灯、送“我”灯盏等亦可）    ②. 无尽怀念    17. D    \n18. ①写出了过年时家中挂起红灯、安放冰灯的景象，体现了年灯喜庆祥和的特点；②渲染了温馨、祥和的节日气氛（家庭氛围亦可）；③烘托了“我”感到温暖的心理；④衬托出父亲送“我”的灯的独一无二的美丽；⑤与下文“我”因为父亲去世、家里不再灯火辉煌感到失落、悲伤形成对比。（答对3点即可）    \n19. ①不矛盾；②“灭”指灯火燃尽了，比喻父亲去世了；③“犹燃”指父亲对“我”的爱永远陪伴着“我”，“我”对父亲的爱与思念也将一直持续下去。",
+      "_source_stem_authority": "original DOCX; explicit analysis prompt variants reconciled in worker/variant_reconciliation.json",
+      "_common_prefix_raw": "阅读文章，完成下面小题。\n那盏叫父亲的灯\n迟子建\n①父亲在世时，每逢过年我就会得到一盏灯。那不是寻常的灯。从门外的雪地上捡回一个罐头瓶，然后将一瓢开水倒进瓶里，啪的一声，瓶底均匀地落下来，灯罩便诞生了，再用废棉花将它擦得亮亮的。灯的底座是木制的，有花纹，从底座中心钉透一颗钉子，把半截红烛固定在上面，待到夜幕降临时，点燃蜡烛，再小心翼翼地落下灯罩。我提着这盏灯，觉得自己风光无限。\n②父亲给我做这盏灯总要花上很多工夫。就说做灯罩，总要捡回五六个瓶子才能做成一个。尽管如此，除夕夜父亲总能让我提上一盏称心如意的灯。没有月亮的除夕夜，这盏灯就是月亮了。我提着灯，怀揣一盒火柴东家走西家串，每到一家都将灯吹灭，听人家夸几句这灯有多好，然后再心满意足地点燃蜡烛去另一家。每每转回到家里时，蜡烛烧得只剩下一汪油了。那时父亲会笑吟吟地问：“把那些光全折腾没了吧?”\n③“全给丢在路上了。”我说，“剩下最亮的光赶紧提回家来了。”“咱女儿还真顾家啊。”父亲笑着说，便去看那汪蜡烛油上斜着的一束蓬勃芬芳的光。\n④父亲说过年要里里外外都是光明的，所以不仅我手中有灯，院子里也是有灯的。<u>高高挂起的是红灯，灯笼穗长长的，风一吹，刷刷响。低处的是冰灯，放在大门口的木墩上。无论是高出屋脊的红灯，还是安闲地坐在低处的冰灯，都让人觉得温暖。</u>但不管它们多么动人，也不如父亲送给我的灯美丽。因为有了年，就觉得日子是有盼头的；因为有了父亲，年也就显得有声有色；而如果又有了父亲送我的灯，年则妖娆迷人了。\n⑤我一年年地长大了，父亲不再送灯给我，我已经不是那个提着灯串来串去的小孩子了。我开始在灯下想心事。但每逢除夕，院子里照例要在高处挂起红灯，在低处摆上冰灯。\n⑥然而，父亲没能走到老年就去世了。父亲去世的当年我们没有点灯，别人家的院子里灯火辉煌，我们家却黑漆漆的。我坐在暗处想：点灯的时候父亲还不回来，看来他是迷路了。我多想提着父亲送我的灯到路上接他回来啊。爸爸，回家的路这么难找吗？从此之后，虽然照例要过年，但是我再也没有提着灯的福气了。\n⑦一进腊月，家里就忙年了。姐姐会来信说年忙到什么地步了，比如说被子拆洗完了，年馍蒸完了，各种吃食也准备得差不多了，然后催我早点儿回家过年。所以，不管我身在哈尔滨、西安，还是北京，总是千里迢迢地冒着严寒往家奔，当然今年也不例外。腊月廿六我赶回家中，母亲知道这个日子我会回去的，因为腊月廿七那天，我们姐弟要“请”父亲回家过年。\n⑧我们去看父亲了。给他献过烟和酒，又烧了些纸钱，已经成家立业的弟弟叩头对父亲说：“爸爸，我有自己的家了，今年过年去儿子家吧，我家住在……”弟弟把他家的住址门牌号重复了几遍，怕父亲记不住。我又补充说：“离综合商场很近。”父亲生前喜欢到综合商场买皮蛋来下酒，那地方想必他是不会忘的。\n⑨正月十五到了，多年前的这一天，在一个落雪的黄昏，我降临人世。那时天将要黑了，窗外还没有挂灯，父亲便送我一个乳名：迎灯。没想到我迎来了千盏万盏灯，却再也迎不来父亲送给我的那盏灯了。\n⑩在冷寂的大街上，忽然发现一个苍老的卖灯人。那灯是六角形的，用玻璃做成的，玻璃上还贴着“福”字。我立刻想到了父亲，正月十五这一天，父亲的院子该有一盏灯的。我买下了一盏灯。天将黑时，将它送到了父亲的墓地。“察”地划根火柴，周围的夜色就颤动了一下，父亲的房子在夜色中显得华丽醒目，凄切动人。\n⑪<u>这是我送给父亲的第一盏灯，那灯守着他，虽灭犹燃。</u>\n（选自《人民周刊》2020年11期，有删改）",
+      "group_id": "realpaper_g7_chinese_renjiao_qz_futian_2024_001_modern",
+      "group_order": 1,
+      "_prompt_before_number_normalization": "16. 阅读全文，根据表格中的示例，填写相关内容。\n| 梳理情节 | 父（1）_______ | “我”提灯访邻 | 父去世灯灭 | “我”买灯祭父 |\n| --- | --- | --- | --- | --- |\n| “我”情感变化 | 称心如意 | 炫耀自得 | 哀伤失落 | （2）_______ |",
+      "answer_blanks": [
+        "赠“我”年灯|||送“我”明灯|||送“我”灯盏",
+        "无尽怀念"
+      ],
+      "_parent_review_required": true,
+      "_parent_review_criteria": "按表中情节和情感对应：父送我灯盏；我买灯祭父表达无尽怀念；可用同义概括。",
+      "_round_before_group_unify": 2,
+      "_round_judge_method": "g7_source_aware_bootstrap_user_authorized",
+      "_round_rubric": "docs/difficulty/g7_chinese_round_rubric_draft.md",
+      "_round_nearest_anchor": {
+        "candidate_id": "g7_chinese_r2_candidate_01",
+        "status": "candidate_unapproved"
+      },
+      "_round_routing_reasoning": [
+        "参照G7候选g7_chinese_r2_candidate_01；未声称已由Famin校准。",
+        "rubric §2.1-2.3：局部规则应用、有限证据判断或概括。"
+      ],
+      "_round_group_unify_rule": "ceil(mean)"
+    },
+    {
+      "subject": "chinese",
+      "grade": 7,
+      "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+      "local_id": 17,
+      "_source_question_number": 17,
+      "_source_subquestion": null,
+      "type": "choice",
+      "chapter": "阅读理解",
+      "knowledge_point": "现代文阅读/词句赏析",
+      "content": "阅读文章，完成下面小题。\n那盏叫父亲的灯\n迟子建\n①父亲在世时，每逢过年我就会得到一盏灯。那不是寻常的灯。从门外的雪地上捡回一个罐头瓶，然后将一瓢开水倒进瓶里，啪的一声，瓶底均匀地落下来，灯罩便诞生了，再用废棉花将它擦得亮亮的。灯的底座是木制的，有花纹，从底座中心钉透一颗钉子，把半截红烛固定在上面，待到夜幕降临时，点燃蜡烛，再小心翼翼地落下灯罩。我提着这盏灯，觉得自己风光无限。\n②父亲给我做这盏灯总要花上很多工夫。就说做灯罩，总要捡回五六个瓶子才能做成一个。尽管如此，除夕夜父亲总能让我提上一盏称心如意的灯。没有月亮的除夕夜，这盏灯就是月亮了。我提着灯，怀揣一盒火柴东家走西家串，每到一家都将灯吹灭，听人家夸几句这灯有多好，然后再心满意足地点燃蜡烛去另一家。每每转回到家里时，蜡烛烧得只剩下一汪油了。那时父亲会笑吟吟地问：“把那些光全折腾没了吧?”\n③“全给丢在路上了。”我说，“剩下最亮的光赶紧提回家来了。”“咱女儿还真顾家啊。”父亲笑着说，便去看那汪蜡烛油上斜着的一束蓬勃芬芳的光。\n④父亲说过年要里里外外都是光明的，所以不仅我手中有灯，院子里也是有灯的。<u>高高挂起的是红灯，灯笼穗长长的，风一吹，刷刷响。低处的是冰灯，放在大门口的木墩上。无论是高出屋脊的红灯，还是安闲地坐在低处的冰灯，都让人觉得温暖。</u>但不管它们多么动人，也不如父亲送给我的灯美丽。因为有了年，就觉得日子是有盼头的；因为有了父亲，年也就显得有声有色；而如果又有了父亲送我的灯，年则妖娆迷人了。\n⑤我一年年地长大了，父亲不再送灯给我，我已经不是那个提着灯串来串去的小孩子了。我开始在灯下想心事。但每逢除夕，院子里照例要在高处挂起红灯，在低处摆上冰灯。\n⑥然而，父亲没能走到老年就去世了。父亲去世的当年我们没有点灯，别人家的院子里灯火辉煌，我们家却黑漆漆的。我坐在暗处想：点灯的时候父亲还不回来，看来他是迷路了。我多想提着父亲送我的灯到路上接他回来啊。爸爸，回家的路这么难找吗？从此之后，虽然照例要过年，但是我再也没有提着灯的福气了。\n⑦一进腊月，家里就忙年了。姐姐会来信说年忙到什么地步了，比如说被子拆洗完了，年馍蒸完了，各种吃食也准备得差不多了，然后催我早点儿回家过年。所以，不管我身在哈尔滨、西安，还是北京，总是千里迢迢地冒着严寒往家奔，当然今年也不例外。腊月廿六我赶回家中，母亲知道这个日子我会回去的，因为腊月廿七那天，我们姐弟要“请”父亲回家过年。\n⑧我们去看父亲了。给他献过烟和酒，又烧了些纸钱，已经成家立业的弟弟叩头对父亲说：“爸爸，我有自己的家了，今年过年去儿子家吧，我家住在……”弟弟把他家的住址门牌号重复了几遍，怕父亲记不住。我又补充说：“离综合商场很近。”父亲生前喜欢到综合商场买皮蛋来下酒，那地方想必他是不会忘的。\n⑨正月十五到了，多年前的这一天，在一个落雪的黄昏，我降临人世。那时天将要黑了，窗外还没有挂灯，父亲便送我一个乳名：迎灯。没想到我迎来了千盏万盏灯，却再也迎不来父亲送给我的那盏灯了。\n⑩在冷寂的大街上，忽然发现一个苍老的卖灯人。那灯是六角形的，用玻璃做成的，玻璃上还贴着“福”字。我立刻想到了父亲，正月十五这一天，父亲的院子该有一盏灯的。我买下了一盏灯。天将黑时，将它送到了父亲的墓地。“察”地划根火柴，周围的夜色就颤动了一下，父亲的房子在夜色中显得华丽醒目，凄切动人。\n⑪<u>这是我送给父亲的第一盏灯，那灯守着他，虽灭犹燃。</u>\n（选自《人民周刊》2020年11期，有删改）\n\n2. 下列对文章的朗读设计**不恰当**的一项是（    ）",
+      "answer": "D",
+      "explanation": "本题考查朗读设计。\nD.有误，这句话实际上是表达了作者对父亲深深的思念和渴望重逢的情感，是非常真挚和深沉的。因此，将这部分读得轻描淡写并不符合文章的情感表达，反而会削弱句子的感染力。所以，这个设计是不恰当的。\n故选D。\n加粗字保留原题加点或强调标记。",
+      "round": 3,
+      "_raw_excerpt": "阅读文章，完成下面小题。\n那盏叫父亲的灯\n迟子建\n①父亲在世时，每逢过年我就会得到一盏灯。那不是寻常的灯。从门外的雪地上捡回一个罐头瓶，然后将一瓢开水倒进瓶里，啪的一声，瓶底均匀地落下来，灯罩便诞生了，再用废棉花将它擦得亮亮的。灯的底座是木制的，有花纹，从底座中心钉透一颗钉子，把半截红烛固定在上面，待到夜幕降临时，点燃蜡烛，再小心翼翼地落下灯罩。我提着这盏灯，觉得自己风光无限。\n②父亲给我做这盏灯总要花上很多工夫。就说做灯罩，总要捡回五六个瓶子才能做成一个。尽管如此，除夕夜父亲总能让我提上一盏称心如意的灯。没有月亮的除夕夜，这盏灯就是月亮了。我提着灯，怀揣一盒火柴东家走西家串，每到一家都将灯吹灭，听人家夸几句这灯有多好，然后再心满意足地点燃蜡烛去另一家。每每转回到家里时，蜡烛烧得只剩下一汪油了。那时父亲会笑吟吟地问：“把那些光全折腾没了吧?”\n③“全给丢在路上了。”我说，“剩下最亮的光赶紧提回家来了。”“咱女儿还真顾家啊。”父亲笑着说，便去看那汪蜡烛油上斜着的一束蓬勃芬芳的光。\n④父亲说过年要里里外外都是光明的，所以不仅我手中有灯，院子里也是有灯的。<u>高高挂起的是红灯，灯笼穗长长的，风一吹，刷刷响。低处的是冰灯，放在大门口的木墩上。无论是高出屋脊的红灯，还是安闲地坐在低处的冰灯，都让人觉得温暖。</u>但不管它们多么动人，也不如父亲送给我的灯美丽。因为有了年，就觉得日子是有盼头的；因为有了父亲，年也就显得有声有色；而如果又有了父亲送我的灯，年则妖娆迷人了。\n⑤我一年年地长大了，父亲不再送灯给我，我已经不是那个提着灯串来串去的小孩子了。我开始在灯下想心事。但每逢除夕，院子里照例要在高处挂起红灯，在低处摆上冰灯。\n⑥然而，父亲没能走到老年就去世了。父亲去世的当年我们没有点灯，别人家的院子里灯火辉煌，我们家却黑漆漆的。我坐在暗处想：点灯的时候父亲还不回来，看来他是迷路了。我多想提着父亲送我的灯到路上接他回来啊。爸爸，回家的路这么难找吗？从此之后，虽然照例要过年，但是我再也没有提着灯的福气了。\n⑦一进腊月，家里就忙年了。姐姐会来信说年忙到什么地步了，比如说被子拆洗完了，年馍蒸完了，各种吃食也准备得差不多了，然后催我早点儿回家过年。所以，不管我身在哈尔滨、西安，还是北京，总是千里迢迢地冒着严寒往家奔，当然今年也不例外。腊月廿六我赶回家中，母亲知道这个日子我会回去的，因为腊月廿七那天，我们姐弟要“请”父亲回家过年。\n⑧我们去看父亲了。给他献过烟和酒，又烧了些纸钱，已经成家立业的弟弟叩头对父亲说：“爸爸，我有自己的家了，今年过年去儿子家吧，我家住在……”弟弟把他家的住址门牌号重复了几遍，怕父亲记不住。我又补充说：“离综合商场很近。”父亲生前喜欢到综合商场买皮蛋来下酒，那地方想必他是不会忘的。\n⑨正月十五到了，多年前的这一天，在一个落雪的黄昏，我降临人世。那时天将要黑了，窗外还没有挂灯，父亲便送我一个乳名：迎灯。没想到我迎来了千盏万盏灯，却再也迎不来父亲送给我的那盏灯了。\n⑩在冷寂的大街上，忽然发现一个苍老的卖灯人。那灯是六角形的，用玻璃做成的，玻璃上还贴着“福”字。我立刻想到了父亲，正月十五这一天，父亲的院子该有一盏灯的。我买下了一盏灯。天将黑时，将它送到了父亲的墓地。“察”地划根火柴，周围的夜色就颤动了一下，父亲的房子在夜色中显得华丽醒目，凄切动人。\n⑪<u>这是我送给父亲的第一盏灯，那灯守着他，虽灭犹燃。</u>\n（选自《人民周刊》2020年11期，有删改）",
+      "_source_answer_evidence": "16.     ①. 赠“我”年灯（或送“我”明灯、送“我”灯盏等亦可）    ②. 无尽怀念    17. D    \n18. ①写出了过年时家中挂起红灯、安放冰灯的景象，体现了年灯喜庆祥和的特点；②渲染了温馨、祥和的节日气氛（家庭氛围亦可）；③烘托了“我”感到温暖的心理；④衬托出父亲送“我”的灯的独一无二的美丽；⑤与下文“我”因为父亲去世、家里不再灯火辉煌感到失落、悲伤形成对比。（答对3点即可）    \n19. ①不矛盾；②“灭”指灯火燃尽了，比喻父亲去世了；③“犹燃”指父亲对“我”的爱永远陪伴着“我”，“我”对父亲的爱与思念也将一直持续下去。",
+      "_source_stem_authority": "original DOCX; explicit analysis prompt variants reconciled in worker/variant_reconciliation.json",
+      "_common_prefix_raw": "阅读文章，完成下面小题。\n那盏叫父亲的灯\n迟子建\n①父亲在世时，每逢过年我就会得到一盏灯。那不是寻常的灯。从门外的雪地上捡回一个罐头瓶，然后将一瓢开水倒进瓶里，啪的一声，瓶底均匀地落下来，灯罩便诞生了，再用废棉花将它擦得亮亮的。灯的底座是木制的，有花纹，从底座中心钉透一颗钉子，把半截红烛固定在上面，待到夜幕降临时，点燃蜡烛，再小心翼翼地落下灯罩。我提着这盏灯，觉得自己风光无限。\n②父亲给我做这盏灯总要花上很多工夫。就说做灯罩，总要捡回五六个瓶子才能做成一个。尽管如此，除夕夜父亲总能让我提上一盏称心如意的灯。没有月亮的除夕夜，这盏灯就是月亮了。我提着灯，怀揣一盒火柴东家走西家串，每到一家都将灯吹灭，听人家夸几句这灯有多好，然后再心满意足地点燃蜡烛去另一家。每每转回到家里时，蜡烛烧得只剩下一汪油了。那时父亲会笑吟吟地问：“把那些光全折腾没了吧?”\n③“全给丢在路上了。”我说，“剩下最亮的光赶紧提回家来了。”“咱女儿还真顾家啊。”父亲笑着说，便去看那汪蜡烛油上斜着的一束蓬勃芬芳的光。\n④父亲说过年要里里外外都是光明的，所以不仅我手中有灯，院子里也是有灯的。<u>高高挂起的是红灯，灯笼穗长长的，风一吹，刷刷响。低处的是冰灯，放在大门口的木墩上。无论是高出屋脊的红灯，还是安闲地坐在低处的冰灯，都让人觉得温暖。</u>但不管它们多么动人，也不如父亲送给我的灯美丽。因为有了年，就觉得日子是有盼头的；因为有了父亲，年也就显得有声有色；而如果又有了父亲送我的灯，年则妖娆迷人了。\n⑤我一年年地长大了，父亲不再送灯给我，我已经不是那个提着灯串来串去的小孩子了。我开始在灯下想心事。但每逢除夕，院子里照例要在高处挂起红灯，在低处摆上冰灯。\n⑥然而，父亲没能走到老年就去世了。父亲去世的当年我们没有点灯，别人家的院子里灯火辉煌，我们家却黑漆漆的。我坐在暗处想：点灯的时候父亲还不回来，看来他是迷路了。我多想提着父亲送我的灯到路上接他回来啊。爸爸，回家的路这么难找吗？从此之后，虽然照例要过年，但是我再也没有提着灯的福气了。\n⑦一进腊月，家里就忙年了。姐姐会来信说年忙到什么地步了，比如说被子拆洗完了，年馍蒸完了，各种吃食也准备得差不多了，然后催我早点儿回家过年。所以，不管我身在哈尔滨、西安，还是北京，总是千里迢迢地冒着严寒往家奔，当然今年也不例外。腊月廿六我赶回家中，母亲知道这个日子我会回去的，因为腊月廿七那天，我们姐弟要“请”父亲回家过年。\n⑧我们去看父亲了。给他献过烟和酒，又烧了些纸钱，已经成家立业的弟弟叩头对父亲说：“爸爸，我有自己的家了，今年过年去儿子家吧，我家住在……”弟弟把他家的住址门牌号重复了几遍，怕父亲记不住。我又补充说：“离综合商场很近。”父亲生前喜欢到综合商场买皮蛋来下酒，那地方想必他是不会忘的。\n⑨正月十五到了，多年前的这一天，在一个落雪的黄昏，我降临人世。那时天将要黑了，窗外还没有挂灯，父亲便送我一个乳名：迎灯。没想到我迎来了千盏万盏灯，却再也迎不来父亲送给我的那盏灯了。\n⑩在冷寂的大街上，忽然发现一个苍老的卖灯人。那灯是六角形的，用玻璃做成的，玻璃上还贴着“福”字。我立刻想到了父亲，正月十五这一天，父亲的院子该有一盏灯的。我买下了一盏灯。天将黑时，将它送到了父亲的墓地。“察”地划根火柴，周围的夜色就颤动了一下，父亲的房子在夜色中显得华丽醒目，凄切动人。\n⑪<u>这是我送给父亲的第一盏灯，那灯守着他，虽灭犹燃。</u>\n（选自《人民周刊》2020年11期，有删改）",
+      "group_id": "realpaper_g7_chinese_renjiao_qz_futian_2024_001_modern",
+      "group_order": 2,
+      "_prompt_before_number_normalization": "17. 下列对文章的朗读设计**不恰当**的一项是（    ）",
+      "options": [
+        "A. 第①段“那不是寻常的灯”，“不是”应重读，以强调这盏灯对于我的特殊意义。",
+        "B. 第②段“就说做灯罩，总要捡回五六个瓶子才能做成一个”，朗读时，要将节奏放缓，以展现父亲制作灯罩过程的不易。",
+        "C. 第③段“剩下最亮的光赶紧提回家来了”，“赶紧提回家来了”语速可以稍微加快，以表现出“我”急切地想与家人分享这份光亮的心情。",
+        "D. 第⑥段“我多想提着父亲送我的灯到路上接他回来啊”，要把“到路上接他回来”这部分读得轻描淡写，因为这只是“我”的一个不切实际的幻想，不应过分强调。"
+      ],
+      "_round_before_group_unify": 2,
+      "_round_judge_method": "g7_source_aware_bootstrap_user_authorized",
+      "_round_rubric": "docs/difficulty/g7_chinese_round_rubric_draft.md",
+      "_round_nearest_anchor": {
+        "candidate_id": "g7_chinese_r2_candidate_01",
+        "status": "candidate_unapproved"
+      },
+      "_round_routing_reasoning": [
+        "参照G7候选g7_chinese_r2_candidate_01；未声称已由Famin校准。",
+        "rubric §2.1-2.3：局部规则应用、有限证据判断或概括。"
+      ],
+      "_round_group_unify_rule": "ceil(mean)"
+    },
+    {
+      "subject": "chinese",
+      "grade": 7,
+      "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+      "local_id": 18,
+      "_source_question_number": 18,
+      "_source_subquestion": null,
+      "type": "subjective",
+      "chapter": "阅读理解",
+      "knowledge_point": "现代文阅读/段落作用",
+      "content": "阅读文章，完成下面小题。\n那盏叫父亲的灯\n迟子建\n①父亲在世时，每逢过年我就会得到一盏灯。那不是寻常的灯。从门外的雪地上捡回一个罐头瓶，然后将一瓢开水倒进瓶里，啪的一声，瓶底均匀地落下来，灯罩便诞生了，再用废棉花将它擦得亮亮的。灯的底座是木制的，有花纹，从底座中心钉透一颗钉子，把半截红烛固定在上面，待到夜幕降临时，点燃蜡烛，再小心翼翼地落下灯罩。我提着这盏灯，觉得自己风光无限。\n②父亲给我做这盏灯总要花上很多工夫。就说做灯罩，总要捡回五六个瓶子才能做成一个。尽管如此，除夕夜父亲总能让我提上一盏称心如意的灯。没有月亮的除夕夜，这盏灯就是月亮了。我提着灯，怀揣一盒火柴东家走西家串，每到一家都将灯吹灭，听人家夸几句这灯有多好，然后再心满意足地点燃蜡烛去另一家。每每转回到家里时，蜡烛烧得只剩下一汪油了。那时父亲会笑吟吟地问：“把那些光全折腾没了吧?”\n③“全给丢在路上了。”我说，“剩下最亮的光赶紧提回家来了。”“咱女儿还真顾家啊。”父亲笑着说，便去看那汪蜡烛油上斜着的一束蓬勃芬芳的光。\n④父亲说过年要里里外外都是光明的，所以不仅我手中有灯，院子里也是有灯的。<u>高高挂起的是红灯，灯笼穗长长的，风一吹，刷刷响。低处的是冰灯，放在大门口的木墩上。无论是高出屋脊的红灯，还是安闲地坐在低处的冰灯，都让人觉得温暖。</u>但不管它们多么动人，也不如父亲送给我的灯美丽。因为有了年，就觉得日子是有盼头的；因为有了父亲，年也就显得有声有色；而如果又有了父亲送我的灯，年则妖娆迷人了。\n⑤我一年年地长大了，父亲不再送灯给我，我已经不是那个提着灯串来串去的小孩子了。我开始在灯下想心事。但每逢除夕，院子里照例要在高处挂起红灯，在低处摆上冰灯。\n⑥然而，父亲没能走到老年就去世了。父亲去世的当年我们没有点灯，别人家的院子里灯火辉煌，我们家却黑漆漆的。我坐在暗处想：点灯的时候父亲还不回来，看来他是迷路了。我多想提着父亲送我的灯到路上接他回来啊。爸爸，回家的路这么难找吗？从此之后，虽然照例要过年，但是我再也没有提着灯的福气了。\n⑦一进腊月，家里就忙年了。姐姐会来信说年忙到什么地步了，比如说被子拆洗完了，年馍蒸完了，各种吃食也准备得差不多了，然后催我早点儿回家过年。所以，不管我身在哈尔滨、西安，还是北京，总是千里迢迢地冒着严寒往家奔，当然今年也不例外。腊月廿六我赶回家中，母亲知道这个日子我会回去的，因为腊月廿七那天，我们姐弟要“请”父亲回家过年。\n⑧我们去看父亲了。给他献过烟和酒，又烧了些纸钱，已经成家立业的弟弟叩头对父亲说：“爸爸，我有自己的家了，今年过年去儿子家吧，我家住在……”弟弟把他家的住址门牌号重复了几遍，怕父亲记不住。我又补充说：“离综合商场很近。”父亲生前喜欢到综合商场买皮蛋来下酒，那地方想必他是不会忘的。\n⑨正月十五到了，多年前的这一天，在一个落雪的黄昏，我降临人世。那时天将要黑了，窗外还没有挂灯，父亲便送我一个乳名：迎灯。没想到我迎来了千盏万盏灯，却再也迎不来父亲送给我的那盏灯了。\n⑩在冷寂的大街上，忽然发现一个苍老的卖灯人。那灯是六角形的，用玻璃做成的，玻璃上还贴着“福”字。我立刻想到了父亲，正月十五这一天，父亲的院子该有一盏灯的。我买下了一盏灯。天将黑时，将它送到了父亲的墓地。“察”地划根火柴，周围的夜色就颤动了一下，父亲的房子在夜色中显得华丽醒目，凄切动人。\n⑪<u>这是我送给父亲的第一盏灯，那灯守着他，虽灭犹燃。</u>\n（选自《人民周刊》2020年11期，有删改）\n\n3. 请简要分析第④段画线句景物描写的作用。\n高高挂起的是红灯，灯笼穗长长的，风一吹，刷刷响。低处的是冰灯，放在大门口的木墩上。无论是高出屋脊的红灯，还是安闲地坐在低处的冰灯，都让人觉得温暖。",
+      "answer": "①写出了过年时家中挂起红灯、安放冰灯的景象，体现了年灯喜庆祥和的特点；②渲染了温馨、祥和的节日气氛（家庭氛围亦可）；③烘托了“我”感到温暖的心理；④衬托出父亲送“我”的灯的独一无二的美丽；⑤与下文“我”因为父亲去世、家里不再灯火辉煌感到失落、悲伤形成对比。（答对3点即可）",
+      "explanation": "本题考查景物描写作用。\n第④段中的景物描写，通过细腻的语言勾勒出了过年时家中挂起红灯与安放冰灯的温馨场景，红灯高高挂起，灯笼穗随风摇曳，发出“刷刷”的声响，这样的描述不仅描绘了红灯的鲜艳与生动，还通过声音元素增添了节日的热闹氛围。低处的冰灯则安静地坐在大门口的木墩上，与高处的红灯相映成趣，共同构成了过年时家中独特的风景线。写出了过年时家中挂起红灯、安放冰灯的景象，体现了年灯喜庆祥和的特点；\n红灯与冰灯的交相辉映，不仅增添了节日的喜庆色彩，还营造出一种温馨和谐的家庭氛围，让人感受到家的温暖与幸福。这样的景物描写不仅是对客观环境的描绘，更是对“我”内心感受的烘托。在这样的节日氛围中，“我”感受到了家的温暖与幸福，这种情感与景物描写形成了良好的互动。与高高挂起的红灯和静静安放的冰灯相比，父亲亲手为“我”制作的灯虽然简单朴素，但却蕴含着深深的父爱，具有一种独特的美丽和价值。这种美丽不仅体现在灯的外形上，更体现在它所承载的情感意义上。\n结合⑩段中“在冷寂的大街上，忽然发现一个苍老的卖灯人。那灯是六角形的，用玻璃做成的，玻璃上还贴着‘福’字。我立刻想到了父亲，正月十五这一天，父亲的院子该有一盏灯的。我买下了一盏灯。天将黑时，将它送到了父亲的墓地。‘察’地划根火柴，周围的夜色就颤动了一下，父亲的房子在夜色中显得华丽醒目，凄切动人”这一段景物描写所展现的温馨、祥和的节日氛围与下文“我”因父亲去世而感到的失落、悲伤形成了鲜明的对比。这种对比不仅增强了文章的感染力，还凸显了父亲在“我”心中的重要地位以及失去父亲后的巨大悲痛。\n家长审核要点：结合景物内容，可答年灯喜庆祥和、渲染温馨气氛、烘托我温暖心理、衬托父亲灯独特美丽、与父亲去世后的失落悲伤对比；答对三点即可。",
+      "round": 3,
+      "_raw_excerpt": "阅读文章，完成下面小题。\n那盏叫父亲的灯\n迟子建\n①父亲在世时，每逢过年我就会得到一盏灯。那不是寻常的灯。从门外的雪地上捡回一个罐头瓶，然后将一瓢开水倒进瓶里，啪的一声，瓶底均匀地落下来，灯罩便诞生了，再用废棉花将它擦得亮亮的。灯的底座是木制的，有花纹，从底座中心钉透一颗钉子，把半截红烛固定在上面，待到夜幕降临时，点燃蜡烛，再小心翼翼地落下灯罩。我提着这盏灯，觉得自己风光无限。\n②父亲给我做这盏灯总要花上很多工夫。就说做灯罩，总要捡回五六个瓶子才能做成一个。尽管如此，除夕夜父亲总能让我提上一盏称心如意的灯。没有月亮的除夕夜，这盏灯就是月亮了。我提着灯，怀揣一盒火柴东家走西家串，每到一家都将灯吹灭，听人家夸几句这灯有多好，然后再心满意足地点燃蜡烛去另一家。每每转回到家里时，蜡烛烧得只剩下一汪油了。那时父亲会笑吟吟地问：“把那些光全折腾没了吧?”\n③“全给丢在路上了。”我说，“剩下最亮的光赶紧提回家来了。”“咱女儿还真顾家啊。”父亲笑着说，便去看那汪蜡烛油上斜着的一束蓬勃芬芳的光。\n④父亲说过年要里里外外都是光明的，所以不仅我手中有灯，院子里也是有灯的。<u>高高挂起的是红灯，灯笼穗长长的，风一吹，刷刷响。低处的是冰灯，放在大门口的木墩上。无论是高出屋脊的红灯，还是安闲地坐在低处的冰灯，都让人觉得温暖。</u>但不管它们多么动人，也不如父亲送给我的灯美丽。因为有了年，就觉得日子是有盼头的；因为有了父亲，年也就显得有声有色；而如果又有了父亲送我的灯，年则妖娆迷人了。\n⑤我一年年地长大了，父亲不再送灯给我，我已经不是那个提着灯串来串去的小孩子了。我开始在灯下想心事。但每逢除夕，院子里照例要在高处挂起红灯，在低处摆上冰灯。\n⑥然而，父亲没能走到老年就去世了。父亲去世的当年我们没有点灯，别人家的院子里灯火辉煌，我们家却黑漆漆的。我坐在暗处想：点灯的时候父亲还不回来，看来他是迷路了。我多想提着父亲送我的灯到路上接他回来啊。爸爸，回家的路这么难找吗？从此之后，虽然照例要过年，但是我再也没有提着灯的福气了。\n⑦一进腊月，家里就忙年了。姐姐会来信说年忙到什么地步了，比如说被子拆洗完了，年馍蒸完了，各种吃食也准备得差不多了，然后催我早点儿回家过年。所以，不管我身在哈尔滨、西安，还是北京，总是千里迢迢地冒着严寒往家奔，当然今年也不例外。腊月廿六我赶回家中，母亲知道这个日子我会回去的，因为腊月廿七那天，我们姐弟要“请”父亲回家过年。\n⑧我们去看父亲了。给他献过烟和酒，又烧了些纸钱，已经成家立业的弟弟叩头对父亲说：“爸爸，我有自己的家了，今年过年去儿子家吧，我家住在……”弟弟把他家的住址门牌号重复了几遍，怕父亲记不住。我又补充说：“离综合商场很近。”父亲生前喜欢到综合商场买皮蛋来下酒，那地方想必他是不会忘的。\n⑨正月十五到了，多年前的这一天，在一个落雪的黄昏，我降临人世。那时天将要黑了，窗外还没有挂灯，父亲便送我一个乳名：迎灯。没想到我迎来了千盏万盏灯，却再也迎不来父亲送给我的那盏灯了。\n⑩在冷寂的大街上，忽然发现一个苍老的卖灯人。那灯是六角形的，用玻璃做成的，玻璃上还贴着“福”字。我立刻想到了父亲，正月十五这一天，父亲的院子该有一盏灯的。我买下了一盏灯。天将黑时，将它送到了父亲的墓地。“察”地划根火柴，周围的夜色就颤动了一下，父亲的房子在夜色中显得华丽醒目，凄切动人。\n⑪<u>这是我送给父亲的第一盏灯，那灯守着他，虽灭犹燃。</u>\n（选自《人民周刊》2020年11期，有删改）",
+      "_source_answer_evidence": "16.     ①. 赠“我”年灯（或送“我”明灯、送“我”灯盏等亦可）    ②. 无尽怀念    17. D    \n18. ①写出了过年时家中挂起红灯、安放冰灯的景象，体现了年灯喜庆祥和的特点；②渲染了温馨、祥和的节日气氛（家庭氛围亦可）；③烘托了“我”感到温暖的心理；④衬托出父亲送“我”的灯的独一无二的美丽；⑤与下文“我”因为父亲去世、家里不再灯火辉煌感到失落、悲伤形成对比。（答对3点即可）    \n19. ①不矛盾；②“灭”指灯火燃尽了，比喻父亲去世了；③“犹燃”指父亲对“我”的爱永远陪伴着“我”，“我”对父亲的爱与思念也将一直持续下去。",
+      "_source_stem_authority": "original DOCX; explicit analysis prompt variants reconciled in worker/variant_reconciliation.json",
+      "_common_prefix_raw": "阅读文章，完成下面小题。\n那盏叫父亲的灯\n迟子建\n①父亲在世时，每逢过年我就会得到一盏灯。那不是寻常的灯。从门外的雪地上捡回一个罐头瓶，然后将一瓢开水倒进瓶里，啪的一声，瓶底均匀地落下来，灯罩便诞生了，再用废棉花将它擦得亮亮的。灯的底座是木制的，有花纹，从底座中心钉透一颗钉子，把半截红烛固定在上面，待到夜幕降临时，点燃蜡烛，再小心翼翼地落下灯罩。我提着这盏灯，觉得自己风光无限。\n②父亲给我做这盏灯总要花上很多工夫。就说做灯罩，总要捡回五六个瓶子才能做成一个。尽管如此，除夕夜父亲总能让我提上一盏称心如意的灯。没有月亮的除夕夜，这盏灯就是月亮了。我提着灯，怀揣一盒火柴东家走西家串，每到一家都将灯吹灭，听人家夸几句这灯有多好，然后再心满意足地点燃蜡烛去另一家。每每转回到家里时，蜡烛烧得只剩下一汪油了。那时父亲会笑吟吟地问：“把那些光全折腾没了吧?”\n③“全给丢在路上了。”我说，“剩下最亮的光赶紧提回家来了。”“咱女儿还真顾家啊。”父亲笑着说，便去看那汪蜡烛油上斜着的一束蓬勃芬芳的光。\n④父亲说过年要里里外外都是光明的，所以不仅我手中有灯，院子里也是有灯的。<u>高高挂起的是红灯，灯笼穗长长的，风一吹，刷刷响。低处的是冰灯，放在大门口的木墩上。无论是高出屋脊的红灯，还是安闲地坐在低处的冰灯，都让人觉得温暖。</u>但不管它们多么动人，也不如父亲送给我的灯美丽。因为有了年，就觉得日子是有盼头的；因为有了父亲，年也就显得有声有色；而如果又有了父亲送我的灯，年则妖娆迷人了。\n⑤我一年年地长大了，父亲不再送灯给我，我已经不是那个提着灯串来串去的小孩子了。我开始在灯下想心事。但每逢除夕，院子里照例要在高处挂起红灯，在低处摆上冰灯。\n⑥然而，父亲没能走到老年就去世了。父亲去世的当年我们没有点灯，别人家的院子里灯火辉煌，我们家却黑漆漆的。我坐在暗处想：点灯的时候父亲还不回来，看来他是迷路了。我多想提着父亲送我的灯到路上接他回来啊。爸爸，回家的路这么难找吗？从此之后，虽然照例要过年，但是我再也没有提着灯的福气了。\n⑦一进腊月，家里就忙年了。姐姐会来信说年忙到什么地步了，比如说被子拆洗完了，年馍蒸完了，各种吃食也准备得差不多了，然后催我早点儿回家过年。所以，不管我身在哈尔滨、西安，还是北京，总是千里迢迢地冒着严寒往家奔，当然今年也不例外。腊月廿六我赶回家中，母亲知道这个日子我会回去的，因为腊月廿七那天，我们姐弟要“请”父亲回家过年。\n⑧我们去看父亲了。给他献过烟和酒，又烧了些纸钱，已经成家立业的弟弟叩头对父亲说：“爸爸，我有自己的家了，今年过年去儿子家吧，我家住在……”弟弟把他家的住址门牌号重复了几遍，怕父亲记不住。我又补充说：“离综合商场很近。”父亲生前喜欢到综合商场买皮蛋来下酒，那地方想必他是不会忘的。\n⑨正月十五到了，多年前的这一天，在一个落雪的黄昏，我降临人世。那时天将要黑了，窗外还没有挂灯，父亲便送我一个乳名：迎灯。没想到我迎来了千盏万盏灯，却再也迎不来父亲送给我的那盏灯了。\n⑩在冷寂的大街上，忽然发现一个苍老的卖灯人。那灯是六角形的，用玻璃做成的，玻璃上还贴着“福”字。我立刻想到了父亲，正月十五这一天，父亲的院子该有一盏灯的。我买下了一盏灯。天将黑时，将它送到了父亲的墓地。“察”地划根火柴，周围的夜色就颤动了一下，父亲的房子在夜色中显得华丽醒目，凄切动人。\n⑪<u>这是我送给父亲的第一盏灯，那灯守着他，虽灭犹燃。</u>\n（选自《人民周刊》2020年11期，有删改）",
+      "group_id": "realpaper_g7_chinese_renjiao_qz_futian_2024_001_modern",
+      "group_order": 3,
+      "_prompt_before_number_normalization": "18. 请简要分析第④段画线句景物描写的作用。\n高高挂起的是红灯，灯笼穗长长的，风一吹，刷刷响。低处的是冰灯，放在大门口的木墩上。无论是高出屋脊的红灯，还是安闲地坐在低处的冰灯，都让人觉得温暖。",
+      "_parent_review_required": true,
+      "_parent_review_criteria": "结合景物内容，可答年灯喜庆祥和、渲染温馨气氛、烘托我温暖心理、衬托父亲灯独特美丽、与父亲去世后的失落悲伤对比；答对三点即可。",
+      "_round_before_group_unify": 3,
+      "_round_judge_method": "g7_source_aware_bootstrap_user_authorized",
+      "_round_rubric": "docs/difficulty/g7_chinese_round_rubric_draft.md",
+      "_round_nearest_anchor": {
+        "candidate_id": "g7_chinese_r3_candidate_01",
+        "status": "candidate_unapproved"
+      },
+      "_round_routing_reasoning": [
+        "参照G7候选g7_chinese_r3_candidate_01；未声称已由Famin校准。",
+        "rubric §3.2-3.3：跨段或跨文本整合证据、分析作用和人物。"
+      ],
+      "_round_group_unify_rule": "ceil(mean)"
+    },
+    {
+      "subject": "chinese",
+      "grade": 7,
+      "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+      "local_id": 19,
+      "_source_question_number": 19,
+      "_source_subquestion": null,
+      "type": "subjective",
+      "chapter": "阅读理解",
+      "knowledge_point": "现代文阅读/词句赏析",
+      "content": "阅读文章，完成下面小题。\n那盏叫父亲的灯\n迟子建\n①父亲在世时，每逢过年我就会得到一盏灯。那不是寻常的灯。从门外的雪地上捡回一个罐头瓶，然后将一瓢开水倒进瓶里，啪的一声，瓶底均匀地落下来，灯罩便诞生了，再用废棉花将它擦得亮亮的。灯的底座是木制的，有花纹，从底座中心钉透一颗钉子，把半截红烛固定在上面，待到夜幕降临时，点燃蜡烛，再小心翼翼地落下灯罩。我提着这盏灯，觉得自己风光无限。\n②父亲给我做这盏灯总要花上很多工夫。就说做灯罩，总要捡回五六个瓶子才能做成一个。尽管如此，除夕夜父亲总能让我提上一盏称心如意的灯。没有月亮的除夕夜，这盏灯就是月亮了。我提着灯，怀揣一盒火柴东家走西家串，每到一家都将灯吹灭，听人家夸几句这灯有多好，然后再心满意足地点燃蜡烛去另一家。每每转回到家里时，蜡烛烧得只剩下一汪油了。那时父亲会笑吟吟地问：“把那些光全折腾没了吧?”\n③“全给丢在路上了。”我说，“剩下最亮的光赶紧提回家来了。”“咱女儿还真顾家啊。”父亲笑着说，便去看那汪蜡烛油上斜着的一束蓬勃芬芳的光。\n④父亲说过年要里里外外都是光明的，所以不仅我手中有灯，院子里也是有灯的。<u>高高挂起的是红灯，灯笼穗长长的，风一吹，刷刷响。低处的是冰灯，放在大门口的木墩上。无论是高出屋脊的红灯，还是安闲地坐在低处的冰灯，都让人觉得温暖。</u>但不管它们多么动人，也不如父亲送给我的灯美丽。因为有了年，就觉得日子是有盼头的；因为有了父亲，年也就显得有声有色；而如果又有了父亲送我的灯，年则妖娆迷人了。\n⑤我一年年地长大了，父亲不再送灯给我，我已经不是那个提着灯串来串去的小孩子了。我开始在灯下想心事。但每逢除夕，院子里照例要在高处挂起红灯，在低处摆上冰灯。\n⑥然而，父亲没能走到老年就去世了。父亲去世的当年我们没有点灯，别人家的院子里灯火辉煌，我们家却黑漆漆的。我坐在暗处想：点灯的时候父亲还不回来，看来他是迷路了。我多想提着父亲送我的灯到路上接他回来啊。爸爸，回家的路这么难找吗？从此之后，虽然照例要过年，但是我再也没有提着灯的福气了。\n⑦一进腊月，家里就忙年了。姐姐会来信说年忙到什么地步了，比如说被子拆洗完了，年馍蒸完了，各种吃食也准备得差不多了，然后催我早点儿回家过年。所以，不管我身在哈尔滨、西安，还是北京，总是千里迢迢地冒着严寒往家奔，当然今年也不例外。腊月廿六我赶回家中，母亲知道这个日子我会回去的，因为腊月廿七那天，我们姐弟要“请”父亲回家过年。\n⑧我们去看父亲了。给他献过烟和酒，又烧了些纸钱，已经成家立业的弟弟叩头对父亲说：“爸爸，我有自己的家了，今年过年去儿子家吧，我家住在……”弟弟把他家的住址门牌号重复了几遍，怕父亲记不住。我又补充说：“离综合商场很近。”父亲生前喜欢到综合商场买皮蛋来下酒，那地方想必他是不会忘的。\n⑨正月十五到了，多年前的这一天，在一个落雪的黄昏，我降临人世。那时天将要黑了，窗外还没有挂灯，父亲便送我一个乳名：迎灯。没想到我迎来了千盏万盏灯，却再也迎不来父亲送给我的那盏灯了。\n⑩在冷寂的大街上，忽然发现一个苍老的卖灯人。那灯是六角形的，用玻璃做成的，玻璃上还贴着“福”字。我立刻想到了父亲，正月十五这一天，父亲的院子该有一盏灯的。我买下了一盏灯。天将黑时，将它送到了父亲的墓地。“察”地划根火柴，周围的夜色就颤动了一下，父亲的房子在夜色中显得华丽醒目，凄切动人。\n⑪<u>这是我送给父亲的第一盏灯，那灯守着他，虽灭犹燃。</u>\n（选自《人民周刊》2020年11期，有删改）\n\n4. 下面的语句中，“灭”和“犹燃”是矛盾的吗？结合全文，谈谈你的理解。\n这是我送给父亲的第一盏灯，那灯守着他，**虽灭犹燃**。",
+      "answer": "①不矛盾；②“灭”指灯火燃尽了，比喻父亲去世了；③“犹燃”指父亲对“我”的爱永远陪伴着“我”，“我”对父亲的爱与思念也将一直持续下去。",
+      "explanation": "本题考查内容理解。\n首先，我们需要明确“灭”和“犹燃”在句子中的具体含义。在这里，“灭”指的是物理意义上的灯火熄灭，即那盏送给父亲的灯已经燃尽了。而“犹燃”则是一种象征或比喻，它并不指灯火实际上的燃烧，而是指某种精神或情感上的持续和燃烧。\n从字面上看，“灭”指的是那盏灯已经熄灭，不再有光亮。在文章中，这盏灯是“我”送给父亲的，它的熄灭可以看作是父亲去世的象征。因为父亲去世后，“我”再也没有机会为他点灯，所以那盏灯在物理意义上确实已经“灭”了。\n然而，“虽灭犹燃”这个表达并不止于此。在这里，“犹燃”更多地是一种情感上的延续和燃烧。它指的是父亲对“我”的爱，这种爱并不会因为父亲的去世而熄灭，反而会在“我”的心中永远燃烧下去。同时，“我”对父亲的爱与思念也将一直持续下去，就像那盏虽然熄灭但仍然在心中燃烧的灯一样。\n综上所述，“灭”和“犹燃”在句子中并不矛盾。它们分别代表了物理意义上的熄灭和情感意义上的燃烧，共同构成了对父亲去世和“我”对父亲爱与思念的深刻表达。这种表达方式既体现了对现实的接受，又表达了对父亲深深的怀念和无尽的爱意。\n家长审核要点：先答不矛盾，分别说明灭是灯尽和父亲去世，犹燃是父爱及我爱与思念持续；联系全文解释情感层面。\n加粗字保留原题加点或强调标记。\n来源解析争议说明：上文保留原解析，其中“父亲去世后，‘我’再也没有机会为他点灯”与正文第⑩段“我买下了一盏灯”、送到父亲墓地并“划根火柴”点灯的叙述矛盾。应以正文确有墓地点灯为事实；该错误解释不作为判分依据。原答案关于灯火燃尽、父爱和思念延续的理解保留。",
+      "round": 3,
+      "_raw_excerpt": "阅读文章，完成下面小题。\n那盏叫父亲的灯\n迟子建\n①父亲在世时，每逢过年我就会得到一盏灯。那不是寻常的灯。从门外的雪地上捡回一个罐头瓶，然后将一瓢开水倒进瓶里，啪的一声，瓶底均匀地落下来，灯罩便诞生了，再用废棉花将它擦得亮亮的。灯的底座是木制的，有花纹，从底座中心钉透一颗钉子，把半截红烛固定在上面，待到夜幕降临时，点燃蜡烛，再小心翼翼地落下灯罩。我提着这盏灯，觉得自己风光无限。\n②父亲给我做这盏灯总要花上很多工夫。就说做灯罩，总要捡回五六个瓶子才能做成一个。尽管如此，除夕夜父亲总能让我提上一盏称心如意的灯。没有月亮的除夕夜，这盏灯就是月亮了。我提着灯，怀揣一盒火柴东家走西家串，每到一家都将灯吹灭，听人家夸几句这灯有多好，然后再心满意足地点燃蜡烛去另一家。每每转回到家里时，蜡烛烧得只剩下一汪油了。那时父亲会笑吟吟地问：“把那些光全折腾没了吧?”\n③“全给丢在路上了。”我说，“剩下最亮的光赶紧提回家来了。”“咱女儿还真顾家啊。”父亲笑着说，便去看那汪蜡烛油上斜着的一束蓬勃芬芳的光。\n④父亲说过年要里里外外都是光明的，所以不仅我手中有灯，院子里也是有灯的。<u>高高挂起的是红灯，灯笼穗长长的，风一吹，刷刷响。低处的是冰灯，放在大门口的木墩上。无论是高出屋脊的红灯，还是安闲地坐在低处的冰灯，都让人觉得温暖。</u>但不管它们多么动人，也不如父亲送给我的灯美丽。因为有了年，就觉得日子是有盼头的；因为有了父亲，年也就显得有声有色；而如果又有了父亲送我的灯，年则妖娆迷人了。\n⑤我一年年地长大了，父亲不再送灯给我，我已经不是那个提着灯串来串去的小孩子了。我开始在灯下想心事。但每逢除夕，院子里照例要在高处挂起红灯，在低处摆上冰灯。\n⑥然而，父亲没能走到老年就去世了。父亲去世的当年我们没有点灯，别人家的院子里灯火辉煌，我们家却黑漆漆的。我坐在暗处想：点灯的时候父亲还不回来，看来他是迷路了。我多想提着父亲送我的灯到路上接他回来啊。爸爸，回家的路这么难找吗？从此之后，虽然照例要过年，但是我再也没有提着灯的福气了。\n⑦一进腊月，家里就忙年了。姐姐会来信说年忙到什么地步了，比如说被子拆洗完了，年馍蒸完了，各种吃食也准备得差不多了，然后催我早点儿回家过年。所以，不管我身在哈尔滨、西安，还是北京，总是千里迢迢地冒着严寒往家奔，当然今年也不例外。腊月廿六我赶回家中，母亲知道这个日子我会回去的，因为腊月廿七那天，我们姐弟要“请”父亲回家过年。\n⑧我们去看父亲了。给他献过烟和酒，又烧了些纸钱，已经成家立业的弟弟叩头对父亲说：“爸爸，我有自己的家了，今年过年去儿子家吧，我家住在……”弟弟把他家的住址门牌号重复了几遍，怕父亲记不住。我又补充说：“离综合商场很近。”父亲生前喜欢到综合商场买皮蛋来下酒，那地方想必他是不会忘的。\n⑨正月十五到了，多年前的这一天，在一个落雪的黄昏，我降临人世。那时天将要黑了，窗外还没有挂灯，父亲便送我一个乳名：迎灯。没想到我迎来了千盏万盏灯，却再也迎不来父亲送给我的那盏灯了。\n⑩在冷寂的大街上，忽然发现一个苍老的卖灯人。那灯是六角形的，用玻璃做成的，玻璃上还贴着“福”字。我立刻想到了父亲，正月十五这一天，父亲的院子该有一盏灯的。我买下了一盏灯。天将黑时，将它送到了父亲的墓地。“察”地划根火柴，周围的夜色就颤动了一下，父亲的房子在夜色中显得华丽醒目，凄切动人。\n⑪<u>这是我送给父亲的第一盏灯，那灯守着他，虽灭犹燃。</u>\n（选自《人民周刊》2020年11期，有删改）",
+      "_source_answer_evidence": "16.     ①. 赠“我”年灯（或送“我”明灯、送“我”灯盏等亦可）    ②. 无尽怀念    17. D    \n18. ①写出了过年时家中挂起红灯、安放冰灯的景象，体现了年灯喜庆祥和的特点；②渲染了温馨、祥和的节日气氛（家庭氛围亦可）；③烘托了“我”感到温暖的心理；④衬托出父亲送“我”的灯的独一无二的美丽；⑤与下文“我”因为父亲去世、家里不再灯火辉煌感到失落、悲伤形成对比。（答对3点即可）    \n19. ①不矛盾；②“灭”指灯火燃尽了，比喻父亲去世了；③“犹燃”指父亲对“我”的爱永远陪伴着“我”，“我”对父亲的爱与思念也将一直持续下去。",
+      "_source_stem_authority": "original DOCX; explicit analysis prompt variants reconciled in worker/variant_reconciliation.json",
+      "_common_prefix_raw": "阅读文章，完成下面小题。\n那盏叫父亲的灯\n迟子建\n①父亲在世时，每逢过年我就会得到一盏灯。那不是寻常的灯。从门外的雪地上捡回一个罐头瓶，然后将一瓢开水倒进瓶里，啪的一声，瓶底均匀地落下来，灯罩便诞生了，再用废棉花将它擦得亮亮的。灯的底座是木制的，有花纹，从底座中心钉透一颗钉子，把半截红烛固定在上面，待到夜幕降临时，点燃蜡烛，再小心翼翼地落下灯罩。我提着这盏灯，觉得自己风光无限。\n②父亲给我做这盏灯总要花上很多工夫。就说做灯罩，总要捡回五六个瓶子才能做成一个。尽管如此，除夕夜父亲总能让我提上一盏称心如意的灯。没有月亮的除夕夜，这盏灯就是月亮了。我提着灯，怀揣一盒火柴东家走西家串，每到一家都将灯吹灭，听人家夸几句这灯有多好，然后再心满意足地点燃蜡烛去另一家。每每转回到家里时，蜡烛烧得只剩下一汪油了。那时父亲会笑吟吟地问：“把那些光全折腾没了吧?”\n③“全给丢在路上了。”我说，“剩下最亮的光赶紧提回家来了。”“咱女儿还真顾家啊。”父亲笑着说，便去看那汪蜡烛油上斜着的一束蓬勃芬芳的光。\n④父亲说过年要里里外外都是光明的，所以不仅我手中有灯，院子里也是有灯的。<u>高高挂起的是红灯，灯笼穗长长的，风一吹，刷刷响。低处的是冰灯，放在大门口的木墩上。无论是高出屋脊的红灯，还是安闲地坐在低处的冰灯，都让人觉得温暖。</u>但不管它们多么动人，也不如父亲送给我的灯美丽。因为有了年，就觉得日子是有盼头的；因为有了父亲，年也就显得有声有色；而如果又有了父亲送我的灯，年则妖娆迷人了。\n⑤我一年年地长大了，父亲不再送灯给我，我已经不是那个提着灯串来串去的小孩子了。我开始在灯下想心事。但每逢除夕，院子里照例要在高处挂起红灯，在低处摆上冰灯。\n⑥然而，父亲没能走到老年就去世了。父亲去世的当年我们没有点灯，别人家的院子里灯火辉煌，我们家却黑漆漆的。我坐在暗处想：点灯的时候父亲还不回来，看来他是迷路了。我多想提着父亲送我的灯到路上接他回来啊。爸爸，回家的路这么难找吗？从此之后，虽然照例要过年，但是我再也没有提着灯的福气了。\n⑦一进腊月，家里就忙年了。姐姐会来信说年忙到什么地步了，比如说被子拆洗完了，年馍蒸完了，各种吃食也准备得差不多了，然后催我早点儿回家过年。所以，不管我身在哈尔滨、西安，还是北京，总是千里迢迢地冒着严寒往家奔，当然今年也不例外。腊月廿六我赶回家中，母亲知道这个日子我会回去的，因为腊月廿七那天，我们姐弟要“请”父亲回家过年。\n⑧我们去看父亲了。给他献过烟和酒，又烧了些纸钱，已经成家立业的弟弟叩头对父亲说：“爸爸，我有自己的家了，今年过年去儿子家吧，我家住在……”弟弟把他家的住址门牌号重复了几遍，怕父亲记不住。我又补充说：“离综合商场很近。”父亲生前喜欢到综合商场买皮蛋来下酒，那地方想必他是不会忘的。\n⑨正月十五到了，多年前的这一天，在一个落雪的黄昏，我降临人世。那时天将要黑了，窗外还没有挂灯，父亲便送我一个乳名：迎灯。没想到我迎来了千盏万盏灯，却再也迎不来父亲送给我的那盏灯了。\n⑩在冷寂的大街上，忽然发现一个苍老的卖灯人。那灯是六角形的，用玻璃做成的，玻璃上还贴着“福”字。我立刻想到了父亲，正月十五这一天，父亲的院子该有一盏灯的。我买下了一盏灯。天将黑时，将它送到了父亲的墓地。“察”地划根火柴，周围的夜色就颤动了一下，父亲的房子在夜色中显得华丽醒目，凄切动人。\n⑪<u>这是我送给父亲的第一盏灯，那灯守着他，虽灭犹燃。</u>\n（选自《人民周刊》2020年11期，有删改）",
+      "group_id": "realpaper_g7_chinese_renjiao_qz_futian_2024_001_modern",
+      "group_order": 4,
+      "_prompt_before_number_normalization": "19. 下面的语句中，“灭”和“犹燃”是矛盾的吗？结合全文，谈谈你的理解。\n这是我送给父亲的第一盏灯，那灯守着他，**虽灭犹燃**。",
+      "_parent_review_required": true,
+      "_parent_review_criteria": "先答不矛盾，分别说明灭是灯尽和父亲去世，犹燃是父爱及我爱与思念持续；联系全文解释情感层面。 正文第⑩段确有为父亲墓地点灯，不要求学生接受或复述原解析“再也没有机会为他点灯”的错误事实表述。",
+      "_round_before_group_unify": 3,
+      "_round_judge_method": "g7_source_aware_bootstrap_user_authorized",
+      "_round_rubric": "docs/difficulty/g7_chinese_round_rubric_draft.md",
+      "_round_nearest_anchor": {
+        "candidate_id": "g7_chinese_r3_candidate_01",
+        "status": "candidate_unapproved"
+      },
+      "_round_routing_reasoning": [
+        "参照G7候选g7_chinese_r3_candidate_01；未声称已由Famin校准。",
+        "rubric §3.2-3.3：跨段或跨文本整合证据、分析作用和人物。"
+      ],
+      "_round_group_unify_rule": "ceil(mean)",
+      "_source_explanation_before_dispute_notice": "本题考查内容理解。\n首先，我们需要明确“灭”和“犹燃”在句子中的具体含义。在这里，“灭”指的是物理意义上的灯火熄灭，即那盏送给父亲的灯已经燃尽了。而“犹燃”则是一种象征或比喻，它并不指灯火实际上的燃烧，而是指某种精神或情感上的持续和燃烧。\n从字面上看，“灭”指的是那盏灯已经熄灭，不再有光亮。在文章中，这盏灯是“我”送给父亲的，它的熄灭可以看作是父亲去世的象征。因为父亲去世后，“我”再也没有机会为他点灯，所以那盏灯在物理意义上确实已经“灭”了。\n然而，“虽灭犹燃”这个表达并不止于此。在这里，“犹燃”更多地是一种情感上的延续和燃烧。它指的是父亲对“我”的爱，这种爱并不会因为父亲的去世而熄灭，反而会在“我”的心中永远燃烧下去。同时，“我”对父亲的爱与思念也将一直持续下去，就像那盏虽然熄灭但仍然在心中燃烧的灯一样。\n综上所述，“灭”和“犹燃”在句子中并不矛盾。它们分别代表了物理意义上的熄灭和情感意义上的燃烧，共同构成了对父亲去世和“我”对父亲爱与思念的深刻表达。这种表达方式既体现了对现实的接受，又表达了对父亲深深的怀念和无尽的爱意。\n家长审核要点：先答不矛盾，分别说明灭是灯尽和父亲去世，犹燃是父爱及我爱与思念持续；联系全文解释情感层面。\n加粗字保留原题加点或强调标记。",
+      "_ai_dispute": {
+        "reason": "原解析称父亲去世后我再也没有机会为他点灯，与原文第⑩段买灯并到父亲墓地点灯相矛盾。",
+        "source_answer": "①不矛盾；②“灭”指灯火燃尽了，比喻父亲去世了；③“犹燃”指父亲对“我”的爱永远陪伴着“我”，“我”对父亲的爱与思念也将一直持续下去。",
+        "source_explanation": "本题考查内容理解。\n首先，我们需要明确“灭”和“犹燃”在句子中的具体含义。在这里，“灭”指的是物理意义上的灯火熄灭，即那盏送给父亲的灯已经燃尽了。而“犹燃”则是一种象征或比喻，它并不指灯火实际上的燃烧，而是指某种精神或情感上的持续和燃烧。\n从字面上看，“灭”指的是那盏灯已经熄灭，不再有光亮。在文章中，这盏灯是“我”送给父亲的，它的熄灭可以看作是父亲去世的象征。因为父亲去世后，“我”再也没有机会为他点灯，所以那盏灯在物理意义上确实已经“灭”了。\n然而，“虽灭犹燃”这个表达并不止于此。在这里，“犹燃”更多地是一种情感上的延续和燃烧。它指的是父亲对“我”的爱，这种爱并不会因为父亲的去世而熄灭，反而会在“我”的心中永远燃烧下去。同时，“我”对父亲的爱与思念也将一直持续下去，就像那盏虽然熄灭但仍然在心中燃烧的灯一样。\n综上所述，“灭”和“犹燃”在句子中并不矛盾。它们分别代表了物理意义上的熄灭和情感意义上的燃烧，共同构成了对父亲去世和“我”对父亲爱与思念的深刻表达。这种表达方式既体现了对现实的接受，又表达了对父亲深深的怀念和无尽的爱意。\n家长审核要点：先答不矛盾，分别说明灭是灯尽和父亲去世，犹燃是父爱及我爱与思念持续；联系全文解释情感层面。\n加粗字保留原题加点或强调标记。",
+        "source_evidence": "正文第⑩段：我买下了一盏灯；将它送到了父亲的墓地；划根火柴。",
+        "suggested_answer": "保留原答案的灭与犹燃情感层次；正文确有墓地点灯，不以原解析错误事实句判分。"
+      }
+    },
+    {
+      "subject": "chinese",
+      "grade": 7,
+      "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+      "local_id": 20,
+      "_source_question_number": 20,
+      "_source_subquestion": null,
+      "type": "choice",
+      "chapter": "文学常识",
+      "knowledge_point": "名著阅读/朝花夕拾",
+      "content": "20. 下列对《朝花夕拾》相关内容的表述，**不正确**的一项是（    ）",
+      "answer": "B",
+      "explanation": "本题考查名著知识理解。\nB.衍太太教唆“我”偷母亲的首饰，还散播流言说“我”偷家里的东西去变卖，这是《琐记》里的情节，并非出自《父亲的病》。\n故选B。\n加粗字保留原题加点或强调标记。",
+      "round": 2,
+      "_raw_excerpt": "20. 下列对《朝花夕拾》相关内容的表述，**不正确**的一项是（    ）",
+      "_source_answer_evidence": "B",
+      "_source_stem_authority": "original DOCX; explicit analysis prompt variants reconciled in worker/variant_reconciliation.json",
+      "options": [
+        "A. 《五猖会》再现了鲁迅儿时盼望观看迎神赛会的兴奋心情，以及被父亲强迫背诵《鉴略》而扫兴、痛苦的感受。",
+        "B. 《父亲的病》中，衍太太在“我”父亲临终前让“我”大声喊“父亲”，并在父亲故去后，教唆“我”偷母亲的首饰，还散播流言说“我”偷家里的东西去变卖。",
+        "C. 《琐记》《藤野先生》《范爱农》三篇文章，分别记述了作者离开家乡到南京、在日本求学和回国后的经历。",
+        "D. 《朝花夕拾》写人记事，在平淡质朴的笔墨中蕴有深厚的情感。如写长妈妈，笔下常带温情；写范爱农，则在对故友的缅怀中，又蕴含着社会批判的锋芒。"
+      ],
+      "_round_before_group_unify": 2,
+      "_round_judge_method": "g7_source_aware_bootstrap_user_authorized",
+      "_round_rubric": "docs/difficulty/g7_chinese_round_rubric_draft.md",
+      "_round_nearest_anchor": {
+        "candidate_id": "g7_chinese_r2_candidate_01",
+        "status": "candidate_unapproved"
+      },
+      "_round_routing_reasoning": [
+        "参照G7候选g7_chinese_r2_candidate_01；未声称已由Famin校准。",
+        "rubric §2.1-2.3：局部规则应用、有限证据判断或概括。"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 7,
+      "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+      "local_id": 21,
+      "_source_question_number": 21,
+      "_source_subquestion": null,
+      "type": "subjective",
+      "chapter": "文学常识",
+      "knowledge_point": "名著阅读/朝花夕拾",
+      "content": "21. 填空\n《朝花夕拾》是鲁迅先生1926年所作的（1）___________（体裁）集，共10篇。其中，《二十四孝图》着重分析了卧冰求鲤、（2）_________、郭巨埋儿等孝道故事，揭示了（3）_________。",
+      "answer": "散文,老莱娱亲,封建孝道的虚伪和残酷",
+      "explanation": "本题考查名著内容积累。\n《朝花夕拾》原名《旧事重提》，是现代文学家鲁迅的散文集，收录鲁迅于1926年创作的10篇回忆性散文。 此文集作为“回忆的记事”，多侧面地反映了作者鲁迅青少年时期的生活，形象地反映了他的性格和志趣的形成经过。前七篇反映他童年时代在绍兴的家庭和私塾中的生活情景，后三篇叙述他从家乡到南京，又到日本留学，然后回国教书的经历；揭露了半殖民地半封建社会种种丑恶的不合理现象，同时反映了有抱负的青年知识分子在旧中国茫茫黑夜中，不畏艰险，寻找光明的困难历程，以及抒发了作者对往日亲友、师长的怀念之情。\n《二十四孝图》一文，鲁迅先生从自己小时候阅读《二十四孝图》的感受入手，重点描写了在阅读“老莱娱亲”和“郭巨埋儿”两个故事时所产生的强烈反感，形象地揭露了封建孝道所蕴含的虚伪、残酷及其对人性的沉重压制。同时，也对当时反对白话文、提倡复古的倾向予以了尖锐的抨击。\n家长审核要点：三空依次为散文、老莱娱亲、封建孝道虚伪残酷的本质；第三空合理同义表达可接受。",
+      "round": 2,
+      "_raw_excerpt": "21. 填空\n《朝花夕拾》是鲁迅先生1926年所作的（1）___________（体裁）集，共10篇。其中，《二十四孝图》着重分析了卧冰求鲤、（2）_________、郭巨埋儿等孝道故事，揭示了（3）_________。",
+      "_source_answer_evidence": "①. 散文    ②. 老莱娱亲    ③. 封建孝道的虚伪和残酷。",
+      "_source_stem_authority": "original DOCX; explicit analysis prompt variants reconciled in worker/variant_reconciliation.json",
+      "answer_blanks": [
+        "散文",
+        "老莱娱亲",
+        "封建孝道的虚伪和残酷"
+      ],
+      "_parent_review_required": true,
+      "_parent_review_criteria": "三空依次为散文、老莱娱亲、封建孝道虚伪残酷的本质；第三空合理同义表达可接受。",
+      "_round_before_group_unify": 2,
+      "_round_judge_method": "g7_source_aware_bootstrap_user_authorized",
+      "_round_rubric": "docs/difficulty/g7_chinese_round_rubric_draft.md",
+      "_round_nearest_anchor": {
+        "candidate_id": "g7_chinese_r2_candidate_01",
+        "status": "candidate_unapproved"
+      },
+      "_round_routing_reasoning": [
+        "参照G7候选g7_chinese_r2_candidate_01；未声称已由Famin校准。",
+        "rubric §2.1-2.3：局部规则应用、有限证据判断或概括。"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 7,
+      "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+      "local_id": 22,
+      "_source_question_number": 22,
+      "_source_subquestion": null,
+      "type": "subjective",
+      "chapter": "文学常识",
+      "knowledge_point": "名著阅读/朝花夕拾",
+      "content": "22. 《阿长与〈山海经〉》中，童年鲁迅对长妈妈的言行，有的讨厌，有的感激，请分别举出一例，并说说这两件事分别体现了长妈妈怎样的特点。",
+      "answer": "①讨厌的：喜欢“切切察察”，特点是唠叨。（或：限制“我”的行动，特点是迷信。睡相不好，摆成大字，特点是粗俗。）\n②感激的：为“我”买渴望已久的《山海经》，特点是助人为乐。（或：教导“我”捡起吃下落在地上的饭粒，特点是爱惜粮食。）",
+      "explanation": "本题考查名著阅读。结合具体情节，说说作者的讨厌或感激之情是因何事生发出来的即可。\n《阿长与〈山海经〉》是近代思想家、文学家鲁迅于1926年创作的一篇回忆性叙事散文。此文记述了鲁迅儿时与阿长相处的情景，描写了长妈妈善良、朴实而又迷信、唠叨、“满肚子是麻烦的礼节”的性格，对她寻购赠送自己渴求已久的绘图《山海经》之事，充满了尊敬和感激，表达了对这位劳动妇女的真诚的惦念以及对年幼无知的时光的深切怀念。\n示例：\n讨厌的：她“喜欢切切察察，向人们低声絮说些什么事”，睡相不好，摆成大字，还很迷信，体现出她粗俗唠叨，迷信的特点。\n感激的：长妈妈对“别人不肯做，或不能做的事”却能够做成功，为“我”买来了渴慕已久的《山海经》，体现出她关爱孩子，助人为乐的特点。\n家长审核要点：讨厌和感激各举一例，分别说明对应性格特点；如切切察察与唠叨，买山海经与关爱孩子助人为乐；情节和特点对应即可。",
+      "round": 3,
+      "_raw_excerpt": "22. 《阿长与〈山海经〉》中，童年鲁迅对长妈妈的言行，有的讨厌，有的感激，请分别举出一例，并说说这两件事分别体现了长妈妈怎样的特点。",
+      "_source_answer_evidence": "①讨厌的：喜欢“切切察察”，特点是唠叨。（或：限制“我”的行动，特点是迷信。睡相不好，摆成大字，特点是粗俗。）\n②感激的：为“我”买渴望已久的《山海经》，特点是助人为乐。（或：教导“我”捡起吃下落在地上的饭粒，特点是爱惜粮食。）",
+      "_source_stem_authority": "original DOCX; explicit analysis prompt variants reconciled in worker/variant_reconciliation.json",
+      "_parent_review_required": true,
+      "_parent_review_criteria": "讨厌和感激各举一例，分别说明对应性格特点；如切切察察与唠叨，买山海经与关爱孩子助人为乐；情节和特点对应即可。",
+      "_round_before_group_unify": 3,
+      "_round_judge_method": "g7_source_aware_bootstrap_user_authorized",
+      "_round_rubric": "docs/difficulty/g7_chinese_round_rubric_draft.md",
+      "_round_nearest_anchor": {
+        "candidate_id": "g7_chinese_r3_candidate_01",
+        "status": "candidate_unapproved"
+      },
+      "_round_routing_reasoning": [
+        "参照G7候选g7_chinese_r3_candidate_01；未声称已由Famin校准。",
+        "rubric §3.2-3.3：跨段或跨文本整合证据、分析作用和人物。"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 7,
+      "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+      "local_id": 23,
+      "_source_question_number": 23,
+      "_source_subquestion": null,
+      "type": "subjective",
+      "chapter": "文学常识",
+      "knowledge_point": "名著阅读/西游记",
+      "content": "23. 《西游记》中的孙悟空是个极其鲜活的形象，请结合“三打白骨精”的相关情节，谈谈你对他的认识。",
+      "answer": "①孙悟空识破白骨精的三次变化，并将其打死，说明孙悟空本领高强。\n②孙悟空虽因被唐僧赶走而愤慨不平，但离开时给唐僧下拜，并嘱咐沙僧好好照看师父，说明孙悟空忠心耿耿。\n③孙悟空痛恨妖精，忠诚于唐僧，说明孙悟空爱憎分明。",
+      "explanation": "本题考查名著内容与分析人物形象。\n结合《西游记》可知，“三打白骨精”情节：唐僧师徒四人为取真经，行至白虎岭前。在白虎岭内，住着一个尸魔白骨精。为了吃唐僧肉，先后变幻为村姑、妇人，全被孙悟空识破，白骨精害怕，变作一阵风逃走，孙悟空把村姑、妇人的假身统统都打死。但唐僧却不辨人妖，反而责怪孙悟空恣意行凶，连伤母女两命，违反戒律。第三次白骨精又变成白发老公公又被孙悟空识破打死。唐僧写下贬书，将孙悟空赶回了花果山。\n从孙悟空凭借火眼金睛识破白骨精的伪装，三次打死她的化身，即使师傅不断阻挠，他也要坚持，一定要把妖魔消灭，表现出他机智敏锐的判断力和坚持斗争、勇敢无畏的精神；\n从无论妖精怎样变化孙悟空总能识破，可以看出他十分有智慧，考虑问题十分周到；\n从孙悟空在面对白骨精的过程中遭受了师傅唐僧的误解和责难，但他依然坚持自己的判断，继续与白骨精斗争，可以看出他不屈不挠的精神，体现了他对正义的坚守和对师傅、师弟的保护职责；\n从唐僧一度误会孙悟空，念紧箍咒惩罚他，并将其逐出师门，但孙悟空在离开时还给唐僧下拜，并嘱咐沙僧好好照看师父，可以看出他对师傅不放心，十分关心师傅，忍辱负重，重情重义；\n从孙悟空对白骨精的痛恨与对唐僧的忠诚，可以看出孙悟空具有爱憎分明的性格。据此概括作答。\n家长审核要点：用三打白骨精的具体事件支撑人物认识：识破变化显本领，离别仍关心师父显忠诚，对妖与师态度显爱憎分明；合理对应即可。",
+      "round": 3,
+      "_raw_excerpt": "23. 《西游记》中的孙悟空是个极其鲜活的形象，请结合“三打白骨精”的相关情节，谈谈你对他的认识。",
+      "_source_answer_evidence": "①孙悟空识破白骨精的三次变化，并将其打死，说明孙悟空本领高强。\n②孙悟空虽因被唐僧赶走而愤慨不平，但离开时给唐僧下拜，并嘱咐沙僧好好照看师父，说明孙悟空忠心耿耿。\n③孙悟空痛恨妖精，忠诚于唐僧，说明孙悟空爱憎分明。",
+      "_source_stem_authority": "original DOCX; explicit analysis prompt variants reconciled in worker/variant_reconciliation.json",
+      "_parent_review_required": true,
+      "_parent_review_criteria": "用三打白骨精的具体事件支撑人物认识：识破变化显本领，离别仍关心师父显忠诚，对妖与师态度显爱憎分明；合理对应即可。",
+      "_round_before_group_unify": 3,
+      "_round_judge_method": "g7_source_aware_bootstrap_user_authorized",
+      "_round_rubric": "docs/difficulty/g7_chinese_round_rubric_draft.md",
+      "_round_nearest_anchor": {
+        "candidate_id": "g7_chinese_r3_candidate_01",
+        "status": "candidate_unapproved"
+      },
+      "_round_routing_reasoning": [
+        "参照G7候选g7_chinese_r3_candidate_01；未声称已由Famin校准。",
+        "rubric §3.2-3.3：跨段或跨文本整合证据、分析作用和人物。"
+      ]
+    },
+    {
+      "subject": "chinese",
+      "grade": 7,
+      "source": "realpaper_g7_chinese_renjiao_qz_futian_2024_001",
+      "local_id": 24,
+      "_source_question_number": 24,
+      "_source_subquestion": null,
+      "type": "subjective",
+      "chapter": "写作",
+      "knowledge_point": "写作/写人记事",
+      "content": "24. 写作\n生活中，我们常常被一些事情感动着：体会了自己的一次成长，感受到亲朋的一番温情，欣赏到大自然的美丽，发现了社会中的温馨……你经历过怎样的一次感动呢？\n请结合自己的生活，以“就这样被感动”为题目，写一篇记叙文。\n要求：（1）写出真情实感，禁止抄袭和套作。（2）文中不得出现真实的校名、人名。（3）书写工整、规范。（4）写600—900字。",
+      "answer": "开放记叙文，按题目和写作要求人工审核。",
+      "explanation": "本题考查全命题作文。\n审题立意：这是一道命题作文，题目为“就这样被感动”。命题作文的特点是给定题目，考生需要围绕这个题目进行创作。“就这样”：这个词提示了感动是在一种特定的情境、过程或者方式下发生的。例如，可能是在不经意间，或者是在经历了一系列事情之后，突然就被感动了。它要求考生在叙述中要明确指出这种特定的情况。“被感动”：这是文章的核心情感。感动是一种内心受到触动的情感体验，考生需要在作文中描述清楚是什么事情引起了这种感动的情绪，这种事情可以是生活中的小事，也可以是比较重大的事件，但必须能够触动人心。题目要求写一篇记叙文。记叙文是以记人、叙事、写景、状物为主，以写人物的经历和事物发展变化为主要内容的一种文体形式。这就要求考生在写作时要有具体的事件、人物、情节等要素，并且要通过叙述这些要素来表达自己被感动的情感。引用自题目本身。可以从个人成长、亲朋温情、美丽的大自然、社会温馨关爱等角度进行立意。\n选材构思：可以写自己在参加长跑比赛时，跑到中途体力不支，想要放弃。但是想起自己曾经定下的目标，以及为了这次比赛付出的训练，于是咬牙坚持。当最终冲过终点线的那一刻，被自己的坚持和成长所感动。可以讲述自己深夜生病，父母不顾疲惫，立刻送自己去医院。在医院里，父母焦急地陪伴着自己，跑前跑后挂号、拿药，看到父母担心的神情和忙碌的身影，被他们深深的爱所感动。可以回忆一次去海边看日出的经历。在清晨，天还未亮就来到海边等待。看着黑暗的天空逐渐被染成橙红色，太阳一点点升起，金色的阳光洒在海面上，波光粼粼。那壮观而又美丽的景色让自己内心充满感动，感受到大自然的神奇和伟大。可以讲述自己在陌生城市迷路，手机又没电了，非常焦急。这时一位陌生人主动过来询问情况，并且帮助自己找到了目的地。这位陌生人的热心肠让自己被社会中的善意所感动。可以写社区居民为了改善小区环境，自发组织起来打扫卫生、种花种草。大家齐心协力，让原本破旧的小区变得焕然一新。看到这种群体为了共同目标而努力的场景，被社会中的团结和温馨所感动。\n家长审核要点：以就这样被感动为题，写具体生活经历，记叙有事件过程和真情实感；600—900字，无真实校名人名，书写规范，不抄袭套作。\n原卷例文（非唯一答案）：\n例文：\n就这样被感动\n时光的流逝冲淡了许多美好的记忆，岁月的流沙沉淀出璀璨的珍珠。每每回想起那幅画面，心中油然而生起深深地感动与敬意。       \n记得那是仲秋时节，一个星期天的夜晚，天还没有黑下来，南边的天空突然飘过来一团乌云，只一会儿功夫就铺满了整个天空，隐隐约约还能听到轰隆隆的雷声。要下雨了！爸爸妈妈赶紧到外边，把忙碌了一天才挤出来的枣皮和掰下来的香菇往家里拿。我知道，为了不使这些堆积在一起的、湿漉漉的枣皮和香菇变色而卖不上价，就必须今晚把它们全部烘干。好在我家有一台烘干机，但烘干的责任就责无旁贷的落在了爸爸的肩上。我本以为要不了多久就能烘干了，劳累了一天的爸爸也能睡个好觉了。于是我便没有过问，早早就进入我的房间入睡了。       \n第二天，天还没有亮的时候，我起来上厕所。打开堂屋门，一股清新的空气扑面而来，借着晨曦的微光发现院子里的地面已是湿漉漉的。正要踏出大门，突然我看到放烘干机的厢房内的灯还亮着。是爸爸忘了关灯吗？不会的！难道烘干那些贵重的东西需要这么长时间吗？那爸爸岂不是累坏了吗！       \n我走过去，轻轻推开虚掩的门。那情景使我心头一热，眼泪便不自觉地滑出了眼眶。爸爸靠在椅子上，似睡非睡的样子，炉子里的火苗照着他那古铜色的慈祥和蔼的面孔，他的嘴里还噙着一根吸了一半，但已熄了火的烟头；右手拿着一根柴禾，已耷拉下去，但那只手似乎还在用劲往炉子里填，可他实在已是疲惫不堪了。我含着泪慢慢走到他面前，正想把他手中的柴禾取下，他醒了，他把柴填了进去，回头看看我，立刻装出一幅精神饱满的样子说：“孩子，这天多冷呀，快去睡觉，小心着凉，你爸爸我呀还结实着呢！”他脸上充满了笑容，可我却已是泪流满面。我哽咽着说：“爸，你快去休息吧！别累着了。我来照护吧。”爸爸却用命令的口吻说：“这怎么行！快去睡！”“爸！”“快去吧！”我只好离开了烘干室。       \n爸爸呀！请你关心一下你自己吧！身体是革命的本钱，你不要为了我们而不顾惜自己的身体！",
+      "round": 4,
+      "_raw_excerpt": "24. 写作\n生活中，我们常常被一些事情感动着：体会了自己的一次成长，感受到亲朋的一番温情，欣赏到大自然的美丽，发现了社会中的温馨……你经历过怎样的一次感动呢？\n请结合自己的生活，以“就这样被感动”为题目，写一篇记叙文。\n要求：（1）写出真情实感，禁止抄袭和套作。（2）文中不得出现真实的校名、人名。（3）书写工整、规范。（4）写600—900字。",
+      "_source_answer_evidence": "例文：\n就这样被感动\n时光的流逝冲淡了许多美好的记忆，岁月的流沙沉淀出璀璨的珍珠。每每回想起那幅画面，心中油然而生起深深地感动与敬意。       \n记得那是仲秋时节，一个星期天的夜晚，天还没有黑下来，南边的天空突然飘过来一团乌云，只一会儿功夫就铺满了整个天空，隐隐约约还能听到轰隆隆的雷声。要下雨了！爸爸妈妈赶紧到外边，把忙碌了一天才挤出来的枣皮和掰下来的香菇往家里拿。我知道，为了不使这些堆积在一起的、湿漉漉的枣皮和香菇变色而卖不上价，就必须今晚把它们全部烘干。好在我家有一台烘干机，但烘干的责任就责无旁贷的落在了爸爸的肩上。我本以为要不了多久就能烘干了，劳累了一天的爸爸也能睡个好觉了。于是我便没有过问，早早就进入我的房间入睡了。       \n第二天，天还没有亮的时候，我起来上厕所。打开堂屋门，一股清新的空气扑面而来，借着晨曦的微光发现院子里的地面已是湿漉漉的。正要踏出大门，突然我看到放烘干机的厢房内的灯还亮着。是爸爸忘了关灯吗？不会的！难道烘干那些贵重的东西需要这么长时间吗？那爸爸岂不是累坏了吗！       \n我走过去，轻轻推开虚掩的门。那情景使我心头一热，眼泪便不自觉地滑出了眼眶。爸爸靠在椅子上，似睡非睡的样子，炉子里的火苗照着他那古铜色的慈祥和蔼的面孔，他的嘴里还噙着一根吸了一半，但已熄了火的烟头；右手拿着一根柴禾，已耷拉下去，但那只手似乎还在用劲往炉子里填，可他实在已是疲惫不堪了。我含着泪慢慢走到他面前，正想把他手中的柴禾取下，他醒了，他把柴填了进去，回头看看我，立刻装出一幅精神饱满的样子说：“孩子，这天多冷呀，快去睡觉，小心着凉，你爸爸我呀还结实着呢！”他脸上充满了笑容，可我却已是泪流满面。我哽咽着说：“爸，你快去休息吧！别累着了。我来照护吧。”爸爸却用命令的口吻说：“这怎么行！快去睡！”“爸！”“快去吧！”我只好离开了烘干室。       \n爸爸呀！请你关心一下你自己吧！身体是革命的本钱，你不要为了我们而不顾惜自己的身体！",
+      "_source_stem_authority": "original DOCX; explicit analysis prompt variants reconciled in worker/variant_reconciliation.json",
+      "_parent_review_required": true,
+      "_parent_review_criteria": "以就这样被感动为题，写具体生活经历，记叙有事件过程和真情实感；600—900字，无真实校名人名，书写规范，不抄袭套作。",
+      "_official_model_essay": "例文：\n就这样被感动\n时光的流逝冲淡了许多美好的记忆，岁月的流沙沉淀出璀璨的珍珠。每每回想起那幅画面，心中油然而生起深深地感动与敬意。       \n记得那是仲秋时节，一个星期天的夜晚，天还没有黑下来，南边的天空突然飘过来一团乌云，只一会儿功夫就铺满了整个天空，隐隐约约还能听到轰隆隆的雷声。要下雨了！爸爸妈妈赶紧到外边，把忙碌了一天才挤出来的枣皮和掰下来的香菇往家里拿。我知道，为了不使这些堆积在一起的、湿漉漉的枣皮和香菇变色而卖不上价，就必须今晚把它们全部烘干。好在我家有一台烘干机，但烘干的责任就责无旁贷的落在了爸爸的肩上。我本以为要不了多久就能烘干了，劳累了一天的爸爸也能睡个好觉了。于是我便没有过问，早早就进入我的房间入睡了。       \n第二天，天还没有亮的时候，我起来上厕所。打开堂屋门，一股清新的空气扑面而来，借着晨曦的微光发现院子里的地面已是湿漉漉的。正要踏出大门，突然我看到放烘干机的厢房内的灯还亮着。是爸爸忘了关灯吗？不会的！难道烘干那些贵重的东西需要这么长时间吗？那爸爸岂不是累坏了吗！       \n我走过去，轻轻推开虚掩的门。那情景使我心头一热，眼泪便不自觉地滑出了眼眶。爸爸靠在椅子上，似睡非睡的样子，炉子里的火苗照着他那古铜色的慈祥和蔼的面孔，他的嘴里还噙着一根吸了一半，但已熄了火的烟头；右手拿着一根柴禾，已耷拉下去，但那只手似乎还在用劲往炉子里填，可他实在已是疲惫不堪了。我含着泪慢慢走到他面前，正想把他手中的柴禾取下，他醒了，他把柴填了进去，回头看看我，立刻装出一幅精神饱满的样子说：“孩子，这天多冷呀，快去睡觉，小心着凉，你爸爸我呀还结实着呢！”他脸上充满了笑容，可我却已是泪流满面。我哽咽着说：“爸，你快去休息吧！别累着了。我来照护吧。”爸爸却用命令的口吻说：“这怎么行！快去睡！”“爸！”“快去吧！”我只好离开了烘干室。       \n爸爸呀！请你关心一下你自己吧！身体是革命的本钱，你不要为了我们而不顾惜自己的身体！",
+      "_round_before_group_unify": 4,
+      "_round_judge_method": "g7_source_aware_bootstrap_user_authorized",
+      "_round_rubric": "docs/difficulty/g7_chinese_round_rubric_draft.md",
+      "_round_nearest_anchor": {
+        "candidate_id": "g7_chinese_r4_candidate_03",
+        "status": "candidate_unapproved"
+      },
+      "_round_routing_reasoning": [
+        "参照G7候选g7_chinese_r4_candidate_03；未声称已由Famin校准。",
+        "rubric §3.4：完整记叙文持续创作、叙事结构与表达多约束。"
+      ]
+    }
+  ],
+  "_manual_review": {
+    "M1": "PASS all 26 rows; source-only stems, explanations separate",
+    "M2": "PASS seed20261012 IDs12_3,1,24,2,16: translation matches; four phonetics including tones; full composition criteria; option B; father gives lamp and lasting remembrance all checked against analysis pages1,7,12,17-18",
+    "M3": "PASS all four source media inspected; body WMF glyphs restored via exact counterpart question stem, no answer inference; see variant_reconciliation.json",
+    "M4": "PASS table cells and all emphasis/underlines checked against original8 pages and analysis18 pages"
+  },
+  "_random_sample_verified": [],
+  "_image_audit": {
+    "meaningful_diagram_questions": 0,
+    "source_media_count": 4,
+    "all_source_media_visually_reviewed": true,
+    "variant_reconciliation": "/mnt/d/AI_Workspace/Planning/scan_daily_20261011/scan/futian_upper_midterm_2024/worker/variant_reconciliation.json",
+    "random_image_sampling": "not applicable: no meaningful diagram payload; all source media reviewed"
+  }
+}
