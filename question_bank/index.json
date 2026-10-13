@@ -1,5 +1,5 @@
 {
-  "version": 206,
+  "version": 207,
   "updated_at": "2026-10-13",
   "batches": [
     {
@@ -1257,9 +1257,22 @@
       "grade": 7,
       "count": 25,
       "batch_hash": "4b9a491a06534963e133518dcf6227fa6fd40c22"
+    },
+    {
+      "source": "realpaper_g7_chinese_renjiao_qz_binhai_upper_2024_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_chinese_renjiao_qz_binhai_upper_2024_001.json",
+      "subject": "chinese",
+      "grade": 7,
+      "count": 27,
+      "batch_hash": "be6f6ebd347dcbe3f3dc62693874671bda6c4698"
     }
   ],
   "_changelog": [
+    {
+      "version": 207,
+      "date": "2026-10-13",
+      "note": "v207 (2026-10-13): 新增binhai_upper_midterm_2024真实DOCX 27行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。"
+    },
     {
       "version": 206,
       "date": "2026-10-13",
@@ -1787,6 +1800,7 @@
     }
   ],
   "changelog": [
+    "v207 (2026-10-13): 新增binhai_upper_midterm_2024真实DOCX 27行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v206 (2026-10-13): 新增gaoji_lower_midterm_2024真实DOCX 25行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v205 (2026-10-12): 麒麟中学2024–2025七下期中语文24母题完整覆盖为29行；五源身份去重、独立全源二审和双份full22/22、专项/源SHA/图绑定/跨批/schema通过；保留1项原答案时代称谓争议。",
     "v204 (2026-10-12): 福田2024–2025七上期中语文24母题完整覆盖为26行；独立全源二审及双份full22/22、专项/源SHA/图绑定/跨批/schema通过；保留1项原解析争议。",
