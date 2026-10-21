@@ -1,6 +1,6 @@
 {
-  "version": 225,
-  "updated_at": "2026-10-21",
+  "version": 226,
+  "updated_at": "2026-10-22",
   "batches": [
     {
       "source": "batch_2026_05_07_g6_english_pet_r1",
@@ -1409,9 +1409,22 @@
       "grade": 7,
       "count": 25,
       "batch_hash": "1d58f4fab3921baf0f7e34a601adf9795f82e679"
+    },
+    {
+      "source": "realpaper_g7_chinese_renjiao_qz_baoan_tenschools_2023_upper_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_chinese_renjiao_qz_baoan_tenschools_2023_upper_001.json",
+      "subject": "chinese",
+      "grade": 7,
+      "count": 26,
+      "batch_hash": "cc620ccae9d2c1cba2843ec0599ddc96e4dc37dc"
     }
   ],
   "_changelog": [
+    {
+      "version": 226,
+      "date": "2026-10-22",
+      "note": "v226 (2026-10-22): 新增baoan_tenschools_upper_midterm_2023真实DOCX 26行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。"
+    },
     {
       "version": 225,
       "date": "2026-10-21",
@@ -2034,6 +2047,7 @@
     }
   ],
   "changelog": [
+    "v226 (2026-10-22): 新增baoan_tenschools_upper_midterm_2023真实DOCX 26行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v225 (2026-10-21): 新增longhua_lower_midterm_2023真实DOCX 25行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v224 (2026-10-21): 新增shiyan_upper_midterm_2023真实DOCX 25行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v223 (2026-10-20): 新增hongling_upper_midterm_2023真实DOCX 25行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
