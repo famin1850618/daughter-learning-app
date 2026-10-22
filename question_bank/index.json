@@ -1,6 +1,6 @@
 {
-  "version": 228,
-  "updated_at": "2026-10-22",
+  "version": 229,
+  "updated_at": "2026-10-23",
   "batches": [
     {
       "source": "batch_2026_05_07_g6_english_pet_r1",
@@ -1433,9 +1433,22 @@
       "grade": 7,
       "count": 24,
       "batch_hash": "426816353d49a01126f194c9236db87549657dec"
+    },
+    {
+      "source": "realpaper_g7_chinese_renjiao_qm_guangming_2023_lower_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_chinese_renjiao_qm_guangming_2023_lower_001.json",
+      "subject": "chinese",
+      "grade": 7,
+      "count": 29,
+      "batch_hash": "8a081838853fa22024f78eaf909e470ff9b288ed"
     }
   ],
   "_changelog": [
+    {
+      "version": 229,
+      "date": "2026-10-23",
+      "note": "v229 (2026-10-23): 新增guangming_lower_final_2023真实DOCX 29行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。"
+    },
     {
       "version": 228,
       "date": "2026-10-22",
@@ -2073,6 +2086,7 @@
     }
   ],
   "changelog": [
+    "v229 (2026-10-23): 新增guangming_lower_final_2023真实DOCX 29行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v228 (2026-10-22): 新增senior_lower_final_2023真实DOCX 24行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v227 (2026-10-22): 新增senior_lower_midterm_2023真实DOCX 23行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v226 (2026-10-22): 新增baoan_tenschools_upper_midterm_2023真实DOCX 26行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
