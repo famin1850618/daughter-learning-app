@@ -1,6 +1,6 @@
 {
-  "version": 242,
-  "updated_at": "2026-10-28",
+  "version": 243,
+  "updated_at": "2026-10-29",
   "batches": [
     {
       "source": "batch_2026_05_07_g6_english_pet_r1",
@@ -1545,9 +1545,22 @@
       "grade": 7,
       "count": 26,
       "batch_hash": "2897b5a2f6df9a4c898e4761399f88ed9eefd962"
+    },
+    {
+      "source": "realpaper_g7_chinese_renjiao_qz_luohu_upper_2022_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_chinese_renjiao_qz_luohu_upper_2022_001.json",
+      "subject": "chinese",
+      "grade": 7,
+      "count": 23,
+      "batch_hash": "9d2a7c6696f72c24a22aa92e454677d5b50ffa8c"
     }
   ],
   "_changelog": [
+    {
+      "version": 243,
+      "date": "2026-10-29",
+      "note": "v243 (2026-10-29): 新增luohu_upper_midterm_2022真实DOCX 23行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。"
+    },
     {
       "version": 242,
       "date": "2026-10-28",
@@ -2255,6 +2268,7 @@
     }
   ],
   "changelog": [
+    "v243 (2026-10-29): 新增luohu_upper_midterm_2022真实DOCX 23行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v242 (2026-10-28): 新增longhua_upper_midterm_2022真实DOCX 26行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v241 (2026-10-28): 新增longhua_lower_midterm_2022真实DOCX 22行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v240 (2026-10-28): 新增futian_upper_midterm_2023真实DOCX 24行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
