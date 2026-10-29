@@ -1,6 +1,6 @@
 {
-  "version": 245,
-  "updated_at": "2026-10-29",
+  "version": 246,
+  "updated_at": "2026-10-30",
   "batches": [
     {
       "source": "batch_2026_05_07_g6_english_pet_r1",
@@ -1569,9 +1569,22 @@
       "grade": 7,
       "count": 25,
       "batch_hash": "26da45f8ca184d521a6fc3cb3dff1d86c368b00a"
+    },
+    {
+      "source": "realpaper_g7_chinese_renjiao_qz_shenda_lower_2022_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_chinese_renjiao_qz_shenda_lower_2022_001.json",
+      "subject": "chinese",
+      "grade": 7,
+      "count": 27,
+      "batch_hash": "473563ada8f51cb714d163989139129f27409864"
     }
   ],
   "_changelog": [
+    {
+      "version": 246,
+      "date": "2026-10-30",
+      "note": "v246 (2026-10-30): 新增shenda_lower_midterm_2022真实DOCX 27行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。"
+    },
     {
       "version": 245,
       "date": "2026-10-29",
@@ -2294,6 +2307,7 @@
     }
   ],
   "changelog": [
+    "v246 (2026-10-30): 新增shenda_lower_midterm_2022真实DOCX 27行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v245 (2026-10-29): 新增yantian_upper_final_2022真实DOCX 25行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v244 (2026-10-29): 新增haiwan_lower_midterm_2022真实DOCX 26行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v243 (2026-10-29): 新增luohu_upper_midterm_2022真实DOCX 23行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
