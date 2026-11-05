@@ -1,5 +1,5 @@
 {
-  "version": 262,
+  "version": 263,
   "updated_at": "2026-11-06",
   "batches": [
     {
@@ -1705,9 +1705,22 @@
       "grade": 7,
       "count": 25,
       "batch_hash": "18b2ab9383df77228308ab5d7516cda9b1e44603"
+    },
+    {
+      "source": "realpaper_g7_chinese_renjiao_yk_guangming_gaoji_2023_upper_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_chinese_renjiao_yk_guangming_gaoji_2023_upper_001.json",
+      "subject": "chinese",
+      "grade": 7,
+      "count": 26,
+      "batch_hash": "aab80c8bc6342ab9d240464dc43b180ccc242a3d"
     }
   ],
   "_changelog": [
+    {
+      "version": 263,
+      "date": "2026-11-06",
+      "note": "v263 (2026-11-06): 新增guangming_upper_monthly_2023_20261106真实DOCX 26行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。"
+    },
     {
       "version": 262,
       "date": "2026-11-06",
@@ -2515,6 +2528,7 @@
     }
   ],
   "changelog": [
+    "v263 (2026-11-06): 新增guangming_upper_monthly_2023_20261106真实DOCX 26行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v262 (2026-11-06): 新增baoan_lower_final_2021_20261106真实DOCX 25行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v261 (2026-11-05): 新增guangming_lower_final_2021_20261105真实DOCX 29行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v260 (2026-11-05): 新增shenzhen_upper_final_2020_20261105真实DOCX 28行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
