@@ -1,6 +1,6 @@
 {
-  "version": 265,
-  "updated_at": "2026-11-07",
+  "version": 266,
+  "updated_at": "2026-11-08",
   "batches": [
     {
       "source": "batch_2026_05_07_g6_english_pet_r1",
@@ -1729,9 +1729,22 @@
       "grade": 7,
       "count": 26,
       "batch_hash": "29ee254b8883a959de00a4b2276a6a388922a3c6"
+    },
+    {
+      "source": "realpaper_g7_chinese_renjiao_qm_nanshan_2020_lower_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_chinese_renjiao_qm_nanshan_2020_lower_001.json",
+      "subject": "chinese",
+      "grade": 7,
+      "count": 27,
+      "batch_hash": "7841d1cca762700605046afe71fb54bd4132e6f4"
     }
   ],
   "_changelog": [
+    {
+      "version": 266,
+      "date": "2026-11-08",
+      "note": "v266 (2026-11-08): 新增nanshan_lower_final_2020_20261108真实DOCX 27行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。"
+    },
     {
       "version": 265,
       "date": "2026-11-07",
@@ -2554,6 +2567,7 @@
     }
   ],
   "changelog": [
+    "v266 (2026-11-08): 新增nanshan_lower_final_2020_20261108真实DOCX 27行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v265 (2026-11-07): 新增luohu_lower_final_2020_20261107真实DOCX 26行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v264 (2026-11-07): 新增haiwan_upper_monthly_2021_20261107真实DOCX 26行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v263 (2026-11-06): 新增guangming_upper_monthly_2023_20261106真实DOCX 26行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
