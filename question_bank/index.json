@@ -1,5 +1,5 @@
 {
-  "version": 273,
+  "version": 274,
   "updated_at": "2026-11-11",
   "batches": [
     {
@@ -1793,9 +1793,22 @@
       "grade": 7,
       "count": 23,
       "batch_hash": "9fa0520376137fc6df8debc2c9a5389573ebe1c4"
+    },
+    {
+      "source": "realpaper_g7_chinese_renjiao_yk_haiyun_2020_lower_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_chinese_renjiao_yk_haiyun_2020_lower_001.json",
+      "subject": "chinese",
+      "grade": 7,
+      "count": 21,
+      "batch_hash": "e870d84fd1233c37be601b8d3a90c8c2cb198cc0"
     }
   ],
   "_changelog": [
+    {
+      "version": 274,
+      "date": "2026-11-11",
+      "note": "v274 (2026-11-11): 新增haiyun_lower_monthly_2020_20261111真实DOCX 21行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。"
+    },
     {
       "version": 273,
       "date": "2026-11-11",
@@ -2658,6 +2671,7 @@
     }
   ],
   "changelog": [
+    "v274 (2026-11-11): 新增haiyun_lower_monthly_2020_20261111真实DOCX 21行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v273 (2026-11-11): 新增luohu_upper_monthly_2022_20261111真实DOCX 23行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v272 (2026-11-10): 新增longgang7_lower_final_2021_20261110真实DOCX 27行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v271 (2026-11-10): 新增longgang_upper_midterm_2025_20261110真实DOCX 24行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
