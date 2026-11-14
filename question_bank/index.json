@@ -1,6 +1,6 @@
 {
-  "version": 282,
-  "updated_at": "2026-11-14",
+  "version": 283,
+  "updated_at": "2026-11-15",
   "batches": [
     {
       "source": "batch_2026_05_07_g6_english_pet_r1",
@@ -1865,9 +1865,22 @@
       "grade": 7,
       "count": 27,
       "batch_hash": "0d5c7b67ae5df873815bd4fb7c43c4bb3a9ce4bb"
+    },
+    {
+      "source": "realpaper_g7_chinese_renjiao_qm_shenzhen_2023_lower_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_chinese_renjiao_qm_shenzhen_2023_lower_001.json",
+      "subject": "chinese",
+      "grade": 7,
+      "count": 24,
+      "batch_hash": "5992239ddf55f666f02d2cdf75337e00b614e9b4"
     }
   ],
   "_changelog": [
+    {
+      "version": 283,
+      "date": "2026-11-15",
+      "note": "v283 (2026-11-15): 新增shenzhen_lower_final_2023_20261115真实DOCX 24行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。"
+    },
     {
       "version": 282,
       "date": "2026-11-14",
@@ -2775,6 +2788,7 @@
     }
   ],
   "changelog": [
+    "v283 (2026-11-15): 新增shenzhen_lower_final_2023_20261115真实DOCX 24行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v282 (2026-11-14): 新增nanshan_lower_final_2025_20261114真实DOCX 27行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v281 (2026-11-14): 新增pingshan_upper_monthly_2021_20261114真实DOCX 23行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v280 (2026-11-13): 新增gaoji_lower_midterm_2023_20261113真实DOCX 20行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
