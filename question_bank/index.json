@@ -1,6 +1,6 @@
 {
-  "version": 287,
-  "updated_at": "2026-11-16",
+  "version": 288,
+  "updated_at": "2026-11-17",
   "batches": [
     {
       "source": "batch_2026_05_07_g6_english_pet_r1",
@@ -1905,9 +1905,22 @@
       "grade": 7,
       "count": 35,
       "batch_hash": "0a1b38e7f4f9505d557e77f6e2857dc152403825"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_yk_three_schools_upper_2025_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_yk_three_schools_upper_2025_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 39,
+      "batch_hash": "c206e36e09db4e35289c95c83c34ced2b8729cad"
     }
   ],
   "_changelog": [
+    {
+      "version": 288,
+      "date": "2026-11-17",
+      "note": "v288 (2026-11-17): 新增three_schools_upper_monthly_2025_20261117真实DOCX 39行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。"
+    },
     {
       "version": 287,
       "date": "2026-11-16",
@@ -2840,6 +2853,7 @@
     }
   ],
   "changelog": [
+    "v288 (2026-11-17): 新增three_schools_upper_monthly_2025_20261117真实DOCX 39行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v287 (2026-11-16): 新增longgangwai_upper_monthly_2024_20261116真实DOCX 35行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v286 (2026-11-16): 新增hongyang_lower_midterm_math_2025_20261116真实DOCX 24行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v285 (2026-11-15): 新增shiyan_lower_monthly_2021_20261115真实DOCX 22行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
