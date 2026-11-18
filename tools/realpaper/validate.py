@@ -672,7 +672,7 @@ def run_full_check(batch: dict, batch_path: Path, kp_set: set, chapter_set: set)
         gid = q.get('group_id')
         c = q.get('content','') or ''
         # 单子题 content 必含: _common_prefix_raw（共享材料）+ 自身 _raw_excerpt（本子题题面）
-        full_raw = common_by_gid.get(gid, '') + (q.get('_raw_excerpt','') or '')
+        full_raw = common_by_gid.get(gid, q.get('_common_prefix_raw') or '') + (q.get('_raw_excerpt','') or '')
         # 字面违纪："（同上）"/"见上文"/"同上文" → 无视 raw 长度，直接 fail
         if re.search(r'[（(]同上[）)]|见上文|同上文|参考第[一二三四五六七八九十1-9]+题', c):
             coverage_errs.append(f'#{i+1} (gid={gid or "single"}): 字面违纪 "（同上）/见上文" 等省略表述')
