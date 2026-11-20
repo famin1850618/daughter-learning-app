@@ -1,6 +1,6 @@
 {
-  "version": 293,
-  "updated_at": "2026-11-19",
+  "version": 294,
+  "updated_at": "2026-11-20",
   "batches": [
     {
       "source": "batch_2026_05_07_g6_english_pet_r1",
@@ -1953,9 +1953,22 @@
       "grade": 7,
       "count": 30,
       "batch_hash": "153d0dc4ffa504cd244563e85bcba9b8046e90aa"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_yk_shenwai_2025_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_yk_shenwai_2025_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 32,
+      "batch_hash": "4fc81249fb01659e15c0aa4936b2b80c7e534643"
     }
   ],
   "_changelog": [
+    {
+      "version": 294,
+      "date": "2026-11-20",
+      "note": "v294 (2026-11-20): 新增shenwai_upper_monthly_2025_20261120真实DOCX 32行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。"
+    },
     {
       "version": 293,
       "date": "2026-11-19",
@@ -2918,6 +2931,7 @@
     }
   ],
   "changelog": [
+    "v294 (2026-11-20): 新增shenwai_upper_monthly_2025_20261120真实DOCX 32行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v293 (2026-11-19): 新增wenli_lower_monthly_2025_20261119真实DOCX 30行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v292 (2026-11-19): 新增sanxiao_upper_second_2025_20261119真实DOCX 38行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v291 (2026-11-18): 新增hongling_lower_monthly_2025_20261118真实DOCX 29行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
