@@ -1,5 +1,5 @@
 {
-  "version": 296,
+  "version": 297,
   "updated_at": "2026-11-22",
   "batches": [
     {
@@ -1977,9 +1977,22 @@
       "grade": 7,
       "count": 29,
       "batch_hash": "4430cda62f957b6e6b9e185bbed3d0738715d635"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qz_shenwai_lower_2025_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qz_shenwai_lower_2025_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 30,
+      "batch_hash": "9193aa534f722074bf4c9db322b014945ed1834e"
     }
   ],
   "_changelog": [
+    {
+      "version": 297,
+      "date": "2026-11-22",
+      "note": "v297 (2026-11-22): 新增shenwai_lower_midterm_20261122真实DOCX 30行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。"
+    },
     {
       "version": 296,
       "date": "2026-11-22",
@@ -2957,6 +2970,7 @@
     }
   ],
   "changelog": [
+    "v297 (2026-11-22): 新增shenwai_lower_midterm_20261122真实DOCX 30行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v296 (2026-11-22): 新增baoan_upper_monthly_20261122真实DOCX 29行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v295 (2026-11-20): 新增senior_lower_midterm_2025_20261120真实DOCX 26行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v294 (2026-11-20): 新增shenwai_upper_monthly_2025_20261120真实DOCX 32行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
