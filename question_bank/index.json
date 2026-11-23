@@ -1,5 +1,5 @@
 {
-  "version": 301,
+  "version": 302,
   "updated_at": "2026-11-24",
   "batches": [
     {
@@ -2017,9 +2017,22 @@
       "grade": 7,
       "count": 36,
       "batch_hash": "451caa1ad2d5922deaf71f0bb2c854e89d91b1c5"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qz_futianwaiguoyu_dong_upper_2024_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qz_futianwaiguoyu_dong_upper_2024_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 29,
+      "batch_hash": "53a6dfe0656d2bb453112638127421b598a80aca"
     }
   ],
   "_changelog": [
+    {
+      "version": 302,
+      "date": "2026-11-24",
+      "note": "v302 (2026-11-24): 新增fuwai_upper_20261124真实DOCX 29行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。"
+    },
     {
       "version": 301,
       "date": "2026-11-24",
@@ -3022,6 +3035,7 @@
     }
   ],
   "changelog": [
+    "v302 (2026-11-24): 新增fuwai_upper_20261124真实DOCX 29行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v301 (2026-11-24): 新增shangwai_upper_20261124真实DOCX 36行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v300 (2026-11-23): 新增wenhui_upper_20261123真实DOCX 34行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v299 (2026-11-23): 新增hongling_lower_20261123真实DOCX 15行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
