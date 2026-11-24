@@ -1,5 +1,5 @@
 {
-  "version": 307,
+  "version": 308,
   "updated_at": "2026-11-25",
   "batches": [
     {
@@ -2065,9 +2065,22 @@
       "grade": 7,
       "count": 28,
       "batch_hash": "adbafeea061b59c3b9f945c5f508327b09fde689"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qz_qilin_upper_2024_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qz_qilin_upper_2024_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 25,
+      "batch_hash": "a43a751d937093b7e38baa299b5ef6b8e267a3f6"
     }
   ],
   "_changelog": [
+    {
+      "version": 308,
+      "date": "2026-11-25",
+      "note": "v308 (2026-11-25): 新增qilin_upper_20261125真实DOCX 25行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。"
+    },
     {
       "version": 307,
       "date": "2026-11-25",
@@ -3100,6 +3113,7 @@
     }
   ],
   "changelog": [
+    "v308 (2026-11-25): 新增qilin_upper_20261125真实DOCX 25行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v307 (2026-11-25): 新增nanwai_upper_20261125真实DOCX 28行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v306 (2026-11-25): 新增shangwai_midterm_20261125真实DOCX 24行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v305 (2026-11-25): 新增zhongke_upper_20261125真实DOCX 28行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
