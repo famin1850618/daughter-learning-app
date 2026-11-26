@@ -1,6 +1,6 @@
 {
-  "version": 313,
-  "updated_at": "2026-11-26",
+  "version": 314,
+  "updated_at": "2026-11-27",
   "batches": [
     {
       "source": "batch_2026_05_07_g6_english_pet_r1",
@@ -2113,9 +2113,22 @@
       "grade": 7,
       "count": 26,
       "batch_hash": "0142c3801f6398a94f5e759eb66137ca9290e458"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qz_qiaoxiang_upper_2024_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qz_qiaoxiang_upper_2024_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 17,
+      "batch_hash": "7da3ea1702c77246ff2de03afd1e0d965dad5600"
     }
   ],
   "_changelog": [
+    {
+      "version": 314,
+      "date": "2026-11-27",
+      "note": "v314 (2026-11-27): 新增qiaoxiang_upper_20261127真实DOCX 17行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。"
+    },
     {
       "version": 313,
       "date": "2026-11-26",
@@ -3178,6 +3191,7 @@
     }
   ],
   "changelog": [
+    "v314 (2026-11-27): 新增qiaoxiang_upper_20261127真实DOCX 17行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v313 (2026-11-26): 新增ronggen_upper_20261126真实DOCX 26行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v312 (2026-11-26): 新增mingde_upper_20261126真实DOCX 26行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v311 (2026-11-26): 新增bantian_upper_20261126真实DOCX 24行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
