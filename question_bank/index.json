@@ -1,5 +1,5 @@
 {
-  "version": 316,
+  "version": 317,
   "updated_at": "2026-11-27",
   "batches": [
     {
@@ -2137,9 +2137,22 @@
       "grade": 7,
       "count": 21,
       "batch_hash": "3c7a49219b940f99c4236eb197591ae9eea96a87"
+    },
+    {
+      "source": "realpaper_g7_math_beishida_qz_beihuan_upper_2024_001",
+      "url": "https://cdn.jsdelivr.net/gh/famin1850618/daughter-learning-app@main/question_bank/realpaper_g7_math_beishida_qz_beihuan_upper_2024_001.json",
+      "subject": "math",
+      "grade": 7,
+      "count": 28,
+      "batch_hash": "2140260a1378cf46063d695e2eafbd3ce5792cbd"
     }
   ],
   "_changelog": [
+    {
+      "version": 317,
+      "date": "2026-11-27",
+      "note": "v317 (2026-11-27): 新增beihuan_upper_20261127真实DOCX 28行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。"
+    },
     {
       "version": 316,
       "date": "2026-11-27",
@@ -3217,6 +3230,7 @@
     }
   ],
   "changelog": [
+    "v317 (2026-11-27): 新增beihuan_upper_20261127真实DOCX 28行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v316 (2026-11-27): 新增huanggang_upper_20261127真实DOCX 21行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v315 (2026-11-27): 新增guangming_lower_20261127真实DOCX 19行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v314 (2026-11-27): 新增qiaoxiang_upper_20261127真实DOCX 17行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
