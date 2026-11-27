@@ -1,5 +1,5 @@
 {
-  "version": 324,
+  "version": 325,
   "updated_at": "2026-11-28",
   "batches": [
     {
@@ -2184,7 +2184,7 @@
       "subject": "math",
       "grade": 7,
       "count": 19,
-      "batch_hash": "eb7a49be5237586303883d20207d9d6b6944c70c"
+      "batch_hash": "1ff16d73aeec55add9e00bb8d76232160db0615c"
     },
     {
       "source": "realpaper_g7_math_beishida_qz_hongling_upper_2024_001",
@@ -2204,6 +2204,11 @@
     }
   ],
   "_changelog": [
+    {
+      "version": 325,
+      "date": "2026-11-28",
+      "note": "v325 (2026-11-28): 修复育才七上期中源摘录段落边界；19行正文/答案/图片不变，零额外新增；原作者修复及Tech V2全源独审通过。"
+    },
     {
       "version": 324,
       "date": "2026-11-28",
@@ -3321,6 +3326,7 @@
     }
   ],
   "changelog": [
+    "v325 (2026-11-28): 修复育才七上期中源摘录段落边界；19行正文/答案/图片不变，零额外新增；原作者修复及Tech V2全源独审通过。",
     "v324 (2026-11-28): 新增shenzhengaoji_upper_20261128真实DOCX 18行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v323 (2026-11-28): 新增hongling_upper_20261128真实DOCX 22行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
     "v322 (2026-11-28): 新增yucai_upper_20261128真实DOCX 19行；不同agent对源复核、双份full及专项/sourceSHA/cross/schema验证。",
